@@ -33,6 +33,7 @@ export interface PalabraEstado {
   proximoRepaso?: number
   aciertosSeguidos: number
   fallosTotales: number
+  ultimoExamen?: number
 }
 
 export type EstadoTema = 'bloqueado' | 'en_curso' | 'aprobado'
