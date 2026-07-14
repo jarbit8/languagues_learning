@@ -1,0 +1,25 @@
+{ "tema": 5, "idioma": "fr", "titulo": "Concordancia y posición del adjetivo",
+"regla": "El adjetivo concuerda en género y número: grand/grande/grands/grandes. Normalmente va DESPUÉS del sustantivo (une femme intelligente), pero algunos cortos y comunes van antes: beau, joli, grand, petit, jeune (un beau pays). Plural de palabras en -eau: beau→beaux.",
+"trampa": "El adjetivo cambia según el sustantivo: 'une femme intelligente' (con -e), 'un homme intelligent' (sin -e).",
+"ejemplos": [
+{"frase":"C'est une femme intelligente.","traduccion":"Es una mujer inteligente."},
+{"frase":"Un petit chien.","traduccion":"Un perro pequeño."},
+{"frase":"Ils sont beaux.","traduccion":"Ellos son guapos."}
+],
+"ejercicios": [
+{"tipo":"hueco","enunciado":"Elle est grand___. (femenino)","respuesta":"grande"},
+{"tipo":"hueco","enunciado":"Ils sont grand___. (plural)","respuesta":"grands"},
+{"tipo":"hueco","enunciado":"Une femme intelligent___.","respuesta":"intelligente"},
+{"tipo":"hueco","enunciado":"Plural de 'beau' = ___.","respuesta":"beaux"},
+{"tipo":"opcion_multiple","enunciado":"Marie est ___.","opciones":["grand","grande"],"respuesta":"grande"},
+{"tipo":"opcion_multiple","enunciado":"'una mujer inteligente' =","opciones":["une femme intelligente","une intelligente femme"],"respuesta":"une femme intelligente"},
+{"tipo":"opcion_multiple","enunciado":"'un perro pequeño' =","opciones":["un petit chien","un chien petit"],"respuesta":"un petit chien"},
+{"tipo":"ordenar","enunciado":"Ordena: es una mujer inteligente.","opciones":["c'est","une","femme","intelligente"],"respuesta":"c'est une femme intelligente"},
+{"tipo":"ordenar","enunciado":"Ordena: él es alto.","opciones":["il","est","grand"],"respuesta":"il est grand"},
+{"tipo":"ordenar","enunciado":"Ordena: un perro pequeño.","opciones":["un","petit","chien"],"respuesta":"un petit chien"},
+{"tipo":"corregir_error","enunciado":"Elle est grand.","respuesta":"Elle est grande."},
+{"tipo":"corregir_error","enunciado":"Une intelligente femme.","respuesta":"Une femme intelligente."},
+{"tipo":"corregir_error","enunciado":"Ils sont beau.","respuesta":"Ils sont beaux."},
+{"tipo":"traducir","enunciado":"Es una mujer inteligente.","respuesta":"C'est une femme intelligente.","aceptadas":["c'est une femme intelligente"]},
+{"tipo":"traducir","enunciado":"Un perro pequeño.","respuesta":"Un petit chien.","aceptadas":["un petit chien"]}
+] }

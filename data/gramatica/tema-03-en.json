@@ -1,0 +1,25 @@
+{ "tema": 3, "idioma": "en", "titulo": "Artículos a / an / the y el origen",
+"regla": "Los artículos: 'a' antes de consonante (a country), 'an' antes de sonido vocálico (an English student), 'the' cuando es algo específico (the city). Para preguntar el origen: 'Where are you from?' y se responde 'I'm from Peru.' Con nombres de países no se usa artículo.",
+"trampa": "Se usa 'an' por el SONIDO, no la letra: 'an English book' pero 'a university' (suena 'yu').",
+"ejemplos": [
+{"frase":"Peru is a country.","traduccion":"Perú es un país."},
+{"frase":"I'm from Peru.","traduccion":"Soy de Perú."},
+{"frase":"Where are you from?","traduccion":"¿De dónde eres?"}
+],
+"ejercicios": [
+{"tipo":"hueco","enunciado":"Peru is ___ country.","respuesta":"a"},
+{"tipo":"hueco","enunciado":"English is ___ language.","respuesta":"a"},
+{"tipo":"hueco","enunciado":"Where are you ___?","respuesta":"from"},
+{"tipo":"hueco","enunciado":"I live in ___ city.","respuesta":"a"},
+{"tipo":"opcion_multiple","enunciado":"He is ___ English student.","opciones":["a","an","the"],"respuesta":"an"},
+{"tipo":"opcion_multiple","enunciado":"Where ___ you from?","opciones":["are","is","am"],"respuesta":"are"},
+{"tipo":"opcion_multiple","enunciado":"___ are you from? — From Canada.","opciones":["Where","Who","What"],"respuesta":"Where"},
+{"tipo":"ordenar","enunciado":"Ordena: ¿de dónde eres?","opciones":["where","are","you","from"],"respuesta":"where are you from"},
+{"tipo":"ordenar","enunciado":"Ordena: soy de Perú.","opciones":["I","am","from","Peru"],"respuesta":"I am from Peru"},
+{"tipo":"ordenar","enunciado":"Ordena: Perú es un país.","opciones":["Peru","is","a","country"],"respuesta":"Peru is a country"},
+{"tipo":"corregir_error","enunciado":"I am from the Peru.","respuesta":"I am from Peru."},
+{"tipo":"corregir_error","enunciado":"He is a English student.","respuesta":"He is an English student."},
+{"tipo":"corregir_error","enunciado":"Where you are from?","respuesta":"Where are you from?"},
+{"tipo":"traducir","enunciado":"¿De dónde eres?","respuesta":"Where are you from?","aceptadas":["where are you from"]},
+{"tipo":"traducir","enunciado":"Soy de Canadá.","respuesta":"I am from Canada.","aceptadas":["I'm from Canada"]}
+] }

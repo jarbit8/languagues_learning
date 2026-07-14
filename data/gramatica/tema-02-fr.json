@@ -1,0 +1,25 @@
+{ "tema": 2, "idioma": "fr", "titulo": "Avoir, la edad y la negación ne... pas",
+"regla": "El verbo 'avoir' (tener): j'ai, tu as, il/elle a, nous avons, vous avez, ils/elles ont. La edad va con 'avoir': 'j'ai 20 ans' (literalmente: tengo 20 años). Para negar se rodea el verbo con 'ne... pas': je ne suis pas, il n'a pas.",
+"trampa": "La edad va con 'avoir', no con 'être': se dice 'j'ai 20 ans', nunca 'je suis 20 ans'.",
+"ejemplos": [
+{"frase":"J'ai vingt ans.","traduccion":"Tengo veinte años."},
+{"frase":"Je n'ai pas dix ans.","traduccion":"No tengo diez años."},
+{"frase":"Quel âge as-tu ?","traduccion":"¿Cuántos años tienes?"}
+],
+"ejercicios": [
+{"tipo":"hueco","enunciado":"J'___ vingt ans.","respuesta":"ai"},
+{"tipo":"hueco","enunciado":"Tu ___ dix ans.","respuesta":"as"},
+{"tipo":"hueco","enunciado":"Il ___ trente ans.","respuesta":"a"},
+{"tipo":"hueco","enunciado":"Vous ___ quel âge ?","respuesta":"avez"},
+{"tipo":"opcion_multiple","enunciado":"Elle ___ quinze ans.","opciones":["ai","as","a","ont"],"respuesta":"a"},
+{"tipo":"opcion_multiple","enunciado":"Ils ___ vingt ans.","opciones":["a","ont","avez"],"respuesta":"ont"},
+{"tipo":"opcion_multiple","enunciado":"Je ne suis ___ étudiant.","opciones":["pas","non","ne"],"respuesta":"pas"},
+{"tipo":"ordenar","enunciado":"Ordena: ¿cuántos años tienes?","opciones":["quel","âge","as-tu"],"respuesta":"quel âge as-tu"},
+{"tipo":"ordenar","enunciado":"Ordena: tú tienes diez años.","opciones":["tu","as","dix","ans"],"respuesta":"tu as dix ans"},
+{"tipo":"ordenar","enunciado":"Ordena: él tiene treinta años.","opciones":["il","a","trente","ans"],"respuesta":"il a trente ans"},
+{"tipo":"corregir_error","enunciado":"Je suis vingt ans.","respuesta":"J'ai vingt ans."},
+{"tipo":"corregir_error","enunciado":"Tu a dix ans.","respuesta":"Tu as dix ans."},
+{"tipo":"corregir_error","enunciado":"Elle ont quinze ans.","respuesta":"Elle a quinze ans."},
+{"tipo":"traducir","enunciado":"Tengo veinte años.","respuesta":"J'ai vingt ans.","aceptadas":["j'ai vingt ans"]},
+{"tipo":"traducir","enunciado":"¿Cuántos años tienes?","respuesta":"Quel âge as-tu ?","aceptadas":["quel âge as-tu","quel age as-tu","quel âge avez-vous"]}
+] }

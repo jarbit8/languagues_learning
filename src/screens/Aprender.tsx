@@ -3,6 +3,7 @@ import { useLiveQuery } from 'dexie-react-hooks'
 import { temaEnCurso } from '../lib/progreso'
 import { getVocabPack } from '../data/packs'
 import Vocabulario from './Vocabulario'
+import Gramatica from './Gramatica'
 
 export default function Aprender() {
   const tema = useLiveQuery(() => temaEnCurso(), [], 1)
@@ -34,11 +35,9 @@ export default function Aprender() {
         tema ? (
           <Vocabulario tema={tema} />
         ) : null
-      ) : (
-        <p className="tarjeta text-slate-500 dark:text-slate-400">
-          Las lecciones de gramática (inglés y francés) llegan en la Fase 2.
-        </p>
-      )}
+      ) : tema ? (
+        <Gramatica tema={tema} />
+      ) : null}
     </div>
   )
 }

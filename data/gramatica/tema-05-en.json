@@ -1,0 +1,25 @@
+{ "tema": 5, "idioma": "en", "titulo": "Adjetivos y plurales irregulares",
+"regla": "En inglés el adjetivo va ANTES del sustantivo y no cambia (a tall man, tall women). Algunos plurales son irregulares: man→men, woman→women, child→children, person→people.",
+"trampa": "El adjetivo nunca lleva plural ni va después: se dice 'tall students', no 'talls students' ni 'students tall'.",
+"ejemplos": [
+{"frase":"She is a tall woman.","traduccion":"Ella es una mujer alta."},
+{"frase":"They are happy children.","traduccion":"Son niños felices."},
+{"frase":"He is a kind man.","traduccion":"Él es un hombre amable."}
+],
+"ejercicios": [
+{"tipo":"hueco","enunciado":"Plural de 'child' es ___.","respuesta":"children"},
+{"tipo":"hueco","enunciado":"Plural de 'man' es ___.","respuesta":"men"},
+{"tipo":"hueco","enunciado":"Plural de 'woman' es ___.","respuesta":"women"},
+{"tipo":"hueco","enunciado":"Plural de 'person' es ___.","respuesta":"people"},
+{"tipo":"opcion_multiple","enunciado":"Orden correcto:","opciones":["a tall man","a man tall","tall a man"],"respuesta":"a tall man"},
+{"tipo":"opcion_multiple","enunciado":"They are ___ students.","opciones":["happy","happies","happys"],"respuesta":"happy"},
+{"tipo":"opcion_multiple","enunciado":"Plural de 'child':","opciones":["childs","children","childrens"],"respuesta":"children"},
+{"tipo":"ordenar","enunciado":"Ordena: ella es una mujer alta.","opciones":["she","is","a","tall","woman"],"respuesta":"she is a tall woman"},
+{"tipo":"ordenar","enunciado":"Ordena: él es un niño feliz.","opciones":["he","is","a","happy","child"],"respuesta":"he is a happy child"},
+{"tipo":"ordenar","enunciado":"Ordena: son personas amables.","opciones":["they","are","kind","people"],"respuesta":"they are kind people"},
+{"tipo":"corregir_error","enunciado":"She is a woman tall.","respuesta":"She is a tall woman."},
+{"tipo":"corregir_error","enunciado":"They are talls men.","respuesta":"They are tall men."},
+{"tipo":"corregir_error","enunciado":"They are three childs.","respuesta":"They are three children."},
+{"tipo":"traducir","enunciado":"Ella es una mujer alta.","respuesta":"She is a tall woman.","aceptadas":["she is a tall woman"]},
+{"tipo":"traducir","enunciado":"Son niños felices.","respuesta":"They are happy children.","aceptadas":["they are happy children"]}
+] }
