@@ -1,0 +1,8 @@
+{ "bloque": 3, "idioma": "fr", "titulo": "Annonce : Café Central",
+"texto": "Café Central — ouvert tous les jours ! Nous avons du café, du thé et des jus frais. Petit-déjeuner de 7h à 11h : pain, œufs et fruits. Déjeuner de midi à 15h : salade, poulet, riz et soupe. Les prix sont bon marché : un café coûte deux dollars, un sandwich coûte cinq dollars. Nous sommes près du parc, à côté de la banque. Vous pouvez payer par carte ou en espèces. Venez nous voir !",
+"preguntas": [
+{"tipo":"vf","enunciado":"El café está cerrado los domingos.","respuesta":"falso"},
+{"tipo":"vf","enunciado":"Se puede pagar con tarjeta.","respuesta":"verdadero"},
+{"tipo":"opcion_multiple","enunciado":"¿Cuánto cuesta un café?","opciones":["deux dollars","cinq dollars","dix dollars"],"respuesta":"deux dollars"},
+{"tipo":"opcion_multiple","enunciado":"¿Dónde está el café?","opciones":["près de la gare","à côté de la banque","au centre-ville"],"respuesta":"à côté de la banque"}
+] }

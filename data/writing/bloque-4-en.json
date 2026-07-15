@@ -1,0 +1,4 @@
+{ "bloque": 4, "idioma": "en", "consigna": "Escribe un email a un amigo contándole un viaje que hiciste y tus planes para el futuro.",
+"minPalabras": 30, "maxPalabras": 40,
+"respuestaModelo": "Hi! Last year I went to Canada. I visited museums and I ate a lot of good food. I'm going to study French next year because I want to live there. I'm going to practise every day. What are your plans?",
+"checklist": ["Usé un saludo y una despedida", "Usé un verbo en pasado (regular o irregular)", "Conté una experiencia de viaje", "Usé going to para un plan futuro", "Hice una pregunta final", "Escribí entre 30 y 40 palabras"] }

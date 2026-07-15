@@ -1,0 +1,4 @@
+{ "bloque": 4, "idioma": "fr", "consigna": "Écris un e-mail à un ami pour lui raconter un voyage que tu as fait et tes projets pour l'avenir.",
+"minPalabras": 30, "maxPalabras": 40,
+"respuestaModelo": "Salut ! L'année dernière, je suis allé au Canada. J'ai visité des musées et j'ai mangé beaucoup de bonne nourriture. Je vais étudier le français l'année prochaine parce que je veux vivre là-bas. Je vais pratiquer tous les jours. Quels sont tes projets ?",
+"checklist": ["Usé un saludo y una despedida", "Usé el passé composé (avoir o être)", "Conté una experiencia de viaje", "Usé el futur proche para un plan futuro", "Hice una pregunta final", "Escribí entre 30 y 40 palabras"] }

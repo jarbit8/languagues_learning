@@ -1,0 +1,4 @@
+{ "bloque": 3, "idioma": "en", "consigna": "Escribe un email a un amigo invitándolo a un restaurante: dile qué se puede comer, cómo llegar y qué tiempo hace.",
+"minPalabras": 30, "maxPalabras": 40,
+"respuestaModelo": "Hi! Do you want to have dinner at a new restaurant? They have salad, chicken and rice. It's near the park, turn left at the corner. The weather is nice and sunny today. Can you come at eight o'clock? See you there!",
+"checklist": ["Usé un saludo y una despedida", "Mencioné comida o bebida", "Di indicaciones para llegar", "Mencioné el clima", "Hice una pregunta con can/would", "Escribí entre 30 y 40 palabras"] }

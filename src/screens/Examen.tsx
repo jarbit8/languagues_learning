@@ -2,17 +2,29 @@ import { useState } from 'react'
 import { useLiveQuery } from 'dexie-react-hooks'
 import { Link } from 'react-router-dom'
 import type { Pregunta } from '../types'
-import { temaEnCurso, estadoExamenTema, registrarExamenTema } from '../lib/progreso'
+import {
+  temaEnCurso,
+  estadoExamenTema,
+  registrarExamenTema,
+  bloqueEnCurso,
+  estadoExamenBloque,
+  estadoExamenFinal,
+  getProgresoNivel
+} from '../lib/progreso'
 import { getVocabPack } from '../data/packs'
 import { construirExamenDiario, idsExamenDiario, marcarExaminadasHoy } from '../lib/examenDiario'
 import { construirExamenTema } from '../lib/examenTema'
 import { registrarResultado } from '../lib/srs'
 import ExamRunner from '../components/ExamRunner'
+import ExamenBloque from './ExamenBloque'
+import ExamenFinal from './ExamenFinal'
 
 type Vista =
   | { modo: 'hub' }
   | { modo: 'diario'; preguntas: Pregunta[] }
   | { modo: 'tema'; tema: number; preguntas: Pregunta[] }
+  | { modo: 'bloque'; bloque: number }
+  | { modo: 'final' }
   | { modo: 'fin'; titulo: string; aciertos: number; total: number; nota?: string }
 
 async function actualizarSrs(p: Pregunta, acierto: boolean) {
@@ -25,9 +37,13 @@ export default function Examen() {
   const info = useLiveQuery(async () => {
     const tema = await temaEnCurso()
     const pendientes = (await idsExamenDiario()).length
-    const gate = await estadoExamenTema(tema)
+    const gateTema = await estadoExamenTema(tema)
     const pack = getVocabPack(tema)
-    return { tema, titulo: pack?.titulo ?? '', pendientes, gate }
+    const bloque = await bloqueEnCurso()
+    const gateBloque = await estadoExamenBloque(bloque)
+    const gateFinal = await estadoExamenFinal()
+    const nivel = await getProgresoNivel()
+    return { tema, titulo: pack?.titulo ?? '', pendientes, gateTema, bloque, gateBloque, gateFinal, nivel }
   }, [])
 
   async function iniciarDiario() {
@@ -41,6 +57,14 @@ export default function Examen() {
 
   function iniciarTema(tema: number) {
     setVista({ modo: 'tema', tema, preguntas: construirExamenTema(tema) })
+  }
+
+  if (vista.modo === 'bloque') {
+    return <ExamenBloque bloque={vista.bloque} onSalir={() => setVista({ modo: 'hub' })} />
+  }
+
+  if (vista.modo === 'final') {
+    return <ExamenFinal onSalir={() => setVista({ modo: 'hub' })} />
   }
 
   if (vista.modo === 'diario') {
@@ -124,7 +148,9 @@ export default function Examen() {
 
   // hub
   if (!info) return <p className="tarjeta">Cargando…</p>
-  const g = info.gate
+  const gt = info.gateTema
+  const gb = info.gateBloque
+  const gf = info.gateFinal
   return (
     <div className="flex flex-col gap-4">
       <h1 className="text-2xl font-bold">Exámenes</h1>
@@ -141,35 +167,71 @@ export default function Examen() {
       </button>
 
       <button
-        onClick={() => g.disponible && iniciarTema(info.tema)}
-        disabled={!g.disponible}
-        className={`tarjeta flex items-center gap-3 text-left ${g.disponible ? '' : 'opacity-70'}`}
+        onClick={() => gt.disponible && iniciarTema(info.tema)}
+        disabled={!gt.disponible}
+        className={`tarjeta flex items-center gap-3 text-left ${gt.disponible ? '' : 'opacity-70'}`}
       >
-        <span className="text-2xl">{g.disponible ? '🎯' : '🔒'}</span>
+        <span className="text-2xl">{gt.disponible ? '🎯' : '🔒'}</span>
         <div className="flex-1">
           <p className="font-semibold">Examen de tema {info.tema}</p>
-          {g.disponible ? (
+          {gt.disponible ? (
             <p className="text-sm text-emerald-600 dark:text-emerald-400">Disponible · aprueba con 80%</p>
           ) : (
             <p className="text-sm text-slate-500 dark:text-slate-400">
-              Falta: {g.faltaVocab ? `vocabulario (${g.aprendidas}/${g.total})` : ''}
-              {g.faltaVocab && (g.faltaGramEn || g.faltaGramFr) ? ' · ' : ''}
-              {g.faltaGramEn ? 'gramática EN' : ''}
-              {g.faltaGramEn && g.faltaGramFr ? ' y ' : ''}
-              {g.faltaGramFr ? 'gramática FR' : ''}
+              Falta: {gt.faltaVocab ? `vocabulario (${gt.aprendidas}/${gt.total})` : ''}
+              {gt.faltaVocab && (gt.faltaGramEn || gt.faltaGramFr) ? ' · ' : ''}
+              {gt.faltaGramEn ? 'gramática EN' : ''}
+              {gt.faltaGramEn && gt.faltaGramFr ? ' y ' : ''}
+              {gt.faltaGramFr ? 'gramática FR' : ''}
             </p>
           )}
         </div>
         <span className="text-slate-400">›</span>
       </button>
 
-      <div className="tarjeta flex items-center gap-3 opacity-60">
-        <span className="text-2xl">🔒</span>
+      <button
+        onClick={() => gb.disponible && setVista({ modo: 'bloque', bloque: info.bloque })}
+        disabled={!gb.disponible}
+        className={`tarjeta flex items-center gap-3 text-left ${gb.disponible ? '' : 'opacity-70'}`}
+      >
+        <span className="text-2xl">{gb.disponible ? '🧩' : '🔒'}</span>
         <div className="flex-1">
-          <p className="font-semibold">Examen de bloque · Examen final</p>
-          <p className="text-sm text-slate-500 dark:text-slate-400">Llegan en la Fase 3</p>
+          <p className="font-semibold">Examen de bloque {info.bloque}</p>
+          {gb.disponible ? (
+            <p className="text-sm text-emerald-600 dark:text-emerald-400">
+              Disponible · 4 habilidades · aprueba con 75%
+            </p>
+          ) : (
+            <p className="text-sm text-slate-500 dark:text-slate-400">
+              Faltan temas: {gb.temasFaltantes.join(', ')}
+            </p>
+          )}
         </div>
-      </div>
+        <span className="text-slate-400">›</span>
+      </button>
+
+      <button
+        onClick={() => gf.disponible && setVista({ modo: 'final' })}
+        disabled={!gf.disponible}
+        className={`tarjeta flex items-center gap-3 text-left ${gf.disponible ? '' : 'opacity-70'}`}
+      >
+        <span className="text-2xl">{gf.disponible ? '🏆' : '🔒'}</span>
+        <div className="flex-1">
+          <p className="font-semibold">Examen final A1</p>
+          {info.nivel?.estado === 'aprobado' ? (
+            <p className="text-sm text-emerald-600 dark:text-emerald-400">¡Nivel certificado! 🎓</p>
+          ) : gf.disponible ? (
+            <p className="text-sm text-emerald-600 dark:text-emerald-400">
+              Disponible · 85% vocab / 80% habilidades
+            </p>
+          ) : (
+            <p className="text-sm text-slate-500 dark:text-slate-400">
+              Faltan bloques: {gf.bloquesFaltantes.join(', ')}
+            </p>
+          )}
+        </div>
+        <span className="text-slate-400">›</span>
+      </button>
 
       <Link to="/aprender" className="text-center text-sm text-slate-500 underline dark:text-slate-400">
         Ir a estudiar el tema

@@ -1,0 +1,4 @@
+{ "bloque": 2, "idioma": "en", "consigna": "Escribe un email a un amigo contándole tu rutina diaria: a qué hora te levantas, qué haces y cómo es tu casa.",
+"minPalabras": 30, "maxPalabras": 40,
+"respuestaModelo": "Hi! I get up at six o'clock every day. I have breakfast and I go to work by bus. I live in a small apartment with a bedroom, a kitchen and a bathroom. In the evening, I clean my house and I go to bed at eleven. See you!",
+"checklist": ["Usé un saludo y una despedida", "Dije a qué hora te levantas", "Describí tu rutina con presente simple", "Describiste tu casa", "Usaste algún adverbio de frecuencia", "Escribí entre 30 y 40 palabras"] }

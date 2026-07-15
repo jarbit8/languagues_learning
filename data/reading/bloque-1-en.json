@@ -1,0 +1,8 @@
+{ "bloque": 1, "idioma": "en", "titulo": "Un email de presentación",
+"texto": "Hello! My name is Laura. I'm from Canada, but I live in Peru now. I'm 28 years old. I'm a teacher and I work at a school in Arequipa. I have one brother and one sister. My brother is a doctor and my sister is a student. My family is very kind. Nice to meet you! See you soon, Laura.",
+"preguntas": [
+{"tipo":"vf","enunciado":"Laura es de Perú.","respuesta":"falso"},
+{"tipo":"vf","enunciado":"Laura tiene un hermano y una hermana.","respuesta":"verdadero"},
+{"tipo":"opcion_multiple","enunciado":"¿Cuál es la profesión de Laura?","opciones":["doctor","teacher","student"],"respuesta":"teacher"},
+{"tipo":"opcion_multiple","enunciado":"¿Cuántos años tiene Laura?","opciones":["18","28","38"],"respuesta":"28"}
+] }

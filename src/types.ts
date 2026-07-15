@@ -121,3 +121,82 @@ export interface ProgresoTema {
   gramaticaEnCompletada?: boolean
   gramaticaFrCompletada?: boolean
 }
+
+// --- Speaking IA ---
+
+export interface ErrorSpeaking {
+  dijo: string
+  correcto: string
+  porque: string
+}
+
+export interface FeedbackSpeaking {
+  tipo: 'feedback'
+  bien: string
+  errores: ErrorSpeaking[]
+  nota?: number
+}
+
+// --- Bloques y nivel ---
+
+export interface NotasBloque {
+  listening?: number
+  reading?: number
+  writing?: number
+  speaking?: number
+}
+
+export interface ProgresoBloque {
+  bloqueId: number
+  estado: EstadoTema
+  notas?: NotasBloque
+  intentos: number
+}
+
+export interface ProgresoNivel {
+  id: string
+  estado: EstadoTema
+  notaVocab?: number
+  notaHabilidades?: number
+  intentos: number
+}
+
+export type TipoExamenHistorial = 'tema' | 'bloque' | 'final'
+
+export interface HistorialExamen {
+  id?: number
+  tipo: TipoExamenHistorial
+  ref: number | string
+  fecha: number
+  nota: number
+  aprobado: boolean
+}
+
+// --- Reading (packs en /data/reading) ---
+
+export interface PreguntaReading {
+  tipo: 'vf' | 'opcion_multiple'
+  enunciado: string
+  opciones?: string[]
+  respuesta: string
+}
+
+export interface ReadingPack {
+  bloque: number
+  idioma: Idioma
+  titulo: string
+  texto: string
+  preguntas: PreguntaReading[]
+}
+
+// --- Writing (packs en /data/writing) ---
+
+export interface WritingPack {
+  bloque: number
+  idioma: Idioma
+  consigna: string
+  minPalabras: number
+  maxPalabras: number
+  respuestaModelo: string
+  checklist: string[]
+}

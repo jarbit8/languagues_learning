@@ -1,0 +1,4 @@
+{ "bloque": 3, "idioma": "fr", "consigna": "Écris un e-mail à un ami pour l'inviter dans un restaurant : dis-lui ce qu'on peut manger, comment y arriver et quel temps il fait.",
+"minPalabras": 30, "maxPalabras": 40,
+"respuestaModelo": "Salut ! Tu veux dîner dans un nouveau restaurant ? Ils ont de la salade, du poulet et du riz. C'est près du parc, tourne à gauche au coin. Il fait beau et ensoleillé aujourd'hui. Tu peux venir à huit heures ? À bientôt !",
+"checklist": ["Usé un saludo y una despedida", "Mencioné comida o bebida", "Di indicaciones para llegar", "Mencioné el clima", "Hice una pregunta con pouvoir/vouloir", "Escribí entre 30 y 40 palabras"] }

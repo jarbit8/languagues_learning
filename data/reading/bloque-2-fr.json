@@ -1,0 +1,8 @@
+{ "bloque": 2, "idioma": "fr", "titulo": "Mon emploi du temps",
+"texto": "Le lundi, je me lève à six heures et je vais au travail en bus. Le mardi, j'ai un cours de français à sept heures et demie du soir. Le mercredi, je nettoie toujours ma maison. Le jeudi, je fais du shopping et j'achète des nouveaux vêtements. Le vendredi, je dîne avec ma famille à huit heures. Le week-end, je me repose à la maison et je lis des livres.",
+"preguntas": [
+{"tipo":"vf","enunciado":"El martes tiene clase de francés.","respuesta":"verdadero"},
+{"tipo":"vf","enunciado":"El jueves limpia la casa.","respuesta":"falso"},
+{"tipo":"opcion_multiple","enunciado":"¿A qué hora es el curso de francés?","opciones":["6:00","7:30","8:00"],"respuesta":"7:30"},
+{"tipo":"opcion_multiple","enunciado":"¿Qué hace el viernes?","opciones":["shopping","dîner en famille","nettoyer la maison"],"respuesta":"dîner en famille"}
+] }

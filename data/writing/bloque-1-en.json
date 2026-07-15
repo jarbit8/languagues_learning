@@ -1,0 +1,4 @@
+{ "bloque": 1, "idioma": "en", "consigna": "Escribe un email a un nuevo amigo: preséntate (nombre, edad, nacionalidad), y cuéntale sobre tu familia y tu profesión.",
+"minPalabras": 30, "maxPalabras": 40,
+"respuestaModelo": "Hello! My name is Joel. I'm 22 years old and I'm Peruvian. I'm a student and I study computer science. I have one sister, she's young and kind. My father is an engineer. Nice to meet you! Write back soon.",
+"checklist": ["Usé un saludo y una despedida", "Dije mi nombre y mi edad", "Dije mi nacionalidad", "Hablé de mi familia", "Hablé de mi profesión o estudios", "Escribí entre 30 y 40 palabras"] }

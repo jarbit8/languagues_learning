@@ -1,0 +1,8 @@
+{ "bloque": 2, "idioma": "en", "titulo": "Mi horario semanal",
+"texto": "On Monday I get up at six and I go to work by bus. On Tuesday I have a French class at half past seven in the evening. On Wednesday I always clean my house. On Thursday I go shopping and I buy new clothes. On Friday I have dinner with my family at eight o'clock. On the weekend I rest at home and I read books.",
+"preguntas": [
+{"tipo":"vf","enunciado":"El martes tiene clase de francés.","respuesta":"verdadero"},
+{"tipo":"vf","enunciado":"El jueves limpia la casa.","respuesta":"falso"},
+{"tipo":"opcion_multiple","enunciado":"¿A qué hora es la clase de francés?","opciones":["6:00","7:30","8:00"],"respuesta":"7:30"},
+{"tipo":"opcion_multiple","enunciado":"¿Qué hace el viernes?","opciones":["shopping","dinner with family","clean the house"],"respuesta":"dinner with family"}
+] }

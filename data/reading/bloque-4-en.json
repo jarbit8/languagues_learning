@@ -1,0 +1,8 @@
+{ "bloque": 4, "idioma": "en", "titulo": "Un email sobre un viaje",
+"texto": "Hi Paul! Last month I went to Canada. I took the plane from Lima and I arrived in Toronto. I stayed at a hotel for five days. I visited museums and I ate a lot of good food, but I had a headache the first day! I met new people and I practised my English every day. Next year, I'm going to study French too, because I want to live in Canada. See you soon, Joel.",
+"preguntas": [
+{"tipo":"vf","enunciado":"Joel viajó el mes pasado.","respuesta":"verdadero"},
+{"tipo":"vf","enunciado":"Joel tuvo dolor de estómago el primer día.","respuesta":"falso"},
+{"tipo":"opcion_multiple","enunciado":"¿A qué ciudad llegó Joel?","opciones":["Toronto","Montreal","Vancouver"],"respuesta":"Toronto"},
+{"tipo":"opcion_multiple","enunciado":"¿Qué va a estudiar el próximo año?","opciones":["Spanish","French","German"],"respuesta":"French"}
+] }

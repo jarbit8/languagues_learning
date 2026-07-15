@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Listening from './Listening'
+import Conversacion from './Conversacion'
 
 export default function Hablar() {
   const [sub, setSub] = useState<'chat' | 'listening'>('chat')
@@ -22,14 +23,7 @@ export default function Hablar() {
         ))}
       </div>
 
-      {sub === 'chat' ? (
-        <p className="tarjeta text-slate-500 dark:text-slate-400">
-          La conversación con IA llega a continuación. Necesitarás pegar tu API key de Anthropic en
-          Ajustes; queda solo en tu dispositivo.
-        </p>
-      ) : (
-        <Listening />
-      )}
+      {sub === 'chat' ? <Conversacion /> : <Listening />}
     </div>
   )
 }

@@ -1,0 +1,8 @@
+{ "bloque": 1, "idioma": "fr", "titulo": "Un e-mail de présentation",
+"texto": "Bonjour ! Je m'appelle Laura. Je viens du Canada, mais j'habite au Pérou maintenant. J'ai vingt-huit ans. Je suis professeure et je travaille dans une école à Arequipa. J'ai un frère et une sœur. Mon frère est médecin et ma sœur est étudiante. Ma famille est très gentille. Enchantée ! À bientôt, Laura.",
+"preguntas": [
+{"tipo":"vf","enunciado":"Laura viene del Perú.","respuesta":"falso"},
+{"tipo":"vf","enunciado":"Laura tiene un hermano y una hermana.","respuesta":"verdadero"},
+{"tipo":"opcion_multiple","enunciado":"¿Cuál es la profesión de Laura?","opciones":["médecin","professeure","étudiante"],"respuesta":"professeure"},
+{"tipo":"opcion_multiple","enunciado":"¿Cuántos años tiene Laura?","opciones":["dix-huit","vingt-huit","trente-huit"],"respuesta":"vingt-huit"}
+] }

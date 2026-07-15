@@ -1,13 +1,10 @@
 import type { Idioma, LineaDialogo } from '../types'
+import { bloqueDeTema } from './curriculum'
 
 function vocesPara(idioma: Idioma): SpeechSynthesisVoice[] {
   if (typeof window === 'undefined' || !('speechSynthesis' in window)) return []
   const prefijo = idioma === 'en' ? 'en' : 'fr'
   return window.speechSynthesis.getVoices().filter((v) => v.lang.toLowerCase().startsWith(prefijo))
-}
-
-export function bloqueDeTema(tema: number): number {
-  return Math.ceil(tema / 6)
 }
 
 // Rate 0.85 en bloques 1-2, 0.95 en bloques 3-4 (skill listening-engine).

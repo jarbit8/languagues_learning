@@ -1,0 +1,4 @@
+{ "bloque": 1, "idioma": "fr", "consigna": "Écris un e-mail à un nouvel ami : présente-toi (nom, âge, nationalité), et parle de ta famille et de ta profession.",
+"minPalabras": 30, "maxPalabras": 40,
+"respuestaModelo": "Bonjour ! Je m'appelle Joel. J'ai vingt-deux ans et je suis péruvien. Je suis étudiant et j'étudie l'informatique. J'ai une sœur, elle est jeune et gentille. Mon père est ingénieur. Enchanté ! Écris-moi bientôt.",
+"checklist": ["Usé un saludo y una despedida", "Dije mi nombre y mi edad", "Dije mi nacionalidad", "Hablé de mi familia", "Hablé de mi profesión o estudios", "Escribí entre 30 y 40 palabras"] }
