@@ -1,0 +1,16 @@
+{ "tema": 15, "idioma": "en", "titulo": "En la tienda",
+"lineas": [
+{"hablante":"A","texto":"How much is this bag?"},
+{"hablante":"B","texto":"It's twenty dollars."},
+{"hablante":"A","texto":"That's expensive. Do you have a cheaper one?"},
+{"hablante":"B","texto":"Yes, this one is ten dollars."},
+{"hablante":"A","texto":"Great, I'll take it. Can I pay by card?"},
+{"hablante":"B","texto":"Yes, of course."},
+{"hablante":"A","texto":"Here you are."},
+{"hablante":"B","texto":"Thank you, here is your receipt."}
+],
+"preguntas": [
+{"tipo":"opcion_multiple","enunciado":"¿Cuánto cuesta la mochila barata?","opciones":["twenty dollars","ten dollars","fifteen dollars"],"respuesta":"ten dollars"},
+{"tipo":"vf","enunciado":"A paga en efectivo.","respuesta":"falso"},
+{"tipo":"completar_dato","enunciado":"¿Qué le da B a A al final?","respuesta":"receipt","aceptadas":["the receipt"]}
+] }

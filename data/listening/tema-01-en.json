@@ -1,0 +1,16 @@
+{ "tema": 1, "idioma": "en", "titulo": "Primer día de clases",
+"lineas": [
+{"hablante":"A","texto":"Hello! My name is Ana. Nice to meet you."},
+{"hablante":"B","texto":"Hi Ana! I'm Paul. Nice to meet you too."},
+{"hablante":"A","texto":"How are you, Paul?"},
+{"hablante":"B","texto":"I'm fine, thank you. And you?"},
+{"hablante":"A","texto":"Very well, thanks!"},
+{"hablante":"B","texto":"Are you a student here?"},
+{"hablante":"A","texto":"Yes, I am. See you tomorrow!"},
+{"hablante":"B","texto":"Goodbye, Ana!"}
+],
+"preguntas": [
+{"tipo":"opcion_multiple","enunciado":"¿Cómo se llama la mujer?","opciones":["Ana","Paul","Maria"],"respuesta":"Ana"},
+{"tipo":"vf","enunciado":"Paul dice que está mal.","respuesta":"falso"},
+{"tipo":"completar_dato","enunciado":"¿Cómo se despiden al final?","respuesta":"goodbye","aceptadas":["bye","see you tomorrow"]}
+] }

@@ -1,0 +1,16 @@
+{ "tema": 10, "idioma": "fr", "titulo": "Décrire un appartement",
+"lineas": [
+{"hablante":"A","texto":"Ton appartement est grand ?"},
+{"hablante":"B","texto":"Non, il est petit, mais il est agréable."},
+{"hablante":"A","texto":"Il y a combien de pièces ?"},
+{"hablante":"B","texto":"Il y a trois pièces : une chambre, une cuisine et une salle de bains."},
+{"hablante":"A","texto":"Il y a un salon ?"},
+{"hablante":"B","texto":"Non, il n'y a pas de salon."},
+{"hablante":"A","texto":"Où est ton lit ?"},
+{"hablante":"B","texto":"Il est à côté de la fenêtre."}
+],
+"preguntas": [
+{"tipo":"opcion_multiple","enunciado":"¿Cuántas habitaciones hay?","opciones":["deux","trois","quatre"],"respuesta":"trois"},
+{"tipo":"vf","enunciado":"Hay una sala en el apartamento.","respuesta":"falso"},
+{"tipo":"completar_dato","enunciado":"¿Dónde está la cama?","respuesta":"à côté de la fenêtre","aceptadas":["a côté de la fenêtre"]}
+] }

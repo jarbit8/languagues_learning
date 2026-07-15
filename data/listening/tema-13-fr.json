@@ -1,0 +1,16 @@
+{ "tema": 13, "idioma": "fr", "titulo": "Au marché",
+"lineas": [
+{"hablante":"A","texto":"Vous avez des pommes ?"},
+{"hablante":"B","texto":"Oui, nous avons des pommes rouges et vertes."},
+{"hablante":"A","texto":"Je veux aussi du pain."},
+{"hablante":"B","texto":"Il n'y a pas de pain aujourd'hui, désolé."},
+{"hablante":"A","texto":"D'accord. Vous avez du lait ?"},
+{"hablante":"B","texto":"Oui, nous avons du lait et du fromage."},
+{"hablante":"A","texto":"Super, je prends du lait."},
+{"hablante":"B","texto":"Autre chose ?"}
+],
+"preguntas": [
+{"tipo":"opcion_multiple","enunciado":"¿Qué NO hay hoy en el mercado?","opciones":["des pommes","du pain","du lait"],"respuesta":"du pain"},
+{"tipo":"vf","enunciado":"Hay manzanas rojas y verdes.","respuesta":"verdadero"},
+{"tipo":"completar_dato","enunciado":"¿Qué compra la persona A al final?","respuesta":"lait","aceptadas":["du lait"]}
+] }

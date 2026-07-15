@@ -1,0 +1,16 @@
+{ "tema": 18, "idioma": "en", "titulo": "Hablando del clima",
+"lineas": [
+{"hablante":"A","texto":"What's the weather like today?"},
+{"hablante":"B","texto":"It's sunny and warm."},
+{"hablante":"A","texto":"Is it going to rain tomorrow?"},
+{"hablante":"B","texto":"Yes, it's going to be rainy and windy."},
+{"hablante":"A","texto":"I don't like rain."},
+{"hablante":"B","texto":"I don't either. I prefer summer."},
+{"hablante":"A","texto":"Me too, it's very hot in summer!"},
+{"hablante":"B","texto":"Yes, but I love the sun."}
+],
+"preguntas": [
+{"tipo":"opcion_multiple","enunciado":"¿Cómo está el clima hoy?","opciones":["rainy","sunny","snowy"],"respuesta":"sunny"},
+{"tipo":"vf","enunciado":"Mañana va a llover.","respuesta":"verdadero"},
+{"tipo":"completar_dato","enunciado":"¿Qué estación prefieren ambos?","respuesta":"summer"}
+] }

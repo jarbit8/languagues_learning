@@ -1,4 +1,4 @@
-import type { Concepto, Ejercicio, Idioma, Pregunta } from '../types'
+import type { Concepto, Ejercicio, Idioma, Pregunta, PreguntaListening } from '../types'
 import { vocabPacks } from '../data/packs'
 
 export function baraja<T>(arr: T[]): T[] {
@@ -57,6 +57,30 @@ export function preguntaDeConcepto(concepto: Concepto): Pregunta {
     respuesta: lado.texto,
     aceptadas: [],
     palabraId: concepto.id
+  }
+}
+
+// Convierte una pregunta de listening en una pregunta para el runner.
+// 'vf' se traduce a opción múltiple Verdadero/Falso; el resto queda como texto libre.
+export function preguntaDeListening(p: PreguntaListening, idioma: Idioma): Pregunta {
+  if (p.tipo === 'vf') {
+    const respuesta = p.respuesta.toLowerCase() === 'verdadero' ? 'Verdadero' : 'Falso'
+    return {
+      tipo: 'opcion_multiple',
+      idioma,
+      enunciado: p.enunciado,
+      opciones: ['Verdadero', 'Falso'],
+      respuesta,
+      aceptadas: []
+    }
+  }
+  return {
+    tipo: p.tipo,
+    idioma,
+    enunciado: p.enunciado,
+    opciones: p.opciones,
+    respuesta: p.respuesta,
+    aceptadas: p.aceptadas ?? []
   }
 }
 

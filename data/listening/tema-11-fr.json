@@ -1,0 +1,16 @@
+{ "tema": 11, "idioma": "fr", "titulo": "Objet perdu",
+"lineas": [
+{"hablante":"A","texto":"Excusez-moi, j'ai perdu mon sac."},
+{"hablante":"B","texto":"De quelle couleur est-il ?"},
+{"hablante":"A","texto":"Il est noir et rouge."},
+{"hablante":"B","texto":"Qu'est-ce qu'il y a dans le sac ?"},
+{"hablante":"A","texto":"Mes clés, mon téléphone et un cahier."},
+{"hablante":"B","texto":"C'est ton sac ?"},
+{"hablante":"A","texto":"Oui ! Merci beaucoup !"},
+{"hablante":"B","texto":"De rien."}
+],
+"preguntas": [
+{"tipo":"opcion_multiple","enunciado":"¿De qué color es la mochila?","opciones":["bleu et vert","noir et rouge","blanc"],"respuesta":"noir et rouge"},
+{"tipo":"vf","enunciado":"En la mochila hay un libro de gramática.","respuesta":"falso"},
+{"tipo":"completar_dato","enunciado":"Nombra un objeto que había en la mochila.","respuesta":"clés","aceptadas":["cles","téléphone","cahier"]}
+] }

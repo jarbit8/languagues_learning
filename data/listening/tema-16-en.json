@@ -1,0 +1,16 @@
+{ "tema": 16, "idioma": "en", "titulo": "Recomendando lugares",
+"lineas": [
+{"hablante":"A","texto":"Is there a good museum in this city?"},
+{"hablante":"B","texto":"Yes, there is a great museum near the park."},
+{"hablante":"A","texto":"Can we walk there?"},
+{"hablante":"B","texto":"Yes, it's near, we can walk."},
+{"hablante":"A","texto":"Is it open on Sundays?"},
+{"hablante":"B","texto":"No, it's closed on Sundays."},
+{"hablante":"A","texto":"What about a good restaurant?"},
+{"hablante":"B","texto":"There's a nice one next to the library."}
+],
+"preguntas": [
+{"tipo":"opcion_multiple","enunciado":"¿Dónde está el museo?","opciones":["near the park","near the station","in the centre"],"respuesta":"near the park"},
+{"tipo":"vf","enunciado":"El museo está abierto los domingos.","respuesta":"falso"},
+{"tipo":"completar_dato","enunciado":"¿Dónde está el restaurante recomendado?","respuesta":"next to the library"}
+] }

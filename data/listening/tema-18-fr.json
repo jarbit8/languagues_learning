@@ -1,0 +1,16 @@
+{ "tema": 18, "idioma": "fr", "titulo": "Parler du temps",
+"lineas": [
+{"hablante":"A","texto":"Quel temps fait-il aujourd'hui ?"},
+{"hablante":"B","texto":"Il fait beau et doux."},
+{"hablante":"A","texto":"Il va pleuvoir demain ?"},
+{"hablante":"B","texto":"Oui, il va faire du vent et de la pluie."},
+{"hablante":"A","texto":"Je n'aime pas la pluie."},
+{"hablante":"B","texto":"Moi non plus. Je préfère l'été."},
+{"hablante":"A","texto":"Moi aussi, il fait très chaud en été !"},
+{"hablante":"B","texto":"Oui, mais j'adore le soleil."}
+],
+"preguntas": [
+{"tipo":"opcion_multiple","enunciado":"¿Cómo está el clima hoy?","opciones":["pluvieux","ensoleillé","neigeux"],"respuesta":"ensoleillé"},
+{"tipo":"vf","enunciado":"Mañana va a llover.","respuesta":"verdadero"},
+{"tipo":"completar_dato","enunciado":"¿Qué estación prefieren ambos?","respuesta":"été","aceptadas":["l'été","ete"]}
+] }

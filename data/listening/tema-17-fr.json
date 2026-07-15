@@ -1,0 +1,16 @@
+{ "tema": 17, "idioma": "fr", "titulo": "Demander son chemin",
+"lineas": [
+{"hablante":"A","texto":"Excusez-moi, où est la gare ?"},
+{"hablante":"B","texto":"Allez tout droit et tournez à gauche au coin."},
+{"hablante":"A","texto":"C'est loin ?"},
+{"hablante":"B","texto":"Non, c'est près. Cinq minutes à pied."},
+{"hablante":"A","texto":"Je peux prendre le bus ?"},
+{"hablante":"B","texto":"Oui, prenez le bus numéro dix."},
+{"hablante":"A","texto":"Merci beaucoup !"},
+{"hablante":"B","texto":"De rien, bon voyage !"}
+],
+"preguntas": [
+{"tipo":"opcion_multiple","enunciado":"¿Hacia dónde debe girar A?","opciones":["droite","gauche","tout droit"],"respuesta":"gauche"},
+{"tipo":"vf","enunciado":"La estación está lejos.","respuesta":"falso"},
+{"tipo":"completar_dato","enunciado":"¿Qué número de bus puede tomar?","respuesta":"dix","aceptadas":["numéro dix","10"]}
+] }

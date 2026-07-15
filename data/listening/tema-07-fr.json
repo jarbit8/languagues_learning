@@ -1,0 +1,16 @@
+{ "tema": 7, "idioma": "fr", "titulo": "Organiser la semaine",
+"lineas": [
+{"hablante":"A","texto":"Ton cours est quel jour ?"},
+{"hablante":"B","texto":"Mon cours est le mardi."},
+{"hablante":"A","texto":"Et c'est quand, ton anniversaire ?"},
+{"hablante":"B","texto":"Mon anniversaire est en juillet."},
+{"hablante":"A","texto":"Quelle est la date aujourd'hui ?"},
+{"hablante":"B","texto":"Aujourd'hui, c'est lundi, le 3 juin."},
+{"hablante":"A","texto":"À ce week-end, alors !"},
+{"hablante":"B","texto":"Oui, à samedi !"}
+],
+"preguntas": [
+{"tipo":"opcion_multiple","enunciado":"¿Qué día es el curso de B?","opciones":["lundi","mardi","samedi"],"respuesta":"mardi"},
+{"tipo":"vf","enunciado":"El cumpleaños de B es en julio.","respuesta":"verdadero"},
+{"tipo":"completar_dato","enunciado":"¿En qué día se ven este fin de semana?","respuesta":"samedi"}
+] }

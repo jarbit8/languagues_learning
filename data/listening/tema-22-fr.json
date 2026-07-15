@@ -1,0 +1,16 @@
+{ "tema": 22, "idioma": "fr", "titulo": "Problème avec le téléphone",
+"lineas": [
+{"hablante":"A","texto":"Mon téléphone ne marche pas."},
+{"hablante":"B","texto":"Qu'est-ce qui s'est passé hier ?"},
+{"hablante":"A","texto":"J'ai téléchargé une appli et il a arrêté de marcher."},
+{"hablante":"B","texto":"Tu as chargé la batterie ?"},
+{"hablante":"A","texto":"Oui, je l'ai chargée hier soir."},
+{"hablante":"B","texto":"Essaie de l'éteindre et de le rallumer."},
+{"hablante":"A","texto":"D'accord, je l'ai éteint."},
+{"hablante":"B","texto":"Maintenant allume-le. Ça marche ?"}
+],
+"preguntas": [
+{"tipo":"opcion_multiple","enunciado":"¿Qué pasó ayer?","opciones":["A perdió el teléfono","A descargó una app","A compró un teléfono"],"respuesta":"A descargó una app"},
+{"tipo":"vf","enunciado":"A no cargó la batería.","respuesta":"falso"},
+{"tipo":"completar_dato","enunciado":"¿Qué le dice B que haga con el teléfono?","respuesta":"éteindre et rallumer","aceptadas":["l'éteindre","l'allumer"]}
+] }

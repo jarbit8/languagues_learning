@@ -1,0 +1,16 @@
+{ "tema": 10, "idioma": "en", "titulo": "Describiendo un apartamento",
+"lineas": [
+{"hablante":"A","texto":"Is your apartment big?"},
+{"hablante":"B","texto":"No, it's small, but it's nice."},
+{"hablante":"A","texto":"How many rooms are there?"},
+{"hablante":"B","texto":"There are three rooms: a bedroom, a kitchen and a bathroom."},
+{"hablante":"A","texto":"Is there a living room?"},
+{"hablante":"B","texto":"No, there isn't a living room."},
+{"hablante":"A","texto":"Where is your bed?"},
+{"hablante":"B","texto":"It's next to the window."}
+],
+"preguntas": [
+{"tipo":"opcion_multiple","enunciado":"¿Cuántas habitaciones hay?","opciones":["two","three","four"],"respuesta":"three"},
+{"tipo":"vf","enunciado":"Hay una sala en el apartamento.","respuesta":"falso"},
+{"tipo":"completar_dato","enunciado":"¿Dónde está la cama?","respuesta":"next to the window","aceptadas":["next to the window"]}
+] }

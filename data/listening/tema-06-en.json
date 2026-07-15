@@ -1,0 +1,16 @@
+{ "tema": 6, "idioma": "en", "titulo": "Hablando de trabajo",
+"lineas": [
+{"hablante":"A","texto":"What do you do, Maria?"},
+{"hablante":"B","texto":"I'm a teacher. And you?"},
+{"hablante":"A","texto":"I'm a programmer. I work at a company."},
+{"hablante":"B","texto":"Do you like your job?"},
+{"hablante":"A","texto":"Yes, I like it a lot."},
+{"hablante":"B","texto":"Where is your office?"},
+{"hablante":"A","texto":"It's in the city centre."},
+{"hablante":"B","texto":"That's great!"}
+],
+"preguntas": [
+{"tipo":"opcion_multiple","enunciado":"¿Cuál es la profesión de Maria?","opciones":["programmer","teacher","doctor"],"respuesta":"teacher"},
+{"tipo":"vf","enunciado":"A le gusta su trabajo.","respuesta":"verdadero"},
+{"tipo":"completar_dato","enunciado":"¿Dónde está la oficina de A?","respuesta":"city centre","aceptadas":["the city centre"]}
+] }

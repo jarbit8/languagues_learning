@@ -1,0 +1,16 @@
+{ "tema": 7, "idioma": "en", "titulo": "Planeando la semana",
+"lineas": [
+{"hablante":"A","texto":"What day is your class?"},
+{"hablante":"B","texto":"My class is on Tuesday."},
+{"hablante":"A","texto":"And when is your birthday?"},
+{"hablante":"B","texto":"My birthday is in July."},
+{"hablante":"A","texto":"What is the date today?"},
+{"hablante":"B","texto":"Today is Monday, the third of June."},
+{"hablante":"A","texto":"See you on the weekend, then!"},
+{"hablante":"B","texto":"Yes, see you on Saturday!"}
+],
+"preguntas": [
+{"tipo":"opcion_multiple","enunciado":"¿Qué día es la clase de B?","opciones":["Monday","Tuesday","Saturday"],"respuesta":"Tuesday"},
+{"tipo":"vf","enunciado":"El cumpleaños de B es en julio.","respuesta":"verdadero"},
+{"tipo":"completar_dato","enunciado":"¿En qué día se ven este fin de semana?","respuesta":"Saturday"}
+] }

@@ -1,0 +1,16 @@
+{ "tema": 20, "idioma": "en", "titulo": "Planes para el fin de semana",
+"lineas": [
+{"hablante":"A","texto":"What do you do in your free time?"},
+{"hablante":"B","texto":"I like playing football and listening to music."},
+{"hablante":"A","texto":"Do you play an instrument?"},
+{"hablante":"B","texto":"Yes, I play the guitar."},
+{"hablante":"A","texto":"Cool! Do you want to play football on Saturday?"},
+{"hablante":"B","texto":"Yes, I love playing football!"},
+{"hablante":"A","texto":"Great, at the park at ten."},
+{"hablante":"B","texto":"Perfect, see you there!"}
+],
+"preguntas": [
+{"tipo":"opcion_multiple","enunciado":"¿Qué instrumento toca B?","opciones":["piano","guitar","drums"],"respuesta":"guitar"},
+{"tipo":"anota_la_hora","enunciado":"¿A qué hora quedan el sábado?","respuesta":"10:00","aceptadas":["ten","ten o'clock"]},
+{"tipo":"vf","enunciado":"Van a jugar fútbol en el parque.","respuesta":"verdadero"}
+] }

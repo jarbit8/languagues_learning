@@ -1,0 +1,16 @@
+{ "tema": 24, "idioma": "en", "titulo": "Hablando del futuro",
+"lineas": [
+{"hablante":"A","texto":"What are your plans for the future?"},
+{"hablante":"B","texto":"I'm going to move to Canada."},
+{"hablante":"A","texto":"That's a big plan! Why?"},
+{"hablante":"B","texto":"Because I want a better future, and I like the language."},
+{"hablante":"A","texto":"Are you going to study English and French?"},
+{"hablante":"B","texto":"Yes, I'm going to study both."},
+{"hablante":"A","texto":"When are you going to start?"},
+{"hablante":"B","texto":"I'm going to start soon!"}
+],
+"preguntas": [
+{"tipo":"opcion_multiple","enunciado":"¿Cuál es el plan de B?","opciones":["move to France","move to Canada","stay in Peru"],"respuesta":"move to Canada"},
+{"tipo":"vf","enunciado":"B va a estudiar los dos idiomas.","respuesta":"verdadero"},
+{"tipo":"completar_dato","enunciado":"¿Por qué quiere mudarse?","respuesta":"a better future","aceptadas":["better future"]}
+] }

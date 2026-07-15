@@ -1,0 +1,16 @@
+{ "tema": 2, "idioma": "en", "titulo": "Datos personales",
+"lineas": [
+{"hablante":"A","texto":"Hello, what is your name?"},
+{"hablante":"B","texto":"My name is Joel."},
+{"hablante":"A","texto":"How old are you, Joel?"},
+{"hablante":"B","texto":"I'm twenty-two years old."},
+{"hablante":"A","texto":"What is your phone number?"},
+{"hablante":"B","texto":"It's zero, nine, one, five, three, two."},
+{"hablante":"A","texto":"Thank you. Happy birthday, by the way!"},
+{"hablante":"B","texto":"Thank you very much!"}
+],
+"preguntas": [
+{"tipo":"opcion_multiple","enunciado":"¿Cuántos años tiene Joel?","opciones":["twenty","twenty-two","twelve"],"respuesta":"twenty-two"},
+{"tipo":"vf","enunciado":"Joel da su número de teléfono.","respuesta":"verdadero"},
+{"tipo":"completar_dato","enunciado":"Escribe el nombre de la persona.","respuesta":"Joel"}
+] }

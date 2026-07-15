@@ -1,0 +1,16 @@
+{ "tema": 17, "idioma": "en", "titulo": "Pidiendo direcciones",
+"lineas": [
+{"hablante":"A","texto":"Excuse me, where is the station?"},
+{"hablante":"B","texto":"Go straight and turn left at the corner."},
+{"hablante":"A","texto":"Is it far?"},
+{"hablante":"B","texto":"No, it's near. Five minutes on foot."},
+{"hablante":"A","texto":"Can I take the bus?"},
+{"hablante":"B","texto":"Yes, take the number ten bus."},
+{"hablante":"A","texto":"Thank you very much!"},
+{"hablante":"B","texto":"You're welcome, have a good trip!"}
+],
+"preguntas": [
+{"tipo":"opcion_multiple","enunciado":"¿Hacia dónde debe girar A?","opciones":["right","left","straight"],"respuesta":"left"},
+{"tipo":"vf","enunciado":"La estación está lejos.","respuesta":"falso"},
+{"tipo":"completar_dato","enunciado":"¿Qué número de bus puede tomar?","respuesta":"ten","aceptadas":["number ten","10"]}
+] }

@@ -1,0 +1,16 @@
+{ "tema": 24, "idioma": "fr", "titulo": "Parler de l'avenir",
+"lineas": [
+{"hablante":"A","texto":"Quels sont tes projets pour l'avenir ?"},
+{"hablante":"B","texto":"Je vais déménager au Canada."},
+{"hablante":"A","texto":"C'est un grand projet ! Pourquoi ?"},
+{"hablante":"B","texto":"Parce que je veux un avenir meilleur, et j'aime la langue."},
+{"hablante":"A","texto":"Tu vas étudier l'anglais et le français ?"},
+{"hablante":"B","texto":"Oui, je vais étudier les deux."},
+{"hablante":"A","texto":"Quand est-ce que tu vas commencer ?"},
+{"hablante":"B","texto":"Je vais commencer bientôt !"}
+],
+"preguntas": [
+{"tipo":"opcion_multiple","enunciado":"¿Cuál es el plan de B?","opciones":["déménager en France","déménager au Canada","rester au Pérou"],"respuesta":"déménager au Canada"},
+{"tipo":"vf","enunciado":"B va a estudiar los dos idiomas.","respuesta":"verdadero"},
+{"tipo":"completar_dato","enunciado":"¿Por qué quiere mudarse?","respuesta":"un avenir meilleur","aceptadas":["avenir meilleur"]}
+] }

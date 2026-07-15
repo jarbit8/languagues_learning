@@ -1,0 +1,16 @@
+{ "tema": 19, "idioma": "en", "titulo": "En la farmacia",
+"lineas": [
+{"hablante":"A","texto":"How are you feeling today?"},
+{"hablante":"B","texto":"Not very well. I've got a headache."},
+{"hablante":"A","texto":"Do you have a fever?"},
+{"hablante":"B","texto":"Yes, a little. And my throat hurts too."},
+{"hablante":"A","texto":"You should rest and drink water."},
+{"hablante":"B","texto":"I think I have a cold."},
+{"hablante":"A","texto":"Take this medicine twice a day."},
+{"hablante":"B","texto":"Thank you, I hope I feel better soon."}
+],
+"preguntas": [
+{"tipo":"opcion_multiple","enunciado":"¿Qué le duele a B además de la cabeza?","opciones":["stomach","throat","leg"],"respuesta":"throat"},
+{"tipo":"vf","enunciado":"B tiene fiebre.","respuesta":"verdadero"},
+{"tipo":"completar_dato","enunciado":"¿Cuántas veces al día debe tomar la medicina?","respuesta":"twice a day","aceptadas":["twice"]}
+] }

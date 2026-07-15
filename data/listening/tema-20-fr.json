@@ -1,0 +1,16 @@
+{ "tema": 20, "idioma": "fr", "titulo": "Plans pour le week-end",
+"lineas": [
+{"hablante":"A","texto":"Qu'est-ce que tu fais pendant ton temps libre ?"},
+{"hablante":"B","texto":"J'aime jouer au football et écouter de la musique."},
+{"hablante":"A","texto":"Tu joues d'un instrument ?"},
+{"hablante":"B","texto":"Oui, je joue de la guitare."},
+{"hablante":"A","texto":"Cool ! Tu veux jouer au football samedi ?"},
+{"hablante":"B","texto":"Oui, j'adore jouer au football !"},
+{"hablante":"A","texto":"Super, au parc à dix heures."},
+{"hablante":"B","texto":"Parfait, à samedi !"}
+],
+"preguntas": [
+{"tipo":"opcion_multiple","enunciado":"¿Qué instrumento toca B?","opciones":["piano","guitare","batterie"],"respuesta":"guitare"},
+{"tipo":"anota_la_hora","enunciado":"¿A qué hora quedan el sábado?","respuesta":"10:00","aceptadas":["dix heures"]},
+{"tipo":"vf","enunciado":"Van a jugar fútbol en el parque.","respuesta":"verdadero"}
+] }

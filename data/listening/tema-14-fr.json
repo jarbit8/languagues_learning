@@ -1,0 +1,16 @@
+{ "tema": 14, "idioma": "fr", "titulo": "Au restaurant",
+"lineas": [
+{"hablante":"A","texto":"Bonsoir ! Vous voulez le menu ?"},
+{"hablante":"B","texto":"Oui, s'il vous plaît. Et un verre d'eau."},
+{"hablante":"A","texto":"Vous êtes prêts à commander ?"},
+{"hablante":"B","texto":"Je voudrais une salade et un café."},
+{"hablante":"A","texto":"Autre chose ?"},
+{"hablante":"B","texto":"Non, merci. C'est tout."},
+{"hablante":"A","texto":"Voici l'addition."},
+{"hablante":"B","texto":"Merci, c'était délicieux."}
+],
+"preguntas": [
+{"tipo":"opcion_multiple","enunciado":"¿Qué pide B de comer?","opciones":["un sandwich","une salade","une soupe"],"respuesta":"une salade"},
+{"tipo":"vf","enunciado":"B pide un té.","respuesta":"falso"},
+{"tipo":"completar_dato","enunciado":"¿Qué bebida pide B primero?","respuesta":"eau","aceptadas":["un verre d'eau"]}
+] }

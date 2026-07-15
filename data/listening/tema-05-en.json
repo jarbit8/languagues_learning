@@ -1,0 +1,16 @@
+{ "tema": 5, "idioma": "en", "titulo": "Describiendo a un amigo",
+"lineas": [
+{"hablante":"A","texto":"What is your friend like?"},
+{"hablante":"B","texto":"He is tall and young."},
+{"hablante":"A","texto":"Is he kind?"},
+{"hablante":"B","texto":"Yes, he is very kind and funny."},
+{"hablante":"A","texto":"What colour are his eyes?"},
+{"hablante":"B","texto":"His eyes are brown."},
+{"hablante":"A","texto":"Is he shy?"},
+{"hablante":"B","texto":"No, he isn't shy at all."}
+],
+"preguntas": [
+{"tipo":"opcion_multiple","enunciado":"¿De qué color son sus ojos?","opciones":["blue","brown","green"],"respuesta":"brown"},
+{"tipo":"vf","enunciado":"El amigo es tímido.","respuesta":"falso"},
+{"tipo":"completar_dato","enunciado":"Escribe un adjetivo de personalidad mencionado.","respuesta":"kind","aceptadas":["funny"]}
+] }

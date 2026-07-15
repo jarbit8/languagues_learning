@@ -1,0 +1,16 @@
+{ "tema": 23, "idioma": "en", "titulo": "Check-in en el hotel",
+"lineas": [
+{"hablante":"A","texto":"Good afternoon, I have a booking."},
+{"hablante":"B","texto":"What is your name, please?"},
+{"hablante":"A","texto":"My name is Joel Reinoso."},
+{"hablante":"B","texto":"Can I see your passport?"},
+{"hablante":"A","texto":"Yes, here it is."},
+{"hablante":"B","texto":"Your room is on the third floor."},
+{"hablante":"A","texto":"How long can I stay?"},
+{"hablante":"B","texto":"You can stay until Sunday."}
+],
+"preguntas": [
+{"tipo":"opcion_multiple","enunciado":"¿En qué piso está la habitación?","opciones":["first","second","third"],"respuesta":"third"},
+{"tipo":"vf","enunciado":"El recepcionista pide el pasaporte.","respuesta":"verdadero"},
+{"tipo":"completar_dato","enunciado":"¿Hasta qué día puede quedarse?","respuesta":"Sunday"}
+] }

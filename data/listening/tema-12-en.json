@@ -1,0 +1,16 @@
+{ "tema": 12, "idioma": "en", "titulo": "Comprando ropa",
+"lineas": [
+{"hablante":"A","texto":"Can I help you?"},
+{"hablante":"B","texto":"Yes, I'm looking for a jacket."},
+{"hablante":"A","texto":"What size are you?"},
+{"hablante":"B","texto":"I'm a medium."},
+{"hablante":"A","texto":"Do you like this black jacket?"},
+{"hablante":"B","texto":"Yes, I like it. Can I try it on?"},
+{"hablante":"A","texto":"Of course. The fitting room is there."},
+{"hablante":"B","texto":"Thank you!"}
+],
+"preguntas": [
+{"tipo":"opcion_multiple","enunciado":"¿Qué busca B?","opciones":["a shirt","a jacket","shoes"],"respuesta":"a jacket"},
+{"tipo":"vf","enunciado":"B quiere probarse la chaqueta.","respuesta":"verdadero"},
+{"tipo":"completar_dato","enunciado":"¿Qué talla usa B?","respuesta":"medium"}
+] }

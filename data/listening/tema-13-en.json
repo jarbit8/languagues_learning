@@ -1,0 +1,16 @@
+{ "tema": 13, "idioma": "en", "titulo": "En el mercado",
+"lineas": [
+{"hablante":"A","texto":"Do you have any apples?"},
+{"hablante":"B","texto":"Yes, we have red and green apples."},
+{"hablante":"A","texto":"I want some bread too."},
+{"hablante":"B","texto":"There isn't any bread today, sorry."},
+{"hablante":"A","texto":"That's okay. Do you have milk?"},
+{"hablante":"B","texto":"Yes, we have milk and cheese."},
+{"hablante":"A","texto":"Great, I'll take some milk."},
+{"hablante":"B","texto":"Anything else?"}
+],
+"preguntas": [
+{"tipo":"opcion_multiple","enunciado":"¿Qué NO hay hoy en el mercado?","opciones":["apples","bread","milk"],"respuesta":"bread"},
+{"tipo":"vf","enunciado":"Hay manzanas rojas y verdes.","respuesta":"verdadero"},
+{"tipo":"completar_dato","enunciado":"¿Qué compra la persona A al final?","respuesta":"milk"}
+] }

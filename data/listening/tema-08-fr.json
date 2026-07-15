@@ -1,0 +1,16 @@
+{ "tema": 8, "idioma": "fr", "titulo": "Quelle heure est-il ?",
+"lineas": [
+{"hablante":"A","texto":"Pardon, quelle heure est-il ?"},
+{"hablante":"B","texto":"Il est sept heures et demie."},
+{"hablante":"A","texto":"Le cours commence à quelle heure ?"},
+{"hablante":"B","texto":"Il commence à huit heures et quart."},
+{"hablante":"A","texto":"Et il finit à quelle heure ?"},
+{"hablante":"B","texto":"Il finit à dix heures."},
+{"hablante":"A","texto":"Tu es toujours à l'heure ?"},
+{"hablante":"B","texto":"Oui, je ne suis jamais en retard."}
+],
+"preguntas": [
+{"tipo":"anota_la_hora","enunciado":"¿Qué hora es cuando A pregunta?","respuesta":"7:30","aceptadas":["sept heures et demie"]},
+{"tipo":"anota_la_hora","enunciado":"¿A qué hora empieza el curso?","respuesta":"8:15","aceptadas":["huit heures et quart"]},
+{"tipo":"vf","enunciado":"B llega tarde a veces.","respuesta":"falso"}
+] }

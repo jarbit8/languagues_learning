@@ -1,0 +1,16 @@
+{ "tema": 9, "idioma": "fr", "titulo": "Une journée normale",
+"lineas": [
+{"hablante":"A","texto":"Tu te lèves à quelle heure ?"},
+{"hablante":"B","texto":"Je me lève à six heures."},
+{"hablante":"A","texto":"Tu prends le petit-déjeuner à la maison ?"},
+{"hablante":"B","texto":"Oui, je le prends à six heures et demie."},
+{"hablante":"A","texto":"Tu vas au travail à quelle heure ?"},
+{"hablante":"B","texto":"Je vais au travail à sept heures."},
+{"hablante":"A","texto":"Et tu te couches à quelle heure ?"},
+{"hablante":"B","texto":"Je me couche à onze heures."}
+],
+"preguntas": [
+{"tipo":"anota_la_hora","enunciado":"¿A qué hora se levanta B?","respuesta":"6:00","aceptadas":["six heures"]},
+{"tipo":"anota_la_hora","enunciado":"¿A qué hora desayuna?","respuesta":"6:30","aceptadas":["six heures et demie"]},
+{"tipo":"vf","enunciado":"B se acuesta a las once.","respuesta":"verdadero"}
+] }

@@ -1,0 +1,16 @@
+{ "tema": 22, "idioma": "en", "titulo": "Problema con el celular",
+"lineas": [
+{"hablante":"A","texto":"My phone doesn't work."},
+{"hablante":"B","texto":"What happened yesterday?"},
+{"hablante":"A","texto":"I downloaded an app and it stopped working."},
+{"hablante":"B","texto":"Did you charge the battery?"},
+{"hablante":"A","texto":"Yes, I charged it last night."},
+{"hablante":"B","texto":"Try to turn it off and on again."},
+{"hablante":"A","texto":"Okay, I turned it off."},
+{"hablante":"B","texto":"Now turn it on. Does it work?"}
+],
+"preguntas": [
+{"tipo":"opcion_multiple","enunciado":"¿Qué pasó ayer?","opciones":["A perdió el teléfono","A descargó una app","A compró un teléfono"],"respuesta":"A descargó una app"},
+{"tipo":"vf","enunciado":"A no cargó la batería.","respuesta":"falso"},
+{"tipo":"completar_dato","enunciado":"¿Qué le dice B que haga con el teléfono?","respuesta":"turn it off and on","aceptadas":["turn it off","turn it on"]}
+] }

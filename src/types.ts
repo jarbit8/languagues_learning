@@ -70,6 +70,9 @@ export type TipoPregunta =
   | 'ordenar'
   | 'corregir_error'
   | 'traducir'
+  | 'completar_dato'
+  | 'anota_la_hora'
+  | 'formulario'
 
 export interface Pregunta {
   tipo: TipoPregunta
@@ -81,6 +84,31 @@ export interface Pregunta {
   aceptadas?: string[]
   palabraId?: string
   pista?: string
+}
+
+// --- Listening (packs en /data/listening) ---
+
+export interface LineaDialogo {
+  hablante: string
+  texto: string
+}
+
+export type TipoPreguntaListening = 'opcion_multiple' | 'vf' | 'completar_dato' | 'anota_la_hora'
+
+export interface PreguntaListening {
+  tipo: TipoPreguntaListening
+  enunciado: string
+  opciones?: string[]
+  respuesta: string
+  aceptadas?: string[]
+}
+
+export interface ListeningPack {
+  tema: number
+  idioma: Idioma
+  titulo: string
+  lineas: LineaDialogo[]
+  preguntas: PreguntaListening[]
 }
 
 export type EstadoTema = 'bloqueado' | 'en_curso' | 'aprobado'

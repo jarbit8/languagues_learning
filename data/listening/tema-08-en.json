@@ -1,0 +1,16 @@
+{ "tema": 8, "idioma": "en", "titulo": "¿A qué hora?",
+"lineas": [
+{"hablante":"A","texto":"Excuse me, what time is it?"},
+{"hablante":"B","texto":"It's half past seven."},
+{"hablante":"A","texto":"What time does the class start?"},
+{"hablante":"B","texto":"It starts at quarter past eight."},
+{"hablante":"A","texto":"And what time does it finish?"},
+{"hablante":"B","texto":"It finishes at ten o'clock."},
+{"hablante":"A","texto":"Are you always on time?"},
+{"hablante":"B","texto":"Yes, I'm never late."}
+],
+"preguntas": [
+{"tipo":"anota_la_hora","enunciado":"¿Qué hora es cuando A pregunta?","respuesta":"7:30","aceptadas":["seven thirty","half past seven"]},
+{"tipo":"anota_la_hora","enunciado":"¿A qué hora empieza la clase?","respuesta":"8:15","aceptadas":["quarter past eight"]},
+{"tipo":"vf","enunciado":"B llega tarde a veces.","respuesta":"falso"}
+] }

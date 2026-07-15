@@ -1,0 +1,16 @@
+{ "tema": 1, "idioma": "fr", "titulo": "Premier jour de cours",
+"lineas": [
+{"hablante":"A","texto":"Bonjour ! Je m'appelle Ana. Enchantée."},
+{"hablante":"B","texto":"Salut Ana ! Je m'appelle Paul. Enchanté."},
+{"hablante":"A","texto":"Comment ça va, Paul ?"},
+{"hablante":"B","texto":"Ça va bien, merci. Et toi ?"},
+{"hablante":"A","texto":"Très bien, merci !"},
+{"hablante":"B","texto":"Tu es étudiante ici ?"},
+{"hablante":"A","texto":"Oui, je suis étudiante. À demain !"},
+{"hablante":"B","texto":"Au revoir, Ana !"}
+],
+"preguntas": [
+{"tipo":"opcion_multiple","enunciado":"¿Cómo se llama el hombre?","opciones":["Ana","Paul","Marie"],"respuesta":"Paul"},
+{"tipo":"vf","enunciado":"Ana dice que está muy bien.","respuesta":"verdadero"},
+{"tipo":"completar_dato","enunciado":"¿Cómo se despiden al final?","respuesta":"au revoir"}
+] }

@@ -1,0 +1,16 @@
+{ "tema": 2, "idioma": "fr", "titulo": "Informations personnelles",
+"lineas": [
+{"hablante":"A","texto":"Bonjour, comment tu t'appelles ?"},
+{"hablante":"B","texto":"Je m'appelle Joel."},
+{"hablante":"A","texto":"Quel âge as-tu, Joel ?"},
+{"hablante":"B","texto":"J'ai vingt-deux ans."},
+{"hablante":"A","texto":"Quel est ton numéro de téléphone ?"},
+{"hablante":"B","texto":"C'est zéro, neuf, un, cinq, trois, deux."},
+{"hablante":"A","texto":"Merci. Bon anniversaire, au fait !"},
+{"hablante":"B","texto":"Merci beaucoup !"}
+],
+"preguntas": [
+{"tipo":"opcion_multiple","enunciado":"¿Cuántos años tiene Joel?","opciones":["vingt","vingt-deux","douze"],"respuesta":"vingt-deux"},
+{"tipo":"vf","enunciado":"Joel da su número de teléfono.","respuesta":"verdadero"},
+{"tipo":"completar_dato","enunciado":"Escribe el nombre de la persona.","respuesta":"Joel"}
+] }

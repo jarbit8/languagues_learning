@@ -1,0 +1,16 @@
+{ "tema": 3, "idioma": "fr", "titulo": "D'où viens-tu ?",
+"lineas": [
+{"hablante":"A","texto":"D'où viens-tu ?"},
+{"hablante":"B","texto":"Je viens du Pérou. Et toi ?"},
+{"hablante":"A","texto":"Je viens du Canada."},
+{"hablante":"B","texto":"Tu parles français ?"},
+{"hablante":"A","texto":"Oui, je parle anglais et français."},
+{"hablante":"B","texto":"Je parle espagnol et un peu anglais."},
+{"hablante":"A","texto":"Tu habites dans quelle ville ?"},
+{"hablante":"B","texto":"J'habite à Arequipa."}
+],
+"preguntas": [
+{"tipo":"opcion_multiple","enunciado":"¿De dónde es la persona B?","opciones":["Canada","Pérou","France"],"respuesta":"Pérou"},
+{"tipo":"vf","enunciado":"La persona A habla inglés y francés.","respuesta":"verdadero"},
+{"tipo":"completar_dato","enunciado":"¿En qué ciudad vive B?","respuesta":"Arequipa"}
+] }

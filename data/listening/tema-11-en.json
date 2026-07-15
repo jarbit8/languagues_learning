@@ -1,0 +1,16 @@
+{ "tema": 11, "idioma": "en", "titulo": "Objeto perdido",
+"lineas": [
+{"hablante":"A","texto":"Excuse me, I lost my bag."},
+{"hablante":"B","texto":"What colour is it?"},
+{"hablante":"A","texto":"It's black and red."},
+{"hablante":"B","texto":"What is in the bag?"},
+{"hablante":"A","texto":"My keys, my phone, and a notebook."},
+{"hablante":"B","texto":"Is this your bag?"},
+{"hablante":"A","texto":"Yes! Thank you so much!"},
+{"hablante":"B","texto":"You're welcome."}
+],
+"preguntas": [
+{"tipo":"opcion_multiple","enunciado":"¿De qué color es la mochila?","opciones":["blue and green","black and red","white"],"respuesta":"black and red"},
+{"tipo":"vf","enunciado":"En la mochila hay un libro de gramática.","respuesta":"falso"},
+{"tipo":"completar_dato","enunciado":"Nombra un objeto que había en la mochila.","respuesta":"keys","aceptadas":["phone","notebook"]}
+] }

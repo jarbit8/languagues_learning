@@ -1,0 +1,16 @@
+{ "tema": 9, "idioma": "en", "titulo": "Un día normal",
+"lineas": [
+{"hablante":"A","texto":"What time do you get up?"},
+{"hablante":"B","texto":"I get up at six o'clock."},
+{"hablante":"A","texto":"Do you have breakfast at home?"},
+{"hablante":"B","texto":"Yes, I have breakfast at half past six."},
+{"hablante":"A","texto":"What time do you go to work?"},
+{"hablante":"B","texto":"I go to work at seven."},
+{"hablante":"A","texto":"And what time do you go to bed?"},
+{"hablante":"B","texto":"I go to bed at eleven o'clock."}
+],
+"preguntas": [
+{"tipo":"anota_la_hora","enunciado":"¿A qué hora se levanta B?","respuesta":"6:00","aceptadas":["six o'clock","six"]},
+{"tipo":"anota_la_hora","enunciado":"¿A qué hora desayuna?","respuesta":"6:30","aceptadas":["half past six"]},
+{"tipo":"vf","enunciado":"B se acuesta a las once.","respuesta":"verdadero"}
+] }

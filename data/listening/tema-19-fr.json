@@ -1,0 +1,16 @@
+{ "tema": 19, "idioma": "fr", "titulo": "À la pharmacie",
+"lineas": [
+{"hablante":"A","texto":"Comment tu te sens aujourd'hui ?"},
+{"hablante":"B","texto":"Pas très bien. J'ai mal à la tête."},
+{"hablante":"A","texto":"Tu as de la fièvre ?"},
+{"hablante":"B","texto":"Oui, un peu. Et j'ai aussi mal à la gorge."},
+{"hablante":"A","texto":"Tu dois te reposer et boire de l'eau."},
+{"hablante":"B","texto":"Je pense que j'ai un rhume."},
+{"hablante":"A","texto":"Prends ce médicament deux fois par jour."},
+{"hablante":"B","texto":"Merci, j'espère aller mieux bientôt."}
+],
+"preguntas": [
+{"tipo":"opcion_multiple","enunciado":"¿Qué le duele a B además de la cabeza?","opciones":["le ventre","la gorge","la jambe"],"respuesta":"la gorge"},
+{"tipo":"vf","enunciado":"B tiene fiebre.","respuesta":"verdadero"},
+{"tipo":"completar_dato","enunciado":"¿Cuántas veces al día debe tomar la medicina?","respuesta":"deux fois par jour","aceptadas":["deux fois"]}
+] }

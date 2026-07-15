@@ -1,0 +1,16 @@
+{ "tema": 14, "idioma": "en", "titulo": "En el restaurante",
+"lineas": [
+{"hablante":"A","texto":"Good evening! Would you like the menu?"},
+{"hablante":"B","texto":"Yes, please. And a glass of water."},
+{"hablante":"A","texto":"Are you ready to order?"},
+{"hablante":"B","texto":"I'd like a salad and a coffee."},
+{"hablante":"A","texto":"Anything else?"},
+{"hablante":"B","texto":"No, thank you. That's all."},
+{"hablante":"A","texto":"Here is the bill."},
+{"hablante":"B","texto":"Thank you, this was delicious."}
+],
+"preguntas": [
+{"tipo":"opcion_multiple","enunciado":"¿Qué pide B de comer?","opciones":["a sandwich","a salad","soup"],"respuesta":"a salad"},
+{"tipo":"vf","enunciado":"B pide un té.","respuesta":"falso"},
+{"tipo":"completar_dato","enunciado":"¿Qué bebida pide B primero?","respuesta":"water","aceptadas":["a glass of water"]}
+] }

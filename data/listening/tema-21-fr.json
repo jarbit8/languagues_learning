@@ -1,0 +1,16 @@
+{ "tema": 21, "idioma": "fr", "titulo": "On parle des études",
+"lineas": [
+{"hablante":"A","texto":"Qu'est-ce que tu étudies ?"},
+{"hablante":"B","texto":"J'étudie l'informatique."},
+{"hablante":"A","texto":"C'est difficile ?"},
+{"hablante":"B","texto":"Oui, mais j'aime ça parce que c'est intéressant."},
+{"hablante":"A","texto":"Tu as un examen cette semaine ?"},
+{"hablante":"B","texto":"Oui, j'ai un examen de maths jeudi."},
+{"hablante":"A","texto":"Bonne chance ! Tu comprends la leçon ?"},
+{"hablante":"B","texto":"Oui, maintenant je la comprends bien."}
+],
+"preguntas": [
+{"tipo":"opcion_multiple","enunciado":"¿Qué estudia B?","opciones":["maths","informatique","histoire"],"respuesta":"informatique"},
+{"tipo":"vf","enunciado":"B tiene un examen de matemáticas el jueves.","respuesta":"verdadero"},
+{"tipo":"completar_dato","enunciado":"¿Por qué le gusta la carrera a B?","respuesta":"parce que c'est intéressant","aceptadas":["intéressant","interessant"]}
+] }

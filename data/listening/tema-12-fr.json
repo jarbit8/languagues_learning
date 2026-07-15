@@ -1,0 +1,16 @@
+{ "tema": 12, "idioma": "fr", "titulo": "Faire du shopping",
+"lineas": [
+{"hablante":"A","texto":"Je peux vous aider ?"},
+{"hablante":"B","texto":"Oui, je cherche une veste."},
+{"hablante":"A","texto":"Quelle taille faites-vous ?"},
+{"hablante":"B","texto":"Je fais une taille moyenne."},
+{"hablante":"A","texto":"Vous aimez cette veste noire ?"},
+{"hablante":"B","texto":"Oui, je l'aime bien. Je peux l'essayer ?"},
+{"hablante":"A","texto":"Bien sûr. La cabine est là-bas."},
+{"hablante":"B","texto":"Merci !"}
+],
+"preguntas": [
+{"tipo":"opcion_multiple","enunciado":"¿Qué busca B?","opciones":["une chemise","une veste","des chaussures"],"respuesta":"une veste"},
+{"tipo":"vf","enunciado":"B quiere probarse la chaqueta.","respuesta":"verdadero"},
+{"tipo":"completar_dato","enunciado":"¿Qué talla usa B?","respuesta":"moyenne"}
+] }

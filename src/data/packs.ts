@@ -1,4 +1,4 @@
-import type { VocabPack, GramaticaPack, Idioma } from '../types'
+import type { VocabPack, GramaticaPack, ListeningPack, Idioma } from '../types'
 
 // Los data packs viven en /data (raíz). Se importan en build → quedan en el bundle
 // y por tanto en el precache del service worker (offline total).
@@ -10,6 +10,11 @@ const vocabModules = import.meta.glob('/data/vocabulario/*.json', { eager: true 
 const gramaticaModules = import.meta.glob('/data/gramatica/*.json', { eager: true }) as Record<
   string,
   { default: GramaticaPack }
+>
+
+const listeningModules = import.meta.glob('/data/listening/*.json', { eager: true }) as Record<
+  string,
+  { default: ListeningPack }
 >
 
 export const vocabPacks: VocabPack[] = Object.values(vocabModules)
@@ -24,6 +29,14 @@ export function getGramatica(tema: number, idioma: Idioma): GramaticaPack | unde
 
 export function tieneGramaticaCompleta(tema: number): boolean {
   return !!getGramatica(tema, 'en') && !!getGramatica(tema, 'fr')
+}
+
+export const listeningPacks: ListeningPack[] = Object.values(listeningModules)
+  .map((m) => m.default)
+  .sort((a, b) => a.tema - b.tema)
+
+export function getListening(tema: number, idioma: Idioma): ListeningPack | undefined {
+  return listeningPacks.find((p) => p.tema === tema && p.idioma === idioma)
 }
 
 export const temasDisponibles: number[] = vocabPacks.map((p) => p.tema)

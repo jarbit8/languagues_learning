@@ -1,0 +1,16 @@
+{ "tema": 3, "idioma": "en", "titulo": "¿De dónde eres?",
+"lineas": [
+{"hablante":"A","texto":"Where are you from?"},
+{"hablante":"B","texto":"I'm from Peru. And you?"},
+{"hablante":"A","texto":"I'm from Canada."},
+{"hablante":"B","texto":"Do you speak French?"},
+{"hablante":"A","texto":"Yes, I speak English and French."},
+{"hablante":"B","texto":"I speak Spanish and a little English."},
+{"hablante":"A","texto":"Which city do you live in?"},
+{"hablante":"B","texto":"I live in Arequipa."}
+],
+"preguntas": [
+{"tipo":"opcion_multiple","enunciado":"¿De dónde es la persona B?","opciones":["Canada","Peru","France"],"respuesta":"Peru"},
+{"tipo":"vf","enunciado":"La persona A habla inglés y francés.","respuesta":"verdadero"},
+{"tipo":"completar_dato","enunciado":"¿En qué ciudad vive B?","respuesta":"Arequipa"}
+] }

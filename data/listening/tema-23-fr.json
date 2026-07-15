@@ -1,0 +1,16 @@
+{ "tema": 23, "idioma": "fr", "titulo": "Arrivée à l'hôtel",
+"lineas": [
+{"hablante":"A","texto":"Bonjour, j'ai une réservation."},
+{"hablante":"B","texto":"Quel est votre nom, s'il vous plaît ?"},
+{"hablante":"A","texto":"Je m'appelle Joel Reinoso."},
+{"hablante":"B","texto":"Je peux voir votre passeport ?"},
+{"hablante":"A","texto":"Oui, le voici."},
+{"hablante":"B","texto":"Votre chambre est au troisième étage."},
+{"hablante":"A","texto":"Je peux rester combien de temps ?"},
+{"hablante":"B","texto":"Vous pouvez rester jusqu'à dimanche."}
+],
+"preguntas": [
+{"tipo":"opcion_multiple","enunciado":"¿En qué piso está la habitación?","opciones":["premier","deuxième","troisième"],"respuesta":"troisième"},
+{"tipo":"vf","enunciado":"El recepcionista pide el pasaporte.","respuesta":"verdadero"},
+{"tipo":"completar_dato","enunciado":"¿Hasta qué día puede quedarse?","respuesta":"dimanche"}
+] }

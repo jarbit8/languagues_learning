@@ -11,7 +11,9 @@ const TEXTO_LIBRE: Pregunta['tipo'][] = [
   'es_a_fr',
   'hueco',
   'corregir_error',
-  'traducir'
+  'traducir',
+  'completar_dato',
+  'anota_la_hora'
 ]
 
 export default function ExamRunner({

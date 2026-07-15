@@ -1,0 +1,16 @@
+{ "tema": 4, "idioma": "en", "titulo": "Hablando de la familia",
+"lineas": [
+{"hablante":"A","texto":"Is this your family?"},
+{"hablante":"B","texto":"Yes, this is my father and my mother."},
+{"hablante":"A","texto":"Do you have brothers or sisters?"},
+{"hablante":"B","texto":"I have one sister. Her name is Sofia."},
+{"hablante":"A","texto":"Is she married?"},
+{"hablante":"B","texto":"No, she's single."},
+{"hablante":"A","texto":"And this? Is it your dog?"},
+{"hablante":"B","texto":"Yes, that's my dog. His name is Max."}
+],
+"preguntas": [
+{"tipo":"opcion_multiple","enunciado":"¿Cómo se llama la hermana?","opciones":["Sofia","Ana","Marie"],"respuesta":"Sofia"},
+{"tipo":"vf","enunciado":"La hermana está casada.","respuesta":"falso"},
+{"tipo":"completar_dato","enunciado":"¿Cómo se llama el perro?","respuesta":"Max"}
+] }

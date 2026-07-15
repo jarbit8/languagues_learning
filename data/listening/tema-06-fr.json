@@ -1,0 +1,16 @@
+{ "tema": 6, "idioma": "fr", "titulo": "On parle du travail",
+"lineas": [
+{"hablante":"A","texto":"Tu fais quoi, Maria ?"},
+{"hablante":"B","texto":"Je suis professeure. Et toi ?"},
+{"hablante":"A","texto":"Je suis programmeur. Je travaille dans une entreprise."},
+{"hablante":"B","texto":"Tu aimes ton travail ?"},
+{"hablante":"A","texto":"Oui, j'aime beaucoup ça."},
+{"hablante":"B","texto":"Où est ton bureau ?"},
+{"hablante":"A","texto":"Il est au centre-ville."},
+{"hablante":"B","texto":"C'est génial !"}
+],
+"preguntas": [
+{"tipo":"opcion_multiple","enunciado":"¿Cuál es la profesión de Maria?","opciones":["programmeur","professeure","médecin"],"respuesta":"professeure"},
+{"tipo":"vf","enunciado":"A le gusta su trabajo.","respuesta":"verdadero"},
+{"tipo":"completar_dato","enunciado":"¿Dónde está la oficina de A?","respuesta":"centre-ville","aceptadas":["au centre-ville"]}
+] }

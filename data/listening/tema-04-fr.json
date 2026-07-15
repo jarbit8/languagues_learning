@@ -1,0 +1,16 @@
+{ "tema": 4, "idioma": "fr", "titulo": "On parle de la famille",
+"lineas": [
+{"hablante":"A","texto":"C'est ta famille ?"},
+{"hablante":"B","texto":"Oui, c'est mon père et ma mère."},
+{"hablante":"A","texto":"Tu as des frères ou des sœurs ?"},
+{"hablante":"B","texto":"J'ai une sœur. Elle s'appelle Sofia."},
+{"hablante":"A","texto":"Elle est mariée ?"},
+{"hablante":"B","texto":"Non, elle est célibataire."},
+{"hablante":"A","texto":"Et ça ? C'est ton chien ?"},
+{"hablante":"B","texto":"Oui, c'est mon chien. Il s'appelle Max."}
+],
+"preguntas": [
+{"tipo":"opcion_multiple","enunciado":"¿Cómo se llama la hermana?","opciones":["Sofia","Ana","Marie"],"respuesta":"Sofia"},
+{"tipo":"vf","enunciado":"La hermana está casada.","respuesta":"falso"},
+{"tipo":"completar_dato","enunciado":"¿Cómo se llama el perro?","respuesta":"Max"}
+] }

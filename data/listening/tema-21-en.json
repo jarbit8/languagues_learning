@@ -1,0 +1,16 @@
+{ "tema": 21, "idioma": "en", "titulo": "Hablando de la carrera",
+"lineas": [
+{"hablante":"A","texto":"What do you study?"},
+{"hablante":"B","texto":"I study computer science."},
+{"hablante":"A","texto":"Is it difficult?"},
+{"hablante":"B","texto":"Yes, but I like it because it's interesting."},
+{"hablante":"A","texto":"Do you have an exam this week?"},
+{"hablante":"B","texto":"Yes, I have a maths exam on Thursday."},
+{"hablante":"A","texto":"Good luck! Do you understand the lesson?"},
+{"hablante":"B","texto":"Yes, now I understand it well."}
+],
+"preguntas": [
+{"tipo":"opcion_multiple","enunciado":"¿Qué estudia B?","opciones":["maths","computer science","history"],"respuesta":"computer science"},
+{"tipo":"vf","enunciado":"B tiene un examen de matemáticas el jueves.","respuesta":"verdadero"},
+{"tipo":"completar_dato","enunciado":"¿Por qué le gusta la carrera a B?","respuesta":"because it's interesting","aceptadas":["interesting"]}
+] }

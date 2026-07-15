@@ -1,0 +1,16 @@
+{ "tema": 15, "idioma": "fr", "titulo": "Dans le magasin",
+"lineas": [
+{"hablante":"A","texto":"Combien coûte ce sac ?"},
+{"hablante":"B","texto":"Il coûte vingt dollars."},
+{"hablante":"A","texto":"C'est cher. Vous avez moins cher ?"},
+{"hablante":"B","texto":"Oui, celui-ci coûte dix dollars."},
+{"hablante":"A","texto":"Super, je le prends. Je peux payer par carte ?"},
+{"hablante":"B","texto":"Oui, bien sûr."},
+{"hablante":"A","texto":"Voilà."},
+{"hablante":"B","texto":"Merci, voici votre reçu."}
+],
+"preguntas": [
+{"tipo":"opcion_multiple","enunciado":"¿Cuánto cuesta la mochila barata?","opciones":["vingt dollars","dix dollars","quinze dollars"],"respuesta":"dix dollars"},
+{"tipo":"vf","enunciado":"A paga en efectivo.","respuesta":"falso"},
+{"tipo":"completar_dato","enunciado":"¿Qué le da B a A al final?","respuesta":"reçu","aceptadas":["le reçu","recu"]}
+] }

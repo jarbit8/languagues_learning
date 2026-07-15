@@ -1,0 +1,16 @@
+{ "tema": 5, "idioma": "fr", "titulo": "Décrire un ami",
+"lineas": [
+{"hablante":"A","texto":"Il est comment, ton ami ?"},
+{"hablante":"B","texto":"Il est grand et jeune."},
+{"hablante":"A","texto":"Il est gentil ?"},
+{"hablante":"B","texto":"Oui, il est très gentil et drôle."},
+{"hablante":"A","texto":"De quelle couleur sont ses yeux ?"},
+{"hablante":"B","texto":"Ses yeux sont bruns."},
+{"hablante":"A","texto":"Il est timide ?"},
+{"hablante":"B","texto":"Non, il n'est pas timide du tout."}
+],
+"preguntas": [
+{"tipo":"opcion_multiple","enunciado":"¿De qué color son sus ojos?","opciones":["bleus","bruns","verts"],"respuesta":"bruns"},
+{"tipo":"vf","enunciado":"El amigo es tímido.","respuesta":"falso"},
+{"tipo":"completar_dato","enunciado":"Escribe un adjetivo de personalidad mencionado.","respuesta":"gentil","aceptadas":["drôle","drole"]}
+] }
