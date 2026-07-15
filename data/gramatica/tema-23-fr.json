@@ -1,0 +1,25 @@
+{ "tema": 23, "idioma": "fr", "titulo": "Passé composé con être y venir de + infinitivo",
+"regla": "Algunos verbos de movimiento forman el passé composé con 'être' (no avoir): aller→je suis allé, partir→je suis parti, arriver→je suis arrivé, venir→je suis venu. El participio concuerda con el sujeto (allée, allés). 'Venir de + infinitivo' = acabar de: 'je viens d'arriver'.",
+"trampa": "Verbos de movimiento usan 'être': 'je suis allé', no 'j'ai allé'. Y el participio concuerda: 'elle est allée'.",
+"ejemplos": [
+{"frase":"Je suis allé au Canada.","traduccion":"Fui a Canadá."},
+{"frase":"Elle est partie.","traduccion":"Ella se fue."},
+{"frase":"Je viens d'arriver.","traduccion":"Acabo de llegar."}
+],
+"ejercicios": [
+{"tipo":"hueco","enunciado":"Je ___ allé au Canada. (être: suis)","respuesta":"suis"},
+{"tipo":"hueco","enunciado":"Elle ___ partie. (être: est)","respuesta":"est"},
+{"tipo":"hueco","enunciado":"Nous ___ arrivés. (être: sommes)","respuesta":"sommes"},
+{"tipo":"hueco","enunciado":"Je viens ___ arriver. (de → d')","respuesta":"d'","aceptadas":["de"]},
+{"tipo":"opcion_multiple","enunciado":"Auxiliar de 'aller' en passé composé:","opciones":["être","avoir","aller"],"respuesta":"être"},
+{"tipo":"opcion_multiple","enunciado":"'ella fue' =","opciones":["elle est allée","elle a allé"],"respuesta":"elle est allée"},
+{"tipo":"opcion_multiple","enunciado":"'acabo de llegar' =","opciones":["je viens d'arriver","je vais arriver"],"respuesta":"je viens d'arriver"},
+{"tipo":"ordenar","enunciado":"Ordena: fui a Canadá.","opciones":["je","suis","allé","au","Canada"],"respuesta":"je suis allé au Canada"},
+{"tipo":"ordenar","enunciado":"Ordena: ella se fue.","opciones":["elle","est","partie"],"respuesta":"elle est partie"},
+{"tipo":"ordenar","enunciado":"Ordena: acabo de llegar.","opciones":["je","viens","d'arriver"],"respuesta":"je viens d'arriver"},
+{"tipo":"corregir_error","enunciado":"J'ai allé au Canada.","respuesta":"Je suis allé au Canada."},
+{"tipo":"corregir_error","enunciado":"Elle est allé.","respuesta":"Elle est allée."},
+{"tipo":"corregir_error","enunciado":"Elle a partie.","respuesta":"Elle est partie."},
+{"tipo":"traducir","enunciado":"Fui a Canadá.","respuesta":"Je suis allé au Canada.","aceptadas":["je suis allé au canada"]},
+{"tipo":"traducir","enunciado":"Acabo de llegar.","respuesta":"Je viens d'arriver.","aceptadas":["je viens d'arriver"]}
+] }

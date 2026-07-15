@@ -1,0 +1,25 @@
+{ "tema": 17, "idioma": "en", "titulo": "Imperativo y medios de transporte",
+"regla": "El imperativo da órdenes o instrucciones con el verbo base y sin sujeto: 'Turn left', 'Go straight', 'Take the bus'. Los medios de transporte usan 'by': 'by bus', 'by car', 'by train'; pero se dice 'on foot' (a pie).",
+"trampa": "Se dice 'on foot' (a pie), no 'by foot'.",
+"ejemplos": [
+{"frase":"Turn left.","traduccion":"Gira a la izquierda."},
+{"frase":"Take the bus.","traduccion":"Toma el autobús."},
+{"frase":"I go on foot.","traduccion":"Voy a pie."}
+],
+"ejercicios": [
+{"tipo":"hueco","enunciado":"___ left. (girar, imperativo)","respuesta":"turn"},
+{"tipo":"hueco","enunciado":"___ straight. (ir recto, imperativo)","respuesta":"go"},
+{"tipo":"hueco","enunciado":"I go ___ bus. (en)","respuesta":"by"},
+{"tipo":"hueco","enunciado":"I go ___ foot. (a pie)","respuesta":"on"},
+{"tipo":"opcion_multiple","enunciado":"'a pie' =","opciones":["on foot","by foot","in foot"],"respuesta":"on foot"},
+{"tipo":"opcion_multiple","enunciado":"Imperativo de 'take':","opciones":["take","takes","to take"],"respuesta":"take"},
+{"tipo":"opcion_multiple","enunciado":"I go ___ car.","opciones":["by","on","in"],"respuesta":"by"},
+{"tipo":"ordenar","enunciado":"Ordena: gira a la izquierda en la esquina.","opciones":["turn","left","at","the","corner"],"respuesta":"turn left at the corner"},
+{"tipo":"ordenar","enunciado":"Ordena: toma el autobús.","opciones":["take","the","bus"],"respuesta":"take the bus"},
+{"tipo":"ordenar","enunciado":"Ordena: voy al trabajo en bus.","opciones":["I","go","to","work","by","bus"],"respuesta":"I go to work by bus"},
+{"tipo":"corregir_error","enunciado":"I go by foot.","respuesta":"I go on foot."},
+{"tipo":"corregir_error","enunciado":"You turn left. (imperativo)","respuesta":"Turn left."},
+{"tipo":"corregir_error","enunciado":"Go to straight.","respuesta":"Go straight."},
+{"tipo":"traducir","enunciado":"Gira a la izquierda.","respuesta":"Turn left.","aceptadas":["turn left"]},
+{"tipo":"traducir","enunciado":"Voy a pie.","respuesta":"I go on foot.","aceptadas":["i go on foot"]}
+] }

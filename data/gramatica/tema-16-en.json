@@ -1,0 +1,25 @@
+{ "tema": 16, "idioma": "en", "titulo": "Can / can't: posibilidad y permiso",
+"regla": "'Can' expresa posibilidad, permiso o habilidad: 'You can park here', 'I can swim'. Negativo: 'can't' (cannot). No cambia con he/she/it ('she can', no 'she cans') y va seguido del verbo base sin 'to'.",
+"trampa": "Tras 'can' el verbo va sin 'to' ni -s: 'she can swim', no 'she can to swim' ni 'she can swims'.",
+"ejemplos": [
+{"frase":"You can park here.","traduccion":"Puedes estacionar aquí."},
+{"frase":"I can't swim.","traduccion":"No sé nadar."},
+{"frase":"Can we visit the museum?","traduccion":"¿Podemos visitar el museo?"}
+],
+"ejercicios": [
+{"tipo":"hueco","enunciado":"You ___ park here. (poder)","respuesta":"can"},
+{"tipo":"hueco","enunciado":"I ___ swim. (negativo)","respuesta":"can't","aceptadas":["cannot"]},
+{"tipo":"hueco","enunciado":"She can ___. (swim)","respuesta":"swim"},
+{"tipo":"hueco","enunciado":"___ we visit the museum? (pregunta)","respuesta":"Can"},
+{"tipo":"opcion_multiple","enunciado":"he/she + can:","opciones":["she can","she cans","she can to"],"respuesta":"she can"},
+{"tipo":"opcion_multiple","enunciado":"I can ___ French.","opciones":["speak","speaks","to speak"],"respuesta":"speak"},
+{"tipo":"opcion_multiple","enunciado":"Negativo de 'can':","opciones":["can't","don't can","cann't"],"respuesta":"can't"},
+{"tipo":"ordenar","enunciado":"Ordena: puedes estacionar aquí.","opciones":["you","can","park","here"],"respuesta":"you can park here"},
+{"tipo":"ordenar","enunciado":"Ordena: no sé nadar.","opciones":["I","can't","swim"],"respuesta":"I can't swim"},
+{"tipo":"ordenar","enunciado":"Ordena: ¿podemos visitar el museo?","opciones":["can","we","visit","the","museum"],"respuesta":"can we visit the museum"},
+{"tipo":"corregir_error","enunciado":"She cans swim.","respuesta":"She can swim."},
+{"tipo":"corregir_error","enunciado":"I can to speak French.","respuesta":"I can speak French."},
+{"tipo":"corregir_error","enunciado":"Can you swims?","respuesta":"Can you swim?"},
+{"tipo":"traducir","enunciado":"No sé nadar.","respuesta":"I can't swim.","aceptadas":["i cannot swim"]},
+{"tipo":"traducir","enunciado":"¿Podemos visitar el museo?","respuesta":"Can we visit the museum?","aceptadas":["can we visit the museum"]}
+] }

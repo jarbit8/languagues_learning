@@ -1,0 +1,25 @@
+{ "tema": 17, "idioma": "fr", "titulo": "Imperativo, el verbo aller y el transporte",
+"regla": "El imperativo: con 'tu' se quita el pronombre (Tourne à gauche, Va tout droit); con 'vous' es cortés (Tournez, Allez). El verbo 'aller' (ir): je vais, tu vas, il va, nous allons, vous allez, ils vont. Transporte: 'en bus', 'en voiture', 'à pied', 'à vélo'.",
+"trampa": "Se dice 'à pied' y 'à vélo' (con à), pero 'en bus' y 'en voiture' (con en).",
+"ejemplos": [
+{"frase":"Tourne à gauche.","traduccion":"Gira a la izquierda."},
+{"frase":"Je vais au travail en bus.","traduccion":"Voy al trabajo en bus."},
+{"frase":"Je vais à pied.","traduccion":"Voy a pie."}
+],
+"ejercicios": [
+{"tipo":"hueco","enunciado":"___ à gauche. (girar tú, imperativo)","respuesta":"tourne"},
+{"tipo":"hueco","enunciado":"Je ___ au travail. (aller)","respuesta":"vais"},
+{"tipo":"hueco","enunciado":"Je vais ___ bus. (en)","respuesta":"en"},
+{"tipo":"hueco","enunciado":"Je vais ___ pied. (a)","respuesta":"à","aceptadas":["a"]},
+{"tipo":"opcion_multiple","enunciado":"'a pie' =","opciones":["à pied","en pied","au pied"],"respuesta":"à pied"},
+{"tipo":"opcion_multiple","enunciado":"Nous ___ à l'école. (aller)","opciones":["allons","vais","va"],"respuesta":"allons"},
+{"tipo":"opcion_multiple","enunciado":"'en bici' =","opciones":["à vélo","en vélo"],"respuesta":"à vélo"},
+{"tipo":"ordenar","enunciado":"Ordena: gira a la izquierda.","opciones":["tourne","à","gauche"],"respuesta":"tourne à gauche"},
+{"tipo":"ordenar","enunciado":"Ordena: voy al trabajo en bus.","opciones":["je","vais","au","travail","en","bus"],"respuesta":"je vais au travail en bus"},
+{"tipo":"ordenar","enunciado":"Ordena: ve todo recto.","opciones":["va","tout","droit"],"respuesta":"va tout droit"},
+{"tipo":"corregir_error","enunciado":"Je vais en pied.","respuesta":"Je vais à pied."},
+{"tipo":"corregir_error","enunciado":"Je va au travail.","respuesta":"Je vais au travail."},
+{"tipo":"corregir_error","enunciado":"Je vais en vélo.","respuesta":"Je vais à vélo."},
+{"tipo":"traducir","enunciado":"Gira a la izquierda.","respuesta":"Tourne à gauche.","aceptadas":["tourne à gauche"]},
+{"tipo":"traducir","enunciado":"Voy a pie.","respuesta":"Je vais à pied.","aceptadas":["je vais à pied"]}
+] }

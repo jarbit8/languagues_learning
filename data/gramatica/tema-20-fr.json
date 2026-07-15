@@ -1,0 +1,25 @@
+{ "tema": 20, "idioma": "fr", "titulo": "Aimer + infinitivo, faire du y jouer à/de",
+"regla": "Tras 'aimer, adorer, détester' se usa el infinitivo: 'j'aime lire', 'j'adore nager'. Deportes con 'faire du/de la': 'je fais du sport', 'de la natation'. Juegos e instrumentos: 'jouer à' (deportes: jouer au foot), 'jouer de' (instrumentos: jouer de la guitare).",
+"trampa": "Tras aimer va el infinitivo: 'j'aime lire', no 'j'aime lis'. Deportes 'jouer à', instrumentos 'jouer de'.",
+"ejemplos": [
+{"frase":"J'aime lire.","traduccion":"Me gusta leer."},
+{"frase":"Je fais du sport.","traduccion":"Hago deporte."},
+{"frase":"Je joue de la guitare.","traduccion":"Toco la guitarra."}
+],
+"ejercicios": [
+{"tipo":"hueco","enunciado":"J'aime ___. (lire, infinitivo)","respuesta":"lire"},
+{"tipo":"hueco","enunciado":"Je fais ___ sport. (du)","respuesta":"du"},
+{"tipo":"hueco","enunciado":"Je joue ___ foot. (à + le = au)","respuesta":"au"},
+{"tipo":"hueco","enunciado":"Je joue ___ la guitare. (de)","respuesta":"de"},
+{"tipo":"opcion_multiple","enunciado":"'me gusta leer' =","opciones":["j'aime lire","j'aime lis"],"respuesta":"j'aime lire"},
+{"tipo":"opcion_multiple","enunciado":"'toco la guitarra' =","opciones":["je joue de la guitare","je joue à la guitare"],"respuesta":"je joue de la guitare"},
+{"tipo":"opcion_multiple","enunciado":"'juego al fútbol' =","opciones":["je joue au foot","je joue du foot"],"respuesta":"je joue au foot"},
+{"tipo":"ordenar","enunciado":"Ordena: hago deporte.","opciones":["je","fais","du","sport"],"respuesta":"je fais du sport"},
+{"tipo":"ordenar","enunciado":"Ordena: toco la guitarra.","opciones":["je","joue","de la","guitare"],"respuesta":"je joue de la guitare"},
+{"tipo":"ordenar","enunciado":"Ordena: juego al fútbol.","opciones":["je","joue","au","football"],"respuesta":"je joue au football"},
+{"tipo":"corregir_error","enunciado":"J'aime lis.","respuesta":"J'aime lire."},
+{"tipo":"corregir_error","enunciado":"Je joue à la guitare.","respuesta":"Je joue de la guitare."},
+{"tipo":"corregir_error","enunciado":"Je fais de sport.","respuesta":"Je fais du sport."},
+{"tipo":"traducir","enunciado":"Me gusta leer.","respuesta":"J'aime lire.","aceptadas":["j'aime lire"]},
+{"tipo":"traducir","enunciado":"Hago deporte.","respuesta":"Je fais du sport.","aceptadas":["je fais du sport"]}
+] }

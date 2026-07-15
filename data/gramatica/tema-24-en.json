@@ -1,0 +1,25 @@
+{ "tema": 24, "idioma": "en", "titulo": "Going to para planes y repaso de interrogativos",
+"regla": "'Going to' expresa planes e intenciones futuras: 'I'm going to move to Canada'. Estructura: am/is/are + going to + verbo base. Repaso de interrogativos: what, who, where, when, why, how.",
+"trampa": "'Going to' lleva el verbo 'to be': 'I'm going to study', no 'I going to study'.",
+"ejemplos": [
+{"frase":"I'm going to move to Canada.","traduccion":"Voy a mudarme a Canadá."},
+{"frase":"She is going to study.","traduccion":"Ella va a estudiar."},
+{"frase":"What are you going to do?","traduccion":"¿Qué vas a hacer?"}
+],
+"ejercicios": [
+{"tipo":"hueco","enunciado":"I'm going ___ move. (to)","respuesta":"to"},
+{"tipo":"hueco","enunciado":"She ___ going to study. (is)","respuesta":"is","aceptadas":["'s"]},
+{"tipo":"hueco","enunciado":"I ___ going to travel. (am)","respuesta":"am","aceptadas":["'m"]},
+{"tipo":"hueco","enunciado":"___ are you going to do? (qué)","respuesta":"What"},
+{"tipo":"opcion_multiple","enunciado":"'voy a estudiar' =","opciones":["I'm going to study","I going to study","I'm go to study"],"respuesta":"I'm going to study"},
+{"tipo":"opcion_multiple","enunciado":"___ are you going to move? (cuándo)","opciones":["When","Who","Which"],"respuesta":"When"},
+{"tipo":"opcion_multiple","enunciado":"They ___ going to come.","opciones":["are","is","am"],"respuesta":"are"},
+{"tipo":"ordenar","enunciado":"Ordena: voy a mudarme.","opciones":["I","am","going","to","move"],"respuesta":"I am going to move"},
+{"tipo":"ordenar","enunciado":"Ordena: ella va a estudiar.","opciones":["she","is","going","to","study"],"respuesta":"she is going to study"},
+{"tipo":"ordenar","enunciado":"Ordena: ¿qué vas a hacer?","opciones":["what","are","you","going","to","do"],"respuesta":"what are you going to do"},
+{"tipo":"corregir_error","enunciado":"I going to study.","respuesta":"I am going to study."},
+{"tipo":"corregir_error","enunciado":"She going to travel.","respuesta":"She is going to travel."},
+{"tipo":"corregir_error","enunciado":"What you are going to do?","respuesta":"What are you going to do?"},
+{"tipo":"traducir","enunciado":"Voy a mudarme a Canadá.","respuesta":"I'm going to move to Canada.","aceptadas":["i am going to move to canada"]},
+{"tipo":"traducir","enunciado":"Ella va a estudiar.","respuesta":"She is going to study.","aceptadas":["she is going to study"]}
+] }

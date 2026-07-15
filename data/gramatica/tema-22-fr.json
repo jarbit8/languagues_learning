@@ -1,0 +1,25 @@
+{ "tema": 22, "idioma": "fr", "titulo": "Passé composé con avoir (participio -é)",
+"regla": "El passé composé se forma con 'avoir' (en presente) + participio pasado. Los verbos en -er hacen el participio en -é: parler→parlé, télécharger→téléchargé, envoyer→envoyé. 'J'ai parlé' = hablé / he hablado.",
+"trampa": "El passé composé necesita el auxiliar 'avoir': 'j'ai parlé', no solo 'je parlé'.",
+"ejemplos": [
+{"frase":"J'ai parlé avec Marie.","traduccion":"Hablé con Marie."},
+{"frase":"Tu as téléchargé l'appli.","traduccion":"Descargaste la app."},
+{"frase":"Il a envoyé un message.","traduccion":"Él envió un mensaje."}
+],
+"ejercicios": [
+{"tipo":"hueco","enunciado":"J'___ parlé. (avoir: ai)","respuesta":"ai"},
+{"tipo":"hueco","enunciado":"Tu ___ téléchargé l'appli. (avoir: as)","respuesta":"as"},
+{"tipo":"hueco","enunciado":"Participio de 'parler' = ___.","respuesta":"parlé","aceptadas":["parle"]},
+{"tipo":"hueco","enunciado":"Il ___ envoyé un message. (avoir: a)","respuesta":"a"},
+{"tipo":"opcion_multiple","enunciado":"Participio de 'télécharger':","opciones":["téléchargé","télécharger","télécharge"],"respuesta":"téléchargé"},
+{"tipo":"opcion_multiple","enunciado":"Auxiliar del passé composé (aquí):","opciones":["avoir","être","aller"],"respuesta":"avoir"},
+{"tipo":"opcion_multiple","enunciado":"Nous ___ mangé. (avoir)","opciones":["avons","avez","ont"],"respuesta":"avons"},
+{"tipo":"ordenar","enunciado":"Ordena: hablé con Marie.","opciones":["j'ai","parlé","avec","Marie"],"respuesta":"j'ai parlé avec Marie"},
+{"tipo":"ordenar","enunciado":"Ordena: descargaste la app.","opciones":["tu","as","téléchargé","l'appli"],"respuesta":"tu as téléchargé l'appli"},
+{"tipo":"ordenar","enunciado":"Ordena: él envió un mensaje.","opciones":["il","a","envoyé","un","message"],"respuesta":"il a envoyé un message"},
+{"tipo":"corregir_error","enunciado":"Je parlé avec Marie.","respuesta":"J'ai parlé avec Marie."},
+{"tipo":"corregir_error","enunciado":"J'ai parler avec Marie.","respuesta":"J'ai parlé avec Marie."},
+{"tipo":"corregir_error","enunciado":"Tu as télécharger l'appli.","respuesta":"Tu as téléchargé l'appli."},
+{"tipo":"traducir","enunciado":"Hablé con Marie.","respuesta":"J'ai parlé avec Marie.","aceptadas":["j'ai parlé avec marie"]},
+{"tipo":"traducir","enunciado":"Él envió un mensaje.","respuesta":"Il a envoyé un message.","aceptadas":["il a envoyé un message"]}
+] }

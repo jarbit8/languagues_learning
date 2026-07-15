@@ -1,0 +1,25 @@
+{ "tema": 15, "idioma": "en", "titulo": "How much / how many y can para pedir",
+"regla": "'How much' con incontables y precio (How much is it? How much bread?), 'how many' con contables (How many apples?). 'Can' sirve para pedir cortésmente: 'Can I have…?', 'Can I pay by card?'.",
+"trampa": "'How much' para incontables, 'how many' para contables: 'how many apples', no 'how much apples'.",
+"ejemplos": [
+{"frase":"How much is it?","traduccion":"¿Cuánto cuesta?"},
+{"frase":"How many apples?","traduccion":"¿Cuántas manzanas?"},
+{"frase":"Can I pay by card?","traduccion":"¿Puedo pagar con tarjeta?"}
+],
+"ejercicios": [
+{"tipo":"hueco","enunciado":"How ___ is it? (precio)","respuesta":"much"},
+{"tipo":"hueco","enunciado":"How ___ apples? (contable)","respuesta":"many"},
+{"tipo":"hueco","enunciado":"___ I have the bill? (pedir)","respuesta":"Can"},
+{"tipo":"hueco","enunciado":"How ___ money? (incontable)","respuesta":"much"},
+{"tipo":"opcion_multiple","enunciado":"'¿cuántas manzanas?' =","opciones":["how many apples","how much apples"],"respuesta":"how many apples"},
+{"tipo":"opcion_multiple","enunciado":"___ I pay by card?","opciones":["Can","Do","Am"],"respuesta":"Can"},
+{"tipo":"opcion_multiple","enunciado":"How much ___ it cost?","opciones":["does","do","is"],"respuesta":"does"},
+{"tipo":"ordenar","enunciado":"Ordena: ¿cuánto cuesta?","opciones":["how","much","is","it"],"respuesta":"how much is it"},
+{"tipo":"ordenar","enunciado":"Ordena: ¿cuántas manzanas?","opciones":["how","many","apples"],"respuesta":"how many apples"},
+{"tipo":"ordenar","enunciado":"Ordena: ¿puedo pagar con tarjeta?","opciones":["can","I","pay","by","card"],"respuesta":"can I pay by card"},
+{"tipo":"corregir_error","enunciado":"How much apples?","respuesta":"How many apples?"},
+{"tipo":"corregir_error","enunciado":"How many money?","respuesta":"How much money?"},
+{"tipo":"corregir_error","enunciado":"Can I to pay by card?","respuesta":"Can I pay by card?"},
+{"tipo":"traducir","enunciado":"¿Cuánto cuesta?","respuesta":"How much is it?","aceptadas":["how much is it"]},
+{"tipo":"traducir","enunciado":"¿Puedo pagar con tarjeta?","respuesta":"Can I pay by card?","aceptadas":["can i pay by card"]}
+] }

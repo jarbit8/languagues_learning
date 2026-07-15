@@ -1,0 +1,25 @@
+{ "tema": 10, "idioma": "en", "titulo": "There is / there are y preposiciones de lugar",
+"regla": "'There is' + singular (there is a table), 'there are' + plural (there are two chairs). Negativo: there isn't / there aren't. Preguntas: Is there…? Are there…? Preposiciones de lugar: in, on, under, next to, between.",
+"trampa": "'There is' para uno, 'there are' para varios: 'there are three books', no 'there is three books'.",
+"ejemplos": [
+{"frase":"There is a sofa in the living room.","traduccion":"Hay un sofá en la sala."},
+{"frase":"There are two windows.","traduccion":"Hay dos ventanas."},
+{"frase":"The cat is under the table.","traduccion":"El gato está debajo de la mesa."}
+],
+"ejercicios": [
+{"tipo":"hueco","enunciado":"There ___ a table. (singular)","respuesta":"is"},
+{"tipo":"hueco","enunciado":"There ___ three chairs. (plural)","respuesta":"are"},
+{"tipo":"hueco","enunciado":"The book is ___ the table. (sobre)","respuesta":"on"},
+{"tipo":"hueco","enunciado":"The cat is ___ the table. (debajo)","respuesta":"under"},
+{"tipo":"opcion_multiple","enunciado":"___ there any milk?","opciones":["Is","Are","Am"],"respuesta":"Is"},
+{"tipo":"opcion_multiple","enunciado":"There ___ two beds.","opciones":["are","is"],"respuesta":"are"},
+{"tipo":"opcion_multiple","enunciado":"The lamp is ___ to the bed. (al lado)","opciones":["next","near","under"],"respuesta":"next"},
+{"tipo":"ordenar","enunciado":"Ordena: hay un sofá.","opciones":["there","is","a","sofa"],"respuesta":"there is a sofa"},
+{"tipo":"ordenar","enunciado":"Ordena: hay dos ventanas.","opciones":["there","are","two","windows"],"respuesta":"there are two windows"},
+{"tipo":"ordenar","enunciado":"Ordena: el gato está debajo de la mesa.","opciones":["the","cat","is","under","the","table"],"respuesta":"the cat is under the table"},
+{"tipo":"corregir_error","enunciado":"There is two chairs.","respuesta":"There are two chairs."},
+{"tipo":"corregir_error","enunciado":"There are a table.","respuesta":"There is a table."},
+{"tipo":"corregir_error","enunciado":"The book is in the table.","respuesta":"The book is on the table."},
+{"tipo":"traducir","enunciado":"Hay dos ventanas.","respuesta":"There are two windows.","aceptadas":["there are two windows"]},
+{"tipo":"traducir","enunciado":"El gato está debajo de la mesa.","respuesta":"The cat is under the table.","aceptadas":["the cat is under the table"]}
+] }

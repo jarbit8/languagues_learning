@@ -1,0 +1,25 @@
+{ "tema": 8, "idioma": "fr", "titulo": "La hora y los adverbios de frecuencia",
+"regla": "La hora: 'il est sept heures et demie' (7:30), 'six heures et quart' (6:15), 'neuf heures moins le quart' (8:45), 'dix heures' (10:00). Los adverbios de frecuencia (toujours, souvent, parfois, jamais) van DESPUÉS del verbo: 'je mange toujours', 'je ne suis jamais en retard'.",
+"trampa": "En francés el adverbio va después del verbo: 'je mange souvent', no 'je souvent mange'.",
+"ejemplos": [
+{"frase":"Il est sept heures et demie.","traduccion":"Son las siete y media."},
+{"frase":"Je me lève toujours tôt.","traduccion":"Siempre me levanto temprano."},
+{"frase":"Elle n'est jamais en retard.","traduccion":"Ella nunca llega tarde."}
+],
+"ejercicios": [
+{"tipo":"hueco","enunciado":"Il est sept heures et ___. (media)","respuesta":"demie"},
+{"tipo":"hueco","enunciado":"Il est six heures et ___. (cuarto)","respuesta":"quart"},
+{"tipo":"hueco","enunciado":"Je me lève ___ tôt. (siempre)","respuesta":"toujours"},
+{"tipo":"hueco","enunciado":"Il est neuf heures ___ le quart. (menos)","respuesta":"moins"},
+{"tipo":"opcion_multiple","enunciado":"Posición correcta:","opciones":["je mange souvent","je souvent mange"],"respuesta":"je mange souvent"},
+{"tipo":"opcion_multiple","enunciado":"7:30 =","opciones":["sept heures et demie","sept heures et quart"],"respuesta":"sept heures et demie"},
+{"tipo":"opcion_multiple","enunciado":"Elle ___ en retard. (nunca)","opciones":["n'est jamais","jamais n'est"],"respuesta":"n'est jamais"},
+{"tipo":"ordenar","enunciado":"Ordena: siempre me levanto temprano.","opciones":["je","me","lève","toujours","tôt"],"respuesta":"je me lève toujours tôt"},
+{"tipo":"ordenar","enunciado":"Ordena: son las siete y media.","opciones":["il","est","sept","heures","et","demie"],"respuesta":"il est sept heures et demie"},
+{"tipo":"ordenar","enunciado":"Ordena: ella come a menudo aquí.","opciones":["elle","mange","souvent","ici"],"respuesta":"elle mange souvent ici"},
+{"tipo":"corregir_error","enunciado":"Je toujours mange à midi.","respuesta":"Je mange toujours à midi."},
+{"tipo":"corregir_error","enunciado":"Il est sept heures demie.","respuesta":"Il est sept heures et demie."},
+{"tipo":"corregir_error","enunciado":"Elle jamais est en retard.","respuesta":"Elle n'est jamais en retard."},
+{"tipo":"traducir","enunciado":"Siempre me levanto temprano.","respuesta":"Je me lève toujours tôt.","aceptadas":["je me lève toujours tot"]},
+{"tipo":"traducir","enunciado":"Son las siete y media.","respuesta":"Il est sept heures et demie.","aceptadas":["il est sept heures et demie"]}
+] }

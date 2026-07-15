@@ -1,0 +1,25 @@
+{ "tema": 12, "idioma": "fr", "titulo": "El verbo porter y quel/quelle/quels/quelles",
+"regla": "El verbo 'porter' = llevar puesto: 'je porte un jean', 'elle porte une robe'. Los interrogativos 'quel/quelle/quels/quelles' (qué/cuál) concuerdan con el sustantivo: 'quel pantalon ?', 'quelle robe ?', 'quels vêtements ?', 'quelles chaussures ?'.",
+"trampa": "'quel' concuerda en género y número: 'quelle robe' (fem), 'quels vêtements' (masc plural).",
+"ejemplos": [
+{"frase":"Je porte un jean.","traduccion":"Llevo un jean."},
+{"frase":"Quelle robe ?","traduccion":"¿Qué vestido?"},
+{"frase":"Elle porte une veste.","traduccion":"Ella lleva una chaqueta."}
+],
+"ejercicios": [
+{"tipo":"hueco","enunciado":"Je ___ un jean. (porter)","respuesta":"porte"},
+{"tipo":"hueco","enunciado":"___ robe ? (fem singular)","respuesta":"quelle"},
+{"tipo":"hueco","enunciado":"___ vêtements ? (masc plural)","respuesta":"quels"},
+{"tipo":"hueco","enunciado":"Elle ___ une veste. (porter)","respuesta":"porte"},
+{"tipo":"opcion_multiple","enunciado":"___ pantalon ? (masc singular)","opciones":["quel","quelle","quels"],"respuesta":"quel"},
+{"tipo":"opcion_multiple","enunciado":"___ chaussures ? (fem plural)","opciones":["quelles","quels","quelle"],"respuesta":"quelles"},
+{"tipo":"opcion_multiple","enunciado":"Tu ___ un chapeau. (llevar)","opciones":["portes","porte","portent"],"respuesta":"portes"},
+{"tipo":"ordenar","enunciado":"Ordena: llevo un jean.","opciones":["je","porte","un","jean"],"respuesta":"je porte un jean"},
+{"tipo":"ordenar","enunciado":"Ordena: ella lleva un vestido.","opciones":["elle","porte","une","robe"],"respuesta":"elle porte une robe"},
+{"tipo":"ordenar","enunciado":"Ordena: ¿qué ropa llevas?","opciones":["quels","vêtements","tu","portes"],"respuesta":"quels vêtements tu portes"},
+{"tipo":"corregir_error","enunciado":"Quel robe ?","respuesta":"Quelle robe ?"},
+{"tipo":"corregir_error","enunciado":"Je porte une jean.","respuesta":"Je porte un jean."},
+{"tipo":"corregir_error","enunciado":"Quelle pantalon ?","respuesta":"Quel pantalon ?"},
+{"tipo":"traducir","enunciado":"Llevo un jean.","respuesta":"Je porte un jean.","aceptadas":["je porte un jean"]},
+{"tipo":"traducir","enunciado":"¿Qué vestido?","respuesta":"Quelle robe ?","aceptadas":["quelle robe"]}
+] }

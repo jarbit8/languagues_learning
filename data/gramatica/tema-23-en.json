@@ -1,0 +1,25 @@
+{ "tema": 23, "idioma": "en", "titulo": "Pasados irregulares más comunes",
+"regla": "Muchos verbos comunes tienen pasado irregular (no -ed): go→went, have→had, do→did, see→saw, come→came, get→got, take→took, make→made, say→said, eat→ate, buy→bought, find→found, give→gave, know→knew, is/are→was/were.",
+"trampa": "Estos verbos no usan -ed: 'I went', no 'I goed'; 'I bought', no 'I buyed'.",
+"ejemplos": [
+{"frase":"I went to Canada.","traduccion":"Fui a Canadá."},
+{"frase":"She had a good trip.","traduccion":"Ella tuvo un buen viaje."},
+{"frase":"I bought a ticket.","traduccion":"Compré un boleto."}
+],
+"ejercicios": [
+{"tipo":"hueco","enunciado":"Pasado de 'go' = ___.","respuesta":"went"},
+{"tipo":"hueco","enunciado":"Pasado de 'have' = ___.","respuesta":"had"},
+{"tipo":"hueco","enunciado":"Pasado de 'buy' = ___.","respuesta":"bought"},
+{"tipo":"hueco","enunciado":"I ___ a museum yesterday. (see → saw)","respuesta":"saw"},
+{"tipo":"opcion_multiple","enunciado":"Pasado de 'take':","opciones":["took","taked","taken"],"respuesta":"took"},
+{"tipo":"opcion_multiple","enunciado":"Pasado de 'eat':","opciones":["ate","eated","eaten"],"respuesta":"ate"},
+{"tipo":"opcion_multiple","enunciado":"I ___ to the airport. (go)","opciones":["went","goed","gone"],"respuesta":"went"},
+{"tipo":"ordenar","enunciado":"Ordena: fui a Canadá.","opciones":["I","went","to","Canada"],"respuesta":"I went to Canada"},
+{"tipo":"ordenar","enunciado":"Ordena: ella tuvo un buen viaje.","opciones":["she","had","a","good","trip"],"respuesta":"she had a good trip"},
+{"tipo":"ordenar","enunciado":"Ordena: compré un boleto.","opciones":["I","bought","a","ticket"],"respuesta":"I bought a ticket"},
+{"tipo":"corregir_error","enunciado":"I goed to Canada.","respuesta":"I went to Canada."},
+{"tipo":"corregir_error","enunciado":"She haved a trip.","respuesta":"She had a trip."},
+{"tipo":"corregir_error","enunciado":"I buyed a ticket.","respuesta":"I bought a ticket."},
+{"tipo":"traducir","enunciado":"Fui a Canadá.","respuesta":"I went to Canada.","aceptadas":["i went to canada"]},
+{"tipo":"traducir","enunciado":"Compré un boleto.","respuesta":"I bought a ticket.","aceptadas":["i bought a ticket"]}
+] }

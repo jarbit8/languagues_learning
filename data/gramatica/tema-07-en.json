@@ -1,0 +1,25 @@
+{ "tema": 7, "idioma": "en", "titulo": "Preposiciones de tiempo in/on/at y ordinales",
+"regla": "Preposiciones de tiempo: 'in' con meses y estaciones (in July, in summer), 'on' con días y fechas (on Monday, on May 3rd), 'at' con horas y con 'at the weekend'. Para las fechas se usan ordinales: first, second, third… (May 3rd = the third of May).",
+"trampa": "No uses 'in' con los días: es 'on Monday', nunca 'in Monday'.",
+"ejemplos": [
+{"frase":"I study on Monday.","traduccion":"Estudio el lunes."},
+{"frase":"My birthday is in July.","traduccion":"Mi cumpleaños es en julio."},
+{"frase":"See you at the weekend.","traduccion":"Nos vemos el fin de semana."}
+],
+"ejercicios": [
+{"tipo":"hueco","enunciado":"My birthday is ___ January.","respuesta":"in"},
+{"tipo":"hueco","enunciado":"I work ___ Monday.","respuesta":"on"},
+{"tipo":"hueco","enunciado":"The class is ___ the weekend.","respuesta":"at"},
+{"tipo":"hueco","enunciado":"Spring starts ___ March.","respuesta":"in"},
+{"tipo":"opcion_multiple","enunciado":"See you ___ Friday.","opciones":["in","on","at"],"respuesta":"on"},
+{"tipo":"opcion_multiple","enunciado":"El ordinal de 3 es:","opciones":["third","three","threeth"],"respuesta":"third"},
+{"tipo":"opcion_multiple","enunciado":"I get up ___ seven o'clock.","opciones":["at","in","on"],"respuesta":"at"},
+{"tipo":"ordenar","enunciado":"Ordena: mi cumpleaños es en mayo.","opciones":["my","birthday","is","in","May"],"respuesta":"my birthday is in May"},
+{"tipo":"ordenar","enunciado":"Ordena: nos vemos el lunes.","opciones":["see","you","on","Monday"],"respuesta":"see you on Monday"},
+{"tipo":"ordenar","enunciado":"Ordena: la clase es al mediodía.","opciones":["the","class","is","at","noon"],"respuesta":"the class is at noon"},
+{"tipo":"corregir_error","enunciado":"I work in Monday.","respuesta":"I work on Monday."},
+{"tipo":"corregir_error","enunciado":"My birthday is on July.","respuesta":"My birthday is in July."},
+{"tipo":"corregir_error","enunciado":"See you at Friday.","respuesta":"See you on Friday."},
+{"tipo":"traducir","enunciado":"Nos vemos el lunes.","respuesta":"See you on Monday.","aceptadas":["see you on monday"]},
+{"tipo":"traducir","enunciado":"Mi cumpleaños es en mayo.","respuesta":"My birthday is in May.","aceptadas":["my birthday is in may"]}
+] }

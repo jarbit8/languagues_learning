@@ -1,0 +1,25 @@
+{ "tema": 22, "idioma": "en", "titulo": "Pasado: was/were y past simple regular",
+"regla": "El pasado de 'to be': I/he/she/it was; you/we/they were. El pasado simple de los verbos regulares se forma con -ed (igual para todas las personas): work→worked, download→downloaded, watch→watched.",
+"trampa": "'was' es singular y 'were' plural. El pasado regular es -ed para todos: 'she worked'.",
+"ejemplos": [
+{"frase":"I was at home.","traduccion":"Estaba en casa."},
+{"frase":"They were happy.","traduccion":"Estaban felices."},
+{"frase":"I downloaded the app.","traduccion":"Descargué la app."}
+],
+"ejercicios": [
+{"tipo":"hueco","enunciado":"I ___ at home. (was/were)","respuesta":"was"},
+{"tipo":"hueco","enunciado":"They ___ happy. (was/were)","respuesta":"were"},
+{"tipo":"hueco","enunciado":"I ___ the app yesterday. (download + ed)","respuesta":"downloaded"},
+{"tipo":"hueco","enunciado":"She ___ a video. (watch + ed)","respuesta":"watched"},
+{"tipo":"opcion_multiple","enunciado":"Pasado de 'work':","opciones":["worked","worken","workd"],"respuesta":"worked"},
+{"tipo":"opcion_multiple","enunciado":"We ___ at school. (was/were)","opciones":["were","was"],"respuesta":"were"},
+{"tipo":"opcion_multiple","enunciado":"He ___ tired. (was/were)","opciones":["was","were"],"respuesta":"was"},
+{"tipo":"ordenar","enunciado":"Ordena: estaba en casa.","opciones":["I","was","at","home"],"respuesta":"I was at home"},
+{"tipo":"ordenar","enunciado":"Ordena: estaban felices.","opciones":["they","were","happy"],"respuesta":"they were happy"},
+{"tipo":"ordenar","enunciado":"Ordena: descargué la app.","opciones":["I","downloaded","the","app"],"respuesta":"I downloaded the app"},
+{"tipo":"corregir_error","enunciado":"They was happy.","respuesta":"They were happy."},
+{"tipo":"corregir_error","enunciado":"I was download the app.","respuesta":"I downloaded the app."},
+{"tipo":"corregir_error","enunciado":"She work yesterday.","respuesta":"She worked yesterday."},
+{"tipo":"traducir","enunciado":"Estaban felices.","respuesta":"They were happy.","aceptadas":["they were happy"]},
+{"tipo":"traducir","enunciado":"Descargué la app.","respuesta":"I downloaded the app.","aceptadas":["i downloaded the app"]}
+] }
