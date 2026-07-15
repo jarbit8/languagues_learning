@@ -54,6 +54,7 @@ export interface GramaticaPack {
   idioma: Idioma
   titulo: string
   regla: string
+  pronunciacion: string
   trampa: string
   ejemplos: { frase: string; traduccion: string }[]
   ejercicios: Ejercicio[]
