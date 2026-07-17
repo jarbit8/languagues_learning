@@ -13,12 +13,22 @@ if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
   window.speechSynthesis.onvoiceschanged = cargarVoces
 }
 
+// Puntúa la calidad probable de una voz por su nombre: las "Online/Natural/Neural" del
+// sistema suenan mucho mejor que las viejas SAPI de escritorio (David, Zira, Mark...).
+export function puntuarVoz(v: SpeechSynthesisVoice): number {
+  const n = v.name.toLowerCase()
+  let score = 0
+  if (/online|natural|neural|enhanced|premium|wavenet|plus/.test(n)) score += 10
+  if (!v.localService) score += 3
+  if (/desktop|david|zira|mark|mobile compact/.test(n)) score -= 3
+  return score
+}
+
 function elegirVoz(lang: string, fallback: string): SpeechSynthesisVoice | undefined {
   const norm = (s: string) => s.toLowerCase().replace('_', '-')
-  return (
-    voces.find((v) => norm(v.lang).startsWith(norm(lang))) ??
-    voces.find((v) => norm(v.lang).startsWith(norm(fallback)))
-  )
+  const candidatas = (idiomaBuscado: string) =>
+    voces.filter((v) => norm(v.lang).startsWith(norm(idiomaBuscado))).sort((a, b) => puntuarVoz(b) - puntuarVoz(a))
+  return candidatas(lang)[0] ?? candidatas(fallback)[0]
 }
 
 let velocidadGuardada = Number(localStorage.getItem('audio.rate') ?? '0.9') || 0.9
