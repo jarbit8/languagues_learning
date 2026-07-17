@@ -61,6 +61,11 @@ function LeccionCard({
             <span className="flex flex-col">
               <span className="text-sm font-semibold">{ej.frase}</span>
               <span className="text-xs text-slate-500 dark:text-slate-400">{ej.traduccion}</span>
+              {ej.comoSeLee && (
+                <span className="mt-0.5 text-xs italic text-indigo-500 dark:text-indigo-300">
+                  🗨️ se lee: "{ej.comoSeLee}"
+                </span>
+              )}
             </span>
           </button>
         ))}
