@@ -4,6 +4,7 @@ import { mapaTemas, resumenPalabrasGlobal, obtenerHistorial, calcularRacha } fro
 import { bloqueDeTema } from '../lib/curriculum'
 import { getVocabPack } from '../data/packs'
 import Ajustes from './Ajustes'
+import Temario from './Temario'
 
 const COLOR_ESTADO: Record<string, string> = {
   aprobado: 'bg-emerald-500 text-white',
@@ -19,7 +20,7 @@ function etiquetaHistorial(tipo: string, ref: number | string): string {
 }
 
 export default function Progreso() {
-  const [sub, setSub] = useState<'progreso' | 'ajustes'>('progreso')
+  const [sub, setSub] = useState<'progreso' | 'temario' | 'ajustes'>('progreso')
 
   const data = useLiveQuery(async () => {
     const [mapa, palabras, historial, racha] = await Promise.all([
@@ -36,7 +37,7 @@ export default function Progreso() {
       <h1 className="text-2xl font-bold">Progreso</h1>
 
       <div className="flex rounded-xl bg-slate-200 p-1 dark:bg-slate-800">
-        {(['progreso', 'ajustes'] as const).map((s) => (
+        {(['progreso', 'temario', 'ajustes'] as const).map((s) => (
           <button
             key={s}
             onClick={() => setSub(s)}
@@ -44,13 +45,15 @@ export default function Progreso() {
               sub === s ? 'bg-white shadow dark:bg-slate-700' : 'text-slate-500'
             }`}
           >
-            {s === 'progreso' ? 'Progreso' : 'Ajustes'}
+            {s === 'progreso' ? 'Progreso' : s === 'temario' ? 'Temario' : 'Ajustes'}
           </button>
         ))}
       </div>
 
       {sub === 'ajustes' ? (
         <Ajustes />
+      ) : sub === 'temario' ? (
+        <Temario />
       ) : !data ? (
         <p className="tarjeta">Cargando…</p>
       ) : (
