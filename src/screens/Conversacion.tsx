@@ -3,28 +3,61 @@ import { useLiveQuery } from 'dexie-react-hooks'
 import type { Idioma } from '../types'
 import { temaEnCurso } from '../lib/progreso'
 import { escenarioDe } from '../data/escenarios'
-import { getVocabPack } from '../data/packs'
+import { getVocabPack, vocabPacks } from '../data/packs'
 import { hayApiKey } from '../lib/apiKey'
+import { construirPromptCopiable } from '../lib/speaking'
 import ChatSpeaking from '../components/ChatSpeaking'
+
+function temasDesbloqueadosTexto(tema: number): string {
+  const titulos = vocabPacks.filter((p) => p.tema <= tema).map((p) => p.titulo)
+  return titulos.slice(-6).join(', ') || 'saludos básicos'
+}
+
+function CopiarPrompt({ idioma, tema }: { idioma: Idioma; tema: number }) {
+  const [copiado, setCopiado] = useState(false)
+  const prompt = construirPromptCopiable(idioma, escenarioDe(tema), temasDesbloqueadosTexto(tema))
+
+  async function copiar() {
+    try {
+      await navigator.clipboard.writeText(prompt)
+      setCopiado(true)
+      setTimeout(() => setCopiado(false), 2000)
+    } catch {
+      setCopiado(false)
+    }
+  }
+
+  return (
+    <div className="tarjeta flex flex-col gap-3">
+      <p className="text-sm text-slate-500 dark:text-slate-400">
+        Pega esto como tu primer mensaje en cualquier chat de IA (Claude, ChatGPT...) y practica ahí. El tutor te
+        responderá siempre en {idioma === 'en' ? 'inglés' : 'francés'}, nunca en español.
+      </p>
+      <textarea
+        readOnly
+        value={prompt}
+        rows={9}
+        onFocus={(e) => e.target.select()}
+        className="rounded-xl border border-slate-300 bg-slate-50 px-3 py-2 text-sm dark:border-slate-600 dark:bg-slate-900"
+      />
+      <button onClick={copiar} className="btn-primary">
+        {copiado ? '¡Copiado! ✓' : 'Copiar prompt 📋'}
+      </button>
+    </div>
+  )
+}
 
 export default function Conversacion() {
   const temaActual = useLiveQuery(() => temaEnCurso(), [], 1) ?? 1
   const [tema, setTema] = useState<number | null>(null)
   const [idioma, setIdioma] = useState<Idioma>('en')
   const [enSesion, setEnSesion] = useState(false)
+  const [verPrompt, setVerPrompt] = useState(false)
 
   const temaSel = tema ?? temaActual
   const temasDisponibles = Array.from({ length: temaActual }, (_, i) => i + 1)
   const pack = getVocabPack(temaSel)
-
-  if (!hayApiKey()) {
-    return (
-      <p className="tarjeta text-slate-500 dark:text-slate-400">
-        Necesitas pegar tu API key de Anthropic en Ajustes (dentro de Progreso) para hablar con el tutor.
-        Todo lo demás de la app sigue funcionando sin ella.
-      </p>
-    )
-  }
+  const conKey = hayApiKey()
 
   if (enSesion) {
     return (
@@ -72,15 +105,29 @@ export default function Conversacion() {
         </select>
         <p className="text-sm text-slate-500 dark:text-slate-400">{escenarioDe(temaSel)}</p>
 
-        <button onClick={() => setEnSesion(true)} className="btn-primary">
-          Empezar a hablar
+        {conKey && (
+          <button onClick={() => setEnSesion(true)} className="btn-primary">
+            Empezar a hablar aquí
+          </button>
+        )}
+        <button onClick={() => setVerPrompt((v) => !v)} className={conKey ? 'btn' : 'btn-primary'}>
+          {verPrompt
+            ? 'Ocultar prompt'
+            : conKey
+              ? 'O copia el prompt para hablar en otra app'
+              : 'Copiar prompt para hablar en otra app'}
         </button>
       </div>
-      {pack && (
-        <p className="text-center text-xs text-slate-400">
-          Vocabulario disponible: temas 1 a {temaSel}
+
+      {!conKey && !verPrompt && (
+        <p className="tarjeta text-sm text-slate-500 dark:text-slate-400">
+          No tienes una API key de Anthropic pegada en Ajustes, así que no puedes hablar aquí dentro — pero puedes
+          copiar el prompt de arriba y pegarlo en cualquier otra IA para practicar igual.
         </p>
       )}
+      {verPrompt && <CopiarPrompt idioma={idioma} tema={temaSel} />}
+
+      {pack && <p className="text-center text-xs text-slate-400">Vocabulario disponible: temas 1 a {temaSel}</p>}
     </div>
   )
 }
