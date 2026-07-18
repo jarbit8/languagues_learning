@@ -5,6 +5,7 @@ export type Idioma = 'en' | 'fr'
 export interface ConceptoLado {
   texto: string
   ejemplo: string
+  pron?: string
 }
 
 export interface Concepto {

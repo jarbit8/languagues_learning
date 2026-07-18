@@ -2,7 +2,7 @@ import { useState } from 'react'
 import type { Concepto, PalabraEstado } from '../types'
 import { hablar } from '../lib/audio'
 
-function Lado({ chip, texto, ejemplo, idioma }: { chip: string; texto: string; ejemplo: string; idioma: 'en' | 'fr' }) {
+function Lado({ chip, texto, ejemplo, pron, idioma }: { chip: string; texto: string; ejemplo: string; pron?: string; idioma: 'en' | 'fr' }) {
   return (
     <div className="flex flex-col gap-1">
       <div className="flex items-center gap-2">
@@ -16,6 +16,9 @@ function Lado({ chip, texto, ejemplo, idioma }: { chip: string; texto: string; e
           🔊
         </button>
       </div>
+      {pron && (
+        <span className="text-xs tracking-wide text-slate-400 dark:text-slate-500">/ {pron} /</span>
+      )}
       <button
         onClick={() => hablar(ejemplo, idioma)}
         className="text-left text-sm italic text-slate-500 dark:text-slate-400"
@@ -48,8 +51,8 @@ export default function VocabCard({
 
       {abierta && (
         <div className="mt-3 flex flex-col gap-3 border-t border-slate-100 pt-3 dark:border-slate-700">
-          <Lado chip="EN" texto={concepto.en.texto} ejemplo={concepto.en.ejemplo} idioma="en" />
-          <Lado chip="FR" texto={concepto.fr.texto} ejemplo={concepto.fr.ejemplo} idioma="fr" />
+          <Lado chip="EN" texto={concepto.en.texto} ejemplo={concepto.en.ejemplo} pron={concepto.en.pron} idioma="en" />
+          <Lado chip="FR" texto={concepto.fr.texto} ejemplo={concepto.fr.ejemplo} pron={concepto.fr.pron} idioma="fr" />
           {concepto.nota && (
             <p className="rounded-lg bg-amber-50 px-3 py-2 text-sm text-amber-800 dark:bg-amber-900/30 dark:text-amber-200">
               💡 {concepto.nota}
