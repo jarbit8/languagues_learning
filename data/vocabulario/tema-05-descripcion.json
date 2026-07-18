@@ -28,5 +28,9 @@
 {"id":"a1-t05-027","es":"moreno","en":{"texto":"dark-haired","ejemplo":"My friend is dark-haired.","pron":"dark-JERD"},"fr":{"texto":"brun","ejemplo":"Mon ami est brun.","pron":"BRUN"}},
 {"id":"a1-t05-028","es":"pelirrojo","en":{"texto":"red-haired","ejemplo":"She is red-haired.","pron":"red-JERD"},"fr":{"texto":"roux","ejemplo":"Elle est rousse.","pron":"RU"}},
 {"id":"a1-t05-029","es":"amigable","en":{"texto":"friendly","ejemplo":"The waiter is friendly.","pron":"FREND-li"},"fr":{"texto":"amical","ejemplo":"Le serveur est amical.","pron":"a-mi-KAL"}},
-{"id":"a1-t05-030","es":"valiente","en":{"texto":"brave","ejemplo":"The nurse is brave.","pron":"BREIV"},"fr":{"texto":"courageux","ejemplo":"L'infirmière est courageuse.","pron":"ku-ra-ZHÖ"}}
+{"id":"a1-t05-030","es":"valiente","en":{"texto":"brave","ejemplo":"The nurse is brave.","pron":"BREIV"},"fr":{"texto":"courageux","ejemplo":"L'infirmière est courageuse.","pron":"ku-ra-ZHÖ"}},
+{"id":"a1-t05-031","es":"rizado","en":{"texto":"curly","ejemplo":"She has curly hair.","pron":"KER-li"},"fr":{"texto":"frisé","ejemplo":"Elle a les cheveux frisés.","pron":"fri-ZE"}},
+{"id":"a1-t05-032","es":"calvo","en":{"texto":"bald","ejemplo":"My father is bald.","pron":"BOLD"},"fr":{"texto":"chauve","ejemplo":"Mon père est chauve.","pron":"SHOV"}},
+{"id":"a1-t05-033","es":"perezoso","en":{"texto":"lazy","ejemplo":"He is a bit lazy.","pron":"LEI-zi"},"fr":{"texto":"paresseux","ejemplo":"Il est un peu paresseux.","pron":"pa-re-SÖ"}},
+{"id":"a1-t05-034","es":"enojado","en":{"texto":"angry","ejemplo":"She is angry today.","pron":"AN-gri"},"fr":{"texto":"fâché","ejemplo":"Elle est fâchée aujourd'hui.","pron":"fa-SHE"}}
 ] }

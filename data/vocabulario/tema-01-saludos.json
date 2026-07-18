@@ -28,5 +28,9 @@
 {"id":"a1-t01-027","es":"¿y tú?","en":{"texto":"and you?","ejemplo":"I'm fine. And you?","pron":"and YU"},"fr":{"texto":"et toi ?","ejemplo":"Ça va bien. Et toi ?","pron":"e TUA"},"nota":"FR formal: et vous ?"},
 {"id":"a1-t01-028","es":"bien","en":{"texto":"fine","ejemplo":"I'm fine, thank you.","pron":"FAIN"},"fr":{"texto":"bien","ejemplo":"Ça va bien, merci.","pron":"BYEN"}},
 {"id":"a1-t01-029","es":"muy bien","en":{"texto":"very well","ejemplo":"Very well, thanks!","pron":"VE-ri UEL"},"fr":{"texto":"très bien","ejemplo":"Très bien, merci !","pron":"tre BYEN"}},
-{"id":"a1-t01-030","es":"bienvenido","en":{"texto":"welcome","ejemplo":"Welcome to Canada!","pron":"UEL-kem"},"fr":{"texto":"bienvenue","ejemplo":"Bienvenue au Canada !","pron":"byen-ve-NÜ"},"nota":"FR: femenino igual, bienvenue."}
+{"id":"a1-t01-030","es":"bienvenido","en":{"texto":"welcome","ejemplo":"Welcome to Canada!","pron":"UEL-kem"},"fr":{"texto":"bienvenue","ejemplo":"Bienvenue au Canada !","pron":"byen-ve-NÜ"},"nota":"FR: femenino igual, bienvenue."},
+{"id":"a1-t01-031","es":"que tengas buen día","en":{"texto":"have a nice day","ejemplo":"Bye! Have a nice day.","pron":"jav a nais DEI"},"fr":{"texto":"bonne journée","ejemplo":"Au revoir ! Bonne journée !","pron":"bon zhur-NE"}},
+{"id":"a1-t01-032","es":"que tengas buena tarde/noche","en":{"texto":"have a nice evening","ejemplo":"Good night! Have a nice evening.","pron":"jav a nais IV-ning"},"fr":{"texto":"bonne soirée","ejemplo":"Au revoir ! Bonne soirée !","pron":"bon suar-RE"}},
+{"id":"a1-t01-033","es":"hola (muy informal)","en":{"texto":"hey","ejemplo":"Hey! How are you?","pron":"JEI"},"fr":{"texto":"coucou","ejemplo":"Coucou ! Ça va ?","pron":"ku-KU"},"nota":"FR: coucou es aún más informal que salut, típico entre amigos."},
+{"id":"a1-t01-034","es":"cuídate","en":{"texto":"take care","ejemplo":"Bye, Ana! Take care.","pron":"teik KER"},"fr":{"texto":"prends soin de toi","ejemplo":"Au revoir ! Prends soin de toi.","pron":"pran suan de TUA"}}
 ] }

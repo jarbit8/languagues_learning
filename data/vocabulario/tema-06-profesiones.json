@@ -28,5 +28,9 @@
 {"id":"a1-t06-027","es":"vendedora","en":{"texto":"seller (f)","ejemplo":"The seller is young.","pron":"SE-ler"},"fr":{"texto":"vendeuse","ejemplo":"La vendeuse est jeune.","pron":"van-DÖS"},"nota":"FR: vendeur → vendeuse."},
 {"id":"a1-t06-028","es":"¿en qué trabajas?","en":{"texto":"what do you do?","ejemplo":"What do you do?","pron":"uat du yu DU"},"fr":{"texto":"quel est ton travail ?","ejemplo":"Quel est ton travail ?","pron":"kel e ton tra-VAY"}},
 {"id":"a1-t06-029","es":"trabajo en","en":{"texto":"I work at","ejemplo":"I work at a company.","pron":"ai UERK at"},"fr":{"texto":"je travaille à","ejemplo":"Je travaille dans une entreprise.","pron":"zhe tra-VAY a"}},
-{"id":"a1-t06-030","es":"carrera","en":{"texto":"career","ejemplo":"Computer science is a good career.","pron":"ka-RIR"},"fr":{"texto":"carrière","ejemplo":"L'informatique est une bonne carrière.","pron":"ka-RYER"}}
+{"id":"a1-t06-030","es":"carrera","en":{"texto":"career","ejemplo":"Computer science is a good career.","pron":"ka-RIR"},"fr":{"texto":"carrière","ejemplo":"L'informatique est une bonne carrière.","pron":"ka-RYER"}},
+{"id":"a1-t06-031","es":"arquitecto","en":{"texto":"architect","ejemplo":"My uncle is an architect.","pron":"AR-ki-tekt"},"fr":{"texto":"architecte","ejemplo":"Mon oncle est architecte.","pron":"ar-shi-TEKT"}},
+{"id":"a1-t06-032","es":"contador","en":{"texto":"accountant","ejemplo":"She is an accountant.","pron":"a-KAUN-tant"},"fr":{"texto":"comptable","ejemplo":"Elle est comptable.","pron":"kon-TABL"}},
+{"id":"a1-t06-033","es":"salario","en":{"texto":"salary","ejemplo":"The salary is good.","pron":"SA-la-ri"},"fr":{"texto":"salaire","ejemplo":"Le salaire est bon.","pron":"sa-LER"}},
+{"id":"a1-t06-034","es":"desempleado","en":{"texto":"unemployed","ejemplo":"He is unemployed now.","pron":"an-em-PLOID"},"fr":{"texto":"au chômage","ejemplo":"Il est au chômage.","pron":"o sho-MAZH"}}
 ] }

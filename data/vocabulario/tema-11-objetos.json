@@ -28,5 +28,7 @@
 {"id":"a1-t11-027","es":"este","en":{"texto":"this","ejemplo":"This is my book.","pron":"DHIS"},"fr":{"texto":"ce","ejemplo":"Ce livre est à moi.","pron":"SE"}},
 {"id":"a1-t11-028","es":"estos","en":{"texto":"these","ejemplo":"These are my pens.","pron":"DHIIS"},"fr":{"texto":"ces","ejemplo":"Ces stylos sont à moi.","pron":"SE"}},
 {"id":"a1-t11-029","es":"aquí","en":{"texto":"here","ejemplo":"My keys are here.","pron":"JIR"},"fr":{"texto":"ici","ejemplo":"Mes clés sont ici.","pron":"i-SI"}},
-{"id":"a1-t11-030","es":"allí","en":{"texto":"there","ejemplo":"The bag is there.","pron":"DHER"},"fr":{"texto":"là","ejemplo":"Le sac est là.","pron":"LA"}}
+{"id":"a1-t11-030","es":"allí","en":{"texto":"there","ejemplo":"The bag is there.","pron":"DHER"},"fr":{"texto":"là","ejemplo":"Le sac est là.","pron":"LA"}},
+{"id":"a1-t11-031","es":"paraguas","en":{"texto":"umbrella","ejemplo":"I need my umbrella today.","pron":"am-BRE-la"},"fr":{"texto":"parapluie","ejemplo":"J'ai besoin de mon parapluie aujourd'hui.","pron":"pa-ra-PLÜI"}},
+{"id":"a1-t11-032","es":"tijeras","en":{"texto":"scissors","ejemplo":"The scissors are in the bag.","pron":"SI-sors"},"fr":{"texto":"ciseaux","ejemplo":"Les ciseaux sont dans le sac.","pron":"si-ZO"}}
 ] }

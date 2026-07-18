@@ -28,5 +28,9 @@
 {"id":"a1-t03-027","es":"América","en":{"texto":"America","ejemplo":"Peru is in America.","pron":"a-ME-ri-ka"},"fr":{"texto":"Amérique","ejemplo":"Le Pérou est en Amérique.","pron":"a-me-RIK"}},
 {"id":"a1-t03-028","es":"Europa","en":{"texto":"Europe","ejemplo":"France is in Europe.","pron":"YU-rop"},"fr":{"texto":"Europe","ejemplo":"La France est en Europe.","pron":"ö-ROP"}},
 {"id":"a1-t03-029","es":"extranjero","en":{"texto":"foreigner","ejemplo":"I am a foreigner here.","pron":"FO-ri-ner"},"fr":{"texto":"étranger","ejemplo":"Je suis étranger ici.","pron":"e-tran-ZHE"}},
-{"id":"a1-t03-030","es":"nacer en","en":{"texto":"to be born in","ejemplo":"I was born in Peru.","pron":"tu bi BORN in"},"fr":{"texto":"naître à","ejemplo":"Je suis né à Arequipa.","pron":"NETR a"}}
+{"id":"a1-t03-030","es":"nacer en","en":{"texto":"to be born in","ejemplo":"I was born in Peru.","pron":"tu bi BORN in"},"fr":{"texto":"naître à","ejemplo":"Je suis né à Arequipa.","pron":"NETR a"}},
+{"id":"a1-t03-031","es":"Quebec","en":{"texto":"Quebec","ejemplo":"Quebec is in Canada.","pron":"kui-BEK"},"fr":{"texto":"Québec","ejemplo":"Québec est au Canada.","pron":"ke-BEK"}},
+{"id":"a1-t03-032","es":"francófono","en":{"texto":"French-speaking","ejemplo":"Quebec is French-speaking.","pron":"french SPI-king"},"fr":{"texto":"francophone","ejemplo":"Le Québec est francophone.","pron":"fran-ko-FON"}},
+{"id":"a1-t03-033","es":"alemán","en":{"texto":"German","ejemplo":"He speaks German.","pron":"YER-man"},"fr":{"texto":"allemand","ejemplo":"Il parle allemand.","pron":"al-MAN"}},
+{"id":"a1-t03-034","es":"canadiense (f)","en":{"texto":"Canadian","ejemplo":"She is Canadian.","pron":"ka-NEI-dian"},"fr":{"texto":"canadienne","ejemplo":"Elle est canadienne.","pron":"ka-na-DYEN"}}
 ] }

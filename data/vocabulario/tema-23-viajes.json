@@ -28,5 +28,7 @@
 {"id":"a1-t23-027","es":"pasajero","en":{"texto":"passenger","ejemplo":"The passenger is waiting.","pron":"PA-sen-yer"},"fr":{"texto":"passager","ejemplo":"Le passager attend.","pron":"pa-sa-ZHE"}},
 {"id":"a1-t23-028","es":"llegada","en":{"texto":"arrival","ejemplo":"The arrival is at noon.","pron":"a-RAI-val"},"fr":{"texto":"arrivée","ejemplo":"L'arrivée est à midi.","pron":"a-ri-VE"}},
 {"id":"a1-t23-029","es":"salida","en":{"texto":"departure","ejemplo":"The departure is early.","pron":"di-PAR-cher"},"fr":{"texto":"départ","ejemplo":"Le départ est tôt.","pron":"de-PAR"}},
-{"id":"a1-t23-030","es":"estadía","en":{"texto":"stay","ejemplo":"Have a nice stay!","pron":"STEI"},"fr":{"texto":"séjour","ejemplo":"Bon séjour !","pron":"se-ZHUR"}}
+{"id":"a1-t23-030","es":"estadía","en":{"texto":"stay","ejemplo":"Have a nice stay!","pron":"STEI"},"fr":{"texto":"séjour","ejemplo":"Bon séjour !","pron":"se-ZHUR"}},
+{"id":"a1-t23-031","es":"inmigración","en":{"texto":"immigration","ejemplo":"We go through immigration at the airport.","pron":"i-mi-GREI-shon"},"fr":{"texto":"immigration","ejemplo":"On passe par l'immigration à l'aéroport.","pron":"i-mi-gra-SYON"}},
+{"id":"a1-t23-032","es":"residente permanente","en":{"texto":"permanent resident","ejemplo":"I want to be a permanent resident.","pron":"PER-ma-nent RE-si-dent"},"fr":{"texto":"résident permanent","ejemplo":"Je veux être résident permanent.","pron":"re-zi-dan per-ma-NAN"}}
 ] }

@@ -28,5 +28,7 @@
 {"id":"a1-t14-027","es":"frío (bebida)","en":{"texto":"cold","ejemplo":"The water is cold.","pron":"KOULD"},"fr":{"texto":"froid","ejemplo":"L'eau est froide.","pron":"FRUA"}},
 {"id":"a1-t14-028","es":"dulce","en":{"texto":"sweet","ejemplo":"The dessert is sweet.","pron":"SUIT"},"fr":{"texto":"sucré","ejemplo":"Le dessert est sucré.","pron":"sü-KRE"}},
 {"id":"a1-t14-029","es":"salado","en":{"texto":"salty","ejemplo":"The soup is salty.","pron":"SOL-ti"},"fr":{"texto":"salé","ejemplo":"La soupe est salée.","pron":"sa-LE"}},
-{"id":"a1-t14-030","es":"la carta","en":{"texto":"the menu card","ejemplo":"Here is the menu card.","pron":"dhe ME-niu KARD"},"fr":{"texto":"la carte","ejemplo":"Voici la carte.","pron":"la KART"}}
+{"id":"a1-t14-030","es":"la carta","en":{"texto":"the menu card","ejemplo":"Here is the menu card.","pron":"dhe ME-niu KARD"},"fr":{"texto":"la carte","ejemplo":"Voici la carte.","pron":"la KART"}},
+{"id":"a1-t14-031","es":"gaseosa","en":{"texto":"soft drink","ejemplo":"I would like a soft drink.","pron":"soft DRINK"},"fr":{"texto":"soda","ejemplo":"Je voudrais un soda.","pron":"so-DA"}},
+{"id":"a1-t14-032","es":"helado","en":{"texto":"ice cream","ejemplo":"For dessert, ice cream please.","pron":"AIS krim"},"fr":{"texto":"crème glacée","ejemplo":"Comme dessert, de la crème glacée s'il vous plaît.","pron":"krem gla-SE"},"nota":"FR-Canadá: crème glacée; en Francia se dice glace."}
 ] }

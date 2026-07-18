@@ -28,5 +28,7 @@
 {"id":"a1-t07-027","es":"fin de semana","en":{"texto":"weekend","ejemplo":"Have a good weekend!","pron":"uik-END"},"fr":{"texto":"week-end","ejemplo":"Bon week-end !","pron":"ui-KEND"}},
 {"id":"a1-t07-028","es":"hoy","en":{"texto":"today","ejemplo":"Today is Monday.","pron":"tu-DEI"},"fr":{"texto":"aujourd'hui","ejemplo":"Aujourd'hui, c'est lundi.","pron":"o-zhur-DÜI"}},
 {"id":"a1-t07-029","es":"mañana (día)","en":{"texto":"tomorrow","ejemplo":"Tomorrow is Tuesday.","pron":"tu-MO-rou"},"fr":{"texto":"demain","ejemplo":"Demain, c'est mardi.","pron":"de-MEN"}},
-{"id":"a1-t07-030","es":"fecha","en":{"texto":"date","ejemplo":"What is the date today?","pron":"DEIT"},"fr":{"texto":"date","ejemplo":"Quelle est la date aujourd'hui ?","pron":"DAT"}}
+{"id":"a1-t07-030","es":"fecha","en":{"texto":"date","ejemplo":"What is the date today?","pron":"DEIT"},"fr":{"texto":"date","ejemplo":"Quelle est la date aujourd'hui ?","pron":"DAT"}},
+{"id":"a1-t07-031","es":"anteayer","en":{"texto":"the day before yesterday","ejemplo":"I was at work the day before yesterday.","pron":"dhe DEI bi-FOR YES-ter-dei"},"fr":{"texto":"avant-hier","ejemplo":"J'étais au travail avant-hier.","pron":"a-van-TYER"}},
+{"id":"a1-t07-032","es":"pasado mañana","en":{"texto":"the day after tomorrow","ejemplo":"The exam is the day after tomorrow.","pron":"dhe DEI AF-ter tu-MO-rou"},"fr":{"texto":"après-demain","ejemplo":"L'examen est après-demain.","pron":"a-pre-de-MEN"}}
 ] }

@@ -28,5 +28,7 @@
 {"id":"a1-t24-027","es":"seguro (de)","en":{"texto":"sure","ejemplo":"I am sure.","pron":"SHUR"},"fr":{"texto":"sûr","ejemplo":"Je suis sûr.","pron":"SÜR"}},
 {"id":"a1-t24-028","es":"vamos a","en":{"texto":"we are going to","ejemplo":"We are going to study.","pron":"ui ar GOU-ing tu"},"fr":{"texto":"on va","ejemplo":"On va étudier.","pron":"on VA"}},
 {"id":"a1-t24-029","es":"voy a","en":{"texto":"I am going to","ejemplo":"I am going to move.","pron":"ai am GOU-ing tu"},"fr":{"texto":"je vais","ejemplo":"Je vais déménager.","pron":"zhe VE"},"nota":"Futuro próximo: going to / aller + infinitivo."},
-{"id":"a1-t24-030","es":"empezar","en":{"texto":"to start","ejemplo":"I am going to start today.","pron":"tu START"},"fr":{"texto":"commencer","ejemplo":"Je vais commencer aujourd'hui.","pron":"ko-man-SE"}}
+{"id":"a1-t24-030","es":"empezar","en":{"texto":"to start","ejemplo":"I am going to start today.","pron":"tu START"},"fr":{"texto":"commencer","ejemplo":"Je vais commencer aujourd'hui.","pron":"ko-man-SE"}},
+{"id":"a1-t24-031","es":"ciudadanía","en":{"texto":"citizenship","ejemplo":"My goal is Canadian citizenship.","pron":"SI-ti-zen-ship"},"fr":{"texto":"citoyenneté","ejemplo":"Mon but est la citoyenneté canadienne.","pron":"si-tua-yen-TE"}},
+{"id":"a1-t24-032","es":"oportunidad","en":{"texto":"opportunity","ejemplo":"Canada is a great opportunity.","pron":"o-por-TIU-ni-ti"},"fr":{"texto":"opportunité","ejemplo":"Le Canada est une grande opportunité.","pron":"o-por-tü-ni-TE"}}
 ] }

@@ -28,5 +28,7 @@
 {"id":"a1-t08-027","es":"pronto","en":{"texto":"soon","ejemplo":"See you soon.","pron":"SUN"},"fr":{"texto":"bientôt","ejemplo":"À bientôt.","pron":"byen-TO"}},
 {"id":"a1-t08-028","es":"reloj","en":{"texto":"clock","ejemplo":"The clock is on the wall.","pron":"KLOK"},"fr":{"texto":"horloge","ejemplo":"L'horloge est sur le mur.","pron":"or-LOZH"}},
 {"id":"a1-t08-029","es":"puntual","en":{"texto":"on time","ejemplo":"I am always on time.","pron":"on TAIM"},"fr":{"texto":"à l'heure","ejemplo":"Je suis toujours à l'heure.","pron":"a LÖR"}},
-{"id":"a1-t08-030","es":"cuarto de hora","en":{"texto":"quarter of an hour","ejemplo":"A quarter of an hour.","pron":"KUOR-ter ov an AUR"},"fr":{"texto":"quart d'heure","ejemplo":"Un quart d'heure.","pron":"kar DÖR"}}
+{"id":"a1-t08-030","es":"cuarto de hora","en":{"texto":"quarter of an hour","ejemplo":"A quarter of an hour.","pron":"KUOR-ter ov an AUR"},"fr":{"texto":"quart d'heure","ejemplo":"Un quart d'heure.","pron":"kar DÖR"}},
+{"id":"a1-t08-031","es":"rara vez","en":{"texto":"rarely","ejemplo":"I rarely arrive late.","pron":"RER-li"},"fr":{"texto":"rarement","ejemplo":"J'arrive rarement en retard.","pron":"rar-MAN"}},
+{"id":"a1-t08-032","es":"enseguida","en":{"texto":"right away","ejemplo":"I'm coming right away.","pron":"rait a-UEI"},"fr":{"texto":"tout de suite","ejemplo":"J'arrive tout de suite.","pron":"tud SÜIT"}}
 ] }

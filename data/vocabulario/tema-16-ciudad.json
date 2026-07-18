@@ -28,5 +28,7 @@
 {"id":"a1-t16-027","es":"cerrado","en":{"texto":"closed","ejemplo":"The bank is closed today.","pron":"KLOUSD"},"fr":{"texto":"fermé","ejemplo":"La banque est fermée aujourd'hui.","pron":"fer-ME"}},
 {"id":"a1-t16-028","es":"lejos","en":{"texto":"far","ejemplo":"The airport is far.","pron":"FAR"},"fr":{"texto":"loin","ejemplo":"L'aéroport est loin.","pron":"LUEN"}},
 {"id":"a1-t16-029","es":"cerca","en":{"texto":"near","ejemplo":"The park is near.","pron":"NIR"},"fr":{"texto":"proche","ejemplo":"Le parc est proche.","pron":"PROSH"}},
-{"id":"a1-t16-030","es":"lugar","en":{"texto":"place","ejemplo":"This is a nice place.","pron":"PLEIS"},"fr":{"texto":"endroit","ejemplo":"C'est un bel endroit.","pron":"an-DRUA"}}
+{"id":"a1-t16-030","es":"lugar","en":{"texto":"place","ejemplo":"This is a nice place.","pron":"PLEIS"},"fr":{"texto":"endroit","ejemplo":"C'est un bel endroit.","pron":"an-DRUA"}},
+{"id":"a1-t16-031","es":"municipalidad","en":{"texto":"town hall","ejemplo":"The town hall is near the park.","pron":"TAUN jol"},"fr":{"texto":"mairie","ejemplo":"La mairie est près du parc.","pron":"me-RI"}},
+{"id":"a1-t16-032","es":"comisaría","en":{"texto":"police station","ejemplo":"The police station is downtown.","pron":"po-LIS STEI-shon"},"fr":{"texto":"poste de police","ejemplo":"Le poste de police est au centre-ville.","pron":"post de po-LIS"}}
 ] }

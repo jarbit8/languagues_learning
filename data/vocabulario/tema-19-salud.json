@@ -28,5 +28,7 @@
 {"id":"a1-t19-027","es":"tos","en":{"texto":"cough","ejemplo":"I have a cough.","pron":"KOF"},"fr":{"texto":"toux","ejemplo":"J'ai de la toux.","pron":"TU"}},
 {"id":"a1-t19-028","es":"dolor de cabeza","en":{"texto":"headache","ejemplo":"I have a headache.","pron":"JED-eik"},"fr":{"texto":"mal de tête","ejemplo":"J'ai mal à la tête.","pron":"mal de TET"}},
 {"id":"a1-t19-029","es":"deber (obligación)","en":{"texto":"must","ejemplo":"I must rest.","pron":"MAST"},"fr":{"texto":"devoir","ejemplo":"Je dois me reposer.","pron":"de-VUAR"}},
-{"id":"a1-t19-030","es":"sentirse bien","en":{"texto":"to feel well","ejemplo":"I feel well today.","pron":"tu fil UEL"},"fr":{"texto":"se sentir bien","ejemplo":"Je me sens bien aujourd'hui.","pron":"se san-TIR BYEN"}}
+{"id":"a1-t19-030","es":"sentirse bien","en":{"texto":"to feel well","ejemplo":"I feel well today.","pron":"tu fil UEL"},"fr":{"texto":"se sentir bien","ejemplo":"Je me sens bien aujourd'hui.","pron":"se san-TIR BYEN"}},
+{"id":"a1-t19-031","es":"alergia","en":{"texto":"allergy","ejemplo":"I have an allergy.","pron":"A-ler-yi"},"fr":{"texto":"allergie","ejemplo":"J'ai une allergie.","pron":"a-ler-ZHI"}},
+{"id":"a1-t19-032","es":"ambulancia","en":{"texto":"ambulance","ejemplo":"Call an ambulance!","pron":"AM-biu-lans"},"fr":{"texto":"ambulance","ejemplo":"Appelle une ambulance !","pron":"an-bü-LANS"}}
 ] }

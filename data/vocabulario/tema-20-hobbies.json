@@ -28,5 +28,7 @@
 {"id":"a1-t20-027","es":"nadar","en":{"texto":"to swim","ejemplo":"I swim in summer.","pron":"tu SUIM"},"fr":{"texto":"nager","ejemplo":"Je nage en été.","pron":"na-ZHE"}},
 {"id":"a1-t20-028","es":"pintar","en":{"texto":"to paint","ejemplo":"She likes to paint.","pron":"tu PEINT"},"fr":{"texto":"peindre","ejemplo":"Elle aime peindre.","pron":"PENDR"}},
 {"id":"a1-t20-029","es":"viajar","en":{"texto":"to travel","ejemplo":"I love to travel.","pron":"tu TRA-vel"},"fr":{"texto":"voyager","ejemplo":"J'adore voyager.","pron":"vua-ya-ZHE"}},
-{"id":"a1-t20-030","es":"divertido","en":{"texto":"fun","ejemplo":"Football is fun.","pron":"FAN"},"fr":{"texto":"amusant","ejemplo":"Le football est amusant.","pron":"a-mü-SAN"}}
+{"id":"a1-t20-030","es":"divertido","en":{"texto":"fun","ejemplo":"Football is fun.","pron":"FAN"},"fr":{"texto":"amusant","ejemplo":"Le football est amusant.","pron":"a-mü-SAN"}},
+{"id":"a1-t20-031","es":"ajedrez","en":{"texto":"chess","ejemplo":"I like playing chess.","pron":"CHES"},"fr":{"texto":"échecs","ejemplo":"J'aime jouer aux échecs.","pron":"e-SHEK"}},
+{"id":"a1-t20-032","es":"dibujar","en":{"texto":"to draw","ejemplo":"I love to draw.","pron":"tu DRO"},"fr":{"texto":"dessiner","ejemplo":"J'adore dessiner.","pron":"de-si-NE"}}
 ] }

@@ -28,5 +28,6 @@
 {"id":"a1-t15-027","es":"barato","en":{"texto":"cheap","ejemplo":"The market is cheap.","pron":"CHIP"},"fr":{"texto":"pas cher","ejemplo":"Le marché n'est pas cher.","pron":"pa SHER"}},
 {"id":"a1-t15-028","es":"supermercado","en":{"texto":"supermarket","ejemplo":"I go to the supermarket.","pron":"SU-per-mar-ket"},"fr":{"texto":"supermarché","ejemplo":"Je vais au supermarché.","pron":"sü-per-mar-SHE"}},
 {"id":"a1-t15-029","es":"lista de compras","en":{"texto":"shopping list","ejemplo":"I have a shopping list.","pron":"SHO-ping LIST"},"fr":{"texto":"liste de courses","ejemplo":"J'ai une liste de courses.","pron":"list de KURS"}},
-{"id":"a1-t15-030","es":"comprar","en":{"texto":"to buy","ejemplo":"I buy vegetables.","pron":"tu BAI"},"fr":{"texto":"acheter","ejemplo":"J'achète des légumes.","pron":"ash-TE"}}
+{"id":"a1-t15-030","es":"comprar","en":{"texto":"to buy","ejemplo":"I buy vegetables.","pron":"tu BAI"},"fr":{"texto":"acheter","ejemplo":"J'achète des légumes.","pron":"ash-TE"}},
+{"id":"a1-t15-031","es":"en oferta","en":{"texto":"on sale","ejemplo":"This jacket is on sale.","pron":"on SEIL"},"fr":{"texto":"en solde","ejemplo":"Cette veste est en solde.","pron":"an SOLD"}}
 ] }

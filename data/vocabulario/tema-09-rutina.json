@@ -28,5 +28,7 @@
 {"id":"a1-t09-027","es":"escuchar música","en":{"texto":"to listen to music","ejemplo":"I listen to music.","pron":"tu LI-sen tu MIU-sik"},"fr":{"texto":"écouter de la musique","ejemplo":"J'écoute de la musique.","pron":"e-ku-TE de la mü-SIK"}},
 {"id":"a1-t09-028","es":"acostarse","en":{"texto":"to go to bed","ejemplo":"I go to bed at eleven.","pron":"tu gou tu BED"},"fr":{"texto":"se coucher","ejemplo":"Je me couche à onze heures.","pron":"se ku-SHE"}},
 {"id":"a1-t09-029","es":"limpiar","en":{"texto":"to clean","ejemplo":"I clean my room.","pron":"tu KLIN"},"fr":{"texto":"nettoyer","ejemplo":"Je nettoie ma chambre.","pron":"ne-tua-YE"}},
-{"id":"a1-t09-030","es":"estudiar","en":{"texto":"to study","ejemplo":"I study in the afternoon.","pron":"tu STA-di"},"fr":{"texto":"étudier","ejemplo":"J'étudie l'après-midi.","pron":"e-tü-DYE"}}
+{"id":"a1-t09-030","es":"estudiar","en":{"texto":"to study","ejemplo":"I study in the afternoon.","pron":"tu STA-di"},"fr":{"texto":"étudier","ejemplo":"J'étudie l'après-midi.","pron":"e-tü-DYE"}},
+{"id":"a1-t09-031","es":"hacer la cama","en":{"texto":"to make the bed","ejemplo":"I make the bed every morning.","pron":"tu MEIK dhe BED"},"fr":{"texto":"faire le lit","ejemplo":"Je fais le lit tous les matins.","pron":"fer le LI"}},
+{"id":"a1-t09-032","es":"tomar una siesta","en":{"texto":"to take a nap","ejemplo":"I take a nap after lunch.","pron":"tu TEIK a NAP"},"fr":{"texto":"faire la sieste","ejemplo":"Je fais la sieste après le déjeuner.","pron":"fer la SYEST"}}
 ] }

@@ -28,5 +28,9 @@
 {"id":"a1-t10-027","es":"lámpara","en":{"texto":"lamp","ejemplo":"The lamp is on the table.","pron":"LAMP"},"fr":{"texto":"lampe","ejemplo":"La lampe est sur la table.","pron":"LANP"}},
 {"id":"a1-t10-028","es":"refrigerador","en":{"texto":"fridge","ejemplo":"The milk is in the fridge.","pron":"FRICH"},"fr":{"texto":"réfrigérateur","ejemplo":"Le lait est dans le réfrigérateur.","pron":"re-fri-zhe-ra-TÖR"}},
 {"id":"a1-t10-029","es":"armario","en":{"texto":"wardrobe","ejemplo":"My clothes are in the wardrobe.","pron":"UOR-droub"},"fr":{"texto":"armoire","ejemplo":"Mes vêtements sont dans l'armoire.","pron":"ar-MUAR"}},
-{"id":"a1-t10-030","es":"llave (de casa)","en":{"texto":"key","ejemplo":"The key is on the door.","pron":"KI"},"fr":{"texto":"clé","ejemplo":"La clé est sur la porte.","pron":"KLE"}}
+{"id":"a1-t10-030","es":"llave (de casa)","en":{"texto":"key","ejemplo":"The key is on the door.","pron":"KI"},"fr":{"texto":"clé","ejemplo":"La clé est sur la porte.","pron":"KLE"}},
+{"id":"a1-t10-031","es":"balcón","en":{"texto":"balcony","ejemplo":"There is a table on the balcony.","pron":"BAL-ko-ni"},"fr":{"texto":"balcon","ejemplo":"Il y a une table sur le balcon.","pron":"bal-KON"}},
+{"id":"a1-t10-032","es":"espejo","en":{"texto":"mirror","ejemplo":"The mirror is in the bathroom.","pron":"MI-ror"},"fr":{"texto":"miroir","ejemplo":"Le miroir est dans la salle de bains.","pron":"mi-RUAR"}},
+{"id":"a1-t10-033","es":"baño (inodoro)","en":{"texto":"toilet","ejemplo":"The toilet is next to the bathroom.","pron":"TOI-let"},"fr":{"texto":"toilettes","ejemplo":"Les toilettes sont à côté de la salle de bains.","pron":"tua-LET"}},
+{"id":"a1-t10-034","es":"techo (exterior)","en":{"texto":"roof","ejemplo":"The house has a red roof.","pron":"RUF"},"fr":{"texto":"toit","ejemplo":"La maison a un toit rouge.","pron":"TUA"}}
 ] }

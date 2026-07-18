@@ -28,5 +28,13 @@
 {"id":"a1-t02-027","es":"años (de edad)","en":{"texto":"years old","ejemplo":"He is ten years old.","pron":"YIRS ould"},"fr":{"texto":"ans","ejemplo":"Il a dix ans.","pron":"AN"}},
 {"id":"a1-t02-028","es":"tener","en":{"texto":"to have","ejemplo":"I have two brothers.","pron":"tu JAV"},"fr":{"texto":"avoir","ejemplo":"J'ai deux frères.","pron":"a-VUAR"}},
 {"id":"a1-t02-029","es":"número de teléfono","en":{"texto":"phone number","ejemplo":"What is your phone number?","pron":"FOUN NAM-ber"},"fr":{"texto":"numéro de téléphone","ejemplo":"Quel est ton numéro de téléphone ?","pron":"nü-me-RO de te-le-FON"}},
-{"id":"a1-t02-030","es":"cumpleaños","en":{"texto":"birthday","ejemplo":"Happy birthday!","pron":"BERTH-dei"},"fr":{"texto":"anniversaire","ejemplo":"Bon anniversaire !","pron":"a-ni-ver-SER"}}
+{"id":"a1-t02-030","es":"cumpleaños","en":{"texto":"birthday","ejemplo":"Happy birthday!","pron":"BERTH-dei"},"fr":{"texto":"anniversaire","ejemplo":"Bon anniversaire !","pron":"a-ni-ver-SER"}},
+{"id":"a1-t02-031","es":"dieciséis","en":{"texto":"sixteen","ejemplo":"I have sixteen books.","pron":"siks-TIN"},"fr":{"texto":"seize","ejemplo":"J'ai seize ans.","pron":"SEZ"}},
+{"id":"a1-t02-032","es":"diecisiete","en":{"texto":"seventeen","ejemplo":"She is seventeen.","pron":"se-ven-TIN"},"fr":{"texto":"dix-sept","ejemplo":"Il a dix-sept ans.","pron":"dis-SET"}},
+{"id":"a1-t02-033","es":"dieciocho","en":{"texto":"eighteen","ejemplo":"He is eighteen years old.","pron":"ei-TIN"},"fr":{"texto":"dix-huit","ejemplo":"J'ai dix-huit ans.","pron":"di-ZÜIT"}},
+{"id":"a1-t02-034","es":"diecinueve","en":{"texto":"nineteen","ejemplo":"I'm nineteen.","pron":"nain-TIN"},"fr":{"texto":"dix-neuf","ejemplo":"Elle a dix-neuf ans.","pron":"dis-NÖF"}},
+{"id":"a1-t02-035","es":"sesenta","en":{"texto":"sixty","ejemplo":"My phone number has a sixty.","pron":"SIKS-ti"},"fr":{"texto":"soixante","ejemplo":"Il a soixante ans.","pron":"sua-SANT"}},
+{"id":"a1-t02-036","es":"setenta","en":{"texto":"seventy","ejemplo":"She is seventy years old.","pron":"SE-ven-ti"},"fr":{"texto":"soixante-dix","ejemplo":"Mon grand-père a soixante-dix ans.","pron":"sua-sant-DIS"},"nota":"FR: setenta se dice literal 'sesenta-diez'."},
+{"id":"a1-t02-037","es":"ochenta","en":{"texto":"eighty","ejemplo":"He is eighty years old.","pron":"EI-ti"},"fr":{"texto":"quatre-vingts","ejemplo":"Ma grand-mère a quatre-vingts ans.","pron":"ka-tre-VEN"},"nota":"FR: ochenta es literal 'cuatro veintes'."},
+{"id":"a1-t02-038","es":"noventa","en":{"texto":"ninety","ejemplo":"The number is ninety.","pron":"NAIN-ti"},"fr":{"texto":"quatre-vingt-dix","ejemplo":"Il a quatre-vingt-dix ans.","pron":"ka-tre-ven-DIS"},"nota":"FR: noventa es literal 'cuatro veintes-diez'."}
 ] }

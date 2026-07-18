@@ -28,5 +28,7 @@
 {"id":"a1-t12-027","es":"caro","en":{"texto":"expensive","ejemplo":"The coat is expensive.","pron":"eks-PEN-siv"},"fr":{"texto":"cher","ejemplo":"Le manteau est cher.","pron":"SHER"}},
 {"id":"a1-t12-028","es":"probarse","en":{"texto":"to try on","ejemplo":"Can I try on this dress?","pron":"tu trai ON"},"fr":{"texto":"essayer","ejemplo":"Je peux essayer cette robe ?","pron":"e-se-YE"}},
 {"id":"a1-t12-029","es":"quitarse","en":{"texto":"to take off","ejemplo":"Take off your hat.","pron":"tu teik OF"},"fr":{"texto":"enlever","ejemplo":"Enlève ton chapeau.","pron":"an-le-VE"}},
-{"id":"a1-t12-030","es":"elegante","en":{"texto":"elegant","ejemplo":"She is very elegant.","pron":"E-le-gant"},"fr":{"texto":"élégant","ejemplo":"Elle est très élégante.","pron":"e-le-GAN"}}
+{"id":"a1-t12-030","es":"elegante","en":{"texto":"elegant","ejemplo":"She is very elegant.","pron":"E-le-gant"},"fr":{"texto":"élégant","ejemplo":"Elle est très élégante.","pron":"e-le-GAN"}},
+{"id":"a1-t12-031","es":"pijama","en":{"texto":"pyjamas","ejemplo":"I wear pyjamas at night.","pron":"pi-YA-mas"},"fr":{"texto":"pyjama","ejemplo":"Je porte un pyjama la nuit.","pron":"pi-zha-MA"}},
+{"id":"a1-t12-032","es":"botas","en":{"texto":"boots","ejemplo":"I wear boots in winter.","pron":"BUTS"},"fr":{"texto":"bottes","ejemplo":"Je porte des bottes en hiver.","pron":"BOT"}}
 ] }

@@ -28,5 +28,6 @@
 {"id":"a1-t21-027","es":"apuntes","en":{"texto":"notes","ejemplo":"I take notes in class.","pron":"NOUTS"},"fr":{"texto":"notes","ejemplo":"Je prends des notes en cours.","pron":"NOT"}},
 {"id":"a1-t21-028","es":"diccionario","en":{"texto":"dictionary","ejemplo":"I use a dictionary.","pron":"DIK-sho-ne-ri"},"fr":{"texto":"dictionnaire","ejemplo":"J'utilise un dictionnaire.","pron":"dik-syo-NER"}},
 {"id":"a1-t21-029","es":"beca","en":{"texto":"scholarship","ejemplo":"I have a scholarship.","pron":"SKO-lar-ship"},"fr":{"texto":"bourse","ejemplo":"J'ai une bourse.","pron":"BURS"}},
-{"id":"a1-t21-030","es":"practicar","en":{"texto":"to practise","ejemplo":"I practise every day.","pron":"tu PRAK-tis"},"fr":{"texto":"pratiquer","ejemplo":"Je pratique tous les jours.","pron":"pra-ti-KE"}}
+{"id":"a1-t21-030","es":"practicar","en":{"texto":"to practise","ejemplo":"I practise every day.","pron":"tu PRAK-tis"},"fr":{"texto":"pratiquer","ejemplo":"Je pratique tous les jours.","pron":"pra-ti-KE"}},
+{"id":"a1-t21-031","es":"semestre","en":{"texto":"semester","ejemplo":"This semester is difficult.","pron":"se-MES-ter"},"fr":{"texto":"semestre","ejemplo":"Ce semestre est difficile.","pron":"se-MESTR"}}
 ] }

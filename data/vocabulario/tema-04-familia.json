@@ -28,5 +28,9 @@
 {"id":"a1-t04-027","es":"mascota","en":{"texto":"pet","ejemplo":"I have a pet.","pron":"PET"},"fr":{"texto":"animal de compagnie","ejemplo":"J'ai un animal de compagnie.","pron":"a-ni-MAL de kon-pa-ÑI"}},
 {"id":"a1-t04-028","es":"perro","en":{"texto":"dog","ejemplo":"My dog is big.","pron":"DOG"},"fr":{"texto":"chien","ejemplo":"Mon chien est grand.","pron":"SHYEN"}},
 {"id":"a1-t04-029","es":"gato","en":{"texto":"cat","ejemplo":"Her cat is black.","pron":"KAT"},"fr":{"texto":"chat","ejemplo":"Son chat est noir.","pron":"SHA"}},
-{"id":"a1-t04-030","es":"nombre de mi hermano","en":{"texto":"my brother's name","ejemplo":"My brother's name is Joel.","pron":"mai BRA-dhers NEIM"},"fr":{"texto":"le nom de mon frère","ejemplo":"Le nom de mon frère est Joel.","pron":"le NON de mon FRER"},"nota":"EN: posesivo con 's; FR: con 'de'."}
+{"id":"a1-t04-030","es":"nombre de mi hermano","en":{"texto":"my brother's name","ejemplo":"My brother's name is Joel.","pron":"mai BRA-dhers NEIM"},"fr":{"texto":"le nom de mon frère","ejemplo":"Le nom de mon frère est Joel.","pron":"le NON de mon FRER"},"nota":"EN: posesivo con 's; FR: con 'de'."},
+{"id":"a1-t04-031","es":"sobrino","en":{"texto":"nephew","ejemplo":"My nephew is five.","pron":"NE-fiu"},"fr":{"texto":"neveu","ejemplo":"Mon neveu a cinq ans.","pron":"ne-VÖ"}},
+{"id":"a1-t04-032","es":"sobrina","en":{"texto":"niece","ejemplo":"My niece is happy.","pron":"NIS"},"fr":{"texto":"nièce","ejemplo":"Ma nièce est heureuse.","pron":"NYES"}},
+{"id":"a1-t04-033","es":"divorciado","en":{"texto":"divorced","ejemplo":"My parents are divorced.","pron":"di-VORSD"},"fr":{"texto":"divorcé","ejemplo":"Mes parents sont divorcés.","pron":"di-vor-SE"}},
+{"id":"a1-t04-034","es":"gemelo","en":{"texto":"twin","ejemplo":"My brother is my twin.","pron":"TUIN"},"fr":{"texto":"jumeau","ejemplo":"Mon frère est mon jumeau.","pron":"zhü-MO"}}
 ] }

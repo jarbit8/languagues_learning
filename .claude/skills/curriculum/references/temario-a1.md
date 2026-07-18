@@ -1,6 +1,6 @@
 # Temario A1 — Inglés y Francés en paralelo
 
-24 temas · 4 bloques de 6 · ~30 conceptos de vocabulario por tema. Cada tema: función comunicativa, vocabulario dual (es/en/fr), gramática EN, gramática FR, pronunciación, escenario de speaking. El orden codifica dependencias: ejercicios y diálogos solo usan vocabulario de este tema y anteriores.
+24 temas · 4 bloques de 6 · 30-38 conceptos de vocabulario por tema (782 en total — auditado el 2026-07-18 contra listas de frecuencia reales EN/FR, cada tema lleva las palabras de alta frecuencia que le correspondan, no un tope fijo de 30). Cada tema: función comunicativa, vocabulario dual (es/en/fr), gramática EN, gramática FR, pronunciación, escenario de speaking. El orden codifica dependencias: ejercicios y diálogos solo usan vocabulario de este tema y anteriores. Las listas de "Vocabulario" abajo muestran el set original de 30; el JSON real (`data/vocabulario/tema-NN-*.json`) es la fuente autoritativa y puede tener más — ver el bloque "AMPLIACIÓN 2026-07-18" al final de cada bloque para las palabras agregadas.
 
 ---
 
@@ -222,3 +222,34 @@
 **Inglés (cubierto):** pronombres sujeto (T1) / objeto (T21), to be (T1-2), a/an/the (T3), plurales + irregulares (T5), this/that/these/those (T11), posesivos y 's (T4), adjetivos (T5), presente simple + do/does (T9), adverbios de frecuencia (T8), question words (T6/T24), there is/are (T10), some/any (T13), contables/incontables (T13), how much/many (T15), can/can't (T16), preposiciones lugar (T10) / tiempo (T7), imperativo (T17), presente continuo (T12), like + ing (T20), have got (T12/T19), was/were (T22), pasado regular (T22) e irregular (T23), going to (T24), would like (T14), conectores (T21/T24). ✓
 
 **Francés (cubierto):** pronoms sujets (T1) / toniques (T21), être (T1) / avoir (T2), artículos y género/número (T3/T5), concordancia y posición del adjetivo (T5), verbos -er (T9), pronominales (T9), irregulares clave — aller (T17) / faire (T18) / prendre (T14) / venir (T23) / pouvoir (T16) / vouloir (T14) / devoir (T19) / boire (T14), ne…pas (+de) (T2/T13), est-ce que y mots interrogatifs (T6/T24), quel/quelle (T12), il y a (T10), partitivos (T13), cantidades (T15), preposiciones de lugar (T10), en/au/aux + país (T3), au/du contracciones (T10), ce/cet/cette/ces (T11), possessifs (T4), impératif (T17), futur proche (T24), passé composé avoir (T22) y être (T23), venir de (T23), aimer + infinitif (T20), je voudrais (T14), on (T16), conectores (T21/T24). ✓
+
+---
+
+## AMPLIACIÓN 2026-07-18 — palabras agregadas tras auditoría de frecuencia real
+
+62 conceptos nuevos (720→782) tras comparar cada tema contra listas de frecuencia A1 reales (Cambridge EVP / français fondamental / recursos FLE). Solo se agregó, nunca se quitó nada de los 720 originales. IDs correlativos al final de cada pack (`a1-tNN-031` en adelante).
+
+- **T1 Saludos (+4):** have a nice day/bonne journée · have a nice evening/bonne soirée · hey/coucou · take care/prends soin de toi.
+- **T2 Números (+8):** sixteen-nineteen/seize-dix-neuf (huecos 16-19 que faltaban) · sixty/soixante · seventy/soixante-dix · eighty/quatre-vingts · ninety/quatre-vingt-dix (irregularidad francesa clave, alto valor pedagógico).
+- **T3 Países (+4):** Quebec/Québec · French-speaking/francophone · German/allemand · Canadian(f)/canadienne.
+- **T4 Familia (+4):** nephew/neveu · niece/nièce · divorced/divorcé · twin/jumeau.
+- **T5 Descripción (+4):** curly/frisé · bald/chauve · lazy/paresseux · angry/fâché.
+- **T6 Profesiones (+4):** architect/architecte · accountant/comptable · salary/salaire · unemployed/au chômage.
+- **T7 Fechas (+2):** the day before yesterday/avant-hier · the day after tomorrow/après-demain.
+- **T8 Hora (+2):** rarely/rarement · right away/tout de suite.
+- **T9 Rutina (+2):** to make the bed/faire le lit · to take a nap/faire la sieste.
+- **T10 Casa (+4):** balcony/balcon · mirror/miroir · toilet/toilettes · roof/toit.
+- **T11 Objetos (+2):** umbrella/parapluie · scissors/ciseaux.
+- **T12 Ropa (+2):** pyjamas/pyjama · boots/bottes.
+- **T13 Comida (+3):** pepper/poivre · pasta/pâtes · yogurt/yaourt.
+- **T14 Restaurante (+2):** soft drink/soda · ice cream/crème glacée (término quebequense, no "glace" — evita choque con "ice" de T18).
+- **T15 Compras (+1):** on sale/en solde.
+- **T16 Ciudad (+2):** town hall/mairie · police station/poste de police (término quebequense, no "commissariat").
+- **T17 Direcciones (+1):** sidewalk/trottoir.
+- **T18 Clima (+1):** fog/brouillard.
+- **T19 Salud (+2):** allergy/allergie · ambulance/ambulance.
+- **T20 Hobbies (+2):** chess/échecs · to draw/dessiner.
+- **T21 Universidad (+1):** semester/semestre.
+- **T22 Tecnología (+1):** social media/réseaux sociaux.
+- **T23 Viajes (+2):** immigration/immigration · permanent resident/résident permanent (directamente relevante a la meta del usuario).
+- **T24 Planes (+2):** citizenship/citoyenneté · opportunity/opportunité.

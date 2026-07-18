@@ -28,5 +28,6 @@
 {"id":"a1-t22-027","es":"batería","en":{"texto":"battery","ejemplo":"The battery is low.","pron":"BA-te-ri"},"fr":{"texto":"batterie","ejemplo":"La batterie est faible.","pron":"ba-TRI"}},
 {"id":"a1-t22-028","es":"cargar","en":{"texto":"to charge","ejemplo":"I charge my phone.","pron":"tu CHARCH"},"fr":{"texto":"charger","ejemplo":"Je charge mon téléphone.","pron":"shar-ZHE"}},
 {"id":"a1-t22-029","es":"apagar","en":{"texto":"to turn off","ejemplo":"Turn off the computer.","pron":"tu tern OF"},"fr":{"texto":"éteindre","ejemplo":"Éteins l'ordinateur.","pron":"e-TENDR"}},
-{"id":"a1-t22-030","es":"encender","en":{"texto":"to turn on","ejemplo":"Turn on the light.","pron":"tu tern ON"},"fr":{"texto":"allumer","ejemplo":"Allume la lumière.","pron":"a-lü-ME"}}
+{"id":"a1-t22-030","es":"encender","en":{"texto":"to turn on","ejemplo":"Turn on the light.","pron":"tu tern ON"},"fr":{"texto":"allumer","ejemplo":"Allume la lumière.","pron":"a-lü-ME"}},
+{"id":"a1-t22-031","es":"redes sociales","en":{"texto":"social media","ejemplo":"I use social media every day.","pron":"SOU-shal MI-dia"},"fr":{"texto":"réseaux sociaux","ejemplo":"J'utilise les réseaux sociaux tous les jours.","pron":"re-so so-SYO"}}
 ] }

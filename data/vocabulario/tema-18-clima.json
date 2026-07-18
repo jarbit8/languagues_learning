@@ -28,5 +28,6 @@
 {"id":"a1-t18-027","es":"hielo","en":{"texto":"ice","ejemplo":"There is ice on the road.","pron":"AIS"},"fr":{"texto":"glace","ejemplo":"Il y a de la glace sur la route.","pron":"GLAS"}},
 {"id":"a1-t18-028","es":"grados","en":{"texto":"degrees","ejemplo":"It's twenty degrees.","pron":"di-GRIS"},"fr":{"texto":"degrés","ejemplo":"Il fait vingt degrés.","pron":"de-GRE"}},
 {"id":"a1-t18-029","es":"¿qué tiempo hace?","en":{"texto":"what's the weather like?","ejemplo":"What's the weather like?","pron":"uats dhe UE-dher laik"},"fr":{"texto":"quel temps fait-il ?","ejemplo":"Quel temps fait-il ?","pron":"kel TAN fe-TIL"}},
-{"id":"a1-t18-030","es":"caluroso","en":{"texto":"warm/hot day","ejemplo":"It's a hot day.","pron":"UORM JOT DEI"},"fr":{"texto":"chaude (journée)","ejemplo":"C'est une journée chaude.","pron":"SHOD zhur-NE"}}
+{"id":"a1-t18-030","es":"caluroso","en":{"texto":"warm/hot day","ejemplo":"It's a hot day.","pron":"UORM JOT DEI"},"fr":{"texto":"chaude (journée)","ejemplo":"C'est une journée chaude.","pron":"SHOD zhur-NE"}},
+{"id":"a1-t18-031","es":"neblina","en":{"texto":"fog","ejemplo":"There is fog this morning.","pron":"FOG"},"fr":{"texto":"brouillard","ejemplo":"Il y a du brouillard ce matin.","pron":"bru-YAR"}}
 ] }

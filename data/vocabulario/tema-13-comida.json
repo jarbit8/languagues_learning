@@ -28,5 +28,8 @@
 {"id":"a1-t13-027","es":"sopa","en":{"texto":"soup","ejemplo":"The soup is hot.","pron":"SUP"},"fr":{"texto":"soupe","ejemplo":"La soupe est chaude.","pron":"SUP"}},
 {"id":"a1-t13-028","es":"postre","en":{"texto":"dessert","ejemplo":"I want a dessert.","pron":"di-SERT"},"fr":{"texto":"dessert","ejemplo":"Je veux un dessert.","pron":"de-SER"}},
 {"id":"a1-t13-029","es":"sabroso","en":{"texto":"tasty","ejemplo":"This food is tasty.","pron":"TEIS-ti"},"fr":{"texto":"délicieux","ejemplo":"Cette nourriture est délicieuse.","pron":"de-li-SYÖ"}},
-{"id":"a1-t13-030","es":"sándwich","en":{"texto":"sandwich","ejemplo":"I eat a sandwich for lunch.","pron":"SAND-uich"},"fr":{"texto":"sandwich","ejemplo":"Je mange un sandwich au déjeuner.","pron":"sand-UICH"}}
+{"id":"a1-t13-030","es":"sándwich","en":{"texto":"sandwich","ejemplo":"I eat a sandwich for lunch.","pron":"SAND-uich"},"fr":{"texto":"sandwich","ejemplo":"Je mange un sandwich au déjeuner.","pron":"sand-UICH"}},
+{"id":"a1-t13-031","es":"pimienta","en":{"texto":"pepper","ejemplo":"I need salt and pepper.","pron":"PE-per"},"fr":{"texto":"poivre","ejemplo":"J'ai besoin de sel et de poivre.","pron":"PUAVR"}},
+{"id":"a1-t13-032","es":"pasta","en":{"texto":"pasta","ejemplo":"I eat pasta on Fridays.","pron":"PAS-ta"},"fr":{"texto":"pâtes","ejemplo":"Je mange des pâtes le vendredi.","pron":"PAT"}},
+{"id":"a1-t13-033","es":"yogur","en":{"texto":"yogurt","ejemplo":"I have yogurt for breakfast.","pron":"YOU-gert"},"fr":{"texto":"yaourt","ejemplo":"Je prends un yaourt au petit-déjeuner.","pron":"ya-URT"}}
 ] }
