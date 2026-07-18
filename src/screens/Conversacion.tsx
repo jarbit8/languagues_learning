@@ -4,9 +4,7 @@ import type { Idioma } from '../types'
 import { temaEnCurso } from '../lib/progreso'
 import { escenarioDe } from '../data/escenarios'
 import { getVocabPack, vocabPacks } from '../data/packs'
-import { hayApiKey } from '../lib/apiKey'
 import { construirPromptCopiable } from '../lib/speaking'
-import ChatSpeaking from '../components/ChatSpeaking'
 
 function temasDesbloqueadosTexto(tema: number): string {
   const titulos = vocabPacks.filter((p) => p.tema <= tema).map((p) => p.titulo)
@@ -51,27 +49,10 @@ export default function Conversacion() {
   const temaActual = useLiveQuery(() => temaEnCurso(), [], 1) ?? 1
   const [tema, setTema] = useState<number | null>(null)
   const [idioma, setIdioma] = useState<Idioma>('en')
-  const [enSesion, setEnSesion] = useState(false)
-  const [verPrompt, setVerPrompt] = useState(false)
 
   const temaSel = tema ?? temaActual
   const temasDisponibles = Array.from({ length: temaActual }, (_, i) => i + 1)
   const pack = getVocabPack(temaSel)
-  const conKey = hayApiKey()
-
-  if (enSesion) {
-    return (
-      <div className="flex flex-col gap-3">
-        <button
-          onClick={() => setEnSesion(false)}
-          className="self-start text-sm text-slate-500 underline dark:text-slate-400"
-        >
-          ← Cambiar escenario
-        </button>
-        <ChatSpeaking key={`${idioma}-${temaSel}`} idioma={idioma} tema={temaSel} />
-      </div>
-    )
-  }
 
   return (
     <div className="flex flex-col gap-4">
@@ -104,28 +85,9 @@ export default function Conversacion() {
           ))}
         </select>
         <p className="text-sm text-slate-500 dark:text-slate-400">{escenarioDe(temaSel)}</p>
-
-        {conKey && (
-          <button onClick={() => setEnSesion(true)} className="btn-primary">
-            Empezar a hablar aquí
-          </button>
-        )}
-        <button onClick={() => setVerPrompt((v) => !v)} className={conKey ? 'btn' : 'btn-primary'}>
-          {verPrompt
-            ? 'Ocultar prompt'
-            : conKey
-              ? 'O copia el prompt para hablar en otra app'
-              : 'Copiar prompt para hablar en otra app'}
-        </button>
       </div>
 
-      {!conKey && !verPrompt && (
-        <p className="tarjeta text-sm text-slate-500 dark:text-slate-400">
-          No tienes una API key de Anthropic pegada en Ajustes, así que no puedes hablar aquí dentro — pero puedes
-          copiar el prompt de arriba y pegarlo en cualquier otra IA para practicar igual.
-        </p>
-      )}
-      {verPrompt && <CopiarPrompt idioma={idioma} tema={temaSel} />}
+      <CopiarPrompt idioma={idioma} tema={temaSel} />
 
       {pack && <p className="text-center text-xs text-slate-400">Vocabulario disponible: temas 1 a {temaSel}</p>}
     </div>
