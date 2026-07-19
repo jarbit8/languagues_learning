@@ -32,20 +32,33 @@ export default function Listening() {
   const [enExamen, setEnExamen] = useState(false)
   const [resultado, setResultado] = useState<{ aciertos: number; total: number } | null>(null)
 
+  const [dialogoIdx, setDialogoIdx] = useState(0)
+
   const temaSel = tema ?? temaActual
   const pack = getListening(temaSel, idioma)
   const temasDisponibles = Array.from({ length: temaActual }, (_, i) => i + 1)
+  const dialogo = pack?.dialogos[dialogoIdx] ?? pack?.dialogos[0]
 
   function elegirTema(t: number) {
     detener()
     setTema(t)
+    setDialogoIdx(0)
     setLineaActiva(-1)
     setTranscripcionVisible(false)
     setEnExamen(false)
     setResultado(null)
   }
 
-  if (!pack) {
+  function elegirDialogo(i: number) {
+    detener()
+    setDialogoIdx(i)
+    setLineaActiva(-1)
+    setTranscripcionVisible(false)
+    setEnExamen(false)
+    setResultado(null)
+  }
+
+  if (!pack || !dialogo) {
     return (
       <div className="flex flex-col gap-4">
         <p className="tarjeta text-slate-500 dark:text-slate-400">
@@ -72,7 +85,7 @@ export default function Listening() {
         </div>
       )
     }
-    const preguntas = pack.preguntas.map((p) => preguntaDeListening(p, idioma))
+    const preguntas = dialogo.preguntas.map((p) => preguntaDeListening(p, idioma))
     return (
       <ExamRunner
         preguntas={preguntas}
@@ -116,12 +129,30 @@ export default function Listening() {
         </div>
       </div>
 
+      {pack.dialogos.length > 1 && (
+        <div className="flex gap-2">
+          {pack.dialogos.map((d, i) => (
+            <button
+              key={i}
+              onClick={() => elegirDialogo(i)}
+              className={`flex-1 rounded-xl px-3 py-2 text-sm font-bold ${
+                dialogoIdx === i
+                  ? 'bg-slate-900 text-white dark:bg-white dark:text-slate-900'
+                  : 'bg-slate-200 text-slate-600 dark:bg-slate-800 dark:text-slate-300'
+              }`}
+            >
+              Diálogo {i + 1}
+            </button>
+          ))}
+        </div>
+      )}
+
       <div className="tarjeta flex flex-col gap-3">
-        <h2 className="font-bold">{pack.titulo}</h2>
+        <h2 className="font-bold">{dialogo.titulo}</h2>
         <div className="flex gap-2">
           <button
             onClick={() =>
-              reproducirDialogo(pack.lineas, idioma, temaSel, {
+              reproducirDialogo(dialogo.lineas, idioma, temaSel, {
                 onLinea: setLineaActiva,
                 onFin: () => setLineaActiva(-1)
               })
@@ -132,7 +163,7 @@ export default function Listening() {
           </button>
           <button
             onClick={() =>
-              reproducirDialogo(pack.lineas, idioma, temaSel, {
+              reproducirDialogo(dialogo.lineas, idioma, temaSel, {
                 lento: true,
                 onLinea: setLineaActiva,
                 onFin: () => setLineaActiva(-1)
@@ -153,7 +184,7 @@ export default function Listening() {
           </button>
         ) : (
           <div className="flex flex-col gap-2">
-            {pack.lineas.map((l, i) => (
+            {dialogo.lineas.map((l, i) => (
               <button
                 key={i}
                 onClick={() => reproducirLinea(l.texto, idioma, temaSel)}
@@ -170,7 +201,7 @@ export default function Listening() {
         )}
 
         <button onClick={() => setEnExamen(true)} className="btn-primary">
-          Responder preguntas ({pack.preguntas.length})
+          Responder preguntas ({dialogo.preguntas.length})
         </button>
       </div>
 

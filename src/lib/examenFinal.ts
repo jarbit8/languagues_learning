@@ -1,5 +1,5 @@
-import type { Pregunta, ListeningPack, ReadingPack } from '../types'
-import { vocabPacks, getListening, getReading } from '../data/packs'
+import type { Pregunta, ListeningPack, ReadingPack, DialogoConTema } from '../types'
+import { vocabPacks, getListening, getReading, dialogosDe } from '../data/packs'
 import { baraja, preguntaDeConcepto, preguntaDeListening } from './preguntas'
 
 // 100 palabras aleatorias de todo el nivel A1 (skill exam-engine: examen final).
@@ -11,11 +11,11 @@ export function construirVocabFinal(): Pregunta[] {
 }
 
 export interface SeccionListening {
-  dialogos: ListeningPack[]
+  dialogos: DialogoConTema[]
   preguntas: Pregunta[]
 }
 
-// Versión extendida: un diálogo por bloque, alternando idioma.
+// Versión extendida: un pack por bloque, alternando idioma.
 export function construirListeningFinal(): SeccionListening {
   const pares: [number, 'en' | 'fr'][] = [
     [2, 'en'],
@@ -23,7 +23,8 @@ export function construirListeningFinal(): SeccionListening {
     [14, 'en'],
     [20, 'fr']
   ]
-  const dialogos = pares.map(([tema, idioma]) => getListening(tema, idioma)).filter((d): d is ListeningPack => !!d)
+  const packs = pares.map(([tema, idioma]) => getListening(tema, idioma)).filter((d): d is ListeningPack => !!d)
+  const dialogos = packs.flatMap(dialogosDe)
   const preguntas = baraja(dialogos.flatMap((d) => d.preguntas.map((p) => preguntaDeListening(p, d.idioma))))
   return { dialogos, preguntas }
 }

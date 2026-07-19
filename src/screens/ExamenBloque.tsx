@@ -167,8 +167,8 @@ export default function ExamenBloque({ bloque, onSalir }: { bloque: number; onSa
   return (
     <div className="flex flex-col gap-4">
       <h1 className="text-2xl font-bold">Examen de bloque {bloque} · Listening</h1>
-      {listening.dialogos.map((d) => (
-        <div key={d.idioma} className="tarjeta flex flex-col gap-3">
+      {listening.dialogos.map((d, i) => (
+        <div key={`${d.tema}-${d.idioma}-${i}`} className="tarjeta flex flex-col gap-3">
           <span className={d.idioma === 'en' ? 'chip-en self-start' : 'chip-fr self-start'}>
             {d.idioma === 'en' ? 'EN' : 'FR'}
           </span>
