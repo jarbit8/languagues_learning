@@ -1,4 +1,6 @@
-{ "tema": 2, "idioma": "en", "titulo": "Datos personales",
+{ "tema": 2, "idioma": "en",
+"dialogos": [
+{ "titulo": "Datos personales",
 "lineas": [
 {"hablante":"A","texto":"Hello, what is your name?"},
 {"hablante":"B","texto":"My name is Joel."},
@@ -12,5 +14,26 @@
 "preguntas": [
 {"tipo":"opcion_multiple","enunciado":"¿Cuántos años tiene Joel?","opciones":["twenty","twenty-two","twelve"],"respuesta":"twenty-two"},
 {"tipo":"vf","enunciado":"Joel da su número de teléfono.","respuesta":"verdadero"},
-{"tipo":"completar_dato","enunciado":"Escribe el nombre de la persona.","respuesta":"Joel"}
+{"tipo":"completar_dato","enunciado":"Escribe el nombre de la persona.","respuesta":"Joel"},
+{"tipo":"completar_dato","enunciado":"¿Qué le desea A a Joel al final?","respuesta":"happy birthday","aceptadas":["happy birthday!"]},
+{"tipo":"opcion_multiple","enunciado":"¿Cuál es el primer número que dice Joel de su teléfono?","opciones":["zero","one","nine"],"respuesta":"zero"}
+] },
+{ "titulo": "En la recepción",
+"lineas": [
+{"hablante":"A","texto":"Hello! What is your name?"},
+{"hablante":"B","texto":"Hi! My name is Laura."},
+{"hablante":"A","texto":"How old are you?"},
+{"hablante":"B","texto":"I'm nineteen years old."},
+{"hablante":"A","texto":"What is your phone number, please?"},
+{"hablante":"B","texto":"It's zero, one, six, four, eight, zero."},
+{"hablante":"A","texto":"Thank you very much."},
+{"hablante":"B","texto":"You're welcome! See you soon."}
+],
+"preguntas": [
+{"tipo":"opcion_multiple","enunciado":"¿Cómo se llama la persona B?","opciones":["Laura","Joel","Ana"],"respuesta":"Laura"},
+{"tipo":"completar_dato","enunciado":"¿Cuántos años tiene Laura?","respuesta":"nineteen","aceptadas":["19"]},
+{"tipo":"vf","enunciado":"Laura da su número de teléfono.","respuesta":"verdadero"},
+{"tipo":"opcion_multiple","enunciado":"¿Qué le dice A a Laura al pedir el número?","opciones":["What is your phone number, please?","What is your name, please?","How old are you, please?"],"respuesta":"What is your phone number, please?"},
+{"tipo":"completar_dato","enunciado":"¿Cómo se despide Laura?","respuesta":"see you soon","aceptadas":["you're welcome! see you soon"]}
+] }
 ] }

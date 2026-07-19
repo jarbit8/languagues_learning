@@ -1,4 +1,6 @@
-{ "tema": 6, "idioma": "fr", "titulo": "On parle du travail",
+{ "tema": 6, "idioma": "fr",
+"dialogos": [
+{ "titulo": "On parle du travail",
 "lineas": [
 {"hablante":"A","texto":"Tu fais quoi, Maria ?"},
 {"hablante":"B","texto":"Je suis professeure. Et toi ?"},
@@ -12,5 +14,26 @@
 "preguntas": [
 {"tipo":"opcion_multiple","enunciado":"¿Cuál es la profesión de Maria?","opciones":["programmeur","professeure","médecin"],"respuesta":"professeure"},
 {"tipo":"vf","enunciado":"A le gusta su trabajo.","respuesta":"verdadero"},
-{"tipo":"completar_dato","enunciado":"¿Dónde está la oficina de A?","respuesta":"centre-ville","aceptadas":["au centre-ville"]}
+{"tipo":"completar_dato","enunciado":"¿Dónde está la oficina de A?","respuesta":"centre-ville","aceptadas":["au centre-ville"]},
+{"tipo":"opcion_multiple","enunciado":"¿Cuál es la profesión de A?","opciones":["professeure","programmeur","médecin"],"respuesta":"programmeur"},
+{"tipo":"completar_dato","enunciado":"¿Dónde trabaja A?","respuesta":"une entreprise","aceptadas":["dans une entreprise","entreprise"]}
+] },
+{ "titulo": "Le travail de mes parents",
+"lineas": [
+{"hablante":"A","texto":"Ton père fait quoi ?"},
+{"hablante":"B","texto":"Il est médecin. Il travaille dans un grand bureau."},
+{"hablante":"A","texto":"Il aime son travail ?"},
+{"hablante":"B","texto":"Oui, il aime beaucoup ça."},
+{"hablante":"A","texto":"Et ta mère ?"},
+{"hablante":"B","texto":"Elle est ingénieure. Elle travaille dans une entreprise."},
+{"hablante":"A","texto":"C'est génial !"},
+{"hablante":"B","texto":"Oui, ils sont travailleurs."}
+],
+"preguntas": [
+{"tipo":"opcion_multiple","enunciado":"¿Cuál es la profesión del padre?","opciones":["médecin","ingénieur","professeur"],"respuesta":"médecin"},
+{"tipo":"vf","enunciado":"Al padre le gusta su trabajo.","respuesta":"verdadero"},
+{"tipo":"completar_dato","enunciado":"¿Cuál es la profesión de la madre?","respuesta":"ingénieure","aceptadas":["ingénieur"]},
+{"tipo":"opcion_multiple","enunciado":"¿Dónde trabaja la madre?","opciones":["une entreprise","un bureau","une école"],"respuesta":"une entreprise"},
+{"tipo":"completar_dato","enunciado":"¿Qué adjetivo se usa para describir a los padres al final?","respuesta":"travailleurs","aceptadas":["travailleur"]}
+] }
 ] }

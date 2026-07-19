@@ -1,4 +1,6 @@
-{ "tema": 3, "idioma": "en", "titulo": "¿De dónde eres?",
+{ "tema": 3, "idioma": "en",
+"dialogos": [
+{ "titulo": "¿De dónde eres?",
 "lineas": [
 {"hablante":"A","texto":"Where are you from?"},
 {"hablante":"B","texto":"I'm from Peru. And you?"},
@@ -12,5 +14,26 @@
 "preguntas": [
 {"tipo":"opcion_multiple","enunciado":"¿De dónde es la persona B?","opciones":["Canada","Peru","France"],"respuesta":"Peru"},
 {"tipo":"vf","enunciado":"La persona A habla inglés y francés.","respuesta":"verdadero"},
-{"tipo":"completar_dato","enunciado":"¿En qué ciudad vive B?","respuesta":"Arequipa"}
+{"tipo":"completar_dato","enunciado":"¿En qué ciudad vive B?","respuesta":"Arequipa"},
+{"tipo":"opcion_multiple","enunciado":"¿De dónde es la persona A?","opciones":["Canada","Peru","France"],"respuesta":"Canada"},
+{"tipo":"vf","enunciado":"B habla español.","respuesta":"verdadero"}
+] },
+{ "titulo": "Nacionalidades en la fiesta",
+"lineas": [
+{"hablante":"A","texto":"Hi! Where are you from?"},
+{"hablante":"B","texto":"I'm from Spain. And you?"},
+{"hablante":"A","texto":"I'm from England."},
+{"hablante":"B","texto":"Do you speak Spanish?"},
+{"hablante":"A","texto":"No, I speak English and a little French."},
+{"hablante":"B","texto":"I speak Spanish and English."},
+{"hablante":"A","texto":"Do you live in Canada?"},
+{"hablante":"B","texto":"Yes, I live in Quebec."}
+],
+"preguntas": [
+{"tipo":"opcion_multiple","enunciado":"¿De dónde es B?","opciones":["Spain","England","Canada"],"respuesta":"Spain"},
+{"tipo":"vf","enunciado":"A habla español.","respuesta":"falso"},
+{"tipo":"completar_dato","enunciado":"¿En qué lugar vive B?","respuesta":"Quebec"},
+{"tipo":"opcion_multiple","enunciado":"¿Qué idiomas habla A?","opciones":["English and French","Spanish and English","English and Spanish"],"respuesta":"English and French"},
+{"tipo":"completar_dato","enunciado":"¿De dónde es A?","respuesta":"England"}
+] }
 ] }

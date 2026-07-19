@@ -1,4 +1,6 @@
-{ "tema": 4, "idioma": "en", "titulo": "Hablando de la familia",
+{ "tema": 4, "idioma": "en",
+"dialogos": [
+{ "titulo": "Hablando de la familia",
 "lineas": [
 {"hablante":"A","texto":"Is this your family?"},
 {"hablante":"B","texto":"Yes, this is my father and my mother."},
@@ -12,5 +14,26 @@
 "preguntas": [
 {"tipo":"opcion_multiple","enunciado":"¿Cómo se llama la hermana?","opciones":["Sofia","Ana","Marie"],"respuesta":"Sofia"},
 {"tipo":"vf","enunciado":"La hermana está casada.","respuesta":"falso"},
-{"tipo":"completar_dato","enunciado":"¿Cómo se llama el perro?","respuesta":"Max"}
+{"tipo":"completar_dato","enunciado":"¿Cómo se llama el perro?","respuesta":"Max"},
+{"tipo":"opcion_multiple","enunciado":"¿Cuántas hermanas tiene B?","opciones":["one","two","three"],"respuesta":"one"},
+{"tipo":"completar_dato","enunciado":"¿Quiénes aparecen en la foto de familia además de la hermana?","respuesta":"father and mother","aceptadas":["my father and my mother"]}
+] },
+{ "titulo": "Hablando del primo",
+"lineas": [
+{"hablante":"A","texto":"Is this your cousin?"},
+{"hablante":"B","texto":"Yes, this is my cousin. His name is Marc."},
+{"hablante":"A","texto":"Is he married?"},
+{"hablante":"B","texto":"No, he's single."},
+{"hablante":"A","texto":"Where is he from?"},
+{"hablante":"B","texto":"He's from France."},
+{"hablante":"A","texto":"How old is he?"},
+{"hablante":"B","texto":"He's thirty years old."}
+],
+"preguntas": [
+{"tipo":"opcion_multiple","enunciado":"¿Cómo se llama el primo?","opciones":["Marc","Max","Paul"],"respuesta":"Marc"},
+{"tipo":"vf","enunciado":"El primo está casado.","respuesta":"falso"},
+{"tipo":"completar_dato","enunciado":"¿De qué país es el primo?","respuesta":"France"},
+{"tipo":"opcion_multiple","enunciado":"¿Cuántos años tiene el primo?","opciones":["twenty","thirty","forty"],"respuesta":"thirty"},
+{"tipo":"completar_dato","enunciado":"¿Qué relación familiar tiene con B?","respuesta":"cousin","aceptadas":["my cousin"]}
+] }
 ] }

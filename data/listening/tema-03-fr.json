@@ -1,4 +1,6 @@
-{ "tema": 3, "idioma": "fr", "titulo": "D'où viens-tu ?",
+{ "tema": 3, "idioma": "fr",
+"dialogos": [
+{ "titulo": "D'où viens-tu ?",
 "lineas": [
 {"hablante":"A","texto":"D'où viens-tu ?"},
 {"hablante":"B","texto":"Je viens du Pérou. Et toi ?"},
@@ -12,5 +14,26 @@
 "preguntas": [
 {"tipo":"opcion_multiple","enunciado":"¿De dónde es la persona B?","opciones":["Canada","Pérou","France"],"respuesta":"Pérou"},
 {"tipo":"vf","enunciado":"La persona A habla inglés y francés.","respuesta":"verdadero"},
-{"tipo":"completar_dato","enunciado":"¿En qué ciudad vive B?","respuesta":"Arequipa"}
+{"tipo":"completar_dato","enunciado":"¿En qué ciudad vive B?","respuesta":"Arequipa"},
+{"tipo":"opcion_multiple","enunciado":"¿De dónde es la persona A?","opciones":["Canada","Pérou","France"],"respuesta":"Canada"},
+{"tipo":"vf","enunciado":"B habla español.","respuesta":"verdadero"}
+] },
+{ "titulo": "Nationalités à la fête",
+"lineas": [
+{"hablante":"A","texto":"Salut ! D'où viens-tu ?"},
+{"hablante":"B","texto":"Je viens d'Espagne. Et toi ?"},
+{"hablante":"A","texto":"Je viens d'Angleterre."},
+{"hablante":"B","texto":"Tu parles espagnol ?"},
+{"hablante":"A","texto":"Non, je parle anglais et un peu français."},
+{"hablante":"B","texto":"Je parle espagnol et anglais."},
+{"hablante":"A","texto":"Tu habites au Canada ?"},
+{"hablante":"B","texto":"Oui, j'habite au Québec."}
+],
+"preguntas": [
+{"tipo":"opcion_multiple","enunciado":"¿De dónde es B?","opciones":["Espagne","Angleterre","Canada"],"respuesta":"Espagne"},
+{"tipo":"vf","enunciado":"A habla español.","respuesta":"falso"},
+{"tipo":"completar_dato","enunciado":"¿En qué lugar vive B?","respuesta":"Québec"},
+{"tipo":"opcion_multiple","enunciado":"¿Qué idiomas habla A?","opciones":["anglais et français","espagnol et anglais","anglais et espagnol"],"respuesta":"anglais et français"},
+{"tipo":"completar_dato","enunciado":"¿De dónde es A?","respuesta":"Angleterre","aceptadas":["d'Angleterre"]}
+] }
 ] }

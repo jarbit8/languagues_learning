@@ -1,4 +1,6 @@
-{ "tema": 5, "idioma": "en", "titulo": "Describiendo a un amigo",
+{ "tema": 5, "idioma": "en",
+"dialogos": [
+{ "titulo": "Describiendo a un amigo",
 "lineas": [
 {"hablante":"A","texto":"What is your friend like?"},
 {"hablante":"B","texto":"He is tall and young."},
@@ -12,5 +14,26 @@
 "preguntas": [
 {"tipo":"opcion_multiple","enunciado":"¿De qué color son sus ojos?","opciones":["blue","brown","green"],"respuesta":"brown"},
 {"tipo":"vf","enunciado":"El amigo es tímido.","respuesta":"falso"},
-{"tipo":"completar_dato","enunciado":"Escribe un adjetivo de personalidad mencionado.","respuesta":"kind","aceptadas":["funny"]}
+{"tipo":"completar_dato","enunciado":"Escribe un adjetivo de personalidad mencionado.","respuesta":"kind","aceptadas":["funny"]},
+{"tipo":"vf","enunciado":"El amigo es bajo.","respuesta":"falso"},
+{"tipo":"opcion_multiple","enunciado":"¿Cómo es el amigo físicamente además de alto?","opciones":["young","old","fat"],"respuesta":"young"}
+] },
+{ "titulo": "Describiendo a mi hermana",
+"lineas": [
+{"hablante":"A","texto":"What is your sister like?"},
+{"hablante":"B","texto":"She is short and thin."},
+{"hablante":"A","texto":"Is she smart?"},
+{"hablante":"B","texto":"Yes, she is very smart and hardworking."},
+{"hablante":"A","texto":"What colour is her hair?"},
+{"hablante":"B","texto":"Her hair is blond."},
+{"hablante":"A","texto":"Is she happy today?"},
+{"hablante":"B","texto":"Yes, she is very happy."}
+],
+"preguntas": [
+{"tipo":"opcion_multiple","enunciado":"¿Cómo es el cabello de la hermana?","opciones":["blond","brown-haired","red-haired"],"respuesta":"blond"},
+{"tipo":"vf","enunciado":"La hermana es alta.","respuesta":"falso"},
+{"tipo":"completar_dato","enunciado":"Escribe un adjetivo de personalidad mencionado sobre la hermana.","respuesta":"smart","aceptadas":["hardworking"]},
+{"tipo":"vf","enunciado":"La hermana está feliz hoy.","respuesta":"verdadero"},
+{"tipo":"opcion_multiple","enunciado":"¿Qué tipo de cuerpo tiene la hermana?","opciones":["thin","fat","strong"],"respuesta":"thin"}
+] }
 ] }
