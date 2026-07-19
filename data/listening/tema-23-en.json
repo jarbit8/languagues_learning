@@ -1,4 +1,6 @@
-{ "tema": 23, "idioma": "en", "titulo": "Check-in en el hotel",
+{ "tema": 23, "idioma": "en",
+"dialogos": [
+{ "titulo": "Check-in en el hotel",
 "lineas": [
 {"hablante":"A","texto":"Good afternoon, I have a booking."},
 {"hablante":"B","texto":"What is your name, please?"},
@@ -12,5 +14,26 @@
 "preguntas": [
 {"tipo":"opcion_multiple","enunciado":"¿En qué piso está la habitación?","opciones":["first","second","third"],"respuesta":"third"},
 {"tipo":"vf","enunciado":"El recepcionista pide el pasaporte.","respuesta":"verdadero"},
-{"tipo":"completar_dato","enunciado":"¿Hasta qué día puede quedarse?","respuesta":"Sunday"}
+{"tipo":"completar_dato","enunciado":"¿Hasta qué día puede quedarse?","respuesta":"Sunday"},
+{"tipo":"completar_dato","enunciado":"¿Cómo se llama el huésped?","respuesta":"Joel Reinoso","aceptadas":["Joel","Reinoso"]},
+{"tipo":"opcion_multiple","enunciado":"¿Qué tiene A al llegar?","opciones":["a booking","a ticket","a map"],"respuesta":"a booking"}
+] },
+{ "titulo": "En el aeropuerto",
+"lineas": [
+{"hablante":"A","texto":"Good morning. Can I see your ticket and passport?"},
+{"hablante":"B","texto":"Yes, here they are."},
+{"hablante":"A","texto":"Do you have luggage?"},
+{"hablante":"B","texto":"Yes, one suitcase."},
+{"hablante":"A","texto":"Your flight leaves at six o'clock."},
+{"hablante":"B","texto":"Thank you! Where is the airplane?"},
+{"hablante":"A","texto":"Go straight. Turn left."},
+{"hablante":"B","texto":"Perfect, thank you very much."}
+],
+"preguntas": [
+{"tipo":"opcion_multiple","enunciado":"¿Qué tiene B además del boleto?","opciones":["passport","money","phone"],"respuesta":"passport"},
+{"tipo":"completar_dato","enunciado":"¿Cuántas maletas tiene B?","respuesta":"one","aceptadas":["one suitcase","1"]},
+{"tipo":"anota_la_hora","enunciado":"¿A qué hora sale el vuelo?","respuesta":"6:00","aceptadas":["six o'clock","six"]},
+{"tipo":"opcion_multiple","enunciado":"¿Qué le indica A a B para llegar al avión?","opciones":["go straight and turn left","go straight and turn right","turn right only"],"respuesta":"go straight and turn left"},
+{"tipo":"vf","enunciado":"B tiene equipaje.","respuesta":"verdadero"}
+] }
 ] }

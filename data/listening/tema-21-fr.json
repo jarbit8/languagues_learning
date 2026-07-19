@@ -1,4 +1,6 @@
-{ "tema": 21, "idioma": "fr", "titulo": "On parle des études",
+{ "tema": 21, "idioma": "fr",
+"dialogos": [
+{ "titulo": "On parle des études",
 "lineas": [
 {"hablante":"A","texto":"Qu'est-ce que tu étudies ?"},
 {"hablante":"B","texto":"J'étudie l'informatique."},
@@ -12,5 +14,26 @@
 "preguntas": [
 {"tipo":"opcion_multiple","enunciado":"¿Qué estudia B?","opciones":["maths","informatique","histoire"],"respuesta":"informatique"},
 {"tipo":"vf","enunciado":"B tiene un examen de matemáticas el jueves.","respuesta":"verdadero"},
-{"tipo":"completar_dato","enunciado":"¿Por qué le gusta la carrera a B?","respuesta":"parce que c'est intéressant","aceptadas":["intéressant","interessant"]}
+{"tipo":"completar_dato","enunciado":"¿Por qué le gusta la carrera a B?","respuesta":"parce que c'est intéressant","aceptadas":["intéressant","interessant"]},
+{"tipo":"vf","enunciado":"B dice que es fácil.","respuesta":"falso"},
+{"tipo":"completar_dato","enunciado":"¿Qué entiende bien B ahora?","respuesta":"la leçon","aceptadas":["leçon"]}
+] },
+{ "titulo": "À la bibliothèque",
+"lineas": [
+{"hablante":"A","texto":"Tu es à la bibliothèque ?"},
+{"hablante":"B","texto":"Oui, j'étudie avec mon camarade."},
+{"hablante":"A","texto":"Quelle matière tu étudies ?"},
+{"hablante":"B","texto":"Nous étudions les sciences et l'histoire."},
+{"hablante":"A","texto":"Tu as des notes ?"},
+{"hablante":"B","texto":"Oui, et un dictionnaire aussi."},
+{"hablante":"A","texto":"La bibliothèque est ouverte jusqu'à huit heures ?"},
+{"hablante":"B","texto":"Oui, elle est ouverte jusqu'à huit heures."}
+],
+"preguntas": [
+{"tipo":"opcion_multiple","enunciado":"¿Dónde está B?","opciones":["bibliothèque","université","salle de classe"],"respuesta":"bibliothèque"},
+{"tipo":"vf","enunciado":"B estudia solo.","respuesta":"falso"},
+{"tipo":"completar_dato","enunciado":"¿Qué materias estudian?","respuesta":"les sciences et l'histoire","aceptadas":["sciences","histoire"]},
+{"tipo":"completar_dato","enunciado":"¿Qué tiene B además de apuntes?","respuesta":"un dictionnaire","aceptadas":["dictionnaire"]},
+{"tipo":"anota_la_hora","enunciado":"¿Hasta qué hora está abierta la biblioteca?","respuesta":"8:00","aceptadas":["huit heures"]}
+] }
 ] }

@@ -1,4 +1,6 @@
-{ "tema": 24, "idioma": "fr", "titulo": "Parler de l'avenir",
+{ "tema": 24, "idioma": "fr",
+"dialogos": [
+{ "titulo": "Parler de l'avenir",
 "lineas": [
 {"hablante":"A","texto":"Quels sont tes projets pour l'avenir ?"},
 {"hablante":"B","texto":"Je vais déménager au Canada."},
@@ -12,5 +14,26 @@
 "preguntas": [
 {"tipo":"opcion_multiple","enunciado":"¿Cuál es el plan de B?","opciones":["déménager en France","déménager au Canada","rester au Pérou"],"respuesta":"déménager au Canada"},
 {"tipo":"vf","enunciado":"B va a estudiar los dos idiomas.","respuesta":"verdadero"},
-{"tipo":"completar_dato","enunciado":"¿Por qué quiere mudarse?","respuesta":"un avenir meilleur","aceptadas":["avenir meilleur"]}
+{"tipo":"completar_dato","enunciado":"¿Por qué quiere mudarse?","respuesta":"un avenir meilleur","aceptadas":["avenir meilleur"]},
+{"tipo":"completar_dato","enunciado":"¿Cuándo va a empezar B?","respuesta":"bientôt","aceptadas":[]},
+{"tipo":"vf","enunciado":"A B no le gusta el idioma.","respuesta":"falso"}
+] },
+{ "titulo": "À propos de la citoyenneté canadienne",
+"lineas": [
+{"hablante":"A","texto":"Quel est ton but pour l'année prochaine ?"},
+{"hablante":"B","texto":"Mon but, c'est la citoyenneté canadienne."},
+{"hablante":"A","texto":"C'est un grand but ! Quel est ton plan ?"},
+{"hablante":"B","texto":"D'abord, je vais obtenir un bon travail. Puis, je vais étudier pour l'examen."},
+{"hablante":"A","texto":"Tu penses que ça va être difficile ?"},
+{"hablante":"B","texto":"Peut-être, mais je suis sûr que je vais réussir."},
+{"hablante":"A","texto":"J'espère que tu vas avoir une opportunité bientôt."},
+{"hablante":"B","texto":"Merci ! On peut parler de ça lundi à quatre heures ?"}
+],
+"preguntas": [
+{"tipo":"opcion_multiple","enunciado":"¿Cuál es la meta de B?","opciones":["la citoyenneté canadienne","un nouveau travail","un voyage en France"],"respuesta":"la citoyenneté canadienne"},
+{"tipo":"completar_dato","enunciado":"¿Qué va a hacer primero B?","respuesta":"obtenir un bon travail","aceptadas":["un bon travail","bon travail"]},
+{"tipo":"vf","enunciado":"B está seguro de que va a aprobar.","respuesta":"verdadero"},
+{"tipo":"anota_la_hora","enunciado":"¿A qué hora quedan para hablar el lunes?","respuesta":"4:00","aceptadas":["quatre heures"]},
+{"tipo":"opcion_multiple","enunciado":"¿Qué día van a hablar?","opciones":["dimanche","lundi","vendredi"],"respuesta":"lundi"}
+] }
 ] }

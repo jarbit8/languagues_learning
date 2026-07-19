@@ -1,4 +1,6 @@
-{ "tema": 23, "idioma": "fr", "titulo": "Arrivée à l'hôtel",
+{ "tema": 23, "idioma": "fr",
+"dialogos": [
+{ "titulo": "Arrivée à l'hôtel",
 "lineas": [
 {"hablante":"A","texto":"Bonjour, j'ai une réservation."},
 {"hablante":"B","texto":"Quel est votre nom, s'il vous plaît ?"},
@@ -12,5 +14,26 @@
 "preguntas": [
 {"tipo":"opcion_multiple","enunciado":"¿En qué piso está la habitación?","opciones":["premier","deuxième","troisième"],"respuesta":"troisième"},
 {"tipo":"vf","enunciado":"El recepcionista pide el pasaporte.","respuesta":"verdadero"},
-{"tipo":"completar_dato","enunciado":"¿Hasta qué día puede quedarse?","respuesta":"dimanche"}
+{"tipo":"completar_dato","enunciado":"¿Hasta qué día puede quedarse?","respuesta":"dimanche"},
+{"tipo":"completar_dato","enunciado":"¿Cómo se llama el huésped?","respuesta":"Joel Reinoso","aceptadas":["Joel","Reinoso"]},
+{"tipo":"opcion_multiple","enunciado":"¿Qué tiene A al llegar?","opciones":["une réservation","un billet","un plan"],"respuesta":"une réservation"}
+] },
+{ "titulo": "À l'aéroport",
+"lineas": [
+{"hablante":"A","texto":"Bonjour. Je peux voir votre billet et votre passeport ?"},
+{"hablante":"B","texto":"Oui, les voici."},
+{"hablante":"A","texto":"Vous avez des bagages ?"},
+{"hablante":"B","texto":"Oui, une valise."},
+{"hablante":"A","texto":"Votre vol part à six heures."},
+{"hablante":"B","texto":"Merci ! Où est l'avion ?"},
+{"hablante":"A","texto":"Allez tout droit. Tournez à gauche."},
+{"hablante":"B","texto":"Parfait, merci beaucoup."}
+],
+"preguntas": [
+{"tipo":"opcion_multiple","enunciado":"¿Qué tiene B además del boleto?","opciones":["passeport","argent","téléphone"],"respuesta":"passeport"},
+{"tipo":"completar_dato","enunciado":"¿Cuántas maletas tiene B?","respuesta":"une","aceptadas":["une valise","1"]},
+{"tipo":"anota_la_hora","enunciado":"¿A qué hora sale el vuelo?","respuesta":"6:00","aceptadas":["six heures"]},
+{"tipo":"opcion_multiple","enunciado":"¿Qué le indica A a B para llegar al avión?","opciones":["tout droit et à gauche","tout droit et à droite","à droite seulement"],"respuesta":"tout droit et à gauche"},
+{"tipo":"vf","enunciado":"B tiene equipaje.","respuesta":"verdadero"}
+] }
 ] }

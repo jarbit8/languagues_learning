@@ -1,4 +1,6 @@
-{ "tema": 22, "idioma": "fr", "titulo": "Problème avec le téléphone",
+{ "tema": 22, "idioma": "fr",
+"dialogos": [
+{ "titulo": "Problème avec le téléphone",
 "lineas": [
 {"hablante":"A","texto":"Mon téléphone ne marche pas."},
 {"hablante":"B","texto":"Qu'est-ce qui s'est passé hier ?"},
@@ -12,5 +14,26 @@
 "preguntas": [
 {"tipo":"opcion_multiple","enunciado":"¿Qué pasó ayer?","opciones":["A perdió el teléfono","A descargó una app","A compró un teléfono"],"respuesta":"A descargó una app"},
 {"tipo":"vf","enunciado":"A no cargó la batería.","respuesta":"falso"},
-{"tipo":"completar_dato","enunciado":"¿Qué le dice B que haga con el teléfono?","respuesta":"éteindre et rallumer","aceptadas":["l'éteindre","l'allumer"]}
+{"tipo":"completar_dato","enunciado":"¿Qué le dice B que haga con el teléfono?","respuesta":"éteindre et rallumer","aceptadas":["l'éteindre","l'allumer"]},
+{"tipo":"completar_dato","enunciado":"¿Qué descargó A?","respuesta":"une appli","aceptadas":["appli"]},
+{"tipo":"vf","enunciado":"A cargó el teléfono anoche.","respuesta":"verdadero"}
+] },
+{ "titulo": "Envoyer un e-mail",
+"lineas": [
+{"hablante":"A","texto":"Je dois envoyer un e-mail."},
+{"hablante":"B","texto":"Tu as internet ?"},
+{"hablante":"A","texto":"Oui, mais mon mot de passe ne marche pas."},
+{"hablante":"B","texto":"Essaie d'ouvrir le site web encore."},
+{"hablante":"A","texto":"D'accord, je l'ai ouvert."},
+{"hablante":"B","texto":"Tu peux cliquer sur le message ?"},
+{"hablante":"A","texto":"Oui, j'ai cliqué. Ça marche maintenant !"},
+{"hablante":"B","texto":"Super !"}
+],
+"preguntas": [
+{"tipo":"opcion_multiple","enunciado":"¿Qué necesita hacer A?","opciones":["envoyer un e-mail","télécharger une appli","appeler un ami"],"respuesta":"envoyer un e-mail"},
+{"tipo":"vf","enunciado":"El problema de A es la contraseña.","respuesta":"verdadero"},
+{"tipo":"completar_dato","enunciado":"¿Qué intenta abrir A?","respuesta":"le site web","aceptadas":["site web"]},
+{"tipo":"completar_dato","enunciado":"¿En qué hace clic A?","respuesta":"le message","aceptadas":["message"]},
+{"tipo":"vf","enunciado":"Al final, funciona.","respuesta":"verdadero"}
+] }
 ] }

@@ -1,4 +1,6 @@
-{ "tema": 20, "idioma": "fr", "titulo": "Plans pour le week-end",
+{ "tema": 20, "idioma": "fr",
+"dialogos": [
+{ "titulo": "Plans pour le week-end",
 "lineas": [
 {"hablante":"A","texto":"Qu'est-ce que tu fais pendant ton temps libre ?"},
 {"hablante":"B","texto":"J'aime jouer au football et écouter de la musique."},
@@ -12,5 +14,26 @@
 "preguntas": [
 {"tipo":"opcion_multiple","enunciado":"¿Qué instrumento toca B?","opciones":["piano","guitare","batterie"],"respuesta":"guitare"},
 {"tipo":"anota_la_hora","enunciado":"¿A qué hora quedan el sábado?","respuesta":"10:00","aceptadas":["dix heures"]},
-{"tipo":"vf","enunciado":"Van a jugar fútbol en el parque.","respuesta":"verdadero"}
+{"tipo":"vf","enunciado":"Van a jugar fútbol en el parque.","respuesta":"verdadero"},
+{"tipo":"opcion_multiple","enunciado":"¿Qué le gusta hacer a B en su tiempo libre además de fútbol?","opciones":["écouter de la musique","regarder des films","lire"],"respuesta":"écouter de la musique"},
+{"tipo":"completar_dato","enunciado":"¿Qué día van a jugar fútbol?","respuesta":"samedi","aceptadas":[]}
+] },
+{ "titulo": "Avant le match de tennis",
+"lineas": [
+{"hablante":"A","texto":"Tu aimes le sport ?"},
+{"hablante":"B","texto":"Oui, j'adore le tennis et la natation."},
+{"hablante":"A","texto":"Tu joues au tennis toutes les semaines ?"},
+{"hablante":"B","texto":"Oui, je joue avec mon frère."},
+{"hablante":"A","texto":"À quelle heure est ton jeu aujourd'hui ?"},
+{"hablante":"B","texto":"Il commence à cinq heures."},
+{"hablante":"A","texto":"Cool !"},
+{"hablante":"B","texto":"Merci ! C'est amusant."}
+],
+"preguntas": [
+{"tipo":"opcion_multiple","enunciado":"¿Qué deportes le gustan a B?","opciones":["le tennis et la natation","le football et le basket","la musique et la danse"],"respuesta":"le tennis et la natation"},
+{"tipo":"vf","enunciado":"B juega tenis con su hermano.","respuesta":"verdadero"},
+{"tipo":"completar_dato","enunciado":"¿Con qué frecuencia juega tenis B?","respuesta":"toutes les semaines","aceptadas":[]},
+{"tipo":"anota_la_hora","enunciado":"¿A qué hora empieza el juego?","respuesta":"5:00","aceptadas":["cinq heures"]},
+{"tipo":"vf","enunciado":"A B le encanta el tenis.","respuesta":"verdadero"}
+] }
 ] }

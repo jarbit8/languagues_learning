@@ -1,4 +1,6 @@
-{ "tema": 20, "idioma": "en", "titulo": "Planes para el fin de semana",
+{ "tema": 20, "idioma": "en",
+"dialogos": [
+{ "titulo": "Planes para el fin de semana",
 "lineas": [
 {"hablante":"A","texto":"What do you do in your free time?"},
 {"hablante":"B","texto":"I like playing football and listening to music."},
@@ -12,5 +14,26 @@
 "preguntas": [
 {"tipo":"opcion_multiple","enunciado":"¿Qué instrumento toca B?","opciones":["piano","guitar","drums"],"respuesta":"guitar"},
 {"tipo":"anota_la_hora","enunciado":"¿A qué hora quedan el sábado?","respuesta":"10:00","aceptadas":["ten","ten o'clock"]},
-{"tipo":"vf","enunciado":"Van a jugar fútbol en el parque.","respuesta":"verdadero"}
+{"tipo":"vf","enunciado":"Van a jugar fútbol en el parque.","respuesta":"verdadero"},
+{"tipo":"opcion_multiple","enunciado":"¿Qué le gusta hacer a B en su tiempo libre además de fútbol?","opciones":["listening to music","watching movies","reading"],"respuesta":"listening to music"},
+{"tipo":"completar_dato","enunciado":"¿Qué día van a jugar fútbol?","respuesta":"Saturday","aceptadas":["saturday"]}
+] },
+{ "titulo": "Antes del partido de tenis",
+"lineas": [
+{"hablante":"A","texto":"Do you like sports?"},
+{"hablante":"B","texto":"Yes, I love tennis and swimming."},
+{"hablante":"A","texto":"Do you play tennis every week?"},
+{"hablante":"B","texto":"Yes, I play with my brother."},
+{"hablante":"A","texto":"What time is your game today?"},
+{"hablante":"B","texto":"It starts at five o'clock."},
+{"hablante":"A","texto":"Cool!"},
+{"hablante":"B","texto":"Thank you! It's fun."}
+],
+"preguntas": [
+{"tipo":"opcion_multiple","enunciado":"¿Qué deportes le gustan a B?","opciones":["tennis and swimming","football and basketball","music and dance"],"respuesta":"tennis and swimming"},
+{"tipo":"vf","enunciado":"B juega tenis con su hermano.","respuesta":"verdadero"},
+{"tipo":"completar_dato","enunciado":"¿Con qué frecuencia juega tenis B?","respuesta":"every week","aceptadas":[]},
+{"tipo":"anota_la_hora","enunciado":"¿A qué hora empieza el juego?","respuesta":"5:00","aceptadas":["five o'clock","five"]},
+{"tipo":"vf","enunciado":"A B le encanta el tenis.","respuesta":"verdadero"}
+] }
 ] }
