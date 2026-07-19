@@ -1,4 +1,6 @@
-{ "tema": 10, "idioma": "fr", "titulo": "Décrire un appartement",
+{ "tema": 10, "idioma": "fr",
+"dialogos": [
+{ "titulo": "Décrire un appartement",
 "lineas": [
 {"hablante":"A","texto":"Ton appartement est grand ?"},
 {"hablante":"B","texto":"Non, il est petit, mais il est agréable."},
@@ -12,5 +14,26 @@
 "preguntas": [
 {"tipo":"opcion_multiple","enunciado":"¿Cuántas habitaciones hay?","opciones":["deux","trois","quatre"],"respuesta":"trois"},
 {"tipo":"vf","enunciado":"Hay una sala en el apartamento.","respuesta":"falso"},
-{"tipo":"completar_dato","enunciado":"¿Dónde está la cama?","respuesta":"à côté de la fenêtre","aceptadas":["a côté de la fenêtre"]}
+{"tipo":"completar_dato","enunciado":"¿Dónde está la cama?","respuesta":"à côté de la fenêtre","aceptadas":["a côté de la fenêtre"]},
+{"tipo":"opcion_multiple","enunciado":"¿Cómo es el apartamento de B?","opciones":["grand","petit","nouveau"],"respuesta":"petit"},
+{"tipo":"completar_dato","enunciado":"¿Qué tres habitaciones tiene el apartamento?","respuesta":"une chambre, une cuisine et une salle de bains","aceptadas":[]}
+] },
+{ "titulo": "La maison de mes grands-parents",
+"lineas": [
+{"hablante":"A","texto":"La maison de tes grands-parents est grande ?"},
+{"hablante":"B","texto":"Oui, elle est grande. Il y a un jardin et un garage."},
+{"hablante":"A","texto":"Il y a un balcon ?"},
+{"hablante":"B","texto":"Oui, il y a un balcon à côté de la cuisine."},
+{"hablante":"A","texto":"Où est la clé ?"},
+{"hablante":"B","texto":"La clé est sur la table, près de la porte."},
+{"hablante":"A","texto":"Il y a un escalier ?"},
+{"hablante":"B","texto":"Oui, il y a un escalier entre le salon et les chambres."}
+],
+"preguntas": [
+{"tipo":"opcion_multiple","enunciado":"¿Qué hay en la casa de los abuelos, según B?","opciones":["un jardin et un garage","un balcon et un escalier","un escalier et un miroir"],"respuesta":"un jardin et un garage"},
+{"tipo":"vf","enunciado":"Hay un balcón al lado de la cocina.","respuesta":"verdadero"},
+{"tipo":"completar_dato","enunciado":"¿Dónde está la llave?","respuesta":"sur la table, près de la porte","aceptadas":["sur la table"]},
+{"tipo":"opcion_multiple","enunciado":"¿Dónde está la escalera?","opciones":["entre le salon et les chambres","à côté du garage","sous la table"],"respuesta":"entre le salon et les chambres"},
+{"tipo":"vf","enunciado":"La casa de los abuelos es pequeña.","respuesta":"falso"}
+] }
 ] }

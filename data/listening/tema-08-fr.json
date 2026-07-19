@@ -1,4 +1,6 @@
-{ "tema": 8, "idioma": "fr", "titulo": "Quelle heure est-il ?",
+{ "tema": 8, "idioma": "fr",
+"dialogos": [
+{ "titulo": "Quelle heure est-il ?",
 "lineas": [
 {"hablante":"A","texto":"Pardon, quelle heure est-il ?"},
 {"hablante":"B","texto":"Il est sept heures et demie."},
@@ -12,5 +14,24 @@
 "preguntas": [
 {"tipo":"anota_la_hora","enunciado":"¿Qué hora es cuando A pregunta?","respuesta":"7:30","aceptadas":["sept heures et demie"]},
 {"tipo":"anota_la_hora","enunciado":"¿A qué hora empieza el curso?","respuesta":"8:15","aceptadas":["huit heures et quart"]},
-{"tipo":"vf","enunciado":"B llega tarde a veces.","respuesta":"falso"}
+{"tipo":"vf","enunciado":"B llega tarde a veces.","respuesta":"falso"},
+{"tipo":"anota_la_hora","enunciado":"¿A qué hora termina el curso?","respuesta":"10:00","aceptadas":["dix heures"]},
+{"tipo":"completar_dato","enunciado":"¿Qué le pregunta A a B al principio?","respuesta":"quelle heure est-il","aceptadas":["pardon, quelle heure est-il ?"]}
+] },
+{ "titulo": "On se voit à quelle heure",
+"lineas": [
+{"hablante":"A","texto":"Quelle heure est-il maintenant ?"},
+{"hablante":"B","texto":"Il est neuf heures moins le quart."},
+{"hablante":"A","texto":"Tu es toujours à l'heure ?"},
+{"hablante":"B","texto":"Oui, je suis d'habitude à l'heure. Je ne suis jamais en retard."},
+{"hablante":"A","texto":"À neuf heures, alors."},
+{"hablante":"B","texto":"Oui, j'arrive tout de suite !"}
+],
+"preguntas": [
+{"tipo":"anota_la_hora","enunciado":"¿Qué hora es cuando empieza la conversación?","respuesta":"8:45","aceptadas":["neuf heures moins le quart"]},
+{"tipo":"opcion_multiple","enunciado":"¿A qué hora se ven?","opciones":["huit heures","neuf heures","dix heures"],"respuesta":"neuf heures"},
+{"tipo":"vf","enunciado":"B llega tarde normalmente.","respuesta":"falso"},
+{"tipo":"completar_dato","enunciado":"¿Cómo describe B su puntualidad?","respuesta":"à l'heure","aceptadas":["d'habitude à l'heure","jamais en retard"]},
+{"tipo":"completar_dato","enunciado":"¿Qué dice B que va a hacer enseguida?","respuesta":"arriver tout de suite","aceptadas":["j'arrive tout de suite","tout de suite"]}
+] }
 ] }

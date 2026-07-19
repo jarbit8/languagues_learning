@@ -1,4 +1,6 @@
-{ "tema": 12, "idioma": "fr", "titulo": "Faire du shopping",
+{ "tema": 12, "idioma": "fr",
+"dialogos": [
+{ "titulo": "Faire du shopping",
 "lineas": [
 {"hablante":"A","texto":"Je peux vous aider ?"},
 {"hablante":"B","texto":"Oui, je cherche une veste."},
@@ -12,5 +14,26 @@
 "preguntas": [
 {"tipo":"opcion_multiple","enunciado":"¿Qué busca B?","opciones":["une chemise","une veste","des chaussures"],"respuesta":"une veste"},
 {"tipo":"vf","enunciado":"B quiere probarse la chaqueta.","respuesta":"verdadero"},
-{"tipo":"completar_dato","enunciado":"¿Qué talla usa B?","respuesta":"moyenne"}
+{"tipo":"completar_dato","enunciado":"¿Qué talla usa B?","respuesta":"moyenne"},
+{"tipo":"completar_dato","enunciado":"¿De qué color es la chaqueta que le muestra A?","respuesta":"noire","aceptadas":["noir"]},
+{"tipo":"opcion_multiple","enunciado":"¿Dónde está el probador (cabine)?","opciones":["là-bas","ici","près de la porte"],"respuesta":"là-bas"}
+] },
+{ "titulo": "Qu'est-ce que tu portes aujourd'hui ?",
+"lineas": [
+{"hablante":"A","texto":"Qu'est-ce que tu portes aujourd'hui ?"},
+{"hablante":"B","texto":"Je porte un jean et un t-shirt blanc."},
+{"hablante":"A","texto":"Tu portes une veste ?"},
+{"hablante":"B","texto":"Oui, je mets ma vieille veste."},
+{"hablante":"A","texto":"Tes chaussures sont nouvelles ou vieilles ?"},
+{"hablante":"B","texto":"Mes chaussures sont nouvelles."},
+{"hablante":"A","texto":"Elles sont chères ?"},
+{"hablante":"B","texto":"Non, elles sont bon marché."}
+],
+"preguntas": [
+{"tipo":"opcion_multiple","enunciado":"¿Qué ropa lleva B hoy?","opciones":["un jean et un t-shirt blanc","une robe et des bottes","une jupe et un pull"],"respuesta":"un jean et un t-shirt blanc"},
+{"tipo":"vf","enunciado":"B lleva una chaqueta nueva.","respuesta":"falso"},
+{"tipo":"completar_dato","enunciado":"¿Cómo son los zapatos de B?","respuesta":"nouvelles","aceptadas":["neuves"]},
+{"tipo":"vf","enunciado":"Los zapatos de B son caros.","respuesta":"falso"},
+{"tipo":"completar_dato","enunciado":"¿Cómo describe B el precio de sus zapatos?","respuesta":"bon marché","aceptadas":[]}
+] }
 ] }

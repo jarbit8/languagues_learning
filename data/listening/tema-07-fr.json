@@ -1,4 +1,6 @@
-{ "tema": 7, "idioma": "fr", "titulo": "Organiser la semaine",
+{ "tema": 7, "idioma": "fr",
+"dialogos": [
+{ "titulo": "Organiser la semaine",
 "lineas": [
 {"hablante":"A","texto":"Ton cours est quel jour ?"},
 {"hablante":"B","texto":"Mon cours est le mardi."},
@@ -12,5 +14,26 @@
 "preguntas": [
 {"tipo":"opcion_multiple","enunciado":"¿Qué día es el curso de B?","opciones":["lundi","mardi","samedi"],"respuesta":"mardi"},
 {"tipo":"vf","enunciado":"El cumpleaños de B es en julio.","respuesta":"verdadero"},
-{"tipo":"completar_dato","enunciado":"¿En qué día se ven este fin de semana?","respuesta":"samedi"}
+{"tipo":"completar_dato","enunciado":"¿En qué día se ven este fin de semana?","respuesta":"samedi"},
+{"tipo":"vf","enunciado":"La clase de B es el lunes.","respuesta":"falso"},
+{"tipo":"completar_dato","enunciado":"¿Qué día de la semana es hoy en la conversación?","respuesta":"lundi","aceptadas":[]}
+] },
+{ "titulo": "Les saisons et l'anniversaire",
+"lineas": [
+{"hablante":"A","texto":"J'aime l'été. Et toi ?"},
+{"hablante":"B","texto":"J'aime l'hiver. C'est sympa."},
+{"hablante":"A","texto":"C'est quand, ton anniversaire ?"},
+{"hablante":"B","texto":"Mon anniversaire est en décembre."},
+{"hablante":"A","texto":"Oh, en hiver !"},
+{"hablante":"B","texto":"Oui. Et ton anniversaire ?"},
+{"hablante":"A","texto":"Mon anniversaire est en avril, au printemps."},
+{"hablante":"B","texto":"À bientôt !"}
+],
+"preguntas": [
+{"tipo":"opcion_multiple","enunciado":"¿Qué estación le gusta a A?","opciones":["l'été","l'hiver","le printemps"],"respuesta":"l'été"},
+{"tipo":"opcion_multiple","enunciado":"¿En qué mes es el cumpleaños de B?","opciones":["octobre","décembre","avril"],"respuesta":"décembre"},
+{"tipo":"vf","enunciado":"El cumpleaños de A es en invierno.","respuesta":"falso"},
+{"tipo":"completar_dato","enunciado":"¿En qué mes es el cumpleaños de A?","respuesta":"avril","aceptadas":[]},
+{"tipo":"completar_dato","enunciado":"¿Qué estación le gusta a B?","respuesta":"l'hiver","aceptadas":["hiver"]}
+] }
 ] }
