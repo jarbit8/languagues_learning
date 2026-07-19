@@ -1,4 +1,6 @@
-{ "tema": 14, "idioma": "en", "titulo": "En el restaurante",
+{ "tema": 14, "idioma": "en",
+"dialogos": [
+{ "titulo": "En el restaurante",
 "lineas": [
 {"hablante":"A","texto":"Good evening! Would you like the menu?"},
 {"hablante":"B","texto":"Yes, please. And a glass of water."},
@@ -12,5 +14,26 @@
 "preguntas": [
 {"tipo":"opcion_multiple","enunciado":"¿Qué pide B de comer?","opciones":["a sandwich","a salad","soup"],"respuesta":"a salad"},
 {"tipo":"vf","enunciado":"B pide un té.","respuesta":"falso"},
-{"tipo":"completar_dato","enunciado":"¿Qué bebida pide B primero?","respuesta":"water","aceptadas":["a glass of water"]}
+{"tipo":"completar_dato","enunciado":"¿Qué bebida pide B primero?","respuesta":"water","aceptadas":["a glass of water"]},
+{"tipo":"opcion_multiple","enunciado":"¿Qué le ofrece A a B al principio?","opciones":["the menu","the bill","a coffee"],"respuesta":"the menu"},
+{"tipo":"completar_dato","enunciado":"¿Cómo describe B la comida al final?","respuesta":"delicious","aceptadas":["this was delicious"]}
+] },
+{ "titulo": "Reservando una mesa",
+"lineas": [
+{"hablante":"A","texto":"Good evening! Do you have a table for two?"},
+{"hablante":"B","texto":"Yes, what time would you like?"},
+{"hablante":"A","texto":"Half past seven, please."},
+{"hablante":"B","texto":"A table for two at half past seven."},
+{"hablante":"A","texto":"Do you have wine?"},
+{"hablante":"B","texto":"Yes, we have wine and beer."},
+{"hablante":"A","texto":"Thank you very much!"},
+{"hablante":"B","texto":"You're welcome. See you soon!"}
+],
+"preguntas": [
+{"tipo":"anota_la_hora","enunciado":"¿A qué hora quiere la mesa la persona A?","respuesta":"7:30","aceptadas":["half past seven"]},
+{"tipo":"opcion_multiple","enunciado":"¿Para cuántas personas es la mesa?","opciones":["one","two","three"],"respuesta":"two"},
+{"tipo":"vf","enunciado":"A quiere vino.","respuesta":"verdadero"},
+{"tipo":"completar_dato","enunciado":"¿Qué bebidas hay disponibles?","respuesta":"wine and beer","aceptadas":["wine","beer"]},
+{"tipo":"opcion_multiple","enunciado":"¿Cómo se despide B al final?","opciones":["See you soon!","Goodbye!","Good night!"],"respuesta":"See you soon!"}
+] }
 ] }

@@ -1,4 +1,6 @@
-{ "tema": 16, "idioma": "en", "titulo": "Recomendando lugares",
+{ "tema": 16, "idioma": "en",
+"dialogos": [
+{ "titulo": "Recomendando lugares",
 "lineas": [
 {"hablante":"A","texto":"Is there a good museum in this city?"},
 {"hablante":"B","texto":"Yes, there is a great museum near the park."},
@@ -12,5 +14,26 @@
 "preguntas": [
 {"tipo":"opcion_multiple","enunciado":"¿Dónde está el museo?","opciones":["near the park","near the station","in the centre"],"respuesta":"near the park"},
 {"tipo":"vf","enunciado":"El museo está abierto los domingos.","respuesta":"falso"},
-{"tipo":"completar_dato","enunciado":"¿Dónde está el restaurante recomendado?","respuesta":"next to the library"}
+{"tipo":"completar_dato","enunciado":"¿Dónde está el restaurante recomendado?","respuesta":"next to the library"},
+{"tipo":"vf","enunciado":"El restaurante está cerca del parque.","respuesta":"falso"},
+{"tipo":"completar_dato","enunciado":"¿Qué le pregunta A a B sobre el restaurante?","respuesta":"what about a good restaurant?","aceptadas":["a good restaurant"]}
+] },
+{ "titulo": "En la biblioteca",
+"lineas": [
+{"hablante":"A","texto":"Excuse me, is the library open today?"},
+{"hablante":"B","texto":"Yes, it's open today."},
+{"hablante":"A","texto":"What time is it open?"},
+{"hablante":"B","texto":"It's open at nine o'clock."},
+{"hablante":"A","texto":"Is the library near the park?"},
+{"hablante":"B","texto":"No, it's near the school."},
+{"hablante":"A","texto":"Thank you! I want to visit it."},
+{"hablante":"B","texto":"You can visit it today."}
+],
+"preguntas": [
+{"tipo":"anota_la_hora","enunciado":"¿A qué hora abre la biblioteca?","respuesta":"9:00","aceptadas":["nine o'clock"]},
+{"tipo":"vf","enunciado":"La biblioteca está cerca del parque.","respuesta":"falso"},
+{"tipo":"opcion_multiple","enunciado":"¿De qué lugar está cerca la biblioteca?","opciones":["the school","the park","the hospital"],"respuesta":"the school"},
+{"tipo":"completar_dato","enunciado":"¿Qué quiere hacer A?","respuesta":"visit it","aceptadas":["to visit the library","visit the library"]},
+{"tipo":"opcion_multiple","enunciado":"¿Está abierta la biblioteca hoy?","opciones":["yes","no","only Sundays"],"respuesta":"yes"}
+] }
 ] }

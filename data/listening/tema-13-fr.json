@@ -1,4 +1,6 @@
-{ "tema": 13, "idioma": "fr", "titulo": "Au marché",
+{ "tema": 13, "idioma": "fr",
+"dialogos": [
+{ "titulo": "Au marché",
 "lineas": [
 {"hablante":"A","texto":"Vous avez des pommes ?"},
 {"hablante":"B","texto":"Oui, nous avons des pommes rouges et vertes."},
@@ -12,5 +14,26 @@
 "preguntas": [
 {"tipo":"opcion_multiple","enunciado":"¿Qué NO hay hoy en el mercado?","opciones":["des pommes","du pain","du lait"],"respuesta":"du pain"},
 {"tipo":"vf","enunciado":"Hay manzanas rojas y verdes.","respuesta":"verdadero"},
-{"tipo":"completar_dato","enunciado":"¿Qué compra la persona A al final?","respuesta":"lait","aceptadas":["du lait"]}
+{"tipo":"completar_dato","enunciado":"¿Qué compra la persona A al final?","respuesta":"lait","aceptadas":["du lait"]},
+{"tipo":"opcion_multiple","enunciado":"¿Qué colores tienen las manzanas?","opciones":["rouges et vertes","rouges et jaunes","vertes et jaunes"],"respuesta":"rouges et vertes"},
+{"tipo":"completar_dato","enunciado":"¿Qué le pregunta B a A al final del diálogo?","respuesta":"autre chose ?","aceptadas":["autre chose"]}
+] },
+{ "titulo": "Le petit-déjeuner",
+"lineas": [
+{"hablante":"A","texto":"Tu manges des œufs au petit-déjeuner ?"},
+{"hablante":"B","texto":"Oui, je mange des œufs et du pain."},
+{"hablante":"A","texto":"Tu as du lait le matin ?"},
+{"hablante":"B","texto":"Oui, j'ai du lait tous les jours."},
+{"hablante":"A","texto":"Je mange des fruits et un yaourt."},
+{"hablante":"B","texto":"Le yaourt est délicieux ?"},
+{"hablante":"A","texto":"Oui, il est très délicieux !"},
+{"hablante":"B","texto":"J'ai faim. Mangeons des fruits."}
+],
+"preguntas": [
+{"tipo":"opcion_multiple","enunciado":"¿Qué come B en el desayuno?","opciones":["des œufs et du pain","du riz et du poulet","de la soupe et de la salade"],"respuesta":"des œufs et du pain"},
+{"tipo":"vf","enunciado":"A también come fruta y yogur.","respuesta":"verdadero"},
+{"tipo":"completar_dato","enunciado":"¿Qué toma B en la mañana?","respuesta":"lait","aceptadas":["du lait"]},
+{"tipo":"opcion_multiple","enunciado":"¿Qué palabra usa A para describir el yogur?","opciones":["délicieux","fruit","pain"],"respuesta":"délicieux"},
+{"tipo":"completar_dato","enunciado":"¿Qué dice B que tiene, al final?","respuesta":"faim","aceptadas":["j'ai faim"]}
+] }
 ] }

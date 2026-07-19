@@ -1,4 +1,6 @@
-{ "tema": 17, "idioma": "en", "titulo": "Pidiendo direcciones",
+{ "tema": 17, "idioma": "en",
+"dialogos": [
+{ "titulo": "Pidiendo direcciones",
 "lineas": [
 {"hablante":"A","texto":"Excuse me, where is the station?"},
 {"hablante":"B","texto":"Go straight and turn left at the corner."},
@@ -12,5 +14,26 @@
 "preguntas": [
 {"tipo":"opcion_multiple","enunciado":"¿Hacia dónde debe girar A?","opciones":["right","left","straight"],"respuesta":"left"},
 {"tipo":"vf","enunciado":"La estación está lejos.","respuesta":"falso"},
-{"tipo":"completar_dato","enunciado":"¿Qué número de bus puede tomar?","respuesta":"ten","aceptadas":["number ten","10"]}
+{"tipo":"completar_dato","enunciado":"¿Qué número de bus puede tomar?","respuesta":"ten","aceptadas":["number ten","10"]},
+{"tipo":"opcion_multiple","enunciado":"¿En cuánto tiempo se llega a pie a la estación?","opciones":["five minutes","ten minutes","fifteen minutes"],"respuesta":"five minutes"},
+{"tipo":"completar_dato","enunciado":"¿Qué le dice B a A al despedirse?","respuesta":"have a good trip","aceptadas":["you're welcome, have a good trip"]}
+] },
+{ "titulo": "En la estación",
+"lineas": [
+{"hablante":"A","texto":"Excuse me, where is the train?"},
+{"hablante":"B","texto":"The train is at the station."},
+{"hablante":"A","texto":"What time does the train arrive?"},
+{"hablante":"B","texto":"It arrives at quarter past six."},
+{"hablante":"A","texto":"Is the station far?"},
+{"hablante":"B","texto":"No, it's near. You can go on foot."},
+{"hablante":"A","texto":"Thank you! Can I take a taxi too?"},
+{"hablante":"B","texto":"Yes, no problem."}
+],
+"preguntas": [
+{"tipo":"anota_la_hora","enunciado":"¿A qué hora llega el tren?","respuesta":"6:15","aceptadas":["quarter past six"]},
+{"tipo":"vf","enunciado":"La estación está lejos.","respuesta":"falso"},
+{"tipo":"opcion_multiple","enunciado":"¿Cómo puede ir A a la estación?","opciones":["on foot","by car","by plane"],"respuesta":"on foot"},
+{"tipo":"completar_dato","enunciado":"¿Qué más quiere tomar A?","respuesta":"a taxi","aceptadas":["taxi"]},
+{"tipo":"opcion_multiple","enunciado":"¿Dónde está el tren?","opciones":["at the station","at the airport","at the bank"],"respuesta":"at the station"}
+] }
 ] }

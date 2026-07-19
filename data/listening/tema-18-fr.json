@@ -1,4 +1,6 @@
-{ "tema": 18, "idioma": "fr", "titulo": "Parler du temps",
+{ "tema": 18, "idioma": "fr",
+"dialogos": [
+{ "titulo": "Parler du temps",
 "lineas": [
 {"hablante":"A","texto":"Quel temps fait-il aujourd'hui ?"},
 {"hablante":"B","texto":"Il fait beau et doux."},
@@ -12,5 +14,26 @@
 "preguntas": [
 {"tipo":"opcion_multiple","enunciado":"¿Cómo está el clima hoy?","opciones":["pluvieux","ensoleillé","neigeux"],"respuesta":"ensoleillé"},
 {"tipo":"vf","enunciado":"Mañana va a llover.","respuesta":"verdadero"},
-{"tipo":"completar_dato","enunciado":"¿Qué estación prefieren ambos?","respuesta":"été","aceptadas":["l'été","ete"]}
+{"tipo":"completar_dato","enunciado":"¿Qué estación prefieren ambos?","respuesta":"été","aceptadas":["l'été","ete"]},
+{"tipo":"opcion_multiple","enunciado":"¿Qué palabra usa B para describir el clima de mañana además de lluvioso?","opciones":["du vent","du soleil","de la neige"],"respuesta":"du vent"},
+{"tipo":"completar_dato","enunciado":"¿Qué le encanta a B?","respuesta":"le soleil","aceptadas":["le soleil","j'adore le soleil"]}
+] },
+{ "titulo": "Une journée à la plage",
+"lineas": [
+{"hablante":"A","texto":"Allons à la plage aujourd'hui !"},
+{"hablante":"B","texto":"C'est ensoleillé ?"},
+{"hablante":"A","texto":"Oui, c'est ensoleillé et il fait chaud."},
+{"hablante":"B","texto":"J'adore la plage en été."},
+{"hablante":"A","texto":"Il y a du vent ?"},
+{"hablante":"B","texto":"Non, il n'y a pas de vent aujourd'hui."},
+{"hablante":"A","texto":"Bien, allons-y !"},
+{"hablante":"B","texto":"Oui, allons à la plage !"}
+],
+"preguntas": [
+{"tipo":"opcion_multiple","enunciado":"¿Cómo está el clima en la playa?","opciones":["ensoleillé et chaud","pluvieux et froid","nuageux et venteux"],"respuesta":"ensoleillé et chaud"},
+{"tipo":"vf","enunciado":"Hace viento en la playa.","respuesta":"falso"},
+{"tipo":"completar_dato","enunciado":"¿Qué le encanta a B en verano?","respuesta":"la plage","aceptadas":["plage","j'adore la plage"]},
+{"tipo":"opcion_multiple","enunciado":"¿A dónde quieren ir A y B?","opciones":["à la plage","à la montagne","à la forêt"],"respuesta":"à la plage"},
+{"tipo":"completar_dato","enunciado":"¿En qué estación están, según B?","respuesta":"été","aceptadas":["en été","l'été"]}
+] }
 ] }
