@@ -1,4 +1,6 @@
-{ "tema": 9, "idioma": "fr", "titulo": "Une journée normale",
+{ "tema": 9, "idioma": "fr",
+"dialogos": [
+{ "titulo": "Une journée normale",
 "lineas": [
 {"hablante":"A","texto":"Tu te lèves à quelle heure ?"},
 {"hablante":"B","texto":"Je me lève à six heures."},
@@ -12,5 +14,26 @@
 "preguntas": [
 {"tipo":"anota_la_hora","enunciado":"¿A qué hora se levanta B?","respuesta":"6:00","aceptadas":["six heures"]},
 {"tipo":"anota_la_hora","enunciado":"¿A qué hora desayuna?","respuesta":"6:30","aceptadas":["six heures et demie"]},
-{"tipo":"vf","enunciado":"B se acuesta a las once.","respuesta":"verdadero"}
+{"tipo":"vf","enunciado":"B se acuesta a las once.","respuesta":"verdadero"},
+{"tipo":"opcion_multiple","enunciado":"¿A qué hora va B al trabajo?","opciones":["six heures","sept heures","huit heures"],"respuesta":"sept heures"},
+{"tipo":"anota_la_hora","enunciado":"¿A qué hora se acuesta B?","respuesta":"11:00","aceptadas":["onze heures"]}
+] },
+{ "titulo": "La routine d'Ana",
+"lineas": [
+{"hablante":"A","texto":"Tu étudies le matin ou l'après-midi ?"},
+{"hablante":"B","texto":"J'étudie l'après-midi. Le matin, je fais le lit."},
+{"hablante":"A","texto":"Tu déjeunes à quelle heure ?"},
+{"hablante":"B","texto":"Je déjeune à midi."},
+{"hablante":"A","texto":"Tu te reposes après le déjeuner ?"},
+{"hablante":"B","texto":"Oui, je fais la sieste. Après, je fais mes devoirs."},
+{"hablante":"A","texto":"Tu te couches à quelle heure ?"},
+{"hablante":"B","texto":"Je me couche à dix heures. Je dors toujours huit heures."}
+],
+"preguntas": [
+{"tipo":"opcion_multiple","enunciado":"¿Cuándo estudia B?","opciones":["le matin","l'après-midi","le soir"],"respuesta":"l'après-midi"},
+{"tipo":"anota_la_hora","enunciado":"¿A qué hora almuerza B?","respuesta":"12:00","aceptadas":["midi"]},
+{"tipo":"vf","enunciado":"B hace la tarea después de la siesta.","respuesta":"verdadero"},
+{"tipo":"anota_la_hora","enunciado":"¿A qué hora se acuesta B?","respuesta":"10:00","aceptadas":["dix heures"]},
+{"tipo":"completar_dato","enunciado":"¿Qué hace B por la mañana?","respuesta":"faire le lit","aceptadas":["elle fait le lit","je fais le lit"]}
+] }
 ] }

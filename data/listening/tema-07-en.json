@@ -1,4 +1,6 @@
-{ "tema": 7, "idioma": "en", "titulo": "Planeando la semana",
+{ "tema": 7, "idioma": "en",
+"dialogos": [
+{ "titulo": "Planeando la semana",
 "lineas": [
 {"hablante":"A","texto":"What day is your class?"},
 {"hablante":"B","texto":"My class is on Tuesday."},
@@ -12,5 +14,26 @@
 "preguntas": [
 {"tipo":"opcion_multiple","enunciado":"¿Qué día es la clase de B?","opciones":["Monday","Tuesday","Saturday"],"respuesta":"Tuesday"},
 {"tipo":"vf","enunciado":"El cumpleaños de B es en julio.","respuesta":"verdadero"},
-{"tipo":"completar_dato","enunciado":"¿En qué día se ven este fin de semana?","respuesta":"Saturday"}
+{"tipo":"completar_dato","enunciado":"¿En qué día se ven este fin de semana?","respuesta":"Saturday"},
+{"tipo":"vf","enunciado":"La clase de B es el lunes.","respuesta":"falso"},
+{"tipo":"completar_dato","enunciado":"¿Qué día de la semana es hoy en la conversación?","respuesta":"monday","aceptadas":["monday, the third of june"]}
+] },
+{ "titulo": "Las estaciones y el cumpleaños",
+"lineas": [
+{"hablante":"A","texto":"I like summer. And you?"},
+{"hablante":"B","texto":"I like winter. It's nice."},
+{"hablante":"A","texto":"What is your birthday month?"},
+{"hablante":"B","texto":"My birthday is in December."},
+{"hablante":"A","texto":"Oh, in winter!"},
+{"hablante":"B","texto":"Yes. And your birthday?"},
+{"hablante":"A","texto":"My birthday is in April, in spring."},
+{"hablante":"B","texto":"See you soon!"}
+],
+"preguntas": [
+{"tipo":"opcion_multiple","enunciado":"¿Qué estación le gusta a A?","opciones":["summer","winter","spring"],"respuesta":"summer"},
+{"tipo":"opcion_multiple","enunciado":"¿En qué mes es el cumpleaños de B?","opciones":["October","December","April"],"respuesta":"December"},
+{"tipo":"vf","enunciado":"El cumpleaños de A es en invierno.","respuesta":"falso"},
+{"tipo":"completar_dato","enunciado":"¿En qué mes es el cumpleaños de A?","respuesta":"april","aceptadas":[]},
+{"tipo":"completar_dato","enunciado":"¿Qué estación le gusta a B?","respuesta":"winter","aceptadas":[]}
+] }
 ] }

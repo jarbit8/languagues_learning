@@ -1,11 +1,11 @@
-import type { Pregunta, ListeningPack, ReadingPack } from '../types'
+import type { Pregunta, ListeningPack, ReadingPack, DialogoConTema } from '../types'
 import { temasDeBloque } from './curriculum'
-import { getListening, getReading } from '../data/packs'
+import { getListening, getReading, dialogosDe } from '../data/packs'
 import { preguntaDeListening } from './preguntas'
 import { baraja } from './preguntas'
 
 export interface SeccionListening {
-  dialogos: ListeningPack[]
+  dialogos: DialogoConTema[]
   preguntas: Pregunta[]
 }
 
@@ -14,9 +14,10 @@ export function construirListeningBloque(bloque: number): SeccionListening {
   const temas = temasDeBloque(bloque)
   const temaEn = temas[1] ?? temas[0]
   const temaFr = temas[4] ?? temas[0]
-  const dialogos = [getListening(temaEn, 'en'), getListening(temaFr, 'fr')].filter(
+  const packs = [getListening(temaEn, 'en'), getListening(temaFr, 'fr')].filter(
     (d): d is ListeningPack => !!d
   )
+  const dialogos = packs.flatMap(dialogosDe)
   const preguntas = baraja(dialogos.flatMap((d) => d.preguntas.map((p) => preguntaDeListening(p, d.idioma))))
   return { dialogos, preguntas }
 }

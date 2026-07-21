@@ -105,13 +105,20 @@ export interface PreguntaListening {
   aceptadas?: string[]
 }
 
-export interface ListeningPack {
-  tema: number
-  idioma: Idioma
+export interface DialogoListening {
   titulo: string
   lineas: LineaDialogo[]
   preguntas: PreguntaListening[]
 }
+
+export interface ListeningPack {
+  tema: number
+  idioma: Idioma
+  dialogos: DialogoListening[]
+}
+
+// Un diálogo ya "aplanado" con su tema/idioma, para pantallas que listan varios juntos.
+export type DialogoConTema = DialogoListening & { tema: number; idioma: Idioma }
 
 export type EstadoTema = 'bloqueado' | 'en_curso' | 'aprobado'
 

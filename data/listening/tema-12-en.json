@@ -1,4 +1,6 @@
-{ "tema": 12, "idioma": "en", "titulo": "Comprando ropa",
+{ "tema": 12, "idioma": "en",
+"dialogos": [
+{ "titulo": "Comprando ropa",
 "lineas": [
 {"hablante":"A","texto":"Can I help you?"},
 {"hablante":"B","texto":"Yes, I'm looking for a jacket."},
@@ -12,5 +14,26 @@
 "preguntas": [
 {"tipo":"opcion_multiple","enunciado":"¿Qué busca B?","opciones":["a shirt","a jacket","shoes"],"respuesta":"a jacket"},
 {"tipo":"vf","enunciado":"B quiere probarse la chaqueta.","respuesta":"verdadero"},
-{"tipo":"completar_dato","enunciado":"¿Qué talla usa B?","respuesta":"medium"}
+{"tipo":"completar_dato","enunciado":"¿Qué talla usa B?","respuesta":"medium"},
+{"tipo":"completar_dato","enunciado":"¿De qué color es la chaqueta que le muestra A?","respuesta":"black","aceptadas":[]},
+{"tipo":"opcion_multiple","enunciado":"¿Dónde está el probador?","opciones":["there","here","near the door"],"respuesta":"there"}
+] },
+{ "titulo": "¿Qué te pones hoy?",
+"lineas": [
+{"hablante":"A","texto":"What do you wear today?"},
+{"hablante":"B","texto":"I wear jeans and a white t-shirt."},
+{"hablante":"A","texto":"Do you wear a jacket?"},
+{"hablante":"B","texto":"Yes, I put on my old jacket."},
+{"hablante":"A","texto":"Are your shoes new or old?"},
+{"hablante":"B","texto":"My shoes are new."},
+{"hablante":"A","texto":"Are they expensive?"},
+{"hablante":"B","texto":"No, they are cheap."}
+],
+"preguntas": [
+{"tipo":"opcion_multiple","enunciado":"¿Qué ropa lleva B hoy?","opciones":["jeans and a white t-shirt","a dress and boots","a skirt and a sweater"],"respuesta":"jeans and a white t-shirt"},
+{"tipo":"vf","enunciado":"B lleva una chaqueta nueva.","respuesta":"falso"},
+{"tipo":"completar_dato","enunciado":"¿Cómo son los zapatos de B?","respuesta":"new","aceptadas":[]},
+{"tipo":"vf","enunciado":"Los zapatos de B son caros.","respuesta":"falso"},
+{"tipo":"completar_dato","enunciado":"¿Cómo describe B el precio de sus zapatos?","respuesta":"cheap","aceptadas":[]}
+] }
 ] }

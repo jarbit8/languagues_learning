@@ -1,4 +1,6 @@
-{ "tema": 24, "idioma": "en", "titulo": "Hablando del futuro",
+{ "tema": 24, "idioma": "en",
+"dialogos": [
+{ "titulo": "Hablando del futuro",
 "lineas": [
 {"hablante":"A","texto":"What are your plans for the future?"},
 {"hablante":"B","texto":"I'm going to move to Canada."},
@@ -12,5 +14,26 @@
 "preguntas": [
 {"tipo":"opcion_multiple","enunciado":"¿Cuál es el plan de B?","opciones":["move to France","move to Canada","stay in Peru"],"respuesta":"move to Canada"},
 {"tipo":"vf","enunciado":"B va a estudiar los dos idiomas.","respuesta":"verdadero"},
-{"tipo":"completar_dato","enunciado":"¿Por qué quiere mudarse?","respuesta":"a better future","aceptadas":["better future"]}
+{"tipo":"completar_dato","enunciado":"¿Por qué quiere mudarse?","respuesta":"a better future","aceptadas":["better future"]},
+{"tipo":"completar_dato","enunciado":"¿Cuándo va a empezar B?","respuesta":"soon","aceptadas":[]},
+{"tipo":"vf","enunciado":"A B no le gusta el idioma.","respuesta":"falso"}
+] },
+{ "titulo": "Sobre la ciudadanía canadiense",
+"lineas": [
+{"hablante":"A","texto":"What's your goal for next year?"},
+{"hablante":"B","texto":"My goal is Canadian citizenship."},
+{"hablante":"A","texto":"That's a big goal! What's your plan?"},
+{"hablante":"B","texto":"First, I'm going to get a good job. Then, I'm going to study for the exam."},
+{"hablante":"A","texto":"Do you think it's going to be difficult?"},
+{"hablante":"B","texto":"Maybe, but I'm sure I'm going to pass."},
+{"hablante":"A","texto":"I hope you get an opportunity soon."},
+{"hablante":"B","texto":"Thank you! Can we speak about it on Monday at four o'clock?"}
+],
+"preguntas": [
+{"tipo":"opcion_multiple","enunciado":"¿Cuál es la meta de B?","opciones":["Canadian citizenship","a new job","a trip to France"],"respuesta":"Canadian citizenship"},
+{"tipo":"completar_dato","enunciado":"¿Qué va a hacer primero B?","respuesta":"get a good job","aceptadas":["a good job","good job"]},
+{"tipo":"vf","enunciado":"B está seguro de que va a aprobar.","respuesta":"verdadero"},
+{"tipo":"anota_la_hora","enunciado":"¿A qué hora quedan para hablar el lunes?","respuesta":"4:00","aceptadas":["four o'clock","four"]},
+{"tipo":"opcion_multiple","enunciado":"¿Qué día van a hablar?","opciones":["Sunday","Monday","Friday"],"respuesta":"Monday"}
+] }
 ] }

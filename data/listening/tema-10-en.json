@@ -1,4 +1,6 @@
-{ "tema": 10, "idioma": "en", "titulo": "Describiendo un apartamento",
+{ "tema": 10, "idioma": "en",
+"dialogos": [
+{ "titulo": "Describiendo un apartamento",
 "lineas": [
 {"hablante":"A","texto":"Is your apartment big?"},
 {"hablante":"B","texto":"No, it's small, but it's nice."},
@@ -12,5 +14,26 @@
 "preguntas": [
 {"tipo":"opcion_multiple","enunciado":"¿Cuántas habitaciones hay?","opciones":["two","three","four"],"respuesta":"three"},
 {"tipo":"vf","enunciado":"Hay una sala en el apartamento.","respuesta":"falso"},
-{"tipo":"completar_dato","enunciado":"¿Dónde está la cama?","respuesta":"next to the window","aceptadas":["next to the window"]}
+{"tipo":"completar_dato","enunciado":"¿Dónde está la cama?","respuesta":"next to the window","aceptadas":["next to the window"]},
+{"tipo":"opcion_multiple","enunciado":"¿Cómo es el apartamento de B?","opciones":["big","small","new"],"respuesta":"small"},
+{"tipo":"completar_dato","enunciado":"¿Qué tres habitaciones tiene el apartamento?","respuesta":"a bedroom, a kitchen and a bathroom","aceptadas":["bedroom, kitchen, bathroom"]}
+] },
+{ "titulo": "La casa de mis abuelos",
+"lineas": [
+{"hablante":"A","texto":"Is your grandparents' house big?"},
+{"hablante":"B","texto":"Yes, it's big. There is a garden and a garage."},
+{"hablante":"A","texto":"Is there a balcony?"},
+{"hablante":"B","texto":"Yes, there is a balcony next to the kitchen."},
+{"hablante":"A","texto":"Where is the key?"},
+{"hablante":"B","texto":"The key is on the table, near the door."},
+{"hablante":"A","texto":"Are there stairs?"},
+{"hablante":"B","texto":"Yes, there are stairs between the living room and the bedrooms."}
+],
+"preguntas": [
+{"tipo":"opcion_multiple","enunciado":"¿Qué hay en la casa de los abuelos, según B?","opciones":["a garden and a garage","a balcony and stairs","stairs and a mirror"],"respuesta":"a garden and a garage"},
+{"tipo":"vf","enunciado":"Hay un balcón al lado de la cocina.","respuesta":"verdadero"},
+{"tipo":"completar_dato","enunciado":"¿Dónde está la llave?","respuesta":"on the table, near the door","aceptadas":["on the table"]},
+{"tipo":"opcion_multiple","enunciado":"¿Dónde están las escaleras?","opciones":["between the living room and the bedrooms","next to the garage","under the table"],"respuesta":"between the living room and the bedrooms"},
+{"tipo":"vf","enunciado":"La casa de los abuelos es pequeña.","respuesta":"falso"}
+] }
 ] }

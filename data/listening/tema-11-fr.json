@@ -1,4 +1,6 @@
-{ "tema": 11, "idioma": "fr", "titulo": "Objet perdu",
+{ "tema": 11, "idioma": "fr",
+"dialogos": [
+{ "titulo": "Objet perdu",
 "lineas": [
 {"hablante":"A","texto":"Excusez-moi, j'ai perdu mon sac."},
 {"hablante":"B","texto":"De quelle couleur est-il ?"},
@@ -12,5 +14,26 @@
 "preguntas": [
 {"tipo":"opcion_multiple","enunciado":"¿De qué color es la mochila?","opciones":["bleu et vert","noir et rouge","blanc"],"respuesta":"noir et rouge"},
 {"tipo":"vf","enunciado":"En la mochila hay un libro de gramática.","respuesta":"falso"},
-{"tipo":"completar_dato","enunciado":"Nombra un objeto que había en la mochila.","respuesta":"clés","aceptadas":["cles","téléphone","cahier"]}
+{"tipo":"completar_dato","enunciado":"Nombra un objeto que había en la mochila.","respuesta":"clés","aceptadas":["cles","téléphone","cahier"]},
+{"tipo":"completar_dato","enunciado":"¿Qué le dice B a A al ayudarla?","respuesta":"de rien","aceptadas":[]},
+{"tipo":"opcion_multiple","enunciado":"¿Cuántos objetos había en la mochila?","opciones":["deux","trois","quatre"],"respuesta":"trois"}
+] },
+{ "titulo": "Au magasin",
+"lineas": [
+{"hablante":"A","texto":"Excusez-moi, j'ai besoin d'un cahier et d'un stylo."},
+{"hablante":"B","texto":"Quelle couleur aimez-vous ?"},
+{"hablante":"A","texto":"J'aime le bleu. Vous avez un cahier bleu ?"},
+{"hablante":"B","texto":"Oui. Et ce stylo est vert."},
+{"hablante":"A","texto":"J'ai besoin d'un stylo noir, s'il vous plaît."},
+{"hablante":"B","texto":"D'accord, ce stylo est noir."},
+{"hablante":"A","texto":"Merci beaucoup !"},
+{"hablante":"B","texto":"De rien !"}
+],
+"preguntas": [
+{"tipo":"opcion_multiple","enunciado":"¿Qué necesita A al principio?","opciones":["un cahier et un stylo","un sac et des clés","des lunettes et une montre"],"respuesta":"un cahier et un stylo"},
+{"tipo":"vf","enunciado":"El cuaderno que quiere A es azul.","respuesta":"verdadero"},
+{"tipo":"completar_dato","enunciado":"¿De qué color es el lapicero que menciona B primero?","respuesta":"vert","aceptadas":[]},
+{"tipo":"completar_dato","enunciado":"¿De qué color pide A el lapicero?","respuesta":"noir","aceptadas":[]},
+{"tipo":"vf","enunciado":"A no da las gracias al final.","respuesta":"falso"}
+] }
 ] }

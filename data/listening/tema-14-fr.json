@@ -1,4 +1,6 @@
-{ "tema": 14, "idioma": "fr", "titulo": "Au restaurant",
+{ "tema": 14, "idioma": "fr",
+"dialogos": [
+{ "titulo": "Au restaurant",
 "lineas": [
 {"hablante":"A","texto":"Bonsoir ! Vous voulez le menu ?"},
 {"hablante":"B","texto":"Oui, s'il vous plaît. Et un verre d'eau."},
@@ -12,5 +14,26 @@
 "preguntas": [
 {"tipo":"opcion_multiple","enunciado":"¿Qué pide B de comer?","opciones":["un sandwich","une salade","une soupe"],"respuesta":"une salade"},
 {"tipo":"vf","enunciado":"B pide un té.","respuesta":"falso"},
-{"tipo":"completar_dato","enunciado":"¿Qué bebida pide B primero?","respuesta":"eau","aceptadas":["un verre d'eau"]}
+{"tipo":"completar_dato","enunciado":"¿Qué bebida pide B primero?","respuesta":"eau","aceptadas":["un verre d'eau"]},
+{"tipo":"opcion_multiple","enunciado":"¿Qué le ofrece A a B al principio?","opciones":["le menu","l'addition","un café"],"respuesta":"le menu"},
+{"tipo":"completar_dato","enunciado":"¿Cómo describe B la comida al final?","respuesta":"délicieux","aceptadas":["c'était délicieux"]}
+] },
+{ "titulo": "Réserver une table",
+"lineas": [
+{"hablante":"A","texto":"Bonsoir ! Vous avez une table pour deux ?"},
+{"hablante":"B","texto":"Oui, à quelle heure voulez-vous ?"},
+{"hablante":"A","texto":"Sept heures et demie, s'il vous plaît."},
+{"hablante":"B","texto":"Une table pour deux à sept heures et demie."},
+{"hablante":"A","texto":"Vous avez du vin ?"},
+{"hablante":"B","texto":"Oui, nous avons du vin et de la bière."},
+{"hablante":"A","texto":"Merci beaucoup !"},
+{"hablante":"B","texto":"De rien. À bientôt !"}
+],
+"preguntas": [
+{"tipo":"anota_la_hora","enunciado":"¿A qué hora quiere la mesa la persona A?","respuesta":"7:30","aceptadas":["sept heures et demie"]},
+{"tipo":"opcion_multiple","enunciado":"¿Para cuántas personas es la mesa?","opciones":["une","deux","trois"],"respuesta":"deux"},
+{"tipo":"vf","enunciado":"A quiere vino.","respuesta":"verdadero"},
+{"tipo":"completar_dato","enunciado":"¿Qué bebidas hay disponibles?","respuesta":"du vin et de la bière","aceptadas":["vin","bière"]},
+{"tipo":"opcion_multiple","enunciado":"¿Cómo se despide B al final?","opciones":["À bientôt !","Au revoir !","Bonne nuit !"],"respuesta":"À bientôt !"}
+] }
 ] }

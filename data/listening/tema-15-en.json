@@ -1,4 +1,6 @@
-{ "tema": 15, "idioma": "en", "titulo": "En la tienda",
+{ "tema": 15, "idioma": "en",
+"dialogos": [
+{ "titulo": "En la tienda",
 "lineas": [
 {"hablante":"A","texto":"How much is this bag?"},
 {"hablante":"B","texto":"It's twenty dollars."},
@@ -12,5 +14,26 @@
 "preguntas": [
 {"tipo":"opcion_multiple","enunciado":"¿Cuánto cuesta la mochila barata?","opciones":["twenty dollars","ten dollars","fifteen dollars"],"respuesta":"ten dollars"},
 {"tipo":"vf","enunciado":"A paga en efectivo.","respuesta":"falso"},
-{"tipo":"completar_dato","enunciado":"¿Qué le da B a A al final?","respuesta":"receipt","aceptadas":["the receipt"]}
+{"tipo":"completar_dato","enunciado":"¿Qué le da B a A al final?","respuesta":"receipt","aceptadas":["the receipt"]},
+{"tipo":"opcion_multiple","enunciado":"¿Cómo paga A al final?","opciones":["by card","in cash","with a coin"],"respuesta":"by card"},
+{"tipo":"completar_dato","enunciado":"¿Qué palabra usa A para decir que el precio es alto?","respuesta":"expensive","aceptadas":["that's expensive"]}
+] },
+{ "titulo": "Comprando comida",
+"lineas": [
+{"hablante":"A","texto":"What time do you go to the supermarket?"},
+{"hablante":"B","texto":"I go at ten o'clock in the morning."},
+{"hablante":"A","texto":"What do you need today?"},
+{"hablante":"B","texto":"I need bread, milk, and cheese."},
+{"hablante":"A","texto":"Is the supermarket cheap?"},
+{"hablante":"B","texto":"Yes, it's cheap and near my house."},
+{"hablante":"A","texto":"Can I pay by card?"},
+{"hablante":"B","texto":"Yes, or in cash."}
+],
+"preguntas": [
+{"tipo":"anota_la_hora","enunciado":"¿A qué hora va B al supermercado?","respuesta":"10:00","aceptadas":["ten o'clock","ten o'clock in the morning"]},
+{"tipo":"opcion_multiple","enunciado":"¿Qué necesita comprar B?","opciones":["bread, milk, and cheese","rice and chicken","fruit and vegetables"],"respuesta":"bread, milk, and cheese"},
+{"tipo":"vf","enunciado":"El supermercado es caro.","respuesta":"falso"},
+{"tipo":"completar_dato","enunciado":"¿Cómo es el supermercado, según B?","respuesta":"cheap","aceptadas":["cheap and near my house"]},
+{"tipo":"opcion_multiple","enunciado":"¿Cómo puede pagar A?","opciones":["by card or in cash","only in cash","only by card"],"respuesta":"by card or in cash"}
+] }
 ] }

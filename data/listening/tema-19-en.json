@@ -1,4 +1,6 @@
-{ "tema": 19, "idioma": "en", "titulo": "En la farmacia",
+{ "tema": 19, "idioma": "en",
+"dialogos": [
+{ "titulo": "En la farmacia",
 "lineas": [
 {"hablante":"A","texto":"How are you feeling today?"},
 {"hablante":"B","texto":"Not very well. I've got a headache."},
@@ -12,5 +14,26 @@
 "preguntas": [
 {"tipo":"opcion_multiple","enunciado":"¿Qué le duele a B además de la cabeza?","opciones":["stomach","throat","leg"],"respuesta":"throat"},
 {"tipo":"vf","enunciado":"B tiene fiebre.","respuesta":"verdadero"},
-{"tipo":"completar_dato","enunciado":"¿Cuántas veces al día debe tomar la medicina?","respuesta":"twice a day","aceptadas":["twice"]}
+{"tipo":"completar_dato","enunciado":"¿Cuántas veces al día debe tomar la medicina?","respuesta":"twice a day","aceptadas":["twice"]},
+{"tipo":"opcion_multiple","enunciado":"¿Qué le recomienda A a B?","opciones":["rest and drink water","go to the hospital","take a walk"],"respuesta":"rest and drink water"},
+{"tipo":"completar_dato","enunciado":"¿Qué cree B que tiene?","respuesta":"a cold","aceptadas":["cold"]}
+] },
+{ "titulo": "En el consultorio médico",
+"lineas": [
+{"hablante":"A","texto":"Good morning. How are you feeling?"},
+{"hablante":"B","texto":"Not well. My stomach hurts."},
+{"hablante":"A","texto":"Do you have a fever?"},
+{"hablante":"B","texto":"No, but I have a cough."},
+{"hablante":"A","texto":"Does your throat hurt too?"},
+{"hablante":"B","texto":"No, my throat is fine."},
+{"hablante":"A","texto":"You must rest and drink water. Come back on Friday at three o'clock."},
+{"hablante":"B","texto":"Thank you very much."}
+],
+"preguntas": [
+{"tipo":"opcion_multiple","enunciado":"¿Qué le duele a B?","opciones":["stomach","throat","leg"],"respuesta":"stomach"},
+{"tipo":"vf","enunciado":"B tiene fiebre.","respuesta":"falso"},
+{"tipo":"completar_dato","enunciado":"¿Qué otro síntoma tiene B?","respuesta":"a cough","aceptadas":["cough"]},
+{"tipo":"anota_la_hora","enunciado":"¿A qué hora debe volver B?","respuesta":"3:00","aceptadas":["three o'clock","three"]},
+{"tipo":"opcion_multiple","enunciado":"¿Qué día debe volver B?","opciones":["Monday","Friday","Sunday"],"respuesta":"Friday"}
+] }
 ] }

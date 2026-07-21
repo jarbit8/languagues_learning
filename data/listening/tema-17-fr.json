@@ -1,4 +1,6 @@
-{ "tema": 17, "idioma": "fr", "titulo": "Demander son chemin",
+{ "tema": 17, "idioma": "fr",
+"dialogos": [
+{ "titulo": "Demander son chemin",
 "lineas": [
 {"hablante":"A","texto":"Excusez-moi, où est la gare ?"},
 {"hablante":"B","texto":"Allez tout droit et tournez à gauche au coin."},
@@ -12,5 +14,26 @@
 "preguntas": [
 {"tipo":"opcion_multiple","enunciado":"¿Hacia dónde debe girar A?","opciones":["droite","gauche","tout droit"],"respuesta":"gauche"},
 {"tipo":"vf","enunciado":"La estación está lejos.","respuesta":"falso"},
-{"tipo":"completar_dato","enunciado":"¿Qué número de bus puede tomar?","respuesta":"dix","aceptadas":["numéro dix","10"]}
+{"tipo":"completar_dato","enunciado":"¿Qué número de bus puede tomar?","respuesta":"dix","aceptadas":["numéro dix","10"]},
+{"tipo":"opcion_multiple","enunciado":"¿En cuánto tiempo se llega a pie a la estación?","opciones":["cinq minutes","dix minutes","quinze minutes"],"respuesta":"cinq minutes"},
+{"tipo":"completar_dato","enunciado":"¿Qué le dice B a A al despedirse?","respuesta":"bon voyage","aceptadas":["de rien, bon voyage"]}
+] },
+{ "titulo": "À la gare",
+"lineas": [
+{"hablante":"A","texto":"Excusez-moi, où est le train ?"},
+{"hablante":"B","texto":"Le train est à la gare."},
+{"hablante":"A","texto":"Il arrive à quelle heure ?"},
+{"hablante":"B","texto":"Il arrive à six heures et quart."},
+{"hablante":"A","texto":"La gare est loin ?"},
+{"hablante":"B","texto":"Non, c'est près. Tu peux aller à pied."},
+{"hablante":"A","texto":"Merci ! Je peux prendre un taxi aussi ?"},
+{"hablante":"B","texto":"Oui, pas de problème."}
+],
+"preguntas": [
+{"tipo":"anota_la_hora","enunciado":"¿A qué hora llega el tren?","respuesta":"6:15","aceptadas":["six heures et quart"]},
+{"tipo":"vf","enunciado":"La estación está lejos.","respuesta":"falso"},
+{"tipo":"opcion_multiple","enunciado":"¿Cómo puede ir A a la estación?","opciones":["à pied","en voiture","en avion"],"respuesta":"à pied"},
+{"tipo":"completar_dato","enunciado":"¿Qué más quiere tomar A?","respuesta":"un taxi","aceptadas":["taxi"]},
+{"tipo":"opcion_multiple","enunciado":"¿Dónde está el tren?","opciones":["à la gare","à l'aéroport","à la banque"],"respuesta":"à la gare"}
+] }
 ] }

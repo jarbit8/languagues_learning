@@ -1,4 +1,6 @@
-{ "tema": 4, "idioma": "fr", "titulo": "On parle de la famille",
+{ "tema": 4, "idioma": "fr",
+"dialogos": [
+{ "titulo": "On parle de la famille",
 "lineas": [
 {"hablante":"A","texto":"C'est ta famille ?"},
 {"hablante":"B","texto":"Oui, c'est mon père et ma mère."},
@@ -12,5 +14,26 @@
 "preguntas": [
 {"tipo":"opcion_multiple","enunciado":"¿Cómo se llama la hermana?","opciones":["Sofia","Ana","Marie"],"respuesta":"Sofia"},
 {"tipo":"vf","enunciado":"La hermana está casada.","respuesta":"falso"},
-{"tipo":"completar_dato","enunciado":"¿Cómo se llama el perro?","respuesta":"Max"}
+{"tipo":"completar_dato","enunciado":"¿Cómo se llama el perro?","respuesta":"Max"},
+{"tipo":"opcion_multiple","enunciado":"¿Cuántas hermanas tiene B?","opciones":["une","deux","trois"],"respuesta":"une"},
+{"tipo":"completar_dato","enunciado":"¿Quiénes aparecen en la foto de familia además de la hermana?","respuesta":"père et mère","aceptadas":["mon père et ma mère"]}
+] },
+{ "titulo": "On parle du cousin",
+"lineas": [
+{"hablante":"A","texto":"C'est ton cousin ?"},
+{"hablante":"B","texto":"Oui, c'est mon cousin. Il s'appelle Marc."},
+{"hablante":"A","texto":"Il est marié ?"},
+{"hablante":"B","texto":"Non, il est célibataire."},
+{"hablante":"A","texto":"Il vient d'où ?"},
+{"hablante":"B","texto":"Il vient de France."},
+{"hablante":"A","texto":"Quel âge a-t-il ?"},
+{"hablante":"B","texto":"Il a trente ans."}
+],
+"preguntas": [
+{"tipo":"opcion_multiple","enunciado":"¿Cómo se llama el primo?","opciones":["Marc","Max","Paul"],"respuesta":"Marc"},
+{"tipo":"vf","enunciado":"El primo está casado.","respuesta":"falso"},
+{"tipo":"completar_dato","enunciado":"¿De qué país es el primo?","respuesta":"France","aceptadas":["de France"]},
+{"tipo":"opcion_multiple","enunciado":"¿Cuántos años tiene el primo?","opciones":["vingt","trente","quarante"],"respuesta":"trente"},
+{"tipo":"completar_dato","enunciado":"¿Qué relación familiar tiene con B?","respuesta":"cousin","aceptadas":["mon cousin"]}
+] }
 ] }

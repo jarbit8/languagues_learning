@@ -1,4 +1,6 @@
-{ "tema": 21, "idioma": "en", "titulo": "Hablando de la carrera",
+{ "tema": 21, "idioma": "en",
+"dialogos": [
+{ "titulo": "Hablando de la carrera",
 "lineas": [
 {"hablante":"A","texto":"What do you study?"},
 {"hablante":"B","texto":"I study computer science."},
@@ -12,5 +14,26 @@
 "preguntas": [
 {"tipo":"opcion_multiple","enunciado":"¿Qué estudia B?","opciones":["maths","computer science","history"],"respuesta":"computer science"},
 {"tipo":"vf","enunciado":"B tiene un examen de matemáticas el jueves.","respuesta":"verdadero"},
-{"tipo":"completar_dato","enunciado":"¿Por qué le gusta la carrera a B?","respuesta":"because it's interesting","aceptadas":["interesting"]}
+{"tipo":"completar_dato","enunciado":"¿Por qué le gusta la carrera a B?","respuesta":"because it's interesting","aceptadas":["interesting"]},
+{"tipo":"vf","enunciado":"B dice que es fácil.","respuesta":"falso"},
+{"tipo":"completar_dato","enunciado":"¿Qué entiende bien B ahora?","respuesta":"the lesson","aceptadas":["lesson"]}
+] },
+{ "titulo": "En la biblioteca",
+"lineas": [
+{"hablante":"A","texto":"Are you in the library?"},
+{"hablante":"B","texto":"Yes, I'm studying with my classmate."},
+{"hablante":"A","texto":"What subject are you studying?"},
+{"hablante":"B","texto":"We're studying science and history."},
+{"hablante":"A","texto":"Do you have notes?"},
+{"hablante":"B","texto":"Yes, and a dictionary too."},
+{"hablante":"A","texto":"Is the library open until eight o'clock?"},
+{"hablante":"B","texto":"Yes, it's open until eight."}
+],
+"preguntas": [
+{"tipo":"opcion_multiple","enunciado":"¿Dónde está B?","opciones":["library","university","classroom"],"respuesta":"library"},
+{"tipo":"vf","enunciado":"B estudia solo.","respuesta":"falso"},
+{"tipo":"completar_dato","enunciado":"¿Qué materias estudian?","respuesta":"science and history","aceptadas":["science","history"]},
+{"tipo":"completar_dato","enunciado":"¿Qué tiene B además de apuntes?","respuesta":"a dictionary","aceptadas":["dictionary"]},
+{"tipo":"anota_la_hora","enunciado":"¿Hasta qué hora está abierta la biblioteca?","respuesta":"8:00","aceptadas":["eight o'clock","eight"]}
+] }
 ] }

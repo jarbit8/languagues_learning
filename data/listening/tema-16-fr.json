@@ -1,4 +1,6 @@
-{ "tema": 16, "idioma": "fr", "titulo": "Recommander des endroits",
+{ "tema": 16, "idioma": "fr",
+"dialogos": [
+{ "titulo": "Recommander des endroits",
 "lineas": [
 {"hablante":"A","texto":"Il y a un bon musée dans cette ville ?"},
 {"hablante":"B","texto":"Oui, il y a un excellent musée près du parc."},
@@ -12,5 +14,26 @@
 "preguntas": [
 {"tipo":"opcion_multiple","enunciado":"¿Dónde está el museo?","opciones":["près du parc","près de la gare","au centre"],"respuesta":"près du parc"},
 {"tipo":"vf","enunciado":"El museo está abierto los domingos.","respuesta":"falso"},
-{"tipo":"completar_dato","enunciado":"¿Dónde está el restaurante recomendado?","respuesta":"à côté de la bibliothèque","aceptadas":["a côté de la bibliothèque"]}
+{"tipo":"completar_dato","enunciado":"¿Dónde está el restaurante recomendado?","respuesta":"à côté de la bibliothèque","aceptadas":["a côté de la bibliothèque"]},
+{"tipo":"vf","enunciado":"El restaurante está cerca del parque.","respuesta":"falso"},
+{"tipo":"completar_dato","enunciado":"¿Qué le pregunta A a B sobre el restaurante?","respuesta":"et un bon restaurant ?","aceptadas":["un bon restaurant"]}
+] },
+{ "titulo": "À la bibliothèque",
+"lineas": [
+{"hablante":"A","texto":"Excusez-moi, la bibliothèque est ouverte aujourd'hui ?"},
+{"hablante":"B","texto":"Oui, elle est ouverte aujourd'hui."},
+{"hablante":"A","texto":"Elle est ouverte à quelle heure ?"},
+{"hablante":"B","texto":"Elle est ouverte à neuf heures."},
+{"hablante":"A","texto":"La bibliothèque est près du parc ?"},
+{"hablante":"B","texto":"Non, elle est près de l'école."},
+{"hablante":"A","texto":"Merci ! Je veux la visiter."},
+{"hablante":"B","texto":"Tu peux la visiter aujourd'hui."}
+],
+"preguntas": [
+{"tipo":"anota_la_hora","enunciado":"¿A qué hora abre la biblioteca?","respuesta":"9:00","aceptadas":["neuf heures"]},
+{"tipo":"vf","enunciado":"La biblioteca está cerca del parque.","respuesta":"falso"},
+{"tipo":"opcion_multiple","enunciado":"¿De qué lugar está cerca la biblioteca?","opciones":["l'école","le parc","l'hôpital"],"respuesta":"l'école"},
+{"tipo":"completar_dato","enunciado":"¿Qué quiere hacer A?","respuesta":"la visiter","aceptadas":["visiter la bibliothèque"]},
+{"tipo":"opcion_multiple","enunciado":"¿Está abierta la biblioteca hoy?","opciones":["oui","non","seulement le dimanche"],"respuesta":"oui"}
+] }
 ] }

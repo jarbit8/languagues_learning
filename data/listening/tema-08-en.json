@@ -1,4 +1,6 @@
-{ "tema": 8, "idioma": "en", "titulo": "¿A qué hora?",
+{ "tema": 8, "idioma": "en",
+"dialogos": [
+{ "titulo": "¿A qué hora?",
 "lineas": [
 {"hablante":"A","texto":"Excuse me, what time is it?"},
 {"hablante":"B","texto":"It's half past seven."},
@@ -12,5 +14,24 @@
 "preguntas": [
 {"tipo":"anota_la_hora","enunciado":"¿Qué hora es cuando A pregunta?","respuesta":"7:30","aceptadas":["seven thirty","half past seven"]},
 {"tipo":"anota_la_hora","enunciado":"¿A qué hora empieza la clase?","respuesta":"8:15","aceptadas":["quarter past eight"]},
-{"tipo":"vf","enunciado":"B llega tarde a veces.","respuesta":"falso"}
+{"tipo":"vf","enunciado":"B llega tarde a veces.","respuesta":"falso"},
+{"tipo":"anota_la_hora","enunciado":"¿A qué hora termina la clase?","respuesta":"10:00","aceptadas":["ten o'clock","ten"]},
+{"tipo":"completar_dato","enunciado":"¿Qué le pregunta A a B al principio?","respuesta":"what time is it","aceptadas":["excuse me, what time is it?"]}
+] },
+{ "titulo": "A qué hora nos vemos",
+"lineas": [
+{"hablante":"A","texto":"What time is it now?"},
+{"hablante":"B","texto":"It's quarter to nine."},
+{"hablante":"A","texto":"Are you always on time?"},
+{"hablante":"B","texto":"Yes, I'm usually on time. I'm never late."},
+{"hablante":"A","texto":"Great! See you at nine o'clock."},
+{"hablante":"B","texto":"OK, I'm coming right away!"}
+],
+"preguntas": [
+{"tipo":"anota_la_hora","enunciado":"¿Qué hora es cuando empieza la conversación?","respuesta":"8:45","aceptadas":["quarter to nine"]},
+{"tipo":"opcion_multiple","enunciado":"¿A qué hora se ven?","opciones":["eight o'clock","nine o'clock","ten o'clock"],"respuesta":"nine o'clock"},
+{"tipo":"vf","enunciado":"B llega tarde normalmente.","respuesta":"falso"},
+{"tipo":"completar_dato","enunciado":"¿Cómo describe B su puntualidad?","respuesta":"on time","aceptadas":["usually on time","never late"]},
+{"tipo":"completar_dato","enunciado":"¿Qué dice B que va a hacer enseguida?","respuesta":"come right away","aceptadas":["coming right away","i'm coming right away"]}
+] }
 ] }

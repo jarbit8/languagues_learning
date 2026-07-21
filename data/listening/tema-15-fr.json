@@ -1,4 +1,6 @@
-{ "tema": 15, "idioma": "fr", "titulo": "Dans le magasin",
+{ "tema": 15, "idioma": "fr",
+"dialogos": [
+{ "titulo": "Dans le magasin",
 "lineas": [
 {"hablante":"A","texto":"Combien coûte ce sac ?"},
 {"hablante":"B","texto":"Il coûte vingt dollars."},
@@ -12,5 +14,26 @@
 "preguntas": [
 {"tipo":"opcion_multiple","enunciado":"¿Cuánto cuesta la mochila barata?","opciones":["vingt dollars","dix dollars","quinze dollars"],"respuesta":"dix dollars"},
 {"tipo":"vf","enunciado":"A paga en efectivo.","respuesta":"falso"},
-{"tipo":"completar_dato","enunciado":"¿Qué le da B a A al final?","respuesta":"reçu","aceptadas":["le reçu","recu"]}
+{"tipo":"completar_dato","enunciado":"¿Qué le da B a A al final?","respuesta":"reçu","aceptadas":["le reçu","recu"]},
+{"tipo":"opcion_multiple","enunciado":"¿Cómo paga A al final?","opciones":["par carte","en espèces","avec une pièce"],"respuesta":"par carte"},
+{"tipo":"completar_dato","enunciado":"¿Qué palabra usa A para decir que el precio es alto?","respuesta":"cher","aceptadas":["c'est cher"]}
+] },
+{ "titulo": "Faire les courses",
+"lineas": [
+{"hablante":"A","texto":"À quelle heure vas-tu au supermarché ?"},
+{"hablante":"B","texto":"Je vais à dix heures du matin."},
+{"hablante":"A","texto":"Qu'est-ce que tu as besoin aujourd'hui ?"},
+{"hablante":"B","texto":"J'ai besoin de pain, de lait et de fromage."},
+{"hablante":"A","texto":"Le supermarché est bon marché ?"},
+{"hablante":"B","texto":"Oui, il est bon marché et près de ma maison."},
+{"hablante":"A","texto":"Je peux payer par carte ?"},
+{"hablante":"B","texto":"Oui, ou en espèces."}
+],
+"preguntas": [
+{"tipo":"anota_la_hora","enunciado":"¿A qué hora va B al supermercado?","respuesta":"10:00","aceptadas":["dix heures","dix heures du matin"]},
+{"tipo":"opcion_multiple","enunciado":"¿Qué necesita comprar B?","opciones":["du pain, du lait et du fromage","du riz et du poulet","des fruits et des légumes"],"respuesta":"du pain, du lait et du fromage"},
+{"tipo":"vf","enunciado":"El supermercado es caro.","respuesta":"falso"},
+{"tipo":"completar_dato","enunciado":"¿Cómo es el supermercado, según B?","respuesta":"bon marché","aceptadas":["bon marché et près"]},
+{"tipo":"opcion_multiple","enunciado":"¿Cómo puede pagar A?","opciones":["par carte ou en espèces","seulement en espèces","seulement par carte"],"respuesta":"par carte ou en espèces"}
+] }
 ] }

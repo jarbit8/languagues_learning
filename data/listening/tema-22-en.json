@@ -1,4 +1,6 @@
-{ "tema": 22, "idioma": "en", "titulo": "Problema con el celular",
+{ "tema": 22, "idioma": "en",
+"dialogos": [
+{ "titulo": "Problema con el celular",
 "lineas": [
 {"hablante":"A","texto":"My phone doesn't work."},
 {"hablante":"B","texto":"What happened yesterday?"},
@@ -12,5 +14,26 @@
 "preguntas": [
 {"tipo":"opcion_multiple","enunciado":"¿Qué pasó ayer?","opciones":["A perdió el teléfono","A descargó una app","A compró un teléfono"],"respuesta":"A descargó una app"},
 {"tipo":"vf","enunciado":"A no cargó la batería.","respuesta":"falso"},
-{"tipo":"completar_dato","enunciado":"¿Qué le dice B que haga con el teléfono?","respuesta":"turn it off and on","aceptadas":["turn it off","turn it on"]}
+{"tipo":"completar_dato","enunciado":"¿Qué le dice B que haga con el teléfono?","respuesta":"turn it off and on","aceptadas":["turn it off","turn it on"]},
+{"tipo":"completar_dato","enunciado":"¿Qué descargó A?","respuesta":"an app","aceptadas":["app"]},
+{"tipo":"vf","enunciado":"A cargó el teléfono anoche.","respuesta":"verdadero"}
+] },
+{ "titulo": "Enviando un correo electrónico",
+"lineas": [
+{"hablante":"A","texto":"I need to send an email."},
+{"hablante":"B","texto":"Do you have internet?"},
+{"hablante":"A","texto":"Yes, but my password doesn't work."},
+{"hablante":"B","texto":"Try to open the website again."},
+{"hablante":"A","texto":"Okay, I opened it."},
+{"hablante":"B","texto":"Can you click on the message?"},
+{"hablante":"A","texto":"Yes, I clicked on it. It works now!"},
+{"hablante":"B","texto":"Great!"}
+],
+"preguntas": [
+{"tipo":"opcion_multiple","enunciado":"¿Qué necesita hacer A?","opciones":["send an email","download an app","call a friend"],"respuesta":"send an email"},
+{"tipo":"vf","enunciado":"El problema de A es la contraseña.","respuesta":"verdadero"},
+{"tipo":"completar_dato","enunciado":"¿Qué intenta abrir A?","respuesta":"the website","aceptadas":["website"]},
+{"tipo":"completar_dato","enunciado":"¿En qué hace clic A?","respuesta":"the message","aceptadas":["message"]},
+{"tipo":"vf","enunciado":"Al final, funciona.","respuesta":"verdadero"}
+] }
 ] }

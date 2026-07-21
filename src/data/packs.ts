@@ -1,4 +1,4 @@
-import type { VocabPack, GramaticaPack, ListeningPack, ReadingPack, WritingPack, Idioma } from '../types'
+import type { VocabPack, GramaticaPack, ListeningPack, ReadingPack, WritingPack, Idioma, DialogoConTema } from '../types'
 
 // Los data packs viven en /data (raíz). Se importan en build → quedan en el bundle
 // y por tanto en el precache del service worker (offline total).
@@ -47,6 +47,11 @@ export const listeningPacks: ListeningPack[] = Object.values(listeningModules)
 
 export function getListening(tema: number, idioma: Idioma): ListeningPack | undefined {
   return listeningPacks.find((p) => p.tema === tema && p.idioma === idioma)
+}
+
+// Aplana los diálogos de un pack añadiéndoles tema/idioma, para pantallas que listan varios juntos.
+export function dialogosDe(pack: ListeningPack): DialogoConTema[] {
+  return pack.dialogos.map((d) => ({ ...d, tema: pack.tema, idioma: pack.idioma }))
 }
 
 export const readingPacks: ReadingPack[] = Object.values(readingModules).map((m) => m.default)

@@ -1,4 +1,6 @@
-{ "tema": 1, "idioma": "fr", "titulo": "Premier jour de cours",
+{ "tema": 1, "idioma": "fr",
+"dialogos": [
+{ "titulo": "Premier jour de cours",
 "lineas": [
 {"hablante":"A","texto":"Bonjour ! Je m'appelle Ana. Enchantée."},
 {"hablante":"B","texto":"Salut Ana ! Je m'appelle Paul. Enchanté."},
@@ -12,5 +14,26 @@
 "preguntas": [
 {"tipo":"opcion_multiple","enunciado":"¿Cómo se llama el hombre?","opciones":["Ana","Paul","Marie"],"respuesta":"Paul"},
 {"tipo":"vf","enunciado":"Ana dice que está muy bien.","respuesta":"verdadero"},
-{"tipo":"completar_dato","enunciado":"¿Cómo se despiden al final?","respuesta":"au revoir"}
+{"tipo":"completar_dato","enunciado":"¿Cómo se despiden al final?","respuesta":"au revoir","aceptadas":[]},
+{"tipo":"completar_dato","enunciado":"¿Cómo se llama la mujer?","respuesta":"ana","aceptadas":["Ana"]},
+{"tipo":"opcion_multiple","enunciado":"¿Qué le pregunta Paul a Ana?","opciones":["Tu es étudiante ici ?","Tu es professeure ici ?","Tu es nouvelle ici ?"],"respuesta":"Tu es étudiante ici ?"}
+] },
+{ "titulo": "Dans une fête",
+"lineas": [
+{"hablante":"A","texto":"Salut ! Je m'appelle Laura."},
+{"hablante":"B","texto":"Salut Laura ! Je m'appelle Marc. Enchanté."},
+{"hablante":"A","texto":"Enchantée aussi. Comment ça va ?"},
+{"hablante":"B","texto":"Ça va très bien, merci. Et toi ?"},
+{"hablante":"A","texto":"Bien, merci ! Bienvenue, Marc."},
+{"hablante":"B","texto":"Merci ! Pas de problème, à bientôt."},
+{"hablante":"A","texto":"Au revoir ! Prends soin de toi."},
+{"hablante":"B","texto":"Toi aussi ! Bonne soirée."}
+],
+"preguntas": [
+{"tipo":"opcion_multiple","enunciado":"¿Cómo se llama el hombre?","opciones":["Laura","Marc","Paul"],"respuesta":"Marc"},
+{"tipo":"vf","enunciado":"Marc dice que está muy bien.","respuesta":"verdadero"},
+{"tipo":"opcion_multiple","enunciado":"¿Qué le dice Laura a Marc cuando llega?","opciones":["Bienvenue, Marc.","Au revoir, Marc.","Bonne nuit, Marc."],"respuesta":"Bienvenue, Marc."},
+{"tipo":"completar_dato","enunciado":"¿Cómo se despide Laura?","respuesta":"au revoir","aceptadas":["prends soin de toi"]},
+{"tipo":"completar_dato","enunciado":"¿Qué le desea Marc a Laura al final?","respuesta":"bonne soirée","aceptadas":[]}
+] }
 ] }

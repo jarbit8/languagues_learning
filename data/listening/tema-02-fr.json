@@ -1,4 +1,6 @@
-{ "tema": 2, "idioma": "fr", "titulo": "Informations personnelles",
+{ "tema": 2, "idioma": "fr",
+"dialogos": [
+{ "titulo": "Informations personnelles",
 "lineas": [
 {"hablante":"A","texto":"Bonjour, comment tu t'appelles ?"},
 {"hablante":"B","texto":"Je m'appelle Joel."},
@@ -12,5 +14,26 @@
 "preguntas": [
 {"tipo":"opcion_multiple","enunciado":"¿Cuántos años tiene Joel?","opciones":["vingt","vingt-deux","douze"],"respuesta":"vingt-deux"},
 {"tipo":"vf","enunciado":"Joel da su número de teléfono.","respuesta":"verdadero"},
-{"tipo":"completar_dato","enunciado":"Escribe el nombre de la persona.","respuesta":"Joel"}
+{"tipo":"completar_dato","enunciado":"Escribe el nombre de la persona.","respuesta":"Joel"},
+{"tipo":"completar_dato","enunciado":"¿Qué le desea A a Joel al final?","respuesta":"bon anniversaire","aceptadas":[]},
+{"tipo":"opcion_multiple","enunciado":"¿Cuál es el primer número que dice Joel de su teléfono?","opciones":["zéro","un","neuf"],"respuesta":"zéro"}
+] },
+{ "titulo": "À la réception",
+"lineas": [
+{"hablante":"A","texto":"Bonjour ! Comment tu t'appelles ?"},
+{"hablante":"B","texto":"Salut ! Je m'appelle Laura."},
+{"hablante":"A","texto":"Quel âge as-tu ?"},
+{"hablante":"B","texto":"J'ai dix-neuf ans."},
+{"hablante":"A","texto":"Quel est ton numéro de téléphone, s'il vous plaît ?"},
+{"hablante":"B","texto":"C'est zéro, un, six, quatre, huit, zéro."},
+{"hablante":"A","texto":"Merci beaucoup."},
+{"hablante":"B","texto":"De rien ! À bientôt."}
+],
+"preguntas": [
+{"tipo":"opcion_multiple","enunciado":"¿Cómo se llama la persona B?","opciones":["Laura","Joel","Ana"],"respuesta":"Laura"},
+{"tipo":"completar_dato","enunciado":"¿Cuántos años tiene Laura?","respuesta":"dix-neuf","aceptadas":["19"]},
+{"tipo":"vf","enunciado":"Laura da su número de teléfono.","respuesta":"verdadero"},
+{"tipo":"opcion_multiple","enunciado":"¿Qué le dice A a Laura al pedir el número?","opciones":["Quel est ton numéro de téléphone, s'il vous plaît ?","Comment tu t'appelles, s'il vous plaît ?","Quel âge as-tu, s'il vous plaît ?"],"respuesta":"Quel est ton numéro de téléphone, s'il vous plaît ?"},
+{"tipo":"completar_dato","enunciado":"¿Cómo se despide Laura?","respuesta":"à bientôt","aceptadas":["de rien"]}
+] }
 ] }

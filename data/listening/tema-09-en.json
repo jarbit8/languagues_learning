@@ -1,4 +1,6 @@
-{ "tema": 9, "idioma": "en", "titulo": "Un día normal",
+{ "tema": 9, "idioma": "en",
+"dialogos": [
+{ "titulo": "Un día normal",
 "lineas": [
 {"hablante":"A","texto":"What time do you get up?"},
 {"hablante":"B","texto":"I get up at six o'clock."},
@@ -12,5 +14,26 @@
 "preguntas": [
 {"tipo":"anota_la_hora","enunciado":"¿A qué hora se levanta B?","respuesta":"6:00","aceptadas":["six o'clock","six"]},
 {"tipo":"anota_la_hora","enunciado":"¿A qué hora desayuna?","respuesta":"6:30","aceptadas":["half past six"]},
-{"tipo":"vf","enunciado":"B se acuesta a las once.","respuesta":"verdadero"}
+{"tipo":"vf","enunciado":"B se acuesta a las once.","respuesta":"verdadero"},
+{"tipo":"opcion_multiple","enunciado":"¿A qué hora va B al trabajo?","opciones":["six","seven","eight"],"respuesta":"seven"},
+{"tipo":"anota_la_hora","enunciado":"¿A qué hora se acuesta B?","respuesta":"11:00","aceptadas":["eleven o'clock","eleven"]}
+] },
+{ "titulo": "La rutina de Ana",
+"lineas": [
+{"hablante":"A","texto":"Do you study in the morning or in the afternoon?"},
+{"hablante":"B","texto":"I study in the afternoon. In the morning, I make the bed."},
+{"hablante":"A","texto":"What time do you have lunch?"},
+{"hablante":"B","texto":"I have lunch at noon."},
+{"hablante":"A","texto":"Do you rest after lunch?"},
+{"hablante":"B","texto":"Yes, I take a nap. Then I do my homework."},
+{"hablante":"A","texto":"What time do you go to bed?"},
+{"hablante":"B","texto":"I go to bed at ten o'clock. I always sleep eight hours."}
+],
+"preguntas": [
+{"tipo":"opcion_multiple","enunciado":"¿Cuándo estudia B?","opciones":["in the morning","in the afternoon","at night"],"respuesta":"in the afternoon"},
+{"tipo":"anota_la_hora","enunciado":"¿A qué hora almuerza B?","respuesta":"12:00","aceptadas":["noon","twelve o'clock"]},
+{"tipo":"vf","enunciado":"B hace la tarea después de la siesta.","respuesta":"verdadero"},
+{"tipo":"anota_la_hora","enunciado":"¿A qué hora se acuesta B?","respuesta":"10:00","aceptadas":["ten o'clock","ten"]},
+{"tipo":"completar_dato","enunciado":"¿Qué hace B por la mañana?","respuesta":"make the bed","aceptadas":["makes the bed","i make the bed"]}
+] }
 ] }

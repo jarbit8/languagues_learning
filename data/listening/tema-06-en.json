@@ -1,4 +1,6 @@
-{ "tema": 6, "idioma": "en", "titulo": "Hablando de trabajo",
+{ "tema": 6, "idioma": "en",
+"dialogos": [
+{ "titulo": "Hablando de trabajo",
 "lineas": [
 {"hablante":"A","texto":"What do you do, Maria?"},
 {"hablante":"B","texto":"I'm a teacher. And you?"},
@@ -12,5 +14,26 @@
 "preguntas": [
 {"tipo":"opcion_multiple","enunciado":"¿Cuál es la profesión de Maria?","opciones":["programmer","teacher","doctor"],"respuesta":"teacher"},
 {"tipo":"vf","enunciado":"A le gusta su trabajo.","respuesta":"verdadero"},
-{"tipo":"completar_dato","enunciado":"¿Dónde está la oficina de A?","respuesta":"city centre","aceptadas":["the city centre"]}
+{"tipo":"completar_dato","enunciado":"¿Dónde está la oficina de A?","respuesta":"city centre","aceptadas":["the city centre"]},
+{"tipo":"opcion_multiple","enunciado":"¿Cuál es la profesión de A?","opciones":["teacher","programmer","doctor"],"respuesta":"programmer"},
+{"tipo":"completar_dato","enunciado":"¿Dónde trabaja A?","respuesta":"a company","aceptadas":["company","at a company"]}
+] },
+{ "titulo": "El trabajo de mis padres",
+"lineas": [
+{"hablante":"A","texto":"What does your father do?"},
+{"hablante":"B","texto":"He's a doctor. He works in a big office."},
+{"hablante":"A","texto":"Does he like his job?"},
+{"hablante":"B","texto":"Yes, he likes it a lot."},
+{"hablante":"A","texto":"What about your mother?"},
+{"hablante":"B","texto":"She's an engineer. She works at a company."},
+{"hablante":"A","texto":"That's great!"},
+{"hablante":"B","texto":"Yes, they are hardworking."}
+],
+"preguntas": [
+{"tipo":"opcion_multiple","enunciado":"¿Cuál es la profesión del padre?","opciones":["doctor","engineer","teacher"],"respuesta":"doctor"},
+{"tipo":"vf","enunciado":"Al padre le gusta su trabajo.","respuesta":"verdadero"},
+{"tipo":"completar_dato","enunciado":"¿Cuál es la profesión de la madre?","respuesta":"engineer","aceptadas":["an engineer"]},
+{"tipo":"opcion_multiple","enunciado":"¿Dónde trabaja la madre?","opciones":["a company","an office","a school"],"respuesta":"a company"},
+{"tipo":"completar_dato","enunciado":"¿Qué adjetivo se usa para describir a los padres al final?","respuesta":"hardworking"}
+] }
 ] }

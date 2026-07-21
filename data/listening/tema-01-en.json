@@ -1,4 +1,6 @@
-{ "tema": 1, "idioma": "en", "titulo": "Primer día de clases",
+{ "tema": 1, "idioma": "en",
+"dialogos": [
+{ "titulo": "Primer día de clases",
 "lineas": [
 {"hablante":"A","texto":"Hello! My name is Ana. Nice to meet you."},
 {"hablante":"B","texto":"Hi Ana! I'm Paul. Nice to meet you too."},
@@ -12,5 +14,26 @@
 "preguntas": [
 {"tipo":"opcion_multiple","enunciado":"¿Cómo se llama la mujer?","opciones":["Ana","Paul","Maria"],"respuesta":"Ana"},
 {"tipo":"vf","enunciado":"Paul dice que está mal.","respuesta":"falso"},
-{"tipo":"completar_dato","enunciado":"¿Cómo se despiden al final?","respuesta":"goodbye","aceptadas":["bye","see you tomorrow"]}
+{"tipo":"completar_dato","enunciado":"¿Cómo se despiden al final?","respuesta":"goodbye","aceptadas":["bye","see you tomorrow"]},
+{"tipo":"completar_dato","enunciado":"¿Cómo se llama el hombre?","respuesta":"paul","aceptadas":["Paul"]},
+{"tipo":"opcion_multiple","enunciado":"¿Qué le pregunta Paul a Ana?","opciones":["Are you a student here?","Are you a teacher here?","Are you new here?"],"respuesta":"Are you a student here?"}
+] },
+{ "titulo": "En una fiesta",
+"lineas": [
+{"hablante":"A","texto":"Hey! My name is Laura."},
+{"hablante":"B","texto":"Hi Laura! I'm Marc. Nice to meet you."},
+{"hablante":"A","texto":"Nice to meet you too. How are you?"},
+{"hablante":"B","texto":"I'm very well, thank you. And you?"},
+{"hablante":"A","texto":"Fine, thanks! Welcome, Marc."},
+{"hablante":"B","texto":"Thank you! No problem, see you soon."},
+{"hablante":"A","texto":"Bye! Take care."},
+{"hablante":"B","texto":"You too! Have a nice evening."}
+],
+"preguntas": [
+{"tipo":"opcion_multiple","enunciado":"¿Cómo se llama la mujer?","opciones":["Laura","Marc","Ana"],"respuesta":"Laura"},
+{"tipo":"vf","enunciado":"Marc dice que está mal.","respuesta":"falso"},
+{"tipo":"opcion_multiple","enunciado":"¿Qué le dice Laura a Marc cuando llega?","opciones":["Welcome, Marc.","Goodbye, Marc.","Good night, Marc."],"respuesta":"Welcome, Marc."},
+{"tipo":"completar_dato","enunciado":"¿Cómo se despide Laura?","respuesta":"bye","aceptadas":["take care","bye! take care"]},
+{"tipo":"completar_dato","enunciado":"¿Qué le desea Marc a Laura al final?","respuesta":"have a nice evening","aceptadas":["good evening"]}
+] }
 ] }

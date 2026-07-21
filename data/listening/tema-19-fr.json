@@ -1,4 +1,6 @@
-{ "tema": 19, "idioma": "fr", "titulo": "À la pharmacie",
+{ "tema": 19, "idioma": "fr",
+"dialogos": [
+{ "titulo": "À la pharmacie",
 "lineas": [
 {"hablante":"A","texto":"Comment tu te sens aujourd'hui ?"},
 {"hablante":"B","texto":"Pas très bien. J'ai mal à la tête."},
@@ -12,5 +14,26 @@
 "preguntas": [
 {"tipo":"opcion_multiple","enunciado":"¿Qué le duele a B además de la cabeza?","opciones":["le ventre","la gorge","la jambe"],"respuesta":"la gorge"},
 {"tipo":"vf","enunciado":"B tiene fiebre.","respuesta":"verdadero"},
-{"tipo":"completar_dato","enunciado":"¿Cuántas veces al día debe tomar la medicina?","respuesta":"deux fois par jour","aceptadas":["deux fois"]}
+{"tipo":"completar_dato","enunciado":"¿Cuántas veces al día debe tomar la medicina?","respuesta":"deux fois par jour","aceptadas":["deux fois"]},
+{"tipo":"opcion_multiple","enunciado":"¿Qué le recomienda A a B?","opciones":["se reposer et boire de l'eau","aller à l'hôpital","faire une promenade"],"respuesta":"se reposer et boire de l'eau"},
+{"tipo":"completar_dato","enunciado":"¿Qué cree B que tiene?","respuesta":"un rhume","aceptadas":["rhume"]}
+] },
+{ "titulo": "Chez le médecin",
+"lineas": [
+{"hablante":"A","texto":"Bonjour. Comment tu te sens ?"},
+{"hablante":"B","texto":"Pas bien. J'ai mal au ventre."},
+{"hablante":"A","texto":"Tu as de la fièvre ?"},
+{"hablante":"B","texto":"Non, mais j'ai de la toux."},
+{"hablante":"A","texto":"Tu as aussi mal à la gorge ?"},
+{"hablante":"B","texto":"Non, ma gorge va bien."},
+{"hablante":"A","texto":"Tu dois te reposer et boire de l'eau. Rentre vendredi à trois heures."},
+{"hablante":"B","texto":"Merci beaucoup."}
+],
+"preguntas": [
+{"tipo":"opcion_multiple","enunciado":"¿Qué le duele a B?","opciones":["le ventre","la gorge","la jambe"],"respuesta":"le ventre"},
+{"tipo":"vf","enunciado":"B tiene fiebre.","respuesta":"falso"},
+{"tipo":"completar_dato","enunciado":"¿Qué otro síntoma tiene B?","respuesta":"la toux","aceptadas":["toux"]},
+{"tipo":"anota_la_hora","enunciado":"¿A qué hora debe volver B?","respuesta":"3:00","aceptadas":["trois heures"]},
+{"tipo":"opcion_multiple","enunciado":"¿Qué día debe volver B?","opciones":["lundi","vendredi","dimanche"],"respuesta":"vendredi"}
+] }
 ] }

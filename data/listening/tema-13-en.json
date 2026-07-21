@@ -1,4 +1,6 @@
-{ "tema": 13, "idioma": "en", "titulo": "En el mercado",
+{ "tema": 13, "idioma": "en",
+"dialogos": [
+{ "titulo": "En el mercado",
 "lineas": [
 {"hablante":"A","texto":"Do you have any apples?"},
 {"hablante":"B","texto":"Yes, we have red and green apples."},
@@ -12,5 +14,26 @@
 "preguntas": [
 {"tipo":"opcion_multiple","enunciado":"¿Qué NO hay hoy en el mercado?","opciones":["apples","bread","milk"],"respuesta":"bread"},
 {"tipo":"vf","enunciado":"Hay manzanas rojas y verdes.","respuesta":"verdadero"},
-{"tipo":"completar_dato","enunciado":"¿Qué compra la persona A al final?","respuesta":"milk"}
+{"tipo":"completar_dato","enunciado":"¿Qué compra la persona A al final?","respuesta":"milk"},
+{"tipo":"opcion_multiple","enunciado":"¿Qué colores tienen las manzanas?","opciones":["red and green","red and yellow","green and yellow"],"respuesta":"red and green"},
+{"tipo":"completar_dato","enunciado":"¿Qué le pregunta B a A al final del diálogo?","respuesta":"anything else?","aceptadas":["anything else"]}
+] },
+{ "titulo": "El desayuno",
+"lineas": [
+{"hablante":"A","texto":"Do you eat eggs for breakfast?"},
+{"hablante":"B","texto":"Yes, I eat eggs and bread."},
+{"hablante":"A","texto":"Do you have milk in the morning?"},
+{"hablante":"B","texto":"Yes, I have milk every day."},
+{"hablante":"A","texto":"I eat fruit and yogurt."},
+{"hablante":"B","texto":"Is the yogurt tasty?"},
+{"hablante":"A","texto":"Yes, it's very tasty!"},
+{"hablante":"B","texto":"I'm hungry. Let's eat some fruit."}
+],
+"preguntas": [
+{"tipo":"opcion_multiple","enunciado":"¿Qué come B en el desayuno?","opciones":["eggs and bread","rice and chicken","soup and salad"],"respuesta":"eggs and bread"},
+{"tipo":"vf","enunciado":"A también come fruta y yogur.","respuesta":"verdadero"},
+{"tipo":"completar_dato","enunciado":"¿Qué toma B en la mañana?","respuesta":"milk"},
+{"tipo":"opcion_multiple","enunciado":"¿Qué palabra usa A para describir el yogur?","opciones":["tasty","fruit","bread"],"respuesta":"tasty"},
+{"tipo":"completar_dato","enunciado":"¿Qué dice B que tiene, al final?","respuesta":"hungry","aceptadas":["i'm hungry"]}
+] }
 ] }

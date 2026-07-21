@@ -1,4 +1,6 @@
-{ "tema": 18, "idioma": "en", "titulo": "Hablando del clima",
+{ "tema": 18, "idioma": "en",
+"dialogos": [
+{ "titulo": "Hablando del clima",
 "lineas": [
 {"hablante":"A","texto":"What's the weather like today?"},
 {"hablante":"B","texto":"It's sunny and warm."},
@@ -12,5 +14,26 @@
 "preguntas": [
 {"tipo":"opcion_multiple","enunciado":"¿Cómo está el clima hoy?","opciones":["rainy","sunny","snowy"],"respuesta":"sunny"},
 {"tipo":"vf","enunciado":"Mañana va a llover.","respuesta":"verdadero"},
-{"tipo":"completar_dato","enunciado":"¿Qué estación prefieren ambos?","respuesta":"summer"}
+{"tipo":"completar_dato","enunciado":"¿Qué estación prefieren ambos?","respuesta":"summer"},
+{"tipo":"opcion_multiple","enunciado":"¿Qué palabra usa B para describir el clima de mañana además de lluvioso?","opciones":["windy","sunny","cloudy"],"respuesta":"windy"},
+{"tipo":"completar_dato","enunciado":"¿Qué le encanta a B?","respuesta":"the sun","aceptadas":["sun","i love the sun"]}
+] },
+{ "titulo": "Un día en la playa",
+"lineas": [
+{"hablante":"A","texto":"Let's go to the beach today!"},
+{"hablante":"B","texto":"Is it sunny?"},
+{"hablante":"A","texto":"Yes, it's sunny and hot."},
+{"hablante":"B","texto":"I love the beach in summer."},
+{"hablante":"A","texto":"Is it windy?"},
+{"hablante":"B","texto":"No, there's no wind today."},
+{"hablante":"A","texto":"Good, let's go!"},
+{"hablante":"B","texto":"Yes, let's go to the beach!"}
+],
+"preguntas": [
+{"tipo":"opcion_multiple","enunciado":"¿Cómo está el clima en la playa?","opciones":["sunny and hot","rainy and cold","cloudy and windy"],"respuesta":"sunny and hot"},
+{"tipo":"vf","enunciado":"Hace viento en la playa.","respuesta":"falso"},
+{"tipo":"completar_dato","enunciado":"¿Qué le encanta a B en verano?","respuesta":"the beach","aceptadas":["beach","i love the beach"]},
+{"tipo":"opcion_multiple","enunciado":"¿A dónde quieren ir A y B?","opciones":["to the beach","to the mountain","to the forest"],"respuesta":"to the beach"},
+{"tipo":"completar_dato","enunciado":"¿En qué estación están, según B?","respuesta":"summer","aceptadas":["in summer"]}
+] }
 ] }

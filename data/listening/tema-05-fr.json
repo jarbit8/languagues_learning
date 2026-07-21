@@ -1,4 +1,6 @@
-{ "tema": 5, "idioma": "fr", "titulo": "Décrire un ami",
+{ "tema": 5, "idioma": "fr",
+"dialogos": [
+{ "titulo": "Décrire un ami",
 "lineas": [
 {"hablante":"A","texto":"Il est comment, ton ami ?"},
 {"hablante":"B","texto":"Il est grand et jeune."},
@@ -12,5 +14,26 @@
 "preguntas": [
 {"tipo":"opcion_multiple","enunciado":"¿De qué color son sus ojos?","opciones":["bleus","bruns","verts"],"respuesta":"bruns"},
 {"tipo":"vf","enunciado":"El amigo es tímido.","respuesta":"falso"},
-{"tipo":"completar_dato","enunciado":"Escribe un adjetivo de personalidad mencionado.","respuesta":"gentil","aceptadas":["drôle","drole"]}
+{"tipo":"completar_dato","enunciado":"Escribe un adjetivo de personalidad mencionado.","respuesta":"gentil","aceptadas":["drôle","drole"]},
+{"tipo":"vf","enunciado":"El amigo es bajo.","respuesta":"falso"},
+{"tipo":"opcion_multiple","enunciado":"¿Cómo es el amigo físicamente además de alto?","opciones":["jeune","vieux","gros"],"respuesta":"jeune"}
+] },
+{ "titulo": "Décrire ma sœur",
+"lineas": [
+{"hablante":"A","texto":"Elle est comment, ta sœur ?"},
+{"hablante":"B","texto":"Elle est petite et mince."},
+{"hablante":"A","texto":"Elle est intelligente ?"},
+{"hablante":"B","texto":"Oui, elle est très intelligente et travailleuse."},
+{"hablante":"A","texto":"De quelle couleur sont ses cheveux ?"},
+{"hablante":"B","texto":"Ses cheveux sont blonds."},
+{"hablante":"A","texto":"Elle est heureuse aujourd'hui ?"},
+{"hablante":"B","texto":"Oui, elle est très heureuse."}
+],
+"preguntas": [
+{"tipo":"opcion_multiple","enunciado":"¿Cómo es el cabello de la hermana?","opciones":["blonds","bruns","roux"],"respuesta":"blonds"},
+{"tipo":"vf","enunciado":"La hermana es alta.","respuesta":"falso"},
+{"tipo":"completar_dato","enunciado":"Escribe un adjetivo de personalidad mencionado sobre la hermana.","respuesta":"intelligente","aceptadas":["travailleuse"]},
+{"tipo":"vf","enunciado":"La hermana está feliz hoy.","respuesta":"verdadero"},
+{"tipo":"opcion_multiple","enunciado":"¿Qué tipo de cuerpo tiene la hermana?","opciones":["mince","grosse","forte"],"respuesta":"mince"}
+] }
 ] }
