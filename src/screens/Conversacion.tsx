@@ -3,47 +3,9 @@ import { useLiveQuery } from 'dexie-react-hooks'
 import type { Idioma } from '../types'
 import { temaEnCurso } from '../lib/progreso'
 import { escenarioDe } from '../data/escenarios'
-import { getVocabPack, vocabPacks } from '../data/packs'
-import { construirPromptCopiable } from '../lib/speaking'
-
-function temasDesbloqueadosTexto(tema: number): string {
-  const titulos = vocabPacks.filter((p) => p.tema <= tema).map((p) => p.titulo)
-  return titulos.slice(-6).join(', ') || 'saludos básicos'
-}
-
-function CopiarPrompt({ idioma, tema }: { idioma: Idioma; tema: number }) {
-  const [copiado, setCopiado] = useState(false)
-  const prompt = construirPromptCopiable(idioma, escenarioDe(tema), temasDesbloqueadosTexto(tema))
-
-  async function copiar() {
-    try {
-      await navigator.clipboard.writeText(prompt)
-      setCopiado(true)
-      setTimeout(() => setCopiado(false), 2000)
-    } catch {
-      setCopiado(false)
-    }
-  }
-
-  return (
-    <div className="tarjeta flex flex-col gap-3">
-      <p className="text-sm text-slate-500 dark:text-slate-400">
-        Pega esto como tu primer mensaje en cualquier chat de IA (Claude, ChatGPT...) y practica ahí. El tutor te
-        responderá siempre en {idioma === 'en' ? 'inglés' : 'francés'}, nunca en español.
-      </p>
-      <textarea
-        readOnly
-        value={prompt}
-        rows={9}
-        onFocus={(e) => e.target.select()}
-        className="rounded-xl border border-slate-300 bg-slate-50 px-3 py-2 text-sm dark:border-slate-600 dark:bg-slate-900"
-      />
-      <button onClick={copiar} className="btn-primary">
-        {copiado ? '¡Copiado! ✓' : 'Copiar prompt 📋'}
-      </button>
-    </div>
-  )
-}
+import { getVocabPack } from '../data/packs'
+import { construirPromptCopiable, temasDesbloqueadosTexto } from '../lib/speaking'
+import CopiarPrompt from '../components/CopiarPrompt'
 
 export default function Conversacion() {
   const temaActual = useLiveQuery(() => temaEnCurso(), [], 1) ?? 1
@@ -53,6 +15,7 @@ export default function Conversacion() {
   const temaSel = tema ?? temaActual
   const temasDisponibles = Array.from({ length: temaActual }, (_, i) => i + 1)
   const pack = getVocabPack(temaSel)
+  const nombreIdioma = idioma === 'en' ? 'inglés' : 'francés'
 
   return (
     <div className="flex flex-col gap-4">
@@ -87,7 +50,10 @@ export default function Conversacion() {
         <p className="text-sm text-slate-500 dark:text-slate-400">{escenarioDe(temaSel)}</p>
       </div>
 
-      <CopiarPrompt idioma={idioma} tema={temaSel} />
+      <CopiarPrompt
+        prompt={construirPromptCopiable(idioma, escenarioDe(temaSel), temasDesbloqueadosTexto(temaSel))}
+        descripcion={`Pega esto como tu primer mensaje en cualquier chat de IA (Claude, ChatGPT...) y practica ahí. El tutor te responderá siempre en ${nombreIdioma}, nunca en español.`}
+      />
 
       {pack && <p className="text-center text-xs text-slate-400">Vocabulario disponible: temas 1 a {temaSel}</p>}
     </div>

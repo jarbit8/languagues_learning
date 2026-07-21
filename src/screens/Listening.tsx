@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import { useLiveQuery } from 'dexie-react-hooks'
 import type { Idioma } from '../types'
-import { getListening } from '../data/packs'
 import { temaEnCurso } from '../lib/progreso'
-import { reproducirDialogo, reproducirLinea, detener } from '../lib/listening'
-import { preguntaDeListening } from '../lib/preguntas'
-import ExamRunner from '../components/ExamRunner'
+import { escenarioDe } from '../data/escenarios'
+import { getVocabPack } from '../data/packs'
+import { construirPromptListening, temasDesbloqueadosTexto } from '../lib/speaking'
+import CopiarPrompt from '../components/CopiarPrompt'
 
 const RECURSOS: Record<Idioma, { nombre: string; nota: string }[]> = {
   en: [
@@ -27,152 +27,51 @@ export default function Listening() {
   const temaActual = useLiveQuery(() => temaEnCurso(), [], 1) ?? 1
   const [tema, setTema] = useState<number | null>(null)
   const [idioma, setIdioma] = useState<Idioma>('en')
-  const [lineaActiva, setLineaActiva] = useState(-1)
-  const [transcripcionVisible, setTranscripcionVisible] = useState(false)
-  const [enExamen, setEnExamen] = useState(false)
-  const [resultado, setResultado] = useState<{ aciertos: number; total: number } | null>(null)
 
   const temaSel = tema ?? temaActual
-  const pack = getListening(temaSel, idioma)
   const temasDisponibles = Array.from({ length: temaActual }, (_, i) => i + 1)
-
-  function elegirTema(t: number) {
-    detener()
-    setTema(t)
-    setLineaActiva(-1)
-    setTranscripcionVisible(false)
-    setEnExamen(false)
-    setResultado(null)
-  }
-
-  if (!pack) {
-    return (
-      <div className="flex flex-col gap-4">
-        <p className="tarjeta text-slate-500 dark:text-slate-400">
-          Aún no hay listening para el tema {temaSel} en {idioma === 'en' ? 'inglés' : 'francés'}.
-        </p>
-      </div>
-    )
-  }
-
-  if (enExamen) {
-    if (resultado) {
-      const pct = Math.round((resultado.aciertos / resultado.total) * 100)
-      return (
-        <div className="flex flex-col gap-4">
-          <div className="tarjeta flex flex-col items-center gap-2 py-8">
-            <span className="text-5xl font-black">{pct}%</span>
-            <span className="text-slate-500 dark:text-slate-400">
-              {resultado.aciertos} de {resultado.total} correctas
-            </span>
-          </div>
-          <button onClick={() => elegirTema(temaSel)} className="btn-primary">
-            Volver al listening
-          </button>
-        </div>
-      )
-    }
-    const preguntas = pack.preguntas.map((p) => preguntaDeListening(p, idioma))
-    return (
-      <ExamRunner
-        preguntas={preguntas}
-        etiqueta="Listening"
-        onFinish={(aciertos, total) => setResultado({ aciertos, total })}
-      />
-    )
-  }
+  const pack = getVocabPack(temaSel)
+  const nombreIdioma = idioma === 'en' ? 'inglés' : 'francés'
 
   return (
     <div className="flex flex-col gap-4">
-      <div className="flex gap-2">
-        <select
-          value={temaSel}
-          onChange={(e) => elegirTema(Number(e.target.value))}
-          className="flex-1 rounded-xl border border-slate-300 bg-white px-3 py-2 dark:border-slate-600 dark:bg-slate-900"
-        >
-          {temasDisponibles.map((t) => (
-            <option key={t} value={t}>
-              Tema {t}
-            </option>
-          ))}
-        </select>
+      <div className="tarjeta flex flex-col gap-3">
+        <label className="text-sm font-semibold">Idioma</label>
         <div className="flex rounded-xl bg-slate-200 p-1 dark:bg-slate-800">
           {(['en', 'fr'] as const).map((i) => (
             <button
               key={i}
-              onClick={() => {
-                detener()
-                setIdioma(i)
-                setLineaActiva(-1)
-                setTranscripcionVisible(false)
-              }}
-              className={`rounded-lg px-3 py-1 text-sm font-bold ${
+              onClick={() => setIdioma(i)}
+              className={`flex-1 rounded-lg py-2 text-sm font-bold ${
                 idioma === i ? (i === 'en' ? 'chip-en' : 'chip-fr') : 'text-slate-500'
               }`}
             >
-              {i.toUpperCase()}
+              {i === 'en' ? 'Inglés' : 'Francés'}
             </button>
           ))}
         </div>
+
+        <label className="text-sm font-semibold">Escenario (tema)</label>
+        <select
+          value={temaSel}
+          onChange={(e) => setTema(Number(e.target.value))}
+          className="rounded-xl border border-slate-300 bg-white px-3 py-2 dark:border-slate-600 dark:bg-slate-900"
+        >
+          {temasDisponibles.map((t) => (
+            <option key={t} value={t}>
+              Tema {t} — {getVocabPack(t)?.titulo}
+            </option>
+          ))}
+        </select>
+        <p className="text-sm text-slate-500 dark:text-slate-400">{escenarioDe(temaSel)}</p>
       </div>
 
-      <div className="tarjeta flex flex-col gap-3">
-        <h2 className="font-bold">{pack.titulo}</h2>
-        <div className="flex gap-2">
-          <button
-            onClick={() =>
-              reproducirDialogo(pack.lineas, idioma, temaSel, {
-                onLinea: setLineaActiva,
-                onFin: () => setLineaActiva(-1)
-              })
-            }
-            className="btn-primary flex-1"
-          >
-            🔊 Escuchar diálogo
-          </button>
-          <button
-            onClick={() =>
-              reproducirDialogo(pack.lineas, idioma, temaSel, {
-                lento: true,
-                onLinea: setLineaActiva,
-                onFin: () => setLineaActiva(-1)
-              })
-            }
-            className="btn bg-slate-200 text-slate-700 dark:bg-slate-700 dark:text-slate-200"
-          >
-            🐢 Más lento
-          </button>
-        </div>
+      <CopiarPrompt
+        prompt={construirPromptListening(idioma, escenarioDe(temaSel), temasDesbloqueadosTexto(temaSel))}
+        descripcion={`Pega esto en una IA con voz (modo voz de ChatGPT, Gemini Live...) para oír mejores voces que las del navegador. Te contará una historia en ${nombreIdioma} y luego te hará preguntas sobre ella ahí mismo en el chat — respóndele por voz o texto y al final te dice cómo te fue.`}
+      />
 
-        {!transcripcionVisible ? (
-          <button
-            onClick={() => setTranscripcionVisible(true)}
-            className="text-center text-sm text-slate-500 underline dark:text-slate-400"
-          >
-            Mostrar transcripción
-          </button>
-        ) : (
-          <div className="flex flex-col gap-2">
-            {pack.lineas.map((l, i) => (
-              <button
-                key={i}
-                onClick={() => reproducirLinea(l.texto, idioma, temaSel)}
-                className={`flex items-start gap-2 rounded-lg px-2 py-1 text-left text-sm ${
-                  lineaActiva === i ? 'bg-emerald-50 dark:bg-emerald-900/30' : ''
-                }`}
-              >
-                <span className="font-bold text-slate-400">{l.hablante}:</span>
-                <span className="flex-1">{l.texto}</span>
-                <span>🔊</span>
-              </button>
-            ))}
-          </div>
-        )}
-
-        <button onClick={() => setEnExamen(true)} className="btn-primary">
-          Responder preguntas ({pack.preguntas.length})
-        </button>
-      </div>
+      {pack && <p className="text-center text-xs text-slate-400">Vocabulario disponible: temas 1 a {temaSel}</p>}
 
       <details className="tarjeta">
         <summary className="cursor-pointer font-semibold">Recursos externos para practicar más</summary>

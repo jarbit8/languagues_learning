@@ -1,4 +1,11 @@
 import type { FeedbackSpeaking, Idioma } from '../types'
+import { vocabPacks } from '../data/packs'
+
+// Últimos temas desbloqueados en texto, para interpolar en los prompts (ej. "Familia, Comida...").
+export function temasDesbloqueadosTexto(tema: number): string {
+  const titulos = vocabPacks.filter((p) => p.tema <= tema).map((p) => p.titulo)
+  return titulos.slice(-6).join(', ') || 'saludos básicos'
+}
 
 // System prompt literal del tutor (skill speaking-ai), interpolando variables.
 // Inmersión total: el tutor NUNCA usa español, ni para traducir ni para explicar,
@@ -21,6 +28,14 @@ export function construirPromptCopiable(idioma: Idioma, escenario: string, temas
   const nombreIdioma = idioma === 'en' ? 'inglés' : 'francés'
   const system = construirSystemPrompt(idioma, escenario, temasDesbloqueados)
   return `${system}\n\nEmpieza tú: salúdame y hazme la primera pregunta sobre el escenario. Recuerda: todo el rato en ${nombreIdioma}, nunca en español.`
+}
+
+// Prompt de listening: la IA cuenta una historia y luego pregunta por ella en el mismo chat,
+// para usar en cualquier app de IA con voz (ChatGPT modo voz, Gemini Live...) — mismo espíritu
+// que construirPromptCopiable, pero el ejercicio es "escuchar y responder", no conversar libre.
+export function construirPromptListening(idioma: Idioma, escenario: string, temasDesbloqueados: string): string {
+  const nombreIdioma = idioma === 'en' ? 'inglés' : 'francés'
+  return `Eres un tutor de ${nombreIdioma} haciendo un ejercicio de listening con un estudiante A1. Primero cuenta una historia corta (6-10 frases) en ${nombreIdioma} sobre: ${escenario}, usando vocabulario A1 de ${temasDesbloqueados}, frases simples y claras — nunca en español, como le hablarías a un niño bilingüe. Cuando termines la historia, hazme preguntas de comprensión sobre ella UNA A LA VEZ (entre 3 y 5 en total, estilo IELTS/TEF: qué pasó, quién, cuándo, dónde, cuánto), todas en ${nombreIdioma}, esperando mi respuesta antes de pasar a la siguiente. No corrijas cada respuesta en el momento. Cuando termines todas las preguntas, cierra con un resumen en ${nombreIdioma}: cuántas acerté de cuántas en total, y para cada una que fallé, la respuesta correcta con una explicación breve — todo en ${nombreIdioma}, nunca en español. Si tienes modo de voz, cuenta la historia y haz las preguntas habladas; yo puedo responder por voz o por texto.\n\nEmpieza tú: cuenta la historia.`
 }
 
 // Intenta interpretar la última respuesta del modelo como el JSON de cierre.
