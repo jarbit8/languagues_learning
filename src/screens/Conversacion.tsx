@@ -4,7 +4,7 @@ import type { Idioma } from '../types'
 import { temaEnCurso } from '../lib/progreso'
 import { escenarioDe } from '../data/escenarios'
 import { getVocabPack } from '../data/packs'
-import { construirPromptCopiable, temasDesbloqueadosTexto } from '../lib/speaking'
+import { construirPromptCopiable, vocabularioDesbloqueado } from '../lib/speaking'
 import CopiarPrompt from '../components/CopiarPrompt'
 
 export default function Conversacion() {
@@ -51,7 +51,7 @@ export default function Conversacion() {
       </div>
 
       <CopiarPrompt
-        prompt={construirPromptCopiable(idioma, escenarioDe(temaSel), temasDesbloqueadosTexto(temaSel))}
+        prompt={construirPromptCopiable(idioma, escenarioDe(temaSel), vocabularioDesbloqueado(temaSel, idioma))}
         descripcion={`Pega esto como tu primer mensaje en cualquier chat de IA (Claude, ChatGPT...) y practica ahí. El tutor te responderá siempre en ${nombreIdioma}, nunca en español.`}
       />
 

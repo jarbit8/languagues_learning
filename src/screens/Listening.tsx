@@ -4,7 +4,7 @@ import type { Idioma } from '../types'
 import { temaEnCurso } from '../lib/progreso'
 import { escenarioDe } from '../data/escenarios'
 import { getVocabPack } from '../data/packs'
-import { construirPromptListening, temasDesbloqueadosTexto } from '../lib/speaking'
+import { construirPromptListening, vocabularioDesbloqueado } from '../lib/speaking'
 import CopiarPrompt from '../components/CopiarPrompt'
 
 const RECURSOS: Record<Idioma, { nombre: string; nota: string }[]> = {
@@ -67,7 +67,7 @@ export default function Listening() {
       </div>
 
       <CopiarPrompt
-        prompt={construirPromptListening(idioma, escenarioDe(temaSel), temasDesbloqueadosTexto(temaSel))}
+        prompt={construirPromptListening(idioma, escenarioDe(temaSel), vocabularioDesbloqueado(temaSel, idioma))}
         descripcion={`Pega esto en una IA con voz (modo voz de ChatGPT, Gemini Live...) para oír mejores voces que las del navegador. Te contará una historia en ${nombreIdioma} y luego te hará preguntas sobre ella ahí mismo en el chat — respóndele por voz o texto y al final te dice cómo te fue.`}
       />
 

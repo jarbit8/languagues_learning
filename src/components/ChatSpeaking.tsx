@@ -2,16 +2,11 @@ import { useEffect, useRef, useState } from 'react'
 import type { FeedbackSpeaking, Idioma } from '../types'
 import type { MensajeChat } from '../lib/anthropic'
 import { enviarMensaje, AnthropicError } from '../lib/anthropic'
-import { construirSystemPrompt, parseFeedback } from '../lib/speaking'
+import { construirSystemPrompt, parseFeedback, vocabularioDesbloqueado } from '../lib/speaking'
 import { escenarioDe } from '../data/escenarios'
 import { vocabPacks } from '../data/packs'
 import { hablar } from '../lib/audio'
 import { registrarResultado } from '../lib/srs'
-
-function temasDesbloqueadosTexto(tema: number): string {
-  const titulos = vocabPacks.filter((p) => p.tema <= tema).map((p) => p.titulo)
-  return titulos.slice(-6).join(', ') || 'saludos básicos'
-}
 
 // Intenta mandar al SRS las palabras del feedback que coincidan con vocabulario conocido.
 async function marcarErroresEnSRS(feedback: FeedbackSpeaking, idioma: Idioma) {
@@ -46,7 +41,7 @@ export default function ChatSpeaking({
   const finRef = useRef<HTMLDivElement>(null)
   const iniciado = useRef(false)
 
-  const systemPrompt = construirSystemPrompt(idioma, escenarioDe(tema), temasDesbloqueadosTexto(tema), modoExamen)
+  const systemPrompt = construirSystemPrompt(idioma, escenarioDe(tema), vocabularioDesbloqueado(tema, idioma), modoExamen)
   const turnosUsuario = historial.filter((m) => m.role === 'user').length - 1 // -1 por el turno oculto inicial
 
   useEffect(() => {
