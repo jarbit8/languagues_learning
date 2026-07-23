@@ -40,7 +40,7 @@
   },
   {
    "titulo": "Le profil d'un ami",
-   "texto": "Voici mon ami Marc. Il est canadien et il parle anglais et français. Il a vingt-cinq ans. Il est grand et il a les cheveux bruns. Marc est très drôle et gentil. Il est ingénieur et il travaille dans une grande entreprise. Il a une femme et deux enfants. Sa femme est infirmière. Ils sont une famille heureuse.",
+   "texto": "Voici mon ami Marc. Il est canadien et il parle anglais et français. Il a vingt-cinq ans. Il est grand et il a les cheveux bruns. Marc est très drôle et gentil. Il est ingénieur et il travaille dans une grande entreprise. Il a une femme et deux enfants. Sa femme est infirmière. C'est une famille heureuse.",
    "preguntas": [
     {
      "tipo": "vf",
