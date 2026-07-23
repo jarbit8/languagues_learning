@@ -210,20 +210,6 @@ export default function Listening() {
         vocabulario de temas que ya viste. La app usa una voz de mujer y una de hombre para los dos personajes.
       </p>
 
-      <details className="tarjeta text-sm">
-        <summary className="cursor-pointer font-semibold">¿Las voces suenan robóticas o iguales?</summary>
-        <div className="mt-2 flex flex-col gap-1 text-slate-600 dark:text-slate-300">
-          <p>La calidad depende de las voces instaladas en tu dispositivo. Para mejorarlas:</p>
-          <p>📱 <b>Android:</b> instala el “Motor de voz de Google” y descarga voces en inglés y francés.</p>
-          <p>🍎 <b>iPhone:</b> Ajustes → Accesibilidad → Contenido hablado → Voces → descarga las voces “mejoradas”.</p>
-          <p>💻 <b>PC:</b> abre la app en <b>Microsoft Edge</b> (trae voces “Natural” online), o instala voces en
-            Configuración → Hora e idioma → Voz.</p>
-          <p className="text-slate-400">
-            Si tu dispositivo solo tiene una voz del idioma, los personajes se distinguen cambiando el tono.
-          </p>
-        </div>
-      </details>
-
       {!pack ? (
         <p className="tarjeta text-slate-500 dark:text-slate-400">
           Aún no hay listening para el tema {temaSel} en {idioma === 'en' ? 'inglés' : 'francés'}.
