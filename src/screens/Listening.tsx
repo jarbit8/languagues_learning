@@ -105,7 +105,11 @@ function DialogoCard({
           {dialogo.lineas.map((l, i) => (
             <button
               key={i}
-              onClick={() => reproducirLinea(l.texto, idioma, tema)}
+              onClick={() =>
+                reproducirLinea(l.texto, idioma, tema, {
+                  idxHablante: [...new Set(dialogo.lineas.map((x) => x.hablante))].indexOf(l.hablante)
+                })
+              }
               className={`flex items-start gap-2 rounded-lg px-2 py-1 text-left text-sm ${
                 lineaActiva === i ? 'bg-emerald-50 dark:bg-emerald-900/30' : ''
               }`}
@@ -219,8 +223,22 @@ export default function Listening() {
 
       <p className="text-sm text-slate-500 dark:text-slate-400">
         Escucha el diálogo (sin mirar la transcripción la primera vez), luego responde las preguntas. Solo usa
-        vocabulario de temas que ya viste.
+        vocabulario de temas que ya viste. La app usa una voz de mujer y una de hombre para los dos personajes.
       </p>
+
+      <details className="tarjeta text-sm">
+        <summary className="cursor-pointer font-semibold">¿Las voces suenan robóticas o iguales?</summary>
+        <div className="mt-2 flex flex-col gap-1 text-slate-600 dark:text-slate-300">
+          <p>La calidad depende de las voces instaladas en tu dispositivo. Para mejorarlas:</p>
+          <p>📱 <b>Android:</b> instala el “Motor de voz de Google” y descarga voces en inglés y francés.</p>
+          <p>🍎 <b>iPhone:</b> Ajustes → Accesibilidad → Contenido hablado → Voces → descarga las voces “mejoradas”.</p>
+          <p>💻 <b>PC:</b> abre la app en <b>Microsoft Edge</b> (trae voces “Natural” online), o instala voces en
+            Configuración → Hora e idioma → Voz.</p>
+          <p className="text-slate-400">
+            Si tu dispositivo solo tiene una voz del idioma, los personajes se distinguen cambiando el tono.
+          </p>
+        </div>
+      </details>
 
       {!pack ? (
         <p className="tarjeta text-slate-500 dark:text-slate-400">

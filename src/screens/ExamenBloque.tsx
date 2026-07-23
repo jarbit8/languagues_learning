@@ -184,7 +184,11 @@ export default function ExamenBloque({ bloque, onSalir }: { bloque: number; onSa
               {d.lineas.map((l, i) => (
                 <button
                   key={i}
-                  onClick={() => reproducirLinea(l.texto, d.idioma, bloque * 6)}
+                  onClick={() =>
+                    reproducirLinea(l.texto, d.idioma, bloque * 6, {
+                      idxHablante: [...new Set(d.lineas.map((x) => x.hablante))].indexOf(l.hablante)
+                    })
+                  }
                   className="flex gap-2 text-left text-sm"
                 >
                   <span className="font-bold text-slate-400">{l.hablante}:</span>
