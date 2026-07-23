@@ -17,7 +17,7 @@
    ]
   },
   {
-   "consigna": "Escribe a un amigo que visita tu ciudad: recomiéndale lugares (qué se puede hacer), cómo es el clima y cómo llegar a un lugar.",
+   "consigna": "Écris à un ami qui visite ta ville : recommande-lui des endroits (ce qu'on peut faire), quel temps il fait et comment aller à un endroit.",
    "minPalabras": 30,
    "maxPalabras": 40,
    "respuestaModelo": "Salut ! Bienvenue dans ma ville. Tu peux visiter le musée et le parc. Près du parc, il y a un restaurant bon marché avec de la bonne nourriture. Aujourd'hui, il fait beau et chaud. Pour aller au musée, prends le bus et tourne à gauche à la banque. Bonne journée !",

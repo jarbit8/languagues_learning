@@ -17,7 +17,7 @@
    ]
   },
   {
-   "consigna": "Escribe sobre tu tiempo libre y tus metas: qué te gusta hacer, qué estudias y qué planes tienes para el futuro.",
+   "consigna": "Écris à propos de ton temps libre et de tes projets : ce que tu aimes faire, ce que tu étudies et tes projets pour l'avenir.",
    "minPalabras": 30,
    "maxPalabras": 40,
    "respuestaModelo": "Pendant mon temps libre, j'aime le sport et la musique. Je joue au football et je joue de la guitare. Je suis étudiant et j'étudie l'informatique parce que j'aime ça. L'année prochaine, je vais voyager au Canada. Je vais étudier le français parce que je veux vivre là-bas.",

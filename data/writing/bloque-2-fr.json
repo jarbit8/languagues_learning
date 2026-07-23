@@ -17,7 +17,7 @@
    ]
   },
   {
-   "consigna": "Escribe sobre tu ropa: qué llevas normalmente, de qué colores, y describe un objeto que siempre llevas contigo.",
+   "consigna": "Écris à propos de tes vêtements : ce que tu portes d'habitude, de quelles couleurs, et décris un objet que tu as toujours avec toi.",
    "minPalabras": 30,
    "maxPalabras": 40,
    "respuestaModelo": "D'habitude, je porte un jean et un t-shirt bleu. En hiver, je porte un manteau noir et des chaussures brunes. J'ai toujours mon téléphone et mes clés dans mon sac. Mon téléphone est blanc et il est nouveau. Mes vêtements sont très beaux.",

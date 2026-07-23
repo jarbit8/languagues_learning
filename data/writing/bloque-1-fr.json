@@ -17,7 +17,7 @@
    ]
   },
   {
-   "consigna": "Describe a un amigo o familiar: cómo se llama, su nacionalidad, cómo es físicamente y de personalidad, y su profesión.",
+   "consigna": "Écris à propos d'un ami ou d'un membre de ta famille : comment il/elle s'appelle, sa nationalité, comment il/elle est physiquement et de caractère, et sa profession.",
    "minPalabras": 30,
    "maxPalabras": 40,
    "respuestaModelo": "Mon ami s'appelle Marc. Il est canadien et il a vingt-cinq ans. Il est grand et il a les cheveux bruns. Marc est très gentil et drôle. Il est ingénieur et il travaille dans une grande entreprise. Il a une femme et un fils.",
