@@ -1,8 +1,78 @@
-{ "bloque": 4, "idioma": "en", "titulo": "Un email sobre un viaje",
-"texto": "Hi Paul! Last month I went to Canada. I took the plane from Lima and I arrived in Toronto. I stayed at a hotel for five days. I visited museums and I ate a lot of good food, but I had a headache the first day! I met new people and I practised my English every day. Next year, I'm going to study French too, because I want to live in Canada. See you soon, Joel.",
-"preguntas": [
-{"tipo":"vf","enunciado":"Joel viajó el mes pasado.","respuesta":"verdadero"},
-{"tipo":"vf","enunciado":"Joel tuvo dolor de estómago el primer día.","respuesta":"falso"},
-{"tipo":"opcion_multiple","enunciado":"¿A qué ciudad llegó Joel?","opciones":["Toronto","Montreal","Vancouver"],"respuesta":"Toronto"},
-{"tipo":"opcion_multiple","enunciado":"¿Qué va a estudiar el próximo año?","opciones":["Spanish","French","German"],"respuesta":"French"}
-] }
+{
+ "bloque": 4,
+ "idioma": "en",
+ "textos": [
+  {
+   "titulo": "Un email sobre un viaje",
+   "texto": "Hi Paul! Last month I went to Canada. I took the plane from Lima and I arrived in Toronto. I stayed at a hotel for five days. I visited museums and I ate a lot of good food, but I had a headache the first day! I met new people and I practised my English every day. Next year, I'm going to study French too, because I want to live in Canada. See you soon, Joel.",
+   "preguntas": [
+    {
+     "tipo": "vf",
+     "enunciado": "Joel viajó el mes pasado.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Joel tuvo dolor de estómago el primer día.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿A qué ciudad llegó Joel?",
+     "opciones": [
+      "Toronto",
+      "Montreal",
+      "Vancouver"
+     ],
+     "respuesta": "Toronto"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué va a estudiar el próximo año?",
+     "opciones": [
+      "Spanish",
+      "French",
+      "German"
+     ],
+     "respuesta": "French"
+    }
+   ]
+  },
+  {
+   "titulo": "Mi tiempo libre y mis planes",
+   "texto": "Hi! In my free time I like sports. I play football with my friends on Saturday and I go swimming on Sunday. I also love music and I play the guitar. I am a student at the university and I study computer science. Next year I am going to travel to Canada. I am going to study French because I want to live there. What do you like to do?",
+   "preguntas": [
+    {
+     "tipo": "vf",
+     "enunciado": "Juega al fútbol el domingo.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Va a viajar a Canadá.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué instrumento toca?",
+     "opciones": [
+      "guitar",
+      "piano",
+      "violin"
+     ],
+     "respuesta": "guitar"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué estudia?",
+     "opciones": [
+      "French",
+      "computer science",
+      "music"
+     ],
+     "respuesta": "computer science"
+    }
+   ]
+  }
+ ]
+}

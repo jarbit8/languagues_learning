@@ -116,8 +116,8 @@ export default function ExamenFinal({ onSalir }: { onSalir: () => void }) {
     return (
       <div className="flex flex-col gap-4">
         <h1 className="text-2xl font-bold">Reading final</h1>
-        {reading.textos.map((t) => (
-          <div key={`${t.bloque}-${t.idioma}`} className="tarjeta flex flex-col gap-2">
+        {reading.textos.map((t, i) => (
+          <div key={`${t.idioma}-${i}`} className="tarjeta flex flex-col gap-2">
             <span className={t.idioma === 'en' ? 'chip-en self-start' : 'chip-fr self-start'}>
               {t.idioma === 'en' ? 'EN' : 'FR'}
             </span>

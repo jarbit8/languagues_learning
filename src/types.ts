@@ -190,22 +190,33 @@ export interface PreguntaReading {
   respuesta: string
 }
 
-export interface ReadingPack {
-  bloque: number
-  idioma: Idioma
+export interface TextoReading {
   titulo: string
   texto: string
   preguntas: PreguntaReading[]
 }
 
-// --- Writing (packs en /data/writing) ---
-
-export interface WritingPack {
+export interface ReadingPack {
   bloque: number
   idioma: Idioma
+  textos: TextoReading[]
+}
+
+// Un texto de lectura ya "aplanado" con su idioma, para el examen y la pantalla de práctica.
+export type TextoConIdioma = TextoReading & { idioma: Idioma }
+
+// --- Writing (packs en /data/writing) ---
+
+export interface ConsignaWriting {
   consigna: string
   minPalabras: number
   maxPalabras: number
   respuestaModelo: string
   checklist: string[]
+}
+
+export interface WritingPack {
+  bloque: number
+  idioma: Idioma
+  consignas: ConsignaWriting[]
 }

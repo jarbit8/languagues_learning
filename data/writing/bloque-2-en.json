@@ -1,4 +1,34 @@
-{ "bloque": 2, "idioma": "en", "consigna": "Escribe un email a un amigo contándole tu rutina diaria: a qué hora te levantas, qué haces y cómo es tu casa.",
-"minPalabras": 30, "maxPalabras": 40,
-"respuestaModelo": "Hi! I get up at six o'clock every day. I have breakfast and I go to work by bus. I live in a small apartment with a bedroom, a kitchen and a bathroom. In the evening, I clean my house and I go to bed at eleven. See you!",
-"checklist": ["Usé un saludo y una despedida", "Dije a qué hora te levantas", "Describí tu rutina con presente simple", "Describiste tu casa", "Usaste algún adverbio de frecuencia", "Escribí entre 30 y 40 palabras"] }
+{
+ "bloque": 2,
+ "idioma": "en",
+ "consignas": [
+  {
+   "consigna": "Escribe un email a un amigo contándole tu rutina diaria: a qué hora te levantas, qué haces y cómo es tu casa.",
+   "minPalabras": 30,
+   "maxPalabras": 40,
+   "respuestaModelo": "Hi! I get up at six o'clock every day. I have breakfast and I go to work by bus. I live in a small apartment with a bedroom, a kitchen and a bathroom. In the evening, I clean my house and I go to bed at eleven. See you!",
+   "checklist": [
+    "Usé un saludo y una despedida",
+    "Dije a qué hora te levantas",
+    "Describí tu rutina con presente simple",
+    "Describiste tu casa",
+    "Usaste algún adverbio de frecuencia",
+    "Escribí entre 30 y 40 palabras"
+   ]
+  },
+  {
+   "consigna": "Escribe sobre tu ropa: qué llevas normalmente, de qué colores, y describe un objeto que siempre llevas contigo.",
+   "minPalabras": 30,
+   "maxPalabras": 40,
+   "respuestaModelo": "Usually I wear jeans and a blue t-shirt. In winter I wear a black coat and brown shoes. I always have my phone and my keys in my bag. My phone is white and it is new. My clothes are very nice.",
+   "checklist": [
+    "Dije qué ropa llevas normalmente",
+    "Mencioné al menos dos colores",
+    "Usé un adverbio de frecuencia",
+    "Describí un objeto que siempre llevas",
+    "Usé el presente (wear/have)",
+    "Escribí entre 30 y 40 palabras"
+   ]
+  }
+ ]
+}

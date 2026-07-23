@@ -1,8 +1,78 @@
-{ "bloque": 4, "idioma": "fr", "titulo": "Un e-mail sur un voyage",
-"texto": "Salut Paul ! Le mois dernier, je suis allé au Canada. J'ai pris l'avion depuis Lima et je suis arrivé à Toronto. Je suis resté à l'hôtel pendant cinq jours. J'ai visité des musées et j'ai mangé beaucoup de bonne nourriture, mais j'ai eu mal à la tête le premier jour ! J'ai rencontré des nouvelles personnes et j'ai pratiqué mon anglais tous les jours. L'année prochaine, je vais aussi étudier le français, parce que je veux vivre au Canada. À bientôt, Joel.",
-"preguntas": [
-{"tipo":"vf","enunciado":"Joel viajó el mes pasado.","respuesta":"verdadero"},
-{"tipo":"vf","enunciado":"Joel tuvo dolor de estómago el primer día.","respuesta":"falso"},
-{"tipo":"opcion_multiple","enunciado":"¿A qué ciudad llegó Joel?","opciones":["Toronto","Montréal","Vancouver"],"respuesta":"Toronto"},
-{"tipo":"opcion_multiple","enunciado":"¿Qué va a estudiar el próximo año?","opciones":["espagnol","français","allemand"],"respuesta":"français"}
-] }
+{
+ "bloque": 4,
+ "idioma": "fr",
+ "textos": [
+  {
+   "titulo": "Un e-mail sur un voyage",
+   "texto": "Salut Paul ! Le mois dernier, je suis allé au Canada. J'ai pris l'avion depuis Lima et je suis arrivé à Toronto. Je suis resté à l'hôtel pendant cinq jours. J'ai visité des musées et j'ai mangé beaucoup de bonne nourriture, mais j'ai eu mal à la tête le premier jour ! J'ai rencontré des nouvelles personnes et j'ai pratiqué mon anglais tous les jours. L'année prochaine, je vais aussi étudier le français, parce que je veux vivre au Canada. À bientôt, Joel.",
+   "preguntas": [
+    {
+     "tipo": "vf",
+     "enunciado": "Joel viajó el mes pasado.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Joel tuvo dolor de estómago el primer día.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿A qué ciudad llegó Joel?",
+     "opciones": [
+      "Toronto",
+      "Montréal",
+      "Vancouver"
+     ],
+     "respuesta": "Toronto"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué va a estudiar el próximo año?",
+     "opciones": [
+      "espagnol",
+      "français",
+      "allemand"
+     ],
+     "respuesta": "français"
+    }
+   ]
+  },
+  {
+   "titulo": "Mon temps libre et mes projets",
+   "texto": "Salut ! Pendant mon temps libre, j'aime le sport. Je joue au football avec mes amis le samedi et je fais de la natation le dimanche. J'adore aussi la musique et je joue de la guitare. Je suis étudiant à l'université et j'étudie l'informatique. L'année prochaine, je vais voyager au Canada. Je vais étudier le français parce que je veux vivre là-bas. Qu'est-ce que tu aimes faire ?",
+   "preguntas": [
+    {
+     "tipo": "vf",
+     "enunciado": "Juega al fútbol el domingo.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Va a viajar a Canadá.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué instrumento toca?",
+     "opciones": [
+      "guitare",
+      "piano",
+      "violon"
+     ],
+     "respuesta": "guitare"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué estudia?",
+     "opciones": [
+      "français",
+      "informatique",
+      "musique"
+     ],
+     "respuesta": "informatique"
+    }
+   ]
+  }
+ ]
+}

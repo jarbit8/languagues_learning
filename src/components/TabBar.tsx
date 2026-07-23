@@ -4,7 +4,7 @@ const tabs = [
   { to: '/', label: 'Inicio', icon: '🏠' },
   { to: '/aprender', label: 'Aprender', icon: '📚' },
   { to: '/examen', label: 'Examen', icon: '📝' },
-  { to: '/hablar', label: 'Hablar', icon: '💬' },
+  { to: '/hablar', label: 'Practicar', icon: '🎯' },
   { to: '/progreso', label: 'Progreso', icon: '📈' }
 ]
 

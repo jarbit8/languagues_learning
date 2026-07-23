@@ -1,4 +1,4 @@
-import type { Pregunta, ListeningPack, ReadingPack, DialogoConTema } from '../types'
+import type { Pregunta, ListeningPack, ReadingPack, DialogoConTema, TextoConIdioma } from '../types'
 import { vocabPacks, getListening, getReading, dialogosDe } from '../data/packs'
 import { baraja, preguntaDeConcepto, preguntaDeListening } from './preguntas'
 
@@ -30,15 +30,16 @@ export function construirListeningFinal(): SeccionListening {
 }
 
 export interface SeccionReading {
-  textos: ReadingPack[]
+  textos: TextoConIdioma[]
   preguntas: Pregunta[]
 }
 
-// Versión extendida: dos bloques de lectura (1 y 3), en ambos idiomas.
+// Versión extendida: dos bloques de lectura (1 y 3), en ambos idiomas. Usa el primer texto de cada pack.
 export function construirReadingFinal(): SeccionReading {
-  const textos = [getReading(1, 'en'), getReading(1, 'fr'), getReading(3, 'en'), getReading(3, 'fr')].filter(
-    (t): t is ReadingPack => !!t
+  const packs = [getReading(1, 'en'), getReading(1, 'fr'), getReading(3, 'en'), getReading(3, 'fr')].filter(
+    (p): p is ReadingPack => !!p
   )
+  const textos: TextoConIdioma[] = packs.map((p) => ({ ...p.textos[0], idioma: p.idioma }))
   const preguntas = baraja(
     textos.flatMap((t) =>
       t.preguntas.map((p) =>

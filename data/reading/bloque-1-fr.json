@@ -1,8 +1,78 @@
-{ "bloque": 1, "idioma": "fr", "titulo": "Un e-mail de présentation",
-"texto": "Bonjour ! Je m'appelle Laura. Je viens du Canada, mais j'habite au Pérou maintenant. J'ai vingt-huit ans. Je suis professeure et je travaille dans une école à Arequipa. J'ai un frère et une sœur. Mon frère est médecin et ma sœur est étudiante. Ma famille est très gentille. Enchantée ! À bientôt, Laura.",
-"preguntas": [
-{"tipo":"vf","enunciado":"Laura viene del Perú.","respuesta":"falso"},
-{"tipo":"vf","enunciado":"Laura tiene un hermano y una hermana.","respuesta":"verdadero"},
-{"tipo":"opcion_multiple","enunciado":"¿Cuál es la profesión de Laura?","opciones":["médecin","professeure","étudiante"],"respuesta":"professeure"},
-{"tipo":"opcion_multiple","enunciado":"¿Cuántos años tiene Laura?","opciones":["dix-huit","vingt-huit","trente-huit"],"respuesta":"vingt-huit"}
-] }
+{
+ "bloque": 1,
+ "idioma": "fr",
+ "textos": [
+  {
+   "titulo": "Un e-mail de présentation",
+   "texto": "Bonjour ! Je m'appelle Laura. Je viens du Canada, mais j'habite au Pérou maintenant. J'ai vingt-huit ans. Je suis professeure et je travaille dans une école à Arequipa. J'ai un frère et une sœur. Mon frère est médecin et ma sœur est étudiante. Ma famille est très gentille. Enchantée ! À bientôt, Laura.",
+   "preguntas": [
+    {
+     "tipo": "vf",
+     "enunciado": "Laura viene del Perú.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Laura tiene un hermano y una hermana.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cuál es la profesión de Laura?",
+     "opciones": [
+      "médecin",
+      "professeure",
+      "étudiante"
+     ],
+     "respuesta": "professeure"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cuántos años tiene Laura?",
+     "opciones": [
+      "dix-huit",
+      "vingt-huit",
+      "trente-huit"
+     ],
+     "respuesta": "vingt-huit"
+    }
+   ]
+  },
+  {
+   "titulo": "Le profil d'un ami",
+   "texto": "Voici mon ami Marc. Il est canadien et il parle anglais et français. Il a vingt-cinq ans. Il est grand et il a les cheveux bruns. Marc est très drôle et gentil. Il est ingénieur et il travaille dans une grande entreprise. Il a une femme et deux enfants. Sa femme est infirmière. Ils sont une famille heureuse.",
+   "preguntas": [
+    {
+     "tipo": "vf",
+     "enunciado": "Marc es peruano.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Marc tiene dos hijos.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cuál es la profesión de Marc?",
+     "opciones": [
+      "ingénieur",
+      "médecin",
+      "professeur"
+     ],
+     "respuesta": "ingénieur"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cuál es la profesión de la esposa de Marc?",
+     "opciones": [
+      "professeure",
+      "infirmière",
+      "étudiante"
+     ],
+     "respuesta": "infirmière"
+    }
+   ]
+  }
+ ]
+}

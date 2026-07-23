@@ -1,4 +1,34 @@
-{ "bloque": 4, "idioma": "en", "consigna": "Escribe un email a un amigo contándole un viaje que hiciste y tus planes para el futuro.",
-"minPalabras": 30, "maxPalabras": 40,
-"respuestaModelo": "Hi! Last year I went to Canada. I visited museums and I ate a lot of good food. I'm going to study French next year because I want to live there. I'm going to practise every day. What are your plans?",
-"checklist": ["Usé un saludo y una despedida", "Usé un verbo en pasado (regular o irregular)", "Conté una experiencia de viaje", "Usé going to para un plan futuro", "Hice una pregunta final", "Escribí entre 30 y 40 palabras"] }
+{
+ "bloque": 4,
+ "idioma": "en",
+ "consignas": [
+  {
+   "consigna": "Escribe un email a un amigo contándole un viaje que hiciste y tus planes para el futuro.",
+   "minPalabras": 30,
+   "maxPalabras": 40,
+   "respuestaModelo": "Hi! Last year I went to Canada. I visited museums and I ate a lot of good food. I'm going to study French next year because I want to live there. I'm going to practise every day. What are your plans?",
+   "checklist": [
+    "Usé un saludo y una despedida",
+    "Usé un verbo en pasado (regular o irregular)",
+    "Conté una experiencia de viaje",
+    "Usé going to para un plan futuro",
+    "Hice una pregunta final",
+    "Escribí entre 30 y 40 palabras"
+   ]
+  },
+  {
+   "consigna": "Escribe sobre tu tiempo libre y tus metas: qué te gusta hacer, qué estudias y qué planes tienes para el futuro.",
+   "minPalabras": 30,
+   "maxPalabras": 40,
+   "respuestaModelo": "In my free time I like sports and music. I play football and I play the guitar. I am a student and I study computer science because I like it. Next year I am going to travel to Canada. I am going to study French because I want to live there.",
+   "checklist": [
+    "Hablé de mi tiempo libre y hobbies",
+    "Usé like + actividad",
+    "Dije qué estudio y por qué (because)",
+    "Usé going to para un plan",
+    "Mencioné una meta futura",
+    "Escribí entre 30 y 40 palabras"
+   ]
+  }
+ ]
+}

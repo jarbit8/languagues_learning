@@ -1,8 +1,78 @@
-{ "bloque": 3, "idioma": "en", "titulo": "Anuncio: Café Central",
-"texto": "Café Central — open every day! We have coffee, tea, and fresh juice. Breakfast from 7 to 11: bread, eggs and fruit. Lunch from noon to 3: salad, chicken, rice and soup. Prices are cheap: a coffee is two dollars, a sandwich is five dollars. We are near the park, next to the bank. You can pay by card or in cash. Come and visit us!",
-"preguntas": [
-{"tipo":"vf","enunciado":"El café está cerrado los domingos.","respuesta":"falso"},
-{"tipo":"vf","enunciado":"Se puede pagar con tarjeta.","respuesta":"verdadero"},
-{"tipo":"opcion_multiple","enunciado":"¿Cuánto cuesta un café?","opciones":["two dollars","five dollars","ten dollars"],"respuesta":"two dollars"},
-{"tipo":"opcion_multiple","enunciado":"¿Dónde está el café?","opciones":["near the station","next to the bank","in the city centre"],"respuesta":"next to the bank"}
-] }
+{
+ "bloque": 3,
+ "idioma": "en",
+ "textos": [
+  {
+   "titulo": "Anuncio: Café Central",
+   "texto": "Café Central — open every day! We have coffee, tea, and fresh juice. Breakfast from 7 to 11: bread, eggs and fruit. Lunch from noon to 3: salad, chicken, rice and soup. Prices are cheap: a coffee is two dollars, a sandwich is five dollars. We are near the park, next to the bank. You can pay by card or in cash. Come and visit us!",
+   "preguntas": [
+    {
+     "tipo": "vf",
+     "enunciado": "El café está cerrado los domingos.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Se puede pagar con tarjeta.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cuánto cuesta un café?",
+     "opciones": [
+      "two dollars",
+      "five dollars",
+      "ten dollars"
+     ],
+     "respuesta": "two dollars"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Dónde está el café?",
+     "opciones": [
+      "near the station",
+      "next to the bank",
+      "in the city centre"
+     ],
+     "respuesta": "next to the bank"
+    }
+   ]
+  },
+  {
+   "titulo": "Cómo llegar al museo",
+   "texto": "Hello! Do you want to visit the museum? Take the bus number five near the park and go straight. Turn right at the corner. The museum is next to the bank. It is not far. Today the weather is cold and it is raining, so take a coat. See you at three o'clock!",
+   "preguntas": [
+    {
+     "tipo": "vf",
+     "enunciado": "El museo está lejos.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Hoy llueve.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué autobús tomas?",
+     "opciones": [
+      "number three",
+      "number five",
+      "number nine"
+     ],
+     "respuesta": "number five"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Dónde está el museo?",
+     "opciones": [
+      "next to the bank",
+      "near the station",
+      "in the park"
+     ],
+     "respuesta": "next to the bank"
+    }
+   ]
+  }
+ ]
+}

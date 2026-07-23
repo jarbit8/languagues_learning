@@ -1,8 +1,78 @@
-{ "bloque": 1, "idioma": "en", "titulo": "Un email de presentación",
-"texto": "Hello! My name is Laura. I'm from Canada, but I live in Peru now. I'm 28 years old. I'm a teacher and I work at a school in Arequipa. I have one brother and one sister. My brother is a doctor and my sister is a student. My family is very kind. Nice to meet you! See you soon, Laura.",
-"preguntas": [
-{"tipo":"vf","enunciado":"Laura es de Perú.","respuesta":"falso"},
-{"tipo":"vf","enunciado":"Laura tiene un hermano y una hermana.","respuesta":"verdadero"},
-{"tipo":"opcion_multiple","enunciado":"¿Cuál es la profesión de Laura?","opciones":["doctor","teacher","student"],"respuesta":"teacher"},
-{"tipo":"opcion_multiple","enunciado":"¿Cuántos años tiene Laura?","opciones":["18","28","38"],"respuesta":"28"}
-] }
+{
+ "bloque": 1,
+ "idioma": "en",
+ "textos": [
+  {
+   "titulo": "Un email de presentación",
+   "texto": "Hello! My name is Laura. I'm from Canada, but I live in Peru now. I'm 28 years old. I'm a teacher and I work at a school in Arequipa. I have one brother and one sister. My brother is a doctor and my sister is a student. My family is very kind. Nice to meet you! See you soon, Laura.",
+   "preguntas": [
+    {
+     "tipo": "vf",
+     "enunciado": "Laura es de Perú.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Laura tiene un hermano y una hermana.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cuál es la profesión de Laura?",
+     "opciones": [
+      "doctor",
+      "teacher",
+      "student"
+     ],
+     "respuesta": "teacher"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cuántos años tiene Laura?",
+     "opciones": [
+      "18",
+      "28",
+      "38"
+     ],
+     "respuesta": "28"
+    }
+   ]
+  },
+  {
+   "titulo": "El perfil de un amigo",
+   "texto": "This is my friend Marc. He is Canadian and he speaks English and French. He is twenty-five years old. He is tall and he has brown hair. Marc is very funny and kind. He is an engineer and he works in a big company. He has a wife and two children. His wife is a nurse. They are a happy family.",
+   "preguntas": [
+    {
+     "tipo": "vf",
+     "enunciado": "Marc es peruano.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Marc tiene dos hijos.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cuál es la profesión de Marc?",
+     "opciones": [
+      "engineer",
+      "doctor",
+      "teacher"
+     ],
+     "respuesta": "engineer"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cuál es la profesión de la esposa de Marc?",
+     "opciones": [
+      "teacher",
+      "nurse",
+      "student"
+     ],
+     "respuesta": "nurse"
+    }
+   ]
+  }
+ ]
+}

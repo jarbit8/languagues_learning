@@ -1,4 +1,34 @@
-{ "bloque": 2, "idioma": "fr", "consigna": "Écris un e-mail à un ami pour lui raconter ta routine quotidienne : à quelle heure tu te lèves, ce que tu fais et comment est ta maison.",
-"minPalabras": 30, "maxPalabras": 40,
-"respuestaModelo": "Salut ! Je me lève à six heures tous les jours. Je prends le petit-déjeuner et je vais au travail en bus. J'habite dans un petit appartement avec une chambre, une cuisine et une salle de bains. Le soir, je nettoie ma maison et je me couche à onze heures. À bientôt !",
-"checklist": ["Usé un saludo y una despedida", "Dije a qué hora te levantas", "Describí tu rutina con verbos -er/pronominales", "Describiste tu casa", "Usaste algún adverbio de frecuencia", "Escribí entre 30 y 40 palabras"] }
+{
+ "bloque": 2,
+ "idioma": "fr",
+ "consignas": [
+  {
+   "consigna": "Écris un e-mail à un ami pour lui raconter ta routine quotidienne : à quelle heure tu te lèves, ce que tu fais et comment est ta maison.",
+   "minPalabras": 30,
+   "maxPalabras": 40,
+   "respuestaModelo": "Salut ! Je me lève à six heures tous les jours. Je prends le petit-déjeuner et je vais au travail en bus. J'habite dans un petit appartement avec une chambre, une cuisine et une salle de bains. Le soir, je nettoie ma maison et je me couche à onze heures. À bientôt !",
+   "checklist": [
+    "Usé un saludo y una despedida",
+    "Dije a qué hora te levantas",
+    "Describí tu rutina con verbos -er/pronominales",
+    "Describiste tu casa",
+    "Usaste algún adverbio de frecuencia",
+    "Escribí entre 30 y 40 palabras"
+   ]
+  },
+  {
+   "consigna": "Escribe sobre tu ropa: qué llevas normalmente, de qué colores, y describe un objeto que siempre llevas contigo.",
+   "minPalabras": 30,
+   "maxPalabras": 40,
+   "respuestaModelo": "D'habitude, je porte un jean et un t-shirt bleu. En hiver, je porte un manteau noir et des chaussures brunes. J'ai toujours mon téléphone et mes clés dans mon sac. Mon téléphone est blanc et il est nouveau. Mes vêtements sont très beaux.",
+   "checklist": [
+    "Dije qué ropa llevas normalmente",
+    "Mencioné al menos dos colores",
+    "Usé un adverbio de frecuencia",
+    "Describí un objeto que siempre llevas",
+    "Usé el presente (porter/avoir)",
+    "Escribí entre 30 y 40 palabras"
+   ]
+  }
+ ]
+}

@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import type { Idioma } from '../types'
+import type { Idioma, ConsignaWriting } from '../types'
 import { getWriting } from '../data/packs'
 import { corregirWriting } from '../lib/writing'
 import { hayApiKey } from '../lib/apiKey'
@@ -9,29 +9,29 @@ function contarPalabras(texto: string): number {
   return texto.trim().split(/\s+/).filter(Boolean).length
 }
 
-function PasoIdioma({
-  bloque,
+// Escribir UNA consigna: textarea + contador + corrección (IA si hay key, si no autoevaluación con modelo).
+// Reutilizado por el examen (PasoWriting) y por la pantalla de práctica libre (Escribir).
+export function EscribirConsigna({
+  pack,
   idioma,
   onDone
 }: {
-  bloque: number
+  pack: ConsignaWriting
   idioma: Idioma
   onDone: (nota: number) => void
 }) {
-  const pack = getWriting(bloque, idioma)
   const [texto, setTexto] = useState('')
   const [enviado, setEnviado] = useState(false)
   const [corrigiendo, setCorrigiendo] = useState(false)
   const [feedback, setFeedback] = useState<Awaited<ReturnType<typeof corregirWriting>> | null>(null)
 
-  if (!pack) return null
   const palabras = contarPalabras(texto)
 
   async function enviar() {
     setEnviado(true)
     if (hayApiKey()) {
       setCorrigiendo(true)
-      const res = await corregirWriting(idioma, pack!.consigna, texto)
+      const res = await corregirWriting(idioma, pack.consigna, texto)
       setCorrigiendo(false)
       setFeedback(res)
     }
@@ -144,12 +144,16 @@ export default function PasoWriting({ bloque, onDone }: { bloque: number; onDone
     }
   }
 
+  // El examen siempre usa la primera consigna del bloque; las demás son para práctica libre.
+  const consigna = getWriting(bloque, idiomas[idx])?.consignas[0]
+  if (!consigna) return null
+
   return (
     <div className="flex flex-col gap-3">
       <p className="text-center text-sm text-slate-500 dark:text-slate-400">
         Writing {idx + 1}/{idiomas.length}
       </p>
-      <PasoIdioma key={idiomas[idx]} bloque={bloque} idioma={idiomas[idx]} onDone={siguiente} />
+      <EscribirConsigna key={idiomas[idx]} pack={consigna} idioma={idiomas[idx]} onDone={siguiente} />
     </div>
   )
 }

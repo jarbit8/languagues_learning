@@ -1,4 +1,4 @@
-import type { Pregunta, ListeningPack, ReadingPack, DialogoConTema } from '../types'
+import type { Pregunta, ListeningPack, ReadingPack, DialogoConTema, TextoConIdioma } from '../types'
 import { temasDeBloque } from './curriculum'
 import { getListening, getReading, dialogosDe } from '../data/packs'
 import { preguntaDeListening } from './preguntas'
@@ -23,15 +23,15 @@ export function construirListeningBloque(bloque: number): SeccionListening {
 }
 
 export interface SeccionReading {
-  textos: ReadingPack[]
+  textos: TextoConIdioma[]
   preguntas: Pregunta[]
 }
 
 // Texto en inglés + texto en francés del bloque (anuncio/email/horario/menú, formato IELTS/TEF).
+// Usa el PRIMER texto de cada pack; el resto son para práctica libre (pantalla Leer).
 export function construirReadingBloque(bloque: number): SeccionReading {
-  const en = getReading(bloque, 'en')
-  const fr = getReading(bloque, 'fr')
-  const textos = [en, fr].filter((t): t is ReadingPack => !!t)
+  const packs = [getReading(bloque, 'en'), getReading(bloque, 'fr')].filter((p): p is ReadingPack => !!p)
+  const textos: TextoConIdioma[] = packs.map((p) => ({ ...p.textos[0], idioma: p.idioma }))
   const preguntas = baraja(
     textos.flatMap((t) =>
       t.preguntas.map((p) =>

@@ -1,4 +1,34 @@
-{ "bloque": 1, "idioma": "fr", "consigna": "Écris un e-mail à un nouvel ami : présente-toi (nom, âge, nationalité), et parle de ta famille et de ta profession.",
-"minPalabras": 30, "maxPalabras": 40,
-"respuestaModelo": "Bonjour ! Je m'appelle Joel. J'ai vingt-deux ans et je suis péruvien. Je suis étudiant et j'étudie l'informatique. J'ai une sœur, elle est jeune et gentille. Mon père est ingénieur. Enchanté ! Écris-moi bientôt.",
-"checklist": ["Usé un saludo y una despedida", "Dije mi nombre y mi edad", "Dije mi nacionalidad", "Hablé de mi familia", "Hablé de mi profesión o estudios", "Escribí entre 30 y 40 palabras"] }
+{
+ "bloque": 1,
+ "idioma": "fr",
+ "consignas": [
+  {
+   "consigna": "Écris un e-mail à un nouvel ami : présente-toi (nom, âge, nationalité), et parle de ta famille et de ta profession.",
+   "minPalabras": 30,
+   "maxPalabras": 40,
+   "respuestaModelo": "Bonjour ! Je m'appelle Joel. J'ai vingt-deux ans et je suis péruvien. Je suis étudiant et j'étudie l'informatique. J'ai une sœur, elle est jeune et gentille. Mon père est ingénieur. Enchanté ! Écris-moi bientôt.",
+   "checklist": [
+    "Usé un saludo y una despedida",
+    "Dije mi nombre y mi edad",
+    "Dije mi nacionalidad",
+    "Hablé de mi familia",
+    "Hablé de mi profesión o estudios",
+    "Escribí entre 30 y 40 palabras"
+   ]
+  },
+  {
+   "consigna": "Describe a un amigo o familiar: cómo se llama, su nacionalidad, cómo es físicamente y de personalidad, y su profesión.",
+   "minPalabras": 30,
+   "maxPalabras": 40,
+   "respuestaModelo": "Mon ami s'appelle Marc. Il est canadien et il a vingt-cinq ans. Il est grand et il a les cheveux bruns. Marc est très gentil et drôle. Il est ingénieur et il travaille dans une grande entreprise. Il a une femme et un fils.",
+   "checklist": [
+    "Dije el nombre y la nacionalidad",
+    "Describí el físico (grand, cheveux...)",
+    "Describí la personalidad",
+    "Dije su profesión",
+    "Hablé de su familia",
+    "Escribí entre 30 y 40 palabras"
+   ]
+  }
+ ]
+}
