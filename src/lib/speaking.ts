@@ -32,14 +32,6 @@ export function construirPromptCopiable(idioma: Idioma, escenario: string, vocab
   return `${system}\n\nEmpieza tú: salúdame y hazme la primera pregunta sobre el escenario. Recuerda: todo el rato en ${nombreIdioma}, nunca en español, y solo con las palabras que ya conozco.`
 }
 
-// Prompt de listening: la IA cuenta una historia y luego pregunta por ella en el mismo chat,
-// para usar en cualquier app de IA con voz (ChatGPT modo voz, Gemini Live...) — mismo espíritu
-// que construirPromptCopiable, pero el ejercicio es "escuchar y responder", no conversar libre.
-export function construirPromptListening(idioma: Idioma, escenario: string, vocabulario: string): string {
-  const nombreIdioma = idioma === 'en' ? 'inglés' : 'francés'
-  return `Eres un tutor de ${nombreIdioma} haciendo un ejercicio de listening con un estudiante A1. Primero cuenta una historia corta (6-10 frases) en ${nombreIdioma} sobre: ${escenario}, frases simples y claras — nunca en español, como le hablarías a un niño bilingüe. MUY IMPORTANTE — el estudiante SOLO conoce estas palabras de contenido (sustantivos, verbos, adjetivos), además de pronombres/artículos/preposiciones básicas y el verbo to be/avoir-être: ${vocabulario}. No uses NINGÚN sustantivo, verbo o adjetivo fuera de esa lista en la historia ni en las preguntas — si no está ahí, no lo va a entender. Cuando termines la historia, hazme preguntas de comprensión sobre ella UNA A LA VEZ (entre 3 y 5 en total, estilo IELTS/TEF: qué pasó, quién, cuándo, dónde, cuánto), todas en ${nombreIdioma}, esperando mi respuesta antes de pasar a la siguiente. No corrijas cada respuesta en el momento. Cuando termines todas las preguntas, cierra con un resumen en ${nombreIdioma}: cuántas acerté de cuántas en total, y para cada una que fallé, la respuesta correcta con una explicación breve — todo en ${nombreIdioma}, nunca en español. Si tienes modo de voz, cuenta la historia y haz las preguntas habladas; yo puedo responder por voz o por texto.\n\nEmpieza tú: cuenta la historia.`
-}
-
 // Intenta interpretar la última respuesta del modelo como el JSON de cierre.
 export function parseFeedback(texto: string): FeedbackSpeaking | null {
   const match = texto.match(/\{[\s\S]*\}/)
