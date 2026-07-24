@@ -1,9 +1,15 @@
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import type { Pregunta } from '../types'
 import { coincide } from '../lib/normaliza'
 import { hablar } from '../lib/audio'
 
 type Resultado = null | 'bien' | 'mal'
+
+function mmss(seg: number): string {
+  const m = Math.floor(seg / 60)
+  const s = seg % 60
+  return `${m}:${String(s).padStart(2, '0')}`
+}
 
 const TEXTO_LIBRE: Pregunta['tipo'][] = [
   'audio_escribir',
@@ -20,18 +26,44 @@ export default function ExamRunner({
   preguntas,
   onAnswer,
   onFinish,
-  etiqueta
+  etiqueta,
+  tiempoSegundos
 }: {
   preguntas: Pregunta[]
   onAnswer?: (pregunta: Pregunta, acierto: boolean) => void
   onFinish: (aciertos: number, total: number) => void
   etiqueta?: string
+  tiempoSegundos?: number
 }) {
   const [idx, setIdx] = useState(0)
   const [texto, setTexto] = useState('')
   const [tokens, setTokens] = useState<string[]>([])
   const [resultado, setResultado] = useState<Resultado>(null)
   const [aciertos, setAciertos] = useState(0)
+  const [restante, setRestante] = useState(tiempoSegundos ?? 0)
+  const aciertosRef = useRef(0)
+  const finRef = useRef(false)
+
+  // Cronómetro opcional (examen cronometrado, estilo IELTS/TCF). Al llegar a 0 termina solo
+  // con las respuestas que haya — las no contestadas cuentan como falladas, como en el examen real.
+  useEffect(() => {
+    if (!tiempoSegundos) return
+    const id = setInterval(() => {
+      setRestante((r) => {
+        if (r <= 1) {
+          clearInterval(id)
+          if (!finRef.current) {
+            finRef.current = true
+            onFinish(aciertosRef.current, preguntas.length)
+          }
+          return 0
+        }
+        return r - 1
+      })
+    }, 1000)
+    return () => clearInterval(id)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [tiempoSegundos])
 
   const p = preguntas[idx]
   const esTexto = TEXTO_LIBRE.includes(p.tipo)
@@ -40,13 +72,18 @@ export default function ExamRunner({
     if (resultado) return
     const bien = coincide(valor, p.respuesta, p.aceptadas)
     setResultado(bien ? 'bien' : 'mal')
-    if (bien) setAciertos((n) => n + 1)
+    if (bien) {
+      setAciertos((n) => n + 1)
+      aciertosRef.current += 1
+    }
     onAnswer?.(p, bien)
     if (p.idioma) hablar(p.respuesta.replace(/_/g, ' '), p.idioma)
   }
 
   function siguiente() {
     if (idx + 1 >= preguntas.length) {
+      if (finRef.current) return
+      finRef.current = true
       onFinish(aciertos, preguntas.length)
       return
     }
@@ -65,7 +102,20 @@ export default function ExamRunner({
           {etiqueta ? `${etiqueta} · ` : ''}
           {idx + 1}/{preguntas.length}
         </span>
-        <span className={p.idioma === 'en' ? 'chip-en' : 'chip-fr'}>{p.idioma === 'en' ? 'EN' : 'FR'}</span>
+        <div className="flex items-center gap-2">
+          {!!tiempoSegundos && (
+            <span
+              className={`rounded-full px-2 py-0.5 text-xs font-bold tabular-nums ${
+                restante <= 30
+                  ? 'bg-rose-100 text-rose-700 dark:bg-rose-900/40 dark:text-rose-300'
+                  : 'bg-slate-100 text-slate-600 dark:bg-slate-700 dark:text-slate-300'
+              }`}
+            >
+              ⏱ {mmss(restante)}
+            </span>
+          )}
+          <span className={p.idioma === 'en' ? 'chip-en' : 'chip-fr'}>{p.idioma === 'en' ? 'EN' : 'FR'}</span>
+        </div>
       </div>
 
       <div className="tarjeta flex flex-col gap-4">

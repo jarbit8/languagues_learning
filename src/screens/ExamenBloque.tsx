@@ -131,6 +131,7 @@ export default function ExamenBloque({ bloque, onSalir }: { bloque: number; onSa
         <ExamRunner
           preguntas={reading.preguntas}
           etiqueta="Reading"
+          tiempoSegundos={reading.preguntas.length * 40}
           onFinish={(aciertos, total) => guardarNota('reading', Math.round((aciertos / total) * 100))}
         />
       )
@@ -160,6 +161,7 @@ export default function ExamenBloque({ bloque, onSalir }: { bloque: number; onSa
       <ExamRunner
         preguntas={listening.preguntas}
         etiqueta="Listening"
+        tiempoSegundos={listening.preguntas.length * 30}
         onFinish={(aciertos, total) => guardarNota('listening', Math.round((aciertos / total) * 100))}
       />
     )

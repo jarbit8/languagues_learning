@@ -86,6 +86,7 @@ export default function Examen() {
       <ExamRunner
         preguntas={vista.preguntas}
         etiqueta="Tema"
+        tiempoSegundos={vista.preguntas.length * 30}
         onAnswer={actualizarSrs}
         onFinish={async (aciertos, total) => {
           const pct = Math.round((aciertos / total) * 100)

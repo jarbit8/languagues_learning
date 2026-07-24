@@ -55,6 +55,7 @@ export default function ExamenFinal({ onSalir }: { onSalir: () => void }) {
       <ExamRunner
         preguntas={vocabPreguntas}
         etiqueta="Vocabulario final"
+        tiempoSegundos={vocabPreguntas.length * 20}
         onAnswer={onAnswerVocab}
         onFinish={(aciertos, total) => {
           setNotaVocab(Math.round((aciertos / total) * 100))
@@ -70,6 +71,7 @@ export default function ExamenFinal({ onSalir }: { onSalir: () => void }) {
         <ExamRunner
           preguntas={listening.preguntas}
           etiqueta="Listening final"
+          tiempoSegundos={listening.preguntas.length * 30}
           onFinish={(aciertos, total) => {
             setNotasHab((n) => ({ ...n, listening: Math.round((aciertos / total) * 100) }))
             setEnPreguntas(false)
@@ -105,6 +107,7 @@ export default function ExamenFinal({ onSalir }: { onSalir: () => void }) {
         <ExamRunner
           preguntas={reading.preguntas}
           etiqueta="Reading final"
+          tiempoSegundos={reading.preguntas.length * 40}
           onFinish={(aciertos, total) => {
             setNotasHab((n) => ({ ...n, reading: Math.round((aciertos / total) * 100) }))
             setEnPreguntas(false)
