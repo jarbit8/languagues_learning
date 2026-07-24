@@ -12,9 +12,15 @@ export function baraja<T>(arr: T[]): T[] {
 
 const poolEn = vocabPacks.flatMap((p) => p.conceptos.map((c) => c.en.texto))
 const poolFr = vocabPacks.flatMap((p) => p.conceptos.map((c) => c.fr.texto))
+const poolEs = vocabPacks.flatMap((p) => p.conceptos.map((c) => c.es))
 
 function distractores(correcta: string, idioma: Idioma, n = 3): string[] {
   const pool = (idioma === 'en' ? poolEn : poolFr).filter((t) => t !== correcta)
+  return baraja([...new Set(pool)]).slice(0, n)
+}
+
+function distractoresEs(correcta: string, n = 3): string[] {
+  const pool = poolEs.filter((t) => t !== correcta)
   return baraja([...new Set(pool)]).slice(0, n)
 }
 
@@ -23,9 +29,27 @@ export function preguntaDeConcepto(concepto: Concepto): Pregunta {
   const idioma: Idioma = Math.random() < 0.5 ? 'en' : 'fr'
   const lado = concepto[idioma]
   const nombreIdioma = idioma === 'en' ? 'inglés' : 'francés'
-  const tipos = ['audio_escribir', idioma === 'en' ? 'es_a_en' : 'es_a_fr', 'opcion_multiple'] as const
+  const tipos = [
+    'audio_escribir',
+    idioma === 'en' ? 'es_a_en' : 'es_a_fr',
+    'opcion_multiple',
+    'significado'
+  ] as const
   const tipo = tipos[Math.floor(Math.random() * tipos.length)]
 
+  // No traduce: comprueba que entiende el significado, no solo que memorizó el par de palabras.
+  if (tipo === 'significado') {
+    return {
+      tipo: 'opcion_multiple',
+      idioma,
+      enunciado: `¿Qué significa "${lado.texto}" (${nombreIdioma})?`,
+      audioTexto: null,
+      opciones: baraja([concepto.es, ...distractoresEs(concepto.es)]),
+      respuesta: concepto.es,
+      aceptadas: [],
+      palabraId: concepto.id
+    }
+  }
   if (tipo === 'opcion_multiple') {
     return {
       tipo,
