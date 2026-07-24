@@ -1,4 +1,5 @@
 import type { FeedbackSpeaking, Idioma } from '../types'
+import type { TareaSpeaking } from '../data/tareasSpeaking'
 import { vocabPacks } from '../data/packs'
 
 // Vocabulario REAL desbloqueado (todas las palabras de los temas 1..tema, no solo los títulos),
@@ -30,6 +31,13 @@ export function construirPromptCopiable(idioma: Idioma, escenario: string, vocab
   const nombreIdioma = idioma === 'en' ? 'inglés' : 'francés'
   const system = construirSystemPrompt(idioma, escenario, vocabulario)
   return `${system}\n\nEmpieza tú: salúdame y hazme la primera pregunta sobre el escenario. Recuerda: todo el rato en ${nombreIdioma}, nunca en español, y solo con las palabras que ya conozco.`
+}
+
+// Prompt de una TAREA de speaking estilo CELPIP/IELTS (ver data/tareasSpeaking.ts): la IA
+// presenta la tarea, deja responder sin interrumpir y da feedback con puntaje — todo en el idioma.
+export function construirPromptTarea(idioma: Idioma, tarea: TareaSpeaking, vocabulario: string): string {
+  const nombreIdioma = idioma === 'en' ? 'inglés' : 'francés'
+  return `Eres un examinador de ${nombreIdioma} tipo CELPIP/IELTS con un estudiante A1. Vas a administrarle UNA tarea de speaking (${tarea.tipoCELPIP}). LA TAREA: ${tarea.instruccion}\n\nReglas: presenta la tarea en ${nombreIdioma} con frases simples y claras de nivel A1, NUNCA en español. El estudiante SOLO conoce estas palabras de contenido (además de pronombres/artículos/preposiciones básicas y to be/avoir-être): ${vocabulario}. No uses ningún sustantivo, verbo o adjetivo fuera de esa lista. Después de plantear la tarea, dile que tiene unos segundos para pensar y luego que responda (puede hablar por voz o escribir). NO lo interrumpas mientras responde ni corrijas en medio. Cuando termine su respuesta, dale feedback en ${nombreIdioma}, en frases A1 (nada de español): primero una cosa que hizo bien, luego máximo 3 correcciones (qué dijo → cómo se dice mejor → por qué, muy breve), y una nota de 0 a 100 según claridad, vocabulario y gramática A1. Si tienes modo de voz, plantea la tarea hablada; el estudiante puede responder por voz.\n\nEmpieza tú: plantéale la tarea.`
 }
 
 // Intenta interpretar la última respuesta del modelo como el JSON de cierre.
