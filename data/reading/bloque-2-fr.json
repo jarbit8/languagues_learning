@@ -35,6 +35,11 @@
       "nettoyer la maison"
      ],
      "respuesta": "dîner en famille"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "Hace deporte los fines de semana.",
+     "respuesta": "no dice"
     }
    ]
   },
@@ -71,6 +76,11 @@
       "près du lit"
      ],
      "respuesta": "près de la fenêtre"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "El teléfono es rojo.",
+     "respuesta": "falso"
     }
    ]
   }

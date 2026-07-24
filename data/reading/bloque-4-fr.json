@@ -35,6 +35,11 @@
       "allemand"
      ],
      "respuesta": "français"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "Se quedó en el hotel una semana.",
+     "respuesta": "falso"
     }
    ]
   },
@@ -71,6 +76,11 @@
       "musique"
      ],
      "respuesta": "informatique"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "Toca la guitarra desde niño.",
+     "respuesta": "no dice"
     }
    ]
   }

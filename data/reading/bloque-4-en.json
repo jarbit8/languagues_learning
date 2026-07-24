@@ -35,6 +35,11 @@
       "German"
      ],
      "respuesta": "French"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "Joel viajó con su familia.",
+     "respuesta": "no dice"
     }
    ]
   },
@@ -71,6 +76,11 @@
       "music"
      ],
      "respuesta": "computer science"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "Estudia informática.",
+     "respuesta": "verdadero"
     }
    ]
   }

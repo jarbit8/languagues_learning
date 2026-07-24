@@ -98,6 +98,19 @@ export function preguntaDeListening(p: PreguntaListening, idioma: Idioma): Pregu
       aceptadas: []
     }
   }
+  // Verdadero / Falso / No dice — el tipo insignia de IELTS: "No dice" cuando el texto no lo afirma ni lo niega.
+  if (p.tipo === 'vfnd') {
+    const r = p.respuesta.toLowerCase()
+    const respuesta = r.startsWith('v') ? 'Verdadero' : r.startsWith('f') ? 'Falso' : 'No dice'
+    return {
+      tipo: 'opcion_multiple',
+      idioma,
+      enunciado: p.enunciado,
+      opciones: ['Verdadero', 'Falso', 'No dice'],
+      respuesta,
+      aceptadas: []
+    }
+  }
   return {
     tipo: p.tipo,
     idioma,

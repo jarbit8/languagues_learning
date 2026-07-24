@@ -95,7 +95,7 @@ export interface LineaDialogo {
   texto: string
 }
 
-export type TipoPreguntaListening = 'opcion_multiple' | 'vf' | 'completar_dato' | 'anota_la_hora'
+export type TipoPreguntaListening = 'opcion_multiple' | 'vf' | 'vfnd' | 'completar_dato' | 'anota_la_hora'
 
 export interface PreguntaListening {
   tipo: TipoPreguntaListening
@@ -184,7 +184,7 @@ export interface HistorialExamen {
 // --- Reading (packs en /data/reading) ---
 
 export interface PreguntaReading {
-  tipo: 'vf' | 'opcion_multiple'
+  tipo: 'vf' | 'vfnd' | 'opcion_multiple'
   enunciado: string
   opciones?: string[]
   respuesta: string

@@ -35,6 +35,11 @@
       "clean the house"
      ],
      "respuesta": "dinner with family"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "La persona tiene hijos.",
+     "respuesta": "no dice"
     }
    ]
   },
@@ -71,6 +76,11 @@
       "near the bed"
      ],
      "respuesta": "near the window"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "La habitación tiene una ventana grande.",
+     "respuesta": "no dice"
     }
    ]
   }

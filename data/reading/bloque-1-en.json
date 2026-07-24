@@ -35,6 +35,11 @@
       "38"
      ],
      "respuesta": "28"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "Laura está casada.",
+     "respuesta": "no dice"
     }
    ]
   },
@@ -71,6 +76,11 @@
       "student"
      ],
      "respuesta": "nurse"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "Marc trabaja en una empresa grande.",
+     "respuesta": "verdadero"
     }
    ]
   }

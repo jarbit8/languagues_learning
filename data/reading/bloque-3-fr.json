@@ -35,6 +35,11 @@
       "au centre-ville"
      ],
      "respuesta": "à côté de la banque"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "El café cierra los domingos.",
+     "respuesta": "falso"
     }
    ]
   },
@@ -71,6 +76,11 @@
       "dans le parc"
      ],
      "respuesta": "à côté de la banque"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "El museo abre a las tres.",
+     "respuesta": "no dice"
     }
    ]
   }

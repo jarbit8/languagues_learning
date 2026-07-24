@@ -35,6 +35,11 @@
       "in the city centre"
      ],
      "respuesta": "next to the bank"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "El café tiene wifi gratis.",
+     "respuesta": "no dice"
     }
    ]
   },
@@ -71,6 +76,11 @@
       "in the park"
      ],
      "respuesta": "next to the bank"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "La entrada al museo es gratis.",
+     "respuesta": "no dice"
     }
    ]
   }

@@ -35,6 +35,11 @@
       "trente-huit"
      ],
      "respuesta": "vingt-huit"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "Laura tiene hijos.",
+     "respuesta": "no dice"
     }
    ]
   },
@@ -71,6 +76,11 @@
       "étudiante"
      ],
      "respuesta": "infirmière"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "La esposa de Marc es profesora.",
+     "respuesta": "falso"
     }
    ]
   }
