@@ -248,7 +248,7 @@ export default function Examen() {
           <p className="font-semibold">Examen de bloque {info.bloque}</p>
           {gb.disponible ? (
             <p className="text-sm text-emerald-600 dark:text-emerald-400">
-              Disponible · 4 habilidades · aprueba con 75%
+              Disponible · 6 secciones · repaso de los 6 temas · aprueba con 75%
             </p>
           ) : (
             <p className="text-sm text-slate-500 dark:text-slate-400">

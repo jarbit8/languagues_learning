@@ -151,11 +151,12 @@ export async function registrarNotaBloque(
   const pr = (await db.progresoBloque.get(bloque)) ?? baseProgresoBloque(bloque)
   pr.notas = { ...(pr.notas ?? {}), [habilidad]: nota }
   const notas = pr.notas
-  const completo =
-    notas.listening !== undefined && notas.reading !== undefined && notas.writing !== undefined && notas.speaking !== undefined
+  // Las 6 secciones del bloque: vocabulario y gramática acumulados + las 4 destrezas.
+  const SECCIONES = ['vocab', 'gramatica', 'listening', 'reading', 'writing', 'speaking'] as const
+  const completo = SECCIONES.every((s) => notas[s] !== undefined)
   let aprobado = false
   if (completo) {
-    const promedio = ((notas.listening ?? 0) + (notas.reading ?? 0) + (notas.writing ?? 0) + (notas.speaking ?? 0)) / 4
+    const promedio = SECCIONES.reduce((suma, s) => suma + (notas[s] ?? 0), 0) / SECCIONES.length
     aprobado = promedio >= 75
     pr.intentos += 1
     if (aprobado) pr.estado = 'aprobado'

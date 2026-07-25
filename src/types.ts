@@ -153,6 +153,8 @@ export interface FeedbackSpeaking {
 // --- Bloques y nivel ---
 
 export interface NotasBloque {
+  vocab?: number
+  gramatica?: number
   listening?: number
   reading?: number
   writing?: number
