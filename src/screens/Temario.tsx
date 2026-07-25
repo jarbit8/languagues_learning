@@ -3,7 +3,7 @@ import { useLiveQuery } from 'dexie-react-hooks'
 import { mapaTemas } from '../lib/progreso'
 import { IDIOMAS_ACTIVOS, idiomaUnico } from '../config'
 import { temasDeBloque } from '../lib/curriculum'
-import { getVocabPack } from '../data/packs'
+import { getVocabPack, getGramatica } from '../data/packs'
 import { funcionDe, nombresBloque } from '../data/funciones'
 
 const ESTADO_BADGE: Record<string, string> = {
@@ -56,14 +56,21 @@ export default function Temario() {
                   <span className="text-slate-400">{expandido ? '▲' : '▼'}</span>
                 </button>
                 {expandido && (
-                  <div className="flex flex-col gap-1 border-t border-slate-100 pt-2 text-sm dark:border-slate-700">
+                  <div className="flex flex-col gap-1.5 border-t border-slate-100 pt-2 text-sm dark:border-slate-700">
                     <p>
                       <span className="text-slate-400">Aprendes a:</span> {funcionDe(tema)}
                     </p>
-                    <p className="text-slate-400">
-                      {pack?.conceptos.length ?? 30} palabras · gramática{' '}
-                      {idiomaUnico ? '' : IDIOMAS_ACTIVOS.map((i) => i.toUpperCase()).join(' + ') + ' '}· listening
-                    </p>
+                    {IDIOMAS_ACTIVOS.map((i) => {
+                      const gram = getGramatica(tema, i)
+                      if (!gram) return null
+                      return (
+                        <p key={i}>
+                          <span className="text-slate-400">Gramática{idiomaUnico ? '' : ` ${i.toUpperCase()}`}:</span>{' '}
+                          {gram.titulo}
+                        </p>
+                      )
+                    })}
+                    <p className="text-slate-400">{pack?.conceptos.length ?? 30} palabras · listening · ejercicios</p>
                   </div>
                 )}
               </div>
