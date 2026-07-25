@@ -102,6 +102,18 @@ export default function ChatSpeaking({
             <span className="text-4xl font-black">{feedback.nota}%</span>
           </div>
         )}
+        {typeof feedback.listo === 'boolean' && (
+          <div
+            className={`rounded-xl px-3 py-3 text-center ${
+              feedback.listo
+                ? 'bg-emerald-100 text-emerald-900 dark:bg-emerald-900/40 dark:text-emerald-100'
+                : 'bg-amber-100 text-amber-900 dark:bg-amber-900/40 dark:text-amber-100'
+            }`}
+          >
+            <p className="text-lg font-black">{feedback.listo ? 'LISTO ✅' : 'AÚN NO ⏳'}</p>
+            {feedback.veredicto && <p className="mt-1 text-sm">{feedback.veredicto}</p>}
+          </div>
+        )}
         <p className="rounded-lg bg-emerald-50 px-3 py-2 text-sm text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-200">
           ✅ {feedback.bien}
         </p>

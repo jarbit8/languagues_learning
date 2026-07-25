@@ -145,6 +145,9 @@ export interface FeedbackSpeaking {
   bien: string
   errores: ErrorSpeaking[]
   nota?: number
+  /** Solo en modo examen: si ya puede avanzar. `veredicto` explica en español por qué. */
+  listo?: boolean
+  veredicto?: string
 }
 
 // --- Bloques y nivel ---

@@ -105,6 +105,11 @@ export default function ExamenBloque({ bloque, onSalir }: { bloque: number; onSa
           <PasoSpeakingExamen
             tarea={tareaDeBloque(bloque)}
             tema={temaEscenario}
+            meta={
+              bloque >= 4
+                ? 'si ya domina el último bloque del nivel A1 y puede presentarse al examen final del nivel'
+                : `si ya domina el bloque ${bloque} del nivel A1 y puede avanzar al bloque ${bloque + 1}`
+            }
             onDone={(nota) => guardarNota('speaking', nota)}
           />
         </div>

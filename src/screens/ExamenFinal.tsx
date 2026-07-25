@@ -163,6 +163,7 @@ export default function ExamenFinal({ onSalir }: { onSalir: () => void }) {
           <PasoSpeakingExamen
             tarea={tareaFinal()}
             tema={24}
+            meta="si ya está listo para dar por terminado el nivel A1 y pasar al A2"
             onDone={async (nota) => {
               const habilidades = { ...notasHab, speaking: nota }
               await finalizar(habilidades)
