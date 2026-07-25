@@ -9,8 +9,8 @@ import { reproducirDialogo, reproducirLinea } from '../lib/listening'
 import ExamRunner from '../components/ExamRunner'
 import ChatSpeaking from '../components/ChatSpeaking'
 import PasoWriting from '../components/PasoWriting'
-import Autoevaluacion from '../components/Autoevaluacion'
-import { escenarioDe } from '../data/escenarios'
+import PasoSpeakingExamen from '../components/PasoSpeakingExamen'
+import { tareaDeBloque } from '../data/tareasSpeaking'
 
 type Paso = 'listening' | 'reading' | 'writing' | 'speaking' | 'resultado'
 
@@ -102,14 +102,11 @@ export default function ExamenBloque({ bloque, onSalir }: { bloque: number; onSa
       return (
         <div className="flex flex-col gap-4">
           <h1 className="text-2xl font-bold">Examen de bloque {bloque} · Speaking</h1>
-          <Autoevaluacion
-            textoIntro="Sin API key configurada, autoevalúa tu speaking hablando en voz alta sobre el escenario:"
-            checklist={CHECKLIST_SPEAKING}
+          <PasoSpeakingExamen
+            tarea={tareaDeBloque(bloque)}
+            tema={temaEscenario}
             onDone={(nota) => guardarNota('speaking', nota)}
           />
-          <p className="tarjeta text-sm text-slate-500 dark:text-slate-400">
-            Escenario: {escenarioDe(temaEscenario)}
-          </p>
         </div>
       )
     }

@@ -71,3 +71,21 @@ export const tareasSpeaking: TareaSpeaking[] = [
 export function tareaPorId(id: string): TareaSpeaking | undefined {
   return tareasSpeaking.find((t) => t.id === id)
 }
+
+// Qué tarea toca en el examen de cada bloque: la que encaja con el contenido de ese bloque
+// (1 yo y mi gente → describir; 2 día a día → contar rutina; 3 comida y ciudad → resolver una
+// situación; 4 pasado y planes → hablar de planes). El examen final usa una más exigente.
+const TAREA_POR_BLOQUE: Record<number, string> = {
+  1: 'describir',
+  2: 'experiencia',
+  3: 'problema',
+  4: 'planes'
+}
+
+export function tareaDeBloque(bloque: number): TareaSpeaking {
+  return tareaPorId(TAREA_POR_BLOQUE[bloque] ?? 'describir') ?? tareasSpeaking[0]
+}
+
+export function tareaFinal(): TareaSpeaking {
+  return tareaPorId('opinion') ?? tareasSpeaking[0]
+}

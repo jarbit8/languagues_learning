@@ -10,6 +10,46 @@ import ExamRunner from '../components/ExamRunner'
 
 const capitalizar = (s: string) => s[0].toUpperCase() + s.slice(1)
 
+// Un paso numerado de la lección: número + título + contenido. `tono` pinta el fondo cuando
+// el paso es un aviso (pronunciación / trampa) para que destaque sobre los pasos normales.
+const TONOS = {
+  normal: 'bg-white ring-slate-200 dark:bg-slate-800 dark:ring-slate-700',
+  sky: 'bg-sky-50 ring-sky-200 dark:bg-sky-950/40 dark:ring-sky-900',
+  amber: 'bg-amber-50 ring-amber-200 dark:bg-amber-950/40 dark:ring-amber-900'
+} as const
+
+function Paso({
+  n,
+  titulo,
+  nota,
+  icono,
+  tono = 'normal',
+  children
+}: {
+  n: number
+  titulo: string
+  nota?: string
+  icono?: string
+  tono?: keyof typeof TONOS
+  children: React.ReactNode
+}) {
+  return (
+    <section className={`rounded-2xl p-4 shadow-sm ring-1 ${TONOS[tono]}`}>
+      <div className="mb-2.5 flex items-center gap-2">
+        <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-slate-900 text-xs font-black text-white dark:bg-white dark:text-slate-900">
+          {n}
+        </span>
+        <h3 className="text-sm font-bold uppercase tracking-wide">
+          {icono && <span className="mr-1">{icono}</span>}
+          {titulo}
+        </h3>
+        {nota && <span className="ml-auto text-xs text-slate-400">{nota}</span>}
+      </div>
+      {children}
+    </section>
+  )
+}
+
 function LeccionCard({
   tema,
   idioma,
@@ -23,84 +63,67 @@ function LeccionCard({
 }) {
   const pack = getGramatica(tema, idioma)
   if (!pack) return null
+  const acento = idioma === 'en' ? 'bg-en' : 'bg-fr'
 
   return (
-    <div className="flex flex-col gap-4">
-      <div
-        className={`tarjeta flex flex-col gap-2 border-l-4 ${
-          idioma === 'en' ? 'border-en' : 'border-fr'
-        }`}
-      >
-        <div className="flex items-center gap-2">
-          {!idiomaUnico && (
-            <span className={idioma === 'en' ? 'chip-en' : 'chip-fr'}>{idioma === 'en' ? 'EN' : 'FR'}</span>
-          )}
-          <h2 className="text-lg font-black">{pack.titulo}</h2>
+    <div className="flex flex-col gap-5">
+      {/* Portada de la lección */}
+      <div className={`relative overflow-hidden rounded-2xl ${acento} px-4 py-5 text-white shadow-sm`}>
+        <div className="absolute -right-6 -top-8 h-28 w-28 rounded-full bg-white/10" />
+        <div className="absolute -bottom-10 -left-4 h-24 w-24 rounded-full bg-white/10" />
+        <div className="relative flex flex-col gap-1">
+          <span className="text-xs font-bold uppercase tracking-widest text-white/70">
+            Gramática {!idiomaUnico && (idioma === 'en' ? '· EN' : '· FR')}
+          </span>
+          <h2 className="text-xl font-black leading-tight">{pack.titulo}</h2>
           {completada && (
-            <span className="ml-auto flex items-center gap-1 rounded-full bg-emerald-100 px-2.5 py-1 text-xs font-bold text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-300">
-              ✓ Completado
-            </span>
+            <span className="mt-1 self-start rounded-full bg-white/20 px-2.5 py-1 text-xs font-bold">✓ Completado</span>
           )}
         </div>
+      </div>
+
+      <Paso n={1} titulo="La regla">
         <p className="text-base leading-relaxed">{pack.regla}</p>
-      </div>
+      </Paso>
 
-      <div className="grid gap-3 sm:grid-cols-2">
-        <div className="tarjeta flex flex-col gap-1.5 !bg-sky-50 dark:!bg-sky-950/40">
-          <p className="flex items-center gap-1.5 text-xs font-bold uppercase tracking-wide text-sky-600 dark:text-sky-300">
-            <span className="text-base">🗣️</span> Cómo suena
-          </p>
-          <p className="text-sm text-sky-900 dark:text-sky-100">{pack.pronunciacion}</p>
-        </div>
-
-        <div className="tarjeta flex flex-col gap-1.5 !bg-amber-50 dark:!bg-amber-950/40">
-          <p className="flex items-center gap-1.5 text-xs font-bold uppercase tracking-wide text-amber-600 dark:text-amber-300">
-            <span className="text-base">⚠️</span> Ojo con esto
-          </p>
-          <p className="text-sm text-amber-900 dark:text-amber-100">{pack.trampa}</p>
-        </div>
-      </div>
-
-      <div className="tarjeta flex flex-col gap-2">
-        <p className="text-xs font-bold uppercase tracking-wide text-slate-400">Ejemplos · toca 🔊 para escuchar</p>
+      <Paso n={2} titulo="Ejemplos" nota="toca para escuchar">
         <div className="flex flex-col gap-2">
           {pack.ejemplos.map((ej, i) => (
             <button
               key={i}
               onClick={() => hablar(ej.frase, idioma)}
-              className={`flex min-h-[52px] items-center gap-3 rounded-xl px-3 py-2 text-left transition active:scale-[0.98] ${
-                idioma === 'en' ? 'bg-en/5 dark:bg-en/10' : 'bg-fr/5 dark:bg-fr/10'
-              }`}
+              className="flex min-h-[60px] items-center gap-3 rounded-xl bg-slate-50 px-3 py-2.5 text-left transition active:scale-[0.98] dark:bg-slate-900"
             >
-              <span
-                className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-xs font-black ${
-                  idioma === 'en'
-                    ? 'bg-en text-white'
-                    : 'bg-fr text-white'
-                }`}
-              >
-                {i + 1}
-              </span>
-              <span className="flex flex-1 flex-col">
-                <span className="text-sm font-semibold">{ej.frase}</span>
-                <span className="text-xs text-slate-500 dark:text-slate-400">{ej.traduccion}</span>
+              <span className="flex flex-1 flex-col gap-0.5">
+                <span className="text-base font-semibold leading-snug">{ej.frase}</span>
+                <span className="text-sm text-slate-500 dark:text-slate-400">{ej.traduccion}</span>
                 {ej.comoSeLee && (
-                  <span className="mt-0.5 text-xs italic text-indigo-500 dark:text-indigo-300">
-                    🗨️ se lee: "{ej.comoSeLee}"
-                  </span>
+                  <span className="text-xs italic text-indigo-500 dark:text-indigo-300">/ {ej.comoSeLee} /</span>
                 )}
               </span>
-              <span className="text-xl">🔊</span>
+              <span
+                className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full ${acento} text-base text-white`}
+              >
+                ▶
+              </span>
             </button>
           ))}
         </div>
-      </div>
+      </Paso>
+
+      <Paso n={3} titulo="Cómo suena" icono="🗣️" tono="sky">
+        <p className="text-sm leading-relaxed text-sky-900 dark:text-sky-100">{pack.pronunciacion}</p>
+      </Paso>
+
+      <Paso n={4} titulo="Ojo con esto" icono="⚠️" tono="amber">
+        <p className="text-sm leading-relaxed text-amber-900 dark:text-amber-100">{pack.trampa}</p>
+      </Paso>
 
       <button
         onClick={() => onPracticar(idioma)}
-        className={completada ? 'btn bg-slate-200 text-slate-700 dark:bg-slate-700 dark:text-slate-200' : `btn-primary`}
+        className={completada ? 'btn bg-slate-200 text-slate-700 dark:bg-slate-700 dark:text-slate-200' : 'btn-primary'}
       >
-        {completada ? `↻ Repetir ejercicios` : `▶ Practicar · ${pack.ejercicios.length} ejercicios`}
+        {completada ? '↻ Repetir ejercicios' : `▶ Practicar · ${pack.ejercicios.length} ejercicios`}
       </button>
     </div>
   )
