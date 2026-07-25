@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import type { Idioma, ConsignaWriting } from '../types'
-import { IDIOMAS_ACTIVOS, nombreIdioma } from '../config'
+import { IDIOMAS_ACTIVOS, idiomaUnico, nombreIdioma } from '../config'
 import { getWriting } from '../data/packs'
 import { corregirWriting } from '../lib/writing'
 import { hayApiKey } from '../lib/apiKey'
@@ -102,9 +102,11 @@ export function EscribirConsigna({
 
   return (
     <div className="tarjeta flex flex-col gap-3">
-      <span className={idioma === 'en' ? 'chip-en self-start' : 'chip-fr self-start'}>
-        {idioma === 'en' ? 'EN' : 'FR'}
-      </span>
+      {!idiomaUnico && (
+        <span className={idioma === 'en' ? 'chip-en self-start' : 'chip-fr self-start'}>
+          {idioma === 'en' ? 'EN' : 'FR'}
+        </span>
+      )}
       <p className="font-semibold">{pack.consigna}</p>
       <textarea
         value={texto}

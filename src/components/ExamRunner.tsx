@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import type { Pregunta } from '../types'
+import { idiomaUnico } from '../config'
 import { coincide } from '../lib/normaliza'
 import { hablar } from '../lib/audio'
 
@@ -114,7 +115,9 @@ export default function ExamRunner({
               ⏱ {mmss(restante)}
             </span>
           )}
-          <span className={p.idioma === 'en' ? 'chip-en' : 'chip-fr'}>{p.idioma === 'en' ? 'EN' : 'FR'}</span>
+          {!idiomaUnico && (
+            <span className={p.idioma === 'en' ? 'chip-en' : 'chip-fr'}>{p.idioma === 'en' ? 'EN' : 'FR'}</span>
+          )}
         </div>
       </div>
 

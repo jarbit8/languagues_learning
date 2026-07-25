@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react'
 import type { FeedbackSpeaking, Pregunta } from '../types'
+import { idiomaUnico } from '../config'
 import { construirVocabFinal, construirListeningFinal, construirReadingFinal } from '../lib/examenFinal'
 import { registrarResultado } from '../lib/srs'
 import { registrarExamenFinal } from '../lib/progreso'
@@ -85,9 +86,11 @@ export default function ExamenFinal({ onSalir }: { onSalir: () => void }) {
         <h1 className="text-2xl font-bold">Listening final</h1>
         {listening.dialogos.map((d, i) => (
           <div key={`${d.tema}-${d.idioma}-${i}`} className="tarjeta flex flex-col gap-3">
-            <span className={d.idioma === 'en' ? 'chip-en self-start' : 'chip-fr self-start'}>
-              {d.idioma === 'en' ? 'EN' : 'FR'}
-            </span>
+            {!idiomaUnico && (
+              <span className={d.idioma === 'en' ? 'chip-en self-start' : 'chip-fr self-start'}>
+                {d.idioma === 'en' ? 'EN' : 'FR'}
+              </span>
+            )}
             <h3 className="font-bold">{d.titulo}</h3>
             <button onClick={() => reproducirDialogo(d.lineas, d.idioma, d.tema, {})} className="btn-primary self-start">
               🔊 Escuchar
@@ -121,9 +124,11 @@ export default function ExamenFinal({ onSalir }: { onSalir: () => void }) {
         <h1 className="text-2xl font-bold">Reading final</h1>
         {reading.textos.map((t, i) => (
           <div key={`${t.idioma}-${i}`} className="tarjeta flex flex-col gap-2">
-            <span className={t.idioma === 'en' ? 'chip-en self-start' : 'chip-fr self-start'}>
-              {t.idioma === 'en' ? 'EN' : 'FR'}
-            </span>
+            {!idiomaUnico && (
+              <span className={t.idioma === 'en' ? 'chip-en self-start' : 'chip-fr self-start'}>
+                {t.idioma === 'en' ? 'EN' : 'FR'}
+              </span>
+            )}
             <h3 className="font-bold">{t.titulo}</h3>
             <p className="text-sm leading-relaxed">{t.texto}</p>
           </div>

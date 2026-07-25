@@ -6,14 +6,15 @@ import type { Idioma } from './types'
 // Decisión del usuario (2026-07-23): enfocar SOLO inglés. El francés era para la
 // vía canadiense, que quedó descartada frente al plan directo a USA.
 //
-// Para volver a estudiar francés (solo, o en paralelo) basta EDITAR ESTA LÍNEA:
-//   ['en']        → solo inglés (actual)
-//   ['fr']        → solo francés
-//   ['en', 'fr']  → los dos en paralelo (como estaba antes)
+// PARA VOLVER AL FRANCÉS (solo, o en paralelo) hay que tocar 2 ARCHIVOS:
+//   1) esta línea:  ['en'] → ['fr'] (solo francés) o ['en','fr'] (los dos)
+//   2) src/data/packs.ts → los 4 globs '*-en.json' → '*.json' (o '*-fr.json')
+//      (los patrones de glob son literales de build: si no se tocan, el contenido
+//       en francés no entra al bundle y la app no lo encontraría)
 //
-// Todo el contenido en francés sigue en /data intacto: los packs, la gramática,
-// los diálogos, las lecturas y las consignas. No hay que regenerar NADA, solo
-// cambiar este array — la UI, los exámenes y el gating se adaptan solos.
+// Todo el contenido en francés sigue en /data intacto: vocabulario dual, 24 packs
+// de gramática, 48 diálogos, lecturas y consignas. No hay que regenerar NADA — la
+// UI, los exámenes, el gating y los prompts de IA se adaptan solos.
 // ────────────────────────────────────────────────────────────────────────────
 export const IDIOMAS_ACTIVOS: Idioma[] = ['en']
 

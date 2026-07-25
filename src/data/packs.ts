@@ -3,36 +3,53 @@ import { IDIOMAS_ACTIVOS } from '../config'
 
 // Los data packs viven en /data (raíz). Se importan en build → quedan en el bundle
 // y por tanto en el precache del service worker (offline total).
+//
+// ⚠️ ÚNICO SITIO donde el idioma va escrito a mano: los patrones de glob DEBEN ser literales
+// (Vite los resuelve en build), así que filtrar por IDIOMAS_ACTIVOS en runtime no evitaría que
+// el contenido inactivo se descargue igual. Con '*-en.json' el francés ni entra al bundle.
+// PARA REACTIVAR FRANCÉS: poner '*.json' en los 4 globs de abajo (o '*-fr.json' para solo francés)
+// ADEMÁS de cambiar IDIOMAS_ACTIVOS en config.ts. Son las 2 únicas ediciones necesarias.
 const vocabModules = import.meta.glob('/data/vocabulario/*.json', { eager: true }) as Record<
   string,
   { default: VocabPack }
 >
 
-const gramaticaModules = import.meta.glob('/data/gramatica/*.json', { eager: true }) as Record<
+const gramaticaModules = import.meta.glob('/data/gramatica/*-en.json', { eager: true }) as Record<
   string,
   { default: GramaticaPack }
 >
 
-const listeningModules = import.meta.glob('/data/listening/*.json', { eager: true }) as Record<
+const listeningModules = import.meta.glob('/data/listening/*-en.json', { eager: true }) as Record<
   string,
   { default: ListeningPack }
 >
 
-const readingModules = import.meta.glob('/data/reading/*.json', { eager: true }) as Record<
+const readingModules = import.meta.glob('/data/reading/*-en.json', { eager: true }) as Record<
   string,
   { default: ReadingPack }
 >
 
-const writingModules = import.meta.glob('/data/writing/*.json', { eager: true }) as Record<
+const writingModules = import.meta.glob('/data/writing/*-en.json', { eager: true }) as Record<
   string,
   { default: WritingPack }
 >
 
+// Los packs de gramática/listening/reading/writing son POR IDIOMA (…-en.json / …-fr.json):
+// se descartan los de idiomas inactivos para que ni se carguen en memoria ni se muestren.
+// (Los archivos siguen en /data: reactivar un idioma es solo tocar IDIOMAS_ACTIVOS.)
+function soloActivos<T>(modulos: Record<string, { default: T }>): T[] {
+  return Object.entries(modulos)
+    .filter(([ruta]) => IDIOMAS_ACTIVOS.some((i) => ruta.endsWith(`-${i}.json`)))
+    .map(([, m]) => m.default)
+}
+
+// El vocabulario es UN archivo dual (es+en+fr en cada concepto), así que no se puede filtrar por
+// archivo. No se toca el dato: la UI y los exámenes solo leen los lados de IDIOMAS_ACTIVOS.
 export const vocabPacks: VocabPack[] = Object.values(vocabModules)
   .map((m) => m.default)
   .sort((a, b) => a.tema - b.tema)
 
-export const gramaticaPacks: GramaticaPack[] = Object.values(gramaticaModules).map((m) => m.default)
+export const gramaticaPacks: GramaticaPack[] = soloActivos(gramaticaModules)
 
 export function getGramatica(tema: number, idioma: Idioma): GramaticaPack | undefined {
   return gramaticaPacks.find((p) => p.tema === tema && p.idioma === idioma)
@@ -42,9 +59,9 @@ export function tieneGramaticaCompleta(tema: number): boolean {
   return IDIOMAS_ACTIVOS.every((i) => !!getGramatica(tema, i))
 }
 
-export const listeningPacks: ListeningPack[] = Object.values(listeningModules)
-  .map((m) => m.default)
-  .sort((a, b) => a.tema - b.tema)
+export const listeningPacks: ListeningPack[] = soloActivos<ListeningPack>(listeningModules).sort(
+  (a, b) => a.tema - b.tema
+)
 
 export function getListening(tema: number, idioma: Idioma): ListeningPack | undefined {
   return listeningPacks.find((p) => p.tema === tema && p.idioma === idioma)
@@ -55,8 +72,8 @@ export function dialogosDe(pack: ListeningPack): DialogoConTema[] {
   return pack.dialogos.map((d) => ({ ...d, tema: pack.tema, idioma: pack.idioma }))
 }
 
-export const readingPacks: ReadingPack[] = Object.values(readingModules).map((m) => m.default)
-export const writingPacks: WritingPack[] = Object.values(writingModules).map((m) => m.default)
+export const readingPacks: ReadingPack[] = soloActivos<ReadingPack>(readingModules)
+export const writingPacks: WritingPack[] = soloActivos<WritingPack>(writingModules)
 
 export function getReading(bloque: number, idioma: Idioma): ReadingPack | undefined {
   return readingPacks.find((p) => p.bloque === bloque && p.idioma === idioma)

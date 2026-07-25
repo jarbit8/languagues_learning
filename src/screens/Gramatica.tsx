@@ -32,7 +32,9 @@ function LeccionCard({
         }`}
       >
         <div className="flex items-center gap-2">
-          <span className={idioma === 'en' ? 'chip-en' : 'chip-fr'}>{idioma === 'en' ? 'EN' : 'FR'}</span>
+          {!idiomaUnico && (
+            <span className={idioma === 'en' ? 'chip-en' : 'chip-fr'}>{idioma === 'en' ? 'EN' : 'FR'}</span>
+          )}
           <h2 className="text-lg font-black">{pack.titulo}</h2>
           {completada && (
             <span className="ml-auto flex items-center gap-1 rounded-full bg-emerald-100 px-2.5 py-1 text-xs font-bold text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-300">
