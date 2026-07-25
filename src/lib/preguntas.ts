@@ -25,6 +25,40 @@ function distractoresEs(correcta: string, n = 3): string[] {
   return baraja([...new Set(pool)]).slice(0, n)
 }
 
+// Variantes válidas de un significado en español, para no exigir tipear el texto exacto:
+// "hola (informal)" acepta "hola"; "que tengas buena tarde/noche" acepta cada rama.
+// La corrección ya ignora tildes, mayúsculas y puntuación (normaliza.ts).
+function variantesEs(es: string): string[] {
+  const sinParentesis = es.replace(/\([^)]*\)/g, ' ').replace(/\s+/g, ' ').trim()
+  // Una barra dentro de una frase ("...buena tarde/noche") genera la frase completa de
+  // cada rama, no la palabra suelta: "noche" por sí sola no es la respuesta.
+  const expandeBarras = (v: string): string[] => {
+    const palabras = v.split(' ')
+    const i = palabras.findIndex((w) => w.includes('/'))
+    if (i === -1) return [v]
+    return palabras[i]
+      .split('/')
+      .map((op) => [...palabras.slice(0, i), op, ...palabras.slice(i + 1)].join(' '))
+  }
+  const ramas = [es, sinParentesis].flatMap(expandeBarras)
+  return [...new Set(ramas)].filter((v) => v && v !== es)
+}
+
+// Examen diario: ve la palabra en el idioma que estudia y escribe qué significa en español.
+export function preguntaSignificadoEscrito(concepto: Concepto): Pregunta {
+  const idioma: Idioma = IDIOMAS_ACTIVOS[Math.floor(Math.random() * IDIOMAS_ACTIVOS.length)]
+  const lado = concepto[idioma]
+  return {
+    tipo: 'significado_escrito',
+    idioma,
+    enunciado: `¿Qué significa "${lado.texto}" en español?`,
+    audioTexto: lado.texto,
+    respuesta: concepto.es,
+    aceptadas: variantesEs(concepto.es),
+    palabraId: concepto.id
+  }
+}
+
 // Convierte un concepto de vocabulario en una pregunta (tipo aleatorio, idioma aleatorio).
 export function preguntaDeConcepto(concepto: Concepto): Pregunta {
   const idioma: Idioma = IDIOMAS_ACTIVOS[Math.floor(Math.random() * IDIOMAS_ACTIVOS.length)]

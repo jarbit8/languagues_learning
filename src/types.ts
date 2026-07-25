@@ -67,6 +67,7 @@ export type TipoPregunta =
   | 'audio_escribir'
   | 'es_a_en'
   | 'es_a_fr'
+  | 'significado_escrito'
   | 'opcion_multiple'
   | 'hueco'
   | 'ordenar'
