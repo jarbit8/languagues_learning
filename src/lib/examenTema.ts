@@ -3,20 +3,26 @@ import { IDIOMAS_ACTIVOS } from '../config'
 import { baraja, preguntaDeConcepto, preguntaDeEjercicio } from './preguntas'
 import type { Pregunta } from '../types'
 
-// Examen de tema: 20 preguntas de vocabulario + 10 de gramática, repartidas entre los
-// idiomas activos (10 si solo hay uno; 5+5 si se estudian los dos en paralelo).
-export function construirExamenTema(tema: number): Pregunta[] {
+export interface ExamenTema {
+  vocab: Pregunta[]
+  gramatica: Pregunta[]
+}
+
+// Examen de tema en dos secciones que se puntúan por separado.
+// Gramática entra COMPLETA (los 15 ejercicios de cada idioma activo): antes se tomaban 10 al
+// azar mezclados con vocabulario, así que se podía aprobar el tema con la gramática floja
+// porque el vocabulario arrastraba la nota. Ahora cada sección se aprueba por su cuenta.
+export function construirExamenTema(tema: number): ExamenTema {
   const pack = getVocabPack(tema)
   const vocab = baraja(pack?.conceptos ?? [])
     .slice(0, 20)
     .map(preguntaDeConcepto)
 
-  const porIdioma = Math.max(1, Math.round(10 / IDIOMAS_ACTIVOS.length))
-  const gramatica = IDIOMAS_ACTIVOS.flatMap((idioma) =>
-    baraja(getGramatica(tema, idioma)?.ejercicios ?? [])
-      .slice(0, porIdioma)
-      .map((e) => preguntaDeEjercicio(e, idioma))
+  const gramatica = baraja(
+    IDIOMAS_ACTIVOS.flatMap((idioma) =>
+      (getGramatica(tema, idioma)?.ejercicios ?? []).map((e) => preguntaDeEjercicio(e, idioma))
+    )
   )
 
-  return baraja([...vocab, ...gramatica])
+  return { vocab, gramatica }
 }

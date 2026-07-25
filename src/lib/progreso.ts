@@ -77,9 +77,16 @@ export async function estadoExamenTema(tema: number): Promise<EstadoExamenTema> 
   }
 }
 
-// Registra el resultado del examen de tema. ≥80% aprueba y desbloquea el siguiente.
-export async function registrarExamenTema(tema: number, nota: number): Promise<boolean> {
-  const aprobado = nota >= 80
+// Registra el resultado del examen de tema. Hay que aprobar LAS DOS secciones con ≥80%:
+// con una nota global se podía desbloquear el tema con la gramática floja, porque las 20
+// preguntas de vocabulario pesaban más que las de gramática.
+export async function registrarExamenTema(
+  tema: number,
+  notaVocab: number,
+  notaGramatica: number
+): Promise<boolean> {
+  const aprobado = notaVocab >= 80 && notaGramatica >= 80
+  const nota = Math.round((notaVocab + notaGramatica) / 2)
   const pr = (await db.progresoTema.get(tema)) ?? baseProgreso(tema)
   pr.intentos = (pr.intentos ?? 0) + 1
   pr.notaExamenTema = Math.max(pr.notaExamenTema ?? 0, nota)
