@@ -15,7 +15,7 @@ export default defineConfig({
       manifest: {
         name: 'Idiomas',
         short_name: 'Idiomas',
-        description: 'Inglés y francés en paralelo, nivel A1',
+        description: 'Aprende inglés, nivel A1, a tu ritmo',
         lang: 'es',
         theme_color: '#0f172a',
         background_color: '#0f172a',

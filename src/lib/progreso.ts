@@ -1,5 +1,6 @@
 import { db } from '../db'
 import { vocabPacks, getVocabPack } from '../data/packs'
+import { esIdiomaActivo } from '../config'
 import { esHoy, inicioDeHoy, UN_DIA } from './fechas'
 import { temasDeBloque } from './curriculum'
 import type {
@@ -57,13 +58,15 @@ export interface EstadoExamenTema {
   total: number
 }
 
-// Puerta de tema: 100% vocab aprendido + gramática de ambos idiomas completada una vez.
+// Puerta de tema: 100% vocab aprendido + gramática completada una vez POR CADA IDIOMA ACTIVO
+// (ver config.ts). Si un idioma no está activo su gramática no se exige — si no, quedaría
+// bloqueado para siempre.
 export async function estadoExamenTema(tema: number): Promise<EstadoExamenTema> {
   const resumen = await resumenVocabTema(tema)
   const pr = await db.progresoTema.get(tema)
   const faltaVocab = resumen.total === 0 || resumen.aprendidas < resumen.total
-  const faltaGramEn = !pr?.gramaticaEnCompletada
-  const faltaGramFr = !pr?.gramaticaFrCompletada
+  const faltaGramEn = esIdiomaActivo('en') && !pr?.gramaticaEnCompletada
+  const faltaGramFr = esIdiomaActivo('fr') && !pr?.gramaticaFrCompletada
   return {
     disponible: !faltaVocab && !faltaGramEn && !faltaGramFr,
     faltaVocab,

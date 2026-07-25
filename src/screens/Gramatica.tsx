@@ -1,11 +1,14 @@
 import { useState } from 'react'
 import { useLiveQuery } from 'dexie-react-hooks'
 import type { Idioma } from '../types'
+import { IDIOMAS_ACTIVOS, idiomaUnico, nombreIdioma } from '../config'
 import { getGramatica } from '../data/packs'
 import { getProgresoTema, marcarGramaticaCompletada } from '../lib/progreso'
 import { preguntaDeEjercicio } from '../lib/preguntas'
 import { hablar } from '../lib/audio'
 import ExamRunner from '../components/ExamRunner'
+
+const capitalizar = (s: string) => s[0].toUpperCase() + s.slice(1)
 
 function LeccionCard({
   tema,
@@ -102,7 +105,7 @@ function LeccionCard({
 }
 
 export default function Gramatica({ tema }: { tema: number }) {
-  const [idioma, setIdioma] = useState<Idioma>('en')
+  const [idioma, setIdioma] = useState<Idioma>(IDIOMAS_ACTIVOS[0])
   const [practicando, setPracticando] = useState<Idioma | null>(null)
   const [fin, setFin] = useState<{ aciertos: number; total: number } | null>(null)
   const progreso = useLiveQuery(() => getProgresoTema(tema), [tema])
@@ -140,7 +143,7 @@ export default function Gramatica({ tema }: { tema: number }) {
     return (
       <ExamRunner
         preguntas={preguntas}
-        etiqueta={practicando === 'en' ? 'Inglés' : 'Francés'}
+        etiqueta={capitalizar(nombreIdioma(practicando))}
         onFinish={async (aciertos, total) => {
           await marcarGramaticaCompletada(tema, practicando)
           setFin({ aciertos, total })
@@ -149,30 +152,29 @@ export default function Gramatica({ tema }: { tema: number }) {
     )
   }
 
+  const completada = (i: Idioma) =>
+    i === 'en' ? !!progreso?.gramaticaEnCompletada : !!progreso?.gramaticaFrCompletada
+
   return (
     <div className="flex flex-col gap-4">
-      <div className="flex rounded-xl bg-slate-200 p-1 dark:bg-slate-800">
-        {(['en', 'fr'] as const).map((i) => (
-          <button
-            key={i}
-            onClick={() => setIdioma(i)}
-            className={`flex-1 rounded-lg py-2 text-sm font-bold transition ${
-              idioma === i ? (i === 'en' ? 'chip-en !py-2' : 'chip-fr !py-2') : 'text-slate-500'
-            }`}
-          >
-            {i === 'en' ? '🇬🇧 Inglés' : '🇫🇷 Francés'}
-            {i === 'en' && progreso?.gramaticaEnCompletada && ' ✓'}
-            {i === 'fr' && progreso?.gramaticaFrCompletada && ' ✓'}
-          </button>
-        ))}
-      </div>
+      {!idiomaUnico && (
+        <div className="flex rounded-xl bg-slate-200 p-1 dark:bg-slate-800">
+          {IDIOMAS_ACTIVOS.map((i) => (
+            <button
+              key={i}
+              onClick={() => setIdioma(i)}
+              className={`flex-1 rounded-lg py-2 text-sm font-bold transition ${
+                idioma === i ? (i === 'en' ? 'chip-en !py-2' : 'chip-fr !py-2') : 'text-slate-500'
+              }`}
+            >
+              {i === 'en' ? '🇬🇧 Inglés' : '🇫🇷 Francés'}
+              {completada(i) && ' ✓'}
+            </button>
+          ))}
+        </div>
+      )}
 
-      <LeccionCard
-        tema={tema}
-        idioma={idioma}
-        completada={idioma === 'en' ? !!progreso?.gramaticaEnCompletada : !!progreso?.gramaticaFrCompletada}
-        onPracticar={setPracticando}
-      />
+      <LeccionCard tema={tema} idioma={idioma} completada={completada(idioma)} onPracticar={setPracticando} />
     </div>
   )
 }

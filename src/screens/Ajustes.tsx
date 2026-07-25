@@ -1,8 +1,11 @@
 import { useRef, useState } from 'react'
+import { IDIOMAS_ACTIVOS, nombreIdioma } from '../config'
 import { getApiKey, setApiKey } from '../lib/apiKey'
 import { estadoVoces, getVelocidad, setVelocidad } from '../lib/audio'
 import { getModo, setModo, type ModoApariencia } from '../lib/apariencia'
 import { exportarProgreso, importarProgreso, descargarArchivo } from '../lib/backup'
+
+const capitalizar = (s: string) => s[0].toUpperCase() + s.slice(1)
 
 export default function Ajustes() {
   const [key, setKey] = useState(getApiKey())
@@ -68,9 +71,10 @@ export default function Ajustes() {
       <div className="tarjeta flex flex-col gap-2 text-sm">
         <p className="font-semibold">Voces de audio detectadas</p>
         <p className="text-slate-500 dark:text-slate-400">
-          Inglés: {voces.en ? '✓' : '✗'} · Francés: {voces.fr ? '✓' : '✗'} · total {voces.total}
+          {IDIOMAS_ACTIVOS.map((i) => `${capitalizar(nombreIdioma(i))}: ${voces[i] ? '✓' : '✗'}`).join(' · ')} · total{' '}
+          {voces.total}
         </p>
-        {(!voces.en || !voces.fr) && (
+        {IDIOMAS_ACTIVOS.some((i) => !voces[i]) && (
           <p className="text-amber-600 dark:text-amber-300">
             Falta alguna voz. En el celular instálala en Ajustes del sistema → Idioma → Texto a voz.
           </p>

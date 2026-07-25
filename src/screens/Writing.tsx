@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { useLiveQuery } from 'dexie-react-hooks'
 import type { Idioma } from '../types'
+import { IDIOMAS_ACTIVOS, idiomaUnico, nombreIdioma } from '../config'
 import { bloqueEnCurso } from '../lib/progreso'
 import { getWriting } from '../data/packs'
 import { EscribirConsigna } from '../components/PasoWriting'
@@ -8,7 +9,7 @@ import { EscribirConsigna } from '../components/PasoWriting'
 export default function Writing() {
   const bloqueActual = useLiveQuery(() => bloqueEnCurso(), [], 1) ?? 1
   const [bloque, setBloque] = useState<number | null>(null)
-  const [idioma, setIdioma] = useState<Idioma>('en')
+  const [idioma, setIdioma] = useState<Idioma>(IDIOMAS_ACTIVOS[0])
   const [consignaIdx, setConsignaIdx] = useState<number | null>(null)
   const [hecho, setHecho] = useState(false)
 
@@ -66,22 +67,24 @@ export default function Writing() {
             </option>
           ))}
         </select>
-        <div className="flex rounded-xl bg-slate-200 p-1 dark:bg-slate-800">
-          {(['en', 'fr'] as const).map((i) => (
-            <button
-              key={i}
-              onClick={() => {
-                reset()
-                setIdioma(i)
-              }}
-              className={`rounded-lg px-3 py-1 text-sm font-bold ${
-                idioma === i ? (i === 'en' ? 'chip-en' : 'chip-fr') : 'text-slate-500'
-              }`}
-            >
-              {i.toUpperCase()}
-            </button>
-          ))}
-        </div>
+        {!idiomaUnico && (
+          <div className="flex rounded-xl bg-slate-200 p-1 dark:bg-slate-800">
+            {IDIOMAS_ACTIVOS.map((i) => (
+              <button
+                key={i}
+                onClick={() => {
+                  reset()
+                  setIdioma(i)
+                }}
+                className={`rounded-lg px-3 py-1 text-sm font-bold ${
+                  idioma === i ? (i === 'en' ? 'chip-en' : 'chip-fr') : 'text-slate-500'
+                }`}
+              >
+                {i.toUpperCase()}
+              </button>
+            ))}
+          </div>
+        )}
       </div>
 
       <p className="text-sm text-slate-500 dark:text-slate-400">
@@ -91,7 +94,7 @@ export default function Writing() {
 
       {!pack ? (
         <p className="tarjeta text-slate-500 dark:text-slate-400">
-          Aún no hay escritura para el bloque {bloqueSel} en {idioma === 'en' ? 'inglés' : 'francés'}.
+          Aún no hay escritura para el bloque {bloqueSel} en {nombreIdioma(idioma)}.
         </p>
       ) : (
         pack.consignas.map((c, i) => (

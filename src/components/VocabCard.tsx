@@ -1,8 +1,9 @@
 import { useState } from 'react'
-import type { Concepto, PalabraEstado } from '../types'
+import type { Concepto, Idioma, PalabraEstado } from '../types'
+import { IDIOMAS_ACTIVOS, notaVisible } from '../config'
 import { hablar } from '../lib/audio'
 
-function Lado({ chip, texto, ejemplo, pron, idioma }: { chip: string; texto: string; ejemplo: string; pron?: string; idioma: 'en' | 'fr' }) {
+function Lado({ chip, texto, ejemplo, pron, idioma }: { chip: string; texto: string; ejemplo: string; pron?: string; idioma: Idioma }) {
   return (
     <div className="flex flex-col gap-1">
       <div className="flex items-center gap-2">
@@ -51,11 +52,19 @@ export default function VocabCard({
 
       {abierta && (
         <div className="mt-3 flex flex-col gap-3 border-t border-slate-100 pt-3 dark:border-slate-700">
-          <Lado chip="EN" texto={concepto.en.texto} ejemplo={concepto.en.ejemplo} pron={concepto.en.pron} idioma="en" />
-          <Lado chip="FR" texto={concepto.fr.texto} ejemplo={concepto.fr.ejemplo} pron={concepto.fr.pron} idioma="fr" />
-          {concepto.nota && (
+          {IDIOMAS_ACTIVOS.map((i) => (
+            <Lado
+              key={i}
+              chip={i.toUpperCase()}
+              texto={concepto[i].texto}
+              ejemplo={concepto[i].ejemplo}
+              pron={concepto[i].pron}
+              idioma={i}
+            />
+          ))}
+          {notaVisible(concepto.nota) && (
             <p className="rounded-lg bg-amber-50 px-3 py-2 text-sm text-amber-800 dark:bg-amber-900/30 dark:text-amber-200">
-              💡 {concepto.nota}
+              💡 {notaVisible(concepto.nota)}
             </p>
           )}
           <button

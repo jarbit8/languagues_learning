@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { useLiveQuery } from 'dexie-react-hooks'
 import type { Idioma, DialogoListening } from '../types'
+import { IDIOMAS_ACTIVOS, idiomaUnico, nombreIdioma } from '../config'
 import { temaEnCurso } from '../lib/progreso'
 import { getVocabPack, getListening } from '../data/packs'
 import { reproducirDialogo, reproducirLinea, detener, rateListening } from '../lib/listening'
@@ -116,7 +117,7 @@ function DialogoCard({
 export default function Listening() {
   const temaActual = useLiveQuery(() => temaEnCurso(), [], 1) ?? 1
   const [tema, setTema] = useState<number | null>(null)
-  const [idioma, setIdioma] = useState<Idioma>('en')
+  const [idioma, setIdioma] = useState<Idioma>(IDIOMAS_ACTIVOS[0])
   const [examenDialogo, setExamenDialogo] = useState<number | null>(null)
   const [resultado, setResultado] = useState<{ aciertos: number; total: number } | null>(null)
 
@@ -190,19 +191,21 @@ export default function Listening() {
             </option>
           ))}
         </select>
-        <div className="flex rounded-xl bg-slate-200 p-1 dark:bg-slate-800">
-          {(['en', 'fr'] as const).map((i) => (
-            <button
-              key={i}
-              onClick={() => cambiarIdioma(i)}
-              className={`rounded-lg px-3 py-1 text-sm font-bold ${
-                idioma === i ? (i === 'en' ? 'chip-en' : 'chip-fr') : 'text-slate-500'
-              }`}
-            >
-              {i.toUpperCase()}
-            </button>
-          ))}
-        </div>
+        {!idiomaUnico && (
+          <div className="flex rounded-xl bg-slate-200 p-1 dark:bg-slate-800">
+            {IDIOMAS_ACTIVOS.map((i) => (
+              <button
+                key={i}
+                onClick={() => cambiarIdioma(i)}
+                className={`rounded-lg px-3 py-1 text-sm font-bold ${
+                  idioma === i ? (i === 'en' ? 'chip-en' : 'chip-fr') : 'text-slate-500'
+                }`}
+              >
+                {i.toUpperCase()}
+              </button>
+            ))}
+          </div>
+        )}
       </div>
 
       <p className="text-sm text-slate-500 dark:text-slate-400">
@@ -212,7 +215,7 @@ export default function Listening() {
 
       {!pack ? (
         <p className="tarjeta text-slate-500 dark:text-slate-400">
-          Aún no hay listening para el tema {temaSel} en {idioma === 'en' ? 'inglés' : 'francés'}.
+          Aún no hay listening para el tema {temaSel} en {nombreIdioma(idioma)}.
         </p>
       ) : (
         pack.dialogos.map((d, i) => (

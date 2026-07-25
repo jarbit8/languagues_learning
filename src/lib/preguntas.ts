@@ -1,5 +1,6 @@
 import type { Concepto, Ejercicio, Idioma, Pregunta, PreguntaListening } from '../types'
 import { vocabPacks } from '../data/packs'
+import { IDIOMAS_ACTIVOS, nombreIdioma as nombreDeIdioma } from '../config'
 
 export function baraja<T>(arr: T[]): T[] {
   const a = [...arr]
@@ -26,9 +27,9 @@ function distractoresEs(correcta: string, n = 3): string[] {
 
 // Convierte un concepto de vocabulario en una pregunta (tipo aleatorio, idioma aleatorio).
 export function preguntaDeConcepto(concepto: Concepto): Pregunta {
-  const idioma: Idioma = Math.random() < 0.5 ? 'en' : 'fr'
+  const idioma: Idioma = IDIOMAS_ACTIVOS[Math.floor(Math.random() * IDIOMAS_ACTIVOS.length)]
   const lado = concepto[idioma]
-  const nombreIdioma = idioma === 'en' ? 'inglés' : 'francés'
+  const nombreIdioma = nombreDeIdioma(idioma)
   const tipos = [
     'audio_escribir',
     idioma === 'en' ? 'es_a_en' : 'es_a_fr',

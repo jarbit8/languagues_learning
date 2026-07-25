@@ -1,5 +1,6 @@
 import type { Pregunta, ListeningPack, ReadingPack, DialogoConTema, TextoConIdioma } from '../types'
 import { vocabPacks, getListening, getReading, dialogosDe } from '../data/packs'
+import { IDIOMAS_ACTIVOS } from '../config'
 import { baraja, preguntaDeConcepto, preguntaDeListening } from './preguntas'
 
 // 100 palabras aleatorias de todo el nivel A1 (skill exam-engine: examen final).
@@ -15,15 +16,11 @@ export interface SeccionListening {
   preguntas: Pregunta[]
 }
 
-// Versión extendida: un pack por bloque, alternando idioma.
+// Versión extendida: un pack por bloque (temas 2, 8, 14, 20), alternando entre idiomas activos.
 export function construirListeningFinal(): SeccionListening {
-  const pares: [number, 'en' | 'fr'][] = [
-    [2, 'en'],
-    [8, 'fr'],
-    [14, 'en'],
-    [20, 'fr']
-  ]
-  const packs = pares.map(([tema, idioma]) => getListening(tema, idioma)).filter((d): d is ListeningPack => !!d)
+  const packs = [2, 8, 14, 20]
+    .map((tema, i) => getListening(tema, IDIOMAS_ACTIVOS[i % IDIOMAS_ACTIVOS.length]))
+    .filter((d): d is ListeningPack => !!d)
   const dialogos = packs.flatMap(dialogosDe)
   const preguntas = baraja(dialogos.flatMap((d) => d.preguntas.map((p) => preguntaDeListening(p, d.idioma))))
   return { dialogos, preguntas }
@@ -34,12 +31,16 @@ export interface SeccionReading {
   preguntas: Pregunta[]
 }
 
-// Versión extendida: dos bloques de lectura (1 y 3), en ambos idiomas. Usa el primer texto de cada pack.
+// Versión extendida: los bloques de lectura 1 y 3 en cada idioma activo. Con un solo idioma
+// usa los dos textos de cada bloque, para mantener el mismo número de lecturas.
 export function construirReadingFinal(): SeccionReading {
-  const packs = [getReading(1, 'en'), getReading(1, 'fr'), getReading(3, 'en'), getReading(3, 'fr')].filter(
-    (p): p is ReadingPack => !!p
-  )
-  const textos: TextoConIdioma[] = packs.map((p) => ({ ...p.textos[0], idioma: p.idioma }))
+  const packs = [1, 3]
+    .flatMap((bloque) => IDIOMAS_ACTIVOS.map((i) => getReading(bloque, i)))
+    .filter((p): p is ReadingPack => !!p)
+  const textos: TextoConIdioma[] =
+    IDIOMAS_ACTIVOS.length === 1
+      ? packs.flatMap((p) => p.textos.map((t) => ({ ...t, idioma: p.idioma })))
+      : packs.map((p) => ({ ...p.textos[0], idioma: p.idioma }))
   const preguntas = baraja(
     textos.flatMap((t) =>
       t.preguntas.map((p) =>

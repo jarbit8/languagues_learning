@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import type { Idioma, ConsignaWriting } from '../types'
+import { IDIOMAS_ACTIVOS, nombreIdioma } from '../config'
 import { getWriting } from '../data/packs'
 import { corregirWriting } from '../lib/writing'
 import { hayApiKey } from '../lib/apiKey'
@@ -40,7 +41,7 @@ export function EscribirConsigna({
   if (enviado && hayApiKey() && !corrigiendo && feedback?.ok) {
     return (
       <div className="tarjeta flex flex-col gap-3">
-        <h3 className="font-bold">Corrección {idioma === 'en' ? 'inglés' : 'francés'}</h3>
+        <h3 className="font-bold">Corrección {nombreIdioma(idioma)}</h3>
         {typeof feedback.feedback.nota === 'number' && (
           <p className="text-4xl font-black">{feedback.feedback.nota}%</p>
         )}
@@ -131,7 +132,7 @@ export function EscribirConsigna({
 export default function PasoWriting({ bloque, onDone }: { bloque: number; onDone: (promedio: number) => void }) {
   const [idx, setIdx] = useState(0)
   const [notas, setNotas] = useState<number[]>([])
-  const idiomas: Idioma[] = ['en', 'fr']
+  const idiomas: Idioma[] = IDIOMAS_ACTIVOS
 
   function siguiente(nota: number) {
     const nuevas = [...notas, nota]

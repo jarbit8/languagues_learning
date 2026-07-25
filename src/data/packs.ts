@@ -1,4 +1,5 @@
 import type { VocabPack, GramaticaPack, ListeningPack, ReadingPack, WritingPack, Idioma, DialogoConTema } from '../types'
+import { IDIOMAS_ACTIVOS } from '../config'
 
 // Los data packs viven en /data (raíz). Se importan en build → quedan en el bundle
 // y por tanto en el precache del service worker (offline total).
@@ -38,7 +39,7 @@ export function getGramatica(tema: number, idioma: Idioma): GramaticaPack | unde
 }
 
 export function tieneGramaticaCompleta(tema: number): boolean {
-  return !!getGramatica(tema, 'en') && !!getGramatica(tema, 'fr')
+  return IDIOMAS_ACTIVOS.every((i) => !!getGramatica(tema, i))
 }
 
 export const listeningPacks: ListeningPack[] = Object.values(listeningModules)
