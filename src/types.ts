@@ -205,6 +205,34 @@ export interface ReadingPack {
 // Un texto de lectura ya "aplanado" con su idioma, para el examen y la pantalla de práctica.
 export type TextoConIdioma = TextoReading & { idioma: Idioma }
 
+// --- Pronunciación (packs en /data/pronunciacion) ---
+
+export interface EjemploPron {
+  palabra: string
+  pron: string
+  es: string
+}
+
+export interface ParMinimo {
+  a: { palabra: string; es: string }
+  b: { palabra: string; es: string }
+}
+
+export interface GrupoPron {
+  id: string
+  titulo: string
+  dificultad: string
+  explicacion: string
+  truco: string
+  ejemplos: EjemploPron[]
+  pares: ParMinimo[]
+}
+
+export interface PronPack {
+  idioma: Idioma
+  grupos: GrupoPron[]
+}
+
 // --- Writing (packs en /data/writing) ---
 
 export interface ConsignaWriting {

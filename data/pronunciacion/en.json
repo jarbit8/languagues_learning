@@ -1,0 +1,159 @@
+{ "idioma": "en", "grupos": [
+{
+ "id": "th",
+ "titulo": "El sonido TH",
+ "dificultad": "No existe en español",
+ "explicacion": "El inglés tiene dos sonidos 'th' y ninguno existe en español. Los hispanohablantes los cambian por 's', 'f', 'z' o 'd', y eso hace que 'think' suene como 'sink' (hundirse).",
+ "truco": "Saca un poquito la lengua entre los dientes y sopla. Si tu lengua no toca los dientes, no es 'th'.",
+ "ejemplos": [
+  {"palabra":"think","pron":"ZINK (lengua fuera)","es":"pensar"},
+  {"palabra":"three","pron":"ZRI (lengua fuera)","es":"tres"},
+  {"palabra":"this","pron":"DIS (lengua fuera, vibrando)","es":"este"},
+  {"palabra":"mother","pron":"MA-der (lengua fuera)","es":"madre"}
+ ],
+ "pares": [
+  {"a":{"palabra":"think","es":"pensar"},"b":{"palabra":"sink","es":"hundirse"}},
+  {"a":{"palabra":"three","es":"tres"},"b":{"palabra":"tree","es":"árbol"}},
+  {"a":{"palabra":"mouth","es":"boca"},"b":{"palabra":"mouse","es":"ratón"}},
+  {"a":{"palabra":"thin","es":"delgado"},"b":{"palabra":"fin","es":"aleta"}}
+ ]
+},
+{
+ "id": "vocal-larga",
+ "titulo": "Vocales largas y cortas",
+ "dificultad": "El español tiene 5 vocales, el inglés 12",
+ "explicacion": "En inglés la DURACIÓN de la vocal cambia la palabra. 'Ship' (barco) y 'sheep' (oveja) se escriben casi igual pero son palabras distintas. Los hispanohablantes las pronunciamos iguales.",
+ "truco": "La vocal larga se estira casi el doble: shiiip. La corta es un golpe seco: ship.",
+ "ejemplos": [
+  {"palabra":"sheep","pron":"SHIIP (larga)","es":"oveja"},
+  {"palabra":"ship","pron":"SHIP (corta)","es":"barco"},
+  {"palabra":"eat","pron":"IIT (larga)","es":"comer"},
+  {"palabra":"it","pron":"IT (corta)","es":"eso"}
+ ],
+ "pares": [
+  {"a":{"palabra":"sheep","es":"oveja"},"b":{"palabra":"ship","es":"barco"}},
+  {"a":{"palabra":"eat","es":"comer"},"b":{"palabra":"it","es":"eso"}},
+  {"a":{"palabra":"leave","es":"irse"},"b":{"palabra":"live","es":"vivir"}},
+  {"a":{"palabra":"feel","es":"sentir"},"b":{"palabra":"fill","es":"llenar"}}
+ ]
+},
+{
+ "id": "b-v",
+ "titulo": "B y V son distintas",
+ "dificultad": "En español suenan igual",
+ "explicacion": "En español 'baca' y 'vaca' suenan idéntico. En inglés NO: la 'v' se hace con los dientes sobre el labio de abajo, la 'b' juntando los dos labios.",
+ "truco": "Para la 'v', muerde suavemente tu labio inferior y haz vibrar. Para la 'b', junta los labios como en español.",
+ "ejemplos": [
+  {"palabra":"very","pron":"VE-ri (dientes en el labio)","es":"muy"},
+  {"palabra":"visit","pron":"VI-sit (dientes en el labio)","es":"visitar"},
+  {"palabra":"book","pron":"BUK (labios juntos)","es":"libro"}
+ ],
+ "pares": [
+  {"a":{"palabra":"very","es":"muy"},"b":{"palabra":"berry","es":"baya"}},
+  {"a":{"palabra":"vest","es":"chaleco"},"b":{"palabra":"best","es":"el mejor"}},
+  {"a":{"palabra":"vote","es":"votar"},"b":{"palabra":"boat","es":"barco"}}
+ ]
+},
+{
+ "id": "s-inicial",
+ "titulo": "No pongas 'e' antes de la S",
+ "dificultad": "Error clásico del español",
+ "explicacion": "En español ninguna palabra empieza con s + consonante, por eso decimos 'escuela', 'España'. Al hablar inglés metemos esa 'e' sin querer: 'eschool', 'estudent'. Se nota muchísimo.",
+ "truco": "Arranca directo con la S, alargándola un poco: ssschool. Nunca 'e-school'.",
+ "ejemplos": [
+  {"palabra":"school","pron":"SKUUL (no 'eskul')","es":"escuela"},
+  {"palabra":"student","pron":"STIU-dent (no 'estudent')","es":"estudiante"},
+  {"palabra":"Spain","pron":"SPEIN (no 'espein')","es":"España"},
+  {"palabra":"stop","pron":"STOP (no 'estop')","es":"parar"}
+ ],
+ "pares": []
+},
+{
+ "id": "ed-pasado",
+ "titulo": "La -ED del pasado: 3 sonidos",
+ "dificultad": "Se escribe igual, suena distinto",
+ "explicacion": "Todos los pasados regulares terminan en -ed, pero suenan de tres formas distintas según la letra anterior. Decir 'work-ed' con la 'e' es error típico.",
+ "truco": "Solo suena 'id' cuando el verbo termina en T o D (wanted, needed). Si no, es 't' o 'd' pegado, sin vocal.",
+ "ejemplos": [
+  {"palabra":"worked","pron":"UERKT (suena 't')","es":"trabajó"},
+  {"palabra":"played","pron":"PLEID (suena 'd')","es":"jugó"},
+  {"palabra":"wanted","pron":"UON-tid (suena 'id')","es":"quiso"},
+  {"palabra":"visited","pron":"VI-si-tid (suena 'id')","es":"visitó"}
+ ],
+ "pares": []
+},
+{
+ "id": "s-plural",
+ "titulo": "La -S del plural: 3 sonidos",
+ "dificultad": "Se escribe igual, suena distinto",
+ "explicacion": "El plural -s suena 's', 'z' o 'iz' según la palabra. En español siempre es 's', así que hay que entrenarlo.",
+ "truco": "Suena 'iz' cuando la palabra ya termina en sonido s/z/sh/ch (houses, oranges). Suena 'z' después de vocal o sonido suave (dogs, apples).",
+ "ejemplos": [
+  {"palabra":"cats","pron":"KATS (suena 's')","es":"gatos"},
+  {"palabra":"dogs","pron":"DOGZ (suena 'z')","es":"perros"},
+  {"palabra":"oranges","pron":"O-rin-yiz (suena 'iz')","es":"naranjas"},
+  {"palabra":"houses","pron":"JAU-siz (suena 'iz')","es":"casas"}
+ ],
+ "pares": []
+},
+{
+ "id": "schwa",
+ "titulo": "La schwa: la vocal más común",
+ "dificultad": "El sonido nº1 del inglés",
+ "explicacion": "En inglés las sílabas sin acento se comen: la vocal se convierte en un sonido flojo tipo 'e' muy corta (la schwa). Por eso 'teacher' no es 'ti-cher' sino 'TI-cher' con la última casi muda.",
+ "truco": "Relaja la boca y no pronuncies fuerte la sílaba sin acento. Si pronuncias TODAS las vocales claras, suenas a español.",
+ "ejemplos": [
+  {"palabra":"teacher","pron":"TII-cher","es":"profesor"},
+  {"palabra":"doctor","pron":"DOK-ter","es":"doctor"},
+  {"palabra":"about","pron":"e-BAUT","es":"sobre"},
+  {"palabra":"banana","pron":"be-NA-ne","es":"plátano"}
+ ],
+ "pares": []
+},
+{
+ "id": "acento",
+ "titulo": "Dónde va el acento",
+ "dificultad": "Cambia el significado",
+ "explicacion": "En inglés el acento de la palabra puede cambiarlo todo. 'THIR-teen' (13) y 'thir-TY' (30) se confunden constantemente al oído, y eso te cuesta puntos en el listening del examen.",
+ "truco": "Los números 13-19 llevan el acento AL FINAL (thir-TEEN). Las decenas 20-90 lo llevan AL PRINCIPIO (THIR-ty).",
+ "ejemplos": [
+  {"palabra":"thirteen","pron":"zer-TIIN","es":"trece"},
+  {"palabra":"thirty","pron":"ZER-ti","es":"treinta"},
+  {"palabra":"fifteen","pron":"fif-TIIN","es":"quince"},
+  {"palabra":"fifty","pron":"FIF-ti","es":"cincuenta"}
+ ],
+ "pares": [
+  {"a":{"palabra":"thirteen","es":"trece (13)"},"b":{"palabra":"thirty","es":"treinta (30)"}},
+  {"a":{"palabra":"fifteen","es":"quince (15)"},"b":{"palabra":"fifty","es":"cincuenta (50)"}},
+  {"a":{"palabra":"sixteen","es":"dieciséis (16)"},"b":{"palabra":"sixty","es":"sesenta (60)"}}
+ ]
+},
+{
+ "id": "h-aspirada",
+ "titulo": "La H sí se pronuncia",
+ "dificultad": "En español es muda",
+ "explicacion": "En español la 'h' no suena ('hola' = 'ola'). En inglés SÍ suena, como un soplido suave — parecido a la jota pero mucho más suave.",
+ "truco": "Echa aire como si empañaras un vidrio: h-h-hello. Pero no exageres hasta que suene a 'jota' española.",
+ "ejemplos": [
+  {"palabra":"hello","pron":"je-LOU (soplo suave)","es":"hola"},
+  {"palabra":"house","pron":"JAUS (soplo suave)","es":"casa"},
+  {"palabra":"happy","pron":"JA-pi (soplo suave)","es":"feliz"},
+  {"palabra":"hour","pron":"AUR (aquí sí es muda)","es":"hora"}
+ ],
+ "pares": []
+},
+{
+ "id": "reducciones",
+ "titulo": "Cómo hablan de verdad",
+ "dificultad": "Clave para el listening",
+ "explicacion": "Los nativos comen sonidos al hablar rápido. Nunca escribas así, pero tienes que RECONOCERLO de oído o no entenderás nada en el examen.",
+ "truco": "Escucha estas formas hasta que te suenen normales. Es la diferencia entre entender y no entender una conversación real.",
+ "ejemplos": [
+  {"palabra":"going to","pron":"suena GO-na (gonna)","es":"voy a"},
+  {"palabra":"want to","pron":"suena UO-na (wanna)","es":"quiero"},
+  {"palabra":"I would like","pron":"suena aid-LAIK","es":"me gustaría"},
+  {"palabra":"what do you","pron":"suena UA-du-yu","es":"qué haces tú"}
+ ],
+ "pares": []
+}
+] }

@@ -1,4 +1,4 @@
-import type { VocabPack, GramaticaPack, ListeningPack, ReadingPack, WritingPack, Idioma, DialogoConTema } from '../types'
+import type { VocabPack, GramaticaPack, ListeningPack, ReadingPack, WritingPack, PronPack, Idioma, DialogoConTema } from '../types'
 import { IDIOMAS_ACTIVOS } from '../config'
 
 // Los data packs viven en /data (raíz). Se importan en build → quedan en el bundle
@@ -32,6 +32,11 @@ const readingModules = import.meta.glob('/data/reading/*-en.json', { eager: true
 const writingModules = import.meta.glob('/data/writing/*-en.json', { eager: true }) as Record<
   string,
   { default: WritingPack }
+>
+
+const pronModules = import.meta.glob('/data/pronunciacion/en.json', { eager: true }) as Record<
+  string,
+  { default: PronPack }
 >
 
 // Los packs de gramática/listening/reading/writing son POR IDIOMA (…-en.json / …-fr.json):
@@ -74,6 +79,13 @@ export function dialogosDe(pack: ListeningPack): DialogoConTema[] {
 
 export const readingPacks: ReadingPack[] = soloActivos<ReadingPack>(readingModules)
 export const writingPacks: WritingPack[] = soloActivos<WritingPack>(writingModules)
+
+// Pronunciación: un pack por idioma (hoy solo inglés). Transversal, no por tema.
+export const pronPacks: PronPack[] = Object.values(pronModules).map((m) => m.default)
+
+export function getPron(idioma: Idioma): PronPack | undefined {
+  return pronPacks.find((p) => p.idioma === idioma)
+}
 
 export function getReading(bloque: number, idioma: Idioma): ReadingPack | undefined {
   return readingPacks.find((p) => p.bloque === bloque && p.idioma === idioma)
