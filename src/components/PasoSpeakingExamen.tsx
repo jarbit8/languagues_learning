@@ -10,14 +10,17 @@ import Autoevaluacion from './Autoevaluacion'
 export default function PasoSpeakingExamen({
   tarea,
   tema,
+  meta,
   onDone
 }: {
   tarea: TareaSpeaking
   tema: number
+  /** Qué se decide con esta prueba; la IA cierra diciendo LISTO ✅ o AÚN NO ⏳. */
+  meta: string
   onDone: (nota: number) => void
 }) {
   const idioma = IDIOMAS_ACTIVOS[0]
-  const prompt = construirPromptTarea(idioma, tarea, vocabularioDesbloqueado(tema, idioma))
+  const prompt = construirPromptTarea(idioma, tarea, vocabularioDesbloqueado(tema, idioma), meta)
 
   const checklist = [
     'Respondí a lo que pedía la tarea, sin irme por las ramas',
@@ -39,7 +42,7 @@ export default function PasoSpeakingExamen({
 
       <CopiarPrompt
         prompt={prompt}
-        descripcion="Pega esto en una IA con voz (ChatGPT voz, Gemini Live...) para hacer la tarea hablando y recibir feedback. Si prefieres, hazla en voz alta por tu cuenta y autocalifícate abajo."
+        descripcion="Pega esto en una IA con voz (ChatGPT voz, Gemini Live...) para hacer la tarea hablando. Al final te dirá en español si estás LISTO ✅ o si AÚN NO ⏳, y qué te falta. Si prefieres, hazla en voz alta por tu cuenta y autocalifícate abajo."
       />
 
       <Autoevaluacion textoIntro="Cuando termines, autocalifícate:" checklist={checklist} onDone={onDone} />

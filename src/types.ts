@@ -67,6 +67,7 @@ export type TipoPregunta =
   | 'audio_escribir'
   | 'es_a_en'
   | 'es_a_fr'
+  | 'significado_escrito'
   | 'opcion_multiple'
   | 'hueco'
   | 'ordenar'
@@ -144,11 +145,16 @@ export interface FeedbackSpeaking {
   bien: string
   errores: ErrorSpeaking[]
   nota?: number
+  /** Solo en modo examen: si ya puede avanzar. `veredicto` explica en español por qué. */
+  listo?: boolean
+  veredicto?: string
 }
 
 // --- Bloques y nivel ---
 
 export interface NotasBloque {
+  vocab?: number
+  gramatica?: number
   listening?: number
   reading?: number
   writing?: number

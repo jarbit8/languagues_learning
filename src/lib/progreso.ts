@@ -77,9 +77,16 @@ export async function estadoExamenTema(tema: number): Promise<EstadoExamenTema> 
   }
 }
 
-// Registra el resultado del examen de tema. ≥80% aprueba y desbloquea el siguiente.
-export async function registrarExamenTema(tema: number, nota: number): Promise<boolean> {
-  const aprobado = nota >= 80
+// Registra el resultado del examen de tema. Hay que aprobar LAS DOS secciones con ≥80%:
+// con una nota global se podía desbloquear el tema con la gramática floja, porque las 20
+// preguntas de vocabulario pesaban más que las de gramática.
+export async function registrarExamenTema(
+  tema: number,
+  notaVocab: number,
+  notaGramatica: number
+): Promise<boolean> {
+  const aprobado = notaVocab >= 80 && notaGramatica >= 80
+  const nota = Math.round((notaVocab + notaGramatica) / 2)
   const pr = (await db.progresoTema.get(tema)) ?? baseProgreso(tema)
   pr.intentos = (pr.intentos ?? 0) + 1
   pr.notaExamenTema = Math.max(pr.notaExamenTema ?? 0, nota)
@@ -144,11 +151,12 @@ export async function registrarNotaBloque(
   const pr = (await db.progresoBloque.get(bloque)) ?? baseProgresoBloque(bloque)
   pr.notas = { ...(pr.notas ?? {}), [habilidad]: nota }
   const notas = pr.notas
-  const completo =
-    notas.listening !== undefined && notas.reading !== undefined && notas.writing !== undefined && notas.speaking !== undefined
+  // Las 6 secciones del bloque: vocabulario y gramática acumulados + las 4 destrezas.
+  const SECCIONES = ['vocab', 'gramatica', 'listening', 'reading', 'writing', 'speaking'] as const
+  const completo = SECCIONES.every((s) => notas[s] !== undefined)
   let aprobado = false
   if (completo) {
-    const promedio = ((notas.listening ?? 0) + (notas.reading ?? 0) + (notas.writing ?? 0) + (notas.speaking ?? 0)) / 4
+    const promedio = SECCIONES.reduce((suma, s) => suma + (notas[s] ?? 0), 0) / SECCIONES.length
     aprobado = promedio >= 75
     pr.intentos += 1
     if (aprobado) pr.estado = 'aprobado'

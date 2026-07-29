@@ -1,7 +1,7 @@
 import { db } from '../db'
 import { conceptoPorId } from '../data/packs'
 import { esHoy } from './fechas'
-import { baraja, preguntaDeConcepto } from './preguntas'
+import { baraja, preguntaSignificadoEscrito } from './preguntas'
 import type { Pregunta } from '../types'
 
 // IDs a evaluar: marcadas HOY aún no examinadas hoy + repasos SRS vencidos.
@@ -17,12 +17,14 @@ export async function idsExamenDiario(): Promise<string[]> {
   return [...ids]
 }
 
+// Un solo tipo de pregunta (decisión del usuario): ve la palabra en el idioma que estudia
+// y escribe su significado en español. Los exámenes de tema/bloque/final siguen variando tipos.
 export async function construirExamenDiario(): Promise<Pregunta[]> {
   const ids = await idsExamenDiario()
   const preguntas: Pregunta[] = []
   for (const id of baraja(ids)) {
     const encontrado = conceptoPorId(id)
-    if (encontrado) preguntas.push(preguntaDeConcepto(encontrado.concepto))
+    if (encontrado) preguntas.push(preguntaSignificadoEscrito(encontrado.concepto))
   }
   return preguntas
 }

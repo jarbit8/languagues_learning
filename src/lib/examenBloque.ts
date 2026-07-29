@@ -1,9 +1,26 @@
 import type { Pregunta, ListeningPack, ReadingPack, DialogoConTema, TextoConIdioma } from '../types'
 import { temasDeBloque } from './curriculum'
 import { IDIOMAS_ACTIVOS } from '../config'
-import { getListening, getReading, dialogosDe } from '../data/packs'
-import { preguntaDeListening } from './preguntas'
+import { getListening, getReading, getVocabPack, getGramatica, dialogosDe } from '../data/packs'
+import { preguntaDeListening, preguntaDeConcepto, preguntaDeEjercicio } from './preguntas'
 import { baraja } from './preguntas'
+
+// El examen de bloque cierra 6 temas, pero solo medía las 4 destrezas: no repasaba ni el
+// vocabulario ni la gramática acumulados, que es justo lo que se olvida entre bloques.
+// Estas dos secciones mezclan los 6 temas para forzar el repaso a largo plazo.
+export function construirVocabBloque(bloque: number, cuantas = 20): Pregunta[] {
+  const conceptos = temasDeBloque(bloque).flatMap((t) => getVocabPack(t)?.conceptos ?? [])
+  return baraja(conceptos).slice(0, cuantas).map(preguntaDeConcepto)
+}
+
+export function construirGramaticaBloque(bloque: number, cuantas = 15): Pregunta[] {
+  const ejercicios = temasDeBloque(bloque).flatMap((tema) =>
+    IDIOMAS_ACTIVOS.flatMap((idioma) =>
+      (getGramatica(tema, idioma)?.ejercicios ?? []).map((e) => preguntaDeEjercicio(e, idioma))
+    )
+  )
+  return baraja(ejercicios).slice(0, cuantas)
+}
 
 export interface SeccionListening {
   dialogos: DialogoConTema[]

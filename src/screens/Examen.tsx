@@ -14,7 +14,7 @@ import {
 } from '../lib/progreso'
 import { getVocabPack } from '../data/packs'
 import { construirExamenDiario, idsExamenDiario, marcarExaminadasHoy } from '../lib/examenDiario'
-import { construirExamenTema } from '../lib/examenTema'
+import { construirExamenTema, type ExamenTema } from '../lib/examenTema'
 import { registrarResultado } from '../lib/srs'
 import ExamRunner from '../components/ExamRunner'
 import ExamenBloque from './ExamenBloque'
@@ -23,10 +23,12 @@ import ExamenFinal from './ExamenFinal'
 type Vista =
   | { modo: 'hub' }
   | { modo: 'diario'; preguntas: Pregunta[] }
-  | { modo: 'tema'; tema: number; preguntas: Pregunta[] }
+  // El examen de tema son dos secciones seguidas, con nota propia cada una.
+  | { modo: 'tema'; tema: number; examen: ExamenTema; paso: 'vocab' | 'gramatica'; notaVocab?: number }
   | { modo: 'bloque'; bloque: number }
   | { modo: 'final' }
   | { modo: 'fin'; titulo: string; aciertos: number; total: number; nota?: string }
+  | { modo: 'finTema'; tema: number; notaVocab: number; notaGramatica: number; aprobado: boolean }
 
 async function actualizarSrs(p: Pregunta, acierto: boolean) {
   if (p.palabraId) await registrarResultado(p.palabraId, acierto)
@@ -57,7 +59,7 @@ export default function Examen() {
   }
 
   function iniciarTema(tema: number) {
-    setVista({ modo: 'tema', tema, preguntas: construirExamenTema(tema) })
+    setVista({ modo: 'tema', tema, examen: construirExamenTema(tema), paso: 'vocab' })
   }
 
   if (vista.modo === 'bloque') {
@@ -83,24 +85,67 @@ export default function Examen() {
   }
 
   if (vista.modo === 'tema') {
+    const enVocab = vista.paso === 'vocab'
+    const preguntas = enVocab ? vista.examen.vocab : vista.examen.gramatica
     return (
       <ExamRunner
-        preguntas={vista.preguntas}
-        etiqueta="Tema"
-        tiempoSegundos={vista.preguntas.length * 30}
+        // key: fuerza a ExamRunner a reiniciarse al pasar de una sección a la otra.
+        key={vista.paso}
+        preguntas={preguntas}
+        etiqueta={enVocab ? 'Tema · Vocabulario' : 'Tema · Gramática'}
+        tiempoSegundos={preguntas.length * 30}
         onAnswer={actualizarSrs}
         onFinish={async (aciertos, total) => {
           const pct = Math.round((aciertos / total) * 100)
-          const aprobado = await registrarExamenTema(vista.tema, pct)
-          setVista({
-            modo: 'fin',
-            titulo: 'Examen de tema',
-            aciertos,
-            total,
-            nota: aprobado ? 'aprobado' : 'reprobado'
-          })
+          if (enVocab) {
+            setVista({ ...vista, paso: 'gramatica', notaVocab: pct })
+            return
+          }
+          const notaVocab = vista.notaVocab ?? 0
+          const aprobado = await registrarExamenTema(vista.tema, notaVocab, pct)
+          setVista({ modo: 'finTema', tema: vista.tema, notaVocab, notaGramatica: pct, aprobado })
         }}
       />
+    )
+  }
+
+  if (vista.modo === 'finTema') {
+    const { notaVocab, notaGramatica, aprobado } = vista
+    const Seccion = ({ nombre, nota }: { nombre: string; nota: number }) => (
+      <div className="flex-1">
+        <p className="text-slate-500 dark:text-slate-400">{nombre}</p>
+        <p className={`text-2xl font-black ${nota >= 80 ? 'text-emerald-500' : 'text-rose-500'}`}>{nota}%</p>
+        <p className="text-xs text-slate-400">{nota >= 80 ? 'aprobada' : 'necesitas 80%'}</p>
+      </div>
+    )
+    return (
+      <div className="flex flex-col gap-4">
+        <h1 className="text-2xl font-bold">Examen de tema {vista.tema}</h1>
+        <div className="tarjeta flex gap-3 text-center">
+          <Seccion nombre="Vocabulario" nota={notaVocab} />
+          <div className="w-px bg-slate-200 dark:bg-slate-700" />
+          <Seccion nombre="Gramática" nota={notaGramatica} />
+        </div>
+        {aprobado ? (
+          <div className="tarjeta text-center">
+            <p className="font-bold text-emerald-600 dark:text-emerald-400">
+              ¡Aprobado! Siguiente tema desbloqueado 🎉
+            </p>
+          </div>
+        ) : (
+          <div className="tarjeta text-center text-sm text-slate-600 dark:text-slate-300">
+            <p className="font-semibold">Hay que aprobar las dos secciones con 80%.</p>
+            <p className="mt-1 text-slate-500 dark:text-slate-400">
+              {notaGramatica < 80
+                ? 'Repasa la lección de gramática del tema y vuelve a intentarlo; puedes repetir las veces que quieras.'
+                : 'Las palabras falladas volvieron al repaso. Puedes repetir cuando quieras.'}
+            </p>
+          </div>
+        )}
+        <button onClick={() => setVista({ modo: 'hub' })} className="btn-primary">
+          Volver a exámenes
+        </button>
+      </div>
     )
   }
 
@@ -177,7 +222,9 @@ export default function Examen() {
         <div className="flex-1">
           <p className="font-semibold">Examen de tema {info.tema}</p>
           {gt.disponible ? (
-            <p className="text-sm text-emerald-600 dark:text-emerald-400">Disponible · aprueba con 80%</p>
+            <p className="text-sm text-emerald-600 dark:text-emerald-400">
+              Disponible · vocabulario + gramática completa · 80% en cada una
+            </p>
           ) : (
             <p className="text-sm text-slate-500 dark:text-slate-400">
               Falta: {gt.faltaVocab ? `vocabulario (${gt.aprendidas}/${gt.total})` : ''}
@@ -201,7 +248,7 @@ export default function Examen() {
           <p className="font-semibold">Examen de bloque {info.bloque}</p>
           {gb.disponible ? (
             <p className="text-sm text-emerald-600 dark:text-emerald-400">
-              Disponible · 4 habilidades · aprueba con 75%
+              Disponible · 6 secciones · repaso de los 6 temas · aprueba con 75%
             </p>
           ) : (
             <p className="text-sm text-slate-500 dark:text-slate-400">

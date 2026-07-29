@@ -16,6 +16,7 @@ const TEXTO_LIBRE: Pregunta['tipo'][] = [
   'audio_escribir',
   'es_a_en',
   'es_a_fr',
+  'significado_escrito',
   'hueco',
   'corregir_error',
   'traducir',
@@ -78,7 +79,10 @@ export default function ExamRunner({
       aciertosRef.current += 1
     }
     onAnswer?.(p, bien)
-    if (p.idioma) hablar(p.respuesta.replace(/_/g, ' '), p.idioma)
+    // Cuando la respuesta se escribe en español, el refuerzo de audio es la palabra
+    // en el idioma que se estudia (audioTexto), no lo que tecleó el usuario.
+    const aLeer = p.tipo === 'significado_escrito' ? p.audioTexto : p.respuesta
+    if (aLeer && p.idioma) hablar(aLeer.replace(/_/g, ' '), p.idioma)
   }
 
   function siguiente() {
