@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react'
 import type { FeedbackSpeaking, Pregunta } from '../types'
 import { idiomaUnico } from '../config'
-import { construirVocabFinal, construirListeningFinal, construirReadingFinal } from '../lib/examenFinal'
+import { construirVocabFinal, construirGramaticaFinal, construirListeningFinal, construirReadingFinal } from '../lib/examenFinal'
 import { registrarResultado } from '../lib/srs'
 import { registrarExamenFinal } from '../lib/progreso'
 import { hayApiKey } from '../lib/apiKey'
@@ -12,7 +12,7 @@ import PasoWriting from '../components/PasoWriting'
 import PasoSpeakingExamen from '../components/PasoSpeakingExamen'
 import { tareaFinal } from '../data/tareasSpeaking'
 
-type Paso = 'intro' | 'vocab' | 'listening' | 'reading' | 'writing' | 'speaking' | 'resultado'
+type Paso = 'intro' | 'vocab' | 'gramatica' | 'listening' | 'reading' | 'writing' | 'speaking' | 'resultado'
 
 const CHECKLIST_SPEAKING = [
   'Puedo presentarme y hablar de mi vida',
@@ -29,10 +29,12 @@ async function onAnswerVocab(p: Pregunta, acierto: boolean) {
 export default function ExamenFinal({ onSalir }: { onSalir: () => void }) {
   const [paso, setPaso] = useState<Paso>('intro')
   const [notaVocab, setNotaVocab] = useState<number | null>(null)
+  const [notaGramatica, setNotaGramatica] = useState<number | null>(null)
   const [notasHab, setNotasHab] = useState<{ listening?: number; reading?: number; writing?: number; speaking?: number }>({})
   const [enPreguntas, setEnPreguntas] = useState(false)
 
   const vocabPreguntas = useMemo(() => construirVocabFinal(), [])
+  const gramaticaPreguntas = useMemo(() => construirGramaticaFinal(), [])
   const listening = useMemo(() => construirListeningFinal(), [])
   const reading = useMemo(() => construirReadingFinal(), [])
 
@@ -41,8 +43,11 @@ export default function ExamenFinal({ onSalir }: { onSalir: () => void }) {
       <div className="flex flex-col gap-4">
         <h1 className="text-2xl font-bold">Examen final A1</h1>
         <div className="tarjeta flex flex-col gap-2 text-sm">
-          <p>100 palabras aleatorias de todo el nivel + las 4 habilidades en versión extendida.</p>
-          <p>Corte: 85% en vocabulario y 80% en habilidades para certificar el nivel.</p>
+          <p>
+            100 palabras aleatorias de todo el nivel + {gramaticaPreguntas.length} ejercicios de gramática de los 24
+            temas + las 4 habilidades en versión extendida.
+          </p>
+          <p>Corte: 85% en vocabulario, 80% en gramática y 80% en habilidades para certificar el nivel.</p>
         </div>
         <button onClick={() => setPaso('vocab')} className="btn-primary">
           Empezar
@@ -54,12 +59,31 @@ export default function ExamenFinal({ onSalir }: { onSalir: () => void }) {
   if (paso === 'vocab') {
     return (
       <ExamRunner
+        // key: cada sección debe montar un ExamRunner NUEVO. Sin esto React reutiliza el mismo
+        // y conserva el índice de la sección anterior (ej. 99 de 100 palabras) contra un arreglo
+        // más corto → preguntas[99] undefined → pantalla en blanco.
+        key={paso}
         preguntas={vocabPreguntas}
         etiqueta="Vocabulario final"
         tiempoSegundos={vocabPreguntas.length * 20}
         onAnswer={onAnswerVocab}
         onFinish={(aciertos, total) => {
           setNotaVocab(Math.round((aciertos / total) * 100))
+          setPaso('gramatica')
+        }}
+      />
+    )
+  }
+
+  if (paso === 'gramatica') {
+    return (
+      <ExamRunner
+        key={paso}
+        preguntas={gramaticaPreguntas}
+        etiqueta="Gramática final"
+        tiempoSegundos={gramaticaPreguntas.length * 45}
+        onFinish={(aciertos, total) => {
+          setNotaGramatica(Math.round((aciertos / total) * 100))
           setPaso('listening')
         }}
       />
@@ -70,6 +94,7 @@ export default function ExamenFinal({ onSalir }: { onSalir: () => void }) {
     if (enPreguntas) {
       return (
         <ExamRunner
+          key={paso}
           preguntas={listening.preguntas}
           etiqueta="Listening final"
           tiempoSegundos={listening.preguntas.length * 30}
@@ -108,6 +133,7 @@ export default function ExamenFinal({ onSalir }: { onSalir: () => void }) {
     if (enPreguntas) {
       return (
         <ExamRunner
+          key={paso}
           preguntas={reading.preguntas}
           etiqueta="Reading final"
           tiempoSegundos={reading.preguntas.length * 40}
@@ -195,7 +221,7 @@ export default function ExamenFinal({ onSalir }: { onSalir: () => void }) {
     )
     return vals.length ? Math.round(vals.reduce((a, b) => a + b, 0) / vals.length) : 0
   })()
-  const aprobado = (notaVocab ?? 0) >= 85 && notaHabilidadesFinal >= 80
+  const aprobado = (notaVocab ?? 0) >= 85 && (notaGramatica ?? 0) >= 80 && notaHabilidadesFinal >= 80
   return (
     <div className="flex flex-col gap-4">
       <h1 className="text-2xl font-bold">Resultado — Examen final A1</h1>
@@ -203,8 +229,8 @@ export default function ExamenFinal({ onSalir }: { onSalir: () => void }) {
         <span className={`text-5xl font-black ${aprobado ? 'text-emerald-500' : 'text-rose-500'}`}>
           {aprobado ? '¡Certificado! 🎓' : 'Aún no'}
         </span>
-        <span className="text-slate-500 dark:text-slate-400">
-          Vocabulario {notaVocab}% · Habilidades {notaHabilidadesFinal}%
+        <span className="text-center text-slate-500 dark:text-slate-400">
+          Vocabulario {notaVocab}% · Gramática {notaGramatica}% · Habilidades {notaHabilidadesFinal}%
         </span>
       </div>
       {aprobado ? (
@@ -228,7 +254,7 @@ export default function ExamenFinal({ onSalir }: { onSalir: () => void }) {
       (n): n is number => n !== undefined
     )
     const notaHabilidades = vals.length ? Math.round(vals.reduce((a, b) => a + b, 0) / vals.length) : 0
-    await registrarExamenFinal(notaVocab ?? 0, notaHabilidades)
+    await registrarExamenFinal(notaVocab ?? 0, notaGramatica ?? 0, notaHabilidades)
     setPaso('resultado')
   }
 }

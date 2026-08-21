@@ -190,15 +190,20 @@ export async function getProgresoNivel(): Promise<ProgresoNivel | undefined> {
 }
 
 // Gate: 85% vocabulario, 80% habilidades → nivel certificado.
-export async function registrarExamenFinal(notaVocab: number, notaHabilidades: number): Promise<boolean> {
-  const aprobado = notaVocab >= 85 && notaHabilidades >= 80
+export async function registrarExamenFinal(
+  notaVocab: number,
+  notaGramatica: number,
+  notaHabilidades: number
+): Promise<boolean> {
+  const aprobado = notaVocab >= 85 && notaGramatica >= 80 && notaHabilidades >= 80
   const pr = (await db.progresoNivel.get('A1')) ?? baseProgresoNivel()
   pr.intentos += 1
   pr.notaVocab = Math.max(pr.notaVocab ?? 0, notaVocab)
+  pr.notaGramatica = Math.max(pr.notaGramatica ?? 0, notaGramatica)
   pr.notaHabilidades = Math.max(pr.notaHabilidades ?? 0, notaHabilidades)
   if (aprobado) pr.estado = 'aprobado'
   await db.progresoNivel.put(pr)
-  await registrarHistorial('final', 'A1', Math.round((notaVocab + notaHabilidades) / 2), aprobado)
+  await registrarHistorial('final', 'A1', Math.round((notaVocab + notaGramatica + notaHabilidades) / 3), aprobado)
   return aprobado
 }
 

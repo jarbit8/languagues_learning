@@ -67,7 +67,27 @@ export default function ExamRunner({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [tiempoSegundos])
 
+  // Red de seguridad: si el índice se sale del arreglo (por ejemplo si un examen reutiliza este
+// componente entre secciones de distinto tamaño), antes se leía preguntas[idx].tipo de undefined
+  // y la app quedaba en PANTALLA EN BLANCO. Mejor cerrar la sección que romperse.
   const p = preguntas[idx]
+  if (!p) {
+    return (
+      <div className="tarjeta flex flex-col gap-3">
+        <p className="text-sm text-slate-500 dark:text-slate-400">No hay más preguntas en esta sección.</p>
+        <button
+          onClick={() => {
+            if (finRef.current) return
+            finRef.current = true
+            onFinish(aciertos, preguntas.length || 1)
+          }}
+          className="btn-primary"
+        >
+          Continuar
+        </button>
+      </div>
+    )
+  }
   const esTexto = TEXTO_LIBRE.includes(p.tipo)
 
   function comprobar(valor: string) {

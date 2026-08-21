@@ -1,7 +1,7 @@
 import type { Pregunta, ListeningPack, ReadingPack, DialogoConTema, TextoConIdioma } from '../types'
-import { vocabPacks, getListening, getReading, dialogosDe } from '../data/packs'
+import { vocabPacks, getListening, getReading, getGramatica, dialogosDe } from '../data/packs'
 import { IDIOMAS_ACTIVOS } from '../config'
-import { baraja, preguntaDeConcepto, preguntaDeListening } from './preguntas'
+import { baraja, preguntaDeConcepto, preguntaDeListening, preguntaDeEjercicio } from './preguntas'
 
 // 100 palabras aleatorias de todo el nivel A1 (skill exam-engine: examen final).
 export function construirVocabFinal(): Pregunta[] {
@@ -9,6 +9,18 @@ export function construirVocabFinal(): Pregunta[] {
   return baraja(todos)
     .slice(0, 100)
     .map(preguntaDeConcepto)
+}
+
+// Gramática de TODO el nivel: mezcla los ejercicios de los 24 temas. El examen de bloque ya
+// repasa la gramática de sus 6 temas; sin esta sección el examen final certificaba el A1 sin
+// medir la gramática acumulada, que es justo lo que más se olvida.
+export function construirGramaticaFinal(cuantas = 20): Pregunta[] {
+  const ejercicios = vocabPacks.flatMap((p) =>
+    IDIOMAS_ACTIVOS.flatMap((idioma) =>
+      (getGramatica(p.tema, idioma)?.ejercicios ?? []).map((e) => preguntaDeEjercicio(e, idioma))
+    )
+  )
+  return baraja(ejercicios).slice(0, cuantas)
 }
 
 export interface SeccionListening {

@@ -172,6 +172,7 @@ export interface ProgresoNivel {
   id: string
   estado: EstadoTema
   notaVocab?: number
+  notaGramatica?: number
   notaHabilidades?: number
   intentos: number
 }
