@@ -1,0 +1,47 @@
+{
+ "tema": 9,
+ "idioma": "en",
+ "textos": [
+  {
+   "titulo": "Un día normal",
+   "texto": "Ana wakes up at six and she gets up. First she has a shower and she brushes her teeth. Then she gets dressed and she makes the bed. She has breakfast and she goes to work. She starts at eight and she finishes at two. Then she comes back and she has lunch. In the afternoon she does her homework and she studies. Sometimes she takes a nap, but not every day. In the evening she cooks and she cleans. Then she listens to music or she reads. On Saturday she goes out with her friends and they walk in the city. That day she goes to bed very late.",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué hace Ana primero al levantarse?",
+     "opciones": [
+      "has a shower",
+      "has breakfast",
+      "makes the bed"
+     ],
+     "respuesta": "has a shower"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Ana termina de trabajar a las dos.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "A Ana le gusta cocinar.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué hace el sábado?",
+     "opciones": [
+      "goes out with friends",
+      "works",
+      "takes a nap"
+     ],
+     "respuesta": "goes out with friends"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Ana duerme siesta todos los días.",
+     "respuesta": "falso"
+    }
+   ]
+  }
+ ]
+}

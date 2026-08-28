@@ -1,0 +1,47 @@
+{
+ "tema": 20,
+ "idioma": "en",
+ "textos": [
+  {
+   "titulo": "El tiempo libre",
+   "texto": "In her free time Ana loves music. She plays the guitar and she sings, but she says she does not sing well! On Saturday she goes swimming with Laura, because they like swimming a lot. Ana also likes running in the park when the weather is good. Paul plays football with his team every Sunday. He plays very well and he has a new ball. Laura hates football, but she loves tennis and she plays every week. In the evening they sometimes watch a film or they listen to music. Ana likes reading books too, and she paints when she is calm. Let us go to the cinema! says Paul. There is a good film today. It is fun to go out with friends. Ana wants to travel too: that is the hobby she loves.",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué instrumento toca Ana?",
+     "opciones": [
+      "the guitar",
+      "the piano",
+      "the violin"
+     ],
+     "respuesta": "the guitar"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "A Laura le gusta el fútbol.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "Ana toca la guitarra desde niña.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué hacen los sábados Ana y Laura?",
+     "opciones": [
+      "go swimming",
+      "play football",
+      "watch a film"
+     ],
+     "respuesta": "go swimming"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Paul juega fútbol los domingos.",
+     "respuesta": "verdadero"
+    }
+   ]
+  }
+ ]
+}

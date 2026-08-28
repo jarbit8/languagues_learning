@@ -1,0 +1,47 @@
+{
+ "tema": 12,
+ "idioma": "en",
+ "textos": [
+  {
+   "titulo": "Ropa para el invierno",
+   "texto": "In Peru, Ana never wears a big coat. In Canada, winter is not short and she needs one. On Saturday she goes with Laura to buy clothes. Ana tries on a black coat. It is elegant, but it is very expensive. Then she tries on a grey coat. This one is cheap and it is her size! She buys it. She also buys boots, gloves and a scarf. Laura buys a blue sweater and new sneakers. Now, in the morning Ana puts on her coat, her boots and her gloves. When she comes back, she takes off the coat and she wears her old sweater. Winter is not a problem now!",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué abrigo compra Ana?",
+     "opciones": [
+      "the grey one",
+      "the black one",
+      "the blue one"
+     ],
+     "respuesta": "the grey one"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "El abrigo negro es caro.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "Ana paga con tarjeta.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué compra Laura?",
+     "opciones": [
+      "a sweater and sneakers",
+      "a coat and boots",
+      "gloves and a scarf"
+     ],
+     "respuesta": "a sweater and sneakers"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "En Perú Ana usaba abrigo grande.",
+     "respuesta": "falso"
+    }
+   ]
+  }
+ ]
+}

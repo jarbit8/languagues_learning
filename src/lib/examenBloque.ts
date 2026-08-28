@@ -49,14 +49,15 @@ export interface SeccionReading {
   preguntas: Pregunta[]
 }
 
-// Reading del bloque, un texto por idioma activo (anuncio/email/horario/menú, formato IELTS/TEF).
-// Con un solo idioma usa sus DOS textos; con dos idiomas usa el primero de cada uno.
+// Reading del bloque: ahora las lecturas son POR TEMA, así que el examen toma las de dos temas
+// del bloque (formato IELTS/TEF: varios textos cortos con preguntas).
 export function construirReadingBloque(bloque: number): SeccionReading {
-  const packs = IDIOMAS_ACTIVOS.map((i) => getReading(bloque, i)).filter((p): p is ReadingPack => !!p)
-  const textos: TextoConIdioma[] =
-    packs.length === 1
-      ? packs[0].textos.map((t) => ({ ...t, idioma: packs[0].idioma }))
-      : packs.map((p) => ({ ...p.textos[0], idioma: p.idioma }))
+  const temas = temasDeBloque(bloque)
+  const fuente = [temas[2] ?? temas[0], temas[5] ?? temas[1] ?? temas[0]]
+  const packs = fuente
+    .flatMap((tema) => IDIOMAS_ACTIVOS.map((i) => getReading(tema, i)))
+    .filter((p): p is ReadingPack => !!p)
+  const textos: TextoConIdioma[] = packs.flatMap((p) => p.textos.map((t) => ({ ...t, idioma: p.idioma })))
   const preguntas = baraja(
     textos.flatMap((t) =>
       t.preguntas.map((p) =>

@@ -1,0 +1,47 @@
+{
+ "tema": 22,
+ "idioma": "en",
+ "textos": [
+  {
+   "titulo": "Un problema con el teléfono",
+   "texto": "Yesterday Ana had a problem. Her phone did not work. The battery was very low and the screen was black. She wanted to call her mother, but she could not. She was not happy. Last week she downloaded a new app and after that the phone was slow. She searched for help on the internet and she watched a video. Then she turned off the phone and she turned it on again. It worked! She was very happy. Ana sent a message to Laura: my phone is fine now! She also sent an email to her brother with a photo. He answered fast. Ana is on social media every day, but she does not like it a lot. She saves all her files and her photos, because last year she lost everything.",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué problema tenía el teléfono?",
+     "opciones": [
+      "the battery was low",
+      "it was old",
+      "she lost it"
+     ],
+     "respuesta": "the battery was low"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Ana apagó y encendió el teléfono.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "El teléfono de Ana es caro.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿A quién le mandó un correo?",
+     "opciones": [
+      "her brother",
+      "her mother",
+      "Laura"
+     ],
+     "respuesta": "her brother"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "El año pasado Ana perdió todo.",
+     "respuesta": "verdadero"
+    }
+   ]
+  }
+ ]
+}

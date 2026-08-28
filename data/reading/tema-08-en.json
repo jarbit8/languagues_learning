@@ -1,0 +1,46 @@
+{
+ "tema": 8,
+ "idioma": "en",
+ "textos": [
+  {
+   "titulo": "¿Qué hora es?",
+   "texto": "What time is it? It is half past six in the morning and Ana is always early. She is never late. Her work is from eight o'clock to two o'clock. At noon she is with Paul. In the afternoon she studies, usually at a quarter past four. In the evening she is often with Laura, and sometimes they are with friends. At midnight it is very late for Ana. In Peru it is two hours before. Now it is nine in the evening here, so in Peru it is soon eight. Her mother says: it is very late for you! Yes, but tomorrow is Saturday!",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿A qué hora empieza el trabajo de Ana?",
+     "opciones": [
+      "eight o'clock",
+      "half past six",
+      "a quarter past four"
+     ],
+     "respuesta": "eight o'clock"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Ana nunca llega tarde.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "Ana trabaja los sábados.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "anota_la_hora",
+     "enunciado": "¿A qué hora se levanta? (escribe la hora, ej. 6:30)",
+     "respuesta": "6:30",
+     "aceptadas": [
+      "half past six",
+      "630"
+     ]
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "En Perú es dos horas más tarde que en Canadá.",
+     "respuesta": "falso"
+    }
+   ]
+  }
+ ]
+}

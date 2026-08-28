@@ -1,0 +1,47 @@
+{
+ "tema": 10,
+ "idioma": "en",
+ "textos": [
+  {
+   "titulo": "El apartamento nuevo",
+   "texto": "Ana lives in a small apartment with Laura. There are three rooms: a kitchen, a bathroom and a bedroom. There is also a living room. In the living room there is a sofa, a table and two chairs. There is a lamp near the sofa. In the kitchen there is a fridge next to the window. Ana's bed is under the window and her wardrobe is between the bed and the door. There is a mirror on the wall. The apartment has a small balcony, but there is no garden and there is no garage. Ana always has her key with her. The apartment is not big, but it is very nice.",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Dónde está la nevera?",
+     "opciones": [
+      "next to the window",
+      "under the bed",
+      "near the sofa"
+     ],
+     "respuesta": "next to the window"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "El apartamento tiene jardín.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "El apartamento es caro.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Dónde está el armario?",
+     "opciones": [
+      "between the bed and the door",
+      "on the wall",
+      "in the kitchen"
+     ],
+     "respuesta": "between the bed and the door"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Hay un balcón pequeño.",
+     "respuesta": "verdadero"
+    }
+   ]
+  }
+ ]
+}

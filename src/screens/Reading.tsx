@@ -2,21 +2,21 @@ import { useState } from 'react'
 import { useLiveQuery } from 'dexie-react-hooks'
 import type { Idioma } from '../types'
 import { IDIOMAS_ACTIVOS, idiomaUnico, nombreIdioma } from '../config'
-import { bloqueEnCurso } from '../lib/progreso'
-import { getReading } from '../data/packs'
+import { temaEnCurso } from '../lib/progreso'
+import { getReading, getVocabPack } from '../data/packs'
 import { preguntaDeListening } from '../lib/preguntas'
 import ExamRunner from '../components/ExamRunner'
 
 export default function Reading() {
-  const bloqueActual = useLiveQuery(() => bloqueEnCurso(), [], 1) ?? 1
-  const [bloque, setBloque] = useState<number | null>(null)
+  const temaActual = useLiveQuery(() => temaEnCurso(), [], 1) ?? 1
+  const [tema, setTema] = useState<number | null>(null)
   const [idioma, setIdioma] = useState<Idioma>(IDIOMAS_ACTIVOS[0])
   const [examen, setExamen] = useState<number | null>(null)
   const [resultado, setResultado] = useState<{ aciertos: number; total: number } | null>(null)
 
-  const bloqueSel = bloque ?? bloqueActual
-  const pack = getReading(bloqueSel, idioma)
-  const bloquesDisponibles = Array.from({ length: bloqueActual }, (_, i) => i + 1)
+  const temaSel = tema ?? temaActual
+  const pack = getReading(temaSel, idioma)
+  const temasDisponibles = Array.from({ length: temaActual }, (_, i) => i + 1)
 
   function reset() {
     setExamen(null)
@@ -68,16 +68,16 @@ export default function Reading() {
     <div className="flex flex-col gap-4">
       <div className="flex gap-2">
         <select
-          value={bloqueSel}
+          value={temaSel}
           onChange={(e) => {
             reset()
-            setBloque(Number(e.target.value))
+            setTema(Number(e.target.value))
           }}
           className="flex-1 rounded-xl border border-slate-300 bg-white px-3 py-2 dark:border-slate-600 dark:bg-slate-900"
         >
-          {bloquesDisponibles.map((b) => (
-            <option key={b} value={b}>
-              Bloque {b} (temas {(b - 1) * 6 + 1}–{b * 6})
+          {temasDisponibles.map((t) => (
+            <option key={t} value={t}>
+              Tema {t} — {getVocabPack(t)?.titulo}
             </option>
           ))}
         </select>
@@ -108,7 +108,7 @@ export default function Reading() {
 
       {!pack ? (
         <p className="tarjeta text-slate-500 dark:text-slate-400">
-          Aún no hay lectura para el bloque {bloqueSel} en {nombreIdioma(idioma)}.
+          Aún no hay lectura para el tema {temaSel} en {nombreIdioma(idioma)}.
         </p>
       ) : (
         pack.textos.map((t, i) => (

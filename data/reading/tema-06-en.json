@@ -1,0 +1,47 @@
+{
+ "tema": 6,
+ "idioma": "en",
+ "textos": [
+  {
+   "titulo": "El trabajo de cada uno",
+   "texto": "Ana is a student. She studies and she works in an office two days a week. Her boss is very kind. Her father is an engineer and he works in a big company in Peru. Her mother is a nurse. Ana has an uncle. He is a cook, and her aunt is a teacher. Laura is a programmer. Paul is a doctor. He is not a student now. What is your job? Ana asks. I am a waiter, says her friend, but I want to be a lawyer.",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cuál es el trabajo de la madre de Ana?",
+     "opciones": [
+      "nurse",
+      "teacher",
+      "doctor"
+     ],
+     "respuesta": "nurse"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Ana trabaja en una oficina dos días por semana.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "Ana gana mucho dinero en su trabajo.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué quiere ser el amigo de Ana?",
+     "opciones": [
+      "a lawyer",
+      "a waiter",
+      "a cook"
+     ],
+     "respuesta": "a lawyer"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Paul todavía es estudiante.",
+     "respuesta": "falso"
+    }
+   ]
+  }
+ ]
+}

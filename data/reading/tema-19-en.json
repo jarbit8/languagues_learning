@@ -1,0 +1,47 @@
+{
+ "tema": 19,
+ "idioma": "en",
+ "textos": [
+  {
+   "titulo": "Ana no se siente bien",
+   "texto": "Today Ana is sick. She has a headache and she has a cold. Her head hurts and she has a cough. She also has a fever: it is thirty eight degrees. Laura says: you must go to the doctor. Ana goes to the hospital and the doctor asks: where does it hurt? My head and my back, says Ana. My eyes hurt too. The doctor has some medicine for her. You must sleep and drink a lot of water, he says. You must not go to work for two days. Ana comes back and she goes to bed. Her body is tired. She does not eat a lot: only soup. After two days she feels well again. Now she is healthy and she is happy. Her hands and her feet are cold, but she is fine!",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué le duele a Ana?",
+     "opciones": [
+      "her head and her back",
+      "her stomach and her legs",
+      "her arms and her neck"
+     ],
+     "respuesta": "her head and her back"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Ana tiene fiebre.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "La medicina es cara.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué le dice el médico que debe hacer?",
+     "opciones": [
+      "sleep and drink water",
+      "go to work",
+      "eat a lot"
+     ],
+     "respuesta": "sleep and drink water"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Ana está enferma una semana.",
+     "respuesta": "falso"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,42 @@
+{
+ "tema": 2,
+ "idioma": "en",
+ "textos": [
+  {
+   "titulo": "La ficha de Ana",
+   "texto": "Good morning! Excuse me, what is your name? My name is Ana. How old are you? I am twenty years old. Thank you. And your phone number? It is four, seven, two, nine, one, three, eight. Four seven two nine one three eight. Yes! And your birthday? It is in May. Very well, Ana. Thank you very much! You are welcome. See you soon!",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cuántos años tiene Ana?",
+     "opciones": [
+      "twenty",
+      "twelve",
+      "thirty"
+     ],
+     "respuesta": "twenty"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "El teléfono de Ana empieza con cuatro.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "Ana tiene hermanos.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿En qué mes es su cumpleaños? (en inglés)",
+     "respuesta": "may"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Ana no dice su número de teléfono.",
+     "respuesta": "falso"
+    }
+   ]
+  }
+ ]
+}

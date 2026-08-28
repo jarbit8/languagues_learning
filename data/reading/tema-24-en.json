@@ -1,0 +1,47 @@
+{
+ "tema": 24,
+ "idioma": "en",
+ "textos": [
+  {
+   "titulo": "Los planes de Ana",
+   "texto": "Ana has a lot of plans. Next year she is going to finish her degree, and then she is going to search a good job. She wants to work with computers, because it is her career and she likes it. She is also going to study more English, because it is important for her future. Maybe she will move to another city, but she is not sure. First she is going to pass her exams, and then she will see. Her dream is to live and work in the United States, so she is going to practise every day. It will not be easy, but she is brave and hardworking. I hope everything will change soon, she says. Her goal is important. Finally, she wants her family together again. What are your plans?",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué va a hacer el próximo año?",
+     "opciones": [
+      "finish her degree",
+      "move to another city",
+      "travel abroad"
+     ],
+     "respuesta": "finish her degree"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Ana está segura de que se mudará de ciudad.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "Ana ya tiene trabajo en Estados Unidos.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cuál es su sueño?",
+     "opciones": [
+      "live and work in the United States",
+      "travel to Peru",
+      "study French"
+     ],
+     "respuesta": "live and work in the United States"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Ana quiere volver a tener a su familia junta.",
+     "respuesta": "verdadero"
+    }
+   ]
+  }
+ ]
+}

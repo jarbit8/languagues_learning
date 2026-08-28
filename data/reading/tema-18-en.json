@@ -1,0 +1,47 @@
+{
+ "tema": 18,
+ "idioma": "en",
+ "textos": [
+  {
+   "titulo": "El clima aquí y allá",
+   "texto": "What is the weather like today? In Canada it is winter and it is very cold. There is a lot of snow and there is ice on the street. It is only two degrees! The sky is grey and cloudy, and there is no sun. Sometimes there is fog in the morning. In summer it is warm and sunny, and Ana goes to the lake with her friends. There are trees, flowers and a small forest near the lake. In Peru the weather is not the same: in Arequipa it is often sunny and it is not very cold. Ana misses the sea and the beach. Today it is windy and rainy here, so she is in her apartment. At night she can see the moon and the stars. Tomorrow there is a storm.",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cuántos grados hace?",
+     "opciones": [
+      "two",
+      "twelve",
+      "twenty"
+     ],
+     "respuesta": "two"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Hoy hay sol en Canadá.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "A Ana no le gusta el invierno.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué hay cerca del lago?",
+     "opciones": [
+      "trees and flowers",
+      "the sea and the beach",
+      "mountains and rivers"
+     ],
+     "respuesta": "trees and flowers"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Mañana habrá tormenta.",
+     "respuesta": "verdadero"
+    }
+   ]
+  }
+ ]
+}

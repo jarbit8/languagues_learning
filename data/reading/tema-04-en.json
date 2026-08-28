@@ -1,0 +1,47 @@
+{
+ "tema": 4,
+ "idioma": "en",
+ "textos": [
+  {
+   "titulo": "La familia de Ana",
+   "texto": "Ana has a big family in Peru. Her father is Jorge and her mother is Rosa. She has one brother and two sisters. Her brother is nine years old. Her sisters are twins! They are seventeen. Ana also has a grandmother in Peru. Her grandmother is eighty years old. Ana has an uncle, an aunt and four cousins too. Her uncle is married and he has two children. Ana is single. In Canada she lives with a friend, and they have a cat. The cat is Tom. Ana speaks with her family every week.",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cuántos hermanos tiene Ana en total?",
+     "opciones": [
+      "tres",
+      "dos",
+      "cuatro"
+     ],
+     "respuesta": "tres"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Las hermanas de Ana son gemelas.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "El padre de Ana es médico.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Con quién vive Ana en Canadá?",
+     "opciones": [
+      "a friend",
+      "her mother",
+      "her brother"
+     ],
+     "respuesta": "a friend"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Cómo se llama el gato?",
+     "respuesta": "tom"
+    }
+   ]
+  }
+ ]
+}

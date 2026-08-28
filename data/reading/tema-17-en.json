@@ -1,0 +1,47 @@
+{
+ "tema": 17,
+ "idioma": "en",
+ "textos": [
+  {
+   "titulo": "Cómo llegar",
+   "texto": "Excuse me, where is the museum? asks Mrs Lee. Ana has a map and she helps her. Take the bus number five, she says. The stop is on the corner, near the traffic light. It is not far. Then go straight and turn left at the bank. The museum is next to the post office. You can also go on foot: it is twenty minutes. Thank you very much! says Mrs Lee. Ana never drives a car in the city, because it is slow. She takes the metro or her bike. Her bike is fast and it is free! Paul has a motorbike and Laura takes the train to work. When they go far, they take a plane. Cross the street here, says Ana. And do not take a taxi: it is very expensive!",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué autobús debe tomar la mujer?",
+     "opciones": [
+      "number five",
+      "number two",
+      "number ten"
+     ],
+     "respuesta": "number five"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Ana conduce coche en la ciudad.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "La mujer es turista.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Dónde hay que girar a la izquierda?",
+     "opciones": [
+      "at the bank",
+      "at the museum",
+      "at the traffic light"
+     ],
+     "respuesta": "at the bank"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Laura va al trabajo en tren.",
+     "respuesta": "verdadero"
+    }
+   ]
+  }
+ ]
+}

@@ -43,16 +43,12 @@ export interface SeccionReading {
   preguntas: Pregunta[]
 }
 
-// Versión extendida: los bloques de lectura 1 y 3 en cada idioma activo. Con un solo idioma
-// usa los dos textos de cada bloque, para mantener el mismo número de lecturas.
+// Versión extendida: lecturas de 4 temas repartidos por todo el nivel (uno por bloque).
 export function construirReadingFinal(): SeccionReading {
-  const packs = [1, 3]
-    .flatMap((bloque) => IDIOMAS_ACTIVOS.map((i) => getReading(bloque, i)))
+  const packs = [4, 10, 16, 22]
+    .flatMap((tema) => IDIOMAS_ACTIVOS.map((i) => getReading(tema, i)))
     .filter((p): p is ReadingPack => !!p)
-  const textos: TextoConIdioma[] =
-    IDIOMAS_ACTIVOS.length === 1
-      ? packs.flatMap((p) => p.textos.map((t) => ({ ...t, idioma: p.idioma })))
-      : packs.map((p) => ({ ...p.textos[0], idioma: p.idioma }))
+  const textos: TextoConIdioma[] = packs.flatMap((p) => p.textos.map((t) => ({ ...t, idioma: p.idioma })))
   const preguntas = baraja(
     textos.flatMap((t) =>
       t.preguntas.map((p) =>

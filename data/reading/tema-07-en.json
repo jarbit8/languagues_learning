@@ -1,0 +1,47 @@
+{
+ "tema": 7,
+ "idioma": "en",
+ "textos": [
+  {
+   "titulo": "Los días de Ana",
+   "texto": "Ana works on Monday and on Wednesday. On Tuesday and on Thursday she studies. On Friday she is with her friends, and on the weekend she is with Laura. Her birthday is in May, in spring. Her brother's birthday is in December, in winter. In Canada, summer is short. In Peru, summer is in December. Today is Thursday. Tomorrow is Friday and Ana is happy! Next month is June, and in June her family comes to Canada. Every Sunday Ana speaks with her mother and with her grandmother. The day after tomorrow is Saturday.",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué días trabaja Ana?",
+     "opciones": [
+      "Monday and Wednesday",
+      "Tuesday and Thursday",
+      "Friday and Saturday"
+     ],
+     "respuesta": "Monday and Wednesday"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "El cumpleaños de Ana es en primavera.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "Su familia viene en avión.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué día es hoy?",
+     "opciones": [
+      "Thursday",
+      "Friday",
+      "Sunday"
+     ],
+     "respuesta": "Thursday"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "En Canadá el verano es corto.",
+     "respuesta": "verdadero"
+    }
+   ]
+  }
+ ]
+}

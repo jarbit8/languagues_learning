@@ -1,0 +1,50 @@
+{
+ "tema": 1,
+ "idioma": "en",
+ "textos": [
+  {
+   "titulo": "El primer día",
+   "texto": "Good morning! My name is Ana. Nice to meet you. Hello Ana! My name is Paul. How are you? I am fine, thank you. And you? Very well, thanks! Welcome, Ana. Thank you, Paul. Excuse me, Mr Lee is here. Good afternoon, Mr Lee! Good afternoon. See you tomorrow, Ana. Goodbye, Paul. Have a nice day!",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cómo está Paul?",
+     "opciones": [
+      "fine",
+      "very well",
+      "sad"
+     ],
+     "respuesta": "very well"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Ana y Paul se saludan por la mañana.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "Paul es profesor.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Quién llega después?",
+     "opciones": [
+      "Mr Lee",
+      "Mrs Lee",
+      "Miss Ana"
+     ],
+     "respuesta": "Mr Lee"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Cómo se despide Paul de Ana?",
+     "respuesta": "see you tomorrow",
+     "aceptadas": [
+      "goodbye"
+     ]
+    }
+   ]
+  }
+ ]
+}

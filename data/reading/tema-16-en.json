@@ -1,0 +1,47 @@
+{
+ "tema": 16,
+ "idioma": "en",
+ "textos": [
+  {
+   "titulo": "Su ciudad",
+   "texto": "Ana likes her city. In the city centre there is a big square with a park. Near the park there is a museum and a theatre. You can visit the museum on Sunday, because it is open. On Monday it is closed. There is also a library, and Ana studies there when she is not in her apartment. The hospital is far from her house, but the pharmacy is very near. There is a bank next to the post office, and a café on the street. Ana often has a coffee there with Laura. The station is not far from the city centre and the airport is far. There is a bridge and a stadium too. It is a nice place to live.",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cuándo se puede visitar el museo?",
+     "opciones": [
+      "on Sunday",
+      "on Monday",
+      "every day"
+     ],
+     "respuesta": "on Sunday"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "La farmacia está muy cerca.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "El museo es gratis.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Dónde estudia Ana cuando su apartamento no está tranquilo?",
+     "opciones": [
+      "the library",
+      "the café",
+      "the park"
+     ],
+     "respuesta": "the library"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "El aeropuerto está cerca del centro.",
+     "respuesta": "falso"
+    }
+   ]
+  }
+ ]
+}

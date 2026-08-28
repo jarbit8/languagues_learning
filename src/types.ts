@@ -204,7 +204,7 @@ export interface TextoReading {
 }
 
 export interface ReadingPack {
-  bloque: number
+  tema: number
   idioma: Idioma
   textos: TextoReading[]
 }

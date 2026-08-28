@@ -1,0 +1,47 @@
+{
+ "tema": 3,
+ "idioma": "en",
+ "textos": [
+  {
+   "titulo": "¿De dónde eres?",
+   "texto": "Ana is Peruvian. She comes from Peru, a country in America. Now she lives in Canada. Canada is a very big country and it is not in Europe. Ana speaks Spanish and English. She speaks French too, because in Canada French is a language too. Paul is Canadian. He was born in a small city. He speaks English and French. Ana is a foreigner in Canada, but she is happy here. Where are you from? I am from Peru, she says. And you? I am from here!",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿De dónde viene Ana?",
+     "opciones": [
+      "Peru",
+      "Canada",
+      "France"
+     ],
+     "respuesta": "Peru"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Canadá está en Europa.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "Ana quiere volver al Perú.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué idiomas habla Paul?",
+     "opciones": [
+      "English and French",
+      "Spanish and English",
+      "only English"
+     ],
+     "respuesta": "English and French"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Ana nació en Canadá.",
+     "respuesta": "falso"
+    }
+   ]
+  }
+ ]
+}

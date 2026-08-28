@@ -1,0 +1,45 @@
+{
+ "tema": 15,
+ "idioma": "en",
+ "textos": [
+  {
+   "titulo": "En el mercado",
+   "texto": "On Saturday morning Ana goes to the market with her shopping list. The market is near her apartment and the prices are cheap. How much is it? she asks. Two dollars, says the seller. Ana buys a lot of vegetables and a little fruit. Then she goes to the supermarket, because she needs milk and bread. At the checkout she pays with her card, but sometimes she pays in cash. The customer before her pays with coins and banknotes. Today there is a discount on cheese: it is on sale! Ana buys some and she is happy. She does not spend a lot of money: she only spends fifteen dollars. She takes her receipt and her change. In Peru the market is not the same, but she likes this one too.",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Con qué paga Ana en el supermercado?",
+     "opciones": [
+      "her card",
+      "cash",
+      "coins"
+     ],
+     "respuesta": "her card"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Hay descuento en el queso.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "El mercado abre a las ocho.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Cuánto dinero gasta? (solo el número)",
+     "respuesta": "15",
+     "aceptadas": [
+      "fifteen"
+     ]
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "El mercado está lejos de su apartamento.",
+     "respuesta": "falso"
+    }
+   ]
+  }
+ ]
+}

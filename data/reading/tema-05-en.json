@@ -1,0 +1,47 @@
+{
+ "tema": 5,
+ "idioma": "en",
+ "textos": [
+  {
+   "titulo": "Así son ellos",
+   "texto": "Ana is short and thin. She has curly hair and big eyes. She is very kind and hardworking, but she is shy with new friends. Her friend Laura is not shy. Laura is tall and she has blond hair. Laura is very funny and friendly. Ana has a brother. He is small and he is nine. He is smart but he is lazy: he is always tired in the morning. Her grandmother is old now, but she is strong and calm. Ana says her family is beautiful, and she is happy when she speaks with them.",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cómo es el pelo de Ana?",
+     "opciones": [
+      "curly",
+      "blond",
+      "short"
+     ],
+     "respuesta": "curly"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Laura es tímida.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "Laura es canadiense.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cómo es el hermano de Ana?",
+     "opciones": [
+      "smart but lazy",
+      "tall and strong",
+      "shy and calm"
+     ],
+     "respuesta": "smart but lazy"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "La abuela de Ana es fuerte y tranquila.",
+     "respuesta": "verdadero"
+    }
+   ]
+  }
+ ]
+}

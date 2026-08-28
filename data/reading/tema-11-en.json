@@ -1,0 +1,47 @@
+{
+ "tema": 11,
+ "idioma": "en",
+ "textos": [
+  {
+   "titulo": "Lo que hay en la mochila",
+   "texto": "Ana has a green bag and she takes it every day. In the bag there is a black computer, a red notebook and two pens. There is a blue pencil too. Her phone is white and it is always in the bag. She also has her keys, her wallet with her money, and her glasses. Sometimes there is an umbrella in the bag. Her watch is not in the bag: it is on the table, near the lamp. Look, this is my bag, says Ana, and these are my books. And what is that? asks Laura. That is my brown notebook. It is old, but I like it.",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿De qué color es la mochila de Ana?",
+     "opciones": [
+      "green",
+      "red",
+      "black"
+     ],
+     "respuesta": "green"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "El teléfono de Ana es blanco.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "La computadora es nueva.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Dónde está su reloj?",
+     "opciones": [
+      "on the table",
+      "in the bag",
+      "in her wallet"
+     ],
+     "respuesta": "on the table"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿De qué color es el cuaderno viejo?",
+     "respuesta": "brown"
+    }
+   ]
+  }
+ ]
+}

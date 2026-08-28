@@ -1,0 +1,47 @@
+{
+ "tema": 23,
+ "idioma": "en",
+ "textos": [
+  {
+   "titulo": "El viaje del año pasado",
+   "texto": "Last year Ana went to the United States. It was her first trip there. She took a plane from Canada and the flight was three hours. At the airport she had her passport and her visa, and she passed through customs and immigration. She had one suitcase and a small bag. She stayed in a hotel for six days. Her room was small but it was cheap, and the booking was easy. She visited museums and she walked a lot in the city. She met new people and she practised her English every day. She bought a souvenir for her mother. The departure was at seven in the morning and the arrival in Canada was at noon. It was a very good stay. Next year she wants to travel abroad again, but for more days.",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cuántos días se quedó en el hotel?",
+     "opciones": [
+      "six",
+      "three",
+      "seven"
+     ],
+     "respuesta": "six"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Fue su primer viaje a Estados Unidos.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "Viajó con una amiga.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué compró para su madre?",
+     "opciones": [
+      "a souvenir",
+      "a suitcase",
+      "a ticket"
+     ],
+     "respuesta": "a souvenir"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "El vuelo duró seis horas.",
+     "respuesta": "falso"
+    }
+   ]
+  }
+ ]
+}

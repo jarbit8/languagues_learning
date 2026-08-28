@@ -87,8 +87,10 @@ export function getPron(idioma: Idioma): PronPack | undefined {
   return pronPacks.find((p) => p.idioma === idioma)
 }
 
-export function getReading(bloque: number, idioma: Idioma): ReadingPack | undefined {
-  return readingPacks.find((p) => p.bloque === bloque && p.idioma === idioma)
+// Lectura POR TEMA (2026-07-25): antes era por bloque. Una lectura por tema para que el estudio
+// diario cubra las 5 habilidades del mismo tema.
+export function getReading(tema: number, idioma: Idioma): ReadingPack | undefined {
+  return readingPacks.find((p) => p.tema === tema && p.idioma === idioma)
 }
 
 export function getWriting(bloque: number, idioma: Idioma): WritingPack | undefined {

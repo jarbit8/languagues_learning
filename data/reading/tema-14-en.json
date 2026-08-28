@@ -1,0 +1,47 @@
+{
+ "tema": 14,
+ "idioma": "en",
+ "textos": [
+  {
+   "titulo": "Una noche en el restaurante",
+   "texto": "It is Friday and Ana is in a restaurant with Paul and Laura. The waiter comes with the menu. Good evening! What would you like to drink? I would like water, please, says Ana. I am very thirsty. Paul wants a coffee and Laura orders a juice. Then they order the food. Ana would like fish with vegetables. Paul is very hungry and he orders chicken with rice. Laura wants a salad, because she is not very hungry. The food is hot and delicious. There is a fork, a knife and a spoon on every plate, and a napkin too. For dessert, Ana orders ice cream. It is cold and sweet! At the end, Paul asks for the bill and they leave a tip. The waiter says: thank you, good night!",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué bebe Ana?",
+     "opciones": [
+      "water",
+      "coffee",
+      "juice"
+     ],
+     "respuesta": "water"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Paul tiene mucha hambre.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "El restaurante es caro.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué pide Ana de postre?",
+     "opciones": [
+      "ice cream",
+      "fruit",
+      "coffee"
+     ],
+     "respuesta": "ice cream"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "No dejan propina.",
+     "respuesta": "falso"
+    }
+   ]
+  }
+ ]
+}
