@@ -1,159 +1,777 @@
-{ "idioma": "en", "grupos": [
 {
- "id": "th",
- "titulo": "El sonido TH",
- "dificultad": "No existe en español",
- "explicacion": "El inglés tiene dos sonidos 'th' y ninguno existe en español. Los hispanohablantes los cambian por 's', 'f', 'z' o 'd', y eso hace que 'think' suene como 'sink' (hundirse).",
- "truco": "Saca un poquito la lengua entre los dientes y sopla. Si tu lengua no toca los dientes, no es 'th'.",
- "ejemplos": [
-  {"palabra":"think","pron":"ZINK (lengua fuera)","es":"pensar"},
-  {"palabra":"three","pron":"ZRI (lengua fuera)","es":"tres"},
-  {"palabra":"this","pron":"DIS (lengua fuera, vibrando)","es":"este"},
-  {"palabra":"mother","pron":"MA-der (lengua fuera)","es":"madre"}
- ],
- "pares": [
-  {"a":{"palabra":"think","es":"pensar"},"b":{"palabra":"sink","es":"hundirse"}},
-  {"a":{"palabra":"three","es":"tres"},"b":{"palabra":"tree","es":"árbol"}},
-  {"a":{"palabra":"mouth","es":"boca"},"b":{"palabra":"mouse","es":"ratón"}},
-  {"a":{"palabra":"thin","es":"delgado"},"b":{"palabra":"fin","es":"aleta"}}
+ "idioma": "en",
+ "grupos": [
+  {
+   "id": "th",
+   "titulo": "El sonido TH",
+   "dificultad": "No existe en español",
+   "explicacion": "El inglés tiene dos sonidos 'th' y ninguno existe en español. Los hispanohablantes los cambian por 's', 'f', 'z' o 'd', y eso hace que 'think' suene como 'sink' (hundirse).",
+   "truco": "Saca un poquito la lengua entre los dientes y sopla. Si tu lengua no toca los dientes, no es 'th'.",
+   "ejemplos": [
+    {
+     "palabra": "think",
+     "pron": "ZINK (lengua fuera)",
+     "es": "pensar"
+    },
+    {
+     "palabra": "three",
+     "pron": "ZRI (lengua fuera)",
+     "es": "tres"
+    },
+    {
+     "palabra": "this",
+     "pron": "DIS (lengua fuera, vibrando)",
+     "es": "este"
+    },
+    {
+     "palabra": "mother",
+     "pron": "MA-der (lengua fuera)",
+     "es": "madre"
+    }
+   ],
+   "pares": [
+    {
+     "a": {
+      "palabra": "think",
+      "es": "pensar"
+     },
+     "b": {
+      "palabra": "sink",
+      "es": "hundirse"
+     }
+    },
+    {
+     "a": {
+      "palabra": "three",
+      "es": "tres"
+     },
+     "b": {
+      "palabra": "tree",
+      "es": "árbol"
+     }
+    },
+    {
+     "a": {
+      "palabra": "mouth",
+      "es": "boca"
+     },
+     "b": {
+      "palabra": "mouse",
+      "es": "ratón"
+     }
+    },
+    {
+     "a": {
+      "palabra": "thin",
+      "es": "delgado"
+     },
+     "b": {
+      "palabra": "fin",
+      "es": "aleta"
+     }
+    }
+   ]
+  },
+  {
+   "id": "vocal-ae",
+   "titulo": "La vocal de CAT",
+   "dificultad": "No existe en español",
+   "explicacion": "El inglés tiene una vocal entre la 'a' y la 'e' que en español no existe. Por eso 'cat' (gato), 'cut' (cortar) y 'cot' (cuna) nos suenan casi igual, pero para un nativo son tres palabras distintas.",
+   "truco": "Pon la boca como para decir 'a' pero estira los labios a los lados como si sonrieras. Sale un sonido a medio camino entre 'a' y 'e'.",
+   "ejemplos": [
+    {
+     "palabra": "cat",
+     "pron": "KAET (boca ancha)",
+     "es": "gato"
+    },
+    {
+     "palabra": "bad",
+     "pron": "BAED (boca ancha)",
+     "es": "malo"
+    },
+    {
+     "palabra": "happy",
+     "pron": "JAE-pi",
+     "es": "feliz"
+    },
+    {
+     "palabra": "apple",
+     "pron": "AE-pel",
+     "es": "manzana"
+    }
+   ],
+   "pares": [
+    {
+     "a": {
+      "palabra": "cat",
+      "es": "gato"
+     },
+     "b": {
+      "palabra": "cut",
+      "es": "cortar"
+     }
+    },
+    {
+     "a": {
+      "palabra": "bad",
+      "es": "malo"
+     },
+     "b": {
+      "palabra": "bed",
+      "es": "cama"
+     }
+    },
+    {
+     "a": {
+      "palabra": "man",
+      "es": "hombre"
+     },
+     "b": {
+      "palabra": "men",
+      "es": "hombres"
+     }
+    },
+    {
+     "a": {
+      "palabra": "hat",
+      "es": "sombrero"
+     },
+     "b": {
+      "palabra": "hot",
+      "es": "caliente"
+     }
+    }
+   ]
+  },
+  {
+   "id": "vocal-larga",
+   "titulo": "Vocales largas y cortas",
+   "dificultad": "El español tiene 5 vocales, el inglés 12",
+   "explicacion": "En inglés la DURACIÓN de la vocal cambia la palabra. 'Ship' (barco) y 'sheep' (oveja) se escriben casi igual pero son palabras distintas. Los hispanohablantes las pronunciamos iguales.",
+   "truco": "La vocal larga se estira casi el doble: shiiip. La corta es un golpe seco: ship.",
+   "ejemplos": [
+    {
+     "palabra": "sheep",
+     "pron": "SHIIP (larga)",
+     "es": "oveja"
+    },
+    {
+     "palabra": "ship",
+     "pron": "SHIP (corta)",
+     "es": "barco"
+    },
+    {
+     "palabra": "eat",
+     "pron": "IIT (larga)",
+     "es": "comer"
+    },
+    {
+     "palabra": "it",
+     "pron": "IT (corta)",
+     "es": "eso"
+    }
+   ],
+   "pares": [
+    {
+     "a": {
+      "palabra": "sheep",
+      "es": "oveja"
+     },
+     "b": {
+      "palabra": "ship",
+      "es": "barco"
+     }
+    },
+    {
+     "a": {
+      "palabra": "eat",
+      "es": "comer"
+     },
+     "b": {
+      "palabra": "it",
+      "es": "eso"
+     }
+    },
+    {
+     "a": {
+      "palabra": "leave",
+      "es": "irse"
+     },
+     "b": {
+      "palabra": "live",
+      "es": "vivir"
+     }
+    },
+    {
+     "a": {
+      "palabra": "feel",
+      "es": "sentir"
+     },
+     "b": {
+      "palabra": "fill",
+      "es": "llenar"
+     }
+    }
+   ]
+  },
+  {
+   "id": "b-v",
+   "titulo": "B y V son distintas",
+   "dificultad": "En español suenan igual",
+   "explicacion": "En español 'baca' y 'vaca' suenan idéntico. En inglés NO: la 'v' se hace con los dientes sobre el labio de abajo, la 'b' juntando los dos labios.",
+   "truco": "Para la 'v', muerde suavemente tu labio inferior y haz vibrar. Para la 'b', junta los labios como en español.",
+   "ejemplos": [
+    {
+     "palabra": "very",
+     "pron": "VE-ri (dientes en el labio)",
+     "es": "muy"
+    },
+    {
+     "palabra": "visit",
+     "pron": "VI-sit (dientes en el labio)",
+     "es": "visitar"
+    },
+    {
+     "palabra": "book",
+     "pron": "BUK (labios juntos)",
+     "es": "libro"
+    }
+   ],
+   "pares": [
+    {
+     "a": {
+      "palabra": "very",
+      "es": "muy"
+     },
+     "b": {
+      "palabra": "berry",
+      "es": "baya"
+     }
+    },
+    {
+     "a": {
+      "palabra": "vest",
+      "es": "chaleco"
+     },
+     "b": {
+      "palabra": "best",
+      "es": "el mejor"
+     }
+    },
+    {
+     "a": {
+      "palabra": "vote",
+      "es": "votar"
+     },
+     "b": {
+      "palabra": "boat",
+      "es": "barco"
+     }
+    }
+   ]
+  },
+  {
+   "id": "w-v",
+   "titulo": "W y V son distintas",
+   "dificultad": "Confusión clásica",
+   "explicacion": "La 'w' se hace SOLO con los labios redondeados, sin tocar los dientes (como la 'u' de 'hueso'). La 'v' se hace con los dientes sobre el labio. Muchos hispanohablantes pronuncian las dos igual.",
+   "truco": "Para 'w' pon boca de beso y no toques nada con los dientes. Para 'v' muerde suave el labio de abajo.",
+   "ejemplos": [
+    {
+     "palabra": "water",
+     "pron": "UO-ter (boca de beso)",
+     "es": "agua"
+    },
+    {
+     "palabra": "work",
+     "pron": "UERK (boca de beso)",
+     "es": "trabajar"
+    },
+    {
+     "palabra": "very",
+     "pron": "VE-ri (dientes al labio)",
+     "es": "muy"
+    }
+   ],
+   "pares": [
+    {
+     "a": {
+      "palabra": "west",
+      "es": "oeste"
+     },
+     "b": {
+      "palabra": "vest",
+      "es": "chaleco"
+     }
+    },
+    {
+     "a": {
+      "palabra": "wine",
+      "es": "vino"
+     },
+     "b": {
+      "palabra": "vine",
+      "es": "enredadera"
+     }
+    }
+   ]
+  },
+  {
+   "id": "sh-ch",
+   "titulo": "SH y CH son distintas",
+   "dificultad": "En español solo existe CH",
+   "explicacion": "El español solo tiene el sonido 'ch' (chico). El inglés además tiene 'sh', que es un soplido continuo sin el golpe inicial. Los hispanohablantes decimos 'ch' para las dos y confundimos 'ship' (barco) con 'chip' (papa frita).",
+   "truco": "'sh' = el sonido de mandar callar, shhh, aire continuo. 'ch' = empieza con un golpecito de lengua, como en 'chico'.",
+   "ejemplos": [
+    {
+     "palabra": "she",
+     "pron": "SHII (soplido)",
+     "es": "ella"
+    },
+    {
+     "palabra": "shop",
+     "pron": "SHOP (soplido)",
+     "es": "tienda"
+    },
+    {
+     "palabra": "chair",
+     "pron": "CHER (con golpe)",
+     "es": "silla"
+    },
+    {
+     "palabra": "watch",
+     "pron": "UACH (con golpe)",
+     "es": "reloj"
+    }
+   ],
+   "pares": [
+    {
+     "a": {
+      "palabra": "ship",
+      "es": "barco"
+     },
+     "b": {
+      "palabra": "chip",
+      "es": "papa frita"
+     }
+    },
+    {
+     "a": {
+      "palabra": "share",
+      "es": "compartir"
+     },
+     "b": {
+      "palabra": "chair",
+      "es": "silla"
+     }
+    },
+    {
+     "a": {
+      "palabra": "wash",
+      "es": "lavar"
+     },
+     "b": {
+      "palabra": "watch",
+      "es": "reloj"
+     }
+    }
+   ]
+  },
+  {
+   "id": "r-inglesa",
+   "titulo": "La R inglesa no vibra",
+   "dificultad": "La R española delata al hispanohablante",
+   "explicacion": "En español la 'r' vibra: la lengua golpea el paladar (pero, perro). En inglés la lengua NUNCA toca nada: se curva hacia atrás y se queda quieta. Si vibras la r, suenas fuertemente a español.",
+   "truco": "Di 'red' pero deja la lengua flotando en el aire, sin tocar el paladar. Debe sonar casi como una 'u' rara al empezar.",
+   "ejemplos": [
+    {
+     "palabra": "red",
+     "pron": "RED (lengua sin tocar)",
+     "es": "rojo"
+    },
+    {
+     "palabra": "read",
+     "pron": "RIID (lengua sin tocar)",
+     "es": "leer"
+    },
+    {
+     "palabra": "restaurant",
+     "pron": "RES-to-rant",
+     "es": "restaurante"
+    },
+    {
+     "palabra": "very",
+     "pron": "VE-ri (r suave)",
+     "es": "muy"
+    }
+   ],
+   "pares": []
+  },
+  {
+   "id": "h-aspirada",
+   "titulo": "La H sí se pronuncia",
+   "dificultad": "En español es muda",
+   "explicacion": "En español la 'h' no suena ('hola' = 'ola'). En inglés SÍ suena, como un soplido suave — parecido a la jota pero mucho más suave.",
+   "truco": "Echa aire como si empañaras un vidrio: h-h-hello. Pero no exageres hasta que suene a 'jota' española.",
+   "ejemplos": [
+    {
+     "palabra": "hello",
+     "pron": "je-LOU (soplo suave)",
+     "es": "hola"
+    },
+    {
+     "palabra": "house",
+     "pron": "JAUS (soplo suave)",
+     "es": "casa"
+    },
+    {
+     "palabra": "happy",
+     "pron": "JA-pi (soplo suave)",
+     "es": "feliz"
+    },
+    {
+     "palabra": "hour",
+     "pron": "AUR (aquí sí es muda)",
+     "es": "hora"
+    }
+   ],
+   "pares": []
+  },
+  {
+   "id": "s-inicial",
+   "titulo": "No pongas 'e' antes de la S",
+   "dificultad": "Error clásico del español",
+   "explicacion": "En español ninguna palabra empieza con s + consonante, por eso decimos 'escuela', 'España'. Al hablar inglés metemos esa 'e' sin querer: 'eschool', 'estudent'. Se nota muchísimo.",
+   "truco": "Arranca directo con la S, alargándola un poco: ssschool. Nunca 'e-school'.",
+   "ejemplos": [
+    {
+     "palabra": "school",
+     "pron": "SKUUL (no 'eskul')",
+     "es": "escuela"
+    },
+    {
+     "palabra": "student",
+     "pron": "STIU-dent (no 'estudent')",
+     "es": "estudiante"
+    },
+    {
+     "palabra": "Spain",
+     "pron": "SPEIN (no 'espein')",
+     "es": "España"
+    },
+    {
+     "palabra": "stop",
+     "pron": "STOP (no 'estop')",
+     "es": "parar"
+    }
+   ],
+   "pares": []
+  },
+  {
+   "id": "consonante-final",
+   "titulo": "No te comas la consonante final",
+   "dificultad": "En español casi no cerramos",
+   "explicacion": "En español las palabras casi siempre acaban en vocal, así que tendemos a comernos la consonante final en inglés: decimos 'an' en vez de 'and', 'nex' en vez de 'next'. Eso cambia la palabra o la hace incomprensible.",
+   "truco": "Cierra bien la última consonante, aunque sea suave. No hace falta exagerar, pero sí que se note.",
+   "ejemplos": [
+    {
+     "palabra": "and",
+     "pron": "AND (cierra la d)",
+     "es": "y"
+    },
+    {
+     "palabra": "cold",
+     "pron": "KOULD (cierra la d)",
+     "es": "frío"
+    },
+    {
+     "palabra": "friend",
+     "pron": "FREND (cierra la d)",
+     "es": "amigo"
+    },
+    {
+     "palabra": "next",
+     "pron": "NEKST (cierra kst)",
+     "es": "próximo"
+    }
+   ],
+   "pares": []
+  },
+  {
+   "id": "grupos-consonantes",
+   "titulo": "Varias consonantes juntas",
+   "dificultad": "El español las separa con vocales",
+   "explicacion": "El inglés junta consonantes que en español nunca van juntas: 'str' de street, 'ths' de months, 'lths' de clothes. Nosotros metemos una vocal sin querer ('estrit') o nos saltamos sonidos.",
+   "truco": "Practica lento y sin meter vocales entre las consonantes. Mejor decirlo despacio bien que rápido mal.",
+   "ejemplos": [
+    {
+     "palabra": "street",
+     "pron": "STRIIT (sin 'e' inicial)",
+     "es": "calle"
+    },
+    {
+     "palabra": "clothes",
+     "pron": "KLOUDZ",
+     "es": "ropa"
+    },
+    {
+     "palabra": "months",
+     "pron": "MANZS",
+     "es": "meses"
+    },
+    {
+     "palabra": "breakfast",
+     "pron": "BREK-fast",
+     "es": "desayuno"
+    }
+   ],
+   "pares": []
+  },
+  {
+   "id": "ed-pasado",
+   "titulo": "La -ED del pasado: 3 sonidos",
+   "dificultad": "Se escribe igual, suena distinto",
+   "explicacion": "Todos los pasados regulares terminan en -ed, pero suenan de tres formas distintas según la letra anterior. Decir 'work-ed' con la 'e' es error típico.",
+   "truco": "Solo suena 'id' cuando el verbo termina en T o D (wanted, needed). Si no, es 't' o 'd' pegado, sin vocal.",
+   "ejemplos": [
+    {
+     "palabra": "worked",
+     "pron": "UERKT (suena 't')",
+     "es": "trabajó"
+    },
+    {
+     "palabra": "played",
+     "pron": "PLEID (suena 'd')",
+     "es": "jugó"
+    },
+    {
+     "palabra": "wanted",
+     "pron": "UON-tid (suena 'id')",
+     "es": "quiso"
+    },
+    {
+     "palabra": "visited",
+     "pron": "VI-si-tid (suena 'id')",
+     "es": "visitó"
+    }
+   ],
+   "pares": []
+  },
+  {
+   "id": "s-plural",
+   "titulo": "La -S del plural: 3 sonidos",
+   "dificultad": "Se escribe igual, suena distinto",
+   "explicacion": "El plural -s suena 's', 'z' o 'iz' según la palabra. En español siempre es 's', así que hay que entrenarlo.",
+   "truco": "Suena 'iz' cuando la palabra ya termina en sonido s/z/sh/ch (houses, oranges). Suena 'z' después de vocal o sonido suave (dogs, apples).",
+   "ejemplos": [
+    {
+     "palabra": "cats",
+     "pron": "KATS (suena 's')",
+     "es": "gatos"
+    },
+    {
+     "palabra": "dogs",
+     "pron": "DOGZ (suena 'z')",
+     "es": "perros"
+    },
+    {
+     "palabra": "oranges",
+     "pron": "O-rin-yiz (suena 'iz')",
+     "es": "naranjas"
+    },
+    {
+     "palabra": "houses",
+     "pron": "JAU-siz (suena 'iz')",
+     "es": "casas"
+    }
+   ],
+   "pares": []
+  },
+  {
+   "id": "schwa",
+   "titulo": "La schwa: la vocal más común",
+   "dificultad": "El sonido nº1 del inglés",
+   "explicacion": "En inglés las sílabas sin acento se comen: la vocal se convierte en un sonido flojo tipo 'e' muy corta (la schwa). Por eso 'teacher' no es 'ti-cher' sino 'TI-cher' con la última casi muda.",
+   "truco": "Relaja la boca y no pronuncies fuerte la sílaba sin acento. Si pronuncias TODAS las vocales claras, suenas a español.",
+   "ejemplos": [
+    {
+     "palabra": "teacher",
+     "pron": "TII-cher",
+     "es": "profesor"
+    },
+    {
+     "palabra": "doctor",
+     "pron": "DOK-ter",
+     "es": "doctor"
+    },
+    {
+     "palabra": "about",
+     "pron": "e-BAUT",
+     "es": "sobre"
+    },
+    {
+     "palabra": "banana",
+     "pron": "be-NA-ne",
+     "es": "plátano"
+    }
+   ],
+   "pares": []
+  },
+  {
+   "id": "acento",
+   "titulo": "Dónde va el acento",
+   "dificultad": "Cambia el significado",
+   "explicacion": "En inglés el acento de la palabra puede cambiarlo todo. 'THIR-teen' (13) y 'thir-TY' (30) se confunden constantemente al oído, y eso te cuesta puntos en el listening del examen.",
+   "truco": "Los números 13-19 llevan el acento AL FINAL (thir-TEEN). Las decenas 20-90 lo llevan AL PRINCIPIO (THIR-ty).",
+   "ejemplos": [
+    {
+     "palabra": "thirteen",
+     "pron": "zer-TIIN",
+     "es": "trece"
+    },
+    {
+     "palabra": "thirty",
+     "pron": "ZER-ti",
+     "es": "treinta"
+    },
+    {
+     "palabra": "fifteen",
+     "pron": "fif-TIIN",
+     "es": "quince"
+    },
+    {
+     "palabra": "fifty",
+     "pron": "FIF-ti",
+     "es": "cincuenta"
+    }
+   ],
+   "pares": [
+    {
+     "a": {
+      "palabra": "thirteen",
+      "es": "trece (13)"
+     },
+     "b": {
+      "palabra": "thirty",
+      "es": "treinta (30)"
+     }
+    },
+    {
+     "a": {
+      "palabra": "fifteen",
+      "es": "quince (15)"
+     },
+     "b": {
+      "palabra": "fifty",
+      "es": "cincuenta (50)"
+     }
+    },
+    {
+     "a": {
+      "palabra": "sixteen",
+      "es": "dieciséis (16)"
+     },
+     "b": {
+      "palabra": "sixty",
+      "es": "sesenta (60)"
+     }
+    }
+   ]
+  },
+  {
+   "id": "cognados",
+   "titulo": "Se escriben igual, suenan distinto",
+   "dificultad": "Trampa de los parecidos",
+   "explicacion": "Muchas palabras se escriben casi igual que en español y por eso las leemos 'a la española'. Pero el acento y las vocales cambian por completo: 'hotel' no es 'otél', 'chocolate' no es 'chocoláte'.",
+   "truco": "Fíjate SIEMPRE en dónde cae el acento en inglés — casi nunca cae donde caería en español.",
+   "ejemplos": [
+    {
+     "palabra": "hotel",
+     "pron": "jou-TEL",
+     "es": "hotel"
+    },
+    {
+     "palabra": "hospital",
+     "pron": "JOS-pi-tal",
+     "es": "hospital"
+    },
+    {
+     "palabra": "chocolate",
+     "pron": "CHOK-let",
+     "es": "chocolate"
+    },
+    {
+     "palabra": "restaurant",
+     "pron": "RES-to-rant",
+     "es": "restaurante"
+    },
+    {
+     "palabra": "family",
+     "pron": "FAE-mi-li",
+     "es": "familia"
+    }
+   ],
+   "pares": []
+  },
+  {
+   "id": "entonacion",
+   "titulo": "La entonación de las preguntas",
+   "dificultad": "Cambia si es pregunta o no",
+   "explicacion": "En inglés la melodía marca la pregunta. Las preguntas de sí/no SUBEN al final ('Are you ready?↗'). Las preguntas con what/where/who BAJAN al final ('Where do you live?↘'), igual que una afirmación.",
+   "truco": "Si empieza con do/does/are/is/can → sube. Si empieza con what/where/when/who/how → baja.",
+   "ejemplos": [
+    {
+     "palabra": "Are you a student?",
+     "pron": "ar yu a STIU-dent ↗",
+     "es": "¿Eres estudiante?"
+    },
+    {
+     "palabra": "Where do you live?",
+     "pron": "uer du yu LIV ↘",
+     "es": "¿Dónde vives?"
+    },
+    {
+     "palabra": "Do you like coffee?",
+     "pron": "du yu laik KO-fi ↗",
+     "es": "¿Te gusta el café?"
+    },
+    {
+     "palabra": "What is your name?",
+     "pron": "uat is yor NEIM ↘",
+     "es": "¿Cómo te llamas?"
+    }
+   ],
+   "pares": []
+  },
+  {
+   "id": "reducciones",
+   "titulo": "Cómo hablan de verdad",
+   "dificultad": "Clave para el listening",
+   "explicacion": "Los nativos comen sonidos al hablar rápido. Nunca escribas así, pero tienes que RECONOCERLO de oído o no entenderás nada en el examen.",
+   "truco": "Escucha estas formas hasta que te suenen normales. Es la diferencia entre entender y no entender una conversación real.",
+   "ejemplos": [
+    {
+     "palabra": "going to",
+     "pron": "suena GO-na (gonna)",
+     "es": "voy a"
+    },
+    {
+     "palabra": "want to",
+     "pron": "suena UO-na (wanna)",
+     "es": "quiero"
+    },
+    {
+     "palabra": "I would like",
+     "pron": "suena aid-LAIK",
+     "es": "me gustaría"
+    },
+    {
+     "palabra": "what do you",
+     "pron": "suena UA-du-yu",
+     "es": "qué haces tú"
+    }
+   ],
+   "pares": []
+  }
  ]
-},
-{
- "id": "vocal-larga",
- "titulo": "Vocales largas y cortas",
- "dificultad": "El español tiene 5 vocales, el inglés 12",
- "explicacion": "En inglés la DURACIÓN de la vocal cambia la palabra. 'Ship' (barco) y 'sheep' (oveja) se escriben casi igual pero son palabras distintas. Los hispanohablantes las pronunciamos iguales.",
- "truco": "La vocal larga se estira casi el doble: shiiip. La corta es un golpe seco: ship.",
- "ejemplos": [
-  {"palabra":"sheep","pron":"SHIIP (larga)","es":"oveja"},
-  {"palabra":"ship","pron":"SHIP (corta)","es":"barco"},
-  {"palabra":"eat","pron":"IIT (larga)","es":"comer"},
-  {"palabra":"it","pron":"IT (corta)","es":"eso"}
- ],
- "pares": [
-  {"a":{"palabra":"sheep","es":"oveja"},"b":{"palabra":"ship","es":"barco"}},
-  {"a":{"palabra":"eat","es":"comer"},"b":{"palabra":"it","es":"eso"}},
-  {"a":{"palabra":"leave","es":"irse"},"b":{"palabra":"live","es":"vivir"}},
-  {"a":{"palabra":"feel","es":"sentir"},"b":{"palabra":"fill","es":"llenar"}}
- ]
-},
-{
- "id": "b-v",
- "titulo": "B y V son distintas",
- "dificultad": "En español suenan igual",
- "explicacion": "En español 'baca' y 'vaca' suenan idéntico. En inglés NO: la 'v' se hace con los dientes sobre el labio de abajo, la 'b' juntando los dos labios.",
- "truco": "Para la 'v', muerde suavemente tu labio inferior y haz vibrar. Para la 'b', junta los labios como en español.",
- "ejemplos": [
-  {"palabra":"very","pron":"VE-ri (dientes en el labio)","es":"muy"},
-  {"palabra":"visit","pron":"VI-sit (dientes en el labio)","es":"visitar"},
-  {"palabra":"book","pron":"BUK (labios juntos)","es":"libro"}
- ],
- "pares": [
-  {"a":{"palabra":"very","es":"muy"},"b":{"palabra":"berry","es":"baya"}},
-  {"a":{"palabra":"vest","es":"chaleco"},"b":{"palabra":"best","es":"el mejor"}},
-  {"a":{"palabra":"vote","es":"votar"},"b":{"palabra":"boat","es":"barco"}}
- ]
-},
-{
- "id": "s-inicial",
- "titulo": "No pongas 'e' antes de la S",
- "dificultad": "Error clásico del español",
- "explicacion": "En español ninguna palabra empieza con s + consonante, por eso decimos 'escuela', 'España'. Al hablar inglés metemos esa 'e' sin querer: 'eschool', 'estudent'. Se nota muchísimo.",
- "truco": "Arranca directo con la S, alargándola un poco: ssschool. Nunca 'e-school'.",
- "ejemplos": [
-  {"palabra":"school","pron":"SKUUL (no 'eskul')","es":"escuela"},
-  {"palabra":"student","pron":"STIU-dent (no 'estudent')","es":"estudiante"},
-  {"palabra":"Spain","pron":"SPEIN (no 'espein')","es":"España"},
-  {"palabra":"stop","pron":"STOP (no 'estop')","es":"parar"}
- ],
- "pares": []
-},
-{
- "id": "ed-pasado",
- "titulo": "La -ED del pasado: 3 sonidos",
- "dificultad": "Se escribe igual, suena distinto",
- "explicacion": "Todos los pasados regulares terminan en -ed, pero suenan de tres formas distintas según la letra anterior. Decir 'work-ed' con la 'e' es error típico.",
- "truco": "Solo suena 'id' cuando el verbo termina en T o D (wanted, needed). Si no, es 't' o 'd' pegado, sin vocal.",
- "ejemplos": [
-  {"palabra":"worked","pron":"UERKT (suena 't')","es":"trabajó"},
-  {"palabra":"played","pron":"PLEID (suena 'd')","es":"jugó"},
-  {"palabra":"wanted","pron":"UON-tid (suena 'id')","es":"quiso"},
-  {"palabra":"visited","pron":"VI-si-tid (suena 'id')","es":"visitó"}
- ],
- "pares": []
-},
-{
- "id": "s-plural",
- "titulo": "La -S del plural: 3 sonidos",
- "dificultad": "Se escribe igual, suena distinto",
- "explicacion": "El plural -s suena 's', 'z' o 'iz' según la palabra. En español siempre es 's', así que hay que entrenarlo.",
- "truco": "Suena 'iz' cuando la palabra ya termina en sonido s/z/sh/ch (houses, oranges). Suena 'z' después de vocal o sonido suave (dogs, apples).",
- "ejemplos": [
-  {"palabra":"cats","pron":"KATS (suena 's')","es":"gatos"},
-  {"palabra":"dogs","pron":"DOGZ (suena 'z')","es":"perros"},
-  {"palabra":"oranges","pron":"O-rin-yiz (suena 'iz')","es":"naranjas"},
-  {"palabra":"houses","pron":"JAU-siz (suena 'iz')","es":"casas"}
- ],
- "pares": []
-},
-{
- "id": "schwa",
- "titulo": "La schwa: la vocal más común",
- "dificultad": "El sonido nº1 del inglés",
- "explicacion": "En inglés las sílabas sin acento se comen: la vocal se convierte en un sonido flojo tipo 'e' muy corta (la schwa). Por eso 'teacher' no es 'ti-cher' sino 'TI-cher' con la última casi muda.",
- "truco": "Relaja la boca y no pronuncies fuerte la sílaba sin acento. Si pronuncias TODAS las vocales claras, suenas a español.",
- "ejemplos": [
-  {"palabra":"teacher","pron":"TII-cher","es":"profesor"},
-  {"palabra":"doctor","pron":"DOK-ter","es":"doctor"},
-  {"palabra":"about","pron":"e-BAUT","es":"sobre"},
-  {"palabra":"banana","pron":"be-NA-ne","es":"plátano"}
- ],
- "pares": []
-},
-{
- "id": "acento",
- "titulo": "Dónde va el acento",
- "dificultad": "Cambia el significado",
- "explicacion": "En inglés el acento de la palabra puede cambiarlo todo. 'THIR-teen' (13) y 'thir-TY' (30) se confunden constantemente al oído, y eso te cuesta puntos en el listening del examen.",
- "truco": "Los números 13-19 llevan el acento AL FINAL (thir-TEEN). Las decenas 20-90 lo llevan AL PRINCIPIO (THIR-ty).",
- "ejemplos": [
-  {"palabra":"thirteen","pron":"zer-TIIN","es":"trece"},
-  {"palabra":"thirty","pron":"ZER-ti","es":"treinta"},
-  {"palabra":"fifteen","pron":"fif-TIIN","es":"quince"},
-  {"palabra":"fifty","pron":"FIF-ti","es":"cincuenta"}
- ],
- "pares": [
-  {"a":{"palabra":"thirteen","es":"trece (13)"},"b":{"palabra":"thirty","es":"treinta (30)"}},
-  {"a":{"palabra":"fifteen","es":"quince (15)"},"b":{"palabra":"fifty","es":"cincuenta (50)"}},
-  {"a":{"palabra":"sixteen","es":"dieciséis (16)"},"b":{"palabra":"sixty","es":"sesenta (60)"}}
- ]
-},
-{
- "id": "h-aspirada",
- "titulo": "La H sí se pronuncia",
- "dificultad": "En español es muda",
- "explicacion": "En español la 'h' no suena ('hola' = 'ola'). En inglés SÍ suena, como un soplido suave — parecido a la jota pero mucho más suave.",
- "truco": "Echa aire como si empañaras un vidrio: h-h-hello. Pero no exageres hasta que suene a 'jota' española.",
- "ejemplos": [
-  {"palabra":"hello","pron":"je-LOU (soplo suave)","es":"hola"},
-  {"palabra":"house","pron":"JAUS (soplo suave)","es":"casa"},
-  {"palabra":"happy","pron":"JA-pi (soplo suave)","es":"feliz"},
-  {"palabra":"hour","pron":"AUR (aquí sí es muda)","es":"hora"}
- ],
- "pares": []
-},
-{
- "id": "reducciones",
- "titulo": "Cómo hablan de verdad",
- "dificultad": "Clave para el listening",
- "explicacion": "Los nativos comen sonidos al hablar rápido. Nunca escribas así, pero tienes que RECONOCERLO de oído o no entenderás nada en el examen.",
- "truco": "Escucha estas formas hasta que te suenen normales. Es la diferencia entre entender y no entender una conversación real.",
- "ejemplos": [
-  {"palabra":"going to","pron":"suena GO-na (gonna)","es":"voy a"},
-  {"palabra":"want to","pron":"suena UO-na (wanna)","es":"quiero"},
-  {"palabra":"I would like","pron":"suena aid-LAIK","es":"me gustaría"},
-  {"palabra":"what do you","pron":"suena UA-du-yu","es":"qué haces tú"}
- ],
- "pares": []
 }
-] }
