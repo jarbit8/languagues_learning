@@ -1,1 +1,204 @@
-{"tema":24,"idioma":"en","titulo":"Going to para planes y repaso de interrogativos","regla":"'Going to' expresa planes e intenciones futuras: 'I'm going to move to Canada'. Estructura: am/is/are + going to + verbo base. Repaso de interrogativos: what, who, where, when, why, how.","pronunciacion":"'Going to' se reduce muchísimo al hablar informal: suena 'gonna' — hay que reconocerlo aunque nunca se escriba así.","trampa":"'Going to' lleva el verbo 'to be': 'I'm going to study', no 'I going to study'.","ejemplos":[{"frase":"I'm going to move to Canada.","traduccion":"Voy a mudarme a Canadá.","comoSeLee":"aim góing tu muv tu cánada"},{"frase":"She is going to study.","traduccion":"Ella va a estudiar.","comoSeLee":"shi is góing tu stádi"},{"frase":"What are you going to do?","traduccion":"¿Qué vas a hacer?","comoSeLee":"uát ar iú góing tu du"}],"ejercicios":[{"tipo":"hueco","enunciado":"I'm going ___ move. (to)","respuesta":"to"},{"tipo":"hueco","enunciado":"She ___ going to study. (is)","respuesta":"is","aceptadas":["'s"]},{"tipo":"hueco","enunciado":"I ___ going to travel. (am)","respuesta":"am","aceptadas":["'m"]},{"tipo":"hueco","enunciado":"___ are you going to do? (qué)","respuesta":"What"},{"tipo":"opcion_multiple","enunciado":"'voy a estudiar' =","opciones":["I'm going to study","I going to study","I'm go to study"],"respuesta":"I'm going to study"},{"tipo":"opcion_multiple","enunciado":"___ are you going to move? (cuándo)","opciones":["When","Who","Which"],"respuesta":"When"},{"tipo":"opcion_multiple","enunciado":"They ___ going to come.","opciones":["are","is","am"],"respuesta":"are"},{"tipo":"ordenar","enunciado":"Ordena: voy a mudarme.","opciones":["I","am","going","to","move"],"respuesta":"I am going to move"},{"tipo":"ordenar","enunciado":"Ordena: ella va a estudiar.","opciones":["she","is","going","to","study"],"respuesta":"she is going to study"},{"tipo":"ordenar","enunciado":"Ordena: ¿qué vas a hacer?","opciones":["what","are","you","going","to","do"],"respuesta":"what are you going to do"},{"tipo":"corregir_error","enunciado":"I going to study.","respuesta":"I am going to study."},{"tipo":"corregir_error","enunciado":"She going to travel.","respuesta":"She is going to travel."},{"tipo":"corregir_error","enunciado":"What you are going to do?","respuesta":"What are you going to do?"},{"tipo":"traducir","enunciado":"Voy a mudarme a Canadá.","respuesta":"I'm going to move to Canada.","aceptadas":["i am going to move to canada"]},{"tipo":"traducir","enunciado":"Ella va a estudiar.","respuesta":"She is going to study.","aceptadas":["she is going to study"]}]}
+{
+ "tema": 24,
+ "idioma": "en",
+ "titulo": "Futuro: going to y will",
+ "regla": "Hay dos formas de hablar del futuro. 'Going to' = planes ya decididos: 'I'm going to move to Canada'. 'Will' = decisiones del momento, promesas y predicciones: 'I think it will rain', 'I'll help you'. Estructura: will + verbo base, igual para todos los sujetos (no lleva -s). La forma corta es 'I'll, you'll, he'll...' y la negativa 'won't'. Repaso de interrogativos: what, who, where, when, why, how.",
+ "pronunciacion": "'Going to' se reduce muchísimo al hablar informal: suena 'gonna'. 'Will' casi desaparece en la contracción: 'I'll' suena 'ail', y 'won't' suena 'uont' (ojo, no es 'want').",
+ "trampa": "'Going to' lleva el verbo 'to be': 'I'm going to study', no 'I going to study'.",
+ "ejemplos": [
+  {
+   "frase": "I'm going to move to Canada.",
+   "traduccion": "Voy a mudarme a Canadá.",
+   "comoSeLee": "aim góing tu muv tu cánada"
+  },
+  {
+   "frase": "She is going to study.",
+   "traduccion": "Ella va a estudiar.",
+   "comoSeLee": "shi is góing tu stádi"
+  },
+  {
+   "frase": "What are you going to do?",
+   "traduccion": "¿Qué vas a hacer?",
+   "comoSeLee": "uát ar iú góing tu du"
+  },
+  {
+   "frase": "I'll help you with your homework.",
+   "traduccion": "Te ayudaré con tus deberes.",
+   "comoSeLee": "ail jelp yu..."
+  },
+  {
+   "frase": "It won't rain tomorrow.",
+   "traduccion": "No lloverá mañana.",
+   "comoSeLee": "it uont rein tumórou"
+  }
+ ],
+ "ejercicios": [
+  {
+   "tipo": "hueco",
+   "enunciado": "I'm going ___ move. (to)",
+   "respuesta": "to"
+  },
+  {
+   "tipo": "hueco",
+   "enunciado": "She ___ going to study. (is)",
+   "respuesta": "is",
+   "aceptadas": [
+    "'s"
+   ]
+  },
+  {
+   "tipo": "hueco",
+   "enunciado": "I ___ going to travel. (am)",
+   "respuesta": "am",
+   "aceptadas": [
+    "'m"
+   ]
+  },
+  {
+   "tipo": "hueco",
+   "enunciado": "___ are you going to do? (qué)",
+   "respuesta": "What"
+  },
+  {
+   "tipo": "opcion_multiple",
+   "enunciado": "'voy a estudiar' =",
+   "opciones": [
+    "I'm going to study",
+    "I going to study",
+    "I'm go to study"
+   ],
+   "respuesta": "I'm going to study"
+  },
+  {
+   "tipo": "opcion_multiple",
+   "enunciado": "___ are you going to move? (cuándo)",
+   "opciones": [
+    "When",
+    "Who",
+    "Which"
+   ],
+   "respuesta": "When"
+  },
+  {
+   "tipo": "opcion_multiple",
+   "enunciado": "They ___ going to come.",
+   "opciones": [
+    "are",
+    "is",
+    "am"
+   ],
+   "respuesta": "are"
+  },
+  {
+   "tipo": "ordenar",
+   "enunciado": "Ordena: voy a mudarme.",
+   "opciones": [
+    "I",
+    "am",
+    "going",
+    "to",
+    "move"
+   ],
+   "respuesta": "I am going to move"
+  },
+  {
+   "tipo": "ordenar",
+   "enunciado": "Ordena: ella va a estudiar.",
+   "opciones": [
+    "she",
+    "is",
+    "going",
+    "to",
+    "study"
+   ],
+   "respuesta": "she is going to study"
+  },
+  {
+   "tipo": "ordenar",
+   "enunciado": "Ordena: ¿qué vas a hacer?",
+   "opciones": [
+    "what",
+    "are",
+    "you",
+    "going",
+    "to",
+    "do"
+   ],
+   "respuesta": "what are you going to do"
+  },
+  {
+   "tipo": "corregir_error",
+   "enunciado": "I going to study.",
+   "respuesta": "I am going to study."
+  },
+  {
+   "tipo": "corregir_error",
+   "enunciado": "She going to travel.",
+   "respuesta": "She is going to travel."
+  },
+  {
+   "tipo": "corregir_error",
+   "enunciado": "What you are going to do?",
+   "respuesta": "What are you going to do?"
+  },
+  {
+   "tipo": "traducir",
+   "enunciado": "Voy a mudarme a Canadá.",
+   "respuesta": "I'm going to move to Canada.",
+   "aceptadas": [
+    "i am going to move to canada"
+   ]
+  },
+  {
+   "tipo": "traducir",
+   "enunciado": "Ella va a estudiar.",
+   "respuesta": "She is going to study.",
+   "aceptadas": [
+    "she is going to study"
+   ]
+  },
+  {
+   "tipo": "hueco",
+   "enunciado": "I think it ___ rain tomorrow.",
+   "respuesta": "will",
+   "aceptadas": [
+    "'ll"
+   ],
+   "pista": "predicción, no un plan decidido"
+  },
+  {
+   "tipo": "opcion_multiple",
+   "enunciado": "Ya compré los boletos. ¿Cuál es correcta?",
+   "opciones": [
+    "I'm going to travel to Canada.",
+    "I will travel to Canada.",
+    "I travel to Canada."
+   ],
+   "respuesta": "I'm going to travel to Canada.",
+   "pista": "plan ya decidido → going to"
+  },
+  {
+   "tipo": "hueco",
+   "enunciado": "The bag is heavy. Don't worry, I ___ help you.",
+   "respuesta": "will",
+   "aceptadas": [
+    "'ll"
+   ],
+   "pista": "lo decides en este momento"
+  },
+  {
+   "tipo": "corregir_error",
+   "enunciado": "She will to study French next year.",
+   "respuesta": "She will study French next year.",
+   "pista": "tras will va el verbo base, sin to"
+  },
+  {
+   "tipo": "traducir",
+   "enunciado": "No trabajaré mañana.",
+   "respuesta": "I won't work tomorrow.",
+   "aceptadas": [
+    "I will not work tomorrow."
+   ]
+  }
+ ]
+}
