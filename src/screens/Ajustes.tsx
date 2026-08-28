@@ -1,6 +1,7 @@
 import { useRef, useState } from 'react'
 import { IDIOMAS_ACTIVOS, nombreIdioma } from '../config'
 import { getApiKey, setApiKey } from '../lib/apiKey'
+import { buscarActualizacion } from '../lib/actualizacion'
 import { estadoVoces, getVelocidad, setVelocidad } from '../lib/audio'
 import { getModo, setModo, type ModoApariencia } from '../lib/apariencia'
 import { exportarProgreso, importarProgreso, descargarArchivo } from '../lib/backup'
@@ -13,6 +14,7 @@ export default function Ajustes() {
   const [velocidad, setVelocidadLocal] = useState(getVelocidad())
   const [modo, setModoLocal] = useState<ModoApariencia>(getModo())
   const [mensaje, setMensaje] = useState<string | null>(null)
+  const [estadoAct, setEstadoAct] = useState<'idle' | 'buscando' | 'actualizando' | 'al-dia' | 'no-soportado'>('idle')
   const fileRef = useRef<HTMLInputElement>(null)
   const voces = estadoVoces()
 
@@ -65,6 +67,31 @@ export default function Ajustes() {
         />
         <button onClick={guardarKey} className="btn-primary">
           {guardada ? 'Guardada ✓' : 'Guardar'}
+        </button>
+      </div>
+
+      <div className="tarjeta flex flex-col gap-2 text-sm">
+        <p className="font-semibold">Versión de la app</p>
+        <p className="text-slate-500 dark:text-slate-400">
+          Se actualiza sola al abrirla. Si crees que ves una versión vieja, fuérzalo aquí.
+        </p>
+        <button
+          onClick={async () => {
+            setEstadoAct('buscando')
+            const r = await buscarActualizacion()
+            setEstadoAct(r === 'actualizando' ? 'actualizando' : r === 'al-dia' ? 'al-dia' : 'no-soportado')
+          }}
+          className="btn bg-slate-200 text-slate-700 dark:bg-slate-700 dark:text-slate-200"
+        >
+          {estadoAct === 'buscando'
+            ? 'Buscando…'
+            : estadoAct === 'actualizando'
+              ? 'Actualizando y recargando…'
+              : estadoAct === 'al-dia'
+                ? 'Ya tienes la última ✓'
+                : estadoAct === 'no-soportado'
+                  ? 'No disponible aquí'
+                  : 'Buscar actualización'}
         </button>
       </div>
 
