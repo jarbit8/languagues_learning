@@ -72,16 +72,27 @@ export async function estadoExamenTema(tema: number): Promise<EstadoExamenTema> 
 // Registra el resultado del examen de tema. Hay que aprobar LAS DOS secciones con ≥80%:
 // con una nota global se podía desbloquear el tema con la gramática floja, porque las 20
 // preguntas de vocabulario pesaban más que las de gramática.
-export async function registrarExamenTema(
-  tema: number,
-  notaVocab: number,
-  notaGramatica: number
-): Promise<boolean> {
-  const aprobado = notaVocab >= 80 && notaGramatica >= 80
-  const nota = Math.round((notaVocab + notaGramatica) / 2)
+// El examen de tema pasó de 2 secciones a 6 (2026-08-29, pedido del usuario: "un examen
+// general que involucre todo todo"). El corte sigue siendo exigente donde ya lo era —80% en
+// vocabulario y 80% en gramática, que son lo medible objetivamente— y pide 75% de promedio
+// en las cuatro destrezas, el mismo listón que el examen de bloque, porque writing y speaking
+// se autocalifican cuando no hay API key y no sería justo exigirles 80.
+export async function registrarExamenTema(tema: number, notas: NotasBloque): Promise<boolean> {
+  const habilidades = [notas.listening, notas.reading, notas.writing, notas.speaking].filter(
+    (n): n is number => n !== undefined
+  )
+  const promedioHabilidades = habilidades.length
+    ? Math.round(habilidades.reduce((a, b) => a + b, 0) / habilidades.length)
+    : 0
+  const notaVocab = notas.vocab ?? 0
+  const notaGramatica = notas.gramatica ?? 0
+  const aprobado = notaVocab >= 80 && notaGramatica >= 80 && promedioHabilidades >= 75
+  const todas = [notaVocab, notaGramatica, ...habilidades]
+  const nota = Math.round(todas.reduce((a, b) => a + b, 0) / todas.length)
   const pr = (await db.progresoTema.get(tema)) ?? baseProgreso(tema)
   pr.intentos = (pr.intentos ?? 0) + 1
   pr.notaExamenTema = Math.max(pr.notaExamenTema ?? 0, nota)
+  pr.notas = notas
   if (aprobado) pr.estado = 'aprobado'
   await db.progresoTema.put(pr)
   await registrarHistorial('tema', tema, nota, aprobado)

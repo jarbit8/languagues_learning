@@ -40,6 +40,16 @@ function bloqueVeredicto(meta: string): string {
   return `\n\nDECISIÓN FINAL — es la parte más importante: esta tarea es la prueba que decide ${meta}. Después del feedback, cierra SIEMPRE con el veredicto. Esta última parte, y solo esta, va en ESPAÑOL, porque es una decisión que el estudiante tiene que entender sin ninguna duda. Formato exacto:\nVEREDICTO: LISTO ✅   (o bien)   VEREDICTO: AÚN NO ⏳\ny debajo UNA sola frase en español: si es LISTO, qué es lo que ya domina; si es AÚN NO, exactamente qué tiene que practicar antes de volver a intentarlo.\nDi LISTO solo si cumple casi todo esto: responde lo que la tarea pide sin irse por las ramas, habla en frases completas y no en palabras sueltas, se le entiende a la primera, usa el vocabulario y la gramática de su nivel, y no se pasa al español. Sé honesto y exigente: si todavía no está, dile AÚN NO. Aprobarlo antes de tiempo no le hace ningún favor, porque se va a encontrar el problema más adelante.`
 }
 
+// Examen de HABLAR de un tema: el mismo roleplay del escenario que en Practicar, pero la
+// IA cierra decidiendo si lo da por dominado. No usa el modoExamen del JSON porque este
+// prompt se copia y se pega en una IA cualquiera: el veredicto tiene que leerse, no parsearse.
+export function construirPromptHablarExamen(escenario: string, vocabulario: string, meta: string): string {
+  const system = construirSystemPrompt(escenario, vocabulario)
+  return `${system}${bloqueVeredicto(meta)}
+
+Empieza tú: salúdame y hazme la primera pregunta sobre el escenario. Al final dame el veredicto.`
+}
+
 // Prompt de una TAREA de speaking estilo CELPIP/IELTS (ver data/tareasSpeaking.ts): la IA
 // presenta la tarea, deja responder sin interrumpir y da feedback con puntaje — todo en el idioma.
 // `meta` solo se pasa cuando la tarea es un examen (bloque/final): añade el veredicto de avance.

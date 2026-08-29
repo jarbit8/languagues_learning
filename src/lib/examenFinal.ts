@@ -13,7 +13,7 @@ export function construirVocabFinal(): Pregunta[] {
 // Gramática de TODO el nivel: mezcla los ejercicios de los 24 temas. El examen de bloque ya
 // repasa la gramática de sus 6 temas; sin esta sección el examen final certificaba el A1 sin
 // medir la gramática acumulada, que es justo lo que más se olvida.
-export function construirGramaticaFinal(cuantas = 20): Pregunta[] {
+export function construirGramaticaFinal(cuantas = 40): Pregunta[] {
   const ejercicios = vocabPacks.flatMap((p) =>
     (getGramatica(p.tema)?.ejercicios ?? []).map(preguntaDeEjercicio)
   )
@@ -25,9 +25,11 @@ export interface SeccionListening {
   preguntas: Pregunta[]
 }
 
-// Versión extendida: un pack por bloque (temas 2, 8, 14, 20).
+// Versión extendida: 6 temas repartidos por el nivel entero (2026-08-29, "el final que sea
+// un súper examen que componga todo"). Se quedó en 6 y no en los 8 que caben porque cada
+// tema son 2 diálogos: con 8 el examen pedía escuchar 16 seguidos y no lo termina nadie.
 export function construirListeningFinal(): SeccionListening {
-  const packs = [2, 8, 14, 20]
+  const packs = [2, 6, 10, 14, 18, 22]
     .map((tema) => getListening(tema))
     .filter((d): d is ListeningPack => !!d)
   const dialogos = packs.flatMap(dialogosDe)
@@ -40,9 +42,9 @@ export interface SeccionReading {
   preguntas: Pregunta[]
 }
 
-// Versión extendida: lecturas de 4 temas repartidos por todo el nivel (uno por bloque).
+// Versión extendida: 6 lecturas repartidas por todo el nivel.
 export function construirReadingFinal(): SeccionReading {
-  const packs = [4, 10, 16, 22]
+  const packs = [3, 7, 11, 15, 19, 24]
     .map((tema) => getReading(tema))
     .filter((p): p is ReadingPack => !!p)
   const textos: TextoReading[] = packs.flatMap((p) => p.textos)

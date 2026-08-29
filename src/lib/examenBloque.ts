@@ -7,12 +7,12 @@ import { baraja } from './preguntas'
 // El examen de bloque cierra 6 temas, pero solo medía las 4 destrezas: no repasaba ni el
 // vocabulario ni la gramática acumulados, que es justo lo que se olvida entre bloques.
 // Estas dos secciones mezclan los 6 temas para forzar el repaso a largo plazo.
-export function construirVocabBloque(bloque: number, cuantas = 20): Pregunta[] {
+export function construirVocabBloque(bloque: number, cuantas = 40): Pregunta[] {
   const conceptos = temasDeBloque(bloque).flatMap((t) => getVocabPack(t)?.conceptos ?? [])
   return baraja(conceptos).slice(0, cuantas).map(preguntaDeConcepto)
 }
 
-export function construirGramaticaBloque(bloque: number, cuantas = 15): Pregunta[] {
+export function construirGramaticaBloque(bloque: number, cuantas = 30): Pregunta[] {
   const ejercicios = temasDeBloque(bloque).flatMap((tema) =>
     (getGramatica(tema)?.ejercicios ?? []).map(preguntaDeEjercicio)
   )
@@ -28,7 +28,8 @@ export interface SeccionListening {
 // tenga cuerpo y no dependa de un solo diálogo.
 export function construirListeningBloque(bloque: number): SeccionListening {
   const temas = temasDeBloque(bloque)
-  const temasFuente = [temas[1] ?? temas[0], temas[4] ?? temas[0]]
+  // 3 temas en vez de 2 (2026-08-29, "del bloque 1 igual pero mucho más amplio").
+  const temasFuente = [temas[0], temas[2] ?? temas[0], temas[4] ?? temas[0]]
   const packs = temasFuente
     .map((tema) => getListening(tema))
     .filter((d): d is ListeningPack => !!d)
@@ -46,7 +47,7 @@ export interface SeccionReading {
 // del bloque (formato IELTS: varios textos cortos con preguntas).
 export function construirReadingBloque(bloque: number): SeccionReading {
   const temas = temasDeBloque(bloque)
-  const fuente = [temas[2] ?? temas[0], temas[5] ?? temas[1] ?? temas[0]]
+  const fuente = [temas[1] ?? temas[0], temas[3] ?? temas[0], temas[5] ?? temas[0]]
   const packs = fuente.map((tema) => getReading(tema)).filter((p): p is ReadingPack => !!p)
   const textos: TextoReading[] = packs.flatMap((p) => p.textos)
   const preguntas = baraja(

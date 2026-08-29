@@ -112,12 +112,23 @@ export type DialogoConTema = DialogoListening & { tema: number }
 
 export type EstadoTema = 'bloqueado' | 'en_curso' | 'aprobado'
 
+export interface NotasBloque {
+  vocab?: number
+  gramatica?: number
+  listening?: number
+  reading?: number
+  writing?: number
+  speaking?: number
+}
+
 export interface ProgresoTema {
   temaId: number
   estado: EstadoTema
   notaExamenTema?: number
   intentos: number
   gramaticaCompletada?: boolean
+  // Desde 2026-08-29 el examen de tema mide las 6 secciones, no solo vocab y gramática.
+  notas?: NotasBloque
 }
 
 // --- Speaking IA ---
@@ -140,14 +151,6 @@ export interface FeedbackSpeaking {
 
 // --- Bloques y nivel ---
 
-export interface NotasBloque {
-  vocab?: number
-  gramatica?: number
-  listening?: number
-  reading?: number
-  writing?: number
-  speaking?: number
-}
 
 export interface ProgresoBloque {
   bloqueId: number

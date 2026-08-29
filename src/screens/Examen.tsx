@@ -13,17 +13,36 @@ import {
 } from '../lib/progreso'
 import { getVocabPack } from '../data/packs'
 import { construirExamenDiario, idsExamenDiario, marcarExaminadasHoy } from '../lib/examenDiario'
-import { construirExamenTema, type ExamenTema } from '../lib/examenTema'
+import {
+  CICLOS,
+  construirExamenCiclo,
+  idsDelCiclo,
+  proximoDia,
+  tocaHoy,
+  type CicloVocab
+} from '../lib/examenVocabulario'
+import { construirExamenGramaticaTema, ejerciciosDe } from '../lib/examenGramatica'
+import { listeningDeTema, readingDeTema, consignaDeTema, promptHablarExamen } from '../lib/examenHabilidades'
+import CopiarPrompt from '../components/CopiarPrompt'
+import { EscribirConsigna } from '../components/PasoWriting'
+import { reproducirDialogo, detener } from '../lib/listening'
 import { registrarResultado } from '../lib/srs'
 import ExamRunner from '../components/ExamRunner'
 import ExamenBloque from './ExamenBloque'
+import ExamenTema from './ExamenTema'
 import ExamenFinal from './ExamenFinal'
 
 type Vista =
   | { modo: 'hub' }
   | { modo: 'diario'; preguntas: Pregunta[] }
+  | { modo: 'ciclo'; ciclo: CicloVocab; titulo: string; preguntas: Pregunta[] }
+  | { modo: 'gramaticaTema'; tema: number; preguntas: Pregunta[] }
   // El examen de tema son dos secciones seguidas, con nota propia cada una.
-  | { modo: 'tema'; tema: number; examen: ExamenTema; paso: 'vocab' | 'gramatica'; notaVocab?: number }
+  | { modo: 'tema'; tema: number }
+  | { modo: 'habListening'; tema: number; enPreguntas: boolean }
+  | { modo: 'habReading'; tema: number; enPreguntas: boolean }
+  | { modo: 'habWriting'; tema: number }
+  | { modo: 'habHablar'; tema: number }
   | { modo: 'bloque'; bloque: number }
   | { modo: 'final' }
   | { modo: 'fin'; titulo: string; aciertos: number; total: number; nota?: string }
@@ -35,6 +54,8 @@ async function actualizarSrs(p: Pregunta, acierto: boolean) {
 
 export default function Examen() {
   const [vista, setVista] = useState<Vista>({ modo: 'hub' })
+  // Tema elegido en el módulo de gramática; por defecto, el tema en curso.
+  const [temaGram, setTemaGram] = useState<number | null>(null)
 
   const info = useLiveQuery(async () => {
     const tema = await temaEnCurso()
@@ -45,20 +66,34 @@ export default function Examen() {
     const gateBloque = await estadoExamenBloque(bloque)
     const gateFinal = await estadoExamenFinal()
     const nivel = await getProgresoNivel()
-    return { tema, titulo: pack?.titulo ?? '', pendientes, gateTema, bloque, gateBloque, gateFinal, nivel }
+    const ciclos = await Promise.all(
+      CICLOS.map(async (c) => ({ ...c, cuantas: (await idsDelCiclo(c.id)).length, toca: tocaHoy(c.id) }))
+    )
+    return { tema, titulo: pack?.titulo ?? '', pendientes, gateTema, bloque, gateBloque, gateFinal, nivel, ciclos }
   }, [])
 
-  async function iniciarDiario() {
-    const preguntas = await construirExamenDiario()
+  async function iniciarCiclo(ciclo: CicloVocab, titulo: string) {
+    // El diario tiene su propio constructor: además de lo de hoy arrastra los repasos SRS
+    // vencidos, que es su razón de ser. Los ciclos largos miran solo su ventana de días.
+    const preguntas = ciclo === 'diario' ? await construirExamenDiario() : await construirExamenCiclo(ciclo)
     if (!preguntas.length) {
-      setVista({ modo: 'fin', titulo: 'Examen diario', aciertos: 0, total: 0, nota: 'vacio' })
+      setVista({ modo: 'fin', titulo, aciertos: 0, total: 0, nota: 'vacio' })
       return
     }
-    setVista({ modo: 'diario', preguntas })
+    if (ciclo === 'diario') setVista({ modo: 'diario', preguntas })
+    else setVista({ modo: 'ciclo', ciclo, titulo, preguntas })
+  }
+
+  function iniciarGramatica(tema: number) {
+    setVista({ modo: 'gramaticaTema', tema, preguntas: construirExamenGramaticaTema(tema) })
   }
 
   function iniciarTema(tema: number) {
-    setVista({ modo: 'tema', tema, examen: construirExamenTema(tema), paso: 'vocab' })
+    setVista({ modo: 'tema', tema })
+  }
+
+  if (vista.modo === 'tema') {
+    return <ExamenTema tema={vista.tema} onSalir={() => setVista({ modo: 'hub' })} />
   }
 
   if (vista.modo === 'bloque') {
@@ -83,64 +118,127 @@ export default function Examen() {
     )
   }
 
-  if (vista.modo === 'tema') {
-    const enVocab = vista.paso === 'vocab'
-    const preguntas = enVocab ? vista.examen.vocab : vista.examen.gramatica
+  if (vista.modo === 'ciclo') {
     return (
       <ExamRunner
-        // key: fuerza a ExamRunner a reiniciarse al pasar de una sección a la otra.
-        key={vista.paso}
-        preguntas={preguntas}
-        etiqueta={enVocab ? 'Tema · Vocabulario' : 'Tema · Gramática'}
-        tiempoSegundos={preguntas.length * 30}
+        key={vista.ciclo}
+        preguntas={vista.preguntas}
+        etiqueta={vista.titulo}
         onAnswer={actualizarSrs}
-        onFinish={async (aciertos, total) => {
-          const pct = Math.round((aciertos / total) * 100)
-          if (enVocab) {
-            setVista({ ...vista, paso: 'gramatica', notaVocab: pct })
-            return
-          }
-          const notaVocab = vista.notaVocab ?? 0
-          const aprobado = await registrarExamenTema(vista.tema, notaVocab, pct)
-          setVista({ modo: 'finTema', tema: vista.tema, notaVocab, notaGramatica: pct, aprobado })
-        }}
+        onFinish={(aciertos, total) =>
+          setVista({ modo: 'fin', titulo: vista.titulo, aciertos, total, nota: 'entrenamiento' })
+        }
       />
     )
   }
 
-  if (vista.modo === 'finTema') {
-    const { notaVocab, notaGramatica, aprobado } = vista
-    const Seccion = ({ nombre, nota }: { nombre: string; nota: number }) => (
-      <div className="flex-1">
-        <p className="text-slate-500 dark:text-slate-400">{nombre}</p>
-        <p className={`text-2xl font-black ${nota >= 80 ? 'text-emerald-500' : 'text-rose-500'}`}>{nota}%</p>
-        <p className="text-xs text-slate-400">{nota >= 80 ? 'aprobada' : 'necesitas 80%'}</p>
-      </div>
+  if (vista.modo === 'gramaticaTema') {
+    return (
+      <ExamRunner
+        key={`gram-${vista.tema}`}
+        preguntas={vista.preguntas}
+        etiqueta={`Gramática · tema ${vista.tema}`}
+        tiempoSegundos={vista.preguntas.length * 30}
+        onFinish={(aciertos, total) =>
+          setVista({
+            modo: 'fin',
+            titulo: `Gramática del tema ${vista.tema}`,
+            aciertos,
+            total,
+            nota: 'entrenamiento'
+          })
+        }
+      />
     )
+  }
+
+  if (vista.modo === 'habListening') {
+    const l = listeningDeTema(vista.tema)
+    if (!l) return <p className="tarjeta">Este tema no tiene listening.</p>
+    if (vista.enPreguntas) {
+      return (
+        <ExamRunner
+          key={`hl-${vista.tema}`}
+          preguntas={l.preguntas}
+          etiqueta={`Escuchar · tema ${vista.tema}`}
+          tiempoSegundos={l.preguntas.length * 30}
+          onFinish={(aciertos, total) => {
+            detener()
+            setVista({ modo: 'fin', titulo: `Escuchar · tema ${vista.tema}`, aciertos, total, nota: 'entrenamiento' })
+          }}
+        />
+      )
+    }
     return (
       <div className="flex flex-col gap-4">
-        <h1 className="text-2xl font-bold">Examen de tema {vista.tema}</h1>
-        <div className="tarjeta flex gap-3 text-center">
-          <Seccion nombre="Vocabulario" nota={notaVocab} />
-          <div className="w-px bg-slate-200 dark:bg-slate-700" />
-          <Seccion nombre="Gramática" nota={notaGramatica} />
+        <h1 className="text-2xl font-bold">Escuchar · tema {vista.tema}</h1>
+        <div className="tarjeta flex flex-col gap-3">
+          <p className="text-sm text-slate-500 dark:text-slate-400">
+            {l.cuantosDialogos} diálogos seguidos, sin transcripción. Escucha las veces que necesites.
+          </p>
+          <button onClick={() => reproducirDialogo(l.lineas, vista.tema, {})} className="btn-primary self-start">
+            🔊 Escuchar el audio
+          </button>
         </div>
-        {aprobado ? (
-          <div className="tarjeta text-center">
-            <p className="font-bold text-emerald-600 dark:text-emerald-400">
-              ¡Aprobado! Siguiente tema desbloqueado 🎉
-            </p>
-          </div>
-        ) : (
-          <div className="tarjeta text-center text-sm text-slate-600 dark:text-slate-300">
-            <p className="font-semibold">Hay que aprobar las dos secciones con 80%.</p>
-            <p className="mt-1 text-slate-500 dark:text-slate-400">
-              {notaGramatica < 80
-                ? 'Repasa la lección de gramática del tema y vuelve a intentarlo; puedes repetir las veces que quieras.'
-                : 'Las palabras falladas volvieron al repaso. Puedes repetir cuando quieras.'}
-            </p>
-          </div>
-        )}
+        <button onClick={() => setVista({ ...vista, enPreguntas: true })} className="btn-primary">
+          Responder preguntas ({l.preguntas.length})
+        </button>
+      </div>
+    )
+  }
+
+  if (vista.modo === 'habReading') {
+    const r = readingDeTema(vista.tema)
+    if (!r) return <p className="tarjeta">Este tema no tiene lectura.</p>
+    if (vista.enPreguntas) {
+      return (
+        <ExamRunner
+          key={`hr-${vista.tema}`}
+          preguntas={r.preguntas}
+          etiqueta={`Leer · tema ${vista.tema}`}
+          tiempoSegundos={r.preguntas.length * 40}
+          onFinish={(aciertos, total) =>
+            setVista({ modo: 'fin', titulo: `Leer · tema ${vista.tema}`, aciertos, total, nota: 'entrenamiento' })
+          }
+        />
+      )
+    }
+    return (
+      <div className="flex flex-col gap-4">
+        <h1 className="text-2xl font-bold">Leer · tema {vista.tema}</h1>
+        <div className="tarjeta flex flex-col gap-2">
+          <h3 className="font-bold">{r.texto.titulo}</h3>
+          <p className="text-sm leading-relaxed">{r.texto.texto}</p>
+        </div>
+        <button onClick={() => setVista({ ...vista, enPreguntas: true })} className="btn-primary">
+          Responder preguntas ({r.preguntas.length})
+        </button>
+      </div>
+    )
+  }
+
+  if (vista.modo === 'habWriting') {
+    const c = consignaDeTema(vista.tema)
+    if (!c) return <p className="tarjeta">Este tema no tiene consigna.</p>
+    return (
+      <div className="flex flex-col gap-4">
+        <h1 className="text-2xl font-bold">Escribir · tema {vista.tema}</h1>
+        <EscribirConsigna pack={c} onDone={() => setVista({ modo: 'hub' })} />
+        <button onClick={() => setVista({ modo: 'hub' })} className="text-sm text-slate-500 underline">
+          Volver a exámenes
+        </button>
+      </div>
+    )
+  }
+
+  if (vista.modo === 'habHablar') {
+    return (
+      <div className="flex flex-col gap-4">
+        <h1 className="text-2xl font-bold">Hablar · tema {vista.tema}</h1>
+        <CopiarPrompt
+          prompt={promptHablarExamen(vista.tema)}
+          descripcion="Pega esto en una IA con voz (ChatGPT, Gemini…) y habla del tema. Al final te dirá VEREDICTO: LISTO ✅ o AÚN NO ⏳."
+        />
         <button onClick={() => setVista({ modo: 'hub' })} className="btn-primary">
           Volver a exámenes
         </button>
@@ -194,6 +292,7 @@ export default function Examen() {
 
   // hub
   if (!info) return <p className="tarjeta">Cargando…</p>
+  const tg = temaGram ?? info.tema
   const gt = info.gateTema
   const gb = info.gateBloque
   const gf = info.gateFinal
@@ -201,16 +300,83 @@ export default function Examen() {
     <div className="flex flex-col gap-4">
       <h1 className="text-2xl font-bold">Exámenes</h1>
 
-      <button onClick={iniciarDiario} className="tarjeta flex items-center gap-3 text-left">
-        <span className="text-2xl">📅</span>
-        <div className="flex-1">
-          <p className="font-semibold">Examen diario</p>
-          <p className="text-sm text-slate-500 dark:text-slate-400">
-            {info.pendientes > 0 ? `${info.pendientes} por evaluar` : 'Sin pendientes ahora'} · entrenamiento
-          </p>
-        </div>
-        <span className="text-slate-400">›</span>
-      </button>
+      {/* --- Módulo de vocabulario: los tres ciclos de repaso --- */}
+      <h2 className="text-sm font-bold uppercase tracking-wide text-slate-400">Vocabulario</h2>
+      {info.ciclos.map((c) => {
+        const cuantas = c.id === 'diario' ? info.pendientes : c.cuantas
+        return (
+          <button
+            key={c.id}
+            onClick={() => c.toca && cuantas > 0 && iniciarCiclo(c.id, `Examen ${c.titulo.toLowerCase()}`)}
+            disabled={!c.toca || cuantas === 0}
+            className={`tarjeta flex items-center gap-3 text-left ${c.toca && cuantas > 0 ? '' : 'opacity-70'}`}
+          >
+            <span className="text-2xl">{c.toca ? c.icono : '🔒'}</span>
+            <div className="flex-1">
+              <p className="font-semibold">Examen {c.titulo.toLowerCase()}</p>
+              <p className="text-sm text-slate-500 dark:text-slate-400">
+                {!c.toca
+                  ? `Toca los ${proximoDia(c.id)}`
+                  : cuantas > 0
+                    ? `${cuantas} ${cuantas === 1 ? 'palabra' : 'palabras'} · entrenamiento`
+                    : 'Nada que evaluar todavía'}
+              </p>
+            </div>
+            <span className="text-slate-400">›</span>
+          </button>
+        )
+      })}
+
+      {/* --- Por tema: una habilidad a la vez, con el tema que elijas. Todo esto es
+              entrenamiento repetible; la nota que cuenta es la del examen de tema. --- */}
+      <h2 className="mt-2 text-sm font-bold uppercase tracking-wide text-slate-400">Por tema</h2>
+      <div className="tarjeta flex flex-col gap-3">
+        <select
+          value={tg}
+          onChange={(e) => setTemaGram(Number(e.target.value))}
+          className="rounded-xl border border-slate-300 bg-white px-3 py-2 dark:border-slate-600 dark:bg-slate-900"
+        >
+          {Array.from({ length: info.tema }, (_, i) => i + 1).map((t) => (
+            <option key={t} value={t}>
+              Tema {t}
+            </option>
+          ))}
+        </select>
+
+        <button onClick={() => iniciarGramatica(tg)} className="btn-primary">
+          📘 Gramática · {ejerciciosDe(tg)} ejercicios
+        </button>
+        <button
+          onClick={() => setVista({ modo: 'habListening', tema: tg, enPreguntas: false })}
+          className="btn bg-slate-100 text-slate-800 dark:bg-slate-700 dark:text-slate-100"
+        >
+          🎧 Escuchar · {listeningDeTema(tg)?.preguntas.length ?? 0} preguntas
+        </button>
+        <button
+          onClick={() => setVista({ modo: 'habReading', tema: tg, enPreguntas: false })}
+          className="btn bg-slate-100 text-slate-800 dark:bg-slate-700 dark:text-slate-100"
+        >
+          📖 Leer · {readingDeTema(tg)?.preguntas.length ?? 0} preguntas
+        </button>
+        <button
+          onClick={() => setVista({ modo: 'habWriting', tema: tg })}
+          className="btn bg-slate-100 text-slate-800 dark:bg-slate-700 dark:text-slate-100"
+        >
+          ✍️ Escribir · 1 consigna
+        </button>
+        <button
+          onClick={() => setVista({ modo: 'habHablar', tema: tg })}
+          className="btn bg-slate-100 text-slate-800 dark:bg-slate-700 dark:text-slate-100"
+        >
+          🗣️ Hablar · la IA te da el veredicto
+        </button>
+        <p className="text-xs text-slate-500 dark:text-slate-400">
+          Entra TODO lo del tema, no una muestra. Es entrenamiento: repetible y sin nota que se guarde.
+        </p>
+      </div>
+
+      {/* --- Los que sí abren contenido nuevo --- */}
+      <h2 className="mt-2 text-sm font-bold uppercase tracking-wide text-slate-400">Progresión</h2>
 
       <button
         onClick={() => gt.disponible && iniciarTema(info.tema)}
@@ -222,7 +388,7 @@ export default function Examen() {
           <p className="font-semibold">Examen de tema {info.tema}</p>
           {gt.disponible ? (
             <p className="text-sm text-emerald-600 dark:text-emerald-400">
-              Disponible · vocabulario + gramática completa · 80% en cada una
+              Disponible · 6 secciones · 80% en vocabulario y gramática, 75% en destrezas
             </p>
           ) : (
             <p className="text-sm text-slate-500 dark:text-slate-400">
