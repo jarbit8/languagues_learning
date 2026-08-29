@@ -1,5 +1,3 @@
-import type { Idioma } from '../types'
-
 // Web Speech API. Las voces cargan de forma asíncrona (evento voiceschanged).
 let voces: SpeechSynthesisVoice[] = []
 
@@ -23,15 +21,15 @@ export function puntuarVoz(v: SpeechSynthesisVoice): number {
   if (/google/.test(n)) score += 5 // voces de Chrome, mejores que eSpeak/SAPI viejas
   if (!v.localService) score += 3 // online suele ser más natural
   if (/desktop|mobile compact|espeak|compact/.test(n)) score -= 4 // las más robóticas
-  if (/david|zira|mark|hortense/.test(n)) score -= 2 // SAPI viejas de Windows
+  if (/david|zira|mark/.test(n)) score -= 2 // SAPI viejas de Windows
   return score
 }
 
 // Género probable de una voz por su nombre, para repartir hombre/mujer entre los 2 hablantes.
 const VOZ_FEM =
-  /(zira|aria|jenny|michelle|eva|emma|clara|hazel|heather|linda|susan|catherine|karen|moira|tessa|fiona|serena|samantha|\bana\b|hortense|julie|denise|c[eé]line|am[eé]lie|audrey|marie|virginie|sabina|paulina|female|femme|woman)/i
+  /(zira|aria|jenny|michelle|eva|emma|clara|hazel|heather|linda|susan|catherine|karen|moira|tessa|fiona|serena|samantha|\bana\b|julie|audrey|sabina|paulina|female|woman)/i
 const VOZ_MASC =
-  /(david|mark|guy|christopher|eric|\balex\b|daniel|fred|oliver|george|james|ryan|paul|claude|henri|thomas|nicolas|guillaume|sylvain|jean|pierre|antoine|matthew|brian|raul|male|homme)/i
+  /(david|mark|guy|christopher|eric|\balex\b|daniel|fred|oliver|george|james|ryan|paul|thomas|matthew|brian|male)/i
 
 export function generoVoz(v: SpeechSynthesisVoice): 'f' | 'm' | '?' {
   const n = v.name.toLowerCase()
@@ -58,21 +56,17 @@ export function getVelocidad() {
   return velocidadGuardada
 }
 
-export function hablar(texto: string, idioma: Idioma, rate = velocidadGuardada) {
+export function hablar(texto: string, rate = velocidadGuardada) {
   if (typeof window === 'undefined' || !('speechSynthesis' in window)) return
   const u = new SpeechSynthesisUtterance(texto)
-  const voz = idioma === 'en' ? elegirVoz('en-US', 'en-GB') : elegirVoz('fr-FR', 'fr-CA')
+  const voz = elegirVoz('en-US', 'en-GB')
   if (voz) u.voice = voz
-  u.lang = idioma === 'en' ? 'en-US' : 'fr-FR'
+  u.lang = 'en-US'
   u.rate = rate
   window.speechSynthesis.cancel()
   window.speechSynthesis.speak(u)
 }
 
 export function estadoVoces() {
-  return {
-    en: !!elegirVoz('en-US', 'en-GB'),
-    fr: !!elegirVoz('fr-FR', 'fr-CA'),
-    total: voces.length
-  }
+  return { en: !!elegirVoz('en-US', 'en-GB'), total: voces.length }
 }

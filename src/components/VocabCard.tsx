@@ -1,34 +1,6 @@
 import { useState } from 'react'
-import type { Concepto, Idioma, PalabraEstado } from '../types'
-import { IDIOMAS_ACTIVOS, notaVisible } from '../config'
+import type { Concepto, PalabraEstado } from '../types'
 import { hablar } from '../lib/audio'
-
-function Lado({ chip, texto, ejemplo, pron, idioma }: { chip: string; texto: string; ejemplo: string; pron?: string; idioma: Idioma }) {
-  return (
-    <div className="flex flex-col gap-1">
-      <div className="flex items-center gap-2">
-        <span className={idioma === 'en' ? 'chip-en' : 'chip-fr'}>{chip}</span>
-        <span className="text-lg font-semibold">{texto}</span>
-        <button
-          onClick={() => hablar(texto, idioma)}
-          aria-label={`Escuchar ${texto}`}
-          className="ml-auto text-xl"
-        >
-          🔊
-        </button>
-      </div>
-      {pron && (
-        <span className="text-xs tracking-wide text-slate-400 dark:text-slate-500">/ {pron} /</span>
-      )}
-      <button
-        onClick={() => hablar(ejemplo, idioma)}
-        className="text-left text-sm italic text-slate-500 dark:text-slate-400"
-      >
-        {ejemplo} <span className="not-italic">🔊</span>
-      </button>
-    </div>
-  )
-}
 
 export default function VocabCard({
   concepto,
@@ -52,19 +24,32 @@ export default function VocabCard({
 
       {abierta && (
         <div className="mt-3 flex flex-col gap-3 border-t border-slate-100 pt-3 dark:border-slate-700">
-          {IDIOMAS_ACTIVOS.map((i) => (
-            <Lado
-              key={i}
-              chip={i.toUpperCase()}
-              texto={concepto[i].texto}
-              ejemplo={concepto[i].ejemplo}
-              pron={concepto[i].pron}
-              idioma={i}
-            />
-          ))}
-          {notaVisible(concepto.nota) && (
+          <div className="flex flex-col gap-1">
+            <div className="flex items-center gap-2">
+              <span className="text-lg font-semibold">{concepto.texto}</span>
+              <button
+                onClick={() => hablar(concepto.texto)}
+                aria-label={`Escuchar ${concepto.texto}`}
+                className="ml-auto text-xl"
+              >
+                🔊
+              </button>
+            </div>
+            {concepto.pron && (
+              <span className="text-xs tracking-wide text-slate-400 dark:text-slate-500">
+                / {concepto.pron} /
+              </span>
+            )}
+            <button
+              onClick={() => hablar(concepto.ejemplo)}
+              className="text-left text-sm italic text-slate-500 dark:text-slate-400"
+            >
+              {concepto.ejemplo} <span className="not-italic">🔊</span>
+            </button>
+          </div>
+          {concepto.nota && (
             <p className="rounded-lg bg-amber-50 px-3 py-2 text-sm text-amber-800 dark:bg-amber-900/30 dark:text-amber-200">
-              💡 {notaVisible(concepto.nota)}
+              💡 {concepto.nota}
             </p>
           )}
           <button

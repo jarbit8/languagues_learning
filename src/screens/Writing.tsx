@@ -1,7 +1,5 @@
 import { useState } from 'react'
 import { useLiveQuery } from 'dexie-react-hooks'
-import type { Idioma } from '../types'
-import { IDIOMAS_ACTIVOS, idiomaUnico, nombreIdioma } from '../config'
 import { bloqueEnCurso } from '../lib/progreso'
 import { getWriting } from '../data/packs'
 import { EscribirConsigna } from '../components/PasoWriting'
@@ -9,12 +7,11 @@ import { EscribirConsigna } from '../components/PasoWriting'
 export default function Writing() {
   const bloqueActual = useLiveQuery(() => bloqueEnCurso(), [], 1) ?? 1
   const [bloque, setBloque] = useState<number | null>(null)
-  const [idioma, setIdioma] = useState<Idioma>(IDIOMAS_ACTIVOS[0])
   const [consignaIdx, setConsignaIdx] = useState<number | null>(null)
   const [hecho, setHecho] = useState(false)
 
   const bloqueSel = bloque ?? bloqueActual
-  const pack = getWriting(bloqueSel, idioma)
+  const pack = getWriting(bloqueSel)
   const bloquesDisponibles = Array.from({ length: bloqueActual }, (_, i) => i + 1)
 
   function reset() {
@@ -45,7 +42,7 @@ export default function Writing() {
         <button onClick={reset} className="self-start text-sm text-slate-500 underline dark:text-slate-400">
           ← Volver a las consignas
         </button>
-        <EscribirConsigna key={`${idioma}-${consignaIdx}`} pack={consigna} idioma={idioma} onDone={() => setHecho(true)} />
+        <EscribirConsigna key={consignaIdx} pack={consigna} onDone={() => setHecho(true)} />
       </div>
     )
   }
@@ -67,34 +64,16 @@ export default function Writing() {
             </option>
           ))}
         </select>
-        {!idiomaUnico && (
-          <div className="flex rounded-xl bg-slate-200 p-1 dark:bg-slate-800">
-            {IDIOMAS_ACTIVOS.map((i) => (
-              <button
-                key={i}
-                onClick={() => {
-                  reset()
-                  setIdioma(i)
-                }}
-                className={`rounded-lg px-3 py-1 text-sm font-bold ${
-                  idioma === i ? (i === 'en' ? 'chip-en' : 'chip-fr') : 'text-slate-500'
-                }`}
-              >
-                {i.toUpperCase()}
-              </button>
-            ))}
-          </div>
-        )}
       </div>
 
       <p className="text-sm text-slate-500 dark:text-slate-400">
-        Escribe según la consigna (30–40 palabras, formato IELTS/TEF). Con API key la IA te corrige; sin ella, comparas
+        Escribe según la consigna (30–40 palabras, formato IELTS/TOEFL). Con API key la IA te corrige; sin ella, comparas
         con una respuesta modelo y te autocalificas.
       </p>
 
       {!pack ? (
         <p className="tarjeta text-slate-500 dark:text-slate-400">
-          Aún no hay escritura para el bloque {bloqueSel} en {nombreIdioma(idioma)}.
+          Aún no hay escritura para el bloque {bloqueSel}.
         </p>
       ) : (
         pack.consignas.map((c, i) => (
@@ -102,7 +81,7 @@ export default function Writing() {
             <div className="flex items-center gap-2">
               <span
                 className={`flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-xs font-black text-white ${
-                  idioma === 'en' ? 'bg-en' : 'bg-fr'
+                  'bg-en'
                 }`}
               >
                 {i + 1}

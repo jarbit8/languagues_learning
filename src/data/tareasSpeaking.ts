@@ -1,4 +1,4 @@
-// Las 8 tareas de speaking del examen CELPIP (y su espíritu en IELTS/TEF), adaptadas a nivel A1.
+// Las 8 tareas de speaking del examen CELPIP (y su espíritu en IELTS/TOEFL), adaptadas a nivel A1.
 // La IA presenta la tarea y da feedback SIEMPRE en el idioma; `instruccion` es la descripción
 // (para el prompt) de qué debe pedirle al estudiante. Ampliable a A2/B1 con más tareas.
 

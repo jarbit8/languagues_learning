@@ -28,10 +28,4 @@ body {
   .btn-primary {
     @apply btn bg-slate-900 text-white dark:bg-white dark:text-slate-900;
   }
-  .chip-en {
-    @apply rounded-md bg-en-soft px-1.5 py-0.5 text-xs font-bold text-en-dark dark:bg-en-dark/30 dark:text-en-soft;
-  }
-  .chip-fr {
-    @apply rounded-md bg-fr-soft px-1.5 py-0.5 text-xs font-bold text-fr-dark dark:bg-fr-dark/30 dark:text-fr-soft;
-  }
 }

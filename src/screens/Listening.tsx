@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { useLiveQuery } from 'dexie-react-hooks'
-import type { Idioma, DialogoListening } from '../types'
-import { IDIOMAS_ACTIVOS, idiomaUnico, nombreIdioma } from '../config'
+import type { DialogoListening } from '../types'
 import { temaEnCurso } from '../lib/progreso'
 import { getVocabPack, getListening } from '../data/packs'
 import { reproducirDialogo, reproducirLinea, detener, rateListening } from '../lib/listening'
@@ -23,13 +22,11 @@ function formatoDuracion(seg: number): string {
 function DialogoCard({
   dialogo,
   indice,
-  idioma,
   tema,
   onExamen
 }: {
   dialogo: DialogoListening
   indice: number
-  idioma: Idioma
   tema: number
   onExamen: (indice: number) => void
 }) {
@@ -41,7 +38,7 @@ function DialogoCard({
       <div className="flex items-center gap-2">
         <span
           className={`flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-xs font-black text-white ${
-            idioma === 'en' ? 'bg-en' : 'bg-fr'
+            'bg-en'
           }`}
         >
           {indice + 1}
@@ -55,7 +52,7 @@ function DialogoCard({
       <div className="flex gap-2">
         <button
           onClick={() =>
-            reproducirDialogo(dialogo.lineas, idioma, tema, {
+            reproducirDialogo(dialogo.lineas, tema, {
               onLinea: setLineaActiva,
               onFin: () => setLineaActiva(-1)
             })
@@ -66,7 +63,7 @@ function DialogoCard({
         </button>
         <button
           onClick={() =>
-            reproducirDialogo(dialogo.lineas, idioma, tema, {
+            reproducirDialogo(dialogo.lineas, tema, {
               lento: true,
               onLinea: setLineaActiva,
               onFin: () => setLineaActiva(-1)
@@ -91,7 +88,7 @@ function DialogoCard({
             <button
               key={i}
               onClick={() =>
-                reproducirLinea(l.texto, idioma, tema, {
+                reproducirLinea(l.texto, tema, {
                   idxHablante: [...new Set(dialogo.lineas.map((x) => x.hablante))].indexOf(l.hablante)
                 })
               }
@@ -117,12 +114,11 @@ function DialogoCard({
 export default function Listening() {
   const temaActual = useLiveQuery(() => temaEnCurso(), [], 1) ?? 1
   const [tema, setTema] = useState<number | null>(null)
-  const [idioma, setIdioma] = useState<Idioma>(IDIOMAS_ACTIVOS[0])
   const [examenDialogo, setExamenDialogo] = useState<number | null>(null)
   const [resultado, setResultado] = useState<{ aciertos: number; total: number } | null>(null)
 
   const temaSel = tema ?? temaActual
-  const pack = getListening(temaSel, idioma)
+  const pack = getListening(temaSel)
   const temasDisponibles = Array.from({ length: temaActual }, (_, i) => i + 1)
 
   function reset() {
@@ -134,11 +130,6 @@ export default function Listening() {
   function cambiarTema(t: number) {
     reset()
     setTema(t)
-  }
-
-  function cambiarIdioma(i: Idioma) {
-    reset()
-    setIdioma(i)
   }
 
   // --- Modo examen de un diálogo ---
@@ -162,7 +153,7 @@ export default function Listening() {
         </div>
       )
     }
-    const preguntas = dialogo.preguntas.map((p) => preguntaDeListening(p, idioma))
+    const preguntas = dialogo.preguntas.map(preguntaDeListening)
     return (
       <div className="flex flex-col gap-4">
         <button onClick={reset} className="self-start text-sm text-slate-500 underline dark:text-slate-400">
@@ -191,21 +182,6 @@ export default function Listening() {
             </option>
           ))}
         </select>
-        {!idiomaUnico && (
-          <div className="flex rounded-xl bg-slate-200 p-1 dark:bg-slate-800">
-            {IDIOMAS_ACTIVOS.map((i) => (
-              <button
-                key={i}
-                onClick={() => cambiarIdioma(i)}
-                className={`rounded-lg px-3 py-1 text-sm font-bold ${
-                  idioma === i ? (i === 'en' ? 'chip-en' : 'chip-fr') : 'text-slate-500'
-                }`}
-              >
-                {i.toUpperCase()}
-              </button>
-            ))}
-          </div>
-        )}
       </div>
 
       <p className="text-sm text-slate-500 dark:text-slate-400">
@@ -215,11 +191,11 @@ export default function Listening() {
 
       {!pack ? (
         <p className="tarjeta text-slate-500 dark:text-slate-400">
-          Aún no hay listening para el tema {temaSel} en {nombreIdioma(idioma)}.
+          Aún no hay listening para el tema {temaSel}.
         </p>
       ) : (
         pack.dialogos.map((d, i) => (
-          <DialogoCard key={i} dialogo={d} indice={i} idioma={idioma} tema={temaSel} onExamen={setExamenDialogo} />
+          <DialogoCard key={i} dialogo={d} indice={i} tema={temaSel} onExamen={setExamenDialogo} />
         ))
       )}
     </div>

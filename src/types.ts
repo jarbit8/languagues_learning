@@ -1,18 +1,11 @@
 // Tipos compartidos. El contenido vive en /data (JSON); Dexie solo guarda estado.
 
-export type Idioma = 'en' | 'fr'
-
-export interface ConceptoLado {
-  texto: string
-  ejemplo: string
-  pron?: string
-}
-
 export interface Concepto {
   id: string
   es: string
-  en: ConceptoLado
-  fr: ConceptoLado
+  texto: string
+  ejemplo: string
+  pron?: string
   nota?: string
 }
 
@@ -52,7 +45,6 @@ export interface Ejercicio {
 
 export interface GramaticaPack {
   tema: number
-  idioma: Idioma
   titulo: string
   regla: string
   pronunciacion: string
@@ -66,7 +58,6 @@ export interface GramaticaPack {
 export type TipoPregunta =
   | 'audio_escribir'
   | 'es_a_en'
-  | 'es_a_fr'
   | 'significado_escrito'
   | 'opcion_multiple'
   | 'hueco'
@@ -79,7 +70,6 @@ export type TipoPregunta =
 
 export interface Pregunta {
   tipo: TipoPregunta
-  idioma: Idioma
   enunciado: string
   audioTexto?: string | null
   opciones?: string[]
@@ -114,12 +104,11 @@ export interface DialogoListening {
 
 export interface ListeningPack {
   tema: number
-  idioma: Idioma
   dialogos: DialogoListening[]
 }
 
-// Un diálogo ya "aplanado" con su tema/idioma, para pantallas que listan varios juntos.
-export type DialogoConTema = DialogoListening & { tema: number; idioma: Idioma }
+// Un diálogo ya "aplanado" con su tema, para pantallas que listan varios juntos.
+export type DialogoConTema = DialogoListening & { tema: number }
 
 export type EstadoTema = 'bloqueado' | 'en_curso' | 'aprobado'
 
@@ -128,8 +117,7 @@ export interface ProgresoTema {
   estado: EstadoTema
   notaExamenTema?: number
   intentos: number
-  gramaticaEnCompletada?: boolean
-  gramaticaFrCompletada?: boolean
+  gramaticaCompletada?: boolean
 }
 
 // --- Speaking IA ---
@@ -205,12 +193,8 @@ export interface TextoReading {
 
 export interface ReadingPack {
   tema: number
-  idioma: Idioma
   textos: TextoReading[]
 }
-
-// Un texto de lectura ya "aplanado" con su idioma, para el examen y la pantalla de práctica.
-export type TextoConIdioma = TextoReading & { idioma: Idioma }
 
 // --- Pronunciación (packs en /data/pronunciacion) ---
 
@@ -236,7 +220,6 @@ export interface GrupoPron {
 }
 
 export interface PronPack {
-  idioma: Idioma
   grupos: GrupoPron[]
 }
 
@@ -252,6 +235,5 @@ export interface ConsignaWriting {
 
 export interface WritingPack {
   bloque: number
-  idioma: Idioma
   consignas: ConsignaWriting[]
 }

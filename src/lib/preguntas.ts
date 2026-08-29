@@ -1,6 +1,5 @@
-import type { Concepto, Ejercicio, Idioma, Pregunta, PreguntaListening } from '../types'
+import type { Concepto, Ejercicio, Pregunta, PreguntaListening } from '../types'
 import { vocabPacks } from '../data/packs'
-import { IDIOMAS_ACTIVOS, nombreIdioma as nombreDeIdioma } from '../config'
 
 export function baraja<T>(arr: T[]): T[] {
   const a = [...arr]
@@ -11,12 +10,11 @@ export function baraja<T>(arr: T[]): T[] {
   return a
 }
 
-const poolEn = vocabPacks.flatMap((p) => p.conceptos.map((c) => c.en.texto))
-const poolFr = vocabPacks.flatMap((p) => p.conceptos.map((c) => c.fr.texto))
+const poolEn = vocabPacks.flatMap((p) => p.conceptos.map((c) => c.texto))
 const poolEs = vocabPacks.flatMap((p) => p.conceptos.map((c) => c.es))
 
-function distractores(correcta: string, idioma: Idioma, n = 3): string[] {
-  const pool = (idioma === 'en' ? poolEn : poolFr).filter((t) => t !== correcta)
+function distractores(correcta: string, n = 3): string[] {
+  const pool = poolEn.filter((t) => t !== correcta)
   return baraja([...new Set(pool)]).slice(0, n)
 }
 
@@ -44,40 +42,28 @@ function variantesEs(es: string): string[] {
   return [...new Set(ramas)].filter((v) => v && v !== es)
 }
 
-// Examen diario: ve la palabra en el idioma que estudia y escribe qué significa en español.
+// Examen diario: ve la palabra en inglés y escribe qué significa en español.
 export function preguntaSignificadoEscrito(concepto: Concepto): Pregunta {
-  const idioma: Idioma = IDIOMAS_ACTIVOS[Math.floor(Math.random() * IDIOMAS_ACTIVOS.length)]
-  const lado = concepto[idioma]
   return {
     tipo: 'significado_escrito',
-    idioma,
-    enunciado: `¿Qué significa "${lado.texto}" en español?`,
-    audioTexto: lado.texto,
+    enunciado: `¿Qué significa "${concepto.texto}" en español?`,
+    audioTexto: concepto.texto,
     respuesta: concepto.es,
     aceptadas: variantesEs(concepto.es),
     palabraId: concepto.id
   }
 }
 
-// Convierte un concepto de vocabulario en una pregunta (tipo aleatorio, idioma aleatorio).
+// Convierte un concepto de vocabulario en una pregunta (tipo aleatorio).
 export function preguntaDeConcepto(concepto: Concepto): Pregunta {
-  const idioma: Idioma = IDIOMAS_ACTIVOS[Math.floor(Math.random() * IDIOMAS_ACTIVOS.length)]
-  const lado = concepto[idioma]
-  const nombreIdioma = nombreDeIdioma(idioma)
-  const tipos = [
-    'audio_escribir',
-    idioma === 'en' ? 'es_a_en' : 'es_a_fr',
-    'opcion_multiple',
-    'significado'
-  ] as const
+  const tipos = ['audio_escribir', 'es_a_en', 'opcion_multiple', 'significado'] as const
   const tipo = tipos[Math.floor(Math.random() * tipos.length)]
 
   // No traduce: comprueba que entiende el significado, no solo que memorizó el par de palabras.
   if (tipo === 'significado') {
     return {
       tipo: 'opcion_multiple',
-      idioma,
-      enunciado: `¿Qué significa "${lado.texto}" (${nombreIdioma})?`,
+      enunciado: `¿Qué significa "${concepto.texto}" en inglés?`,
       audioTexto: null,
       opciones: baraja([concepto.es, ...distractoresEs(concepto.es)]),
       respuesta: concepto.es,
@@ -88,11 +74,10 @@ export function preguntaDeConcepto(concepto: Concepto): Pregunta {
   if (tipo === 'opcion_multiple') {
     return {
       tipo,
-      idioma,
-      enunciado: `¿Cómo se dice "${concepto.es}" en ${nombreIdioma}?`,
+      enunciado: `¿Cómo se dice "${concepto.es}" en inglés?`,
       audioTexto: null,
-      opciones: baraja([lado.texto, ...distractores(lado.texto, idioma)]),
-      respuesta: lado.texto,
+      opciones: baraja([concepto.texto, ...distractores(concepto.texto)]),
+      respuesta: concepto.texto,
       aceptadas: [],
       palabraId: concepto.id
     }
@@ -100,20 +85,18 @@ export function preguntaDeConcepto(concepto: Concepto): Pregunta {
   if (tipo === 'audio_escribir') {
     return {
       tipo,
-      idioma,
-      enunciado: `Escucha y escribe la palabra en ${nombreIdioma}.`,
-      audioTexto: lado.texto,
-      respuesta: lado.texto,
+      enunciado: 'Escucha y escribe la palabra en inglés.',
+      audioTexto: concepto.texto,
+      respuesta: concepto.texto,
       aceptadas: [],
       palabraId: concepto.id
     }
   }
   return {
     tipo,
-    idioma,
-    enunciado: `Traduce al ${nombreIdioma}: "${concepto.es}"`,
+    enunciado: `Traduce al inglés: "${concepto.es}"`,
     audioTexto: null,
-    respuesta: lado.texto,
+    respuesta: concepto.texto,
     aceptadas: [],
     palabraId: concepto.id
   }
@@ -121,12 +104,11 @@ export function preguntaDeConcepto(concepto: Concepto): Pregunta {
 
 // Convierte una pregunta de listening en una pregunta para el runner.
 // 'vf' se traduce a opción múltiple Verdadero/Falso; el resto queda como texto libre.
-export function preguntaDeListening(p: PreguntaListening, idioma: Idioma): Pregunta {
+export function preguntaDeListening(p: PreguntaListening): Pregunta {
   if (p.tipo === 'vf') {
     const respuesta = p.respuesta.toLowerCase() === 'verdadero' ? 'Verdadero' : 'Falso'
     return {
       tipo: 'opcion_multiple',
-      idioma,
       enunciado: p.enunciado,
       opciones: ['Verdadero', 'Falso'],
       respuesta,
@@ -139,7 +121,6 @@ export function preguntaDeListening(p: PreguntaListening, idioma: Idioma): Pregu
     const respuesta = r.startsWith('v') ? 'Verdadero' : r.startsWith('f') ? 'Falso' : 'No dice'
     return {
       tipo: 'opcion_multiple',
-      idioma,
       enunciado: p.enunciado,
       opciones: ['Verdadero', 'Falso', 'No dice'],
       respuesta,
@@ -148,7 +129,6 @@ export function preguntaDeListening(p: PreguntaListening, idioma: Idioma): Pregu
   }
   return {
     tipo: p.tipo,
-    idioma,
     enunciado: p.enunciado,
     opciones: p.opciones,
     respuesta: p.respuesta,
@@ -157,10 +137,9 @@ export function preguntaDeListening(p: PreguntaListening, idioma: Idioma): Pregu
 }
 
 // Convierte un ejercicio de gramática en una pregunta para el runner.
-export function preguntaDeEjercicio(e: Ejercicio, idioma: Idioma): Pregunta {
+export function preguntaDeEjercicio(e: Ejercicio): Pregunta {
   return {
     tipo: e.tipo,
-    idioma,
     enunciado: e.enunciado,
     audioTexto: null,
     opciones: e.tipo === 'ordenar' ? baraja(e.opciones ?? []) : e.opciones,

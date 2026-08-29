@@ -1,9 +1,7 @@
 import { useState } from 'react'
 import { useLiveQuery } from 'dexie-react-hooks'
-import type { Idioma } from '../types'
 import { temaEnCurso } from '../lib/progreso'
 import { escenarioDe } from '../data/escenarios'
-import { IDIOMAS_ACTIVOS, idiomaUnico, nombreIdioma } from '../config'
 import { getVocabPack } from '../data/packs'
 import { construirPromptCopiable, vocabularioDesbloqueado } from '../lib/speaking'
 import CopiarPrompt from '../components/CopiarPrompt'
@@ -14,38 +12,17 @@ import CopiarPrompt from '../components/CopiarPrompt'
 export default function Conversacion() {
   const temaActual = useLiveQuery(() => temaEnCurso(), [], 1) ?? 1
   const [tema, setTema] = useState<number | null>(null)
-  const [idioma, setIdioma] = useState<Idioma>(IDIOMAS_ACTIVOS[0])
 
   const temaSel = tema ?? temaActual
   const temasDisponibles = Array.from({ length: temaActual }, (_, i) => i + 1)
   const pack = getVocabPack(temaSel)
-  const nombre = nombreIdioma(idioma)
-  const vocab = vocabularioDesbloqueado(temaSel, idioma)
+  const vocab = vocabularioDesbloqueado(temaSel)
 
-  const prompt = construirPromptCopiable(idioma, escenarioDe(temaSel), vocab)
+  const prompt = construirPromptCopiable(escenarioDe(temaSel), vocab)
 
   return (
     <div className="flex flex-col gap-4">
       <div className="tarjeta flex flex-col gap-3">
-        {!idiomaUnico && (
-          <>
-            <label className="text-sm font-semibold">Idioma</label>
-            <div className="flex rounded-xl bg-slate-200 p-1 dark:bg-slate-800">
-              {IDIOMAS_ACTIVOS.map((i) => (
-                <button
-                  key={i}
-                  onClick={() => setIdioma(i)}
-                  className={`flex-1 rounded-lg py-2 text-sm font-bold ${
-                    idioma === i ? (i === 'en' ? 'chip-en' : 'chip-fr') : 'text-slate-500'
-                  }`}
-                >
-                  {i === 'en' ? 'Inglés' : 'Francés'}
-                </button>
-              ))}
-            </div>
-          </>
-        )}
-
         <label className="text-sm font-semibold">Vocabulario hasta el tema</label>
         <select
           value={temaSel}
@@ -63,7 +40,7 @@ export default function Conversacion() {
 
       <CopiarPrompt
         prompt={prompt}
-        descripcion={`Conversación libre. Pega esto en cualquier chat de IA (Claude, ChatGPT...) y practica. El tutor responde siempre en ${nombre}, nunca en español.`}
+        descripcion="Conversación libre. Pega esto en cualquier chat de IA (Claude, ChatGPT...) y practica. El tutor responde siempre en inglés, nunca en español."
       />
 
       {pack && <p className="text-center text-xs text-slate-400">Vocabulario disponible: temas 1 a {temaSel}</p>}

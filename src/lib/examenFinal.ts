@@ -1,6 +1,5 @@
-import type { Pregunta, ListeningPack, ReadingPack, DialogoConTema, TextoConIdioma } from '../types'
+import type { Pregunta, ListeningPack, ReadingPack, DialogoConTema, TextoReading } from '../types'
 import { vocabPacks, getListening, getReading, getGramatica, dialogosDe } from '../data/packs'
-import { IDIOMAS_ACTIVOS } from '../config'
 import { baraja, preguntaDeConcepto, preguntaDeListening, preguntaDeEjercicio } from './preguntas'
 
 // 100 palabras aleatorias de todo el nivel A1 (skill exam-engine: examen final).
@@ -16,9 +15,7 @@ export function construirVocabFinal(): Pregunta[] {
 // medir la gramática acumulada, que es justo lo que más se olvida.
 export function construirGramaticaFinal(cuantas = 20): Pregunta[] {
   const ejercicios = vocabPacks.flatMap((p) =>
-    IDIOMAS_ACTIVOS.flatMap((idioma) =>
-      (getGramatica(p.tema, idioma)?.ejercicios ?? []).map((e) => preguntaDeEjercicio(e, idioma))
-    )
+    (getGramatica(p.tema)?.ejercicios ?? []).map(preguntaDeEjercicio)
   )
   return baraja(ejercicios).slice(0, cuantas)
 }
@@ -28,31 +25,36 @@ export interface SeccionListening {
   preguntas: Pregunta[]
 }
 
-// Versión extendida: un pack por bloque (temas 2, 8, 14, 20), alternando entre idiomas activos.
+// Versión extendida: un pack por bloque (temas 2, 8, 14, 20).
 export function construirListeningFinal(): SeccionListening {
   const packs = [2, 8, 14, 20]
-    .map((tema, i) => getListening(tema, IDIOMAS_ACTIVOS[i % IDIOMAS_ACTIVOS.length]))
+    .map((tema) => getListening(tema))
     .filter((d): d is ListeningPack => !!d)
   const dialogos = packs.flatMap(dialogosDe)
-  const preguntas = baraja(dialogos.flatMap((d) => d.preguntas.map((p) => preguntaDeListening(p, d.idioma))))
+  const preguntas = baraja(dialogos.flatMap((d) => d.preguntas.map(preguntaDeListening)))
   return { dialogos, preguntas }
 }
 
 export interface SeccionReading {
-  textos: TextoConIdioma[]
+  textos: TextoReading[]
   preguntas: Pregunta[]
 }
 
 // Versión extendida: lecturas de 4 temas repartidos por todo el nivel (uno por bloque).
 export function construirReadingFinal(): SeccionReading {
   const packs = [4, 10, 16, 22]
-    .flatMap((tema) => IDIOMAS_ACTIVOS.map((i) => getReading(tema, i)))
+    .map((tema) => getReading(tema))
     .filter((p): p is ReadingPack => !!p)
-  const textos: TextoConIdioma[] = packs.flatMap((p) => p.textos.map((t) => ({ ...t, idioma: p.idioma })))
+  const textos: TextoReading[] = packs.flatMap((p) => p.textos)
   const preguntas = baraja(
     textos.flatMap((t) =>
       t.preguntas.map((p) =>
-        preguntaDeListening({ tipo: p.tipo, enunciado: p.enunciado, opciones: p.opciones, respuesta: p.respuesta }, t.idioma)
+        preguntaDeListening({
+          tipo: p.tipo,
+          enunciado: p.enunciado,
+          opciones: p.opciones,
+          respuesta: p.respuesta
+        })
       )
     )
   )

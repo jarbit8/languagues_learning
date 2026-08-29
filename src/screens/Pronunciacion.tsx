@@ -1,11 +1,9 @@
 import { useMemo, useState } from 'react'
 import type { GrupoPron, ParMinimo } from '../types'
-import { IDIOMAS_ACTIVOS } from '../config'
-import { getPron } from '../data/packs'
+import { pronPack } from '../data/packs'
 import { hablar } from '../lib/audio'
 import { baraja } from '../lib/preguntas'
 
-const idioma = IDIOMAS_ACTIVOS[0]
 
 // --- Entrenador de oído: suena UNA de las dos palabras del par y hay que acertar cuál fue.
 // Es el ejercicio clásico de pares mínimos, lo que más entrena el oído para el listening.
@@ -96,13 +94,13 @@ function EntrenadorOido({ grupo, onSalir }: { grupo: GrupoPron; onSalir: () => v
       <div className="tarjeta flex flex-col items-center gap-3 py-6">
         <p className="text-sm text-slate-500 dark:text-slate-400">¿Cuál escuchaste?</p>
         <button
-          onClick={() => hablar(palabraSonando.palabra, idioma)}
+          onClick={() => hablar(palabraSonando.palabra)}
           className="flex h-20 w-20 items-center justify-center rounded-full bg-slate-900 text-3xl text-white dark:bg-white dark:text-slate-900"
         >
           🔊
         </button>
         <button
-          onClick={() => hablar(palabraSonando.palabra, idioma)}
+          onClick={() => hablar(palabraSonando.palabra)}
           className="text-xs text-slate-400 underline"
         >
           repetir
@@ -152,7 +150,7 @@ function GrupoCard({ grupo, onEntrenar }: { grupo: GrupoPron; onEntrenar: () => 
             {grupo.ejemplos.map((ej, i) => (
               <button
                 key={i}
-                onClick={() => hablar(ej.palabra, idioma)}
+                onClick={() => hablar(ej.palabra)}
                 className="flex min-h-[52px] items-center gap-3 rounded-xl bg-slate-50 px-3 py-2 text-left dark:bg-slate-900"
               >
                 <span className="flex flex-1 flex-col">
@@ -178,10 +176,10 @@ function GrupoCard({ grupo, onEntrenar }: { grupo: GrupoPron; onEntrenar: () => 
 }
 
 export default function Pronunciacion() {
-  const pack = getPron(idioma)
+  const pack = pronPack
   const [entrenando, setEntrenando] = useState<GrupoPron | null>(null)
 
-  if (!pack) return <p className="tarjeta">Aún no hay guía de pronunciación para este idioma.</p>
+  if (!pack) return <p className="tarjeta">Aún no hay guía de pronunciación.</p>
   if (entrenando) return <EntrenadorOido grupo={entrenando} onSalir={() => setEntrenando(null)} />
 
   const conPares = pack.grupos.filter((g) => g.pares.length > 0).length

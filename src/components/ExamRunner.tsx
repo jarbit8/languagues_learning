@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
 import type { Pregunta } from '../types'
-import { idiomaUnico } from '../config'
 import { coincide } from '../lib/normaliza'
 import { hablar } from '../lib/audio'
 
@@ -15,7 +14,6 @@ function mmss(seg: number): string {
 const TEXTO_LIBRE: Pregunta['tipo'][] = [
   'audio_escribir',
   'es_a_en',
-  'es_a_fr',
   'significado_escrito',
   'hueco',
   'corregir_error',
@@ -46,7 +44,7 @@ export default function ExamRunner({
   const aciertosRef = useRef(0)
   const finRef = useRef(false)
 
-  // Cronómetro opcional (examen cronometrado, estilo IELTS/TCF). Al llegar a 0 termina solo
+  // Cronómetro opcional (examen cronometrado, estilo IELTS/TOEFL). Al llegar a 0 termina solo
   // con las respuestas que haya — las no contestadas cuentan como falladas, como en el examen real.
   useEffect(() => {
     if (!tiempoSegundos) return
@@ -100,9 +98,9 @@ export default function ExamRunner({
     }
     onAnswer?.(p, bien)
     // Cuando la respuesta se escribe en español, el refuerzo de audio es la palabra
-    // en el idioma que se estudia (audioTexto), no lo que tecleó el usuario.
+    // en inglés (audioTexto), no lo que tecleó el usuario.
     const aLeer = p.tipo === 'significado_escrito' ? p.audioTexto : p.respuesta
-    if (aLeer && p.idioma) hablar(aLeer.replace(/_/g, ' '), p.idioma)
+    if (aLeer) hablar(aLeer.replace(/_/g, ' '))
   }
 
   function siguiente() {
@@ -139,9 +137,6 @@ export default function ExamRunner({
               ⏱ {mmss(restante)}
             </span>
           )}
-          {!idiomaUnico && (
-            <span className={p.idioma === 'en' ? 'chip-en' : 'chip-fr'}>{p.idioma === 'en' ? 'EN' : 'FR'}</span>
-          )}
         </div>
       </div>
 
@@ -150,7 +145,7 @@ export default function ExamRunner({
         {p.pista && <p className="text-sm text-slate-500 dark:text-slate-400">Pista: {p.pista}</p>}
 
         {p.tipo === 'audio_escribir' && (
-          <button onClick={() => hablar(p.audioTexto!, p.idioma)} className="btn-primary self-start text-xl">
+          <button onClick={() => hablar(p.audioTexto!)} className="btn-primary self-start text-xl">
             🔊 Escuchar
           </button>
         )}

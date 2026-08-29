@@ -1,26 +1,20 @@
 import { useState } from 'react'
 import { useLiveQuery } from 'dexie-react-hooks'
-import type { Idioma } from '../types'
-import { IDIOMAS_ACTIVOS, idiomaUnico, nombreIdioma } from '../config'
 import { getGramatica } from '../data/packs'
 import { getProgresoTema, marcarGramaticaCompletada } from '../lib/progreso'
 import { preguntaDeEjercicio } from '../lib/preguntas'
 import { hablar } from '../lib/audio'
 import ExamRunner from '../components/ExamRunner'
 
-const capitalizar = (s: string) => s[0].toUpperCase() + s.slice(1)
 
-// Los textos de gramática citan los términos del idioma entre comillas simples ('to be', 'an').
+// Los textos de gramática citan los términos en inglés entre comillas simples ('to be', 'an').
 // Ojo: las contracciones inglesas usan el mismo carácter (I'm, isn't), así que solo se toma
 // como término la comilla que abre tras espacio/paréntesis y cierra antes de espacio o puntuación
 // — la de una contracción va pegada a una letra. Sin lookbehind, por Safari antiguo.
 const TERMINO = /(^|[\s(:—–-])'([^']+)'(?=[\s,.;:!?)]|$)/g
 
-function Resaltado({ texto, idioma }: { texto: string; idioma: Idioma }) {
-  const chip =
-    idioma === 'en'
-      ? 'bg-en-soft text-en-dark dark:bg-en-dark/40 dark:text-en-soft'
-      : 'bg-fr-soft text-fr-dark dark:bg-fr-dark/40 dark:text-fr-soft'
+function Resaltado({ texto }: { texto: string }) {
+  const chip = 'bg-en-soft text-en-dark dark:bg-en-dark/40 dark:text-en-soft'
   const nodos: React.ReactNode[] = []
   const re = new RegExp(TERMINO)
   let ultimo = 0
@@ -89,18 +83,15 @@ function bloquesDeRegla(regla: string): BloqueRegla[] {
   return out
 }
 
-function Regla({ regla, idioma }: { regla: string; idioma: Idioma }) {
-  const caja =
-    idioma === 'en'
-      ? 'border-en bg-en-soft/60 text-en-dark dark:border-en dark:bg-en-dark/25 dark:text-en-soft'
-      : 'border-fr bg-fr-soft/60 text-fr-dark dark:border-fr dark:bg-fr-dark/25 dark:text-fr-soft'
+function Regla({ regla }: { regla: string }) {
+  const caja = 'border-en bg-en-soft/60 text-en-dark dark:border-en dark:bg-en-dark/25 dark:text-en-soft'
   return (
     <div className="flex flex-col gap-3">
       {bloquesDeRegla(regla).map((b, i) =>
         'patron' in b ? (
           <div key={i} className="flex flex-col gap-1.5">
             <p className="text-[15px] leading-[1.7]">
-              <Resaltado texto={b.label} idioma={idioma} />
+              <Resaltado texto={b.label} />
             </p>
             {/* El recuadro ya destaca: dentro no se vuelven a marcar los términos. */}
             <div className={`rounded-xl border-l-4 px-3 py-2.5 ${caja}`}>
@@ -109,7 +100,7 @@ function Regla({ regla, idioma }: { regla: string; idioma: Idioma }) {
           </div>
         ) : (
           <p key={i} className="text-[15px] leading-[1.7]">
-            <Resaltado texto={b.texto} idioma={idioma} />
+            <Resaltado texto={b.texto} />
           </p>
         )
       )}
@@ -178,22 +169,17 @@ function Paso({
 
 function LeccionCard({
   tema,
-  idioma,
   completada,
   onPracticar
 }: {
   tema: number
-  idioma: Idioma
   completada: boolean
-  onPracticar: (idioma: Idioma) => void
+  onPracticar: () => void
 }) {
-  const pack = getGramatica(tema, idioma)
+  const pack = getGramatica(tema)
   if (!pack) return null
-  const degradado =
-    idioma === 'en'
-      ? 'bg-gradient-to-br from-en via-en to-indigo-700'
-      : 'bg-gradient-to-br from-fr via-fr to-rose-700'
-  const acento = idioma === 'en' ? 'bg-en' : 'bg-fr'
+  const degradado = 'bg-gradient-to-br from-en via-en to-indigo-700'
+  const acento = 'bg-en'
 
   return (
     <div className="flex flex-col gap-4">
@@ -226,7 +212,7 @@ function LeccionCard({
       </div>
 
       <Paso n={1} titulo="La regla">
-        <Regla regla={pack.regla} idioma={idioma} />
+        <Regla regla={pack.regla} />
       </Paso>
 
       <Paso n={2} titulo="Ejemplos" nota="toca para escuchar">
@@ -234,7 +220,7 @@ function LeccionCard({
           {pack.ejemplos.map((ej, i) => (
             <button
               key={i}
-              onClick={() => hablar(ej.frase, idioma)}
+              onClick={() => hablar(ej.frase)}
               className="group flex items-center gap-3 rounded-xl bg-slate-50 px-3 py-3 text-left transition active:scale-[0.98] dark:bg-slate-900"
             >
               <span className="flex flex-1 flex-col gap-1">
@@ -258,18 +244,18 @@ function LeccionCard({
 
       <Paso n={3} titulo="Cómo suena" icono="🗣️" tono="sky">
         <p className="text-[15px] leading-relaxed text-sky-900 dark:text-sky-100">
-          <Resaltado texto={pack.pronunciacion} idioma={idioma} />
+          <Resaltado texto={pack.pronunciacion} />
         </p>
       </Paso>
 
       <Paso n={4} titulo="Ojo con esto" icono="⚠️" tono="amber">
         <p className="text-[15px] leading-relaxed text-amber-900 dark:text-amber-100">
-          <Resaltado texto={pack.trampa} idioma={idioma} />
+          <Resaltado texto={pack.trampa} />
         </p>
       </Paso>
 
       <button
-        onClick={() => onPracticar(idioma)}
+        onClick={onPracticar}
         className={`btn min-h-[52px] text-base shadow-md ${
           completada
             ? 'bg-slate-200 text-slate-700 dark:bg-slate-700 dark:text-slate-200'
@@ -283,13 +269,12 @@ function LeccionCard({
 }
 
 export default function Gramatica({ tema }: { tema: number }) {
-  const [idioma, setIdioma] = useState<Idioma>(IDIOMAS_ACTIVOS[0])
-  const [practicando, setPracticando] = useState<Idioma | null>(null)
+  const [practicando, setPracticando] = useState(false)
   const [fin, setFin] = useState<{ aciertos: number; total: number } | null>(null)
   const progreso = useLiveQuery(() => getProgresoTema(tema), [tema])
 
   if (practicando) {
-    const pack = getGramatica(tema, practicando)
+    const pack = getGramatica(tema)
     if (!pack) return null
     if (fin) {
       const pct = Math.round((fin.aciertos / fin.total) * 100)
@@ -308,7 +293,7 @@ export default function Gramatica({ tema }: { tema: number }) {
           <button
             onClick={() => {
               setFin(null)
-              setPracticando(null)
+              setPracticando(false)
             }}
             className="btn-primary"
           >
@@ -317,42 +302,24 @@ export default function Gramatica({ tema }: { tema: number }) {
         </div>
       )
     }
-    const preguntas = pack.ejercicios.map((e) => preguntaDeEjercicio(e, practicando))
+    const preguntas = pack.ejercicios.map(preguntaDeEjercicio)
     return (
       <ExamRunner
         preguntas={preguntas}
-        etiqueta={capitalizar(nombreIdioma(practicando))}
+        etiqueta="Gramática"
         onFinish={async (aciertos, total) => {
-          await marcarGramaticaCompletada(tema, practicando)
+          await marcarGramaticaCompletada(tema)
           setFin({ aciertos, total })
         }}
       />
     )
   }
 
-  const completada = (i: Idioma) =>
-    i === 'en' ? !!progreso?.gramaticaEnCompletada : !!progreso?.gramaticaFrCompletada
-
   return (
-    <div className="flex flex-col gap-4">
-      {!idiomaUnico && (
-        <div className="flex rounded-xl bg-slate-200 p-1 dark:bg-slate-800">
-          {IDIOMAS_ACTIVOS.map((i) => (
-            <button
-              key={i}
-              onClick={() => setIdioma(i)}
-              className={`flex-1 rounded-lg py-2 text-sm font-bold transition ${
-                idioma === i ? (i === 'en' ? 'chip-en !py-2' : 'chip-fr !py-2') : 'text-slate-500'
-              }`}
-            >
-              {i === 'en' ? '🇬🇧 Inglés' : '🇫🇷 Francés'}
-              {completada(i) && ' ✓'}
-            </button>
-          ))}
-        </div>
-      )}
-
-      <LeccionCard tema={tema} idioma={idioma} completada={completada(idioma)} onPracticar={setPracticando} />
-    </div>
+    <LeccionCard
+      tema={tema}
+      completada={!!progreso?.gramaticaCompletada}
+      onPracticar={() => setPracticando(true)}
+    />
   )
 }

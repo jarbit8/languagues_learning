@@ -1,7 +1,6 @@
 import { useLiveQuery } from 'dexie-react-hooks'
 import { Link } from 'react-router-dom'
 import { temaEnCurso, resumenVocabTema } from '../lib/progreso'
-import { subtituloCurso } from '../config'
 import { getVocabPack } from '../data/packs'
 import { repasosVencidos } from '../lib/srs'
 
@@ -22,7 +21,7 @@ export default function Inicio() {
     <div className="flex flex-col gap-4">
       <header>
         <h1 className="text-2xl font-bold">Idiomas</h1>
-        <p className="text-sm text-slate-500 dark:text-slate-400">{subtituloCurso()}</p>
+        <p className="text-sm text-slate-500 dark:text-slate-400">Inglés, a tu ritmo · A1</p>
       </header>
 
       <div className="tarjeta flex flex-col gap-3">

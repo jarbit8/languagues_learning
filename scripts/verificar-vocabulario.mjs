@@ -44,7 +44,7 @@ ana paul laura maria marie sofia lee jarbit joel lima arequipa peru canada franc
 toronto vancouver montreal quebec ottawa london paris madrid america europe usa york
 monday tuesday wednesday thursday friday saturday sunday
 january february march april may june july august september october november december
-english french spanish peruvian canadian german
+english spanish peruvian canadian german
 `.trim().split(/\s+/))
 
 // El reductor morfológico de abajo no adivina formas irregulares: sin esta tabla marcaría
@@ -117,7 +117,7 @@ function bases(t) {
 const primerTema = new Map()
 for (const { pack } of packs('vocabulario')) {
   for (const c of pack.conceptos) {
-    for (const w of tokenizar(c.en.texto)) {
+    for (const w of tokenizar(c.texto)) {
       if (!primerTema.has(w) || primerTema.get(w) > pack.tema) primerTema.set(w, pack.tema)
     }
   }
@@ -145,7 +145,7 @@ const push = (archivo, tema, donde, texto) => texto && objetivos.push({ archivo,
 
 for (const { archivo, pack } of packs('vocabulario')) {
   pack.conceptos.forEach((c, i) =>
-    push(archivo, pack.tema, `ejemplo ${i + 1} (${c.en.texto})`, c.en.ejemplo))
+    push(archivo, pack.tema, `ejemplo ${i + 1} (${c.texto})`, c.ejemplo))
 }
 for (const { archivo, pack } of packs('gramatica', (f) => f.endsWith('-en.json'))) {
   pack.ejemplos.forEach((e, i) => push(archivo, pack.tema, `ejemplo ${i + 1}`, e.frase))

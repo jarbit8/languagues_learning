@@ -1,6 +1,6 @@
-# Idiomas — inglés y francés en paralelo (A1)
+# Idiomas — curso de inglés (A1)
 
-PWA estática para aprender inglés y francés a la vez, a ritmo libre (sin calendario), con exámenes espejo de IELTS/TEF Canada. Todo el progreso vive en el dispositivo (IndexedDB); no hay backend.
+PWA estática para aprender inglés a ritmo libre (sin calendario), con exámenes espejo de TOEFL/IELTS. Todo el progreso vive en el dispositivo (IndexedDB); no hay backend.
 
 **App en vivo:** https://jarbit8.github.io/languagues_learning/
 
@@ -12,6 +12,7 @@ Vite · React 18 · TypeScript · Tailwind CSS · Dexie (IndexedDB) · vite-plug
 npm install
 npm run dev      # http://localhost:5173/languagues_learning/
 npm run build    # genera dist/ (debe pasar sin errores antes de cada push)
+npm run verificar # vocabulario adelantado + coherencia de los data packs
 ```
 
 ## Arquitectura

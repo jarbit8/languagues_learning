@@ -11,18 +11,7 @@ import { readFileSync, readdirSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
 import { join, dirname } from 'node:path'
 
-const RAIZ = join(dirname(fileURLToPath(import.meta.url)), '..')
-const DATA = join(RAIZ, 'data')
-
-// Los idiomas activos salen de src/config.ts para no tener dos fuentes de verdad. Lo del idioma
-// inactivo se reporta igual, pero aparte y sin hacer fallar el script: no entra al bundle.
-const IDIOMAS_ACTIVOS = [
-  ...readFileSync(join(RAIZ, 'src', 'config.ts'), 'utf8')
-    .match(/IDIOMAS_ACTIVOS[^=]*=\s*\[([^\]]*)\]/)[1]
-    .matchAll(/'(\w+)'/g)
-].map((m) => m[1])
-const activo = (archivo) =>
-  !/-(en|fr)\.json$/.test(archivo) || IDIOMAS_ACTIVOS.some((i) => archivo.endsWith(`-${i}.json`))
+const DATA = join(dirname(fileURLToPath(import.meta.url)), '..', 'data')
 
 const packs = (sub, filtro = () => true) =>
   readdirSync(join(DATA, sub))
@@ -41,19 +30,18 @@ function revisarOpcionMultiple(archivo, donde, o) {
   if (!o.opciones?.length) return mal(archivo, donde, 'opción múltiple sin opciones')
   if (!o.opciones.some((x) => norm(x) === norm(o.respuesta)))
     mal(archivo, donde, `la respuesta "${o.respuesta}" no está entre las opciones`)
-  // Sin quitar tildes: en francés "télécharge" y "téléchargé" son opciones distintas a propósito.
+  // Sin quitar tildes: pueden ser justo lo que distingue dos opciones.
   if (new Set(o.opciones.map((x) => String(x).toLowerCase().trim())).size !== o.opciones.length)
     mal(archivo, donde, 'opciones repetidas')
 }
 
-// Aquí NO se pueden borrar guiones ni apóstrofes: una ficha del francés es "as-tu" o "l'eau",
-// una sola pieza que el estudiante arrastra entera.
+// Aquí NO se pueden borrar guiones ni apóstrofes: "t-shirt" o "don't" son una sola pieza
+// que el estudiante arrastra entera.
 const ficha = (s) =>
   String(s).toLowerCase().normalize('NFD').replace(/\p{Diacritic}/gu, '').replace(/[^a-z0-9'-]/g, '')
 
-// Una ficha puede ser de varias palabras ("est-ce que"), así que no vale comparar palabra a
-// palabra: se comprueba que cada ficha esté dentro de la frase y que entre todas la cubran
-// exactamente, sin sobrar ni faltar nada.
+// Una ficha puede ser de varias palabras, así que no vale comparar palabra a palabra: se
+// comprueba que cada ficha esté dentro de la frase y que entre todas la cubran exactamente.
 function revisarOrdenar(archivo, donde, o) {
   if (!o.opciones?.length) return mal(archivo, donde, 'ordenar sin fichas')
   const frase = ficha(o.respuesta)
@@ -74,11 +62,9 @@ for (const { archivo, pack } of packs('vocabulario')) {
     vistos.set(c.id, archivo)
     const esperado = `t${String(pack.tema).padStart(2, '0')}`
     if (!c.id?.includes(esperado)) mal(archivo, donde, `el id no corresponde al tema ${pack.tema}`)
-    for (const lado of ['en', 'fr']) {
-      if (!c[lado]?.texto) mal(archivo, donde, `falta ${lado}.texto`)
-      if (!c[lado]?.ejemplo) mal(archivo, donde, `falta ${lado}.ejemplo`)
-    }
-    if (!c.es) mal(archivo, donde, 'falta el lado en español')
+    if (!c.texto) mal(archivo, donde, 'falta la palabra en inglés')
+    if (!c.ejemplo) mal(archivo, donde, 'falta el ejemplo')
+    if (!c.es) mal(archivo, donde, 'falta el significado en español')
   }
 }
 
@@ -158,14 +144,6 @@ function listar(titulo, lista) {
   console.log()
 }
 
-const bloquean = problemas.filter((p) => activo(p.archivo))
-const informativos = problemas.filter((p) => !activo(p.archivo))
-
-console.log(`Idiomas activos: ${IDIOMAS_ACTIVOS.join(', ')}\n`)
-if (bloquean.length === 0) console.log('OK — los data packs de los idiomas activos son coherentes.\n')
-listar(`${bloquean.length} problemas:`, bloquean)
-listar(
-  `${informativos.length} problemas en idiomas INACTIVOS (no entran al bundle; se arreglan si se reactivan):`,
-  informativos
-)
-process.exit(bloquean.length > 0 ? 1 : 0)
+if (problemas.length === 0) console.log('OK — los data packs son coherentes.')
+listar(`${problemas.length} problemas:`, problemas)
+process.exit(problemas.length > 0 ? 1 : 0)

@@ -2,7 +2,6 @@ import { useState } from 'react'
 import { useLiveQuery } from 'dexie-react-hooks'
 import { Link } from 'react-router-dom'
 import type { Pregunta } from '../types'
-import { idiomaUnico } from '../config'
 import {
   temaEnCurso,
   estadoExamenTema,
@@ -228,10 +227,8 @@ export default function Examen() {
           ) : (
             <p className="text-sm text-slate-500 dark:text-slate-400">
               Falta: {gt.faltaVocab ? `vocabulario (${gt.aprendidas}/${gt.total})` : ''}
-              {gt.faltaVocab && (gt.faltaGramEn || gt.faltaGramFr) ? ' · ' : ''}
-              {gt.faltaGramEn ? (idiomaUnico ? 'gramática' : 'gramática EN') : ''}
-              {gt.faltaGramEn && gt.faltaGramFr ? ' y ' : ''}
-              {gt.faltaGramFr ? (idiomaUnico ? 'gramática' : 'gramática FR') : ''}
+              {gt.faltaVocab && gt.faltaGramatica ? ' · ' : ''}
+              {gt.faltaGramatica ? 'gramática' : ''}
             </p>
           )}
         </div>

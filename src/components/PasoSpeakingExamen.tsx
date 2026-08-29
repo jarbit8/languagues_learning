@@ -1,5 +1,4 @@
 import type { TareaSpeaking } from '../data/tareasSpeaking'
-import { IDIOMAS_ACTIVOS, nombreIdioma } from '../config'
 import { construirPromptTarea, vocabularioDesbloqueado } from '../lib/speaking'
 import CopiarPrompt from './CopiarPrompt'
 import Autoevaluacion from './Autoevaluacion'
@@ -19,14 +18,13 @@ export default function PasoSpeakingExamen({
   meta: string
   onDone: (nota: number) => void
 }) {
-  const idioma = IDIOMAS_ACTIVOS[0]
-  const prompt = construirPromptTarea(idioma, tarea, vocabularioDesbloqueado(tema, idioma), meta)
+  const prompt = construirPromptTarea(tarea, vocabularioDesbloqueado(tema), meta)
 
   const checklist = [
     'Respondí a lo que pedía la tarea, sin irme por las ramas',
     'Hablé en frases completas, no en palabras sueltas',
     'Di al menos 3 datos o detalles',
-    `Hablé todo el rato en ${nombreIdioma(idioma)}, sin cambiar al español`,
+    'Hablé todo el rato en inglés, sin cambiar al español',
     'Se me entendió sin tener que repetir'
   ]
 

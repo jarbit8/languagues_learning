@@ -1,6 +1,5 @@
 import { useMemo, useState } from 'react'
 import type { FeedbackSpeaking, NotasBloque, Pregunta } from '../types'
-import { idiomaUnico } from '../config'
 import { temasDeBloque } from '../lib/curriculum'
 import {
   construirListeningBloque,
@@ -156,7 +155,6 @@ export default function ExamenBloque({ bloque, onSalir }: { bloque: number; onSa
       <div className="flex flex-col gap-4">
         <h1 className="text-2xl font-bold">Examen de bloque {bloque} · Speaking</h1>
         <ChatSpeaking
-          idioma="en"
           tema={temaEscenario}
           modoExamen
           onFinish={(fb: FeedbackSpeaking) => guardarNota('speaking', fb.nota ?? 70)}
@@ -180,12 +178,7 @@ export default function ExamenBloque({ bloque, onSalir }: { bloque: number; onSa
       <div className="flex flex-col gap-4">
         <h1 className="text-2xl font-bold">Examen de bloque {bloque} · Reading</h1>
         {reading.textos.map((t, i) => (
-          <div key={`${t.idioma}-${i}`} className="tarjeta flex flex-col gap-2">
-            {!idiomaUnico && (
-              <span className={t.idioma === 'en' ? 'chip-en self-start' : 'chip-fr self-start'}>
-                {t.idioma === 'en' ? 'EN' : 'FR'}
-              </span>
-            )}
+          <div key={i} className="tarjeta flex flex-col gap-2">
             <h3 className="font-bold">{t.titulo}</h3>
             <p className="text-sm leading-relaxed">{t.texto}</p>
           </div>
@@ -212,15 +205,10 @@ export default function ExamenBloque({ bloque, onSalir }: { bloque: number; onSa
     <div className="flex flex-col gap-4">
       <h1 className="text-2xl font-bold">Examen de bloque {bloque} · Listening</h1>
       {listening.dialogos.map((d, i) => (
-        <div key={`${d.tema}-${d.idioma}-${i}`} className="tarjeta flex flex-col gap-3">
-          {!idiomaUnico && (
-            <span className={d.idioma === 'en' ? 'chip-en self-start' : 'chip-fr self-start'}>
-              {d.idioma === 'en' ? 'EN' : 'FR'}
-            </span>
-          )}
+        <div key={`${d.tema}-${i}`} className="tarjeta flex flex-col gap-3">
           <h3 className="font-bold">{d.titulo}</h3>
           <button
-            onClick={() => reproducirDialogo(d.lineas, d.idioma, bloque * 6, {})}
+            onClick={() => reproducirDialogo(d.lineas, bloque * 6, {})}
             className="btn-primary self-start"
           >
             🔊 Escuchar
@@ -231,7 +219,7 @@ export default function ExamenBloque({ bloque, onSalir }: { bloque: number; onSa
                 <button
                   key={i}
                   onClick={() =>
-                    reproducirLinea(l.texto, d.idioma, bloque * 6, {
+                    reproducirLinea(l.texto, bloque * 6, {
                       idxHablante: [...new Set(d.lineas.map((x) => x.hablante))].indexOf(l.hablante)
                     })
                   }

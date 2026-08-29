@@ -17,7 +17,7 @@ export async function idsExamenDiario(): Promise<string[]> {
   return [...ids]
 }
 
-// Un solo tipo de pregunta (decisión del usuario): ve la palabra en el idioma que estudia
+// Un solo tipo de pregunta (decisión del usuario): ve la palabra en inglés
 // y escribe su significado en español. Los exámenes de tema/bloque/final siguen variando tipos.
 export async function construirExamenDiario(): Promise<Pregunta[]> {
   const ids = await idsExamenDiario()

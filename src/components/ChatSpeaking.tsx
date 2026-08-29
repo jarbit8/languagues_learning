@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
-import type { FeedbackSpeaking, Idioma } from '../types'
+import type { FeedbackSpeaking } from '../types'
 import type { MensajeChat } from '../lib/anthropic'
 import { enviarMensaje, AnthropicError } from '../lib/anthropic'
 import { construirSystemPrompt, parseFeedback, vocabularioDesbloqueado } from '../lib/speaking'
@@ -9,11 +9,11 @@ import { hablar } from '../lib/audio'
 import { registrarResultado } from '../lib/srs'
 
 // Intenta mandar al SRS las palabras del feedback que coincidan con vocabulario conocido.
-async function marcarErroresEnSRS(feedback: FeedbackSpeaking, idioma: Idioma) {
+async function marcarErroresEnSRS(feedback: FeedbackSpeaking) {
   for (const err of feedback.errores) {
     const objetivo = err.correcto.toLowerCase().trim()
     for (const pack of vocabPacks) {
-      const c = pack.conceptos.find((x) => x[idioma].texto.toLowerCase() === objetivo)
+      const c = pack.conceptos.find((x) => x.texto.toLowerCase() === objetivo)
       if (c) {
         await registrarResultado(c.id, false)
         break
@@ -23,12 +23,10 @@ async function marcarErroresEnSRS(feedback: FeedbackSpeaking, idioma: Idioma) {
 }
 
 export default function ChatSpeaking({
-  idioma,
   tema,
   modoExamen = false,
   onFinish
 }: {
-  idioma: Idioma
   tema: number
   modoExamen?: boolean
   onFinish?: (feedback: FeedbackSpeaking) => void
@@ -41,7 +39,7 @@ export default function ChatSpeaking({
   const finRef = useRef<HTMLDivElement>(null)
   const iniciado = useRef(false)
 
-  const systemPrompt = construirSystemPrompt(idioma, escenarioDe(tema), vocabularioDesbloqueado(tema, idioma), modoExamen)
+  const systemPrompt = construirSystemPrompt(escenarioDe(tema), vocabularioDesbloqueado(tema), modoExamen)
   const turnosUsuario = historial.filter((m) => m.role === 'user').length - 1 // -1 por el turno oculto inicial
 
   useEffect(() => {
@@ -64,7 +62,7 @@ export default function ChatSpeaking({
       const fb = parseFeedback(respuesta)
       if (fb) {
         setFeedback(fb)
-        await marcarErroresEnSRS(fb, idioma)
+        await marcarErroresEnSRS(fb)
         onFinish?.(fb)
       }
     } catch (e) {
@@ -146,7 +144,7 @@ export default function ChatSpeaking({
             >
               {m.content}
               {m.role === 'assistant' && (
-                <button onClick={() => hablar(m.content, idioma)} className="ml-2">
+                <button onClick={() => hablar(m.content)} className="ml-2">
                   🔊
                 </button>
               )}
@@ -162,7 +160,7 @@ export default function ChatSpeaking({
           onChange={(e) => setTexto(e.target.value)}
           onKeyDown={(e) => e.key === 'Enter' && enviar()}
           disabled={cargando}
-          placeholder={idioma === 'en' ? 'Write in English…' : 'Écris en français…'}
+          placeholder="Write in English…"
           className="flex-1 rounded-xl border border-slate-300 bg-white px-4 py-3 outline-none focus:border-slate-900 dark:border-slate-600 dark:bg-slate-900"
         />
         <button onClick={enviar} disabled={cargando || !texto.trim()} className="btn-primary disabled:opacity-40">

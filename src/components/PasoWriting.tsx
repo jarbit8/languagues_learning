@@ -1,6 +1,5 @@
 import { useState } from 'react'
-import type { Idioma, ConsignaWriting } from '../types'
-import { IDIOMAS_ACTIVOS, idiomaUnico, nombreIdioma } from '../config'
+import type { ConsignaWriting } from '../types'
 import { getWriting } from '../data/packs'
 import { corregirWriting } from '../lib/writing'
 import { hayApiKey } from '../lib/apiKey'
@@ -14,11 +13,9 @@ function contarPalabras(texto: string): number {
 // Reutilizado por el examen (PasoWriting) y por la pantalla de práctica libre (Escribir).
 export function EscribirConsigna({
   pack,
-  idioma,
   onDone
 }: {
   pack: ConsignaWriting
-  idioma: Idioma
   onDone: (nota: number) => void
 }) {
   const [texto, setTexto] = useState('')
@@ -32,7 +29,7 @@ export function EscribirConsigna({
     setEnviado(true)
     if (hayApiKey()) {
       setCorrigiendo(true)
-      const res = await corregirWriting(idioma, pack.consigna, texto)
+      const res = await corregirWriting(pack.consigna, texto)
       setCorrigiendo(false)
       setFeedback(res)
     }
@@ -41,7 +38,7 @@ export function EscribirConsigna({
   if (enviado && hayApiKey() && !corrigiendo && feedback?.ok) {
     return (
       <div className="tarjeta flex flex-col gap-3">
-        <h3 className="font-bold">Corrección {nombreIdioma(idioma)}</h3>
+        <h3 className="font-bold">Corrección</h3>
         {typeof feedback.feedback.nota === 'number' && (
           <p className="text-4xl font-black">{feedback.feedback.nota}%</p>
         )}
@@ -102,17 +99,12 @@ export function EscribirConsigna({
 
   return (
     <div className="tarjeta flex flex-col gap-3">
-      {!idiomaUnico && (
-        <span className={idioma === 'en' ? 'chip-en self-start' : 'chip-fr self-start'}>
-          {idioma === 'en' ? 'EN' : 'FR'}
-        </span>
-      )}
       <p className="font-semibold">{pack.consigna}</p>
       <textarea
         value={texto}
         onChange={(e) => setTexto(e.target.value)}
         rows={6}
-        placeholder={idioma === 'en' ? 'Write here…' : 'Écris ici…'}
+        placeholder="Write here…"
         className="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 outline-none focus:border-slate-900 dark:border-slate-600 dark:bg-slate-900"
       />
       <p
@@ -131,32 +123,10 @@ export function EscribirConsigna({
   )
 }
 
-export default function PasoWriting({ bloque, onDone }: { bloque: number; onDone: (promedio: number) => void }) {
-  const [idx, setIdx] = useState(0)
-  const [notas, setNotas] = useState<number[]>([])
-  const idiomas: Idioma[] = IDIOMAS_ACTIVOS
-
-  function siguiente(nota: number) {
-    const nuevas = [...notas, nota]
-    if (idx + 1 >= idiomas.length) {
-      const promedio = Math.round(nuevas.reduce((a, b) => a + b, 0) / nuevas.length)
-      onDone(promedio)
-    } else {
-      setNotas(nuevas)
-      setIdx((i) => i + 1)
-    }
-  }
-
+export default function PasoWriting({ bloque, onDone }: { bloque: number; onDone: (nota: number) => void }) {
   // El examen siempre usa la primera consigna del bloque; las demás son para práctica libre.
-  const consigna = getWriting(bloque, idiomas[idx])?.consignas[0]
+  const consigna = getWriting(bloque)?.consignas[0]
   if (!consigna) return null
 
-  return (
-    <div className="flex flex-col gap-3">
-      <p className="text-center text-sm text-slate-500 dark:text-slate-400">
-        Writing {idx + 1}/{idiomas.length}
-      </p>
-      <EscribirConsigna key={idiomas[idx]} pack={consigna} idioma={idiomas[idx]} onDone={siguiente} />
-    </div>
-  )
+  return <EscribirConsigna pack={consigna} onDone={onDone} />
 }

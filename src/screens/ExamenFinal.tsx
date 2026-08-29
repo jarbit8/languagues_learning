@@ -1,6 +1,5 @@
 import { useMemo, useState } from 'react'
 import type { FeedbackSpeaking, Pregunta } from '../types'
-import { idiomaUnico } from '../config'
 import { construirVocabFinal, construirGramaticaFinal, construirListeningFinal, construirReadingFinal } from '../lib/examenFinal'
 import { registrarResultado } from '../lib/srs'
 import { registrarExamenFinal } from '../lib/progreso'
@@ -110,14 +109,9 @@ export default function ExamenFinal({ onSalir }: { onSalir: () => void }) {
       <div className="flex flex-col gap-4">
         <h1 className="text-2xl font-bold">Listening final</h1>
         {listening.dialogos.map((d, i) => (
-          <div key={`${d.tema}-${d.idioma}-${i}`} className="tarjeta flex flex-col gap-3">
-            {!idiomaUnico && (
-              <span className={d.idioma === 'en' ? 'chip-en self-start' : 'chip-fr self-start'}>
-                {d.idioma === 'en' ? 'EN' : 'FR'}
-              </span>
-            )}
+          <div key={`${d.tema}-${i}`} className="tarjeta flex flex-col gap-3">
             <h3 className="font-bold">{d.titulo}</h3>
-            <button onClick={() => reproducirDialogo(d.lineas, d.idioma, d.tema, {})} className="btn-primary self-start">
+            <button onClick={() => reproducirDialogo(d.lineas, d.tema, {})} className="btn-primary self-start">
               🔊 Escuchar
             </button>
           </div>
@@ -149,12 +143,7 @@ export default function ExamenFinal({ onSalir }: { onSalir: () => void }) {
       <div className="flex flex-col gap-4">
         <h1 className="text-2xl font-bold">Reading final</h1>
         {reading.textos.map((t, i) => (
-          <div key={`${t.idioma}-${i}`} className="tarjeta flex flex-col gap-2">
-            {!idiomaUnico && (
-              <span className={t.idioma === 'en' ? 'chip-en self-start' : 'chip-fr self-start'}>
-                {t.idioma === 'en' ? 'EN' : 'FR'}
-              </span>
-            )}
+          <div key={i} className="tarjeta flex flex-col gap-2">
             <h3 className="font-bold">{t.titulo}</h3>
             <p className="text-sm leading-relaxed">{t.texto}</p>
           </div>
@@ -202,7 +191,6 @@ export default function ExamenFinal({ onSalir }: { onSalir: () => void }) {
       <div className="flex flex-col gap-4">
         <h1 className="text-2xl font-bold">Speaking final</h1>
         <ChatSpeaking
-          idioma="en"
           tema={24}
           modoExamen
           onFinish={async (fb: FeedbackSpeaking) => {

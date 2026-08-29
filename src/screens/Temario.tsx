@@ -1,6 +1,5 @@
 import { useLiveQuery } from 'dexie-react-hooks'
 import { mapaTemas } from '../lib/progreso'
-import { IDIOMAS_ACTIVOS, idiomaUnico } from '../config'
 import { temasDeBloque } from '../lib/curriculum'
 import { getVocabPack, getGramatica, vocabPacks } from '../data/packs'
 import { funcionDe, nombresBloque } from '../data/funciones'
@@ -22,7 +21,7 @@ export default function Temario() {
   const estadoDe = (tema: number) => mapa?.find((t) => t.tema === tema)?.estado ?? 'bloqueado'
 
   const totalPalabras = vocabPacks.reduce((n, p) => n + p.conceptos.length, 0)
-  const totalGramatica = vocabPacks.filter((p) => IDIOMAS_ACTIVOS.some((i) => getGramatica(p.tema, i))).length
+  const totalGramatica = vocabPacks.filter((p) => !!getGramatica(p.tema)).length
 
   return (
     <div className="flex flex-col gap-5">
@@ -70,29 +69,23 @@ export default function Temario() {
                 </div>
 
                 {/* Gramática de este tema, siempre visible: es el corazón del temario */}
-                {IDIOMAS_ACTIVOS.map((i) => {
-                  const gram = getGramatica(tema, i)
+                {(() => {
+                  const gram = getGramatica(tema)
                   if (!gram) return null
                   return (
-                    <div
-                      key={i}
-                      className="flex items-start gap-2 rounded-lg bg-indigo-50 px-2.5 py-1.5 dark:bg-indigo-950/40"
-                    >
+                    <div className="flex items-start gap-2 rounded-lg bg-indigo-50 px-2.5 py-1.5 dark:bg-indigo-950/40">
                       <span className="text-sm leading-none">📘</span>
-                      <p className="flex-1 text-xs font-medium text-indigo-900 dark:text-indigo-100">
-                        {!idiomaUnico && <span className="font-bold">{i.toUpperCase()} · </span>}
-                        {gram.titulo}
-                      </p>
+                      <p className="flex-1 text-xs font-medium text-indigo-900 dark:text-indigo-100">{gram.titulo}</p>
                     </div>
                   )
-                })}
+                })()}
 
                 <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-500 dark:text-slate-400">
                   <span className="rounded-full bg-slate-100 px-2 py-0.5 dark:bg-slate-800">
                     {pack?.conceptos.length ?? 30} palabras
                   </span>
                   <span className="rounded-full bg-slate-100 px-2 py-0.5 dark:bg-slate-800">
-                    {getGramatica(tema, IDIOMAS_ACTIVOS[0])?.ejercicios.length ?? 15} ejercicios
+                    {getGramatica(tema)?.ejercicios.length ?? 15} ejercicios
                   </span>
                   <span className="rounded-full bg-slate-100 px-2 py-0.5 dark:bg-slate-800">listening</span>
                 </div>

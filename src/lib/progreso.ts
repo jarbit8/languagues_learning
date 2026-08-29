@@ -1,10 +1,8 @@
 import { db } from '../db'
 import { vocabPacks, getVocabPack } from '../data/packs'
-import { esIdiomaActivo } from '../config'
 import { esHoy, inicioDeHoy, UN_DIA } from './fechas'
 import { temasDeBloque } from './curriculum'
 import type {
-  Idioma,
   ProgresoTema,
   ProgresoBloque,
   ProgresoNivel,
@@ -42,36 +40,30 @@ export async function getProgresoTema(tema: number): Promise<ProgresoTema | unde
   return db.progresoTema.get(tema)
 }
 
-export async function marcarGramaticaCompletada(tema: number, idioma: Idioma) {
+export async function marcarGramaticaCompletada(tema: number) {
   const pr = (await db.progresoTema.get(tema)) ?? baseProgreso(tema)
-  if (idioma === 'en') pr.gramaticaEnCompletada = true
-  else pr.gramaticaFrCompletada = true
+  pr.gramaticaCompletada = true
   await db.progresoTema.put(pr)
 }
 
 export interface EstadoExamenTema {
   disponible: boolean
   faltaVocab: boolean
-  faltaGramEn: boolean
-  faltaGramFr: boolean
+  faltaGramatica: boolean
   aprendidas: number
   total: number
 }
 
-// Puerta de tema: 100% vocab aprendido + gramática completada una vez POR CADA IDIOMA ACTIVO
-// (ver config.ts). Si un idioma no está activo su gramática no se exige — si no, quedaría
-// bloqueado para siempre.
+// Puerta de tema: 100% del vocabulario aprendido + la lección de gramática completada una vez.
 export async function estadoExamenTema(tema: number): Promise<EstadoExamenTema> {
   const resumen = await resumenVocabTema(tema)
   const pr = await db.progresoTema.get(tema)
   const faltaVocab = resumen.total === 0 || resumen.aprendidas < resumen.total
-  const faltaGramEn = esIdiomaActivo('en') && !pr?.gramaticaEnCompletada
-  const faltaGramFr = esIdiomaActivo('fr') && !pr?.gramaticaFrCompletada
+  const faltaGramatica = !pr?.gramaticaCompletada
   return {
-    disponible: !faltaVocab && !faltaGramEn && !faltaGramFr,
+    disponible: !faltaVocab && !faltaGramatica,
     faltaVocab,
-    faltaGramEn,
-    faltaGramFr,
+    faltaGramatica,
     aprendidas: resumen.aprendidas,
     total: resumen.total
   }
