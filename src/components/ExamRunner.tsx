@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import type { Pregunta } from '../types'
 import { coincide } from '../lib/normaliza'
 import { hablar } from '../lib/audio'
+import { conceptoPorId } from '../data/packs'
 
 type Resultado = null | 'bien' | 'mal'
 
@@ -237,6 +238,17 @@ export default function ExamRunner({
             }`}
           >
             {resultado === 'bien' ? '¡Correcto!' : 'La respuesta es:'} <b>{p.respuesta}</b>
+            {/* La corrección sonaba la palabra pero no la escribía: sin audio (en clase, en
+                el bus) se perdía cómo se lee. Si la pregunta es de vocabulario, se muestra. */}
+            {(() => {
+              const c = p.palabraId ? conceptoPorId(p.palabraId)?.concepto : undefined
+              if (!c?.pron) return null
+              return (
+                <p className="mt-1 text-sm opacity-80">
+                  {c.texto} · <span className="italic">/ {c.pron} /</span>
+                </p>
+              )
+            })()}
           </div>
         )}
       </div>
