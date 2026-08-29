@@ -1,6 +1,6 @@
 # Temario A1 — Inglés
 
-24 temas · 4 bloques de 6 · 30-38 conceptos de vocabulario por tema (782 en total — auditado el 2026-07-18 contra listas de frecuencia reales, cada tema lleva las palabras de alta frecuencia que le correspondan, no un tope fijo de 30). Cada tema: función comunicativa, vocabulario (español + inglés), gramática, pronunciación, escenario de speaking. El orden codifica dependencias: ejercicios y diálogos solo usan vocabulario de este tema y anteriores. Las listas de "Vocabulario" abajo muestran el set original de 30; el JSON real (`data/vocabulario/tema-NN-*.json`) es la fuente autoritativa y puede tener más — ver el bloque "AMPLIACIÓN 2026-07-18" al final de cada bloque para las palabras agregadas.
+24 temas · 4 bloques de 6 · 30-38 conceptos de vocabulario por tema (770 tarjetas / 763 palabras distintas — ampliado el 2026-07-18 contra listas de frecuencia reales y deduplicado el 2026-08-29, cada tema lleva las palabras de alta frecuencia que le correspondan, no un tope fijo de 30). Cada tema: función comunicativa, vocabulario (español + inglés), gramática, pronunciación, escenario de speaking. El orden codifica dependencias: ejercicios y diálogos solo usan vocabulario de este tema y anteriores. Las listas de "Vocabulario" abajo muestran el set original de 30; el JSON real (`data/vocabulario/tema-NN-*.json`) es la fuente autoritativa y puede tener más — ver el bloque "AMPLIACIÓN 2026-07-18" al final de cada bloque para las palabras agregadas.
 
 ---
 
@@ -227,3 +227,32 @@
 - **T22 Tecnología (+1):** social media.
 - **T23 Viajes (+2):** immigration · permanent resident (directamente relevante a la meta del usuario).
 - **T24 Planes (+2):** citizenship · opportunity.
+
+---
+
+## AMPLIACIÓN 2026-08-29 — gramática que faltaba frente al sílabo A1 estándar
+
+Auditoría de los 24 temas contra el Cambridge English Grammar Profile A1, test-english y
+tracktest. Faltaban **13 puntos del A1** y se añadieron a los temas que ya existían, sin crear
+temas nuevos ni tocar la estructura de 4 bloques × 6. Las secciones "Gramática" de arriba
+describen el set original; esto es lo que se sumó, y los títulos de las lecciones se
+actualizaron para reflejarlo (el Temario de la app muestra ese título).
+
+- **T1** — orden de la oración: sujeto + verbo + resto. Título → *Pronombres sujeto, to be y el orden de la oración*.
+- **T2** — respuestas cortas con *to be* (Yes, I am / No, I'm not).
+- **T4** — pronombres posesivos (mine, yours, his, hers, ours, theirs). Título → *Posesivos, genitivo 's, whose y mine/yours*.
+- **T5** — adverbios de grado: very / really refuerzan, *too* = DEMASIADO. Título → *Adjetivos, plurales irregulares y very/too*.
+- **T8** — "What time is it?" (el tema enseñaba a decir la hora pero no a preguntarla).
+- **T9** — respuestas cortas con do/does + "How often…?".
+- **T13** — something / anything / nothing.
+- **T14** — *want* + to + verbo, contrastado con *would like*. Título → *Would like y want to para pedir*.
+- **T15** — much / many / a lot of, y *need* + to + verbo. Título → *How much/many, a lot of y can para pedir*.
+- **T17** — adverbios de modo (-ly, slowly/quickly) e irregular good → well. Título → *Imperativo, transporte y adverbios de modo*.
+- **T18** — **comparativos y superlativos** (-er/more … than, the -est/the most, good→better→the best). Faltaban del todo, aunque el escenario de speaking del tema ya pedía *comparar* el clima. Título → *El clima, comparativos y superlativos*.
+- **T21** — conectores and / but / or (el tema solo tenía because / so; and/but/or existían como vocabulario en T24 pero ninguna lección los explicaba). Título → *Pronombres de objeto y conectores*.
+- **T22** — ⚠️ **negativo e interrogativo del pasado**: wasn't/weren't, Was he…?, didn't, Did you…? y respuestas cortas. **Era el hueco más grave del nivel: el pasado simple solo existía en afirmativo.** Título → *Pasado simple: was/were, -ed, didn't y Did…?*.
+- **T23** — el verbo irregular vuelve a su forma base en negativo/interrogativo (I didn't go, no "I didn't went").
+
+Total: 371 → **418 ejercicios**. Se revisó también que ningún punto añadido fuera de nivel A2:
+se descartaron a propósito *present perfect*, *question tags*, *could* y *must/should*, que las
+fuentes sitúan por encima del A1.
