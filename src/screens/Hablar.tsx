@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { useLocation } from 'react-router-dom'
 import Conversacion from './Conversacion'
 import Listening from './Listening'
 import Reading from './Reading'
@@ -20,7 +21,10 @@ const TABS: { id: Sub; icono: string; label: string }[] = [
 ]
 
 export default function Hablar() {
-  const [sub, setSub] = useState<Sub>('hablar')
+  // Un enlace "¿cómo se hace este sonido?" desde una tarjeta de vocabulario entra con
+  // ?pron=<id>: hay que caer directamente en Pronunciar, no en Hablar.
+  const hayPron = new URLSearchParams(useLocation().search).has('pron')
+  const [sub, setSub] = useState<Sub>(hayPron ? 'pronunciar' : 'hablar')
 
   return (
     <div className="flex flex-col gap-4">

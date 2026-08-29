@@ -209,6 +209,15 @@ export interface ParMinimo {
   b: { palabra: string; es: string }
 }
 
+// Marca de "ya lo practiqué" por grupo de pronunciación. NO es una nota ni una puerta:
+// el módulo es entrenamiento libre y transversal. Solo sirve para no repetir siempre los
+// mismos grupos de arriba cuando son 23 y se repasan a lo largo de meses.
+export interface PracticaPron {
+  id: string
+  fecha: string
+  ultimoPct?: number
+}
+
 export interface GrupoPron {
   id: string
   titulo: string

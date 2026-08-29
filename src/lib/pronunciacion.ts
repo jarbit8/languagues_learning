@@ -1,5 +1,6 @@
 import type { GrupoPron } from '../types'
 import { pronPack } from '../data/packs'
+import { db } from '../db'
 
 // Une las dos mitades de la pronunciación: el módulo explica los sonidos difíciles del
 // nivel entero, pero esa explicación solo servía si entrabas al módulo. Aquí se detecta,
@@ -29,4 +30,22 @@ const normaliza = (texto: string) =>
 export function consejoDePalabra(texto: string): GrupoPron | undefined {
   const w = normaliza(texto)
   return CANDIDATOS.find(({ re }) => re.test(w))?.grupo
+}
+
+// --- Marca de práctica ---------------------------------------------------------------
+// Con 23 grupos y meses de estudio, sin memoria se acaba repasando siempre los tres de
+// arriba. Esto NO puntúa ni desbloquea nada (el módulo es entrenamiento libre): solo
+// recuerda por dónde ibas. Guardar el último % del entrenador es informativo, no una nota.
+
+export async function marcarPracticado(id: string, pct?: number) {
+  const previo = await db.practicaPron.get(id)
+  await db.practicaPron.put({
+    id,
+    fecha: new Date().toISOString(),
+    ultimoPct: pct ?? previo?.ultimoPct
+  })
+}
+
+export function practicaDe(mapa: Record<string, { fecha: string; ultimoPct?: number }> | undefined, id: string) {
+  return mapa?.[id]
 }

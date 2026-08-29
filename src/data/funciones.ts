@@ -29,8 +29,8 @@ export const funciones: Record<number, string> = {
 export const nombresBloque: Record<number, string> = {
   1: 'Yo y mi gente',
   2: 'Mi día a día',
-  3: 'Comida y ciudad',
-  4: 'Pasado, planes y gustos'
+  3: 'Fuera de casa',
+  4: 'Tu historia'
 }
 
 // El hilo gramatical de cada bloque: es lo que justifica el ORDEN del curso (ser → hacer

@@ -1,8 +1,12 @@
-import { useMemo, useState } from 'react'
-import type { GrupoPron, ParMinimo } from '../types'
+import { useEffect, useMemo, useRef, useState } from 'react'
+import { useLocation } from 'react-router-dom'
+import { useLiveQuery } from 'dexie-react-hooks'
+import type { GrupoPron, ParMinimo, PracticaPron } from '../types'
 import { pronPack } from '../data/packs'
 import { hablar } from '../lib/audio'
 import { baraja } from '../lib/preguntas'
+import { db } from '../db'
+import { marcarPracticado } from '../lib/pronunciacion'
 
 
 // --- Entrenador de oído: suena UNA de las dos palabras del par y hay que acertar cuál fue.
@@ -44,6 +48,7 @@ function EntrenadorOido({ grupo, onSalir }: { grupo: GrupoPron; onSalir: () => v
 
   if (fin) {
     const pct = Math.round((aciertos / rondas.length) * 100)
+    void marcarPracticado(grupo.id, pct)
     const emoji = pct >= 80 ? '🎉' : pct >= 60 ? '👍' : '💪'
     return (
       <div className="flex flex-col gap-4">
@@ -121,15 +126,49 @@ function EntrenadorOido({ grupo, onSalir }: { grupo: GrupoPron; onSalir: () => v
   )
 }
 
-function GrupoCard({ grupo, onEntrenar }: { grupo: GrupoPron; onEntrenar: () => void }) {
-  const [abierto, setAbierto] = useState(false)
+function GrupoCard({
+  grupo,
+  onEntrenar,
+  practica,
+  abrirInicial
+}: {
+  grupo: GrupoPron
+  onEntrenar: () => void
+  practica?: PracticaPron
+  abrirInicial?: boolean
+}) {
+  const [abierto, setAbierto] = useState(!!abrirInicial)
+  const caja = useRef<HTMLDivElement>(null)
+
+  // Al llegar desde una tarjeta de vocabulario ("¿cómo se hace este sonido?") el grupo se
+  // abre solo y se trae a la vista: con 23 grupos, dejarlo al usuario sería inútil.
+  // Y cuenta como practicado igual que si lo hubiera desplegado a mano: lo que importa es
+  // que la lección se leyó, no por qué puerta se entró.
+  useEffect(() => {
+    if (!abrirInicial) return
+    caja.current?.scrollIntoView({ block: 'start' })
+    void marcarPracticado(grupo.id)
+  }, [abrirInicial, grupo.id])
+
+  function alternar() {
+    const abriendo = !abierto
+    setAbierto(abriendo)
+    // Abrir el grupo ES practicarlo: se lee la explicación y se tocan los audios.
+    if (abriendo) void marcarPracticado(grupo.id)
+  }
 
   return (
-    <div className="tarjeta flex flex-col gap-3">
-      <button onClick={() => setAbierto((v) => !v)} className="flex items-start gap-3 text-left">
+    <div ref={caja} className="tarjeta flex flex-col gap-3">
+      <button onClick={alternar} className="flex items-start gap-3 text-left">
         <div className="flex-1">
           <p className="font-bold leading-snug">{grupo.titulo}</p>
           <p className="text-xs text-rose-600 dark:text-rose-300">{grupo.dificultad}</p>
+          {practica && (
+            <p className="mt-0.5 text-[11px] text-emerald-600 dark:text-emerald-400">
+              ✓ ya lo practicaste
+              {practica.ultimoPct !== undefined && ` · último oído ${practica.ultimoPct}%`}
+            </p>
+          )}
         </div>
         <span className="text-slate-400">{abierto ? '▲' : '▼'}</span>
       </button>
@@ -178,6 +217,10 @@ function GrupoCard({ grupo, onEntrenar }: { grupo: GrupoPron; onEntrenar: () => 
 export default function Pronunciacion() {
   const pack = pronPack
   const [entrenando, setEntrenando] = useState<GrupoPron | null>(null)
+  // `?pron=<id>` lo pone el enlace de la tarjeta de vocabulario.
+  const destacado = new URLSearchParams(useLocation().search).get('pron')
+  const practicados = useLiveQuery(() => db.practicaPron.toArray(), [], [] as PracticaPron[])
+  const porId = new Map((practicados ?? []).map((p) => [p.id, p]))
 
   if (!pack) return <p className="tarjeta">Aún no hay guía de pronunciación.</p>
   if (entrenando) return <EntrenadorOido grupo={entrenando} onSalir={() => setEntrenando(null)} />
@@ -191,7 +234,13 @@ export default function Pronunciacion() {
         entendiendo. {conPares} traen entrenamiento de oído con pares mínimos.
       </p>
       {pack.grupos.map((g) => (
-        <GrupoCard key={g.id} grupo={g} onEntrenar={() => setEntrenando(g)} />
+        <GrupoCard
+          key={g.id}
+          grupo={g}
+          practica={porId.get(g.id)}
+          abrirInicial={g.id === destacado}
+          onEntrenar={() => setEntrenando(g)}
+        />
       ))}
     </div>
   )
