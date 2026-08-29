@@ -578,6 +578,138 @@
    ]
   },
   {
+   "id": "s-z",
+   "titulo": "La S que zumba (/z/)",
+   "dificultad": "El español no tiene S sonora",
+   "explicacion": "En español la \"s\" siempre suena sorda, como un siseo. En inglés muchísimas suenan ZUMBANDO, haciendo vibrar la garganta: music, easy, busy, is, was, has, please. Es el mismo problema que la B y la V, pero con la S — y cambia palabras enteras: si dices \"peas\" (guisantes) con la s española, suena \"peace\" (paz).",
+   "truco": "Ponte la mano en la garganta. Con /z/ vibra, con /s/ no. Practica alargando el sonido: zzzzoo, no ssssoo. Regla útil: la -s entre vocales y al final de casi todos los plurales zumba.",
+   "ejemplos": [
+    {
+     "palabra": "zoo",
+     "pron": "ZU (zumbando)",
+     "es": "zoológico"
+    },
+    {
+     "palabra": "music",
+     "pron": "MIÚ-zik",
+     "es": "música"
+    },
+    {
+     "palabra": "easy",
+     "pron": "Í-zi",
+     "es": "fácil"
+    },
+    {
+     "palabra": "please",
+     "pron": "PLIZ (zumbando)",
+     "es": "por favor"
+    },
+    {
+     "palabra": "is",
+     "pron": "IZ",
+     "es": "es, está"
+    }
+   ],
+   "pares": [
+    {
+     "a": {
+      "palabra": "peace",
+      "es": "paz"
+     },
+     "b": {
+      "palabra": "peas",
+      "es": "guisantes"
+     }
+    },
+    {
+     "a": {
+      "palabra": "rice",
+      "es": "arroz"
+     },
+     "b": {
+      "palabra": "rise",
+      "es": "subir"
+     }
+    },
+    {
+     "a": {
+      "palabra": "ice",
+      "es": "hielo"
+     },
+     "b": {
+      "palabra": "eyes",
+      "es": "ojos"
+     }
+    },
+    {
+     "a": {
+      "palabra": "bus",
+      "es": "autobús"
+     },
+     "b": {
+      "palabra": "buzz",
+      "es": "zumbido"
+     }
+    }
+   ]
+  },
+  {
+   "id": "y-j",
+   "titulo": "La Y y la J inglesas",
+   "dificultad": "Se cruzan con la Y española",
+   "explicacion": "Son dos sonidos distintos y el español solo tiene algo parecido a uno. La \"y\" inglesa (yes, year, young) es suave, como la i de \"hielo\". La \"j\" — y la \"g\" suave de job, June, George — es un sonido fuerte que no existe en español: como una \"ch\" pero haciendo vibrar la garganta. Decir \"yob\" en vez de \"job\" es de los errores que más se notan.",
+   "truco": "\"yes\" empieza casi como \"ies\". Para la j: prepara una \"ch\" y enciende la voz sin soltar el aire — sale \"ch\" sonora. Ni \"yob\" ni \"chob\": job.",
+   "ejemplos": [
+    {
+     "palabra": "yes",
+     "pron": "IES",
+     "es": "sí"
+    },
+    {
+     "palabra": "year",
+     "pron": "YÍAR",
+     "es": "año"
+    },
+    {
+     "palabra": "job",
+     "pron": "CHOB (con voz)",
+     "es": "trabajo"
+    },
+    {
+     "palabra": "June",
+     "pron": "CHUN (con voz)",
+     "es": "junio"
+    },
+    {
+     "palabra": "young",
+     "pron": "IANG",
+     "es": "joven"
+    }
+   ],
+   "pares": [
+    {
+     "a": {
+      "palabra": "yet",
+      "es": "todavía"
+     },
+     "b": {
+      "palabra": "jet",
+      "es": "avión a reacción"
+     }
+    },
+    {
+     "a": {
+      "palabra": "yam",
+      "es": "camote"
+     },
+     "b": {
+      "palabra": "jam",
+      "es": "mermelada"
+     }
+    }
+   ]
+  },
+  {
    "id": "r-inglesa",
    "titulo": "La R inglesa no vibra",
    "dificultad": "La R española delata al hispanohablante",
@@ -769,6 +901,46 @@
    "pares": []
   },
   {
+   "id": "letras-mudas",
+   "titulo": "Letras que se escriben y no suenan",
+   "dificultad": "Están ahí pero no se leen",
+   "explicacion": "El inglés conserva letras que dejaron de pronunciarse hace siglos. Si las lees, te delatas al instante: \"know\" no es \"ke-nou\", es \"NOU\". No hay que adivinar, van por grupos y son siempre los mismos.",
+   "truco": "Apréndetelas por familias: kn- muda la k (know, knife) · wr- muda la w (write, wrong) · -mb muda la b (climb, thumb) · l muda (half, talk, would, walk) · h muda (hour, honest) · t muda (listen, castle). Y Wednesday pierde la primera d: WENZ-day.",
+   "ejemplos": [
+    {
+     "palabra": "know",
+     "pron": "NOU (sin la k)",
+     "es": "saber, conocer"
+    },
+    {
+     "palabra": "write",
+     "pron": "RAIT (sin la w)",
+     "es": "escribir"
+    },
+    {
+     "palabra": "hour",
+     "pron": "AUR (sin la h)",
+     "es": "hora"
+    },
+    {
+     "palabra": "listen",
+     "pron": "LÍ-sen (sin la t)",
+     "es": "escuchar"
+    },
+    {
+     "palabra": "half",
+     "pron": "JAF (sin la l)",
+     "es": "mitad"
+    },
+    {
+     "palabra": "Wednesday",
+     "pron": "UÉNZ-dei",
+     "es": "miércoles"
+    }
+   ],
+   "pares": []
+  },
+  {
    "id": "ed-pasado",
    "titulo": "La -ED del pasado: 3 sonidos",
    "dificultad": "Se escribe igual, suena distinto",
@@ -918,6 +1090,36 @@
      }
     }
    ]
+  },
+  {
+   "id": "ritmo",
+   "titulo": "El ritmo de la frase",
+   "dificultad": "Por esto parece que hablan rapidísimo",
+   "explicacion": "En español cada sílaba dura más o menos lo mismo. En inglés no: solo las palabras con contenido (sustantivos, verbos, adjetivos) suenan largas y fuertes, y todo lo demás — artículos, preposiciones, auxiliares, pronombres — se comprime hasta casi desaparecer. No hablan rápido: comprimen. Entender esto es lo que hace que de golpe empieces a entender el listening.",
+   "truco": "Di solo las palabras fuertes y mete el resto apretado entre ellas: \"I WANT to GO to the PARK\" son tres golpes, no siete. Da golpecitos en la mesa solo en las fuertes y verás que la frase entra en el mismo tiempo aunque le añadas palabras pequeñas.",
+   "ejemplos": [
+    {
+     "palabra": "I want to go to the park.",
+     "pron": "ai UANT tu GOU tu de PARK",
+     "es": "Quiero ir al parque."
+    },
+    {
+     "palabra": "She is a teacher.",
+     "pron": "shis e TÍ-cher",
+     "es": "Ella es profesora."
+    },
+    {
+     "palabra": "What do you want to do?",
+     "pron": "uá-diu UANT tu DU",
+     "es": "¿Qué quieres hacer?"
+    },
+    {
+     "palabra": "I can see the house.",
+     "pron": "ai ken SI de JAUS",
+     "es": "Puedo ver la casa."
+    }
+   ],
+   "pares": []
   },
   {
    "id": "cognados",

@@ -147,6 +147,10 @@ for (const { archivo, pack } of packs('pronunciacion')) {
     for (const campo of ['titulo', 'dificultad', 'explicacion', 'truco'])
       if (!String(g[campo] ?? '').trim()) mal(archivo, donde, `sin ${campo}`)
     if (!g.ejemplos?.length) mal(archivo, donde, 'sin ejemplos que escuchar')
+    // El tipo GrupoPron declara `pares` obligatorio pero el JSON no pasa por TypeScript:
+    // un grupo sin la clave reventaba la pantalla entera al leer `grupo.pares.length`.
+    // Los grupos sin entrenador llevan `pares: []`, nunca la clave ausente.
+    if (!Array.isArray(g.pares)) mal(archivo, donde, 'sin la clave `pares` (usa [] si no tiene entrenador)')
     g.ejemplos?.forEach((e, j) => {
       for (const campo of ['palabra', 'pron', 'es'])
         if (!String(e[campo] ?? '').trim()) mal(archivo, `${donde}, ejemplo ${j + 1}`, `sin ${campo}`)

@@ -12,7 +12,7 @@ function EntrenadorOido({ grupo, onSalir }: { grupo: GrupoPron; onSalir: () => v
     const base: { par: ParMinimo; esA: boolean }[] = []
     // 8 rondas mezclando los pares del grupo, alternando cuál de las dos suena
     for (let i = 0; i < 8; i++) {
-      const par = grupo.pares[i % grupo.pares.length]
+      const par = grupo.pares![i % grupo.pares!.length]
       base.push({ par, esA: Math.random() < 0.5 })
     }
     return baraja(base)
@@ -164,9 +164,9 @@ function GrupoCard({ grupo, onEntrenar }: { grupo: GrupoPron; onEntrenar: () => 
             ))}
           </div>
 
-          {grupo.pares.length > 0 && (
+          {!!grupo.pares?.length && (
             <button onClick={onEntrenar} className="btn-primary">
-              🎧 Entrenar el oído ({grupo.pares.length} pares)
+              🎧 Entrenar el oído ({grupo.pares!.length} pares)
             </button>
           )}
         </div>
@@ -182,7 +182,7 @@ export default function Pronunciacion() {
   if (!pack) return <p className="tarjeta">Aún no hay guía de pronunciación.</p>
   if (entrenando) return <EntrenadorOido grupo={entrenando} onSalir={() => setEntrenando(null)} />
 
-  const conPares = pack.grupos.filter((g) => g.pares.length > 0).length
+  const conPares = pack.grupos.filter((g) => g.pares?.length).length
 
   return (
     <div className="flex flex-col gap-4">
