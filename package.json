@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc --noEmit && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "verificar": "node scripts/verificar-vocabulario.mjs && node scripts/verificar-packs.mjs"
   },
   "dependencies": {
     "dexie": "^4.0.11",
