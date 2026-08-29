@@ -13,14 +13,8 @@ import {
 } from '../lib/progreso'
 import { getVocabPack } from '../data/packs'
 import { construirExamenDiario, idsExamenDiario, marcarExaminadasHoy } from '../lib/examenDiario'
-import {
-  CICLOS,
-  construirExamenCiclo,
-  idsDelCiclo,
-  proximoDia,
-  tocaHoy,
-  type CicloVocab
-} from '../lib/examenVocabulario'
+import { CICLOS, construirExamenDelTema, idsDelTema, type CicloVocab } from '../lib/examenVocabulario'
+import { getPlan, estadoDelPlan } from '../lib/plan'
 import { construirExamenGramaticaTema, ejerciciosDe } from '../lib/examenGramatica'
 import { listeningDeTema, readingDeTema, consignaDeTema, promptHablarExamen } from '../lib/examenHabilidades'
 import CopiarPrompt from '../components/CopiarPrompt'
@@ -66,16 +60,23 @@ export default function Examen() {
     const gateBloque = await estadoExamenBloque(bloque)
     const gateFinal = await estadoExamenFinal()
     const nivel = await getProgresoNivel()
-    const ciclos = await Promise.all(
-      CICLOS.map(async (c) => ({ ...c, cuantas: (await idsDelCiclo(c.id)).length, toca: tocaHoy(c.id) }))
-    )
+    // El plan dice si HOY toca el examen del tema (día 2). Sin plan, siempre disponible.
+    const plan = await getPlan()
+    const jornada = plan ? estadoDelPlan(plan, tema).jornada : undefined
+    const tocaDelTema = !jornada || (jornada.tipo === 'tema' && jornada.diaDelTema >= 2)
+    const delTema = (await idsDelTema(tema)).length
+    const ciclos = CICLOS.map((c) => ({
+      ...c,
+      cuantas: c.id === 'diario' ? pendientes : delTema,
+      toca: c.id === 'diario' ? true : tocaDelTema
+    }))
     return { tema, titulo: pack?.titulo ?? '', pendientes, gateTema, bloque, gateBloque, gateFinal, nivel, ciclos }
   }, [])
 
   async function iniciarCiclo(ciclo: CicloVocab, titulo: string) {
     // El diario tiene su propio constructor: además de lo de hoy arrastra los repasos SRS
     // vencidos, que es su razón de ser. Los ciclos largos miran solo su ventana de días.
-    const preguntas = ciclo === 'diario' ? await construirExamenDiario() : await construirExamenCiclo(ciclo)
+    const preguntas = ciclo === 'diario' ? await construirExamenDiario() : await construirExamenDelTema(info!.tema)
     if (!preguntas.length) {
       setVista({ modo: 'fin', titulo, aciertos: 0, total: 0, nota: 'vacio' })
       return
@@ -303,20 +304,24 @@ export default function Examen() {
       {/* --- Módulo de vocabulario: los tres ciclos de repaso --- */}
       <h2 className="text-sm font-bold uppercase tracking-wide text-slate-400">Vocabulario</h2>
       {info.ciclos.map((c) => {
-        const cuantas = c.id === 'diario' ? info.pendientes : c.cuantas
+        const cuantas = c.cuantas
         return (
           <button
             key={c.id}
-            onClick={() => c.toca && cuantas > 0 && iniciarCiclo(c.id, `Examen ${c.titulo.toLowerCase()}`)}
+            onClick={() =>
+              c.toca && cuantas > 0 && iniciarCiclo(c.id, c.id === 'diario' ? 'Examen diario' : `Vocabulario del tema ${info.tema}`)
+            }
             disabled={!c.toca || cuantas === 0}
             className={`tarjeta flex items-center gap-3 text-left ${c.toca && cuantas > 0 ? '' : 'opacity-70'}`}
           >
             <span className="text-2xl">{c.toca ? c.icono : '🔒'}</span>
             <div className="flex-1">
-              <p className="font-semibold">Examen {c.titulo.toLowerCase()}</p>
+              <p className="font-semibold">
+                {c.id === 'diario' ? 'Examen diario' : `Vocabulario del tema ${info.tema}`}
+              </p>
               <p className="text-sm text-slate-500 dark:text-slate-400">
                 {!c.toca
-                  ? `Toca los ${proximoDia(c.id)}`
+                  ? 'Toca el 2º día del tema'
                   : cuantas > 0
                     ? `${cuantas} ${cuantas === 1 ? 'palabra' : 'palabras'} · entrenamiento`
                     : 'Nada que evaluar todavía'}

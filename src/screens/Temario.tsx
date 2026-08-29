@@ -3,6 +3,8 @@ import { mapaTemas } from '../lib/progreso'
 import { temasDeBloque, bloqueDeTema } from '../lib/curriculum'
 import { getVocabPack, getGramatica, getListening, getReading, getWriting, vocabPacks } from '../data/packs'
 import { funcionDe, nombresBloque, gramaticaBloque } from '../data/funciones'
+import { db } from '../db'
+import { diasDeTema, fechaCorta, cierraBloque } from '../lib/plan'
 
 // Cuántas consignas de escritura le tocan a un tema: los packs de writing son por bloque,
 // pero cada consigna lleva el tema al que corresponde.
@@ -23,6 +25,8 @@ const ESTADO_TEXTO: Record<string, string> = {
 
 export default function Temario() {
   const mapa = useLiveQuery(() => mapaTemas(), [])
+  // Si hay cronograma activo, cada tema muestra los días que le tocan.
+  const plan = useLiveQuery(() => db.plan.get('a1'), [])
   const estadoDe = (tema: number) => mapa?.find((t) => t.tema === tema)?.estado ?? 'bloqueado'
 
   // Solo el titular: temas y palabras. El desglose de cada tema (ejercicios, diálogos,
@@ -72,9 +76,17 @@ export default function Temario() {
                     <p className="font-semibold leading-snug">{pack?.titulo ?? `Tema ${tema}`}</p>
                     <p className="text-xs text-slate-500 dark:text-slate-400">{funcionDe(tema)}</p>
                   </div>
-                  <span className={`shrink-0 rounded-full px-2 py-0.5 text-xs font-semibold ${ESTADO_BADGE[estado]}`}>
-                    {ESTADO_TEXTO[estado]}
-                  </span>
+                  <div className="flex shrink-0 flex-col items-end gap-0.5">
+                    <span className={`rounded-full px-2 py-0.5 text-xs font-semibold ${ESTADO_BADGE[estado]}`}>
+                      {ESTADO_TEXTO[estado]}
+                    </span>
+                    {plan && (
+                      <span className="text-[10px] text-sky-600 dark:text-sky-400">
+                        {fechaCorta(diasDeTema(plan, tema).desde)}–{fechaCorta(diasDeTema(plan, tema).hasta)}
+                        {cierraBloque(tema) && ' 🧩'}
+                      </span>
+                    )}
+                  </div>
                 </div>
 
                 {/* Gramática de este tema, siempre visible: es el corazón del temario */}

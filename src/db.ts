@@ -5,7 +5,8 @@ import type {
   ProgresoBloque,
   ProgresoNivel,
   HistorialExamen,
-  PracticaPron
+  PracticaPron,
+  PlanEstudio
 } from './types'
 
 // Base local del progreso. Sin backend ni auth: todo vive en el dispositivo.
@@ -16,6 +17,7 @@ export class IdiomasDB extends Dexie {
   progresoNivel!: Table<ProgresoNivel, string>
   historialExamenes!: Table<HistorialExamen, number>
   practicaPron!: Table<PracticaPron, string>
+  plan!: Table<PlanEstudio, string>
 
   constructor() {
     super('idiomas')
@@ -39,6 +41,16 @@ export class IdiomasDB extends Dexie {
       progresoNivel: 'id, estado',
       historialExamenes: '++id, tipo, fecha',
       practicaPron: 'id'
+    })
+    // v4: el cronograma del nivel (una sola fila, id 'a1').
+    this.version(4).stores({
+      palabras: 'id, estado, proximoRepaso, fechaAprendida',
+      progresoTema: 'temaId, estado',
+      progresoBloque: 'bloqueId, estado',
+      progresoNivel: 'id, estado',
+      historialExamenes: '++id, tipo, fecha',
+      practicaPron: 'id',
+      plan: 'id'
     })
   }
 }

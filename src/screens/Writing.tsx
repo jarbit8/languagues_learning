@@ -1,18 +1,21 @@
 import { useState } from 'react'
 import { useLiveQuery } from 'dexie-react-hooks'
-import { bloqueEnCurso } from '../lib/progreso'
+import { temaEnCurso } from '../lib/progreso'
 import { getWriting } from '../data/packs'
+import { bloqueDeTema } from '../lib/curriculum'
 import { EscribirConsigna } from '../components/PasoWriting'
 
 export default function Writing() {
-  const bloqueActual = useLiveQuery(() => bloqueEnCurso(), [], 1) ?? 1
-  const [bloque, setBloque] = useState<number | null>(null)
+  // Se elige por TEMA, igual que Leer y Escuchar. Los packs siguen agrupados por bloque en
+  // disco, pero cada consigna sabe de qué tema es: eso es cosa del archivo, no del usuario.
+  const temaActual = useLiveQuery(() => temaEnCurso(), [], 1) ?? 1
+  const [tema, setTema] = useState<number | null>(null)
   const [consignaIdx, setConsignaIdx] = useState<number | null>(null)
   const [hecho, setHecho] = useState(false)
 
-  const bloqueSel = bloque ?? bloqueActual
-  const pack = getWriting(bloqueSel)
-  const bloquesDisponibles = Array.from({ length: bloqueActual }, (_, i) => i + 1)
+  const temaSel = tema ?? temaActual
+  const pack = getWriting(bloqueDeTema(temaSel))
+  const temasDisponibles = Array.from({ length: temaActual }, (_, i) => i + 1)
 
   function reset() {
     setConsignaIdx(null)
@@ -51,16 +54,16 @@ export default function Writing() {
     <div className="flex flex-col gap-4">
       <div className="flex gap-2">
         <select
-          value={bloqueSel}
+          value={temaSel}
           onChange={(e) => {
             reset()
-            setBloque(Number(e.target.value))
+            setTema(Number(e.target.value))
           }}
           className="flex-1 rounded-xl border border-slate-300 bg-white px-3 py-2 dark:border-slate-600 dark:bg-slate-900"
         >
-          {bloquesDisponibles.map((b) => (
-            <option key={b} value={b}>
-              Bloque {b} (temas {(b - 1) * 6 + 1}–{b * 6})
+          {temasDisponibles.map((t) => (
+            <option key={t} value={t}>
+              Tema {t}
             </option>
           ))}
         </select>
@@ -73,14 +76,14 @@ export default function Writing() {
 
       {!pack ? (
         <p className="tarjeta text-slate-500 dark:text-slate-400">
-          Aún no hay escritura para el bloque {bloqueSel}.
+          Aún no hay escritura para el tema {temaSel}.
         </p>
       ) : (
         // Se ordena por tema para leerlas en el orden del curso, pero el índice original
         // se conserva: los exámenes de bloque y final siguen tomando consignas[0].
         pack.consignas
           .map((c, i) => ({ c, i }))
-          .sort((a, b) => (a.c.tema ?? 99) - (b.c.tema ?? 99))
+          .filter(({ c }) => c.tema === temaSel)
           .map(({ c, i }) => (
             <div key={i} className="tarjeta flex flex-col gap-3">
               <div className="flex items-center gap-2">
