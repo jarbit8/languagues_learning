@@ -1,7 +1,7 @@
 import { db } from '../db'
 import { vocabPacks } from '../data/packs'
 import { UN_DIA, inicioDeHoy } from './fechas'
-import type { PlanEstudio } from '../types'
+import type { PausaPlan, PlanEstudio } from '../types'
 
 // Cronograma del nivel: 2 días por tema → 48 días para los 24 temas.
 //
@@ -66,6 +66,52 @@ export async function borrarPlan() {
   await db.plan.delete(ID_PLAN)
 }
 
+// --- Pausas -------------------------------------------------------------------------
+// Un día dentro de una pausa no cuenta como día de plan: no se avanza, solo se repasa.
+// Todo lo que venga después se corre esos días solo, sin tocar el orden de los temas.
+
+export function enPausa(plan: PlanEstudio, t: number): boolean {
+  const dia = inicioDeHoy(t)
+  return (plan.pausas ?? []).some((p) => dia >= inicioDeHoy(p.desde) && dia <= inicioDeHoy(p.hasta))
+}
+
+export async function anadirPausa(desde: number, hasta: number, motivo?: string) {
+  const plan = await getPlan()
+  if (!plan) return
+  const pausa: PausaPlan = { desde: inicioDeHoy(desde), hasta: inicioDeHoy(hasta), motivo }
+  const pausas = [...(plan.pausas ?? []), pausa].sort((a, b) => a.desde - b.desde)
+  await db.plan.put({ ...plan, pausas })
+}
+
+export async function quitarPausa(desde: number) {
+  const plan = await getPlan()
+  if (!plan) return
+  await db.plan.put({ ...plan, pausas: (plan.pausas ?? []).filter((p) => p.desde !== desde) })
+}
+
+// Fecha real del día N del plan: se avanza por el calendario saltándose las pausas.
+export function fechaDeDia(plan: PlanEstudio, dia: number): number {
+  let fecha = plan.fechaInicio
+  let contados = 1
+  // Tope de seguridad: el plan son 54 días y una pausa no debería pasar de unos meses.
+  for (let i = 0; i < 2000 && contados < dia; i++) {
+    fecha += UN_DIA
+    if (!enPausa(plan, fecha)) contados++
+  }
+  return fecha
+}
+
+// Cuántos días de plan van hasta hoy, descontando los de pausa.
+export function diaActual(plan: PlanEstudio, ahora = Date.now()): number {
+  const hoy = inicioDeHoy(ahora)
+  if (hoy <= plan.fechaInicio) return 1
+  let dia = 1
+  for (let f = plan.fechaInicio + UN_DIA; f <= hoy; f += UN_DIA) {
+    if (!enPausa(plan, f)) dia++
+  }
+  return dia
+}
+
 export interface EstadoPlan {
   dia: number
   totalDias: number
@@ -78,15 +124,14 @@ export interface EstadoPlan {
 
 export function estadoDelPlan(plan: PlanEstudio, temaReal: number, ahora = Date.now()): EstadoPlan {
   const totalDias = diasDelPlan()
-  const transcurridos = Math.floor((inicioDeHoy(ahora) - plan.fechaInicio) / UN_DIA)
-  const dia = Math.max(1, transcurridos + 1)
+  const dia = diaActual(plan, ahora)
   const jornada = jornadaDelDia(Math.min(dia, totalDias))
   const temaPlanificado = jornada.tipo === 'tema' ? jornada.tema : totalTemas()
   return {
     dia,
     totalDias,
     jornada,
-    fechaFin: plan.fechaInicio + (totalDias - 1) * UN_DIA,
+    fechaFin: fechaDeDia(plan, totalDias),
     desfase: temaReal - temaPlanificado,
     terminado: dia > totalDias
   }
@@ -95,14 +140,11 @@ export function estadoDelPlan(plan: PlanEstudio, temaReal: number, ahora = Date.
 // Los días que le tocan a un tema, para pintarlos en el temario.
 export function diasDeTema(plan: PlanEstudio, tema: number): { desde: number; hasta: number } {
   const primero = primerDiaDeTema(tema)
-  return {
-    desde: plan.fechaInicio + (primero - 1) * UN_DIA,
-    hasta: plan.fechaInicio + (primero - 2 + DIAS_POR_TEMA) * UN_DIA
-  }
+  return { desde: fechaDeDia(plan, primero), hasta: fechaDeDia(plan, primero + DIAS_POR_TEMA - 1) }
 }
 
 export function fechaExamenDeBloque(plan: PlanEstudio, bloque: number): number {
-  return plan.fechaInicio + (diaDeExamenDeBloque(bloque) - 1) * UN_DIA
+  return fechaDeDia(plan, diaDeExamenDeBloque(bloque))
 }
 
 const MESES = ['ene', 'feb', 'mar', 'abr', 'may', 'jun', 'jul', 'ago', 'sep', 'oct', 'nov', 'dic']

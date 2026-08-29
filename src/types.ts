@@ -115,10 +115,19 @@ export type EstadoTema = 'bloqueado' | 'en_curso' | 'aprobado'
 // Cronograma del nivel. Es una GUÍA, no una puerta: dice qué tema tocaría hoy según el
 // plan y si vas al día, pero no desbloquea ni bloquea nada — eso lo sigue decidiendo el
 // examen de tema (regla 1: se avanza por dominio). Sin plan, la app funciona igual que antes.
+// Un parón: días de calendario en los que NO se avanza (semana de exámenes, viaje...).
+// El plan no cuenta esos días, así que todo lo que venga después se corre solo.
+export interface PausaPlan {
+  desde: number
+  hasta: number
+  motivo?: string
+}
+
 export interface PlanEstudio {
   id: string
   fechaInicio: number
   diasPorTema: number
+  pausas?: PausaPlan[]
 }
 
 export interface NotasBloque {

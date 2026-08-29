@@ -1,10 +1,22 @@
+import { useState } from 'react'
 import { useLiveQuery } from 'dexie-react-hooks'
 import { mapaTemas } from '../lib/progreso'
 import { temasDeBloque, bloqueDeTema } from '../lib/curriculum'
 import { getVocabPack, getGramatica, getListening, getReading, getWriting, vocabPacks } from '../data/packs'
 import { funcionDe, nombresBloque, gramaticaBloque } from '../data/funciones'
 import { db } from '../db'
-import { diasDeTema, fechaCorta, cierraBloque, empezarPlan, borrarPlan, diasDelPlan, estadoDelPlan } from '../lib/plan'
+import {
+  diasDeTema,
+  fechaCorta,
+  cierraBloque,
+  empezarPlan,
+  borrarPlan,
+  diasDelPlan,
+  estadoDelPlan,
+  anadirPausa,
+  quitarPausa,
+  enPausa
+} from '../lib/plan'
 
 // Cuántas consignas de escritura le tocan a un tema: los packs de writing son por bloque,
 // pero cada consigna lleva el tema al que corresponde.
@@ -29,6 +41,13 @@ export default function Temario() {
   const plan = useLiveQuery(() => db.plan.get('a1'), [])
   const temaActual = mapa?.find((t) => t.estado === 'en_curso')?.tema ?? 1
   const estado = plan ? estadoDelPlan(plan, temaActual) : undefined
+  const [desde, setDesde] = useState('')
+  const [hasta, setHasta] = useState('')
+  // input type=date da 'YYYY-MM-DD'; se interpreta en hora local, no UTC.
+  const aFecha = (v: string) => {
+    const [a, m, d] = v.split('-').map(Number)
+    return new Date(a, m - 1, d).getTime()
+  }
   const estadoDe = (tema: number) => mapa?.find((t) => t.tema === tema)?.estado ?? 'bloqueado'
 
   // Solo el titular: temas y palabras. El desglose de cada tema (ejercicios, diálogos,
@@ -67,6 +86,55 @@ export default function Temario() {
               acabas el {fechaCorta(estado.fechaFin)}
             </span>
           </div>
+          {enPausa(plan, Date.now()) && (
+            <p className="text-xs font-semibold text-amber-600 dark:text-amber-400">
+              ⏸ Hoy estás en pausa: repasa lo visto, no avances tema.
+            </p>
+          )}
+
+          {/* Pausas: semanas de exámenes, viajes… Los días de pausa no cuentan y todo lo
+              que viene después se corre solo, sin cambiar el orden de los temas. */}
+          {(plan.pausas ?? []).map((p) => (
+            <div key={p.desde} className="flex items-center gap-2 text-xs">
+              <span className="rounded-full bg-amber-100 px-2 py-0.5 text-amber-700 dark:bg-amber-900/40 dark:text-amber-200">
+                ⏸ {fechaCorta(p.desde)} – {fechaCorta(p.hasta)}
+              </span>
+              <button onClick={() => void quitarPausa(p.desde)} className="text-slate-400 underline">
+                quitar
+              </button>
+            </div>
+          ))}
+
+          <details className="text-xs">
+            <summary className="cursor-pointer text-slate-500 dark:text-slate-400">Añadir una pausa</summary>
+            <div className="mt-2 flex flex-wrap items-center gap-2">
+              <input
+                type="date"
+                value={desde}
+                onChange={(e) => setDesde(e.target.value)}
+                className="rounded-lg border border-slate-300 bg-white px-2 py-1 dark:border-slate-600 dark:bg-slate-900"
+              />
+              <span className="text-slate-400">→</span>
+              <input
+                type="date"
+                value={hasta}
+                onChange={(e) => setHasta(e.target.value)}
+                className="rounded-lg border border-slate-300 bg-white px-2 py-1 dark:border-slate-600 dark:bg-slate-900"
+              />
+              <button
+                disabled={!desde || !hasta}
+                onClick={() => {
+                  void anadirPausa(aFecha(desde), aFecha(hasta))
+                  setDesde('')
+                  setHasta('')
+                }}
+                className="rounded-lg bg-slate-900 px-3 py-1 text-white disabled:opacity-40 dark:bg-white dark:text-slate-900"
+              >
+                Añadir
+              </button>
+            </div>
+          </details>
+
           <button
             onClick={() => void borrarPlan()}
             className="self-start text-xs text-slate-500 underline dark:text-slate-400"
