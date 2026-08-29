@@ -215,7 +215,12 @@ export interface ParMinimo {
 export interface PracticaPron {
   id: string
   fecha: string
+  // Resultado del entrenador de oído: un dato, se guarda solo.
   ultimoPct?: number
+  // Lo marca el USUARIO cuando decide que ya lo tiene claro, igual que "Aprendida ✓" en
+  // vocabulario (regla de producto 2). Abrir el grupo o escuchar un audio NO lo marca:
+  // eso solo decía que entraste, no que lo entendiste.
+  claro?: boolean
 }
 
 export interface GrupoPron {

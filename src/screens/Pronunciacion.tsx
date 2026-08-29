@@ -6,7 +6,7 @@ import { pronPack } from '../data/packs'
 import { hablar } from '../lib/audio'
 import { baraja } from '../lib/preguntas'
 import { db } from '../db'
-import { marcarPracticado } from '../lib/pronunciacion'
+import { guardarResultado, marcarClaro } from '../lib/pronunciacion'
 
 
 // --- Entrenador de oído: suena UNA de las dos palabras del par y hay que acertar cuál fue.
@@ -48,7 +48,7 @@ function EntrenadorOido({ grupo, onSalir }: { grupo: GrupoPron; onSalir: () => v
 
   if (fin) {
     const pct = Math.round((aciertos / rondas.length) * 100)
-    void marcarPracticado(grupo.id, pct)
+    void guardarResultado(grupo.id, pct)
     const emoji = pct >= 80 ? '🎉' : pct >= 60 ? '👍' : '💪'
     return (
       <div className="flex flex-col gap-4">
@@ -142,31 +142,21 @@ function GrupoCard({
 
   // Al llegar desde una tarjeta de vocabulario ("¿cómo se hace este sonido?") el grupo se
   // abre solo y se trae a la vista: con 23 grupos, dejarlo al usuario sería inútil.
-  // Y cuenta como practicado igual que si lo hubiera desplegado a mano: lo que importa es
-  // que la lección se leyó, no por qué puerta se entró.
   useEffect(() => {
-    if (!abrirInicial) return
-    caja.current?.scrollIntoView({ block: 'start' })
-    void marcarPracticado(grupo.id)
-  }, [abrirInicial, grupo.id])
-
-  function alternar() {
-    const abriendo = !abierto
-    setAbierto(abriendo)
-    // Abrir el grupo ES practicarlo: se lee la explicación y se tocan los audios.
-    if (abriendo) void marcarPracticado(grupo.id)
-  }
+    if (abrirInicial) caja.current?.scrollIntoView({ block: 'start' })
+  }, [abrirInicial])
 
   return (
     <div ref={caja} className="tarjeta flex flex-col gap-3">
-      <button onClick={alternar} className="flex items-start gap-3 text-left">
+      <button onClick={() => setAbierto((v) => !v)} className="flex items-start gap-3 text-left">
         <div className="flex-1">
           <p className="font-bold leading-snug">{grupo.titulo}</p>
           <p className="text-xs text-rose-600 dark:text-rose-300">{grupo.dificultad}</p>
-          {practica && (
+          {(practica?.claro || practica?.ultimoPct !== undefined) && (
             <p className="mt-0.5 text-[11px] text-emerald-600 dark:text-emerald-400">
-              ✓ ya lo practicaste
-              {practica.ultimoPct !== undefined && ` · último oído ${practica.ultimoPct}%`}
+              {practica?.claro && '✓ lo tienes claro'}
+              {practica?.claro && practica?.ultimoPct !== undefined && ' · '}
+              {practica?.ultimoPct !== undefined && `último oído ${practica.ultimoPct}%`}
             </p>
           )}
         </div>
@@ -208,6 +198,19 @@ function GrupoCard({
               🎧 Entrenar el oído ({grupo.pares!.length} pares)
             </button>
           )}
+
+          {/* Lo marca el usuario al final, cuando decide que lo entendió — no la app por
+              haber entrado. Se puede desmarcar, igual que "Aprendida ✓" en vocabulario. */}
+          <button
+            onClick={() => void marcarClaro(grupo.id, !practica?.claro)}
+            className={`btn min-h-[44px] text-sm ${
+              practica?.claro
+                ? 'bg-emerald-500 text-white'
+                : 'bg-slate-100 text-slate-700 dark:bg-slate-700 dark:text-slate-100'
+            }`}
+          >
+            {practica?.claro ? '✓ Lo tienes claro (tocar para quitar)' : 'Ya me quedó claro ✓'}
+          </button>
         </div>
       )}
     </div>

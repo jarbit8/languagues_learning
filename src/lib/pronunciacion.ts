@@ -32,20 +32,18 @@ export function consejoDePalabra(texto: string): GrupoPron | undefined {
   return CANDIDATOS.find(({ re }) => re.test(w))?.grupo
 }
 
-// --- Marca de práctica ---------------------------------------------------------------
+// --- Memoria del módulo -------------------------------------------------------------
 // Con 23 grupos y meses de estudio, sin memoria se acaba repasando siempre los tres de
-// arriba. Esto NO puntúa ni desbloquea nada (el módulo es entrenamiento libre): solo
-// recuerda por dónde ibas. Guardar el último % del entrenador es informativo, no una nota.
+// arriba. Nada de esto puntúa ni desbloquea: el módulo es entrenamiento libre.
 
-export async function marcarPracticado(id: string, pct?: number) {
+// El entrenador guarda su resultado solo: es un dato, no una afirmación del usuario.
+export async function guardarResultado(id: string, pct: number) {
   const previo = await db.practicaPron.get(id)
-  await db.practicaPron.put({
-    id,
-    fecha: new Date().toISOString(),
-    ultimoPct: pct ?? previo?.ultimoPct
-  })
+  await db.practicaPron.put({ ...previo, id, fecha: new Date().toISOString(), ultimoPct: pct })
 }
 
-export function practicaDe(mapa: Record<string, { fecha: string; ultimoPct?: number }> | undefined, id: string) {
-  return mapa?.[id]
+// Esto lo decide el usuario, como "Aprendida ✓" en las tarjetas, y puede desmarcarlo.
+export async function marcarClaro(id: string, claro: boolean) {
+  const previo = await db.practicaPron.get(id)
+  await db.practicaPron.put({ ...previo, id, fecha: new Date().toISOString(), claro })
 }
