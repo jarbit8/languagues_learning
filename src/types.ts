@@ -217,6 +217,11 @@ export interface GrupoPron {
   truco: string
   ejemplos: EjemploPron[]
   pares: ParMinimo[]
+  // Con qué palabras salta este consejo en la tarjeta de vocabulario, y en qué orden se
+  // prueban los grupos (gana el número más bajo). Solo lo llevan los grupos detectables
+  // desde la escritura de la palabra; los demás (ritmo, entonación, schwa…) no.
+  patron?: string
+  prioridad?: number
 }
 
 export interface PronPack {

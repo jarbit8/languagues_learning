@@ -134,8 +134,8 @@
     },
     {
      "palabra": "Z",
-     "pron": "ZI",
-     "es": "la Z — en EE. UU. \"zi\", en Reino Unido \"zed\""
+     "pron": "SI (zumbando)",
+     "es": "la Z — como la C pero zumbando; en EE. UU. \"zi\", en Reino Unido \"zed\""
     }
    ],
    "pares": [
@@ -270,7 +270,9 @@
       "es": "aleta"
      }
     }
-   ]
+   ],
+   "prioridad": 3,
+   "patron": "th"
   },
   {
    "id": "vocal-ae",
@@ -468,7 +470,9 @@
       "es": "barco"
      }
     }
-   ]
+   ],
+   "prioridad": 6,
+   "patron": "v"
   },
   {
    "id": "w-v",
@@ -514,7 +518,9 @@
       "es": "enredadera"
      }
     }
-   ]
+   ],
+   "prioridad": 10,
+   "patron": "^w"
   },
   {
    "id": "sh-ch",
@@ -575,38 +581,40 @@
       "es": "reloj"
      }
     }
-   ]
+   ],
+   "prioridad": 5,
+   "patron": "(sh|ch)"
   },
   {
    "id": "s-z",
    "titulo": "La S que zumba (/z/)",
    "dificultad": "El español no tiene S sonora",
-   "explicacion": "En español la \"s\" siempre suena sorda, como un siseo. En inglés muchísimas suenan ZUMBANDO, haciendo vibrar la garganta: music, easy, busy, is, was, has, please. Es el mismo problema que la B y la V, pero con la S — y cambia palabras enteras: si dices \"peas\" (guisantes) con la s española, suena \"peace\" (paz).",
+   "explicacion": "En español la \"s\" siempre suena sorda, como un siseo. En inglés muchísimas suenan ZUMBANDO, haciendo vibrar la garganta: music, easy, busy, is, was, has, please. Es el mismo problema que la B y la V, pero con la S — y cambia palabras enteras: si dices \"peas\" (guisantes) con la s española, suena \"peace\" (paz). Ojo con cómo se escribe aquí: en esta guía la letra «z» significa el sonido TH (think → ZINK), así que la /z/ inglesa se escribe «s» y se avisa con «(zumbando)». Verás una s escrita, pero tiene que vibrar.",
    "truco": "Ponte la mano en la garganta. Con /z/ vibra, con /s/ no. Practica alargando el sonido: zzzzoo, no ssssoo. Regla útil: la -s entre vocales y al final de casi todos los plurales zumba.",
    "ejemplos": [
     {
      "palabra": "zoo",
-     "pron": "ZU (zumbando)",
+     "pron": "SU (zumbando)",
      "es": "zoológico"
     },
     {
      "palabra": "music",
-     "pron": "MIÚ-zik",
+     "pron": "MIÚ-sik (la s zumba)",
      "es": "música"
     },
     {
      "palabra": "easy",
-     "pron": "Í-zi",
+     "pron": "Í-si (la s zumba)",
      "es": "fácil"
     },
     {
      "palabra": "please",
-     "pron": "PLIZ (zumbando)",
+     "pron": "PLIS (la s zumba)",
      "es": "por favor"
     },
     {
      "palabra": "is",
-     "pron": "IZ",
+     "pron": "IS (zumbando)",
      "es": "es, está"
     }
    ],
@@ -651,38 +659,40 @@
       "es": "zumbido"
      }
     }
-   ]
+   ],
+   "prioridad": 11,
+   "patron": "(z|music|please|easy|busy|cousin|museum|exercise)"
   },
   {
    "id": "y-j",
    "titulo": "La Y y la J inglesas",
    "dificultad": "Se cruzan con la Y española",
-   "explicacion": "Son dos sonidos distintos y el español solo tiene algo parecido a uno. La \"y\" inglesa (yes, year, young) es suave, como la i de \"hielo\". La \"j\" — y la \"g\" suave de job, June, George — es un sonido fuerte que no existe en español: como una \"ch\" pero haciendo vibrar la garganta. Decir \"yob\" en vez de \"job\" es de los errores que más se notan.",
-   "truco": "\"yes\" empieza casi como \"ies\". Para la j: prepara una \"ch\" y enciende la voz sin soltar el aire — sale \"ch\" sonora. Ni \"yob\" ni \"chob\": job.",
+   "explicacion": "Son dos sonidos distintos y el español solo tiene algo parecido a uno. La \"y\" inglesa (yes, year, young) es suave, como la i de \"hielo\". La \"j\" — y la \"g\" suave de job, June, George — es un sonido fuerte que no existe en español: como una \"ch\" pero haciendo vibrar la garganta. Decir \"yob\" en vez de \"job\" es de los errores que más se notan. Aviso importante: la pronunciación figurada escribe las dos con «y» (yes → YES, job → YOB) porque el español no tiene una letra para la j inglesa. O sea que esta diferencia NO se ve escrita: se aprende de oído, con el audio.",
+   "truco": "\"yes\" lleva la y suave del español. Para la j: prepara una \"ch\" y enciende la voz sin soltar el aire — sale una \"ch\" con zumbido. Escucha los dos audios seguidos, porque escritos se ven igual.",
    "ejemplos": [
     {
      "palabra": "yes",
-     "pron": "IES",
+     "pron": "YES (y suave)",
      "es": "sí"
     },
     {
      "palabra": "year",
-     "pron": "YÍAR",
+     "pron": "YIAR (y suave)",
      "es": "año"
     },
     {
      "palabra": "job",
-     "pron": "CHOB (con voz)",
+     "pron": "YOB (y fuerte, casi ch)",
      "es": "trabajo"
     },
     {
      "palabra": "June",
-     "pron": "CHUN (con voz)",
+     "pron": "YUN (y fuerte, casi ch)",
      "es": "junio"
     },
     {
      "palabra": "young",
-     "pron": "IANG",
+     "pron": "YANG (y suave)",
      "es": "joven"
     }
    ],
@@ -707,7 +717,9 @@
       "es": "mermelada"
      }
     }
-   ]
+   ],
+   "prioridad": 8,
+   "patron": "(^y|j|^g[ei]|ge$|dge)"
   },
   {
    "id": "r-inglesa",
@@ -737,7 +749,9 @@
      "es": "muy"
     }
    ],
-   "pares": []
+   "pares": [],
+   "prioridad": 9,
+   "patron": "^r"
   },
   {
    "id": "h-aspirada",
@@ -808,7 +822,9 @@
       "es": "en"
      }
     }
-   ]
+   ],
+   "prioridad": 7,
+   "patron": "^h"
   },
   {
    "id": "s-inicial",
@@ -838,7 +854,9 @@
      "es": "parar"
     }
    ],
-   "pares": []
+   "pares": [],
+   "prioridad": 4,
+   "patron": "^s[bcdfgklmnpqrstvwxz]"
   },
   {
    "id": "consonante-final",
@@ -934,11 +952,13 @@
     },
     {
      "palabra": "Wednesday",
-     "pron": "UÉNZ-dei",
+     "pron": "UÉNS-dei",
      "es": "miércoles"
     }
    ],
-   "pares": []
+   "pares": [],
+   "prioridad": 2,
+   "patron": "^(know|knows|knife|write|writes|wrong|answer|two|half|talk|talks|walk|walks|would|could|should|hour|honest|listen|castle|climb|thumb|wednesday|island)$"
   },
   {
    "id": "ed-pasado",
@@ -1154,7 +1174,9 @@
      "es": "familia"
     }
    ],
-   "pares": []
+   "pares": [],
+   "prioridad": 1,
+   "patron": "^(hotel|hospital|chocolate|information|animal|doctor|restaurant|family|natural|general|popular|similar|regular|area|idea|radio|video|error|actor|color|colour|favourite|favorite|important|different|interesting|minute|police|station|university|president|problem|moment|present|accident|comfortable|vegetable|banana|tomato|potato|chef|menu|dessert|salad|internet|computer|programmer|engineer|architect|office|photo|cinema|park|centre|center|orange|hour)s?$"
   },
   {
    "id": "entonacion",

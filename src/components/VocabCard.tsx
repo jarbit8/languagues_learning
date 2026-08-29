@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import type { Concepto, PalabraEstado } from '../types'
 import { hablar } from '../lib/audio'
+import { consejoDePalabra } from '../lib/pronunciacion'
 
 export default function VocabCard({
   concepto,
@@ -40,6 +41,21 @@ export default function VocabCard({
                 / {concepto.pron} /
               </span>
             )}
+            {/* Si la palabra lleva un sonido que al hispanohablante se le atraganta, el
+                consejo del módulo de pronunciación se enseña AQUÍ, junto a la palabra:
+                antes solo existía en una pantalla aparte y había que ir a buscarlo. */}
+            {(() => {
+              const g = consejoDePalabra(concepto.texto)
+              if (!g) return null
+              return (
+                <div className="mt-1 rounded-lg bg-indigo-50 px-2.5 py-1.5 dark:bg-indigo-950/40">
+                  <p className="text-[11px] font-bold uppercase tracking-wide text-indigo-500 dark:text-indigo-300">
+                    🗣️ {g.titulo}
+                  </p>
+                  <p className="mt-0.5 text-xs leading-relaxed text-indigo-900 dark:text-indigo-100">{g.truco}</p>
+                </div>
+              )
+            })()}
             <button
               onClick={() => hablar(concepto.ejemplo)}
               className="text-left text-sm italic text-slate-500 dark:text-slate-400"

@@ -151,6 +151,16 @@ for (const { archivo, pack } of packs('pronunciacion')) {
     // un grupo sin la clave reventaba la pantalla entera al leer `grupo.pares.length`.
     // Los grupos sin entrenador llevan `pares: []`, nunca la clave ausente.
     if (!Array.isArray(g.pares)) mal(archivo, donde, 'sin la clave `pares` (usa [] si no tiene entrenador)')
+    // `patron` decide si el consejo de este grupo sale en la tarjeta de una palabra.
+    // Un patrón que no compila dejaría al grupo mudo sin que nadie se entere.
+    if (g.patron !== undefined) {
+      try {
+        new RegExp(g.patron)
+      } catch (e) {
+        mal(archivo, donde, `patrón inválido (${e.message})`)
+      }
+      if (typeof g.prioridad !== 'number') mal(archivo, donde, 'tiene `patron` pero no `prioridad`')
+    }
     g.ejemplos?.forEach((e, j) => {
       for (const campo of ['palabra', 'pron', 'es'])
         if (!String(e[campo] ?? '').trim()) mal(archivo, `${donde}, ejemplo ${j + 1}`, `sin ${campo}`)
