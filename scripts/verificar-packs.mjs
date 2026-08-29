@@ -133,6 +133,39 @@ for (const { archivo, pack } of packs('writing')) {
   })
 }
 
+// --- Pronunciación ---
+// Era el único módulo de contenido sin verificador. NO puede pasar por el de vocabulario:
+// usa a propósito palabras fuera del temario (sink, fin, tree) porque entrena SONIDOS, no
+// léxico — cada ejemplo trae su traducción al español. Lo que sí debe cumplir es su forma.
+for (const { archivo, pack } of packs('pronunciacion')) {
+  const ids = new Set()
+  pack.grupos?.forEach((g, i) => {
+    const donde = `grupo ${g.id ?? i + 1}`
+    if (!g.id) mal(archivo, donde, 'sin id')
+    else if (ids.has(g.id)) mal(archivo, donde, 'id repetido')
+    else ids.add(g.id)
+    for (const campo of ['titulo', 'dificultad', 'explicacion', 'truco'])
+      if (!String(g[campo] ?? '').trim()) mal(archivo, donde, `sin ${campo}`)
+    if (!g.ejemplos?.length) mal(archivo, donde, 'sin ejemplos que escuchar')
+    g.ejemplos?.forEach((e, j) => {
+      for (const campo of ['palabra', 'pron', 'es'])
+        if (!String(e[campo] ?? '').trim()) mal(archivo, `${donde}, ejemplo ${j + 1}`, `sin ${campo}`)
+    })
+    // El entrenador de oído suena una de las dos y hay que acertar cuál: si ambas son la
+    // misma palabra, la ronda es imposible de fallar y también de acertar a propósito.
+    g.pares?.forEach((par, j) => {
+      const dondePar = `${donde}, par ${j + 1}`
+      for (const lado of ['a', 'b']) {
+        if (!par[lado]) { mal(archivo, dondePar, `sin lado ${lado}`); continue }
+        for (const campo of ['palabra', 'es'])
+          if (!String(par[lado][campo] ?? '').trim()) mal(archivo, dondePar, `lado ${lado} sin ${campo}`)
+      }
+      if (par.a?.palabra && norm(par.a.palabra) === norm(par.b?.palabra))
+        mal(archivo, dondePar, `las dos palabras del par son la misma ("${par.a.palabra}")`)
+    })
+  })
+}
+
 function listar(titulo, lista) {
   if (!lista.length) return
   console.log(`${titulo}\n`)
