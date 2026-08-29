@@ -1,7 +1,6 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import { VitePWA } from 'vite-plugin-pwa'
-import { sep } from 'node:path'
 
 const base = '/languagues_learning/'
 
@@ -21,9 +20,10 @@ export default defineConfig({
             if (/[\\/]node_modules[\\/]dexie/.test(id)) return 'dexie'
             return
           }
-          // Los data packs de /data (no los de src/data, que son código).
-          if (/[\\/]data[\\/][^\\/]+[\\/][^\\/]+\.json$/.test(id) && !id.includes(`src${sep}data`))
-            return 'datos'
+          // Los data packs de /data. src/data queda fuera solo, porque ahí todo es .ts.
+          // Ojo: nada de importar 'node:path' aquí para separar rutas — el repo no tiene
+          // @types/node y tsc lo rechaza (el build local no lo cazó, el de Actions sí).
+          if (/[\\/]data[\\/][^\\/]+[\\/][^\\/]+\.json$/.test(id)) return 'datos'
         }
       }
     }
