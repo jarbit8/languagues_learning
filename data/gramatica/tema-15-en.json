@@ -1,7 +1,7 @@
 {
  "tema": 15,
  "titulo": "How much / how many y can para pedir",
- "regla": "'How much' con incontables y precio (How much is it? How much bread?), 'how many' con contables (How many apples?). 'Can' sirve para pedir cortésmente: 'Can I have…?', 'Can I pay by card?'.",
+ "regla": "'How much' con incontables y precio (How much is it? How much bread?), 'how many' con contables (How many apples?). 'Can' sirve para pedir cortésmente: 'Can I have…?', 'Can I pay by card?'. Cantidad: 'much' con incontables (much money), 'many' con contables (many shops) y 'a lot of' con los dos. 'need' + to + verbo: I need to pay.",
  "pronunciacion": "'How much' y 'how many' — cuidado, se confunden fácil al oído si hablan rápido.",
  "trampa": "'How much' para incontables, 'how many' para contables: 'how many apples', no 'how much apples'.",
  "ejemplos": [
@@ -19,6 +19,16 @@
    "frase": "Can I pay by card?",
    "traduccion": "¿Puedo pagar con tarjeta?",
    "comoSeLee": "can ai péi bái card"
+  },
+  {
+   "frase": "I don't have much money.",
+   "traduccion": "No tengo mucho dinero.",
+   "comoSeLee": "ai dont jav mach máni"
+  },
+  {
+   "frase": "I need to pay now.",
+   "traduccion": "Necesito pagar ahora.",
+   "comoSeLee": "ai nid tu pei nau"
   }
  ],
  "ejercicios": [
@@ -135,6 +145,26 @@
    "aceptadas": [
     "can i pay by card"
    ]
+  },
+  {
+   "tipo": "opcion_multiple",
+   "enunciado": "There are ___ shops here.",
+   "opciones": [
+    "many",
+    "much",
+    "a little"
+   ],
+   "respuesta": "many"
+  },
+  {
+   "tipo": "hueco",
+   "enunciado": "Necesito pagar: I need ___ pay.",
+   "respuesta": "to"
+  },
+  {
+   "tipo": "corregir_error",
+   "enunciado": "I have many money.",
+   "respuesta": "I have a lot of money."
   }
  ]
 }

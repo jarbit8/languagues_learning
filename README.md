@@ -16,7 +16,7 @@ npm run verificar # vocabulario adelantado + coherencia de los data packs
 ```
 
 ## Arquitectura
-- **Contenido** en `/data` (packs JSON de vocabulario, gramática, listening). El código no hardcodea contenido: A2/B1/B2 entran como packs nuevos.
+- **Contenido** en `/data` (packs JSON de vocabulario, gramática, listening). El código no hardcodea contenido: vive todo en JSON.
 - **Estado** en Dexie (`src/db.ts`): solo el progreso del usuario.
 - **Guías de construcción** en `.claude/skills/*` (curriculum, vocab-engine, exam-engine, grammar-engine, speaking-ai, listening-engine, ui-mobile, deploy).
 

@@ -1,36 +1,237 @@
-{ "tema": 3, "titulo": "Países, nacionalidades e idiomas", "conceptos": [
-{"id":"a1-t03-001","es":"país","texto":"country","ejemplo":"Peru is my country.","pron":"KAN-tri"},
-{"id":"a1-t03-002","es":"Perú","texto":"Peru","ejemplo":"I am from Peru.","pron":"pe-RU"},
-{"id":"a1-t03-003","es":"Canadá","texto":"Canada","ejemplo":"I live in Canada.","pron":"KA-na-da"},
-{"id":"a1-t03-004","es":"Francia","texto":"France","ejemplo":"She is from France.","pron":"FRANS"},
-{"id":"a1-t03-005","es":"Inglaterra","texto":"England","ejemplo":"He lives in England.","pron":"ING-land"},
-{"id":"a1-t03-006","es":"España","texto":"Spain","ejemplo":"They are from Spain.","pron":"SPEIN"},
-{"id":"a1-t03-007","es":"Estados Unidos","texto":"the United States","ejemplo":"I come from the United States.","pron":"de yu-NAI-ted STEITS"},
-{"id":"a1-t03-008","es":"nacionalidad","texto":"nationality","ejemplo":"What is your nationality?","pron":"na-sho-NA-li-ti"},
-{"id":"a1-t03-009","es":"peruano","texto":"Peruvian","ejemplo":"I am Peruvian.","pron":"pe-RU-vian"},
-{"id":"a1-t03-010","es":"peruana","texto":"Peruvian (f)","ejemplo":"She is Peruvian.","pron":"pe-RU-vian"},
-{"id":"a1-t03-011","es":"canadiense","texto":"Canadian","ejemplo":"Paul is Canadian.","pron":"ka-NEI-dian"},
-{"id":"a1-t03-012","es":"francés (nacionalidad)","texto":"French","ejemplo":"Paul is French.","pron":"FRENCH"},
-{"id":"a1-t03-013","es":"inglés (nacionalidad)","texto":"English","ejemplo":"She is English.","pron":"ING-glish"},
-{"id":"a1-t03-014","es":"idioma","texto":"language","ejemplo":"Spanish is my language.","pron":"LAN-guich"},
-{"id":"a1-t03-015","es":"inglés (idioma)","texto":"English","ejemplo":"I speak English.","pron":"ING-glish"},
-{"id":"a1-t03-016","es":"francés (idioma)","texto":"French","ejemplo":"I speak French.","pron":"FRENCH"},
-{"id":"a1-t03-017","es":"español (idioma)","texto":"Spanish","ejemplo":"I speak Spanish at home.","pron":"SPA-nish"},
-{"id":"a1-t03-018","es":"vivir","texto":"to live","ejemplo":"I live in Arequipa.","pron":"tu LIV"},
-{"id":"a1-t03-019","es":"hablar","texto":"to speak","ejemplo":"Do you speak French?","pron":"tu SPIK"},
-{"id":"a1-t03-020","es":"venir de","texto":"to come from","ejemplo":"I come from Peru.","pron":"tu KAM from"},
-{"id":"a1-t03-021","es":"ciudad","texto":"city","ejemplo":"Arequipa is a nice city.","pron":"SI-ti"},
-{"id":"a1-t03-022","es":"dónde","texto":"where","ejemplo":"Where do you live?","pron":"UER"},
-{"id":"a1-t03-023","es":"¿de dónde eres?","texto":"where are you from?","ejemplo":"Where are you from?","pron":"UER ar yu FROM"},
-{"id":"a1-t03-024","es":"vivo en","texto":"I live in","ejemplo":"I live in Peru.","pron":"ai LIV in"},
-{"id":"a1-t03-025","es":"mundo","texto":"world","ejemplo":"There are many countries in the world.","pron":"UERLD"},
-{"id":"a1-t03-026","es":"capital","texto":"capital","ejemplo":"Paris is the capital of France.","pron":"KA-pi-tal"},
-{"id":"a1-t03-027","es":"América","texto":"America","ejemplo":"Peru is in America.","pron":"a-ME-ri-ka"},
-{"id":"a1-t03-028","es":"Europa","texto":"Europe","ejemplo":"France is in Europe.","pron":"YU-rop"},
-{"id":"a1-t03-029","es":"extranjero","texto":"foreigner","ejemplo":"I am a foreigner here.","pron":"FO-ri-ner"},
-{"id":"a1-t03-030","es":"nacer en","texto":"to be born in","ejemplo":"I was born in Peru.","pron":"tu bi BORN in"},
-{"id":"a1-t03-031","es":"Quebec","texto":"Quebec","ejemplo":"Quebec is in Canada.","pron":"kui-BEK"},
-{"id":"a1-t03-032","es":"francófono","texto":"French-speaking","ejemplo":"Quebec is French-speaking.","pron":"french SPI-king"},
-{"id":"a1-t03-033","es":"alemán","texto":"German","ejemplo":"He speaks German.","pron":"YER-man"},
-{"id":"a1-t03-034","es":"canadiense (f)","texto":"Canadian","ejemplo":"She is Canadian.","pron":"ka-NEI-dian"}
-] }
+{
+ "tema": 3,
+ "titulo": "Países, nacionalidades e idiomas",
+ "conceptos": [
+  {
+   "id": "a1-t03-001",
+   "es": "país",
+   "texto": "country",
+   "ejemplo": "Peru is my country.",
+   "pron": "KAN-tri"
+  },
+  {
+   "id": "a1-t03-002",
+   "es": "Perú",
+   "texto": "Peru",
+   "ejemplo": "I am from Peru.",
+   "pron": "pe-RU"
+  },
+  {
+   "id": "a1-t03-003",
+   "es": "Canadá",
+   "texto": "Canada",
+   "ejemplo": "I live in Canada.",
+   "pron": "KA-na-da"
+  },
+  {
+   "id": "a1-t03-004",
+   "es": "Francia",
+   "texto": "France",
+   "ejemplo": "She is from France.",
+   "pron": "FRANS"
+  },
+  {
+   "id": "a1-t03-005",
+   "es": "Inglaterra",
+   "texto": "England",
+   "ejemplo": "He lives in England.",
+   "pron": "ING-land"
+  },
+  {
+   "id": "a1-t03-006",
+   "es": "España",
+   "texto": "Spain",
+   "ejemplo": "They are from Spain.",
+   "pron": "SPEIN"
+  },
+  {
+   "id": "a1-t03-007",
+   "es": "Estados Unidos",
+   "texto": "the United States",
+   "ejemplo": "I come from the United States.",
+   "pron": "de yu-NAI-ted STEITS"
+  },
+  {
+   "id": "a1-t03-008",
+   "es": "nacionalidad",
+   "texto": "nationality",
+   "ejemplo": "What is your nationality?",
+   "pron": "na-sho-NA-li-ti"
+  },
+  {
+   "id": "a1-t03-009",
+   "es": "peruano",
+   "texto": "Peruvian",
+   "ejemplo": "I am Peruvian.",
+   "pron": "pe-RU-vian"
+  },
+  {
+   "id": "a1-t03-010",
+   "es": "peruana",
+   "texto": "Peruvian (f)",
+   "ejemplo": "She is Peruvian.",
+   "pron": "pe-RU-vian"
+  },
+  {
+   "id": "a1-t03-011",
+   "es": "canadiense",
+   "texto": "Canadian",
+   "ejemplo": "Paul is Canadian.",
+   "pron": "ka-NEI-dian"
+  },
+  {
+   "id": "a1-t03-012",
+   "es": "francés (nacionalidad)",
+   "texto": "French",
+   "ejemplo": "Paul is French.",
+   "pron": "FRENCH"
+  },
+  {
+   "id": "a1-t03-013",
+   "es": "inglés (nacionalidad)",
+   "texto": "English",
+   "ejemplo": "She is English.",
+   "pron": "ING-glish"
+  },
+  {
+   "id": "a1-t03-014",
+   "es": "idioma",
+   "texto": "language",
+   "ejemplo": "Spanish is my language.",
+   "pron": "LAN-guich"
+  },
+  {
+   "id": "a1-t03-015",
+   "es": "inglés (idioma)",
+   "texto": "English",
+   "ejemplo": "I speak English.",
+   "pron": "ING-glish"
+  },
+  {
+   "id": "a1-t03-016",
+   "es": "francés (idioma)",
+   "texto": "French",
+   "ejemplo": "I speak French.",
+   "pron": "FRENCH"
+  },
+  {
+   "id": "a1-t03-017",
+   "es": "español (idioma)",
+   "texto": "Spanish",
+   "ejemplo": "I speak Spanish at home.",
+   "pron": "SPA-nish"
+  },
+  {
+   "id": "a1-t03-018",
+   "es": "vivir",
+   "texto": "to live",
+   "ejemplo": "I live in Arequipa.",
+   "pron": "tu LIV"
+  },
+  {
+   "id": "a1-t03-019",
+   "es": "hablar",
+   "texto": "to speak",
+   "ejemplo": "Do you speak French?",
+   "pron": "tu SPIK"
+  },
+  {
+   "id": "a1-t03-020",
+   "es": "venir de",
+   "texto": "to come from",
+   "ejemplo": "I come from Peru.",
+   "pron": "tu KAM from"
+  },
+  {
+   "id": "a1-t03-021",
+   "es": "ciudad",
+   "texto": "city",
+   "ejemplo": "Arequipa is a nice city.",
+   "pron": "SI-ti"
+  },
+  {
+   "id": "a1-t03-022",
+   "es": "dónde",
+   "texto": "where",
+   "ejemplo": "Where do you live?",
+   "pron": "UER"
+  },
+  {
+   "id": "a1-t03-023",
+   "es": "¿de dónde eres?",
+   "texto": "where are you from?",
+   "ejemplo": "Where are you from?",
+   "pron": "UER ar yu FROM"
+  },
+  {
+   "id": "a1-t03-024",
+   "es": "vivo en",
+   "texto": "I live in",
+   "ejemplo": "I live in Peru.",
+   "pron": "ai LIV in"
+  },
+  {
+   "id": "a1-t03-025",
+   "es": "mundo",
+   "texto": "world",
+   "ejemplo": "There are many countries in the world.",
+   "pron": "UERLD"
+  },
+  {
+   "id": "a1-t03-026",
+   "es": "capital",
+   "texto": "capital",
+   "ejemplo": "Paris is the capital of France.",
+   "pron": "KA-pi-tal"
+  },
+  {
+   "id": "a1-t03-027",
+   "es": "América",
+   "texto": "America",
+   "ejemplo": "Peru is in America.",
+   "pron": "a-ME-ri-ka"
+  },
+  {
+   "id": "a1-t03-028",
+   "es": "Europa",
+   "texto": "Europe",
+   "ejemplo": "France is in Europe.",
+   "pron": "YU-rop"
+  },
+  {
+   "id": "a1-t03-029",
+   "es": "extranjero",
+   "texto": "foreigner",
+   "ejemplo": "I am a foreigner here.",
+   "pron": "FO-ri-ner"
+  },
+  {
+   "id": "a1-t03-030",
+   "es": "nacer en",
+   "texto": "to be born in",
+   "ejemplo": "I was born in Peru.",
+   "pron": "tu bi BORN in"
+  },
+  {
+   "id": "a1-t03-031",
+   "es": "Quebec",
+   "texto": "Quebec",
+   "ejemplo": "Quebec is in Canada.",
+   "pron": "kui-BEK"
+  },
+  {
+   "id": "a1-t03-032",
+   "es": "francófono",
+   "texto": "French-speaking",
+   "ejemplo": "Quebec is French-speaking.",
+   "pron": "french SPI-king"
+  },
+  {
+   "id": "a1-t03-033",
+   "es": "alemán",
+   "texto": "German",
+   "ejemplo": "He speaks German.",
+   "pron": "YER-man"
+  }
+ ]
+}

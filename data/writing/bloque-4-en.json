@@ -2,6 +2,7 @@
  "bloque": 4,
  "consignas": [
   {
+   "tema": 23,
    "consigna": "Escribe un email a un amigo contándole un viaje que hiciste y tus planes para el futuro.",
    "minPalabras": 30,
    "maxPalabras": 40,
@@ -16,6 +17,7 @@
    ]
   },
   {
+   "tema": 24,
    "consigna": "Escribe sobre tu tiempo libre y tus metas: qué te gusta hacer, qué estudias y qué planes tienes para el futuro.",
    "minPalabras": 30,
    "maxPalabras": 40,
@@ -26,6 +28,58 @@
     "Dije qué estudio y por qué (because)",
     "Usé going to para un plan",
     "Mencioné una meta futura",
+    "Escribí entre 30 y 40 palabras"
+   ]
+  },
+  {
+   "tema": 19,
+   "consigna": "Escribe un mensaje a un amigo: dile que no te sientes bien, qué síntomas tienes y qué necesitas.",
+   "minPalabras": 28,
+   "maxPalabras": 38,
+   "respuestaModelo": "Hi Paul! I am not well today. I have got a headache and a cold. My throat hurts and I am very tired. I can't go to the office. I need to see a doctor. See you soon!",
+   "checklist": [
+    "Usé have got para los síntomas",
+    "Nombré al menos dos síntomas",
+    "Dije qué necesito",
+    "Escribí entre 28 y 38 palabras"
+   ]
+  },
+  {
+   "tema": 20,
+   "consigna": "Escribe sobre tu tiempo libre: qué te gusta hacer, qué deportes practicas y con qué frecuencia.",
+   "minPalabras": 30,
+   "maxPalabras": 40,
+   "respuestaModelo": "I like reading and I love music. On Saturday I play football with my friends. I go swimming in summer. I don't like dancing. I read a book every night. How often do you play football?",
+   "checklist": [
+    "Usé like / love + verbo en -ing",
+    "Usé play / go / do con deportes",
+    "Dije con qué frecuencia",
+    "Escribí entre 30 y 40 palabras"
+   ]
+  },
+  {
+   "tema": 21,
+   "consigna": "Escribe sobre tus estudios: qué estudias, qué materias tienes, qué es difícil y por qué.",
+   "minPalabras": 30,
+   "maxPalabras": 40,
+   "respuestaModelo": "I study computer science at the university. My subjects are maths and science. Maths is difficult but I like it, so I practise every day. I have an exam on Monday. I want to graduate because it is important.",
+   "checklist": [
+    "Dije qué estudio",
+    "Usé because y so",
+    "Usé and / but / or",
+    "Escribí entre 30 y 40 palabras"
+   ]
+  },
+  {
+   "tema": 22,
+   "consigna": "Cuenta un problema que tuviste con tu teléfono o tu computadora: qué pasó, qué hiciste y qué no funcionó.",
+   "minPalabras": 30,
+   "maxPalabras": 40,
+   "respuestaModelo": "Yesterday I had a problem with my phone. The battery was low and it stopped. I didn't send my message. I turned it off and I started it again. Did you have this problem? It works now.",
+   "checklist": [
+    "Usé el pasado simple",
+    "Usé una frase negativa con didn't",
+    "Hice una pregunta en pasado",
     "Escribí entre 30 y 40 palabras"
    ]
   }

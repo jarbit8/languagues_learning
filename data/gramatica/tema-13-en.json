@@ -1,7 +1,7 @@
 {
  "tema": 13,
  "titulo": "Contables/incontables y some/any",
- "regla": "Sustantivos contables (a book, two books) e incontables (water, bread; no llevan plural ni 'a'). 'some' en afirmativas (some bread, some apples), 'any' en negativas y preguntas (I don't have any milk; is there any bread?).",
+ "regla": "Sustantivos contables (a book, two books) e incontables (water, bread; no llevan plural ni 'a'). 'some' en afirmativas (some bread, some apples), 'any' en negativas y preguntas (I don't have any milk; is there any bread?). Con some/any se forman: 'something' (algo) en afirmativas, 'anything' (algo/nada) en preguntas y negativas, 'nothing' (nada) que ya es negativo de por sí.",
  "pronunciacion": "El plural -s cambia de sonido según la palabra: apples ('z') vs oranges ('iz').",
  "trampa": "Los incontables no llevan 'a' ni plural: 'some rice', no 'a rice' ni 'rices'.",
  "ejemplos": [
@@ -19,6 +19,16 @@
    "frase": "Do you have any apples?",
    "traduccion": "¿Tienes manzanas?",
    "comoSeLee": "du iú jav éni ápels"
+  },
+  {
+   "frase": "There is something in the fridge.",
+   "traduccion": "Hay algo en el refrigerador.",
+   "comoSeLee": "der is sámzing in de fridch"
+  },
+  {
+   "frase": "I don't have anything.",
+   "traduccion": "No tengo nada.",
+   "comoSeLee": "ai dont jav énizing"
   }
  ],
  "ejercicios": [
@@ -136,6 +146,26 @@
    "aceptadas": [
     "i eat some bread"
    ]
+  },
+  {
+   "tipo": "hueco",
+   "enunciado": "Hay algo en la mesa: There is ___ on the table.",
+   "respuesta": "something"
+  },
+  {
+   "tipo": "opcion_multiple",
+   "enunciado": "Is there ___ in the fridge?",
+   "opciones": [
+    "anything",
+    "something",
+    "nothing"
+   ],
+   "respuesta": "anything"
+  },
+  {
+   "tipo": "corregir_error",
+   "enunciado": "I don't have nothing.",
+   "respuesta": "I don't have anything."
   }
  ]
 }

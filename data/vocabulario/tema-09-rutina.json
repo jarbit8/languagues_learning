@@ -1,34 +1,230 @@
-{ "tema": 9, "titulo": "Rutina diaria", "conceptos": [
-{"id":"a1-t09-001","es":"levantarse","texto":"to get up","ejemplo":"I get up at seven.","pron":"tu guet AP"},
-{"id":"a1-t09-002","es":"despertarse","texto":"to wake up","ejemplo":"I wake up early.","pron":"tu ueik AP"},
-{"id":"a1-t09-003","es":"desayunar","texto":"to have breakfast","ejemplo":"I have breakfast at eight.","pron":"tu jav BREK-fast"},
-{"id":"a1-t09-004","es":"almorzar","texto":"to have lunch","ejemplo":"I have lunch at noon.","pron":"tu jav LANCH"},
-{"id":"a1-t09-005","es":"cenar","texto":"to have dinner","ejemplo":"We have dinner at night.","pron":"tu jav DI-ner"},
-{"id":"a1-t09-006","es":"ir al trabajo","texto":"to go to work","ejemplo":"I go to work every day.","pron":"tu GOU tu UERK"},
-{"id":"a1-t09-007","es":"volver","texto":"to come back","ejemplo":"I come back at six.","pron":"tu kam BAK"},
-{"id":"a1-t09-008","es":"dormir","texto":"to sleep","ejemplo":"I sleep eight hours.","pron":"tu SLIP"},
-{"id":"a1-t09-009","es":"ducharse","texto":"to shower","ejemplo":"I shower in the morning.","pron":"tu SHAU-er"},
-{"id":"a1-t09-010","es":"lavarse los dientes","texto":"to brush your teeth","ejemplo":"I brush my teeth.","pron":"tu brash yor TIZ"},
-{"id":"a1-t09-011","es":"empezar","texto":"to start","ejemplo":"I start work at nine.","pron":"tu START"},
-{"id":"a1-t09-012","es":"terminar","texto":"to finish","ejemplo":"I finish at five.","pron":"tu FI-nish"},
-{"id":"a1-t09-013","es":"descansar","texto":"to rest","ejemplo":"I rest on Sunday.","pron":"tu REST"},
-{"id":"a1-t09-014","es":"desayuno","texto":"breakfast","ejemplo":"Breakfast is ready.","pron":"BREK-fast"},
-{"id":"a1-t09-015","es":"almuerzo","texto":"lunch","ejemplo":"Lunch is at noon.","pron":"LANCH"},
-{"id":"a1-t09-016","es":"cena","texto":"dinner","ejemplo":"Dinner is at eight.","pron":"DI-ner"},
-{"id":"a1-t09-017","es":"tarea","texto":"homework","ejemplo":"I do my homework.","pron":"JOUM-uerk"},
-{"id":"a1-t09-018","es":"vestirse","texto":"to get dressed","ejemplo":"I get dressed quickly.","pron":"tu guet DREST"},
-{"id":"a1-t09-019","es":"cocinar","texto":"to cook","ejemplo":"My mother cooks well.","pron":"tu KUK"},
-{"id":"a1-t09-020","es":"salir","texto":"to go out","ejemplo":"I go out at eight.","pron":"tu gou AUT"},
-{"id":"a1-t09-021","es":"llegar","texto":"to arrive","ejemplo":"I arrive on time.","pron":"tu a-RAIV"},
-{"id":"a1-t09-022","es":"rutina","texto":"routine","ejemplo":"My routine is simple.","pron":"ru-TIN"},
-{"id":"a1-t09-023","es":"todos los días","texto":"every day","ejemplo":"I study every day.","pron":"EV-ri DEI"},
-{"id":"a1-t09-024","es":"por la mañana","texto":"in the morning","ejemplo":"In the morning I run.","pron":"in de MOR-ning"},
-{"id":"a1-t09-025","es":"caminar","texto":"to walk","ejemplo":"I walk to work.","pron":"tu UOK"},
-{"id":"a1-t09-026","es":"leer","texto":"to read","ejemplo":"I read at night.","pron":"tu RID"},
-{"id":"a1-t09-027","es":"escuchar música","texto":"to listen to music","ejemplo":"I listen to music.","pron":"tu LI-sen tu MIU-sik"},
-{"id":"a1-t09-028","es":"acostarse","texto":"to go to bed","ejemplo":"I go to bed at eleven.","pron":"tu gou tu BED"},
-{"id":"a1-t09-029","es":"limpiar","texto":"to clean","ejemplo":"I clean every Saturday.","pron":"tu KLIN"},
-{"id":"a1-t09-030","es":"estudiar","texto":"to study","ejemplo":"I study in the afternoon.","pron":"tu STA-di"},
-{"id":"a1-t09-031","es":"hacer la cama","texto":"to make the bed","ejemplo":"I make the bed every morning.","pron":"tu MEIK de BED"},
-{"id":"a1-t09-032","es":"tomar una siesta","texto":"to take a nap","ejemplo":"I take a nap after lunch.","pron":"tu TEIK a NAP"}
-] }
+{
+ "tema": 9,
+ "titulo": "Rutina diaria",
+ "conceptos": [
+  {
+   "id": "a1-t09-001",
+   "es": "levantarse",
+   "texto": "to get up",
+   "ejemplo": "I get up at seven.",
+   "pron": "tu guet AP"
+  },
+  {
+   "id": "a1-t09-002",
+   "es": "despertarse",
+   "texto": "to wake up",
+   "ejemplo": "I wake up early.",
+   "pron": "tu ueik AP"
+  },
+  {
+   "id": "a1-t09-003",
+   "es": "desayunar",
+   "texto": "to have breakfast",
+   "ejemplo": "I have breakfast at eight.",
+   "pron": "tu jav BREK-fast"
+  },
+  {
+   "id": "a1-t09-004",
+   "es": "almorzar",
+   "texto": "to have lunch",
+   "ejemplo": "I have lunch at noon.",
+   "pron": "tu jav LANCH"
+  },
+  {
+   "id": "a1-t09-005",
+   "es": "cenar",
+   "texto": "to have dinner",
+   "ejemplo": "We have dinner at night.",
+   "pron": "tu jav DI-ner"
+  },
+  {
+   "id": "a1-t09-006",
+   "es": "ir al trabajo",
+   "texto": "to go to work",
+   "ejemplo": "I go to work every day.",
+   "pron": "tu GOU tu UERK"
+  },
+  {
+   "id": "a1-t09-007",
+   "es": "volver",
+   "texto": "to come back",
+   "ejemplo": "I come back at six.",
+   "pron": "tu kam BAK"
+  },
+  {
+   "id": "a1-t09-008",
+   "es": "dormir",
+   "texto": "to sleep",
+   "ejemplo": "I sleep eight hours.",
+   "pron": "tu SLIP"
+  },
+  {
+   "id": "a1-t09-009",
+   "es": "ducharse",
+   "texto": "to shower",
+   "ejemplo": "I shower in the morning.",
+   "pron": "tu SHAU-er"
+  },
+  {
+   "id": "a1-t09-010",
+   "es": "lavarse los dientes",
+   "texto": "to brush your teeth",
+   "ejemplo": "I brush my teeth.",
+   "pron": "tu brash yor TIZ"
+  },
+  {
+   "id": "a1-t09-011",
+   "es": "empezar",
+   "texto": "to start",
+   "ejemplo": "I start work at nine.",
+   "pron": "tu START"
+  },
+  {
+   "id": "a1-t09-012",
+   "es": "terminar",
+   "texto": "to finish",
+   "ejemplo": "I finish at five.",
+   "pron": "tu FI-nish"
+  },
+  {
+   "id": "a1-t09-013",
+   "es": "descansar",
+   "texto": "to rest",
+   "ejemplo": "I rest on Sunday.",
+   "pron": "tu REST"
+  },
+  {
+   "id": "a1-t09-014",
+   "es": "desayuno",
+   "texto": "breakfast",
+   "ejemplo": "Breakfast is ready.",
+   "pron": "BREK-fast"
+  },
+  {
+   "id": "a1-t09-015",
+   "es": "almuerzo",
+   "texto": "lunch",
+   "ejemplo": "Lunch is at noon.",
+   "pron": "LANCH"
+  },
+  {
+   "id": "a1-t09-016",
+   "es": "cena",
+   "texto": "dinner",
+   "ejemplo": "Dinner is at eight.",
+   "pron": "DI-ner"
+  },
+  {
+   "id": "a1-t09-017",
+   "es": "tarea",
+   "texto": "homework",
+   "ejemplo": "I do my homework.",
+   "pron": "JOUM-uerk"
+  },
+  {
+   "id": "a1-t09-018",
+   "es": "vestirse",
+   "texto": "to get dressed",
+   "ejemplo": "I get dressed quickly.",
+   "pron": "tu guet DREST"
+  },
+  {
+   "id": "a1-t09-019",
+   "es": "cocinar",
+   "texto": "to cook",
+   "ejemplo": "My mother cooks well.",
+   "pron": "tu KUK"
+  },
+  {
+   "id": "a1-t09-020",
+   "es": "salir",
+   "texto": "to go out",
+   "ejemplo": "I go out at eight.",
+   "pron": "tu gou AUT"
+  },
+  {
+   "id": "a1-t09-021",
+   "es": "llegar",
+   "texto": "to arrive",
+   "ejemplo": "I arrive on time.",
+   "pron": "tu a-RAIV"
+  },
+  {
+   "id": "a1-t09-022",
+   "es": "rutina",
+   "texto": "routine",
+   "ejemplo": "My routine is simple.",
+   "pron": "ru-TIN"
+  },
+  {
+   "id": "a1-t09-023",
+   "es": "todos los días",
+   "texto": "every day",
+   "ejemplo": "I study every day.",
+   "pron": "EV-ri DEI"
+  },
+  {
+   "id": "a1-t09-024",
+   "es": "por la mañana",
+   "texto": "in the morning",
+   "ejemplo": "In the morning I run.",
+   "pron": "in de MOR-ning"
+  },
+  {
+   "id": "a1-t09-025",
+   "es": "caminar",
+   "texto": "to walk",
+   "ejemplo": "I walk to work.",
+   "pron": "tu UOK"
+  },
+  {
+   "id": "a1-t09-026",
+   "es": "leer",
+   "texto": "to read",
+   "ejemplo": "I read at night.",
+   "pron": "tu RID"
+  },
+  {
+   "id": "a1-t09-027",
+   "es": "escuchar música",
+   "texto": "to listen to music",
+   "ejemplo": "I listen to music.",
+   "pron": "tu LI-sen tu MIU-sik"
+  },
+  {
+   "id": "a1-t09-028",
+   "es": "acostarse",
+   "texto": "to go to bed",
+   "ejemplo": "I go to bed at eleven.",
+   "pron": "tu gou tu BED"
+  },
+  {
+   "id": "a1-t09-029",
+   "es": "limpiar",
+   "texto": "to clean",
+   "ejemplo": "I clean every Saturday.",
+   "pron": "tu KLIN"
+  },
+  {
+   "id": "a1-t09-031",
+   "es": "hacer la cama",
+   "texto": "to make the bed",
+   "ejemplo": "I make the bed every morning.",
+   "pron": "tu MEIK de BED"
+  },
+  {
+   "id": "a1-t09-032",
+   "es": "tomar una siesta",
+   "texto": "to take a nap",
+   "ejemplo": "I take a nap after lunch.",
+   "pron": "tu TEIK a NAP"
+  },
+  {
+   "id": "a1-t09-033",
+   "es": "rápidamente",
+   "texto": "quickly",
+   "ejemplo": "I work quickly.",
+   "pron": "CUÍC-li"
+  }
+ ]
+}

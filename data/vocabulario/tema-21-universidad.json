@@ -1,33 +1,217 @@
-{ "tema": 21, "titulo": "Universidad y estudios", "conceptos": [
-{"id":"a1-t21-001","es":"universidad","texto":"university","ejemplo":"I study at the university.","pron":"yu-ni-VER-si-ti"},
-{"id":"a1-t21-002","es":"clase","texto":"class","ejemplo":"The class starts at nine.","pron":"KLAS"},
-{"id":"a1-t21-003","es":"materia","texto":"subject","ejemplo":"My subject is difficult.","pron":"SAB-yekt"},
-{"id":"a1-t21-004","es":"examen","texto":"exam","ejemplo":"I have an exam today.","pron":"ig-SAM"},
-{"id":"a1-t21-005","es":"tarea","texto":"homework","ejemplo":"I do a lot of homework.","pron":"JOUM-uerk"},
-{"id":"a1-t21-006","es":"nota (calificación)","texto":"grade","ejemplo":"I have a good grade.","pron":"GREID"},
-{"id":"a1-t21-007","es":"salón","texto":"classroom","ejemplo":"The classroom is big.","pron":"KLAS-rum"},
-{"id":"a1-t21-008","es":"informática","texto":"computer science","ejemplo":"I study computer science.","pron":"kom-PIU-ter SAI-ens","nota":"Tu carrera."},
-{"id":"a1-t21-009","es":"matemáticas","texto":"maths","ejemplo":"Maths is difficult.","pron":"MAZS"},
-{"id":"a1-t21-010","es":"aprender","texto":"to learn","ejemplo":"I learn French.","pron":"tu LERN"},
-{"id":"a1-t21-011","es":"enseñar","texto":"to teach","ejemplo":"She teaches maths.","pron":"tu TICH"},
-{"id":"a1-t21-012","es":"aprobar","texto":"to pass","ejemplo":"I want to pass the exam.","pron":"tu PAS"},
-{"id":"a1-t21-013","es":"reprobar","texto":"to fail","ejemplo":"I don't want to fail.","pron":"tu FEIL"},
-{"id":"a1-t21-014","es":"difícil","texto":"difficult","ejemplo":"The exam is difficult.","pron":"DI-fi-kolt"},
-{"id":"a1-t21-015","es":"fácil","texto":"easy","ejemplo":"This subject is easy.","pron":"I-si"},
-{"id":"a1-t21-016","es":"porque","texto":"because","ejemplo":"I study because I like it.","pron":"bi-KOS"},
-{"id":"a1-t21-017","es":"entonces","texto":"so","ejemplo":"It's easy, so I like it.","pron":"SOU"},
-{"id":"a1-t21-018","es":"entender","texto":"to understand","ejemplo":"I understand the lesson.","pron":"tu an-der-STAND"},
-{"id":"a1-t21-019","es":"biblioteca","texto":"library","ejemplo":"I study at the library.","pron":"LAI-bre-ri"},
-{"id":"a1-t21-020","es":"carrera (título)","texto":"degree","ejemplo":"My degree is in computer science.","pron":"di-GRI"},
-{"id":"a1-t21-021","es":"pregunta","texto":"question","ejemplo":"I have a question.","pron":"KUES-chon"},
-{"id":"a1-t21-022","es":"respuesta","texto":"answer","ejemplo":"The answer is easy.","pron":"AN-ser"},
-{"id":"a1-t21-023","es":"ciencia","texto":"science","ejemplo":"I like science.","pron":"SAI-ens"},
-{"id":"a1-t21-024","es":"historia","texto":"history","ejemplo":"History is interesting.","pron":"JIS-to-ri"},
-{"id":"a1-t21-025","es":"compañero","texto":"classmate","ejemplo":"He is my classmate.","pron":"KLAS-meit"},
-{"id":"a1-t21-026","es":"estudiar","texto":"to study","ejemplo":"I study every night.","pron":"tu STA-di"},
-{"id":"a1-t21-027","es":"apuntes","texto":"notes","ejemplo":"I take notes in class.","pron":"NOUTS"},
-{"id":"a1-t21-028","es":"diccionario","texto":"dictionary","ejemplo":"I use a dictionary.","pron":"DIK-sho-ne-ri"},
-{"id":"a1-t21-029","es":"beca","texto":"scholarship","ejemplo":"I have a scholarship.","pron":"SKO-lar-ship"},
-{"id":"a1-t21-030","es":"practicar","texto":"to practise","ejemplo":"I practise every day.","pron":"tu PRAK-tis"},
-{"id":"a1-t21-031","es":"semestre","texto":"semester","ejemplo":"This semester is difficult.","pron":"se-MES-ter"}
-] }
+{
+ "tema": 21,
+ "titulo": "Universidad y estudios",
+ "conceptos": [
+  {
+   "id": "a1-t21-001",
+   "es": "universidad",
+   "texto": "university",
+   "ejemplo": "I study at the university.",
+   "pron": "yu-ni-VER-si-ti"
+  },
+  {
+   "id": "a1-t21-002",
+   "es": "clase",
+   "texto": "class",
+   "ejemplo": "The class starts at nine.",
+   "pron": "KLAS"
+  },
+  {
+   "id": "a1-t21-003",
+   "es": "materia",
+   "texto": "subject",
+   "ejemplo": "My subject is difficult.",
+   "pron": "SAB-yekt"
+  },
+  {
+   "id": "a1-t21-004",
+   "es": "examen",
+   "texto": "exam",
+   "ejemplo": "I have an exam today.",
+   "pron": "ig-SAM"
+  },
+  {
+   "id": "a1-t21-006",
+   "es": "nota (calificación)",
+   "texto": "grade",
+   "ejemplo": "I have a good grade.",
+   "pron": "GREID"
+  },
+  {
+   "id": "a1-t21-007",
+   "es": "salón",
+   "texto": "classroom",
+   "ejemplo": "The classroom is big.",
+   "pron": "KLAS-rum"
+  },
+  {
+   "id": "a1-t21-008",
+   "es": "informática",
+   "texto": "computer science",
+   "ejemplo": "I study computer science.",
+   "pron": "kom-PIU-ter SAI-ens",
+   "nota": "Tu carrera."
+  },
+  {
+   "id": "a1-t21-009",
+   "es": "matemáticas",
+   "texto": "maths",
+   "ejemplo": "Maths is difficult.",
+   "pron": "MAZS"
+  },
+  {
+   "id": "a1-t21-010",
+   "es": "aprender",
+   "texto": "to learn",
+   "ejemplo": "I learn French.",
+   "pron": "tu LERN"
+  },
+  {
+   "id": "a1-t21-011",
+   "es": "enseñar",
+   "texto": "to teach",
+   "ejemplo": "She teaches maths.",
+   "pron": "tu TICH"
+  },
+  {
+   "id": "a1-t21-012",
+   "es": "aprobar",
+   "texto": "to pass",
+   "ejemplo": "I want to pass the exam.",
+   "pron": "tu PAS"
+  },
+  {
+   "id": "a1-t21-013",
+   "es": "reprobar",
+   "texto": "to fail",
+   "ejemplo": "I don't want to fail.",
+   "pron": "tu FEIL"
+  },
+  {
+   "id": "a1-t21-014",
+   "es": "difícil",
+   "texto": "difficult",
+   "ejemplo": "The exam is difficult.",
+   "pron": "DI-fi-kolt"
+  },
+  {
+   "id": "a1-t21-015",
+   "es": "fácil",
+   "texto": "easy",
+   "ejemplo": "This subject is easy.",
+   "pron": "I-si"
+  },
+  {
+   "id": "a1-t21-016",
+   "es": "porque",
+   "texto": "because",
+   "ejemplo": "I study because I like it.",
+   "pron": "bi-KOS"
+  },
+  {
+   "id": "a1-t21-017",
+   "es": "entonces",
+   "texto": "so",
+   "ejemplo": "It's easy, so I like it.",
+   "pron": "SOU"
+  },
+  {
+   "id": "a1-t21-018",
+   "es": "entender",
+   "texto": "to understand",
+   "ejemplo": "I understand the lesson.",
+   "pron": "tu an-der-STAND"
+  },
+  {
+   "id": "a1-t21-020",
+   "es": "carrera (título)",
+   "texto": "degree",
+   "ejemplo": "My degree is in computer science.",
+   "pron": "di-GRI"
+  },
+  {
+   "id": "a1-t21-021",
+   "es": "pregunta",
+   "texto": "question",
+   "ejemplo": "I have a question.",
+   "pron": "KUES-chon"
+  },
+  {
+   "id": "a1-t21-022",
+   "es": "respuesta",
+   "texto": "answer",
+   "ejemplo": "The answer is easy.",
+   "pron": "AN-ser"
+  },
+  {
+   "id": "a1-t21-023",
+   "es": "ciencia",
+   "texto": "science",
+   "ejemplo": "I like science.",
+   "pron": "SAI-ens"
+  },
+  {
+   "id": "a1-t21-024",
+   "es": "historia",
+   "texto": "history",
+   "ejemplo": "History is interesting.",
+   "pron": "JIS-to-ri"
+  },
+  {
+   "id": "a1-t21-025",
+   "es": "compañero",
+   "texto": "classmate",
+   "ejemplo": "He is my classmate.",
+   "pron": "KLAS-meit"
+  },
+  {
+   "id": "a1-t21-027",
+   "es": "apuntes",
+   "texto": "notes",
+   "ejemplo": "I take notes in class.",
+   "pron": "NOUTS"
+  },
+  {
+   "id": "a1-t21-028",
+   "es": "diccionario",
+   "texto": "dictionary",
+   "ejemplo": "I use a dictionary.",
+   "pron": "DIK-sho-ne-ri"
+  },
+  {
+   "id": "a1-t21-029",
+   "es": "beca",
+   "texto": "scholarship",
+   "ejemplo": "I have a scholarship.",
+   "pron": "SKO-lar-ship"
+  },
+  {
+   "id": "a1-t21-030",
+   "es": "practicar",
+   "texto": "to practise",
+   "ejemplo": "I practise every day.",
+   "pron": "tu PRAK-tis"
+  },
+  {
+   "id": "a1-t21-031",
+   "es": "semestre",
+   "texto": "semester",
+   "ejemplo": "This semester is difficult.",
+   "pron": "se-MES-ter"
+  },
+  {
+   "id": "a1-t21-032",
+   "es": "graduarse",
+   "texto": "to graduate",
+   "ejemplo": "I want to graduate.",
+   "pron": "tu GRÁ-diu-eit"
+  },
+  {
+   "id": "a1-t21-033",
+   "es": "campus",
+   "texto": "campus",
+   "ejemplo": "The campus is big.",
+   "pron": "CÁM-pas"
+  }
+ ]
+}

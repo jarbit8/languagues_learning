@@ -1,7 +1,7 @@
 {
  "tema": 18,
  "titulo": "What's the weather like?",
- "regla": "Para preguntar por el clima: 'What's the weather like?'. Se responde con 'It's' + adjetivo (It's sunny, It's cold) o con el continuo para acciones en curso (It's raining, It's snowing).",
+ "regla": "Para preguntar por el clima: 'What's the weather like?'. Se responde con 'It's' + adjetivo (It's sunny, It's cold) o con el continuo para acciones en curso (It's raining, It's snowing). Comparativo: adjetivo corto + -er + than (colder than), y los largos con 'more … than' (more beautiful than). Superlativo: the + adjetivo + -est (the coldest) o 'the most …' (the most beautiful). Irregulares: good → better → the best; bad → worse → the worst.",
  "pronunciacion": "Weather y whether se pronuncian igual — el contexto es lo que los distingue.",
  "trampa": "Usa 'It's raining' (continuo) para la lluvia, y 'It's sunny/cold' (adjetivo) para estados.",
  "ejemplos": [
@@ -19,6 +19,16 @@
    "frase": "It's raining.",
    "traduccion": "Está lloviendo.",
    "comoSeLee": "its réining"
+  },
+  {
+   "frase": "Today is colder than yesterday.",
+   "traduccion": "Hoy hace más frío que ayer.",
+   "comoSeLee": "tudéi is cólder dan iésterdei"
+  },
+  {
+   "frase": "It is the hottest month.",
+   "traduccion": "Es el mes más caluroso.",
+   "comoSeLee": "it is de jótest manz"
   }
  ],
  "ejercicios": [
@@ -138,6 +148,47 @@
    "respuesta": "It's sunny today.",
    "aceptadas": [
     "it is sunny today"
+   ]
+  },
+  {
+   "tipo": "hueco",
+   "enunciado": "Más frío que = ___ than.",
+   "respuesta": "colder"
+  },
+  {
+   "tipo": "opcion_multiple",
+   "enunciado": "This city is ___ beautiful than my city.",
+   "opciones": [
+    "more",
+    "most",
+    "mor"
+   ],
+   "respuesta": "more"
+  },
+  {
+   "tipo": "ordenar",
+   "enunciado": "Ordena: hoy hace más calor que ayer.",
+   "opciones": [
+    "Today",
+    "is",
+    "hotter",
+    "than",
+    "yesterday"
+   ],
+   "respuesta": "Today is hotter than yesterday"
+  },
+  {
+   "tipo": "corregir_error",
+   "enunciado": "Today is more cold than yesterday.",
+   "respuesta": "Today is colder than yesterday."
+  },
+  {
+   "tipo": "traducir",
+   "enunciado": "Es el día más frío.",
+   "respuesta": "It is the coldest day.",
+   "aceptadas": [
+    "it is the coldest day",
+    "it's the coldest day"
    ]
   }
  ]

@@ -1,36 +1,251 @@
-{ "tema": 5, "titulo": "Descripción física y personalidad", "conceptos": [
-{"id":"a1-t05-001","es":"alto","texto":"tall","ejemplo":"My father is tall.","pron":"TOL"},
-{"id":"a1-t05-002","es":"bajo","texto":"short","ejemplo":"My sister is short.","pron":"SHORT"},
-{"id":"a1-t05-003","es":"joven","texto":"young","ejemplo":"She is very young.","pron":"YANG"},
-{"id":"a1-t05-004","es":"viejo","texto":"old","ejemplo":"My grandfather is old.","pron":"OULD"},
-{"id":"a1-t05-005","es":"bonito","texto":"beautiful","ejemplo":"The city is beautiful.","pron":"BIU-ti-ful"},
-{"id":"a1-t05-006","es":"guapo","texto":"handsome","ejemplo":"He is handsome.","pron":"JAN-som"},
-{"id":"a1-t05-007","es":"delgado","texto":"thin","ejemplo":"My brother is thin.","pron":"ZIN"},
-{"id":"a1-t05-008","es":"gordo","texto":"fat","ejemplo":"The cat is fat.","pron":"FAT"},
-{"id":"a1-t05-009","es":"cabello","texto":"hair","ejemplo":"She has blond hair.","pron":"JER"},
-{"id":"a1-t05-010","es":"ojos","texto":"eyes","ejemplo":"He has brown eyes.","pron":"AIS"},
-{"id":"a1-t05-011","es":"amable","texto":"kind","ejemplo":"My mother is kind.","pron":"KAIND"},
-{"id":"a1-t05-012","es":"simpático","texto":"nice","ejemplo":"Your friend is nice.","pron":"NAIS"},
-{"id":"a1-t05-013","es":"gracioso","texto":"funny","ejemplo":"My cousin is funny.","pron":"FA-ni"},
-{"id":"a1-t05-014","es":"tímido","texto":"shy","ejemplo":"The baby is shy.","pron":"SHAI"},
-{"id":"a1-t05-015","es":"inteligente","texto":"smart","ejemplo":"She is very smart.","pron":"SMART"},
-{"id":"a1-t05-016","es":"feliz","texto":"happy","ejemplo":"I am happy with my family.","pron":"JA-pi"},
-{"id":"a1-t05-017","es":"triste","texto":"sad","ejemplo":"He is sad.","pron":"SAD"},
-{"id":"a1-t05-018","es":"cansado","texto":"tired","ejemplo":"I am tired.","pron":"TAIRD"},
-{"id":"a1-t05-019","es":"rubio","texto":"blond","ejemplo":"Her hair is blond.","pron":"BLOND"},
-{"id":"a1-t05-020","es":"castaño","texto":"brown-haired","ejemplo":"He is brown-haired.","pron":"braun-JERD"},
-{"id":"a1-t05-021","es":"fuerte","texto":"strong","ejemplo":"My uncle is strong.","pron":"STRONG"},
-{"id":"a1-t05-022","es":"trabajador","texto":"hardworking","ejemplo":"She is hardworking.","pron":"jard-UER-king"},
-{"id":"a1-t05-023","es":"tranquilo","texto":"calm","ejemplo":"My father is calm.","pron":"KAM"},
-{"id":"a1-t05-024","es":"serio","texto":"serious","ejemplo":"My father is serious.","pron":"SI-rios"},
-{"id":"a1-t05-025","es":"grande","texto":"big","ejemplo":"My family is big.","pron":"BIG"},
-{"id":"a1-t05-026","es":"pequeño","texto":"small","ejemplo":"The dog is small.","pron":"SMOL"},
-{"id":"a1-t05-027","es":"moreno","texto":"dark-haired","ejemplo":"My friend is dark-haired.","pron":"dark-JERD"},
-{"id":"a1-t05-028","es":"pelirrojo","texto":"red-haired","ejemplo":"She is red-haired.","pron":"red-JERD"},
-{"id":"a1-t05-029","es":"amigable","texto":"friendly","ejemplo":"My cousin is friendly.","pron":"FREND-li"},
-{"id":"a1-t05-030","es":"valiente","texto":"brave","ejemplo":"My sister is brave.","pron":"BREIV"},
-{"id":"a1-t05-031","es":"rizado","texto":"curly","ejemplo":"She has curly hair.","pron":"KER-li"},
-{"id":"a1-t05-032","es":"calvo","texto":"bald","ejemplo":"My father is bald.","pron":"BOLD"},
-{"id":"a1-t05-033","es":"perezoso","texto":"lazy","ejemplo":"He is a bit lazy.","pron":"LEI-zi"},
-{"id":"a1-t05-034","es":"enojado","texto":"angry","ejemplo":"My brother is angry.","pron":"AN-gri"}
-] }
+{
+ "tema": 5,
+ "titulo": "Descripción física y personalidad",
+ "conceptos": [
+  {
+   "id": "a1-t05-001",
+   "es": "alto",
+   "texto": "tall",
+   "ejemplo": "My father is tall.",
+   "pron": "TOL"
+  },
+  {
+   "id": "a1-t05-002",
+   "es": "bajo",
+   "texto": "short",
+   "ejemplo": "My sister is short.",
+   "pron": "SHORT"
+  },
+  {
+   "id": "a1-t05-003",
+   "es": "joven",
+   "texto": "young",
+   "ejemplo": "She is very young.",
+   "pron": "YANG"
+  },
+  {
+   "id": "a1-t05-004",
+   "es": "viejo",
+   "texto": "old",
+   "ejemplo": "My grandfather is old.",
+   "pron": "OULD"
+  },
+  {
+   "id": "a1-t05-005",
+   "es": "bonito",
+   "texto": "beautiful",
+   "ejemplo": "The city is beautiful.",
+   "pron": "BIU-ti-ful"
+  },
+  {
+   "id": "a1-t05-006",
+   "es": "guapo",
+   "texto": "handsome",
+   "ejemplo": "He is handsome.",
+   "pron": "JAN-som"
+  },
+  {
+   "id": "a1-t05-007",
+   "es": "delgado",
+   "texto": "thin",
+   "ejemplo": "My brother is thin.",
+   "pron": "ZIN"
+  },
+  {
+   "id": "a1-t05-008",
+   "es": "gordo",
+   "texto": "fat",
+   "ejemplo": "The cat is fat.",
+   "pron": "FAT"
+  },
+  {
+   "id": "a1-t05-009",
+   "es": "cabello",
+   "texto": "hair",
+   "ejemplo": "She has blond hair.",
+   "pron": "JER"
+  },
+  {
+   "id": "a1-t05-010",
+   "es": "ojos",
+   "texto": "eyes",
+   "ejemplo": "He has brown eyes.",
+   "pron": "AIS"
+  },
+  {
+   "id": "a1-t05-011",
+   "es": "amable",
+   "texto": "kind",
+   "ejemplo": "My mother is kind.",
+   "pron": "KAIND"
+  },
+  {
+   "id": "a1-t05-012",
+   "es": "simpático",
+   "texto": "nice",
+   "ejemplo": "Your friend is nice.",
+   "pron": "NAIS"
+  },
+  {
+   "id": "a1-t05-013",
+   "es": "gracioso",
+   "texto": "funny",
+   "ejemplo": "My cousin is funny.",
+   "pron": "FA-ni"
+  },
+  {
+   "id": "a1-t05-014",
+   "es": "tímido",
+   "texto": "shy",
+   "ejemplo": "The baby is shy.",
+   "pron": "SHAI"
+  },
+  {
+   "id": "a1-t05-015",
+   "es": "inteligente",
+   "texto": "smart",
+   "ejemplo": "She is very smart.",
+   "pron": "SMART"
+  },
+  {
+   "id": "a1-t05-016",
+   "es": "feliz",
+   "texto": "happy",
+   "ejemplo": "I am happy with my family.",
+   "pron": "JA-pi"
+  },
+  {
+   "id": "a1-t05-017",
+   "es": "triste",
+   "texto": "sad",
+   "ejemplo": "He is sad.",
+   "pron": "SAD"
+  },
+  {
+   "id": "a1-t05-018",
+   "es": "cansado",
+   "texto": "tired",
+   "ejemplo": "I am tired.",
+   "pron": "TAIRD"
+  },
+  {
+   "id": "a1-t05-019",
+   "es": "rubio",
+   "texto": "blond",
+   "ejemplo": "Her hair is blond.",
+   "pron": "BLOND"
+  },
+  {
+   "id": "a1-t05-020",
+   "es": "castaño",
+   "texto": "brown-haired",
+   "ejemplo": "He is brown-haired.",
+   "pron": "braun-JERD"
+  },
+  {
+   "id": "a1-t05-021",
+   "es": "fuerte",
+   "texto": "strong",
+   "ejemplo": "My uncle is strong.",
+   "pron": "STRONG"
+  },
+  {
+   "id": "a1-t05-022",
+   "es": "trabajador",
+   "texto": "hardworking",
+   "ejemplo": "She is hardworking.",
+   "pron": "jard-UER-king"
+  },
+  {
+   "id": "a1-t05-023",
+   "es": "tranquilo",
+   "texto": "calm",
+   "ejemplo": "My father is calm.",
+   "pron": "KAM"
+  },
+  {
+   "id": "a1-t05-024",
+   "es": "serio",
+   "texto": "serious",
+   "ejemplo": "My father is serious.",
+   "pron": "SI-rios"
+  },
+  {
+   "id": "a1-t05-025",
+   "es": "grande",
+   "texto": "big",
+   "ejemplo": "My family is big.",
+   "pron": "BIG"
+  },
+  {
+   "id": "a1-t05-026",
+   "es": "pequeño",
+   "texto": "small",
+   "ejemplo": "The dog is small.",
+   "pron": "SMOL"
+  },
+  {
+   "id": "a1-t05-027",
+   "es": "moreno",
+   "texto": "dark-haired",
+   "ejemplo": "My friend is dark-haired.",
+   "pron": "dark-JERD"
+  },
+  {
+   "id": "a1-t05-028",
+   "es": "pelirrojo",
+   "texto": "red-haired",
+   "ejemplo": "She is red-haired.",
+   "pron": "red-JERD"
+  },
+  {
+   "id": "a1-t05-029",
+   "es": "amigable",
+   "texto": "friendly",
+   "ejemplo": "My cousin is friendly.",
+   "pron": "FREND-li"
+  },
+  {
+   "id": "a1-t05-030",
+   "es": "valiente",
+   "texto": "brave",
+   "ejemplo": "My sister is brave.",
+   "pron": "BREIV"
+  },
+  {
+   "id": "a1-t05-031",
+   "es": "rizado",
+   "texto": "curly",
+   "ejemplo": "She has curly hair.",
+   "pron": "KER-li"
+  },
+  {
+   "id": "a1-t05-032",
+   "es": "calvo",
+   "texto": "bald",
+   "ejemplo": "My father is bald.",
+   "pron": "BOLD"
+  },
+  {
+   "id": "a1-t05-033",
+   "es": "perezoso",
+   "texto": "lazy",
+   "ejemplo": "He is a bit lazy.",
+   "pron": "LEI-zi"
+  },
+  {
+   "id": "a1-t05-034",
+   "es": "enojado",
+   "texto": "angry",
+   "ejemplo": "My brother is angry.",
+   "pron": "AN-gri"
+  },
+  {
+   "id": "a1-t05-035",
+   "es": "realmente, de verdad",
+   "texto": "really",
+   "ejemplo": "She is really kind.",
+   "pron": "RÍ-li"
+  }
+ ]
+}

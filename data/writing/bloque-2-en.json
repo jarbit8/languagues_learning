@@ -2,6 +2,7 @@
  "bloque": 2,
  "consignas": [
   {
+   "tema": 10,
    "consigna": "Escribe un email a un amigo contándole tu rutina diaria: a qué hora te levantas, qué haces y cómo es tu casa.",
    "minPalabras": 30,
    "maxPalabras": 40,
@@ -16,6 +17,7 @@
    ]
   },
   {
+   "tema": 12,
    "consigna": "Escribe sobre tu ropa: qué llevas normalmente, de qué colores, y describe un objeto que siempre llevas contigo.",
    "minPalabras": 30,
    "maxPalabras": 40,
@@ -27,6 +29,60 @@
     "Describí un objeto que siempre llevas",
     "Usé el presente (wear/have)",
     "Escribí entre 30 y 40 palabras"
+   ]
+  },
+  {
+   "tema": 7,
+   "consigna": "Escribe a un amigo sobre las fechas importantes: qué día es hoy, cuándo es tu cumpleaños y en qué estación cae.",
+   "minPalabras": 30,
+   "maxPalabras": 40,
+   "respuestaModelo": "Hi Paul! Today is Monday. It is the third of May. My birthday is on the tenth of July, in summer. My mother's birthday is in December, in winter. See you tomorrow!",
+   "checklist": [
+    "Dije qué día es hoy",
+    "Di una fecha con ordinal",
+    "Usé in / on correctamente",
+    "Nombré una estación",
+    "Escribí entre 30 y 40 palabras"
+   ]
+  },
+  {
+   "tema": 8,
+   "consigna": "Escribe sobre tus horarios: a qué hora trabajas o estudias y con qué frecuencia haces cada cosa.",
+   "minPalabras": 25,
+   "maxPalabras": 35,
+   "respuestaModelo": "Hello! It is nine o'clock now. I am always in my office at eight o'clock. I work from eight to five. Sometimes I am tired. On Sunday I am with my family. See you soon!",
+   "checklist": [
+    "Di al menos dos horas",
+    "Usé adverbios de frecuencia",
+    "Coloqué el adverbio en su sitio",
+    "Escribí entre 25 y 35 palabras"
+   ]
+  },
+  {
+   "tema": 9,
+   "consigna": "Escribe tu rutina diaria en presente simple: qué haces cada día y en qué orden.",
+   "minPalabras": 30,
+   "maxPalabras": 40,
+   "respuestaModelo": "I wake up at six every day. I have breakfast and I take a shower. Then I go to my office and I work. In the afternoon I study. I have dinner at eight and I sleep at eleven.",
+   "checklist": [
+    "Usé el presente simple",
+    "Conté las acciones en orden",
+    "Di al menos dos horas",
+    "Escribí entre 30 y 40 palabras"
+   ]
+  },
+  {
+   "tema": 11,
+   "consigna": "Describe lo que hay en tu mochila: qué objetos son, de qué color y de quién son.",
+   "minPalabras": 28,
+   "maxPalabras": 38,
+   "respuestaModelo": "This is my bag. In my bag there is a book and a computer. The book is red and it is mine. There is a phone. That phone is my sister's. These keys are mine too.",
+   "checklist": [
+    "Usé there is / there are",
+    "Usé demostrativos (this, that, these)",
+    "Dije colores",
+    "Usé un posesivo",
+    "Escribí entre 28 y 38 palabras"
    ]
   }
  ]

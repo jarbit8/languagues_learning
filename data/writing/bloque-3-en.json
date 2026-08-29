@@ -2,6 +2,7 @@
  "bloque": 3,
  "consignas": [
   {
+   "tema": 14,
    "consigna": "Escribe un email a un amigo invitándolo a un restaurante: dile qué se puede comer, cómo llegar y qué tiempo hace.",
    "minPalabras": 30,
    "maxPalabras": 40,
@@ -16,6 +17,7 @@
    ]
   },
   {
+   "tema": 16,
    "consigna": "Escribe a un amigo que visita tu ciudad: recomiéndale lugares (qué se puede hacer), cómo es el clima y cómo llegar a un lugar.",
    "minPalabras": 30,
    "maxPalabras": 40,
@@ -26,6 +28,58 @@
     "Usé 'you can' para lo que se puede hacer",
     "Mencioné el clima",
     "Di indicaciones para llegar",
+    "Escribí entre 30 y 40 palabras"
+   ]
+  },
+  {
+   "tema": 13,
+   "consigna": "Escribe qué hay en tu cocina y qué comes normalmente: usa contables e incontables con some y any.",
+   "minPalabras": 30,
+   "maxPalabras": 40,
+   "respuestaModelo": "In my kitchen there is some bread and some milk. There are some apples and two oranges. I don't have any rice. I eat chicken every day. Is there any water? There is nothing in the fridge.",
+   "checklist": [
+    "Usé some en afirmativa",
+    "Usé any en negativa o pregunta",
+    "Distinguí contables de incontables",
+    "Escribí entre 30 y 40 palabras"
+   ]
+  },
+  {
+   "tema": 15,
+   "consigna": "Escribe sobre una compra: qué necesitas comprar, cuánto cuesta y cómo pagas.",
+   "minPalabras": 28,
+   "maxPalabras": 38,
+   "respuestaModelo": "I need to buy some vegetables. I go to the market because it is cheap. How much is it? It is ten soles. I don't have much money. Can I pay by card? I prefer the market.",
+   "checklist": [
+    "Pregunté el precio con how much",
+    "Usé much / many / a lot of",
+    "Dije cómo pago",
+    "Escribí entre 28 y 38 palabras"
+   ]
+  },
+  {
+   "tema": 17,
+   "consigna": "Escribe cómo llegar de tu casa a un lugar de tu ciudad: da las indicaciones paso a paso y di en qué ir.",
+   "minPalabras": 30,
+   "maxPalabras": 40,
+   "respuestaModelo": "Go straight and turn left at the corner. Then cross the road and continue. The park is near the hospital. You can take the bus or go on foot. It is not far. Walk slowly!",
+   "checklist": [
+    "Usé el imperativo",
+    "Di al menos tres indicaciones",
+    "Dije el medio de transporte con by u on foot",
+    "Escribí entre 30 y 40 palabras"
+   ]
+  },
+  {
+   "tema": 18,
+   "consigna": "Compara el clima de tu ciudad con el de otro lugar: cómo es en cada estación y cuál es más frío o más caluroso.",
+   "minPalabras": 30,
+   "maxPalabras": 40,
+   "respuestaModelo": "In Arequipa the weather is sunny and warm. It is hotter than Canada. In winter Canada is colder than Peru. It is the coldest month. Today it is raining here. What is the weather like there?",
+   "checklist": [
+    "Usé un comparativo con than",
+    "Usé un superlativo",
+    "Describí el clima de dos lugares",
     "Escribí entre 30 y 40 palabras"
    ]
   }

@@ -1,6 +1,207 @@
 {
  "grupos": [
   {
+   "id": "alfabeto",
+   "titulo": "El alfabeto: deletrear tu nombre",
+   "dificultad": "Las letras no se llaman como en español",
+   "explicacion": "Deletrear es de lo primero que te piden en inglés: tu nombre, tu apellido, tu correo. El problema es que casi ninguna letra se llama igual que en español, y varias se confunden entre sí al oído: la E inglesa suena \"i\", la I suena \"ai\" y la G suena \"yi\" (parecida a la J española). En los exámenes de listening te dictan nombres deletreados, así que esto se practica, no se adivina.",
+   "truco": "Aprende primero las seis que engañan: A (ei), E (i), I (ai), G (yi), J (yei), Y (uai). Con esas seis controladas, el resto cae solo. Cuando deletrees, di las letras despacio y separadas.",
+   "ejemplos": [
+    {
+     "palabra": "A",
+     "pron": "EI",
+     "es": "la A"
+    },
+    {
+     "palabra": "B",
+     "pron": "BI",
+     "es": "la B"
+    },
+    {
+     "palabra": "C",
+     "pron": "SI",
+     "es": "la C"
+    },
+    {
+     "palabra": "D",
+     "pron": "DI",
+     "es": "la D"
+    },
+    {
+     "palabra": "E",
+     "pron": "I",
+     "es": "la E — ojo, suena como la i española"
+    },
+    {
+     "palabra": "F",
+     "pron": "EF",
+     "es": "la F"
+    },
+    {
+     "palabra": "G",
+     "pron": "YI",
+     "es": "la G — suena como una J suave"
+    },
+    {
+     "palabra": "H",
+     "pron": "EICH",
+     "es": "la H"
+    },
+    {
+     "palabra": "I",
+     "pron": "AI",
+     "es": "la I — ojo, suena \"ai\""
+    },
+    {
+     "palabra": "J",
+     "pron": "YEI",
+     "es": "la J"
+    },
+    {
+     "palabra": "K",
+     "pron": "KEI",
+     "es": "la K"
+    },
+    {
+     "palabra": "L",
+     "pron": "EL",
+     "es": "la L"
+    },
+    {
+     "palabra": "M",
+     "pron": "EM",
+     "es": "la M"
+    },
+    {
+     "palabra": "N",
+     "pron": "EN",
+     "es": "la N"
+    },
+    {
+     "palabra": "O",
+     "pron": "OU",
+     "es": "la O"
+    },
+    {
+     "palabra": "P",
+     "pron": "PI",
+     "es": "la P"
+    },
+    {
+     "palabra": "Q",
+     "pron": "KIU",
+     "es": "la Q"
+    },
+    {
+     "palabra": "R",
+     "pron": "AR",
+     "es": "la R"
+    },
+    {
+     "palabra": "S",
+     "pron": "ES",
+     "es": "la S"
+    },
+    {
+     "palabra": "T",
+     "pron": "TI",
+     "es": "la T"
+    },
+    {
+     "palabra": "U",
+     "pron": "IU",
+     "es": "la U"
+    },
+    {
+     "palabra": "V",
+     "pron": "VI",
+     "es": "la V — con los dientes en el labio"
+    },
+    {
+     "palabra": "W",
+     "pron": "DÁ-bel-iu",
+     "es": "la W — \"doble u\""
+    },
+    {
+     "palabra": "X",
+     "pron": "EKS",
+     "es": "la X"
+    },
+    {
+     "palabra": "Y",
+     "pron": "UÁI",
+     "es": "la Y"
+    },
+    {
+     "palabra": "Z",
+     "pron": "ZI",
+     "es": "la Z — en EE. UU. \"zi\", en Reino Unido \"zed\""
+    }
+   ],
+   "pares": [
+    {
+     "a": {
+      "palabra": "E",
+      "es": "la letra E (suena \"i\")"
+     },
+     "b": {
+      "palabra": "I",
+      "es": "la letra I (suena \"ai\")"
+     }
+    },
+    {
+     "a": {
+      "palabra": "G",
+      "es": "la letra G (suena \"yi\")"
+     },
+     "b": {
+      "palabra": "J",
+      "es": "la letra J (suena \"yei\")"
+     }
+    },
+    {
+     "a": {
+      "palabra": "A",
+      "es": "la letra A (suena \"ei\")"
+     },
+     "b": {
+      "palabra": "E",
+      "es": "la letra E (suena \"i\")"
+     }
+    },
+    {
+     "a": {
+      "palabra": "M",
+      "es": "la letra M"
+     },
+     "b": {
+      "palabra": "N",
+      "es": "la letra N"
+     }
+    },
+    {
+     "a": {
+      "palabra": "B",
+      "es": "la letra B"
+     },
+     "b": {
+      "palabra": "V",
+      "es": "la letra V"
+     }
+    },
+    {
+     "a": {
+      "palabra": "Y",
+      "es": "la letra Y (suena \"uai\")"
+     },
+     "b": {
+      "palabra": "U",
+      "es": "la letra U (suena \"iu\")"
+     }
+    }
+   ]
+  },
+  {
    "id": "th",
    "titulo": "El sonido TH",
    "dificultad": "No existe en español",
@@ -434,7 +635,48 @@
      "es": "hora"
     }
    ],
-   "pares": []
+   "pares": [
+    {
+     "a": {
+      "palabra": "hair",
+      "es": "pelo"
+     },
+     "b": {
+      "palabra": "air",
+      "es": "aire"
+     }
+    },
+    {
+     "a": {
+      "palabra": "heat",
+      "es": "calor"
+     },
+     "b": {
+      "palabra": "eat",
+      "es": "comer"
+     }
+    },
+    {
+     "a": {
+      "palabra": "high",
+      "es": "alto"
+     },
+     "b": {
+      "palabra": "eye",
+      "es": "ojo"
+     }
+    },
+    {
+     "a": {
+      "palabra": "hat",
+      "es": "gorro"
+     },
+     "b": {
+      "palabra": "at",
+      "es": "en"
+     }
+    }
+   ]
   },
   {
    "id": "s-inicial",

@@ -1,33 +1,217 @@
-{ "tema": 17, "titulo": "Direcciones y transporte", "conceptos": [
-{"id":"a1-t17-001","es":"izquierda","texto":"left","ejemplo":"Turn left.","pron":"LEFT"},
-{"id":"a1-t17-002","es":"derecha","texto":"right","ejemplo":"Turn right.","pron":"RAIT"},
-{"id":"a1-t17-003","es":"recto","texto":"straight","ejemplo":"Go straight.","pron":"STREIT"},
-{"id":"a1-t17-004","es":"esquina","texto":"corner","ejemplo":"The shop is on the corner.","pron":"KOR-ner"},
-{"id":"a1-t17-005","es":"girar","texto":"to turn","ejemplo":"Turn at the corner.","pron":"tu TERN"},
-{"id":"a1-t17-006","es":"ir","texto":"to go","ejemplo":"I go to work by bus.","pron":"tu GOU"},
-{"id":"a1-t17-007","es":"tomar (transporte)","texto":"to take","ejemplo":"Take the train.","pron":"tu TEIK"},
-{"id":"a1-t17-008","es":"autobús","texto":"bus","ejemplo":"I go by bus.","pron":"BAS"},
-{"id":"a1-t17-009","es":"tren","texto":"train","ejemplo":"The train is fast.","pron":"TREIN"},
-{"id":"a1-t17-010","es":"carro","texto":"car","ejemplo":"My father has a car.","pron":"KAR"},
-{"id":"a1-t17-011","es":"bicicleta","texto":"bike","ejemplo":"I go by bike.","pron":"BAIK","nota":"Te gusta la bici."},
-{"id":"a1-t17-012","es":"taxi","texto":"taxi","ejemplo":"Let's take a taxi.","pron":"TAK-si"},
-{"id":"a1-t17-013","es":"avión","texto":"plane","ejemplo":"The plane is big.","pron":"PLEIN"},
-{"id":"a1-t17-014","es":"metro","texto":"metro","ejemplo":"I take the metro.","pron":"ME-trou"},
-{"id":"a1-t17-015","es":"a pie","texto":"on foot","ejemplo":"I go on foot.","pron":"on FUT"},
-{"id":"a1-t17-016","es":"parada","texto":"stop","ejemplo":"The bus stop is here.","pron":"STOP"},
-{"id":"a1-t17-017","es":"boleto","texto":"ticket","ejemplo":"I buy a ticket.","pron":"TI-ket"},
-{"id":"a1-t17-018","es":"mapa","texto":"map","ejemplo":"I need a map.","pron":"MAP"},
-{"id":"a1-t17-019","es":"semáforo","texto":"traffic light","ejemplo":"Stop at the traffic light.","pron":"TRA-fik LAIT"},
-{"id":"a1-t17-020","es":"cruzar","texto":"to cross","ejemplo":"Cross the street.","pron":"tu KROS"},
-{"id":"a1-t17-021","es":"seguir","texto":"to continue","ejemplo":"Continue straight.","pron":"tu kon-TI-niu"},
-{"id":"a1-t17-022","es":"camino","texto":"road","ejemplo":"This road is long.","pron":"ROUD"},
-{"id":"a1-t17-023","es":"lejos","texto":"far","ejemplo":"Is it far?","pron":"FAR"},
-{"id":"a1-t17-024","es":"cerca","texto":"near","ejemplo":"It's near here.","pron":"NIR"},
-{"id":"a1-t17-025","es":"rápido","texto":"fast","ejemplo":"The train is fast.","pron":"FAST"},
-{"id":"a1-t17-026","es":"lento","texto":"slow","ejemplo":"The bus is slow.","pron":"SLOU"},
-{"id":"a1-t17-027","es":"conducir","texto":"to drive","ejemplo":"I can't drive.","pron":"tu DRAIV"},
-{"id":"a1-t17-028","es":"barco","texto":"boat","ejemplo":"I go to the city by boat.","pron":"BOUT"},
-{"id":"a1-t17-029","es":"moto","texto":"motorbike","ejemplo":"He has a motorbike.","pron":"MOU-tor-baik"},
-{"id":"a1-t17-030","es":"¿dónde está?","texto":"where is?","ejemplo":"Where is the station?","pron":"UER IS"},
-{"id":"a1-t17-031","es":"vereda","texto":"sidewalk","ejemplo":"Walk on the sidewalk.","pron":"SAID-uok"}
-] }
+{
+ "tema": 17,
+ "titulo": "Direcciones y transporte",
+ "conceptos": [
+  {
+   "id": "a1-t17-001",
+   "es": "izquierda",
+   "texto": "left",
+   "ejemplo": "Turn left.",
+   "pron": "LEFT"
+  },
+  {
+   "id": "a1-t17-002",
+   "es": "derecha",
+   "texto": "right",
+   "ejemplo": "Turn right.",
+   "pron": "RAIT"
+  },
+  {
+   "id": "a1-t17-003",
+   "es": "recto",
+   "texto": "straight",
+   "ejemplo": "Go straight.",
+   "pron": "STREIT"
+  },
+  {
+   "id": "a1-t17-004",
+   "es": "esquina",
+   "texto": "corner",
+   "ejemplo": "The shop is on the corner.",
+   "pron": "KOR-ner"
+  },
+  {
+   "id": "a1-t17-005",
+   "es": "girar",
+   "texto": "to turn",
+   "ejemplo": "Turn at the corner.",
+   "pron": "tu TERN"
+  },
+  {
+   "id": "a1-t17-006",
+   "es": "ir",
+   "texto": "to go",
+   "ejemplo": "I go to work by bus.",
+   "pron": "tu GOU"
+  },
+  {
+   "id": "a1-t17-007",
+   "es": "tomar (transporte)",
+   "texto": "to take",
+   "ejemplo": "Take the train.",
+   "pron": "tu TEIK"
+  },
+  {
+   "id": "a1-t17-008",
+   "es": "autobús",
+   "texto": "bus",
+   "ejemplo": "I go by bus.",
+   "pron": "BAS"
+  },
+  {
+   "id": "a1-t17-009",
+   "es": "tren",
+   "texto": "train",
+   "ejemplo": "The train is fast.",
+   "pron": "TREIN"
+  },
+  {
+   "id": "a1-t17-010",
+   "es": "carro",
+   "texto": "car",
+   "ejemplo": "My father has a car.",
+   "pron": "KAR"
+  },
+  {
+   "id": "a1-t17-011",
+   "es": "bicicleta",
+   "texto": "bike",
+   "ejemplo": "I go by bike.",
+   "pron": "BAIK",
+   "nota": "Te gusta la bici."
+  },
+  {
+   "id": "a1-t17-012",
+   "es": "taxi",
+   "texto": "taxi",
+   "ejemplo": "Let's take a taxi.",
+   "pron": "TAK-si"
+  },
+  {
+   "id": "a1-t17-013",
+   "es": "avión",
+   "texto": "plane",
+   "ejemplo": "The plane is big.",
+   "pron": "PLEIN"
+  },
+  {
+   "id": "a1-t17-014",
+   "es": "metro",
+   "texto": "metro",
+   "ejemplo": "I take the metro.",
+   "pron": "ME-trou"
+  },
+  {
+   "id": "a1-t17-015",
+   "es": "a pie",
+   "texto": "on foot",
+   "ejemplo": "I go on foot.",
+   "pron": "on FUT"
+  },
+  {
+   "id": "a1-t17-016",
+   "es": "parada",
+   "texto": "stop",
+   "ejemplo": "The bus stop is here.",
+   "pron": "STOP"
+  },
+  {
+   "id": "a1-t17-017",
+   "es": "boleto",
+   "texto": "ticket",
+   "ejemplo": "I buy a ticket.",
+   "pron": "TI-ket"
+  },
+  {
+   "id": "a1-t17-018",
+   "es": "mapa",
+   "texto": "map",
+   "ejemplo": "I need a map.",
+   "pron": "MAP"
+  },
+  {
+   "id": "a1-t17-019",
+   "es": "semáforo",
+   "texto": "traffic light",
+   "ejemplo": "Stop at the traffic light.",
+   "pron": "TRA-fik LAIT"
+  },
+  {
+   "id": "a1-t17-020",
+   "es": "cruzar",
+   "texto": "to cross",
+   "ejemplo": "Cross the street.",
+   "pron": "tu KROS"
+  },
+  {
+   "id": "a1-t17-021",
+   "es": "seguir",
+   "texto": "to continue",
+   "ejemplo": "Continue straight.",
+   "pron": "tu kon-TI-niu"
+  },
+  {
+   "id": "a1-t17-022",
+   "es": "camino",
+   "texto": "road",
+   "ejemplo": "This road is long.",
+   "pron": "ROUD"
+  },
+  {
+   "id": "a1-t17-025",
+   "es": "rápido",
+   "texto": "fast",
+   "ejemplo": "The train is fast.",
+   "pron": "FAST"
+  },
+  {
+   "id": "a1-t17-026",
+   "es": "lento",
+   "texto": "slow",
+   "ejemplo": "The bus is slow.",
+   "pron": "SLOU"
+  },
+  {
+   "id": "a1-t17-027",
+   "es": "conducir",
+   "texto": "to drive",
+   "ejemplo": "I can't drive.",
+   "pron": "tu DRAIV"
+  },
+  {
+   "id": "a1-t17-028",
+   "es": "barco",
+   "texto": "boat",
+   "ejemplo": "I go to the city by boat.",
+   "pron": "BOUT"
+  },
+  {
+   "id": "a1-t17-029",
+   "es": "moto",
+   "texto": "motorbike",
+   "ejemplo": "He has a motorbike.",
+   "pron": "MOU-tor-baik"
+  },
+  {
+   "id": "a1-t17-030",
+   "es": "¿dónde está?",
+   "texto": "where is?",
+   "ejemplo": "Where is the station?",
+   "pron": "UER IS"
+  },
+  {
+   "id": "a1-t17-031",
+   "es": "vereda",
+   "texto": "sidewalk",
+   "ejemplo": "Walk on the sidewalk.",
+   "pron": "SAID-uok"
+  },
+  {
+   "id": "a1-t17-032",
+   "es": "bien (adverbio)",
+   "texto": "well",
+   "ejemplo": "She drives well.",
+   "pron": "UÉL"
+  }
+ ]
+}

@@ -226,6 +226,7 @@ export interface PronPack {
 // --- Writing (packs en /data/writing) ---
 
 export interface ConsignaWriting {
+  tema?: number
   consigna: string
   minPalabras: number
   maxPalabras: number

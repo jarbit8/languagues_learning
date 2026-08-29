@@ -1,34 +1,223 @@
-{ "tema": 11, "titulo": "Objetos cotidianos y colores", "conceptos": [
-{"id":"a1-t11-001","es":"cosa","texto":"thing","ejemplo":"What is this thing?","pron":"ZING"},
-{"id":"a1-t11-002","es":"teléfono","texto":"phone","ejemplo":"My phone is black.","pron":"FOUN"},
-{"id":"a1-t11-003","es":"computadora","texto":"computer","ejemplo":"The computer is on the table.","pron":"kom-PIU-ter"},
-{"id":"a1-t11-004","es":"libro","texto":"book","ejemplo":"This book is interesting.","pron":"BUK"},
-{"id":"a1-t11-005","es":"lapicero","texto":"pen","ejemplo":"I have a blue pen.","pron":"PEN"},
-{"id":"a1-t11-006","es":"lápiz","texto":"pencil","ejemplo":"The pencil is yellow.","pron":"PEN-sil"},
-{"id":"a1-t11-007","es":"mochila","texto":"bag","ejemplo":"My bag is black.","pron":"BAG"},
-{"id":"a1-t11-008","es":"llave","texto":"key","ejemplo":"These are my keys.","pron":"KI"},
-{"id":"a1-t11-009","es":"reloj de pulsera","texto":"watch","ejemplo":"This watch is white.","pron":"UACH"},
-{"id":"a1-t11-010","es":"lentes","texto":"glasses","ejemplo":"My glasses are here.","pron":"GLA-ses"},
-{"id":"a1-t11-011","es":"dinero","texto":"money","ejemplo":"I have no money.","pron":"MA-ni"},
-{"id":"a1-t11-012","es":"billetera","texto":"wallet","ejemplo":"My wallet is in the bag.","pron":"UA-let"},
-{"id":"a1-t11-013","es":"papel","texto":"paper","ejemplo":"The paper is white.","pron":"PEI-per"},
-{"id":"a1-t11-014","es":"cuaderno","texto":"notebook","ejemplo":"This notebook is mine.","pron":"NOUT-buk"},
-{"id":"a1-t11-015","es":"color","texto":"colour","ejemplo":"What colour is it?","pron":"KA-ler"},
-{"id":"a1-t11-016","es":"blanco","texto":"white","ejemplo":"The wall is white.","pron":"UAIT"},
-{"id":"a1-t11-017","es":"negro","texto":"black","ejemplo":"My phone is black.","pron":"BLAK"},
-{"id":"a1-t11-018","es":"rojo","texto":"red","ejemplo":"The bag is red.","pron":"RED"},
-{"id":"a1-t11-019","es":"azul","texto":"blue","ejemplo":"My bag is blue.","pron":"BLU"},
-{"id":"a1-t11-020","es":"verde","texto":"green","ejemplo":"The door is green.","pron":"GRIN"},
-{"id":"a1-t11-021","es":"amarillo","texto":"yellow","ejemplo":"The pencil is yellow.","pron":"YE-lou"},
-{"id":"a1-t11-022","es":"naranja","texto":"orange","ejemplo":"This pencil is orange.","pron":"O-rinch"},
-{"id":"a1-t11-023","es":"rosado","texto":"pink","ejemplo":"Her bag is pink.","pron":"PINK"},
-{"id":"a1-t11-024","es":"gris","texto":"grey","ejemplo":"My computer is grey.","pron":"GREI"},
-{"id":"a1-t11-025","es":"marrón","texto":"brown","ejemplo":"Her eyes are brown.","pron":"BRAUN"},
-{"id":"a1-t11-026","es":"morado","texto":"purple","ejemplo":"I have a purple pen.","pron":"PER-pel"},
-{"id":"a1-t11-027","es":"este","texto":"this","ejemplo":"This is my book.","pron":"DIS"},
-{"id":"a1-t11-028","es":"estos","texto":"these","ejemplo":"These are my pens.","pron":"DIIS"},
-{"id":"a1-t11-029","es":"aquí","texto":"here","ejemplo":"My keys are here.","pron":"JIR"},
-{"id":"a1-t11-030","es":"allí","texto":"there","ejemplo":"The bag is there.","pron":"DER"},
-{"id":"a1-t11-031","es":"paraguas","texto":"umbrella","ejemplo":"The umbrella is black.","pron":"am-BRE-la"},
-{"id":"a1-t11-032","es":"tijeras","texto":"scissors","ejemplo":"The scissors are in the bag.","pron":"SI-sors"}
-] }
+{
+ "tema": 11,
+ "titulo": "Objetos cotidianos y colores",
+ "conceptos": [
+  {
+   "id": "a1-t11-001",
+   "es": "cosa",
+   "texto": "thing",
+   "ejemplo": "What is this thing?",
+   "pron": "ZING"
+  },
+  {
+   "id": "a1-t11-002",
+   "es": "teléfono",
+   "texto": "phone",
+   "ejemplo": "My phone is black.",
+   "pron": "FOUN"
+  },
+  {
+   "id": "a1-t11-003",
+   "es": "computadora",
+   "texto": "computer",
+   "ejemplo": "The computer is on the table.",
+   "pron": "kom-PIU-ter"
+  },
+  {
+   "id": "a1-t11-004",
+   "es": "libro",
+   "texto": "book",
+   "ejemplo": "This book is interesting.",
+   "pron": "BUK"
+  },
+  {
+   "id": "a1-t11-005",
+   "es": "lapicero",
+   "texto": "pen",
+   "ejemplo": "I have a blue pen.",
+   "pron": "PEN"
+  },
+  {
+   "id": "a1-t11-006",
+   "es": "lápiz",
+   "texto": "pencil",
+   "ejemplo": "The pencil is yellow.",
+   "pron": "PEN-sil"
+  },
+  {
+   "id": "a1-t11-007",
+   "es": "mochila",
+   "texto": "bag",
+   "ejemplo": "My bag is black.",
+   "pron": "BAG"
+  },
+  {
+   "id": "a1-t11-009",
+   "es": "reloj de pulsera",
+   "texto": "watch",
+   "ejemplo": "This watch is white.",
+   "pron": "UACH"
+  },
+  {
+   "id": "a1-t11-010",
+   "es": "lentes",
+   "texto": "glasses",
+   "ejemplo": "My glasses are here.",
+   "pron": "GLA-ses"
+  },
+  {
+   "id": "a1-t11-011",
+   "es": "dinero",
+   "texto": "money",
+   "ejemplo": "I have no money.",
+   "pron": "MA-ni"
+  },
+  {
+   "id": "a1-t11-012",
+   "es": "billetera",
+   "texto": "wallet",
+   "ejemplo": "My wallet is in the bag.",
+   "pron": "UA-let"
+  },
+  {
+   "id": "a1-t11-013",
+   "es": "papel",
+   "texto": "paper",
+   "ejemplo": "The paper is white.",
+   "pron": "PEI-per"
+  },
+  {
+   "id": "a1-t11-014",
+   "es": "cuaderno",
+   "texto": "notebook",
+   "ejemplo": "This notebook is mine.",
+   "pron": "NOUT-buk"
+  },
+  {
+   "id": "a1-t11-015",
+   "es": "color",
+   "texto": "colour",
+   "ejemplo": "What colour is it?",
+   "pron": "KA-ler"
+  },
+  {
+   "id": "a1-t11-016",
+   "es": "blanco",
+   "texto": "white",
+   "ejemplo": "The wall is white.",
+   "pron": "UAIT"
+  },
+  {
+   "id": "a1-t11-017",
+   "es": "negro",
+   "texto": "black",
+   "ejemplo": "My phone is black.",
+   "pron": "BLAK"
+  },
+  {
+   "id": "a1-t11-018",
+   "es": "rojo",
+   "texto": "red",
+   "ejemplo": "The bag is red.",
+   "pron": "RED"
+  },
+  {
+   "id": "a1-t11-019",
+   "es": "azul",
+   "texto": "blue",
+   "ejemplo": "My bag is blue.",
+   "pron": "BLU"
+  },
+  {
+   "id": "a1-t11-020",
+   "es": "verde",
+   "texto": "green",
+   "ejemplo": "The door is green.",
+   "pron": "GRIN"
+  },
+  {
+   "id": "a1-t11-021",
+   "es": "amarillo",
+   "texto": "yellow",
+   "ejemplo": "The pencil is yellow.",
+   "pron": "YE-lou"
+  },
+  {
+   "id": "a1-t11-022",
+   "es": "naranja",
+   "texto": "orange",
+   "ejemplo": "This pencil is orange.",
+   "pron": "O-rinch"
+  },
+  {
+   "id": "a1-t11-023",
+   "es": "rosado",
+   "texto": "pink",
+   "ejemplo": "Her bag is pink.",
+   "pron": "PINK"
+  },
+  {
+   "id": "a1-t11-024",
+   "es": "gris",
+   "texto": "grey",
+   "ejemplo": "My computer is grey.",
+   "pron": "GREI"
+  },
+  {
+   "id": "a1-t11-025",
+   "es": "marrón",
+   "texto": "brown",
+   "ejemplo": "Her eyes are brown.",
+   "pron": "BRAUN"
+  },
+  {
+   "id": "a1-t11-026",
+   "es": "morado",
+   "texto": "purple",
+   "ejemplo": "I have a purple pen.",
+   "pron": "PER-pel"
+  },
+  {
+   "id": "a1-t11-027",
+   "es": "este",
+   "texto": "this",
+   "ejemplo": "This is my book.",
+   "pron": "DIS"
+  },
+  {
+   "id": "a1-t11-028",
+   "es": "estos",
+   "texto": "these",
+   "ejemplo": "These are my pens.",
+   "pron": "DIIS"
+  },
+  {
+   "id": "a1-t11-029",
+   "es": "aquí",
+   "texto": "here",
+   "ejemplo": "My keys are here.",
+   "pron": "JIR"
+  },
+  {
+   "id": "a1-t11-030",
+   "es": "allí",
+   "texto": "there",
+   "ejemplo": "The bag is there.",
+   "pron": "DER"
+  },
+  {
+   "id": "a1-t11-031",
+   "es": "paraguas",
+   "texto": "umbrella",
+   "ejemplo": "The umbrella is black.",
+   "pron": "am-BRE-la"
+  },
+  {
+   "id": "a1-t11-032",
+   "es": "tijeras",
+   "texto": "scissors",
+   "ejemplo": "The scissors are in the bag.",
+   "pron": "SI-sors"
+  }
+ ]
+}

@@ -1,7 +1,7 @@
 {
  "tema": 9,
  "titulo": "Presente simple y do/does",
- "regla": "El presente simple: I/you/we/they + verbo (I work), pero he/she/it añade -s (he works, she studies). En negativo e interrogativo se usa 'do/does' y el verbo vuelve a su forma base: 'I don't work', 'Does she study?'.",
+ "regla": "El presente simple: I/you/we/they + verbo (I work), pero he/she/it añade -s (he works, she studies). En negativo e interrogativo se usa 'do/does' y el verbo vuelve a su forma base: 'I don't work', 'Does she study?'. Respuestas cortas con do/does: Do you work? Yes, I do. / No, I don't. Does she study? Yes, she does. Para la frecuencia se pregunta con 'How often…?': How often do you study?",
  "pronunciacion": "La -s de tercera persona a veces SÍ suena como sílaba extra: goes, watches (no 'go-s' mudo).",
  "trampa": "Con he/she/it el verbo lleva -s: 'she works'. Pero con 'does' el verbo NO lleva -s: 'Does she work?', no 'Does she works?'.",
  "ejemplos": [
@@ -19,6 +19,16 @@
    "frase": "Does he speak French?",
    "traduccion": "¿Él habla francés?",
    "comoSeLee": "das ji spik french"
+  },
+  {
+   "frase": "Do you work? Yes, I do.",
+   "traduccion": "¿Trabajas? Sí.",
+   "comoSeLee": "du iu uérk? ies, ai du"
+  },
+  {
+   "frase": "How often do you study?",
+   "traduccion": "¿Con qué frecuencia estudias?",
+   "comoSeLee": "jau ófen du iu stádi"
   }
  ],
  "ejercicios": [
@@ -139,6 +149,31 @@
    "aceptadas": [
     "does he speak french"
    ]
+  },
+  {
+   "tipo": "hueco",
+   "enunciado": "Do you work? Yes, I ___.",
+   "respuesta": "do"
+  },
+  {
+   "tipo": "opcion_multiple",
+   "enunciado": "Does she study? No, she ___.",
+   "opciones": [
+    "doesn't",
+    "don't",
+    "not does"
+   ],
+   "respuesta": "doesn't"
+  },
+  {
+   "tipo": "hueco",
+   "enunciado": "¿Con qué frecuencia? = How ___ …?",
+   "respuesta": "often"
+  },
+  {
+   "tipo": "corregir_error",
+   "enunciado": "Do you study? Yes, I study do.",
+   "respuesta": "Do you study? Yes, I do."
   }
  ]
 }

@@ -1,34 +1,217 @@
-{ "tema": 24, "titulo": "Planes, gustos y conectores", "conceptos": [
-{"id":"a1-t24-001","es":"plan","texto":"plan","ejemplo":"I have a plan.","pron":"PLAN"},
-{"id":"a1-t24-002","es":"futuro","texto":"future","ejemplo":"I think about the future.","pron":"FIU-cher"},
-{"id":"a1-t24-003","es":"esperar (desear)","texto":"to hope","ejemplo":"I hope to travel.","pron":"tu JOUP"},
-{"id":"a1-t24-004","es":"planear","texto":"to plan","ejemplo":"I plan my week.","pron":"tu PLAN"},
-{"id":"a1-t24-005","es":"próximo","texto":"next","ejemplo":"Next year I travel.","pron":"NEKST"},
-{"id":"a1-t24-006","es":"pronto","texto":"soon","ejemplo":"I move soon.","pron":"SUN"},
-{"id":"a1-t24-007","es":"proyecto","texto":"project","ejemplo":"I have a big project.","pron":"PRO-yekt"},
-{"id":"a1-t24-008","es":"sueño","texto":"dream","ejemplo":"My dream is Canada.","pron":"DRIM"},
-{"id":"a1-t24-009","es":"meta","texto":"goal","ejemplo":"My goal is to learn French.","pron":"GOUL"},
-{"id":"a1-t24-010","es":"mudarse","texto":"to move","ejemplo":"I am going to move to Canada.","pron":"tu MUV"},
-{"id":"a1-t24-011","es":"y","texto":"and","ejemplo":"English and French.","pron":"AND"},
-{"id":"a1-t24-012","es":"pero","texto":"but","ejemplo":"It's hard but fun.","pron":"BAT"},
-{"id":"a1-t24-013","es":"o","texto":"or","ejemplo":"Tea or coffee?","pron":"OR"},
-{"id":"a1-t24-014","es":"porque","texto":"because","ejemplo":"I study because I want to emigrate.","pron":"bi-KOS"},
-{"id":"a1-t24-015","es":"luego","texto":"then","ejemplo":"First study, then rest.","pron":"DEN"},
-{"id":"a1-t24-016","es":"también","texto":"also","ejemplo":"I also speak French.","pron":"OL-sou"},
-{"id":"a1-t24-017","es":"cambiar","texto":"to change","ejemplo":"I want to change my life.","pron":"tu CHEINCH"},
-{"id":"a1-t24-018","es":"primero","texto":"first","ejemplo":"First, I learn English.","pron":"FERST"},
-{"id":"a1-t24-019","es":"finalmente","texto":"finally","ejemplo":"Finally, I move to Canada.","pron":"FAI-na-li"},
-{"id":"a1-t24-020","es":"juntos","texto":"together","ejemplo":"We study together.","pron":"tu-GUE-der"},
-{"id":"a1-t24-021","es":"tal vez","texto":"maybe","ejemplo":"Maybe next year.","pron":"MEI-bi"},
-{"id":"a1-t24-022","es":"emigrar","texto":"to emigrate","ejemplo":"I want to emigrate to Canada.","pron":"tu E-mi-greit"},
-{"id":"a1-t24-023","es":"conseguir","texto":"to get","ejemplo":"I want to get a visa.","pron":"tu GUET"},
-{"id":"a1-t24-024","es":"vivir","texto":"to live","ejemplo":"I want to live in Canada.","pron":"tu LIV"},
-{"id":"a1-t24-025","es":"mejor","texto":"better","ejemplo":"A better future.","pron":"BE-ter"},
-{"id":"a1-t24-026","es":"importante","texto":"important","ejemplo":"French is important.","pron":"im-POR-tant"},
-{"id":"a1-t24-027","es":"seguro (de)","texto":"sure","ejemplo":"I am sure.","pron":"SHUR"},
-{"id":"a1-t24-028","es":"vamos a","texto":"we are going to","ejemplo":"We are going to study.","pron":"ui ar GOU-ing tu"},
-{"id":"a1-t24-029","es":"voy a","texto":"I am going to","ejemplo":"I am going to move.","pron":"ai am GOU-ing tu","nota":"Futuro próximo: going to / aller + infinitivo."},
-{"id":"a1-t24-030","es":"empezar","texto":"to start","ejemplo":"I am going to start today.","pron":"tu START"},
-{"id":"a1-t24-031","es":"ciudadanía","texto":"citizenship","ejemplo":"My goal is Canadian citizenship.","pron":"SI-ti-zen-ship"},
-{"id":"a1-t24-032","es":"oportunidad","texto":"opportunity","ejemplo":"Canada is a great opportunity.","pron":"o-por-TIU-ni-ti"}
-] }
+{
+ "tema": 24,
+ "titulo": "Planes, gustos y conectores",
+ "conceptos": [
+  {
+   "id": "a1-t24-001",
+   "es": "plan",
+   "texto": "plan",
+   "ejemplo": "I have a plan.",
+   "pron": "PLAN"
+  },
+  {
+   "id": "a1-t24-002",
+   "es": "futuro",
+   "texto": "future",
+   "ejemplo": "I think about the future.",
+   "pron": "FIU-cher"
+  },
+  {
+   "id": "a1-t24-003",
+   "es": "esperar (desear)",
+   "texto": "to hope",
+   "ejemplo": "I hope to travel.",
+   "pron": "tu JOUP"
+  },
+  {
+   "id": "a1-t24-004",
+   "es": "planear",
+   "texto": "to plan",
+   "ejemplo": "I plan my week.",
+   "pron": "tu PLAN"
+  },
+  {
+   "id": "a1-t24-005",
+   "es": "próximo",
+   "texto": "next",
+   "ejemplo": "Next year I travel.",
+   "pron": "NEKST"
+  },
+  {
+   "id": "a1-t24-007",
+   "es": "proyecto",
+   "texto": "project",
+   "ejemplo": "I have a big project.",
+   "pron": "PRO-yekt"
+  },
+  {
+   "id": "a1-t24-008",
+   "es": "sueño",
+   "texto": "dream",
+   "ejemplo": "My dream is Canada.",
+   "pron": "DRIM"
+  },
+  {
+   "id": "a1-t24-009",
+   "es": "meta",
+   "texto": "goal",
+   "ejemplo": "My goal is to learn French.",
+   "pron": "GOUL"
+  },
+  {
+   "id": "a1-t24-010",
+   "es": "mudarse",
+   "texto": "to move",
+   "ejemplo": "I am going to move to Canada.",
+   "pron": "tu MUV"
+  },
+  {
+   "id": "a1-t24-011",
+   "es": "y",
+   "texto": "and",
+   "ejemplo": "English and French.",
+   "pron": "AND"
+  },
+  {
+   "id": "a1-t24-012",
+   "es": "pero",
+   "texto": "but",
+   "ejemplo": "It's hard but fun.",
+   "pron": "BAT"
+  },
+  {
+   "id": "a1-t24-013",
+   "es": "o",
+   "texto": "or",
+   "ejemplo": "Tea or coffee?",
+   "pron": "OR"
+  },
+  {
+   "id": "a1-t24-015",
+   "es": "luego",
+   "texto": "then",
+   "ejemplo": "First study, then rest.",
+   "pron": "DEN"
+  },
+  {
+   "id": "a1-t24-016",
+   "es": "también",
+   "texto": "also",
+   "ejemplo": "I also speak French.",
+   "pron": "OL-sou"
+  },
+  {
+   "id": "a1-t24-017",
+   "es": "cambiar",
+   "texto": "to change",
+   "ejemplo": "I want to change my life.",
+   "pron": "tu CHEINCH"
+  },
+  {
+   "id": "a1-t24-018",
+   "es": "primero",
+   "texto": "first",
+   "ejemplo": "First, I learn English.",
+   "pron": "FERST"
+  },
+  {
+   "id": "a1-t24-019",
+   "es": "finalmente",
+   "texto": "finally",
+   "ejemplo": "Finally, I move to Canada.",
+   "pron": "FAI-na-li"
+  },
+  {
+   "id": "a1-t24-020",
+   "es": "juntos",
+   "texto": "together",
+   "ejemplo": "We study together.",
+   "pron": "tu-GUE-der"
+  },
+  {
+   "id": "a1-t24-021",
+   "es": "tal vez",
+   "texto": "maybe",
+   "ejemplo": "Maybe next year.",
+   "pron": "MEI-bi"
+  },
+  {
+   "id": "a1-t24-022",
+   "es": "emigrar",
+   "texto": "to emigrate",
+   "ejemplo": "I want to emigrate to Canada.",
+   "pron": "tu E-mi-greit"
+  },
+  {
+   "id": "a1-t24-023",
+   "es": "conseguir",
+   "texto": "to get",
+   "ejemplo": "I want to get a visa.",
+   "pron": "tu GUET"
+  },
+  {
+   "id": "a1-t24-025",
+   "es": "mejor",
+   "texto": "better",
+   "ejemplo": "A better future.",
+   "pron": "BE-ter"
+  },
+  {
+   "id": "a1-t24-026",
+   "es": "importante",
+   "texto": "important",
+   "ejemplo": "French is important.",
+   "pron": "im-POR-tant"
+  },
+  {
+   "id": "a1-t24-027",
+   "es": "seguro (de)",
+   "texto": "sure",
+   "ejemplo": "I am sure.",
+   "pron": "SHUR"
+  },
+  {
+   "id": "a1-t24-028",
+   "es": "vamos a",
+   "texto": "we are going to",
+   "ejemplo": "We are going to study.",
+   "pron": "ui ar GOU-ing tu"
+  },
+  {
+   "id": "a1-t24-029",
+   "es": "voy a",
+   "texto": "I am going to",
+   "ejemplo": "I am going to move.",
+   "pron": "ai am GOU-ing tu",
+   "nota": "Futuro próximo: going to / aller + infinitivo."
+  },
+  {
+   "id": "a1-t24-031",
+   "es": "ciudadanía",
+   "texto": "citizenship",
+   "ejemplo": "My goal is Canadian citizenship.",
+   "pron": "SI-ti-zen-ship"
+  },
+  {
+   "id": "a1-t24-032",
+   "es": "oportunidad",
+   "texto": "opportunity",
+   "ejemplo": "Canada is a great opportunity.",
+   "pron": "o-por-TIU-ni-ti"
+  },
+  {
+   "id": "a1-t24-033",
+   "es": "decidir",
+   "texto": "to decide",
+   "ejemplo": "I decide to move.",
+   "pron": "tu di-SÁID"
+  },
+  {
+   "id": "a1-t24-034",
+   "es": "postular, solicitar",
+   "texto": "to apply",
+   "ejemplo": "I apply for a visa.",
+   "pron": "tu a-PLÁI"
+  }
+ ]
+}

@@ -2,6 +2,7 @@
  "bloque": 1,
  "consignas": [
   {
+   "tema": 6,
    "consigna": "Escribe un email a un nuevo amigo: preséntate (nombre, edad, nacionalidad), y cuéntale sobre tu familia y tu profesión.",
    "minPalabras": 30,
    "maxPalabras": 40,
@@ -16,6 +17,7 @@
    ]
   },
   {
+   "tema": 5,
    "consigna": "Describe a un amigo o familiar: cómo se llama, su nacionalidad, cómo es físicamente y de personalidad, y su profesión.",
    "minPalabras": 30,
    "maxPalabras": 40,
@@ -27,6 +29,61 @@
     "Dije su profesión",
     "Hablé de su familia",
     "Escribí entre 30 y 40 palabras"
+   ]
+  },
+  {
+   "tema": 1,
+   "consigna": "Escribe un saludo de presentación para un compañero nuevo: salúdalo, di tu nombre, pregúntale cómo está y despídete.",
+   "minPalabras": 18,
+   "maxPalabras": 28,
+   "respuestaModelo": "Hello! Good morning. My name is Joel. Nice to meet you. How are you? I am fine, thank you. You are welcome. See you tomorrow. Goodbye!",
+   "checklist": [
+    "Saludé al empezar",
+    "Dije mi nombre",
+    "Pregunté cómo está",
+    "Me despedí",
+    "Escribí entre 18 y 28 palabras"
+   ]
+  },
+  {
+   "tema": 2,
+   "consigna": "Escribe tu ficha de inscripción en frases completas: tu nombre, tu edad y tu número de teléfono.",
+   "minPalabras": 20,
+   "maxPalabras": 30,
+   "respuestaModelo": "Hello! My name is Joel. I am twenty two years old. My phone number is nine five one, four two three, seven six eight. Thank you!",
+   "checklist": [
+    "Dije mi nombre",
+    "Dije mi edad con \"years old\"",
+    "Di mi número de teléfono",
+    "Usé frases completas",
+    "Escribí entre 20 y 30 palabras"
+   ]
+  },
+  {
+   "tema": 3,
+   "consigna": "Escribe a un amigo de otro país: di de dónde eres, tu nacionalidad y qué idiomas hablas.",
+   "minPalabras": 25,
+   "maxPalabras": 35,
+   "respuestaModelo": "Hi! I am from Peru. I am Peruvian and I live in Arequipa. It is a nice city. I speak Spanish and I speak English. Are you Canadian? See you soon!",
+   "checklist": [
+    "Dije de dónde soy",
+    "Dije mi nacionalidad",
+    "Dije qué idiomas hablo",
+    "Usé el artículo correcto (a / an / the)",
+    "Escribí entre 25 y 35 palabras"
+   ]
+  },
+  {
+   "tema": 4,
+   "consigna": "Escribe sobre tu familia a un amigo: quiénes son, cómo se llaman y de quién es cada quien.",
+   "minPalabras": 28,
+   "maxPalabras": 38,
+   "respuestaModelo": "Hello! This is my family. My father is Jorge and my mother is Rosa. I have one sister. Her name is Maria. My sister's husband is Tom. My grandmother is Ana. They are my family!",
+   "checklist": [
+    "Nombré a varios familiares",
+    "Usé posesivos (my, her, his)",
+    "Usé el genitivo 's al menos una vez",
+    "Escribí entre 28 y 38 palabras"
    ]
   }
  ]

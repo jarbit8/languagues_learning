@@ -1,34 +1,217 @@
-{ "tema": 14, "titulo": "Bebidas y restaurante", "conceptos": [
-{"id":"a1-t14-001","es":"agua","texto":"water","ejemplo":"A glass of water, please.","pron":"UO-ter"},
-{"id":"a1-t14-002","es":"café","texto":"coffee","ejemplo":"I drink coffee in the morning.","pron":"KO-fi"},
-{"id":"a1-t14-003","es":"té","texto":"tea","ejemplo":"Would you like tea?","pron":"TI"},
-{"id":"a1-t14-004","es":"jugo","texto":"juice","ejemplo":"I want orange juice.","pron":"YUS"},
-{"id":"a1-t14-005","es":"vino","texto":"wine","ejemplo":"French wine is good.","pron":"UAIN"},
-{"id":"a1-t14-006","es":"cerveza","texto":"beer","ejemplo":"A cold beer, please.","pron":"BIR"},
-{"id":"a1-t14-007","es":"menú","texto":"menu","ejemplo":"The menu, please.","pron":"ME-niu"},
-{"id":"a1-t14-008","es":"cuenta","texto":"bill","ejemplo":"The bill, please.","pron":"BIL"},
-{"id":"a1-t14-009","es":"plato","texto":"plate","ejemplo":"The plate is on the table.","pron":"PLEIT"},
-{"id":"a1-t14-010","es":"vaso","texto":"glass","ejemplo":"A glass of water.","pron":"GLAS"},
-{"id":"a1-t14-011","es":"tener sed","texto":"to be thirsty","ejemplo":"I am thirsty.","pron":"tu bi ZERS-ti"},
-{"id":"a1-t14-012","es":"beber","texto":"to drink","ejemplo":"I drink water.","pron":"tu DRINK"},
-{"id":"a1-t14-013","es":"pedir","texto":"to order","ejemplo":"I order a coffee.","pron":"tu OR-der"},
-{"id":"a1-t14-014","es":"querer","texto":"to want","ejemplo":"I want a salad.","pron":"tu UANT"},
-{"id":"a1-t14-015","es":"quisiera","texto":"I would like","ejemplo":"I would like a coffee.","pron":"ai uud LAIK","nota":"Forma cortés para pedir."},
-{"id":"a1-t14-016","es":"postre","texto":"dessert","ejemplo":"For dessert, an apple.","pron":"di-SERT"},
-{"id":"a1-t14-017","es":"restaurante","texto":"restaurant","ejemplo":"This restaurant is good.","pron":"RES-to-rant"},
-{"id":"a1-t14-018","es":"tenedor","texto":"fork","ejemplo":"The fork is on the napkin.","pron":"FORK"},
-{"id":"a1-t14-019","es":"cuchillo","texto":"knife","ejemplo":"The knife is here.","pron":"NAIF"},
-{"id":"a1-t14-020","es":"cuchara","texto":"spoon","ejemplo":"A spoon for the soup.","pron":"SPUN"},
-{"id":"a1-t14-021","es":"servilleta","texto":"napkin","ejemplo":"Can I have a napkin?","pron":"NAP-kin"},
-{"id":"a1-t14-022","es":"taza","texto":"cup","ejemplo":"A cup of tea.","pron":"KAP"},
-{"id":"a1-t14-023","es":"propina","texto":"tip","ejemplo":"The tip is on the table.","pron":"TIP"},
-{"id":"a1-t14-024","es":"delicioso","texto":"delicious","ejemplo":"The food is delicious.","pron":"di-LI-shos"},
-{"id":"a1-t14-025","es":"tener hambre","texto":"to be hungry","ejemplo":"Are you hungry?","pron":"tu bi JAN-gri"},
-{"id":"a1-t14-026","es":"caliente","texto":"hot","ejemplo":"The coffee is hot.","pron":"JOT"},
-{"id":"a1-t14-027","es":"frío (bebida)","texto":"cold","ejemplo":"The water is cold.","pron":"KOULD"},
-{"id":"a1-t14-028","es":"dulce","texto":"sweet","ejemplo":"The dessert is sweet.","pron":"SUIT"},
-{"id":"a1-t14-029","es":"salado","texto":"salty","ejemplo":"The soup is salty.","pron":"SOL-ti"},
-{"id":"a1-t14-030","es":"la carta","texto":"the menu card","ejemplo":"Here is the menu card.","pron":"de ME-niu KARD"},
-{"id":"a1-t14-031","es":"gaseosa","texto":"soft drink","ejemplo":"I would like a soft drink.","pron":"soft DRINK"},
-{"id":"a1-t14-032","es":"helado","texto":"ice cream","ejemplo":"For dessert, ice cream please.","pron":"AIS krim"}
-] }
+{
+ "tema": 14,
+ "titulo": "Bebidas y restaurante",
+ "conceptos": [
+  {
+   "id": "a1-t14-001",
+   "es": "agua",
+   "texto": "water",
+   "ejemplo": "A glass of water, please.",
+   "pron": "UO-ter"
+  },
+  {
+   "id": "a1-t14-002",
+   "es": "café",
+   "texto": "coffee",
+   "ejemplo": "I drink coffee in the morning.",
+   "pron": "KO-fi"
+  },
+  {
+   "id": "a1-t14-003",
+   "es": "té",
+   "texto": "tea",
+   "ejemplo": "Would you like tea?",
+   "pron": "TI"
+  },
+  {
+   "id": "a1-t14-004",
+   "es": "jugo",
+   "texto": "juice",
+   "ejemplo": "I want orange juice.",
+   "pron": "YUS"
+  },
+  {
+   "id": "a1-t14-005",
+   "es": "vino",
+   "texto": "wine",
+   "ejemplo": "French wine is good.",
+   "pron": "UAIN"
+  },
+  {
+   "id": "a1-t14-006",
+   "es": "cerveza",
+   "texto": "beer",
+   "ejemplo": "A cold beer, please.",
+   "pron": "BIR"
+  },
+  {
+   "id": "a1-t14-007",
+   "es": "menú",
+   "texto": "menu",
+   "ejemplo": "The menu, please.",
+   "pron": "ME-niu"
+  },
+  {
+   "id": "a1-t14-008",
+   "es": "cuenta",
+   "texto": "bill",
+   "ejemplo": "The bill, please.",
+   "pron": "BIL"
+  },
+  {
+   "id": "a1-t14-009",
+   "es": "plato",
+   "texto": "plate",
+   "ejemplo": "The plate is on the table.",
+   "pron": "PLEIT"
+  },
+  {
+   "id": "a1-t14-010",
+   "es": "vaso",
+   "texto": "glass",
+   "ejemplo": "A glass of water.",
+   "pron": "GLAS"
+  },
+  {
+   "id": "a1-t14-011",
+   "es": "tener sed",
+   "texto": "to be thirsty",
+   "ejemplo": "I am thirsty.",
+   "pron": "tu bi ZERS-ti"
+  },
+  {
+   "id": "a1-t14-012",
+   "es": "beber",
+   "texto": "to drink",
+   "ejemplo": "I drink water.",
+   "pron": "tu DRINK"
+  },
+  {
+   "id": "a1-t14-013",
+   "es": "pedir",
+   "texto": "to order",
+   "ejemplo": "I order a coffee.",
+   "pron": "tu OR-der"
+  },
+  {
+   "id": "a1-t14-014",
+   "es": "querer",
+   "texto": "to want",
+   "ejemplo": "I want a salad.",
+   "pron": "tu UANT"
+  },
+  {
+   "id": "a1-t14-015",
+   "es": "quisiera",
+   "texto": "I would like",
+   "ejemplo": "I would like a coffee.",
+   "pron": "ai uud LAIK",
+   "nota": "Forma cortés para pedir."
+  },
+  {
+   "id": "a1-t14-017",
+   "es": "restaurante",
+   "texto": "restaurant",
+   "ejemplo": "This restaurant is good.",
+   "pron": "RES-to-rant"
+  },
+  {
+   "id": "a1-t14-018",
+   "es": "tenedor",
+   "texto": "fork",
+   "ejemplo": "The fork is on the napkin.",
+   "pron": "FORK"
+  },
+  {
+   "id": "a1-t14-019",
+   "es": "cuchillo",
+   "texto": "knife",
+   "ejemplo": "The knife is here.",
+   "pron": "NAIF"
+  },
+  {
+   "id": "a1-t14-020",
+   "es": "cuchara",
+   "texto": "spoon",
+   "ejemplo": "A spoon for the soup.",
+   "pron": "SPUN"
+  },
+  {
+   "id": "a1-t14-021",
+   "es": "servilleta",
+   "texto": "napkin",
+   "ejemplo": "Can I have a napkin?",
+   "pron": "NAP-kin"
+  },
+  {
+   "id": "a1-t14-022",
+   "es": "taza",
+   "texto": "cup",
+   "ejemplo": "A cup of tea.",
+   "pron": "KAP"
+  },
+  {
+   "id": "a1-t14-023",
+   "es": "propina",
+   "texto": "tip",
+   "ejemplo": "The tip is on the table.",
+   "pron": "TIP"
+  },
+  {
+   "id": "a1-t14-024",
+   "es": "delicioso",
+   "texto": "delicious",
+   "ejemplo": "The food is delicious.",
+   "pron": "di-LI-shos"
+  },
+  {
+   "id": "a1-t14-026",
+   "es": "caliente",
+   "texto": "hot",
+   "ejemplo": "The coffee is hot.",
+   "pron": "JOT"
+  },
+  {
+   "id": "a1-t14-027",
+   "es": "frío (bebida)",
+   "texto": "cold",
+   "ejemplo": "The water is cold.",
+   "pron": "KOULD"
+  },
+  {
+   "id": "a1-t14-028",
+   "es": "dulce",
+   "texto": "sweet",
+   "ejemplo": "The dessert is sweet.",
+   "pron": "SUIT"
+  },
+  {
+   "id": "a1-t14-029",
+   "es": "salado",
+   "texto": "salty",
+   "ejemplo": "The soup is salty.",
+   "pron": "SOL-ti"
+  },
+  {
+   "id": "a1-t14-030",
+   "es": "la carta",
+   "texto": "the menu card",
+   "ejemplo": "Here is the menu card.",
+   "pron": "de ME-niu KARD"
+  },
+  {
+   "id": "a1-t14-031",
+   "es": "gaseosa",
+   "texto": "soft drink",
+   "ejemplo": "I would like a soft drink.",
+   "pron": "soft DRINK"
+  },
+  {
+   "id": "a1-t14-032",
+   "es": "helado",
+   "texto": "ice cream",
+   "ejemplo": "For dessert, ice cream please.",
+   "pron": "AIS krim"
+  }
+ ]
+}

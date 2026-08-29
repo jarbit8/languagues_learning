@@ -1,34 +1,216 @@
-{ "tema": 23, "titulo": "Viajes, aeropuerto y hotel", "conceptos": [
-{"id":"a1-t23-001","es":"viaje","texto":"trip","ejemplo":"I had a good trip.","pron":"TRIP"},
-{"id":"a1-t23-002","es":"viajar","texto":"to travel","ejemplo":"I travelled to Canada.","pron":"tu TRA-vel"},
-{"id":"a1-t23-003","es":"aeropuerto","texto":"airport","ejemplo":"I arrived at the airport.","pron":"ER-port"},
-{"id":"a1-t23-004","es":"vuelo","texto":"flight","ejemplo":"My flight is at eight.","pron":"FLAIT"},
-{"id":"a1-t23-005","es":"avión","texto":"plane","ejemplo":"I took the plane.","pron":"PLEIN"},
-{"id":"a1-t23-006","es":"pasaporte","texto":"passport","ejemplo":"Here is my passport.","pron":"PAS-port"},
-{"id":"a1-t23-007","es":"equipaje","texto":"luggage","ejemplo":"My luggage is heavy.","pron":"LA-guich"},
-{"id":"a1-t23-008","es":"maleta","texto":"suitcase","ejemplo":"I packed my suitcase.","pron":"SUT-keis"},
-{"id":"a1-t23-009","es":"hotel","texto":"hotel","ejemplo":"The hotel is nice.","pron":"jou-TEL"},
-{"id":"a1-t23-010","es":"habitación","texto":"room","ejemplo":"My room is on the third floor.","pron":"RUM"},
-{"id":"a1-t23-011","es":"reserva","texto":"booking","ejemplo":"I have a booking.","pron":"BU-king"},
-{"id":"a1-t23-012","es":"boleto","texto":"ticket","ejemplo":"I bought a ticket.","pron":"TI-ket"},
-{"id":"a1-t23-013","es":"llegar","texto":"to arrive","ejemplo":"I arrived yesterday.","pron":"tu a-RAIV"},
-{"id":"a1-t23-014","es":"partir","texto":"to leave","ejemplo":"I leave tomorrow.","pron":"tu LIV"},
-{"id":"a1-t23-015","es":"quedarse","texto":"to stay","ejemplo":"I stay three days.","pron":"tu STEI"},
-{"id":"a1-t23-016","es":"visitar","texto":"to visit","ejemplo":"I visited the museum.","pron":"tu VI-sit"},
-{"id":"a1-t23-017","es":"al extranjero","texto":"abroad","ejemplo":"I want to go abroad.","pron":"a-BROD"},
-{"id":"a1-t23-018","es":"vacaciones","texto":"holiday","ejemplo":"I am on holiday.","pron":"JO-li-dei"},
-{"id":"a1-t23-019","es":"frontera","texto":"border","ejemplo":"We crossed the border.","pron":"BOR-der"},
-{"id":"a1-t23-020","es":"hacer las maletas","texto":"to pack","ejemplo":"I pack tonight.","pron":"tu PAK"},
-{"id":"a1-t23-021","es":"turista","texto":"tourist","ejemplo":"I am a tourist here.","pron":"TU-rist"},
-{"id":"a1-t23-022","es":"tomar el avión","texto":"to fly","ejemplo":"I fly to Canada.","pron":"tu FLAI"},
-{"id":"a1-t23-023","es":"visa","texto":"visa","ejemplo":"I need a visa.","pron":"VI-sa"},
-{"id":"a1-t23-024","es":"aduana","texto":"customs","ejemplo":"We passed customs.","pron":"KAS-toms"},
-{"id":"a1-t23-025","es":"souvenir","texto":"souvenir","ejemplo":"I bought a souvenir.","pron":"su-ve-NIR"},
-{"id":"a1-t23-026","es":"guía","texto":"guide","ejemplo":"The guide is helpful.","pron":"GAID"},
-{"id":"a1-t23-027","es":"pasajero","texto":"passenger","ejemplo":"The passenger is waiting.","pron":"PA-sen-yer"},
-{"id":"a1-t23-028","es":"llegada","texto":"arrival","ejemplo":"The arrival is at noon.","pron":"a-RAI-val"},
-{"id":"a1-t23-029","es":"salida","texto":"departure","ejemplo":"The departure is early.","pron":"di-PAR-cher"},
-{"id":"a1-t23-030","es":"estadía","texto":"stay","ejemplo":"Have a nice stay!","pron":"STEI"},
-{"id":"a1-t23-031","es":"inmigración","texto":"immigration","ejemplo":"We go through immigration at the airport.","pron":"i-mi-GREI-shon"},
-{"id":"a1-t23-032","es":"residente permanente","texto":"permanent resident","ejemplo":"I want to be a permanent resident.","pron":"PER-ma-nent RE-si-dent"}
-] }
+{
+ "tema": 23,
+ "titulo": "Viajes, aeropuerto y hotel",
+ "conceptos": [
+  {
+   "id": "a1-t23-001",
+   "es": "viaje",
+   "texto": "trip",
+   "ejemplo": "I had a good trip.",
+   "pron": "TRIP"
+  },
+  {
+   "id": "a1-t23-004",
+   "es": "vuelo",
+   "texto": "flight",
+   "ejemplo": "My flight is at eight.",
+   "pron": "FLAIT"
+  },
+  {
+   "id": "a1-t23-006",
+   "es": "pasaporte",
+   "texto": "passport",
+   "ejemplo": "Here is my passport.",
+   "pron": "PAS-port"
+  },
+  {
+   "id": "a1-t23-007",
+   "es": "equipaje",
+   "texto": "luggage",
+   "ejemplo": "My luggage is heavy.",
+   "pron": "LA-guich"
+  },
+  {
+   "id": "a1-t23-008",
+   "es": "maleta",
+   "texto": "suitcase",
+   "ejemplo": "I packed my suitcase.",
+   "pron": "SUT-keis"
+  },
+  {
+   "id": "a1-t23-011",
+   "es": "reserva",
+   "texto": "booking",
+   "ejemplo": "I have a booking.",
+   "pron": "BU-king"
+  },
+  {
+   "id": "a1-t23-014",
+   "es": "partir",
+   "texto": "to leave",
+   "ejemplo": "I leave tomorrow.",
+   "pron": "tu LIV"
+  },
+  {
+   "id": "a1-t23-015",
+   "es": "quedarse",
+   "texto": "to stay",
+   "ejemplo": "I stay three days.",
+   "pron": "tu STEI"
+  },
+  {
+   "id": "a1-t23-017",
+   "es": "al extranjero",
+   "texto": "abroad",
+   "ejemplo": "I want to go abroad.",
+   "pron": "a-BROD"
+  },
+  {
+   "id": "a1-t23-018",
+   "es": "vacaciones",
+   "texto": "holiday",
+   "ejemplo": "I am on holiday.",
+   "pron": "JO-li-dei"
+  },
+  {
+   "id": "a1-t23-019",
+   "es": "frontera",
+   "texto": "border",
+   "ejemplo": "We crossed the border.",
+   "pron": "BOR-der"
+  },
+  {
+   "id": "a1-t23-020",
+   "es": "hacer las maletas",
+   "texto": "to pack",
+   "ejemplo": "I pack tonight.",
+   "pron": "tu PAK"
+  },
+  {
+   "id": "a1-t23-021",
+   "es": "turista",
+   "texto": "tourist",
+   "ejemplo": "I am a tourist here.",
+   "pron": "TU-rist"
+  },
+  {
+   "id": "a1-t23-022",
+   "es": "tomar el avión",
+   "texto": "to fly",
+   "ejemplo": "I fly to Canada.",
+   "pron": "tu FLAI"
+  },
+  {
+   "id": "a1-t23-023",
+   "es": "visa",
+   "texto": "visa",
+   "ejemplo": "I need a visa.",
+   "pron": "VI-sa"
+  },
+  {
+   "id": "a1-t23-024",
+   "es": "aduana",
+   "texto": "customs",
+   "ejemplo": "We passed customs.",
+   "pron": "KAS-toms"
+  },
+  {
+   "id": "a1-t23-025",
+   "es": "souvenir",
+   "texto": "souvenir",
+   "ejemplo": "I bought a souvenir.",
+   "pron": "su-ve-NIR"
+  },
+  {
+   "id": "a1-t23-026",
+   "es": "guía",
+   "texto": "guide",
+   "ejemplo": "The guide is helpful.",
+   "pron": "GAID"
+  },
+  {
+   "id": "a1-t23-027",
+   "es": "pasajero",
+   "texto": "passenger",
+   "ejemplo": "The passenger is waiting.",
+   "pron": "PA-sen-yer"
+  },
+  {
+   "id": "a1-t23-028",
+   "es": "llegada",
+   "texto": "arrival",
+   "ejemplo": "The arrival is at noon.",
+   "pron": "a-RAI-val"
+  },
+  {
+   "id": "a1-t23-029",
+   "es": "salida",
+   "texto": "departure",
+   "ejemplo": "The departure is early.",
+   "pron": "di-PAR-cher"
+  },
+  {
+   "id": "a1-t23-030",
+   "es": "estadía",
+   "texto": "stay",
+   "ejemplo": "Have a nice stay!",
+   "pron": "STEI"
+  },
+  {
+   "id": "a1-t23-031",
+   "es": "inmigración",
+   "texto": "immigration",
+   "ejemplo": "We go through immigration at the airport.",
+   "pron": "i-mi-GREI-shon"
+  },
+  {
+   "id": "a1-t23-032",
+   "es": "residente permanente",
+   "texto": "permanent resident",
+   "ejemplo": "I want to be a permanent resident.",
+   "pron": "PER-ma-nent RE-si-dent"
+  },
+  {
+   "id": "a1-t23-033",
+   "es": "asiento",
+   "texto": "seat",
+   "ejemplo": "My seat is number ten.",
+   "pron": "SIT"
+  },
+  {
+   "id": "a1-t23-034",
+   "es": "puerta de embarque",
+   "texto": "gate",
+   "ejemplo": "The gate is over there.",
+   "pron": "GUÉIT"
+  },
+  {
+   "id": "a1-t23-035",
+   "es": "retraso",
+   "texto": "delay",
+   "ejemplo": "There is a delay.",
+   "pron": "di-LÉI"
+  },
+  {
+   "id": "a1-t23-036",
+   "es": "aterrizar",
+   "texto": "to land",
+   "ejemplo": "The plane lands at six.",
+   "pron": "tu LAND"
+  },
+  {
+   "id": "a1-t23-037",
+   "es": "reservar",
+   "texto": "to book",
+   "ejemplo": "I book a hotel.",
+   "pron": "tu BUK"
+  },
+  {
+   "id": "a1-t23-038",
+   "es": "pase de abordar",
+   "texto": "boarding pass",
+   "ejemplo": "Here is my boarding pass.",
+   "pron": "BOR-ding pas"
+  }
+ ]
+}

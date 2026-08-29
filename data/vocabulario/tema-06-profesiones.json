@@ -1,36 +1,238 @@
-{ "tema": 6, "titulo": "Profesiones y ocupaciones", "conceptos": [
-{"id":"a1-t06-001","es":"trabajo","texto":"job","ejemplo":"I have a good job.","pron":"YOB"},
-{"id":"a1-t06-002","es":"trabajar","texto":"to work","ejemplo":"Where do you work?","pron":"tu UERK"},
-{"id":"a1-t06-003","es":"estudiante","texto":"student","ejemplo":"I am a student.","pron":"STIU-dent"},
-{"id":"a1-t06-004","es":"profesor","texto":"teacher","ejemplo":"She is a teacher.","pron":"TI-cher"},
-{"id":"a1-t06-005","es":"médico","texto":"doctor","ejemplo":"My father is a doctor.","pron":"DOK-tor"},
-{"id":"a1-t06-006","es":"enfermero","texto":"nurse","ejemplo":"He is a nurse.","pron":"NERS"},
-{"id":"a1-t06-007","es":"ingeniero","texto":"engineer","ejemplo":"She is an engineer.","pron":"en-yi-NIR"},
-{"id":"a1-t06-008","es":"programador","texto":"programmer","ejemplo":"I am a programmer.","pron":"PROU-gra-mer","nota":"Tu carrera: Ciencia de la Computación."},
-{"id":"a1-t06-009","es":"mesero","texto":"waiter","ejemplo":"The waiter is nice.","pron":"UEI-ter"},
-{"id":"a1-t06-010","es":"chofer","texto":"driver","ejemplo":"My uncle is a driver.","pron":"DRAI-ver"},
-{"id":"a1-t06-011","es":"policía","texto":"police officer","ejemplo":"She is a police officer.","pron":"po-LIS O-fi-ser"},
-{"id":"a1-t06-012","es":"cocinero","texto":"cook","ejemplo":"He is a good cook.","pron":"KUK"},
-{"id":"a1-t06-013","es":"vendedor","texto":"seller","ejemplo":"The seller is friendly.","pron":"SE-ler"},
-{"id":"a1-t06-014","es":"oficina","texto":"office","ejemplo":"I work in an office.","pron":"O-fis"},
-{"id":"a1-t06-015","es":"empresa","texto":"company","ejemplo":"The company is big.","pron":"KAM-pa-ni"},
-{"id":"a1-t06-016","es":"estudiar","texto":"to study","ejemplo":"I study and I work.","pron":"tu STA-di"},
-{"id":"a1-t06-017","es":"qué","texto":"what","ejemplo":"What do you do?","pron":"UAT"},
-{"id":"a1-t06-018","es":"quién","texto":"who","ejemplo":"Who is your teacher?","pron":"JU"},
-{"id":"a1-t06-019","es":"dónde","texto":"where","ejemplo":"Where is the office?","pron":"UER"},
-{"id":"a1-t06-020","es":"bombero","texto":"firefighter","ejemplo":"He is a firefighter.","pron":"FAIR-fai-ter"},
-{"id":"a1-t06-021","es":"agricultor","texto":"farmer","ejemplo":"My grandfather is a farmer.","pron":"FAR-mer"},
-{"id":"a1-t06-022","es":"secretaria","texto":"secretary","ejemplo":"She is a secretary.","pron":"SE-kre-te-ri"},
-{"id":"a1-t06-023","es":"jefe","texto":"boss","ejemplo":"My boss is serious.","pron":"BOS"},
-{"id":"a1-t06-024","es":"dentista","texto":"dentist","ejemplo":"The dentist is kind.","pron":"DEN-tist"},
-{"id":"a1-t06-025","es":"abogado","texto":"lawyer","ejemplo":"Her mother is a lawyer.","pron":"LO-yer"},
-{"id":"a1-t06-026","es":"profesora","texto":"teacher (f)","ejemplo":"My teacher is French.","pron":"TI-cher"},
-{"id":"a1-t06-027","es":"vendedora","texto":"seller (f)","ejemplo":"The seller is young.","pron":"SE-ler"},
-{"id":"a1-t06-028","es":"¿en qué trabajas?","texto":"what do you do?","ejemplo":"What do you do?","pron":"uat du yu DU"},
-{"id":"a1-t06-029","es":"trabajo en","texto":"I work at","ejemplo":"I work at a company.","pron":"ai UERK at"},
-{"id":"a1-t06-030","es":"carrera","texto":"career","ejemplo":"Engineer is a good career.","pron":"ka-RIR"},
-{"id":"a1-t06-031","es":"arquitecto","texto":"architect","ejemplo":"My uncle is an architect.","pron":"AR-ki-tekt"},
-{"id":"a1-t06-032","es":"contador","texto":"accountant","ejemplo":"She is an accountant.","pron":"a-KAUN-tant"},
-{"id":"a1-t06-033","es":"salario","texto":"salary","ejemplo":"The salary is good.","pron":"SA-la-ri"},
-{"id":"a1-t06-034","es":"desempleado","texto":"unemployed","ejemplo":"My uncle is unemployed.","pron":"an-em-PLOID"}
-] }
+{
+ "tema": 6,
+ "titulo": "Profesiones y ocupaciones",
+ "conceptos": [
+  {
+   "id": "a1-t06-001",
+   "es": "trabajo",
+   "texto": "job",
+   "ejemplo": "I have a good job.",
+   "pron": "YOB"
+  },
+  {
+   "id": "a1-t06-002",
+   "es": "trabajar",
+   "texto": "to work",
+   "ejemplo": "Where do you work?",
+   "pron": "tu UERK"
+  },
+  {
+   "id": "a1-t06-003",
+   "es": "estudiante",
+   "texto": "student",
+   "ejemplo": "I am a student.",
+   "pron": "STIU-dent"
+  },
+  {
+   "id": "a1-t06-004",
+   "es": "profesor",
+   "texto": "teacher",
+   "ejemplo": "She is a teacher.",
+   "pron": "TI-cher"
+  },
+  {
+   "id": "a1-t06-005",
+   "es": "médico",
+   "texto": "doctor",
+   "ejemplo": "My father is a doctor.",
+   "pron": "DOK-tor"
+  },
+  {
+   "id": "a1-t06-006",
+   "es": "enfermero",
+   "texto": "nurse",
+   "ejemplo": "He is a nurse.",
+   "pron": "NERS"
+  },
+  {
+   "id": "a1-t06-007",
+   "es": "ingeniero",
+   "texto": "engineer",
+   "ejemplo": "She is an engineer.",
+   "pron": "en-yi-NIR"
+  },
+  {
+   "id": "a1-t06-008",
+   "es": "programador",
+   "texto": "programmer",
+   "ejemplo": "I am a programmer.",
+   "pron": "PROU-gra-mer",
+   "nota": "Tu carrera: Ciencia de la Computación."
+  },
+  {
+   "id": "a1-t06-009",
+   "es": "mesero",
+   "texto": "waiter",
+   "ejemplo": "The waiter is nice.",
+   "pron": "UEI-ter"
+  },
+  {
+   "id": "a1-t06-010",
+   "es": "chofer",
+   "texto": "driver",
+   "ejemplo": "My uncle is a driver.",
+   "pron": "DRAI-ver"
+  },
+  {
+   "id": "a1-t06-011",
+   "es": "policía",
+   "texto": "police officer",
+   "ejemplo": "She is a police officer.",
+   "pron": "po-LIS O-fi-ser"
+  },
+  {
+   "id": "a1-t06-012",
+   "es": "cocinero",
+   "texto": "cook",
+   "ejemplo": "He is a good cook.",
+   "pron": "KUK"
+  },
+  {
+   "id": "a1-t06-013",
+   "es": "vendedor",
+   "texto": "seller",
+   "ejemplo": "The seller is friendly.",
+   "pron": "SE-ler"
+  },
+  {
+   "id": "a1-t06-014",
+   "es": "oficina",
+   "texto": "office",
+   "ejemplo": "I work in an office.",
+   "pron": "O-fis"
+  },
+  {
+   "id": "a1-t06-015",
+   "es": "empresa",
+   "texto": "company",
+   "ejemplo": "The company is big.",
+   "pron": "KAM-pa-ni"
+  },
+  {
+   "id": "a1-t06-016",
+   "es": "estudiar",
+   "texto": "to study",
+   "ejemplo": "I study and I work.",
+   "pron": "tu STA-di"
+  },
+  {
+   "id": "a1-t06-017",
+   "es": "qué",
+   "texto": "what",
+   "ejemplo": "What do you do?",
+   "pron": "UAT"
+  },
+  {
+   "id": "a1-t06-018",
+   "es": "quién",
+   "texto": "who",
+   "ejemplo": "Who is your teacher?",
+   "pron": "JU"
+  },
+  {
+   "id": "a1-t06-020",
+   "es": "bombero",
+   "texto": "firefighter",
+   "ejemplo": "He is a firefighter.",
+   "pron": "FAIR-fai-ter"
+  },
+  {
+   "id": "a1-t06-021",
+   "es": "agricultor",
+   "texto": "farmer",
+   "ejemplo": "My grandfather is a farmer.",
+   "pron": "FAR-mer"
+  },
+  {
+   "id": "a1-t06-022",
+   "es": "secretaria",
+   "texto": "secretary",
+   "ejemplo": "She is a secretary.",
+   "pron": "SE-kre-te-ri"
+  },
+  {
+   "id": "a1-t06-023",
+   "es": "jefe",
+   "texto": "boss",
+   "ejemplo": "My boss is serious.",
+   "pron": "BOS"
+  },
+  {
+   "id": "a1-t06-024",
+   "es": "dentista",
+   "texto": "dentist",
+   "ejemplo": "The dentist is kind.",
+   "pron": "DEN-tist"
+  },
+  {
+   "id": "a1-t06-025",
+   "es": "abogado",
+   "texto": "lawyer",
+   "ejemplo": "Her mother is a lawyer.",
+   "pron": "LO-yer"
+  },
+  {
+   "id": "a1-t06-026",
+   "es": "profesora",
+   "texto": "teacher (f)",
+   "ejemplo": "My teacher is French.",
+   "pron": "TI-cher"
+  },
+  {
+   "id": "a1-t06-027",
+   "es": "vendedora",
+   "texto": "seller (f)",
+   "ejemplo": "The seller is young.",
+   "pron": "SE-ler"
+  },
+  {
+   "id": "a1-t06-028",
+   "es": "¿en qué trabajas?",
+   "texto": "what do you do?",
+   "ejemplo": "What do you do?",
+   "pron": "uat du yu DU"
+  },
+  {
+   "id": "a1-t06-029",
+   "es": "trabajo en",
+   "texto": "I work at",
+   "ejemplo": "I work at a company.",
+   "pron": "ai UERK at"
+  },
+  {
+   "id": "a1-t06-030",
+   "es": "carrera",
+   "texto": "career",
+   "ejemplo": "Engineer is a good career.",
+   "pron": "ka-RIR"
+  },
+  {
+   "id": "a1-t06-031",
+   "es": "arquitecto",
+   "texto": "architect",
+   "ejemplo": "My uncle is an architect.",
+   "pron": "AR-ki-tekt"
+  },
+  {
+   "id": "a1-t06-032",
+   "es": "contador",
+   "texto": "accountant",
+   "ejemplo": "She is an accountant.",
+   "pron": "a-KAUN-tant"
+  },
+  {
+   "id": "a1-t06-033",
+   "es": "salario",
+   "texto": "salary",
+   "ejemplo": "The salary is good.",
+   "pron": "SA-la-ri"
+  },
+  {
+   "id": "a1-t06-034",
+   "es": "desempleado",
+   "texto": "unemployed",
+   "ejemplo": "My uncle is unemployed.",
+   "pron": "an-em-PLOID"
+  }
+ ]
+}

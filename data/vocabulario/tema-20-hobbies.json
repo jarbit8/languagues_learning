@@ -1,34 +1,223 @@
-{ "tema": 20, "titulo": "Hobbies, deportes y música", "conceptos": [
-{"id":"a1-t20-001","es":"pasatiempo","texto":"hobby","ejemplo":"My hobby is music.","pron":"JO-bi"},
-{"id":"a1-t20-002","es":"deporte","texto":"sport","ejemplo":"I like sport.","pron":"SPORT"},
-{"id":"a1-t20-003","es":"fútbol","texto":"football","ejemplo":"I play football.","pron":"FUT-bol"},
-{"id":"a1-t20-004","es":"básquet","texto":"basketball","ejemplo":"He plays basketball.","pron":"BAS-ket-bol"},
-{"id":"a1-t20-005","es":"natación","texto":"swimming","ejemplo":"I like swimming.","pron":"SUI-ming"},
-{"id":"a1-t20-006","es":"correr","texto":"running","ejemplo":"Running is good.","pron":"RA-ning"},
-{"id":"a1-t20-007","es":"música","texto":"music","ejemplo":"I love music.","pron":"MIU-sik"},
-{"id":"a1-t20-008","es":"guitarra","texto":"guitar","ejemplo":"I play the guitar.","pron":"gui-TAR"},
-{"id":"a1-t20-009","es":"jugar","texto":"to play","ejemplo":"I play football on Sunday.","pron":"tu PLEI"},
-{"id":"a1-t20-010","es":"cantar","texto":"to sing","ejemplo":"She sings well.","pron":"tu SING"},
-{"id":"a1-t20-011","es":"bailar","texto":"to dance","ejemplo":"I like to dance.","pron":"tu DANS"},
-{"id":"a1-t20-012","es":"leer","texto":"to read","ejemplo":"I love reading.","pron":"tu RID"},
-{"id":"a1-t20-013","es":"ver (mirar)","texto":"to watch","ejemplo":"I watch films.","pron":"tu UACH"},
-{"id":"a1-t20-014","es":"escuchar","texto":"to listen","ejemplo":"I listen to music.","pron":"tu LI-sen"},
-{"id":"a1-t20-015","es":"gustar","texto":"to like","ejemplo":"I like sport.","pron":"tu LAIK"},
-{"id":"a1-t20-016","es":"encantar","texto":"to love","ejemplo":"I love music.","pron":"tu LAV"},
-{"id":"a1-t20-017","es":"odiar","texto":"to hate","ejemplo":"I hate running.","pron":"tu JEIT"},
-{"id":"a1-t20-018","es":"tiempo libre","texto":"free time","ejemplo":"In my free time I read.","pron":"FRI TAIM"},
-{"id":"a1-t20-019","es":"gimnasio","texto":"gym","ejemplo":"I go to the gym.","pron":"YIM"},
-{"id":"a1-t20-020","es":"película","texto":"film","ejemplo":"This film is good.","pron":"FILM"},
-{"id":"a1-t20-021","es":"tenis","texto":"tennis","ejemplo":"I play tennis.","pron":"TE-nis"},
-{"id":"a1-t20-022","es":"canción","texto":"song","ejemplo":"I like this song.","pron":"SONG"},
-{"id":"a1-t20-023","es":"fiesta","texto":"party","ejemplo":"There is a party today.","pron":"PAR-ti"},
-{"id":"a1-t20-024","es":"juego","texto":"game","ejemplo":"I like this game.","pron":"GUEIM"},
-{"id":"a1-t20-025","es":"equipo","texto":"team","ejemplo":"My team is good.","pron":"TIM"},
-{"id":"a1-t20-026","es":"pelota","texto":"ball","ejemplo":"The ball is orange.","pron":"BOL"},
-{"id":"a1-t20-027","es":"nadar","texto":"to swim","ejemplo":"I swim in summer.","pron":"tu SUIM"},
-{"id":"a1-t20-028","es":"pintar","texto":"to paint","ejemplo":"She likes to paint.","pron":"tu PEINT"},
-{"id":"a1-t20-029","es":"viajar","texto":"to travel","ejemplo":"I love to travel.","pron":"tu TRA-vel"},
-{"id":"a1-t20-030","es":"divertido","texto":"fun","ejemplo":"Football is fun.","pron":"FAN"},
-{"id":"a1-t20-031","es":"ajedrez","texto":"chess","ejemplo":"I like playing chess.","pron":"CHES"},
-{"id":"a1-t20-032","es":"dibujar","texto":"to draw","ejemplo":"I love to draw.","pron":"tu DRO"}
-] }
+{
+ "tema": 20,
+ "titulo": "Hobbies, deportes y música",
+ "conceptos": [
+  {
+   "id": "a1-t20-001",
+   "es": "pasatiempo",
+   "texto": "hobby",
+   "ejemplo": "My hobby is music.",
+   "pron": "JO-bi"
+  },
+  {
+   "id": "a1-t20-002",
+   "es": "deporte",
+   "texto": "sport",
+   "ejemplo": "I like sport.",
+   "pron": "SPORT"
+  },
+  {
+   "id": "a1-t20-003",
+   "es": "fútbol",
+   "texto": "football",
+   "ejemplo": "I play football.",
+   "pron": "FUT-bol"
+  },
+  {
+   "id": "a1-t20-004",
+   "es": "básquet",
+   "texto": "basketball",
+   "ejemplo": "He plays basketball.",
+   "pron": "BAS-ket-bol"
+  },
+  {
+   "id": "a1-t20-005",
+   "es": "natación",
+   "texto": "swimming",
+   "ejemplo": "I like swimming.",
+   "pron": "SUI-ming"
+  },
+  {
+   "id": "a1-t20-006",
+   "es": "correr",
+   "texto": "running",
+   "ejemplo": "Running is good.",
+   "pron": "RA-ning"
+  },
+  {
+   "id": "a1-t20-007",
+   "es": "música",
+   "texto": "music",
+   "ejemplo": "I love music.",
+   "pron": "MIU-sik"
+  },
+  {
+   "id": "a1-t20-008",
+   "es": "guitarra",
+   "texto": "guitar",
+   "ejemplo": "I play the guitar.",
+   "pron": "gui-TAR"
+  },
+  {
+   "id": "a1-t20-009",
+   "es": "jugar",
+   "texto": "to play",
+   "ejemplo": "I play football on Sunday.",
+   "pron": "tu PLEI"
+  },
+  {
+   "id": "a1-t20-010",
+   "es": "cantar",
+   "texto": "to sing",
+   "ejemplo": "She sings well.",
+   "pron": "tu SING"
+  },
+  {
+   "id": "a1-t20-011",
+   "es": "bailar",
+   "texto": "to dance",
+   "ejemplo": "I like to dance.",
+   "pron": "tu DANS"
+  },
+  {
+   "id": "a1-t20-013",
+   "es": "ver (mirar)",
+   "texto": "to watch",
+   "ejemplo": "I watch films.",
+   "pron": "tu UACH"
+  },
+  {
+   "id": "a1-t20-014",
+   "es": "escuchar",
+   "texto": "to listen",
+   "ejemplo": "I listen to music.",
+   "pron": "tu LI-sen"
+  },
+  {
+   "id": "a1-t20-015",
+   "es": "gustar",
+   "texto": "to like",
+   "ejemplo": "I like sport.",
+   "pron": "tu LAIK"
+  },
+  {
+   "id": "a1-t20-016",
+   "es": "encantar",
+   "texto": "to love",
+   "ejemplo": "I love music.",
+   "pron": "tu LAV"
+  },
+  {
+   "id": "a1-t20-017",
+   "es": "odiar",
+   "texto": "to hate",
+   "ejemplo": "I hate running.",
+   "pron": "tu JEIT"
+  },
+  {
+   "id": "a1-t20-018",
+   "es": "tiempo libre",
+   "texto": "free time",
+   "ejemplo": "In my free time I read.",
+   "pron": "FRI TAIM"
+  },
+  {
+   "id": "a1-t20-019",
+   "es": "gimnasio",
+   "texto": "gym",
+   "ejemplo": "I go to the gym.",
+   "pron": "YIM"
+  },
+  {
+   "id": "a1-t20-020",
+   "es": "película",
+   "texto": "film",
+   "ejemplo": "This film is good.",
+   "pron": "FILM"
+  },
+  {
+   "id": "a1-t20-021",
+   "es": "tenis",
+   "texto": "tennis",
+   "ejemplo": "I play tennis.",
+   "pron": "TE-nis"
+  },
+  {
+   "id": "a1-t20-022",
+   "es": "canción",
+   "texto": "song",
+   "ejemplo": "I like this song.",
+   "pron": "SONG"
+  },
+  {
+   "id": "a1-t20-023",
+   "es": "fiesta",
+   "texto": "party",
+   "ejemplo": "There is a party today.",
+   "pron": "PAR-ti"
+  },
+  {
+   "id": "a1-t20-024",
+   "es": "juego",
+   "texto": "game",
+   "ejemplo": "I like this game.",
+   "pron": "GUEIM"
+  },
+  {
+   "id": "a1-t20-025",
+   "es": "equipo",
+   "texto": "team",
+   "ejemplo": "My team is good.",
+   "pron": "TIM"
+  },
+  {
+   "id": "a1-t20-026",
+   "es": "pelota",
+   "texto": "ball",
+   "ejemplo": "The ball is orange.",
+   "pron": "BOL"
+  },
+  {
+   "id": "a1-t20-027",
+   "es": "nadar",
+   "texto": "to swim",
+   "ejemplo": "I swim in summer.",
+   "pron": "tu SUIM"
+  },
+  {
+   "id": "a1-t20-028",
+   "es": "pintar",
+   "texto": "to paint",
+   "ejemplo": "She likes to paint.",
+   "pron": "tu PEINT"
+  },
+  {
+   "id": "a1-t20-029",
+   "es": "viajar",
+   "texto": "to travel",
+   "ejemplo": "I love to travel.",
+   "pron": "tu TRA-vel"
+  },
+  {
+   "id": "a1-t20-030",
+   "es": "divertido",
+   "texto": "fun",
+   "ejemplo": "Football is fun.",
+   "pron": "FAN"
+  },
+  {
+   "id": "a1-t20-031",
+   "es": "ajedrez",
+   "texto": "chess",
+   "ejemplo": "I like playing chess.",
+   "pron": "CHES"
+  },
+  {
+   "id": "a1-t20-032",
+   "es": "dibujar",
+   "texto": "to draw",
+   "ejemplo": "I love to draw.",
+   "pron": "tu DRO"
+  }
+ ]
+}

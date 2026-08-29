@@ -1,7 +1,7 @@
 {
  "tema": 22,
  "titulo": "Pasado: was/were y past simple regular",
- "regla": "El pasado de 'to be': I/he/she/it was; you/we/they were. El pasado simple de los verbos regulares se forma con -ed (igual para todas las personas): work→worked, download→downloaded, watch→watched.",
+ "regla": "El pasado de 'to be': I/he/she/it was; you/we/they were. El pasado simple de los verbos regulares se forma con -ed (igual para todas las personas): work→worked, download→downloaded, watch→watched. Negativo e interrogativo del pasado. Con 'to be': wasn't / weren't y se invierte (Was he late? Were you here?). Con los demás verbos se usa 'did' y el verbo vuelve a su forma BASE: I didn't work, Did you work? Respuestas cortas: Yes, I did / No, I didn't.",
  "pronunciacion": "El pasado -ed tiene 3 sonidos distintos: worked ('t'), played ('d'), wanted ('id') — depende de la última letra del verbo.",
  "trampa": "'was' es singular y 'were' plural. El pasado regular es -ed para todos: 'she worked'.",
  "ejemplos": [
@@ -19,6 +19,21 @@
    "frase": "I downloaded the app.",
    "traduccion": "Descargué la app.",
    "comoSeLee": "ai dáunlodid de ap"
+  },
+  {
+   "frase": "I didn't work yesterday.",
+   "traduccion": "Ayer no trabajé.",
+   "comoSeLee": "ai dídent uérk iésterdei"
+  },
+  {
+   "frase": "Did you work yesterday? Yes, I did.",
+   "traduccion": "¿Trabajaste ayer? Sí.",
+   "comoSeLee": "did iu uérk iésterdei? ies, ai did"
+  },
+  {
+   "frase": "She wasn't at home.",
+   "traduccion": "Ella no estaba en casa.",
+   "comoSeLee": "shi uásent at joum"
   }
  ],
  "ejercicios": [
@@ -133,6 +148,51 @@
    "respuesta": "I downloaded the app.",
    "aceptadas": [
     "i downloaded the app"
+   ]
+  },
+  {
+   "tipo": "hueco",
+   "enunciado": "Ayer no trabajé: I ___ work yesterday.",
+   "respuesta": "didn't"
+  },
+  {
+   "tipo": "opcion_multiple",
+   "enunciado": "___ you study yesterday?",
+   "opciones": [
+    "Did",
+    "Do",
+    "Was"
+   ],
+   "respuesta": "Did"
+  },
+  {
+   "tipo": "hueco",
+   "enunciado": "Did you study? Yes, I ___.",
+   "respuesta": "did"
+  },
+  {
+   "tipo": "corregir_error",
+   "enunciado": "I didn't worked yesterday.",
+   "respuesta": "I didn't work yesterday."
+  },
+  {
+   "tipo": "ordenar",
+   "enunciado": "Ordena: ¿estudiaste ayer?",
+   "opciones": [
+    "Did",
+    "you",
+    "study",
+    "yesterday"
+   ],
+   "respuesta": "Did you study yesterday"
+  },
+  {
+   "tipo": "traducir",
+   "enunciado": "Ella no estaba en casa.",
+   "respuesta": "She wasn't at home.",
+   "aceptadas": [
+    "she wasn't at home",
+    "she was not at home"
    ]
   }
  ]

@@ -67,8 +67,8 @@ export default function Writing() {
       </div>
 
       <p className="text-sm text-slate-500 dark:text-slate-400">
-        Escribe según la consigna (30–40 palabras, formato IELTS/TOEFL). Con API key la IA te corrige; sin ella, comparas
-        con una respuesta modelo y te autocalificas.
+        Una consigna por tema, en formato IELTS/TOEFL: cada una dice cuántas palabras pide. Con API key la IA te corrige;
+        sin ella, comparas con una respuesta modelo y te autocalificas.
       </p>
 
       {!pack ? (
@@ -76,23 +76,24 @@ export default function Writing() {
           Aún no hay escritura para el bloque {bloqueSel}.
         </p>
       ) : (
-        pack.consignas.map((c, i) => (
-          <div key={i} className="tarjeta flex flex-col gap-3">
-            <div className="flex items-center gap-2">
-              <span
-                className={`flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-xs font-black text-white ${
-                  'bg-en'
-                }`}
-              >
-                {i + 1}
-              </span>
-              <p className="flex-1 text-sm font-semibold">{c.consigna}</p>
+        // Se ordena por tema para leerlas en el orden del curso, pero el índice original
+        // se conserva: los exámenes de bloque y final siguen tomando consignas[0].
+        pack.consignas
+          .map((c, i) => ({ c, i }))
+          .sort((a, b) => (a.c.tema ?? 99) - (b.c.tema ?? 99))
+          .map(({ c, i }) => (
+            <div key={i} className="tarjeta flex flex-col gap-3">
+              <div className="flex items-center gap-2">
+                <span className="flex shrink-0 items-center justify-center rounded-full bg-en px-2 py-1 text-[10px] font-black text-white">
+                  {c.tema ? `T${c.tema}` : i + 1}
+                </span>
+                <p className="flex-1 text-sm font-semibold">{c.consigna}</p>
+              </div>
+              <button onClick={() => setConsignaIdx(i)} className="btn-primary">
+                Escribir ({c.minPalabras}–{c.maxPalabras} palabras)
+              </button>
             </div>
-            <button onClick={() => setConsignaIdx(i)} className="btn-primary">
-              Escribir ({c.minPalabras}–{c.maxPalabras} palabras)
-            </button>
-          </div>
-        ))
+          ))
       )}
     </div>
   )

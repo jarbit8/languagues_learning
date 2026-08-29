@@ -1,34 +1,223 @@
-{ "tema": 12, "titulo": "Ropa", "conceptos": [
-{"id":"a1-t12-001","es":"ropa","texto":"clothes","ejemplo":"My clothes are new.","pron":"KLOUDS"},
-{"id":"a1-t12-002","es":"camisa","texto":"shirt","ejemplo":"He is wearing a white shirt.","pron":"SHERT"},
-{"id":"a1-t12-003","es":"polo","texto":"t-shirt","ejemplo":"This t-shirt is new.","pron":"TI-shert"},
-{"id":"a1-t12-004","es":"pantalón","texto":"trousers","ejemplo":"The trousers are black.","pron":"TRAU-sers"},
-{"id":"a1-t12-005","es":"jean","texto":"jeans","ejemplo":"She is wearing jeans.","pron":"YINS"},
-{"id":"a1-t12-006","es":"vestido","texto":"dress","ejemplo":"Her dress is red.","pron":"DRES"},
-{"id":"a1-t12-007","es":"falda","texto":"skirt","ejemplo":"The skirt is blue.","pron":"SKERT"},
-{"id":"a1-t12-008","es":"chaqueta","texto":"jacket","ejemplo":"I buy a jacket.","pron":"YA-ket"},
-{"id":"a1-t12-009","es":"abrigo","texto":"coat","ejemplo":"I wear a coat in winter.","pron":"KOUT"},
-{"id":"a1-t12-010","es":"zapatos","texto":"shoes","ejemplo":"These shoes are new.","pron":"SHUS"},
-{"id":"a1-t12-011","es":"medias","texto":"socks","ejemplo":"My socks are white.","pron":"SOKS"},
-{"id":"a1-t12-012","es":"gorro","texto":"hat","ejemplo":"He is wearing a hat.","pron":"JAT"},
-{"id":"a1-t12-013","es":"suéter","texto":"sweater","ejemplo":"This sweater is cheap.","pron":"SUE-ter"},
-{"id":"a1-t12-014","es":"llevar puesto","texto":"to wear","ejemplo":"I wear jeans every day.","pron":"tu UER"},
-{"id":"a1-t12-015","es":"ponerse","texto":"to put on","ejemplo":"Put on your jacket.","pron":"tu put ON"},
-{"id":"a1-t12-016","es":"nuevo","texto":"new","ejemplo":"My shoes are new.","pron":"NIU"},
-{"id":"a1-t12-017","es":"viejo","texto":"old","ejemplo":"This coat is old.","pron":"OULD"},
-{"id":"a1-t12-018","es":"comprar","texto":"to buy","ejemplo":"I buy a new shirt.","pron":"tu BAI"},
-{"id":"a1-t12-019","es":"talla","texto":"size","ejemplo":"What size are you?","pron":"SAIS"},
-{"id":"a1-t12-020","es":"zapatillas","texto":"sneakers","ejemplo":"My sneakers are white.","pron":"SNI-kers"},
-{"id":"a1-t12-021","es":"short","texto":"shorts","ejemplo":"In summer I wear shorts.","pron":"SHORTS"},
-{"id":"a1-t12-022","es":"bufanda","texto":"scarf","ejemplo":"She has a red scarf.","pron":"SKARF"},
-{"id":"a1-t12-023","es":"guantes","texto":"gloves","ejemplo":"I wear gloves in winter.","pron":"GLAVS"},
-{"id":"a1-t12-024","es":"cinturón","texto":"belt","ejemplo":"The belt is black.","pron":"BELT"},
-{"id":"a1-t12-025","es":"blusa","texto":"blouse","ejemplo":"Her blouse is pink.","pron":"BLAUS"},
-{"id":"a1-t12-026","es":"barato","texto":"cheap","ejemplo":"This t-shirt is cheap.","pron":"CHIP"},
-{"id":"a1-t12-027","es":"caro","texto":"expensive","ejemplo":"The coat is expensive.","pron":"eks-PEN-siv"},
-{"id":"a1-t12-028","es":"probarse","texto":"to try on","ejemplo":"Can I try on this dress?","pron":"tu trai ON"},
-{"id":"a1-t12-029","es":"quitarse","texto":"to take off","ejemplo":"Take off your hat.","pron":"tu teik OF"},
-{"id":"a1-t12-030","es":"elegante","texto":"elegant","ejemplo":"She is very elegant.","pron":"E-le-gant"},
-{"id":"a1-t12-031","es":"pijama","texto":"pyjamas","ejemplo":"I wear pyjamas at night.","pron":"pi-YA-mas"},
-{"id":"a1-t12-032","es":"botas","texto":"boots","ejemplo":"I wear boots in winter.","pron":"BUTS"}
-] }
+{
+ "tema": 12,
+ "titulo": "Ropa",
+ "conceptos": [
+  {
+   "id": "a1-t12-001",
+   "es": "ropa",
+   "texto": "clothes",
+   "ejemplo": "My clothes are new.",
+   "pron": "KLOUDS"
+  },
+  {
+   "id": "a1-t12-002",
+   "es": "camisa",
+   "texto": "shirt",
+   "ejemplo": "He is wearing a white shirt.",
+   "pron": "SHERT"
+  },
+  {
+   "id": "a1-t12-003",
+   "es": "polo",
+   "texto": "t-shirt",
+   "ejemplo": "This t-shirt is new.",
+   "pron": "TI-shert"
+  },
+  {
+   "id": "a1-t12-004",
+   "es": "pantalón",
+   "texto": "trousers",
+   "ejemplo": "The trousers are black.",
+   "pron": "TRAU-sers"
+  },
+  {
+   "id": "a1-t12-005",
+   "es": "jean",
+   "texto": "jeans",
+   "ejemplo": "She is wearing jeans.",
+   "pron": "YINS"
+  },
+  {
+   "id": "a1-t12-006",
+   "es": "vestido",
+   "texto": "dress",
+   "ejemplo": "Her dress is red.",
+   "pron": "DRES"
+  },
+  {
+   "id": "a1-t12-007",
+   "es": "falda",
+   "texto": "skirt",
+   "ejemplo": "The skirt is blue.",
+   "pron": "SKERT"
+  },
+  {
+   "id": "a1-t12-008",
+   "es": "chaqueta",
+   "texto": "jacket",
+   "ejemplo": "I buy a jacket.",
+   "pron": "YA-ket"
+  },
+  {
+   "id": "a1-t12-009",
+   "es": "abrigo",
+   "texto": "coat",
+   "ejemplo": "I wear a coat in winter.",
+   "pron": "KOUT"
+  },
+  {
+   "id": "a1-t12-010",
+   "es": "zapatos",
+   "texto": "shoes",
+   "ejemplo": "These shoes are new.",
+   "pron": "SHUS"
+  },
+  {
+   "id": "a1-t12-011",
+   "es": "medias",
+   "texto": "socks",
+   "ejemplo": "My socks are white.",
+   "pron": "SOKS"
+  },
+  {
+   "id": "a1-t12-012",
+   "es": "gorro",
+   "texto": "hat",
+   "ejemplo": "He is wearing a hat.",
+   "pron": "JAT"
+  },
+  {
+   "id": "a1-t12-013",
+   "es": "suéter",
+   "texto": "sweater",
+   "ejemplo": "This sweater is cheap.",
+   "pron": "SUE-ter"
+  },
+  {
+   "id": "a1-t12-014",
+   "es": "llevar puesto",
+   "texto": "to wear",
+   "ejemplo": "I wear jeans every day.",
+   "pron": "tu UER"
+  },
+  {
+   "id": "a1-t12-015",
+   "es": "ponerse",
+   "texto": "to put on",
+   "ejemplo": "Put on your jacket.",
+   "pron": "tu put ON"
+  },
+  {
+   "id": "a1-t12-016",
+   "es": "nuevo",
+   "texto": "new",
+   "ejemplo": "My shoes are new.",
+   "pron": "NIU"
+  },
+  {
+   "id": "a1-t12-018",
+   "es": "comprar",
+   "texto": "to buy",
+   "ejemplo": "I buy a new shirt.",
+   "pron": "tu BAI"
+  },
+  {
+   "id": "a1-t12-019",
+   "es": "talla",
+   "texto": "size",
+   "ejemplo": "What size are you?",
+   "pron": "SAIS"
+  },
+  {
+   "id": "a1-t12-020",
+   "es": "zapatillas",
+   "texto": "sneakers",
+   "ejemplo": "My sneakers are white.",
+   "pron": "SNI-kers"
+  },
+  {
+   "id": "a1-t12-021",
+   "es": "short",
+   "texto": "shorts",
+   "ejemplo": "In summer I wear shorts.",
+   "pron": "SHORTS"
+  },
+  {
+   "id": "a1-t12-022",
+   "es": "bufanda",
+   "texto": "scarf",
+   "ejemplo": "She has a red scarf.",
+   "pron": "SKARF"
+  },
+  {
+   "id": "a1-t12-023",
+   "es": "guantes",
+   "texto": "gloves",
+   "ejemplo": "I wear gloves in winter.",
+   "pron": "GLAVS"
+  },
+  {
+   "id": "a1-t12-024",
+   "es": "cinturón",
+   "texto": "belt",
+   "ejemplo": "The belt is black.",
+   "pron": "BELT"
+  },
+  {
+   "id": "a1-t12-025",
+   "es": "blusa",
+   "texto": "blouse",
+   "ejemplo": "Her blouse is pink.",
+   "pron": "BLAUS"
+  },
+  {
+   "id": "a1-t12-026",
+   "es": "barato",
+   "texto": "cheap",
+   "ejemplo": "This t-shirt is cheap.",
+   "pron": "CHIP"
+  },
+  {
+   "id": "a1-t12-027",
+   "es": "caro",
+   "texto": "expensive",
+   "ejemplo": "The coat is expensive.",
+   "pron": "eks-PEN-siv"
+  },
+  {
+   "id": "a1-t12-028",
+   "es": "probarse",
+   "texto": "to try on",
+   "ejemplo": "Can I try on this dress?",
+   "pron": "tu trai ON"
+  },
+  {
+   "id": "a1-t12-029",
+   "es": "quitarse",
+   "texto": "to take off",
+   "ejemplo": "Take off your hat.",
+   "pron": "tu teik OF"
+  },
+  {
+   "id": "a1-t12-030",
+   "es": "elegante",
+   "texto": "elegant",
+   "ejemplo": "She is very elegant.",
+   "pron": "E-le-gant"
+  },
+  {
+   "id": "a1-t12-031",
+   "es": "pijama",
+   "texto": "pyjamas",
+   "ejemplo": "I wear pyjamas at night.",
+   "pron": "pi-YA-mas"
+  },
+  {
+   "id": "a1-t12-032",
+   "es": "botas",
+   "texto": "boots",
+   "ejemplo": "I wear boots in winter.",
+   "pron": "BUTS"
+  }
+ ]
+}

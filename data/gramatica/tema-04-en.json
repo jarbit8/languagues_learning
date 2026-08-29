@@ -1,7 +1,7 @@
 {
  "tema": 4,
  "titulo": "Posesivos, el genitivo 's y whose",
- "regla": "Los adjetivos posesivos van antes del sustantivo y no cambian: my, your, his, her, its, our, their (my brother, her sister). Para la posesión con nombres se usa 's: 'my brother's name' (el nombre de mi hermano). Para PREGUNTAR de quién es algo se usa 'whose': 'Whose bag is this?' (¿de quién es esta mochila?). Ojo: 'whose' pregunta por el dueño, 'who' pregunta por la persona.",
+ "regla": "Los adjetivos posesivos van antes del sustantivo y no cambian: my, your, his, her, its, our, their (my brother, her sister). Para la posesión con nombres se usa 's: 'my brother's name' (el nombre de mi hermano). Para PREGUNTAR de quién es algo se usa 'whose': 'Whose bag is this?' (¿de quién es esta mochila?). Ojo: 'whose' pregunta por el dueño, 'who' pregunta por la persona. Pronombres posesivos: van solos, sin sustantivo detrás — mine, yours, his, hers, ours, theirs. My name → the name is mine.",
  "pronunciacion": "El sonido 'th' de father, mother, brother: lengua entre los dientes, no es 'f' ni 'z'.",
  "trampa": "'his' es de él y 'her' de ella, según quién posee, no el objeto: 'her brother' = el hermano de ella.",
  "ejemplos": [
@@ -24,6 +24,11 @@
    "frase": "Whose sister is she?",
    "traduccion": "¿De quién es hermana ella?",
    "comoSeLee": "jus síster is shi"
+  },
+  {
+   "frase": "This name is mine.",
+   "traduccion": "Este nombre es mío.",
+   "comoSeLee": "dis neim is main"
   }
  ],
  "ejercicios": [
@@ -171,6 +176,26 @@
    "aceptadas": [
     "Whose phone is it?"
    ]
+  },
+  {
+   "tipo": "hueco",
+   "enunciado": "This is my name. This name is ___.",
+   "respuesta": "mine"
+  },
+  {
+   "tipo": "opcion_multiple",
+   "enunciado": "That is her family. That family is ___.",
+   "opciones": [
+    "hers",
+    "her",
+    "she"
+   ],
+   "respuesta": "hers"
+  },
+  {
+   "tipo": "corregir_error",
+   "enunciado": "This family is my.",
+   "respuesta": "This family is mine."
   }
  ]
 }

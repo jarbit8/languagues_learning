@@ -178,7 +178,7 @@ export default function ExamenFinal({ onSalir }: { onSalir: () => void }) {
           <PasoSpeakingExamen
             tarea={tareaFinal()}
             tema={24}
-            meta="si ya está listo para dar por terminado el nivel A1 y pasar al A2"
+            meta="si ya está listo para dar por terminado el nivel A1"
             onDone={async (nota) => {
               const habilidades = { ...notasHab, speaking: nota }
               await finalizar(habilidades)
@@ -223,7 +223,7 @@ export default function ExamenFinal({ onSalir }: { onSalir: () => void }) {
       </div>
       {aprobado ? (
         <p className="tarjeta text-center text-sm text-emerald-600 dark:text-emerald-400">
-          Nivel A1 certificado. El pack A2 llega pronto 🚀
+          Nivel A1 certificado. Terminaste el nivel completo 🎓
         </p>
       ) : (
         <p className="tarjeta text-center text-sm text-slate-500 dark:text-slate-400">

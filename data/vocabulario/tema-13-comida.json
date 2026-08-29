@@ -1,35 +1,258 @@
-{ "tema": 13, "titulo": "Comida básica, frutas y verduras", "conceptos": [
-{"id":"a1-t13-001","es":"comida","texto":"food","ejemplo":"The food is good.","pron":"FUD"},
-{"id":"a1-t13-002","es":"pan","texto":"bread","ejemplo":"I eat bread in the morning.","pron":"BRED"},
-{"id":"a1-t13-003","es":"arroz","texto":"rice","ejemplo":"I eat rice every day.","pron":"RAIS"},
-{"id":"a1-t13-004","es":"carne","texto":"meat","ejemplo":"I don't eat meat.","pron":"MIT"},
-{"id":"a1-t13-005","es":"pollo","texto":"chicken","ejemplo":"There is chicken for dinner.","pron":"CHI-ken"},
-{"id":"a1-t13-006","es":"pescado","texto":"fish","ejemplo":"I eat fish on Friday.","pron":"FISH"},
-{"id":"a1-t13-007","es":"huevo","texto":"egg","ejemplo":"I eat an egg.","pron":"EG"},
-{"id":"a1-t13-008","es":"queso","texto":"cheese","ejemplo":"French cheese is famous.","pron":"CHIS"},
-{"id":"a1-t13-009","es":"manzana","texto":"apple","ejemplo":"I eat an apple every day.","pron":"A-pel"},
-{"id":"a1-t13-010","es":"plátano","texto":"banana","ejemplo":"The banana is yellow.","pron":"ba-NA-na"},
-{"id":"a1-t13-011","es":"naranja (fruta)","texto":"orange","ejemplo":"The orange is a fruit.","pron":"O-rinch"},
-{"id":"a1-t13-012","es":"tomate","texto":"tomato","ejemplo":"The tomato is red.","pron":"to-MEI-tou"},
-{"id":"a1-t13-013","es":"papa","texto":"potato","ejemplo":"Peru has many potatoes.","pron":"po-TEI-tou"},
-{"id":"a1-t13-014","es":"cebolla","texto":"onion","ejemplo":"There is an onion in the salad.","pron":"A-nion"},
-{"id":"a1-t13-015","es":"ensalada","texto":"salad","ejemplo":"I eat a salad.","pron":"SA-lad"},
-{"id":"a1-t13-016","es":"fruta","texto":"fruit","ejemplo":"I eat fruit every morning.","pron":"FRUT"},
-{"id":"a1-t13-017","es":"verdura","texto":"vegetable","ejemplo":"I eat vegetables.","pron":"VECH-ta-bel"},
-{"id":"a1-t13-018","es":"leche","texto":"milk","ejemplo":"There is no milk.","pron":"MILK"},
-{"id":"a1-t13-019","es":"mantequilla","texto":"butter","ejemplo":"Bread and butter.","pron":"BA-ter"},
-{"id":"a1-t13-020","es":"azúcar","texto":"sugar","ejemplo":"No sugar, please.","pron":"SHU-gar"},
-{"id":"a1-t13-021","es":"sal","texto":"salt","ejemplo":"There is salt on the table.","pron":"SOLT"},
-{"id":"a1-t13-022","es":"zanahoria","texto":"carrot","ejemplo":"The carrot is orange.","pron":"KA-rot"},
-{"id":"a1-t13-023","es":"comer","texto":"to eat","ejemplo":"We eat at noon.","pron":"tu IT"},
-{"id":"a1-t13-024","es":"algo de","texto":"some","ejemplo":"I eat some bread.","pron":"SAM"},
-{"id":"a1-t13-025","es":"nada de (negativo)","texto":"any","ejemplo":"There isn't any milk.","pron":"E-ni"},
-{"id":"a1-t13-026","es":"tener hambre","texto":"to be hungry","ejemplo":"I am hungry.","pron":"tu bi JAN-gri"},
-{"id":"a1-t13-027","es":"sopa","texto":"soup","ejemplo":"I eat soup at noon.","pron":"SUP"},
-{"id":"a1-t13-028","es":"postre","texto":"dessert","ejemplo":"The dessert is tasty.","pron":"di-SERT"},
-{"id":"a1-t13-029","es":"sabroso","texto":"tasty","ejemplo":"This food is tasty.","pron":"TEIS-ti"},
-{"id":"a1-t13-030","es":"sándwich","texto":"sandwich","ejemplo":"I eat a sandwich for lunch.","pron":"SAND-uich"},
-{"id":"a1-t13-031","es":"pimienta","texto":"pepper","ejemplo":"I eat the chicken with pepper.","pron":"PE-per"},
-{"id":"a1-t13-032","es":"pasta","texto":"pasta","ejemplo":"I eat pasta on Fridays.","pron":"PAS-ta"},
-{"id":"a1-t13-033","es":"yogur","texto":"yogurt","ejemplo":"I have yogurt for breakfast.","pron":"YOU-gert"}
-] }
+{
+ "tema": 13,
+ "titulo": "Comida básica, frutas y verduras",
+ "conceptos": [
+  {
+   "id": "a1-t13-001",
+   "es": "comida",
+   "texto": "food",
+   "ejemplo": "The food is good.",
+   "pron": "FUD"
+  },
+  {
+   "id": "a1-t13-002",
+   "es": "pan",
+   "texto": "bread",
+   "ejemplo": "I eat bread in the morning.",
+   "pron": "BRED"
+  },
+  {
+   "id": "a1-t13-003",
+   "es": "arroz",
+   "texto": "rice",
+   "ejemplo": "I eat rice every day.",
+   "pron": "RAIS"
+  },
+  {
+   "id": "a1-t13-004",
+   "es": "carne",
+   "texto": "meat",
+   "ejemplo": "I don't eat meat.",
+   "pron": "MIT"
+  },
+  {
+   "id": "a1-t13-005",
+   "es": "pollo",
+   "texto": "chicken",
+   "ejemplo": "There is chicken for dinner.",
+   "pron": "CHI-ken"
+  },
+  {
+   "id": "a1-t13-006",
+   "es": "pescado",
+   "texto": "fish",
+   "ejemplo": "I eat fish on Friday.",
+   "pron": "FISH"
+  },
+  {
+   "id": "a1-t13-007",
+   "es": "huevo",
+   "texto": "egg",
+   "ejemplo": "I eat an egg.",
+   "pron": "EG"
+  },
+  {
+   "id": "a1-t13-008",
+   "es": "queso",
+   "texto": "cheese",
+   "ejemplo": "French cheese is famous.",
+   "pron": "CHIS"
+  },
+  {
+   "id": "a1-t13-009",
+   "es": "manzana",
+   "texto": "apple",
+   "ejemplo": "I eat an apple every day.",
+   "pron": "A-pel"
+  },
+  {
+   "id": "a1-t13-010",
+   "es": "plátano",
+   "texto": "banana",
+   "ejemplo": "The banana is yellow.",
+   "pron": "ba-NA-na"
+  },
+  {
+   "id": "a1-t13-011",
+   "es": "naranja (fruta)",
+   "texto": "orange",
+   "ejemplo": "The orange is a fruit.",
+   "pron": "O-rinch"
+  },
+  {
+   "id": "a1-t13-012",
+   "es": "tomate",
+   "texto": "tomato",
+   "ejemplo": "The tomato is red.",
+   "pron": "to-MEI-tou"
+  },
+  {
+   "id": "a1-t13-013",
+   "es": "papa",
+   "texto": "potato",
+   "ejemplo": "Peru has many potatoes.",
+   "pron": "po-TEI-tou"
+  },
+  {
+   "id": "a1-t13-014",
+   "es": "cebolla",
+   "texto": "onion",
+   "ejemplo": "There is an onion in the salad.",
+   "pron": "A-nion"
+  },
+  {
+   "id": "a1-t13-015",
+   "es": "ensalada",
+   "texto": "salad",
+   "ejemplo": "I eat a salad.",
+   "pron": "SA-lad"
+  },
+  {
+   "id": "a1-t13-016",
+   "es": "fruta",
+   "texto": "fruit",
+   "ejemplo": "I eat fruit every morning.",
+   "pron": "FRUT"
+  },
+  {
+   "id": "a1-t13-017",
+   "es": "verdura",
+   "texto": "vegetable",
+   "ejemplo": "I eat vegetables.",
+   "pron": "VECH-ta-bel"
+  },
+  {
+   "id": "a1-t13-018",
+   "es": "leche",
+   "texto": "milk",
+   "ejemplo": "There is no milk.",
+   "pron": "MILK"
+  },
+  {
+   "id": "a1-t13-019",
+   "es": "mantequilla",
+   "texto": "butter",
+   "ejemplo": "Bread and butter.",
+   "pron": "BA-ter"
+  },
+  {
+   "id": "a1-t13-020",
+   "es": "azúcar",
+   "texto": "sugar",
+   "ejemplo": "No sugar, please.",
+   "pron": "SHU-gar"
+  },
+  {
+   "id": "a1-t13-021",
+   "es": "sal",
+   "texto": "salt",
+   "ejemplo": "There is salt on the table.",
+   "pron": "SOLT"
+  },
+  {
+   "id": "a1-t13-022",
+   "es": "zanahoria",
+   "texto": "carrot",
+   "ejemplo": "The carrot is orange.",
+   "pron": "KA-rot"
+  },
+  {
+   "id": "a1-t13-023",
+   "es": "comer",
+   "texto": "to eat",
+   "ejemplo": "We eat at noon.",
+   "pron": "tu IT"
+  },
+  {
+   "id": "a1-t13-024",
+   "es": "algo de",
+   "texto": "some",
+   "ejemplo": "I eat some bread.",
+   "pron": "SAM"
+  },
+  {
+   "id": "a1-t13-025",
+   "es": "nada de (negativo)",
+   "texto": "any",
+   "ejemplo": "There isn't any milk.",
+   "pron": "E-ni"
+  },
+  {
+   "id": "a1-t13-026",
+   "es": "tener hambre",
+   "texto": "to be hungry",
+   "ejemplo": "I am hungry.",
+   "pron": "tu bi JAN-gri"
+  },
+  {
+   "id": "a1-t13-027",
+   "es": "sopa",
+   "texto": "soup",
+   "ejemplo": "I eat soup at noon.",
+   "pron": "SUP"
+  },
+  {
+   "id": "a1-t13-028",
+   "es": "postre",
+   "texto": "dessert",
+   "ejemplo": "The dessert is tasty.",
+   "pron": "di-SERT"
+  },
+  {
+   "id": "a1-t13-029",
+   "es": "sabroso",
+   "texto": "tasty",
+   "ejemplo": "This food is tasty.",
+   "pron": "TEIS-ti"
+  },
+  {
+   "id": "a1-t13-030",
+   "es": "sándwich",
+   "texto": "sandwich",
+   "ejemplo": "I eat a sandwich for lunch.",
+   "pron": "SAND-uich"
+  },
+  {
+   "id": "a1-t13-031",
+   "es": "pimienta",
+   "texto": "pepper",
+   "ejemplo": "I eat the chicken with pepper.",
+   "pron": "PE-per"
+  },
+  {
+   "id": "a1-t13-032",
+   "es": "pasta",
+   "texto": "pasta",
+   "ejemplo": "I eat pasta on Fridays.",
+   "pron": "PAS-ta"
+  },
+  {
+   "id": "a1-t13-033",
+   "es": "yogur",
+   "texto": "yogurt",
+   "ejemplo": "I have yogurt for breakfast.",
+   "pron": "YOU-gert"
+  },
+  {
+   "id": "a1-t13-034",
+   "es": "algo",
+   "texto": "something",
+   "ejemplo": "There is something on the table.",
+   "pron": "SÁM-zing"
+  },
+  {
+   "id": "a1-t13-035",
+   "es": "algo, nada (preguntas y negativas)",
+   "texto": "anything",
+   "ejemplo": "I don't have anything.",
+   "pron": "É-ni-zing"
+  },
+  {
+   "id": "a1-t13-036",
+   "es": "nada",
+   "texto": "nothing",
+   "ejemplo": "There is nothing in the fridge.",
+   "pron": "NÁ-zing"
+  }
+ ]
+}

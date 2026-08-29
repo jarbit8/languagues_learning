@@ -1,33 +1,216 @@
-{ "tema": 15, "titulo": "Compras, dinero y precios", "conceptos": [
-{"id":"a1-t15-001","es":"tienda","texto":"shop","ejemplo":"The shop is near my house.","pron":"SHOP"},
-{"id":"a1-t15-002","es":"mercado","texto":"market","ejemplo":"I buy fruit at the market.","pron":"MAR-ket"},
-{"id":"a1-t15-003","es":"precio","texto":"price","ejemplo":"The price is high.","pron":"PRAIS"},
-{"id":"a1-t15-004","es":"efectivo","texto":"cash","ejemplo":"I pay in cash.","pron":"KASH"},
-{"id":"a1-t15-005","es":"tarjeta","texto":"card","ejemplo":"Can I pay by card?","pron":"KARD"},
-{"id":"a1-t15-006","es":"pagar","texto":"to pay","ejemplo":"I pay the bill.","pron":"tu PEI"},
-{"id":"a1-t15-007","es":"costar","texto":"to cost","ejemplo":"How much does it cost?","pron":"tu KOST"},
-{"id":"a1-t15-008","es":"vender","texto":"to sell","ejemplo":"They sell shoes here.","pron":"tu SEL"},
-{"id":"a1-t15-009","es":"¿cuánto cuesta?","texto":"how much is it?","ejemplo":"How much is it?","pron":"jau MACH is it"},
-{"id":"a1-t15-010","es":"cuántos","texto":"how many","ejemplo":"How many do you want?","pron":"jau ME-ni"},
-{"id":"a1-t15-011","es":"mucho","texto":"a lot of","ejemplo":"There is a lot of fruit.","pron":"a LOT ov"},
-{"id":"a1-t15-012","es":"poco","texto":"a little","ejemplo":"A little sugar, please.","pron":"a LI-tel"},
-{"id":"a1-t15-013","es":"vuelto","texto":"change","ejemplo":"Here is your change.","pron":"CHEINCH"},
-{"id":"a1-t15-014","es":"recibo","texto":"receipt","ejemplo":"Can I have the receipt?","pron":"ri-SIT"},
-{"id":"a1-t15-015","es":"cliente","texto":"customer","ejemplo":"The customer is happy.","pron":"KAS-to-mer"},
-{"id":"a1-t15-016","es":"necesitar","texto":"to need","ejemplo":"I need bread.","pron":"tu NID"},
-{"id":"a1-t15-017","es":"gastar","texto":"to spend","ejemplo":"I don't spend a lot.","pron":"tu SPEND"},
-{"id":"a1-t15-018","es":"descuento","texto":"discount","ejemplo":"There is a discount today.","pron":"DIS-kaunt"},
-{"id":"a1-t15-019","es":"caja (pagar)","texto":"checkout","ejemplo":"Pay at the checkout.","pron":"CHEK-aut"},
-{"id":"a1-t15-020","es":"gratis","texto":"free","ejemplo":"The bag is free.","pron":"FRI"},
-{"id":"a1-t15-021","es":"sol (moneda)","texto":"sol","ejemplo":"It costs ten soles.","pron":"SOL"},
-{"id":"a1-t15-022","es":"dólar","texto":"dollar","ejemplo":"Twenty dollars, please.","pron":"DO-lar"},
-{"id":"a1-t15-023","es":"euro","texto":"euro","ejemplo":"It costs five euros.","pron":"YU-rou"},
-{"id":"a1-t15-024","es":"moneda","texto":"coin","ejemplo":"I have a coin.","pron":"KOIN"},
-{"id":"a1-t15-025","es":"billete","texto":"banknote","ejemplo":"A ten-dollar banknote.","pron":"BANK-nout"},
-{"id":"a1-t15-026","es":"caro","texto":"expensive","ejemplo":"This shop is expensive.","pron":"eks-PEN-siv"},
-{"id":"a1-t15-027","es":"barato","texto":"cheap","ejemplo":"The market is cheap.","pron":"CHIP"},
-{"id":"a1-t15-028","es":"supermercado","texto":"supermarket","ejemplo":"I go to the supermarket.","pron":"SU-per-mar-ket"},
-{"id":"a1-t15-029","es":"lista de compras","texto":"shopping list","ejemplo":"I have a shopping list.","pron":"SHO-ping LIST"},
-{"id":"a1-t15-030","es":"comprar","texto":"to buy","ejemplo":"I buy vegetables.","pron":"tu BAI"},
-{"id":"a1-t15-031","es":"en oferta","texto":"on sale","ejemplo":"This jacket is on sale.","pron":"on SEIL"}
-] }
+{
+ "tema": 15,
+ "titulo": "Compras, dinero y precios",
+ "conceptos": [
+  {
+   "id": "a1-t15-001",
+   "es": "tienda",
+   "texto": "shop",
+   "ejemplo": "The shop is near my house.",
+   "pron": "SHOP"
+  },
+  {
+   "id": "a1-t15-002",
+   "es": "mercado",
+   "texto": "market",
+   "ejemplo": "I buy fruit at the market.",
+   "pron": "MAR-ket"
+  },
+  {
+   "id": "a1-t15-003",
+   "es": "precio",
+   "texto": "price",
+   "ejemplo": "The price is high.",
+   "pron": "PRAIS"
+  },
+  {
+   "id": "a1-t15-004",
+   "es": "efectivo",
+   "texto": "cash",
+   "ejemplo": "I pay in cash.",
+   "pron": "KASH"
+  },
+  {
+   "id": "a1-t15-005",
+   "es": "tarjeta",
+   "texto": "card",
+   "ejemplo": "Can I pay by card?",
+   "pron": "KARD"
+  },
+  {
+   "id": "a1-t15-006",
+   "es": "pagar",
+   "texto": "to pay",
+   "ejemplo": "I pay the bill.",
+   "pron": "tu PEI"
+  },
+  {
+   "id": "a1-t15-007",
+   "es": "costar",
+   "texto": "to cost",
+   "ejemplo": "How much does it cost?",
+   "pron": "tu KOST"
+  },
+  {
+   "id": "a1-t15-008",
+   "es": "vender",
+   "texto": "to sell",
+   "ejemplo": "They sell shoes here.",
+   "pron": "tu SEL"
+  },
+  {
+   "id": "a1-t15-009",
+   "es": "¿cuánto cuesta?",
+   "texto": "how much is it?",
+   "ejemplo": "How much is it?",
+   "pron": "jau MACH is it"
+  },
+  {
+   "id": "a1-t15-010",
+   "es": "cuántos",
+   "texto": "how many",
+   "ejemplo": "How many do you want?",
+   "pron": "jau ME-ni"
+  },
+  {
+   "id": "a1-t15-011",
+   "es": "mucho",
+   "texto": "a lot of",
+   "ejemplo": "There is a lot of fruit.",
+   "pron": "a LOT ov"
+  },
+  {
+   "id": "a1-t15-012",
+   "es": "poco",
+   "texto": "a little",
+   "ejemplo": "A little sugar, please.",
+   "pron": "a LI-tel"
+  },
+  {
+   "id": "a1-t15-013",
+   "es": "vuelto",
+   "texto": "change",
+   "ejemplo": "Here is your change.",
+   "pron": "CHEINCH"
+  },
+  {
+   "id": "a1-t15-014",
+   "es": "recibo",
+   "texto": "receipt",
+   "ejemplo": "Can I have the receipt?",
+   "pron": "ri-SIT"
+  },
+  {
+   "id": "a1-t15-015",
+   "es": "cliente",
+   "texto": "customer",
+   "ejemplo": "The customer is happy.",
+   "pron": "KAS-to-mer"
+  },
+  {
+   "id": "a1-t15-016",
+   "es": "necesitar",
+   "texto": "to need",
+   "ejemplo": "I need bread.",
+   "pron": "tu NID"
+  },
+  {
+   "id": "a1-t15-017",
+   "es": "gastar",
+   "texto": "to spend",
+   "ejemplo": "I don't spend a lot.",
+   "pron": "tu SPEND"
+  },
+  {
+   "id": "a1-t15-018",
+   "es": "descuento",
+   "texto": "discount",
+   "ejemplo": "There is a discount today.",
+   "pron": "DIS-kaunt"
+  },
+  {
+   "id": "a1-t15-019",
+   "es": "caja (pagar)",
+   "texto": "checkout",
+   "ejemplo": "Pay at the checkout.",
+   "pron": "CHEK-aut"
+  },
+  {
+   "id": "a1-t15-020",
+   "es": "gratis",
+   "texto": "free",
+   "ejemplo": "The bag is free.",
+   "pron": "FRI"
+  },
+  {
+   "id": "a1-t15-021",
+   "es": "sol (moneda)",
+   "texto": "sol",
+   "ejemplo": "It costs ten soles.",
+   "pron": "SOL"
+  },
+  {
+   "id": "a1-t15-022",
+   "es": "dólar",
+   "texto": "dollar",
+   "ejemplo": "Twenty dollars, please.",
+   "pron": "DO-lar"
+  },
+  {
+   "id": "a1-t15-023",
+   "es": "euro",
+   "texto": "euro",
+   "ejemplo": "It costs five euros.",
+   "pron": "YU-rou"
+  },
+  {
+   "id": "a1-t15-024",
+   "es": "moneda",
+   "texto": "coin",
+   "ejemplo": "I have a coin.",
+   "pron": "KOIN"
+  },
+  {
+   "id": "a1-t15-025",
+   "es": "billete",
+   "texto": "banknote",
+   "ejemplo": "A ten-dollar banknote.",
+   "pron": "BANK-nout"
+  },
+  {
+   "id": "a1-t15-028",
+   "es": "supermercado",
+   "texto": "supermarket",
+   "ejemplo": "I go to the supermarket.",
+   "pron": "SU-per-mar-ket"
+  },
+  {
+   "id": "a1-t15-029",
+   "es": "lista de compras",
+   "texto": "shopping list",
+   "ejemplo": "I have a shopping list.",
+   "pron": "SHO-ping LIST"
+  },
+  {
+   "id": "a1-t15-031",
+   "es": "en oferta",
+   "texto": "on sale",
+   "ejemplo": "This jacket is on sale.",
+   "pron": "on SEIL"
+  },
+  {
+   "id": "a1-t15-032",
+   "es": "preferir",
+   "texto": "to prefer",
+   "ejemplo": "I prefer the cheap shop.",
+   "pron": "tu pri-FÉR"
+  },
+  {
+   "id": "a1-t15-033",
+   "es": "calidad",
+   "texto": "quality",
+   "ejemplo": "The quality is good.",
+   "pron": "CUÁ-li-ti"
+  }
+ ]
+}

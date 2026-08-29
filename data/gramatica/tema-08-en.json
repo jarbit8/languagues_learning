@@ -1,7 +1,7 @@
 {
  "tema": 8,
  "titulo": "La hora y los adverbios de frecuencia",
- "regla": "La hora: 'It's half past seven' (7:30), 'quarter past six' (6:15), 'quarter to nine' (8:45), 'ten o'clock' (10:00). Los adverbios de frecuencia (always, usually, often, sometimes, never) van ANTES del verbo principal, pero DESPUÉS de 'to be': 'I always study', 'I am never late'.",
+ "regla": "La hora: 'It's half past seven' (7:30), 'quarter past six' (6:15), 'quarter to nine' (8:45), 'ten o'clock' (10:00). Los adverbios de frecuencia (always, usually, often, sometimes, never) van ANTES del verbo principal, pero DESPUÉS de 'to be': 'I always study', 'I am never late'. Para preguntar la hora: 'What time is it?' (¿qué hora es?) y 'What time…?' para un horario concreto.",
  "pronunciacion": "'Quarter' se reduce al hablar rápido: suena 'KWOR-ter', casi sin la 't' final.",
  "trampa": "El adverbio va antes del verbo normal: 'I always study', no 'I study always'.",
  "ejemplos": [
@@ -19,6 +19,11 @@
    "frase": "She is never late.",
    "traduccion": "Ella nunca llega tarde.",
    "comoSeLee": "shi is néver léit"
+  },
+  {
+   "frase": "What time is it? It is half past seven.",
+   "traduccion": "¿Qué hora es? Son las siete y media.",
+   "comoSeLee": "uát taim is it? it is jaf past séven"
   }
  ],
  "ejercicios": [
@@ -139,6 +144,27 @@
    "aceptadas": [
     "it is half past seven"
    ]
+  },
+  {
+   "tipo": "hueco",
+   "enunciado": "¿Qué hora es? = What ___ is it?",
+   "respuesta": "time"
+  },
+  {
+   "tipo": "ordenar",
+   "enunciado": "Ordena: ¿qué hora es?",
+   "opciones": [
+    "What",
+    "time",
+    "is",
+    "it"
+   ],
+   "respuesta": "What time is it"
+  },
+  {
+   "tipo": "corregir_error",
+   "enunciado": "What hour is it?",
+   "respuesta": "What time is it?"
   }
  ]
 }
