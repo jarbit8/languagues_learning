@@ -4,7 +4,7 @@ import { temasDeBloque, bloqueDeTema } from '../lib/curriculum'
 import { getVocabPack, getGramatica, getListening, getReading, getWriting, vocabPacks } from '../data/packs'
 import { funcionDe, nombresBloque, gramaticaBloque } from '../data/funciones'
 import { db } from '../db'
-import { diasDeTema, fechaCorta, cierraBloque } from '../lib/plan'
+import { diasDeTema, fechaCorta, cierraBloque, empezarPlan, borrarPlan, diasDelPlan, estadoDelPlan } from '../lib/plan'
 
 // Cuántas consignas de escritura le tocan a un tema: los packs de writing son por bloque,
 // pero cada consigna lleva el tema al que corresponde.
@@ -27,6 +27,8 @@ export default function Temario() {
   const mapa = useLiveQuery(() => mapaTemas(), [])
   // Si hay cronograma activo, cada tema muestra los días que le tocan.
   const plan = useLiveQuery(() => db.plan.get('a1'), [])
+  const temaActual = mapa?.find((t) => t.estado === 'en_curso')?.tema ?? 1
+  const estado = plan ? estadoDelPlan(plan, temaActual) : undefined
   const estadoDe = (tema: number) => mapa?.find((t) => t.tema === tema)?.estado ?? 'bloqueado'
 
   // Solo el titular: temas y palabras. El desglose de cada tema (ejercicios, diálogos,
@@ -53,6 +55,36 @@ export default function Temario() {
       <p className="text-sm text-slate-500 dark:text-slate-400">
         El orden se desbloquea en secuencia, pero aquí ves el plan completo del nivel A1.
       </p>
+
+      {/* El cronograma vive aquí, no en Inicio: es la vista del plan, y en Inicio molestaba. */}
+      {plan && estado ? (
+        <div className="tarjeta flex flex-col gap-2">
+          <div className="flex items-baseline justify-between">
+            <span className="text-sm font-semibold">
+              {estado.terminado ? 'Cronograma terminado' : `Día ${estado.dia} de ${estado.totalDias}`}
+            </span>
+            <span className="text-xs text-slate-500 dark:text-slate-400">
+              acabas el {fechaCorta(estado.fechaFin)}
+            </span>
+          </div>
+          <button
+            onClick={() => void borrarPlan()}
+            className="self-start text-xs text-slate-500 underline dark:text-slate-400"
+          >
+            Quitar el cronograma
+          </button>
+        </div>
+      ) : (
+        <button onClick={() => void empezarPlan()} className="tarjeta flex items-center gap-3 text-left">
+          <span className="text-2xl">🗓️</span>
+          <div className="flex-1">
+            <p className="font-semibold">Activar el cronograma de {diasDelPlan()} días</p>
+            <p className="text-sm text-slate-500 dark:text-slate-400">
+              2 días por tema, 1 día por examen de bloque y 2 para el final. Solo pone fechas aquí; no bloquea nada.
+            </p>
+          </div>
+        </button>
+      )}
 
       {[1, 2, 3, 4].map((bloque) => (
         <div key={bloque} className="flex flex-col gap-2">
