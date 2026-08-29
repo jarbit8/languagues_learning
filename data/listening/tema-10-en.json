@@ -15,7 +15,7 @@
 {"tipo":"opcion_multiple","enunciado":"¿Cuántas habitaciones hay?","opciones":["two","three","four"],"respuesta":"three"},
 {"tipo":"vf","enunciado":"Hay una sala en el apartamento.","respuesta":"falso"},
 {"tipo":"completar_dato","enunciado":"¿Dónde está la cama?","respuesta":"next to the window","aceptadas":["next to the window"]},
-{"tipo":"opcion_multiple","enunciado":"¿Cómo es el apartamento de B?","opciones":["big","small","new"],"respuesta":"small"},
+{"tipo":"opcion_multiple","enunciado":"¿Cómo es el apartamento de B?","opciones":["big","small","old"],"respuesta":"small"},
 {"tipo":"completar_dato","enunciado":"¿Qué tres habitaciones tiene el apartamento?","respuesta":"a bedroom, a kitchen and a bathroom","aceptadas":["bedroom, kitchen, bathroom"]}
 ] },
 { "titulo": "La casa de mis abuelos",

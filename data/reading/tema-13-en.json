@@ -4,7 +4,7 @@
  "textos": [
   {
    "titulo": "La cocina de Ana",
-   "texto": "Ana likes to cook. In her fridge there is milk, cheese, eggs and butter. There are also vegetables: tomatoes, potatoes, onions and carrots. She eats fruit every day: apples, bananas and oranges. For breakfast she has bread with butter and an apple. For lunch she often cooks rice with chicken, or fish with salad. She does not eat meat every day. In the evening she is not very hungry, so she has some soup or a sandwich. Laura likes pasta and yogurt. Ana never puts salt in her food, but she always puts pepper. Her food is not expensive and it is very tasty. On Sunday she cooks for her friends and they eat a dessert too.",
+   "texto": "Ana cooks every day. In her fridge there is milk, cheese, eggs and butter. There are also vegetables: tomatoes, potatoes, onions and carrots. She eats fruit every day: apples, bananas and oranges. For breakfast she has bread with butter and an apple. For lunch she often cooks rice with chicken, or fish with salad. She does not eat meat every day. In the evening she is not very hungry, so she has some soup or a sandwich. Laura eats pasta and yogurt. Ana never puts salt in her food, but she always puts pepper. Her food is not expensive and it is very tasty. On Sunday she cooks for her friends and they eat a dessert too.",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
@@ -28,7 +28,7 @@
     },
     {
      "tipo": "opcion_multiple",
-     "enunciado": "¿Qué le gusta a Laura?",
+     "enunciado": "¿Qué come Laura?",
      "opciones": [
       "pasta and yogurt",
       "fish and salad",

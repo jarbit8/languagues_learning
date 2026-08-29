@@ -4,7 +4,7 @@
  "textos": [
   {
    "titulo": "En la universidad",
-   "texto": "Ana studies computer science at the university. It is difficult, but she likes it because she wants to work with computers. She has classes on Tuesday and Thursday. She likes maths, but history is difficult for her. She has a lot of homework and she studies in the library with her classmates. Next week she has an exam and she studies a lot. She wants to pass, so she practises every day. Last month she passed a difficult exam with a very good grade, and her teacher said: you learn fast! Ana has a dictionary and a lot of notes in her notebook. Her classmate helps her because she does not understand everything. I want a degree and then a good job, says Ana. And she wants a scholarship too.",
+   "texto": "Ana studies computer science at the university. It is difficult, but she likes it because she wants to work with computers. She has classes on Tuesday and Thursday. She likes maths, but history is difficult for her. She has a lot of homework and she studies in the library with her classmates. Next week she has an exam and she studies a lot. She wants to pass, so she practises every day. In September she passed a difficult exam with a very good grade, and her teacher said: you learn fast! Ana has a dictionary and a lot of notes in her notebook. Her classmate helps her because she does not understand everything. I want a degree and then a good job, says Ana. And she wants a scholarship too.",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
@@ -38,7 +38,7 @@
     },
     {
      "tipo": "vf",
-     "enunciado": "Ana reprobó el examen del mes pasado.",
+     "enunciado": "Ana reprobó el examen de septiembre.",
      "respuesta": "falso"
     }
    ]

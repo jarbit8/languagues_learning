@@ -26,7 +26,7 @@
 {"id":"a1-t17-025","es":"rápido","en":{"texto":"fast","ejemplo":"The train is fast.","pron":"FAST"},"fr":{"texto":"rapide","ejemplo":"Le train est rapide.","pron":"ra-PID"}},
 {"id":"a1-t17-026","es":"lento","en":{"texto":"slow","ejemplo":"The bus is slow.","pron":"SLOU"},"fr":{"texto":"lent","ejemplo":"Le bus est lent.","pron":"LAN"}},
 {"id":"a1-t17-027","es":"conducir","en":{"texto":"to drive","ejemplo":"I can't drive.","pron":"tu DRAIV"},"fr":{"texto":"conduire","ejemplo":"Je ne sais pas conduire.","pron":"kon-DUIR"}},
-{"id":"a1-t17-028","es":"barco","en":{"texto":"boat","ejemplo":"The boat is on the river.","pron":"BOUT"},"fr":{"texto":"bateau","ejemplo":"Le bateau est sur la rivière.","pron":"ba-TO"}},
+{"id":"a1-t17-028","es":"barco","en":{"texto":"boat","ejemplo":"I go to the city by boat.","pron":"BOUT"},"fr":{"texto":"bateau","ejemplo":"Le bateau est sur la rivière.","pron":"ba-TO"}},
 {"id":"a1-t17-029","es":"moto","en":{"texto":"motorbike","ejemplo":"He has a motorbike.","pron":"MOU-tor-baik"},"fr":{"texto":"moto","ejemplo":"Il a une moto.","pron":"mo-TO"}},
 {"id":"a1-t17-030","es":"¿dónde está?","en":{"texto":"where is?","ejemplo":"Where is the station?","pron":"UER IS"},"fr":{"texto":"où est ?","ejemplo":"Où est la gare ?","pron":"u E"}},
 {"id":"a1-t17-031","es":"vereda","en":{"texto":"sidewalk","ejemplo":"Walk on the sidewalk.","pron":"SAID-uok"},"fr":{"texto":"trottoir","ejemplo":"Marche sur le trottoir.","pron":"tro-TUAR"}}

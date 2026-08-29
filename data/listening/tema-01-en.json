@@ -7,8 +7,8 @@
 {"hablante":"A","texto":"How are you, Paul?"},
 {"hablante":"B","texto":"I'm fine, thank you. And you?"},
 {"hablante":"A","texto":"Very well, thanks!"},
-{"hablante":"B","texto":"Are you a student here?"},
-{"hablante":"A","texto":"Yes, I am. See you tomorrow!"},
+{"hablante":"B","texto":"Take care, Ana!"},
+{"hablante":"A","texto":"Thank you, Paul! See you tomorrow!"},
 {"hablante":"B","texto":"Goodbye, Ana!"}
 ],
 "preguntas": [
@@ -16,7 +16,7 @@
 {"tipo":"vf","enunciado":"Paul dice que está mal.","respuesta":"falso"},
 {"tipo":"completar_dato","enunciado":"¿Cómo se despiden al final?","respuesta":"goodbye","aceptadas":["bye","see you tomorrow"]},
 {"tipo":"completar_dato","enunciado":"¿Cómo se llama el hombre?","respuesta":"paul","aceptadas":["Paul"]},
-{"tipo":"opcion_multiple","enunciado":"¿Qué le pregunta Paul a Ana?","opciones":["Are you a student here?","Are you a teacher here?","Are you new here?"],"respuesta":"Are you a student here?"}
+{"tipo":"opcion_multiple","enunciado":"¿Qué le dice Paul a Ana antes de despedirse?","opciones":["Take care, Ana!","Welcome, Ana!","Good night, Ana!"],"respuesta":"Take care, Ana!"}
 ] },
 { "titulo": "En una fiesta",
 "lineas": [

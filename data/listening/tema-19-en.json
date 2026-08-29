@@ -9,7 +9,7 @@
 {"hablante":"A","texto":"You should rest and drink water."},
 {"hablante":"B","texto":"I think I have a cold."},
 {"hablante":"A","texto":"Take this medicine twice a day."},
-{"hablante":"B","texto":"Thank you, I hope I feel better soon."}
+{"hablante":"B","texto":"Thank you. I must rest, then."}
 ],
 "preguntas": [
 {"tipo":"opcion_multiple","enunciado":"¿Qué le duele a B además de la cabeza?","opciones":["stomach","throat","leg"],"respuesta":"throat"},

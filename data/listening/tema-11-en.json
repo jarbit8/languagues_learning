@@ -20,17 +20,17 @@
 ] },
 { "titulo": "En la tienda",
 "lineas": [
-{"hablante":"A","texto":"Excuse me, I need a notebook and a pen."},
-{"hablante":"B","texto":"What colour do you like?"},
-{"hablante":"A","texto":"I like blue. Do you have a blue notebook?"},
+{"hablante":"A","texto":"Excuse me, do you have a notebook and a pen?"},
+{"hablante":"B","texto":"What colour?"},
+{"hablante":"A","texto":"Blue. Do you have a blue notebook?"},
 {"hablante":"B","texto":"Yes, here it is. And this pen is green."},
-{"hablante":"A","texto":"I need a black pen, please."},
+{"hablante":"A","texto":"A black pen, please."},
 {"hablante":"B","texto":"OK, here is a black pen."},
 {"hablante":"A","texto":"Thank you so much!"},
 {"hablante":"B","texto":"You're welcome!"}
 ],
 "preguntas": [
-{"tipo":"opcion_multiple","enunciado":"¿Qué necesita A al principio?","opciones":["a notebook and a pen","a bag and keys","glasses and a watch"],"respuesta":"a notebook and a pen"},
+{"tipo":"opcion_multiple","enunciado":"¿Qué busca A al principio?","opciones":["a notebook and a pen","a bag and keys","glasses and a watch"],"respuesta":"a notebook and a pen"},
 {"tipo":"vf","enunciado":"El cuaderno que quiere A es azul.","respuesta":"verdadero"},
 {"tipo":"completar_dato","enunciado":"¿De qué color es el lapicero que menciona B primero?","respuesta":"green","aceptadas":[]},
 {"tipo":"completar_dato","enunciado":"¿De qué color pide A el lapicero?","respuesta":"black","aceptadas":[]},

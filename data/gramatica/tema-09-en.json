@@ -30,7 +30,7 @@
   },
   {
    "tipo": "hueco",
-   "enunciado": "He ___ to work by bus. (go)",
+   "enunciado": "He ___ to work every day. (go)",
    "respuesta": "goes"
   },
   {
@@ -48,17 +48,17 @@
   },
   {
    "tipo": "opcion_multiple",
-   "enunciado": "He ___ coffee.",
+   "enunciado": "He ___ every day.",
    "opciones": [
-    "drinks",
-    "drink",
-    "drinkes"
+    "cooks",
+    "cook",
+    "cookes"
    ],
-   "respuesta": "drinks"
+   "respuesta": "cooks"
   },
   {
    "tipo": "opcion_multiple",
-   "enunciado": "___ you like music?",
+   "enunciado": "___ you listen to music?",
    "opciones": [
     "Do",
     "Does",
@@ -68,13 +68,13 @@
   },
   {
    "tipo": "opcion_multiple",
-   "enunciado": "She doesn't ___ meat.",
+   "enunciado": "She doesn't ___ dinner.",
    "opciones": [
-    "eat",
-    "eats",
-    "to eat"
+    "cook",
+    "cooks",
+    "to cook"
    ],
-   "respuesta": "eat"
+   "respuesta": "cook"
   },
   {
    "tipo": "ordenar",

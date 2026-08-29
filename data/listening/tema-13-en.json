@@ -4,7 +4,7 @@
 "lineas": [
 {"hablante":"A","texto":"Do you have any apples?"},
 {"hablante":"B","texto":"Yes, we have red and green apples."},
-{"hablante":"A","texto":"I want some bread too."},
+{"hablante":"A","texto":"Do you have any bread too?"},
 {"hablante":"B","texto":"There isn't any bread today, sorry."},
 {"hablante":"A","texto":"That's okay. Do you have milk?"},
 {"hablante":"B","texto":"Yes, we have milk and cheese."},

@@ -8,14 +8,14 @@
 {"hablante":"B","texto":"I'm twenty-two years old."},
 {"hablante":"A","texto":"What is your phone number?"},
 {"hablante":"B","texto":"It's zero, nine, one, five, three, two."},
-{"hablante":"A","texto":"Thank you. Happy birthday, by the way!"},
-{"hablante":"B","texto":"Thank you very much!"}
+{"hablante":"A","texto":"Thank you very much, Joel."},
+{"hablante":"B","texto":"You're welcome. Take care!"}
 ],
 "preguntas": [
 {"tipo":"opcion_multiple","enunciado":"¿Cuántos años tiene Joel?","opciones":["twenty","twenty-two","twelve"],"respuesta":"twenty-two"},
 {"tipo":"vf","enunciado":"Joel da su número de teléfono.","respuesta":"verdadero"},
 {"tipo":"completar_dato","enunciado":"Escribe el nombre de la persona.","respuesta":"Joel"},
-{"tipo":"completar_dato","enunciado":"¿Qué le desea A a Joel al final?","respuesta":"happy birthday","aceptadas":["happy birthday!"]},
+{"tipo":"completar_dato","enunciado":"¿Cómo se despide Joel al final?","respuesta":"take care","aceptadas":["happy birthday!"]},
 {"tipo":"opcion_multiple","enunciado":"¿Cuál es el primer número que dice Joel de su teléfono?","opciones":["zero","one","nine"],"respuesta":"zero"}
 ] },
 { "titulo": "En la recepción",

@@ -1,5 +1,5 @@
 { "tema": 6, "titulo": "Profesiones y ocupaciones", "conceptos": [
-{"id":"a1-t06-001","es":"trabajo","en":{"texto":"job","ejemplo":"I like my job.","pron":"YOB"},"fr":{"texto":"travail","ejemplo":"J'aime mon travail.","pron":"tra-VAY"}},
+{"id":"a1-t06-001","es":"trabajo","en":{"texto":"job","ejemplo":"I have a good job.","pron":"YOB"},"fr":{"texto":"travail","ejemplo":"J'aime mon travail.","pron":"tra-VAY"}},
 {"id":"a1-t06-002","es":"trabajar","en":{"texto":"to work","ejemplo":"Where do you work?","pron":"tu UERK"},"fr":{"texto":"travailler","ejemplo":"Où est-ce que tu travailles ?","pron":"tra-va-YE"}},
 {"id":"a1-t06-003","es":"estudiante","en":{"texto":"student","ejemplo":"I am a student.","pron":"STIU-dent"},"fr":{"texto":"étudiant","ejemplo":"Je suis étudiant.","pron":"e-tu-DYAN"},"nota":"FR: profesión sin artículo (je suis étudiant)."},
 {"id":"a1-t06-004","es":"profesor","en":{"texto":"teacher","ejemplo":"She is a teacher.","pron":"TI-cher"},"fr":{"texto":"professeur","ejemplo":"Elle est professeure.","pron":"pro-fe-SER"}},
@@ -14,7 +14,7 @@
 {"id":"a1-t06-013","es":"vendedor","en":{"texto":"seller","ejemplo":"The seller is friendly.","pron":"SE-ler"},"fr":{"texto":"vendeur","ejemplo":"Le vendeur est amical.","pron":"van-DER"}},
 {"id":"a1-t06-014","es":"oficina","en":{"texto":"office","ejemplo":"I work in an office.","pron":"O-fis"},"fr":{"texto":"bureau","ejemplo":"Je travaille dans un bureau.","pron":"bu-RO"}},
 {"id":"a1-t06-015","es":"empresa","en":{"texto":"company","ejemplo":"The company is big.","pron":"KAM-pa-ni"},"fr":{"texto":"entreprise","ejemplo":"L'entreprise est grande.","pron":"an-tre-PRIS"}},
-{"id":"a1-t06-016","es":"estudiar","en":{"texto":"to study","ejemplo":"I study computer science.","pron":"tu STA-di"},"fr":{"texto":"étudier","ejemplo":"J'étudie l'informatique.","pron":"e-tu-DYE"}},
+{"id":"a1-t06-016","es":"estudiar","en":{"texto":"to study","ejemplo":"I study and I work.","pron":"tu STA-di"},"fr":{"texto":"étudier","ejemplo":"J'étudie l'informatique.","pron":"e-tu-DYE"}},
 {"id":"a1-t06-017","es":"qué","en":{"texto":"what","ejemplo":"What do you do?","pron":"UAT"},"fr":{"texto":"quoi","ejemplo":"Tu fais quoi ?","pron":"KUA"}},
 {"id":"a1-t06-018","es":"quién","en":{"texto":"who","ejemplo":"Who is your teacher?","pron":"JU"},"fr":{"texto":"qui","ejemplo":"Qui est ton professeur ?","pron":"KI"}},
 {"id":"a1-t06-019","es":"dónde","en":{"texto":"where","ejemplo":"Where is the office?","pron":"UER"},"fr":{"texto":"où","ejemplo":"Où est le bureau ?","pron":"U"}},
@@ -28,9 +28,9 @@
 {"id":"a1-t06-027","es":"vendedora","en":{"texto":"seller (f)","ejemplo":"The seller is young.","pron":"SE-ler"},"fr":{"texto":"vendeuse","ejemplo":"La vendeuse est jeune.","pron":"van-DES"},"nota":"FR: vendeur → vendeuse."},
 {"id":"a1-t06-028","es":"¿en qué trabajas?","en":{"texto":"what do you do?","ejemplo":"What do you do?","pron":"uat du yu DU"},"fr":{"texto":"quel est ton travail ?","ejemplo":"Quel est ton travail ?","pron":"kel e ton tra-VAY"}},
 {"id":"a1-t06-029","es":"trabajo en","en":{"texto":"I work at","ejemplo":"I work at a company.","pron":"ai UERK at"},"fr":{"texto":"je travaille à","ejemplo":"Je travaille dans une entreprise.","pron":"ye tra-VAY a"}},
-{"id":"a1-t06-030","es":"carrera","en":{"texto":"career","ejemplo":"Computer science is a good career.","pron":"ka-RIR"},"fr":{"texto":"carrière","ejemplo":"L'informatique est une bonne carrière.","pron":"ka-RYER"}},
+{"id":"a1-t06-030","es":"carrera","en":{"texto":"career","ejemplo":"Engineer is a good career.","pron":"ka-RIR"},"fr":{"texto":"carrière","ejemplo":"L'informatique est une bonne carrière.","pron":"ka-RYER"}},
 {"id":"a1-t06-031","es":"arquitecto","en":{"texto":"architect","ejemplo":"My uncle is an architect.","pron":"AR-ki-tekt"},"fr":{"texto":"architecte","ejemplo":"Mon oncle est architecte.","pron":"ar-shi-TEKT"}},
 {"id":"a1-t06-032","es":"contador","en":{"texto":"accountant","ejemplo":"She is an accountant.","pron":"a-KAUN-tant"},"fr":{"texto":"comptable","ejemplo":"Elle est comptable.","pron":"kon-TABL"}},
 {"id":"a1-t06-033","es":"salario","en":{"texto":"salary","ejemplo":"The salary is good.","pron":"SA-la-ri"},"fr":{"texto":"salaire","ejemplo":"Le salaire est bon.","pron":"sa-LER"}},
-{"id":"a1-t06-034","es":"desempleado","en":{"texto":"unemployed","ejemplo":"He is unemployed now.","pron":"an-em-PLOID"},"fr":{"texto":"au chômage","ejemplo":"Il est au chômage.","pron":"o sho-MAY"}}
+{"id":"a1-t06-034","es":"desempleado","en":{"texto":"unemployed","ejemplo":"My uncle is unemployed.","pron":"an-em-PLOID"},"fr":{"texto":"au chômage","ejemplo":"Il est au chômage.","pron":"o sho-MAY"}}
 ] }

@@ -6,7 +6,7 @@
    "consigna": "Escribe un email a un amigo contándole un viaje que hiciste y tus planes para el futuro.",
    "minPalabras": 30,
    "maxPalabras": 40,
-   "respuestaModelo": "Hi! Last year I went to Canada. I visited museums and I ate a lot of good food. I'm going to study French next year because I want to live there. I'm going to practise every day. What are your plans?",
+   "respuestaModelo": "Hi! Last year I went to Canada. I visited museums and I ate good food. I'm going to study English next year because I want to work there. I'm going to practise every day. What are your plans?",
    "checklist": [
     "Usé un saludo y una despedida",
     "Usé un verbo en pasado (regular o irregular)",
@@ -20,7 +20,7 @@
    "consigna": "Escribe sobre tu tiempo libre y tus metas: qué te gusta hacer, qué estudias y qué planes tienes para el futuro.",
    "minPalabras": 30,
    "maxPalabras": 40,
-   "respuestaModelo": "In my free time I like sports and music. I play football and I play the guitar. I am a student and I study computer science because I like it. Next year I am going to travel to Canada. I am going to study French because I want to live there.",
+   "respuestaModelo": "In my free time I like sports. I play football and I play the guitar. I am a student and I study computer science. Next year I am going to travel to Canada. I am going to study English there.",
    "checklist": [
     "Hablé de mi tiempo libre y hobbies",
     "Usé like + actividad",

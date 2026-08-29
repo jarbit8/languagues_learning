@@ -4,12 +4,12 @@
  "titulo": "Contables/incontables y some/any",
  "regla": "Sustantivos contables (a book, two books) e incontables (water, bread; no llevan plural ni 'a'). 'some' en afirmativas (some bread, some apples), 'any' en negativas y preguntas (I don't have any milk; is there any bread?).",
  "pronunciacion": "El plural -s cambia de sonido según la palabra: apples ('z') vs oranges ('iz').",
- "trampa": "Los incontables no llevan 'a' ni plural: 'some water', no 'a water' ni 'waters'.",
+ "trampa": "Los incontables no llevan 'a' ni plural: 'some rice', no 'a rice' ni 'rices'.",
  "ejemplos": [
   {
-   "frase": "I want some bread.",
-   "traduccion": "Quiero algo de pan.",
-   "comoSeLee": "ai uánt sam bred"
+   "frase": "I eat some bread.",
+   "traduccion": "Como algo de pan.",
+   "comoSeLee": "ai it sam bred"
   },
   {
    "frase": "There isn't any milk.",
@@ -25,7 +25,7 @@
  "ejercicios": [
   {
    "tipo": "hueco",
-   "enunciado": "I want ___ bread. (afirmativo)",
+   "enunciado": "I eat ___ bread. (afirmativo)",
    "respuesta": "some"
   },
   {
@@ -35,7 +35,7 @@
   },
   {
    "tipo": "hueco",
-   "enunciado": "Is there ___ water? (pregunta)",
+   "enunciado": "Is there ___ cheese? (pregunta)",
    "respuesta": "any"
   },
   {
@@ -45,7 +45,7 @@
   },
   {
    "tipo": "opcion_multiple",
-   "enunciado": "'water' (agua) es:",
+   "enunciado": "'rice' (arroz) es:",
    "opciones": [
     "uncountable",
     "countable",
@@ -75,14 +75,14 @@
   },
   {
    "tipo": "ordenar",
-   "enunciado": "Ordena: quiero algo de pan.",
+   "enunciado": "Ordena: como algo de pan.",
    "opciones": [
     "I",
-    "want",
+    "eat",
     "some",
     "bread"
    ],
-   "respuesta": "I want some bread"
+   "respuesta": "I eat some bread"
   },
   {
    "tipo": "ordenar",
@@ -109,8 +109,8 @@
   },
   {
    "tipo": "corregir_error",
-   "enunciado": "I want a bread.",
-   "respuesta": "I want some bread."
+   "enunciado": "I eat a bread.",
+   "respuesta": "I eat some bread."
   },
   {
    "tipo": "corregir_error",
@@ -119,8 +119,8 @@
   },
   {
    "tipo": "corregir_error",
-   "enunciado": "I drink a water.",
-   "respuesta": "I drink some water."
+   "enunciado": "I eat a rice.",
+   "respuesta": "I eat some rice."
   },
   {
    "tipo": "traducir",
@@ -132,10 +132,10 @@
   },
   {
    "tipo": "traducir",
-   "enunciado": "Quiero algo de pan.",
-   "respuesta": "I want some bread.",
+   "enunciado": "Como algo de pan.",
+   "respuesta": "I eat some bread.",
    "aceptadas": [
-    "i want some bread"
+    "i eat some bread"
    ]
   }
  ]

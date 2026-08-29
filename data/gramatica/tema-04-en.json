@@ -7,9 +7,9 @@
  "trampa": "'his' es de él y 'her' de ella, según quién posee, no el objeto: 'her brother' = el hermano de ella.",
  "ejemplos": [
   {
-   "frase": "My brother is a student.",
-   "traduccion": "Mi hermano es estudiante.",
-   "comoSeLee": "mai bróder is e stiúdent"
+   "frase": "My brother is my friend.",
+   "traduccion": "Mi hermano es mi amigo.",
+   "comoSeLee": "mai bróder is mai frend"
   },
   {
    "frase": "Her name is Ana.",
@@ -43,12 +43,12 @@
   },
   {
    "tipo": "hueco",
-   "enunciado": "He loves ___ mother. (de él)",
+   "enunciado": "He is with ___ mother. (de él)",
    "respuesta": "his"
   },
   {
    "tipo": "hueco",
-   "enunciado": "We love ___ family.",
+   "enunciado": "We are with ___ family.",
    "respuesta": "our"
   },
   {
@@ -73,7 +73,7 @@
   },
   {
    "tipo": "opcion_multiple",
-   "enunciado": "We are a family. ___ family is big.",
+   "enunciado": "We are a family. ___ family is in Peru.",
    "opciones": [
     "Our",
     "My",
@@ -83,14 +83,15 @@
   },
   {
    "tipo": "ordenar",
-   "enunciado": "Ordena: mi hermano es joven.",
+   "enunciado": "Ordena: mi hermano es mi amigo.",
    "opciones": [
     "my",
     "brother",
     "is",
-    "young"
+    "my",
+    "friend"
    ],
-   "respuesta": "my brother is young"
+   "respuesta": "my brother is my friend"
   },
   {
    "tipo": "ordenar",
@@ -121,20 +122,20 @@
   },
   {
    "tipo": "corregir_error",
-   "enunciado": "He loves her mother. (de él)",
-   "respuesta": "He loves his mother."
+   "enunciado": "He is with her mother. (de él)",
+   "respuesta": "He is with his mother."
   },
   {
    "tipo": "corregir_error",
-   "enunciado": "We love their family. (nosotros)",
-   "respuesta": "We love our family."
+   "enunciado": "We are with their family. (nosotros)",
+   "respuesta": "We are with our family."
   },
   {
    "tipo": "traducir",
-   "enunciado": "Mi hermano es estudiante.",
-   "respuesta": "My brother is a student.",
+   "enunciado": "Mi hermano es mi amigo.",
+   "respuesta": "My brother is my friend.",
    "aceptadas": [
-    "my brother is a student"
+    "my brother is my friend"
    ]
   },
   {
@@ -147,7 +148,7 @@
   },
   {
    "tipo": "hueco",
-   "enunciado": "___ book is this? — It is my sister’s.",
+   "enunciado": "___ cat is this? — It is my sister’s.",
    "respuesta": "Whose",
    "aceptadas": [
     "whose"

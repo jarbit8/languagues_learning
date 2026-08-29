@@ -6,7 +6,7 @@
    "consigna": "Escribe un email a un amigo invitándolo a un restaurante: dile qué se puede comer, cómo llegar y qué tiempo hace.",
    "minPalabras": 30,
    "maxPalabras": 40,
-   "respuestaModelo": "Hi! Do you want to have dinner at a new restaurant? They have salad, chicken and rice. It's near the park, turn left at the corner. The weather is nice and sunny today. Can you come at eight o'clock? See you there!",
+   "respuestaModelo": "Hi! Do you want to have dinner at a new restaurant? They have salad, chicken and rice. It's near the park, turn left at the corner. It is sunny today. Can you come at eight o'clock? See you there!",
    "checklist": [
     "Usé un saludo y una despedida",
     "Mencioné comida o bebida",
@@ -20,7 +20,7 @@
    "consigna": "Escribe a un amigo que visita tu ciudad: recomiéndale lugares (qué se puede hacer), cómo es el clima y cómo llegar a un lugar.",
    "minPalabras": 30,
    "maxPalabras": 40,
-   "respuestaModelo": "Hi! Welcome to my city. You can visit the museum and the park. Near the park there is a cheap restaurant with good food. Today it is sunny and warm. To go to the museum, take the bus and turn left at the bank. Have a nice day!",
+   "respuestaModelo": "Hi! Welcome to my city. You can visit the museum and the park. Near the park there is a cheap restaurant. Today it is sunny. To go to the museum, take the bus. Have a nice day!",
    "checklist": [
     "Usé un saludo y una despedida",
     "Recomendé lugares de la ciudad",

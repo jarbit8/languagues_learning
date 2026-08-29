@@ -7,7 +7,7 @@
 {"hablante":"A","texto":"I'm from Canada."},
 {"hablante":"B","texto":"Do you speak French?"},
 {"hablante":"A","texto":"Yes, I speak English and French."},
-{"hablante":"B","texto":"I speak Spanish and a little English."},
+{"hablante":"B","texto":"I speak Spanish and English."},
 {"hablante":"A","texto":"Which city do you live in?"},
 {"hablante":"B","texto":"I live in Arequipa."}
 ],
@@ -24,7 +24,7 @@
 {"hablante":"B","texto":"I'm from Spain. And you?"},
 {"hablante":"A","texto":"I'm from England."},
 {"hablante":"B","texto":"Do you speak Spanish?"},
-{"hablante":"A","texto":"No, I speak English and a little French."},
+{"hablante":"A","texto":"No, I speak English and French."},
 {"hablante":"B","texto":"I speak Spanish and English."},
 {"hablante":"A","texto":"Do you live in Canada?"},
 {"hablante":"B","texto":"Yes, I live in Quebec."}

@@ -4,7 +4,7 @@
  "textos": [
   {
    "titulo": "¿De dónde eres?",
-   "texto": "Ana is Peruvian. She comes from Peru, a country in America. Now she lives in Canada. Canada is a very big country and it is not in Europe. Ana speaks Spanish and English. She speaks French too, because in Canada French is a language too. Paul is Canadian. He was born in a small city. He speaks English and French. Ana is a foreigner in Canada, but she is happy here. Where are you from? I am from Peru, she says. And you? I am from here!",
+   "texto": "Ana is Peruvian. She comes from Peru, a country in America. She lives in Canada. Canada is a country and it is not in Europe. Ana speaks Spanish and English. She speaks French too, because in Canada French is a language too. Paul is Canadian. He was born in a city in Canada. He speaks English and French. Ana is a foreigner in Canada, but she speaks the language. Where are you from? I am from Peru, she says. And you? I am from here!",
    "preguntas": [
     {
      "tipo": "opcion_multiple",

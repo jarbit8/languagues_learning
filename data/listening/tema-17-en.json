@@ -9,14 +9,14 @@
 {"hablante":"A","texto":"Can I take the bus?"},
 {"hablante":"B","texto":"Yes, take the number ten bus."},
 {"hablante":"A","texto":"Thank you very much!"},
-{"hablante":"B","texto":"You're welcome, have a good trip!"}
+{"hablante":"B","texto":"You're welcome, have a nice day!"}
 ],
 "preguntas": [
 {"tipo":"opcion_multiple","enunciado":"¿Hacia dónde debe girar A?","opciones":["right","left","straight"],"respuesta":"left"},
 {"tipo":"vf","enunciado":"La estación está lejos.","respuesta":"falso"},
 {"tipo":"completar_dato","enunciado":"¿Qué número de bus puede tomar?","respuesta":"ten","aceptadas":["number ten","10"]},
 {"tipo":"opcion_multiple","enunciado":"¿En cuánto tiempo se llega a pie a la estación?","opciones":["five minutes","ten minutes","fifteen minutes"],"respuesta":"five minutes"},
-{"tipo":"completar_dato","enunciado":"¿Qué le dice B a A al despedirse?","respuesta":"have a good trip","aceptadas":["you're welcome, have a good trip"]}
+{"tipo":"completar_dato","enunciado":"¿Qué le dice B a A al despedirse?","respuesta":"have a nice day","aceptadas":["you're welcome, have a good trip"]}
 ] },
 { "titulo": "En la estación",
 "lineas": [

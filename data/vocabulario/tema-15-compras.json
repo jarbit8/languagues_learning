@@ -1,5 +1,5 @@
 { "tema": 15, "titulo": "Compras, dinero y precios", "conceptos": [
-{"id":"a1-t15-001","es":"tienda","en":{"texto":"shop","ejemplo":"The shop is open.","pron":"SHOP"},"fr":{"texto":"magasin","ejemplo":"Le magasin est ouvert.","pron":"ma-ga-SEN"}},
+{"id":"a1-t15-001","es":"tienda","en":{"texto":"shop","ejemplo":"The shop is near my house.","pron":"SHOP"},"fr":{"texto":"magasin","ejemplo":"Le magasin est ouvert.","pron":"ma-ga-SEN"}},
 {"id":"a1-t15-002","es":"mercado","en":{"texto":"market","ejemplo":"I buy fruit at the market.","pron":"MAR-ket"},"fr":{"texto":"marché","ejemplo":"J'achète des fruits au marché.","pron":"mar-SHE"}},
 {"id":"a1-t15-003","es":"precio","en":{"texto":"price","ejemplo":"The price is high.","pron":"PRAIS"},"fr":{"texto":"prix","ejemplo":"Le prix est élevé.","pron":"PRI"}},
 {"id":"a1-t15-004","es":"efectivo","en":{"texto":"cash","ejemplo":"I pay in cash.","pron":"KASH"},"fr":{"texto":"espèces","ejemplo":"Je paie en espèces.","pron":"es-PES"}},

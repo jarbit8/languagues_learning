@@ -4,18 +4,18 @@
 "lineas": [
 {"hablante":"A","texto":"Excuse me, what time is it?"},
 {"hablante":"B","texto":"It's half past seven."},
-{"hablante":"A","texto":"What time does the class start?"},
-{"hablante":"B","texto":"It starts at quarter past eight."},
-{"hablante":"A","texto":"And what time does it finish?"},
-{"hablante":"B","texto":"It finishes at ten o'clock."},
+{"hablante":"A","texto":"And what time do you work?"},
+{"hablante":"B","texto":"I work at quarter past eight."},
+{"hablante":"A","texto":"Every day?"},
+{"hablante":"B","texto":"Yes, and at ten o'clock it is night."},
 {"hablante":"A","texto":"Are you always on time?"},
 {"hablante":"B","texto":"Yes, I'm never late."}
 ],
 "preguntas": [
 {"tipo":"anota_la_hora","enunciado":"¿Qué hora es cuando A pregunta?","respuesta":"7:30","aceptadas":["seven thirty","half past seven"]},
-{"tipo":"anota_la_hora","enunciado":"¿A qué hora empieza la clase?","respuesta":"8:15","aceptadas":["quarter past eight"]},
+{"tipo":"anota_la_hora","enunciado":"¿A qué hora trabaja B?","respuesta":"8:15","aceptadas":["quarter past eight"]},
 {"tipo":"vf","enunciado":"B llega tarde a veces.","respuesta":"falso"},
-{"tipo":"anota_la_hora","enunciado":"¿A qué hora termina la clase?","respuesta":"10:00","aceptadas":["ten o'clock","ten"]},
+{"tipo":"anota_la_hora","enunciado":"¿A qué hora dice B que ya es de noche?","respuesta":"10:00","aceptadas":["ten o'clock","ten"]},
 {"tipo":"completar_dato","enunciado":"¿Qué le pregunta A a B al principio?","respuesta":"what time is it","aceptadas":["excuse me, what time is it?"]}
 ] },
 { "titulo": "A qué hora nos vemos",

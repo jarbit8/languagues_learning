@@ -35,7 +35,7 @@
   },
   {
    "tipo": "hueco",
-   "enunciado": "The book is ___ the table. (sobre)",
+   "enunciado": "The lamp is ___ the table. (sobre)",
    "respuesta": "on"
   },
   {
@@ -45,7 +45,7 @@
   },
   {
    "tipo": "opcion_multiple",
-   "enunciado": "___ there any milk?",
+   "enunciado": "___ there a garden?",
    "opciones": [
     "Is",
     "Are",
@@ -120,8 +120,8 @@
   },
   {
    "tipo": "corregir_error",
-   "enunciado": "The book is in the table.",
-   "respuesta": "The book is on the table."
+   "enunciado": "The lamp is in the table.",
+   "respuesta": "The lamp is on the table."
   },
   {
    "tipo": "traducir",

@@ -30,5 +30,5 @@
 {"id":"a1-t19-029","es":"deber (obligación)","en":{"texto":"must","ejemplo":"I must rest.","pron":"MAST"},"fr":{"texto":"devoir","ejemplo":"Je dois me reposer.","pron":"de-VUAR"}},
 {"id":"a1-t19-030","es":"sentirse bien","en":{"texto":"to feel well","ejemplo":"I feel well today.","pron":"tu fil UEL"},"fr":{"texto":"se sentir bien","ejemplo":"Je me sens bien aujourd'hui.","pron":"se san-TIR BYEN"}},
 {"id":"a1-t19-031","es":"alergia","en":{"texto":"allergy","ejemplo":"I have an allergy.","pron":"A-ler-yi"},"fr":{"texto":"allergie","ejemplo":"J'ai une allergie.","pron":"a-ler-YI"}},
-{"id":"a1-t19-032","es":"ambulancia","en":{"texto":"ambulance","ejemplo":"Call an ambulance!","pron":"AM-biu-lans"},"fr":{"texto":"ambulance","ejemplo":"Appelle une ambulance !","pron":"an-bu-LANS"}}
+{"id":"a1-t19-032","es":"ambulancia","en":{"texto":"ambulance","ejemplo":"The ambulance is at the hospital.","pron":"AM-biu-lans"},"fr":{"texto":"ambulance","ejemplo":"Appelle une ambulance !","pron":"an-bu-LANS"}}
 ] }

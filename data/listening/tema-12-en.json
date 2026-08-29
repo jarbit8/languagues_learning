@@ -6,8 +6,8 @@
 {"hablante":"B","texto":"Yes, I'm looking for a jacket."},
 {"hablante":"A","texto":"What size are you?"},
 {"hablante":"B","texto":"I'm a medium."},
-{"hablante":"A","texto":"Do you like this black jacket?"},
-{"hablante":"B","texto":"Yes, I like it. Can I try it on?"},
+{"hablante":"A","texto":"This black jacket is very nice."},
+{"hablante":"B","texto":"Yes! Can I try it on?"},
 {"hablante":"A","texto":"Of course. The fitting room is there."},
 {"hablante":"B","texto":"Thank you!"}
 ],

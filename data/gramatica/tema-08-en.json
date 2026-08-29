@@ -12,9 +12,9 @@
    "comoSeLee": "its jaf past séven"
   },
   {
-   "frase": "I always get up early.",
-   "traduccion": "Siempre me levanto temprano.",
-   "comoSeLee": "ai óluéis guet ap érli"
+   "frase": "I am always early.",
+   "traduccion": "Siempre llego temprano.",
+   "comoSeLee": "ai am óluéis érli"
   },
   {
    "frase": "She is never late.",
@@ -78,15 +78,14 @@
   },
   {
    "tipo": "ordenar",
-   "enunciado": "Ordena: siempre me levanto temprano.",
+   "enunciado": "Ordena: siempre llego temprano.",
    "opciones": [
     "I",
+    "am",
     "always",
-    "get",
-    "up",
     "early"
    ],
-   "respuesta": "I always get up early"
+   "respuesta": "I am always early"
   },
   {
    "tipo": "ordenar",
@@ -128,10 +127,10 @@
   },
   {
    "tipo": "traducir",
-   "enunciado": "Siempre me levanto temprano.",
-   "respuesta": "I always get up early.",
+   "enunciado": "Siempre llego temprano.",
+   "respuesta": "I am always early.",
    "aceptadas": [
-    "i always get up early"
+    "i am always early"
    ]
   },
   {
