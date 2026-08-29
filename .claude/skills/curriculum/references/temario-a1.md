@@ -253,6 +253,9 @@ actualizaron para reflejarlo (el Temario de la app muestra ese título).
 - **T22** — ⚠️ **negativo e interrogativo del pasado**: wasn't/weren't, Was he…?, didn't, Did you…? y respuestas cortas. **Era el hueco más grave del nivel: el pasado simple solo existía en afirmativo.** Título → *Pasado simple: was/were, -ed, didn't y Did…?*.
 - **T23** — el verbo irregular vuelve a su forma base en negativo/interrogativo (I didn't go, no "I didn't went").
 
-Total: 371 → **418 ejercicios**. Se revisó también que ningún punto añadido fuera de nivel A2:
+- **T12** — ⚠️ **el presente continuo estaba solo en afirmativo**, el mismo defecto que tenía el pasado. Se añadieron negativo (isn't/aren't + -ing), interrogativo (Are you…? What is she doing?), respuestas cortas, la **ortografía del -ing** (study → studying, live → living, run → running) y el **contraste presente simple vs continuo**, que es el error nº1 del hispanohablante ("I am working every day"). Título → *Presente continuo vs presente simple, y have got*. Se añadió también la tarjeta `to run`, que no existía en todo el curso.
+- **T24** — al futuro le faltaban el **negativo de going to** (I'm not going to work) y el **interrogativo de will** (Will you help me? Yes, I will). Se añadió además una nota sobre *Shall we…?* — que un commit anterior daba por añadido pero no estaba en ningún pack — marcándolo como más británico que americano.
+
+Total: 371 → **431 ejercicios**. Se revisó también que ningún punto añadido fuera de nivel A2:
 se descartaron a propósito *present perfect*, *question tags*, *could* y *must/should*, que las
 fuentes sitúan por encima del A1.

@@ -2,7 +2,7 @@ import { useLiveQuery } from 'dexie-react-hooks'
 import { mapaTemas } from '../lib/progreso'
 import { temasDeBloque, bloqueDeTema } from '../lib/curriculum'
 import { getVocabPack, getGramatica, getListening, getReading, getWriting, vocabPacks, pronPack } from '../data/packs'
-import { funcionDe, nombresBloque } from '../data/funciones'
+import { funcionDe, nombresBloque, gramaticaBloque } from '../data/funciones'
 
 // Cuántas consignas de escritura le tocan a un tema: los packs de writing son por bloque,
 // pero cada consigna lleva el tema al que corresponde.
@@ -56,9 +56,13 @@ export default function Temario() {
 
       {[1, 2, 3, 4].map((bloque) => (
         <div key={bloque} className="flex flex-col gap-2">
-          <h2 className="text-sm font-bold uppercase tracking-wide text-slate-400">
-            Bloque {bloque} — {nombresBloque[bloque]}
-          </h2>
+          <div className="flex flex-col gap-0.5">
+            <h2 className="text-sm font-bold uppercase tracking-wide text-slate-400">
+              Bloque {bloque} — {nombresBloque[bloque]}
+            </h2>
+            {/* El nombre del bloque dice de qué se habla; esto dice qué gramática se domina. */}
+            <p className="text-xs text-slate-500 dark:text-slate-400">📘 {gramaticaBloque[bloque]}</p>
+          </div>
           {temasDeBloque(bloque).map((tema) => {
             const pack = getVocabPack(tema)
             const estado = estadoDe(tema)

@@ -1,7 +1,7 @@
 {
  "tema": 24,
  "titulo": "Futuro: going to y will",
- "regla": "Hay dos formas de hablar del futuro. 'Going to' = planes ya decididos: 'I'm going to move to Canada'. 'Will' = decisiones del momento, promesas y predicciones: 'I think it will rain', 'I'll help you'. Estructura: will + verbo base, igual para todos los sujetos (no lleva -s). La forma corta es 'I'll, you'll, he'll...' y la negativa 'won't'. Repaso de interrogativos: what, who, where, when, why, how.",
+ "regla": "Hay dos formas de hablar del futuro. 'Going to' = planes ya decididos: 'I'm going to move to Canada'. 'Will' = decisiones del momento, promesas y predicciones: 'I think it will rain', 'I'll help you'. Estructura: will + verbo base, igual para todos los sujetos (no lleva -s). La forma corta es 'I'll, you'll, he'll...' y la negativa 'won't'. Repaso de interrogativos: what, who, where, when, why, how. Negativo de 'going to': am/is/are + not (I'm not going to work, she isn't going to travel). Interrogativo de 'will': se invierte (Will you help me? Yes, I will / No, I won't). Para PROPONER algo también existe 'Shall we…?' (Shall we go?), más británico que americano.",
  "pronunciacion": "'Going to' se reduce muchísimo al hablar informal: suena 'gonna'. 'Will' casi desaparece en la contracción: 'I'll' suena 'ail', y 'won't' suena 'uont' (ojo, no es 'want').",
  "trampa": "'Going to' lleva el verbo 'to be': 'I'm going to study', no 'I going to study'.",
  "ejemplos": [
@@ -29,6 +29,16 @@
    "frase": "It won't rain tomorrow.",
    "traduccion": "No lloverá mañana.",
    "comoSeLee": "it uont rein tumórou"
+  },
+  {
+   "frase": "I'm not going to work tomorrow.",
+   "traduccion": "Mañana no voy a trabajar.",
+   "comoSeLee": "aim not góing tu uérk tumórou"
+  },
+  {
+   "frase": "Will you help me? Yes, I will.",
+   "traduccion": "¿Me ayudarás? Sí.",
+   "comoSeLee": "uil iu jelp mi? ies, ai uil"
   }
  ],
  "ejercicios": [
@@ -197,6 +207,40 @@
    "respuesta": "I won't work tomorrow.",
    "aceptadas": [
     "I will not work tomorrow."
+   ]
+  },
+  {
+   "tipo": "hueco",
+   "enunciado": "Mañana no voy a trabajar: I'm ___ going to work tomorrow.",
+   "respuesta": "not"
+  },
+  {
+   "tipo": "opcion_multiple",
+   "enunciado": "___ you help me?",
+   "opciones": [
+    "Will",
+    "Do",
+    "Are"
+   ],
+   "respuesta": "Will"
+  },
+  {
+   "tipo": "hueco",
+   "enunciado": "Will you help me? Yes, I ___.",
+   "respuesta": "will"
+  },
+  {
+   "tipo": "corregir_error",
+   "enunciado": "She not going to study.",
+   "respuesta": "She isn't going to study."
+  },
+  {
+   "tipo": "traducir",
+   "enunciado": "No voy a viajar.",
+   "respuesta": "I'm not going to travel.",
+   "aceptadas": [
+    "i'm not going to travel",
+    "i am not going to travel"
    ]
   }
  ]

@@ -33,6 +33,16 @@ export const nombresBloque: Record<number, string> = {
   4: 'Pasado, planes y gustos'
 }
 
+// El hilo gramatical de cada bloque: es lo que justifica el ORDEN del curso (ser → hacer
+// ahora → pedir → contar el pasado y el futuro) y no se veía por ningún lado, porque el
+// nombre del bloque solo dice el tema del que se habla.
+export const gramaticaBloque: Record<number, string> = {
+  1: 'El verbo to be: describirte y describir a otros',
+  2: 'El presente: lo que haces siempre y lo que pasa ahora',
+  3: 'Pedir y cuantificar: some/any, would like, how much y can',
+  4: 'Salir del presente: el pasado y el futuro'
+}
+
 export function funcionDe(tema: number): string {
   return funciones[tema] ?? ''
 }

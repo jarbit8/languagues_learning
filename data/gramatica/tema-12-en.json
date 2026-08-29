@@ -1,1 +1,231 @@
-{"tema":12,"titulo":"Presente continuo y have got","regla":"El presente continuo (algo que pasa ahora): am/is/are + verbo-ing: 'I'm wearing jeans', 'She is reading'. 'Have got' expresa posesión: 'I've got a jacket' = 'I have a jacket'.","pronunciacion":"La terminación -ing siempre suena 'ing', nunca 'in': wearing, no 'wearin'.","trampa":"El continuo necesita el verbo 'to be' + -ing: 'she is wearing', no 'she wearing'.","ejemplos":[{"frase":"I'm wearing a jacket.","traduccion":"Llevo puesta una chaqueta.","comoSeLee":"aim uéring e yáket"},{"frase":"She is reading.","traduccion":"Ella está leyendo.","comoSeLee":"shi is ríding"},{"frase":"I've got a new phone.","traduccion":"Tengo un teléfono nuevo.","comoSeLee":"aiv gat e niú fon"}],"ejercicios":[{"tipo":"hueco","enunciado":"I ___ wearing jeans. (to be)","respuesta":"am","aceptadas":["'m"]},{"tipo":"hueco","enunciado":"She is ___ a book. (read)","respuesta":"reading"},{"tipo":"hueco","enunciado":"I've ___ a jacket. (posesión)","respuesta":"got"},{"tipo":"hueco","enunciado":"They ___ wearing jeans. (to be)","respuesta":"are","aceptadas":["'re"]},{"tipo":"opcion_multiple","enunciado":"Gerundio de 'wear':","opciones":["wearing","weared","wears"],"respuesta":"wearing"},{"tipo":"opcion_multiple","enunciado":"She ___ a dress.","opciones":["is wearing","wearing","wears wearing"],"respuesta":"is wearing"},{"tipo":"opcion_multiple","enunciado":"'Tengo una mochila' =","opciones":["I've got a bag","I got a bag","I has got a bag"],"respuesta":"I've got a bag"},{"tipo":"ordenar","enunciado":"Ordena: llevo puesta una chaqueta.","opciones":["I","am","wearing","a","jacket"],"respuesta":"I am wearing a jacket"},{"tipo":"ordenar","enunciado":"Ordena: ella está leyendo un libro.","opciones":["she","is","reading","a","book"],"respuesta":"she is reading a book"},{"tipo":"ordenar","enunciado":"Ordena: tengo un teléfono nuevo.","opciones":["I","have","got","a","new","phone"],"respuesta":"I have got a new phone"},{"tipo":"corregir_error","enunciado":"She wearing a dress.","respuesta":"She is wearing a dress."},{"tipo":"corregir_error","enunciado":"I am wear a hat.","respuesta":"I am wearing a hat."},{"tipo":"corregir_error","enunciado":"They is wearing jeans.","respuesta":"They are wearing jeans."},{"tipo":"traducir","enunciado":"Ella está leyendo.","respuesta":"She is reading.","aceptadas":["she is reading"]},{"tipo":"traducir","enunciado":"Tengo un teléfono nuevo.","respuesta":"I've got a new phone.","aceptadas":["i have got a new phone","i have a new phone"]}]}
+{
+ "tema": 12,
+ "titulo": "Presente continuo vs presente simple, y have got",
+ "regla": "El presente continuo (algo que pasa ahora): am/is/are + verbo-ing: 'I'm wearing jeans', 'She is reading'. 'Have got' expresa posesión: 'I've got a jacket' = 'I have a jacket'. Negativo: am/is/are + not + -ing (I'm not wearing a hat, she isn't reading). Interrogativo: se invierte el orden (Are you wearing jeans? What is she doing?), y la respuesta corta repite el verbo: Yes, I am / No, I'm not. Ortografía del -ing: la mayoría solo lo añade (study → studying), los acabados en -e la pierden (live → living) y los de una sílaba doblan la consonante final (run → running). Presente simple o continuo: el simple es lo que haces SIEMPRE (I work every day) y el continuo lo que pasa AHORA (today I am working).",
+ "pronunciacion": "La terminación -ing siempre suena 'ing', nunca 'in': wearing, no 'wearin'.",
+ "trampa": "El continuo necesita el verbo 'to be' + -ing: 'she is wearing', no 'she wearing'. Y no uses el continuo para rutinas: 'I work every day', no 'I am working every day'.",
+ "ejemplos": [
+  {
+   "frase": "I'm wearing a jacket.",
+   "traduccion": "Llevo puesta una chaqueta.",
+   "comoSeLee": "aim uéring e yáket"
+  },
+  {
+   "frase": "She is reading.",
+   "traduccion": "Ella está leyendo.",
+   "comoSeLee": "shi is ríding"
+  },
+  {
+   "frase": "I've got a new phone.",
+   "traduccion": "Tengo un teléfono nuevo.",
+   "comoSeLee": "aiv gat e niú fon"
+  },
+  {
+   "frase": "She isn't reading.",
+   "traduccion": "Ella no está leyendo.",
+   "comoSeLee": "shi ísent rí-ding"
+  },
+  {
+   "frase": "Are you wearing jeans? Yes, I am.",
+   "traduccion": "¿Llevas jeans? Sí.",
+   "comoSeLee": "ar iu ué-ring yins? ies, ai am"
+  },
+  {
+   "frase": "I work every day, but today I am working at home.",
+   "traduccion": "Trabajo todos los días, pero hoy trabajo en casa.",
+   "comoSeLee": "ai uérk évri dei, bat tudéi ai am uér-king at joum"
+  }
+ ],
+ "ejercicios": [
+  {
+   "tipo": "hueco",
+   "enunciado": "I ___ wearing jeans. (to be)",
+   "respuesta": "am",
+   "aceptadas": [
+    "'m"
+   ]
+  },
+  {
+   "tipo": "hueco",
+   "enunciado": "She is ___ a book. (read)",
+   "respuesta": "reading"
+  },
+  {
+   "tipo": "hueco",
+   "enunciado": "I've ___ a jacket. (posesión)",
+   "respuesta": "got"
+  },
+  {
+   "tipo": "hueco",
+   "enunciado": "They ___ wearing jeans. (to be)",
+   "respuesta": "are",
+   "aceptadas": [
+    "'re"
+   ]
+  },
+  {
+   "tipo": "opcion_multiple",
+   "enunciado": "Gerundio de 'wear':",
+   "opciones": [
+    "wearing",
+    "weared",
+    "wears"
+   ],
+   "respuesta": "wearing"
+  },
+  {
+   "tipo": "opcion_multiple",
+   "enunciado": "She ___ a dress.",
+   "opciones": [
+    "is wearing",
+    "wearing",
+    "wears wearing"
+   ],
+   "respuesta": "is wearing"
+  },
+  {
+   "tipo": "opcion_multiple",
+   "enunciado": "'Tengo una mochila' =",
+   "opciones": [
+    "I've got a bag",
+    "I got a bag",
+    "I has got a bag"
+   ],
+   "respuesta": "I've got a bag"
+  },
+  {
+   "tipo": "ordenar",
+   "enunciado": "Ordena: llevo puesta una chaqueta.",
+   "opciones": [
+    "I",
+    "am",
+    "wearing",
+    "a",
+    "jacket"
+   ],
+   "respuesta": "I am wearing a jacket"
+  },
+  {
+   "tipo": "ordenar",
+   "enunciado": "Ordena: ella está leyendo un libro.",
+   "opciones": [
+    "she",
+    "is",
+    "reading",
+    "a",
+    "book"
+   ],
+   "respuesta": "she is reading a book"
+  },
+  {
+   "tipo": "ordenar",
+   "enunciado": "Ordena: tengo un teléfono nuevo.",
+   "opciones": [
+    "I",
+    "have",
+    "got",
+    "a",
+    "new",
+    "phone"
+   ],
+   "respuesta": "I have got a new phone"
+  },
+  {
+   "tipo": "corregir_error",
+   "enunciado": "She wearing a dress.",
+   "respuesta": "She is wearing a dress."
+  },
+  {
+   "tipo": "corregir_error",
+   "enunciado": "I am wear a hat.",
+   "respuesta": "I am wearing a hat."
+  },
+  {
+   "tipo": "corregir_error",
+   "enunciado": "They is wearing jeans.",
+   "respuesta": "They are wearing jeans."
+  },
+  {
+   "tipo": "traducir",
+   "enunciado": "Ella está leyendo.",
+   "respuesta": "She is reading.",
+   "aceptadas": [
+    "she is reading"
+   ]
+  },
+  {
+   "tipo": "traducir",
+   "enunciado": "Tengo un teléfono nuevo.",
+   "respuesta": "I've got a new phone.",
+   "aceptadas": [
+    "i have got a new phone",
+    "i have a new phone"
+   ]
+  },
+  {
+   "tipo": "hueco",
+   "enunciado": "Ella no está leyendo: She ___ reading.",
+   "respuesta": "isn't"
+  },
+  {
+   "tipo": "opcion_multiple",
+   "enunciado": "___ you wearing a jacket?",
+   "opciones": [
+    "Are",
+    "Do",
+    "Is"
+   ],
+   "respuesta": "Are"
+  },
+  {
+   "tipo": "hueco",
+   "enunciado": "Are you reading? Yes, I ___.",
+   "respuesta": "am"
+  },
+  {
+   "tipo": "opcion_multiple",
+   "enunciado": "Gerundio de 'live':",
+   "opciones": [
+    "living",
+    "liveing",
+    "livving"
+   ],
+   "respuesta": "living"
+  },
+  {
+   "tipo": "opcion_multiple",
+   "enunciado": "Gerundio de 'run':",
+   "opciones": [
+    "running",
+    "runing",
+    "runming"
+   ],
+   "respuesta": "running"
+  },
+  {
+   "tipo": "corregir_error",
+   "enunciado": "I am working every day.",
+   "respuesta": "I work every day."
+  },
+  {
+   "tipo": "ordenar",
+   "enunciado": "Ordena: ¿qué está haciendo ella?",
+   "opciones": [
+    "What",
+    "is",
+    "she",
+    "doing"
+   ],
+   "respuesta": "What is she doing"
+  },
+  {
+   "tipo": "traducir",
+   "enunciado": "Ella no está leyendo.",
+   "respuesta": "She isn't reading.",
+   "aceptadas": [
+    "she isn't reading",
+    "she is not reading"
+   ]
+  }
+ ]
+}
