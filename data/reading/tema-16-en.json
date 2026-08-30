@@ -7,7 +7,7 @@
    "preguntas": [
     {
      "tipo": "opcion_multiple",
-     "enunciado": "¿Cuándo se puede visitar el museo?",
+     "enunciado": "When can you visit the museum?",
      "opciones": [
       "on Sunday",
       "on Monday",
@@ -17,17 +17,17 @@
     },
     {
      "tipo": "vf",
-     "enunciado": "La farmacia está muy cerca.",
+     "enunciado": "The pharmacy is very near.",
      "respuesta": "verdadero"
     },
     {
      "tipo": "vfnd",
-     "enunciado": "El museo es gratis.",
+     "enunciado": "The library is next to the museum.",
      "respuesta": "no dice"
     },
     {
      "tipo": "opcion_multiple",
-     "enunciado": "¿Dónde estudia Ana cuando su apartamento no está tranquilo?",
+     "enunciado": "Where does Ana study when she is not in her apartment?",
      "opciones": [
       "the library",
       "the café",
@@ -37,7 +37,7 @@
     },
     {
      "tipo": "vf",
-     "enunciado": "El aeropuerto está cerca del centro.",
+     "enunciado": "The airport is near the city centre.",
      "respuesta": "falso"
     }
    ]

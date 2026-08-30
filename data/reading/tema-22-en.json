@@ -7,7 +7,7 @@
    "preguntas": [
     {
      "tipo": "opcion_multiple",
-     "enunciado": "¿Qué problema tenía el teléfono?",
+     "enunciado": "What was the problem with the phone?",
      "opciones": [
       "the battery was low",
       "it was old",
@@ -17,17 +17,17 @@
     },
     {
      "tipo": "vf",
-     "enunciado": "Ana apagó y encendió el teléfono.",
+     "enunciado": "Ana turned off the phone and turned it on again.",
      "respuesta": "verdadero"
     },
     {
      "tipo": "vfnd",
-     "enunciado": "El teléfono de Ana es caro.",
+     "enunciado": "Ana's phone is expensive.",
      "respuesta": "no dice"
     },
     {
      "tipo": "opcion_multiple",
-     "enunciado": "¿A quién le mandó un correo?",
+     "enunciado": "Who did she send an email to?",
      "opciones": [
       "her brother",
       "her mother",
@@ -37,7 +37,7 @@
     },
     {
      "tipo": "vf",
-     "enunciado": "El año pasado Ana perdió todo.",
+     "enunciado": "Last year Ana lost everything.",
      "respuesta": "verdadero"
     }
    ]

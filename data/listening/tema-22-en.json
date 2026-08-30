@@ -12,7 +12,7 @@
 {"hablante":"B","texto":"Now turn it on. Does it work?"}
 ],
 "preguntas": [
-{"tipo":"opcion_multiple","enunciado":"¿Qué pasó ayer?","opciones":["A perdió el teléfono","A descargó una app","A compró un teléfono"],"respuesta":"A descargó una app"},
+{"tipo":"opcion_multiple","enunciado":"¿Qué pasó ayer?","opciones":["A lost the phone","A downloaded an app","A bought a phone"],"respuesta":"A downloaded an app"},
 {"tipo":"vf","enunciado":"A no cargó la batería.","respuesta":"falso"},
 {"tipo":"completar_dato","enunciado":"¿Qué le dice B que haga con el teléfono?","respuesta":"turn it off and on","aceptadas":["turn it off","turn it on"]},
 {"tipo":"completar_dato","enunciado":"¿Qué descargó A?","respuesta":"an app","aceptadas":["app"]},

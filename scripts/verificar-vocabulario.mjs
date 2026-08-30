@@ -47,6 +47,26 @@ january february march april may june july august september october november dec
 english spanish peruvian canadian german
 `.trim().split(/\s+/))
 
+// Desde este tema los enunciados de reading se escriben en INGLÉS (decisión del 2026-08-30):
+// enunciado y pasaje en el mismo idioma, como en IELTS/TOEFL, porque emparejar las palabras de
+// la pregunta con las del texto ES la habilidad que mide una pregunta de lectura; con el
+// enunciado en español ese paso se regala. Es 9 y no 7 porque una pregunta wh- en presente
+// simple necesita `does` ("What days does Ana work?") y el auxiliar se enseña en el tema 9:
+// antes de ahí habría que contorsionar los enunciados o pre-enseñar `does` y pisar esa lección.
+// Los temas 1-8 se quedan en español como rampa. Listening sigue en español en TODO A1 a
+// propósito: ahí el material es audio y un enunciado en inglés le añade una tarea de lectura
+// a una medición de escucha, justo en los exámenes que deciden el desbloqueo del tema.
+const PRIMER_TEMA_ENUNCIADO_EN = 9
+
+// VOCABULARIO DE RÚBRICA: las palabras con las que está escrito un enunciado de examen. Se
+// enseñan aparte, en data/rubrica/en.json, en vez de gastar tarjetas de un tema. Sin esta lista
+// el verificador marcaría "true" o "choose" como vocabulario adelantado. Solo vale para
+// enunciados: en un diálogo o en un texto esas mismas palabras sí serían violación.
+const RUBRICA = new Set(`
+true false given choose complete write text according says say correct word answer question
+title example each following best
+`.trim().split(/\s+/))
+
 // El reductor morfológico de abajo no adivina formas irregulares: sin esta tabla marcaría
 // "took", "feet" o "children" como desconocidas (falsos positivos).
 const IRREGULARES = {
@@ -139,9 +159,39 @@ const exento = (token) => bases(token).some((b) => FUNCION.has(b) || PROPIOS.has
 // Los enunciados llevan pistas en español entre paréntesis ("It's half ___ seven. (y media)").
 const sinParentesis = (t) => t.replace(/\([^)]*\)/g, ' ')
 
+// Se comprueba por tres vías, porque cada una sola falla en un sentido: buscar español se le
+// escapaba "No dejan propina." (sin tildes ni ¿¡), y exigir una funcional inglesa marcaba
+// "Laura likes football." (no tiene ninguna). La tercera vía —¿alguna palabra está en el
+// léxico inglés del curso?— es la que resuelve ese caso. Ojo: la "a" y el "no" sueltos NO
+// pueden ser marca de inglés, son también palabras españolas.
+const MARCA_EN =
+  /\b(the|an|is|are|was|were|does|do|did|has|have|what|who|where|when|why|which|how|and|of|to|in|on|at|for|with|from|she|he|they|it|you|not|given|true|false|there|this|that|these|those|his|her|its|their|every|some|any|one|two|three|first|then|also)\b/i
+
+// Palabras que solo existen en español; ninguna es a la vez una palabra inglesa.
+const SOLO_ES = new Set(`
+de del que es esta este estan son tiene tienen hay para por con una uno unos unas
+su sus al lo le se cuando donde como cuanto cuantos cuantas quien cual cuales
+verdadero falso dice dicen dejan ella ellos ellas nunca siempre segun mucho mucha
+en ya mas muy pero sin sobre entre desde hasta cada todo toda todos todas otro otra
+ese esa esos esas aquel primer proximo pasado 
+`.trim().split(/\s+/))
+
+const pareceEspanol = (t) => {
+  const palabras = t.toLowerCase().split(/[^a-záéíóúñü]+/).filter(Boolean)
+  if (/[¿¡ñáéíóú]/i.test(t)) return true
+  if (palabras.some((w) => SOLO_ES.has(w))) return true
+  if (MARCA_EN.test(t)) return false
+  // Sin funcionales inglesas: vale con que alguna palabra esté en el léxico del curso.
+  return !palabras.some((w) => temaDe(w) !== undefined)
+}
+
+// Enunciados que deberían estar en inglés y siguen en español (ver PRIMER_TEMA_ENUNCIADO_EN).
+const sinConvertir = []
+
 // --- Todo el contenido en inglés, con el tema al que pertenece ---
 const objetivos = []
-const push = (archivo, tema, donde, texto) => texto && objetivos.push({ archivo, tema, donde, texto })
+const push = (archivo, tema, donde, texto, rubrica = false) =>
+  texto && objetivos.push({ archivo, tema, donde, texto, rubrica })
 
 for (const { archivo, pack } of packs('vocabulario')) {
   pack.conceptos.forEach((c, i) =>
@@ -173,9 +223,21 @@ for (const { archivo, pack } of packs('listening', (f) => f.endsWith('-en.json')
 for (const { archivo, pack } of packs('reading', (f) => f.endsWith('-en.json'))) {
   pack.textos.forEach((t, i) => {
     push(archivo, pack.tema, `texto ${i + 1}`, t.texto)
-    t.preguntas.forEach((p, j) =>
-      (p.opciones ?? []).forEach((o, k) =>
-        push(archivo, pack.tema, `texto ${i + 1} pregunta ${j + 1} opción ${k + 1}`, o)))
+    t.preguntas.forEach((p, j) => {
+      ;(p.opciones ?? []).forEach((o, k) =>
+        push(archivo, pack.tema, `texto ${i + 1} pregunta ${j + 1} opción ${k + 1}`, o))
+      // El enunciado solo se revisa donde ya va en inglés; en los temas 1-6 es español y
+      // meterlo aquí llenaría el informe de falsos positivos ("hospital", "taxi", "chocolate"
+      // se escriben igual en los dos idiomas y saldrían como vocabulario adelantado).
+      if (pack.tema >= PRIMER_TEMA_ENUNCIADO_EN) {
+        push(archivo, pack.tema, `texto ${i + 1} pregunta ${j + 1} enunciado`, p.enunciado, true)
+        // Red contra el olvido: si queda un enunciado en español por encima del corte, avisa.
+        // Convertir 90 enunciados a mano y dejarse tres es el error más fácil de cometer aquí.
+        if (pareceEspanol(p.enunciado ?? '')) {
+          sinConvertir.push(`${archivo} · texto ${i + 1} pregunta ${j + 1}: ${p.enunciado}`)
+        }
+      }
+    })
   })
 }
 // El writing es por bloque: su tope de vocabulario es el último tema del bloque.
@@ -192,6 +254,7 @@ const desconocidas = new Map()
 for (const o of objetivos) {
   for (const token of tokenizar(o.texto)) {
     if (exento(token)) continue
+    if (o.rubrica && bases(token).some((b) => RUBRICA.has(b))) continue
     const t = temaDe(token)
     if (t === undefined) {
       if (!desconocidas.has(token)) desconocidas.set(token, [])
@@ -221,6 +284,14 @@ if (porArchivo.size === 0) {
   }
 }
 
+if (sinConvertir.length) {
+  console.log(`
+${sinConvertir.length} enunciados de reading siguen en español por encima del tema ${PRIMER_TEMA_ENUNCIADO_EN}:
+`)
+  for (const e of sinConvertir) console.log(`  ${e}`)
+  console.log()
+}
+
 if (verDesconocidas) {
   const orden = [...desconocidas].sort((a, b) => b[1].length - a[1].length)
   console.log(`\n-- ${orden.length} palabras fuera del léxico (revisar a mano: aquí caen los`)
@@ -228,4 +299,4 @@ if (verDesconocidas) {
   for (const [w, donde] of orden) console.log(`  ${w} (${donde.length}x)  ej. ${donde[0]}`)
 }
 
-process.exit(violaciones.length > 0 ? 1 : 0)
+process.exit(violaciones.length > 0 || sinConvertir.length > 0 ? 1 : 0)

@@ -7,7 +7,7 @@
    "preguntas": [
     {
      "tipo": "opcion_multiple",
-     "enunciado": "¿Qué desayuna Ana?",
+     "enunciado": "What does Ana have for breakfast?",
      "opciones": [
       "bread with butter and an apple",
       "rice with chicken",
@@ -17,17 +17,17 @@
     },
     {
      "tipo": "vf",
-     "enunciado": "Ana come carne todos los días.",
+     "enunciado": "Ana eats meat every day.",
      "respuesta": "falso"
     },
     {
      "tipo": "vfnd",
-     "enunciado": "Ana aprendió a cocinar con su madre.",
+     "enunciado": "Laura cooks every day.",
      "respuesta": "no dice"
     },
     {
      "tipo": "opcion_multiple",
-     "enunciado": "¿Qué come Laura?",
+     "enunciado": "What does Laura eat?",
      "opciones": [
       "pasta and yogurt",
       "fish and salad",
@@ -37,7 +37,7 @@
     },
     {
      "tipo": "vf",
-     "enunciado": "Ana pone mucha sal en su comida.",
+     "enunciado": "Ana puts salt in her food.",
      "respuesta": "falso"
     }
    ]

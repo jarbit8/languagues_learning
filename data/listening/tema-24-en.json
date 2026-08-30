@@ -3,25 +3,25 @@
 { "titulo": "Hablando del futuro",
 "lineas": [
 {"hablante":"A","texto":"What are your plans for the future?"},
-{"hablante":"B","texto":"I'm going to move to Canada."},
+{"hablante":"B","texto":"I'm going to move to the United States."},
 {"hablante":"A","texto":"That's a big plan! Why?"},
 {"hablante":"B","texto":"Because I want a better future, and I like the language."},
-{"hablante":"A","texto":"Are you going to study English and French?"},
-{"hablante":"B","texto":"Yes, I'm going to study both."},
+{"hablante":"A","texto":"Are you going to study more English?"},
+{"hablante":"B","texto":"Yes, I'm going to study every day."},
 {"hablante":"A","texto":"When are you going to start?"},
 {"hablante":"B","texto":"I'm going to start soon!"}
 ],
 "preguntas": [
-{"tipo":"opcion_multiple","enunciado":"¿Cuál es el plan de B?","opciones":["move to France","move to Canada","stay in Peru"],"respuesta":"move to Canada"},
-{"tipo":"vf","enunciado":"B va a estudiar los dos idiomas.","respuesta":"verdadero"},
+{"tipo":"opcion_multiple","enunciado":"¿Cuál es el plan de B?","opciones":["move to the United States","move to Canada","stay in Peru"],"respuesta":"move to the United States"},
+{"tipo":"vf","enunciado":"B va a estudiar inglés todos los días.","respuesta":"verdadero"},
 {"tipo":"completar_dato","enunciado":"¿Por qué quiere mudarse?","respuesta":"a better future","aceptadas":["better future"]},
 {"tipo":"completar_dato","enunciado":"¿Cuándo va a empezar B?","respuesta":"soon","aceptadas":[]},
 {"tipo":"vf","enunciado":"A B no le gusta el idioma.","respuesta":"falso"}
 ] },
-{ "titulo": "Sobre la ciudadanía canadiense",
+{ "titulo": "Sobre la ciudadanía",
 "lineas": [
 {"hablante":"A","texto":"What's your goal for next year?"},
-{"hablante":"B","texto":"My goal is Canadian citizenship."},
+{"hablante":"B","texto":"My goal is citizenship in the United States."},
 {"hablante":"A","texto":"That's a big goal! What's your plan?"},
 {"hablante":"B","texto":"First, I'm going to get a good job. Then, I'm going to study for the exam."},
 {"hablante":"A","texto":"Do you think it's going to be difficult?"},
@@ -30,7 +30,7 @@
 {"hablante":"B","texto":"Thank you! Can we speak about it on Monday at four o'clock?"}
 ],
 "preguntas": [
-{"tipo":"opcion_multiple","enunciado":"¿Cuál es la meta de B?","opciones":["Canadian citizenship","a new job","a trip to France"],"respuesta":"Canadian citizenship"},
+{"tipo":"opcion_multiple","enunciado":"¿Cuál es la meta de B?","opciones":["citizenship in the United States","a new job","a trip to Peru"],"respuesta":"citizenship in the United States"},
 {"tipo":"completar_dato","enunciado":"¿Qué va a hacer primero B?","respuesta":"get a good job","aceptadas":["a good job","good job"]},
 {"tipo":"vf","enunciado":"B está seguro de que va a aprobar.","respuesta":"verdadero"},
 {"tipo":"anota_la_hora","enunciado":"¿A qué hora quedan para hablar el lunes?","respuesta":"4:00","aceptadas":["four o'clock","four"]},

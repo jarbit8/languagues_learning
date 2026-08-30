@@ -7,7 +7,7 @@
    "preguntas": [
     {
      "tipo": "opcion_multiple",
-     "enunciado": "¿De qué color es la mochila de Ana?",
+     "enunciado": "What colour is Ana's bag?",
      "opciones": [
       "green",
       "red",
@@ -17,17 +17,17 @@
     },
     {
      "tipo": "vf",
-     "enunciado": "El teléfono de Ana es blanco.",
+     "enunciado": "Ana's phone is white.",
      "respuesta": "verdadero"
     },
     {
      "tipo": "vfnd",
-     "enunciado": "La computadora es nueva.",
+     "enunciado": "Laura has a green bag.",
      "respuesta": "no dice"
     },
     {
      "tipo": "opcion_multiple",
-     "enunciado": "¿Dónde está su reloj?",
+     "enunciado": "Where is her watch?",
      "opciones": [
       "on the table",
       "in the bag",
@@ -37,7 +37,7 @@
     },
     {
      "tipo": "completar_dato",
-     "enunciado": "¿De qué color es el cuaderno viejo?",
+     "enunciado": "What colour is the old notebook?",
      "respuesta": "brown"
     }
    ]

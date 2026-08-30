@@ -303,6 +303,12 @@ export default function Examen() {
 
       {/* --- Módulo de vocabulario: los tres ciclos de repaso --- */}
       <h2 className="text-sm font-bold uppercase tracking-wide text-slate-400">Vocabulario</h2>
+      {/* La escalada por caja del SRS no se ve hasta el 2º repaso, así que conviene avisar:
+          si no, la primera pregunta de audio parece un fallo. */}
+      <p className="-mt-2 text-xs text-slate-500 dark:text-slate-400">
+        La dificultad sube con los repasos: primero te preguntan qué significa, luego cómo se dice y al final
+        solo la oyes.
+      </p>
       {info.ciclos.map((c) => {
         const cuantas = c.cuantas
         return (

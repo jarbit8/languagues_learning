@@ -7,7 +7,7 @@
    "preguntas": [
     {
      "tipo": "opcion_multiple",
-     "enunciado": "¿Cuántos días se quedó en el hotel?",
+     "enunciado": "How many days did she stay in the hotel?",
      "opciones": [
       "six",
       "three",
@@ -17,17 +17,17 @@
     },
     {
      "tipo": "vf",
-     "enunciado": "Fue su primer viaje a Estados Unidos.",
+     "enunciado": "It was her first trip to the United States.",
      "respuesta": "verdadero"
     },
     {
      "tipo": "vfnd",
-     "enunciado": "Viajó con una amiga.",
+     "enunciado": "She travelled with a friend.",
      "respuesta": "no dice"
     },
     {
      "tipo": "opcion_multiple",
-     "enunciado": "¿Qué compró para su madre?",
+     "enunciado": "What did she buy for her mother?",
      "opciones": [
       "a souvenir",
       "a suitcase",
@@ -37,7 +37,7 @@
     },
     {
      "tipo": "vf",
-     "enunciado": "El vuelo duró seis horas.",
+     "enunciado": "The flight was six hours.",
      "respuesta": "falso"
     }
    ]

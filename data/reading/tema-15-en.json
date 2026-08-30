@@ -7,7 +7,7 @@
    "preguntas": [
     {
      "tipo": "opcion_multiple",
-     "enunciado": "¿Con qué paga Ana en el supermercado?",
+     "enunciado": "How does Ana pay at the supermarket?",
      "opciones": [
       "her card",
       "cash",
@@ -17,17 +17,17 @@
     },
     {
      "tipo": "vf",
-     "enunciado": "Hay descuento en el queso.",
+     "enunciado": "There is a discount on the cheese.",
      "respuesta": "verdadero"
     },
     {
      "tipo": "vfnd",
-     "enunciado": "El mercado abre a las ocho.",
+     "enunciado": "The seller is Ana's friend.",
      "respuesta": "no dice"
     },
     {
      "tipo": "completar_dato",
-     "enunciado": "¿Cuánto dinero gasta? (solo el número)",
+     "enunciado": "How much money does she spend? Write only the number.",
      "respuesta": "15",
      "aceptadas": [
       "fifteen"
@@ -35,7 +35,7 @@
     },
     {
      "tipo": "vf",
-     "enunciado": "El mercado está lejos de su apartamento.",
+     "enunciado": "The market is not near her apartment.",
      "respuesta": "falso"
     }
    ]

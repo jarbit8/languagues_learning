@@ -4,6 +4,7 @@ import { temaEnCurso } from '../lib/progreso'
 import { getReading, getVocabPack } from '../data/packs'
 import { preguntaDeListening } from '../lib/preguntas'
 import ExamRunner from '../components/ExamRunner'
+import PalabrasDeExamen from '../components/PalabrasDeExamen'
 
 export default function Reading() {
   const temaActual = useLiveQuery(() => temaEnCurso(), [], 1) ?? 1
@@ -82,8 +83,12 @@ export default function Reading() {
 
       <p className="text-sm text-slate-500 dark:text-slate-400">
         Lee el texto y responde las preguntas de comprensión (formato IELTS/TOEFL). Solo usa vocabulario de temas que ya
-        viste.
+        viste. Desde el tema 9 las preguntas van en inglés, como en el examen real.
       </p>
+
+      {/* La chuleta se ofrece desde el tema 9, que es donde los enunciados dejan de estar en
+          español; antes solo sería ruido. */}
+      {temaSel >= 9 && <PalabrasDeExamen temaActual={temaActual} />}
 
       {!pack ? (
         <p className="tarjeta text-slate-500 dark:text-slate-400">

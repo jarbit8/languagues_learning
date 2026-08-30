@@ -245,6 +245,32 @@ export interface PronPack {
   grupos: GrupoPron[]
 }
 
+// --- Rúbrica de examen (pack en /data/rubrica) ---
+
+// Las palabras con las que está ESCRITA una pregunta, no las del temario. Desde el tema 9 los
+// enunciados de reading van en inglés y se apoyan en este juego cerrado. Es una chuleta, no un
+// pack de vocabulario: no entra al SRS ni se marca "aprendida" (la nota de producto 2 habla de
+// las palabras que el usuario decide aprender; esto es material de consulta, como Pronunciación).
+export interface PalabraRubrica {
+  texto: string
+  es: string
+  pron: string
+  ejemplo: string
+  /** Si ya tiene tarjeta de vocabulario, en qué tema. Sin esto, es palabra solo de rúbrica. */
+  tema?: number
+}
+
+export interface GrupoRubrica {
+  titulo: string
+  palabras: PalabraRubrica[]
+}
+
+export interface RubricaPack {
+  titulo: string
+  nota: string
+  grupos: GrupoRubrica[]
+}
+
 // --- Writing (packs en /data/writing) ---
 
 export interface ConsignaWriting {

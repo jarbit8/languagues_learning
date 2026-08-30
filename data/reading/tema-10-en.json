@@ -7,7 +7,7 @@
    "preguntas": [
     {
      "tipo": "opcion_multiple",
-     "enunciado": "¿Dónde está la nevera?",
+     "enunciado": "Where is the fridge?",
      "opciones": [
       "next to the window",
       "under the bed",
@@ -17,17 +17,17 @@
     },
     {
      "tipo": "vf",
-     "enunciado": "El apartamento tiene jardín.",
+     "enunciado": "There is a garden in the apartment.",
      "respuesta": "falso"
     },
     {
      "tipo": "vfnd",
-     "enunciado": "El apartamento es caro.",
+     "enunciado": "Ana's bedroom is big.",
      "respuesta": "no dice"
     },
     {
      "tipo": "opcion_multiple",
-     "enunciado": "¿Dónde está el armario?",
+     "enunciado": "Where is the wardrobe?",
      "opciones": [
       "between the bed and the door",
       "on the wall",
@@ -37,7 +37,7 @@
     },
     {
      "tipo": "vf",
-     "enunciado": "Hay un balcón pequeño.",
+     "enunciado": "There is a small balcony.",
      "respuesta": "verdadero"
     }
    ]

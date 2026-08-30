@@ -7,7 +7,7 @@
    "preguntas": [
     {
      "tipo": "opcion_multiple",
-     "enunciado": "¿Qué le duele a Ana?",
+     "enunciado": "Where does it hurt?",
      "opciones": [
       "her head and her back",
       "her stomach and her legs",
@@ -17,17 +17,17 @@
     },
     {
      "tipo": "vf",
-     "enunciado": "Ana tiene fiebre.",
+     "enunciado": "Ana has a fever.",
      "respuesta": "verdadero"
     },
     {
      "tipo": "vfnd",
-     "enunciado": "La medicina es cara.",
+     "enunciado": "The medicine is expensive.",
      "respuesta": "no dice"
     },
     {
      "tipo": "opcion_multiple",
-     "enunciado": "¿Qué le dice el médico que debe hacer?",
+     "enunciado": "What does the doctor say she must do?",
      "opciones": [
       "sleep and drink water",
       "go to work",
@@ -37,7 +37,7 @@
     },
     {
      "tipo": "vf",
-     "enunciado": "Ana está enferma una semana.",
+     "enunciado": "Ana is sick for one week.",
      "respuesta": "falso"
     }
    ]

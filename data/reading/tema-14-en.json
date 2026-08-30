@@ -7,7 +7,7 @@
    "preguntas": [
     {
      "tipo": "opcion_multiple",
-     "enunciado": "¿Qué bebe Ana?",
+     "enunciado": "What does Ana drink?",
      "opciones": [
       "water",
       "coffee",
@@ -17,17 +17,17 @@
     },
     {
      "tipo": "vf",
-     "enunciado": "Paul tiene mucha hambre.",
+     "enunciado": "Paul is very hungry.",
      "respuesta": "verdadero"
     },
     {
      "tipo": "vfnd",
-     "enunciado": "El restaurante es caro.",
+     "enunciado": "The restaurant is expensive.",
      "respuesta": "no dice"
     },
     {
      "tipo": "opcion_multiple",
-     "enunciado": "¿Qué pide Ana de postre?",
+     "enunciado": "What does Ana order for dessert?",
      "opciones": [
       "ice cream",
       "fruit",
@@ -37,7 +37,7 @@
     },
     {
      "tipo": "vf",
-     "enunciado": "No dejan propina.",
+     "enunciado": "There is no tip on the plate.",
      "respuesta": "falso"
     }
    ]

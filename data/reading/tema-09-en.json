@@ -7,7 +7,7 @@
    "preguntas": [
     {
      "tipo": "opcion_multiple",
-     "enunciado": "¿Qué hace Ana primero al levantarse?",
+     "enunciado": "What does Ana do first?",
      "opciones": [
       "has a shower",
       "has breakfast",
@@ -17,17 +17,17 @@
     },
     {
      "tipo": "vf",
-     "enunciado": "Ana termina de trabajar a las dos.",
+     "enunciado": "Ana finishes work at two.",
      "respuesta": "verdadero"
     },
     {
      "tipo": "vfnd",
-     "enunciado": "A Ana le gusta cocinar.",
+     "enunciado": "Ana walks to work.",
      "respuesta": "no dice"
     },
     {
      "tipo": "opcion_multiple",
-     "enunciado": "¿Qué hace el sábado?",
+     "enunciado": "What does she do on Saturday?",
      "opciones": [
       "goes out with friends",
       "works",
@@ -37,7 +37,7 @@
     },
     {
      "tipo": "vf",
-     "enunciado": "Ana duerme siesta todos los días.",
+     "enunciado": "Ana takes a nap every day.",
      "respuesta": "falso"
     }
    ]

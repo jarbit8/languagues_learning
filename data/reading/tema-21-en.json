@@ -7,7 +7,7 @@
    "preguntas": [
     {
      "tipo": "opcion_multiple",
-     "enunciado": "¿Qué estudia Ana?",
+     "enunciado": "What does Ana study?",
      "opciones": [
       "computer science",
       "maths",
@@ -17,17 +17,17 @@
     },
     {
      "tipo": "vf",
-     "enunciado": "La historia es difícil para ella.",
+     "enunciado": "History is difficult for her.",
      "respuesta": "verdadero"
     },
     {
      "tipo": "vfnd",
-     "enunciado": "Ana estudia en la universidad hace dos años.",
+     "enunciado": "Ana has a scholarship.",
      "respuesta": "no dice"
     },
     {
      "tipo": "opcion_multiple",
-     "enunciado": "¿Dónde estudia con sus compañeros?",
+     "enunciado": "Where does she study with her classmates?",
      "opciones": [
       "the library",
       "the classroom",
@@ -37,7 +37,7 @@
     },
     {
      "tipo": "vf",
-     "enunciado": "Ana reprobó el examen de septiembre.",
+     "enunciado": "Ana failed the exam in September.",
      "respuesta": "falso"
     }
    ]

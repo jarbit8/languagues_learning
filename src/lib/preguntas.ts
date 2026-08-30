@@ -54,6 +54,43 @@ export function preguntaSignificadoEscrito(concepto: Concepto): Pregunta {
   }
 }
 
+// Producir: ve el significado en español y ESCRIBE la palabra en inglés (caja 2 del SRS).
+export function preguntaProducir(concepto: Concepto): Pregunta {
+  return {
+    tipo: 'es_a_en',
+    enunciado: `¿Cómo se dice "${concepto.es}" en inglés?`,
+    audioTexto: null,
+    respuesta: concepto.texto,
+    aceptadas: [],
+    palabraId: concepto.id
+  }
+}
+
+// Al oído: escucha la palabra y la escribe (caja 3 del SRS).
+export function preguntaAudio(concepto: Concepto): Pregunta {
+  return {
+    tipo: 'audio_escribir',
+    enunciado: 'Escucha y escribe la palabra en inglés.',
+    audioTexto: concepto.texto,
+    respuesta: concepto.texto,
+    aceptadas: [],
+    palabraId: concepto.id
+  }
+}
+
+// ESCALADA POR CAJA DEL SRS (2026-08-30). El examen diario preguntaba siempre en la dirección
+// fácil (inglés → español), y reconocer una palabra no es saberla: da falsa sensación de
+// dominio justo en el examen que alimenta el SRS. Ahora la dificultad sube con la caja:
+//   caja 1  reconocer   hello → "hola"      (acabas de marcarla)
+//   caja 2  producir    hola  → "hello"     (ya no te dan la palabra)
+//   caja 3  al oído     🔊    → "hello"     (sin verla escrita)
+// Fallar devuelve la palabra a la caja 1, así que también baja el tipo de pregunta.
+export function preguntaPorCaja(concepto: Concepto, caja: number): Pregunta {
+  if (caja >= 3) return preguntaAudio(concepto)
+  if (caja === 2) return preguntaProducir(concepto)
+  return preguntaSignificadoEscrito(concepto)
+}
+
 // Convierte un concepto de vocabulario en una pregunta (tipo aleatorio).
 export function preguntaDeConcepto(concepto: Concepto): Pregunta {
   const tipos = ['audio_escribir', 'es_a_en', 'opcion_multiple', 'significado'] as const

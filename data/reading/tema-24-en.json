@@ -7,7 +7,7 @@
    "preguntas": [
     {
      "tipo": "opcion_multiple",
-     "enunciado": "¿Qué va a hacer el próximo año?",
+     "enunciado": "What is she going to do next year?",
      "opciones": [
       "finish her degree",
       "move to another city",
@@ -17,27 +17,27 @@
     },
     {
      "tipo": "vf",
-     "enunciado": "Ana está segura de que se mudará de ciudad.",
+     "enunciado": "Ana is sure she will move to another city.",
      "respuesta": "falso"
     },
     {
      "tipo": "vfnd",
-     "enunciado": "Ana ya tiene trabajo en Estados Unidos.",
+     "enunciado": "Ana has a job in the United States.",
      "respuesta": "no dice"
     },
     {
      "tipo": "opcion_multiple",
-     "enunciado": "¿Cuál es su sueño?",
+     "enunciado": "What is her dream?",
      "opciones": [
       "live and work in the United States",
       "travel to Peru",
-      "study French"
+      "work in a hospital"
      ],
      "respuesta": "live and work in the United States"
     },
     {
      "tipo": "vf",
-     "enunciado": "Ana quiere volver a tener a su familia junta.",
+     "enunciado": "Ana wants her family together again.",
      "respuesta": "verdadero"
     }
    ]

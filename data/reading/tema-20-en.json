@@ -7,7 +7,7 @@
    "preguntas": [
     {
      "tipo": "opcion_multiple",
-     "enunciado": "¿Qué instrumento toca Ana?",
+     "enunciado": "What does Ana play?",
      "opciones": [
       "the guitar",
       "the piano",
@@ -17,17 +17,17 @@
     },
     {
      "tipo": "vf",
-     "enunciado": "A Laura le gusta el fútbol.",
+     "enunciado": "Laura likes football.",
      "respuesta": "falso"
     },
     {
      "tipo": "vfnd",
-     "enunciado": "Ana toca la guitarra desde niña.",
+     "enunciado": "Ana plays the guitar every day.",
      "respuesta": "no dice"
     },
     {
      "tipo": "opcion_multiple",
-     "enunciado": "¿Qué hacen los sábados Ana y Laura?",
+     "enunciado": "What do Ana and Laura do on Saturday?",
      "opciones": [
       "go swimming",
       "play football",
@@ -37,7 +37,7 @@
     },
     {
      "tipo": "vf",
-     "enunciado": "Paul juega fútbol los domingos.",
+     "enunciado": "Paul plays football on Sunday.",
      "respuesta": "verdadero"
     }
    ]

@@ -1,4 +1,4 @@
-import type { VocabPack, GramaticaPack, ListeningPack, ReadingPack, WritingPack, PronPack, DialogoConTema } from '../types'
+import type { VocabPack, GramaticaPack, ListeningPack, ReadingPack, WritingPack, PronPack, RubricaPack, DialogoConTema } from '../types'
 
 // Los data packs viven en /data (raíz). Se importan en build → quedan en el bundle
 // y por tanto en el precache del service worker (offline total).
@@ -35,6 +35,11 @@ const pronModules = import.meta.glob('/data/pronunciacion/en.json', { eager: tru
   { default: PronPack }
 >
 
+const rubricaModules = import.meta.glob('/data/rubrica/en.json', { eager: true }) as Record<
+  string,
+  { default: RubricaPack }
+>
+
 const listar = <T>(modulos: Record<string, { default: T }>): T[] =>
   Object.values(modulos).map((m) => m.default)
 
@@ -63,6 +68,9 @@ export function dialogosDe(pack: ListeningPack): DialogoConTema[] {
 
 export const readingPacks: ReadingPack[] = listar(readingModules)
 export const writingPacks: WritingPack[] = listar(writingModules)
+
+// Rúbrica de examen: transversal, como pronunciación. No depende del progreso.
+export const rubricaPack: RubricaPack | undefined = listar(rubricaModules)[0]
 
 // Pronunciación: transversal al nivel, no por tema.
 export const pronPack: PronPack | undefined = listar(pronModules)[0]

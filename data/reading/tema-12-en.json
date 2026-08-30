@@ -7,7 +7,7 @@
    "preguntas": [
     {
      "tipo": "opcion_multiple",
-     "enunciado": "¿Qué abrigo compra Ana?",
+     "enunciado": "Which coat does Ana buy?",
      "opciones": [
       "the grey one",
       "the black one",
@@ -17,17 +17,17 @@
     },
     {
      "tipo": "vf",
-     "enunciado": "El abrigo negro es caro.",
+     "enunciado": "The black coat is expensive.",
      "respuesta": "verdadero"
     },
     {
      "tipo": "vfnd",
-     "enunciado": "Ana paga con tarjeta.",
+     "enunciado": "Laura's sweater is expensive.",
      "respuesta": "no dice"
     },
     {
      "tipo": "opcion_multiple",
-     "enunciado": "¿Qué compra Laura?",
+     "enunciado": "What does Laura buy?",
      "opciones": [
       "a sweater and sneakers",
       "a coat and boots",
@@ -37,7 +37,7 @@
     },
     {
      "tipo": "vf",
-     "enunciado": "En Perú Ana usaba abrigo grande.",
+     "enunciado": "In Peru Ana wears a big coat.",
      "respuesta": "falso"
     }
    ]

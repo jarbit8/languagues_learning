@@ -7,7 +7,7 @@
    "preguntas": [
     {
      "tipo": "opcion_multiple",
-     "enunciado": "¿Cuántos grados hace?",
+     "enunciado": "How many degrees is it?",
      "opciones": [
       "two",
       "twelve",
@@ -17,17 +17,17 @@
     },
     {
      "tipo": "vf",
-     "enunciado": "Hoy hay sol en Canadá.",
+     "enunciado": "There is sun in Canada today.",
      "respuesta": "falso"
     },
     {
      "tipo": "vfnd",
-     "enunciado": "A Ana no le gusta el invierno.",
+     "enunciado": "There is snow in Peru.",
      "respuesta": "no dice"
     },
     {
      "tipo": "opcion_multiple",
-     "enunciado": "¿Qué hay cerca del lago?",
+     "enunciado": "What is there near the lake?",
      "opciones": [
       "trees and flowers",
       "the sea and the beach",
@@ -37,7 +37,7 @@
     },
     {
      "tipo": "vf",
-     "enunciado": "Mañana habrá tormenta.",
+     "enunciado": "There is a storm tomorrow.",
      "respuesta": "verdadero"
     }
    ]

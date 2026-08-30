@@ -31,7 +31,7 @@
 ],
 "preguntas": [
 {"tipo":"anota_la_hora","enunciado":"¿A qué hora llega el tren?","respuesta":"6:15","aceptadas":["quarter past six"]},
-{"tipo":"vf","enunciado":"La estación está lejos.","respuesta":"falso"},
+{"tipo":"vf","enunciado":"El tren llega a las seis y cuarto.","respuesta":"verdadero"},
 {"tipo":"opcion_multiple","enunciado":"¿Cómo puede ir A a la estación?","opciones":["on foot","by car","by plane"],"respuesta":"on foot"},
 {"tipo":"completar_dato","enunciado":"¿Qué más quiere tomar A?","respuesta":"a taxi","aceptadas":["taxi"]},
 {"tipo":"opcion_multiple","enunciado":"¿Dónde está el tren?","opciones":["at the station","at the airport","at the bank"],"respuesta":"at the station"}

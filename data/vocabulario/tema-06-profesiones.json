@@ -233,6 +233,20 @@
    "texto": "unemployed",
    "ejemplo": "My uncle is unemployed.",
    "pron": "an-em-PLOID"
+  },
+  {
+   "id": "a1-t06-035",
+   "es": "cómo",
+   "texto": "how",
+   "ejemplo": "How is your family?",
+   "pron": "JAU"
+  },
+  {
+   "id": "a1-t06-036",
+   "es": "cuál",
+   "texto": "which",
+   "ejemplo": "Which is your office?",
+   "pron": "UICH"
   }
  ]
 }

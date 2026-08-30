@@ -30,5 +30,6 @@
 {"id":"a1-t07-029","es":"mañana (día)","texto":"tomorrow","ejemplo":"Tomorrow is Tuesday.","pron":"tu-MO-rou"},
 {"id":"a1-t07-030","es":"fecha","texto":"date","ejemplo":"What is the date today?","pron":"DEIT"},
 {"id":"a1-t07-031","es":"anteayer","texto":"the day before yesterday","ejemplo":"I was at work the day before yesterday.","pron":"de DEI bi-FOR YES-ter-dei"},
-{"id":"a1-t07-032","es":"pasado mañana","texto":"the day after tomorrow","ejemplo":"My birthday is the day after tomorrow.","pron":"de DEI AF-ter tu-MO-rou"}
+{"id":"a1-t07-032","es":"pasado mañana","texto":"the day after tomorrow","ejemplo":"My birthday is the day after tomorrow.","pron":"de DEI AF-ter tu-MO-rou"},
+{"id":"a1-t07-033","es":"cuándo","texto":"when","ejemplo":"When is your birthday?","pron":"UEN"}
 ] }
