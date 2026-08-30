@@ -4,20 +4,17 @@ import { mapaTemas } from '../lib/progreso'
 import { temasDeBloque, bloqueDeTema } from '../lib/curriculum'
 import { getVocabPack, getGramatica, getListening, getReading, getWriting, vocabPacks } from '../data/packs'
 import { funcionDe, nombresBloque, gramaticaBloque } from '../data/funciones'
-import { db } from '../db'
 import {
   diasDeTema,
   fechaCorta,
   cierraBloque,
-  empezarPlan,
-  borrarPlan,
   diasDelPlan,
   estadoDelPlan,
   anadirPausa,
   quitarPausa,
   enPausa,
-  INICIO_A1,
-  fechaFinPrevista
+  getPlan,
+  PLAN_POR_DEFECTO
 } from '../lib/plan'
 
 // Cuántas consignas de escritura le tocan a un tema: los packs de writing son por bloque,
@@ -40,9 +37,9 @@ const ESTADO_TEXTO: Record<string, string> = {
 export default function Temario() {
   const mapa = useLiveQuery(() => mapaTemas(), [])
   // Si hay cronograma activo, cada tema muestra los días que le tocan.
-  const plan = useLiveQuery(() => db.plan.get('a1'), [])
+  const plan = useLiveQuery(() => getPlan(), [], PLAN_POR_DEFECTO)
   const temaActual = mapa?.find((t) => t.estado === 'en_curso')?.tema ?? 1
-  const estado = plan ? estadoDelPlan(plan, temaActual) : undefined
+  const estado = estadoDelPlan(plan, temaActual)
   const [desde, setDesde] = useState('')
   const [hasta, setHasta] = useState('')
   // input type=date da 'YYYY-MM-DD'; se interpreta en hora local, no UTC.
@@ -78,7 +75,7 @@ export default function Temario() {
       </p>
 
       {/* El cronograma vive aquí, no en Inicio: es la vista del plan, y en Inicio molestaba. */}
-      {plan && estado ? (
+      {estado ? (
         <div className="tarjeta flex flex-col gap-2">
           <div className="flex items-baseline justify-between">
             <span className="text-sm font-semibold">
@@ -136,26 +133,8 @@ export default function Temario() {
               </button>
             </div>
           </details>
-
-          <button
-            onClick={() => void borrarPlan()}
-            className="self-start text-xs text-slate-500 underline dark:text-slate-400"
-          >
-            Quitar el cronograma
-          </button>
         </div>
-      ) : (
-        <button onClick={() => void empezarPlan()} className="tarjeta flex items-center gap-3 text-left">
-          <span className="text-2xl">🗓️</span>
-          <div className="flex-1">
-            <p className="font-semibold">Activar el cronograma de {diasDelPlan()} días</p>
-            <p className="text-sm text-slate-500 dark:text-slate-400">
-              Empieza el {fechaCorta(INICIO_A1)} y, sin pausas, termina el {fechaCorta(fechaFinPrevista())}. 2 días por
-              tema, 1 día por examen de bloque y 2 para el final. Solo pone fechas aquí; no bloquea nada.
-            </p>
-          </div>
-        </button>
-      )}
+      ) : null}
 
       {[1, 2, 3, 4].map((bloque) => (
         <div key={bloque} className="flex flex-col gap-2">

@@ -19,6 +19,17 @@ export const ID_PLAN = 'a1'
 // si lo enciendes más tarde, el cronograma ya te dirá por qué día vas.
 // El mes va en base 0 en el constructor de Date: 8 = septiembre.
 export const INICIO_A1 = new Date(2026, 8, 1).getTime()
+
+// PAUSA DE FÁBRICA (2026-08-30, pedido del usuario: "voy a hacer una pausa terminando el
+// bloque 3, el lunes 19 de octubre empiezo con el bloque 4"). Con el arranque el 1 de
+// septiembre, el examen del bloque 3 cae el viernes 9 de octubre (día 39), así que la pausa
+// va del 10 al 18 y el día 40 —el tema 19, primero del bloque 4— aterriza el lunes 19.
+// Los días de pausa NO cuentan, así que todo lo posterior se corre solo: el nivel pasa de
+// terminar el 24 de octubre a hacerlo el 2 de noviembre, sin tocar el orden de los temas.
+// Se puede quitar desde Progreso → Temario como cualquier otra pausa.
+export const PAUSAS_INICIALES: PausaPlan[] = [
+  { desde: new Date(2026, 9, 10).getTime(), hasta: new Date(2026, 9, 18).getTime(), motivo: 'Pausa antes del bloque 4' }
+]
 export const DIAS_POR_TEMA = 2
 export const TEMAS_POR_BLOQUE = 6
 // Cada bloque son sus 6 temas (2 días cada uno) MÁS un día suelto solo para su examen:
@@ -65,19 +76,23 @@ export function diaDeExamenDeBloque(bloque: number): number {
 // Fecha en la que terminaría el nivel si se empieza el 1 de septiembre y no se pausa nada.
 // Sirve para enseñar el rango ANTES de activar el cronograma, cuando aún no hay plan guardado.
 export function fechaFinPrevista(): number {
-  return fechaDeDia({ id: ID_PLAN, fechaInicio: INICIO_A1, diasPorTema: DIAS_POR_TEMA }, diasDelPlan())
+  return fechaDeDia(PLAN_POR_DEFECTO, diasDelPlan())
 }
 
-export async function getPlan(): Promise<PlanEstudio | undefined> {
-  return db.plan.get(ID_PLAN)
+// EL CRONOGRAMA ESTÁ SIEMPRE PUESTO (2026-08-30, "borra este botón, ya se sabe que empieza el
+// primero"). Antes había que activarlo y se guardaba una fila en Dexie; ahora la fila solo
+// existe si el usuario TOCA algo (añadir o quitar una pausa), y mientras tanto se usa este
+// plan por defecto. Se fueron con el botón `empezarPlan` y `borrarPlan`: si el plan se crea
+// solo, "quitar el cronograma" lo haría reaparecer en la siguiente recarga.
+export const PLAN_POR_DEFECTO: PlanEstudio = {
+  id: ID_PLAN,
+  fechaInicio: INICIO_A1,
+  diasPorTema: DIAS_POR_TEMA,
+  pausas: PAUSAS_INICIALES
 }
 
-export async function empezarPlan(fechaInicio = INICIO_A1) {
-  await db.plan.put({ id: ID_PLAN, fechaInicio: inicioDeHoy(fechaInicio), diasPorTema: DIAS_POR_TEMA })
-}
-
-export async function borrarPlan() {
-  await db.plan.delete(ID_PLAN)
+export async function getPlan(): Promise<PlanEstudio> {
+  return (await db.plan.get(ID_PLAN)) ?? PLAN_POR_DEFECTO
 }
 
 // --- Pausas -------------------------------------------------------------------------
@@ -91,7 +106,6 @@ export function enPausa(plan: PlanEstudio, t: number): boolean {
 
 export async function anadirPausa(desde: number, hasta: number, motivo?: string) {
   const plan = await getPlan()
-  if (!plan) return
   const pausa: PausaPlan = { desde: inicioDeHoy(desde), hasta: inicioDeHoy(hasta), motivo }
   const pausas = [...(plan.pausas ?? []), pausa].sort((a, b) => a.desde - b.desde)
   await db.plan.put({ ...plan, pausas })
@@ -99,7 +113,6 @@ export async function anadirPausa(desde: number, hasta: number, motivo?: string)
 
 export async function quitarPausa(desde: number) {
   const plan = await getPlan()
-  if (!plan) return
   await db.plan.put({ ...plan, pausas: (plan.pausas ?? []).filter((p) => p.desde !== desde) })
 }
 
