@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react'
-import type { FeedbackSpeaking, NotasBloque, Pregunta } from '../types'
+import type { NotasBloque, Pregunta } from '../types'
 import { temasDeBloque } from '../lib/curriculum'
 import {
   construirListeningBloque,
@@ -9,10 +9,8 @@ import {
 } from '../lib/examenBloque'
 import { registrarResultado } from '../lib/srs'
 import { registrarNotaBloque } from '../lib/progreso'
-import { hayApiKey } from '../lib/apiKey'
 import { reproducirDialogo, reproducirLinea } from '../lib/listening'
 import ExamRunner from '../components/ExamRunner'
-import ChatSpeaking from '../components/ChatSpeaking'
 import PasoWriting from '../components/PasoWriting'
 import PasoSpeakingExamen from '../components/PasoSpeakingExamen'
 import { tareaDeBloque } from '../data/tareasSpeaking'
@@ -134,30 +132,18 @@ export default function ExamenBloque({ bloque, onSalir }: { bloque: number; onSa
   }
 
   if (paso === 'speaking') {
-    if (!hayApiKey()) {
-      return (
-        <div className="flex flex-col gap-4">
-          <h1 className="text-2xl font-bold">Examen de bloque {bloque} · Speaking</h1>
-          <PasoSpeakingExamen
-            tarea={tareaDeBloque(bloque)}
-            tema={temaEscenario}
-            meta={
-              bloque >= 4
-                ? 'si ya domina el último bloque del nivel A1 y puede presentarse al examen final del nivel'
-                : `si ya domina el bloque ${bloque} del nivel A1 y puede avanzar al bloque ${bloque + 1}`
-            }
-            onDone={(nota) => guardarNota('speaking', nota)}
-          />
-        </div>
-      )
-    }
     return (
       <div className="flex flex-col gap-4">
         <h1 className="text-2xl font-bold">Examen de bloque {bloque} · Speaking</h1>
-        <ChatSpeaking
+        <PasoSpeakingExamen
+          tarea={tareaDeBloque(bloque)}
           tema={temaEscenario}
-          modoExamen
-          onFinish={(fb: FeedbackSpeaking) => guardarNota('speaking', fb.nota ?? 70)}
+          meta={
+            bloque >= 4
+              ? 'si ya domina el último bloque del nivel A1 y puede presentarse al examen final del nivel'
+              : `si ya domina el bloque ${bloque} del nivel A1 y puede avanzar al bloque ${bloque + 1}`
+          }
+          onDone={(nota) => guardarNota('speaking', nota)}
         />
       </div>
     )

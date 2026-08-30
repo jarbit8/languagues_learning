@@ -1,12 +1,10 @@
 import { useMemo, useState } from 'react'
-import type { FeedbackSpeaking, Pregunta } from '../types'
+import type { Pregunta } from '../types'
 import { construirVocabFinal, construirGramaticaFinal, construirListeningFinal, construirReadingFinal } from '../lib/examenFinal'
 import { registrarResultado } from '../lib/srs'
 import { registrarExamenFinal } from '../lib/progreso'
-import { hayApiKey } from '../lib/apiKey'
 import { reproducirDialogo } from '../lib/listening'
 import ExamRunner from '../components/ExamRunner'
-import ChatSpeaking from '../components/ChatSpeaking'
 import PasoWriting from '../components/PasoWriting'
 import PasoSpeakingExamen from '../components/PasoSpeakingExamen'
 import { tareaFinal } from '../data/tareasSpeaking'
@@ -171,30 +169,15 @@ export default function ExamenFinal({ onSalir }: { onSalir: () => void }) {
   }
 
   if (paso === 'speaking') {
-    if (!hayApiKey()) {
-      return (
-        <div className="flex flex-col gap-4">
-          <h1 className="text-2xl font-bold">Speaking final</h1>
-          <PasoSpeakingExamen
-            tarea={tareaFinal()}
-            tema={24}
-            meta="si ya está listo para dar por terminado el nivel A1"
-            onDone={async (nota) => {
-              const habilidades = { ...notasHab, speaking: nota }
-              await finalizar(habilidades)
-            }}
-          />
-        </div>
-      )
-    }
     return (
       <div className="flex flex-col gap-4">
         <h1 className="text-2xl font-bold">Speaking final</h1>
-        <ChatSpeaking
+        <PasoSpeakingExamen
+          tarea={tareaFinal()}
           tema={24}
-          modoExamen
-          onFinish={async (fb: FeedbackSpeaking) => {
-            const habilidades = { ...notasHab, speaking: fb.nota ?? 70 }
+          meta="si ya está listo para dar por terminado el nivel A1"
+          onDone={async (nota) => {
+            const habilidades = { ...notasHab, speaking: nota }
             await finalizar(habilidades)
           }}
         />

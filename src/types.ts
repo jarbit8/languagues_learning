@@ -149,24 +149,6 @@ export interface ProgresoTema {
   notas?: NotasBloque
 }
 
-// --- Speaking IA ---
-
-export interface ErrorSpeaking {
-  dijo: string
-  correcto: string
-  porque: string
-}
-
-export interface FeedbackSpeaking {
-  tipo: 'feedback'
-  bien: string
-  errores: ErrorSpeaking[]
-  nota?: number
-  /** Solo en modo examen: si ya puede avanzar. `veredicto` explica en español por qué. */
-  listo?: boolean
-  veredicto?: string
-}
-
 // --- Bloques y nivel ---
 
 

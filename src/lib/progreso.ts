@@ -76,7 +76,7 @@ export async function estadoExamenTema(tema: number): Promise<EstadoExamenTema> 
 // general que involucre todo todo"). El corte sigue siendo exigente donde ya lo era —80% en
 // vocabulario y 80% en gramática, que son lo medible objetivamente— y pide 75% de promedio
 // en las cuatro destrezas, el mismo listón que el examen de bloque, porque writing y speaking
-// se autocalifican cuando no hay API key y no sería justo exigirles 80.
+// se autocalifican y no sería justo exigirles 80.
 export async function registrarExamenTema(tema: number, notas: NotasBloque): Promise<boolean> {
   const habilidades = [notas.listening, notas.reading, notas.writing, notas.speaking].filter(
     (n): n is number => n !== undefined

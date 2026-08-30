@@ -3,9 +3,9 @@ import { construirPromptTarea, vocabularioDesbloqueado } from '../lib/speaking'
 import CopiarPrompt from './CopiarPrompt'
 import Autoevaluacion from './Autoevaluacion'
 
-// Speaking de examen SIN API key: en vez de una lista genérica, plantea una tarea real estilo
-// CELPIP con su prompt listo para pegar en una IA con voz; luego el estudiante se autocalifica
-// con un checklist específico de esa tarea. (Con API key, ExamenBloque/Final usan ChatSpeaking.)
+// Speaking de examen: plantea una tarea real estilo CELPIP con su prompt listo para pegar en
+// una IA con voz; luego el estudiante se autocalifica con un checklist específico de esa tarea.
+// La app nunca llama a ninguna IA por su cuenta — el prompt se copia y se pega fuera.
 export default function PasoSpeakingExamen({
   tarea,
   tema,

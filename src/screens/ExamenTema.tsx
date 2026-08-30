@@ -1,13 +1,11 @@
 import { useMemo, useState } from 'react'
-import type { FeedbackSpeaking, NotasBloque, Pregunta } from '../types'
+import type { NotasBloque, Pregunta } from '../types'
 import { construirExamenTema } from '../lib/examenTema'
 import { listeningDeTema, readingDeTema, consignaDeTema, promptHablarExamen } from '../lib/examenHabilidades'
 import { registrarExamenTema } from '../lib/progreso'
 import { registrarResultado } from '../lib/srs'
-import { hayApiKey } from '../lib/apiKey'
 import { reproducirDialogo, detener } from '../lib/listening'
 import ExamRunner from '../components/ExamRunner'
-import ChatSpeaking from '../components/ChatSpeaking'
 import CopiarPrompt from '../components/CopiarPrompt'
 import Autoevaluacion from '../components/Autoevaluacion'
 import { EscribirConsigna } from '../components/PasoWriting'
@@ -146,14 +144,6 @@ export default function ExamenTema({ tema, onSalir }: { tema: number; onSalir: (
   }
 
   if (paso === 'speaking') {
-    if (hayApiKey()) {
-      return (
-        <div className="flex flex-col gap-4">
-          <h1 className="text-2xl font-bold">Tema {tema} · Speaking</h1>
-          <ChatSpeaking tema={tema} modoExamen onFinish={(fb: FeedbackSpeaking) => guardarNota('speaking', fb.nota ?? 70)} />
-        </div>
-      )
-    }
     return (
       <div className="flex flex-col gap-4">
         <h1 className="text-2xl font-bold">Tema {tema} · Speaking</h1>

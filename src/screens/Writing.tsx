@@ -70,8 +70,8 @@ export default function Writing() {
       </div>
 
       <p className="text-sm text-slate-500 dark:text-slate-400">
-        Una consigna por tema, en formato IELTS/TOEFL: cada una dice cuántas palabras pide. Con API key la IA te corrige;
-        sin ella, comparas con una respuesta modelo y te autocalificas.
+        Una consigna por tema, en formato IELTS/TOEFL: cada una dice cuántas palabras pide. Al enviar comparas tu texto
+        con una respuesta modelo y te autocalificas con el checklist.
       </p>
 
       {!pack ? (
