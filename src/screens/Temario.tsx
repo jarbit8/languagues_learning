@@ -15,7 +15,9 @@ import {
   estadoDelPlan,
   anadirPausa,
   quitarPausa,
-  enPausa
+  enPausa,
+  INICIO_A1,
+  fechaFinPrevista
 } from '../lib/plan'
 
 // Cuántas consignas de escritura le tocan a un tema: los packs de writing son por bloque,
@@ -148,7 +150,8 @@ export default function Temario() {
           <div className="flex-1">
             <p className="font-semibold">Activar el cronograma de {diasDelPlan()} días</p>
             <p className="text-sm text-slate-500 dark:text-slate-400">
-              2 días por tema, 1 día por examen de bloque y 2 para el final. Solo pone fechas aquí; no bloquea nada.
+              Empieza el {fechaCorta(INICIO_A1)} y, sin pausas, termina el {fechaCorta(fechaFinPrevista())}. 2 días por
+              tema, 1 día por examen de bloque y 2 para el final. Solo pone fechas aquí; no bloquea nada.
             </p>
           </div>
         </button>

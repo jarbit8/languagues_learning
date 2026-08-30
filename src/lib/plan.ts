@@ -11,6 +11,14 @@ import type { PausaPlan, PlanEstudio } from '../types'
 // siendo el examen de tema.
 
 export const ID_PLAN = 'a1'
+
+// FECHA DE ARRANQUE FIJA (2026-08-30, pedido del usuario: "quiero que esté establecido que
+// debe empezar el 1 de septiembre"). Antes el plan arrancaba el día que le dieras al botón,
+// así que las fechas del temario dependían de cuándo lo activaras y no se podían calcular de
+// antemano. Ahora el día 1 es siempre el 1 de septiembre de 2026, actives cuando actives:
+// si lo enciendes más tarde, el cronograma ya te dirá por qué día vas.
+// El mes va en base 0 en el constructor de Date: 8 = septiembre.
+export const INICIO_A1 = new Date(2026, 8, 1).getTime()
 export const DIAS_POR_TEMA = 2
 export const TEMAS_POR_BLOQUE = 6
 // Cada bloque son sus 6 temas (2 días cada uno) MÁS un día suelto solo para su examen:
@@ -54,11 +62,17 @@ export function diaDeExamenDeBloque(bloque: number): number {
   return bloque * DIAS_POR_BLOQUE
 }
 
+// Fecha en la que terminaría el nivel si se empieza el 1 de septiembre y no se pausa nada.
+// Sirve para enseñar el rango ANTES de activar el cronograma, cuando aún no hay plan guardado.
+export function fechaFinPrevista(): number {
+  return fechaDeDia({ id: ID_PLAN, fechaInicio: INICIO_A1, diasPorTema: DIAS_POR_TEMA }, diasDelPlan())
+}
+
 export async function getPlan(): Promise<PlanEstudio | undefined> {
   return db.plan.get(ID_PLAN)
 }
 
-export async function empezarPlan(fechaInicio = Date.now()) {
+export async function empezarPlan(fechaInicio = INICIO_A1) {
   await db.plan.put({ id: ID_PLAN, fechaInicio: inicioDeHoy(fechaInicio), diasPorTema: DIAS_POR_TEMA })
 }
 
