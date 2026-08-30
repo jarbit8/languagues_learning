@@ -1,13 +1,13 @@
 import type { Pregunta, ListeningPack, ReadingPack, DialogoConTema, TextoReading } from '../types'
 import { vocabPacks, getListening, getReading, getGramatica, dialogosDe } from '../data/packs'
-import { baraja, preguntaDeConcepto, preguntaDeListening, preguntaDeEjercicio } from './preguntas'
+import { baraja, preguntaSignificadoEscrito, preguntaDeListening, preguntaDeEjercicio } from './preguntas'
 
 // 100 palabras aleatorias de todo el nivel A1 (skill exam-engine: examen final).
 export function construirVocabFinal(): Pregunta[] {
   const todos = vocabPacks.flatMap((p) => p.conceptos)
   return baraja(todos)
     .slice(0, 100)
-    .map(preguntaDeConcepto)
+    .map(preguntaSignificadoEscrito)
 }
 
 // Gramática de TODO el nivel: mezcla los ejercicios de los 24 temas. El examen de bloque ya

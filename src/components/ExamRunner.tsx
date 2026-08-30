@@ -13,8 +13,6 @@ function mmss(seg: number): string {
 }
 
 const TEXTO_LIBRE: Pregunta['tipo'][] = [
-  'audio_escribir',
-  'es_a_en',
   'significado_escrito',
   'hueco',
   'corregir_error',
@@ -144,12 +142,6 @@ export default function ExamRunner({
       <div className="tarjeta flex flex-col gap-4">
         <p className="text-lg font-semibold">{p.enunciado}</p>
         {p.pista && <p className="text-sm text-slate-500 dark:text-slate-400">Pista: {p.pista}</p>}
-
-        {p.tipo === 'audio_escribir' && (
-          <button onClick={() => hablar(p.audioTexto!)} className="btn-primary self-start text-xl">
-            🔊 Escuchar
-          </button>
-        )}
 
         {p.tipo === 'opcion_multiple' ? (
           <div className="flex flex-col gap-2">

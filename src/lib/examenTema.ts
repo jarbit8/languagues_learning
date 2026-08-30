@@ -1,5 +1,5 @@
 import { getVocabPack, getGramatica } from '../data/packs'
-import { baraja, preguntaDeConcepto, preguntaDeEjercicio } from './preguntas'
+import { baraja, preguntaSignificadoEscrito, preguntaDeEjercicio } from './preguntas'
 import type { Pregunta } from '../types'
 
 export interface ExamenTema {
@@ -15,7 +15,7 @@ export function construirExamenTema(tema: number): ExamenTema {
   // Vocabulario COMPLETO del tema (~31-38 palabras), no una muestra de 20: para desbloquear
   // el tema hay que demostrar todas las palabras que se marcaron como aprendidas, no unas pocas.
   const pack = getVocabPack(tema)
-  const vocab = baraja(pack?.conceptos ?? []).map(preguntaDeConcepto)
+  const vocab = baraja(pack?.conceptos ?? []).map(preguntaSignificadoEscrito)
 
   const gramatica = baraja((getGramatica(tema)?.ejercicios ?? []).map(preguntaDeEjercicio))
 

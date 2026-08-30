@@ -56,8 +56,8 @@ export interface GramaticaPack {
 // --- Pregunta unificada (examen diario, de tema, ejercicios de gramática) ---
 
 export type TipoPregunta =
-  | 'audio_escribir'
-  | 'es_a_en'
+  // Vocabulario: un solo tipo desde el 2026-08-30 (ver preguntas.ts). Se fueron
+  // 'audio_escribir' y 'es_a_en', que ya no los produce nadie.
   | 'significado_escrito'
   | 'opcion_multiple'
   | 'hueco'
