@@ -197,8 +197,8 @@
   },
   {
    "tipo": "corregir_error",
-   "enunciado": "She will to study French next year.",
-   "respuesta": "She will study French next year.",
+   "enunciado": "She will to study English next year.",
+   "respuesta": "She will study English next year.",
    "pista": "tras will va el verbo base, sin to"
   },
   {

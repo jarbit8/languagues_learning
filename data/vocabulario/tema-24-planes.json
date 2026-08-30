@@ -55,7 +55,7 @@
    "id": "a1-t24-009",
    "es": "meta",
    "texto": "goal",
-   "ejemplo": "My goal is to learn French.",
+   "ejemplo": "My goal is to learn English.",
    "pron": "GOUL"
   },
   {
@@ -69,7 +69,7 @@
    "id": "a1-t24-011",
    "es": "y",
    "texto": "and",
-   "ejemplo": "English and French.",
+   "ejemplo": "English and Spanish.",
    "pron": "AND"
   },
   {
@@ -97,7 +97,7 @@
    "id": "a1-t24-016",
    "es": "también",
    "texto": "also",
-   "ejemplo": "I also speak French.",
+   "ejemplo": "I also speak Spanish.",
    "pron": "OL-sou"
   },
   {
@@ -160,7 +160,7 @@
    "id": "a1-t24-026",
    "es": "importante",
    "texto": "important",
-   "ejemplo": "French is important.",
+   "ejemplo": "English is important.",
    "pron": "im-POR-tant"
   },
   {
@@ -189,7 +189,7 @@
    "id": "a1-t24-031",
    "es": "ciudadanía",
    "texto": "citizenship",
-   "ejemplo": "My goal is Canadian citizenship.",
+   "ejemplo": "My goal is citizenship in the United States.",
    "pron": "SI-ti-zen-ship"
   },
   {
