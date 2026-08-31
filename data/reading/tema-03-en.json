@@ -102,6 +102,111 @@
      "respuesta": "German"
     }
    ]
+  },
+  {
+   "titulo": "La ciudad de cada uno",
+   "texto": "Where are you from, Sofia? I come from Spain, from the capital. And you, Marc? I am from France, but I live in Canada. My city is in Quebec and Quebec is French-speaking. Is your nationality Canadian? No, my nationality is French. I am a foreigner here. Ana is Peruvian. She was born in a city in Peru and she comes from America. Her country is not in Europe. And you speak three languages? Yes: Spanish, English and French. The world has many countries! Where do you live, Sofia? I live in a city in England.",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿De dónde viene Sofia?",
+     "opciones": [
+      "Spain",
+      "France",
+      "England"
+     ],
+     "respuesta": "Spain"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Marc vive en Canadá.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿En qué región de Canadá vive Marc?",
+     "respuesta": "Quebec"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cuál es la nacionalidad de Marc?",
+     "opciones": [
+      "French",
+      "Canadian",
+      "Peruvian"
+     ],
+     "respuesta": "French"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "Sofia habla alemán.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Perú está en Europa.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿En qué país vive Sofia ahora?",
+     "respuesta": "England"
+    }
+   ]
+  },
+  {
+   "titulo": "Nacer y vivir",
+   "texto": "I am Peruvian and I was born in Peru. My country is in America. I live in Canada, a country in America too. My city is not the capital. Do you speak English? Yes, and Spanish. I do not speak German. Is German a language in Europe? Yes! England, France and Spain are countries in Europe. The United States is in America. Are you a foreigner in Canada? Yes, I am a foreigner, but I speak the language and I live here. Marie comes from England. Her nationality is English and she speaks English and French.",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿En qué continente está Perú?",
+     "opciones": [
+      "America",
+      "Europe",
+      "Canada"
+     ],
+     "respuesta": "America"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "La persona habla alemán.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿En qué país vive ahora?",
+     "respuesta": "Canada"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cuál es la nacionalidad de Marie?",
+     "opciones": [
+      "English",
+      "French",
+      "Spanish"
+     ],
+     "respuesta": "English"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "Marie vive en Canadá.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Estados Unidos está en América.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Qué idiomas habla Marie?",
+     "respuesta": "English and French",
+     "aceptadas": [
+      "English, French"
+     ]
+    }
+   ]
   }
  ]
 }

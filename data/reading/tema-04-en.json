@@ -108,6 +108,117 @@
      "respuesta": "Laura"
     }
    ]
+  },
+  {
+   "titulo": "Los primos de Ana",
+   "texto": "Ana has four cousins in Peru. Two are twins and they are sixteen years old. Her cousin is a girl: her name is Marie. Marie is single. Her brother is married and his wife is Peruvian. They have a baby, so Ana has a nephew. Her aunt and her uncle live with the grandparents. Her grandfather is eighty-four and her grandmother is seventy-nine. Ana has a niece too: she is three. Her family has many people! In Canada Ana lives with a friend and they have a dog and a cat. My family is in Peru, says Ana, but my pets are here.",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cuántos primos tiene Ana?",
+     "opciones": [
+      "four",
+      "two",
+      "three"
+     ],
+     "respuesta": "four"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Los gemelos tienen dieciséis años.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Cómo se llama la prima?",
+     "respuesta": "Marie"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué mascotas tiene en Canadá?",
+     "opciones": [
+      "a dog and a cat",
+      "two dogs",
+      "a cat"
+     ],
+     "respuesta": "a dog and a cat"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "Marie tiene novio.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "La abuela tiene ochenta y cuatro años.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Cuántos años tiene la sobrina?",
+     "respuesta": "three",
+     "aceptadas": [
+      "3"
+     ]
+    }
+   ]
+  },
+  {
+   "titulo": "¿Quién es quién en la familia?",
+   "texto": "This is my dad and this is my mom: my parents. My father is fifty-two and my mother is fifty. I have one brother and one sister. My brother is married: his wife is Canadian and they have a son. That son is my nephew. My sister is divorced and she has a daughter, my niece. My grandparents live in Peru. My grandfather is old. My uncle and my aunt have two children: my cousins. One cousin is a boy and one cousin is a girl. And the pets? We have a dog. My friend has a cat and a baby cat!",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cuántos años tiene el padre?",
+     "opciones": [
+      "fifty-two",
+      "fifty",
+      "seventy"
+     ],
+     "respuesta": "fifty-two"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "La hermana está divorciada.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Qué es el hijo del hermano para la persona que habla?",
+     "respuesta": "nephew",
+     "aceptadas": [
+      "my nephew"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cuántos primos tiene?",
+     "opciones": [
+      "two",
+      "one",
+      "four"
+     ],
+     "respuesta": "two"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "El hermano vive en Canadá.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "La familia tiene un gato.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Dónde viven los abuelos?",
+     "respuesta": "Peru",
+     "aceptadas": [
+      "in Peru"
+     ]
+    }
+   ]
   }
  ]
 }

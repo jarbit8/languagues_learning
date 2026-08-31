@@ -111,6 +111,122 @@
      "respuesta": "calm"
     }
    ]
+  },
+  {
+   "titulo": "Dos amigas muy distintas",
+   "texto": "Laura is tall and thin. She is blond and she has big eyes. She is very funny and friendly, and she is never shy. Marie is short and she is brown-haired. Her eyes are small. Marie is calm and serious, but she is really kind. Laura is happy and Marie is happy too. Is Marie lazy? No! She is very hardworking and smart. And their brothers? Laura's brother is young and handsome. Marie's brother is old and bald, but he is strong and brave. He is never angry. Two families, and all of them are nice people.",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cómo es Laura físicamente?",
+     "opciones": [
+      "tall and thin",
+      "short and fat",
+      "old"
+     ],
+     "respuesta": "tall and thin"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Marie tiene el pelo castaño.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Cómo tiene Marie los ojos?",
+     "respuesta": "small",
+     "aceptadas": [
+      "small eyes"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cómo es el hermano de Marie?",
+     "opciones": [
+      "old and bald",
+      "young and handsome",
+      "tall and blond"
+     ],
+     "respuesta": "old and bald"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "Laura y Marie son hermanas.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Marie es perezosa.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "Escribe un adjetivo de personalidad de Laura.",
+     "respuesta": "funny",
+     "aceptadas": [
+      "friendly",
+      "happy"
+     ]
+    }
+   ]
+  },
+  {
+   "titulo": "En la foto de la clase",
+   "texto": "Who is the tall man? He is my uncle. He is handsome and very serious. Is he old? No, he is young. And the woman with red hair? She is red-haired, yes. She is my aunt. She is short and a bit fat, but she is beautiful. Is she shy? No, she is friendly and funny. And the dark-haired boy? That is my cousin. He is smart but he is lazy. He is always tired! And the girl with curly hair? She is my sister. She is thin, calm and hardworking. She is never sad and she is very brave.",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cómo es el tío?",
+     "opciones": [
+      "tall and handsome",
+      "short and fat",
+      "bald"
+     ],
+     "respuesta": "tall and handsome"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "La tía tiene el pelo rojo.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Cómo tiene el pelo la hermana?",
+     "respuesta": "curly",
+     "aceptadas": [
+      "curly hair"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cómo es el primo de carácter?",
+     "opciones": [
+      "smart but lazy",
+      "brave and strong",
+      "shy and calm"
+     ],
+     "respuesta": "smart but lazy"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "El tío vive con la familia.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "La tía es tímida.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "Escribe un adjetivo de personalidad de la hermana.",
+     "respuesta": "calm",
+     "aceptadas": [
+      "hardworking",
+      "brave"
+     ]
+    }
+   ]
   }
  ]
 }

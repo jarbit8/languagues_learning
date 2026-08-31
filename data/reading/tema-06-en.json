@@ -110,6 +110,108 @@
      ]
     }
    ]
+  },
+  {
+   "titulo": "Las profesiones de la familia",
+   "texto": "My father is a doctor and he works in a big company. My mother is a teacher and her office is in the city. My uncle is a driver and my aunt is a secretary. My cousin is a police officer and his wife is a nurse. My grandfather is a farmer. My brother is a cook and my sister is a dentist. And you? I am a student, but I work at a company. Is your job good? Yes, but my salary is not good. Who is the boss? Mr Lee. He is an engineer. And Marc? Marc is unemployed, but he has a career.",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿En qué trabaja el padre?",
+     "opciones": [
+      "doctor",
+      "teacher",
+      "driver"
+     ],
+     "respuesta": "doctor"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "La madre es profesora.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Cuál es la profesión del abuelo?",
+     "respuesta": "farmer"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Quién es el jefe?",
+     "opciones": [
+      "Mr Lee",
+      "Marc",
+      "the father"
+     ],
+     "respuesta": "Mr Lee"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "Marc busca trabajo de cocinero.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "El salario de la persona que habla es bueno.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Cuál es la profesión de la hermana?",
+     "respuesta": "dentist"
+    }
+   ]
+  },
+  {
+   "titulo": "Una entrevista de trabajo",
+   "texto": "Good morning! What do you do? I am an architect, but I am unemployed. And what is your career? I study and I work. Which job is good for you here? A job in an office. How is your English? Very good. My friend is an accountant and she works at a big company. Her boss is a lawyer. My sister is a firefighter and my brother is a waiter. My mother is a seller and my father is a programmer. Is the salary good? The salary is very good. Welcome to the company! Thank you very much!",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cuál es la profesión de la persona?",
+     "opciones": [
+      "architect",
+      "accountant",
+      "lawyer"
+     ],
+     "respuesta": "architect"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "La persona tiene trabajo ahora.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿En qué trabaja la amiga?",
+     "respuesta": "accountant"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿En qué trabaja el hermano?",
+     "opciones": [
+      "waiter",
+      "firefighter",
+      "seller"
+     ],
+     "respuesta": "waiter"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "La persona vive cerca de la empresa.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "El salario es bueno.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Cuál es la profesión del padre?",
+     "respuesta": "programmer"
+    }
+   ]
   }
  ]
 }
