@@ -29,3 +29,38 @@ body {
     @apply btn bg-slate-900 text-white dark:bg-white dark:text-slate-900;
   }
 }
+
+/* IMPRESIÓN (2026-08-30). El usuario hace los 45 min de Practicar en papel, antes de dormir,
+   para estar fuera de pantallas. Al imprimir /hoja solo debe salir la hoja: fuera la barra de
+   pestañas, el selector de tema y el propio botón de imprimir, y fuera el fondo oscuro, que en
+   papel se come el tóner y deja el texto ilegible. */
+@media print {
+  @page {
+    size: A4;
+    margin: 14mm;
+  }
+  html,
+  body {
+    background: #fff !important;
+    color: #000 !important;
+  }
+  nav,
+  .print\:hidden {
+    display: none !important;
+  }
+  /* La app centra el contenido en una columna de móvil; en A4 eso desperdicia media hoja. */
+  main {
+    padding: 0 !important;
+    max-width: none !important;
+  }
+  .hoja {
+    box-shadow: none !important;
+  }
+  /* Que una pregunta no se parta entre dos páginas. */
+  .break-inside-avoid {
+    break-inside: avoid;
+  }
+  .break-before-page {
+    break-before: page;
+  }
+}

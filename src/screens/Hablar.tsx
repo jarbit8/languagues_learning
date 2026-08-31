@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { useLocation } from 'react-router-dom'
+import { useLocation, Link } from 'react-router-dom'
 import Conversacion from './Conversacion'
 import Listening from './Listening'
 import Reading from './Reading'
@@ -28,7 +28,16 @@ export default function Hablar() {
 
   return (
     <div className="flex flex-col gap-4">
-      <h1 className="text-2xl font-bold">Practicar</h1>
+      <div className="flex items-center gap-2">
+        <h1 className="flex-1 text-2xl font-bold">Practicar</h1>
+        {/* Los 45 min de práctica los hace en papel, antes de dormir y fuera de pantallas. */}
+        <Link
+          to="/hoja"
+          className="rounded-lg border border-slate-300 px-2.5 py-1.5 text-xs font-semibold dark:border-slate-600"
+        >
+          🖨️ Hoja
+        </Link>
+      </div>
 
       <div className="grid grid-cols-5 gap-1 rounded-xl bg-slate-200 p-1 dark:bg-slate-800">
         {TABS.map((t) => (

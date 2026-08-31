@@ -5,6 +5,7 @@ import Aprender from './screens/Aprender'
 import Examen from './screens/Examen'
 import Hablar from './screens/Hablar'
 import Progreso from './screens/Progreso'
+import HojaDePractica from './screens/HojaDePractica'
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
             <Route path="/examen" element={<Examen />} />
             <Route path="/hablar" element={<Hablar />} />
             <Route path="/progreso" element={<Progreso />} />
+            <Route path="/hoja" element={<HojaDePractica />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </main>
