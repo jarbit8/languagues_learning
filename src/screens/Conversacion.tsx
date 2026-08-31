@@ -5,6 +5,7 @@ import { escenarioDe } from '../data/escenarios'
 import { getVocabPack } from '../data/packs'
 import { construirPromptCopiable, vocabularioDesbloqueado } from '../lib/speaking'
 import CopiarPrompt from '../components/CopiarPrompt'
+import SelectorDia from '../components/SelectorDia'
 
 // Práctica libre de speaking: SOLO conversación/roleplay del tema. Hubo un selector para elegir
 // también una tarea tipo CELPIP y el usuario lo quitó — las tareas de examen siguen vivas en
@@ -37,19 +38,7 @@ export default function Conversacion() {
             </option>
           ))}
         </select>
-        <div className="grid grid-cols-2 gap-1 rounded-xl bg-slate-200 p-1 dark:bg-slate-800">
-          {([1, 2] as const).map((d) => (
-            <button
-              key={d}
-              onClick={() => setDia(d)}
-              className={`rounded-lg py-1.5 text-sm font-semibold ${
-                dia === d ? 'bg-white shadow dark:bg-slate-700' : 'text-slate-500'
-              }`}
-            >
-              Día {d}
-            </button>
-          ))}
-        </div>
+        <SelectorDia dia={dia} onCambio={setDia} />
         <p className="text-sm text-slate-500 dark:text-slate-400">{escenarioDe(temaSel, dia)}</p>
       </div>
 

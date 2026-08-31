@@ -6,6 +6,7 @@ import { getVocabPack, getListening } from '../data/packs'
 import { reproducirDialogo, reproducirLinea, detener, rateListening } from '../lib/listening'
 import { preguntaDeListening } from '../lib/preguntas'
 import ExamRunner from '../components/ExamRunner'
+import SelectorDia from '../components/SelectorDia'
 
 // Estima la duración del audio TTS (aprox — la velocidad real depende de la voz del dispositivo).
 function duracionAprox(dialogo: DialogoListening, tema: number): number {
@@ -114,6 +115,8 @@ function DialogoCard({
 export default function Listening() {
   const temaActual = useLiveQuery(() => temaEnCurso(), [], 1) ?? 1
   const [tema, setTema] = useState<number | null>(null)
+  // Un diálogo por día: enseñar los dos juntos destripa el material del día siguiente.
+  const [dia, setDia] = useState<1 | 2>(1)
   const [examenDialogo, setExamenDialogo] = useState<number | null>(null)
   const [resultado, setResultado] = useState<{ aciertos: number; total: number } | null>(null)
 
@@ -184,6 +187,8 @@ export default function Listening() {
         </select>
       </div>
 
+      <SelectorDia dia={dia} onCambio={setDia} />
+
       <p className="text-sm text-slate-500 dark:text-slate-400">
         Escucha el diálogo (sin mirar la transcripción la primera vez), luego responde las preguntas. Solo usa
         vocabulario de temas que ya viste. La app usa una voz de mujer y una de hombre para los dos personajes.
@@ -194,9 +199,11 @@ export default function Listening() {
           Aún no hay listening para el tema {temaSel}.
         </p>
       ) : (
-        pack.dialogos.map((d, i) => (
-          <DialogoCard key={i} dialogo={d} indice={i} tema={temaSel} onExamen={setExamenDialogo} />
-        ))
+        // Solo el diálogo del día. Si el tema aún no tiene el segundo, cae en el primero.
+        pack.dialogos.slice(dia - 1, dia).concat(pack.dialogos.length < dia ? pack.dialogos.slice(0, 1) : []).map((d) => {
+          const i = pack.dialogos.indexOf(d)
+          return <DialogoCard key={i} dialogo={d} indice={i} tema={temaSel} onExamen={setExamenDialogo} />
+        })
       )}
     </div>
   )

@@ -4,12 +4,15 @@ import { temaEnCurso } from '../lib/progreso'
 import { getWriting } from '../data/packs'
 import { bloqueDeTema } from '../lib/curriculum'
 import { EscribirConsigna } from '../components/PasoWriting'
+import SelectorDia from '../components/SelectorDia'
 
 export default function Writing() {
   // Se elige por TEMA, igual que Leer y Escuchar. Los packs siguen agrupados por bloque en
   // disco, pero cada consigna sabe de qué tema es: eso es cosa del archivo, no del usuario.
   const temaActual = useLiveQuery(() => temaEnCurso(), [], 1) ?? 1
   const [tema, setTema] = useState<number | null>(null)
+  // Una consigna por día, como en el resto de Practicar.
+  const [dia, setDia] = useState<1 | 2>(1)
   const [consignaIdx, setConsignaIdx] = useState<number | null>(null)
   const [hecho, setHecho] = useState(false)
 
@@ -69,6 +72,8 @@ export default function Writing() {
         </select>
       </div>
 
+      <SelectorDia dia={dia} onCambio={setDia} />
+
       <p className="text-sm text-slate-500 dark:text-slate-400">
         Una consigna por tema, en formato IELTS/TOEFL: cada una dice cuántas palabras pide. Al enviar comparas tu texto
         con una respuesta modelo y te autocalificas con el checklist.
@@ -84,6 +89,8 @@ export default function Writing() {
         pack.consignas
           .map((c, i) => ({ c, i }))
           .filter(({ c }) => c.tema === temaSel)
+          // Solo la del día; si el tema aún no tiene la segunda, se queda en la primera.
+          .filter((_, n, todas) => n === Math.min(dia - 1, todas.length - 1))
           .map(({ c, i }) => (
             <div key={i} className="tarjeta flex flex-col gap-3">
               <div className="flex items-center gap-2">

@@ -5,10 +5,13 @@ import { getReading, getVocabPack } from '../data/packs'
 import { preguntaDeListening } from '../lib/preguntas'
 import ExamRunner from '../components/ExamRunner'
 import PalabrasDeExamen from '../components/PalabrasDeExamen'
+import SelectorDia from '../components/SelectorDia'
 
 export default function Reading() {
   const temaActual = useLiveQuery(() => temaEnCurso(), [], 1) ?? 1
   const [tema, setTema] = useState<number | null>(null)
+  // Una lectura por día: enseñar las dos juntas destripa la del día siguiente.
+  const [dia, setDia] = useState<1 | 2>(1)
   const [examen, setExamen] = useState<number | null>(null)
   const [resultado, setResultado] = useState<{ aciertos: number; total: number } | null>(null)
 
@@ -88,6 +91,8 @@ export default function Reading() {
 
       {/* La chuleta se ofrece desde el tema 9, que es donde los enunciados dejan de estar en
           español; antes solo sería ruido. */}
+      <SelectorDia dia={dia} onCambio={setDia} />
+
       {temaSel >= 9 && <PalabrasDeExamen temaActual={temaActual} />}
 
       {!pack ? (
@@ -95,7 +100,12 @@ export default function Reading() {
           Aún no hay lectura para el tema {temaSel}.
         </p>
       ) : (
-        pack.textos.map((t, i) => (
+        // Solo el texto del día; si el tema aún no tiene el segundo, cae en el primero.
+        pack.textos
+          .filter((_, i, todos) => i === Math.min(dia - 1, todos.length - 1))
+          .map((t, _n, _a) => {
+            const i = pack.textos.indexOf(t)
+            return (
           <div key={i} className="tarjeta flex flex-col gap-3">
             <div className="flex items-center gap-2">
               <span
@@ -112,7 +122,8 @@ export default function Reading() {
               Responder preguntas ({t.preguntas.length})
             </button>
           </div>
-        ))
+            )
+          })
       )}
     </div>
   )
