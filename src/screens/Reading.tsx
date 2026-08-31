@@ -6,6 +6,7 @@ import { preguntaDeListening } from '../lib/preguntas'
 import ExamRunner from '../components/ExamRunner'
 import PalabrasDeExamen from '../components/PalabrasDeExamen'
 import SelectorDia from '../components/SelectorDia'
+import { porDia } from '../lib/porDia'
 
 export default function Reading() {
   const temaActual = useLiveQuery(() => temaEnCurso(), [], 1) ?? 1
@@ -100,10 +101,9 @@ export default function Reading() {
           Aún no hay lectura para el tema {temaSel}.
         </p>
       ) : (
-        // Solo el texto del día; si el tema aún no tiene el segundo, cae en el primero.
-        pack.textos
-          .filter((_, i, todos) => i === Math.min(dia - 1, todos.length - 1))
-          .map((t, _n, _a) => {
+        // DOS lecturas por día: una sola deja el módulo en 7 min y el objetivo son 15.
+        porDia(pack.textos, dia)
+          .map((t) => {
             const i = pack.textos.indexOf(t)
             return (
           <div key={i} className="tarjeta flex flex-col gap-3">

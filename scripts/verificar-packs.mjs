@@ -99,7 +99,11 @@ for (const { archivo, pack } of packs('listening')) {
       if (q.tipo === 'anota_la_hora' && !/^\d{1,2}:\d{2}$/.test(q.respuesta))
         mal(archivo, donde, `hora mal formada: "${q.respuesta}"`)
     })
-    if (d.preguntas?.length !== 5) mal(archivo, `diálogo ${i + 1}`, `${d.preguntas?.length ?? 0} preguntas (se esperan 5)`)
+    // 3 a 5 preguntas. Desde el 2026-08-30 el usuario hace DOS diálogos por día y el módulo
+    // de escuchar tiene un presupuesto de 5 minutos: con 5 preguntas cada uno no cabe, así que
+    // los diálogos nuevos llevan 3. Los viejos siguen con 5 y también valen.
+    const nq = d.preguntas?.length ?? 0
+    if (nq < 3 || nq > 5) mal(archivo, `diálogo ${i + 1}`, `${nq} preguntas (se esperan entre 3 y 5)`)
   })
 }
 

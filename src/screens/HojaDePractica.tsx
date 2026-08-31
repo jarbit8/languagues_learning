@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import { temaEnCurso } from '../lib/progreso'
 import { getListening, getReading, getWriting, getVocabPack, temasDisponibles } from '../data/packs'
 import { bloqueDeTema } from '../lib/curriculum'
+import { porDia } from '../lib/porDia'
 
 // HOJA PARA IMPRIMIR (2026-08-30, pedido del usuario): quiere hacer los 45 min de Practicar
 // EN PAPEL, antes de dormir, fuera de pantallas. Van las tres destrezas que se pueden pasar a
@@ -47,13 +48,13 @@ export default function HojaDePractica() {
   // consigna que le tocan. Si un tema todavía no tiene el segundo, cae en el primero.
   const [dia, setDia] = useState<1 | 2>(1)
   const t = tema ?? temaActual
-  const i = dia - 1
 
   const pack = getVocabPack(t)
   const listening = getListening(t)
   const reading = getReading(t)
   const consignasDelTema = getWriting(bloqueDeTema(t))?.consignas.filter((c) => c.tema === t) ?? []
-  const consigna = consignasDelTema[i] ?? consignasDelTema[0]
+  // Escribir va a UNA por día: 30-40 palabras a mano ya son los 10 minutos del módulo.
+  const consigna = consignasDelTema[dia - 1] ?? consignasDelTema[0]
 
   // Numeración corrida por toda la hoja, como en un examen de verdad. Se calcula ANTES de
   // pintar: mutar contadores dentro del JSX depende del número de renders y se desordena.
@@ -66,11 +67,11 @@ export default function HojaDePractica() {
   const numeradas = <T extends { tipo: string; enunciado: string; opciones?: string[]; respuesta: string }>(ps: T[]) =>
     ps.map((p) => ({ n: ++cont, enunciado: p.enunciado, opciones: etiquetas(p.tipo, p.opciones), respuesta: p.respuesta }))
 
-  // Un diálogo y un texto por día, no los dos de golpe.
-  const dialogosDelDia = (listening?.dialogos ?? []).slice(i, i + 1)
-  const textosDelDia = (reading?.textos ?? []).slice(i, i + 1)
-  const bloquesEscuchar = (dialogosDelDia.length ? dialogosDelDia : (listening?.dialogos ?? []).slice(0, 1)).map((d) => ({ titulo: d.titulo, preguntas: numeradas(d.preguntas) }))
-  const bloquesLeer = (textosDelDia.length ? textosDelDia : (reading?.textos ?? []).slice(0, 1)).map((tx) => ({ ...tx, preguntas: numeradas(tx.preguntas) }))
+  // Dos diálogos y dos lecturas por día, que es lo que llena los 5 y los 15 minutos.
+  const dialogosDelDia = porDia(listening?.dialogos ?? [], dia)
+  const textosDelDia = porDia(reading?.textos ?? [], dia)
+  const bloquesEscuchar = dialogosDelDia.map((d) => ({ titulo: d.titulo, preguntas: numeradas(d.preguntas) }))
+  const bloquesLeer = textosDelDia.map((tx) => ({ ...tx, preguntas: numeradas(tx.preguntas) }))
   const soluciones = [...bloquesEscuchar.flatMap((b) => b.preguntas), ...bloquesLeer.flatMap((b) => b.preguntas)].map(
     (p) => `${p.n}. ${capitaliza(p.respuesta)}`
   )
@@ -136,7 +137,7 @@ export default function HojaDePractica() {
           {bloquesEscuchar.map((d, i) => (
             <div key={i} className="mt-3">
               <p className="text-sm font-semibold">
-                Diálogo {dia}: {d.titulo}
+                Diálogo {i + 1}: {d.titulo}
               </p>
               {d.preguntas.map((p) => (
                 <Pregunta key={p.n} n={p.n} enunciado={p.enunciado} opciones={p.opciones} />

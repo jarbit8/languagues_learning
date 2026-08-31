@@ -1,39 +1,281 @@
-{ "tema": 5,
-"dialogos": [
-{ "titulo": "Describiendo a un amigo",
-"lineas": [
-{"hablante":"A","texto":"Is your friend tall?"},
-{"hablante":"B","texto":"Yes, he is tall and young."},
-{"hablante":"A","texto":"Is he kind?"},
-{"hablante":"B","texto":"Yes, he is very kind and funny."},
-{"hablante":"A","texto":"And his eyes?"},
-{"hablante":"B","texto":"His eyes are brown."},
-{"hablante":"A","texto":"Is he shy?"},
-{"hablante":"B","texto":"No, he isn't shy at all."}
-],
-"preguntas": [
-{"tipo":"opcion_multiple","enunciado":"¿De qué color son sus ojos?","opciones":["brown","blond","red"],"respuesta":"brown"},
-{"tipo":"vf","enunciado":"El amigo es tímido.","respuesta":"falso"},
-{"tipo":"completar_dato","enunciado":"Escribe un adjetivo de personalidad mencionado.","respuesta":"kind","aceptadas":["funny"]},
-{"tipo":"vf","enunciado":"El amigo es bajo.","respuesta":"falso"},
-{"tipo":"opcion_multiple","enunciado":"¿Cómo es el amigo físicamente además de alto?","opciones":["young","old","fat"],"respuesta":"young"}
-] },
-{ "titulo": "Describiendo a mi hermana",
-"lineas": [
-{"hablante":"A","texto":"Is your sister tall?"},
-{"hablante":"B","texto":"No, she is short and thin."},
-{"hablante":"A","texto":"Is she smart?"},
-{"hablante":"B","texto":"Yes, she is very smart and hardworking."},
-{"hablante":"A","texto":"And her hair?"},
-{"hablante":"B","texto":"Her hair is blond."},
-{"hablante":"A","texto":"Is she happy?"},
-{"hablante":"B","texto":"Yes, she is very happy."}
-],
-"preguntas": [
-{"tipo":"opcion_multiple","enunciado":"¿Cómo es el cabello de la hermana?","opciones":["blond","brown-haired","red-haired"],"respuesta":"blond"},
-{"tipo":"vf","enunciado":"La hermana es alta.","respuesta":"falso"},
-{"tipo":"completar_dato","enunciado":"Escribe un adjetivo de personalidad mencionado sobre la hermana.","respuesta":"smart","aceptadas":["hardworking"]},
-{"tipo":"vf","enunciado":"La hermana está feliz.","respuesta":"verdadero"},
-{"tipo":"opcion_multiple","enunciado":"¿Qué tipo de cuerpo tiene la hermana?","opciones":["thin","fat","strong"],"respuesta":"thin"}
-] }
-] }
+{
+ "tema": 5,
+ "dialogos": [
+  {
+   "titulo": "Describiendo a un amigo",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "Is your friend tall?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes, he is tall and young."
+    },
+    {
+     "hablante": "A",
+     "texto": "Is he kind?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes, he is very kind and funny."
+    },
+    {
+     "hablante": "A",
+     "texto": "And his eyes?"
+    },
+    {
+     "hablante": "B",
+     "texto": "His eyes are brown."
+    },
+    {
+     "hablante": "A",
+     "texto": "Is he shy?"
+    },
+    {
+     "hablante": "B",
+     "texto": "No, he isn't shy at all."
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿De qué color son sus ojos?",
+     "opciones": [
+      "brown",
+      "blond",
+      "red"
+     ],
+     "respuesta": "brown"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "El amigo es tímido.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "Escribe un adjetivo de personalidad mencionado.",
+     "respuesta": "kind",
+     "aceptadas": [
+      "funny"
+     ]
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "El amigo es bajo.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cómo es el amigo físicamente además de alto?",
+     "opciones": [
+      "young",
+      "old",
+      "fat"
+     ],
+     "respuesta": "young"
+    }
+   ]
+  },
+  {
+   "titulo": "Describiendo a mi hermana",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "Is your sister tall?"
+    },
+    {
+     "hablante": "B",
+     "texto": "No, she is short and thin."
+    },
+    {
+     "hablante": "A",
+     "texto": "Is she smart?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes, she is very smart and hardworking."
+    },
+    {
+     "hablante": "A",
+     "texto": "And her hair?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Her hair is blond."
+    },
+    {
+     "hablante": "A",
+     "texto": "Is she happy?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes, she is very happy."
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cómo es el cabello de la hermana?",
+     "opciones": [
+      "blond",
+      "brown-haired",
+      "red-haired"
+     ],
+     "respuesta": "blond"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "La hermana es alta.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "Escribe un adjetivo de personalidad mencionado sobre la hermana.",
+     "respuesta": "smart",
+     "aceptadas": [
+      "hardworking"
+     ]
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "La hermana está feliz.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué tipo de cuerpo tiene la hermana?",
+     "opciones": [
+      "thin",
+      "fat",
+      "strong"
+     ],
+     "respuesta": "thin"
+    }
+   ]
+  },
+  {
+   "titulo": "¿Cómo es tu amiga?",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "Is your friend tall?"
+    },
+    {
+     "hablante": "B",
+     "texto": "No, she is short and thin."
+    },
+    {
+     "hablante": "A",
+     "texto": "And her hair?"
+    },
+    {
+     "hablante": "B",
+     "texto": "She is blond, with big eyes."
+    },
+    {
+     "hablante": "A",
+     "texto": "Is she shy?"
+    },
+    {
+     "hablante": "B",
+     "texto": "No! She is very funny and friendly."
+    },
+    {
+     "hablante": "A",
+     "texto": "And smart?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes, smart and hardworking."
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cómo es físicamente la amiga?",
+     "opciones": [
+      "short and thin",
+      "tall and fat",
+      "old"
+     ],
+     "respuesta": "short and thin"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "La amiga es tímida.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿De qué color es su pelo?",
+     "respuesta": "blond"
+    }
+   ]
+  },
+  {
+   "titulo": "El hombre de la foto",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "Who is the man with dark hair?"
+    },
+    {
+     "hablante": "B",
+     "texto": "He is my uncle. He is handsome."
+    },
+    {
+     "hablante": "A",
+     "texto": "Is he young?"
+    },
+    {
+     "hablante": "B",
+     "texto": "No, he is old, but he is strong."
+    },
+    {
+     "hablante": "A",
+     "texto": "Is he serious?"
+    },
+    {
+     "hablante": "B",
+     "texto": "No, he is calm and kind."
+    },
+    {
+     "hablante": "A",
+     "texto": "And the bald man?"
+    },
+    {
+     "hablante": "B",
+     "texto": "That is my father! He is very brave."
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Cómo tiene el pelo el tío?",
+     "respuesta": "dark",
+     "aceptadas": [
+      "dark hair",
+      "dark-haired"
+     ]
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "El tío es joven.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Quién es el hombre calvo?",
+     "opciones": [
+      "his father",
+      "his uncle",
+      "his brother"
+     ],
+     "respuesta": "his father"
+    }
+   ]
+  }
+ ]
+}

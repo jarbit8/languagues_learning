@@ -1,39 +1,281 @@
-{ "tema": 6,
-"dialogos": [
-{ "titulo": "Hablando de trabajo",
-"lineas": [
-{"hablante":"A","texto":"What do you do, Maria?"},
-{"hablante":"B","texto":"I'm a teacher. And you?"},
-{"hablante":"A","texto":"I'm a programmer. I work at a company."},
-{"hablante":"B","texto":"Is your job good?"},
-{"hablante":"A","texto":"Yes, it is very good."},
-{"hablante":"B","texto":"Where is your office?"},
-{"hablante":"A","texto":"It's in Arequipa."},
-{"hablante":"B","texto":"That's great!"}
-],
-"preguntas": [
-{"tipo":"opcion_multiple","enunciado":"¿Cuál es la profesión de Maria?","opciones":["programmer","teacher","doctor"],"respuesta":"teacher"},
-{"tipo":"vf","enunciado":"A dice que su trabajo es bueno.","respuesta":"verdadero"},
-{"tipo":"completar_dato","enunciado":"¿Dónde está la oficina de A?","respuesta":"Arequipa","aceptadas":["the city centre"]},
-{"tipo":"opcion_multiple","enunciado":"¿Cuál es la profesión de A?","opciones":["teacher","programmer","doctor"],"respuesta":"programmer"},
-{"tipo":"completar_dato","enunciado":"¿Dónde trabaja A?","respuesta":"a company","aceptadas":["company","at a company"]}
-] },
-{ "titulo": "El trabajo de mis padres",
-"lineas": [
-{"hablante":"A","texto":"What does your father do?"},
-{"hablante":"B","texto":"He's a doctor. He works in a big office."},
-{"hablante":"A","texto":"Is his job good?"},
-{"hablante":"B","texto":"Yes, it is very good."},
-{"hablante":"A","texto":"What about your mother?"},
-{"hablante":"B","texto":"She's an engineer. She works at a company."},
-{"hablante":"A","texto":"That's great!"},
-{"hablante":"B","texto":"Yes, they are hardworking."}
-],
-"preguntas": [
-{"tipo":"opcion_multiple","enunciado":"¿Cuál es la profesión del padre?","opciones":["doctor","engineer","teacher"],"respuesta":"doctor"},
-{"tipo":"vf","enunciado":"El padre dice que su trabajo es bueno.","respuesta":"verdadero"},
-{"tipo":"completar_dato","enunciado":"¿Cuál es la profesión de la madre?","respuesta":"engineer","aceptadas":["an engineer"]},
-{"tipo":"opcion_multiple","enunciado":"¿Dónde trabaja la madre?","opciones":["a company","an office","a big office"],"respuesta":"a company"},
-{"tipo":"completar_dato","enunciado":"¿Qué adjetivo se usa para describir a los padres al final?","respuesta":"hardworking"}
-] }
-] }
+{
+ "tema": 6,
+ "dialogos": [
+  {
+   "titulo": "Hablando de trabajo",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "What do you do, Maria?"
+    },
+    {
+     "hablante": "B",
+     "texto": "I'm a teacher. And you?"
+    },
+    {
+     "hablante": "A",
+     "texto": "I'm a programmer. I work at a company."
+    },
+    {
+     "hablante": "B",
+     "texto": "Is your job good?"
+    },
+    {
+     "hablante": "A",
+     "texto": "Yes, it is very good."
+    },
+    {
+     "hablante": "B",
+     "texto": "Where is your office?"
+    },
+    {
+     "hablante": "A",
+     "texto": "It's in Arequipa."
+    },
+    {
+     "hablante": "B",
+     "texto": "That's great!"
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cuál es la profesión de Maria?",
+     "opciones": [
+      "programmer",
+      "teacher",
+      "doctor"
+     ],
+     "respuesta": "teacher"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "A dice que su trabajo es bueno.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Dónde está la oficina de A?",
+     "respuesta": "Arequipa",
+     "aceptadas": [
+      "the city centre"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cuál es la profesión de A?",
+     "opciones": [
+      "teacher",
+      "programmer",
+      "doctor"
+     ],
+     "respuesta": "programmer"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Dónde trabaja A?",
+     "respuesta": "a company",
+     "aceptadas": [
+      "company",
+      "at a company"
+     ]
+    }
+   ]
+  },
+  {
+   "titulo": "El trabajo de mis padres",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "What does your father do?"
+    },
+    {
+     "hablante": "B",
+     "texto": "He's a doctor. He works in a big office."
+    },
+    {
+     "hablante": "A",
+     "texto": "Is his job good?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes, it is very good."
+    },
+    {
+     "hablante": "A",
+     "texto": "What about your mother?"
+    },
+    {
+     "hablante": "B",
+     "texto": "She's an engineer. She works at a company."
+    },
+    {
+     "hablante": "A",
+     "texto": "That's great!"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes, they are hardworking."
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cuál es la profesión del padre?",
+     "opciones": [
+      "doctor",
+      "engineer",
+      "teacher"
+     ],
+     "respuesta": "doctor"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "El padre dice que su trabajo es bueno.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Cuál es la profesión de la madre?",
+     "respuesta": "engineer",
+     "aceptadas": [
+      "an engineer"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Dónde trabaja la madre?",
+     "opciones": [
+      "a company",
+      "an office",
+      "a big office"
+     ],
+     "respuesta": "a company"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Qué adjetivo se usa para describir a los padres al final?",
+     "respuesta": "hardworking"
+    }
+   ]
+  },
+  {
+   "titulo": "¿A qué te dedicas?",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "What do you do?"
+    },
+    {
+     "hablante": "B",
+     "texto": "I am a nurse. I work in a big company."
+    },
+    {
+     "hablante": "A",
+     "texto": "And your husband?"
+    },
+    {
+     "hablante": "B",
+     "texto": "He is a police officer."
+    },
+    {
+     "hablante": "A",
+     "texto": "Is his job good?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes, but his salary is not good."
+    },
+    {
+     "hablante": "A",
+     "texto": "And your sister?"
+    },
+    {
+     "hablante": "B",
+     "texto": "She is a lawyer. Her office is here."
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cuál es la profesión de la mujer?",
+     "opciones": [
+      "nurse",
+      "lawyer",
+      "teacher"
+     ],
+     "respuesta": "nurse"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "El salario del marido es bueno.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Cuál es la profesión de la hermana?",
+     "respuesta": "lawyer"
+    }
+   ]
+  },
+  {
+   "titulo": "Buscando trabajo",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "Are you a student?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes, and I work at a company."
+    },
+    {
+     "hablante": "A",
+     "texto": "What is your career?"
+    },
+    {
+     "hablante": "B",
+     "texto": "I study, but I am unemployed."
+    },
+    {
+     "hablante": "A",
+     "texto": "Who is your boss?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Mr Lee. He is an engineer."
+    },
+    {
+     "hablante": "A",
+     "texto": "And Marc?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Marc is a cook, and Sofia is a secretary."
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "vf",
+     "enunciado": "La persona B está sin trabajo.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Cuál es la profesión de Mr Lee?",
+     "respuesta": "engineer"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿En qué trabaja Sofia?",
+     "opciones": [
+      "secretary",
+      "cook",
+      "nurse"
+     ],
+     "respuesta": "secretary"
+    }
+   ]
+  }
+ ]
+}

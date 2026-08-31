@@ -1,39 +1,271 @@
-{ "tema": 3,
-"dialogos": [
-{ "titulo": "¿De dónde eres?",
-"lineas": [
-{"hablante":"A","texto":"Where are you from?"},
-{"hablante":"B","texto":"I'm from Peru. And you?"},
-{"hablante":"A","texto":"I'm from Canada."},
-{"hablante":"B","texto":"Do you speak French?"},
-{"hablante":"A","texto":"Yes, I speak English and French."},
-{"hablante":"B","texto":"I speak Spanish and English."},
-{"hablante":"A","texto":"Which city do you live in?"},
-{"hablante":"B","texto":"I live in Arequipa."}
-],
-"preguntas": [
-{"tipo":"opcion_multiple","enunciado":"¿De dónde es la persona B?","opciones":["Canada","Peru","France"],"respuesta":"Peru"},
-{"tipo":"vf","enunciado":"La persona A habla inglés y francés.","respuesta":"verdadero"},
-{"tipo":"completar_dato","enunciado":"¿En qué ciudad vive B?","respuesta":"Arequipa"},
-{"tipo":"opcion_multiple","enunciado":"¿De dónde es la persona A?","opciones":["Canada","Peru","France"],"respuesta":"Canada"},
-{"tipo":"vf","enunciado":"B habla español.","respuesta":"verdadero"}
-] },
-{ "titulo": "Nacionalidades en la fiesta",
-"lineas": [
-{"hablante":"A","texto":"Hi! Where are you from?"},
-{"hablante":"B","texto":"I'm from Spain. And you?"},
-{"hablante":"A","texto":"I'm from England."},
-{"hablante":"B","texto":"Do you speak Spanish?"},
-{"hablante":"A","texto":"No, I speak English and French."},
-{"hablante":"B","texto":"I speak Spanish and English."},
-{"hablante":"A","texto":"Do you live in Canada?"},
-{"hablante":"B","texto":"Yes, I live in Quebec."}
-],
-"preguntas": [
-{"tipo":"opcion_multiple","enunciado":"¿De dónde es B?","opciones":["Spain","England","Canada"],"respuesta":"Spain"},
-{"tipo":"vf","enunciado":"A habla español.","respuesta":"falso"},
-{"tipo":"completar_dato","enunciado":"¿En qué lugar vive B?","respuesta":"Quebec"},
-{"tipo":"opcion_multiple","enunciado":"¿Qué idiomas habla A?","opciones":["English and French","Spanish and English","English and Spanish"],"respuesta":"English and French"},
-{"tipo":"completar_dato","enunciado":"¿De dónde es A?","respuesta":"England"}
-] }
-] }
+{
+ "tema": 3,
+ "dialogos": [
+  {
+   "titulo": "¿De dónde eres?",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "Where are you from?"
+    },
+    {
+     "hablante": "B",
+     "texto": "I'm from Peru. And you?"
+    },
+    {
+     "hablante": "A",
+     "texto": "I'm from Canada."
+    },
+    {
+     "hablante": "B",
+     "texto": "Do you speak French?"
+    },
+    {
+     "hablante": "A",
+     "texto": "Yes, I speak English and French."
+    },
+    {
+     "hablante": "B",
+     "texto": "I speak Spanish and English."
+    },
+    {
+     "hablante": "A",
+     "texto": "Which city do you live in?"
+    },
+    {
+     "hablante": "B",
+     "texto": "I live in Arequipa."
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿De dónde es la persona B?",
+     "opciones": [
+      "Canada",
+      "Peru",
+      "France"
+     ],
+     "respuesta": "Peru"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "La persona A habla inglés y francés.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿En qué ciudad vive B?",
+     "respuesta": "Arequipa"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿De dónde es la persona A?",
+     "opciones": [
+      "Canada",
+      "Peru",
+      "France"
+     ],
+     "respuesta": "Canada"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "B habla español.",
+     "respuesta": "verdadero"
+    }
+   ]
+  },
+  {
+   "titulo": "Nacionalidades en la fiesta",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "Hi! Where are you from?"
+    },
+    {
+     "hablante": "B",
+     "texto": "I'm from Spain. And you?"
+    },
+    {
+     "hablante": "A",
+     "texto": "I'm from England."
+    },
+    {
+     "hablante": "B",
+     "texto": "Do you speak Spanish?"
+    },
+    {
+     "hablante": "A",
+     "texto": "No, I speak English and French."
+    },
+    {
+     "hablante": "B",
+     "texto": "I speak Spanish and English."
+    },
+    {
+     "hablante": "A",
+     "texto": "Do you live in Canada?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes, I live in Quebec."
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿De dónde es B?",
+     "opciones": [
+      "Spain",
+      "England",
+      "Canada"
+     ],
+     "respuesta": "Spain"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "A habla español.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿En qué lugar vive B?",
+     "respuesta": "Quebec"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué idiomas habla A?",
+     "opciones": [
+      "English and French",
+      "Spanish and English",
+      "English and Spanish"
+     ],
+     "respuesta": "English and French"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿De dónde es A?",
+     "respuesta": "England"
+    }
+   ]
+  },
+  {
+   "titulo": "Idiomas en la oficina",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "Where are you from, Marc?"
+    },
+    {
+     "hablante": "B",
+     "texto": "I come from France. And you?"
+    },
+    {
+     "hablante": "A",
+     "texto": "I am from Spain. Do you speak Spanish?"
+    },
+    {
+     "hablante": "B",
+     "texto": "No, I speak French and English."
+    },
+    {
+     "hablante": "A",
+     "texto": "I speak Spanish and English too."
+    },
+    {
+     "hablante": "B",
+     "texto": "Where do you live?"
+    },
+    {
+     "hablante": "A",
+     "texto": "I live in a city in Canada."
+    },
+    {
+     "hablante": "B",
+     "texto": "Very good!"
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿De dónde viene Marc?",
+     "opciones": [
+      "France",
+      "Spain",
+      "Canada"
+     ],
+     "respuesta": "France"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Marc habla español.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿En qué país vive Marc ahora?",
+     "respuesta": "Canada"
+    }
+   ]
+  },
+  {
+   "titulo": "La capital y el país",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "What is the capital of Peru?"
+    },
+    {
+     "hablante": "B",
+     "texto": "It is Lima. I come from Arequipa."
+    },
+    {
+     "hablante": "A",
+     "texto": "Is Peru in Europe?"
+    },
+    {
+     "hablante": "B",
+     "texto": "No! Peru is in America."
+    },
+    {
+     "hablante": "A",
+     "texto": "And England?"
+    },
+    {
+     "hablante": "B",
+     "texto": "England is in Europe."
+    },
+    {
+     "hablante": "A",
+     "texto": "Are you a foreigner here?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes, I am a foreigner, but I speak the language."
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Cuál es la capital de Perú?",
+     "respuesta": "Lima"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿En qué continente está Perú?",
+     "opciones": [
+      "America",
+      "Europe",
+      "Canada"
+     ],
+     "respuesta": "America"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "La persona B es extranjera.",
+     "respuesta": "verdadero"
+    }
+   ]
+  }
+ ]
+}

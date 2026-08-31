@@ -7,6 +7,7 @@ import { reproducirDialogo, reproducirLinea, detener, rateListening } from '../l
 import { preguntaDeListening } from '../lib/preguntas'
 import ExamRunner from '../components/ExamRunner'
 import SelectorDia from '../components/SelectorDia'
+import { porDia } from '../lib/porDia'
 
 // Estima la duración del audio TTS (aprox — la velocidad real depende de la voz del dispositivo).
 function duracionAprox(dialogo: DialogoListening, tema: number): number {
@@ -199,8 +200,9 @@ export default function Listening() {
           Aún no hay listening para el tema {temaSel}.
         </p>
       ) : (
-        // Solo el diálogo del día. Si el tema aún no tiene el segundo, cae en el primero.
-        pack.dialogos.slice(dia - 1, dia).concat(pack.dialogos.length < dia ? pack.dialogos.slice(0, 1) : []).map((d) => {
+        // DOS diálogos por día: uno solo deja el módulo en 3 min y el objetivo son 5.
+        // Si el tema aún no tiene los cuatro, se reparte lo que haya sin dejar el día vacío.
+        porDia(pack.dialogos, dia).map((d) => {
           const i = pack.dialogos.indexOf(d)
           return <DialogoCard key={i} dialogo={d} indice={i} tema={temaSel} onExamen={setExamenDialogo} />
         })

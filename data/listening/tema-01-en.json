@@ -1,39 +1,292 @@
-{ "tema": 1,
-"dialogos": [
-{ "titulo": "Primer día de clases",
-"lineas": [
-{"hablante":"A","texto":"Hello! My name is Ana. Nice to meet you."},
-{"hablante":"B","texto":"Hi Ana! I'm Paul. Nice to meet you too."},
-{"hablante":"A","texto":"How are you, Paul?"},
-{"hablante":"B","texto":"I'm fine, thank you. And you?"},
-{"hablante":"A","texto":"Very well, thanks!"},
-{"hablante":"B","texto":"Take care, Ana!"},
-{"hablante":"A","texto":"Thank you, Paul! See you tomorrow!"},
-{"hablante":"B","texto":"Goodbye, Ana!"}
-],
-"preguntas": [
-{"tipo":"opcion_multiple","enunciado":"¿Cómo se llama la mujer?","opciones":["Ana","Paul","Maria"],"respuesta":"Ana"},
-{"tipo":"vf","enunciado":"Paul dice que está mal.","respuesta":"falso"},
-{"tipo":"completar_dato","enunciado":"¿Cómo se despiden al final?","respuesta":"goodbye","aceptadas":["bye","see you tomorrow"]},
-{"tipo":"completar_dato","enunciado":"¿Cómo se llama el hombre?","respuesta":"paul","aceptadas":["Paul"]},
-{"tipo":"opcion_multiple","enunciado":"¿Qué le dice Paul a Ana antes de despedirse?","opciones":["Take care, Ana!","Welcome, Ana!","Good night, Ana!"],"respuesta":"Take care, Ana!"}
-] },
-{ "titulo": "En una fiesta",
-"lineas": [
-{"hablante":"A","texto":"Hey! My name is Laura."},
-{"hablante":"B","texto":"Hi Laura! I'm Marc. Nice to meet you."},
-{"hablante":"A","texto":"Nice to meet you too. How are you?"},
-{"hablante":"B","texto":"I'm very well, thank you. And you?"},
-{"hablante":"A","texto":"Fine, thanks! Welcome, Marc."},
-{"hablante":"B","texto":"Thank you! No problem, see you soon."},
-{"hablante":"A","texto":"Bye! Take care."},
-{"hablante":"B","texto":"You too! Have a nice evening."}
-],
-"preguntas": [
-{"tipo":"opcion_multiple","enunciado":"¿Cómo se llama la mujer?","opciones":["Laura","Marc","Ana"],"respuesta":"Laura"},
-{"tipo":"vf","enunciado":"Marc dice que está mal.","respuesta":"falso"},
-{"tipo":"opcion_multiple","enunciado":"¿Qué le dice Laura a Marc cuando llega?","opciones":["Welcome, Marc.","Goodbye, Marc.","Good night, Marc."],"respuesta":"Welcome, Marc."},
-{"tipo":"completar_dato","enunciado":"¿Cómo se despide Laura?","respuesta":"bye","aceptadas":["take care","bye! take care"]},
-{"tipo":"completar_dato","enunciado":"¿Qué le desea Marc a Laura al final?","respuesta":"have a nice evening","aceptadas":["good evening"]}
-] }
-] }
+{
+ "tema": 1,
+ "dialogos": [
+  {
+   "titulo": "Primer día de clases",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "Hello! My name is Ana. Nice to meet you."
+    },
+    {
+     "hablante": "B",
+     "texto": "Hi Ana! I'm Paul. Nice to meet you too."
+    },
+    {
+     "hablante": "A",
+     "texto": "How are you, Paul?"
+    },
+    {
+     "hablante": "B",
+     "texto": "I'm fine, thank you. And you?"
+    },
+    {
+     "hablante": "A",
+     "texto": "Very well, thanks!"
+    },
+    {
+     "hablante": "B",
+     "texto": "Take care, Ana!"
+    },
+    {
+     "hablante": "A",
+     "texto": "Thank you, Paul! See you tomorrow!"
+    },
+    {
+     "hablante": "B",
+     "texto": "Goodbye, Ana!"
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cómo se llama la mujer?",
+     "opciones": [
+      "Ana",
+      "Paul",
+      "Maria"
+     ],
+     "respuesta": "Ana"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Paul dice que está mal.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Cómo se despiden al final?",
+     "respuesta": "goodbye",
+     "aceptadas": [
+      "bye",
+      "see you tomorrow"
+     ]
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Cómo se llama el hombre?",
+     "respuesta": "paul",
+     "aceptadas": [
+      "Paul"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué le dice Paul a Ana antes de despedirse?",
+     "opciones": [
+      "Take care, Ana!",
+      "Welcome, Ana!",
+      "Good night, Ana!"
+     ],
+     "respuesta": "Take care, Ana!"
+    }
+   ]
+  },
+  {
+   "titulo": "En una fiesta",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "Hey! My name is Laura."
+    },
+    {
+     "hablante": "B",
+     "texto": "Hi Laura! I'm Marc. Nice to meet you."
+    },
+    {
+     "hablante": "A",
+     "texto": "Nice to meet you too. How are you?"
+    },
+    {
+     "hablante": "B",
+     "texto": "I'm very well, thank you. And you?"
+    },
+    {
+     "hablante": "A",
+     "texto": "Fine, thanks! Welcome, Marc."
+    },
+    {
+     "hablante": "B",
+     "texto": "Thank you! No problem, see you soon."
+    },
+    {
+     "hablante": "A",
+     "texto": "Bye! Take care."
+    },
+    {
+     "hablante": "B",
+     "texto": "You too! Have a nice evening."
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cómo se llama la mujer?",
+     "opciones": [
+      "Laura",
+      "Marc",
+      "Ana"
+     ],
+     "respuesta": "Laura"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Marc dice que está mal.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué le dice Laura a Marc cuando llega?",
+     "opciones": [
+      "Welcome, Marc.",
+      "Goodbye, Marc.",
+      "Good night, Marc."
+     ],
+     "respuesta": "Welcome, Marc."
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Cómo se despide Laura?",
+     "respuesta": "bye",
+     "aceptadas": [
+      "take care",
+      "bye! take care"
+     ]
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Qué le desea Marc a Laura al final?",
+     "respuesta": "have a nice evening",
+     "aceptadas": [
+      "good evening"
+     ]
+    }
+   ]
+  },
+  {
+   "titulo": "En la oficina por la mañana",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "Good morning, Miss Sofia!"
+    },
+    {
+     "hablante": "B",
+     "texto": "Good morning! How are you?"
+    },
+    {
+     "hablante": "A",
+     "texto": "Very well, thank you. And you?"
+    },
+    {
+     "hablante": "B",
+     "texto": "I am fine, thanks. Excuse me, is Mr Lee here?"
+    },
+    {
+     "hablante": "A",
+     "texto": "Sorry, no. Mr Lee is not here."
+    },
+    {
+     "hablante": "B",
+     "texto": "No problem! Thank you very much."
+    },
+    {
+     "hablante": "A",
+     "texto": "You're welcome. Have a nice day!"
+    },
+    {
+     "hablante": "B",
+     "texto": "Thank you! See you later."
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿A quién saluda la persona A?",
+     "opciones": [
+      "Miss Sofia",
+      "Mrs Lee",
+      "Paul"
+     ],
+     "respuesta": "Miss Sofia"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Mr Lee está en la oficina.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Cómo se despide A al final?",
+     "respuesta": "see you later",
+     "aceptadas": [
+      "later"
+     ]
+    }
+   ]
+  },
+  {
+   "titulo": "Una despedida de noche",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "Good evening, Ana! How are you?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Hey! I am very well, thank you."
+    },
+    {
+     "hablante": "A",
+     "texto": "Good. It is very good."
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes! Take care, Marc."
+    },
+    {
+     "hablante": "A",
+     "texto": "Have a nice evening, Ana."
+    },
+    {
+     "hablante": "B",
+     "texto": "Thank you! See you soon."
+    },
+    {
+     "hablante": "A",
+     "texto": "Good night!"
+    },
+    {
+     "hablante": "B",
+     "texto": "Good night! Bye!"
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cómo saluda Ana a Marc?",
+     "opciones": [
+      "hey",
+      "hello",
+      "good morning"
+     ],
+     "respuesta": "hey"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Qué le desea Marc a Ana?",
+     "respuesta": "have a nice evening",
+     "aceptadas": [
+      "a nice evening",
+      "nice evening"
+     ]
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Se despiden diciendo 'good night'.",
+     "respuesta": "verdadero"
+    }
+   ]
+  }
+ ]
+}

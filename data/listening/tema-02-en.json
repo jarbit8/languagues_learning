@@ -1,39 +1,286 @@
-{ "tema": 2,
-"dialogos": [
-{ "titulo": "Datos personales",
-"lineas": [
-{"hablante":"A","texto":"Hello, what is your name?"},
-{"hablante":"B","texto":"My name is Joel."},
-{"hablante":"A","texto":"How old are you, Joel?"},
-{"hablante":"B","texto":"I'm twenty-two years old."},
-{"hablante":"A","texto":"What is your phone number?"},
-{"hablante":"B","texto":"It's zero, nine, one, five, three, two."},
-{"hablante":"A","texto":"Thank you very much, Joel."},
-{"hablante":"B","texto":"You're welcome. Take care!"}
-],
-"preguntas": [
-{"tipo":"opcion_multiple","enunciado":"¿Cuántos años tiene Joel?","opciones":["twenty","twenty-two","twelve"],"respuesta":"twenty-two"},
-{"tipo":"vf","enunciado":"Joel da su número de teléfono.","respuesta":"verdadero"},
-{"tipo":"completar_dato","enunciado":"Escribe el nombre de la persona.","respuesta":"Joel"},
-{"tipo":"completar_dato","enunciado":"¿Cómo se despide Joel al final?","respuesta":"take care","aceptadas":["happy birthday!"]},
-{"tipo":"opcion_multiple","enunciado":"¿Cuál es el primer número que dice Joel de su teléfono?","opciones":["zero","one","nine"],"respuesta":"zero"}
-] },
-{ "titulo": "En la recepción",
-"lineas": [
-{"hablante":"A","texto":"Hello! What is your name?"},
-{"hablante":"B","texto":"Hi! My name is Laura."},
-{"hablante":"A","texto":"How old are you?"},
-{"hablante":"B","texto":"I'm nineteen years old."},
-{"hablante":"A","texto":"What is your phone number, please?"},
-{"hablante":"B","texto":"It's zero, one, six, four, eight, zero."},
-{"hablante":"A","texto":"Thank you very much."},
-{"hablante":"B","texto":"You're welcome! See you soon."}
-],
-"preguntas": [
-{"tipo":"opcion_multiple","enunciado":"¿Cómo se llama la persona B?","opciones":["Laura","Joel","Ana"],"respuesta":"Laura"},
-{"tipo":"completar_dato","enunciado":"¿Cuántos años tiene Laura?","respuesta":"nineteen","aceptadas":["19"]},
-{"tipo":"vf","enunciado":"Laura da su número de teléfono.","respuesta":"verdadero"},
-{"tipo":"opcion_multiple","enunciado":"¿Qué le dice A a Laura al pedir el número?","opciones":["What is your phone number, please?","What is your name, please?","How old are you, please?"],"respuesta":"What is your phone number, please?"},
-{"tipo":"completar_dato","enunciado":"¿Cómo se despide Laura?","respuesta":"see you soon","aceptadas":["you're welcome! see you soon"]}
-] }
-] }
+{
+ "tema": 2,
+ "dialogos": [
+  {
+   "titulo": "Datos personales",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "Hello, what is your name?"
+    },
+    {
+     "hablante": "B",
+     "texto": "My name is Joel."
+    },
+    {
+     "hablante": "A",
+     "texto": "How old are you, Joel?"
+    },
+    {
+     "hablante": "B",
+     "texto": "I'm twenty-two years old."
+    },
+    {
+     "hablante": "A",
+     "texto": "What is your phone number?"
+    },
+    {
+     "hablante": "B",
+     "texto": "It's zero, nine, one, five, three, two."
+    },
+    {
+     "hablante": "A",
+     "texto": "Thank you very much, Joel."
+    },
+    {
+     "hablante": "B",
+     "texto": "You're welcome. Take care!"
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cuántos años tiene Joel?",
+     "opciones": [
+      "twenty",
+      "twenty-two",
+      "twelve"
+     ],
+     "respuesta": "twenty-two"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Joel da su número de teléfono.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "Escribe el nombre de la persona.",
+     "respuesta": "Joel"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Cómo se despide Joel al final?",
+     "respuesta": "take care",
+     "aceptadas": [
+      "happy birthday!"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cuál es el primer número que dice Joel de su teléfono?",
+     "opciones": [
+      "zero",
+      "one",
+      "nine"
+     ],
+     "respuesta": "zero"
+    }
+   ]
+  },
+  {
+   "titulo": "En la recepción",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "Hello! What is your name?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Hi! My name is Laura."
+    },
+    {
+     "hablante": "A",
+     "texto": "How old are you?"
+    },
+    {
+     "hablante": "B",
+     "texto": "I'm nineteen years old."
+    },
+    {
+     "hablante": "A",
+     "texto": "What is your phone number, please?"
+    },
+    {
+     "hablante": "B",
+     "texto": "It's zero, one, six, four, eight, zero."
+    },
+    {
+     "hablante": "A",
+     "texto": "Thank you very much."
+    },
+    {
+     "hablante": "B",
+     "texto": "You're welcome! See you soon."
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cómo se llama la persona B?",
+     "opciones": [
+      "Laura",
+      "Joel",
+      "Ana"
+     ],
+     "respuesta": "Laura"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Cuántos años tiene Laura?",
+     "respuesta": "nineteen",
+     "aceptadas": [
+      "19"
+     ]
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Laura da su número de teléfono.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué le dice A a Laura al pedir el número?",
+     "opciones": [
+      "What is your phone number, please?",
+      "What is your name, please?",
+      "How old are you, please?"
+     ],
+     "respuesta": "What is your phone number, please?"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Cómo se despide Laura?",
+     "respuesta": "see you soon",
+     "aceptadas": [
+      "you're welcome! see you soon"
+     ]
+    }
+   ]
+  },
+  {
+   "titulo": "El número de teléfono",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "Excuse me, what is your phone number?"
+    },
+    {
+     "hablante": "B",
+     "texto": "It is zero, six, one, four, seven, two."
+    },
+    {
+     "hablante": "A",
+     "texto": "Zero, six, one, four, seven, two?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes! And how old are you?"
+    },
+    {
+     "hablante": "A",
+     "texto": "I am eighteen years old."
+    },
+    {
+     "hablante": "B",
+     "texto": "Eighteen? And your birthday?"
+    },
+    {
+     "hablante": "A",
+     "texto": "It is in April."
+    },
+    {
+     "hablante": "B",
+     "texto": "Thank you very much!"
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Cuál es el primer número del teléfono?",
+     "respuesta": "zero",
+     "aceptadas": [
+      "0"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cuántos años tiene?",
+     "opciones": [
+      "eighteen",
+      "eighty",
+      "eight"
+     ],
+     "respuesta": "eighteen"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿En qué mes es su cumpleaños?",
+     "respuesta": "April"
+    }
+   ]
+  },
+  {
+   "titulo": "Contando en clase",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "How old is Mr Lee?"
+    },
+    {
+     "hablante": "B",
+     "texto": "He is sixty years old."
+    },
+    {
+     "hablante": "A",
+     "texto": "And Mrs Lee?"
+    },
+    {
+     "hablante": "B",
+     "texto": "She is fifty. And Miss Sofia is ninety!"
+    },
+    {
+     "hablante": "A",
+     "texto": "Ninety? Very good!"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes. And Marc is thirty-one."
+    },
+    {
+     "hablante": "A",
+     "texto": "Thirty-one or thirty?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Thirty-one!"
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cuántos años tiene Mr Lee?",
+     "opciones": [
+      "sixty",
+      "fifty",
+      "ninety"
+     ],
+     "respuesta": "sixty"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Cuántos años tiene Miss Sofia?",
+     "respuesta": "ninety",
+     "aceptadas": [
+      "90"
+     ]
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Marc tiene treinta años.",
+     "respuesta": "falso"
+    }
+   ]
+  }
+ ]
+}

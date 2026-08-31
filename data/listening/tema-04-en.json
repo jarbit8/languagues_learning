@@ -1,39 +1,280 @@
-{ "tema": 4,
-"dialogos": [
-{ "titulo": "Hablando de la familia",
-"lineas": [
-{"hablante":"A","texto":"Is this your family?"},
-{"hablante":"B","texto":"Yes, this is my father and my mother."},
-{"hablante":"A","texto":"Do you have brothers or sisters?"},
-{"hablante":"B","texto":"I have one sister. Her name is Sofia."},
-{"hablante":"A","texto":"Is she married?"},
-{"hablante":"B","texto":"No, she's single."},
-{"hablante":"A","texto":"And this? Is it your dog?"},
-{"hablante":"B","texto":"Yes, that's my dog. His name is Max."}
-],
-"preguntas": [
-{"tipo":"opcion_multiple","enunciado":"¿Cómo se llama la hermana?","opciones":["Sofia","Ana","Marie"],"respuesta":"Sofia"},
-{"tipo":"vf","enunciado":"La hermana está casada.","respuesta":"falso"},
-{"tipo":"completar_dato","enunciado":"¿Cómo se llama el perro?","respuesta":"Max"},
-{"tipo":"opcion_multiple","enunciado":"¿Cuántas hermanas tiene B?","opciones":["one","two","three"],"respuesta":"one"},
-{"tipo":"completar_dato","enunciado":"¿Quiénes aparecen en la foto de familia además de la hermana?","respuesta":"father and mother","aceptadas":["my father and my mother"]}
-] },
-{ "titulo": "Hablando del primo",
-"lineas": [
-{"hablante":"A","texto":"Is this your cousin?"},
-{"hablante":"B","texto":"Yes, this is my cousin. His name is Marc."},
-{"hablante":"A","texto":"Is he married?"},
-{"hablante":"B","texto":"No, he's single."},
-{"hablante":"A","texto":"Where is he from?"},
-{"hablante":"B","texto":"He's from France."},
-{"hablante":"A","texto":"How old is he?"},
-{"hablante":"B","texto":"He's thirty years old."}
-],
-"preguntas": [
-{"tipo":"opcion_multiple","enunciado":"¿Cómo se llama el primo?","opciones":["Marc","Max","Paul"],"respuesta":"Marc"},
-{"tipo":"vf","enunciado":"El primo está casado.","respuesta":"falso"},
-{"tipo":"completar_dato","enunciado":"¿De qué país es el primo?","respuesta":"France"},
-{"tipo":"opcion_multiple","enunciado":"¿Cuántos años tiene el primo?","opciones":["twenty","thirty","forty"],"respuesta":"thirty"},
-{"tipo":"completar_dato","enunciado":"¿Qué relación familiar tiene con B?","respuesta":"cousin","aceptadas":["my cousin"]}
-] }
-] }
+{
+ "tema": 4,
+ "dialogos": [
+  {
+   "titulo": "Hablando de la familia",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "Is this your family?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes, this is my father and my mother."
+    },
+    {
+     "hablante": "A",
+     "texto": "Do you have brothers or sisters?"
+    },
+    {
+     "hablante": "B",
+     "texto": "I have one sister. Her name is Sofia."
+    },
+    {
+     "hablante": "A",
+     "texto": "Is she married?"
+    },
+    {
+     "hablante": "B",
+     "texto": "No, she's single."
+    },
+    {
+     "hablante": "A",
+     "texto": "And this? Is it your dog?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes, that's my dog. His name is Max."
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cómo se llama la hermana?",
+     "opciones": [
+      "Sofia",
+      "Ana",
+      "Marie"
+     ],
+     "respuesta": "Sofia"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "La hermana está casada.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Cómo se llama el perro?",
+     "respuesta": "Max"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cuántas hermanas tiene B?",
+     "opciones": [
+      "one",
+      "two",
+      "three"
+     ],
+     "respuesta": "one"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Quiénes aparecen en la foto de familia además de la hermana?",
+     "respuesta": "father and mother",
+     "aceptadas": [
+      "my father and my mother"
+     ]
+    }
+   ]
+  },
+  {
+   "titulo": "Hablando del primo",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "Is this your cousin?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes, this is my cousin. His name is Marc."
+    },
+    {
+     "hablante": "A",
+     "texto": "Is he married?"
+    },
+    {
+     "hablante": "B",
+     "texto": "No, he's single."
+    },
+    {
+     "hablante": "A",
+     "texto": "Where is he from?"
+    },
+    {
+     "hablante": "B",
+     "texto": "He's from France."
+    },
+    {
+     "hablante": "A",
+     "texto": "How old is he?"
+    },
+    {
+     "hablante": "B",
+     "texto": "He's thirty years old."
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cómo se llama el primo?",
+     "opciones": [
+      "Marc",
+      "Max",
+      "Paul"
+     ],
+     "respuesta": "Marc"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "El primo está casado.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿De qué país es el primo?",
+     "respuesta": "France"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cuántos años tiene el primo?",
+     "opciones": [
+      "twenty",
+      "thirty",
+      "forty"
+     ],
+     "respuesta": "thirty"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Qué relación familiar tiene con B?",
+     "respuesta": "cousin",
+     "aceptadas": [
+      "my cousin"
+     ]
+    }
+   ]
+  },
+  {
+   "titulo": "¿Tienes hermanos?",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "Do you have brothers or sisters?"
+    },
+    {
+     "hablante": "B",
+     "texto": "I have one sister and two brothers."
+    },
+    {
+     "hablante": "A",
+     "texto": "Is your sister married?"
+    },
+    {
+     "hablante": "B",
+     "texto": "No, she is single. My brother is married."
+    },
+    {
+     "hablante": "A",
+     "texto": "And his wife?"
+    },
+    {
+     "hablante": "B",
+     "texto": "His wife is Canadian. They have a baby."
+    },
+    {
+     "hablante": "A",
+     "texto": "A baby! And your parents?"
+    },
+    {
+     "hablante": "B",
+     "texto": "My father and my mother live in Peru."
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cuántos hermanos tiene?",
+     "opciones": [
+      "two",
+      "one",
+      "three"
+     ],
+     "respuesta": "two"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Su hermana está casada.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿De qué nacionalidad es la esposa del hermano?",
+     "respuesta": "Canadian"
+    }
+   ]
+  },
+  {
+   "titulo": "La mascota de la familia",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "Is this your dog?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes! And this is my cat."
+    },
+    {
+     "hablante": "A",
+     "texto": "Two pets! And who is this?"
+    },
+    {
+     "hablante": "B",
+     "texto": "This is my grandfather. He is eighty."
+    },
+    {
+     "hablante": "A",
+     "texto": "And your grandmother?"
+    },
+    {
+     "hablante": "B",
+     "texto": "She is seventy-nine. My grandparents live in Peru."
+    },
+    {
+     "hablante": "A",
+     "texto": "And your cousins?"
+    },
+    {
+     "hablante": "B",
+     "texto": "I have four cousins, a nephew and a niece."
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué mascotas tiene?",
+     "opciones": [
+      "a dog and a cat",
+      "two dogs",
+      "a cat"
+     ],
+     "respuesta": "a dog and a cat"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Cuántos años tiene el abuelo?",
+     "respuesta": "eighty",
+     "aceptadas": [
+      "80"
+     ]
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Los abuelos viven en Perú.",
+     "respuesta": "verdadero"
+    }
+   ]
+  }
+ ]
+}
