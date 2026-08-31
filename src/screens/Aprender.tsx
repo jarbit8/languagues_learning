@@ -4,12 +4,13 @@ import { temaEnCurso } from '../lib/progreso'
 import { getVocabPack } from '../data/packs'
 import Vocabulario from './Vocabulario'
 import Gramatica from './Gramatica'
+import Aprendidas from './Aprendidas'
 
 // Aprender = contenido DEL TEMA en curso. Pronunciación se movió a Practicar porque es
 // transversal a todo el nivel, no depende del tema.
 export default function Aprender() {
   const tema = useLiveQuery(() => temaEnCurso(), [], 1)
-  const [sub, setSub] = useState<'vocab' | 'gram'>('vocab')
+  const [sub, setSub] = useState<'vocab' | 'gram' | 'sabidas'>('vocab')
   const pack = tema ? getVocabPack(tema) : undefined
 
   return (
@@ -20,7 +21,7 @@ export default function Aprender() {
       </header>
 
       <div className="flex rounded-xl bg-slate-200 p-1 dark:bg-slate-800">
-        {(['vocab', 'gram'] as const).map((s) => (
+        {(['vocab', 'gram', 'sabidas'] as const).map((s) => (
           <button
             key={s}
             onClick={() => setSub(s)}
@@ -28,12 +29,13 @@ export default function Aprender() {
               sub === s ? 'bg-white shadow dark:bg-slate-700' : 'text-slate-500'
             }`}
           >
-            {s === 'vocab' ? 'Vocabulario' : 'Gramática'}
+            {s === 'vocab' ? 'Vocabulario' : s === 'gram' ? 'Gramática' : 'Aprendidas'}
           </button>
         ))}
       </div>
 
-      {tema ? sub === 'vocab' ? <Vocabulario tema={tema} /> : <Gramatica tema={tema} /> : null}
+      {/* Aprendidas no depende del tema en curso: son TODAS las que ha marcado. */}
+      {sub === 'sabidas' ? <Aprendidas /> : tema ? sub === 'vocab' ? <Vocabulario tema={tema} /> : <Gramatica tema={tema} /> : null}
     </div>
   )
 }

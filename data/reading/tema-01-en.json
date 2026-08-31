@@ -123,6 +123,115 @@
      ]
     }
    ]
+  },
+  {
+   "titulo": "En la puerta de la oficina",
+   "texto": "Good morning! Excuse me, is Mr Lee here? Yes! My name is Sofia. Nice to meet you. Nice to meet you too, Sofia. How are you? I am very well, thank you. And you? Fine, thanks. Please, welcome. Thank you very much! You're welcome. Excuse me, and Mrs Lee? Sorry, no. No problem. Have a nice day! Thank you, and you. See you later! Goodbye!",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿A quién busca Sofia?",
+     "opciones": [
+      "Mr Lee",
+      "Paul",
+      "Marc"
+     ],
+     "respuesta": "Mr Lee"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Mrs Lee está en la oficina.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Cómo se llama la mujer?",
+     "respuesta": "Sofia"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué dice Sofia cuando le dan las gracias?",
+     "opciones": [
+      "You're welcome",
+      "No problem",
+      "Take care"
+     ],
+     "respuesta": "You're welcome"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "Sofia conoce a Mrs Lee.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Se despiden con 'see you later'.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Qué le desea la persona a Sofia?",
+     "respuesta": "have a nice day",
+     "aceptadas": [
+      "a nice day",
+      "nice day"
+     ]
+    }
+   ]
+  },
+  {
+   "titulo": "Hola y adiós",
+   "texto": "Hey! Hello, Marc! How are you? I am fine, thanks. And you? Very well! Nice to meet you, Laura. Nice to meet you too. Excuse me, what is your name again? Sorry! My name is Laura. No problem, Laura! Welcome. Thank you. Please, my name is Marc. Yes, Marc! Good. Good evening! Good evening! Have a nice evening, Marc. Thank you! Good night. Good night, Laura! Take care. Bye! See you soon!",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Quién no entiende el nombre?",
+     "opciones": [
+      "Marc",
+      "Laura",
+      "Ana"
+     ],
+     "respuesta": "Marc"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Se conocen por primera vez.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Con qué palabra muy informal empieza el saludo?",
+     "respuesta": "hey"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué se desean al final?",
+     "opciones": [
+      "good night",
+      "good morning",
+      "good afternoon"
+     ],
+     "respuesta": "good night"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "Marc y Laura son compañeros de trabajo.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Laura dice 'take care'.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Cómo se despide Marc al final?",
+     "respuesta": "bye",
+     "aceptadas": [
+      "see you soon"
+     ]
+    }
+   ]
   }
  ]
 }

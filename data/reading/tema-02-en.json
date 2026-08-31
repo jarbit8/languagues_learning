@@ -115,6 +115,117 @@
      ]
     }
    ]
+  },
+  {
+   "titulo": "Dos fichas",
+   "texto": "Good morning! What is your name? My name is Marc. How old are you, Marc? I am thirty-one years old. And your birthday? It is in April. Your phone number, please? It is zero, six, one, four, seven, two. Thank you. And you, Miss? My name is Sofia. I am twenty-eight years old. My birthday is in July. My phone number is five, three, nine, zero, eight, one. Thank you very much! Two numbers and two ages: thirty-one and twenty-eight. You're welcome!",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cuántos años tiene Marc?",
+     "opciones": [
+      "thirty-one",
+      "twenty-eight",
+      "thirteen"
+     ],
+     "respuesta": "thirty-one"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿En qué mes es el cumpleaños de Sofia?",
+     "respuesta": "July"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Sofia tiene veintiocho años.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Cuál es el primer número del teléfono de Sofia?",
+     "respuesta": "five",
+     "aceptadas": [
+      "5"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿En qué mes es el cumpleaños de Marc?",
+     "opciones": [
+      "April",
+      "July",
+      "May"
+     ],
+     "respuesta": "April"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "Marc y Sofia son amigos.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Marc da su número de teléfono.",
+     "respuesta": "verdadero"
+    }
+   ]
+  },
+  {
+   "titulo": "Los números del año",
+   "texto": "How old is Mr Lee? He is eighty-four years old. And Mrs Lee? She is seventy-nine. Miss Sofia is fifty-two and Marc is fifty. Laura is sixteen and Ana is thirteen. And you? I am twenty-two years old. And the number of Paul? Paul is one! No! Paul is twenty-one. Sorry! One, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve. Numbers, numbers, numbers! And one hundred? One hundred is a very good number. Yes! But it is not an age here. Thank you very much!",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cuántos años tiene Mr Lee?",
+     "opciones": [
+      "eighty-four",
+      "seventy-nine",
+      "fifty-two"
+     ],
+     "respuesta": "eighty-four"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Cuántos años tiene Mrs Lee?",
+     "respuesta": "seventy-nine",
+     "aceptadas": [
+      "79"
+     ]
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Laura tiene dieciséis años.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Cuántos años tiene Paul?",
+     "respuesta": "twenty-one",
+     "aceptadas": [
+      "21"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cuántos años tiene Ana?",
+     "opciones": [
+      "thirteen",
+      "thirty",
+      "sixteen"
+     ],
+     "respuesta": "thirteen"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "Marc y Miss Sofia son hermanos.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Cien es una edad en el texto.",
+     "respuesta": "falso"
+    }
+   ]
   }
  ]
 }
