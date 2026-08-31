@@ -3,44 +3,123 @@
  "textos": [
   {
    "titulo": "El primer día",
-   "texto": "Good morning! My name is Ana. Nice to meet you. Hello Ana! My name is Paul. How are you? I am fine, thank you. And you? Very well, thanks! Welcome, Ana. Thank you, Paul. Excuse me, Mr Lee is here. Good afternoon, Mr Lee! Good afternoon. See you tomorrow, Ana. Goodbye, Paul. Have a nice day!",
+   "texto": "Good morning! My name is Ana. Nice to meet you. Hi, Ana! My name is Paul. Nice to meet you too. How are you, Paul? I am fine, thank you. And you? Very well, thanks! Excuse me, is Mr Lee here? Yes, Mr Lee is here. Good afternoon, Mr Lee! Good afternoon, Ana. Welcome! Thank you very much. You're welcome. And Mrs Lee? Sorry, no. Mrs Lee is not here. No problem! Miss Sofia is here. Good afternoon, Miss Sofia. See you later, Ana. Bye, Paul! Have a nice day! See you tomorrow, Ana. Take care!",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
-     "enunciado": "¿Cómo está Paul?",
+     "enunciado": "¿Cómo se llama la mujer que se presenta primero?",
      "opciones": [
-      "fine",
-      "very well",
-      "welcome"
+      "Ana",
+      "Sofia",
+      "Laura"
      ],
-     "respuesta": "very well"
+     "respuesta": "Ana"
     },
     {
      "tipo": "vf",
-     "enunciado": "Ana y Paul se saludan por la mañana.",
-     "respuesta": "verdadero"
+     "enunciado": "Paul dice que está mal.",
+     "respuesta": "falso"
     },
     {
      "tipo": "vfnd",
-     "enunciado": "Paul es profesor.",
+     "enunciado": "Mr Lee es el profesor de Ana.",
      "respuesta": "no dice"
     },
     {
      "tipo": "opcion_multiple",
-     "enunciado": "¿Quién llega después?",
+     "enunciado": "¿Quién no está?",
      "opciones": [
-      "Mr Lee",
       "Mrs Lee",
-      "Miss Ana"
+      "Mr Lee",
+      "Miss Sofia"
      ],
-     "respuesta": "Mr Lee"
+     "respuesta": "Mrs Lee"
     },
     {
      "tipo": "completar_dato",
-     "enunciado": "¿Cómo se despide Paul de Ana?",
-     "respuesta": "see you tomorrow",
+     "enunciado": "¿Qué le desea Paul a Ana al despedirse?",
+     "respuesta": "have a nice day",
      "aceptadas": [
-      "goodbye"
+      "a nice day",
+      "nice day"
+     ]
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Ana y Paul se conocen por primera vez.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cómo se despide Ana de Paul?",
+     "opciones": [
+      "See you tomorrow",
+      "See you soon",
+      "Good night"
+     ],
+     "respuesta": "See you tomorrow"
+    }
+   ]
+  },
+  {
+   "titulo": "La noche de la bienvenida",
+   "texto": "Good evening! Hello, my name is Laura. Hey, Laura! I am Marc. Nice to meet you. Sorry, what is your name, please? My name is Marc. No problem! How are you, Marc? Fine, thanks. And you? Very well! Welcome, Marc. Thank you very much. You're welcome. Excuse me, is Miss Ana here? Yes! Hello, Ana! Hello, Laura! Good evening, Marc. Nice to meet you. Nice to meet you too. Have a nice evening! Thank you, Ana. See you soon! Goodbye, Laura. Good night! Good night, Marc. Take care! Bye!",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cómo se llama el hombre?",
+     "opciones": [
+      "Marc",
+      "Paul",
+      "Lee"
+     ],
+     "respuesta": "Marc"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Laura y Marc ya se conocían de antes.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Con qué palabra muy informal saluda Marc a Laura?",
+     "respuesta": "hey",
+     "aceptadas": [
+      "Hey"
+     ]
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "La fiesta es en la casa de Ana.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Quién más está en la fiesta?",
+     "opciones": [
+      "Ana",
+      "Mr Lee",
+      "Sofia"
+     ],
+     "respuesta": "Ana"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Quién pide que le repitan el nombre?",
+     "opciones": [
+      "Laura",
+      "Marc",
+      "Ana"
+     ],
+     "respuesta": "Laura"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Qué le desea Ana a Marc para la noche?",
+     "respuesta": "have a nice evening",
+     "aceptadas": [
+      "a nice evening",
+      "nice evening"
      ]
     }
    ]

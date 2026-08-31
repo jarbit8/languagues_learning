@@ -12,13 +12,15 @@ import CopiarPrompt from '../components/CopiarPrompt'
 export default function Conversacion() {
   const temaActual = useLiveQuery(() => temaEnCurso(), [], 1) ?? 1
   const [tema, setTema] = useState<number | null>(null)
+  // Un tema son dos días de estudio y cada uno lleva su propio escenario.
+  const [dia, setDia] = useState<1 | 2>(1)
 
   const temaSel = tema ?? temaActual
   const temasDisponibles = Array.from({ length: temaActual }, (_, i) => i + 1)
   const pack = getVocabPack(temaSel)
   const vocab = vocabularioDesbloqueado(temaSel)
 
-  const prompt = construirPromptCopiable(escenarioDe(temaSel), vocab)
+  const prompt = construirPromptCopiable(escenarioDe(temaSel, dia), vocab)
 
   return (
     <div className="flex flex-col gap-4">
@@ -35,7 +37,20 @@ export default function Conversacion() {
             </option>
           ))}
         </select>
-        <p className="text-sm text-slate-500 dark:text-slate-400">{escenarioDe(temaSel)}</p>
+        <div className="grid grid-cols-2 gap-1 rounded-xl bg-slate-200 p-1 dark:bg-slate-800">
+          {([1, 2] as const).map((d) => (
+            <button
+              key={d}
+              onClick={() => setDia(d)}
+              className={`rounded-lg py-1.5 text-sm font-semibold ${
+                dia === d ? 'bg-white shadow dark:bg-slate-700' : 'text-slate-500'
+              }`}
+            >
+              Día {d}
+            </button>
+          ))}
+        </div>
+        <p className="text-sm text-slate-500 dark:text-slate-400">{escenarioDe(temaSel, dia)}</p>
       </div>
 
       <CopiarPrompt

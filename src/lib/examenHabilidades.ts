@@ -1,7 +1,7 @@
 import { getListening, getReading, getWriting, dialogosDe } from '../data/packs'
 import { bloqueDeTema } from './curriculum'
 import { preguntaDeListening } from './preguntas'
-import { escenarios } from '../data/escenarios'
+import { escenarioDe } from '../data/escenarios'
 import { construirPromptHablarExamen, vocabularioDesbloqueado } from './speaking'
 import type { ConsignaWriting, LineaDialogo, Pregunta, TextoReading } from '../types'
 
@@ -56,5 +56,5 @@ export function consignaDeTema(tema: number): ConsignaWriting | undefined {
 // decida si aprueba. Reutiliza el bloque de veredicto que ya usan bloque y final.
 export function promptHablarExamen(tema: number): string {
   const meta = `si ya domina hablando el tema ${tema}, o si necesita practicarlo más antes de darlo por visto`
-  return construirPromptHablarExamen(escenarios[tema] ?? '', vocabularioDesbloqueado(tema), meta)
+  return construirPromptHablarExamen(escenarioDe(tema), vocabularioDesbloqueado(tema), meta)
 }

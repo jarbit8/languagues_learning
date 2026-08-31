@@ -85,6 +85,21 @@
     "Usé el genitivo 's al menos una vez",
     "Escribí entre 28 y 38 palabras"
    ]
+  },
+  {
+   "tema": 1,
+   "consigna": "Escribe una despedida de noche a un compañero: salúdalo, pregúntale cómo está, di cómo estás tú, deséale buena noche y despídete.",
+   "minPalabras": 18,
+   "maxPalabras": 28,
+   "respuestaModelo": "Good evening, Paul! How are you? I am very well, thank you. Have a nice evening! See you tomorrow. Good night and take care. Goodbye!",
+   "checklist": [
+    "Usé un saludo de noche",
+    "Pregunté cómo está",
+    "Dije cómo estoy yo",
+    "Le deseé buena tarde/noche",
+    "Me despedí",
+    "Escribí entre 18 y 28 palabras"
+   ]
   }
  ]
 }

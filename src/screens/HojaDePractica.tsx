@@ -43,12 +43,17 @@ function Pregunta({ n, enunciado, opciones }: { n: number; enunciado: string; op
 export default function HojaDePractica() {
   const temaActual = useLiveQuery(() => temaEnCurso(), [], 1) ?? 1
   const [tema, setTema] = useState<number | null>(null)
+  // Un tema son dos días y cada uno lleva su propio material: el diálogo, el texto y la
+  // consigna que le tocan. Si un tema todavía no tiene el segundo, cae en el primero.
+  const [dia, setDia] = useState<1 | 2>(1)
   const t = tema ?? temaActual
+  const i = dia - 1
 
   const pack = getVocabPack(t)
   const listening = getListening(t)
   const reading = getReading(t)
-  const consigna = getWriting(bloqueDeTema(t))?.consignas.find((c) => c.tema === t)
+  const consignasDelTema = getWriting(bloqueDeTema(t))?.consignas.filter((c) => c.tema === t) ?? []
+  const consigna = consignasDelTema[i] ?? consignasDelTema[0]
 
   // Numeración corrida por toda la hoja, como en un examen de verdad. Se calcula ANTES de
   // pintar: mutar contadores dentro del JSX depende del número de renders y se desordena.
@@ -61,8 +66,11 @@ export default function HojaDePractica() {
   const numeradas = <T extends { tipo: string; enunciado: string; opciones?: string[]; respuesta: string }>(ps: T[]) =>
     ps.map((p) => ({ n: ++cont, enunciado: p.enunciado, opciones: etiquetas(p.tipo, p.opciones), respuesta: p.respuesta }))
 
-  const bloquesEscuchar = (listening?.dialogos ?? []).map((d) => ({ titulo: d.titulo, preguntas: numeradas(d.preguntas) }))
-  const bloquesLeer = (reading?.textos ?? []).map((tx) => ({ ...tx, preguntas: numeradas(tx.preguntas) }))
+  // Un diálogo y un texto por día, no los dos de golpe.
+  const dialogosDelDia = (listening?.dialogos ?? []).slice(i, i + 1)
+  const textosDelDia = (reading?.textos ?? []).slice(i, i + 1)
+  const bloquesEscuchar = (dialogosDelDia.length ? dialogosDelDia : (listening?.dialogos ?? []).slice(0, 1)).map((d) => ({ titulo: d.titulo, preguntas: numeradas(d.preguntas) }))
+  const bloquesLeer = (textosDelDia.length ? textosDelDia : (reading?.textos ?? []).slice(0, 1)).map((tx) => ({ ...tx, preguntas: numeradas(tx.preguntas) }))
   const soluciones = [...bloquesEscuchar.flatMap((b) => b.preguntas), ...bloquesLeer.flatMap((b) => b.preguntas)].map(
     (p) => `${p.n}. ${capitaliza(p.respuesta)}`
   )
@@ -92,6 +100,19 @@ export default function HojaDePractica() {
               </option>
             ))}
         </select>
+        <div className="grid grid-cols-2 gap-1 rounded-xl bg-slate-200 p-1 dark:bg-slate-800">
+          {([1, 2] as const).map((d) => (
+            <button
+              key={d}
+              onClick={() => setDia(d)}
+              className={`rounded-lg py-1.5 text-sm font-semibold ${
+                dia === d ? 'bg-white shadow dark:bg-slate-700' : 'text-slate-500'
+              }`}
+            >
+              Día {d}
+            </button>
+          ))}
+        </div>
         <button onClick={() => window.print()} className="btn-primary">
           🖨️ Imprimir
         </button>
@@ -101,7 +122,7 @@ export default function HojaDePractica() {
       <div className="hoja bg-white p-6 text-slate-900 print:p-0">
         <div className="border-b-2 border-slate-900 pb-2">
           <h2 className="text-lg font-black">
-            Tema {t} — {pack?.titulo}
+            Tema {t} — {pack?.titulo} · Día {dia}
           </h2>
           <p className="text-xs text-slate-500">Nombre: ________________________ Fecha: ____ / ____ / ______</p>
         </div>
@@ -115,7 +136,7 @@ export default function HojaDePractica() {
           {bloquesEscuchar.map((d, i) => (
             <div key={i} className="mt-3">
               <p className="text-sm font-semibold">
-                Diálogo {i + 1}: {d.titulo}
+                Diálogo {dia}: {d.titulo}
               </p>
               {d.preguntas.map((p) => (
                 <Pregunta key={p.n} n={p.n} enunciado={p.enunciado} opciones={p.opciones} />
@@ -156,7 +177,7 @@ export default function HojaDePractica() {
 
         {/* --- SOLUCIONES, en su propia página para poder no imprimirla --- */}
         <section className="mt-8 break-before-page">
-          <h3 className="text-sm font-black uppercase tracking-wide">Soluciones · Tema {t}</h3>
+          <h3 className="text-sm font-black uppercase tracking-wide">Soluciones · Tema {t} · Día {dia}</h3>
           <p className="text-xs italic text-slate-500">
             Corrige solo cuando hayas terminado. Escribir no tiene solución: compárala con la respuesta modelo en la
             app.
