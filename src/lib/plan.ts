@@ -28,7 +28,10 @@ export const INICIO_A1 = new Date(2026, 8, 1).getTime()
 // terminar el 24 de octubre a hacerlo el 2 de noviembre, sin tocar el orden de los temas.
 // Se puede quitar desde Progreso → Temario como cualquier otra pausa.
 export const PAUSAS_INICIALES: PausaPlan[] = [
-  { desde: new Date(2026, 9, 10).getTime(), hasta: new Date(2026, 9, 18).getTime(), motivo: 'Pausa antes del bloque 4' }
+  { desde: new Date(2026, 9, 10).getTime(), hasta: new Date(2026, 9, 18).getTime(), motivo: 'Pausa antes del bloque 4' },
+  // Un solo día: el nivel cierra el sábado 31 de octubre y la semana final va de lunes a
+  // domingo, así que el domingo 1 sobra en medio. Sin esto la semana acabaría en sábado.
+  { desde: new Date(2026, 10, 1).getTime(), hasta: new Date(2026, 10, 1).getTime(), motivo: 'Descanso antes de la semana final' }
 ]
 export const DIAS_POR_TEMA = 2
 export const TEMAS_POR_BLOQUE = 6
@@ -38,11 +41,27 @@ export const DIAS_POR_BLOQUE = TEMAS_POR_BLOQUE * DIAS_POR_TEMA + 1 // 13
 
 export const totalTemas = () => vocabPacks.length
 export const totalBloques = () => Math.ceil(totalTemas() / TEMAS_POR_BLOQUE)
-// El examen final ocupa 2 días: son 230 preguntas objetivas más writing y speaking, y
-// pretender que eso entra en una tarde es cómo se acaba haciéndolo a medias.
-export const DIAS_FINAL = 2
-// 4 bloques x 13 días + 2 días de examen final.
+// EL FINAL ES UNA SEMANA ENTERA (2026-08-30, decisión del usuario: "un examen muy completo
+// practicando todo lo aprendido, que demorará una semana, hasta el domingo"). Antes eran 2
+// días y ya se quedaba corto: son 230 preguntas objetivas más writing y speaking. Ahora la
+// semana repasa el nivel bloque a bloque y remata con el examen partido en dos días.
+// El contenido del nivel cierra el sábado 31 de octubre con el examen del bloque 4; el
+// domingo 1 queda libre (pausa) para que la semana caiga limpia de lunes a domingo.
+export const DIAS_FINAL = 7
+// 4 bloques x 13 días + la semana final.
 export const diasDelPlan = () => totalBloques() * DIAS_POR_BLOQUE + DIAS_FINAL
+
+// Qué toca cada día de la semana final. Sin esto la semana serían siete casillas vacías y
+// el usuario tendría que inventarse el repaso; el examen en sí son los dos últimos días.
+export const SEMANA_FINAL: string[] = [
+  'Repaso del bloque 1 — temas 1 a 6',
+  'Repaso del bloque 2 — temas 7 a 12',
+  'Repaso del bloque 3 — temas 13 a 18',
+  'Repaso del bloque 4 — temas 19 a 24',
+  'Escuchar, leer y pronunciación de todo el nivel',
+  'Examen final · vocabulario, gramática, listening y reading',
+  'Examen final · writing y speaking, y resultado del nivel'
+]
 
 export type Jornada =
   | { tipo: 'tema'; tema: number; diaDelTema: number }

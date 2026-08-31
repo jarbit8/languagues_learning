@@ -14,6 +14,9 @@ import {
   quitarPausa,
   enPausa,
   getPlan,
+  SEMANA_FINAL,
+  fechaDeDia,
+  DIAS_FINAL,
   PLAN_POR_DEFECTO
 } from '../lib/plan'
 
@@ -96,7 +99,8 @@ export default function Temario() {
           {(plan.pausas ?? []).map((p) => (
             <div key={p.desde} className="flex items-center gap-2 text-xs">
               <span className="rounded-full bg-amber-100 px-2 py-0.5 text-amber-700 dark:bg-amber-900/40 dark:text-amber-200">
-                ⏸ {fechaCorta(p.desde)} – {fechaCorta(p.hasta)}
+                ⏸ {fechaCorta(p.desde)}
+                {fechaCorta(p.hasta) !== fechaCorta(p.desde) && ` – ${fechaCorta(p.hasta)}`}
               </span>
               <button onClick={() => void quitarPausa(p.desde)} className="text-slate-400 underline">
                 quitar
@@ -206,6 +210,33 @@ export default function Temario() {
           })}
         </div>
       ))}
+
+      {/* La semana final: el nivel ya no cierra con un examen de dos días sino con siete de
+          repaso y examen. Se pinta aquí, después de los bloques, porque es lo que viene luego. */}
+      <div className="flex flex-col gap-2">
+        <h2 className="text-sm font-bold uppercase tracking-wide text-slate-400">Semana final</h2>
+        <div className="tarjeta flex flex-col gap-2">
+          <p className="text-xs text-slate-500 dark:text-slate-400">
+            Repasas el nivel entero bloque a bloque y lo cierras con el examen final partido en dos días.
+          </p>
+          {SEMANA_FINAL.map((que, i) => {
+            const dia = diasDelPlan() - DIAS_FINAL + 1 + i
+            const esExamen = i >= SEMANA_FINAL.length - 2
+            return (
+              <div key={que} className="flex items-baseline gap-2 text-sm">
+                <span
+                  className={`w-16 shrink-0 text-xs font-semibold ${
+                    esExamen ? 'text-amber-600 dark:text-amber-400' : 'text-slate-400'
+                  }`}
+                >
+                  {fechaCorta(fechaDeDia(plan, dia))}
+                </span>
+                <span className={esExamen ? 'font-semibold' : ''}>{que}</span>
+              </div>
+            )
+          })}
+        </div>
+      </div>
     </div>
   )
 }
