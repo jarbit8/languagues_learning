@@ -3,37 +3,116 @@
  "textos": [
   {
    "titulo": "La ficha de Ana",
-   "texto": "Good morning! Excuse me, what is your name? My name is Ana. How old are you? I am twenty years old. Thank you. And your phone number? It is four, seven, two, nine, one, three, eight. Four seven two nine one three eight. Yes! And your birthday? It is in May. Very well, Ana. Thank you very much! You are welcome. See you soon!",
+   "texto": "Good morning! Excuse me, what is your name? My name is Ana. How old are you? I am twenty years old. Thank you. And your phone number? It is four, seven, two, nine, one, three, eight. Four, seven, two, nine, one, three, eight. Yes! And your birthday? It is in May. Very well. And Paul, how old is he? Paul is twenty-two. Laura is nineteen years old. Mr Lee is fifty and Mrs Lee is forty. Thank you very much! You're welcome. See you soon!",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
      "enunciado": "¿Cuántos años tiene Ana?",
      "opciones": [
-      "twenty",
-      "twelve",
-      "thirty"
+      "veinte",
+      "veintidós",
+      "diecinueve"
      ],
-     "respuesta": "twenty"
+     "respuesta": "veinte"
     },
     {
      "tipo": "vf",
-     "enunciado": "El teléfono de Ana empieza con cuatro.",
+     "enunciado": "El cumpleaños de Ana es en mayo.",
      "respuesta": "verdadero"
     },
     {
+     "tipo": "completar_dato",
+     "enunciado": "Escribe el primer número del teléfono de Ana.",
+     "respuesta": "four",
+     "aceptadas": [
+      "4"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cuántos años tiene Paul?",
+     "opciones": [
+      "twenty-two",
+      "twenty",
+      "nineteen"
+     ],
+     "respuesta": "twenty-two"
+    },
+    {
      "tipo": "vfnd",
-     "enunciado": "Ana tiene hermanos.",
+     "enunciado": "Ana vive con Laura.",
      "respuesta": "no dice"
     },
     {
      "tipo": "completar_dato",
-     "enunciado": "¿En qué mes es su cumpleaños? (en inglés)",
-     "respuesta": "may"
+     "enunciado": "¿Cuántos años tiene Laura?",
+     "respuesta": "nineteen",
+     "aceptadas": [
+      "19"
+     ]
     },
     {
      "tipo": "vf",
-     "enunciado": "Ana no dice su número de teléfono.",
+     "enunciado": "Mr Lee y Mrs Lee tienen la misma edad.",
      "respuesta": "falso"
+    }
+   ]
+  },
+  {
+   "titulo": "En la recepción",
+   "texto": "Good afternoon! Your name, please? My name is Laura. How old are you? I am nineteen years old. Thank you. And your birthday? It is in May too. And your phone number? It is zero, five, one, six, eight, ten. Zero, five, one, six, eight, ten. Yes! Excuse me, is Marc thirty? No, Marc is thirty-one. Sorry! No problem. Mr Lee is sixty and Mrs Lee is seventy. And one hundred? One hundred is not an age! Eleven, twelve, thirteen, fourteen, fifteen, sixteen, seventeen, eighteen, eighty, ninety: I have all the numbers here. Very well, Laura. Have a nice day! Thank you, and you!",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cuántos años tiene Laura?",
+     "opciones": [
+      "nineteen",
+      "thirty",
+      "seventy"
+     ],
+     "respuesta": "nineteen"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Marc tiene treinta años.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "Escribe el último número del teléfono de Laura.",
+     "respuesta": "ten",
+     "aceptadas": [
+      "10"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cuántos años tiene Mrs Lee?",
+     "opciones": [
+      "seventy",
+      "sixty",
+      "fifty"
+     ],
+     "respuesta": "seventy"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "El cumpleaños de Laura también es en mayo.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "Marc es amigo de Laura.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Qué número dicen que NO es una edad?",
+     "respuesta": "one hundred",
+     "aceptadas": [
+      "100",
+      "a hundred"
+     ]
     }
    ]
   }

@@ -3,17 +3,17 @@
  "textos": [
   {
    "titulo": "La familia de Ana",
-   "texto": "Ana has a family in Peru. Her father is Jorge and her mother is Rosa. She has one brother and two sisters. Her brother is nine years old. Her sisters are twins! They are seventeen. Ana also has a grandmother in Peru. Her grandmother is eighty years old. Ana has an uncle, an aunt and four cousins too. Her uncle is married and he has two children. Ana is single. In Canada she lives with a friend, and they have a cat. The cat is Tom. Ana speaks with her mother and with her grandmother.",
+   "texto": "Ana has a family in Peru. Her father is Jorge and her mother is Rosa. They are her parents. She has one brother and two sisters. Her brother is nine years old and my brother's name is Luis. Her sisters are twins! They are seventeen. Ana also has a grandmother and a grandfather in Peru: her grandparents. Her grandmother is eighty years old. Ana has an uncle, an aunt and four cousins too. Her uncle is married and he has two children: a son and a daughter. Ana is single. In Canada she lives with a friend, and they have a cat. The cat is Tom.",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
-     "enunciado": "¿Cuántos hermanos tiene Ana en total?",
+     "enunciado": "¿Cuántos hermanos y hermanas tiene Ana?",
      "opciones": [
-      "tres",
-      "dos",
-      "cuatro"
+      "un hermano y dos hermanas",
+      "dos hermanos",
+      "una hermana"
      ],
-     "respuesta": "tres"
+     "respuesta": "un hermano y dos hermanas"
     },
     {
      "tipo": "vf",
@@ -21,24 +21,91 @@
      "respuesta": "verdadero"
     },
     {
-     "tipo": "vfnd",
-     "enunciado": "El padre de Ana es médico.",
-     "respuesta": "no dice"
+     "tipo": "completar_dato",
+     "enunciado": "¿Cómo se llama el hermano de Ana?",
+     "respuesta": "Luis"
     },
     {
      "tipo": "opcion_multiple",
-     "enunciado": "¿Con quién vive Ana en Canadá?",
+     "enunciado": "¿Cuántos años tiene la abuela?",
      "opciones": [
-      "a friend",
-      "her mother",
-      "her brother"
+      "eighty",
+      "seventeen",
+      "nine"
      ],
-     "respuesta": "a friend"
+     "respuesta": "eighty"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "El gato de Ana es viejo.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Ana está casada.",
+     "respuesta": "falso"
     },
     {
      "tipo": "completar_dato",
-     "enunciado": "¿Cómo se llama el gato?",
-     "respuesta": "tom"
+     "enunciado": "¿Qué animal tienen en Canadá?",
+     "respuesta": "a cat",
+     "aceptadas": [
+      "cat"
+     ]
+    }
+   ]
+  },
+  {
+   "titulo": "Las fotos de la familia",
+   "texto": "This is my family. Who is this? This is my dad and this is my mom. They are my parents. And these? My grandfather and my grandmother: my grandparents. My grandfather is eighty and my grandmother is seventy. This is my uncle. He is divorced. He has a son and a daughter, and they are my cousin and my cousin. My nephew is a baby and my niece is three years old. Is your brother married? Yes, his wife is Canadian. And my sister's husband is Peruvian. And your pet? I have a dog and a cat. My dog is Max. My family is in Peru, but my friend is here in Canada. Her name is Laura.",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Quiénes son los abuelos en la foto?",
+     "opciones": [
+      "grandfather and grandmother",
+      "uncle and aunt",
+      "dad and mom"
+     ],
+     "respuesta": "grandfather and grandmother"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "El tío está divorciado.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Cuántos años tiene la sobrina?",
+     "respuesta": "three",
+     "aceptadas": [
+      "3"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿De dónde es la esposa del hermano?",
+     "opciones": [
+      "Canada",
+      "Peru",
+      "France"
+     ],
+     "respuesta": "Canada"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "El perro Max es viejo.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "El sobrino es un bebé.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Cómo se llama la amiga que está en Canadá?",
+     "respuesta": "Laura"
     }
    ]
   }

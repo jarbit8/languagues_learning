@@ -3,42 +3,111 @@
  "textos": [
   {
    "titulo": "El trabajo de cada uno",
-   "texto": "Ana is a student. She studies and she works in an office in the city. Her boss is very kind. Her father is an engineer and he works in a big company in Peru. Her mother is a nurse. Ana has an uncle. He is a cook, and her aunt is a teacher. Laura is a programmer. Paul is a doctor. He is not a student. What is your job? Ana asks. I am a waiter, says her friend, but I study to be a lawyer.",
+   "texto": "Ana is a student. She studies and she works in an office in the city. Her boss is very kind. Her father is an engineer and he works in a big company in Peru. Her mother is a nurse. Ana has an uncle. He is a cook, and her aunt is a teacher. Laura is a programmer and her career is very good. Paul is a doctor. He is not a student. What do you do? Ana asks. I am a waiter, says her friend, but I study to be a lawyer. And my sister is a teacher too. Which job is good? A job with a good salary!",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
-     "enunciado": "¿Cuál es el trabajo de la madre de Ana?",
+     "enunciado": "¿En qué trabaja el padre de Ana?",
      "opciones": [
-      "nurse",
-      "teacher",
-      "doctor"
+      "engineer",
+      "doctor",
+      "cook"
      ],
-     "respuesta": "nurse"
+     "respuesta": "engineer"
     },
     {
      "tipo": "vf",
-     "enunciado": "Ana trabaja en una oficina en la ciudad.",
-     "respuesta": "verdadero"
+     "enunciado": "Paul es estudiante.",
+     "respuesta": "falso"
     },
     {
-     "tipo": "vfnd",
-     "enunciado": "Ana gana mucho dinero en su trabajo.",
-     "respuesta": "no dice"
+     "tipo": "completar_dato",
+     "enunciado": "¿Cuál es la profesión de Laura?",
+     "respuesta": "programmer"
     },
     {
      "tipo": "opcion_multiple",
-     "enunciado": "¿Qué estudia para ser el amigo de Ana?",
+     "enunciado": "¿Qué quiere ser el amigo de Ana?",
      "opciones": [
-      "a lawyer",
-      "a waiter",
-      "a cook"
+      "lawyer",
+      "waiter",
+      "nurse"
      ],
-     "respuesta": "a lawyer"
+     "respuesta": "lawyer"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "Ana gana un buen salario.",
+     "respuesta": "no dice"
     },
     {
      "tipo": "vf",
-     "enunciado": "Paul todavía es estudiante.",
-     "respuesta": "falso"
+     "enunciado": "La madre de Ana es enfermera.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Dónde trabaja Ana?",
+     "respuesta": "in an office",
+     "aceptadas": [
+      "an office",
+      "office"
+     ]
+    }
+   ]
+  },
+  {
+   "titulo": "¿En qué trabajas?",
+   "texto": "Good morning! What do you do? I am a driver. And you? I work at an office: I am a secretary. My husband is a police officer and my sister is a firefighter. Who is the woman with the dog? She is a farmer. Her son is a dentist and her daughter is a seller. My cousin is an architect and my friend is an accountant. How is your job? It is very good, but my salary is not good. Is Marc a teacher? No, Marc is unemployed, but he studies and he has a career. He is not a seller. What is your job, Ana? I am a student and I work at an office.",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿En qué trabaja la persona que habla primero?",
+     "opciones": [
+      "driver",
+      "secretary",
+      "farmer"
+     ],
+     "respuesta": "driver"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "El marido de la secretaria es policía.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Cuál es la profesión de la hermana de la secretaria?",
+     "respuesta": "firefighter"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué es la mujer del perro?",
+     "opciones": [
+      "farmer",
+      "dentist",
+      "seller"
+     ],
+     "respuesta": "farmer"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "Marc quiere ser vendedor.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Marc está sin trabajo.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Dónde trabaja la secretaria?",
+     "respuesta": "at an office",
+     "aceptadas": [
+      "an office",
+      "office"
+     ]
     }
    ]
   }

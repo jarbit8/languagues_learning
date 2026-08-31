@@ -100,6 +100,76 @@
     "Me despedí",
     "Escribí entre 18 y 28 palabras"
    ]
+  },
+  {
+   "tema": 2,
+   "consigna": "Escribe tu ficha de inscripción en frases completas para un segundo compañero: su nombre, su edad, su cumpleaños y su número de teléfono.",
+   "minPalabras": 20,
+   "maxPalabras": 30,
+   "respuestaModelo": "Good morning! His name is Marc. He is twenty-two years old. His birthday is in May. His phone number is zero, five, one, six, eight, ten. Thank you!",
+   "checklist": [
+    "Dije el nombre",
+    "Dije la edad con 'years old'",
+    "Dije el mes del cumpleaños",
+    "Escribí el teléfono número por número",
+    "Escribí entre 20 y 30 palabras"
+   ]
+  },
+  {
+   "tema": 3,
+   "consigna": "Presenta a dos amigos de países distintos: de dónde vienen, su nacionalidad, en qué ciudad viven y qué idiomas hablan.",
+   "minPalabras": 25,
+   "maxPalabras": 35,
+   "respuestaModelo": "Marc comes from France. He is French and he lives in a city in Canada. He speaks French and English. Sofia is from Spain. She is Spanish and she speaks Spanish and English too.",
+   "checklist": [
+    "Dije de dónde viene cada uno",
+    "Dije la nacionalidad",
+    "Dije la ciudad o el país donde vive",
+    "Dije los idiomas",
+    "Escribí entre 25 y 35 palabras"
+   ]
+  },
+  {
+   "tema": 4,
+   "consigna": "Describe la familia de un amigo: sus padres, sus hermanos, si están casados o solteros, y si tienen mascota.",
+   "minPalabras": 28,
+   "maxPalabras": 38,
+   "respuestaModelo": "This is Paul's family. His father is a teacher and his mother is a nurse. He has one brother and one sister. His brother is married and he has a son. Paul is single. They have a dog.",
+   "checklist": [
+    "Hablé de los padres",
+    "Dije cuántos hermanos tiene",
+    "Dije si alguien está casado o soltero",
+    "Mencioné la mascota",
+    "Escribí entre 28 y 38 palabras"
+   ]
+  },
+  {
+   "tema": 5,
+   "consigna": "Describe a dos personas distintas para que alguien las reconozca: físico primero y personalidad después.",
+   "minPalabras": 30,
+   "maxPalabras": 40,
+   "respuestaModelo": "Marc is short and he has dark hair. He is handsome and very friendly, but he is shy. Sofia is tall and thin. She is red-haired and she has big eyes. She is funny and she is always happy.",
+   "checklist": [
+    "Describí el físico de las dos",
+    "Describí la personalidad de las dos",
+    "Usé al menos cuatro adjetivos distintos",
+    "No repetí el mismo adjetivo",
+    "Escribí entre 30 y 40 palabras"
+   ]
+  },
+  {
+   "tema": 6,
+   "consigna": "Escribe en qué trabaja cada persona de tu familia y dónde: usa al menos cuatro profesiones distintas.",
+   "minPalabras": 30,
+   "maxPalabras": 40,
+   "respuestaModelo": "My father is an engineer and he works in a big company. My mother is a nurse. My uncle is a cook and my aunt is a teacher. My cousin is a police officer. I am a student.",
+   "checklist": [
+    "Usé cuatro profesiones distintas",
+    "Dije dónde trabaja alguien",
+    "Usé 'is a' + profesión correctamente",
+    "No puse artículo de más ni de menos",
+    "Escribí entre 30 y 40 palabras"
+   ]
   }
  ]
 }

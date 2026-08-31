@@ -3,7 +3,7 @@
  "textos": [
   {
    "titulo": "Así son ellos",
-   "texto": "Ana is short and thin. She has curly hair and big eyes. She is very kind and hardworking, but she is shy with her friends. Her friend Laura is not shy. Laura is tall and she has blond hair. Laura is very funny and friendly. Ana has a brother. He is small and he is nine. He is smart but he is lazy: he is always tired in the morning. Her grandmother is old, but she is strong and calm. Ana says her family is beautiful, and she is happy when she speaks with them.",
+   "texto": "Ana is short and thin. She has curly hair and big eyes. She is very kind and hardworking, but she is shy with her friends. Her friend Laura is not shy. Laura is tall and she has blond hair. Laura is very funny and friendly, and she is really nice. Ana has a brother. He is small and he is nine. He is smart but he is lazy: he is always tired in the morning, and he is angry in the morning too. Her grandmother is old, but she is strong and calm. Her grandfather is bald and he is very serious. Ana says her family is beautiful, and she is happy when she speaks with them. She is not sad in Canada.",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
@@ -21,24 +21,94 @@
      "respuesta": "falso"
     },
     {
-     "tipo": "vfnd",
-     "enunciado": "Laura es canadiense.",
-     "respuesta": "no dice"
+     "tipo": "completar_dato",
+     "enunciado": "Escribe un adjetivo de personalidad del hermano de Ana.",
+     "respuesta": "smart",
+     "aceptadas": [
+      "lazy"
+     ]
     },
     {
      "tipo": "opcion_multiple",
-     "enunciado": "¿Cómo es el hermano de Ana?",
+     "enunciado": "¿Cómo es el abuelo?",
      "opciones": [
-      "smart but lazy",
-      "tall and strong",
-      "shy and calm"
+      "bald and serious",
+      "tall and funny",
+      "young and strong"
      ],
-     "respuesta": "smart but lazy"
+     "respuesta": "bald and serious"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "Laura es más alta que Ana.",
+     "respuesta": "no dice"
     },
     {
      "tipo": "vf",
-     "enunciado": "La abuela de Ana es fuerte y tranquila.",
+     "enunciado": "La abuela es fuerte y tranquila.",
      "respuesta": "verdadero"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Cómo tiene Ana los ojos?",
+     "respuesta": "big",
+     "aceptadas": [
+      "big eyes"
+     ]
+    }
+   ]
+  },
+  {
+   "titulo": "¿Quién es quién?",
+   "texto": "Excuse me, who is Marc? He is the young man with dark hair. Is he tall? No, he is short and fat. He is handsome and he is very friendly. And Sofia? Sofia is the beautiful woman with red hair. She is red-haired and she has small eyes. Is she serious? No! She is funny and happy. My cousin is brown-haired and he is really brave. He is not shy with people. My aunt is thin and she is always calm. My uncle is bald. He is a big man and he is very strong. Is he angry? No, he is tired, but he is kind. My family is not young, but they are nice.",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cómo es Marc físicamente?",
+     "opciones": [
+      "short and fat",
+      "tall and thin",
+      "bald and old"
+     ],
+     "respuesta": "short and fat"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Sofia tiene el pelo rojo.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Cómo tiene Sofia los ojos?",
+     "respuesta": "small",
+     "aceptadas": [
+      "small eyes"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cómo es el primo?",
+     "opciones": [
+      "brave",
+      "shy",
+      "lazy"
+     ],
+     "respuesta": "brave"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "Marc es el hermano de Sofia.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "El tío está enfadado.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Cómo es la tía de carácter?",
+     "respuesta": "calm"
     }
    ]
   }
