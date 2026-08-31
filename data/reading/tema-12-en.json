@@ -3,7 +3,7 @@
  "textos": [
   {
    "titulo": "Ropa para el invierno",
-   "texto": "In Peru, Ana never wears a big coat. In Canada, winter is not short and she has a problem. On Saturday she goes with Laura to buy clothes. Ana tries on a black coat. It is elegant, but it is very expensive. Then she tries on a grey coat. This one is cheap and it is her size! She buys it. She also buys boots, gloves and a scarf. Laura buys a blue sweater and new sneakers. Now, in the morning Ana puts on her coat, her boots and her gloves. When she comes back, she takes off the coat and she wears her old sweater. Winter is not a problem now!",
+   "texto": "In Peru, Ana never wears a big coat. In Canada, winter is not short and she has a problem. On Saturday she goes with Laura to buy clothes. Ana tries on a black coat. It is elegant, but it is very expensive. Then she tries on a grey coat. This one is cheap and it is her size! She buys it. She also buys boots, gloves and a scarf. Laura buys a blue sweater and new sneakers, and a white blouse. Now, in the morning Ana puts on her coat, her boots and her gloves. When she comes back, she takes off the coat and she wears her old sweater. In summer she wears a t-shirt, shorts and a hat. She never wears a dress or a skirt to work: she wears trousers or jeans, a shirt and a belt. In bed she wears her pyjamas. Winter is not a problem now!",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
@@ -39,6 +39,94 @@
      "tipo": "vf",
      "enunciado": "In Peru Ana wears a big coat.",
      "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "What does Ana wear in bed?",
+     "respuesta": "pyjamas",
+     "aceptadas": [
+      "her pyjamas"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What does Ana wear to work?",
+     "opciones": [
+      "trousers or jeans",
+      "a dress",
+      "a skirt"
+     ],
+     "respuesta": "trousers or jeans"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Ana wears shorts in summer.",
+     "respuesta": "verdadero"
+    }
+   ]
+  },
+  {
+   "titulo": "En la tienda de ropa",
+   "texto": "Good afternoon! Can I help you? Yes, please. I buy a jacket today. What size are you? I do not know my size here. This black jacket is very elegant. Can I try it on? Of course. How is it? It is not my size and it is expensive. And this one? This jacket is cheap and it is new. I take it! And shoes? Yes, and socks. These sneakers are very good, but I take boots for the winter. Here are the boots. And a hat? No, thank you. I have a hat and a scarf. My friend buys a dress and a skirt, and a blouse for work. Her sister buys jeans, trousers and a shirt with a belt. She never wears shorts! Now I put on my coat and I take off my old sweater. Thank you very much!",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What does the person buy first?",
+     "opciones": [
+      "a jacket",
+      "shoes",
+      "a hat"
+     ],
+     "respuesta": "a jacket"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "The black jacket is cheap.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "What does the person take for the winter?",
+     "respuesta": "boots"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What does the friend buy?",
+     "opciones": [
+      "a dress and a skirt",
+      "jeans and a shirt",
+      "shorts"
+     ],
+     "respuesta": "a dress and a skirt"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "The jacket is blue.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "The person takes a hat too.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What does the sister never wear?",
+     "opciones": [
+      "shorts",
+      "jeans",
+      "a shirt"
+     ],
+     "respuesta": "shorts"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "What does the person take off? Write two words.",
+     "respuesta": "old sweater",
+     "aceptadas": [
+      "my old sweater",
+      "sweater"
+     ]
     }
    ]
   }

@@ -2,42 +2,134 @@
  "tema": 8,
  "textos": [
   {
-   "titulo": "¿Qué hora es?",
-   "texto": "What time is it? It is half past six in the morning and Ana is always early. She is never late. Her work is from eight o'clock to two o'clock. At noon she is with Paul. In the afternoon she studies, usually at a quarter past four. In the evening she is often with Laura, and sometimes they are with friends. At midnight it is very late for Ana. In Peru it is two hours before. Now it is nine in the evening here, so in Peru it is soon eight. Her mother says: it is very late for you! Yes, but tomorrow is Saturday!",
+   "titulo": "Un día con reloj",
+   "texto": "What time is it? It is half past six in the morning and Ana is always early. She is never late and she is usually on time. Her work is from eight o'clock to two o'clock. At noon she is with Paul for half an hour. In the afternoon she studies, usually at a quarter past four. She rarely studies before four. In the evening she is often with Laura, and sometimes they are with friends. At midnight it is very late for Ana and the night is short. In Peru it is two hours before. Now it is nine in the evening here, so in Peru it is soon eight. Her clock is here and every minute has sixty seconds. One second! says Ana. I come right away. Her mother says: it is very late for you! Yes, but tomorrow is Saturday! A quarter of an hour after, Ana is in bed.",
    "preguntas": [
     {
-     "tipo": "opcion_multiple",
-     "enunciado": "¿A qué hora empieza el trabajo de Ana?",
-     "opciones": [
-      "eight o'clock",
-      "half past six",
-      "a quarter past four"
-     ],
-     "respuesta": "eight o'clock"
-    },
-    {
-     "tipo": "vf",
-     "enunciado": "Ana nunca llega tarde.",
-     "respuesta": "verdadero"
-    },
-    {
-     "tipo": "vfnd",
-     "enunciado": "Ana trabaja los sábados.",
-     "respuesta": "no dice"
-    },
-    {
      "tipo": "anota_la_hora",
-     "enunciado": "¿A qué hora se levanta? (escribe la hora, ej. 6:30)",
+     "enunciado": "¿Qué hora es al principio del texto?",
      "respuesta": "6:30",
      "aceptadas": [
-      "half past six",
-      "630"
+      "half past six"
      ]
     },
     {
      "tipo": "vf",
-     "enunciado": "En Perú es dos horas más tarde que en Canadá.",
+     "enunciado": "Ana llega tarde a menudo.",
      "respuesta": "falso"
+    },
+    {
+     "tipo": "anota_la_hora",
+     "enunciado": "¿A qué hora empieza su trabajo?",
+     "respuesta": "8:00",
+     "aceptadas": [
+      "eight o'clock",
+      "eight"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Con qué frecuencia estudia antes de las cuatro?",
+     "opciones": [
+      "rarely",
+      "always",
+      "often"
+     ],
+     "respuesta": "rarely"
+    },
+    {
+     "tipo": "anota_la_hora",
+     "enunciado": "¿A qué hora estudia normalmente por la tarde?",
+     "respuesta": "4:15",
+     "aceptadas": [
+      "a quarter past four",
+      "quarter past four"
+     ]
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "Ana tiene dos relojes.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Cuánto tiempo está con Paul al mediodía?",
+     "respuesta": "half an hour",
+     "aceptadas": [
+      "an hour and a half",
+      "30 minutes"
+     ]
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "En Perú son dos horas menos.",
+     "respuesta": "verdadero"
+    }
+   ]
+  },
+  {
+   "titulo": "¿A qué hora quedamos?",
+   "texto": "What time is it now? It is a quarter to nine. Are you always on time, Marc? Yes, I am usually on time and I am never late. Sometimes I am early. Good! The time with Laura is at ten o'clock. Ten? That is late for me. I am in bed before midnight and I am early in the morning. No problem, and at half past nine? Very good. One hour before. What time is it in Peru now? It is two hours before: a quarter to seven in the evening. In the afternoon I am often in the office and I am rarely with friends. At noon I have half an hour, and after, one hour of work. Now it is nine o'clock! Right away, Marc, right away! A minute is a minute and a second is a second.",
+   "preguntas": [
+    {
+     "tipo": "anota_la_hora",
+     "enunciado": "¿Qué hora es al empezar la conversación?",
+     "respuesta": "8:45",
+     "aceptadas": [
+      "a quarter to nine",
+      "quarter to nine"
+     ]
+    },
+    {
+     "tipo": "anota_la_hora",
+     "enunciado": "¿A qué hora queda Marc con Laura?",
+     "respuesta": "10:00",
+     "aceptadas": [
+      "ten o'clock",
+      "ten"
+     ]
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Marc llega tarde normalmente.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "anota_la_hora",
+     "enunciado": "¿A qué hora quedan al final?",
+     "respuesta": "9:30",
+     "aceptadas": [
+      "half past nine"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Con qué frecuencia está Marc con amigos por la tarde?",
+     "opciones": [
+      "rarely",
+      "always",
+      "usually"
+     ],
+     "respuesta": "rarely"
+    },
+    {
+     "tipo": "anota_la_hora",
+     "enunciado": "¿Qué hora es en Perú en ese momento?",
+     "respuesta": "6:45",
+     "aceptadas": [
+      "a quarter to seven",
+      "quarter to seven"
+     ]
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "Marc y Laura se ven en la oficina.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Marc está en la cama antes de medianoche.",
+     "respuesta": "verdadero"
     }
    ]
   }

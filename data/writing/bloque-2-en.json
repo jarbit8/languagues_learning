@@ -84,6 +84,90 @@
     "Usé un posesivo",
     "Escribí entre 28 y 38 palabras"
    ]
+  },
+  {
+   "tema": 7,
+   "consigna": "Escribe tu semana: qué haces cada día, en qué mes es tu cumpleaños y cuál es tu estación favorita.",
+   "minPalabras": 40,
+   "maxPalabras": 55,
+   "respuestaModelo": "On Monday and on Tuesday I work in the office. On Wednesday I study. On Thursday and on Friday I am with my friends. On the weekend I am with my family. My birthday is in June, in winter. My favourite season is summer, in December and January.",
+   "checklist": [
+    "Hablé de al menos cuatro días",
+    "Dije el mes de mi cumpleaños",
+    "Dije una estación",
+    "Usé 'on' con los días",
+    "Escribí entre 40 y 55 palabras"
+   ]
+  },
+  {
+   "tema": 8,
+   "consigna": "Escribe a qué hora haces tres cosas del día y con qué frecuencia: usa siempre, a veces, casi nunca.",
+   "minPalabras": 40,
+   "maxPalabras": 55,
+   "respuestaModelo": "It is half past seven in the morning and I am always early. My work is from eight o'clock to two o'clock. At noon I have half an hour. In the afternoon I usually study at a quarter past four. I am sometimes late, but I am never late for work.",
+   "checklist": [
+    "Dije tres horas distintas",
+    "Usé 'half past' o 'quarter past/to'",
+    "Usé tres adverbios de frecuencia",
+    "No confundí 'early' con 'late'",
+    "Escribí entre 40 y 55 palabras"
+   ]
+  },
+  {
+   "tema": 9,
+   "consigna": "Escribe la rutina de otra persona (un amigo o alguien de tu familia), de la mañana a la noche.",
+   "minPalabras": 40,
+   "maxPalabras": 55,
+   "respuestaModelo": "My brother wakes up at seven and he gets up quickly. He has a shower and he gets dressed. He has breakfast and he goes to work at eight. He comes back at three and he has lunch. In the evening he cooks and he listens to music. He goes to bed at eleven.",
+   "checklist": [
+    "Usé la tercera persona con -s",
+    "Conté la mañana, la tarde y la noche",
+    "Usé al menos seis verbos de rutina",
+    "Dije alguna hora",
+    "Escribí entre 40 y 55 palabras"
+   ]
+  },
+  {
+   "tema": 10,
+   "consigna": "Describe una habitación de tu casa: qué hay y dónde está cada cosa (usa near, next to, under, between, on).",
+   "minPalabras": 40,
+   "maxPalabras": 55,
+   "respuestaModelo": "This is my bedroom. There is a bed under the window and there is a wardrobe next to the door. There is a lamp near the bed and a mirror on the wall. Between the bed and the wardrobe there is a chair. There is no sofa, but the room is very nice.",
+   "checklist": [
+    "Usé 'there is' y 'there are' bien",
+    "Usé al menos cuatro preposiciones de lugar",
+    "Nombré al menos cinco muebles",
+    "Dije algo que NO hay",
+    "Escribí entre 40 y 55 palabras"
+   ]
+  },
+  {
+   "tema": 11,
+   "consigna": "Escribe qué llevas en tu mochila y de qué color es cada cosa, y di dónde está algo que NO llevas.",
+   "minPalabras": 40,
+   "maxPalabras": 55,
+   "respuestaModelo": "In my bag there is a black computer and a blue notebook. There are two pens: a red pen and a green pen. My phone is white and it is always here. I have my keys, my wallet and my money. My watch is not in the bag: it is on the table.",
+   "checklist": [
+    "Nombré al menos cinco objetos",
+    "Dije el color de al menos cuatro",
+    "Usé 'there is' y 'there are'",
+    "Dije dónde está lo que no llevo",
+    "Escribí entre 40 y 55 palabras"
+   ]
+  },
+  {
+   "tema": 12,
+   "consigna": "Escribe qué ropa te pones en invierno y qué ropa en verano, y di qué es caro y qué es barato.",
+   "minPalabras": 40,
+   "maxPalabras": 55,
+   "respuestaModelo": "In winter I put on a big coat, boots and gloves. I wear a sweater and trousers. The coat is very expensive, but the sweater is cheap. In summer I wear a t-shirt, shorts and sneakers. I never wear a jacket in summer. In bed I wear my pyjamas.",
+   "checklist": [
+    "Hablé del invierno y del verano",
+    "Nombré al menos seis prendas",
+    "Usé 'expensive' y 'cheap'",
+    "Usé 'wear' o 'put on'",
+    "Escribí entre 40 y 55 palabras"
+   ]
   }
  ]
 }

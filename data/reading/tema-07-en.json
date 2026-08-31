@@ -3,7 +3,7 @@
  "textos": [
   {
    "titulo": "Los días de Ana",
-   "texto": "Ana works on Monday and on Wednesday. On Tuesday and on Thursday she studies. On Friday she is with her friends, and on the weekend she is with Laura. Her birthday is in May, in spring. Her brother's birthday is in December, in winter. In Canada, summer is short. In Peru, summer is in December. Today is Thursday. Tomorrow is Friday and Ana is happy! In June her family comes to Canada. Every Sunday Ana speaks with her mother and with her grandmother. The day after tomorrow is Saturday.",
+   "texto": "Ana works on Monday and on Wednesday. On Tuesday and on Thursday she studies. On Friday she is with her friends, and on the weekend she is with Laura. Her birthday is in May, in spring. Her brother's birthday is in December, in winter. In Canada, summer is short and autumn is beautiful. In Peru, summer is in December and in January. Today is Thursday. Tomorrow is Friday and Ana is happy! The day after tomorrow is Saturday. The day before yesterday: Tuesday, a day of work. In June her family comes to Canada. Every Sunday Ana speaks with her mother and with her grandmother, and every month she speaks with her cousins too. And your birthday, Laura? In August, she says. In one week!",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
@@ -39,6 +39,90 @@
      "tipo": "vf",
      "enunciado": "En Canadá el verano es corto.",
      "respuesta": "verdadero"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿En qué mes viene su familia a Canadá?",
+     "respuesta": "June"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿En qué mes es el cumpleaños de Laura?",
+     "opciones": [
+      "August",
+      "May",
+      "December"
+     ],
+     "respuesta": "August"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Anteayer fue martes.",
+     "respuesta": "verdadero"
+    }
+   ]
+  },
+  {
+   "titulo": "El calendario de Laura",
+   "texto": "When is your birthday, Laura? It is in February, in winter. And your brother? His birthday is in August, in summer. What day is today? Today is Monday. Tomorrow is Tuesday and the day after tomorrow is Wednesday. On Thursday and on Friday Laura works in the office. On Saturday and on Sunday she is with her family: that is the weekend. Every month has four weeks and every week has seven days. January, February, March, April, May, June, July, August, September, October, November and December: twelve months in one year. Spring is in March and April. Summer is in June and July. Autumn is in September and October. Winter is in December and January. And the date of the weekend? Saturday and Sunday, of course! Very well, Laura.",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿En qué mes es el cumpleaños de Laura?",
+     "opciones": [
+      "February",
+      "August",
+      "March"
+     ],
+     "respuesta": "February"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "El cumpleaños del hermano de Laura es en verano.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Qué día es hoy en el texto?",
+     "respuesta": "Monday"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué días trabaja Laura?",
+     "opciones": [
+      "Thursday and Friday",
+      "Monday and Tuesday",
+      "Saturday and Sunday"
+     ],
+     "respuesta": "Thursday and Friday"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Cuántas semanas tiene un mes según el texto?",
+     "respuesta": "four",
+     "aceptadas": [
+      "4"
+     ]
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "Laura tiene hermanas.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "El otoño es en septiembre y octubre.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué días son el fin de semana?",
+     "opciones": [
+      "Saturday and Sunday",
+      "Monday and Tuesday",
+      "Friday and Saturday"
+     ],
+     "respuesta": "Saturday and Sunday"
     }
    ]
   }

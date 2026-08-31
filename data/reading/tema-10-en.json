@@ -3,7 +3,7 @@
  "textos": [
   {
    "titulo": "El apartamento nuevo",
-   "texto": "Ana lives in a small apartment with Laura. There are three rooms: a kitchen, a bathroom and a bedroom. There is also a living room. In the living room there is a sofa, a table and two chairs. There is a lamp near the sofa. In the kitchen there is a fridge next to the window. Ana's bed is under the window and her wardrobe is between the bed and the door. There is a mirror on the wall. The apartment has a small balcony, but there is no garden and there is no garage. Ana always has her key with her. The apartment is not big, but it is very nice.",
+   "texto": "Ana lives in a small apartment with Laura. There are three rooms: a kitchen, a bathroom and a bedroom. There is also a living room. In the living room there is a sofa, a table and two chairs. There is a lamp near the sofa and a mirror on the wall. In the kitchen there is a fridge next to the window. Ana's bed is under the window and her wardrobe is between the bed and the door. The apartment has a small balcony, but there is no garden and there is no garage. There are no stairs in the apartment. In the bathroom there is a toilet and a mirror too. Ana always has her key with her. The apartment is not big, but it is very nice.",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
@@ -39,6 +39,98 @@
      "tipo": "vf",
      "enunciado": "There is a small balcony.",
      "respuesta": "verdadero"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "How many rooms are there? Write the number in English.",
+     "respuesta": "three",
+     "aceptadas": [
+      "3"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What is there in the bathroom?",
+     "opciones": [
+      "a toilet and a mirror",
+      "a fridge",
+      "a sofa"
+     ],
+     "respuesta": "a toilet and a mirror"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "There are stairs in the apartment.",
+     "respuesta": "falso"
+    }
+   ]
+  },
+  {
+   "titulo": "La casa de los abuelos",
+   "texto": "The house of Laura's grandparents is very big. There is a garden and there is a garage too. In the garden there is a table and four chairs, near the door of the kitchen. The house has two floors and there are stairs between them. On the first floor there is a living room with a big sofa, and there is a bathroom near the door. On the second floor there are three bedrooms. In every bedroom there is a bed, a wardrobe and a lamp. There is a mirror on the wall of the bathroom. The window of the living room is under the roof of the balcony. In the kitchen there is a fridge next to the window. The key of the house is on the table, near the door. This is not an apartment: it is a house!",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "How many floors does the house have?",
+     "opciones": [
+      "two",
+      "one",
+      "three"
+     ],
+     "respuesta": "two"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "There is a garage in the house.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "Where is the key? Write two words.",
+     "respuesta": "on the table",
+     "aceptadas": [
+      "the table",
+      "table"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "How many bedrooms are there?",
+     "opciones": [
+      "three",
+      "two",
+      "four"
+     ],
+     "respuesta": "three"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "The grandparents live in the house now.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "There are no stairs in the house.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "Where is the mirror?",
+     "opciones": [
+      "on the wall of the bathroom",
+      "in the garden",
+      "under the roof"
+     ],
+     "respuesta": "on the wall of the bathroom"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "What is in the garden? Write your answer.",
+     "respuesta": "a table and four chairs",
+     "aceptadas": [
+      "table and chairs",
+      "a table and chairs"
+     ]
     }
    ]
   }

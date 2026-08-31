@@ -3,7 +3,7 @@
  "textos": [
   {
    "titulo": "Un día normal",
-   "texto": "Ana wakes up at six and she gets up. First she has a shower and she brushes her teeth. Then she gets dressed and she makes the bed. She has breakfast and she goes to work. She starts at eight and she finishes at two. Then she comes back and she has lunch. In the afternoon she does her homework and she studies. Sometimes she takes a nap, but not every day. In the evening she cooks and she cleans. Then she listens to music or she reads. On Saturday she goes out with her friends and they walk in the city. That day she goes to bed very late.",
+   "texto": "Ana wakes up at six and she gets up quickly. First she has a shower and she brushes her teeth. Then she gets dressed and she makes the bed. She has breakfast and she goes to work. She arrives at eight, she starts and she finishes at two. Then she comes back and she has lunch. In the afternoon she does her homework and she studies. Sometimes she takes a nap, but not every day. In the evening she cooks the dinner and she cleans. Then she listens to music or she reads. On Saturday she goes out with her friends and they walk in the city. She never runs in the morning, but she often walks. That day she goes to bed very late and she sleeps eight hours, and on Sunday she rests. This is her routine.",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
@@ -39,6 +39,99 @@
      "tipo": "vf",
      "enunciado": "Ana takes a nap every day.",
      "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "What does she do on Sunday? Write one word.",
+     "respuesta": "rests",
+     "aceptadas": [
+      "rest",
+      "she rests"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What does she do in the evening?",
+     "opciones": [
+      "cooks and cleans",
+      "runs",
+      "studies"
+     ],
+     "respuesta": "cooks and cleans"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Ana runs in the morning.",
+     "respuesta": "falso"
+    }
+   ]
+  },
+  {
+   "titulo": "La rutina de Paul",
+   "texto": "Paul wakes up late, at nine o'clock, because he works in the evening. He does not get up quickly: first he rests in bed for half an hour. Then he showers, he brushes his teeth and he gets dressed. He never makes the bed! He has breakfast at ten, and after he reads. In the morning he cleans and he walks in the city. He has lunch at noon with Laura. In the afternoon he does his homework, and sometimes he takes a nap. He goes to work at five and he finishes at midnight. He comes back and he has dinner very late. Then he listens to music. He goes to bed at two. Is this a good routine? No! says Ana. But Paul runs every Sunday and he is never tired.",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What time does Paul wake up?",
+     "opciones": [
+      "at nine",
+      "at six",
+      "at five"
+     ],
+     "respuesta": "at nine"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Paul makes the bed every day.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "What time does Paul have breakfast? Write the number in English.",
+     "respuesta": "ten",
+     "aceptadas": [
+      "at ten",
+      "10"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "When does Paul work?",
+     "opciones": [
+      "in the evening",
+      "in the morning",
+      "at noon"
+     ],
+     "respuesta": "in the evening"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "Paul works in an office.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Paul runs every Sunday.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "anota_la_hora",
+     "enunciado": "What time does Paul go to bed?",
+     "respuesta": "2:00",
+     "aceptadas": [
+      "two",
+      "at two"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "Who has lunch with Paul?",
+     "opciones": [
+      "Laura",
+      "Ana",
+      "his mother"
+     ],
+     "respuesta": "Laura"
     }
    ]
   }
