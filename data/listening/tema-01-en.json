@@ -287,6 +287,65 @@
      "respuesta": "verdadero"
     }
    ]
+  },
+  {
+   "titulo": "Examen · En la recepción",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "Good afternoon! Welcome."
+    },
+    {
+     "hablante": "B",
+     "texto": "Good afternoon. My name is Marie."
+    },
+    {
+     "hablante": "A",
+     "texto": "Nice to meet you, Marie. How are you?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Very well, thank you. And you?"
+    },
+    {
+     "hablante": "A",
+     "texto": "Fine, thanks. Is Mr Lee here?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Sorry, no. Mrs Lee is here."
+    },
+    {
+     "hablante": "A",
+     "texto": "No problem! Thank you very much."
+    },
+    {
+     "hablante": "B",
+     "texto": "You're welcome. Have a nice day! See you tomorrow."
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cómo se llama la mujer?",
+     "opciones": [
+      "Marie",
+      "Laura",
+      "Sofia"
+     ],
+     "respuesta": "Marie"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Mr Lee está.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Quién sí está?",
+     "respuesta": "Mrs Lee"
+    }
+   ]
   }
  ]
 }

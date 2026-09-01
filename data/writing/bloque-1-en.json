@@ -170,6 +170,90 @@
     "No puse artículo de más ni de menos",
     "Escribí entre 30 y 40 palabras"
    ]
+  },
+  {
+   "tema": 1,
+   "consigna": "Examen: escribe una conversación corta de presentación y despedida entre dos personas que no se conocen.",
+   "minPalabras": 20,
+   "maxPalabras": 30,
+   "respuestaModelo": "Good morning! My name is Marie. Nice to meet you. Hi Marie! I am Paul. How are you? I am fine, thank you. Have a nice day! Goodbye!",
+   "checklist": [
+    "Los dos se presentan",
+    "Hay un saludo y una despedida",
+    "Pregunté cómo está",
+    "Usé 'nice to meet you'",
+    "Escribí entre 20 y 30 palabras"
+   ]
+  },
+  {
+   "tema": 2,
+   "consigna": "Examen: escribe la ficha de tres personas distintas con su nombre, edad, cumpleaños y teléfono.",
+   "minPalabras": 25,
+   "maxPalabras": 35,
+   "respuestaModelo": "Her name is Marie. She is twenty-six years old and her birthday is in August. Paul is twenty-one. Mr Lee is eighty-four and his phone number is nine, one, four, zero, seven, five.",
+   "checklist": [
+    "Escribí tres personas",
+    "Dije las edades con 'years old'",
+    "Dije al menos un cumpleaños",
+    "Escribí un teléfono número por número",
+    "Escribí entre 25 y 35 palabras"
+   ]
+  },
+  {
+   "tema": 3,
+   "consigna": "Examen: escribe de dónde son tres personas, dónde viven ahora y qué idiomas hablan.",
+   "minPalabras": 28,
+   "maxPalabras": 38,
+   "respuestaModelo": "Marie comes from England. She is English and she speaks English and French. Marc is from France and he lives in Canada. Sofia is Spanish, she comes from Spain and she speaks Spanish and English.",
+   "checklist": [
+    "Escribí tres personas",
+    "Dije el país de origen",
+    "Dije la nacionalidad",
+    "Dije los idiomas",
+    "Escribí entre 28 y 38 palabras"
+   ]
+  },
+  {
+   "tema": 4,
+   "consigna": "Examen: describe una familia entera: padres, hermanos, quién está casado o soltero, y las mascotas.",
+   "minPalabras": 30,
+   "maxPalabras": 40,
+   "respuestaModelo": "This is Marie's family. Her father and her mother are her parents. She has one brother and one sister. Her brother is married and he has a son. Her sister is divorced. Marie is single and she has a dog.",
+   "checklist": [
+    "Hablé de los padres",
+    "Dije cuántos hermanos hay",
+    "Dije quién está casado, soltero o divorciado",
+    "Mencioné una mascota",
+    "Escribí entre 30 y 40 palabras"
+   ]
+  },
+  {
+   "tema": 5,
+   "consigna": "Examen: describe a tres personas de una foto: primero el físico y después la personalidad de cada una.",
+   "minPalabras": 30,
+   "maxPalabras": 40,
+   "respuestaModelo": "Marie is short and thin, with brown hair. She is friendly and funny. Her brother is tall and bald, but he is calm. Their cousin is young and handsome, with blond hair. He is smart but lazy.",
+   "checklist": [
+    "Describí a tres personas",
+    "Puse el físico de cada una",
+    "Puse la personalidad de cada una",
+    "Usé al menos seis adjetivos distintos",
+    "Escribí entre 30 y 40 palabras"
+   ]
+  },
+  {
+   "tema": 6,
+   "consigna": "Examen: escribe en qué trabaja cada persona de una familia, dónde trabaja y si el salario es bueno.",
+   "minPalabras": 30,
+   "maxPalabras": 40,
+   "respuestaModelo": "Marie is a dentist and she works in an office. Her husband is a farmer. Her father is a doctor and her mother is a teacher. Her sister is unemployed. Her salary is very good.",
+   "checklist": [
+    "Usé cinco profesiones distintas",
+    "Dije dónde trabaja alguien",
+    "Hablé del salario",
+    "Usé 'is a' + profesión correctamente",
+    "Escribí entre 30 y 40 palabras"
+   ]
   }
  ]
 }

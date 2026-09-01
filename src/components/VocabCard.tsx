@@ -57,7 +57,7 @@ export default function VocabCard({
                   {/* El truco cabe en la tarjeta; la lección completa (ejemplos con audio y
                       entrenador de pares mínimos) no, así que se enlaza. */}
                   <Link
-                    to={`/hablar?pron=${g.id}`}
+                    to={`/aprender?pron=${g.id}`}
                     className="mt-1 inline-block text-[11px] font-semibold text-indigo-600 underline dark:text-indigo-300"
                   >
                     Practicar este sonido →

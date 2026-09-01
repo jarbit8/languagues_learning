@@ -36,15 +36,20 @@ export default function Aprendidas() {
 
   if (total === 0) {
     return (
-      <p className="tarjeta text-sm text-slate-500 dark:text-slate-400">
-        Todavía no has marcado ninguna palabra. Cuando marques una como “Aprendida ✓” en Vocabulario, aparecerá aquí y
+      <div className="flex flex-col gap-3">
+        <h2 className="text-lg font-bold">Vocabulario aprendido</h2>
+        <p className="tarjeta text-sm text-slate-500 dark:text-slate-400">
+          Todavía no has marcado ninguna palabra. Cuando marques una como “Aprendida ✓” en Vocabulario, aparecerá aquí y
         se quedará, aunque pases al tema siguiente.
-      </p>
+        </p>
+      </div>
     )
   }
 
   return (
     <div className="flex flex-col gap-3">
+      <h2 className="text-lg font-bold">Vocabulario aprendido</h2>
+
       <div className="tarjeta grid grid-cols-3 text-center">
         <div>
           <p className="text-xl font-black">{total}</p>

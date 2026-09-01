@@ -276,6 +276,65 @@
      "respuesta": "secretary"
     }
    ]
+  },
+  {
+   "titulo": "Examen · El trabajo de Marie",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "What do you do, Marie?"
+    },
+    {
+     "hablante": "B",
+     "texto": "I am a dentist. I work in an office."
+    },
+    {
+     "hablante": "A",
+     "texto": "And your husband?"
+    },
+    {
+     "hablante": "B",
+     "texto": "He is a farmer."
+    },
+    {
+     "hablante": "A",
+     "texto": "Is your job good?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes, and my salary is very good."
+    },
+    {
+     "hablante": "A",
+     "texto": "And your sister?"
+    },
+    {
+     "hablante": "B",
+     "texto": "She is unemployed, but she studies. She has a career."
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cuál es la profesión de Marie?",
+     "opciones": [
+      "dentist",
+      "farmer",
+      "nurse"
+     ],
+     "respuesta": "dentist"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿En qué trabaja el marido?",
+     "respuesta": "farmer"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "La hermana tiene trabajo.",
+     "respuesta": "falso"
+    }
+   ]
   }
  ]
 }

@@ -174,19 +174,10 @@ export default function Listening() {
 
   return (
     <div className="flex flex-col gap-4">
-      <div className="flex gap-2">
-        <select
-          value={temaSel}
-          onChange={(e) => cambiarTema(Number(e.target.value))}
-          className="flex-1 rounded-xl border border-slate-300 bg-white px-3 py-2 dark:border-slate-600 dark:bg-slate-900"
-        >
-          {temasDisponibles.map((t) => (
-            <option key={t} value={t}>
-              Tema {t} — {getVocabPack(t)?.titulo}
-            </option>
-          ))}
-        </select>
-      </div>
+      {/* SIN SELECTOR DE TEMA (2026-08-30): Practicar es siempre el tema EN CURSO. El selector
+          dejaba elegir temas pasados y era ruido: al aprobar el examen aparece el siguiente y
+          ya está. Para repasar lo anterior están Aprender → Aprendido y Exámenes → POR TEMA. */}
+      <p className="text-sm font-semibold">{`Tema ${temaSel} — ${getVocabPack(temaSel)?.titulo ?? ''}`}</p>
 
       <SelectorDia dia={dia} onCambio={setDia} />
 

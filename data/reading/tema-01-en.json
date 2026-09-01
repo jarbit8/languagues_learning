@@ -232,6 +232,63 @@
      ]
     }
    ]
+  },
+  {
+   "titulo": "Examen · Un día de saludos",
+   "texto": "Good morning, Mr Lee! Good morning, Marie. How are you? I am very well, thank you. And you? Fine, thanks. Welcome! Thank you very much. You're welcome. Excuse me, is Miss Sofia here? Sorry, no. No problem! Good afternoon, Paul. Hi! Nice to meet you. Nice to meet you too. Have a nice day! Thank you. Good evening, Marie. Good evening! Have a nice evening. See you tomorrow. Good night! Take care. Bye!",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿A quién saluda Marie primero?",
+     "opciones": [
+      "Mr Lee",
+      "Paul",
+      "Miss Sofia"
+     ],
+     "respuesta": "Mr Lee"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Miss Sofia está.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Qué dice Marie cuando le dan las gracias?",
+     "respuesta": "you're welcome",
+     "aceptadas": [
+      "youre welcome"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Con quién se dice 'nice to meet you'?",
+     "opciones": [
+      "Paul",
+      "Mr Lee",
+      "Miss Sofia"
+     ],
+     "respuesta": "Paul"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "Marie trabaja con Paul.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Se despiden con 'good night'.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Qué le desean a Marie por la tarde?",
+     "respuesta": "have a nice evening",
+     "aceptadas": [
+      "a nice evening"
+     ]
+    }
+   ]
   }
  ]
 }

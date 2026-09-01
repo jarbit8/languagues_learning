@@ -227,6 +227,61 @@
      ]
     }
    ]
+  },
+  {
+   "titulo": "Examen · Tres personas",
+   "texto": "Marie is short and thin. She is brown-haired and she has big eyes. She is friendly, funny and never shy. Her brother is tall and bald. He is old, but he is strong and very calm. He is never angry. Their cousin is young and handsome, with blond hair and small eyes. He is smart, but he is really lazy: he is always tired. Their aunt is beautiful and red-haired. She is a bit fat and she is very kind and hardworking. Is she serious? No, she is happy. Marie says: my family is not sad, my family is brave.",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cómo es Marie físicamente?",
+     "opciones": [
+      "short and thin",
+      "tall and fat",
+      "bald"
+     ],
+     "respuesta": "short and thin"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿De qué color tiene el pelo el primo?",
+     "respuesta": "blond"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "El hermano es calvo.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cómo es el primo de carácter?",
+     "opciones": [
+      "smart but lazy",
+      "brave and calm",
+      "shy"
+     ],
+     "respuesta": "smart but lazy"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "La tía tiene hijos.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Marie es tímida.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "Escribe un adjetivo de personalidad de la tía.",
+     "respuesta": "kind",
+     "aceptadas": [
+      "hardworking",
+      "happy"
+     ]
+    }
+   ]
   }
  ]
 }

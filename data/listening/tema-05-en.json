@@ -276,6 +276,68 @@
      "respuesta": "his father"
     }
    ]
+  },
+  {
+   "titulo": "Examen · ¿Cómo es Marie?",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "Is Marie tall?"
+    },
+    {
+     "hablante": "B",
+     "texto": "No, she is short and thin."
+    },
+    {
+     "hablante": "A",
+     "texto": "And her hair?"
+    },
+    {
+     "hablante": "B",
+     "texto": "She is brown-haired and she has big eyes."
+    },
+    {
+     "hablante": "A",
+     "texto": "Is she shy?"
+    },
+    {
+     "hablante": "B",
+     "texto": "No, she is friendly and very funny."
+    },
+    {
+     "hablante": "A",
+     "texto": "And her brother?"
+    },
+    {
+     "hablante": "B",
+     "texto": "He is tall, bald and very calm. He is never angry."
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cómo es Marie físicamente?",
+     "opciones": [
+      "short and thin",
+      "tall and fat",
+      "old"
+     ],
+     "respuesta": "short and thin"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿De qué color tiene el pelo?",
+     "respuesta": "brown",
+     "aceptadas": [
+      "brown-haired"
+     ]
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "El hermano es calvo.",
+     "respuesta": "verdadero"
+    }
+   ]
   }
  ]
 }

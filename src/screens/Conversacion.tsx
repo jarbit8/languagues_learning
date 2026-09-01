@@ -25,22 +25,10 @@ export default function Conversacion() {
 
   return (
     <div className="flex flex-col gap-4">
-      <div className="tarjeta flex flex-col gap-3">
-        <label className="text-sm font-semibold">Vocabulario hasta el tema</label>
-        <select
-          value={temaSel}
-          onChange={(e) => setTema(Number(e.target.value))}
-          className="rounded-xl border border-slate-300 bg-white px-3 py-2 dark:border-slate-600 dark:bg-slate-900"
-        >
-          {temasDisponibles.map((t) => (
-            <option key={t} value={t}>
-              Tema {t} — {getVocabPack(t)?.titulo}
-            </option>
-          ))}
-        </select>
-        <SelectorDia dia={dia} onCambio={setDia} />
-        <p className="text-sm text-slate-500 dark:text-slate-400">{escenarioDe(temaSel, dia)}</p>
-      </div>
+      {/* SIN SELECTOR DE TEMA (2026-08-30): Practicar es siempre el tema EN CURSO. El selector
+          dejaba elegir temas pasados y era ruido: al aprobar el examen aparece el siguiente y
+          ya está. Para repasar lo anterior están Aprender → Aprendido y Exámenes → POR TEMA. */}
+      <p className="text-sm font-semibold">{`Tema ${temaSel} — ${getVocabPack(temaSel)?.titulo ?? ''}`}</p>
 
       <CopiarPrompt
         prompt={prompt}

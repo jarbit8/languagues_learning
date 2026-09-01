@@ -226,6 +226,60 @@
      "respuesta": "falso"
     }
    ]
+  },
+  {
+   "titulo": "Examen · Tres fichas",
+   "texto": "Good morning! Your name, please? My name is Marie. How old are you? I am twenty-six years old. My birthday is in August. And my phone number is nine, one, four, zero, seven, five. Thank you. And Paul? Paul is twenty-one and his birthday is in March. Mr Lee is eighty-four and Mrs Lee is seventy-nine. Miss Sofia is fifty and Marc is thirty-one. Thank you very much! You're welcome. See you tomorrow!",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cuántos años tiene Marie?",
+     "opciones": [
+      "twenty-six",
+      "twenty-one",
+      "sixteen"
+     ],
+     "respuesta": "twenty-six"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿En qué mes es el cumpleaños de Marie?",
+     "respuesta": "August"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Paul tiene veintiún años.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cuántos años tiene Mrs Lee?",
+     "opciones": [
+      "seventy-nine",
+      "eighty-four",
+      "fifty"
+     ],
+     "respuesta": "seventy-nine"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "Marie y Paul son amigos.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Cuál es el último número del teléfono de Marie?",
+     "respuesta": "five",
+     "aceptadas": [
+      "5"
+     ]
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Marc tiene treinta años.",
+     "respuesta": "falso"
+    }
+   ]
   }
  ]
 }

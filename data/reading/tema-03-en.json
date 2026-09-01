@@ -207,6 +207,57 @@
      ]
     }
    ]
+  },
+  {
+   "titulo": "Examen · De qué país eres",
+   "texto": "Marie comes from England. Her country is in Europe and her nationality is English. She speaks English and French. Marc is from France, but he lives in Canada, in Quebec. Quebec is French-speaking. Sofia comes from Spain and she speaks Spanish. Ana is Peruvian: she was born in Peru, a country in America. She lives in Canada and she is a foreigner there, but she speaks the language. The capital of Peru is Lima, and Ana comes from a city with the name Arequipa. The United States is in America too. The world has many countries and many languages.",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿De dónde viene Marie?",
+     "opciones": [
+      "England",
+      "France",
+      "Spain"
+     ],
+     "respuesta": "England"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Marc vive en Quebec.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Cuál es la capital de Perú?",
+     "respuesta": "Lima"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué idiomas habla Marie?",
+     "opciones": [
+      "English and French",
+      "Spanish",
+      "French only"
+     ],
+     "respuesta": "English and French"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "Sofia vive en España.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿De qué ciudad viene Ana?",
+     "respuesta": "Arequipa"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Estados Unidos está en Europa.",
+     "respuesta": "falso"
+    }
+   ]
   }
  ]
 }

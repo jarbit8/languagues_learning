@@ -63,12 +63,15 @@ export default function Examen() {
     // El plan dice si HOY toca el examen del tema (día 2). Sin plan, siempre disponible.
     const plan = await getPlan()
     const jornada = plan ? estadoDelPlan(plan, tema).jornada : undefined
-    const tocaDelTema = !jornada || (jornada.tipo === 'tema' && jornada.diaDelTema >= 2)
+    // El examen de vocabulario del tema YA NO SE BLOQUEA (2026-08-30). Estaba atado al 2º día
+    // del cronograma, y el cronograma es una guía que por regla no bloquea ni desbloquea nada
+    // (regla 1 de CLAUDE.md: ritmo libre). Ahora está siempre disponible, como el diario:
+    // si aún no has marcado palabras del tema, simplemente no hay nada que preguntar.
     const delTema = (await idsDelTema(tema)).length
     const ciclos = CICLOS.map((c) => ({
       ...c,
       cuantas: c.id === 'diario' ? pendientes : delTema,
-      toca: c.id === 'diario' ? true : tocaDelTema
+      toca: true
     }))
     return { tema, titulo: pack?.titulo ?? '', pendientes, gateTema, bloque, gateBloque, gateFinal, nivel, ciclos }
   }, [])
@@ -320,11 +323,9 @@ export default function Examen() {
                 {c.id === 'diario' ? 'Examen diario' : `Vocabulario del tema ${info.tema}`}
               </p>
               <p className="text-sm text-slate-500 dark:text-slate-400">
-                {!c.toca
-                  ? 'Toca el 2º día del tema'
-                  : cuantas > 0
-                    ? `${cuantas} ${cuantas === 1 ? 'palabra' : 'palabras'} · entrenamiento`
-                    : 'Nada que evaluar todavía'}
+                {cuantas > 0
+                  ? `${cuantas} ${cuantas === 1 ? 'palabra' : 'palabras'} · entrenamiento`
+                  : 'Marca palabras del tema y aparecerán aquí'}
               </p>
             </div>
             <span className="text-slate-400">›</span>

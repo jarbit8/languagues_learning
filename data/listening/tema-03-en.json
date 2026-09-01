@@ -266,6 +266,65 @@
      "respuesta": "verdadero"
     }
    ]
+  },
+  {
+   "titulo": "Examen · Dos extranjeros",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "Where are you from?"
+    },
+    {
+     "hablante": "B",
+     "texto": "I come from England. And you?"
+    },
+    {
+     "hablante": "A",
+     "texto": "I am from Spain, from the capital."
+    },
+    {
+     "hablante": "B",
+     "texto": "Do you speak French?"
+    },
+    {
+     "hablante": "A",
+     "texto": "No, I speak English and Spanish."
+    },
+    {
+     "hablante": "B",
+     "texto": "I live in Canada, but my nationality is Spanish."
+    },
+    {
+     "hablante": "A",
+     "texto": "Are you a foreigner here?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes, I am a foreigner, but I speak the language."
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿De dónde viene la persona A?",
+     "opciones": [
+      "England",
+      "Spain",
+      "Canada"
+     ],
+     "respuesta": "England"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "A habla francés.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Cuál es la nacionalidad de B?",
+     "respuesta": "Spanish"
+    }
+   ]
   }
  ]
 }

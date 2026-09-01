@@ -275,6 +275,68 @@
      "respuesta": "verdadero"
     }
    ]
+  },
+  {
+   "titulo": "Examen · La familia de Marie",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "Is this your family?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes. These are my parents and this is my sister."
+    },
+    {
+     "hablante": "A",
+     "texto": "Is your sister married?"
+    },
+    {
+     "hablante": "B",
+     "texto": "No, she is single. My brother is married."
+    },
+    {
+     "hablante": "A",
+     "texto": "Do they have children?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes, one son. He is my nephew."
+    },
+    {
+     "hablante": "A",
+     "texto": "And your grandparents?"
+    },
+    {
+     "hablante": "B",
+     "texto": "My grandfather is eighty and my grandmother is seventy-five."
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cómo está la hermana?",
+     "opciones": [
+      "single",
+      "married",
+      "divorced"
+     ],
+     "respuesta": "single"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Qué es el hijo del hermano para Marie?",
+     "respuesta": "nephew",
+     "aceptadas": [
+      "her nephew"
+     ]
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "El abuelo tiene ochenta años.",
+     "respuesta": "verdadero"
+    }
+   ]
   }
  ]
 }

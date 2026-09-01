@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { useLiveQuery } from 'dexie-react-hooks'
 import { temaEnCurso } from '../lib/progreso'
-import { getWriting } from '../data/packs'
+import { getWriting, getVocabPack } from '../data/packs'
 import { bloqueDeTema } from '../lib/curriculum'
 import { EscribirConsigna } from '../components/PasoWriting'
 import SelectorDia from '../components/SelectorDia'
@@ -55,22 +55,10 @@ export default function Writing() {
 
   return (
     <div className="flex flex-col gap-4">
-      <div className="flex gap-2">
-        <select
-          value={temaSel}
-          onChange={(e) => {
-            reset()
-            setTema(Number(e.target.value))
-          }}
-          className="flex-1 rounded-xl border border-slate-300 bg-white px-3 py-2 dark:border-slate-600 dark:bg-slate-900"
-        >
-          {temasDisponibles.map((t) => (
-            <option key={t} value={t}>
-              Tema {t}
-            </option>
-          ))}
-        </select>
-      </div>
+      {/* SIN SELECTOR DE TEMA (2026-08-30): Practicar es siempre el tema EN CURSO. El selector
+          dejaba elegir temas pasados y era ruido: al aprobar el examen aparece el siguiente y
+          ya está. Para repasar lo anterior están Aprender → Aprendido y Exámenes → POR TEMA. */}
+      <p className="text-sm font-semibold">{`Tema ${temaSel} — ${getVocabPack(temaSel)?.titulo ?? ''}`}</p>
 
       <SelectorDia dia={dia} onCambio={setDia} />
 

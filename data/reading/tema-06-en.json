@@ -212,6 +212,57 @@
      "respuesta": "programmer"
     }
    ]
+  },
+  {
+   "titulo": "Examen · Quién trabaja en qué",
+   "texto": "Marie is a dentist and she works in an office. Her husband is a farmer. Her father is a doctor and her mother is a teacher. Her brother is a police officer and his wife is a nurse. Her sister is unemployed, but she studies and she has a career. Her uncle is a driver and her aunt is a secretary. Her cousin is an architect and her friend is an accountant. Who is the boss? Mr Lee. He is an engineer in a big company. Is the salary good? Yes, the salary is very good. And Marc? Marc is a cook and Sofia is a seller. What do you do?",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cuál es la profesión de Marie?",
+     "opciones": [
+      "dentist",
+      "teacher",
+      "nurse"
+     ],
+     "respuesta": "dentist"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "La hermana tiene trabajo.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿En qué trabaja el marido?",
+     "respuesta": "farmer"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Quién es el jefe?",
+     "opciones": [
+      "Mr Lee",
+      "Marc",
+      "el padre"
+     ],
+     "respuesta": "Mr Lee"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "Marie trabaja con su hermano.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "El salario es bueno.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Cuál es la profesión de la tía?",
+     "respuesta": "secretary"
+    }
+   ]
   }
  ]
 }

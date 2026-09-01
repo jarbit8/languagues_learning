@@ -219,6 +219,63 @@
      ]
     }
    ]
+  },
+  {
+   "titulo": "Examen · La familia de Marie",
+   "texto": "This is the family of Marie. Her father and her mother are her parents. Marie has one brother and one sister. Her brother is married and his wife is Canadian. They have a son, so Marie has a nephew. Her sister is divorced and she has a daughter: Marie's niece. Her grandparents live in England. Her grandfather is eighty and her grandmother is seventy-five. Marie has two cousins: one is a baby. Her uncle and her aunt live with the grandparents. Marie is single. She has a pet: a dog. Her friend has a cat.",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cuántos hermanos tiene Marie?",
+     "opciones": [
+      "uno y una hermana",
+      "dos hermanos",
+      "ninguno"
+     ],
+     "respuesta": "uno y una hermana"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "La hermana está divorciada.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Cuántos años tiene el abuelo?",
+     "respuesta": "eighty",
+     "aceptadas": [
+      "80"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué mascota tiene Marie?",
+     "opciones": [
+      "a dog",
+      "a cat",
+      "no pet"
+     ],
+     "respuesta": "a dog"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "El sobrino se llama Paul.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Marie está casada.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Dónde viven los abuelos?",
+     "respuesta": "England",
+     "aceptadas": [
+      "in England"
+     ]
+    }
+   ]
   }
  ]
 }

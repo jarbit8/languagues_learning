@@ -281,6 +281,68 @@
      "respuesta": "falso"
     }
    ]
+  },
+  {
+   "titulo": "Examen · La ficha del curso",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "What is your name, please?"
+    },
+    {
+     "hablante": "B",
+     "texto": "My name is Marie."
+    },
+    {
+     "hablante": "A",
+     "texto": "How old are you?"
+    },
+    {
+     "hablante": "B",
+     "texto": "I am twenty-six years old."
+    },
+    {
+     "hablante": "A",
+     "texto": "And your phone number?"
+    },
+    {
+     "hablante": "B",
+     "texto": "It is nine, one, four, zero, seven, five."
+    },
+    {
+     "hablante": "A",
+     "texto": "And your birthday?"
+    },
+    {
+     "hablante": "B",
+     "texto": "It is in August. Thank you!"
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cuántos años tiene Marie?",
+     "opciones": [
+      "twenty-six",
+      "sixteen",
+      "sixty"
+     ],
+     "respuesta": "twenty-six"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Cuál es el primer número de su teléfono?",
+     "respuesta": "nine",
+     "aceptadas": [
+      "9"
+     ]
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿En qué mes es su cumpleaños?",
+     "respuesta": "August"
+    }
+   ]
   }
  ]
 }
