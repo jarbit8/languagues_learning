@@ -125,6 +125,108 @@
      "respuesta": "Saturday and Sunday"
     }
    ]
+  },
+  {
+   "titulo": "El año de Ana",
+   "texto": "The year has twelve months and four seasons. In Canada, winter is in December, January and February. Spring is in March, April and May. Summer is in June, July and August, and autumn is in September, October and November. Ana works from Monday to Friday. On Saturday and on Sunday she is with Laura: that is the weekend. Today is Tuesday and tomorrow is Wednesday. The day after tomorrow is Thursday. Her birthday is in May and her brother's birthday is in December. Every month Ana speaks with her family, and every week she is with her friends. In one year she is here!",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cuántos meses tiene el año?",
+     "opciones": [
+      "twelve",
+      "four",
+      "seven"
+     ],
+     "respuesta": "twelve"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿En qué estación está diciembre en Canadá?",
+     "respuesta": "winter"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Ana trabaja de lunes a viernes.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué día es hoy?",
+     "opciones": [
+      "Tuesday",
+      "Wednesday",
+      "Thursday"
+     ],
+     "respuesta": "Tuesday"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "Ana trabaja los sábados por la mañana.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿En qué mes es el cumpleaños de Ana?",
+     "respuesta": "May"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "El otoño es en septiembre, octubre y noviembre.",
+     "respuesta": "verdadero"
+    }
+   ]
+  },
+  {
+   "titulo": "Una fecha importante",
+   "texto": "When is the date? It is Monday. Today is a good day. Tomorrow is Tuesday and the day before yesterday was Saturday. In June the family of Ana comes to Canada. June is in summer here, but in Peru June is in winter. The seasons are not the same! Every year Ana is in Peru in December, in the summer of Peru. Her weekend is Saturday and Sunday, but she works on Saturday too. One week has seven days and one month has four weeks. In one month it is July, and in two months it is August. Ana is very happy: the date is here!",
+   "preguntas": [
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Qué día es hoy en el texto?",
+     "respuesta": "Monday"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿En qué mes viene la familia?",
+     "opciones": [
+      "June",
+      "July",
+      "December"
+     ],
+     "respuesta": "June"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "En Perú junio es invierno.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cuántos días tiene una semana?",
+     "opciones": [
+      "seven",
+      "four",
+      "twelve"
+     ],
+     "respuesta": "seven"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "La familia viene por dos semanas.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Qué día fue anteayer?",
+     "respuesta": "Saturday"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Las estaciones son iguales en Perú y en Canadá.",
+     "respuesta": "falso"
+    }
+   ]
   }
  ]
 }

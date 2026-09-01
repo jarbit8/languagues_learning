@@ -132,6 +132,124 @@
      "respuesta": "verdadero"
     }
    ]
+  },
+  {
+   "titulo": "El reloj de Ana",
+   "texto": "It is a quarter past six in the morning. Ana is always early and she is never late. Her work is from eight o'clock to two o'clock, and at noon she has half an hour. In the afternoon she usually studies at half past four. She rarely studies before four. In the evening she is often with Laura. At ten o'clock it is night and at midnight it is very late. Her clock has hours, minutes and seconds. One hour has sixty minutes and one minute has sixty seconds. Sometimes Ana is soon in bed, and sometimes she is late. Right away! she says. A quarter of an hour and I am here.",
+   "preguntas": [
+    {
+     "tipo": "anota_la_hora",
+     "enunciado": "¿Qué hora es al principio?",
+     "respuesta": "6:15",
+     "aceptadas": [
+      "a quarter past six",
+      "quarter past six"
+     ]
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Ana llega tarde a menudo.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "anota_la_hora",
+     "enunciado": "¿A qué hora termina el trabajo?",
+     "respuesta": "2:00",
+     "aceptadas": [
+      "two o'clock",
+      "two"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Con qué frecuencia estudia antes de las cuatro?",
+     "opciones": [
+      "rarely",
+      "always",
+      "usually"
+     ],
+     "respuesta": "rarely"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "Ana tiene un reloj nuevo.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Cuántos minutos tiene una hora?",
+     "respuesta": "sixty",
+     "aceptadas": [
+      "60"
+     ]
+    },
+    {
+     "tipo": "anota_la_hora",
+     "enunciado": "¿A qué hora estudia normalmente?",
+     "respuesta": "4:30",
+     "aceptadas": [
+      "half past four"
+     ]
+    }
+   ]
+  },
+  {
+   "titulo": "Nunca llego tarde",
+   "texto": "What time is it now? It is a quarter to eight. I am usually on time and I am never late. Sometimes I am early. In the morning I am here at eight o'clock. At noon I have half an hour and after, one hour of work. In the afternoon I am often in the office. In the evening, at nine, I am with my friends. At eleven o'clock I am in bed, and at midnight I am always in bed. The night is short! Before eight in the morning it is early, and after ten in the evening it is late. One second, please! Right away!",
+   "preguntas": [
+    {
+     "tipo": "anota_la_hora",
+     "enunciado": "¿Qué hora es ahora?",
+     "respuesta": "7:45",
+     "aceptadas": [
+      "a quarter to eight",
+      "quarter to eight"
+     ]
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "A veces llega temprano.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "anota_la_hora",
+     "enunciado": "¿A qué hora está con sus amigos?",
+     "respuesta": "9:00",
+     "aceptadas": [
+      "nine",
+      "at nine"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Con qué frecuencia llega tarde?",
+     "opciones": [
+      "never",
+      "often",
+      "usually"
+     ],
+     "respuesta": "never"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "Trabaja los fines de semana.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "anota_la_hora",
+     "enunciado": "¿A qué hora está en la cama?",
+     "respuesta": "11:00",
+     "aceptadas": [
+      "eleven",
+      "at eleven"
+     ]
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "A medianoche siempre está en la cama.",
+     "respuesta": "verdadero"
+    }
+   ]
   }
  ]
 }

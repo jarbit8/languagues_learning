@@ -1,39 +1,278 @@
-{ "tema": 11,
-"dialogos": [
-{ "titulo": "Objeto perdido",
-"lineas": [
-{"hablante":"A","texto":"Excuse me, I lost my bag."},
-{"hablante":"B","texto":"What colour is it?"},
-{"hablante":"A","texto":"It's black and red."},
-{"hablante":"B","texto":"What is in the bag?"},
-{"hablante":"A","texto":"My keys, my phone, and a notebook."},
-{"hablante":"B","texto":"Is this your bag?"},
-{"hablante":"A","texto":"Yes! Thank you so much!"},
-{"hablante":"B","texto":"You're welcome."}
-],
-"preguntas": [
-{"tipo":"opcion_multiple","enunciado":"¿De qué color es la mochila?","opciones":["blue and green","black and red","white"],"respuesta":"black and red"},
-{"tipo":"vf","enunciado":"En la mochila hay un libro de gramática.","respuesta":"falso"},
-{"tipo":"completar_dato","enunciado":"Nombra un objeto que había en la mochila.","respuesta":"keys","aceptadas":["phone","notebook"]},
-{"tipo":"completar_dato","enunciado":"¿Qué le dice B a A al ayudarla?","respuesta":"you're welcome","aceptadas":["youre welcome"]},
-{"tipo":"opcion_multiple","enunciado":"¿Cuántos objetos había en la mochila?","opciones":["two","three","four"],"respuesta":"three"}
-] },
-{ "titulo": "En la tienda",
-"lineas": [
-{"hablante":"A","texto":"Excuse me, do you have a notebook and a pen?"},
-{"hablante":"B","texto":"What colour?"},
-{"hablante":"A","texto":"Blue. Do you have a blue notebook?"},
-{"hablante":"B","texto":"Yes, here it is. And this pen is green."},
-{"hablante":"A","texto":"A black pen, please."},
-{"hablante":"B","texto":"OK, here is a black pen."},
-{"hablante":"A","texto":"Thank you so much!"},
-{"hablante":"B","texto":"You're welcome!"}
-],
-"preguntas": [
-{"tipo":"opcion_multiple","enunciado":"¿Qué busca A al principio?","opciones":["a notebook and a pen","a bag and keys","glasses and a watch"],"respuesta":"a notebook and a pen"},
-{"tipo":"vf","enunciado":"El cuaderno que quiere A es azul.","respuesta":"verdadero"},
-{"tipo":"completar_dato","enunciado":"¿De qué color es el lapicero que menciona B primero?","respuesta":"green","aceptadas":[]},
-{"tipo":"completar_dato","enunciado":"¿De qué color pide A el lapicero?","respuesta":"black","aceptadas":[]},
-{"tipo":"vf","enunciado":"A no da las gracias al final.","respuesta":"falso"}
-] }
-] }
+{
+ "tema": 11,
+ "dialogos": [
+  {
+   "titulo": "Objeto perdido",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "Excuse me, I lost my bag."
+    },
+    {
+     "hablante": "B",
+     "texto": "What colour is it?"
+    },
+    {
+     "hablante": "A",
+     "texto": "It's black and red."
+    },
+    {
+     "hablante": "B",
+     "texto": "What is in the bag?"
+    },
+    {
+     "hablante": "A",
+     "texto": "My keys, my phone, and a notebook."
+    },
+    {
+     "hablante": "B",
+     "texto": "Is this your bag?"
+    },
+    {
+     "hablante": "A",
+     "texto": "Yes! Thank you so much!"
+    },
+    {
+     "hablante": "B",
+     "texto": "You're welcome."
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿De qué color es la mochila?",
+     "opciones": [
+      "blue and green",
+      "black and red",
+      "white"
+     ],
+     "respuesta": "black and red"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "En la mochila hay un libro de gramática.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "Nombra un objeto que había en la mochila.",
+     "respuesta": "keys",
+     "aceptadas": [
+      "phone",
+      "notebook"
+     ]
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Qué le dice B a A al ayudarla?",
+     "respuesta": "you're welcome",
+     "aceptadas": [
+      "youre welcome"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cuántos objetos había en la mochila?",
+     "opciones": [
+      "two",
+      "three",
+      "four"
+     ],
+     "respuesta": "three"
+    }
+   ]
+  },
+  {
+   "titulo": "En la tienda",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "Excuse me, do you have a notebook and a pen?"
+    },
+    {
+     "hablante": "B",
+     "texto": "What colour?"
+    },
+    {
+     "hablante": "A",
+     "texto": "Blue. Do you have a blue notebook?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes, here it is. And this pen is green."
+    },
+    {
+     "hablante": "A",
+     "texto": "A black pen, please."
+    },
+    {
+     "hablante": "B",
+     "texto": "OK, here is a black pen."
+    },
+    {
+     "hablante": "A",
+     "texto": "Thank you so much!"
+    },
+    {
+     "hablante": "B",
+     "texto": "You're welcome!"
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué busca A al principio?",
+     "opciones": [
+      "a notebook and a pen",
+      "a bag and keys",
+      "glasses and a watch"
+     ],
+     "respuesta": "a notebook and a pen"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "El cuaderno que quiere A es azul.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿De qué color es el lapicero que menciona B primero?",
+     "respuesta": "green",
+     "aceptadas": []
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿De qué color pide A el lapicero?",
+     "respuesta": "black",
+     "aceptadas": []
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "A no da las gracias al final.",
+     "respuesta": "falso"
+    }
+   ]
+  },
+  {
+   "titulo": "Los colores de las cosas",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "What colour is your bag?"
+    },
+    {
+     "hablante": "B",
+     "texto": "It is green. And my notebook is red."
+    },
+    {
+     "hablante": "A",
+     "texto": "And your pen?"
+    },
+    {
+     "hablante": "B",
+     "texto": "I have a blue pen and a black pencil."
+    },
+    {
+     "hablante": "A",
+     "texto": "Is your phone white?"
+    },
+    {
+     "hablante": "B",
+     "texto": "No, my phone is grey."
+    },
+    {
+     "hablante": "A",
+     "texto": "And your umbrella?"
+    },
+    {
+     "hablante": "B",
+     "texto": "My umbrella is yellow. It is here, with my glasses."
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿De qué color es la mochila?",
+     "opciones": [
+      "green",
+      "red",
+      "grey"
+     ],
+     "respuesta": "green"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "El teléfono es blanco.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿De qué color es el paraguas?",
+     "respuesta": "yellow"
+    }
+   ]
+  },
+  {
+   "titulo": "En la papelería",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "Excuse me, do you have paper?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes, white paper and yellow paper."
+    },
+    {
+     "hablante": "A",
+     "texto": "And a notebook?"
+    },
+    {
+     "hablante": "B",
+     "texto": "This notebook is brown and this one is pink."
+    },
+    {
+     "hablante": "A",
+     "texto": "The pink one, please. And scissors?"
+    },
+    {
+     "hablante": "B",
+     "texto": "The scissors are here."
+    },
+    {
+     "hablante": "A",
+     "texto": "How much money?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Here is my wallet. Thank you!"
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué cuaderno elige?",
+     "opciones": [
+      "the pink one",
+      "the brown one",
+      "the white one"
+     ],
+     "respuesta": "the pink one"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "La tienda tiene tijeras.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿De qué colores hay papel?",
+     "respuesta": "white and yellow",
+     "aceptadas": [
+      "white, yellow"
+     ]
+    }
+   ]
+  }
+ ]
+}

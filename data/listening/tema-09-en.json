@@ -1,39 +1,292 @@
-{ "tema": 9,
-"dialogos": [
-{ "titulo": "Un día normal",
-"lineas": [
-{"hablante":"A","texto":"What time do you get up?"},
-{"hablante":"B","texto":"I get up at six o'clock."},
-{"hablante":"A","texto":"Do you have breakfast at home?"},
-{"hablante":"B","texto":"Yes, I have breakfast at half past six."},
-{"hablante":"A","texto":"What time do you go to work?"},
-{"hablante":"B","texto":"I go to work at seven."},
-{"hablante":"A","texto":"And what time do you go to bed?"},
-{"hablante":"B","texto":"I go to bed at eleven o'clock."}
-],
-"preguntas": [
-{"tipo":"anota_la_hora","enunciado":"¿A qué hora se levanta B?","respuesta":"6:00","aceptadas":["six o'clock","six"]},
-{"tipo":"anota_la_hora","enunciado":"¿A qué hora desayuna?","respuesta":"6:30","aceptadas":["half past six"]},
-{"tipo":"vf","enunciado":"B se acuesta a las once.","respuesta":"verdadero"},
-{"tipo":"opcion_multiple","enunciado":"¿A qué hora va B al trabajo?","opciones":["six","seven","eight"],"respuesta":"seven"},
-{"tipo":"anota_la_hora","enunciado":"¿A qué hora se acuesta B?","respuesta":"11:00","aceptadas":["eleven o'clock","eleven"]}
-] },
-{ "titulo": "La rutina de Ana",
-"lineas": [
-{"hablante":"A","texto":"Do you study in the morning or in the afternoon?"},
-{"hablante":"B","texto":"I study in the afternoon. In the morning, I make the bed."},
-{"hablante":"A","texto":"What time do you have lunch?"},
-{"hablante":"B","texto":"I have lunch at noon."},
-{"hablante":"A","texto":"Do you rest after lunch?"},
-{"hablante":"B","texto":"Yes, I take a nap. Then I do my homework."},
-{"hablante":"A","texto":"What time do you go to bed?"},
-{"hablante":"B","texto":"I go to bed at ten o'clock. I always sleep eight hours."}
-],
-"preguntas": [
-{"tipo":"opcion_multiple","enunciado":"¿Cuándo estudia B?","opciones":["in the morning","in the afternoon","at night"],"respuesta":"in the afternoon"},
-{"tipo":"anota_la_hora","enunciado":"¿A qué hora almuerza B?","respuesta":"12:00","aceptadas":["noon","twelve o'clock"]},
-{"tipo":"vf","enunciado":"B hace la tarea después de la siesta.","respuesta":"verdadero"},
-{"tipo":"anota_la_hora","enunciado":"¿A qué hora se acuesta B?","respuesta":"10:00","aceptadas":["ten o'clock","ten"]},
-{"tipo":"completar_dato","enunciado":"¿Qué hace B por la mañana?","respuesta":"make the bed","aceptadas":["makes the bed","i make the bed"]}
-] }
-] }
+{
+ "tema": 9,
+ "dialogos": [
+  {
+   "titulo": "Un día normal",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "What time do you get up?"
+    },
+    {
+     "hablante": "B",
+     "texto": "I get up at six o'clock."
+    },
+    {
+     "hablante": "A",
+     "texto": "Do you have breakfast at home?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes, I have breakfast at half past six."
+    },
+    {
+     "hablante": "A",
+     "texto": "What time do you go to work?"
+    },
+    {
+     "hablante": "B",
+     "texto": "I go to work at seven."
+    },
+    {
+     "hablante": "A",
+     "texto": "And what time do you go to bed?"
+    },
+    {
+     "hablante": "B",
+     "texto": "I go to bed at eleven o'clock."
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "anota_la_hora",
+     "enunciado": "¿A qué hora se levanta B?",
+     "respuesta": "6:00",
+     "aceptadas": [
+      "six o'clock",
+      "six"
+     ]
+    },
+    {
+     "tipo": "anota_la_hora",
+     "enunciado": "¿A qué hora desayuna?",
+     "respuesta": "6:30",
+     "aceptadas": [
+      "half past six"
+     ]
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "B se acuesta a las once.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿A qué hora va B al trabajo?",
+     "opciones": [
+      "six",
+      "seven",
+      "eight"
+     ],
+     "respuesta": "seven"
+    },
+    {
+     "tipo": "anota_la_hora",
+     "enunciado": "¿A qué hora se acuesta B?",
+     "respuesta": "11:00",
+     "aceptadas": [
+      "eleven o'clock",
+      "eleven"
+     ]
+    }
+   ]
+  },
+  {
+   "titulo": "La rutina de Ana",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "Do you study in the morning or in the afternoon?"
+    },
+    {
+     "hablante": "B",
+     "texto": "I study in the afternoon. In the morning, I make the bed."
+    },
+    {
+     "hablante": "A",
+     "texto": "What time do you have lunch?"
+    },
+    {
+     "hablante": "B",
+     "texto": "I have lunch at noon."
+    },
+    {
+     "hablante": "A",
+     "texto": "Do you rest after lunch?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes, I take a nap. Then I do my homework."
+    },
+    {
+     "hablante": "A",
+     "texto": "What time do you go to bed?"
+    },
+    {
+     "hablante": "B",
+     "texto": "I go to bed at ten o'clock. I always sleep eight hours."
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cuándo estudia B?",
+     "opciones": [
+      "in the morning",
+      "in the afternoon",
+      "at night"
+     ],
+     "respuesta": "in the afternoon"
+    },
+    {
+     "tipo": "anota_la_hora",
+     "enunciado": "¿A qué hora almuerza B?",
+     "respuesta": "12:00",
+     "aceptadas": [
+      "noon",
+      "twelve o'clock"
+     ]
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "B hace la tarea después de la siesta.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "anota_la_hora",
+     "enunciado": "¿A qué hora se acuesta B?",
+     "respuesta": "10:00",
+     "aceptadas": [
+      "ten o'clock",
+      "ten"
+     ]
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Qué hace B por la mañana?",
+     "respuesta": "make the bed",
+     "aceptadas": [
+      "makes the bed",
+      "i make the bed"
+     ]
+    }
+   ]
+  },
+  {
+   "titulo": "Antes de ir a trabajar",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "What time do you get up?"
+    },
+    {
+     "hablante": "B",
+     "texto": "I wake up at six and I get up quickly."
+    },
+    {
+     "hablante": "A",
+     "texto": "And after?"
+    },
+    {
+     "hablante": "B",
+     "texto": "I have a shower and I brush my teeth."
+    },
+    {
+     "hablante": "A",
+     "texto": "Do you have breakfast at home?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes, and after I get dressed and I make the bed."
+    },
+    {
+     "hablante": "A",
+     "texto": "And then?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Then I go to work. I arrive at eight."
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "anota_la_hora",
+     "enunciado": "¿A qué hora se despierta?",
+     "respuesta": "6:00",
+     "aceptadas": [
+      "six",
+      "at six"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué hace después de la ducha?",
+     "opciones": [
+      "brush his teeth",
+      "have breakfast",
+      "make the bed"
+     ],
+     "respuesta": "brush his teeth"
+    },
+    {
+     "tipo": "anota_la_hora",
+     "enunciado": "¿A qué hora llega al trabajo?",
+     "respuesta": "8:00",
+     "aceptadas": [
+      "eight",
+      "at eight"
+     ]
+    }
+   ]
+  },
+  {
+   "titulo": "La tarde y la noche",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "What do you do in the afternoon?"
+    },
+    {
+     "hablante": "B",
+     "texto": "I have lunch and I rest."
+    },
+    {
+     "hablante": "A",
+     "texto": "Do you take a nap?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Sometimes, but not every day. Then I do my homework."
+    },
+    {
+     "hablante": "A",
+     "texto": "And in the evening?"
+    },
+    {
+     "hablante": "B",
+     "texto": "I cook and I clean. Then I listen to music or I read."
+    },
+    {
+     "hablante": "A",
+     "texto": "Do you go out?"
+    },
+    {
+     "hablante": "B",
+     "texto": "On Saturday I go out and I walk in the city."
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué hace por la tarde después de comer?",
+     "opciones": [
+      "rests",
+      "cooks",
+      "runs"
+     ],
+     "respuesta": "rests"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Duerme la siesta todos los días.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Qué día sale?",
+     "respuesta": "Saturday"
+    }
+   ]
+  }
+ ]
+}

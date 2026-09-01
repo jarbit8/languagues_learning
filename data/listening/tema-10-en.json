@@ -1,39 +1,286 @@
-{ "tema": 10,
-"dialogos": [
-{ "titulo": "Describiendo un apartamento",
-"lineas": [
-{"hablante":"A","texto":"Is your apartment big?"},
-{"hablante":"B","texto":"No, it's small, but it's nice."},
-{"hablante":"A","texto":"How many rooms are there?"},
-{"hablante":"B","texto":"There are three rooms: a bedroom, a kitchen and a bathroom."},
-{"hablante":"A","texto":"Is there a living room?"},
-{"hablante":"B","texto":"No, there isn't a living room."},
-{"hablante":"A","texto":"Where is your bed?"},
-{"hablante":"B","texto":"It's next to the window."}
-],
-"preguntas": [
-{"tipo":"opcion_multiple","enunciado":"¿Cuántas habitaciones hay?","opciones":["two","three","four"],"respuesta":"three"},
-{"tipo":"vf","enunciado":"Hay una sala en el apartamento.","respuesta":"falso"},
-{"tipo":"completar_dato","enunciado":"¿Dónde está la cama?","respuesta":"next to the window","aceptadas":["next to the window"]},
-{"tipo":"opcion_multiple","enunciado":"¿Cómo es el apartamento de B?","opciones":["big","small","old"],"respuesta":"small"},
-{"tipo":"completar_dato","enunciado":"¿Qué tres habitaciones tiene el apartamento?","respuesta":"a bedroom, a kitchen and a bathroom","aceptadas":["bedroom, kitchen, bathroom"]}
-] },
-{ "titulo": "La casa de mis abuelos",
-"lineas": [
-{"hablante":"A","texto":"Is your grandparents' house big?"},
-{"hablante":"B","texto":"Yes, it's big. There is a garden and a garage."},
-{"hablante":"A","texto":"Is there a balcony?"},
-{"hablante":"B","texto":"Yes, there is a balcony next to the kitchen."},
-{"hablante":"A","texto":"Where is the key?"},
-{"hablante":"B","texto":"The key is on the table, near the door."},
-{"hablante":"A","texto":"Are there stairs?"},
-{"hablante":"B","texto":"Yes, there are stairs between the living room and the bedrooms."}
-],
-"preguntas": [
-{"tipo":"opcion_multiple","enunciado":"¿Qué hay en la casa de los abuelos, según B?","opciones":["a garden and a garage","a balcony and stairs","stairs and a mirror"],"respuesta":"a garden and a garage"},
-{"tipo":"vf","enunciado":"Hay un balcón al lado de la cocina.","respuesta":"verdadero"},
-{"tipo":"completar_dato","enunciado":"¿Dónde está la llave?","respuesta":"on the table, near the door","aceptadas":["on the table"]},
-{"tipo":"opcion_multiple","enunciado":"¿Dónde están las escaleras?","opciones":["between the living room and the bedrooms","next to the garage","under the table"],"respuesta":"between the living room and the bedrooms"},
-{"tipo":"vf","enunciado":"La casa de los abuelos es pequeña.","respuesta":"falso"}
-] }
-] }
+{
+ "tema": 10,
+ "dialogos": [
+  {
+   "titulo": "Describiendo un apartamento",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "Is your apartment big?"
+    },
+    {
+     "hablante": "B",
+     "texto": "No, it's small, but it's nice."
+    },
+    {
+     "hablante": "A",
+     "texto": "How many rooms are there?"
+    },
+    {
+     "hablante": "B",
+     "texto": "There are three rooms: a bedroom, a kitchen and a bathroom."
+    },
+    {
+     "hablante": "A",
+     "texto": "Is there a living room?"
+    },
+    {
+     "hablante": "B",
+     "texto": "No, there isn't a living room."
+    },
+    {
+     "hablante": "A",
+     "texto": "Where is your bed?"
+    },
+    {
+     "hablante": "B",
+     "texto": "It's next to the window."
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cuántas habitaciones hay?",
+     "opciones": [
+      "two",
+      "three",
+      "four"
+     ],
+     "respuesta": "three"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Hay una sala en el apartamento.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Dónde está la cama?",
+     "respuesta": "next to the window",
+     "aceptadas": [
+      "next to the window"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cómo es el apartamento de B?",
+     "opciones": [
+      "big",
+      "small",
+      "old"
+     ],
+     "respuesta": "small"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Qué tres habitaciones tiene el apartamento?",
+     "respuesta": "a bedroom, a kitchen and a bathroom",
+     "aceptadas": [
+      "bedroom, kitchen, bathroom"
+     ]
+    }
+   ]
+  },
+  {
+   "titulo": "La casa de mis abuelos",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "Is your grandparents' house big?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes, it's big. There is a garden and a garage."
+    },
+    {
+     "hablante": "A",
+     "texto": "Is there a balcony?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes, there is a balcony next to the kitchen."
+    },
+    {
+     "hablante": "A",
+     "texto": "Where is the key?"
+    },
+    {
+     "hablante": "B",
+     "texto": "The key is on the table, near the door."
+    },
+    {
+     "hablante": "A",
+     "texto": "Are there stairs?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes, there are stairs between the living room and the bedrooms."
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué hay en la casa de los abuelos, según B?",
+     "opciones": [
+      "a garden and a garage",
+      "a balcony and stairs",
+      "stairs and a mirror"
+     ],
+     "respuesta": "a garden and a garage"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Hay un balcón al lado de la cocina.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Dónde está la llave?",
+     "respuesta": "on the table, near the door",
+     "aceptadas": [
+      "on the table"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Dónde están las escaleras?",
+     "opciones": [
+      "between the living room and the bedrooms",
+      "next to the garage",
+      "under the table"
+     ],
+     "respuesta": "between the living room and the bedrooms"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "La casa de los abuelos es pequeña.",
+     "respuesta": "falso"
+    }
+   ]
+  },
+  {
+   "titulo": "¿Dónde está el sofá?",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "Is there a living room in your apartment?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes, and there is a sofa near the window."
+    },
+    {
+     "hablante": "A",
+     "texto": "And the table?"
+    },
+    {
+     "hablante": "B",
+     "texto": "The table is between the sofa and the door."
+    },
+    {
+     "hablante": "A",
+     "texto": "Is there a lamp?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes, next to the sofa. And a mirror on the wall."
+    },
+    {
+     "hablante": "A",
+     "texto": "And the kitchen?"
+    },
+    {
+     "hablante": "B",
+     "texto": "The fridge is under the window. There is no garage."
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Dónde está el sofá?",
+     "opciones": [
+      "near the window",
+      "under the table",
+      "next to the door"
+     ],
+     "respuesta": "near the window"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Hay garaje.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Dónde está la nevera?",
+     "respuesta": "under the window",
+     "aceptadas": [
+      "under the window in the kitchen"
+     ]
+    }
+   ]
+  },
+  {
+   "titulo": "La casa con jardín",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "Is your house big?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes, there is a garden and there are stairs."
+    },
+    {
+     "hablante": "A",
+     "texto": "How many rooms are there?"
+    },
+    {
+     "hablante": "B",
+     "texto": "There are five rooms and two bathrooms."
+    },
+    {
+     "hablante": "A",
+     "texto": "Is there a balcony?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes, and the roof is very good."
+    },
+    {
+     "hablante": "A",
+     "texto": "And your bedroom?"
+    },
+    {
+     "hablante": "B",
+     "texto": "My bed is next to the window and my wardrobe is near the door."
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cuántas habitaciones hay?",
+     "opciones": [
+      "five",
+      "two",
+      "three"
+     ],
+     "respuesta": "five"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "La casa tiene jardín.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Dónde está la cama?",
+     "respuesta": "next to the window",
+     "aceptadas": [
+      "next to the window"
+     ]
+    }
+   ]
+  }
+ ]
+}

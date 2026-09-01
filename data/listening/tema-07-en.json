@@ -1,39 +1,274 @@
-{ "tema": 7,
-"dialogos": [
-{ "titulo": "Planeando la semana",
-"lineas": [
-{"hablante":"A","texto":"What day do you work?"},
-{"hablante":"B","texto":"I work on Tuesday."},
-{"hablante":"A","texto":"And when is your birthday?"},
-{"hablante":"B","texto":"My birthday is in July."},
-{"hablante":"A","texto":"What is the date today?"},
-{"hablante":"B","texto":"Today is Monday, the third of June."},
-{"hablante":"A","texto":"See you on the weekend, then!"},
-{"hablante":"B","texto":"Yes, see you on Saturday!"}
-],
-"preguntas": [
-{"tipo":"opcion_multiple","enunciado":"¿Qué día trabaja B?","opciones":["Monday","Tuesday","Saturday"],"respuesta":"Tuesday"},
-{"tipo":"vf","enunciado":"El cumpleaños de B es en julio.","respuesta":"verdadero"},
-{"tipo":"completar_dato","enunciado":"¿En qué día se ven este fin de semana?","respuesta":"Saturday"},
-{"tipo":"vf","enunciado":"B trabaja el lunes.","respuesta":"falso"},
-{"tipo":"completar_dato","enunciado":"¿Qué día de la semana es hoy en la conversación?","respuesta":"monday","aceptadas":["monday, the third of june"]}
-] },
-{ "titulo": "Las estaciones y el cumpleaños",
-"lineas": [
-{"hablante":"A","texto":"In summer I am very happy. And you?"},
-{"hablante":"B","texto":"In winter I am very happy. It's nice."},
-{"hablante":"A","texto":"What is your birthday month?"},
-{"hablante":"B","texto":"My birthday is in December."},
-{"hablante":"A","texto":"Oh, in winter!"},
-{"hablante":"B","texto":"Yes. And your birthday?"},
-{"hablante":"A","texto":"My birthday is in April, in spring."},
-{"hablante":"B","texto":"See you soon!"}
-],
-"preguntas": [
-{"tipo":"opcion_multiple","enunciado":"¿En qué estación está muy feliz A?","opciones":["summer","winter","spring"],"respuesta":"summer"},
-{"tipo":"opcion_multiple","enunciado":"¿En qué mes es el cumpleaños de B?","opciones":["October","December","April"],"respuesta":"December"},
-{"tipo":"vf","enunciado":"El cumpleaños de A es en invierno.","respuesta":"falso"},
-{"tipo":"completar_dato","enunciado":"¿En qué mes es el cumpleaños de A?","respuesta":"april","aceptadas":[]},
-{"tipo":"completar_dato","enunciado":"¿En qué estación está muy feliz B?","respuesta":"winter","aceptadas":[]}
-] }
-] }
+{
+ "tema": 7,
+ "dialogos": [
+  {
+   "titulo": "Planeando la semana",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "What day do you work?"
+    },
+    {
+     "hablante": "B",
+     "texto": "I work on Tuesday."
+    },
+    {
+     "hablante": "A",
+     "texto": "And when is your birthday?"
+    },
+    {
+     "hablante": "B",
+     "texto": "My birthday is in July."
+    },
+    {
+     "hablante": "A",
+     "texto": "What is the date today?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Today is Monday, the third of June."
+    },
+    {
+     "hablante": "A",
+     "texto": "See you on the weekend, then!"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes, see you on Saturday!"
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué día trabaja B?",
+     "opciones": [
+      "Monday",
+      "Tuesday",
+      "Saturday"
+     ],
+     "respuesta": "Tuesday"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "El cumpleaños de B es en julio.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿En qué día se ven este fin de semana?",
+     "respuesta": "Saturday"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "B trabaja el lunes.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Qué día de la semana es hoy en la conversación?",
+     "respuesta": "monday",
+     "aceptadas": [
+      "monday, the third of june"
+     ]
+    }
+   ]
+  },
+  {
+   "titulo": "Las estaciones y el cumpleaños",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "In summer I am very happy. And you?"
+    },
+    {
+     "hablante": "B",
+     "texto": "In winter I am very happy. It's nice."
+    },
+    {
+     "hablante": "A",
+     "texto": "What is your birthday month?"
+    },
+    {
+     "hablante": "B",
+     "texto": "My birthday is in December."
+    },
+    {
+     "hablante": "A",
+     "texto": "Oh, in winter!"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes. And your birthday?"
+    },
+    {
+     "hablante": "A",
+     "texto": "My birthday is in April, in spring."
+    },
+    {
+     "hablante": "B",
+     "texto": "See you soon!"
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿En qué estación está muy feliz A?",
+     "opciones": [
+      "summer",
+      "winter",
+      "spring"
+     ],
+     "respuesta": "summer"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿En qué mes es el cumpleaños de B?",
+     "opciones": [
+      "October",
+      "December",
+      "April"
+     ],
+     "respuesta": "December"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "El cumpleaños de A es en invierno.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿En qué mes es el cumpleaños de A?",
+     "respuesta": "april",
+     "aceptadas": []
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿En qué estación está muy feliz B?",
+     "respuesta": "winter",
+     "aceptadas": []
+    }
+   ]
+  },
+  {
+   "titulo": "La fecha de hoy",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "What is the date today?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Today is Wednesday."
+    },
+    {
+     "hablante": "A",
+     "texto": "And tomorrow?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Tomorrow is Thursday, and the day after tomorrow is Friday."
+    },
+    {
+     "hablante": "A",
+     "texto": "When is your birthday?"
+    },
+    {
+     "hablante": "B",
+     "texto": "In October, in autumn."
+    },
+    {
+     "hablante": "A",
+     "texto": "Autumn? My birthday is in March, in spring."
+    },
+    {
+     "hablante": "B",
+     "texto": "Every year the same month!"
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué día es hoy?",
+     "opciones": [
+      "Wednesday",
+      "Thursday",
+      "Friday"
+     ],
+     "respuesta": "Wednesday"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿En qué mes es el cumpleaños de B?",
+     "respuesta": "October"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "El cumpleaños de A es en primavera.",
+     "respuesta": "verdadero"
+    }
+   ]
+  },
+  {
+   "titulo": "El fin de semana",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "What do you do on the weekend?"
+    },
+    {
+     "hablante": "B",
+     "texto": "On Saturday I am with my family."
+    },
+    {
+     "hablante": "A",
+     "texto": "And on Sunday?"
+    },
+    {
+     "hablante": "B",
+     "texto": "On Sunday I am with Laura."
+    },
+    {
+     "hablante": "A",
+     "texto": "Every week?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes, every week of the month."
+    },
+    {
+     "hablante": "A",
+     "texto": "And in summer?"
+    },
+    {
+     "hablante": "B",
+     "texto": "In summer I am in Peru. In winter, here."
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Con quién está el domingo?",
+     "opciones": [
+      "Laura",
+      "su familia",
+      "Marc"
+     ],
+     "respuesta": "Laura"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Los sábados está con su familia.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Dónde está en verano?",
+     "respuesta": "Peru",
+     "aceptadas": [
+      "in Peru"
+     ]
+    }
+   ]
+  }
+ ]
+}
