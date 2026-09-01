@@ -88,19 +88,8 @@ export default function HojaDePractica() {
           Escuchar, escribir y leer en papel. Hablar no está: esa es la conversación con la IA y va en el móvil. El
           audio de los diálogos también, solo las preguntas se responden aquí.
         </p>
-        <select
-          value={t}
-          onChange={(e) => setTema(Number(e.target.value))}
-          className="rounded-xl border border-slate-300 bg-white px-3 py-2 dark:border-slate-600 dark:bg-slate-900"
-        >
-          {temasDisponibles
-            .filter((x) => x <= temaActual)
-            .map((x) => (
-              <option key={x} value={x}>
-                Tema {x} — {getVocabPack(x)?.titulo}
-              </option>
-            ))}
-        </select>
+        {/* Sin selector de tema, como el resto de la app: la hoja es la del tema en curso. */}
+        <p className="text-sm font-semibold">Tema {t} — {pack?.titulo}</p>
         <div className="grid grid-cols-2 gap-1 rounded-xl bg-slate-200 p-1 dark:bg-slate-800">
           {([1, 2] as const).map((d) => (
             <button

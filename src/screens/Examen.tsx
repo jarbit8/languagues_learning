@@ -141,17 +141,11 @@ export default function Examen() {
       <ExamRunner
         key={`gram-${vista.tema}`}
         preguntas={vista.preguntas}
-        etiqueta={`Gramática · tema ${vista.tema}`}
+        etiqueta={`Repaso ${vista.tema} · 1/5 Gramática`}
         tiempoSegundos={vista.preguntas.length * 30}
-        onFinish={(aciertos, total) =>
-          setVista({
-            modo: 'fin',
-            titulo: `Gramática del tema ${vista.tema}`,
-            aciertos,
-            total,
-            nota: 'entrenamiento'
-          })
-        }
+        // El repaso del tema encadena los cinco módulos, en el mismo orden en que los
+        // estudia. Cada uno pasa al siguiente en vez de volver al hub.
+        onFinish={() => setVista({ modo: 'habListening', tema: vista.tema, enPreguntas: false })}
       />
     )
   }
@@ -168,14 +162,14 @@ export default function Examen() {
           tiempoSegundos={l.preguntas.length * 30}
           onFinish={(aciertos, total) => {
             detener()
-            setVista({ modo: 'fin', titulo: `Escuchar · tema ${vista.tema}`, aciertos, total, nota: 'entrenamiento' })
+            setVista({ modo: 'habReading', tema: vista.tema, enPreguntas: false })
           }}
         />
       )
     }
     return (
       <div className="flex flex-col gap-4">
-        <h1 className="text-2xl font-bold">Escuchar · tema {vista.tema}</h1>
+        <h1 className="text-2xl font-bold">Repaso · 2/5 Escuchar</h1>
         <div className="tarjeta flex flex-col gap-3">
           <p className="text-sm text-slate-500 dark:text-slate-400">
             {l.cuantosDialogos} diálogos seguidos, sin transcripción. Escucha las veces que necesites.
@@ -202,14 +196,14 @@ export default function Examen() {
           etiqueta={`Leer · tema ${vista.tema}`}
           tiempoSegundos={r.preguntas.length * 40}
           onFinish={(aciertos, total) =>
-            setVista({ modo: 'fin', titulo: `Leer · tema ${vista.tema}`, aciertos, total, nota: 'entrenamiento' })
+            setVista({ modo: 'habWriting', tema: vista.tema })
           }
         />
       )
     }
     return (
       <div className="flex flex-col gap-4">
-        <h1 className="text-2xl font-bold">Leer · tema {vista.tema}</h1>
+        <h1 className="text-2xl font-bold">Repaso · 3/5 Leer</h1>
         <div className="tarjeta flex flex-col gap-2">
           <h3 className="font-bold">{r.texto.titulo}</h3>
           <p className="text-sm leading-relaxed">{r.texto.texto}</p>
@@ -226,8 +220,8 @@ export default function Examen() {
     if (!c) return <p className="tarjeta">Este tema no tiene consigna.</p>
     return (
       <div className="flex flex-col gap-4">
-        <h1 className="text-2xl font-bold">Escribir · tema {vista.tema}</h1>
-        <EscribirConsigna pack={c} onDone={() => setVista({ modo: 'hub' })} />
+        <h1 className="text-2xl font-bold">Repaso · 4/5 Escribir</h1>
+        <EscribirConsigna pack={c} onDone={() => setVista({ modo: 'habHablar', tema: vista.tema })} />
         <button onClick={() => setVista({ modo: 'hub' })} className="text-sm text-slate-500 underline">
           Volver a exámenes
         </button>
@@ -238,13 +232,13 @@ export default function Examen() {
   if (vista.modo === 'habHablar') {
     return (
       <div className="flex flex-col gap-4">
-        <h1 className="text-2xl font-bold">Hablar · tema {vista.tema}</h1>
+        <h1 className="text-2xl font-bold">Repaso · 5/5 Hablar</h1>
         <CopiarPrompt
           prompt={promptHablarExamen(vista.tema)}
           descripcion="Pega esto en una IA con voz (ChatGPT, Gemini…) y habla del tema. Al final te dirá VEREDICTO: LISTO ✅ o AÚN NO ⏳."
         />
         <button onClick={() => setVista({ modo: 'hub' })} className="btn-primary">
-          Volver a exámenes
+          Terminar el repaso
         </button>
       </div>
     )
@@ -333,51 +327,28 @@ export default function Examen() {
         )
       })}
 
-      {/* --- Por tema: una habilidad a la vez, con el tema que elijas. Todo esto es
+      {/* --- Por tema: una habilidad a la vez, siempre del tema EN CURSO. Tenía un selector
+              para elegir tema y el usuario lo quitó (2026-08-30), igual que en Practicar: al
+              aprobar el examen aparece el siguiente y no hay que elegir nada. Todo esto es
               entrenamiento repetible; la nota que cuenta es la del examen de tema. --- */}
       <h2 className="mt-2 text-sm font-bold uppercase tracking-wide text-slate-400">Por tema</h2>
       <div className="tarjeta flex flex-col gap-3">
-        <select
-          value={tg}
-          onChange={(e) => setTemaGram(Number(e.target.value))}
-          className="rounded-xl border border-slate-300 bg-white px-3 py-2 dark:border-slate-600 dark:bg-slate-900"
-        >
-          {Array.from({ length: info.tema }, (_, i) => i + 1).map((t) => (
-            <option key={t} value={t}>
-              Tema {t}
-            </option>
-          ))}
-        </select>
-
-        <button onClick={() => iniciarGramatica(tg)} className="btn-primary">
-          📘 Gramática · {ejerciciosDe(tg)} ejercicios
+        {/* UNA sola entrada, no cinco botones (2026-08-30). Antes había un botón por módulo
+            y el usuario los quiso juntos: se repasa el tema entero de una pasada, en el mismo
+            orden en que lo estudia. Sigue siendo entrenamiento, sin nota que se guarde. */}
+        <button onClick={() => iniciarGramatica(info.tema)} className="btn-primary">
+          🔁 Repasar el tema {info.tema} entero
         </button>
-        <button
-          onClick={() => setVista({ modo: 'habListening', tema: tg, enPreguntas: false })}
-          className="btn bg-slate-100 text-slate-800 dark:bg-slate-700 dark:text-slate-100"
-        >
-          🎧 Escuchar · {listeningDeTema(tg)?.preguntas.length ?? 0} preguntas
-        </button>
-        <button
-          onClick={() => setVista({ modo: 'habReading', tema: tg, enPreguntas: false })}
-          className="btn bg-slate-100 text-slate-800 dark:bg-slate-700 dark:text-slate-100"
-        >
-          📖 Leer · {readingDeTema(tg)?.preguntas.length ?? 0} preguntas
-        </button>
-        <button
-          onClick={() => setVista({ modo: 'habWriting', tema: tg })}
-          className="btn bg-slate-100 text-slate-800 dark:bg-slate-700 dark:text-slate-100"
-        >
-          ✍️ Escribir · 1 consigna
-        </button>
-        <button
-          onClick={() => setVista({ modo: 'habHablar', tema: tg })}
-          className="btn bg-slate-100 text-slate-800 dark:bg-slate-700 dark:text-slate-100"
-        >
-          🗣️ Hablar · la IA te da el veredicto
-        </button>
+        <div className="flex flex-wrap gap-x-3 gap-y-1 text-xs text-slate-500 dark:text-slate-400">
+          <span>📘 {ejerciciosDe(tg)} ejercicios</span>
+          <span>🎧 {listeningDeTema(tg)?.preguntas.length ?? 0} preguntas</span>
+          <span>📖 {readingDeTema(tg)?.preguntas.length ?? 0} preguntas</span>
+          <span>✍️ 1 consigna</span>
+          <span>🗣️ veredicto de la IA</span>
+        </div>
         <p className="text-xs text-slate-500 dark:text-slate-400">
-          Entra TODO lo del tema, no una muestra. Es entrenamiento: repetible y sin nota que se guarde.
+          Entra TODO lo del tema, no una muestra: gramática, escuchar, leer, escribir y hablar, uno detrás de otro. Es
+          entrenamiento, repetible y sin nota que se guarde.
         </p>
       </div>
 
