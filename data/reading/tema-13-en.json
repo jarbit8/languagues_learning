@@ -3,7 +3,7 @@
  "textos": [
   {
    "titulo": "La cocina de Ana",
-   "texto": "Ana cooks every day. In her fridge there is milk, cheese, eggs and butter. There are also vegetables: tomatoes, potatoes, onions and carrots. She eats fruit every day: apples, bananas and oranges. For breakfast she has bread with butter and an apple. For lunch she often cooks rice with chicken, or fish with salad. She does not eat meat every day. In the evening she is not very hungry, so she has some soup or a sandwich. Laura eats pasta and yogurt. Ana never puts salt in her food, but she always puts pepper. Her food is not expensive and it is very tasty. On Sunday she cooks for her friends and they eat a dessert too.",
+   "texto": "Ana cooks every day. In her fridge there is milk, cheese, eggs and butter. There are also vegetables: tomatoes, potatoes, onions and carrots. She eats fruit every day: apples, bananas and oranges. For breakfast she has bread with butter and an apple. For lunch she often cooks rice with chicken, or fish with salad. She does not eat meat every day, because meat is expensive. In the evening she is not very hungry, so she has some soup or a sandwich. Laura eats pasta and yogurt in her room. Ana never puts salt in her food, but she always puts pepper. Her food is not expensive and it is very tasty. On Sunday she cooks for her friends and they eat a dessert too. On Monday morning there is nothing in the fridge, so Ana buys something for all the week. She buys sugar too, for the Sunday dessert.",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
@@ -39,6 +39,299 @@
      "tipo": "vf",
      "enunciado": "Ana puts salt in her food.",
      "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "What does Ana have in the evening?",
+     "respuesta": "soup or a sandwich",
+     "aceptadas": [
+      "some soup or a sandwich",
+      "soup",
+      "a sandwich"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "Why does Ana not eat meat every day?",
+     "opciones": [
+      "because it is expensive",
+      "because it is not tasty",
+      "because she is not hungry"
+     ],
+     "respuesta": "because it is expensive"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Ana buys sugar.",
+     "respuesta": "verdadero"
+    }
+   ]
+  },
+  {
+   "titulo": "El desayuno de Paul",
+   "texto": "Paul is a student and he gets up very early. He is always hungry in the morning. For breakfast he eats two eggs, bread with cheese and a banana. He does not eat vegetables in the morning. At half past twelve he has lunch with his friend Lee. They often eat chicken with rice, and a salad with tomatoes, onions and carrots. Paul puts salt in his salad; Lee puts pepper. On Friday they eat fish with potatoes. Paul never eats a dessert at lunch, because he is not hungry after the salad. In the evening he is tired and he does not cook: he makes a sandwich with cheese, or he eats some pasta with butter. His mother is not happy, because he does not eat much fruit. Now Paul eats an apple or an orange every night, and he has some milk with sugar. His food is not expensive, but it is very tasty.",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What does Paul eat for breakfast?",
+     "opciones": [
+      "two eggs, bread with cheese and a banana",
+      "chicken with rice",
+      "pasta with butter"
+     ],
+     "respuesta": "two eggs, bread with cheese and a banana"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Paul eats vegetables in the morning.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "Who puts pepper in the salad?",
+     "respuesta": "Lee",
+     "aceptadas": [
+      "lee"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What do Paul and Lee eat on Friday?",
+     "opciones": [
+      "fish with potatoes",
+      "chicken with rice",
+      "soup"
+     ],
+     "respuesta": "fish with potatoes"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "Lee is a student too.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Paul eats a dessert at lunch.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What does Paul do in the evening?",
+     "opciones": [
+      "he makes a sandwich",
+      "he cooks chicken",
+      "he goes out"
+     ],
+     "respuesta": "he makes a sandwich"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "What fruit does Paul eat every night?",
+     "respuesta": "an apple or an orange",
+     "aceptadas": [
+      "apple or orange",
+      "an apple",
+      "an orange"
+     ]
+    }
+   ]
+  },
+  {
+   "titulo": "La comida de la semana",
+   "texto": "On Monday there is nothing in the fridge: no milk, no eggs, no cheese. Ana has some bread and some rice, but she does not have any vegetables. She is hungry and there is nothing for lunch. So she goes out with her bag and she comes back with food for all the week: milk, butter, six eggs, chicken, fish and a big salad. She also has apples, bananas, oranges and a yogurt for Laura. On Tuesday she cooks rice with chicken. On Wednesday she cooks fish with potatoes and carrots. On Thursday she is very tired, so she eats a sandwich with cheese and a tomato. On Friday there is pasta with butter and pepper. On Saturday Laura cooks: soup with onions, and a dessert with apples and sugar. It is very tasty! On Sunday there is nothing in the fridge again, and the week starts.",
+   "preguntas": [
+    {
+     "tipo": "vf",
+     "enunciado": "On Monday there is milk in the fridge.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What does Ana cook on Wednesday?",
+     "opciones": [
+      "fish with potatoes and carrots",
+      "rice with chicken",
+      "pasta with butter"
+     ],
+     "respuesta": "fish with potatoes and carrots"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "What does Ana eat on Thursday?",
+     "respuesta": "a sandwich",
+     "aceptadas": [
+      "sandwich",
+      "a sandwich with cheese and a tomato"
+     ]
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "The yogurt is expensive.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "Who cooks on Saturday?",
+     "opciones": [
+      "Laura",
+      "Ana",
+      "Paul"
+     ],
+     "respuesta": "Laura"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Ana buys six eggs.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What is in the dessert on Saturday?",
+     "opciones": [
+      "apples and sugar",
+      "bananas and milk",
+      "onions and salt"
+     ],
+     "respuesta": "apples and sugar"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "On Sunday there is food in the fridge.",
+     "respuesta": "falso"
+    }
+   ]
+  },
+  {
+   "titulo": "Una cena con amigos",
+   "texto": "Every month Ana cooks for her friends. This Saturday there are five friends in her small kitchen: Ana, Laura, Paul, Lee and Maria. In her fridge there are some eggs, some cheese and some vegetables. First she makes a big salad with tomatoes, onions and carrots. Then she cooks pasta with chicken. Paul does not eat meat, so for him there is fish with rice and potatoes. Laura makes a dessert with bananas, milk and sugar. There is bread with butter on the table too. Lee is not happy with his salad: there is not any salt in it. The salt and the pepper are next to the bread. All the friends are very hungry and the food is tasty. They do not eat anything after the dessert. At eleven the friends go out and Ana cleans the kitchen. There is nothing in the fridge now, but she is happy.",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "How many friends are in the kitchen?",
+     "opciones": [
+      "five",
+      "four",
+      "three"
+     ],
+     "respuesta": "five"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Paul eats meat.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "What does Ana cook for Paul?",
+     "respuesta": "fish with rice and potatoes",
+     "aceptadas": [
+      "fish",
+      "fish with rice"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What is in the dessert?",
+     "opciones": [
+      "bananas, milk and sugar",
+      "apples and butter",
+      "oranges and yogurt"
+     ],
+     "respuesta": "bananas, milk and sugar"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "There is not any salt in the salad of Lee.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "Maria cooks the pasta.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What time do the friends go out?",
+     "opciones": [
+      "at eleven",
+      "at ten",
+      "at twelve"
+     ],
+     "respuesta": "at eleven"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Ana cleans the kitchen after the dinner.",
+     "respuesta": "verdadero"
+    }
+   ]
+  },
+  {
+   "titulo": "Examen · La comida de Marie",
+   "texto": "Marie eats very well. In her fridge there is always milk, butter, cheese and eggs. For breakfast she has bread with butter, a yogurt and an orange. She is never hungry before noon, so she has lunch at one. For lunch she often eats chicken with rice, or fish with potatoes and carrots. She does not eat meat, because it is very expensive. In her salad there are tomatoes and onions, with salt and pepper. In the evening Marie is tired and she does not cook: she makes a sandwich with cheese, or she eats some soup. On Saturday she cooks pasta for her friends and she makes a dessert with apples, milk and sugar. It is very tasty. On Sunday there is nothing in her fridge, so she buys food for all the week: fruit, vegetables, bread and a banana for every morning.",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What does Marie have for breakfast?",
+     "opciones": [
+      "bread with butter, a yogurt and an orange",
+      "chicken with rice",
+      "soup and a sandwich"
+     ],
+     "respuesta": "bread with butter, a yogurt and an orange"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Marie eats meat.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "What time does Marie have lunch?",
+     "respuesta": "at one",
+     "aceptadas": [
+      "one",
+      "one o'clock",
+      "at one o'clock"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What is in the salad of Marie?",
+     "opciones": [
+      "tomatoes and onions",
+      "potatoes and carrots",
+      "apples and bananas"
+     ],
+     "respuesta": "tomatoes and onions"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "The friends of Marie cook on Sunday.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Marie cooks in the evening.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "What does Marie cook on Saturday?",
+     "respuesta": "pasta",
+     "aceptadas": [
+      "pasta for her friends"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What is in the Saturday dessert?",
+     "opciones": [
+      "apples, milk and sugar",
+      "bananas and cheese",
+      "oranges and butter"
+     ],
+     "respuesta": "apples, milk and sugar"
     }
    ]
   }

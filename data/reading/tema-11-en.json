@@ -251,62 +251,70 @@
   },
   {
    "titulo": "Examen · Las cosas de Marie",
-   "texto": "Marie has a blue bag and she takes it every day. In the bag there is a black computer, a green notebook and two pens: a red pen and a purple pen. There is a yellow pencil too, and some paper. Her phone is white and it is always in the bag, with her keys, her wallet and her money. Her glasses are here. Sometimes there is an umbrella in the bag. Her watch is not in the bag: it is on the table, near the lamp. This is my bag, says Marie, and these are my books. And what is that? That is my brown notebook. It is old, but it is very good. And the scissors? The scissors are here, in the grey thing.",
+   "texto": "On the table of Marie there are many things. There is a white computer and a black phone next to it. Her glasses are on a book, near a green lamp. There are three pens: a red pen, a blue pen and a purple pen. There is a yellow pencil too, and some paper. Her brown notebook is old, but it is very good. Her watch is not on the table: it is in her bedroom. The keys of Marie and her wallet with her money are in a small pink bag. The scissors are under the notebook. This is my table, says Marie, and these are my things. And what is that? That is an orange umbrella: in autumn she takes it every day.",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
-     "enunciado": "What colour is Marie's bag?",
+     "enunciado": "What colour is the computer?",
      "opciones": [
-      "blue",
-      "green",
-      "black"
+      "white",
+      "black",
+      "green"
      ],
-     "respuesta": "blue"
+     "respuesta": "white"
     },
     {
      "tipo": "vf",
-     "enunciado": "Marie's phone is white.",
-     "respuesta": "verdadero"
+     "enunciado": "The watch is on the table.",
+     "respuesta": "falso"
     },
     {
      "tipo": "completar_dato",
-     "enunciado": "What colour is the pencil?",
-     "respuesta": "yellow"
+     "enunciado": "How many pens are on the table?",
+     "respuesta": "three",
+     "aceptadas": [
+      "3",
+      "three pens"
+     ]
     },
     {
      "tipo": "opcion_multiple",
-     "enunciado": "Where is her watch?",
+     "enunciado": "Where are the keys and the wallet?",
      "opciones": [
-      "on the table",
-      "in the bag",
-      "in her wallet"
+      "in a small pink bag",
+      "under the notebook",
+      "near the lamp"
      ],
-     "respuesta": "on the table"
+     "respuesta": "in a small pink bag"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "The notebook of Marie is old.",
+     "respuesta": "verdadero"
     },
     {
      "tipo": "vfnd",
-     "enunciado": "Laura has a blue bag too.",
+     "enunciado": "Marie has two bags.",
      "respuesta": "no dice"
     },
     {
      "tipo": "completar_dato",
-     "enunciado": "What colour is the old notebook?",
-     "respuesta": "brown"
-    },
-    {
-     "tipo": "vf",
-     "enunciado": "The scissors are in the bag.",
-     "respuesta": "falso"
+     "enunciado": "Where are the scissors?",
+     "respuesta": "under the notebook",
+     "aceptadas": [
+      "under the notebook",
+      "under the brown notebook"
+     ]
     },
     {
      "tipo": "opcion_multiple",
-     "enunciado": "How many pens are in the bag?",
+     "enunciado": "What colour is the umbrella?",
      "opciones": [
-      "two",
-      "one",
-      "three"
+      "orange",
+      "yellow",
+      "purple"
      ],
-     "respuesta": "two"
+     "respuesta": "orange"
     }
    ]
   }

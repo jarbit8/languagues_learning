@@ -135,69 +135,71 @@
    ]
   },
   {
-   "titulo": "La casa de los abuelos",
-   "texto": "The house of Laura's grandparents is very big. There is a garden with a table and four chairs, near the door of the kitchen. There is a garage too. The house has two floors and there are stairs between them. On the first floor there is a living room with a sofa and two chairs, and there is a bathroom near the door. In the kitchen there is a fridge next to the window. On the second floor there are three bedrooms. In every bedroom there is a bed, a wardrobe and a lamp. There is a mirror on the wall of the bathroom, and there is a toilet too. The window of the living room is under the roof of the balcony. The key of the house is on the table.",
+   "titulo": "El apartamento de Paul",
+   "texto": "Paul lives in a small apartment on the second floor. There is no garden and there is no garage, but there is a balcony with two chairs. From the balcony he can see the houses of the city. In the living room there is a sofa, a small table and a lamp near the window. The kitchen is next to the living room: there is a fridge under the window. The bathroom is between the kitchen and the bedroom, and in it there is a mirror on the wall and a toilet. In his bedroom there is a bed and a wardrobe next to the door. There is no table in the bedroom, so the lamp is on the floor near the bed. There are no stairs: the apartment has one floor. The key of the door is always with him. On Saturday his sister comes and she sleeps on the sofa.",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
-     "enunciado": "How many floors does the house have?",
+     "enunciado": "Where is the apartment of Paul?",
      "opciones": [
-      "two",
-      "one",
-      "three"
+      "on the second floor",
+      "on the first floor",
+      "near the garage"
      ],
-     "respuesta": "two"
+     "respuesta": "on the second floor"
     },
     {
      "tipo": "vf",
-     "enunciado": "There is a garage.",
-     "respuesta": "verdadero"
-    },
-    {
-     "tipo": "completar_dato",
-     "enunciado": "Where is the key? Write two words.",
-     "respuesta": "on the table",
-     "aceptadas": [
-      "the table"
-     ]
-    },
-    {
-     "tipo": "opcion_multiple",
-     "enunciado": "How many bedrooms are there?",
-     "opciones": [
-      "three",
-      "two",
-      "four"
-     ],
-     "respuesta": "three"
-    },
-    {
-     "tipo": "vfnd",
-     "enunciado": "The grandparents live in the house.",
-     "respuesta": "no dice"
-    },
-    {
-     "tipo": "vf",
-     "enunciado": "There are no stairs.",
+     "enunciado": "There is a garden.",
      "respuesta": "falso"
     },
     {
      "tipo": "completar_dato",
-     "enunciado": "What is in the garden?",
-     "respuesta": "a table and four chairs",
+     "enunciado": "What is under the window in the kitchen?",
+     "respuesta": "a fridge",
      "aceptadas": [
-      "table and chairs"
+      "fridge",
+      "the fridge"
      ]
     },
     {
      "tipo": "opcion_multiple",
-     "enunciado": "Where is the fridge?",
+     "enunciado": "Where is the bathroom?",
      "opciones": [
-      "next to the window",
-      "under the bed",
-      "in the garden"
+      "between the kitchen and the bedroom",
+      "next to the balcony",
+      "under the stairs"
      ],
-     "respuesta": "next to the window"
+     "respuesta": "between the kitchen and the bedroom"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "There is a table in the bedroom.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "The sister of Paul lives in this city.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "Where does his sister sleep?",
+     "respuesta": "on the sofa",
+     "aceptadas": [
+      "sofa",
+      "the sofa"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "Why are there no stairs?",
+     "opciones": [
+      "the apartment has one floor",
+      "there is no balcony",
+      "the apartment is very small"
+     ],
+     "respuesta": "the apartment has one floor"
     }
    ]
   },
@@ -267,68 +269,70 @@
   },
   {
    "titulo": "Examen · La casa de Marie",
-   "texto": "Marie lives in a small apartment. There are three rooms: a kitchen, a bathroom and a bedroom, and there is also a living room. In the living room there is a sofa and a table with two chairs. There is a lamp near the sofa and a mirror on the wall. In the kitchen there is a fridge next to the window. In the bedroom her bed is under the window and her wardrobe is between the bed and the door. In the bathroom there is a toilet and a mirror. There is a small balcony, but there is no garden and there is no garage. There are no stairs. The floor of the apartment is here and the roof is over it. Marie always has her key.",
+   "texto": "Marie has a room in a big house with three friends. In her room there is a bed under the window, a wardrobe next to the door and a small table with a lamp. There is a mirror on the wall, over the table. The bathroom is between her room and the kitchen. In the kitchen there is a fridge, a table and four chairs, and there is a big window. There is no living room in this house: the big table in the kitchen is for all the friends. There is a garden, but there is no garage and there is no balcony. The house has two floors and there are stairs near the door. The room of Marie is on the second floor. The key of her room is always with her. On Saturday she cleans the floor of her room.",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
-     "enunciado": "Where is the fridge?",
+     "enunciado": "What is under the window in her room?",
      "opciones": [
-      "next to the window",
-      "under the bed",
-      "near the sofa"
+      "a bed",
+      "a wardrobe",
+      "a table"
      ],
-     "respuesta": "next to the window"
+     "respuesta": "a bed"
     },
     {
      "tipo": "vf",
-     "enunciado": "There is a garden.",
+     "enunciado": "There is a living room in the house.",
      "respuesta": "falso"
     },
     {
      "tipo": "completar_dato",
-     "enunciado": "How many rooms are there? Write the number in English.",
-     "respuesta": "three",
+     "enunciado": "Where is the big table?",
+     "respuesta": "in the kitchen",
      "aceptadas": [
-      "3"
+      "the kitchen",
+      "kitchen"
      ]
     },
     {
      "tipo": "opcion_multiple",
-     "enunciado": "Where is the wardrobe?",
+     "enunciado": "Where is the bathroom?",
      "opciones": [
-      "between the bed and the door",
-      "on the wall",
-      "in the kitchen"
+      "between her room and the kitchen",
+      "next to the garden",
+      "on the first floor"
      ],
-     "respuesta": "between the bed and the door"
-    },
-    {
-     "tipo": "vfnd",
-     "enunciado": "Marie lives with a friend.",
-     "respuesta": "no dice"
+     "respuesta": "between her room and the kitchen"
     },
     {
      "tipo": "vf",
-     "enunciado": "There is a small balcony.",
-     "respuesta": "verdadero"
+     "enunciado": "There is a garage.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "The friends of Marie are students.",
+     "respuesta": "no dice"
     },
     {
      "tipo": "completar_dato",
-     "enunciado": "What is in the bathroom?",
-     "respuesta": "a toilet and a mirror",
+     "enunciado": "How many chairs are in the kitchen?",
+     "respuesta": "four",
      "aceptadas": [
-      "toilet and mirror"
+      "4",
+      "four chairs"
      ]
     },
     {
      "tipo": "opcion_multiple",
-     "enunciado": "Where is the lamp?",
+     "enunciado": "Where is the room of Marie?",
      "opciones": [
-      "near the sofa",
-      "on the wall",
-      "under the window"
+      "on the second floor",
+      "on the first floor",
+      "next to the kitchen"
      ],
-     "respuesta": "near the sofa"
+     "respuesta": "on the second floor"
     }
    ]
   }

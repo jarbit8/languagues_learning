@@ -1,39 +1,355 @@
-{ "tema": 18,
-"dialogos": [
-{ "titulo": "Hablando del clima",
-"lineas": [
-{"hablante":"A","texto":"What's the weather like today?"},
-{"hablante":"B","texto":"It's sunny and warm."},
-{"hablante":"A","texto":"Is it going to rain tomorrow?"},
-{"hablante":"B","texto":"Yes, it's going to be rainy and windy."},
-{"hablante":"A","texto":"I don't like rain."},
-{"hablante":"B","texto":"I don't either. I prefer summer."},
-{"hablante":"A","texto":"Me too, it's very hot in summer!"},
-{"hablante":"B","texto":"Yes, but the sun is very nice."}
-],
-"preguntas": [
-{"tipo":"opcion_multiple","enunciado":"¿Cómo está el clima hoy?","opciones":["rainy","sunny","snowy"],"respuesta":"sunny"},
-{"tipo":"vf","enunciado":"Mañana va a llover.","respuesta":"verdadero"},
-{"tipo":"completar_dato","enunciado":"¿Qué estación prefieren ambos?","respuesta":"summer"},
-{"tipo":"opcion_multiple","enunciado":"¿Qué palabra usa B para describir el clima de mañana además de lluvioso?","opciones":["windy","sunny","cloudy"],"respuesta":"windy"},
-{"tipo":"completar_dato","enunciado":"¿Qué dice B que es muy bonito?","respuesta":"the sun","aceptadas":["sun","i love the sun"]}
-] },
-{ "titulo": "Un día en la playa",
-"lineas": [
-{"hablante":"A","texto":"Let's go to the beach today!"},
-{"hablante":"B","texto":"Is it sunny?"},
-{"hablante":"A","texto":"Yes, it's sunny and hot."},
-{"hablante":"B","texto":"The beach in summer is very nice."},
-{"hablante":"A","texto":"Is it windy?"},
-{"hablante":"B","texto":"No, there's no wind today."},
-{"hablante":"A","texto":"Good, let's go!"},
-{"hablante":"B","texto":"Yes, let's go to the beach!"}
-],
-"preguntas": [
-{"tipo":"opcion_multiple","enunciado":"¿Cómo está el clima en la playa?","opciones":["sunny and hot","rainy and cold","cloudy and windy"],"respuesta":"sunny and hot"},
-{"tipo":"vf","enunciado":"Hace viento en la playa.","respuesta":"falso"},
-{"tipo":"completar_dato","enunciado":"¿Qué dice B que es muy bonito en verano?","respuesta":"the beach","aceptadas":["beach","i love the beach"]},
-{"tipo":"opcion_multiple","enunciado":"¿A dónde quieren ir A y B?","opciones":["to the beach","to the mountain","to the forest"],"respuesta":"to the beach"},
-{"tipo":"completar_dato","enunciado":"¿En qué estación están, según B?","respuesta":"summer","aceptadas":["in summer"]}
-] }
-] }
+{
+ "tema": 18,
+ "dialogos": [
+  {
+   "titulo": "Hablando del clima",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "What's the weather like today?"
+    },
+    {
+     "hablante": "B",
+     "texto": "It's sunny and warm."
+    },
+    {
+     "hablante": "A",
+     "texto": "Is it going to rain tomorrow?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes, it's going to be rainy and windy."
+    },
+    {
+     "hablante": "A",
+     "texto": "I don't like rain."
+    },
+    {
+     "hablante": "B",
+     "texto": "I don't either. I prefer summer."
+    },
+    {
+     "hablante": "A",
+     "texto": "Me too, it's very hot in summer!"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes, but the sun is very nice."
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cómo está el clima hoy?",
+     "opciones": [
+      "rainy",
+      "sunny",
+      "snowy"
+     ],
+     "respuesta": "sunny"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Mañana va a llover.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Qué estación prefieren ambos?",
+     "respuesta": "summer"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué palabra usa B para describir el clima de mañana además de lluvioso?",
+     "opciones": [
+      "windy",
+      "sunny",
+      "cloudy"
+     ],
+     "respuesta": "windy"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Qué dice B que es muy bonito?",
+     "respuesta": "the sun",
+     "aceptadas": [
+      "sun",
+      "i love the sun"
+     ]
+    }
+   ]
+  },
+  {
+   "titulo": "Un día en la playa",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "Let's go to the beach today!"
+    },
+    {
+     "hablante": "B",
+     "texto": "Is it sunny?"
+    },
+    {
+     "hablante": "A",
+     "texto": "Yes, it's sunny and hot."
+    },
+    {
+     "hablante": "B",
+     "texto": "The beach in summer is very nice."
+    },
+    {
+     "hablante": "A",
+     "texto": "Is it windy?"
+    },
+    {
+     "hablante": "B",
+     "texto": "No, there's no wind today."
+    },
+    {
+     "hablante": "A",
+     "texto": "Good, let's go!"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes, let's go to the beach!"
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cómo está el clima en la playa?",
+     "opciones": [
+      "sunny and hot",
+      "rainy and cold",
+      "cloudy and windy"
+     ],
+     "respuesta": "sunny and hot"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Hace viento en la playa.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Qué dice B que es muy bonito en verano?",
+     "respuesta": "the beach",
+     "aceptadas": [
+      "beach",
+      "i love the beach"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿A dónde quieren ir A y B?",
+     "opciones": [
+      "to the beach",
+      "to the mountain",
+      "to the forest"
+     ],
+     "respuesta": "to the beach"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿En qué estación están, según B?",
+     "respuesta": "summer",
+     "aceptadas": [
+      "in summer"
+     ]
+    }
+   ]
+  },
+  {
+   "titulo": "¿Qué tiempo hace?",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "What is the weather like today?"
+    },
+    {
+     "hablante": "B",
+     "texto": "It is sunny and warm. Twenty-two degrees."
+    },
+    {
+     "hablante": "A",
+     "texto": "And tomorrow?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Tomorrow it is rainy, with a lot of wind."
+    },
+    {
+     "hablante": "A",
+     "texto": "Is it cold in the morning?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes, and there is fog near the river."
+    },
+    {
+     "hablante": "A",
+     "texto": "Then I do not go to the beach."
+    },
+    {
+     "hablante": "B",
+     "texto": "No. On Sunday the sky is blue again."
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué tiempo hace hoy?",
+     "opciones": [
+      "sunny and warm",
+      "rainy and windy",
+      "cold and foggy"
+     ],
+     "respuesta": "sunny and warm"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Cuántos grados hay hoy?",
+     "respuesta": "twenty-two",
+     "aceptadas": [
+      "twenty two",
+      "22",
+      "twenty-two degrees"
+     ]
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Mañana va a la playa.",
+     "respuesta": "falso"
+    }
+   ]
+  },
+  {
+   "titulo": "Planes según el clima",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "It is very hot today. Thirty degrees!"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes. We can go to the lake."
+    },
+    {
+     "hablante": "A",
+     "texto": "Is there a forest near the lake?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes, with big trees and a lot of flowers."
+    },
+    {
+     "hablante": "A",
+     "texto": "And in the afternoon?"
+    },
+    {
+     "hablante": "B",
+     "texto": "There is a storm in the afternoon."
+    },
+    {
+     "hablante": "A",
+     "texto": "Then we come back at four."
+    },
+    {
+     "hablante": "B",
+     "texto": "Very well. The sun is very strong today."
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Cuántos grados hace?",
+     "respuesta": "thirty",
+     "aceptadas": [
+      "30",
+      "thirty degrees"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿A dónde van?",
+     "opciones": [
+      "to the lake",
+      "to the beach",
+      "to the mountains"
+     ],
+     "respuesta": "to the lake"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "En la tarde hay tormenta.",
+     "respuesta": "verdadero"
+    }
+   ]
+  },
+  {
+   "titulo": "Examen · El clima de Marie",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "What is the weather like in your city, Marie?"
+    },
+    {
+     "hablante": "B",
+     "texto": "In summer it is warm, twenty-five degrees."
+    },
+    {
+     "hablante": "A",
+     "texto": "Is there snow in winter?"
+    },
+    {
+     "hablante": "B",
+     "texto": "No, but there is a lot of rain."
+    },
+    {
+     "hablante": "A",
+     "texto": "And in autumn?"
+    },
+    {
+     "hablante": "B",
+     "texto": "It is cool and windy, with fog in the morning."
+    },
+    {
+     "hablante": "A",
+     "texto": "Which season do you prefer?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Spring. There are flowers in the park."
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Cuántos grados hace en verano?",
+     "respuesta": "twenty-five",
+     "aceptadas": [
+      "twenty five",
+      "25",
+      "twenty-five degrees"
+     ]
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "En invierno hay nieve en su ciudad.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué estación prefiere Marie?",
+     "opciones": [
+      "spring",
+      "summer",
+      "autumn"
+     ],
+     "respuesta": "spring"
+    }
+   ]
+  }
+ ]
+}

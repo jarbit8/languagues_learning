@@ -210,63 +210,64 @@
    ]
   },
   {
-   "titulo": "¿Qué te pones hoy?",
+   "titulo": "La ropa para el frío",
    "lineas": [
     {
      "hablante": "A",
-     "texto": "What do you wear today?"
+     "texto": "What do you wear in winter?"
     },
     {
      "hablante": "B",
-     "texto": "I wear jeans and a white shirt."
+     "texto": "Yes. I put on my big coat and my gloves."
     },
     {
      "hablante": "A",
-     "texto": "And a jacket?"
+     "texto": "Do you have a scarf?"
     },
     {
      "hablante": "B",
-     "texto": "Yes, I put on my new jacket."
+     "texto": "Yes, a black scarf. And boots."
     },
     {
      "hablante": "A",
-     "texto": "Are your shoes new?"
+     "texto": "My boots are old. I buy new boots on Saturday."
     },
     {
      "hablante": "B",
-     "texto": "No, my sneakers are old but they are cheap."
+     "texto": "Are they expensive?"
     },
     {
      "hablante": "A",
-     "texto": "And in summer?"
+     "texto": "No, they are cheap and they are my size."
     },
     {
      "hablante": "B",
-     "texto": "In summer I wear shorts and a t-shirt."
+     "texto": "Very good! Now I take off my coat."
     }
    ],
    "preguntas": [
     {
      "tipo": "opcion_multiple",
-     "enunciado": "¿Qué lleva hoy?",
+     "enunciado": "¿Qué se pone B?",
      "opciones": [
-      "jeans and a white shirt",
-      "a dress",
-      "a skirt"
+      "a big coat and gloves",
+      "a dress and boots",
+      "shorts and a t-shirt"
      ],
-     "respuesta": "jeans and a white shirt"
+     "respuesta": "a big coat and gloves"
     },
     {
      "tipo": "vf",
-     "enunciado": "Las zapatillas son nuevas.",
+     "enunciado": "Las botas nuevas son caras.",
      "respuesta": "falso"
     },
     {
      "tipo": "completar_dato",
-     "enunciado": "¿Qué lleva en verano?",
-     "respuesta": "shorts and a t-shirt",
+     "enunciado": "¿De qué color es la bufanda de B?",
+     "respuesta": "black",
      "aceptadas": [
-      "shorts, a t-shirt"
+      "negro",
+      "black scarf"
      ]
     }
    ]

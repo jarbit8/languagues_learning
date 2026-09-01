@@ -2,6 +2,47 @@
  "bloque": 3,
  "consignas": [
   {
+   "tema": 13,
+   "consigna": "Escribe qué hay en tu cocina y qué comes normalmente: usa contables e incontables con some y any.",
+   "minPalabras": 30,
+   "maxPalabras": 40,
+   "respuestaModelo": "In my kitchen there is some bread and some milk. There are some apples and two oranges. I don't have any rice. I eat chicken every day. Is there any water? There is nothing in the fridge.",
+   "checklist": [
+    "Usé some en afirmativa",
+    "Usé any en negativa o pregunta",
+    "Distinguí contables de incontables",
+    "Escribí entre 30 y 40 palabras"
+   ]
+  },
+  {
+   "tema": 13,
+   "consigna": "Escribe qué comes en un día normal: desayuno, almuerzo y cena, y di qué no comes nunca.",
+   "minPalabras": 40,
+   "maxPalabras": 55,
+   "respuestaModelo": "For breakfast I eat bread with butter and an egg. For lunch I often cook rice with chicken and a salad with tomatoes. I never eat fish, because it is expensive. In the evening I am not very hungry, so I make a sandwich with cheese. I always eat fruit.",
+   "checklist": [
+    "Hablé del desayuno, del almuerzo y de la cena",
+    "Nombré al menos seis comidas",
+    "Dije algo que no como nunca",
+    "Usé un adverbio de frecuencia",
+    "Escribí entre 40 y 55 palabras"
+   ]
+  },
+  {
+   "tema": 13,
+   "consigna": "Examen: escribe qué hay en tu cocina, qué comes durante el día y qué comida es sabrosa para ti. Usa some, any y nothing.",
+   "minPalabras": 45,
+   "maxPalabras": 60,
+   "respuestaModelo": "In my fridge there is milk, cheese and some vegetables. There are not any eggs. For breakfast I eat bread with butter. For lunch I cook rice with chicken and a salad with tomatoes and onions. I put salt in my salad. In the evening I eat some soup. On Sunday there is nothing in my fridge. Fruit is tasty.",
+   "checklist": [
+    "Dije qué hay en mi cocina",
+    "Usé some, any y nothing",
+    "Hablé de al menos dos comidas del día",
+    "Dije qué comida es sabrosa",
+    "Escribí entre 45 y 60 palabras"
+   ]
+  },
+  {
    "tema": 14,
    "consigna": "Escribe un email a un amigo invitándolo a un restaurante: dile qué se puede comer, cómo llegar y qué tiempo hace.",
    "minPalabras": 30,
@@ -14,6 +55,75 @@
     "Mencioné el clima",
     "Hice una pregunta con can/would",
     "Escribí entre 30 y 40 palabras"
+   ]
+  },
+  {
+   "tema": 14,
+   "consigna": "Escribe qué bebes durante el día: en el desayuno, en el almuerzo y en la noche, y di qué bebida tomas caliente y cuál fría.",
+   "minPalabras": 40,
+   "maxPalabras": 55,
+   "respuestaModelo": "In the morning I drink a hot coffee with milk and sugar. It is very sweet. At lunch I want a cold soft drink or a glass of water, because I am always thirsty. I never drink beer or wine. In the evening I have a cup of tea.",
+   "checklist": [
+    "Hablé de la mañana, del almuerzo y de la noche",
+    "Nombré al menos cuatro bebidas",
+    "Usé hot y cold",
+    "Dije algo que no bebo nunca",
+    "Escribí entre 40 y 55 palabras"
+   ]
+  },
+  {
+   "tema": 14,
+   "consigna": "Examen: describe una cena en un restaurante: qué pides de comer y de beber, qué hay en la mesa y cómo está la comida.",
+   "minPalabras": 45,
+   "maxPalabras": 60,
+   "respuestaModelo": "On Saturday I go to a restaurant. The waiter comes with the menu card. I am thirsty, so I order a juice. I would like fish with vegetables. On the table there are plates, forks, knives and napkins. The food is delicious and it is not salty. For dessert I want an ice cream. Then I want the bill.",
+   "checklist": [
+    "Dije qué pedí de comer y de beber",
+    "Usé 'I would like' o 'to order'",
+    "Nombré al menos cuatro cosas de la mesa",
+    "Describí cómo estaba la comida",
+    "Escribí entre 45 y 60 palabras"
+   ]
+  },
+  {
+   "tema": 15,
+   "consigna": "Escribe sobre una compra: qué necesitas comprar, cuánto cuesta y cómo pagas.",
+   "minPalabras": 28,
+   "maxPalabras": 38,
+   "respuestaModelo": "I need to buy some vegetables. I go to the market because it is cheap. How much is it? It is ten soles. I don't have much money. Can I pay by card? I prefer the market.",
+   "checklist": [
+    "Pregunté el precio con how much",
+    "Usé much / many / a lot of",
+    "Dije cómo pago",
+    "Escribí entre 28 y 38 palabras"
+   ]
+  },
+  {
+   "tema": 15,
+   "consigna": "Escribe tu lista de compras de la semana: qué necesitas, dónde lo compras y cuánto cuesta cada cosa.",
+   "minPalabras": 40,
+   "maxPalabras": 55,
+   "respuestaModelo": "This week I need bread, milk, eggs and vegetables. I go to the supermarket near my house on Saturday. The bread costs three soles and the milk costs five. The tomatoes are on sale today. I buy the fruit in the market, because there it is cheap. I spend forty soles.",
+   "checklist": [
+    "Dije al menos cinco cosas que necesito",
+    "Dije dónde compro cada cosa",
+    "Usé precios con 'to cost'",
+    "Usé 'to need' y 'to spend'",
+    "Escribí entre 40 y 55 palabras"
+   ]
+  },
+  {
+   "tema": 15,
+   "consigna": "Examen: cuenta una compra completa: qué necesitas, cuánto cuesta, si hay descuento, cómo pagas y qué te dan en la caja.",
+   "minPalabras": 45,
+   "maxPalabras": 60,
+   "respuestaModelo": "On Saturday I go to the supermarket. I need bread, milk and fruit. The apples are on sale: they cost two soles. There is a discount on the chicken too. At the checkout I pay with my card, because I do not have cash. The seller has my receipt and the bag is free. I spend thirty soles today.",
+   "checklist": [
+    "Dije qué necesito comprar",
+    "Di al menos dos precios",
+    "Hablé de un descuento o de una oferta",
+    "Dije cómo pago y qué me dan en la caja",
+    "Escribí entre 45 y 60 palabras"
    ]
   },
   {
@@ -32,29 +142,31 @@
    ]
   },
   {
-   "tema": 13,
-   "consigna": "Escribe qué hay en tu cocina y qué comes normalmente: usa contables e incontables con some y any.",
-   "minPalabras": 30,
-   "maxPalabras": 40,
-   "respuestaModelo": "In my kitchen there is some bread and some milk. There are some apples and two oranges. I don't have any rice. I eat chicken every day. Is there any water? There is nothing in the fridge.",
+   "tema": 16,
+   "consigna": "Describe tu barrio: qué lugares hay cerca de tu casa, cuáles están lejos y qué horarios tienen.",
+   "minPalabras": 40,
+   "maxPalabras": 55,
+   "respuestaModelo": "My house is in a street near the park. There is a pharmacy and a small shop near my house. The pharmacy is open every day, but the shop is closed on Sunday. The hospital is far and the airport is very far. I can walk to the school in ten minutes.",
    "checklist": [
-    "Usé some en afirmativa",
-    "Usé any en negativa o pregunta",
-    "Distinguí contables de incontables",
-    "Escribí entre 30 y 40 palabras"
+    "Nombré al menos cinco lugares",
+    "Usé 'near' y 'far'",
+    "Dije un horario (open / closed)",
+    "Usé 'there is' o 'there are'",
+    "Escribí entre 40 y 55 palabras"
    ]
   },
   {
-   "tema": 15,
-   "consigna": "Escribe sobre una compra: qué necesitas comprar, cuánto cuesta y cómo pagas.",
-   "minPalabras": 28,
-   "maxPalabras": 38,
-   "respuestaModelo": "I need to buy some vegetables. I go to the market because it is cheap. How much is it? It is ten soles. I don't have much money. Can I pay by card? I prefer the market.",
+   "tema": 16,
+   "consigna": "Examen: escribe una guía de tu ciudad para un amigo: qué lugares se pueden visitar, dónde están y cuándo están abiertos.",
+   "minPalabras": 45,
+   "maxPalabras": 60,
+   "respuestaModelo": "In my city one can visit the museum and the zoo. The museum is in the city centre, next to the church, and it is open from ten to six. The zoo is in the park and it is not expensive. The library is near the square, but it is closed on Sunday. The airport is very far.",
    "checklist": [
-    "Pregunté el precio con how much",
-    "Usé much / many / a lot of",
-    "Dije cómo pago",
-    "Escribí entre 28 y 38 palabras"
+    "Nombré al menos cinco lugares de la ciudad",
+    "Usé 'one can' o 'can'",
+    "Dije dónde está cada lugar",
+    "Dije cuándo abre o cierra alguno",
+    "Escribí entre 45 y 60 palabras"
    ]
   },
   {
@@ -71,6 +183,34 @@
    ]
   },
   {
+   "tema": 17,
+   "consigna": "Escribe cómo vas al trabajo o a la universidad cada día: qué transporte tomas, cuánto demora y qué haces cuando vas tarde.",
+   "minPalabras": 40,
+   "maxPalabras": 55,
+   "respuestaModelo": "Every morning I take the bus at the stop near my house. The bus is slow, but the ticket is cheap. It is thirty minutes. When I am late I take the metro, because it is very fast. On Saturday I go on foot: it is not far and I can cross the park.",
+   "checklist": [
+    "Dije qué transporte tomo",
+    "Dije cuánto demora",
+    "Usé 'fast' o 'slow'",
+    "Dije qué hago cuando voy tarde",
+    "Escribí entre 40 y 55 palabras"
+   ]
+  },
+  {
+   "tema": 17,
+   "consigna": "Examen: explica a un amigo cómo llegar de tu casa a un lugar de tu ciudad: da las indicaciones paso a paso y di qué transporte tomar.",
+   "minPalabras": 45,
+   "maxPalabras": 60,
+   "respuestaModelo": "From my house you go straight for five minutes. At the traffic light you cross the street and you turn left at the corner of the pharmacy. Then you continue straight on the sidewalk. The museum is next to the park. You can go on foot, but the bus is faster. The stop is near my house.",
+   "checklist": [
+    "Usé 'go straight', 'turn left' o 'turn right'",
+    "Nombré una esquina o un semáforo",
+    "Dije qué transporte tomar",
+    "Di al menos cuatro pasos seguidos",
+    "Escribí entre 45 y 60 palabras"
+   ]
+  },
+  {
    "tema": 18,
    "consigna": "Compara el clima de tu ciudad con el de otro lugar: cómo es en cada estación y cuál es más frío o más caluroso.",
    "minPalabras": 30,
@@ -81,6 +221,34 @@
     "Usé un superlativo",
     "Describí el clima de dos lugares",
     "Escribí entre 30 y 40 palabras"
+   ]
+  },
+  {
+   "tema": 18,
+   "consigna": "Escribe qué tiempo hace hoy en tu ciudad y qué haces cuando llueve: usa grados y al menos cuatro palabras del clima.",
+   "minPalabras": 40,
+   "maxPalabras": 55,
+   "respuestaModelo": "Today it is sunny and warm in my city: twenty degrees. The sky is blue and there are not many clouds. In the morning there is fog near the river. When it rains I do not go out: I read a book in my room and I drink a hot tea.",
+   "checklist": [
+    "Dije qué tiempo hace hoy",
+    "Usé grados",
+    "Usé al menos cuatro palabras del clima",
+    "Dije qué hago cuando llueve",
+    "Escribí entre 40 y 55 palabras"
+   ]
+  },
+  {
+   "tema": 18,
+   "consigna": "Examen: describe el clima de tu ciudad en las cuatro estaciones y di cuál prefieres y por qué.",
+   "minPalabras": 45,
+   "maxPalabras": 60,
+   "respuestaModelo": "In summer it is hot: thirty degrees and a lot of sun. In autumn it is cool and windy, with fog in the morning. In winter it is cold and rainy, but there is not any snow. In spring there are flowers and the trees are green. I prefer spring: the weather is warm and it is not rainy.",
+   "checklist": [
+    "Hablé de las cuatro estaciones",
+    "Usé grados en alguna",
+    "Usé al menos seis palabras del clima",
+    "Dije cuál prefiero y por qué",
+    "Escribí entre 45 y 60 palabras"
    ]
   }
  ]

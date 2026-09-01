@@ -2,41 +2,342 @@
  "tema": 15,
  "textos": [
   {
-   "titulo": "En el mercado",
-   "texto": "On Saturday morning Ana goes to the market with her shopping list. The market is near her apartment and the prices are cheap. How much is it? she asks. Two dollars, says the seller. Ana buys a lot of vegetables and a little fruit. Then she goes to the supermarket, because she needs milk and bread. At the checkout she pays with her card, but sometimes she pays in cash. The customer before her pays with coins and banknotes. Today there is a discount on cheese: it is on sale! Ana buys some and she is happy. She does not spend a lot of money: she only spends fifteen dollars. She takes her receipt and her change. In Peru the market is not the same, but she likes this one too.",
+   "titulo": "El supermercado de Ana",
+   "texto": "Every Saturday Ana goes to the supermarket near her house with a shopping list. She needs milk, bread, eggs, fruit and vegetables. In the supermarket the prices are not the same every week: today the tomatoes are on sale and there is a discount on the chicken. Ana prefers the market for the fruit, because the fruit in the market is very good and the price is small. She does not want to spend a lot of money, so she buys the vegetables on sale. At the checkout there is a customer with much bread. Ana pays with cash: she has two banknotes and some coins in her wallet. How much is it? The bread and the milk cost twenty soles. The seller has her change and a receipt. Paul prefers to pay with a card, because he never has cash. One can pay in soles or in dollars here, but not in euros. Today the bags are free, so Ana does not spend anything more.",
    "preguntas": [
     {
+     "tipo": "completar_dato",
+     "enunciado": "What day does Ana go to the supermarket?",
+     "respuesta": "Saturday",
+     "aceptadas": [
+      "on saturday",
+      "every saturday"
+     ]
+    },
+    {
      "tipo": "opcion_multiple",
-     "enunciado": "How does Ana pay at the supermarket?",
+     "enunciado": "What is on sale today?",
      "opciones": [
-      "her card",
-      "cash",
-      "coins"
+      "the tomatoes",
+      "the bread",
+      "the eggs"
      ],
-     "respuesta": "her card"
+     "respuesta": "the tomatoes"
     },
     {
      "tipo": "vf",
-     "enunciado": "There is a discount on the cheese.",
-     "respuesta": "verdadero"
+     "enunciado": "Ana pays with a card.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "Why does Ana prefer the market for the fruit?",
+     "opciones": [
+      "the fruit is very good and the price is small",
+      "the market is near her house",
+      "there is a discount on the chicken"
+     ],
+     "respuesta": "the fruit is very good and the price is small"
     },
     {
      "tipo": "vfnd",
-     "enunciado": "The seller is Ana's friend.",
+     "enunciado": "Paul goes to the supermarket with Ana.",
      "respuesta": "no dice"
     },
     {
      "tipo": "completar_dato",
-     "enunciado": "How much money does she spend? Write only the number.",
-     "respuesta": "15",
+     "enunciado": "How much do the bread and the milk cost?",
+     "respuesta": "twenty soles",
      "aceptadas": [
-      "fifteen"
+      "twenty",
+      "20 soles"
      ]
     },
     {
      "tipo": "vf",
-     "enunciado": "The market is not near her apartment.",
+     "enunciado": "The bags cost money today.",
      "respuesta": "falso"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What does Ana have in her wallet?",
+     "opciones": [
+      "two banknotes and some coins",
+      "only a card",
+      "a receipt"
+     ],
+     "respuesta": "two banknotes and some coins"
+    }
+   ]
+  },
+  {
+   "titulo": "La lista de compras",
+   "texto": "Laura makes a shopping list every Monday. This week she needs a lot of things: rice, pasta, cheese, butter, apples and a yogurt. She also needs a new notebook and a pen. In the shop near her house the rice costs eight soles and the pasta costs five. That is expensive, so Laura goes to the supermarket: there the same rice is on sale and it costs six soles. How many apples does she want? There are apples with a discount today, so she buys ten. Laura pays with her card, because she does not have much cash. The customer before her pays with coins and banknotes. At the checkout Laura wants a receipt: she prefers to see what she spends every week. The notebook is free with the pen! Laura spends fifty soles today and she has a little money for Sunday.",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "When does Laura make her shopping list?",
+     "opciones": [
+      "every Monday",
+      "every Sunday",
+      "every Saturday"
+     ],
+     "respuesta": "every Monday"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "The rice is cheaper in the supermarket.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "How many apples does Laura buy?",
+     "respuesta": "ten",
+     "aceptadas": [
+      "10",
+      "ten apples"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "How does Laura pay?",
+     "opciones": [
+      "with her card",
+      "with cash",
+      "with coins"
+     ],
+     "respuesta": "with her card"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "The customer before Laura buys apples too.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Laura pays for the notebook.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "How much does Laura spend today?",
+     "respuesta": "fifty soles",
+     "aceptadas": [
+      "fifty",
+      "50 soles"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "Why does Laura want a receipt?",
+     "opciones": [
+      "to see what she spends",
+      "to have a discount",
+      "to pay with cash"
+     ],
+     "respuesta": "to see what she spends"
+    }
+   ]
+  },
+  {
+   "titulo": "En el mercado",
+   "texto": "On Sunday morning Ana and Paul go to the market. The market is very big and there are many customers. A seller sells fruit and vegetables: tomatoes, potatoes, onions, carrots, apples and bananas. How much is it? The tomatoes cost three soles and the apples cost four. Paul prefers the bananas, because they are cheap today. Another seller has fish and chicken, but the quality is not very good, so Ana does not buy anything there. In the market no customer pays with a card: all the customers pay with cash. Ana has a big banknote and the seller does not have change, so Paul pays with coins. They do not spend a lot of money: the food in the market is cheaper than in the supermarket. Ana needs a bag for the vegetables, and the bag is free.",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What does the first seller sell?",
+     "opciones": [
+      "fruit and vegetables",
+      "fish and chicken",
+      "clothes"
+     ],
+     "respuesta": "fruit and vegetables"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "The customers in the market pay with a card.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "How much do the tomatoes cost?",
+     "respuesta": "three soles",
+     "aceptadas": [
+      "three",
+      "3 soles"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "Why does Paul prefer the bananas?",
+     "opciones": [
+      "because they are cheap today",
+      "because they are on sale",
+      "because the quality is good"
+     ],
+     "respuesta": "because they are cheap today"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Ana buys fish in the market.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "The second seller is a friend of Ana.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "Who pays with coins?",
+     "opciones": [
+      "Paul",
+      "Ana",
+      "the seller"
+     ],
+     "respuesta": "Paul"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "The food in the market is cheaper than in the supermarket.",
+     "respuesta": "verdadero"
+    }
+   ]
+  },
+  {
+   "titulo": "Una oferta en la tienda",
+   "texto": "There is a big discount in the clothes shop today. Laura needs a new jacket and Ana wants boots. In the shop all the clothes are on sale: a jacket costs eighty soles and it is not expensive for the quality. Laura tries on a black jacket: it is her size and it is elegant. Ana tries on the brown boots, but they cost a lot of money. She does not want to spend one hundred soles, so she does not buy them. Laura pays with her card at the checkout and she wants a receipt. The seller has a little problem with the card, so Laura pays with cash: two banknotes and three coins. The seller does not have change, so he has a discount for her. How much is the scarf? The scarf is free with the jacket. Today the shop is cheap and the customers buy a lot of things.",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What does Laura need?",
+     "opciones": [
+      "a new jacket",
+      "boots",
+      "a scarf"
+     ],
+     "respuesta": "a new jacket"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Ana buys the boots.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "How much does a jacket cost?",
+     "respuesta": "eighty soles",
+     "aceptadas": [
+      "eighty",
+      "80 soles"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "Why does Laura pay with cash?",
+     "opciones": [
+      "there is a problem with the card",
+      "she does not have a card",
+      "the card is not free"
+     ],
+     "respuesta": "there is a problem with the card"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "The scarf is free with the jacket.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "The jacket of Laura is black and brown.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "What does the seller not have?",
+     "respuesta": "change",
+     "aceptadas": [
+      "the change"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "How much do the boots cost?",
+     "opciones": [
+      "one hundred soles",
+      "eighty soles",
+      "fifty soles"
+     ],
+     "respuesta": "one hundred soles"
+    }
+   ]
+  },
+  {
+   "titulo": "Examen · Las compras de Marie",
+   "texto": "Every Friday Marie goes to the supermarket with a shopping list. She needs bread, milk, eggs, fruit and vegetables. She does not want to spend a lot of money, so she prefers the things on sale. Today there is a discount on the tomatoes: they cost two soles. The cheese costs ten soles, but the quality is not very good, so Marie does not buy it. At the checkout the customer before her pays with cash. Marie prefers her card, because she never has coins in her bag. She wants a receipt: she needs to see what she spends every week. The bags are free today. Then she goes to the market near her house for the fish. In the market the seller does not want a card, so Marie pays with a banknote and he has her change. Marie spends forty soles today.",
+   "preguntas": [
+    {
+     "tipo": "completar_dato",
+     "enunciado": "What day does Marie go to the supermarket?",
+     "respuesta": "Friday",
+     "aceptadas": [
+      "on friday",
+      "every friday"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What has a discount today?",
+     "opciones": [
+      "the tomatoes",
+      "the cheese",
+      "the bread"
+     ],
+     "respuesta": "the tomatoes"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Marie buys the cheese.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "Why does Marie prefer her card?",
+     "opciones": [
+      "she never has coins",
+      "the card is free",
+      "she needs a receipt"
+     ],
+     "respuesta": "she never has coins"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "The market is cheaper than the supermarket.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Marie pays with a banknote in the market.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "How much does Marie spend today?",
+     "respuesta": "forty soles",
+     "aceptadas": [
+      "forty",
+      "40 soles"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What does Marie buy in the market?",
+     "opciones": [
+      "fish",
+      "cheese",
+      "vegetables"
+     ],
+     "respuesta": "fish"
     }
    ]
   }

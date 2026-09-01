@@ -2,43 +2,336 @@
  "tema": 18,
  "textos": [
   {
-   "titulo": "El clima aquí y allá",
-   "texto": "What is the weather like today? In Canada it is winter and it is very cold. There is a lot of snow and there is ice on the street. It is only two degrees! The sky is grey and cloudy, and there is no sun. Sometimes there is fog in the morning. In summer it is warm and sunny, and Ana goes to the lake with her friends. There are trees, flowers and a small forest near the lake. In Peru the weather is not the same: in Arequipa it is often sunny and it is not very cold. Ana misses the sea and the beach. Today it is windy and rainy here, so she is in her apartment. At night she can see the moon and the stars. Tomorrow there is a storm.",
+   "titulo": "El clima en Arequipa",
+   "texto": "Ana lives in Arequipa, in Peru. There the weather is very good all the year. In the morning the sky is blue and there is a lot of sun. It is a warm day: twenty degrees. In winter it is cold at night, but in the day it is sunny. There is not any snow in the city, but there is snow on the mountains near it. From her window Ana can see three big mountains and the blue sky. In the summer months it is rainy and cloudy: there are many clouds and there is a storm in the afternoon. Ana does not go out when it rains. In her garden there are two trees and a lot of flowers. In the evening she can see the moon and the stars, because there is not any fog. Ana prefers Arequipa: it is not very hot and it is not very cold.",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
-     "enunciado": "How many degrees is it?",
+     "enunciado": "What is the weather like in the morning?",
      "opciones": [
-      "two",
-      "twelve",
-      "twenty"
+      "sunny and warm",
+      "cold and windy",
+      "rainy and cloudy"
      ],
-     "respuesta": "two"
+     "respuesta": "sunny and warm"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "How many degrees is a warm day?",
+     "respuesta": "twenty",
+     "aceptadas": [
+      "20",
+      "twenty degrees"
+     ]
     },
     {
      "tipo": "vf",
-     "enunciado": "There is sun in Canada today.",
+     "enunciado": "There is snow in the city.",
      "respuesta": "falso"
     },
     {
+     "tipo": "opcion_multiple",
+     "enunciado": "When is there a storm?",
+     "opciones": [
+      "in the summer months",
+      "in winter",
+      "every morning"
+     ],
+     "respuesta": "in the summer months"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Ana can see three mountains from her window.",
+     "respuesta": "verdadero"
+    },
+    {
      "tipo": "vfnd",
-     "enunciado": "There is snow in Peru.",
+     "enunciado": "The garden of Ana is big.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "What can Ana see in the evening?",
+     "respuesta": "the moon and the stars",
+     "aceptadas": [
+      "the moon and the stars",
+      "moon and stars"
+     ]
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Ana goes out when it rains.",
+     "respuesta": "falso"
+    }
+   ]
+  },
+  {
+   "titulo": "Las estaciones en Canadá",
+   "texto": "In Canada the weather is not the same all the year. In winter it is very cold: there is a lot of snow and ice on the road, and sometimes it is ten degrees under zero. The days are short and there is not much sun. In spring the snow goes and there are flowers in the parks. The weather is cool and it is often rainy and windy. In summer it is hot: twenty-five or thirty degrees. The sky is blue, there are not many clouds and the sun is very strong. Ana goes to the lake with Laura: near the lake there is a forest with big trees. In autumn it is cool again and there is a lot of wind. In the morning there is fog near the river. Laura prefers autumn, but Ana prefers summer: she is from Peru and she does not want the cold.",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What is the weather like in winter in Canada?",
+     "opciones": [
+      "very cold, with snow and ice",
+      "hot and sunny",
+      "cool and rainy"
+     ],
+     "respuesta": "very cold, with snow and ice"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "In winter the days are long.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "How many degrees is it in summer?",
+     "respuesta": "twenty-five or thirty",
+     "aceptadas": [
+      "twenty five or thirty",
+      "25 or 30",
+      "thirty"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What is near the lake?",
+     "opciones": [
+      "a forest with big trees",
+      "a big city",
+      "a beach"
+     ],
+     "respuesta": "a forest with big trees"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "In autumn there is fog near the river in the morning.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "The lake is far from the house of Laura.",
      "respuesta": "no dice"
     },
     {
      "tipo": "opcion_multiple",
-     "enunciado": "What is there near the lake?",
+     "enunciado": "Why does Ana prefer summer?",
      "opciones": [
-      "trees and flowers",
-      "the sea and the beach",
-      "mountains and rivers"
+      "she is from Peru and does not want the cold",
+      "she goes to the forest",
+      "the days are short"
      ],
-     "respuesta": "trees and flowers"
+     "respuesta": "she is from Peru and does not want the cold"
     },
     {
      "tipo": "vf",
-     "enunciado": "There is a storm tomorrow.",
+     "enunciado": "Laura prefers autumn.",
      "respuesta": "verdadero"
+    }
+   ]
+  },
+  {
+   "titulo": "Un día cerca del mar",
+   "texto": "On Saturday Ana, Paul and Laura go to the beach. It is a hot day: twenty-eight degrees and there is a lot of sun. The sky is blue and there are not any clouds. The sea is cool, but it is not cold. On the beach there is a lot of wind in the afternoon, so Paul puts on his t-shirt. Near the beach there is a small forest with trees and flowers. Laura walks there, because the beach is very hot for her. At five there is a big cloud and the sky is not blue. Then it rains for twenty minutes: it is a small storm, with a lot of wind. The friends eat in a café near the sea and they are there for one hour. After the rain the sun comes back and the weather is warm again. At night they can see the moon and the stars on the sea.",
+   "preguntas": [
+    {
+     "tipo": "completar_dato",
+     "enunciado": "How many degrees is it on the beach?",
+     "respuesta": "twenty-eight",
+     "aceptadas": [
+      "twenty eight",
+      "28",
+      "twenty-eight degrees"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What is the sea like?",
+     "opciones": [
+      "cool, but not cold",
+      "very cold",
+      "very hot"
+     ],
+     "respuesta": "cool, but not cold"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "There are many clouds in the morning.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "Why does Laura walk in the forest?",
+     "opciones": [
+      "the beach is very hot for her",
+      "there is a storm",
+      "she is hungry"
+     ],
+     "respuesta": "the beach is very hot for her"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "At five it rains for twenty minutes.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "The café near the sea is expensive.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What is the weather like after the rain?",
+     "opciones": [
+      "warm and sunny",
+      "cold and windy",
+      "cloudy"
+     ],
+     "respuesta": "warm and sunny"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "At night they can see the moon and the stars.",
+     "respuesta": "verdadero"
+    }
+   ]
+  },
+  {
+   "titulo": "Una tormenta",
+   "texto": "On Tuesday morning the weather is not good. There is a lot of fog and the sky is grey. At nine there is a big storm: much rain and a lot of wind. The trees in the park go from left to right with the wind. Ana does not take her bike: she takes the metro, because on the road there is water and ice. It is very cold, two degrees. Paul is in his house all the day: he reads a book and he drinks a hot tea. In the evening the rain stops and there are not many clouds. One can see the moon and one star. On Wednesday the weather is very good: it is sunny and warm, fifteen degrees. Ana goes to the park with Laura and they walk near the river. There are flowers under the trees and the sky is blue again.",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What is the weather like on Tuesday morning?",
+     "opciones": [
+      "foggy, with a grey sky",
+      "sunny and warm",
+      "hot and windy"
+     ],
+     "respuesta": "foggy, with a grey sky"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "How many degrees is it on Tuesday?",
+     "respuesta": "two",
+     "aceptadas": [
+      "2",
+      "two degrees"
+     ]
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Ana takes her bike on Tuesday.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "Why does Ana take the metro?",
+     "opciones": [
+      "there is water and ice on the road",
+      "the bike is far",
+      "the metro is cheap"
+     ],
+     "respuesta": "there is water and ice on the road"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Paul goes out on Tuesday.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "The book of Paul is very good.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "How many degrees is it on Wednesday?",
+     "respuesta": "fifteen",
+     "aceptadas": [
+      "15",
+      "fifteen degrees"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "Where do Ana and Laura walk on Wednesday?",
+     "opciones": [
+      "in the park, near the river",
+      "on the beach",
+      "in the forest"
+     ],
+     "respuesta": "in the park, near the river"
+    }
+   ]
+  },
+  {
+   "titulo": "Examen · El clima de Marie",
+   "texto": "Marie lives near the sea, so the weather in her city is not very cold and not very hot. In summer it is a warm day: twenty-two or twenty-five degrees, the sky is blue and there are not many clouds. Marie goes to the beach with her sister and they walk near the water. In autumn it is cool and often windy. There is fog in the morning and the mountains are in the fog. In winter it is cold: five degrees, with a lot of rain and sometimes a storm. There is not any snow in her city, but there is snow and ice on the mountains. In spring there are flowers in the park and the trees are green. Marie prefers spring: the weather is warm and it is not rainy. At night she can see the moon and the stars from her window.",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What is the weather like in summer?",
+     "opciones": [
+      "warm, with a blue sky",
+      "cold and rainy",
+      "windy and foggy"
+     ],
+     "respuesta": "warm, with a blue sky"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "How many degrees is it in winter?",
+     "respuesta": "five",
+     "aceptadas": [
+      "5",
+      "five degrees"
+     ]
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "There is snow in the city of Marie.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "Which season does Marie prefer?",
+     "opciones": [
+      "spring",
+      "summer",
+      "winter"
+     ],
+     "respuesta": "spring"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "In autumn there is fog in the morning.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "The sister of Marie lives near the sea too.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "What can Marie see from her window at night?",
+     "respuesta": "the moon and the stars",
+     "aceptadas": [
+      "moon and stars",
+      "the moon and the stars"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "Where is there snow and ice?",
+     "opciones": [
+      "on the mountains",
+      "on the beach",
+      "in the park"
+     ],
+     "respuesta": "on the mountains"
     }
    ]
   }

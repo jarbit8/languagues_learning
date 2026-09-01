@@ -198,66 +198,70 @@
    ]
   },
   {
-   "titulo": "En la tienda con Laura",
-   "texto": "Can I help you? Yes, I buy a jacket today. What size are you? I am a medium. This black jacket is very elegant. Can I try it on? Of course. How is it? It is not my size and it is expensive. And this one? This grey jacket is cheap and it is new. I take it! And shoes? These sneakers are good, but I take boots for the winter. And socks. Here are the boots. And a hat? No, thank you: I have a hat and a scarf. Laura buys a dress, a skirt and a blouse for work. Her sister buys jeans, trousers and a shirt with a belt. She never wears shorts! Now I put on my coat and I take off my old sweater.",
+   "titulo": "La ropa de la semana",
+   "texto": "Every morning Ana puts on trousers, a white shirt and shoes for work. She never wears a dress or a skirt. In her wardrobe there are three jackets: a black one, a grey one and a new blue one. The blue jacket is elegant, but it is very expensive. On Friday she wears jeans and a t-shirt, because on Friday one can wear old clothes at work. On Saturday Ana takes off her work clothes: she puts on shorts, sneakers and a t-shirt. In winter she wears a big coat, boots, gloves and a scarf. Her sweater is old, but it is not cheap. Laura buys a blouse and a skirt for the weekend, and socks for the winter. Her hat is new and it is her size. In bed Ana wears her pyjamas. She tries on all her clothes in the morning and then she is late for work!",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
-     "enunciado": "What does the person buy first?",
+     "enunciado": "What does Ana wear to work?",
      "opciones": [
-      "a jacket",
-      "shoes",
-      "a hat"
+      "trousers, a shirt and shoes",
+      "a dress and a skirt",
+      "shorts and sneakers"
      ],
-     "respuesta": "a jacket"
+     "respuesta": "trousers, a shirt and shoes"
     },
     {
      "tipo": "vf",
-     "enunciado": "The black jacket is cheap.",
+     "enunciado": "Ana wears a skirt to work.",
      "respuesta": "falso"
     },
     {
      "tipo": "completar_dato",
-     "enunciado": "What does the person take for the winter?",
-     "respuesta": "boots"
-    },
-    {
-     "tipo": "opcion_multiple",
-     "enunciado": "What does Laura buy?",
-     "opciones": [
-      "a dress, a skirt and a blouse",
-      "jeans",
-      "boots"
-     ],
-     "respuesta": "a dress, a skirt and a blouse"
-    },
-    {
-     "tipo": "vfnd",
-     "enunciado": "The grey jacket is blue.",
-     "respuesta": "no dice"
-    },
-    {
-     "tipo": "vf",
-     "enunciado": "The person takes a hat too.",
-     "respuesta": "falso"
-    },
-    {
-     "tipo": "completar_dato",
-     "enunciado": "What size is the person?",
-     "respuesta": "medium",
+     "enunciado": "How many jackets are in her wardrobe?",
+     "respuesta": "three",
      "aceptadas": [
-      "a medium"
+      "3",
+      "three jackets"
      ]
     },
     {
      "tipo": "opcion_multiple",
-     "enunciado": "What does the sister never wear?",
+     "enunciado": "What does Ana wear on Friday?",
      "opciones": [
-      "shorts",
-      "jeans",
-      "a shirt"
+      "jeans and a t-shirt",
+      "a coat and boots",
+      "her pyjamas"
      ],
-     "respuesta": "shorts"
+     "respuesta": "jeans and a t-shirt"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "The blue jacket is expensive.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "Laura works with Ana.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "What does Laura buy for the winter?",
+     "respuesta": "socks",
+     "aceptadas": [
+      "socks for the winter"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "Why is Ana late for work?",
+     "opciones": [
+      "she tries on all her clothes",
+      "she wears her pyjamas",
+      "she buys a hat"
+     ],
+     "respuesta": "she tries on all her clothes"
     }
    ]
   },

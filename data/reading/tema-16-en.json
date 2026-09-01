@@ -2,43 +2,332 @@
  "tema": 16,
  "textos": [
   {
-   "titulo": "Su ciudad",
-   "texto": "Ana likes her city. In the city centre there is a big square with a park. Near the park there is a museum and a theatre. You can visit the museum on Sunday, because it is open. On Monday it is closed. There is also a library, and Ana studies there when she is not in her apartment. The hospital is far from her house, but the pharmacy is very near. There is a bank next to the post office, and a café on the street. Ana often has a coffee there with Laura. The station is not far from the city centre and the airport is far. There is a bridge and a stadium too. It is a nice place to live.",
+   "titulo": "La ciudad de Ana",
+   "texto": "Ana lives in a small city. Her house is in a street near the city centre. In the centre there is a big square with a church and the town hall. Next to the square there is a bank and a post office. The bank is open from nine to four, but on Sunday it is closed. There is a pharmacy in the same street: it is open every day. Ana works in a school near the park. The park is very big and there is a zoo in it. On Saturday she visits the museum or she goes to the cinema with Laura. The cinema is in a street near the theatre. The library is far from her house, but the school is very near. There is a station, a hotel and a hospital in this city, and the airport is far, near the bridge. One can visit all the places in one day.",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
-     "enunciado": "When can you visit the museum?",
+     "enunciado": "What is in the big square?",
      "opciones": [
-      "on Sunday",
-      "on Monday",
-      "every day"
+      "a church and the town hall",
+      "the station and the airport",
+      "a school and a zoo"
      ],
-     "respuesta": "on Sunday"
+     "respuesta": "a church and the town hall"
     },
     {
      "tipo": "vf",
-     "enunciado": "The pharmacy is very near.",
+     "enunciado": "The bank is open on Sunday.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "Where does Ana work?",
+     "respuesta": "in a school",
+     "aceptadas": [
+      "a school",
+      "school",
+      "in a school near the park"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What is in the park?",
+     "opciones": [
+      "a zoo",
+      "a museum",
+      "a stadium"
+     ],
+     "respuesta": "a zoo"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "Laura lives near the cinema.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "The library is near the house of Ana.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What is near the bridge?",
+     "opciones": [
+      "the airport",
+      "the pharmacy",
+      "the town hall"
+     ],
+     "respuesta": "the airport"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "The pharmacy is open every day.",
+     "respuesta": "verdadero"
+    }
+   ]
+  },
+  {
+   "titulo": "Un domingo en el centro",
+   "texto": "On Sunday Ana and Paul visit the city centre. First they go to the big square, because on Sunday there is a market there. Then they visit the museum next to the church. The museum is open from ten to six and it is not expensive: the students do not pay. After the museum they are hungry, so they eat in a café near the theatre. The café is small, but the food is delicious. At four they walk to the park and they visit the zoo. Paul prefers the stadium, because it is very big, but today the stadium is closed. The library and the bank are closed too: it is Sunday. The pharmacy near the station is open every day. At seven they come back: the park is not far from the house of Ana, and Paul walks to his house.",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "Why do they go to the square first?",
+     "opciones": [
+      "because on Sunday there is a market",
+      "because the museum is closed",
+      "because they are hungry"
+     ],
+     "respuesta": "because on Sunday there is a market"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "The students pay in the museum.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "Where do Ana and Paul eat?",
+     "respuesta": "in a café",
+     "aceptadas": [
+      "a café",
+      "in a café near the theatre",
+      "café"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What do they visit at four?",
+     "opciones": [
+      "the zoo",
+      "the stadium",
+      "the library"
+     ],
+     "respuesta": "the zoo"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "The stadium is closed today.",
      "respuesta": "verdadero"
     },
     {
      "tipo": "vfnd",
-     "enunciado": "The library is next to the museum.",
+     "enunciado": "The museum is near the station.",
      "respuesta": "no dice"
     },
     {
      "tipo": "opcion_multiple",
-     "enunciado": "Where does Ana study when she is not in her apartment?",
+     "enunciado": "What is open every day?",
      "opciones": [
-      "the library",
-      "the café",
-      "the park"
+      "the pharmacy",
+      "the bank",
+      "the library"
      ],
-     "respuesta": "the library"
+     "respuesta": "the pharmacy"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "The park is far from the house of Ana.",
+     "respuesta": "falso"
+    }
+   ]
+  },
+  {
+   "titulo": "Lugares cerca de casa",
+   "texto": "Laura lives in a street near the station. In her street there is a pharmacy, a café and a small shop. The pharmacy is open every day, but the shop is closed on Sunday. The hospital is not far: it is next to the park. Her school is in the city centre, near the square and the church. Laura can walk to the school in twenty minutes. The library is between the museum and the town hall. She visits the library every Tuesday, because there one can read and study. The post office and the bank are in the same street, next to the police station. On Saturday Laura goes to the cinema or to the theatre with Ana. The cinema is near the stadium, but the theatre is far. The airport is very far from the city centre. Laura prefers her street: all the places are near.",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What is in the street of Laura?",
+     "opciones": [
+      "a pharmacy, a café and a shop",
+      "the hospital and the park",
+      "the museum and the library"
+     ],
+     "respuesta": "a pharmacy, a café and a shop"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "The shop is open on Sunday.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "How many minutes does Laura walk to the school?",
+     "respuesta": "twenty",
+     "aceptadas": [
+      "20",
+      "twenty minutes"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "Where is the library?",
+     "opciones": [
+      "between the museum and the town hall",
+      "next to the park",
+      "near the airport"
+     ],
+     "respuesta": "between the museum and the town hall"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Laura visits the library every Tuesday.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "The café in her street is expensive.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What is near the stadium?",
+     "opciones": [
+      "the cinema",
+      "the theatre",
+      "the hospital"
+     ],
+     "respuesta": "the cinema"
     },
     {
      "tipo": "vf",
      "enunciado": "The airport is near the city centre.",
      "respuesta": "falso"
+    }
+   ]
+  },
+  {
+   "titulo": "Un día de visitas",
+   "texto": "Paul has a free day, so he visits many places in the city. In the morning he goes to the bank, because he needs money. The bank is open at nine. Then he goes to the post office in the same square. At eleven he is in the museum near the church: today it is free for the students. The museum is very big and one can see a lot of things there. At one Paul eats in a café near the park. After lunch he visits the zoo with his friend Lee. The zoo is open from ten to five and it is not expensive. Then they walk to the library, but the library is closed on Saturday. So they go to the cinema in the city centre. The cinema is near the stadium and the theatre. At night Paul is very tired: this city is not small!",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "Why does Paul go to the bank?",
+     "opciones": [
+      "because he needs money",
+      "because it is free",
+      "because it is near the museum"
+     ],
+     "respuesta": "because he needs money"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "The museum is free for the students today.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "Who visits the zoo with Paul?",
+     "respuesta": "Lee",
+     "aceptadas": [
+      "lee",
+      "his friend lee"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "Why do they not visit the library?",
+     "opciones": [
+      "it is closed on Saturday",
+      "it is very far",
+      "it is expensive"
+     ],
+     "respuesta": "it is closed on Saturday"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "The zoo is open from ten to five.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "Lee works in the city centre.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "Where does Paul eat at one?",
+     "opciones": [
+      "in a café near the park",
+      "in the museum",
+      "in the zoo"
+     ],
+     "respuesta": "in a café near the park"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Paul is tired at night.",
+     "respuesta": "verdadero"
+    }
+   ]
+  },
+  {
+   "titulo": "Examen · La ciudad de Marie",
+   "texto": "Marie lives in a big city, in a street near the park. In the city centre there is a square with a church, the town hall and the police station. The bank and the post office are in the same street, but the bank is closed on Saturday. There is a pharmacy near her house and it is open every day. Marie works in a hospital far from the city centre. On Saturday she visits the museum or she goes to the cinema with her sister. The museum is next to the library and it is not expensive. The theatre is near the station, and there is a big stadium near the bridge. Marie prefers the park: one can walk there and it is very beautiful. The airport is very far from her house. In this city one can visit many places in one day.",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What is in the square?",
+     "opciones": [
+      "a church, the town hall and the police station",
+      "the bank and the post office",
+      "the museum and the library"
+     ],
+     "respuesta": "a church, the town hall and the police station"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "The bank is open on Saturday.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "Where does Marie work?",
+     "respuesta": "in a hospital",
+     "aceptadas": [
+      "a hospital",
+      "hospital"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What is next to the library?",
+     "opciones": [
+      "the museum",
+      "the theatre",
+      "the stadium"
+     ],
+     "respuesta": "the museum"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "The sister of Marie lives near the park.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "The pharmacy is open every day.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "What place does Marie prefer?",
+     "respuesta": "the park",
+     "aceptadas": [
+      "park"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What is near the bridge?",
+     "opciones": [
+      "a big stadium",
+      "the airport",
+      "the church"
+     ],
+     "respuesta": "a big stadium"
     }
    ]
   }

@@ -178,9 +178,12 @@ ese esa esos esas aquel primer proximo pasado
 
 const pareceEspanol = (t) => {
   const palabras = t.toLowerCase().split(/[^a-záéíóúñü]+/).filter(Boolean)
-  if (/[¿¡ñáéíóú]/i.test(t)) return true
+  if (/[¿¡ñ]/i.test(t)) return true
   if (palabras.some((w) => SOLO_ES.has(w))) return true
   if (MARCA_EN.test(t)) return false
+  // Las tildes solas no bastan: "The café is expensive." es inglés. Solo deciden cuando
+  // no hay ninguna marca inglesa, que es el caso de "Marie pide un café."
+  if (/[áéíóú]/i.test(t)) return true
   // Sin funcionales inglesas: vale con que alguna palabra esté en el léxico del curso.
   return !palabras.some((w) => temaDe(w) !== undefined)
 }

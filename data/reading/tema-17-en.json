@@ -2,43 +2,336 @@
  "tema": 17,
  "textos": [
   {
-   "titulo": "Cómo llegar",
-   "texto": "Excuse me, where is the museum? asks Mrs Lee. Ana has a map and she helps her. Take the bus number five, she says. The stop is on the corner, near the traffic light. It is not far. Then go straight and turn left at the bank. The museum is next to the post office. You can also go on foot: it is twenty minutes. Thank you very much! says Mrs Lee. Ana never drives a car in the city, because it is slow. She takes the metro or her bike. Her bike is fast and it is free! Paul has a motorbike and Laura takes the train to work. When they go far, they take a plane. Cross the street here, says Ana. And do not take a taxi: it is very expensive!",
+   "titulo": "Cómo llega Ana al trabajo",
+   "texto": "Ana works in a school far from her house, so she never goes on foot. Every morning she takes the bus at the stop near the park. The bus is slow, but the ticket is cheap. She reads a book on the bus. When there is a lot of traffic she prefers the metro: it is very fast. The metro station is near the square, next to the traffic light. Paul has a car and he drives very well, but the road is very slow in the morning. Laura has a bike and she goes to the library on it. In summer Ana takes her bike too, because the road near the park is beautiful. She always has a map of the city in her bag: when she needs a street, she reads the map. On Saturday she takes a taxi with Laura, and on Sunday they walk: the shops are near and one can cross the square on foot.",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
-     "enunciado": "Which bus must Mrs Lee take?",
+     "enunciado": "How does Ana go to work every morning?",
      "opciones": [
-      "number five",
-      "number two",
-      "number ten"
+      "by bus",
+      "by car",
+      "on foot"
      ],
-     "respuesta": "number five"
+     "respuesta": "by bus"
     },
     {
      "tipo": "vf",
-     "enunciado": "Ana drives a car in the city.",
+     "enunciado": "The bus ticket is expensive.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "What does Ana take when there is a lot of traffic?",
+     "respuesta": "the metro",
+     "aceptadas": [
+      "metro"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "Who drives a car?",
+     "opciones": [
+      "Paul",
+      "Ana",
+      "Laura"
+     ],
+     "respuesta": "Paul"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "The bike of Laura is new.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Ana has a map of the city in her bag.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "Why does Ana take her bike in summer?",
+     "opciones": [
+      "the road near the park is beautiful",
+      "the bus is expensive",
+      "the metro is closed"
+     ],
+     "respuesta": "the road near the park is beautiful"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "On Sunday Ana and Laura take a taxi.",
+     "respuesta": "falso"
+    }
+   ]
+  },
+  {
+   "titulo": "Del centro a la estación",
+   "texto": "Paul is in the city centre and he wants to go to the station. Where is the station? It is not far: one can go on foot in fifteen minutes. From the square Paul goes straight and he crosses the street at the traffic light. Then he turns left at the corner of the bank. He continues straight on the sidewalk for five minutes, and after the church he turns right. The station is next to the park. There Paul buys a ticket for the train. The train is fast: it goes to the airport in twenty minutes. On the road there are many cars, a bus and two motorbikes, so a taxi is very slow today. Paul prefers the train. His friend Lee takes the metro, because the metro stop is near his house. In this city one can go from one place to another place by bus, by train, by metro, by taxi or on foot.",
+   "preguntas": [
+    {
+     "tipo": "completar_dato",
+     "enunciado": "How many minutes on foot is the station?",
+     "respuesta": "fifteen",
+     "aceptadas": [
+      "15",
+      "fifteen minutes"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "Where does Paul turn left?",
+     "opciones": [
+      "at the corner of the bank",
+      "at the traffic light",
+      "after the church"
+     ],
+     "respuesta": "at the corner of the bank"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "The station is next to the park.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "Why is a taxi slow today?",
+     "opciones": [
+      "there are many cars on the road",
+      "the road is closed",
+      "the taxi is far"
+     ],
+     "respuesta": "there are many cars on the road"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "The train goes to the airport in twenty minutes.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "The ticket for the train is expensive.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "What does Lee take?",
+     "respuesta": "the metro",
+     "aceptadas": [
+      "metro"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What does Paul prefer?",
+     "opciones": [
+      "the train",
+      "the taxi",
+      "the bus"
+     ],
+     "respuesta": "the train"
+    }
+   ]
+  },
+  {
+   "titulo": "En bicicleta por la ciudad",
+   "texto": "Laura has a red bike and she goes to all the places on it. She never takes the bus, because the ticket is expensive and the bus is very slow. Every morning she goes out at seven. From her house she turns right and she continues straight for ten minutes. At the corner of the pharmacy there is a traffic light: she stops there and she crosses the street. Then she turns left and she goes to the school on the road near the park. It is not good to go by bike on the sidewalk, so Laura is always on the road. She goes fast, but the cars go faster. On Sunday she takes her bike to the zoo with Ana. Ana does not have a bike: she takes a taxi or she goes on foot. In winter Laura takes the metro, because the road is not good for a bike.",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "Why does Laura not take the bus?",
+     "opciones": [
+      "the ticket is expensive and the bus is slow",
+      "the stop is far",
+      "she does not have money"
+     ],
+     "respuesta": "the ticket is expensive and the bus is slow"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "What time does Laura go out?",
+     "respuesta": "at seven",
+     "aceptadas": [
+      "seven",
+      "7"
+     ]
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Laura goes by bike on the sidewalk.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What is at the corner of the pharmacy?",
+     "opciones": [
+      "a traffic light",
+      "a bus stop",
+      "the school"
+     ],
+     "respuesta": "a traffic light"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Ana has a bike too.",
      "respuesta": "falso"
     },
     {
      "tipo": "vfnd",
-     "enunciado": "Mrs Lee has a map.",
+     "enunciado": "The bike of Laura is expensive.",
      "respuesta": "no dice"
     },
     {
      "tipo": "opcion_multiple",
-     "enunciado": "Where must you turn left?",
+     "enunciado": "What does Laura take in winter?",
      "opciones": [
-      "at the bank",
-      "at the museum",
-      "at the traffic light"
+      "the metro",
+      "a taxi",
+      "the bus"
      ],
-     "respuesta": "at the bank"
+     "respuesta": "the metro"
     },
     {
      "tipo": "vf",
-     "enunciado": "Laura takes the train to work.",
+     "enunciado": "The cars go faster than the bike of Laura.",
      "respuesta": "verdadero"
+    }
+   ]
+  },
+  {
+   "titulo": "Un viaje corto",
+   "texto": "On Saturday Ana and Paul go to another city, two hours from here. First they take the metro to the station: the metro is fast and the ticket is not expensive. At the station they buy two tickets for the train at nine. The train is slow, but one can read and eat on it. In the other city they do not take a bus: they have a map and they go on foot. From the station they turn right, they cross a big square and they continue straight. At the corner of the museum they turn left. There is a hotel near the church and a café next to it. After lunch they take a boat for one hour. The boat is very slow, but the city is beautiful from it. At six they take the train again. Paul wants to come back by plane, but the plane is very expensive.",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "How do they go to the station?",
+     "opciones": [
+      "by metro",
+      "by bus",
+      "on foot"
+     ],
+     "respuesta": "by metro"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "What time is the train?",
+     "respuesta": "at nine",
+     "aceptadas": [
+      "nine",
+      "9"
+     ]
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "In the other city they take a bus.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "Where do they turn left?",
+     "opciones": [
+      "at the corner of the museum",
+      "at the station",
+      "near the church"
+     ],
+     "respuesta": "at the corner of the museum"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "The boat is fast.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "They eat in the café next to the hotel.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "How long is the boat?",
+     "respuesta": "one hour",
+     "aceptadas": [
+      "an hour",
+      "one hour"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "Why do they not come back by plane?",
+     "opciones": [
+      "it is very expensive",
+      "it is very slow",
+      "there is not any plane"
+     ],
+     "respuesta": "it is very expensive"
+    }
+   ]
+  },
+  {
+   "titulo": "Examen · Cómo se mueve Marie",
+   "texto": "Marie works in a hospital far from her house. She does not have a car and she does not drive, so every morning she takes the bus at the stop near her street. The bus is slow, but the ticket is cheap. When she is late she prefers the metro: it is very fast. From the metro stop she goes straight for five minutes, she crosses the street at the traffic light and she turns right at the corner of the pharmacy. The hospital is next to the park. On Saturday Marie takes her bike: on the road near the park there are not many cars. She never goes on the sidewalk with the bike. On Sunday she goes to another city by train, and she always has a map in her bag. Marie does not take a taxi: it is very expensive.",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "How does Marie go to work every morning?",
+     "opciones": [
+      "by bus",
+      "by car",
+      "by bike"
+     ],
+     "respuesta": "by bus"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Marie drives a car.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "What does Marie take when she is late?",
+     "respuesta": "the metro",
+     "aceptadas": [
+      "metro"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "Where does Marie turn right?",
+     "opciones": [
+      "at the corner of the pharmacy",
+      "at the traffic light",
+      "near the hospital"
+     ],
+     "respuesta": "at the corner of the pharmacy"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "The hospital is next to the park.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "The bike of Marie is red.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "How does Marie go to another city on Sunday?",
+     "respuesta": "by train",
+     "aceptadas": [
+      "train",
+      "the train"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "Why does Marie not take a taxi?",
+     "opciones": [
+      "it is very expensive",
+      "it is very slow",
+      "she prefers the bike"
+     ],
+     "respuesta": "it is very expensive"
     }
    ]
   }

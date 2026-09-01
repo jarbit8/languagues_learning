@@ -1,39 +1,347 @@
-{ "tema": 16,
-"dialogos": [
-{ "titulo": "Recomendando lugares",
-"lineas": [
-{"hablante":"A","texto":"Is there a good museum in this city?"},
-{"hablante":"B","texto":"Yes, there is a great museum near the park."},
-{"hablante":"A","texto":"Can we walk there?"},
-{"hablante":"B","texto":"Yes, it's near, we can walk."},
-{"hablante":"A","texto":"Is it open on Sundays?"},
-{"hablante":"B","texto":"No, it's closed on Sundays."},
-{"hablante":"A","texto":"What about a good restaurant?"},
-{"hablante":"B","texto":"There's a nice one next to the library."}
-],
-"preguntas": [
-{"tipo":"opcion_multiple","enunciado":"¿Dónde está el museo?","opciones":["near the park","near the station","in the centre"],"respuesta":"near the park"},
-{"tipo":"vf","enunciado":"El museo está abierto los domingos.","respuesta":"falso"},
-{"tipo":"completar_dato","enunciado":"¿Dónde está el restaurante recomendado?","respuesta":"next to the library"},
-{"tipo":"vf","enunciado":"El restaurante está cerca del parque.","respuesta":"falso"},
-{"tipo":"completar_dato","enunciado":"¿Qué le pregunta A a B sobre el restaurante?","respuesta":"what about a good restaurant?","aceptadas":["a good restaurant"]}
-] },
-{ "titulo": "En la biblioteca",
-"lineas": [
-{"hablante":"A","texto":"Excuse me, is the library open today?"},
-{"hablante":"B","texto":"Yes, it's open today."},
-{"hablante":"A","texto":"What time is it open?"},
-{"hablante":"B","texto":"It's open at nine o'clock."},
-{"hablante":"A","texto":"Is the library near the park?"},
-{"hablante":"B","texto":"No, it's near the school."},
-{"hablante":"A","texto":"Thank you! I want to visit it."},
-{"hablante":"B","texto":"You can visit it today."}
-],
-"preguntas": [
-{"tipo":"anota_la_hora","enunciado":"¿A qué hora abre la biblioteca?","respuesta":"9:00","aceptadas":["nine o'clock"]},
-{"tipo":"vf","enunciado":"La biblioteca está cerca del parque.","respuesta":"falso"},
-{"tipo":"opcion_multiple","enunciado":"¿De qué lugar está cerca la biblioteca?","opciones":["the school","the park","the hospital"],"respuesta":"the school"},
-{"tipo":"completar_dato","enunciado":"¿Qué quiere hacer A?","respuesta":"visit it","aceptadas":["to visit the library","visit the library"]},
-{"tipo":"opcion_multiple","enunciado":"¿Está abierta la biblioteca hoy?","opciones":["yes","no","only Sundays"],"respuesta":"yes"}
-] }
-] }
+{
+ "tema": 16,
+ "dialogos": [
+  {
+   "titulo": "Recomendando lugares",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "Is there a good museum in this city?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes, there is a great museum near the park."
+    },
+    {
+     "hablante": "A",
+     "texto": "Can we walk there?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes, it's near, we can walk."
+    },
+    {
+     "hablante": "A",
+     "texto": "Is it open on Sundays?"
+    },
+    {
+     "hablante": "B",
+     "texto": "No, it's closed on Sundays."
+    },
+    {
+     "hablante": "A",
+     "texto": "What about a good restaurant?"
+    },
+    {
+     "hablante": "B",
+     "texto": "There's a nice one next to the library."
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Dónde está el museo?",
+     "opciones": [
+      "near the park",
+      "near the station",
+      "in the centre"
+     ],
+     "respuesta": "near the park"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "El museo está abierto los domingos.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Dónde está el restaurante recomendado?",
+     "respuesta": "next to the library"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "El restaurante está cerca del parque.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Qué le pregunta A a B sobre el restaurante?",
+     "respuesta": "what about a good restaurant?",
+     "aceptadas": [
+      "a good restaurant"
+     ]
+    }
+   ]
+  },
+  {
+   "titulo": "En la biblioteca",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "Excuse me, is the library open today?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes, it's open today."
+    },
+    {
+     "hablante": "A",
+     "texto": "What time is it open?"
+    },
+    {
+     "hablante": "B",
+     "texto": "It's open at nine o'clock."
+    },
+    {
+     "hablante": "A",
+     "texto": "Is the library near the park?"
+    },
+    {
+     "hablante": "B",
+     "texto": "No, it's near the school."
+    },
+    {
+     "hablante": "A",
+     "texto": "Thank you! I want to visit it."
+    },
+    {
+     "hablante": "B",
+     "texto": "You can visit it today."
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "anota_la_hora",
+     "enunciado": "¿A qué hora abre la biblioteca?",
+     "respuesta": "9:00",
+     "aceptadas": [
+      "nine o'clock"
+     ]
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "La biblioteca está cerca del parque.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿De qué lugar está cerca la biblioteca?",
+     "opciones": [
+      "the school",
+      "the park",
+      "the hospital"
+     ],
+     "respuesta": "the school"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Qué quiere hacer A?",
+     "respuesta": "visit it",
+     "aceptadas": [
+      "to visit the library",
+      "visit the library"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Está abierta la biblioteca hoy?",
+     "opciones": [
+      "yes",
+      "no",
+      "only Sundays"
+     ],
+     "respuesta": "yes"
+    }
+   ]
+  },
+  {
+   "titulo": "¿Está abierto?",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "Is the museum open today?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes, from ten to six."
+    },
+    {
+     "hablante": "A",
+     "texto": "Is it far from here?"
+    },
+    {
+     "hablante": "B",
+     "texto": "No, it is near. Next to the church."
+    },
+    {
+     "hablante": "A",
+     "texto": "And the library?"
+    },
+    {
+     "hablante": "B",
+     "texto": "The library is closed on Sunday."
+    },
+    {
+     "hablante": "A",
+     "texto": "Can one eat near the museum?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes, there is a café in the square."
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿A qué hora abre el museo?",
+     "respuesta": "at ten",
+     "aceptadas": [
+      "ten",
+      "from ten to six"
+     ]
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "La biblioteca está abierta el domingo.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Dónde está el museo?",
+     "opciones": [
+      "next to the church",
+      "near the station",
+      "in the park"
+     ],
+     "respuesta": "next to the church"
+    }
+   ]
+  },
+  {
+   "titulo": "Un plan para el sábado",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "What can we visit on Saturday?"
+    },
+    {
+     "hablante": "B",
+     "texto": "The zoo is in the park. It is very big."
+    },
+    {
+     "hablante": "A",
+     "texto": "Is the park far from your house?"
+    },
+    {
+     "hablante": "B",
+     "texto": "No, it is very near."
+    },
+    {
+     "hablante": "A",
+     "texto": "And in the evening?"
+    },
+    {
+     "hablante": "B",
+     "texto": "We can go to the cinema or to the theatre."
+    },
+    {
+     "hablante": "A",
+     "texto": "I prefer the cinema. Where is it?"
+    },
+    {
+     "hablante": "B",
+     "texto": "In the city centre, near the stadium."
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué van a visitar en el día?",
+     "opciones": [
+      "the zoo",
+      "the museum",
+      "the library"
+     ],
+     "respuesta": "the zoo"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "El parque está lejos.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Dónde está el cine?",
+     "respuesta": "in the city centre",
+     "aceptadas": [
+      "city centre",
+      "near the stadium"
+     ]
+    }
+   ]
+  },
+  {
+   "titulo": "Examen · La ciudad de Marie",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "Where do you live, Marie?"
+    },
+    {
+     "hablante": "B",
+     "texto": "In a street near the park."
+    },
+    {
+     "hablante": "A",
+     "texto": "Is your house far from the city centre?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes, and I work in a hospital. It is far too."
+    },
+    {
+     "hablante": "A",
+     "texto": "What can one visit here?"
+    },
+    {
+     "hablante": "B",
+     "texto": "The museum, next to the library."
+    },
+    {
+     "hablante": "A",
+     "texto": "Is the bank open on Saturday?"
+    },
+    {
+     "hablante": "B",
+     "texto": "No, it is closed. The pharmacy is open."
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Dónde vive Marie?",
+     "opciones": [
+      "in a street near the park",
+      "in the city centre",
+      "near the hospital"
+     ],
+     "respuesta": "in a street near the park"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Dónde trabaja Marie?",
+     "respuesta": "in a hospital",
+     "aceptadas": [
+      "a hospital",
+      "hospital"
+     ]
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "El banco está abierto el sábado.",
+     "respuesta": "falso"
+    }
+   ]
+  }
+ ]
+}

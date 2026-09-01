@@ -2,23 +2,178 @@
  "tema": 14,
  "textos": [
   {
-   "titulo": "Una noche en el restaurante",
-   "texto": "It is Friday and Ana is in a restaurant with Paul and Laura. The waiter comes with the menu. Good evening! What would you like to drink? I would like water, please, says Ana. I am very thirsty. Paul wants a coffee and Laura orders a juice. Then they order the food. Ana would like fish with vegetables. Paul is very hungry and he orders chicken with rice. Laura wants a salad, because she is not very hungry. The food is hot and delicious. There is a fork, a knife and a spoon on every plate, and a napkin too. For dessert, Ana orders ice cream. It is cold and sweet! At the end, Paul asks for the bill. The tip is on the plate. The waiter says: thank you, good night!",
+   "titulo": "El restaurante de Ana",
+   "texto": "On Friday Ana and Laura go to a restaurant near their house. The waiter comes with the menu card and two glasses of water. Ana is very thirsty, so she wants a juice; Laura orders a hot coffee. On the menu there is chicken with rice, fish with vegetables and a big salad. Ana orders the fish, because it is delicious in this restaurant. Laura wants the chicken with rice. On the table there are two plates, two forks, two knives, a spoon and two napkins. The food is not salty and it is not cold: it is very tasty. For dessert Laura wants an ice cream and Ana orders a tea with sugar. The ice cream is very sweet. After dinner the waiter comes with the bill. It is not expensive. Ana and Laura put the money and a tip on the table. Then they go out and they walk back. Laura wants to come back on Sunday.",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
-     "enunciado": "What does Ana drink?",
+     "enunciado": "What does Ana order to drink?",
      "opciones": [
-      "water",
-      "coffee",
-      "juice"
+      "a juice",
+      "a hot coffee",
+      "a beer"
      ],
-     "respuesta": "water"
+     "respuesta": "a juice"
     },
     {
      "tipo": "vf",
-     "enunciado": "Paul is very hungry.",
+     "enunciado": "Ana orders the chicken.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "What does Laura want for dessert?",
+     "respuesta": "an ice cream",
+     "aceptadas": [
+      "ice cream"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What is on the table?",
+     "opciones": [
+      "plates, forks, knives, a spoon and napkins",
+      "only two glasses",
+      "the menu card and the bill"
+     ],
+     "respuesta": "plates, forks, knives, a spoon and napkins"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "The restaurant is near the house of Laura.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "The bill is expensive.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "Why does Ana order the fish?",
+     "opciones": [
+      "because it is delicious here",
+      "because it is cheap",
+      "because she is not hungry"
+     ],
+     "respuesta": "because it is delicious here"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Ana and Laura put a tip on the table.",
      "respuesta": "verdadero"
+    }
+   ]
+  },
+  {
+   "titulo": "Lo que bebe Paul",
+   "texto": "Paul drinks much water every day. In the morning he is always thirsty, so he has a big glass of water before breakfast. Then he drinks a hot coffee with milk and sugar; his coffee is very sweet. At lunch he never drinks beer or wine, because he works in the afternoon. He drinks a soft drink or an orange juice. In the evening he sometimes has a cup of tea with his mother. Paul does not want cold drinks in winter: he wants hot tea. On Saturday he goes to a restaurant with Lee. They order two beers and a big plate of pasta. The pasta is delicious, but it is very salty. For dessert Paul wants an ice cream and Lee orders a coffee. Then Lee wants the bill. On the table there are two napkins, two forks and a knife. They put the money and a tip for the waiter.",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What does Paul drink before breakfast?",
+     "opciones": [
+      "a big glass of water",
+      "a coffee with milk",
+      "an orange juice"
+     ],
+     "respuesta": "a big glass of water"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Paul drinks beer at lunch.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "Why does Paul not drink beer at lunch?",
+     "respuesta": "because he works in the afternoon",
+     "aceptadas": [
+      "he works in the afternoon",
+      "because he works"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What does Paul want in winter?",
+     "opciones": [
+      "hot tea",
+      "cold drinks",
+      "a soft drink"
+     ],
+     "respuesta": "hot tea"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "The mother of Paul drinks tea too.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "The pasta in the restaurant is salty.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "What does Paul want for dessert?",
+     "respuesta": "an ice cream",
+     "aceptadas": [
+      "ice cream"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "Who wants the bill?",
+     "opciones": [
+      "Lee",
+      "Paul",
+      "the waiter"
+     ],
+     "respuesta": "Lee"
+    }
+   ]
+  },
+  {
+   "titulo": "El cumpleaños de Laura",
+   "texto": "It is the birthday of Laura, so her friends go to a restaurant near her house. There are five friends at the table: Laura, Ana, Paul, Lee and Maria. The waiter comes with the menu card and a glass of water for every friend. Laura is not hungry, but she is very thirsty: she orders a big juice. Ana wants soup and a salad. Paul does not eat meat, so he orders fish with potatoes. Lee wants chicken with rice and a beer. Maria orders pasta with tomato and a glass of wine. On the table there are plates, forks, knives, spoons and napkins. The food is delicious and nothing is salty. For dessert there is an ice cream for all the friends. It is very sweet! Then the waiter comes with the bill and a hot coffee for Laura. The friends put the money and a big tip on the table.",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "Why do the friends go to the restaurant?",
+     "opciones": [
+      "it is the birthday of Laura",
+      "they are very hungry",
+      "the food is cheap"
+     ],
+     "respuesta": "it is the birthday of Laura"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Laura is very hungry.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "What does Paul order?",
+     "respuesta": "fish with potatoes",
+     "aceptadas": [
+      "fish"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What does Maria drink?",
+     "opciones": [
+      "a glass of wine",
+      "a beer",
+      "a coffee"
+     ],
+     "respuesta": "a glass of wine"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "The food is salty.",
+     "respuesta": "falso"
     },
     {
      "tipo": "vfnd",
@@ -27,18 +182,155 @@
     },
     {
      "tipo": "opcion_multiple",
-     "enunciado": "What does Ana order for dessert?",
+     "enunciado": "What is the dessert?",
      "opciones": [
-      "ice cream",
-      "fruit",
-      "coffee"
+      "an ice cream",
+      "a fruit salad",
+      "a hot coffee"
      ],
-     "respuesta": "ice cream"
+     "respuesta": "an ice cream"
     },
     {
      "tipo": "vf",
-     "enunciado": "There is no tip on the plate.",
+     "enunciado": "The friends put a big tip on the table.",
+     "respuesta": "verdadero"
+    }
+   ]
+  },
+  {
+   "titulo": "Un café con Lee",
+   "texto": "Every Tuesday Ana has a coffee with Lee. They go to a small restaurant next to her house. Ana always orders a hot coffee with milk; Lee wants a cold soft drink, because he is thirsty. On the table there is a napkin, a spoon and a cup for every friend. Ana does not want anything to eat, but Lee is hungry: he orders a sandwich with cheese and a salad. He wants a glass of water too: 'I would like some water, please.' The sandwich is very salty, but the salad is delicious. For dessert Lee wants an ice cream, but today there is not any ice cream, so he orders a tea with sugar. The tea is very sweet and very hot. Then Ana wants the bill. It is not expensive: two coffees, a sandwich, a salad and a tea. She puts the money and a tip on the plate.",
+   "preguntas": [
+    {
+     "tipo": "completar_dato",
+     "enunciado": "What day do Ana and Lee have a coffee?",
+     "respuesta": "Tuesday",
+     "aceptadas": [
+      "on tuesday",
+      "every tuesday"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What does Lee order to drink first?",
+     "opciones": [
+      "a cold soft drink",
+      "a hot coffee",
+      "a beer"
+     ],
+     "respuesta": "a cold soft drink"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Ana orders a sandwich.",
      "respuesta": "falso"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "Why does Lee not have an ice cream?",
+     "opciones": [
+      "there is not any ice cream today",
+      "it is very sweet",
+      "he is not hungry"
+     ],
+     "respuesta": "there is not any ice cream today"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "The sandwich is very salty.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "Lee works near the restaurant.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "What does Lee order for dessert?",
+     "respuesta": "a tea with sugar",
+     "aceptadas": [
+      "a tea",
+      "tea"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "Where does Ana put the money and the tip?",
+     "opciones": [
+      "on the plate",
+      "on the napkin",
+      "in her bag"
+     ],
+     "respuesta": "on the plate"
+    }
+   ]
+  },
+  {
+   "titulo": "Examen · Marie en el restaurante",
+   "texto": "On Saturday Marie goes to a restaurant with her sister. The waiter comes with the menu card and two glasses of cold water. Marie is very thirsty and she orders an orange juice; her sister wants a hot tea with sugar. On the menu there is fish, chicken and pasta. Marie does not eat meat, so she orders fish with vegetables. Her sister wants pasta with tomato. On the table there are two plates, two forks, two knives and two napkins, but there is not any spoon. The food is delicious and it is not salty. For dessert Marie wants an ice cream: it is very sweet. Her sister orders a coffee in a small cup. Then the waiter comes with the bill. It is not expensive. Marie puts the money and a tip on the table, and the two sisters go out.",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What does Marie order to drink?",
+     "opciones": [
+      "an orange juice",
+      "a hot tea",
+      "a glass of wine"
+     ],
+     "respuesta": "an orange juice"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Marie eats meat.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "What is not on the table?",
+     "respuesta": "a spoon",
+     "aceptadas": [
+      "spoon",
+      "the spoon"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What does the sister of Marie order to eat?",
+     "opciones": [
+      "pasta with tomato",
+      "fish with vegetables",
+      "chicken with rice"
+     ],
+     "respuesta": "pasta with tomato"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "The sister of Marie is thirsty too.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "The food is salty.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "What does Marie want for dessert?",
+     "respuesta": "an ice cream",
+     "aceptadas": [
+      "ice cream"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What does Marie put on the table?",
+     "opciones": [
+      "the money and a tip",
+      "the menu card",
+      "the napkins"
+     ],
+     "respuesta": "the money and a tip"
     }
    ]
   }

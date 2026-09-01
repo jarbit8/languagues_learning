@@ -1,39 +1,354 @@
-{ "tema": 17,
-"dialogos": [
-{ "titulo": "Pidiendo direcciones",
-"lineas": [
-{"hablante":"A","texto":"Excuse me, where is the station?"},
-{"hablante":"B","texto":"Go straight and turn left at the corner."},
-{"hablante":"A","texto":"Is it far?"},
-{"hablante":"B","texto":"No, it's near. Five minutes on foot."},
-{"hablante":"A","texto":"Can I take the bus?"},
-{"hablante":"B","texto":"Yes, take the number ten bus."},
-{"hablante":"A","texto":"Thank you very much!"},
-{"hablante":"B","texto":"You're welcome, have a nice day!"}
-],
-"preguntas": [
-{"tipo":"opcion_multiple","enunciado":"¿Hacia dónde debe girar A?","opciones":["right","left","straight"],"respuesta":"left"},
-{"tipo":"vf","enunciado":"La estación está lejos.","respuesta":"falso"},
-{"tipo":"completar_dato","enunciado":"¿Qué número de bus puede tomar?","respuesta":"ten","aceptadas":["number ten","10"]},
-{"tipo":"opcion_multiple","enunciado":"¿En cuánto tiempo se llega a pie a la estación?","opciones":["five minutes","ten minutes","fifteen minutes"],"respuesta":"five minutes"},
-{"tipo":"completar_dato","enunciado":"¿Qué le dice B a A al despedirse?","respuesta":"have a nice day","aceptadas":["you're welcome, have a good trip"]}
-] },
-{ "titulo": "En la estación",
-"lineas": [
-{"hablante":"A","texto":"Excuse me, where is the train?"},
-{"hablante":"B","texto":"The train is at the station."},
-{"hablante":"A","texto":"What time does the train arrive?"},
-{"hablante":"B","texto":"It arrives at quarter past six."},
-{"hablante":"A","texto":"Is the station far?"},
-{"hablante":"B","texto":"No, it's near. You can go on foot."},
-{"hablante":"A","texto":"Thank you! Can I take a taxi too?"},
-{"hablante":"B","texto":"Yes, no problem."}
-],
-"preguntas": [
-{"tipo":"anota_la_hora","enunciado":"¿A qué hora llega el tren?","respuesta":"6:15","aceptadas":["quarter past six"]},
-{"tipo":"vf","enunciado":"El tren llega a las seis y cuarto.","respuesta":"verdadero"},
-{"tipo":"opcion_multiple","enunciado":"¿Cómo puede ir A a la estación?","opciones":["on foot","by car","by plane"],"respuesta":"on foot"},
-{"tipo":"completar_dato","enunciado":"¿Qué más quiere tomar A?","respuesta":"a taxi","aceptadas":["taxi"]},
-{"tipo":"opcion_multiple","enunciado":"¿Dónde está el tren?","opciones":["at the station","at the airport","at the bank"],"respuesta":"at the station"}
-] }
-] }
+{
+ "tema": 17,
+ "dialogos": [
+  {
+   "titulo": "Pidiendo direcciones",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "Excuse me, where is the station?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Go straight and turn left at the corner."
+    },
+    {
+     "hablante": "A",
+     "texto": "Is it far?"
+    },
+    {
+     "hablante": "B",
+     "texto": "No, it's near. Five minutes on foot."
+    },
+    {
+     "hablante": "A",
+     "texto": "Can I take the bus?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes, take the number ten bus."
+    },
+    {
+     "hablante": "A",
+     "texto": "Thank you very much!"
+    },
+    {
+     "hablante": "B",
+     "texto": "You're welcome, have a nice day!"
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Hacia dónde debe girar A?",
+     "opciones": [
+      "right",
+      "left",
+      "straight"
+     ],
+     "respuesta": "left"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "La estación está lejos.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Qué número de bus puede tomar?",
+     "respuesta": "ten",
+     "aceptadas": [
+      "number ten",
+      "10"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿En cuánto tiempo se llega a pie a la estación?",
+     "opciones": [
+      "five minutes",
+      "ten minutes",
+      "fifteen minutes"
+     ],
+     "respuesta": "five minutes"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Qué le dice B a A al despedirse?",
+     "respuesta": "have a nice day",
+     "aceptadas": [
+      "you're welcome, have a good trip"
+     ]
+    }
+   ]
+  },
+  {
+   "titulo": "En la estación",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "Excuse me, where is the train?"
+    },
+    {
+     "hablante": "B",
+     "texto": "The train is at the station."
+    },
+    {
+     "hablante": "A",
+     "texto": "What time does the train arrive?"
+    },
+    {
+     "hablante": "B",
+     "texto": "It arrives at quarter past six."
+    },
+    {
+     "hablante": "A",
+     "texto": "Is the station far?"
+    },
+    {
+     "hablante": "B",
+     "texto": "No, it's near. You can go on foot."
+    },
+    {
+     "hablante": "A",
+     "texto": "Thank you! Can I take a taxi too?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes, no problem."
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "anota_la_hora",
+     "enunciado": "¿A qué hora llega el tren?",
+     "respuesta": "6:15",
+     "aceptadas": [
+      "quarter past six"
+     ]
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "El tren llega a las seis y cuarto.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cómo puede ir A a la estación?",
+     "opciones": [
+      "on foot",
+      "by car",
+      "by plane"
+     ],
+     "respuesta": "on foot"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Qué más quiere tomar A?",
+     "respuesta": "a taxi",
+     "aceptadas": [
+      "taxi"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Dónde está el tren?",
+     "opciones": [
+      "at the station",
+      "at the airport",
+      "at the bank"
+     ],
+     "respuesta": "at the station"
+    }
+   ]
+  },
+  {
+   "titulo": "¿Dónde está la parada?",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "Excuse me, where is the bus stop?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Go straight and turn left at the corner."
+    },
+    {
+     "hablante": "A",
+     "texto": "Is it far?"
+    },
+    {
+     "hablante": "B",
+     "texto": "No, five minutes on foot."
+    },
+    {
+     "hablante": "A",
+     "texto": "Do I cross the street?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes, at the traffic light."
+    },
+    {
+     "hablante": "A",
+     "texto": "Thank you! Is the bus fast?"
+    },
+    {
+     "hablante": "B",
+     "texto": "No, it is slow. The metro is faster."
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué debe hacer A en la esquina?",
+     "opciones": [
+      "turn left",
+      "turn right",
+      "continue straight"
+     ],
+     "respuesta": "turn left"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "La parada está lejos.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Dónde cruza la calle?",
+     "respuesta": "at the traffic light",
+     "aceptadas": [
+      "traffic light",
+      "at the corner"
+     ]
+    }
+   ]
+  },
+  {
+   "titulo": "Comprando un boleto",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "One ticket for the train, please."
+    },
+    {
+     "hablante": "B",
+     "texto": "For the city centre or for the airport?"
+    },
+    {
+     "hablante": "A",
+     "texto": "For the airport. How much is it?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Twelve soles. The train is at ten."
+    },
+    {
+     "hablante": "A",
+     "texto": "Is it fast?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes, twenty minutes."
+    },
+    {
+     "hablante": "A",
+     "texto": "And a taxi?"
+    },
+    {
+     "hablante": "B",
+     "texto": "A taxi is slow: there is a lot of traffic."
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Cuánto cuesta el boleto?",
+     "respuesta": "twelve soles",
+     "aceptadas": [
+      "twelve",
+      "12 soles"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿A dónde va A?",
+     "opciones": [
+      "to the airport",
+      "to the city centre",
+      "to the station"
+     ],
+     "respuesta": "to the airport"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "El taxi es más rápido que el tren.",
+     "respuesta": "falso"
+    }
+   ]
+  },
+  {
+   "titulo": "Examen · Cómo se mueve Marie",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "How do you go to work, Marie?"
+    },
+    {
+     "hablante": "B",
+     "texto": "By bus. The stop is near my street."
+    },
+    {
+     "hablante": "A",
+     "texto": "Do you have a car?"
+    },
+    {
+     "hablante": "B",
+     "texto": "No, I do not drive."
+    },
+    {
+     "hablante": "A",
+     "texto": "And when you are late?"
+    },
+    {
+     "hablante": "B",
+     "texto": "I take the metro. It is very fast."
+    },
+    {
+     "hablante": "A",
+     "texto": "Do you take a taxi sometimes?"
+    },
+    {
+     "hablante": "B",
+     "texto": "No, never. It is very expensive."
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cómo va Marie al trabajo?",
+     "opciones": [
+      "by bus",
+      "by car",
+      "on foot"
+     ],
+     "respuesta": "by bus"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Marie conduce un carro.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Qué toma cuando va tarde?",
+     "respuesta": "the metro",
+     "aceptadas": [
+      "metro"
+     ]
+    }
+   ]
+  }
+ ]
+}
