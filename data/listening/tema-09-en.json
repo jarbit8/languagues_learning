@@ -287,6 +287,69 @@
      "respuesta": "Saturday"
     }
    ]
+  },
+  {
+   "titulo": "Examen · El día de Marie",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "What time do you wake up, Marie?"
+    },
+    {
+     "hablante": "B",
+     "texto": "I wake up at seven and I get up quickly."
+    },
+    {
+     "hablante": "A",
+     "texto": "And after?"
+    },
+    {
+     "hablante": "B",
+     "texto": "I have a shower, I get dressed and I have breakfast."
+    },
+    {
+     "hablante": "A",
+     "texto": "Do you make the bed?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes, every day. Then I go to work."
+    },
+    {
+     "hablante": "A",
+     "texto": "And in the evening?"
+    },
+    {
+     "hablante": "B",
+     "texto": "I cook, I clean and I read. I go to bed at eleven."
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "anota_la_hora",
+     "enunciado": "¿A qué hora se despierta Marie?",
+     "respuesta": "7:00",
+     "aceptadas": [
+      "seven",
+      "at seven"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué hace por la noche?",
+     "opciones": [
+      "cooks, cleans and reads",
+      "runs",
+      "studies"
+     ],
+     "respuesta": "cooks, cleans and reads"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Marie hace la cama todos los días.",
+     "respuesta": "verdadero"
+    }
+   ]
   }
  ]
 }

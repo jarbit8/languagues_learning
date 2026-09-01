@@ -133,6 +133,204 @@
      ]
     }
    ]
+  },
+  {
+   "titulo": "La casa de los abuelos",
+   "texto": "The house of Laura's grandparents is very big. There is a garden with a table and four chairs, near the door of the kitchen. There is a garage too. The house has two floors and there are stairs between them. On the first floor there is a living room with a sofa and two chairs, and there is a bathroom near the door. In the kitchen there is a fridge next to the window. On the second floor there are three bedrooms. In every bedroom there is a bed, a wardrobe and a lamp. There is a mirror on the wall of the bathroom, and there is a toilet too. The window of the living room is under the roof of the balcony. The key of the house is on the table.",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "How many floors does the house have?",
+     "opciones": [
+      "two",
+      "one",
+      "three"
+     ],
+     "respuesta": "two"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "There is a garage.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "Where is the key? Write two words.",
+     "respuesta": "on the table",
+     "aceptadas": [
+      "the table"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "How many bedrooms are there?",
+     "opciones": [
+      "three",
+      "two",
+      "four"
+     ],
+     "respuesta": "three"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "The grandparents live in the house.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "There are no stairs.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "What is in the garden?",
+     "respuesta": "a table and four chairs",
+     "aceptadas": [
+      "table and chairs"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "Where is the fridge?",
+     "opciones": [
+      "next to the window",
+      "under the bed",
+      "in the garden"
+     ],
+     "respuesta": "next to the window"
+    }
+   ]
+  },
+  {
+   "titulo": "Buscando apartamento",
+   "texto": "Is there a living room in this apartment? Yes, and there is a sofa, a table and three chairs. Where is the kitchen? The kitchen is next to the living room. There is a fridge under the window. And the bedroom? There is a bed and a wardrobe between the bed and the door. There is a lamp near the bed and a mirror on the wall. Is there a bathroom? Yes, with a toilet. And a balcony? Yes, a small balcony, but there is no garden and there is no garage. Are there stairs? No, there are no stairs: the apartment has one floor. Here is the key. The apartment is not big, but there is a room for you.",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What is in the living room?",
+     "opciones": [
+      "a sofa, a table and three chairs",
+      "a bed",
+      "a fridge"
+     ],
+     "respuesta": "a sofa, a table and three chairs"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "There is a garden.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "Where is the fridge?",
+     "respuesta": "under the window"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "Where is the wardrobe?",
+     "opciones": [
+      "between the bed and the door",
+      "on the wall",
+      "in the kitchen"
+     ],
+     "respuesta": "between the bed and the door"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "The bedroom is big.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "There is a small balcony.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "How many chairs are there? Write the number in English.",
+     "respuesta": "three",
+     "aceptadas": [
+      "3"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "Are there stairs?",
+     "opciones": [
+      "no",
+      "yes, two",
+      "yes, one"
+     ],
+     "respuesta": "no"
+    }
+   ]
+  },
+  {
+   "titulo": "Examen · La casa de Marie",
+   "texto": "Marie lives in a small apartment. There are three rooms: a kitchen, a bathroom and a bedroom, and there is also a living room. In the living room there is a sofa and a table with two chairs. There is a lamp near the sofa and a mirror on the wall. In the kitchen there is a fridge next to the window. In the bedroom her bed is under the window and her wardrobe is between the bed and the door. In the bathroom there is a toilet and a mirror. There is a small balcony, but there is no garden and there is no garage. There are no stairs. The floor of the apartment is here and the roof is over it. Marie always has her key.",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "Where is the fridge?",
+     "opciones": [
+      "next to the window",
+      "under the bed",
+      "near the sofa"
+     ],
+     "respuesta": "next to the window"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "There is a garden.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "How many rooms are there? Write the number in English.",
+     "respuesta": "three",
+     "aceptadas": [
+      "3"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "Where is the wardrobe?",
+     "opciones": [
+      "between the bed and the door",
+      "on the wall",
+      "in the kitchen"
+     ],
+     "respuesta": "between the bed and the door"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "Marie lives with a friend.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "There is a small balcony.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "What is in the bathroom?",
+     "respuesta": "a toilet and a mirror",
+     "aceptadas": [
+      "toilet and mirror"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "Where is the lamp?",
+     "opciones": [
+      "near the sofa",
+      "on the wall",
+      "under the window"
+     ],
+     "respuesta": "near the sofa"
+    }
+   ]
   }
  ]
 }

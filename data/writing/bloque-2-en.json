@@ -168,6 +168,90 @@
     "Usé 'wear' o 'put on'",
     "Escribí entre 40 y 55 palabras"
    ]
+  },
+  {
+   "tema": 7,
+   "consigna": "Examen: escribe el calendario de tu semana y de tu año: qué haces cada día, en qué mes es tu cumpleaños y qué pasa en cada estación.",
+   "minPalabras": 45,
+   "maxPalabras": 60,
+   "respuestaModelo": "I work from Monday to Thursday. On Friday I am with my family and on the weekend I am with my friends. My birthday is in November, in autumn. In summer, in June and July, I am in Peru. In winter it is December and January here. Today is Friday and tomorrow is Saturday.",
+   "checklist": [
+    "Hablé de los días de la semana",
+    "Dije el mes de mi cumpleaños",
+    "Nombré al menos dos estaciones",
+    "Usé 'on' con los días y 'in' con los meses",
+    "Escribí entre 45 y 60 palabras"
+   ]
+  },
+  {
+   "tema": 8,
+   "consigna": "Examen: escribe tu horario completo de un día con cinco horas distintas y di con qué frecuencia haces cada cosa.",
+   "minPalabras": 45,
+   "maxPalabras": 60,
+   "respuestaModelo": "It is half past six in the morning and I am always early. My work is from eight o'clock to two o'clock. At noon I have half an hour. In the afternoon I usually study at a quarter past four. In the evening, at nine, I am with my friends. At eleven I am in bed. I am never late.",
+   "checklist": [
+    "Escribí cinco horas distintas",
+    "Usé 'half past' y 'quarter past/to'",
+    "Usé tres adverbios de frecuencia",
+    "Distinguí morning, afternoon y evening",
+    "Escribí entre 45 y 60 palabras"
+   ]
+  },
+  {
+   "tema": 9,
+   "consigna": "Examen: escribe tu rutina entera de un día, de que te levantas a que te acuestas, en orden.",
+   "minPalabras": 45,
+   "maxPalabras": 60,
+   "respuestaModelo": "I wake up at seven and I get up quickly. I have a shower, I brush my teeth and I get dressed. I make the bed and I have breakfast. I go to work at eight and I finish at two. I have lunch and I rest. In the evening I cook. I go to bed at eleven.",
+   "checklist": [
+    "Conté la mañana, la tarde y la noche",
+    "Usé al menos ocho verbos de rutina",
+    "Puse las acciones en orden",
+    "Dije al menos tres horas",
+    "Escribí entre 45 y 60 palabras"
+   ]
+  },
+  {
+   "tema": 10,
+   "consigna": "Examen: describe tu casa entera, habitación por habitación, diciendo qué hay y dónde está cada cosa.",
+   "minPalabras": 45,
+   "maxPalabras": 60,
+   "respuestaModelo": "In my apartment there are three rooms. In the living room there is a sofa, a table and two chairs, and a lamp near the sofa. In the kitchen there is a fridge next to the window. In my bedroom my bed is under the window and the wardrobe is between the bed and the door. There is no garden.",
+   "checklist": [
+    "Describí al menos tres habitaciones",
+    "Usé 'there is' y 'there are' bien",
+    "Usé cuatro preposiciones de lugar distintas",
+    "Dije algo que NO hay",
+    "Escribí entre 45 y 60 palabras"
+   ]
+  },
+  {
+   "tema": 11,
+   "consigna": "Examen: escribe todo lo que llevas en tu mochila con su color, y di dónde está algo que no llevas.",
+   "minPalabras": 45,
+   "maxPalabras": 60,
+   "respuestaModelo": "In my bag there is a black computer and a green notebook. There are two pens: a red pen and a purple pen. There is a yellow pencil and some paper. My phone is white and my keys are here, with my wallet and my money. My watch is not in the bag: it is on the table.",
+   "checklist": [
+    "Nombré al menos siete objetos",
+    "Dije el color de al menos cinco",
+    "Usé 'there is' y 'there are'",
+    "Dije dónde está lo que no llevo",
+    "Escribí entre 45 y 60 palabras"
+   ]
+  },
+  {
+   "tema": 12,
+   "consigna": "Examen: escribe qué ropa te pones en cada estación, qué es caro y qué es barato, y qué talla usas.",
+   "minPalabras": 45,
+   "maxPalabras": 60,
+   "respuestaModelo": "In winter I put on a big coat, boots and gloves, and I wear a sweater. My coat is grey and it is cheap. In summer I wear a t-shirt, shorts and sneakers. In spring I wear jeans and a jacket. I am a medium. Elegant clothes are expensive. In bed I wear my pyjamas.",
+   "checklist": [
+    "Hablé de al menos tres estaciones",
+    "Nombré al menos ocho prendas",
+    "Usé 'expensive' y 'cheap'",
+    "Dije mi talla",
+    "Escribí entre 45 y 60 palabras"
+   ]
   }
  ]
 }

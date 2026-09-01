@@ -270,6 +270,68 @@
      ]
     }
    ]
+  },
+  {
+   "titulo": "Examen · La ropa de Marie",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "What do you wear in winter, Marie?"
+    },
+    {
+     "hablante": "B",
+     "texto": "A big coat, boots and gloves."
+    },
+    {
+     "hablante": "A",
+     "texto": "Is your coat new?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes, and it is cheap. It is my size!"
+    },
+    {
+     "hablante": "A",
+     "texto": "And in summer?"
+    },
+    {
+     "hablante": "B",
+     "texto": "A t-shirt, shorts and sneakers."
+    },
+    {
+     "hablante": "A",
+     "texto": "Do you wear a dress?"
+    },
+    {
+     "hablante": "B",
+     "texto": "No, I wear jeans and a shirt. Never a skirt."
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué lleva en invierno?",
+     "opciones": [
+      "a coat, boots and gloves",
+      "a dress",
+      "shorts"
+     ],
+     "respuesta": "a coat, boots and gloves"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "El abrigo es caro.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Qué lleva en verano?",
+     "respuesta": "a t-shirt, shorts and sneakers",
+     "aceptadas": [
+      "t-shirt shorts and sneakers"
+     ]
+    }
+   ]
   }
  ]
 }

@@ -129,6 +129,204 @@
      ]
     }
    ]
+  },
+  {
+   "titulo": "Ropa para cada estacion",
+   "texto": "In winter Ana puts on a big coat, boots and gloves, and she wears a scarf and a sweater. Her coat is grey and it is cheap. In summer she wears a t-shirt, shorts and sneakers, and sometimes a hat. In spring she wears jeans, a shirt and a jacket. She never wears a dress or a skirt to work: she wears trousers with a belt. Laura wears a blue blouse and a black skirt. Her shoes are new and expensive. In bed Ana wears her pyjamas. What size are you? asks Laura. I am a medium, says Ana. When she comes back, she takes off her coat and she wears her old sweater. Elegant clothes are expensive, but her clothes are cheap.",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What does Ana wear in winter?",
+     "opciones": [
+      "a coat, boots and gloves",
+      "shorts",
+      "a dress"
+     ],
+     "respuesta": "a coat, boots and gloves"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Ana's coat is expensive.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "What does Ana wear in bed?",
+     "respuesta": "pyjamas",
+     "aceptadas": [
+      "her pyjamas"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What does Laura wear?",
+     "opciones": [
+      "a blue blouse and a black skirt",
+      "jeans",
+      "a coat"
+     ],
+     "respuesta": "a blue blouse and a black skirt"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "Laura's shoes are black.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "What size is Ana?",
+     "respuesta": "medium",
+     "aceptadas": [
+      "a medium"
+     ]
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Ana wears a skirt to work.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What does she wear in spring?",
+     "opciones": [
+      "jeans, a shirt and a jacket",
+      "shorts",
+      "boots"
+     ],
+     "respuesta": "jeans, a shirt and a jacket"
+    }
+   ]
+  },
+  {
+   "titulo": "En la tienda con Laura",
+   "texto": "Can I help you? Yes, I buy a jacket today. What size are you? I am a medium. This black jacket is very elegant. Can I try it on? Of course. How is it? It is not my size and it is expensive. And this one? This grey jacket is cheap and it is new. I take it! And shoes? These sneakers are good, but I take boots for the winter. And socks. Here are the boots. And a hat? No, thank you: I have a hat and a scarf. Laura buys a dress, a skirt and a blouse for work. Her sister buys jeans, trousers and a shirt with a belt. She never wears shorts! Now I put on my coat and I take off my old sweater.",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What does the person buy first?",
+     "opciones": [
+      "a jacket",
+      "shoes",
+      "a hat"
+     ],
+     "respuesta": "a jacket"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "The black jacket is cheap.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "What does the person take for the winter?",
+     "respuesta": "boots"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What does Laura buy?",
+     "opciones": [
+      "a dress, a skirt and a blouse",
+      "jeans",
+      "boots"
+     ],
+     "respuesta": "a dress, a skirt and a blouse"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "The grey jacket is blue.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "The person takes a hat too.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "What size is the person?",
+     "respuesta": "medium",
+     "aceptadas": [
+      "a medium"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What does the sister never wear?",
+     "opciones": [
+      "shorts",
+      "jeans",
+      "a shirt"
+     ],
+     "respuesta": "shorts"
+    }
+   ]
+  },
+  {
+   "titulo": "Examen · La ropa de Marie",
+   "texto": "In winter Marie puts on a big coat, boots and gloves. Her coat is new and cheap: it is her size. She wears a sweater and trousers with a belt. In summer she wears a t-shirt, shorts and sneakers, and a hat. She never wears a dress or a skirt: she wears jeans and a shirt. In bed she wears her pyjamas. On Saturday she goes to buy clothes with Laura. She tries on a black blouse: it is elegant, but it is very expensive. Then she tries on a grey blouse. This one is cheap! She buys it, and socks and a scarf too. When she comes back, she takes off the coat and she wears her old sweater.",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What does Marie wear in winter?",
+     "opciones": [
+      "a coat, boots and gloves",
+      "shorts",
+      "a dress"
+     ],
+     "respuesta": "a coat, boots and gloves"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "The black blouse is expensive.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "Which blouse does she buy?",
+     "respuesta": "the grey one",
+     "aceptadas": [
+      "grey"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What does she wear in summer?",
+     "opciones": [
+      "a t-shirt, shorts and sneakers",
+      "a coat",
+      "a skirt"
+     ],
+     "respuesta": "a t-shirt, shorts and sneakers"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "Laura buys clothes too.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Marie wears a skirt.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "What does she wear in bed?",
+     "respuesta": "pyjamas",
+     "aceptadas": [
+      "her pyjamas"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What does she take off when she comes back?",
+     "opciones": [
+      "the coat",
+      "the boots",
+      "the hat"
+     ],
+     "respuesta": "the coat"
+    }
+   ]
   }
  ]
 }

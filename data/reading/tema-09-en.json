@@ -134,6 +134,205 @@
      "respuesta": "Laura"
     }
    ]
+  },
+  {
+   "titulo": "La rutina del fin de semana",
+   "texto": "On Saturday Ana does not go to work. She wakes up late, at nine, and she rests in bed. Then she gets up, she has a shower and she brushes her teeth. She does not make the bed on Saturday! She has breakfast very late and she reads. In the morning she cleans. At noon she has lunch with Laura and after they walk in the city. In the afternoon she takes a nap, and then she does her homework: she studies every day, also on Saturday. In the evening she cooks and she listens to music. She goes out with her friends and she comes back very late. On Sunday she sleeps and she rests. That is her weekend routine.",
+   "preguntas": [
+    {
+     "tipo": "anota_la_hora",
+     "enunciado": "What time does Ana wake up on Saturday?",
+     "respuesta": "9:00",
+     "aceptadas": [
+      "nine",
+      "at nine"
+     ]
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Ana makes the bed on Saturday.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "Who does she have lunch with?",
+     "respuesta": "Laura"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What does she do in the afternoon?",
+     "opciones": [
+      "takes a nap",
+      "goes to work",
+      "runs"
+     ],
+     "respuesta": "takes a nap"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "Ana goes out with Paul.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Ana studies on Saturday too.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "What does she do on Sunday? Write one word.",
+     "respuesta": "rests",
+     "aceptadas": [
+      "sleeps",
+      "rest"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What does she do in the evening?",
+     "opciones": [
+      "cooks and listens to music",
+      "cleans",
+      "studies"
+     ],
+     "respuesta": "cooks and listens to music"
+    }
+   ]
+  },
+  {
+   "titulo": "Dos rutinas distintas",
+   "texto": "Ana wakes up at six and Paul wakes up at nine. Ana gets up quickly, but Paul rests in bed for half an hour. Ana has breakfast at half past six and she goes to work at seven. She arrives at eight and she finishes at two. Paul goes to work at five in the afternoon and he finishes at midnight. Ana has lunch at noon and Paul has lunch with Laura. In the afternoon Ana does her homework and Paul takes a nap. In the evening Ana cooks and cleans; Paul comes back very late and he has dinner. Ana goes to bed at eleven and Paul goes to bed at two. Ana runs on Sunday and Paul walks every day.",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "Who wakes up first?",
+     "opciones": [
+      "Ana",
+      "Paul",
+      "Laura"
+     ],
+     "respuesta": "Ana"
+    },
+    {
+     "tipo": "anota_la_hora",
+     "enunciado": "What time does Paul finish work?",
+     "respuesta": "12:00",
+     "aceptadas": [
+      "midnight",
+      "at midnight"
+     ]
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Paul gets up quickly.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "What time does Ana arrive at work? Write the number in English.",
+     "respuesta": "eight",
+     "aceptadas": [
+      "at eight",
+      "8"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "Who takes a nap in the afternoon?",
+     "opciones": [
+      "Paul",
+      "Ana",
+      "Laura"
+     ],
+     "respuesta": "Paul"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "Paul works in an office.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Ana runs on Sunday.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "What time does Paul go to bed? Write the number in English.",
+     "respuesta": "two",
+     "aceptadas": [
+      "at two",
+      "2"
+     ]
+    }
+   ]
+  },
+  {
+   "titulo": "Examen · Un día de Marie",
+   "texto": "Marie wakes up at seven and she gets up quickly. First she has a shower and she brushes her teeth. Then she gets dressed and she makes the bed: every day, also on the weekend. She has breakfast at half past seven and she goes to work. She arrives at nine and she finishes at five. At noon she has lunch. In the afternoon she comes back and she rests: sometimes she takes a nap, but not every day. Then she does her homework and she studies. In the evening she cooks the dinner and she cleans. She listens to music or she reads. She never runs, but she walks every day. She goes to bed at eleven and she sleeps eight hours. That is her routine.",
+   "preguntas": [
+    {
+     "tipo": "anota_la_hora",
+     "enunciado": "What time does Marie wake up?",
+     "respuesta": "7:00",
+     "aceptadas": [
+      "seven",
+      "at seven"
+     ]
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Marie makes the bed every day.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What does she do first?",
+     "opciones": [
+      "has a shower",
+      "has breakfast",
+      "makes the bed"
+     ],
+     "respuesta": "has a shower"
+    },
+    {
+     "tipo": "anota_la_hora",
+     "enunciado": "What time does she finish work?",
+     "respuesta": "5:00",
+     "aceptadas": [
+      "five",
+      "at five"
+     ]
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "Marie works in a company.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Marie runs every day.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "How many hours does she sleep? Write the number in English.",
+     "respuesta": "eight",
+     "aceptadas": [
+      "8"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What does she do in the evening?",
+     "opciones": [
+      "cooks and cleans",
+      "goes out",
+      "runs"
+     ],
+     "respuesta": "cooks and cleans"
+    }
+   ]
   }
  ]
 }

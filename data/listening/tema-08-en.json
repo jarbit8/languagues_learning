@@ -274,6 +274,67 @@
      "respuesta": "verdadero"
     }
    ]
+  },
+  {
+   "titulo": "Examen · La cita de Marie",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "What time is it, Marie?"
+    },
+    {
+     "hablante": "B",
+     "texto": "It is twenty past three in the afternoon."
+    },
+    {
+     "hablante": "A",
+     "texto": "Are you late?"
+    },
+    {
+     "hablante": "B",
+     "texto": "No, I am never late. I am usually early."
+    },
+    {
+     "hablante": "A",
+     "texto": "The time with Laura is at half past eight."
+    },
+    {
+     "hablante": "B",
+     "texto": "Half past eight? That is late for me."
+    },
+    {
+     "hablante": "A",
+     "texto": "And at eight o'clock?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Very well. One hour and a quarter of an hour!"
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "anota_la_hora",
+     "enunciado": "¿Qué hora es al empezar?",
+     "respuesta": "3:20",
+     "aceptadas": [
+      "twenty past three"
+     ]
+    },
+    {
+     "tipo": "anota_la_hora",
+     "enunciado": "¿A qué hora quedan al final?",
+     "respuesta": "8:00",
+     "aceptadas": [
+      "eight o'clock",
+      "eight"
+     ]
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Marie llega tarde a menudo.",
+     "respuesta": "falso"
+    }
+   ]
   }
  ]
 }

@@ -273,6 +273,65 @@
      ]
     }
    ]
+  },
+  {
+   "titulo": "Examen · La mochila de Marie",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "What is in your bag, Marie?"
+    },
+    {
+     "hablante": "B",
+     "texto": "My computer, my glasses and a notebook."
+    },
+    {
+     "hablante": "A",
+     "texto": "What colour is the notebook?"
+    },
+    {
+     "hablante": "B",
+     "texto": "It is green. And my pen is red."
+    },
+    {
+     "hablante": "A",
+     "texto": "Is your phone in the bag?"
+    },
+    {
+     "hablante": "B",
+     "texto": "No, my phone is here, on the table."
+    },
+    {
+     "hablante": "A",
+     "texto": "And money?"
+    },
+    {
+     "hablante": "B",
+     "texto": "In my wallet, with my keys. And an umbrella!"
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿De qué color es el cuaderno?",
+     "respuesta": "green"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Dónde está el teléfono?",
+     "opciones": [
+      "on the table",
+      "in the bag",
+      "in the wallet"
+     ],
+     "respuesta": "on the table"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Lleva un paraguas.",
+     "respuesta": "verdadero"
+    }
+   ]
   }
  ]
 }

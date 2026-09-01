@@ -269,6 +269,65 @@
      ]
     }
    ]
+  },
+  {
+   "titulo": "Examen · El mes de Marie",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "When is your birthday, Marie?"
+    },
+    {
+     "hablante": "B",
+     "texto": "It is in November, in autumn."
+    },
+    {
+     "hablante": "A",
+     "texto": "And what day is today?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Today is Friday."
+    },
+    {
+     "hablante": "A",
+     "texto": "So tomorrow is Saturday: the weekend!"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes, and the day after tomorrow is Sunday."
+    },
+    {
+     "hablante": "A",
+     "texto": "Do you work on Monday?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes, every week, from Monday to Thursday."
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿En qué mes es el cumpleaños de Marie?",
+     "respuesta": "November"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué día es hoy?",
+     "opciones": [
+      "Friday",
+      "Saturday",
+      "Monday"
+     ],
+     "respuesta": "Friday"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Marie trabaja los viernes.",
+     "respuesta": "falso"
+    }
+   ]
   }
  ]
 }

@@ -227,6 +227,67 @@
      "respuesta": "falso"
     }
    ]
+  },
+  {
+   "titulo": "Examen · El calendario de Marie",
+   "texto": "Marie works from Monday to Thursday. On Friday she is with her family and on Saturday and Sunday she is with her friends: that is her weekend. Her birthday is in November, in autumn. Her brother's birthday is in July, in summer. The year has twelve months and four seasons: spring in March, April and May; summer in June, July and August; autumn in September, October and November; winter in December, January and February. Today is Friday, tomorrow is Saturday and the day after tomorrow is Sunday. The day before yesterday was Wednesday, a day of work. Every week has seven days and every month has four weeks. In one month it is December!",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué días trabaja Marie?",
+     "opciones": [
+      "Monday to Thursday",
+      "Friday to Sunday",
+      "every day"
+     ],
+     "respuesta": "Monday to Thursday"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿En qué mes es el cumpleaños de Marie?",
+     "respuesta": "November"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "El cumpleaños del hermano es en verano.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué día es hoy?",
+     "opciones": [
+      "Friday",
+      "Saturday",
+      "Wednesday"
+     ],
+     "respuesta": "Friday"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "Marie trabaja en una oficina.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿En qué estación está noviembre?",
+     "respuesta": "autumn"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Un mes tiene cuatro semanas.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué día fue anteayer?",
+     "opciones": [
+      "Wednesday",
+      "Thursday",
+      "Sunday"
+     ],
+     "respuesta": "Wednesday"
+    }
+   ]
   }
  ]
 }

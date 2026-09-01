@@ -281,6 +281,65 @@
      ]
     }
    ]
+  },
+  {
+   "titulo": "Examen · La habitación de Marie",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "Is your apartment big, Marie?"
+    },
+    {
+     "hablante": "B",
+     "texto": "No, it is small: two rooms and a bathroom."
+    },
+    {
+     "hablante": "A",
+     "texto": "Is there a living room?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes, with a sofa and a table."
+    },
+    {
+     "hablante": "A",
+     "texto": "And your bedroom?"
+    },
+    {
+     "hablante": "B",
+     "texto": "My bed is under the window and the wardrobe is next to the door."
+    },
+    {
+     "hablante": "A",
+     "texto": "Is there a garden?"
+    },
+    {
+     "hablante": "B",
+     "texto": "No, but there is a small balcony."
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cuántas habitaciones tiene?",
+     "opciones": [
+      "two",
+      "three",
+      "five"
+     ],
+     "respuesta": "two"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Dónde está la cama?",
+     "respuesta": "under the window"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "El apartamento tiene jardín.",
+     "respuesta": "falso"
+    }
+   ]
   }
  ]
 }

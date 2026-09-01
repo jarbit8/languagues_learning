@@ -250,6 +250,74 @@
      "respuesta": "verdadero"
     }
    ]
+  },
+  {
+   "titulo": "Examen · El horario de Marie",
+   "texto": "It is twenty past three in the afternoon. Marie is never late: she is usually early and always on time. Her work is from nine o'clock to five o'clock, and at noon she has half an hour. In the morning she is here at a quarter to nine. She rarely works after five. In the evening, at half past eight, she is with Laura. At eleven o'clock she is in bed and at midnight she is always in bed. The night is short! One hour has sixty minutes and one minute has sixty seconds. Her clock is here. Sometimes she is soon in bed, but she is never late in the morning. A quarter of an hour, and right away she is here.",
+   "preguntas": [
+    {
+     "tipo": "anota_la_hora",
+     "enunciado": "¿Qué hora es al principio?",
+     "respuesta": "3:20",
+     "aceptadas": [
+      "twenty past three"
+     ]
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Marie llega tarde a menudo.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "anota_la_hora",
+     "enunciado": "¿A qué hora empieza el trabajo?",
+     "respuesta": "9:00",
+     "aceptadas": [
+      "nine o'clock",
+      "nine"
+     ]
+    },
+    {
+     "tipo": "anota_la_hora",
+     "enunciado": "¿A qué hora queda con Laura?",
+     "respuesta": "8:30",
+     "aceptadas": [
+      "half past eight"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Con qué frecuencia trabaja después de las cinco?",
+     "opciones": [
+      "rarely",
+      "always",
+      "often"
+     ],
+     "respuesta": "rarely"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "Marie trabaja los sábados.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Cuántos segundos tiene un minuto?",
+     "respuesta": "sixty",
+     "aceptadas": [
+      "60"
+     ]
+    },
+    {
+     "tipo": "anota_la_hora",
+     "enunciado": "¿A qué hora está en la cama?",
+     "respuesta": "11:00",
+     "aceptadas": [
+      "eleven",
+      "at eleven"
+     ]
+    }
+   ]
   }
  ]
 }
