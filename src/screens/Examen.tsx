@@ -15,11 +15,6 @@ import { getVocabPack } from '../data/packs'
 import { construirExamenDiario, idsExamenDiario, marcarExaminadasHoy } from '../lib/examenDiario'
 import { CICLOS, construirExamenDelTema, idsDelTema, type CicloVocab } from '../lib/examenVocabulario'
 import { getPlan, estadoDelPlan } from '../lib/plan'
-import { construirExamenGramaticaTema, ejerciciosDe } from '../lib/examenGramatica'
-import { listeningDeTema, readingDeTema, consignaDeTema, promptHablarExamen } from '../lib/examenHabilidades'
-import CopiarPrompt from '../components/CopiarPrompt'
-import { EscribirConsigna } from '../components/PasoWriting'
-import { reproducirDialogo, detener } from '../lib/listening'
 import { registrarResultado } from '../lib/srs'
 import ExamRunner from '../components/ExamRunner'
 import ExamenBloque from './ExamenBloque'
@@ -30,13 +25,8 @@ type Vista =
   | { modo: 'hub' }
   | { modo: 'diario'; preguntas: Pregunta[] }
   | { modo: 'ciclo'; ciclo: CicloVocab; titulo: string; preguntas: Pregunta[] }
-  | { modo: 'gramaticaTema'; tema: number; preguntas: Pregunta[] }
   // El examen de tema son dos secciones seguidas, con nota propia cada una.
   | { modo: 'tema'; tema: number }
-  | { modo: 'habListening'; tema: number; enPreguntas: boolean }
-  | { modo: 'habReading'; tema: number; enPreguntas: boolean }
-  | { modo: 'habWriting'; tema: number }
-  | { modo: 'habHablar'; tema: number }
   | { modo: 'bloque'; bloque: number }
   | { modo: 'final' }
   | { modo: 'fin'; titulo: string; aciertos: number; total: number; nota?: string }
@@ -49,7 +39,6 @@ async function actualizarSrs(p: Pregunta, acierto: boolean) {
 export default function Examen() {
   const [vista, setVista] = useState<Vista>({ modo: 'hub' })
   // Tema elegido en el módulo de gramática; por defecto, el tema en curso.
-  const [temaGram, setTemaGram] = useState<number | null>(null)
 
   const info = useLiveQuery(async () => {
     const tema = await temaEnCurso()
@@ -88,9 +77,6 @@ export default function Examen() {
     else setVista({ modo: 'ciclo', ciclo, titulo, preguntas })
   }
 
-  function iniciarGramatica(tema: number) {
-    setVista({ modo: 'gramaticaTema', tema, preguntas: construirExamenGramaticaTema(tema) })
-  }
 
   function iniciarTema(tema: number) {
     setVista({ modo: 'tema', tema })
@@ -136,113 +122,10 @@ export default function Examen() {
     )
   }
 
-  if (vista.modo === 'gramaticaTema') {
-    return (
-      <ExamRunner
-        key={`gram-${vista.tema}`}
-        preguntas={vista.preguntas}
-        etiqueta={`Repaso ${vista.tema} · 1/5 Gramática`}
-        tiempoSegundos={vista.preguntas.length * 30}
-        // El repaso del tema encadena los cinco módulos, en el mismo orden en que los
-        // estudia. Cada uno pasa al siguiente en vez de volver al hub.
-        onFinish={() => setVista({ modo: 'habListening', tema: vista.tema, enPreguntas: false })}
-      />
-    )
-  }
 
-  if (vista.modo === 'habListening') {
-    const l = listeningDeTema(vista.tema)
-    if (!l) return <p className="tarjeta">Este tema no tiene listening.</p>
-    if (vista.enPreguntas) {
-      return (
-        <ExamRunner
-          key={`hl-${vista.tema}`}
-          preguntas={l.preguntas}
-          etiqueta={`Escuchar · tema ${vista.tema}`}
-          tiempoSegundos={l.preguntas.length * 30}
-          onFinish={(aciertos, total) => {
-            detener()
-            setVista({ modo: 'habReading', tema: vista.tema, enPreguntas: false })
-          }}
-        />
-      )
-    }
-    return (
-      <div className="flex flex-col gap-4">
-        <h1 className="text-2xl font-bold">Repaso · 2/5 Escuchar</h1>
-        <div className="tarjeta flex flex-col gap-3">
-          <p className="text-sm text-slate-500 dark:text-slate-400">
-            {l.cuantosDialogos} diálogos seguidos, sin transcripción. Escucha las veces que necesites.
-          </p>
-          <button onClick={() => reproducirDialogo(l.lineas, vista.tema, {})} className="btn-primary self-start">
-            🔊 Escuchar el audio
-          </button>
-        </div>
-        <button onClick={() => setVista({ ...vista, enPreguntas: true })} className="btn-primary">
-          Responder preguntas ({l.preguntas.length})
-        </button>
-      </div>
-    )
-  }
 
-  if (vista.modo === 'habReading') {
-    const r = readingDeTema(vista.tema)
-    if (!r) return <p className="tarjeta">Este tema no tiene lectura.</p>
-    if (vista.enPreguntas) {
-      return (
-        <ExamRunner
-          key={`hr-${vista.tema}`}
-          preguntas={r.preguntas}
-          etiqueta={`Leer · tema ${vista.tema}`}
-          tiempoSegundos={r.preguntas.length * 40}
-          onFinish={(aciertos, total) =>
-            setVista({ modo: 'habWriting', tema: vista.tema })
-          }
-        />
-      )
-    }
-    return (
-      <div className="flex flex-col gap-4">
-        <h1 className="text-2xl font-bold">Repaso · 3/5 Leer</h1>
-        <div className="tarjeta flex flex-col gap-2">
-          <h3 className="font-bold">{r.texto.titulo}</h3>
-          <p className="text-sm leading-relaxed">{r.texto.texto}</p>
-        </div>
-        <button onClick={() => setVista({ ...vista, enPreguntas: true })} className="btn-primary">
-          Responder preguntas ({r.preguntas.length})
-        </button>
-      </div>
-    )
-  }
 
-  if (vista.modo === 'habWriting') {
-    const c = consignaDeTema(vista.tema)
-    if (!c) return <p className="tarjeta">Este tema no tiene consigna.</p>
-    return (
-      <div className="flex flex-col gap-4">
-        <h1 className="text-2xl font-bold">Repaso · 4/5 Escribir</h1>
-        <EscribirConsigna pack={c} onDone={() => setVista({ modo: 'habHablar', tema: vista.tema })} />
-        <button onClick={() => setVista({ modo: 'hub' })} className="text-sm text-slate-500 underline">
-          Volver a exámenes
-        </button>
-      </div>
-    )
-  }
 
-  if (vista.modo === 'habHablar') {
-    return (
-      <div className="flex flex-col gap-4">
-        <h1 className="text-2xl font-bold">Repaso · 5/5 Hablar</h1>
-        <CopiarPrompt
-          prompt={promptHablarExamen(vista.tema)}
-          descripcion="Pega esto en una IA con voz (ChatGPT, Gemini…) y habla del tema. Al final te dirá VEREDICTO: LISTO ✅ o AÚN NO ⏳."
-        />
-        <button onClick={() => setVista({ modo: 'hub' })} className="btn-primary">
-          Terminar el repaso
-        </button>
-      </div>
-    )
-  }
 
   if (vista.modo === 'fin') {
     if (vista.nota === 'vacio') {
@@ -290,7 +173,6 @@ export default function Examen() {
 
   // hub
   if (!info) return <p className="tarjeta">Cargando…</p>
-  const tg = temaGram ?? info.tema
   const gt = info.gateTema
   const gb = info.gateBloque
   const gf = info.gateFinal
@@ -327,30 +209,13 @@ export default function Examen() {
         )
       })}
 
-      {/* --- Por tema: una habilidad a la vez, siempre del tema EN CURSO. Tenía un selector
-              para elegir tema y el usuario lo quitó (2026-08-30), igual que en Practicar: al
-              aprobar el examen aparece el siguiente y no hay que elegir nada. Todo esto es
-              entrenamiento repetible; la nota que cuenta es la del examen de tema. --- */}
-      <h2 className="mt-2 text-sm font-bold uppercase tracking-wide text-slate-400">Por tema</h2>
-      <div className="tarjeta flex flex-col gap-3">
-        {/* UNA sola entrada, no cinco botones (2026-08-30). Antes había un botón por módulo
-            y el usuario los quiso juntos: se repasa el tema entero de una pasada, en el mismo
-            orden en que lo estudia. Sigue siendo entrenamiento, sin nota que se guarde. */}
-        <button onClick={() => iniciarGramatica(info.tema)} className="btn-primary">
-          🔁 Repasar el tema {info.tema} entero
-        </button>
-        <div className="flex flex-wrap gap-x-3 gap-y-1 text-xs text-slate-500 dark:text-slate-400">
-          <span>📘 {ejerciciosDe(tg)} ejercicios</span>
-          <span>🎧 {listeningDeTema(tg)?.preguntas.length ?? 0} preguntas</span>
-          <span>📖 {readingDeTema(tg)?.preguntas.length ?? 0} preguntas</span>
-          <span>✍️ 1 consigna</span>
-          <span>🗣️ veredicto de la IA</span>
-        </div>
-        <p className="text-xs text-slate-500 dark:text-slate-400">
-          Entra TODO lo del tema, no una muestra: gramática, escuchar, leer, escribir y hablar, uno detrás de otro. Es
-          entrenamiento, repetible y sin nota que se guarde.
-        </p>
-      </div>
+      {/* La sección "Por tema" se eliminó (2026-08-30). Tenía una versión de entrenamiento de
+          las cinco destrezas, primero como cinco botones y luego encadenada, y acabó siendo un
+          segundo examen del mismo tema al lado del de verdad: dos entradas casi iguales, una
+          que cuenta y otra que no. El usuario lo quiso en UNO SOLO. El examen de tema de abajo
+          ya entra todo, gramática incluida; el vocabulario tiene además su propia sección
+          arriba. Los modos habListening/habReading/habWriting/habHablar siguen vivos porque son
+          los pasos internos del examen de tema. */}
 
       {/* --- Los que sí abren contenido nuevo --- */}
       <h2 className="mt-2 text-sm font-bold uppercase tracking-wide text-slate-400">Progresión</h2>
