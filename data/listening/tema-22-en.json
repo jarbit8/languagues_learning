@@ -1,39 +1,345 @@
-{ "tema": 22,
-"dialogos": [
-{ "titulo": "Problema con el celular",
-"lineas": [
-{"hablante":"A","texto":"My phone doesn't work."},
-{"hablante":"B","texto":"What happened yesterday?"},
-{"hablante":"A","texto":"I downloaded an app and it stopped working."},
-{"hablante":"B","texto":"Did you charge the battery?"},
-{"hablante":"A","texto":"Yes, I charged it last night."},
-{"hablante":"B","texto":"Try to turn it off and on again."},
-{"hablante":"A","texto":"Okay, I turned it off."},
-{"hablante":"B","texto":"Now turn it on. Does it work?"}
-],
-"preguntas": [
-{"tipo":"opcion_multiple","enunciado":"¿Qué pasó ayer?","opciones":["A lost the phone","A downloaded an app","A bought a phone"],"respuesta":"A downloaded an app"},
-{"tipo":"vf","enunciado":"A no cargó la batería.","respuesta":"falso"},
-{"tipo":"completar_dato","enunciado":"¿Qué le dice B que haga con el teléfono?","respuesta":"turn it off and on","aceptadas":["turn it off","turn it on"]},
-{"tipo":"completar_dato","enunciado":"¿Qué descargó A?","respuesta":"an app","aceptadas":["app"]},
-{"tipo":"vf","enunciado":"A cargó el teléfono anoche.","respuesta":"verdadero"}
-] },
-{ "titulo": "Enviando un correo electrónico",
-"lineas": [
-{"hablante":"A","texto":"I need to send an email."},
-{"hablante":"B","texto":"Do you have internet?"},
-{"hablante":"A","texto":"Yes, but my password doesn't work."},
-{"hablante":"B","texto":"Try to open the website again."},
-{"hablante":"A","texto":"Okay, I opened it."},
-{"hablante":"B","texto":"Can you click on the message?"},
-{"hablante":"A","texto":"Yes, I clicked on it. It works now!"},
-{"hablante":"B","texto":"Great!"}
-],
-"preguntas": [
-{"tipo":"opcion_multiple","enunciado":"¿Qué necesita hacer A?","opciones":["send an email","download an app","call a friend"],"respuesta":"send an email"},
-{"tipo":"vf","enunciado":"El problema de A es la contraseña.","respuesta":"verdadero"},
-{"tipo":"completar_dato","enunciado":"¿Qué intenta abrir A?","respuesta":"the website","aceptadas":["website"]},
-{"tipo":"completar_dato","enunciado":"¿En qué hace clic A?","respuesta":"the message","aceptadas":["message"]},
-{"tipo":"vf","enunciado":"Al final, funciona.","respuesta":"verdadero"}
-] }
-] }
+{
+ "tema": 22,
+ "dialogos": [
+  {
+   "titulo": "Problema con el celular",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "My phone doesn't work."
+    },
+    {
+     "hablante": "B",
+     "texto": "What happened yesterday?"
+    },
+    {
+     "hablante": "A",
+     "texto": "I downloaded an app and it stopped working."
+    },
+    {
+     "hablante": "B",
+     "texto": "Did you charge the battery?"
+    },
+    {
+     "hablante": "A",
+     "texto": "Yes, I charged it last night."
+    },
+    {
+     "hablante": "B",
+     "texto": "Try to turn it off and on again."
+    },
+    {
+     "hablante": "A",
+     "texto": "Okay, I turned it off."
+    },
+    {
+     "hablante": "B",
+     "texto": "Now turn it on. Does it work?"
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué pasó ayer?",
+     "opciones": [
+      "A lost the phone",
+      "A downloaded an app",
+      "A bought a phone"
+     ],
+     "respuesta": "A downloaded an app"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "A no cargó la batería.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Qué le dice B que haga con el teléfono?",
+     "respuesta": "turn it off and on",
+     "aceptadas": [
+      "turn it off",
+      "turn it on"
+     ]
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Qué descargó A?",
+     "respuesta": "an app",
+     "aceptadas": [
+      "app"
+     ]
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "A cargó el teléfono anoche.",
+     "respuesta": "verdadero"
+    }
+   ]
+  },
+  {
+   "titulo": "Enviando un correo electrónico",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "I need to send an email."
+    },
+    {
+     "hablante": "B",
+     "texto": "Do you have internet?"
+    },
+    {
+     "hablante": "A",
+     "texto": "Yes, but my password doesn't work."
+    },
+    {
+     "hablante": "B",
+     "texto": "Try to open the website again."
+    },
+    {
+     "hablante": "A",
+     "texto": "Okay, I opened it."
+    },
+    {
+     "hablante": "B",
+     "texto": "Can you click on the message?"
+    },
+    {
+     "hablante": "A",
+     "texto": "Yes, I clicked on it. It works now!"
+    },
+    {
+     "hablante": "B",
+     "texto": "Great!"
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué necesita hacer A?",
+     "opciones": [
+      "send an email",
+      "download an app",
+      "call a friend"
+     ],
+     "respuesta": "send an email"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "El problema de A es la contraseña.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Qué intenta abrir A?",
+     "respuesta": "the website",
+     "aceptadas": [
+      "website"
+     ]
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿En qué hace clic A?",
+     "respuesta": "the message",
+     "aceptadas": [
+      "message"
+     ]
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Al final, funciona.",
+     "respuesta": "verdadero"
+    }
+   ]
+  },
+  {
+   "titulo": "El wifi no funciona",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "The wifi is very slow today."
+    },
+    {
+     "hablante": "B",
+     "texto": "Did you turn off the computer?"
+    },
+    {
+     "hablante": "A",
+     "texto": "Yes, two times. There is no network."
+    },
+    {
+     "hablante": "B",
+     "texto": "What is on the screen?"
+    },
+    {
+     "hablante": "A",
+     "texto": "A message with a question about the password."
+    },
+    {
+     "hablante": "B",
+     "texto": "I text you the new password."
+    },
+    {
+     "hablante": "A",
+     "texto": "Thank you! I must download a big file."
+    },
+    {
+     "hablante": "B",
+     "texto": "Now you are online. Save it in a file."
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cuál es el problema?",
+     "opciones": [
+      "there is no network",
+      "the battery is not good",
+      "the screen is not well"
+     ],
+     "respuesta": "there is no network"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Qué le envía B?",
+     "respuesta": "the new password",
+     "aceptadas": [
+      "password",
+      "the password"
+     ]
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "A necesita descargar un archivo.",
+     "respuesta": "verdadero"
+    }
+   ]
+  },
+  {
+   "titulo": "¿Qué hiciste ayer?",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "What did you do yesterday?"
+    },
+    {
+     "hablante": "B",
+     "texto": "I worked all the day with my computer."
+    },
+    {
+     "hablante": "A",
+     "texto": "Did you answer my email?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes, at six. And I sent you two photos."
+    },
+    {
+     "hablante": "A",
+     "texto": "I was not online. My phone was off."
+    },
+    {
+     "hablante": "B",
+     "texto": "Why?"
+    },
+    {
+     "hablante": "A",
+     "texto": "The battery was not good. I charged it all the night."
+    },
+    {
+     "hablante": "B",
+     "texto": "Then open the app now. The photos are there."
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué hizo B ayer?",
+     "opciones": [
+      "he worked with his computer",
+      "he charged his phone",
+      "he watched videos"
+     ],
+     "respuesta": "he worked with his computer"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿A qué hora respondió el correo?",
+     "respuesta": "at six",
+     "aceptadas": [
+      "six",
+      "6"
+     ]
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "El teléfono de A estaba encendido.",
+     "respuesta": "falso"
+    }
+   ]
+  },
+  {
+   "titulo": "Examen · La computadora de Marie",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "What did you do last Saturday, Marie?"
+    },
+    {
+     "hablante": "B",
+     "texto": "I was in the city centre with my camera."
+    },
+    {
+     "hablante": "A",
+     "texto": "Did you take many photos?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes, of the park and of the museum."
+    },
+    {
+     "hablante": "A",
+     "texto": "Did you send them to me?"
+    },
+    {
+     "hablante": "B",
+     "texto": "I sent two, but you were not online."
+    },
+    {
+     "hablante": "A",
+     "texto": "My battery was not good."
+    },
+    {
+     "hablante": "B",
+     "texto": "Then open the app. I saved all in a file."
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Dónde estuvo Marie el sábado?",
+     "opciones": [
+      "in the city centre",
+      "in the university",
+      "in a café"
+     ],
+     "respuesta": "in the city centre"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Cuántas fotos envió?",
+     "respuesta": "two",
+     "aceptadas": [
+      "2",
+      "two photos"
+     ]
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "A estaba en línea.",
+     "respuesta": "falso"
+    }
+   ]
+  }
+ ]
+}

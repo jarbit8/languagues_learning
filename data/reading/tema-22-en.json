@@ -2,43 +2,347 @@
  "tema": 22,
  "textos": [
   {
-   "titulo": "Un problema con el teléfono",
-   "texto": "Yesterday Ana had a problem. Her phone did not work. The battery was very low and the screen was black. She wanted to call her mother, but she could not. She was not happy. Last week she downloaded a new app and after that the phone was slow. She searched for help on the internet and she watched a video. Then she turned off the phone and she turned it on again. It worked! She was very happy. Ana sent a message to Laura: my phone is fine now! She also sent an email to her brother with a photo. He answered fast. Ana is on social media every day, but she does not like it a lot. She saves all her files and her photos, because last year she lost everything.",
+   "titulo": "Un problema con el internet",
+   "texto": "Yesterday the wifi in the house of Ana was not good. She turned on her computer at eight, but the internet was very slow. On the screen there was a message: there is no network. Ana clicked on the app three times and nothing. She turned off the computer and she turned it on again, but the problem was the same. Her phone was online, so she searched a website with the answer. Then she called the company at nine. A worker answered and he texted her the password of the new network. Ana opened the app, she clicked and the wifi worked. After that she downloaded two files and a video for her class, and she saved all her photos. In the evening she sent an email to her teacher with the files. The battery of her phone was not good, so she charged it all the night. Yesterday was a difficult day with the internet, but now all is well.",
    "preguntas": [
     {
+     "tipo": "completar_dato",
+     "enunciado": "What time did Ana turn on her computer?",
+     "respuesta": "at eight",
+     "aceptadas": [
+      "eight",
+      "8"
+     ]
+    },
+    {
      "tipo": "opcion_multiple",
-     "enunciado": "What was the problem with the phone?",
+     "enunciado": "What was the message on the screen?",
      "opciones": [
-      "the battery was low",
-      "it was old",
-      "she lost it"
+      "there is no network",
+      "the battery is not good",
+      "there is no password"
      ],
-     "respuesta": "the battery was low"
+     "respuesta": "there is no network"
     },
     {
      "tipo": "vf",
-     "enunciado": "Ana turned off the phone and turned it on again.",
+     "enunciado": "The problem was the same after she turned the computer on again.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "Who texted the password to Ana?",
+     "opciones": [
+      "a worker of the company",
+      "her teacher",
+      "her sister"
+     ],
+     "respuesta": "a worker of the company"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Ana downloaded three files.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "The teacher of Ana answered the email.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "Why did Ana charge her phone all the night?",
+     "respuesta": "the battery was not good",
+     "aceptadas": [
+      "because the battery was not good",
+      "the battery"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What did Ana send to her teacher?",
+     "opciones": [
+      "an email with the files",
+      "a video",
+      "a photo"
+     ],
+     "respuesta": "an email with the files"
+    }
+   ]
+  },
+  {
+   "titulo": "Las redes sociales de Laura",
+   "texto": "Laura is on social media every day. Yesterday she opened the app at seven in the morning and she watched many videos on her phone. She clicked on a website of music and she downloaded three songs. Then she sent a message to Ana with a photo of her guitar. Ana was not online, so she answered at ten. In the afternoon Laura searched a video of a tennis game and she saved it in a file. Her computer was very slow, because there were many files on it. She turned it off and she turned it on again, and the screen was well. Laura texted her mother: the wifi in the university is very fast. At night she charged her phone, her computer and her camera. The battery of the camera was not good and she needs a new one. Yesterday Laura was online for six hours. That is a lot.",
+   "preguntas": [
+    {
+     "tipo": "completar_dato",
+     "enunciado": "What time did Laura open the app?",
+     "respuesta": "at seven",
+     "aceptadas": [
+      "seven",
+      "7"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "How many songs did Laura download?",
+     "opciones": [
+      "three",
+      "two",
+      "six"
+     ],
+     "respuesta": "three"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Ana answered the message at seven.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "Why was the computer of Laura slow?",
+     "opciones": [
+      "there were many files on it",
+      "the wifi was not good",
+      "the battery was not good"
+     ],
+     "respuesta": "there were many files on it"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Laura texted her mother about the wifi of the university.",
      "respuesta": "verdadero"
     },
     {
      "tipo": "vfnd",
-     "enunciado": "Ana's phone is expensive.",
+     "enunciado": "The camera of Laura is expensive.",
      "respuesta": "no dice"
     },
     {
+     "tipo": "completar_dato",
+     "enunciado": "How many hours was Laura online yesterday?",
+     "respuesta": "six",
+     "aceptadas": [
+      "6",
+      "six hours"
+     ]
+    },
+    {
      "tipo": "opcion_multiple",
-     "enunciado": "Who did she send an email to?",
+     "enunciado": "What did Laura send to Ana?",
      "opciones": [
-      "her brother",
-      "her mother",
-      "Laura"
+      "a message with a photo",
+      "a video of tennis",
+      "three songs"
      ],
-     "respuesta": "her brother"
+     "respuesta": "a message with a photo"
+    }
+   ]
+  },
+  {
+   "titulo": "El correo de Paul",
+   "texto": "Yesterday Paul worked all the day with his computer: eight hours with the keyboard. In the morning he turned on the screen, he clicked with the mouse and he opened his email: there were forty messages. He answered ten and he saved the files of three. One email was of his teacher, with a video and a big file for his class. Paul downloaded the file, but the internet was very slow and it was one hour on the screen. Then he searched a website for his homework and he saved the notes in a file. At two the wifi in his house was not good: there was no network. Paul called his sister and she texted him a password for the network of the café near the park. He was online again. In the evening he sent an email to his classmate with his notes and two photos. Then he turned off the computer and he charged the battery of his phone. Yesterday was a long day, but Paul finished all his work.",
+   "preguntas": [
+    {
+     "tipo": "completar_dato",
+     "enunciado": "How many messages were in the email of Paul?",
+     "respuesta": "forty",
+     "aceptadas": [
+      "40",
+      "forty messages"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "How many messages did Paul answer?",
+     "opciones": [
+      "ten",
+      "three",
+      "forty"
+     ],
+     "respuesta": "ten"
     },
     {
      "tipo": "vf",
-     "enunciado": "Last year Ana lost everything.",
+     "enunciado": "The email of his teacher had a video.",
      "respuesta": "verdadero"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What was the problem at two?",
+     "opciones": [
+      "there was no network",
+      "the battery was not good",
+      "the screen was not well"
+     ],
+     "respuesta": "there was no network"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "His sister called him with the password.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "The café near the park is open every day.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "What did Paul send to his classmate?",
+     "respuesta": "his notes and two photos",
+     "aceptadas": [
+      "notes and two photos",
+      "an email with his notes"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What did Paul do at the end of the day?",
+     "opciones": [
+      "he turned off the computer and charged his phone",
+      "he opened his email again",
+      "he downloaded a video"
+     ],
+     "respuesta": "he turned off the computer and charged his phone"
+    }
+   ]
+  },
+  {
+   "titulo": "Fotos y videos",
+   "texto": "Last Saturday Ana and Laura were in the park with a camera. Ana turned on the camera and she was very happy: there were flowers, trees and a blue sky. She was in the park for three hours and she was tired, but the photos were very good. Laura opened an app on her phone and she watched the photos on a small screen. The camera is not the same, Laura texted to Paul, and she sent him two photos. At five the battery of the camera was not good, so Ana charged it in a café with wifi. Then they downloaded all the photos and they saved them in a file on the computer. Laura also searched a website for a new camera: it was very expensive. In the evening Ana sent an email to her mother in Peru with ten photos and a video of the park. Her mother called at nine and she was very happy.",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "Where were Ana and Laura last Saturday?",
+     "opciones": [
+      "in the park",
+      "in a café",
+      "in the university"
+     ],
+     "respuesta": "in the park"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "How many hours was Ana in the park?",
+     "respuesta": "three",
+     "aceptadas": [
+      "3",
+      "three hours"
+     ]
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Laura sent two photos to Paul.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "Why did Ana charge the camera in a café?",
+     "opciones": [
+      "the battery was not good",
+      "there was no network",
+      "the camera was very old"
+     ],
+     "respuesta": "the battery was not good"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "The new camera on the website was cheap.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "Laura bought the new camera.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "How many photos did Ana send to her mother?",
+     "respuesta": "ten",
+     "aceptadas": [
+      "10",
+      "ten photos"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What time did her mother call?",
+     "opciones": [
+      "at nine",
+      "at five",
+      "at three"
+     ],
+     "respuesta": "at nine"
+    }
+   ]
+  },
+  {
+   "titulo": "Examen · La computadora de Marie",
+   "texto": "Last Saturday Marie was in the city centre with her camera and her phone. In the morning she turned on the camera and she watched the photos on the small screen: there were photos of the park, of the museum and of her sister. At twelve the battery was not good, so she charged the camera in a café with wifi. Marie opened her app of social media and she downloaded all the photos on her phone. Then she saved them in a file and she sent two to her sister. Her sister was not online, so she answered at four. In the afternoon Marie searched a website of music and she clicked on three songs. The internet was very fast in the café. At six she texted her mother and she called her at eight. Yesterday Marie was online for five hours, so at night she turned off her phone and she charged it.",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What did Marie have with her last Saturday?",
+     "opciones": [
+      "her camera and her phone",
+      "her computer",
+      "a file with photos"
+     ],
+     "respuesta": "her camera and her phone"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "Why did Marie charge the camera?",
+     "respuesta": "the battery was not good",
+     "aceptadas": [
+      "because the battery was not good",
+      "the battery"
+     ]
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Her sister answered at twelve.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "How many photos did Marie send to her sister?",
+     "opciones": [
+      "two",
+      "three",
+      "five"
+     ],
+     "respuesta": "two"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "The internet in the café was very fast.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "The sister of Marie was in the city centre too.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "How many hours was Marie online yesterday?",
+     "respuesta": "five",
+     "aceptadas": [
+      "5",
+      "five hours"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What did Marie do at night?",
+     "opciones": [
+      "she turned off her phone and charged it",
+      "she called her mother",
+      "she downloaded three songs"
+     ],
+     "respuesta": "she turned off her phone and charged it"
     }
    ]
   }

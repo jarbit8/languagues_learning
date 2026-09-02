@@ -2,23 +2,43 @@
  "tema": 19,
  "textos": [
   {
-   "titulo": "Ana no se siente bien",
-   "texto": "Today Ana is sick. She has a headache and she has a cold. Her head hurts and she has a cough. She also has a fever: it is thirty eight degrees. Laura says: you must go to the doctor. Ana goes to the hospital and the doctor asks: where does it hurt? My head and my back, says Ana. My eyes hurt too. The doctor has some medicine for her. You must sleep and drink a lot of water, he says. You must not go to work for two days. Ana comes back and she goes to bed. Her body is tired. She does not eat a lot: only soup. After two days she feels well again. Now she is healthy and she is happy. Her hands and her feet are cold, but she is fine!",
+   "titulo": "Ana está enferma",
+   "texto": "On Monday morning Ana does not feel well. Her head hurts and she has a fever: thirty-nine degrees. She has a cough too, and her body is very tired. She must not go to work today, so she does not go out. Laura makes a hot soup for her and she buys medicine in the pharmacy near the house. The medicine is for the fever and for the headache. Ana has a cold: her nose and her mouth are not well, and her neck hurts. In the afternoon her stomach hurts too, because she does not eat anything in the morning. She must eat and she must drink much water. On Tuesday she is not sick: her head does not hurt and there is no fever. But her back hurts, because she is in bed all the day. On Wednesday Ana is healthy again and she goes to work. Her doctor is happy: Ana must sleep eight hours and eat vegetables every day.",
    "preguntas": [
     {
+     "tipo": "completar_dato",
+     "enunciado": "How many degrees is the fever of Ana?",
+     "respuesta": "thirty-nine",
+     "aceptadas": [
+      "thirty nine",
+      "39",
+      "thirty-nine degrees"
+     ]
+    },
+    {
      "tipo": "opcion_multiple",
-     "enunciado": "Where does it hurt?",
+     "enunciado": "What hurts on Monday?",
      "opciones": [
-      "her head and her back",
-      "her stomach and her legs",
-      "her arms and her neck"
+      "her head",
+      "her knee",
+      "her arm"
      ],
-     "respuesta": "her head and her back"
+     "respuesta": "her head"
     },
     {
      "tipo": "vf",
-     "enunciado": "Ana has a fever.",
-     "respuesta": "verdadero"
+     "enunciado": "Ana goes to work on Monday.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "Why does her stomach hurt in the afternoon?",
+     "opciones": [
+      "she does not eat anything in the morning",
+      "she has a cough",
+      "she takes medicine"
+     ],
+     "respuesta": "she does not eat anything in the morning"
     },
     {
      "tipo": "vfnd",
@@ -26,19 +46,301 @@
      "respuesta": "no dice"
     },
     {
+     "tipo": "vf",
+     "enunciado": "On Tuesday Ana has a fever.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "Why does her back hurt on Tuesday?",
+     "respuesta": "because she is in bed all the day",
+     "aceptadas": [
+      "she is in bed all the day",
+      "she is in bed"
+     ]
+    },
+    {
      "tipo": "opcion_multiple",
-     "enunciado": "What does the doctor say she must do?",
+     "enunciado": "What must Ana do every day?",
      "opciones": [
-      "sleep and drink water",
-      "go to work",
-      "eat a lot"
+      "sleep eight hours and eat vegetables",
+      "take medicine for the fever",
+      "rest in bed"
      ],
-     "respuesta": "sleep and drink water"
+     "respuesta": "sleep eight hours and eat vegetables"
+    }
+   ]
+  },
+  {
+   "titulo": "En el consultorio",
+   "texto": "Paul goes to the hospital, because his stomach hurts every day after lunch. A nurse is with him first: he does not have a fever and he is not sick. Then the doctor visits him. Where is the pain? The pain is in the stomach, under the heart, and sometimes in the back. Paul does not have a cough and his head does not hurt. Does he eat vegetables? Does he sleep well? Paul eats a lot of meat and he sleeps five hours. That is the problem. He must eat fruit and vegetables, he must drink much water and he must sleep eight hours. The doctor also has medicine for the pain: one in the morning and one at night. Paul does not have an allergy, so the medicine is good for him. After two weeks Paul feels well and he is healthy again. Now he goes to the hospital only one time in the year.",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "Why does Paul go to the hospital?",
+     "opciones": [
+      "his stomach hurts after lunch",
+      "he has a fever",
+      "his head hurts"
+     ],
+     "respuesta": "his stomach hurts after lunch"
     },
     {
      "tipo": "vf",
-     "enunciado": "Ana is sick for one week.",
+     "enunciado": "Paul has a fever.",
      "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "How many hours does Paul sleep?",
+     "respuesta": "five",
+     "aceptadas": [
+      "5",
+      "five hours"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What must Paul eat?",
+     "opciones": [
+      "fruit and vegetables",
+      "a lot of meat",
+      "hot soup"
+     ],
+     "respuesta": "fruit and vegetables"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Paul takes the medicine two times in the day.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "The nurse is a friend of Paul.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Paul has an allergy.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "How is Paul after two weeks?",
+     "opciones": [
+      "healthy and well",
+      "sick, with a fever",
+      "with a cough"
+     ],
+     "respuesta": "healthy and well"
+    }
+   ]
+  },
+  {
+   "titulo": "Un cuerpo sano",
+   "texto": "Ana is a healthy student. Every morning she brushes her teeth and she cleans her hands. She has breakfast and then she walks for thirty minutes: her legs and her feet are strong. She never has a pain in her knees. Her eyes are not tired, because she does not read in the night, and her ears are well: she listens to music for one hour, not more. Ana eats fruit and vegetables every day, and she drinks much water, so her stomach is well. She does not have an allergy. In winter many friends have a cold, with a cough and a fever, but Ana is not sick: she sleeps eight hours every night and her body is healthy. When her head hurts she does not take medicine: she rests one hour in her bedroom. Sometimes her back and her shoulders hurt, because she reads with the computer on her legs. So she must read with the computer on a table. Now her back is well and her arms do not hurt. One finger hurts sometimes, but it is not a big pain.",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What does Ana do every morning?",
+     "opciones": [
+      "she brushes her teeth and cleans her hands",
+      "she takes medicine",
+      "she goes to the hospital"
+     ],
+     "respuesta": "she brushes her teeth and cleans her hands"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "How many minutes does Ana walk?",
+     "respuesta": "thirty",
+     "aceptadas": [
+      "30",
+      "thirty minutes"
+     ]
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Ana has a pain in her knees.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What does Ana do when her head hurts?",
+     "opciones": [
+      "she rests one hour",
+      "she takes medicine",
+      "she walks"
+     ],
+     "respuesta": "she rests one hour"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Ana sleeps eight hours every night.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "The computer of Ana is new.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "Why do her back and her shoulders hurt?",
+     "respuesta": "because she reads with the computer on her legs",
+     "aceptadas": [
+      "she reads with the computer on her legs",
+      "the computer on her legs"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What hurts sometimes?",
+     "opciones": [
+      "one finger",
+      "one knee",
+      "her neck"
+     ],
+     "respuesta": "one finger"
+    }
+   ]
+  },
+  {
+   "titulo": "El accidente de Paul",
+   "texto": "On Saturday Paul is on his bike in the park. On the road there is water, and after the corner Paul is on the floor with his bike. His arm hurts and there is a big pain in his knee. His leg is not well and he can not walk. A friend takes his phone and an ambulance comes in ten minutes. In the hospital a nurse cleans his arm and his hand. The doctor visits his leg and his knee: there is not a big problem, but Paul must rest for two weeks. He must not take his bike and he must not run. The doctor has medicine for the pain: two in the day. Paul does not have a fever and his head is well: he is not sick, only tired. His mother is in the hospital at six with a hot soup. After two weeks his knee does not hurt and his arm is well. Now Paul is healthy again.",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "Where is Paul on Saturday?",
+     "opciones": [
+      "in the park, on his bike",
+      "in the hospital",
+      "in his house"
+     ],
+     "respuesta": "in the park, on his bike"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "Where is the big pain?",
+     "respuesta": "in his knee",
+     "aceptadas": [
+      "his knee",
+      "knee"
+     ]
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "The ambulance comes in ten minutes.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What must Paul not do?",
+     "opciones": [
+      "take his bike and run",
+      "eat vegetables",
+      "take the medicine"
+     ],
+     "respuesta": "take his bike and run"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Paul has a fever.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "The bike of Paul is not well.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "How many weeks must Paul rest?",
+     "respuesta": "two",
+     "aceptadas": [
+      "2",
+      "two weeks"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "Who comes at six with a hot soup?",
+     "opciones": [
+      "his mother",
+      "the nurse",
+      "a friend"
+     ],
+     "respuesta": "his mother"
+    }
+   ]
+  },
+  {
+   "titulo": "Examen · Marie no se siente bien",
+   "texto": "On Thursday Marie does not feel well. Her head hurts and she has a fever: thirty-eight degrees. She has a cough and her neck hurts too. She must not go to work, so she is in bed all the morning. Her sister buys medicine in the pharmacy near the house: one for the fever and one for the headache. Marie does not have an allergy, so the medicine is good for her. In the afternoon her stomach hurts, because she does not eat anything. Her sister makes a hot soup and Marie must drink much water. On Friday there is no fever, but her back and her legs hurt, because she is in bed all the day. She does not need an ambulance and she does not go to the hospital. On Saturday Marie feels well: her body is healthy again and she goes out with her sister.",
+   "preguntas": [
+    {
+     "tipo": "completar_dato",
+     "enunciado": "How many degrees is the fever of Marie?",
+     "respuesta": "thirty-eight",
+     "aceptadas": [
+      "thirty eight",
+      "38",
+      "thirty-eight degrees"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What hurts on Thursday?",
+     "opciones": [
+      "her head and her neck",
+      "her legs and her back",
+      "her knee"
+     ],
+     "respuesta": "her head and her neck"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Marie has an allergy.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "Who buys the medicine?",
+     "opciones": [
+      "her sister",
+      "the doctor",
+      "a nurse"
+     ],
+     "respuesta": "her sister"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "Marie works in a hospital.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "On Friday Marie has a fever.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "Why do her back and her legs hurt on Friday?",
+     "respuesta": "because she is in bed all the day",
+     "aceptadas": [
+      "she is in bed all the day",
+      "she is in bed"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "How is Marie on Saturday?",
+     "opciones": [
+      "healthy and well",
+      "sick, with a cough",
+      "with a headache"
+     ],
+     "respuesta": "healthy and well"
     }
    ]
   }

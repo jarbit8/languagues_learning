@@ -1,39 +1,349 @@
-{ "tema": 20,
-"dialogos": [
-{ "titulo": "Planes para el fin de semana",
-"lineas": [
-{"hablante":"A","texto":"What do you do in your free time?"},
-{"hablante":"B","texto":"I like playing football and listening to music."},
-{"hablante":"A","texto":"Do you play an instrument?"},
-{"hablante":"B","texto":"Yes, I play the guitar."},
-{"hablante":"A","texto":"Cool! Do you want to play football on Saturday?"},
-{"hablante":"B","texto":"Yes, I love playing football!"},
-{"hablante":"A","texto":"Great, at the park at ten."},
-{"hablante":"B","texto":"Perfect, see you there!"}
-],
-"preguntas": [
-{"tipo":"opcion_multiple","enunciado":"¿Qué instrumento toca B?","opciones":["piano","guitar","drums"],"respuesta":"guitar"},
-{"tipo":"anota_la_hora","enunciado":"¿A qué hora quedan el sábado?","respuesta":"10:00","aceptadas":["ten","ten o'clock"]},
-{"tipo":"vf","enunciado":"Van a jugar fútbol en el parque.","respuesta":"verdadero"},
-{"tipo":"opcion_multiple","enunciado":"¿Qué le gusta hacer a B en su tiempo libre además de fútbol?","opciones":["listening to music","watching movies","reading"],"respuesta":"listening to music"},
-{"tipo":"completar_dato","enunciado":"¿Qué día van a jugar fútbol?","respuesta":"Saturday","aceptadas":["saturday"]}
-] },
-{ "titulo": "Antes del partido de tenis",
-"lineas": [
-{"hablante":"A","texto":"Do you like sports?"},
-{"hablante":"B","texto":"Yes, I love tennis and swimming."},
-{"hablante":"A","texto":"Do you play tennis every week?"},
-{"hablante":"B","texto":"Yes, I play with my brother."},
-{"hablante":"A","texto":"What time is your game today?"},
-{"hablante":"B","texto":"It starts at five o'clock."},
-{"hablante":"A","texto":"Cool!"},
-{"hablante":"B","texto":"Thank you! It's fun."}
-],
-"preguntas": [
-{"tipo":"opcion_multiple","enunciado":"¿Qué deportes le gustan a B?","opciones":["tennis and swimming","football and basketball","music and dance"],"respuesta":"tennis and swimming"},
-{"tipo":"vf","enunciado":"B juega tenis con su hermano.","respuesta":"verdadero"},
-{"tipo":"completar_dato","enunciado":"¿Con qué frecuencia juega tenis B?","respuesta":"every week","aceptadas":[]},
-{"tipo":"anota_la_hora","enunciado":"¿A qué hora empieza el juego?","respuesta":"5:00","aceptadas":["five o'clock","five"]},
-{"tipo":"vf","enunciado":"A B le encanta el tenis.","respuesta":"verdadero"}
-] }
-] }
+{
+ "tema": 20,
+ "dialogos": [
+  {
+   "titulo": "Planes para el fin de semana",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "What do you do in your free time?"
+    },
+    {
+     "hablante": "B",
+     "texto": "I like playing football and listening to music."
+    },
+    {
+     "hablante": "A",
+     "texto": "Do you play an instrument?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes, I play the guitar."
+    },
+    {
+     "hablante": "A",
+     "texto": "Cool! Do you want to play football on Saturday?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes, I love playing football!"
+    },
+    {
+     "hablante": "A",
+     "texto": "Great, at the park at ten."
+    },
+    {
+     "hablante": "B",
+     "texto": "Perfect, see you there!"
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué instrumento toca B?",
+     "opciones": [
+      "piano",
+      "guitar",
+      "drums"
+     ],
+     "respuesta": "guitar"
+    },
+    {
+     "tipo": "anota_la_hora",
+     "enunciado": "¿A qué hora quedan el sábado?",
+     "respuesta": "10:00",
+     "aceptadas": [
+      "ten",
+      "ten o'clock"
+     ]
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Van a jugar fútbol en el parque.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué le gusta hacer a B en su tiempo libre además de fútbol?",
+     "opciones": [
+      "listening to music",
+      "watching movies",
+      "reading"
+     ],
+     "respuesta": "listening to music"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Qué día van a jugar fútbol?",
+     "respuesta": "Saturday",
+     "aceptadas": [
+      "saturday"
+     ]
+    }
+   ]
+  },
+  {
+   "titulo": "Antes del partido de tenis",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "Do you like sports?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes, I love tennis and swimming."
+    },
+    {
+     "hablante": "A",
+     "texto": "Do you play tennis every week?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes, I play with my brother."
+    },
+    {
+     "hablante": "A",
+     "texto": "What time is your game today?"
+    },
+    {
+     "hablante": "B",
+     "texto": "It starts at five o'clock."
+    },
+    {
+     "hablante": "A",
+     "texto": "Cool!"
+    },
+    {
+     "hablante": "B",
+     "texto": "Thank you! It's fun."
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué deportes le gustan a B?",
+     "opciones": [
+      "tennis and swimming",
+      "football and basketball",
+      "music and dance"
+     ],
+     "respuesta": "tennis and swimming"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "B juega tenis con su hermano.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Con qué frecuencia juega tenis B?",
+     "respuesta": "every week",
+     "aceptadas": []
+    },
+    {
+     "tipo": "anota_la_hora",
+     "enunciado": "¿A qué hora empieza el juego?",
+     "respuesta": "5:00",
+     "aceptadas": [
+      "five o'clock",
+      "five"
+     ]
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "A B le encanta el tenis.",
+     "respuesta": "verdadero"
+    }
+   ]
+  },
+  {
+   "titulo": "¿Qué te gusta hacer?",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "What do you do in your free time?"
+    },
+    {
+     "hablante": "B",
+     "texto": "I love music. I play the guitar."
+    },
+    {
+     "hablante": "A",
+     "texto": "Do you sing?"
+    },
+    {
+     "hablante": "B",
+     "texto": "No, I do not sing well. But I like to dance."
+    },
+    {
+     "hablante": "A",
+     "texto": "And sport?"
+    },
+    {
+     "hablante": "B",
+     "texto": "I play tennis on Saturday. I hate football."
+    },
+    {
+     "hablante": "A",
+     "texto": "Do you swim?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes, in summer. Swimming is my sport."
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué instrumento toca B?",
+     "opciones": [
+      "the guitar",
+      "chess",
+      "the ball"
+     ],
+     "respuesta": "the guitar"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "A B le gusta el fútbol.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Qué deporte hace en verano?",
+     "respuesta": "swimming",
+     "aceptadas": [
+      "to swim",
+      "swim"
+     ]
+    }
+   ]
+  },
+  {
+   "titulo": "En el gimnasio",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "Do you come to the gym every day?"
+    },
+    {
+     "hablante": "B",
+     "texto": "No, on Monday and Wednesday."
+    },
+    {
+     "hablante": "A",
+     "texto": "What do you do here?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Running, for thirty minutes."
+    },
+    {
+     "hablante": "A",
+     "texto": "Do you play basketball?"
+    },
+    {
+     "hablante": "B",
+     "texto": "No, I am not tall. But I like to watch."
+    },
+    {
+     "hablante": "A",
+     "texto": "There is music here all the day."
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes! I love the songs in English."
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Qué días va al gimnasio?",
+     "respuesta": "Monday and Wednesday",
+     "aceptadas": [
+      "monday and wednesday",
+      "on monday and wednesday"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué hace en el gimnasio?",
+     "opciones": [
+      "running",
+      "basketball",
+      "swimming"
+     ],
+     "respuesta": "running"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "B juega básquet.",
+     "respuesta": "falso"
+    }
+   ]
+  },
+  {
+   "titulo": "Examen · El tiempo libre de Marie",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "What are your hobbies, Marie?"
+    },
+    {
+     "hablante": "B",
+     "texto": "I love music. I play the guitar every day."
+    },
+    {
+     "hablante": "A",
+     "texto": "Do you do sport?"
+    },
+    {
+     "hablante": "B",
+     "texto": "I go to the gym on Tuesday and Thursday."
+    },
+    {
+     "hablante": "A",
+     "texto": "Do you like football?"
+    },
+    {
+     "hablante": "B",
+     "texto": "No, I hate football. I play tennis."
+    },
+    {
+     "hablante": "A",
+     "texto": "And on Sunday?"
+    },
+    {
+     "hablante": "B",
+     "texto": "I paint and I draw. It is very fun."
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué toca Marie todos los días?",
+     "opciones": [
+      "the guitar",
+      "tennis",
+      "chess"
+     ],
+     "respuesta": "the guitar"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "A Marie le gusta el fútbol.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Qué hace el domingo?",
+     "respuesta": "she paints and draws",
+     "aceptadas": [
+      "paints and draws",
+      "she paints"
+     ]
+    }
+   ]
+  }
+ ]
+}

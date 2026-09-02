@@ -2,43 +2,343 @@
  "tema": 21,
  "textos": [
   {
-   "titulo": "En la universidad",
-   "texto": "Ana studies computer science at the university. It is difficult, but she likes it because she wants to work with computers. She has classes on Tuesday and Thursday. She likes maths, but history is difficult for her. She has a lot of homework and she studies in the library with her classmates. Next week she has an exam and she studies a lot. She wants to pass, so she practises every day. In September she passed a difficult exam with a very good grade, and her teacher said: you learn fast! Ana has a dictionary and a lot of notes in her notebook. Her classmate helps her because she does not understand everything. I want a degree and then a good job, says Ana. And she wants a scholarship too.",
+   "titulo": "La universidad de Ana",
+   "texto": "Ana studies computer science at the university. The campus is far from her house, so she takes the metro every morning. She has five subjects this semester: maths, history, science, English and computer science. Her first class is at eight in a small classroom near the library. Ana loves maths, because it is difficult but it is not the same every day. History is easy for her, but she does not like it. In her bag there is a notebook with her notes, a dictionary and her computer. She has all her notes from the class, because she does not understand all the class. After the class she practises the difficult questions in the library with her classmates. Ana has a scholarship, so she does not pay for the university. She must pass all her exams: with a good grade the scholarship is for all her degree. In December there are exams for every subject. Ana does not want to fail: she wants to graduate in four years and teach computer science.",
+   "preguntas": [
+    {
+     "tipo": "completar_dato",
+     "enunciado": "What does Ana study?",
+     "respuesta": "computer science",
+     "aceptadas": [
+      "computer science at the university"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "How many subjects does Ana have this semester?",
+     "opciones": [
+      "five",
+      "four",
+      "three"
+     ],
+     "respuesta": "five"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Ana pays for the university.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "Why does Ana love maths?",
+     "opciones": [
+      "it is difficult and not the same every day",
+      "it is very easy",
+      "her teacher is good"
+     ],
+     "respuesta": "it is difficult and not the same every day"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "History is difficult for Ana.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "The classmates of Ana have a scholarship too.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "When are the exams?",
+     "respuesta": "in December",
+     "aceptadas": [
+      "december"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What does Ana want after her degree?",
+     "opciones": [
+      "to teach computer science",
+      "to work in the library",
+      "to study history"
+     ],
+     "respuesta": "to teach computer science"
+    }
+   ]
+  },
+  {
+   "titulo": "El examen de matemáticas",
+   "texto": "On Monday Paul has a maths exam at nine in the big classroom of the campus. Maths is a very difficult subject for him: he does not understand the questions and he never has good grades. This semester he practises every day with Lee, a classmate. Lee is very good at maths and he teaches Paul in the library. Why is this answer not good? Paul has many questions and Lee has the answers. Before the exam Paul reads all his notes and he learns the difficult things. On Monday he is in the classroom at half past eight, with two pens and his notebook. The exam is not easy: there are twenty questions and one hour. Paul understands sixteen questions, so he does not fail: his grade is good and he passes. He is very happy, because with this grade he does not have a problem in the semester. Now he must learn history and science too.",
+   "preguntas": [
+    {
+     "tipo": "completar_dato",
+     "enunciado": "What time is the maths exam?",
+     "respuesta": "at nine",
+     "aceptadas": [
+      "nine",
+      "9"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "Who teaches Paul in the library?",
+     "opciones": [
+      "Lee",
+      "Ana",
+      "his teacher"
+     ],
+     "respuesta": "Lee"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Paul has good grades in maths.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "How many questions are in the exam?",
+     "respuesta": "twenty",
+     "aceptadas": [
+      "20",
+      "twenty questions"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "How many questions does Paul understand?",
+     "opciones": [
+      "sixteen",
+      "twenty",
+      "ten"
+     ],
+     "respuesta": "sixteen"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Paul fails the exam.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "Lee has a scholarship.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What must Paul learn now?",
+     "opciones": [
+      "history and science",
+      "maths and English",
+      "computer science"
+     ],
+     "respuesta": "history and science"
+    }
+   ]
+  },
+  {
+   "titulo": "Las clases de Laura",
+   "texto": "Laura studies history at the university and she loves her degree. Her campus is in the city centre, near the museum, so she goes on foot. This semester she has four subjects: history, English, science and maths. Maths is very difficult for her and she does not understand the classes, so she practises with a classmate every Tuesday. Her teacher of history is very good: she teaches with films and with old books, and the classes are never long. In her classroom there are thirty classmates and every one has a computer. Laura has a big notebook for her notes and a dictionary in English. When she does not understand a question, she reads the dictionary or she has the answer from her teacher. Laura wants to teach history in a school, so she must graduate with good grades. She does not have a scholarship: her parents pay for the university. In June she has three exams. History is easy for her, but she does not want to fail maths.",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
-     "enunciado": "What does Ana study?",
+     "enunciado": "What does Laura study?",
+     "opciones": [
+      "history",
+      "science",
+      "maths"
+     ],
+     "respuesta": "history"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Laura takes the metro to the campus.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "How many classmates are in her classroom?",
+     "respuesta": "thirty",
+     "aceptadas": [
+      "30",
+      "thirty classmates"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "How does her teacher of history teach?",
+     "opciones": [
+      "with films and old books",
+      "with a dictionary",
+      "with a computer"
+     ],
+     "respuesta": "with films and old books"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Laura has a scholarship.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "The parents of Laura are teachers.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "How many exams does Laura have in June?",
+     "respuesta": "three",
+     "aceptadas": [
+      "3",
+      "three exams"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What subject does Laura not want to fail?",
+     "opciones": [
+      "maths",
+      "history",
+      "English"
+     ],
+     "respuesta": "maths"
+    }
+   ]
+  },
+  {
+   "titulo": "Una beca",
+   "texto": "Lee wants a scholarship for computer science. It is for the students with good grades in all the subjects. Lee is in his second semester and he has five subjects: maths, science, computer science, English and history. Maths and computer science are easy for him, because he practises every day with his computer. English is very difficult: he does not understand the classes and he has a dictionary in his bag all the day. Ana teaches him English in the library on Wednesday: she has the questions and Lee must have the answers. Why is this difficult for him? Lee does not learn the language in the classroom: he must listen to music and watch films in English. In December he has six exams. He must not fail one: with a small grade there is no scholarship. Lee passes all the exams and he has the scholarship for all his degree. Now he wants to graduate and teach computer science in his university.",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What is the scholarship for?",
      "opciones": [
       "computer science",
-      "maths",
-      "history"
+      "history",
+      "English"
      ],
      "respuesta": "computer science"
     },
     {
      "tipo": "vf",
-     "enunciado": "History is difficult for her.",
+     "enunciado": "English is easy for Lee.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "Who teaches Lee English?",
+     "respuesta": "Ana",
+     "aceptadas": [
+      "ana"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "How must Lee learn English?",
+     "opciones": [
+      "with music and films",
+      "with a computer",
+      "in the classroom"
+     ],
+     "respuesta": "with music and films"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Lee has six exams in December.",
      "respuesta": "verdadero"
     },
     {
      "tipo": "vfnd",
-     "enunciado": "Ana has a scholarship.",
+     "enunciado": "Lee is the classmate of Ana.",
      "respuesta": "no dice"
     },
     {
+     "tipo": "completar_dato",
+     "enunciado": "How long is the scholarship?",
+     "respuesta": "for all his degree",
+     "aceptadas": [
+      "all his degree",
+      "his degree"
+     ]
+    },
+    {
      "tipo": "opcion_multiple",
-     "enunciado": "Where does she study with her classmates?",
+     "enunciado": "What does Lee want after his degree?",
      "opciones": [
-      "the library",
-      "the classroom",
-      "her apartment"
+      "to teach computer science",
+      "to study English",
+      "to work in a café"
      ],
-     "respuesta": "the library"
+     "respuesta": "to teach computer science"
+    }
+   ]
+  },
+  {
+   "titulo": "Examen · Los estudios de Marie",
+   "texto": "Marie studies science at the university. The campus is near her house, so she goes on foot every morning. This semester she has four subjects: science, maths, history and English. Her first class is at nine in a big classroom next to the library. Science is easy for her, because she practises every day, but maths is very difficult: she does not understand the questions of her teacher. On Tuesday a classmate teaches her in the library: Marie has the questions and he has the answers. In her bag there is a notebook with her notes, a dictionary and a book of history. Marie does not have a scholarship, so she works in a café on Saturday. In June there are exams for every subject. She must not fail: with good grades she can graduate in three years. Then she wants to teach science in a school. Her degree is difficult, but for Marie it is not a problem.",
+   "preguntas": [
+    {
+     "tipo": "completar_dato",
+     "enunciado": "What does Marie study?",
+     "respuesta": "science",
+     "aceptadas": [
+      "science at the university"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "How does Marie go to the campus?",
+     "opciones": [
+      "on foot",
+      "by metro",
+      "by bus"
+     ],
+     "respuesta": "on foot"
     },
     {
      "tipo": "vf",
-     "enunciado": "Ana failed the exam in September.",
+     "enunciado": "Maths is easy for Marie.",
      "respuesta": "falso"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "Who teaches Marie on Tuesday?",
+     "opciones": [
+      "a classmate",
+      "her teacher",
+      "her sister"
+     ],
+     "respuesta": "a classmate"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Marie has a scholarship.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "The café is near the campus.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "In how many years can Marie graduate?",
+     "respuesta": "three",
+     "aceptadas": [
+      "3",
+      "three years"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What does Marie want to do after her degree?",
+     "opciones": [
+      "teach science in a school",
+      "work in a café",
+      "study history"
+     ],
+     "respuesta": "teach science in a school"
     }
    ]
   }

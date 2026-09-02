@@ -2,43 +2,346 @@
  "tema": 23,
  "textos": [
   {
-   "titulo": "El viaje del año pasado",
-   "texto": "Last year Ana went to the United States. It was her first trip there. She took a plane from Canada and the flight was three hours. At the airport she had her passport and her visa, and she passed through customs and immigration. She had one suitcase and a small bag. She stayed in a hotel for six days. Her room was small but it was cheap, and the booking was easy. She visited museums and she walked a lot in the city. She met new people and she practised her English every day. She bought a souvenir for her mother. The departure was at seven in the morning and the arrival in Canada was at noon. It was a very good stay. Next year she wants to travel abroad again, but for more days.",
+   "titulo": "El viaje de Ana a Canadá",
+   "texto": "Last year Ana had her first trip abroad. She booked the flight in June and she bought a suitcase for the holiday. Two days before the departure she packed all her clothes: two sweaters, a coat, gloves and her boots, because in Canada it was very cold. In her bag she had her passport, her visa and the booking of the hotel. On Monday she took a taxi to the airport at five in the morning. There she saw many passengers with a lot of luggage. She went to the gate at seven with her boarding pass and she took seat fourteen. The flight was eight hours. Ana never flew before this trip. The plane landed in Toronto in the afternoon. At immigration a worker read her passport and her visa. Then she went to customs with her suitcase: there was no problem. Her sister was in the arrival and she is a permanent resident there. Ana stayed two weeks and she bought a souvenir for her mother.",
    "preguntas": [
     {
+     "tipo": "completar_dato",
+     "enunciado": "When did Ana book the flight?",
+     "respuesta": "in June",
+     "aceptadas": [
+      "june"
+     ]
+    },
+    {
      "tipo": "opcion_multiple",
-     "enunciado": "How many days did she stay in the hotel?",
+     "enunciado": "Why did Ana pack sweaters and a coat?",
      "opciones": [
-      "six",
-      "three",
-      "seven"
+      "because in Canada it was very cold",
+      "because her suitcase was big",
+      "because she had a visa"
      ],
-     "respuesta": "six"
+     "respuesta": "because in Canada it was very cold"
     },
     {
      "tipo": "vf",
-     "enunciado": "It was her first trip to the United States.",
+     "enunciado": "Ana went to the airport by taxi.",
      "respuesta": "verdadero"
     },
     {
+     "tipo": "completar_dato",
+     "enunciado": "What seat did Ana take?",
+     "respuesta": "fourteen",
+     "aceptadas": [
+      "14",
+      "seat fourteen"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "How long was the flight?",
+     "opciones": [
+      "eight hours",
+      "two weeks",
+      "five hours"
+     ],
+     "respuesta": "eight hours"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "There was a problem at customs.",
+     "respuesta": "falso"
+    },
+    {
      "tipo": "vfnd",
-     "enunciado": "She travelled with a friend.",
+     "enunciado": "The sister of Ana works in Toronto.",
      "respuesta": "no dice"
     },
     {
      "tipo": "opcion_multiple",
-     "enunciado": "What did she buy for her mother?",
+     "enunciado": "What did Ana buy for her mother?",
      "opciones": [
       "a souvenir",
       "a suitcase",
-      "a ticket"
+      "a boarding pass"
      ],
      "respuesta": "a souvenir"
+    }
+   ]
+  },
+  {
+   "titulo": "En el aeropuerto",
+   "texto": "Paul went to the airport with his father at six in the morning. The departure of his flight was at nine, but he came early, because he had a lot of luggage: two suitcases and a bag. First he went with his booking and his passport, and there he took his boarding pass with the seat and the gate. Then his suitcases went with the luggage of the other passengers. Paul had a coffee with his father and at seven he went to immigration. There a worker read his passport and his visa for the United States. At customs there was a problem: in his bag there was a big souvenir of Peru and it was not for a plane. Paul left the souvenir with his father. At the gate there were many tourists and a guide with fifteen passengers. The plane landed in the United States at four and Paul stayed one month abroad with his family.",
+   "preguntas": [
+    {
+     "tipo": "completar_dato",
+     "enunciado": "What time was the departure of the flight?",
+     "respuesta": "at nine",
+     "aceptadas": [
+      "nine",
+      "9"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "Why did Paul come early?",
+     "opciones": [
+      "he had a lot of luggage",
+      "the flight had a delay",
+      "he had no passport"
+     ],
+     "respuesta": "he had a lot of luggage"
     },
     {
      "tipo": "vf",
-     "enunciado": "The flight was six hours.",
+     "enunciado": "Paul had two suitcases and a bag.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What was the problem at customs?",
+     "opciones": [
+      "a big souvenir in his bag",
+      "his visa was not good",
+      "his seat was not free"
+     ],
+     "respuesta": "a big souvenir in his bag"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "How many passengers were with the guide?",
+     "respuesta": "fifteen",
+     "aceptadas": [
+      "15",
+      "fifteen passengers"
+     ]
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Paul took the souvenir on the plane.",
      "respuesta": "falso"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "The father of Paul went abroad too.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "How long did Paul stay abroad?",
+     "opciones": [
+      "one month",
+      "two weeks",
+      "one year"
+     ],
+     "respuesta": "one month"
+    }
+   ]
+  },
+  {
+   "titulo": "El hotel en Toronto",
+   "texto": "In Toronto Ana stayed in a small hotel near the city centre. She booked it in June and the booking was for two weeks. The hotel was not expensive: forty dollars every night. Her room was on the second floor, with a big window and a small bathroom. In the morning there was breakfast: bread, butter, eggs, fruit and coffee. Ana left her suitcase in the room and she went out with her camera every day. She was a tourist in the museums, in the park and near the lake. A guide in the hotel had a map of the city for the tourists. She bought a souvenir for her mother and two for her friends in Peru. One day she took a train to another city, near the border with the United States. In the hotel there were tourists of many countries: France, Spain, England and Peru. After two weeks Ana packed her suitcase and she left the hotel at five in the morning for her flight. It was a very good stay.",
+   "preguntas": [
+    {
+     "tipo": "completar_dato",
+     "enunciado": "How much was the hotel every night?",
+     "respuesta": "forty dollars",
+     "aceptadas": [
+      "forty",
+      "40 dollars"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "Where was the room of Ana?",
+     "opciones": [
+      "on the second floor",
+      "on the first floor",
+      "near the lake"
+     ],
+     "respuesta": "on the second floor"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "There was breakfast in the hotel.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "How many souvenirs did Ana buy?",
+     "respuesta": "three",
+     "aceptadas": [
+      "3",
+      "three souvenirs"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "Who had a map of the city?",
+     "opciones": [
+      "a guide in the hotel",
+      "her sister",
+      "a tourist of France"
+     ],
+     "respuesta": "a guide in the hotel"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "The hotel had a garden.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Ana left the hotel in the afternoon.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What did Ana do one day?",
+     "opciones": [
+      "she took a train to another city",
+      "she flew to Peru",
+      "she booked another hotel"
+     ],
+     "respuesta": "she took a train to another city"
+    }
+   ]
+  },
+  {
+   "titulo": "Un vuelo con retraso",
+   "texto": "Last Saturday Laura had a flight at eleven, but there was a big delay. At the airport the screen was the same all the morning: departure at two. Laura had her boarding pass, her passport and a small suitcase, and she was at the gate for three hours. Many passengers were tired and one tourist was very angry. Laura read a book and she listened to music. At one she had a sandwich and a cold soft drink in a café of the airport. Then the plane came and all the passengers went to their seats. Laura had seat twenty-two, near a window. The flight was four hours and the plane landed at six. At immigration there were many passengers, so Laura was there for one hour. At customs a worker opened her suitcase, but there was no problem: in it there were only clothes and a souvenir. Her friend was in the arrival at eight.",
+   "preguntas": [
+    {
+     "tipo": "completar_dato",
+     "enunciado": "What time was the flight of Laura?",
+     "respuesta": "at eleven",
+     "aceptadas": [
+      "eleven",
+      "11"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What time was the new departure?",
+     "opciones": [
+      "at two",
+      "at six",
+      "at eight"
+     ],
+     "respuesta": "at two"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Laura was at the gate for three hours.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What did Laura do at the gate?",
+     "opciones": [
+      "she read a book and listened to music",
+      "she packed her suitcase",
+      "she called her friend"
+     ],
+     "respuesta": "she read a book and listened to music"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "What seat did Laura have?",
+     "respuesta": "twenty-two",
+     "aceptadas": [
+      "twenty two",
+      "22",
+      "seat twenty-two"
+     ]
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "There was a problem at customs.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "The friend of Laura lives near the airport.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "How long was Laura at immigration?",
+     "opciones": [
+      "one hour",
+      "three hours",
+      "four hours"
+     ],
+     "respuesta": "one hour"
+    }
+   ]
+  },
+  {
+   "titulo": "Examen · El viaje de Marie",
+   "texto": "Last year Marie had a trip abroad with her sister. She booked the flight in March and she packed her suitcase two days before the departure: clothes, a coat and her boots. In her bag she had her passport, her visa and the booking of the hotel. On Friday she took the metro to the airport at six in the morning. There she took her boarding pass with the seat and the gate, and her suitcase went with the luggage of the other passengers. The flight was at nine, but there was a delay of two hours. It was seven hours in the plane and Marie never flew before. The plane landed in the afternoon. At immigration a worker read her passport, and at customs there was no problem. A guide was in the arrival with the tourists. Marie stayed three weeks in a small hotel near the city centre: forty dollars every night. She bought a souvenir for her mother.",
+   "preguntas": [
+    {
+     "tipo": "completar_dato",
+     "enunciado": "When did Marie book the flight?",
+     "respuesta": "in March",
+     "aceptadas": [
+      "march"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "How did Marie go to the airport?",
+     "opciones": [
+      "by metro",
+      "by taxi",
+      "by bus"
+     ],
+     "respuesta": "by metro"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "The flight left at nine.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "How long was the delay?",
+     "respuesta": "two hours",
+     "aceptadas": [
+      "two",
+      "2 hours"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "How long was Marie in the plane?",
+     "opciones": [
+      "seven hours",
+      "three weeks",
+      "two hours"
+     ],
+     "respuesta": "seven hours"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "There was a problem at customs.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "The sister of Marie flew before.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "How much was the hotel every night?",
+     "opciones": [
+      "forty dollars",
+      "three weeks",
+      "fourteen dollars"
+     ],
+     "respuesta": "forty dollars"
     }
    ]
   }

@@ -3,42 +3,346 @@
  "textos": [
   {
    "titulo": "Los planes de Ana",
-   "texto": "Ana has a lot of plans. Next year she is going to finish her degree, and then she is going to search a good job. She wants to work with computers, because it is her career and she likes it. She is also going to study more English, because it is important for her future. Maybe she will move to another city, but she is not sure. First she is going to pass her exams, and then she will see. Her dream is to live and work in the United States, so she is going to practise every day. It will not be easy, but she is brave and hardworking. I hope everything will change soon, she says. Her goal is important. Finally, she wants her family together again. What are your plans?",
+   "texto": "Ana has many plans for the future. First she is going to finish her degree in computer science: she has two semesters and then she is going to graduate. Her goal is a good job in a company, but her dream is another one: she is going to emigrate and move abroad. Her sister is a permanent resident in Canada and she is going to apply for the citizenship next year. Ana hopes for the same opportunity. She is going to plan all: first the English, then the money for the flight, and finally the visa. She practises English every day, because it is very important for her project. Maybe in two years she is going to leave Peru. It is not sure: she does not have all the money and the visa is difficult. But Ana is not going to change her plan: she is going to get a better job abroad. Her family and her friends are going to visit her, and together they are going to be well.",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
-     "enunciado": "What is she going to do next year?",
+     "enunciado": "What is Ana going to do first?",
      "opciones": [
       "finish her degree",
-      "move to another city",
-      "travel abroad"
+      "move abroad",
+      "apply for the citizenship"
      ],
      "respuesta": "finish her degree"
     },
     {
+     "tipo": "completar_dato",
+     "enunciado": "How many semesters does Ana have?",
+     "respuesta": "two",
+     "aceptadas": [
+      "2",
+      "two semesters"
+     ]
+    },
+    {
      "tipo": "vf",
-     "enunciado": "Ana is sure she will move to another city.",
+     "enunciado": "The dream of Ana is a job in a company.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What is the sister of Ana going to apply for?",
+     "opciones": [
+      "the citizenship",
+      "a scholarship",
+      "a visa"
+     ],
+     "respuesta": "the citizenship"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Ana practises English every day.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "Ana is going to move to Canada.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "Why is it not sure?",
+     "respuesta": "she does not have all the money and the visa is difficult",
+     "aceptadas": [
+      "the visa is difficult",
+      "she does not have all the money"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What is Ana not going to do?",
+     "opciones": [
+      "change her plan",
+      "practise English",
+      "graduate"
+     ],
+     "respuesta": "change her plan"
+    }
+   ]
+  },
+  {
+   "titulo": "El proyecto de Paul",
+   "texto": "Paul is going to start a project with two classmates next month. It is a website for the students of the university: there they are going to have their notes, the dates of the exams and the answers of the difficult questions. First they are going to plan all the pages, then they are going to learn a new language of computer science, and finally they are going to open the website for all the campus. It is a big project, but it is also an opportunity: with it Paul is going to get a better job. He hopes for a scholarship too. Maybe in one year the university is going to pay for the project. Paul is not sure, but he is going to apply in December. His goal is not the money: his dream is a company with his friends. We are going to work together, Lee and Paul plan. They are going to change the campus.",
+   "preguntas": [
+    {
+     "tipo": "completar_dato",
+     "enunciado": "With how many classmates is Paul going to start the project?",
+     "respuesta": "two",
+     "aceptadas": [
+      "2",
+      "two classmates"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What is the project?",
+     "opciones": [
+      "a website for the students",
+      "a company abroad",
+      "a new subject"
+     ],
+     "respuesta": "a website for the students"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "They are going to open the website first.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "When is Paul going to apply for the scholarship?",
+     "opciones": [
+      "in December",
+      "next month",
+      "in one year"
+     ],
+     "respuesta": "in December"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "The goal of Paul is the money.",
      "respuesta": "falso"
     },
     {
      "tipo": "vfnd",
-     "enunciado": "Ana has a job in the United States.",
+     "enunciado": "Lee is going to apply for the scholarship too.",
      "respuesta": "no dice"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "What is the dream of Paul?",
+     "respuesta": "a company with his friends",
+     "aceptadas": [
+      "a company",
+      "a company with friends"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What are they going to learn?",
+     "opciones": [
+      "a new language of computer science",
+      "English",
+      "history"
+     ],
+     "respuesta": "a new language of computer science"
+    }
+   ]
+  },
+  {
+   "titulo": "El sueño de Laura",
+   "texto": "The dream of Laura is not a job: it is music. Next year she is going to travel to England for six months. First she is going to work in a café to get the money, then she is going to book the flight, and finally she is going to apply for the visa. It is not sure, because the visa is very difficult and it is also expensive. Her parents are not happy with this plan: they hope for a good job for her, in a school of the city. But Laura is not going to change her goal. In England she is going to play the guitar and she is going to sing in small parties. Maybe she is going to stay there one year. Her friend Ana is going to travel with her for two weeks in the summer, and together they are going to visit London. It is a big project for a student, but Laura is sure: her future is the music. She is going to decide in March.",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What is the dream of Laura?",
+     "opciones": [
+      "music",
+      "a good job",
+      "a scholarship"
+     ],
+     "respuesta": "music"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "How many months is she going to travel?",
+     "respuesta": "six",
+     "aceptadas": [
+      "6",
+      "six months"
+     ]
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Laura is going to book the flight first.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "Why is it not sure?",
+     "opciones": [
+      "the visa is difficult and expensive",
+      "she does not have a passport",
+      "her friend is not going"
+     ],
+     "respuesta": "the visa is difficult and expensive"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "The parents of Laura are happy with this plan.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "Laura plays the guitar very well.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "How long is Ana going to travel with her?",
+     "respuesta": "two weeks",
+     "aceptadas": [
+      "two",
+      "2 weeks"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "When is Laura going to decide?",
+     "opciones": [
+      "in March",
+      "next year",
+      "in the summer"
+     ],
+     "respuesta": "in March"
+    }
+   ]
+  },
+  {
+   "titulo": "Una decisión",
+   "texto": "Lee must decide: two subjects or a job. His university is going to open a new semester in August and he has an opportunity: a company wants him for four hours every day. The money is very good and it is also his subject, computer science. But then he is not going to have time for all his classes and maybe he is going to fail one exam. First he is going to speak with his teacher, then with his parents, and finally he is going to decide in July. His goal is to graduate in two years, so a small grade is a problem. His dream is a big company in the United States, so this job is important for his future. Lee hopes for the two things: the job and the degree. Maybe he is going to study at night and work in the morning. It is not going to be easy, but he is sure: he is not going to change his plan. In August he is going to start.",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What must Lee decide?",
+     "opciones": [
+      "two subjects or a job",
+      "a scholarship or a visa",
+      "a company or a project"
+     ],
+     "respuesta": "two subjects or a job"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "How many hours every day does the company want him?",
+     "respuesta": "four",
+     "aceptadas": [
+      "4",
+      "four hours"
+     ]
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Lee is going to speak with his parents first.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "When is Lee going to decide?",
+     "opciones": [
+      "in July",
+      "in August",
+      "in two years"
+     ],
+     "respuesta": "in July"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "The goal of Lee is to graduate in two years.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "The company is in the United States.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "What is the dream of Lee?",
+     "respuesta": "a big company in the United States",
+     "aceptadas": [
+      "a big company",
+      "a company in the United States"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What is Lee maybe going to do?",
+     "opciones": [
+      "study at night and work in the morning",
+      "change his plan",
+      "leave the university"
+     ],
+     "respuesta": "study at night and work in the morning"
+    }
+   ]
+  },
+  {
+   "titulo": "Examen · Los planes de Marie",
+   "texto": "Marie has a plan for the next year and she is sure. First she is going to finish her degree in science in June, then she is going to work six months in a hospital, and finally she is going to apply for a scholarship abroad. Her goal is a big project with her classmates: a website of science for the students of her city. It is an opportunity, because with it maybe she is going to get a better job. Her dream is another one: she hopes to travel to England and to sing in small parties, because music is very important for her. Her parents are not happy with this plan, but Marie is not going to change it. She is also going to move to another city with her sister and together they are going to book a small apartment. It is not going to be easy, but she is going to decide in March.",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What is Marie going to do first?",
+     "opciones": [
+      "finish her degree",
+      "work in a hospital",
+      "apply for a scholarship"
+     ],
+     "respuesta": "finish her degree"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "How many months is she going to work in a hospital?",
+     "respuesta": "six",
+     "aceptadas": [
+      "6",
+      "six months"
+     ]
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "The goal of Marie is a project with her classmates.",
+     "respuesta": "verdadero"
     },
     {
      "tipo": "opcion_multiple",
      "enunciado": "What is her dream?",
      "opciones": [
-      "live and work in the United States",
-      "travel to Peru",
-      "work in a hospital"
+      "to travel to England and sing",
+      "a job in a hospital",
+      "a scholarship abroad"
      ],
-     "respuesta": "live and work in the United States"
+     "respuesta": "to travel to England and sing"
     },
     {
      "tipo": "vf",
-     "enunciado": "Ana wants her family together again.",
-     "respuesta": "verdadero"
+     "enunciado": "Her parents are happy with the plan.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "The sister of Marie studies science too.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "With whom is Marie going to move to another city?",
+     "respuesta": "with her sister",
+     "aceptadas": [
+      "her sister",
+      "sister"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "When is Marie going to decide?",
+     "opciones": [
+      "in March",
+      "in June",
+      "next year"
+     ],
+     "respuesta": "in March"
     }
    ]
   }

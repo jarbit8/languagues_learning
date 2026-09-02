@@ -2,43 +2,347 @@
  "tema": 20,
  "textos": [
   {
-   "titulo": "El tiempo libre",
-   "texto": "In her free time Ana loves music. She plays the guitar and she sings, but she says she does not sing well! On Saturday she goes swimming with Laura, because they like swimming a lot. Ana also likes running in the park when the weather is good. Paul plays football with his team every Sunday. He plays very well and he has a new ball. Laura hates football, but she loves tennis and she plays every week. In the evening they sometimes watch a film or they listen to music. Ana likes reading books too, and she paints when she is calm. Let us go to the cinema! says Paul. There is a good film today. It is fun to go out with friends. Ana wants to travel too: that is the hobby she loves.",
+   "titulo": "El tiempo libre de Ana",
+   "texto": "Ana has a lot of free time on the weekend and she has many hobbies. She loves music: she listens to music every day and she plays the guitar in her bedroom. She does not sing very well, but she likes to sing with her friends. On Monday and Wednesday she goes to the gym near the park: there she does running for thirty minutes. She hates football, but she likes tennis: on Saturday she plays tennis with Laura. Laura is in a basketball team and she plays with a big ball every Friday. Ana does not swim in winter, because the water is very cold, but in summer swimming is her sport. On Sunday morning she paints and she draws in the garden: it is fun and it is not expensive. In the evening Ana watches a film with Paul. They love films, but they hate long films. Sometimes they play chess: it is a slow game, but it is fun.",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
-     "enunciado": "What does Ana play?",
+     "enunciado": "What does Ana play in her bedroom?",
      "opciones": [
       "the guitar",
-      "the piano",
-      "the violin"
+      "chess",
+      "tennis"
      ],
      "respuesta": "the guitar"
     },
     {
      "tipo": "vf",
-     "enunciado": "Laura likes football.",
+     "enunciado": "Ana loves football.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "How many minutes does Ana do running?",
+     "respuesta": "thirty",
+     "aceptadas": [
+      "30",
+      "thirty minutes"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What sport does Laura play every Friday?",
+     "opciones": [
+      "basketball",
+      "tennis",
+      "football"
+     ],
+     "respuesta": "basketball"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Ana swims in winter.",
      "respuesta": "falso"
     },
     {
      "tipo": "vfnd",
-     "enunciado": "Ana plays the guitar every day.",
+     "enunciado": "Laura plays the guitar too.",
      "respuesta": "no dice"
     },
     {
+     "tipo": "completar_dato",
+     "enunciado": "What does Ana do on Sunday morning?",
+     "respuesta": "she paints and draws",
+     "aceptadas": [
+      "she paints and she draws",
+      "paints and draws",
+      "she paints"
+     ]
+    },
+    {
      "tipo": "opcion_multiple",
-     "enunciado": "What do Ana and Laura do on Saturday?",
+     "enunciado": "What do Ana and Paul hate?",
      "opciones": [
-      "go swimming",
-      "play football",
-      "watch a film"
+      "long films",
+      "music",
+      "chess"
      ],
-     "respuesta": "go swimming"
+     "respuesta": "long films"
+    }
+   ]
+  },
+  {
+   "titulo": "El equipo de Paul",
+   "texto": "Paul plays football in a small team with his friends. They play every Saturday in the stadium near the school. Paul loves this sport: he runs a lot and he is with his friends. His team is not very good, but the games are fun. Lee plays too: he takes the ball and he runs very fast. After the game they eat in a café near the stadium and they listen to music. Paul hates basketball, because he is not tall, and he does not like tennis. In winter the team does not play football: the road is not good, so they go to the gym. There Paul does running and Lee plays chess with the doctor of the team. Paul does not swim: he hates swimming and cold water. On Sunday he watches a game on the computer with his father. His mother plays the guitar and she sings: she loves music, but she does not like sport. In his free time Paul draws his team.",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "Where does the team of Paul play?",
+     "opciones": [
+      "in the stadium near the school",
+      "in the gym",
+      "in the park"
+     ],
+     "respuesta": "in the stadium near the school"
     },
     {
      "tipo": "vf",
-     "enunciado": "Paul plays football on Sunday.",
+     "enunciado": "The team of Paul is very good.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "Why does Paul hate basketball?",
+     "respuesta": "because he is not tall",
+     "aceptadas": [
+      "he is not tall",
+      "he is short"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What does the team do in winter?",
+     "opciones": [
+      "they go to the gym",
+      "they play in the stadium",
+      "they do swimming"
+     ],
+     "respuesta": "they go to the gym"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Paul loves swimming.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "Lee plays football very well.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "Who plays the guitar and sings?",
+     "respuesta": "his mother",
+     "aceptadas": [
+      "mother",
+      "the mother of Paul"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What does Paul do in his free time?",
+     "opciones": [
+      "he draws his team",
+      "he plays chess",
+      "he sings"
+     ],
+     "respuesta": "he draws his team"
+    }
+   ]
+  },
+  {
+   "titulo": "Música los sábados",
+   "texto": "Every Saturday Laura goes to a music party in the house of a friend. She loves songs in English and she listens to music all the day. Laura plays the guitar very well and she sings: her friends love her songs. Ana does not sing, but she likes to dance. In the party there is music, food and games: sometimes they play chess, sometimes a game with a ball in the garden. It is very fun. Paul does not dance: he hates parties with many friends, so he watches a film in his house. Lee plays the guitar too, but he does not sing. In her free time Laura also paints and draws: she draws her friends in the party. She wants to travel to England for the music. Ana prefers sport: she plays tennis and she does swimming in summer. The two friends are not the same, but on Saturday they are always in the same house.",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What does Laura do in the party?",
+     "opciones": [
+      "she plays the guitar and sings",
+      "she dances all the day",
+      "she watches a film"
+     ],
+     "respuesta": "she plays the guitar and sings"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Ana likes to dance.",
      "respuesta": "verdadero"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "Why does Paul not go to the party?",
+     "respuesta": "he hates parties with many friends",
+     "aceptadas": [
+      "he hates parties",
+      "he does not dance"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What does Lee do?",
+     "opciones": [
+      "he plays the guitar",
+      "he sings",
+      "he dances"
+     ],
+     "respuesta": "he plays the guitar"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Laura draws her friends in the party.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "The friend of Laura has a big house.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "Where does Laura want to travel?",
+     "respuesta": "to England",
+     "aceptadas": [
+      "England"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What does Ana prefer?",
+     "opciones": [
+      "sport",
+      "music",
+      "chess"
+     ],
+     "respuesta": "sport"
+    }
+   ]
+  },
+  {
+   "titulo": "Un domingo de deportes",
+   "texto": "On Sunday morning Ana and Paul go to the gym in the city centre. Paul does running for forty minutes and Ana plays tennis with a friend of the gym. There is a big room for basketball: five friends play with a ball and they run a lot. Ana hates basketball, but she likes to watch the game. In the gym there is music all the day and one can listen to songs in English. At twelve they do swimming: the water is not cold and swimming is a very good sport for the back. After the gym they eat in a café and they play chess for one hour. Paul loves chess, but Ana hates it: it is a very slow game for her. In the afternoon they watch a football game on the computer. Then Ana plays the guitar and she sings with Laura. Sport and music: it is a fun Sunday in their free time.",
+   "preguntas": [
+    {
+     "tipo": "completar_dato",
+     "enunciado": "How many minutes does Paul do running?",
+     "respuesta": "forty",
+     "aceptadas": [
+      "40",
+      "forty minutes"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What does Ana play in the gym?",
+     "opciones": [
+      "tennis",
+      "basketball",
+      "football"
+     ],
+     "respuesta": "tennis"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Ana likes to watch the basketball game.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "Why is swimming a good sport?",
+     "opciones": [
+      "it is very good for the back",
+      "the water is cold",
+      "it is fast"
+     ],
+     "respuesta": "it is very good for the back"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Ana loves chess.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "Laura goes to the gym too.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "What do they watch in the afternoon?",
+     "respuesta": "a football game",
+     "aceptadas": [
+      "football game",
+      "a game"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What does Ana do with Laura?",
+     "opciones": [
+      "she plays the guitar and sings",
+      "she does swimming",
+      "she draws"
+     ],
+     "respuesta": "she plays the guitar and sings"
+    }
+   ]
+  },
+  {
+   "titulo": "Examen · El tiempo libre de Marie",
+   "texto": "Marie has many hobbies in her free time. She loves music: she listens to songs in English every day and she plays the guitar. She does not sing well, but she likes to dance. On Tuesday and Thursday she goes to the gym near her house: there she does running for thirty minutes. Marie hates football and basketball, but she likes tennis: on Saturday she plays with her sister. In summer swimming is her sport, because the water is not cold. She does not play chess: it is a very slow game for her. On Sunday morning she paints and she draws in the garden: it is fun and it is not expensive. In the evening she watches a film with her sister. They love films, but they hate long films. Marie wants to travel to France for the music and for the parties.",
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What music does Marie listen to?",
+     "opciones": [
+      "songs in English",
+      "songs in French",
+      "songs of a team"
+     ],
+     "respuesta": "songs in English"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Marie sings very well.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "What days does Marie go to the gym?",
+     "respuesta": "Tuesday and Thursday",
+     "aceptadas": [
+      "tuesday and thursday",
+      "on tuesday and thursday"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "What sport does Marie like?",
+     "opciones": [
+      "tennis",
+      "football",
+      "basketball"
+     ],
+     "respuesta": "tennis"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Marie plays chess.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "vfnd",
+     "enunciado": "The sister of Marie plays the guitar.",
+     "respuesta": "no dice"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "What does Marie do on Sunday morning?",
+     "respuesta": "she paints and draws",
+     "aceptadas": [
+      "she paints and she draws",
+      "paints and draws"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "Why does Marie want to travel to France?",
+     "opciones": [
+      "for the music and the parties",
+      "for the sport",
+      "for the films"
+     ],
+     "respuesta": "for the music and the parties"
     }
    ]
   }

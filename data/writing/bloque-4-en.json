@@ -2,6 +2,170 @@
  "bloque": 4,
  "consignas": [
   {
+   "tema": 19,
+   "consigna": "Escribe un mensaje a un amigo: dile que no te sientes bien, qué síntomas tienes y qué necesitas.",
+   "minPalabras": 28,
+   "maxPalabras": 38,
+   "respuestaModelo": "Hi Paul! I am not well today. I have got a headache and a cold. My throat hurts and I am very tired. I can't go to the office. I need to see a doctor. See you soon!",
+   "checklist": [
+    "Usé have got para los síntomas",
+    "Nombré al menos dos síntomas",
+    "Dije qué necesito",
+    "Escribí entre 28 y 38 palabras"
+   ]
+  },
+  {
+   "tema": 19,
+   "consigna": "Escribe qué haces para estar sano: qué comes, cuánto duermes y qué haces cuando te duele algo.",
+   "minPalabras": 40,
+   "maxPalabras": 55,
+   "respuestaModelo": "I eat fruit and vegetables every day and I drink much water. I sleep eight hours every night, so my body is healthy. I walk thirty minutes in the morning. When my head hurts I do not take medicine: I rest one hour in my bedroom.",
+   "checklist": [
+    "Dije qué como para estar sano",
+    "Dije cuánto duermo",
+    "Usé 'must' o 'to hurt'",
+    "Dije qué hago cuando me duele algo",
+    "Escribí entre 40 y 55 palabras"
+   ]
+  },
+  {
+   "tema": 19,
+   "consigna": "Examen: escribe a un amigo que estás enfermo: qué te duele, qué síntomas tienes, qué medicina tomas y qué te dijo el doctor.",
+   "minPalabras": 45,
+   "maxPalabras": 60,
+   "respuestaModelo": "Today I do not feel well. My head hurts and I have a fever: thirty-eight degrees. I have a cough and my neck hurts too. My sister buys medicine in the pharmacy: one for the fever and one in the night. I do not have an allergy. The doctor says I must rest and drink much water.",
+   "checklist": [
+    "Dije al menos dos partes del cuerpo que me duelen",
+    "Nombré dos síntomas",
+    "Dije qué medicina tomo",
+    "Usé 'must' para lo que dijo el doctor",
+    "Escribí entre 45 y 60 palabras"
+   ]
+  },
+  {
+   "tema": 20,
+   "consigna": "Escribe sobre tu tiempo libre: qué te gusta hacer, qué deportes practicas y con qué frecuencia.",
+   "minPalabras": 30,
+   "maxPalabras": 40,
+   "respuestaModelo": "I like reading and I love music. On Saturday I play football with my friends. I go swimming in summer. I don't like dancing. I read a book every night. How often do you play football?",
+   "checklist": [
+    "Usé like / love + verbo en -ing",
+    "Usé play / go / do con deportes",
+    "Dije con qué frecuencia",
+    "Escribí entre 30 y 40 palabras"
+   ]
+  },
+  {
+   "tema": 20,
+   "consigna": "Escribe qué haces en tu tiempo libre: qué te encanta, qué odias y con quién lo haces.",
+   "minPalabras": 40,
+   "maxPalabras": 55,
+   "respuestaModelo": "In my free time I love music: I listen to songs in English and I play the guitar. I do not sing well, but I like to dance. On Saturday I play tennis with a friend. I hate football, because it is very slow for me. Sometimes I paint in my room.",
+   "checklist": [
+    "Usé 'to love' y 'to hate'",
+    "Nombré al menos cuatro pasatiempos",
+    "Dije con quién lo hago",
+    "Usé 'to like' con un verbo",
+    "Escribí entre 40 y 55 palabras"
+   ]
+  },
+  {
+   "tema": 20,
+   "consigna": "Examen: escribe sobre tus pasatiempos y tus deportes: qué haces cada día de la semana, qué te gusta y qué no, y por qué.",
+   "minPalabras": 45,
+   "maxPalabras": 60,
+   "respuestaModelo": "I love music and I play the guitar every day. On Monday and Wednesday I go to the gym: there I do running for thirty minutes. On Saturday I play tennis with my sister. I hate basketball, because I am not tall. In summer swimming is my sport. On Sunday I watch a film and I draw.",
+   "checklist": [
+    "Hablé de al menos tres días de la semana",
+    "Nombré dos deportes y dos pasatiempos",
+    "Usé 'to love', 'to like' y 'to hate'",
+    "Di una razón con 'because'",
+    "Escribí entre 45 y 60 palabras"
+   ]
+  },
+  {
+   "tema": 21,
+   "consigna": "Escribe sobre tus estudios: qué estudias, qué materias tienes, qué es difícil y por qué.",
+   "minPalabras": 30,
+   "maxPalabras": 40,
+   "respuestaModelo": "I study computer science at the university. My subjects are maths and science. Maths is difficult but I like it, so I practise every day. I have an exam on Monday. I want to graduate because it is important.",
+   "checklist": [
+    "Dije qué estudio",
+    "Usé because y so",
+    "Usé and / but / or",
+    "Escribí entre 30 y 40 palabras"
+   ]
+  },
+  {
+   "tema": 21,
+   "consigna": "Escribe sobre tu semestre: qué materias tienes, cuál es difícil y por qué, y cómo estudias para los exámenes.",
+   "minPalabras": 40,
+   "maxPalabras": 55,
+   "respuestaModelo": "This semester I have five subjects: maths, science, computer science, English and history. Maths is very difficult, because I do not understand the questions. So I practise every day with a classmate in the library. Before an exam I read all my notes.",
+   "checklist": [
+    "Nombré al menos cuatro materias",
+    "Dije cuál es difícil y por qué",
+    "Usé 'because' y 'so'",
+    "Dije cómo estudio para los exámenes",
+    "Escribí entre 40 y 55 palabras"
+   ]
+  },
+  {
+   "tema": 21,
+   "consigna": "Examen: escribe sobre tu carrera: qué estudias, cómo es tu campus, qué materias tienes, qué nota necesitas y qué quieres hacer al graduarte.",
+   "minPalabras": 45,
+   "maxPalabras": 60,
+   "respuestaModelo": "I study computer science at the university. The campus is far from my house, so I take the metro. This semester I have five subjects. Maths is difficult, but I practise every day with my classmates. I must pass all my exams with good grades. I want to graduate in four years and teach computer science.",
+   "checklist": [
+    "Dije qué carrera estudio",
+    "Describí el campus o cómo llego",
+    "Nombré materias y dije cuál es difícil",
+    "Dije qué quiero hacer al graduarme",
+    "Escribí entre 45 y 60 palabras"
+   ]
+  },
+  {
+   "tema": 22,
+   "consigna": "Cuenta un problema que tuviste con tu teléfono o tu computadora: qué pasó, qué hiciste y qué no funcionó.",
+   "minPalabras": 30,
+   "maxPalabras": 40,
+   "respuestaModelo": "Yesterday I had a problem with my phone. The battery was low and it stopped. I didn't send my message. I turned it off and I started it again. Did you have this problem? It works now.",
+   "checklist": [
+    "Usé el pasado simple",
+    "Usé una frase negativa con didn't",
+    "Hice una pregunta en pasado",
+    "Escribí entre 30 y 40 palabras"
+   ]
+  },
+  {
+   "tema": 22,
+   "consigna": "Cuenta qué hiciste ayer con tu teléfono o tu computadora: usa el pasado simple (was/were y verbos con -ed).",
+   "minPalabras": 40,
+   "maxPalabras": 55,
+   "respuestaModelo": "Yesterday I turned on my computer at eight and I opened my email. There were twenty messages and I answered five. Then I searched a website for my homework and I saved my notes in a file. At night the battery of my phone was not good, so I charged it.",
+   "checklist": [
+    "Usé 'yesterday' o 'last'",
+    "Usé was/were al menos dos veces",
+    "Usé al menos cuatro verbos en pasado con -ed",
+    "Conté las cosas en orden",
+    "Escribí entre 40 y 55 palabras"
+   ]
+  },
+  {
+   "tema": 22,
+   "consigna": "Examen: cuenta un problema que tuviste con la tecnología: qué pasó, qué hiciste, a quién llamaste y cómo terminó. Todo en pasado.",
+   "minPalabras": 45,
+   "maxPalabras": 60,
+   "respuestaModelo": "Yesterday the wifi was not good. I turned on the computer, but the internet was slow and there was no network. I turned it off and I turned it on again: the problem was the same. Then I called my sister and she texted me the new password. At six I was online again and I downloaded my files.",
+   "checklist": [
+    "Conté el problema en pasado",
+    "Usé was/were y verbos con -ed",
+    "Dije a quién llamé o escribí",
+    "Dije cómo terminó",
+    "Escribí entre 45 y 60 palabras"
+   ]
+  },
+  {
    "tema": 23,
    "consigna": "Escribe un email a un amigo contándole un viaje que hiciste y tus planes para el futuro.",
    "minPalabras": 30,
@@ -14,6 +178,34 @@
     "Usé going to para un plan futuro",
     "Hice una pregunta final",
     "Escribí entre 30 y 40 palabras"
+   ]
+  },
+  {
+   "tema": 23,
+   "consigna": "Cuenta un viaje que hiciste: a dónde fuiste, cómo fue el vuelo, dónde te quedaste y qué compraste. Usa el pasado.",
+   "minPalabras": 40,
+   "maxPalabras": 55,
+   "respuestaModelo": "Last year I went abroad with my sister. I booked the flight in June and I packed my suitcase two days before. The flight was eight hours. At immigration a worker read my passport. I stayed two weeks in a small hotel and I bought a souvenir for my mother.",
+   "checklist": [
+    "Dije a dónde fui y con quién",
+    "Hablé del vuelo o del aeropuerto",
+    "Dije dónde me quedé",
+    "Usé al menos cuatro verbos en pasado",
+    "Escribí entre 40 y 55 palabras"
+   ]
+  },
+  {
+   "tema": 23,
+   "consigna": "Examen: cuenta un viaje completo: la reserva, el equipaje, el vuelo, inmigración y aduana, el hotel y qué hiciste allá.",
+   "minPalabras": 45,
+   "maxPalabras": 60,
+   "respuestaModelo": "Last year I booked a flight abroad and I packed one suitcase. At the airport I took my boarding pass. There was a delay of two hours. At immigration a worker read my passport and my visa, and at customs there was no problem. I stayed three weeks in a hotel and I was a tourist in two cities.",
+   "checklist": [
+    "Hablé de la reserva y del equipaje",
+    "Conté el vuelo (asiento, puerta o retraso)",
+    "Mencioné inmigración o aduana",
+    "Dije dónde me quedé y qué hice",
+    "Escribí entre 45 y 60 palabras"
    ]
   },
   {
@@ -32,55 +224,31 @@
    ]
   },
   {
-   "tema": 19,
-   "consigna": "Escribe un mensaje a un amigo: dile que no te sientes bien, qué síntomas tienes y qué necesitas.",
-   "minPalabras": 28,
-   "maxPalabras": 38,
-   "respuestaModelo": "Hi Paul! I am not well today. I have got a headache and a cold. My throat hurts and I am very tired. I can't go to the office. I need to see a doctor. See you soon!",
+   "tema": 24,
+   "consigna": "Escribe tus planes para el próximo año: qué vas a hacer primero, luego y finalmente. Usa 'going to' y los conectores.",
+   "minPalabras": 40,
+   "maxPalabras": 55,
+   "respuestaModelo": "Next year I am going to finish my degree in computer science. First I am going to pass all my exams, then I am going to work in a company, and finally I am going to apply for a scholarship abroad. Maybe it is not going to be easy, but it is my goal.",
    "checklist": [
-    "Usé have got para los síntomas",
-    "Nombré al menos dos síntomas",
-    "Dije qué necesito",
-    "Escribí entre 28 y 38 palabras"
+    "Usé 'I am going to' al menos tres veces",
+    "Usé first, then y finally",
+    "Dije al menos tres planes en orden",
+    "Usé 'maybe' o 'sure'",
+    "Escribí entre 40 y 55 palabras"
    ]
   },
   {
-   "tema": 20,
-   "consigna": "Escribe sobre tu tiempo libre: qué te gusta hacer, qué deportes practicas y con qué frecuencia.",
-   "minPalabras": 30,
-   "maxPalabras": 40,
-   "respuestaModelo": "I like reading and I love music. On Saturday I play football with my friends. I go swimming in summer. I don't like dancing. I read a book every night. How often do you play football?",
+   "tema": 24,
+   "consigna": "Examen: escribe sobre tu futuro: tu meta, tu sueño, qué vas a hacer para conseguirlo y qué es lo difícil. Usa conectores.",
+   "minPalabras": 45,
+   "maxPalabras": 60,
+   "respuestaModelo": "My goal is a good job in computer science, but my dream is another one: I am going to move abroad. First I am going to finish my degree, then I am going to practise English, and finally I am going to apply for the visa. It is not sure, because the visa is difficult and also expensive.",
    "checklist": [
-    "Usé like / love + verbo en -ing",
-    "Usé play / go / do con deportes",
-    "Dije con qué frecuencia",
-    "Escribí entre 30 y 40 palabras"
-   ]
-  },
-  {
-   "tema": 21,
-   "consigna": "Escribe sobre tus estudios: qué estudias, qué materias tienes, qué es difícil y por qué.",
-   "minPalabras": 30,
-   "maxPalabras": 40,
-   "respuestaModelo": "I study computer science at the university. My subjects are maths and science. Maths is difficult but I like it, so I practise every day. I have an exam on Monday. I want to graduate because it is important.",
-   "checklist": [
-    "Dije qué estudio",
-    "Usé because y so",
-    "Usé and / but / or",
-    "Escribí entre 30 y 40 palabras"
-   ]
-  },
-  {
-   "tema": 22,
-   "consigna": "Cuenta un problema que tuviste con tu teléfono o tu computadora: qué pasó, qué hiciste y qué no funcionó.",
-   "minPalabras": 30,
-   "maxPalabras": 40,
-   "respuestaModelo": "Yesterday I had a problem with my phone. The battery was low and it stopped. I didn't send my message. I turned it off and I started it again. Did you have this problem? It works now.",
-   "checklist": [
-    "Usé el pasado simple",
-    "Usé una frase negativa con didn't",
-    "Hice una pregunta en pasado",
-    "Escribí entre 30 y 40 palabras"
+    "Dije mi meta y mi sueño",
+    "Usé 'going to' al menos tres veces",
+    "Usé first, then y finally",
+    "Dije qué es lo difícil, con 'because'",
+    "Escribí entre 45 y 60 palabras"
    ]
   }
  ]

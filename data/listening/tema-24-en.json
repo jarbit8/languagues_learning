@@ -1,39 +1,349 @@
-{ "tema": 24,
-"dialogos": [
-{ "titulo": "Hablando del futuro",
-"lineas": [
-{"hablante":"A","texto":"What are your plans for the future?"},
-{"hablante":"B","texto":"I'm going to move to the United States."},
-{"hablante":"A","texto":"That's a big plan! Why?"},
-{"hablante":"B","texto":"Because I want a better future, and I like the language."},
-{"hablante":"A","texto":"Are you going to study more English?"},
-{"hablante":"B","texto":"Yes, I'm going to study every day."},
-{"hablante":"A","texto":"When are you going to start?"},
-{"hablante":"B","texto":"I'm going to start soon!"}
-],
-"preguntas": [
-{"tipo":"opcion_multiple","enunciado":"¿Cuál es el plan de B?","opciones":["move to the United States","move to Canada","stay in Peru"],"respuesta":"move to the United States"},
-{"tipo":"vf","enunciado":"B va a estudiar inglés todos los días.","respuesta":"verdadero"},
-{"tipo":"completar_dato","enunciado":"¿Por qué quiere mudarse?","respuesta":"a better future","aceptadas":["better future"]},
-{"tipo":"completar_dato","enunciado":"¿Cuándo va a empezar B?","respuesta":"soon","aceptadas":[]},
-{"tipo":"vf","enunciado":"A B no le gusta el idioma.","respuesta":"falso"}
-] },
-{ "titulo": "Sobre la ciudadanía",
-"lineas": [
-{"hablante":"A","texto":"What's your goal for next year?"},
-{"hablante":"B","texto":"My goal is citizenship in the United States."},
-{"hablante":"A","texto":"That's a big goal! What's your plan?"},
-{"hablante":"B","texto":"First, I'm going to get a good job. Then, I'm going to study for the exam."},
-{"hablante":"A","texto":"Do you think it's going to be difficult?"},
-{"hablante":"B","texto":"Maybe, but I'm sure I'm going to pass."},
-{"hablante":"A","texto":"I hope you get an opportunity soon."},
-{"hablante":"B","texto":"Thank you! Can we speak about it on Monday at four o'clock?"}
-],
-"preguntas": [
-{"tipo":"opcion_multiple","enunciado":"¿Cuál es la meta de B?","opciones":["citizenship in the United States","a new job","a trip to Peru"],"respuesta":"citizenship in the United States"},
-{"tipo":"completar_dato","enunciado":"¿Qué va a hacer primero B?","respuesta":"get a good job","aceptadas":["a good job","good job"]},
-{"tipo":"vf","enunciado":"B está seguro de que va a aprobar.","respuesta":"verdadero"},
-{"tipo":"anota_la_hora","enunciado":"¿A qué hora quedan para hablar el lunes?","respuesta":"4:00","aceptadas":["four o'clock","four"]},
-{"tipo":"opcion_multiple","enunciado":"¿Qué día van a hablar?","opciones":["Sunday","Monday","Friday"],"respuesta":"Monday"}
-] }
-] }
+{
+ "tema": 24,
+ "dialogos": [
+  {
+   "titulo": "Hablando del futuro",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "What are your plans for the future?"
+    },
+    {
+     "hablante": "B",
+     "texto": "I'm going to move to the United States."
+    },
+    {
+     "hablante": "A",
+     "texto": "That's a big plan! Why?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Because I want a better future, and I like the language."
+    },
+    {
+     "hablante": "A",
+     "texto": "Are you going to study more English?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes, I'm going to study every day."
+    },
+    {
+     "hablante": "A",
+     "texto": "When are you going to start?"
+    },
+    {
+     "hablante": "B",
+     "texto": "I'm going to start soon!"
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cuál es el plan de B?",
+     "opciones": [
+      "move to the United States",
+      "move to Canada",
+      "stay in Peru"
+     ],
+     "respuesta": "move to the United States"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "B va a estudiar inglés todos los días.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Por qué quiere mudarse?",
+     "respuesta": "a better future",
+     "aceptadas": [
+      "better future"
+     ]
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Cuándo va a empezar B?",
+     "respuesta": "soon",
+     "aceptadas": []
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "A B no le gusta el idioma.",
+     "respuesta": "falso"
+    }
+   ]
+  },
+  {
+   "titulo": "Sobre la ciudadanía",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "What's your goal for next year?"
+    },
+    {
+     "hablante": "B",
+     "texto": "My goal is citizenship in the United States."
+    },
+    {
+     "hablante": "A",
+     "texto": "That's a big goal! What's your plan?"
+    },
+    {
+     "hablante": "B",
+     "texto": "First, I'm going to get a good job. Then, I'm going to study for the exam."
+    },
+    {
+     "hablante": "A",
+     "texto": "Do you think it's going to be difficult?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Maybe, but I'm sure I'm going to pass."
+    },
+    {
+     "hablante": "A",
+     "texto": "I hope you get an opportunity soon."
+    },
+    {
+     "hablante": "B",
+     "texto": "Thank you! Can we speak about it on Monday at four o'clock?"
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cuál es la meta de B?",
+     "opciones": [
+      "citizenship in the United States",
+      "a new job",
+      "a trip to Peru"
+     ],
+     "respuesta": "citizenship in the United States"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Qué va a hacer primero B?",
+     "respuesta": "get a good job",
+     "aceptadas": [
+      "a good job",
+      "good job"
+     ]
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "B está seguro de que va a aprobar.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "anota_la_hora",
+     "enunciado": "¿A qué hora quedan para hablar el lunes?",
+     "respuesta": "4:00",
+     "aceptadas": [
+      "four o'clock",
+      "four"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué día van a hablar?",
+     "opciones": [
+      "Sunday",
+      "Monday",
+      "Friday"
+     ],
+     "respuesta": "Monday"
+    }
+   ]
+  },
+  {
+   "titulo": "Planes para el próximo año",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "What are you going to do next year?"
+    },
+    {
+     "hablante": "B",
+     "texto": "First I am going to finish my degree."
+    },
+    {
+     "hablante": "A",
+     "texto": "And then?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Then I am going to move abroad."
+    },
+    {
+     "hablante": "A",
+     "texto": "Is it sure?"
+    },
+    {
+     "hablante": "B",
+     "texto": "No, maybe. The visa is very difficult."
+    },
+    {
+     "hablante": "A",
+     "texto": "What is your goal?"
+    },
+    {
+     "hablante": "B",
+     "texto": "A better job. It is important for my future."
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué va a hacer B primero?",
+     "opciones": [
+      "finish his degree",
+      "move abroad",
+      "get a visa"
+     ],
+     "respuesta": "finish his degree"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "El plan es seguro.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Cuál es su meta?",
+     "respuesta": "a better job",
+     "aceptadas": [
+      "better job",
+      "a job"
+     ]
+    }
+   ]
+  },
+  {
+   "titulo": "Una decisión difícil",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "A company wants me four hours every day."
+    },
+    {
+     "hablante": "B",
+     "texto": "That is a good opportunity!"
+    },
+    {
+     "hablante": "A",
+     "texto": "But then maybe I am going to fail an exam."
+    },
+    {
+     "hablante": "B",
+     "texto": "What are you going to do?"
+    },
+    {
+     "hablante": "A",
+     "texto": "First I am going to speak with my teacher."
+    },
+    {
+     "hablante": "B",
+     "texto": "And then?"
+    },
+    {
+     "hablante": "A",
+     "texto": "Then with my parents. I decide in July."
+    },
+    {
+     "hablante": "B",
+     "texto": "You can study at night and work in the morning."
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Cuántas horas quiere la empresa?",
+     "respuesta": "four hours",
+     "aceptadas": [
+      "four",
+      "4 hours"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Con quién va a hablar primero?",
+     "opciones": [
+      "with his teacher",
+      "with his parents",
+      "with the company"
+     ],
+     "respuesta": "with his teacher"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Va a decidir en julio.",
+     "respuesta": "verdadero"
+    }
+   ]
+  },
+  {
+   "titulo": "Examen · Los planes de Marie",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "What are your plans, Marie?"
+    },
+    {
+     "hablante": "B",
+     "texto": "First I am going to finish my degree in June."
+    },
+    {
+     "hablante": "A",
+     "texto": "And then?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Then six months in a hospital."
+    },
+    {
+     "hablante": "A",
+     "texto": "What is your dream?"
+    },
+    {
+     "hablante": "B",
+     "texto": "To travel to England and sing. Music is important for me."
+    },
+    {
+     "hablante": "A",
+     "texto": "Are your parents happy?"
+    },
+    {
+     "hablante": "B",
+     "texto": "No, but I am not going to change my plan."
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué va a hacer Marie primero?",
+     "opciones": [
+      "finish her degree",
+      "travel to England",
+      "work in a hospital"
+     ],
+     "respuesta": "finish her degree"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Cuál es su sueño?",
+     "respuesta": "to travel to England and sing",
+     "aceptadas": [
+      "travel to England",
+      "to sing"
+     ]
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Sus padres están contentos con el plan.",
+     "respuesta": "falso"
+    }
+   ]
+  }
+ ]
+}

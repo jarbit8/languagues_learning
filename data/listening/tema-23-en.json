@@ -1,39 +1,354 @@
-{ "tema": 23,
-"dialogos": [
-{ "titulo": "Check-in en el hotel",
-"lineas": [
-{"hablante":"A","texto":"Good afternoon, I have a booking."},
-{"hablante":"B","texto":"What is your name, please?"},
-{"hablante":"A","texto":"My name is Joel Reinoso."},
-{"hablante":"B","texto":"Can I see your passport?"},
-{"hablante":"A","texto":"Yes, here it is."},
-{"hablante":"B","texto":"Your room is on the third floor."},
-{"hablante":"A","texto":"How long can I stay?"},
-{"hablante":"B","texto":"You can stay until Sunday."}
-],
-"preguntas": [
-{"tipo":"opcion_multiple","enunciado":"¿En qué piso está la habitación?","opciones":["first","second","third"],"respuesta":"third"},
-{"tipo":"vf","enunciado":"El recepcionista pide el pasaporte.","respuesta":"verdadero"},
-{"tipo":"completar_dato","enunciado":"¿Hasta qué día puede quedarse?","respuesta":"Sunday"},
-{"tipo":"completar_dato","enunciado":"¿Cómo se llama el huésped?","respuesta":"Joel Reinoso","aceptadas":["Joel","Reinoso"]},
-{"tipo":"opcion_multiple","enunciado":"¿Qué tiene A al llegar?","opciones":["a booking","a ticket","a map"],"respuesta":"a booking"}
-] },
-{ "titulo": "En el aeropuerto",
-"lineas": [
-{"hablante":"A","texto":"Good morning. Can I see your ticket and passport?"},
-{"hablante":"B","texto":"Yes, here they are."},
-{"hablante":"A","texto":"Do you have luggage?"},
-{"hablante":"B","texto":"Yes, one suitcase."},
-{"hablante":"A","texto":"Your flight leaves at six o'clock."},
-{"hablante":"B","texto":"Thank you! Where is the airplane?"},
-{"hablante":"A","texto":"Go straight. Turn left."},
-{"hablante":"B","texto":"Perfect, thank you very much."}
-],
-"preguntas": [
-{"tipo":"opcion_multiple","enunciado":"¿Qué tiene B además del boleto?","opciones":["passport","money","phone"],"respuesta":"passport"},
-{"tipo":"completar_dato","enunciado":"¿Cuántas maletas tiene B?","respuesta":"one","aceptadas":["one suitcase","1"]},
-{"tipo":"anota_la_hora","enunciado":"¿A qué hora sale el vuelo?","respuesta":"6:00","aceptadas":["six o'clock","six"]},
-{"tipo":"opcion_multiple","enunciado":"¿Qué le indica A a B para llegar al avión?","opciones":["go straight and turn left","go straight and turn right","turn right only"],"respuesta":"go straight and turn left"},
-{"tipo":"vf","enunciado":"B tiene equipaje.","respuesta":"verdadero"}
-] }
-] }
+{
+ "tema": 23,
+ "dialogos": [
+  {
+   "titulo": "Check-in en el hotel",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "Good afternoon, I have a booking."
+    },
+    {
+     "hablante": "B",
+     "texto": "What is your name, please?"
+    },
+    {
+     "hablante": "A",
+     "texto": "My name is Joel Reinoso."
+    },
+    {
+     "hablante": "B",
+     "texto": "Can I see your passport?"
+    },
+    {
+     "hablante": "A",
+     "texto": "Yes, here it is."
+    },
+    {
+     "hablante": "B",
+     "texto": "Your room is on the third floor."
+    },
+    {
+     "hablante": "A",
+     "texto": "How long can I stay?"
+    },
+    {
+     "hablante": "B",
+     "texto": "You can stay until Sunday."
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿En qué piso está la habitación?",
+     "opciones": [
+      "first",
+      "second",
+      "third"
+     ],
+     "respuesta": "third"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "El recepcionista pide el pasaporte.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Hasta qué día puede quedarse?",
+     "respuesta": "Sunday"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Cómo se llama el huésped?",
+     "respuesta": "Joel Reinoso",
+     "aceptadas": [
+      "Joel",
+      "Reinoso"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué tiene A al llegar?",
+     "opciones": [
+      "a booking",
+      "a ticket",
+      "a map"
+     ],
+     "respuesta": "a booking"
+    }
+   ]
+  },
+  {
+   "titulo": "En el aeropuerto",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "Good morning. Can I see your ticket and passport?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes, here they are."
+    },
+    {
+     "hablante": "A",
+     "texto": "Do you have luggage?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes, one suitcase."
+    },
+    {
+     "hablante": "A",
+     "texto": "Your flight leaves at six o'clock."
+    },
+    {
+     "hablante": "B",
+     "texto": "Thank you! Where is the airplane?"
+    },
+    {
+     "hablante": "A",
+     "texto": "Go straight. Turn left."
+    },
+    {
+     "hablante": "B",
+     "texto": "Perfect, thank you very much."
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué tiene B además del boleto?",
+     "opciones": [
+      "passport",
+      "money",
+      "phone"
+     ],
+     "respuesta": "passport"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Cuántas maletas tiene B?",
+     "respuesta": "one",
+     "aceptadas": [
+      "one suitcase",
+      "1"
+     ]
+    },
+    {
+     "tipo": "anota_la_hora",
+     "enunciado": "¿A qué hora sale el vuelo?",
+     "respuesta": "6:00",
+     "aceptadas": [
+      "six o'clock",
+      "six"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué le indica A a B para llegar al avión?",
+     "opciones": [
+      "go straight and turn left",
+      "go straight and turn right",
+      "turn right only"
+     ],
+     "respuesta": "go straight and turn left"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "B tiene equipaje.",
+     "respuesta": "verdadero"
+    }
+   ]
+  },
+  {
+   "titulo": "En inmigración",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "Your passport, please."
+    },
+    {
+     "hablante": "B",
+     "texto": "Here you are. And my visa."
+    },
+    {
+     "hablante": "A",
+     "texto": "Why do you come?"
+    },
+    {
+     "hablante": "B",
+     "texto": "I am a tourist. I stay two weeks."
+    },
+    {
+     "hablante": "A",
+     "texto": "Where do you stay?"
+    },
+    {
+     "hablante": "B",
+     "texto": "In a hotel near the city centre. Here is the booking."
+    },
+    {
+     "hablante": "A",
+     "texto": "Do you have luggage?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes, one suitcase and a bag."
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Por qué viene B?",
+     "opciones": [
+      "he is a tourist",
+      "he works there",
+      "he is a guide"
+     ],
+     "respuesta": "he is a tourist"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Cuánto tiempo se queda?",
+     "respuesta": "two weeks",
+     "aceptadas": [
+      "two weeks",
+      "2 weeks"
+     ]
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "B tiene dos maletas.",
+     "respuesta": "falso"
+    }
+   ]
+  },
+  {
+   "titulo": "El vuelo tiene retraso",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "Is the flight at eleven?"
+    },
+    {
+     "hablante": "B",
+     "texto": "No, there is a delay. Departure at two."
+    },
+    {
+     "hablante": "A",
+     "texto": "Three hours! And the gate?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Gate eight. Here is your boarding pass."
+    },
+    {
+     "hablante": "A",
+     "texto": "And my seat?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Seat twenty-two, near a window."
+    },
+    {
+     "hablante": "A",
+     "texto": "Where is my luggage?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Your suitcase is on the plane. No problem."
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿A qué hora sale ahora el vuelo?",
+     "respuesta": "at two",
+     "aceptadas": [
+      "two",
+      "2"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cuál es su asiento?",
+     "opciones": [
+      "twenty-two",
+      "eight",
+      "eleven"
+     ],
+     "respuesta": "twenty-two"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Su maleta está en el avión.",
+     "respuesta": "verdadero"
+    }
+   ]
+  },
+  {
+   "titulo": "Examen · El viaje de Marie",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "How was your trip, Marie?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Very good. But there was a delay of two hours."
+    },
+    {
+     "hablante": "A",
+     "texto": "How long was the flight?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Seven hours. I never flew before."
+    },
+    {
+     "hablante": "A",
+     "texto": "Was there a problem at customs?"
+    },
+    {
+     "hablante": "B",
+     "texto": "No. A worker read my passport and my visa."
+    },
+    {
+     "hablante": "A",
+     "texto": "Where did you stay?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Three weeks in a hotel near the city centre."
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿De cuánto fue el retraso?",
+     "respuesta": "two hours",
+     "aceptadas": [
+      "two",
+      "2 hours"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cuánto duró el vuelo?",
+     "opciones": [
+      "seven hours",
+      "three weeks",
+      "two hours"
+     ],
+     "respuesta": "seven hours"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Hubo un problema en la aduana.",
+     "respuesta": "falso"
+    }
+   ]
+  }
+ ]
+}

@@ -1,39 +1,349 @@
-{ "tema": 21,
-"dialogos": [
-{ "titulo": "Hablando de la carrera",
-"lineas": [
-{"hablante":"A","texto":"What do you study?"},
-{"hablante":"B","texto":"I study computer science."},
-{"hablante":"A","texto":"Is it difficult?"},
-{"hablante":"B","texto":"Yes, but I like it because it's interesting."},
-{"hablante":"A","texto":"Do you have an exam this week?"},
-{"hablante":"B","texto":"Yes, I have a maths exam on Thursday."},
-{"hablante":"A","texto":"Good luck! Do you understand the lesson?"},
-{"hablante":"B","texto":"Yes, now I understand it well."}
-],
-"preguntas": [
-{"tipo":"opcion_multiple","enunciado":"¿Qué estudia B?","opciones":["maths","computer science","history"],"respuesta":"computer science"},
-{"tipo":"vf","enunciado":"B tiene un examen de matemáticas el jueves.","respuesta":"verdadero"},
-{"tipo":"completar_dato","enunciado":"¿Por qué le gusta la carrera a B?","respuesta":"because it's interesting","aceptadas":["interesting"]},
-{"tipo":"vf","enunciado":"B dice que es fácil.","respuesta":"falso"},
-{"tipo":"completar_dato","enunciado":"¿Qué entiende bien B ahora?","respuesta":"the lesson","aceptadas":["lesson"]}
-] },
-{ "titulo": "En la biblioteca",
-"lineas": [
-{"hablante":"A","texto":"Are you in the library?"},
-{"hablante":"B","texto":"Yes, I'm studying with my classmate."},
-{"hablante":"A","texto":"What subject are you studying?"},
-{"hablante":"B","texto":"We're studying science and history."},
-{"hablante":"A","texto":"Do you have notes?"},
-{"hablante":"B","texto":"Yes, and a dictionary too."},
-{"hablante":"A","texto":"Is the library open until eight o'clock?"},
-{"hablante":"B","texto":"Yes, it's open until eight."}
-],
-"preguntas": [
-{"tipo":"opcion_multiple","enunciado":"¿Dónde está B?","opciones":["library","university","classroom"],"respuesta":"library"},
-{"tipo":"vf","enunciado":"B estudia solo.","respuesta":"falso"},
-{"tipo":"completar_dato","enunciado":"¿Qué materias estudian?","respuesta":"science and history","aceptadas":["science","history"]},
-{"tipo":"completar_dato","enunciado":"¿Qué tiene B además de apuntes?","respuesta":"a dictionary","aceptadas":["dictionary"]},
-{"tipo":"anota_la_hora","enunciado":"¿Hasta qué hora está abierta la biblioteca?","respuesta":"8:00","aceptadas":["eight o'clock","eight"]}
-] }
-] }
+{
+ "tema": 21,
+ "dialogos": [
+  {
+   "titulo": "Hablando de la carrera",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "What do you study?"
+    },
+    {
+     "hablante": "B",
+     "texto": "I study computer science."
+    },
+    {
+     "hablante": "A",
+     "texto": "Is it difficult?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes, but I like it because it's interesting."
+    },
+    {
+     "hablante": "A",
+     "texto": "Do you have an exam this week?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes, I have a maths exam on Thursday."
+    },
+    {
+     "hablante": "A",
+     "texto": "Good luck! Do you understand the lesson?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes, now I understand it well."
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué estudia B?",
+     "opciones": [
+      "maths",
+      "computer science",
+      "history"
+     ],
+     "respuesta": "computer science"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "B tiene un examen de matemáticas el jueves.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Por qué le gusta la carrera a B?",
+     "respuesta": "because it's interesting",
+     "aceptadas": [
+      "interesting"
+     ]
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "B dice que es fácil.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Qué entiende bien B ahora?",
+     "respuesta": "the lesson",
+     "aceptadas": [
+      "lesson"
+     ]
+    }
+   ]
+  },
+  {
+   "titulo": "En la biblioteca",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "Are you in the library?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes, I'm studying with my classmate."
+    },
+    {
+     "hablante": "A",
+     "texto": "What subject are you studying?"
+    },
+    {
+     "hablante": "B",
+     "texto": "We're studying science and history."
+    },
+    {
+     "hablante": "A",
+     "texto": "Do you have notes?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes, and a dictionary too."
+    },
+    {
+     "hablante": "A",
+     "texto": "Is the library open until eight o'clock?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes, it's open until eight."
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Dónde está B?",
+     "opciones": [
+      "library",
+      "university",
+      "classroom"
+     ],
+     "respuesta": "library"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "B estudia solo.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Qué materias estudian?",
+     "respuesta": "science and history",
+     "aceptadas": [
+      "science",
+      "history"
+     ]
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Qué tiene B además de apuntes?",
+     "respuesta": "a dictionary",
+     "aceptadas": [
+      "dictionary"
+     ]
+    },
+    {
+     "tipo": "anota_la_hora",
+     "enunciado": "¿Hasta qué hora está abierta la biblioteca?",
+     "respuesta": "8:00",
+     "aceptadas": [
+      "eight o'clock",
+      "eight"
+     ]
+    }
+   ]
+  },
+  {
+   "titulo": "Antes del examen",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "Do you have an exam tomorrow?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes, maths. It is very difficult."
+    },
+    {
+     "hablante": "A",
+     "texto": "Do you have your notes?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes, and a classmate teaches me in the library."
+    },
+    {
+     "hablante": "A",
+     "texto": "How many questions are in the exam?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Twenty, in one hour."
+    },
+    {
+     "hablante": "A",
+     "texto": "You must not fail!"
+    },
+    {
+     "hablante": "B",
+     "texto": "No. With a good grade I have my scholarship."
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿De qué es el examen?",
+     "opciones": [
+      "maths",
+      "history",
+      "science"
+     ],
+     "respuesta": "maths"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Cuántas preguntas tiene?",
+     "respuesta": "twenty",
+     "aceptadas": [
+      "20",
+      "twenty questions"
+     ]
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "B necesita una buena nota para su beca.",
+     "respuesta": "verdadero"
+    }
+   ]
+  },
+  {
+   "titulo": "¿Por qué es difícil?",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "Why is English difficult for you?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Because I do not understand the classes."
+    },
+    {
+     "hablante": "A",
+     "texto": "Do you have a dictionary?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes, in my bag every day."
+    },
+    {
+     "hablante": "A",
+     "texto": "You must practise with films and music."
+    },
+    {
+     "hablante": "B",
+     "texto": "In the classroom I do not learn the language."
+    },
+    {
+     "hablante": "A",
+     "texto": "I teach you on Wednesday in the library."
+    },
+    {
+     "hablante": "B",
+     "texto": "Thank you! I have many questions."
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Qué materia es difícil para B?",
+     "respuesta": "English",
+     "aceptadas": [
+      "english",
+      "inglés"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Con qué debe practicar?",
+     "opciones": [
+      "films and music",
+      "a computer",
+      "the dictionary"
+     ],
+     "respuesta": "films and music"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "A le enseña el miércoles.",
+     "respuesta": "verdadero"
+    }
+   ]
+  },
+  {
+   "titulo": "Examen · Los estudios de Marie",
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "What do you study, Marie?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Science, at the university near my house."
+    },
+    {
+     "hablante": "A",
+     "texto": "How many subjects this semester?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Four. Maths is very difficult."
+    },
+    {
+     "hablante": "A",
+     "texto": "Do you have a scholarship?"
+    },
+    {
+     "hablante": "B",
+     "texto": "No, I work in a café on Saturday."
+    },
+    {
+     "hablante": "A",
+     "texto": "When do you graduate?"
+    },
+    {
+     "hablante": "B",
+     "texto": "In three years, with good grades."
+    }
+   ],
+   "preguntas": [
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué estudia Marie?",
+     "opciones": [
+      "science",
+      "history",
+      "maths"
+     ],
+     "respuesta": "science"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Cuántas materias tiene este semestre?",
+     "respuesta": "four",
+     "aceptadas": [
+      "4",
+      "four subjects"
+     ]
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Marie tiene una beca.",
+     "respuesta": "falso"
+    }
+   ]
+  }
+ ]
+}
