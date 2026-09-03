@@ -9,9 +9,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿De qué país viene Ana?",
      "opciones": [
-      "Peru",
+      "France",
       "Canada",
-      "France"
+      "Peru"
      ],
      "respuesta": "Peru"
     },
@@ -30,8 +30,8 @@
      "enunciado": "¿Qué idiomas habla Ana?",
      "opciones": [
       "Spanish, English and French",
-      "only Spanish",
-      "English and German"
+      "English and German",
+      "only Spanish"
      ],
      "respuesta": "Spanish, English and French"
     },
@@ -60,8 +60,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿De dónde es Marc?",
      "opciones": [
-      "France",
       "Spain",
+      "France",
       "England"
      ],
      "respuesta": "France"
@@ -80,9 +80,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Dónde nació Paul?",
      "opciones": [
-      "the United States",
-      "Canada",
-      "England"
+      "the capital of Spain",
+      "the city of Toronto",
+      "the United States"
      ],
      "respuesta": "the United States"
     },
@@ -111,9 +111,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿De dónde viene Sofia?",
      "opciones": [
+      "England",
       "Spain",
-      "France",
-      "England"
+      "France"
      ],
      "respuesta": "Spain"
     },
@@ -131,9 +131,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cuál es la nacionalidad de Marc?",
      "opciones": [
+      "Peruvian",
       "French",
-      "Canadian",
-      "Peruvian"
+      "Canadian"
      ],
      "respuesta": "French"
     },
@@ -162,9 +162,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿En qué continente está Perú?",
      "opciones": [
+      "Canada",
       "America",
-      "Europe",
-      "Canada"
+      "Europe"
      ],
      "respuesta": "America"
     },
@@ -182,9 +182,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cuál es la nacionalidad de Marie?",
      "opciones": [
-      "English",
       "French",
-      "Spanish"
+      "Spanish",
+      "English"
      ],
      "respuesta": "English"
     },
@@ -216,9 +216,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿De dónde viene Marie?",
      "opciones": [
-      "England",
+      "Spain",
       "France",
-      "Spain"
+      "England"
      ],
      "respuesta": "England"
     },

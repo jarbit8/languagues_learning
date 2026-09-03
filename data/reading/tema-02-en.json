@@ -10,8 +10,8 @@
      "enunciado": "¿Cuántos años tiene Ana?",
      "opciones": [
       "veinte",
-      "veintidós",
-      "diecinueve"
+      "diecinueve",
+      "veintidós"
      ],
      "respuesta": "veinte"
     },
@@ -32,9 +32,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cuántos años tiene Paul?",
      "opciones": [
-      "twenty-two",
+      "nineteen",
       "twenty",
-      "nineteen"
+      "twenty-two"
      ],
      "respuesta": "twenty-two"
     },
@@ -89,8 +89,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cuántos años tiene Mrs Lee?",
      "opciones": [
-      "seventy",
       "sixty",
+      "seventy",
       "fifty"
      ],
      "respuesta": "seventy"
@@ -124,8 +124,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cuántos años tiene Marc?",
      "opciones": [
-      "thirty-one",
       "twenty-eight",
+      "thirty-one",
       "thirteen"
      ],
      "respuesta": "thirty-one"
@@ -152,9 +152,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿En qué mes es el cumpleaños de Marc?",
      "opciones": [
+      "May",
       "April",
-      "July",
-      "May"
+      "July"
      ],
      "respuesta": "April"
     },
@@ -178,8 +178,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cuántos años tiene Mr Lee?",
      "opciones": [
-      "eighty-four",
       "seventy-nine",
+      "eighty-four",
       "fifty-two"
      ],
      "respuesta": "eighty-four"
@@ -209,9 +209,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cuántos años tiene Ana?",
      "opciones": [
-      "thirteen",
       "thirty",
-      "sixteen"
+      "sixteen",
+      "thirteen"
      ],
      "respuesta": "thirteen"
     },
@@ -235,9 +235,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cuántos años tiene Marie?",
      "opciones": [
+      "sixteen",
       "twenty-six",
-      "twenty-one",
-      "sixteen"
+      "twenty-one"
      ],
      "respuesta": "twenty-six"
     },
@@ -256,8 +256,8 @@
      "enunciado": "¿Cuántos años tiene Mrs Lee?",
      "opciones": [
       "seventy-nine",
-      "eighty-four",
-      "fifty"
+      "fifty",
+      "eighty-four"
      ],
      "respuesta": "seventy-nine"
     },

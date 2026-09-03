@@ -9,9 +9,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What is the weather like in the morning?",
      "opciones": [
-      "sunny and warm",
       "cold and windy",
-      "rainy and cloudy"
+      "rainy and cloudy",
+      "sunny and warm"
      ],
      "respuesta": "sunny and warm"
     },
@@ -73,9 +73,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What is the weather like in winter in Canada?",
      "opciones": [
-      "very cold, with snow and ice",
+      "cool and rainy",
       "hot and sunny",
-      "cool and rainy"
+      "very cold, with snow and ice"
      ],
      "respuesta": "very cold, with snow and ice"
     },
@@ -98,9 +98,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What is near the lake?",
      "opciones": [
-      "a forest with big trees",
-      "a big city",
-      "a beach"
+      "a beach with a lot of sun",
+      "a big city near the sea",
+      "a forest with big trees"
      ],
      "respuesta": "a forest with big trees"
     },
@@ -118,8 +118,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "Why does Ana prefer summer?",
      "opciones": [
-      "she is from Peru and does not want the cold",
       "she goes to the forest",
+      "she is from Peru and does not want the cold",
       "the days are short"
      ],
      "respuesta": "she is from Peru and does not want the cold"
@@ -149,8 +149,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "What is the sea like?",
      "opciones": [
-      "cool, but not cold",
       "very cold",
+      "cool, but not cold",
       "very hot"
      ],
      "respuesta": "cool, but not cold"
@@ -164,8 +164,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "Why does Laura walk in the forest?",
      "opciones": [
-      "the beach is very hot for her",
       "there is a storm",
+      "the beach is very hot for her",
       "she is hungry"
      ],
      "respuesta": "the beach is very hot for her"
@@ -184,8 +184,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "What is the weather like after the rain?",
      "opciones": [
-      "warm and sunny",
       "cold and windy",
+      "warm and sunny",
       "cloudy"
      ],
      "respuesta": "warm and sunny"
@@ -205,9 +205,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What is the weather like on Tuesday morning?",
      "opciones": [
-      "foggy, with a grey sky",
       "sunny and warm",
-      "hot and windy"
+      "hot and windy",
+      "foggy, with a grey sky"
      ],
      "respuesta": "foggy, with a grey sky"
     },
@@ -229,8 +229,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "Why does Ana take the metro?",
      "opciones": [
-      "there is water and ice on the road",
       "the bike is far",
+      "there is water and ice on the road",
       "the metro is cheap"
      ],
      "respuesta": "there is water and ice on the road"
@@ -258,9 +258,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "Where do Ana and Laura walk on Wednesday?",
      "opciones": [
+      "in the forest, near the lake",
       "in the park, near the river",
-      "on the beach",
-      "in the forest"
+      "on the beach, near the sea"
      ],
      "respuesta": "in the park, near the river"
     }
@@ -275,8 +275,8 @@
      "enunciado": "What is the weather like in summer?",
      "opciones": [
       "warm, with a blue sky",
-      "cold and rainy",
-      "windy and foggy"
+      "windy and foggy",
+      "cold and rainy"
      ],
      "respuesta": "warm, with a blue sky"
     },
@@ -298,9 +298,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "Which season does Marie prefer?",
      "opciones": [
-      "spring",
       "summer",
-      "winter"
+      "winter",
+      "spring"
      ],
      "respuesta": "spring"
     },
@@ -327,9 +327,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "Where is there snow and ice?",
      "opciones": [
-      "on the mountains",
       "on the beach",
-      "in the park"
+      "in the park",
+      "on the mountains"
      ],
      "respuesta": "on the mountains"
     }

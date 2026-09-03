@@ -54,9 +54,7 @@ export function readingDeTema(tema: number): ExamenReadingTema | undefined {
   if (!texto) return undefined
   return {
     texto,
-    preguntas: texto.preguntas.map((p) =>
-      preguntaDeListening({ tipo: p.tipo, enunciado: p.enunciado, opciones: p.opciones, respuesta: p.respuesta })
-    )
+    preguntas: texto.preguntas.map(preguntaDeListening)
   }
 }
 

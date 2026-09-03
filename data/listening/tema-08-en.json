@@ -120,8 +120,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿A qué hora se ven?",
      "opciones": [
-      "eight o'clock",
       "nine o'clock",
+      "eight o'clock",
       "ten o'clock"
      ],
      "respuesta": "nine o'clock"
@@ -262,9 +262,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Con qué frecuencia está en la cama antes de las once?",
      "opciones": [
-      "usually",
+      "rarely",
       "never",
-      "rarely"
+      "usually"
      ],
      "respuesta": "usually"
     },

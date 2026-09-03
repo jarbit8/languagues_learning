@@ -181,11 +181,16 @@ export interface HistorialExamen {
 
 // --- Reading (packs en /data/reading) ---
 
+// Misma forma que PreguntaListening: los packs de reading llevan desde siempre preguntas
+// `completar_dato` con `aceptadas`, pero el tipo no las declaraba y los cuatro sitios que
+// rearmaban la pregunta a mano se dejaban `aceptadas` fuera, asi que la correccion solo
+// admitia la cadena exacta.
 export interface PreguntaReading {
-  tipo: 'vf' | 'vfnd' | 'opcion_multiple'
+  tipo: TipoPreguntaListening
   enunciado: string
   opciones?: string[]
   respuesta: string
+  aceptadas?: string[]
 }
 
 export interface TextoReading {

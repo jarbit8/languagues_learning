@@ -81,16 +81,16 @@
   },
   {
    "id": "a1-t03-012",
-   "es": "francés (nacionalidad)",
+   "es": "francés (idioma y nacionalidad)",
    "texto": "French",
-   "ejemplo": "Paul is French.",
+   "ejemplo": "Paul is French and he speaks French.",
    "pron": "FRENCH"
   },
   {
    "id": "a1-t03-013",
-   "es": "inglés (nacionalidad)",
+   "es": "inglés (idioma y nacionalidad)",
    "texto": "English",
-   "ejemplo": "She is English.",
+   "ejemplo": "She is English and she speaks English.",
    "pron": "ING-glish"
   },
   {
@@ -99,20 +99,6 @@
    "texto": "language",
    "ejemplo": "Spanish is my language.",
    "pron": "LAN-guich"
-  },
-  {
-   "id": "a1-t03-015",
-   "es": "inglés (idioma)",
-   "texto": "English",
-   "ejemplo": "I speak English.",
-   "pron": "ING-glish"
-  },
-  {
-   "id": "a1-t03-016",
-   "es": "francés (idioma)",
-   "texto": "French",
-   "ejemplo": "I speak French.",
-   "pron": "FRENCH"
   },
   {
    "id": "a1-t03-017",

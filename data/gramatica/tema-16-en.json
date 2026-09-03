@@ -1,1 +1,143 @@
-{"tema":16,"titulo":"Can / can't: posibilidad y permiso","regla":"'Can' expresa posibilidad, permiso o habilidad: 'You can park here', 'I can swim'. Negativo: 'can't' (cannot). No cambia con he/she/it ('she can', no 'she cans') y va seguido del verbo base sin 'to'.","pronunciacion":"Can (afirmativo, vocal débil) vs can't (la 't' casi no se oye, pero la vocal cambia) — hay que distinguirlos por la vocal, no por la 't'.","trampa":"Tras 'can' el verbo va sin 'to' ni -s: 'she can cook', no 'she can to cook' ni 'she can cooks'.","ejemplos":[{"frase":"You can park here.","traduccion":"Puedes estacionar aquí.","comoSeLee":"iú can park jíer"},{"frase":"I can't cook.","traduccion":"No sé cocinar.","comoSeLee":"ai cant kuk"},{"frase":"Can we visit the museum?","traduccion":"¿Podemos visitar el museo?","comoSeLee":"can uí vísit de miusíum"}],"ejercicios":[{"tipo":"hueco","enunciado":"You ___ park here. (poder)","respuesta":"can"},{"tipo":"hueco","enunciado":"I ___ cook. (negativo)","respuesta":"can't","aceptadas":["cannot"]},{"tipo":"hueco","enunciado":"She can ___. (cook)","respuesta":"cook"},{"tipo":"hueco","enunciado":"___ we visit the museum? (pregunta)","respuesta":"Can"},{"tipo":"opcion_multiple","enunciado":"he/she + can:","opciones":["she can","she cans","she can to"],"respuesta":"she can"},{"tipo":"opcion_multiple","enunciado":"I can ___ Spanish.","opciones":["speak","speaks","to speak"],"respuesta":"speak"},{"tipo":"opcion_multiple","enunciado":"Negativo de 'can':","opciones":["can't","don't can","cann't"],"respuesta":"can't"},{"tipo":"ordenar","enunciado":"Ordena: puedes estacionar aquí.","opciones":["you","can","park","here"],"respuesta":"you can park here"},{"tipo":"ordenar","enunciado":"Ordena: no sé cocinar.","opciones":["I","can't","cook"],"respuesta":"I can't cook"},{"tipo":"ordenar","enunciado":"Ordena: ¿podemos visitar el museo?","opciones":["can","we","visit","the","museum"],"respuesta":"can we visit the museum"},{"tipo":"corregir_error","enunciado":"She cans cook.","respuesta":"She can cook."},{"tipo":"corregir_error","enunciado":"I can to speak Spanish.","respuesta":"I can speak Spanish."},{"tipo":"corregir_error","enunciado":"Can you cooks?","respuesta":"Can you cook?"},{"tipo":"traducir","enunciado":"No sé cocinar.","respuesta":"I can't cook.","aceptadas":["i cannot cook"]},{"tipo":"traducir","enunciado":"¿Podemos visitar el museo?","respuesta":"Can we visit the museum?","aceptadas":["can we visit the museum"]}]}
+{
+ "tema": 16,
+ "titulo": "Can / can't: posibilidad y permiso",
+ "regla": "'Can' expresa posibilidad, permiso o habilidad: 'You can park here', 'I can swim'. Negativo: 'can't' (cannot). No cambia con he/she/it ('she can', no 'she cans') y va seguido del verbo base sin 'to'.",
+ "pronunciacion": "Can (afirmativo, vocal débil) vs can't (la 't' casi no se oye, pero la vocal cambia) — hay que distinguirlos por la vocal, no por la 't'.",
+ "trampa": "Tras 'can' el verbo va sin 'to' ni -s: 'she can cook', no 'she can to cook' ni 'she can cooks'.",
+ "ejemplos": [
+  {
+   "frase": "You can park here.",
+   "traduccion": "Puedes estacionar aquí.",
+   "comoSeLee": "iú can park jíer"
+  },
+  {
+   "frase": "I can't cook.",
+   "traduccion": "No sé cocinar.",
+   "comoSeLee": "ai cant kuk"
+  },
+  {
+   "frase": "Can we visit the museum?",
+   "traduccion": "¿Podemos visitar el museo?",
+   "comoSeLee": "can uí vísit de miusíum"
+  }
+ ],
+ "ejercicios": [
+  {
+   "tipo": "hueco",
+   "enunciado": "You ___ park here. (poder)",
+   "respuesta": "can"
+  },
+  {
+   "tipo": "hueco",
+   "enunciado": "I ___ cook. (negativo)",
+   "respuesta": "can't",
+   "aceptadas": [
+    "cannot"
+   ]
+  },
+  {
+   "tipo": "hueco",
+   "enunciado": "She can ___. (cook)",
+   "respuesta": "cook"
+  },
+  {
+   "tipo": "hueco",
+   "enunciado": "___ we visit the museum? (pregunta)",
+   "respuesta": "Can"
+  },
+  {
+   "tipo": "opcion_multiple",
+   "enunciado": "he/she + can:",
+   "opciones": [
+    "she can to",
+    "she cans",
+    "she can"
+   ],
+   "respuesta": "she can"
+  },
+  {
+   "tipo": "opcion_multiple",
+   "enunciado": "I can ___ Spanish.",
+   "opciones": [
+    "to speak",
+    "speaks",
+    "speak"
+   ],
+   "respuesta": "speak"
+  },
+  {
+   "tipo": "opcion_multiple",
+   "enunciado": "Negativo de 'can':",
+   "opciones": [
+    "can't",
+    "don't can",
+    "cann't"
+   ],
+   "respuesta": "can't"
+  },
+  {
+   "tipo": "ordenar",
+   "enunciado": "Ordena: puedes estacionar aquí.",
+   "opciones": [
+    "you",
+    "can",
+    "park",
+    "here"
+   ],
+   "respuesta": "you can park here"
+  },
+  {
+   "tipo": "ordenar",
+   "enunciado": "Ordena: no sé cocinar.",
+   "opciones": [
+    "I",
+    "can't",
+    "cook"
+   ],
+   "respuesta": "I can't cook"
+  },
+  {
+   "tipo": "ordenar",
+   "enunciado": "Ordena: ¿podemos visitar el museo?",
+   "opciones": [
+    "can",
+    "we",
+    "visit",
+    "the",
+    "museum"
+   ],
+   "respuesta": "can we visit the museum"
+  },
+  {
+   "tipo": "corregir_error",
+   "enunciado": "She cans cook.",
+   "respuesta": "She can cook."
+  },
+  {
+   "tipo": "corregir_error",
+   "enunciado": "I can to speak Spanish.",
+   "respuesta": "I can speak Spanish."
+  },
+  {
+   "tipo": "corregir_error",
+   "enunciado": "Can you cooks?",
+   "respuesta": "Can you cook?"
+  },
+  {
+   "tipo": "traducir",
+   "enunciado": "No sé cocinar.",
+   "respuesta": "I can't cook.",
+   "aceptadas": [
+    "i cannot cook"
+   ]
+  },
+  {
+   "tipo": "traducir",
+   "enunciado": "¿Podemos visitar el museo?",
+   "respuesta": "Can we visit the museum?",
+   "aceptadas": [
+    "can we visit the museum"
+   ]
+  }
+ ]
+}

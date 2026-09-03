@@ -42,9 +42,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cómo se llama la hermana?",
      "opciones": [
+      "Marie",
       "Sofia",
-      "Ana",
-      "Marie"
+      "Ana"
      ],
      "respuesta": "Sofia"
     },
@@ -62,9 +62,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cuántas hermanas tiene B?",
      "opciones": [
-      "one",
+      "three",
       "two",
-      "three"
+      "one"
      ],
      "respuesta": "one"
     },
@@ -120,8 +120,8 @@
      "enunciado": "¿Cómo se llama el primo?",
      "opciones": [
       "Marc",
-      "Max",
-      "Paul"
+      "Paul",
+      "Max"
      ],
      "respuesta": "Marc"
     },
@@ -139,9 +139,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cuántos años tiene el primo?",
      "opciones": [
+      "forty",
       "twenty",
-      "thirty",
-      "forty"
+      "thirty"
      ],
      "respuesta": "thirty"
     },
@@ -196,8 +196,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cuántos hermanos tiene?",
      "opciones": [
-      "two",
       "one",
+      "two",
       "three"
      ],
      "respuesta": "two"
@@ -256,8 +256,8 @@
      "enunciado": "¿Qué mascotas tiene?",
      "opciones": [
       "a dog and a cat",
-      "two dogs",
-      "a cat"
+      "a cat",
+      "two dogs"
      ],
      "respuesta": "a dog and a cat"
     },
@@ -317,9 +317,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cómo está la hermana?",
      "opciones": [
-      "single",
+      "divorced",
       "married",
-      "divorced"
+      "single"
      ],
      "respuesta": "single"
     },

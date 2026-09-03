@@ -35,10 +35,31 @@ function variantesEs(es: string): string[] {
 // exámenes de tema, bloque y final sorteaban entre cuatro tipos (audio→escribir, es→en y dos
 // de opción múltiple); se quitó todo, con sus distractores. Si vuelve a pedirse variedad, está
 // en el historial de git hasta el commit anterior a este.
+// Palabras que se ensenan en MAS DE UNA tarjeta con significados distintos: "cold" es frio
+// de bebida en el T14, frio de clima en el T18 y resfriado en el T19; "hot", "near" y
+// "orange" igual. Con el enunciado a secas las tres preguntas se ven identicas y no hay
+// forma de saber cual se pregunta, asi que dos de las tres respuestas se daban por malas.
+// Cuando el termino se repite, el enunciado lleva el ejemplo detras como contexto.
+const TERMINOS_REPETIDOS: Set<string> = (() => {
+  const vistas = new Set<string>()
+  const repes = new Set<string>()
+  for (const p of vocabPacks)
+    for (const c of p.conceptos) {
+      const k = c.texto.toLowerCase()
+      if (vistas.has(k)) repes.add(k)
+      vistas.add(k)
+    }
+  return repes
+})()
+
 export function preguntaSignificadoEscrito(concepto: Concepto): Pregunta {
   return {
     tipo: 'significado_escrito',
-    enunciado: `¿Qué significa "${concepto.texto}" en español?`,
+    enunciado: `¿Qué significa "${concepto.texto}" en español?${
+      TERMINOS_REPETIDOS.has(concepto.texto.toLowerCase()) && concepto.ejemplo
+        ? ` (${concepto.ejemplo})`
+        : ''
+    }`,
     audioTexto: concepto.texto,
     respuesta: concepto.es,
     aceptadas: variantesEs(concepto.es),

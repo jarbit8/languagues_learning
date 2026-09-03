@@ -56,8 +56,8 @@
    "tipo": "opcion_multiple",
    "enunciado": "Objeto de 'he' =",
    "opciones": [
-    "him",
     "he",
+    "him",
     "his"
    ],
    "respuesta": "him"
@@ -66,9 +66,9 @@
    "tipo": "opcion_multiple",
    "enunciado": "I see ___. (a ellos)",
    "opciones": [
-    "them",
+    "their",
     "they",
-    "their"
+    "them"
    ],
    "respuesta": "them"
   },
@@ -76,9 +76,9 @@
    "tipo": "opcion_multiple",
    "enunciado": "Razón (porque) =",
    "opciones": [
+    "but",
     "because",
-    "so",
-    "but"
+    "so"
    ],
    "respuesta": "because"
   },
@@ -154,8 +154,8 @@
    "tipo": "opcion_multiple",
    "enunciado": "The exam is difficult ___ I pass.",
    "opciones": [
-    "but",
     "and",
+    "but",
     "or"
    ],
    "respuesta": "but"

@@ -43,8 +43,8 @@
      "enunciado": "¿Qué día trabaja B?",
      "opciones": [
       "Monday",
-      "Tuesday",
-      "Saturday"
+      "Saturday",
+      "Tuesday"
      ],
      "respuesta": "Tuesday"
     },
@@ -125,8 +125,8 @@
      "enunciado": "¿En qué mes es el cumpleaños de B?",
      "opciones": [
       "October",
-      "December",
-      "April"
+      "April",
+      "December"
      ],
      "respuesta": "December"
     },
@@ -190,9 +190,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué día es hoy?",
      "opciones": [
+      "Friday",
       "Wednesday",
-      "Thursday",
-      "Friday"
+      "Thursday"
      ],
      "respuesta": "Wednesday"
     },
@@ -249,9 +249,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Con quién está el domingo?",
      "opciones": [
-      "Laura",
+      "Marc",
       "su familia",
-      "Marc"
+      "Laura"
      ],
      "respuesta": "Laura"
     },
@@ -316,9 +316,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué día es hoy?",
      "opciones": [
+      "Monday",
       "Friday",
-      "Saturday",
-      "Monday"
+      "Saturday"
      ],
      "respuesta": "Friday"
     },

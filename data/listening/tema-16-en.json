@@ -42,9 +42,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Dónde está el museo?",
      "opciones": [
-      "near the park",
       "near the station",
-      "in the centre"
+      "in the centre",
+      "near the park"
      ],
      "respuesta": "near the park"
     },
@@ -322,8 +322,8 @@
      "enunciado": "¿Dónde vive Marie?",
      "opciones": [
       "in a street near the park",
-      "in the city centre",
-      "near the hospital"
+      "near the hospital",
+      "in the city centre"
      ],
      "respuesta": "in a street near the park"
     },

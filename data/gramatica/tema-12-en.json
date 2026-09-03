@@ -67,8 +67,8 @@
    "tipo": "opcion_multiple",
    "enunciado": "Gerundio de 'wear':",
    "opciones": [
-    "wearing",
     "weared",
+    "wearing",
     "wears"
    ],
    "respuesta": "wearing"
@@ -77,9 +77,9 @@
    "tipo": "opcion_multiple",
    "enunciado": "She ___ a dress.",
    "opciones": [
-    "is wearing",
     "wearing",
-    "wears wearing"
+    "wears wearing",
+    "is wearing"
    ],
    "respuesta": "is wearing"
   },
@@ -171,9 +171,9 @@
    "tipo": "opcion_multiple",
    "enunciado": "___ you wearing a jacket?",
    "opciones": [
-    "Are",
     "Do",
-    "Is"
+    "Is",
+    "Are"
    ],
    "respuesta": "Are"
   },
@@ -196,9 +196,9 @@
    "tipo": "opcion_multiple",
    "enunciado": "Gerundio de 'run':",
    "opciones": [
+    "runming",
     "running",
-    "runing",
-    "runming"
+    "runing"
    ],
    "respuesta": "running"
   },

@@ -10,8 +10,8 @@
      "enunciado": "¿Qué días trabaja Ana?",
      "opciones": [
       "Monday and Wednesday",
-      "Tuesday and Thursday",
-      "Friday and Saturday"
+      "Friday and Saturday",
+      "Tuesday and Thursday"
      ],
      "respuesta": "Monday and Wednesday"
     },
@@ -30,8 +30,8 @@
      "enunciado": "¿Qué día es hoy?",
      "opciones": [
       "Thursday",
-      "Friday",
-      "Sunday"
+      "Sunday",
+      "Friday"
      ],
      "respuesta": "Thursday"
     },
@@ -49,9 +49,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿En qué mes es el cumpleaños de Laura?",
      "opciones": [
-      "August",
       "May",
-      "December"
+      "December",
+      "August"
      ],
      "respuesta": "August"
     },
@@ -70,9 +70,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿En qué mes es el cumpleaños de Laura?",
      "opciones": [
-      "February",
       "August",
-      "March"
+      "March",
+      "February"
      ],
      "respuesta": "February"
     },
@@ -91,8 +91,8 @@
      "enunciado": "¿Qué días trabaja Laura?",
      "opciones": [
       "Thursday and Friday",
-      "Monday and Tuesday",
-      "Saturday and Sunday"
+      "Saturday and Sunday",
+      "Monday and Tuesday"
      ],
      "respuesta": "Thursday and Friday"
     },
@@ -154,9 +154,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué día es hoy?",
      "opciones": [
-      "Tuesday",
+      "Thursday",
       "Wednesday",
-      "Thursday"
+      "Tuesday"
      ],
      "respuesta": "Tuesday"
     },
@@ -190,9 +190,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿En qué mes viene la familia?",
      "opciones": [
+      "December",
       "June",
-      "July",
-      "December"
+      "July"
      ],
      "respuesta": "June"
     },
@@ -256,9 +256,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué día es hoy?",
      "opciones": [
-      "Friday",
       "Saturday",
-      "Wednesday"
+      "Wednesday",
+      "Friday"
      ],
      "respuesta": "Friday"
     },
@@ -281,9 +281,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué día fue anteayer?",
      "opciones": [
-      "Wednesday",
+      "Sunday",
       "Thursday",
-      "Sunday"
+      "Wednesday"
      ],
      "respuesta": "Wednesday"
     }

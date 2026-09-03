@@ -42,8 +42,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Hacia dónde debe girar A?",
      "opciones": [
-      "right",
       "left",
+      "right",
       "straight"
      ],
      "respuesta": "left"
@@ -66,9 +66,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿En cuánto tiempo se llega a pie a la estación?",
      "opciones": [
-      "five minutes",
       "ten minutes",
-      "fifteen minutes"
+      "fifteen minutes",
+      "five minutes"
      ],
      "respuesta": "five minutes"
     },
@@ -204,8 +204,8 @@
      "enunciado": "¿Qué debe hacer A en la esquina?",
      "opciones": [
       "turn left",
-      "turn right",
-      "continue straight"
+      "continue straight",
+      "turn right"
      ],
      "respuesta": "turn left"
     },
@@ -275,8 +275,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿A dónde va A?",
      "opciones": [
-      "to the airport",
       "to the city centre",
+      "to the airport",
       "to the station"
      ],
      "respuesta": "to the airport"
@@ -329,9 +329,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cómo va Marie al trabajo?",
      "opciones": [
+      "on foot",
       "by bus",
-      "by car",
-      "on foot"
+      "by car"
      ],
      "respuesta": "by bus"
     },

@@ -19,8 +19,8 @@
      "enunciado": "What was the message on the screen?",
      "opciones": [
       "there is no network",
-      "the battery is not good",
-      "there is no password"
+      "there is no password",
+      "the battery is not good"
      ],
      "respuesta": "there is no network"
     },
@@ -34,8 +34,8 @@
      "enunciado": "Who texted the password to Ana?",
      "opciones": [
       "a worker of the company",
-      "her teacher",
-      "her sister"
+      "her sister on the phone",
+      "her teacher of the university"
      ],
      "respuesta": "a worker of the company"
     },
@@ -62,9 +62,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What did Ana send to her teacher?",
      "opciones": [
-      "an email with the files",
-      "a video",
-      "a photo"
+      "a photo and a message",
+      "a video of her class",
+      "an email with the files"
      ],
      "respuesta": "an email with the files"
     }
@@ -87,9 +87,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "How many songs did Laura download?",
      "opciones": [
-      "three",
+      "six",
       "two",
-      "six"
+      "three"
      ],
      "respuesta": "three"
     },
@@ -102,9 +102,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "Why was the computer of Laura slow?",
      "opciones": [
-      "there were many files on it",
       "the wifi was not good",
-      "the battery was not good"
+      "the battery was not good",
+      "there were many files on it"
      ],
      "respuesta": "there were many files on it"
     },
@@ -132,8 +132,8 @@
      "enunciado": "What did Laura send to Ana?",
      "opciones": [
       "a message with a photo",
-      "a video of tennis",
-      "three songs"
+      "three songs",
+      "a video of tennis"
      ],
      "respuesta": "a message with a photo"
     }
@@ -171,9 +171,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What was the problem at two?",
      "opciones": [
-      "there was no network",
       "the battery was not good",
-      "the screen was not well"
+      "the screen was not well",
+      "there was no network"
      ],
      "respuesta": "there was no network"
     },
@@ -269,9 +269,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What time did her mother call?",
      "opciones": [
+      "at three",
       "at nine",
-      "at five",
-      "at three"
+      "at five"
      ],
      "respuesta": "at nine"
     }
@@ -285,8 +285,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "What did Marie have with her last Saturday?",
      "opciones": [
-      "her camera and her phone",
       "her computer",
+      "her camera and her phone",
       "a file with photos"
      ],
      "respuesta": "her camera and her phone"
@@ -338,9 +338,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What did Marie do at night?",
      "opciones": [
-      "she turned off her phone and charged it",
+      "she downloaded three songs",
       "she called her mother",
-      "she downloaded three songs"
+      "she turned off her phone and charged it"
      ],
      "respuesta": "she turned off her phone and charged it"
     }

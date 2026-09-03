@@ -66,9 +66,9 @@
    "tipo": "opcion_multiple",
    "enunciado": "The lamp is ___ to the bed. (al lado)",
    "opciones": [
+    "under",
     "next",
-    "near",
-    "under"
+    "near"
    ],
    "respuesta": "next"
   },

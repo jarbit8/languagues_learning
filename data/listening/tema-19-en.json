@@ -123,8 +123,8 @@
      "enunciado": "¿Qué le duele a B?",
      "opciones": [
       "stomach",
-      "throat",
-      "leg"
+      "leg",
+      "throat"
      ],
      "respuesta": "stomach"
     },
@@ -155,8 +155,8 @@
      "enunciado": "¿Qué día debe volver B?",
      "opciones": [
       "Monday",
-      "Friday",
-      "Sunday"
+      "Sunday",
+      "Friday"
      ],
      "respuesta": "Friday"
     }
@@ -203,9 +203,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué le duele a B?",
      "opciones": [
-      "his head and his neck",
       "his stomach",
-      "his leg"
+      "his leg",
+      "his head and his neck"
      ],
      "respuesta": "his head and his neck"
     },
@@ -276,8 +276,8 @@
      "enunciado": "¿Qué debe comer B?",
      "opciones": [
       "fruit and vegetables",
-      "a lot of meat",
-      "hot soup"
+      "hot soup",
+      "a lot of meat"
      ],
      "respuesta": "fruit and vegetables"
     },
@@ -330,8 +330,8 @@
      "enunciado": "¿Qué tiene Marie?",
      "opciones": [
       "a fever and a cough",
-      "a pain in the leg",
-      "an allergy"
+      "an allergy",
+      "a pain in the leg"
      ],
      "respuesta": "a fever and a cough"
     },

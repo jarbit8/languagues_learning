@@ -45,9 +45,7 @@ export default function Reading() {
         </div>
       )
     }
-    const preguntas = texto.preguntas.map((p) =>
-      preguntaDeListening({ tipo: p.tipo, enunciado: p.enunciado, opciones: p.opciones, respuesta: p.respuesta })
-    )
+    const preguntas = texto.preguntas.map(preguntaDeListening)
     return (
       <div className="flex flex-col gap-4">
         <button onClick={reset} className="self-start text-sm text-slate-500 underline dark:text-slate-400">

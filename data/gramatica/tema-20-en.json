@@ -51,9 +51,9 @@
    "tipo": "opcion_multiple",
    "enunciado": "'me gusta leer' =",
    "opciones": [
+    "I like to reading",
     "I like reading",
-    "I like read",
-    "I like to reading"
+    "I like read"
    ],
    "respuesta": "I like reading"
   },
@@ -61,9 +61,9 @@
    "tipo": "opcion_multiple",
    "enunciado": "I ___ football.",
    "opciones": [
-    "play",
     "go",
-    "do"
+    "do",
+    "play"
    ],
    "respuesta": "play"
   },
@@ -71,9 +71,9 @@
    "tipo": "opcion_multiple",
    "enunciado": "I ___ swimming.",
    "opciones": [
-    "go",
     "play",
-    "do"
+    "do",
+    "go"
    ],
    "respuesta": "go"
   },

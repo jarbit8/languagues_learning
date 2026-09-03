@@ -59,8 +59,8 @@
    "tipo": "opcion_multiple",
    "enunciado": "Ana is a girl. ___ mother is Peruvian.",
    "opciones": [
-    "Her",
     "His",
+    "Her",
     "Its"
    ],
    "respuesta": "Her"
@@ -69,9 +69,9 @@
    "tipo": "opcion_multiple",
    "enunciado": "el nombre de mi hermana = my ___ name.",
    "opciones": [
-    "sister's",
     "sisters",
-    "sister"
+    "sister",
+    "sister's"
    ],
    "respuesta": "sister's"
   },
@@ -79,8 +79,8 @@
    "tipo": "opcion_multiple",
    "enunciado": "We are a family. ___ family is in Peru.",
    "opciones": [
-    "Our",
     "My",
+    "Our",
     "Their"
    ],
    "respuesta": "Our"
@@ -163,9 +163,9 @@
    "tipo": "opcion_multiple",
    "enunciado": "¿Cuál pregunta por el DUEÑO?",
    "opciones": [
-    "Whose dog is it?",
     "Who is your dog?",
-    "Which dog is it?"
+    "Which dog is it?",
+    "Whose dog is it?"
    ],
    "respuesta": "Whose dog is it?"
   },
@@ -187,8 +187,8 @@
    "enunciado": "That is her family. That family is ___.",
    "opciones": [
     "hers",
-    "her",
-    "she"
+    "she",
+    "her"
    ],
    "respuesta": "hers"
   },

@@ -72,9 +72,9 @@
    "tipo": "opcion_multiple",
    "enunciado": "'voy a estudiar' =",
    "opciones": [
+    "I'm go to study",
     "I'm going to study",
-    "I going to study",
-    "I'm go to study"
+    "I going to study"
    ],
    "respuesta": "I'm going to study"
   },
@@ -180,8 +180,8 @@
    "enunciado": "Ya compré los boletos. ¿Cuál es correcta?",
    "opciones": [
     "I'm going to travel to Canada.",
-    "I will travel to Canada.",
-    "I travel to Canada."
+    "I travel to Canada.",
+    "I will travel to Canada."
    ],
    "respuesta": "I'm going to travel to Canada.",
    "pista": "plan ya decidido → going to"

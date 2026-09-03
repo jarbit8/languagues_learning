@@ -9,9 +9,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿En qué trabaja el padre de Ana?",
      "opciones": [
+      "cook",
       "engineer",
-      "doctor",
-      "cook"
+      "doctor"
      ],
      "respuesta": "engineer"
     },
@@ -29,9 +29,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué quiere ser el amigo de Ana?",
      "opciones": [
-      "lawyer",
+      "nurse",
       "waiter",
-      "nurse"
+      "lawyer"
      ],
      "respuesta": "lawyer"
     },
@@ -64,8 +64,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿En qué trabaja la persona que habla primero?",
      "opciones": [
-      "driver",
       "secretary",
+      "driver",
       "farmer"
      ],
      "respuesta": "driver"
@@ -85,8 +85,8 @@
      "enunciado": "¿Qué es la mujer del perro?",
      "opciones": [
       "farmer",
-      "dentist",
-      "seller"
+      "seller",
+      "dentist"
      ],
      "respuesta": "farmer"
     },
@@ -119,9 +119,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿En qué trabaja el padre?",
      "opciones": [
-      "doctor",
+      "driver",
       "teacher",
-      "driver"
+      "doctor"
      ],
      "respuesta": "doctor"
     },
@@ -170,9 +170,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cuál es la profesión de la persona?",
      "opciones": [
+      "lawyer",
       "architect",
-      "accountant",
-      "lawyer"
+      "accountant"
      ],
      "respuesta": "architect"
     },
@@ -221,9 +221,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cuál es la profesión de Marie?",
      "opciones": [
-      "dentist",
       "teacher",
-      "nurse"
+      "nurse",
+      "dentist"
      ],
      "respuesta": "dentist"
     },
@@ -241,9 +241,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Quién es el jefe?",
      "opciones": [
+      "el padre",
       "Mr Lee",
-      "Marc",
-      "el padre"
+      "Marc"
      ],
      "respuesta": "Mr Lee"
     },

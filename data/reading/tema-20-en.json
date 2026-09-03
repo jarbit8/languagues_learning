@@ -9,9 +9,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What does Ana play in her bedroom?",
      "opciones": [
-      "the guitar",
       "chess",
-      "tennis"
+      "tennis",
+      "the guitar"
      ],
      "respuesta": "the guitar"
     },
@@ -33,9 +33,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What sport does Laura play every Friday?",
      "opciones": [
-      "basketball",
+      "football",
       "tennis",
-      "football"
+      "basketball"
      ],
      "respuesta": "basketball"
     },
@@ -79,9 +79,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "Where does the team of Paul play?",
      "opciones": [
-      "in the stadium near the school",
-      "in the gym",
-      "in the park"
+      "in the gym near the city centre",
+      "in the park, near the river",
+      "in the stadium near the school"
      ],
      "respuesta": "in the stadium near the school"
     },
@@ -103,9 +103,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What does the team do in winter?",
      "opciones": [
+      "they do swimming",
       "they go to the gym",
-      "they play in the stadium",
-      "they do swimming"
+      "they play in the stadium"
      ],
      "respuesta": "they go to the gym"
     },
@@ -132,9 +132,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What does Paul do in his free time?",
      "opciones": [
-      "he draws his team",
       "he plays chess",
-      "he sings"
+      "he sings",
+      "he draws his team"
      ],
      "respuesta": "he draws his team"
     }
@@ -148,8 +148,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "What does Laura do in the party?",
      "opciones": [
-      "she plays the guitar and sings",
       "she dances all the day",
+      "she plays the guitar and sings",
       "she watches a film"
      ],
      "respuesta": "she plays the guitar and sings"
@@ -173,8 +173,8 @@
      "enunciado": "What does Lee do?",
      "opciones": [
       "he plays the guitar",
-      "he sings",
-      "he dances"
+      "he watches a film",
+      "he sings and dances"
      ],
      "respuesta": "he plays the guitar"
     },
@@ -226,8 +226,8 @@
      "enunciado": "What does Ana play in the gym?",
      "opciones": [
       "tennis",
-      "basketball",
-      "football"
+      "football",
+      "basketball"
      ],
      "respuesta": "tennis"
     },
@@ -240,9 +240,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "Why is swimming a good sport?",
      "opciones": [
-      "it is very good for the back",
+      "it is fast",
       "the water is cold",
-      "it is fast"
+      "it is very good for the back"
      ],
      "respuesta": "it is very good for the back"
     },
@@ -270,8 +270,8 @@
      "enunciado": "What does Ana do with Laura?",
      "opciones": [
       "she plays the guitar and sings",
-      "she does swimming",
-      "she draws"
+      "she draws",
+      "she does swimming"
      ],
      "respuesta": "she plays the guitar and sings"
     }
@@ -309,9 +309,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What sport does Marie like?",
      "opciones": [
+      "basketball",
       "tennis",
-      "football",
-      "basketball"
+      "football"
      ],
      "respuesta": "tennis"
     },
@@ -339,8 +339,8 @@
      "enunciado": "Why does Marie want to travel to France?",
      "opciones": [
       "for the music and the parties",
-      "for the sport",
-      "for the films"
+      "for the films and the games",
+      "for the sport and the gym"
      ],
      "respuesta": "for the music and the parties"
     }

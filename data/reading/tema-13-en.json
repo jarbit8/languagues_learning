@@ -9,9 +9,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What does Ana have for breakfast?",
      "opciones": [
-      "bread with butter and an apple",
       "rice with chicken",
-      "soup or a sandwich"
+      "soup or a sandwich",
+      "bread with butter and an apple"
      ],
      "respuesta": "bread with butter and an apple"
     },
@@ -29,8 +29,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "What does Laura eat?",
      "opciones": [
-      "pasta and yogurt",
       "fish and salad",
+      "pasta and yogurt",
       "soup and bread"
      ],
      "respuesta": "pasta and yogurt"
@@ -54,8 +54,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "Why does Ana not eat meat every day?",
      "opciones": [
-      "because it is expensive",
       "because it is not tasty",
+      "because it is expensive",
       "because she is not hungry"
      ],
      "respuesta": "because it is expensive"
@@ -76,8 +76,8 @@
      "enunciado": "What does Paul eat for breakfast?",
      "opciones": [
       "two eggs, bread with cheese and a banana",
-      "chicken with rice",
-      "pasta with butter"
+      "soup, a sandwich and an orange",
+      "rice with chicken and a salad with tomatoes"
      ],
      "respuesta": "two eggs, bread with cheese and a banana"
     },
@@ -99,8 +99,8 @@
      "enunciado": "What do Paul and Lee eat on Friday?",
      "opciones": [
       "fish with potatoes",
-      "chicken with rice",
-      "soup"
+      "soup",
+      "chicken with rice"
      ],
      "respuesta": "fish with potatoes"
     },
@@ -149,9 +149,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What does Ana cook on Wednesday?",
      "opciones": [
-      "fish with potatoes and carrots",
+      "pasta with butter",
       "rice with chicken",
-      "pasta with butter"
+      "fish with potatoes and carrots"
      ],
      "respuesta": "fish with potatoes and carrots"
     },
@@ -173,9 +173,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "Who cooks on Saturday?",
      "opciones": [
+      "Paul",
       "Laura",
-      "Ana",
-      "Paul"
+      "Ana"
      ],
      "respuesta": "Laura"
     },
@@ -188,9 +188,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What is in the dessert on Saturday?",
      "opciones": [
-      "apples and sugar",
+      "onions and salt",
       "bananas and milk",
-      "onions and salt"
+      "apples and sugar"
      ],
      "respuesta": "apples and sugar"
     },
@@ -210,8 +210,8 @@
      "enunciado": "How many friends are in the kitchen?",
      "opciones": [
       "five",
-      "four",
-      "three"
+      "three",
+      "four"
      ],
      "respuesta": "five"
     },
@@ -233,9 +233,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What is in the dessert?",
      "opciones": [
-      "bananas, milk and sugar",
+      "oranges and yogurt",
       "apples and butter",
-      "oranges and yogurt"
+      "bananas, milk and sugar"
      ],
      "respuesta": "bananas, milk and sugar"
     },
@@ -253,9 +253,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What time do the friends go out?",
      "opciones": [
-      "at eleven",
       "at ten",
-      "at twelve"
+      "at twelve",
+      "at eleven"
      ],
      "respuesta": "at eleven"
     },
@@ -275,8 +275,8 @@
      "enunciado": "What does Marie have for breakfast?",
      "opciones": [
       "bread with butter, a yogurt and an orange",
-      "chicken with rice",
-      "soup and a sandwich"
+      "soup, a sandwich and some fruit",
+      "rice with chicken and a green salad"
      ],
      "respuesta": "bread with butter, a yogurt and an orange"
     },
@@ -300,8 +300,8 @@
      "enunciado": "What is in the salad of Marie?",
      "opciones": [
       "tomatoes and onions",
-      "potatoes and carrots",
-      "apples and bananas"
+      "apples and bananas",
+      "potatoes and carrots"
      ],
      "respuesta": "tomatoes and onions"
     },
@@ -327,9 +327,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What is in the Saturday dessert?",
      "opciones": [
-      "apples, milk and sugar",
+      "oranges and butter",
       "bananas and cheese",
-      "oranges and butter"
+      "apples, milk and sugar"
      ],
      "respuesta": "apples, milk and sugar"
     }

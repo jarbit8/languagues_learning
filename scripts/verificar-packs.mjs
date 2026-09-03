@@ -184,6 +184,35 @@ for (const { archivo, pack } of packs('pronunciacion')) {
   })
 }
 
+// SESGO DE POSICION: si la opcion correcta cae casi siempre la primera, el examen se
+// aprueba sin leer el texto. Paso el 2026-09-03: 94% de 557 preguntas la tenian en la
+// primera posicion. La app solo baraja los ejercicios de 'ordenar', asi que el orden del
+// JSON es el que se ve; se reordeno el dato y esto vigila que no vuelva a desviarse.
+{
+  const cuenta = []
+  const contar = (q) => {
+    if (q?.tipo !== 'opcion_multiple' || !Array.isArray(q.opciones) || q.opciones.length < 3) return
+    const i = q.opciones.indexOf(q.respuesta)
+    if (i >= 0) cuenta[i] = (cuenta[i] ?? 0) + 1
+  }
+  for (const { pack } of packs('reading', (f) => f.endsWith('-en.json')))
+    for (const t of pack.textos ?? []) for (const q of t.preguntas ?? []) contar(q)
+  for (const { pack } of packs('listening', (f) => f.endsWith('-en.json')))
+    for (const d of pack.dialogos ?? []) for (const q of d.preguntas ?? []) contar(q)
+  for (const { pack } of packs('gramatica', (f) => f.endsWith('-en.json')))
+    for (const e of pack.ejercicios ?? []) contar(e)
+
+  const total = cuenta.reduce((a, b) => a + (b ?? 0), 0)
+  if (total >= 50) {
+    const mayor = Math.max(...cuenta.map((c) => c ?? 0))
+    const pct = Math.round((mayor / total) * 100)
+    // Con 3-4 opciones lo esperable es 25-33%. Se avisa a partir de 45%.
+    if (pct > 45)
+      mal('(todos los packs)', 'opción múltiple',
+        `el ${pct}% de las respuestas correctas cae en la misma posición (${total} preguntas): se aprueba sin leer`)
+  }
+}
+
 function listar(titulo, lista) {
   if (!lista.length) return
   console.log(`${titulo}\n`)

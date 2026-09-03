@@ -53,12 +53,7 @@ export function construirReadingBloque(bloque: number): SeccionReading {
   const preguntas = baraja(
     textos.flatMap((t) =>
       t.preguntas.map((p) =>
-        preguntaDeListening({
-          tipo: p.tipo,
-          enunciado: p.enunciado,
-          opciones: p.opciones,
-          respuesta: p.respuesta
-        })
+        preguntaDeListening(p)
       )
     )
   )

@@ -57,8 +57,8 @@
    "enunciado": "'a pie' =",
    "opciones": [
     "on foot",
-    "by foot",
-    "in foot"
+    "in foot",
+    "by foot"
    ],
    "respuesta": "on foot"
   },
@@ -66,9 +66,9 @@
    "tipo": "opcion_multiple",
    "enunciado": "Imperativo de 'take':",
    "opciones": [
-    "take",
+    "to take",
     "takes",
-    "to take"
+    "take"
    ],
    "respuesta": "take"
   },
@@ -76,9 +76,9 @@
    "tipo": "opcion_multiple",
    "enunciado": "I go ___ car.",
    "opciones": [
+    "in",
     "by",
-    "on",
-    "in"
+    "on"
    ],
    "respuesta": "by"
   },
@@ -157,8 +157,8 @@
    "tipo": "opcion_multiple",
    "enunciado": "She drives ___.",
    "opciones": [
-    "well",
     "good",
+    "well",
     "goodly"
    ],
    "respuesta": "well"

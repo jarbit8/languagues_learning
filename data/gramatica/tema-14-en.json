@@ -54,9 +54,9 @@
    "tipo": "opcion_multiple",
    "enunciado": "Más cortés que 'I want':",
    "opciones": [
-    "I'd like",
+    "I liking",
     "I wants",
-    "I liking"
+    "I'd like"
    ],
    "respuesta": "I'd like"
   },
@@ -74,9 +74,9 @@
    "tipo": "opcion_multiple",
    "enunciado": "'Quisiera pedir' =",
    "opciones": [
-    "I'd like to order",
     "I'd like order",
-    "I like to order"
+    "I like to order",
+    "I'd like to order"
    ],
    "respuesta": "I'd like to order"
   },
@@ -156,9 +156,9 @@
    "tipo": "opcion_multiple",
    "enunciado": "¿Cuál es más cortés?",
    "opciones": [
-    "I'd like a coffee",
     "I want a coffee",
-    "Give me a coffee"
+    "Give me a coffee",
+    "I'd like a coffee"
    ],
    "respuesta": "I'd like a coffee"
   },

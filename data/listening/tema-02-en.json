@@ -42,8 +42,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cuántos años tiene Joel?",
      "opciones": [
-      "twenty",
       "twenty-two",
+      "twenty",
       "twelve"
      ],
      "respuesta": "twenty-two"
@@ -70,9 +70,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cuál es el primer número que dice Joel de su teléfono?",
      "opciones": [
-      "zero",
       "one",
-      "nine"
+      "nine",
+      "zero"
      ],
      "respuesta": "zero"
     }
@@ -119,9 +119,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cómo se llama la persona B?",
      "opciones": [
-      "Laura",
       "Joel",
-      "Ana"
+      "Ana",
+      "Laura"
      ],
      "respuesta": "Laura"
     },
@@ -142,9 +142,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué le dice A a Laura al pedir el número?",
      "opciones": [
-      "What is your phone number, please?",
+      "How old are you, please?",
       "What is your name, please?",
-      "How old are you, please?"
+      "What is your phone number, please?"
      ],
      "respuesta": "What is your phone number, please?"
     },
@@ -207,9 +207,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cuántos años tiene?",
      "opciones": [
-      "eighteen",
+      "eight",
       "eighty",
-      "eight"
+      "eighteen"
      ],
      "respuesta": "eighteen"
     },
@@ -324,8 +324,8 @@
      "enunciado": "¿Cuántos años tiene Marie?",
      "opciones": [
       "twenty-six",
-      "sixteen",
-      "sixty"
+      "sixty",
+      "sixteen"
      ],
      "respuesta": "twenty-six"
     },

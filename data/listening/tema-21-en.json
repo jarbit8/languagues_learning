@@ -42,9 +42,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué estudia B?",
      "opciones": [
-      "maths",
       "computer science",
-      "history"
+      "maths and science",
+      "history and English"
      ],
      "respuesta": "computer science"
     },
@@ -117,9 +117,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Dónde está B?",
      "opciones": [
-      "library",
       "university",
-      "classroom"
+      "classroom",
+      "library"
      ],
      "respuesta": "library"
     },
@@ -269,8 +269,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Con qué debe practicar?",
      "opciones": [
-      "films and music",
       "a computer",
+      "films and music",
       "the dictionary"
      ],
      "respuesta": "films and music"
@@ -323,9 +323,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué estudia Marie?",
      "opciones": [
+      "maths",
       "science",
-      "history",
-      "maths"
+      "history"
      ],
      "respuesta": "science"
     },

@@ -9,8 +9,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cómo es el pelo de Ana?",
      "opciones": [
-      "curly",
       "blond",
+      "curly",
       "short"
      ],
      "respuesta": "curly"
@@ -66,9 +66,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cómo es Marc físicamente?",
      "opciones": [
-      "short and fat",
+      "bald and old",
       "tall and thin",
-      "bald and old"
+      "short and fat"
      ],
      "respuesta": "short and fat"
     },
@@ -89,9 +89,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cómo es el primo?",
      "opciones": [
-      "brave",
+      "lazy",
       "shy",
-      "lazy"
+      "brave"
      ],
      "respuesta": "brave"
     },
@@ -120,8 +120,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cómo es Laura físicamente?",
      "opciones": [
-      "tall and thin",
       "short and fat",
+      "tall and thin",
       "old"
      ],
      "respuesta": "tall and thin"
@@ -143,9 +143,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cómo es el hermano de Marie?",
      "opciones": [
-      "old and bald",
       "young and handsome",
-      "tall and blond"
+      "tall and blond",
+      "old and bald"
      ],
      "respuesta": "old and bald"
     },
@@ -178,9 +178,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cómo es el tío?",
      "opciones": [
+      "bald",
       "tall and handsome",
-      "short and fat",
-      "bald"
+      "short and fat"
      ],
      "respuesta": "tall and handsome"
     },
@@ -201,9 +201,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cómo es el primo de carácter?",
      "opciones": [
-      "smart but lazy",
+      "shy and calm",
       "brave and strong",
-      "shy and calm"
+      "smart but lazy"
      ],
      "respuesta": "smart but lazy"
     },
@@ -236,9 +236,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cómo es Marie físicamente?",
      "opciones": [
-      "short and thin",
       "tall and fat",
-      "bald"
+      "bald",
+      "short and thin"
      ],
      "respuesta": "short and thin"
     },
@@ -256,9 +256,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cómo es el primo de carácter?",
      "opciones": [
-      "smart but lazy",
       "brave and calm",
-      "shy"
+      "shy",
+      "smart but lazy"
      ],
      "respuesta": "smart but lazy"
     },

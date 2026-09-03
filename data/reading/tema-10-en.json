@@ -10,8 +10,8 @@
      "enunciado": "Where is the fridge?",
      "opciones": [
       "next to the window",
-      "under the bed",
-      "near the sofa"
+      "near the sofa",
+      "under the bed"
      ],
      "respuesta": "next to the window"
     },
@@ -29,9 +29,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "Where is the wardrobe?",
      "opciones": [
-      "between the bed and the door",
+      "in the kitchen",
       "on the wall",
-      "in the kitchen"
+      "between the bed and the door"
      ],
      "respuesta": "between the bed and the door"
     },
@@ -52,9 +52,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What is there in the bathroom?",
      "opciones": [
+      "a fridge and a table",
       "a toilet and a mirror",
-      "a fridge",
-      "a sofa"
+      "a sofa and a lamp"
      ],
      "respuesta": "a toilet and a mirror"
     },
@@ -73,9 +73,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "How many floors does the house have?",
      "opciones": [
+      "three",
       "two",
-      "one",
-      "three"
+      "one"
      ],
      "respuesta": "two"
     },
@@ -117,9 +117,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "Where is the mirror?",
      "opciones": [
-      "on the wall of the bathroom",
       "in the garden",
-      "under the roof"
+      "under the roof",
+      "on the wall of the bathroom"
      ],
      "respuesta": "on the wall of the bathroom"
     },
@@ -142,9 +142,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "Where is the apartment of Paul?",
      "opciones": [
-      "on the second floor",
       "on the first floor",
-      "near the garage"
+      "near the garage",
+      "on the second floor"
      ],
      "respuesta": "on the second floor"
     },
@@ -166,9 +166,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "Where is the bathroom?",
      "opciones": [
+      "under the stairs",
       "between the kitchen and the bedroom",
-      "next to the balcony",
-      "under the stairs"
+      "next to the balcony"
      ],
      "respuesta": "between the kitchen and the bedroom"
     },
@@ -195,9 +195,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "Why are there no stairs?",
      "opciones": [
-      "the apartment has one floor",
+      "the apartment is very small",
       "there is no balcony",
-      "the apartment is very small"
+      "the apartment has one floor"
      ],
      "respuesta": "the apartment has one floor"
     }
@@ -211,9 +211,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What is in the living room?",
      "opciones": [
+      "a bed, a wardrobe and a lamp",
       "a sofa, a table and three chairs",
-      "a bed",
-      "a fridge"
+      "a fridge, a window and two chairs"
      ],
      "respuesta": "a sofa, a table and three chairs"
     },
@@ -231,9 +231,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "Where is the wardrobe?",
      "opciones": [
-      "between the bed and the door",
       "on the wall",
-      "in the kitchen"
+      "in the kitchen",
+      "between the bed and the door"
      ],
      "respuesta": "between the bed and the door"
     },
@@ -259,8 +259,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "Are there stairs?",
      "opciones": [
-      "no",
       "yes, two",
+      "no",
       "yes, one"
      ],
      "respuesta": "no"
@@ -275,9 +275,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What is under the window in her room?",
      "opciones": [
+      "a table",
       "a bed",
-      "a wardrobe",
-      "a table"
+      "a wardrobe"
      ],
      "respuesta": "a bed"
     },
@@ -299,8 +299,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "Where is the bathroom?",
      "opciones": [
-      "between her room and the kitchen",
       "next to the garden",
+      "between her room and the kitchen",
       "on the first floor"
      ],
      "respuesta": "between her room and the kitchen"
@@ -329,8 +329,8 @@
      "enunciado": "Where is the room of Marie?",
      "opciones": [
       "on the second floor",
-      "on the first floor",
-      "next to the kitchen"
+      "next to the kitchen",
+      "on the first floor"
      ],
      "respuesta": "on the second floor"
     }

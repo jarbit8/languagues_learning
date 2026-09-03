@@ -10,8 +10,8 @@
      "enunciado": "What colour is Ana's bag?",
      "opciones": [
       "green",
-      "red",
-      "black"
+      "black",
+      "red"
      ],
      "respuesta": "green"
     },
@@ -29,8 +29,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "Where is her watch?",
      "opciones": [
-      "on the table",
       "in the bag",
+      "on the table",
       "in her wallet"
      ],
      "respuesta": "on the table"
@@ -70,9 +70,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What colour is the bag?",
      "opciones": [
-      "blue and grey",
-      "pink",
-      "green"
+      "green and yellow",
+      "pink and white",
+      "blue and grey"
      ],
      "respuesta": "blue and grey"
     },
@@ -91,8 +91,8 @@
      "enunciado": "Where is the watch?",
      "opciones": [
       "on the table",
-      "in the bag",
-      "in the wallet"
+      "in the wallet",
+      "in the bag"
      ],
      "respuesta": "on the table"
     },
@@ -115,9 +115,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What colour is the watch?",
      "opciones": [
+      "grey",
       "green",
-      "black",
-      "grey"
+      "black"
      ],
      "respuesta": "green"
     }
@@ -131,9 +131,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What colour notebook does the person take?",
      "opciones": [
+      "the white one",
       "the pink one",
-      "the brown one",
-      "the white one"
+      "the brown one"
      ],
      "respuesta": "the pink one"
     },
@@ -151,9 +151,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What pen does he take?",
      "opciones": [
+      "the red one",
       "the black one",
-      "the blue one",
-      "the red one"
+      "the blue one"
      ],
      "respuesta": "the black one"
     },
@@ -196,9 +196,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What colour is the computer?",
      "opciones": [
-      "black",
       "red",
-      "blue"
+      "blue",
+      "black"
      ],
      "respuesta": "black"
     },
@@ -216,8 +216,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "Where are the scissors?",
      "opciones": [
-      "in the bag",
       "on the table",
+      "in the bag",
       "near the door"
      ],
      "respuesta": "in the bag"
@@ -241,9 +241,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "How many notebooks are there?",
      "opciones": [
-      "two",
       "one",
-      "three"
+      "three",
+      "two"
      ],
      "respuesta": "two"
     }
@@ -258,8 +258,8 @@
      "enunciado": "What colour is the computer?",
      "opciones": [
       "white",
-      "black",
-      "green"
+      "green",
+      "black"
      ],
      "respuesta": "white"
     },
@@ -281,9 +281,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "Where are the keys and the wallet?",
      "opciones": [
-      "in a small pink bag",
       "under the notebook",
-      "near the lamp"
+      "near the lamp",
+      "in a small pink bag"
      ],
      "respuesta": "in a small pink bag"
     },
@@ -311,8 +311,8 @@
      "enunciado": "What colour is the umbrella?",
      "opciones": [
       "orange",
-      "yellow",
-      "purple"
+      "purple",
+      "yellow"
      ],
      "respuesta": "orange"
     }

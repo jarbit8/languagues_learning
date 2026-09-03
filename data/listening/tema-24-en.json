@@ -42,9 +42,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cuál es el plan de B?",
      "opciones": [
-      "move to the United States",
       "move to Canada",
-      "stay in Peru"
+      "stay in Peru",
+      "move to the United States"
      ],
      "respuesta": "move to the United States"
     },
@@ -115,9 +115,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cuál es la meta de B?",
      "opciones": [
+      "a new job in a big company",
       "citizenship in the United States",
-      "a new job",
-      "a trip to Peru"
+      "a trip to Peru with his family"
      ],
      "respuesta": "citizenship in the United States"
     },
@@ -197,9 +197,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué va a hacer B primero?",
      "opciones": [
-      "finish his degree",
       "move abroad",
-      "get a visa"
+      "get a visa",
+      "finish his degree"
      ],
      "respuesta": "finish his degree"
     },
@@ -270,8 +270,8 @@
      "enunciado": "¿Con quién va a hablar primero?",
      "opciones": [
       "with his teacher",
-      "with his parents",
-      "with the company"
+      "with the company",
+      "with his parents"
      ],
      "respuesta": "with his teacher"
     },

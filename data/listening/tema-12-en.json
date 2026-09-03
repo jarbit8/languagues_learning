@@ -42,9 +42,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué busca B?",
      "opciones": [
-      "a shirt",
       "a jacket",
-      "shoes"
+      "shoes",
+      "a shirt"
      ],
      "respuesta": "a jacket"
     },
@@ -188,9 +188,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué abrigo se lleva?",
      "opciones": [
-      "the grey one",
       "the black one",
-      "no coat"
+      "no coat",
+      "the grey one"
      ],
      "respuesta": "the grey one"
     },
@@ -251,8 +251,8 @@
      "enunciado": "¿Qué se pone B?",
      "opciones": [
       "a big coat and gloves",
-      "a dress and boots",
-      "shorts and a t-shirt"
+      "shorts and a t-shirt",
+      "a dress and boots"
      ],
      "respuesta": "a big coat and gloves"
     },
@@ -314,8 +314,8 @@
      "enunciado": "¿Qué lleva en invierno?",
      "opciones": [
       "a coat, boots and gloves",
-      "a dress",
-      "shorts"
+      "a dress, a skirt and shoes",
+      "shorts, a t-shirt and a hat"
      ],
      "respuesta": "a coat, boots and gloves"
     },

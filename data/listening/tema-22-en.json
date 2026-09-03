@@ -42,9 +42,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué pasó ayer?",
      "opciones": [
-      "A lost the phone",
+      "A bought a phone",
       "A downloaded an app",
-      "A bought a phone"
+      "A lost the phone"
      ],
      "respuesta": "A downloaded an app"
     },
@@ -118,9 +118,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué necesita hacer A?",
      "opciones": [
-      "send an email",
+      "call a friend",
       "download an app",
-      "call a friend"
+      "send an email"
      ],
      "respuesta": "send an email"
     },
@@ -193,9 +193,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cuál es el problema?",
      "opciones": [
+      "the screen is not well",
       "there is no network",
-      "the battery is not good",
-      "the screen is not well"
+      "the battery is not good"
      ],
      "respuesta": "there is no network"
     },
@@ -256,9 +256,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué hizo B ayer?",
      "opciones": [
-      "he worked with his computer",
       "he charged his phone",
-      "he watched videos"
+      "he watched videos",
+      "he worked with his computer"
      ],
      "respuesta": "he worked with his computer"
     },
@@ -320,8 +320,8 @@
      "enunciado": "¿Dónde estuvo Marie el sábado?",
      "opciones": [
       "in the city centre",
-      "in the university",
-      "in a café"
+      "in a café",
+      "in the university"
      ],
      "respuesta": "in the city centre"
     },

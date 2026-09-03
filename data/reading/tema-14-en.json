@@ -9,8 +9,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "What does Ana order to drink?",
      "opciones": [
-      "a juice",
       "a hot coffee",
+      "a juice",
       "a beer"
      ],
      "respuesta": "a juice"
@@ -32,8 +32,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "What is on the table?",
      "opciones": [
-      "plates, forks, knives, a spoon and napkins",
       "only two glasses",
+      "plates, forks, knives, a spoon and napkins",
       "the menu card and the bill"
      ],
      "respuesta": "plates, forks, knives, a spoon and napkins"
@@ -52,9 +52,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "Why does Ana order the fish?",
      "opciones": [
+      "because she is not hungry",
       "because it is delicious here",
-      "because it is cheap",
-      "because she is not hungry"
+      "because it is cheap"
      ],
      "respuesta": "because it is delicious here"
     },
@@ -74,8 +74,8 @@
      "enunciado": "What does Paul drink before breakfast?",
      "opciones": [
       "a big glass of water",
-      "a coffee with milk",
-      "an orange juice"
+      "an orange juice",
+      "a coffee with milk"
      ],
      "respuesta": "a big glass of water"
     },
@@ -97,9 +97,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What does Paul want in winter?",
      "opciones": [
-      "hot tea",
+      "a soft drink",
       "cold drinks",
-      "a soft drink"
+      "hot tea"
      ],
      "respuesta": "hot tea"
     },
@@ -125,9 +125,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "Who wants the bill?",
      "opciones": [
+      "the waiter",
       "Lee",
-      "Paul",
-      "the waiter"
+      "Paul"
      ],
      "respuesta": "Lee"
     }
@@ -141,8 +141,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "Why do the friends go to the restaurant?",
      "opciones": [
-      "it is the birthday of Laura",
       "they are very hungry",
+      "it is the birthday of Laura",
       "the food is cheap"
      ],
      "respuesta": "it is the birthday of Laura"
@@ -164,8 +164,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "What does Maria drink?",
      "opciones": [
-      "a glass of wine",
       "a beer",
+      "a glass of wine",
       "a coffee"
      ],
      "respuesta": "a glass of wine"
@@ -184,9 +184,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What is the dessert?",
      "opciones": [
+      "a hot coffee",
       "an ice cream",
-      "a fruit salad",
-      "a hot coffee"
+      "a fruit salad"
      ],
      "respuesta": "an ice cream"
     },
@@ -229,9 +229,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "Why does Lee not have an ice cream?",
      "opciones": [
-      "there is not any ice cream today",
+      "he is not hungry",
       "it is very sweet",
-      "he is not hungry"
+      "there is not any ice cream today"
      ],
      "respuesta": "there is not any ice cream today"
     },
@@ -258,9 +258,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "Where does Ana put the money and the tip?",
      "opciones": [
-      "on the plate",
+      "in her bag",
       "on the napkin",
-      "in her bag"
+      "on the plate"
      ],
      "respuesta": "on the plate"
     }
@@ -274,9 +274,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What does Marie order to drink?",
      "opciones": [
-      "an orange juice",
       "a hot tea",
-      "a glass of wine"
+      "a glass of wine",
+      "an orange juice"
      ],
      "respuesta": "an orange juice"
     },
@@ -299,8 +299,8 @@
      "enunciado": "What does the sister of Marie order to eat?",
      "opciones": [
       "pasta with tomato",
-      "fish with vegetables",
-      "chicken with rice"
+      "chicken with rice",
+      "fish with vegetables"
      ],
      "respuesta": "pasta with tomato"
     },

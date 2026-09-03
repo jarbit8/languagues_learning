@@ -42,9 +42,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué NO hay hoy en el mercado?",
      "opciones": [
+      "milk",
       "apples",
-      "bread",
-      "milk"
+      "bread"
      ],
      "respuesta": "bread"
     },
@@ -63,8 +63,8 @@
      "enunciado": "¿Qué colores tienen las manzanas?",
      "opciones": [
       "red and green",
-      "red and yellow",
-      "green and yellow"
+      "green and yellow",
+      "red and yellow"
      ],
      "respuesta": "red and green"
     },
@@ -258,9 +258,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué hay para el almuerzo?",
      "opciones": [
-      "soup and a sandwich",
       "rice and chicken",
-      "pasta and salad"
+      "pasta and salad",
+      "soup and a sandwich"
      ],
      "respuesta": "soup and a sandwich"
     },
@@ -320,9 +320,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué come Marie en el desayuno?",
      "opciones": [
-      "bread with butter, a yogurt and an orange",
-      "chicken with rice",
-      "soup and salad"
+      "soup, a sandwich and an apple",
+      "chicken with rice and some vegetables",
+      "bread with butter, a yogurt and an orange"
      ],
      "respuesta": "bread with butter, a yogurt and an orange"
     },
