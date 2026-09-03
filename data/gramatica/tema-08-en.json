@@ -54,9 +54,9 @@
    "tipo": "opcion_multiple",
    "enunciado": "Posición correcta:",
    "opciones": [
-    "I always study",
+    "Always I study",
     "I study always",
-    "Always I study"
+    "I always study"
    ],
    "respuesta": "I always study"
   },
@@ -74,9 +74,9 @@
    "tipo": "opcion_multiple",
    "enunciado": "She ___ late. (nunca)",
    "opciones": [
+    "is not never",
     "is never",
-    "never is",
-    "is not never"
+    "never is"
    ],
    "respuesta": "is never"
   },

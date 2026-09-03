@@ -49,9 +49,9 @@
    "tipo": "opcion_multiple",
    "enunciado": "'tengo fiebre' =",
    "opciones": [
-    "I have fever",
+    "I got fever",
     "I've got a fever",
-    "I got fever"
+    "I have fever"
    ],
    "respuesta": "I've got a fever"
   },
@@ -60,8 +60,8 @@
    "enunciado": "She ___ got a cold.",
    "opciones": [
     "have",
-    "has",
-    "is"
+    "is",
+    "has"
    ],
    "respuesta": "has"
   },
@@ -69,9 +69,9 @@
    "tipo": "opcion_multiple",
    "enunciado": "My tooth ___.",
    "opciones": [
+    "hurts",
     "hurt",
-    "hurting",
-    "hurts"
+    "hurting"
    ],
    "respuesta": "hurts"
   },

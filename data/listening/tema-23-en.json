@@ -42,9 +42,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿En qué piso está la habitación?",
      "opciones": [
-      "second",
       "first",
-      "third"
+      "third",
+      "second"
      ],
      "respuesta": "third"
     },
@@ -71,9 +71,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué tiene A al llegar?",
      "opciones": [
-      "a booking",
       "a map",
-      "a ticket"
+      "a ticket",
+      "a booking"
      ],
      "respuesta": "a booking"
     }
@@ -120,9 +120,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué tiene B además del boleto?",
      "opciones": [
+      "passport",
       "money",
-      "phone",
-      "passport"
+      "phone"
      ],
      "respuesta": "passport"
     },
@@ -148,9 +148,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué le indica A a B para llegar al avión?",
      "opciones": [
+      "turn right only",
       "go straight and turn left",
-      "go straight and turn right",
-      "turn right only"
+      "go straight and turn right"
      ],
      "respuesta": "go straight and turn left"
     },
@@ -202,8 +202,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Por qué viene B?",
      "opciones": [
-      "he works there",
       "he is a guide",
+      "he works there",
       "he is a tourist"
      ],
      "respuesta": "he is a tourist"
@@ -274,9 +274,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cuál es su asiento?",
      "opciones": [
-      "eleven",
       "twenty-two",
-      "eight"
+      "eight",
+      "eleven"
      ],
      "respuesta": "twenty-two"
     },
@@ -337,9 +337,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cuánto duró el vuelo?",
      "opciones": [
-      "two hours",
+      "three weeks",
       "seven hours",
-      "three weeks"
+      "two hours"
      ],
      "respuesta": "seven hours"
     },

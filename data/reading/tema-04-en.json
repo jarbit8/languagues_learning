@@ -9,8 +9,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cuántos hermanos y hermanas tiene Ana?",
      "opciones": [
-      "dos hermanos y una hermana",
       "un hermano y dos hermanas",
+      "dos hermanos y una hermana",
       "una hermana y dos primos"
      ],
      "respuesta": "un hermano y dos hermanas"
@@ -63,9 +63,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Quiénes son los abuelos en la foto?",
      "opciones": [
-      "grandfather and grandmother",
+      "uncle and aunt",
       "dad and mom",
-      "uncle and aunt"
+      "grandfather and grandmother"
      ],
      "respuesta": "grandfather and grandmother"
     },
@@ -86,9 +86,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿De dónde es la esposa del hermano?",
      "opciones": [
-      "France",
       "Canada",
-      "Peru"
+      "Peru",
+      "France"
      ],
      "respuesta": "Canada"
     },
@@ -117,9 +117,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cuántos primos tiene Ana?",
      "opciones": [
+      "three",
       "four",
-      "two",
-      "three"
+      "two"
      ],
      "respuesta": "four"
     },
@@ -137,8 +137,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué mascotas tiene en Canadá?",
      "opciones": [
-      "two dogs",
       "a cat",
+      "two dogs",
       "a dog and a cat"
      ],
      "respuesta": "a dog and a cat"
@@ -171,9 +171,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cuántos años tiene el padre?",
      "opciones": [
+      "fifty-two",
       "seventy",
-      "fifty",
-      "fifty-two"
+      "fifty"
      ],
      "respuesta": "fifty-two"
     },
@@ -195,8 +195,8 @@
      "enunciado": "¿Cuántos primos tiene?",
      "opciones": [
       "four",
-      "one",
-      "two"
+      "two",
+      "one"
      ],
      "respuesta": "two"
     },
@@ -251,9 +251,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué mascota tiene Marie?",
      "opciones": [
+      "a dog",
       "a cat",
-      "no pet",
-      "a dog"
+      "no pet"
      ],
      "respuesta": "a dog"
     },

@@ -57,9 +57,9 @@
    "tipo": "opcion_multiple",
    "enunciado": "___ he ten years old?",
    "opciones": [
-    "Are",
+    "Is",
     "Am",
-    "Is"
+    "Are"
    ],
    "respuesta": "Is"
   },
@@ -67,8 +67,8 @@
    "tipo": "opcion_multiple",
    "enunciado": "Contracción de 'they are not':",
    "opciones": [
-    "aren't",
     "amn't",
+    "aren't",
     "isn't"
    ],
    "respuesta": "aren't"
@@ -160,9 +160,9 @@
    "tipo": "opcion_multiple",
    "enunciado": "Is she thirteen? No, she ___.",
    "opciones": [
+    "isn't",
     "not is",
-    "aren't",
-    "isn't"
+    "aren't"
    ],
    "respuesta": "isn't"
   },

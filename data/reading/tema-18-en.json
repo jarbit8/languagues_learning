@@ -9,8 +9,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "What is the weather like in the morning?",
      "opciones": [
-      "cold and windy",
       "rainy and cloudy",
+      "cold and windy",
       "sunny and warm"
      ],
      "respuesta": "sunny and warm"
@@ -73,9 +73,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What is the weather like in winter in Canada?",
      "opciones": [
-      "cool and rainy",
       "hot and sunny",
-      "very cold, with snow and ice"
+      "very cold, with snow and ice",
+      "cool and rainy"
      ],
      "respuesta": "very cold, with snow and ice"
     },
@@ -118,9 +118,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "Why does Ana prefer summer?",
      "opciones": [
-      "she goes to the forest",
       "she is from Peru and does not want the cold",
-      "the days are short"
+      "the days are short",
+      "she goes to the forest"
      ],
      "respuesta": "she is from Peru and does not want the cold"
     },
@@ -149,9 +149,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What is the sea like?",
      "opciones": [
-      "very cold",
+      "very hot",
       "cool, but not cold",
-      "very hot"
+      "very cold"
      ],
      "respuesta": "cool, but not cold"
     },
@@ -165,8 +165,8 @@
      "enunciado": "Why does Laura walk in the forest?",
      "opciones": [
       "there is a storm",
-      "the beach is very hot for her",
-      "she is hungry"
+      "she is hungry",
+      "the beach is very hot for her"
      ],
      "respuesta": "the beach is very hot for her"
     },
@@ -184,9 +184,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What is the weather like after the rain?",
      "opciones": [
-      "cold and windy",
       "warm and sunny",
-      "cloudy"
+      "cloudy",
+      "cold and windy"
      ],
      "respuesta": "warm and sunny"
     },
@@ -206,8 +206,8 @@
      "enunciado": "What is the weather like on Tuesday morning?",
      "opciones": [
       "sunny and warm",
-      "hot and windy",
-      "with fog and a grey sky"
+      "with fog and a grey sky",
+      "hot and windy"
      ],
      "respuesta": "with fog and a grey sky"
     },
@@ -229,9 +229,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "Why does Ana take the metro?",
      "opciones": [
+      "the metro is cheap",
       "the bike is far",
-      "there is water and ice on the road",
-      "the metro is cheap"
+      "there is water and ice on the road"
      ],
      "respuesta": "there is water and ice on the road"
     },
@@ -258,8 +258,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "Where do Ana and Laura walk on Wednesday?",
      "opciones": [
-      "in the forest, near the lake",
       "in the park, near the river",
+      "in the forest, near the lake",
       "on the beach, near the sea"
      ],
      "respuesta": "in the park, near the river"
@@ -274,9 +274,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What is the weather like in summer?",
      "opciones": [
+      "cold and rainy",
       "warm, with a blue sky",
-      "windy, with fog",
-      "cold and rainy"
+      "windy, with fog"
      ],
      "respuesta": "warm, with a blue sky"
     },
@@ -327,9 +327,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "Where is there snow and ice?",
      "opciones": [
+      "on the mountains",
       "on the beach",
-      "in the park",
-      "on the mountains"
+      "in the park"
      ],
      "respuesta": "on the mountains"
     }

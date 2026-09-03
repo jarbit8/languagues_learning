@@ -49,9 +49,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What colour is the pen she has?",
      "opciones": [
-      "purple",
       "green",
-      "white"
+      "white",
+      "purple"
      ],
      "respuesta": "purple"
     },
@@ -70,9 +70,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What colour is the bag?",
      "opciones": [
-      "green and yellow",
+      "blue and grey",
       "pink and white",
-      "blue and grey"
+      "green and yellow"
      ],
      "respuesta": "blue and grey"
     },
@@ -90,9 +90,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "Where is the watch?",
      "opciones": [
+      "in the bag",
       "on the table",
-      "in the wallet",
-      "in the bag"
+      "in the wallet"
      ],
      "respuesta": "on the table"
     },
@@ -116,8 +116,8 @@
      "enunciado": "What colour is the watch?",
      "opciones": [
       "grey",
-      "green",
-      "black"
+      "black",
+      "green"
      ],
      "respuesta": "green"
     }
@@ -131,8 +131,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "What colour notebook does the person take?",
      "opciones": [
-      "the white one",
       "the pink one",
+      "the white one",
       "the brown one"
      ],
      "respuesta": "the pink one"
@@ -151,9 +151,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What pen does he take?",
      "opciones": [
-      "the red one",
+      "the blue one",
       "the black one",
-      "the blue one"
+      "the red one"
      ],
      "respuesta": "the black one"
     },
@@ -180,9 +180,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What colours of paper are there?",
      "opciones": [
-      "white and yellow",
       "black and red",
-      "green and blue"
+      "green and blue",
+      "white and yellow"
      ],
      "respuesta": "white and yellow"
     }
@@ -196,9 +196,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What colour is the computer?",
      "opciones": [
+      "black",
       "red",
-      "blue",
-      "black"
+      "blue"
      ],
      "respuesta": "black"
     },
@@ -282,8 +282,8 @@
      "enunciado": "Where are the keys and the wallet?",
      "opciones": [
       "under the notebook",
-      "near the lamp",
-      "in a small pink bag"
+      "in a small pink bag",
+      "near the lamp"
      ],
      "respuesta": "in a small pink bag"
     },
@@ -310,9 +310,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What colour is the umbrella?",
      "opciones": [
-      "orange",
       "purple",
-      "yellow"
+      "yellow",
+      "orange"
      ],
      "respuesta": "orange"
     }

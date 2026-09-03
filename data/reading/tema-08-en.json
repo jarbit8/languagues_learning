@@ -31,9 +31,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Con qué frecuencia estudia antes de las cuatro?",
      "opciones": [
-      "always",
+      "often",
       "rarely",
-      "often"
+      "always"
      ],
      "respuesta": "rarely"
     },
@@ -106,9 +106,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Con qué frecuencia está Marc con amigos por la tarde?",
      "opciones": [
-      "rarely",
+      "always",
       "usually",
-      "always"
+      "rarely"
      ],
      "respuesta": "rarely"
     },
@@ -289,9 +289,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Con qué frecuencia trabaja después de las cinco?",
      "opciones": [
+      "often",
       "always",
-      "rarely",
-      "often"
+      "rarely"
      ],
      "respuesta": "rarely"
     },

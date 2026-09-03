@@ -263,8 +263,8 @@
      "enunciado": "¿Con qué frecuencia está en la cama antes de las once?",
      "opciones": [
       "rarely",
-      "never",
-      "usually"
+      "usually",
+      "never"
      ],
      "respuesta": "usually"
     },

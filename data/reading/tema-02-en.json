@@ -9,9 +9,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cuántos años tiene Ana?",
      "opciones": [
+      "veintidós",
       "veinte",
-      "diecinueve",
-      "veintidós"
+      "diecinueve"
      ],
      "respuesta": "veinte"
     },
@@ -125,8 +125,8 @@
      "enunciado": "¿Cuántos años tiene Marc?",
      "opciones": [
       "twenty-eight",
-      "thirty-one",
-      "thirteen"
+      "thirteen",
+      "thirty-one"
      ],
      "respuesta": "thirty-one"
     },
@@ -152,9 +152,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿En qué mes es el cumpleaños de Marc?",
      "opciones": [
-      "May",
       "April",
-      "July"
+      "July",
+      "May"
      ],
      "respuesta": "April"
     },
@@ -235,9 +235,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cuántos años tiene Marie?",
      "opciones": [
-      "sixteen",
       "twenty-six",
-      "twenty-one"
+      "twenty-one",
+      "sixteen"
      ],
      "respuesta": "twenty-six"
     },
@@ -255,9 +255,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cuántos años tiene Mrs Lee?",
      "opciones": [
+      "eighty-four",
       "seventy-nine",
-      "fifty",
-      "eighty-four"
+      "fifty"
      ],
      "respuesta": "seventy-nine"
     },

@@ -67,8 +67,8 @@
    "tipo": "opcion_multiple",
    "enunciado": "Gerundio de 'wear':",
    "opciones": [
-    "weared",
     "wearing",
+    "weared",
     "wears"
    ],
    "respuesta": "wearing"
@@ -78,8 +78,8 @@
    "enunciado": "She ___ a dress.",
    "opciones": [
     "wearing",
-    "wears wearing",
-    "is wearing"
+    "is wearing",
+    "wears wearing"
    ],
    "respuesta": "is wearing"
   },
@@ -87,9 +87,9 @@
    "tipo": "opcion_multiple",
    "enunciado": "'Tengo una mochila' =",
    "opciones": [
-    "I've got a bag",
     "I got a bag",
-    "I has got a bag"
+    "I has got a bag",
+    "I've got a bag"
    ],
    "respuesta": "I've got a bag"
   },
@@ -171,9 +171,9 @@
    "tipo": "opcion_multiple",
    "enunciado": "___ you wearing a jacket?",
    "opciones": [
+    "Are",
     "Do",
-    "Is",
-    "Are"
+    "Is"
    ],
    "respuesta": "Are"
   },
@@ -186,9 +186,9 @@
    "tipo": "opcion_multiple",
    "enunciado": "Gerundio de 'live':",
    "opciones": [
+    "livving",
     "living",
-    "liveing",
-    "livving"
+    "liveing"
    ],
    "respuesta": "living"
   },
@@ -196,9 +196,9 @@
    "tipo": "opcion_multiple",
    "enunciado": "Gerundio de 'run':",
    "opciones": [
+    "runing",
     "runming",
-    "running",
-    "runing"
+    "running"
    ],
    "respuesta": "running"
   },

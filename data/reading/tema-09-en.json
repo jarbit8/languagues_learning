@@ -10,8 +10,8 @@
      "enunciado": "What does Ana do first?",
      "opciones": [
       "has breakfast",
-      "has a shower",
-      "makes the bed"
+      "makes the bed",
+      "has a shower"
      ],
      "respuesta": "has a shower"
     },
@@ -29,9 +29,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What does she do on Saturday?",
      "opciones": [
+      "goes out with friends",
       "works",
-      "takes a nap",
-      "goes out with friends"
+      "takes a nap"
      ],
      "respuesta": "goes out with friends"
     },
@@ -53,8 +53,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "What does she do in the evening?",
      "opciones": [
-      "cooks and cleans",
       "walks and rests",
+      "cooks and cleans",
       "runs and studies"
      ],
      "respuesta": "cooks and cleans"
@@ -74,9 +74,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What time does Paul wake up?",
      "opciones": [
-      "at nine",
+      "at five",
       "at six",
-      "at five"
+      "at nine"
      ],
      "respuesta": "at nine"
     },
@@ -127,8 +127,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "Who has lunch with Paul?",
      "opciones": [
-      "Laura",
       "his mother",
+      "Laura",
       "Ana"
      ],
      "respuesta": "Laura"
@@ -162,9 +162,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What does she do in the afternoon?",
      "opciones": [
+      "runs",
       "goes to work",
-      "takes a nap",
-      "runs"
+      "takes a nap"
      ],
      "respuesta": "takes a nap"
     },
@@ -192,8 +192,8 @@
      "enunciado": "What does she do in the evening?",
      "opciones": [
       "cooks and listens to music",
-      "walks and takes a nap",
-      "studies and does her homework"
+      "studies and does her homework",
+      "walks and takes a nap"
      ],
      "respuesta": "cooks and listens to music"
     }
@@ -207,8 +207,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "Who wakes up first?",
      "opciones": [
-      "Ana",
       "Laura",
+      "Ana",
       "Paul"
      ],
      "respuesta": "Ana"
@@ -240,9 +240,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "Who takes a nap in the afternoon?",
      "opciones": [
+      "Laura",
       "Ana",
-      "Paul",
-      "Laura"
+      "Paul"
      ],
      "respuesta": "Paul"
     },
@@ -289,8 +289,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "What does she do first?",
      "opciones": [
-      "has breakfast",
       "has a shower",
+      "has breakfast",
       "makes the bed"
      ],
      "respuesta": "has a shower"
@@ -326,9 +326,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What does she do in the evening?",
      "opciones": [
-      "goes out",
+      "runs",
       "cooks and cleans",
-      "runs"
+      "goes out"
      ],
      "respuesta": "cooks and cleans"
     }

@@ -42,9 +42,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué NO hay hoy en el mercado?",
      "opciones": [
-      "milk",
+      "bread",
       "apples",
-      "bread"
+      "milk"
      ],
      "respuesta": "bread"
     },
@@ -62,9 +62,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué colores tienen las manzanas?",
      "opciones": [
+      "red and yellow",
       "red and green",
-      "green and yellow",
-      "red and yellow"
+      "green and yellow"
      ],
      "respuesta": "red and green"
     },
@@ -119,9 +119,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué come B en el desayuno?",
      "opciones": [
-      "eggs and bread",
       "rice and chicken",
-      "soup and salad"
+      "soup and salad",
+      "eggs and bread"
      ],
      "respuesta": "eggs and bread"
     },
@@ -140,8 +140,8 @@
      "enunciado": "¿Qué palabra usa A para describir el yogur?",
      "opciones": [
       "tasty",
-      "fruit",
-      "bread"
+      "bread",
+      "fruit"
      ],
      "respuesta": "tasty"
     },
@@ -196,8 +196,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué hay en la nevera?",
      "opciones": [
-      "eggs, cheese and vegetables",
       "chicken and rice",
+      "eggs, cheese and vegetables",
       "fruit and yogurt"
      ],
      "respuesta": "eggs, cheese and vegetables"
@@ -320,9 +320,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué come Marie en el desayuno?",
      "opciones": [
+      "bread with butter, a yogurt and an orange",
       "soup, a sandwich and an apple",
-      "chicken with rice and some vegetables",
-      "bread with butter, a yogurt and an orange"
+      "chicken with rice and some vegetables"
      ],
      "respuesta": "bread with butter, a yogurt and an orange"
     },

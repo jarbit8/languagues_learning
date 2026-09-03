@@ -59,9 +59,9 @@
    "tipo": "opcion_multiple",
    "enunciado": "Ana is a girl. ___ mother is Peruvian.",
    "opciones": [
+    "Its",
     "His",
-    "Her",
-    "Its"
+    "Her"
    ],
    "respuesta": "Her"
   },
@@ -69,9 +69,9 @@
    "tipo": "opcion_multiple",
    "enunciado": "el nombre de mi hermana = my ___ name.",
    "opciones": [
+    "sister's",
     "sisters",
-    "sister",
-    "sister's"
+    "sister"
    ],
    "respuesta": "sister's"
   },

@@ -42,8 +42,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué toca B?",
      "opciones": [
-      "the guitar",
       "the ball",
+      "the guitar",
       "a game"
      ],
      "respuesta": "the guitar"
@@ -197,9 +197,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué instrumento toca B?",
      "opciones": [
-      "chess",
+      "the ball",
       "the guitar",
-      "the ball"
+      "chess"
      ],
      "respuesta": "the guitar"
     },
@@ -323,9 +323,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué toca Marie todos los días?",
      "opciones": [
-      "chess",
       "the guitar",
-      "tennis"
+      "tennis",
+      "chess"
      ],
      "respuesta": "the guitar"
     },

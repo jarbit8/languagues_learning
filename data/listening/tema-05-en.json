@@ -42,9 +42,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿De qué color son sus ojos?",
      "opciones": [
-      "brown",
+      "blond",
       "red",
-      "blond"
+      "brown"
      ],
      "respuesta": "brown"
     },
@@ -119,8 +119,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cómo es el cabello de la hermana?",
      "opciones": [
-      "blond",
       "red-haired",
+      "blond",
       "brown-haired"
      ],
      "respuesta": "blond"
@@ -269,9 +269,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Quién es el hombre calvo?",
      "opciones": [
-      "his uncle",
       "his brother",
-      "his father"
+      "his father",
+      "his uncle"
      ],
      "respuesta": "his father"
     }
@@ -318,9 +318,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cómo es Marie físicamente?",
      "opciones": [
+      "tall and fat",
       "old",
-      "short and thin",
-      "tall and fat"
+      "short and thin"
      ],
      "respuesta": "short and thin"
     },

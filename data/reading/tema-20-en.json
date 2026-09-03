@@ -10,8 +10,8 @@
      "enunciado": "What does Ana play in her bedroom?",
      "opciones": [
       "chess",
-      "tennis",
-      "the guitar"
+      "the guitar",
+      "tennis"
      ],
      "respuesta": "the guitar"
     },
@@ -64,8 +64,8 @@
      "enunciado": "What do Ana and Paul hate?",
      "opciones": [
       "long films",
-      "music",
-      "chess"
+      "chess",
+      "music"
      ],
      "respuesta": "long films"
     }
@@ -80,8 +80,8 @@
      "enunciado": "Where does the team of Paul play?",
      "opciones": [
       "in the gym near the city centre",
-      "in the park, near the river",
-      "in the stadium near the school"
+      "in the stadium near the school",
+      "in the park, near the river"
      ],
      "respuesta": "in the stadium near the school"
     },
@@ -103,9 +103,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What does the team do in winter?",
      "opciones": [
+      "they play in the stadium",
       "they do swimming",
-      "they go to the gym",
-      "they play in the stadium"
+      "they go to the gym"
      ],
      "respuesta": "they go to the gym"
     },
@@ -132,9 +132,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What does Paul do in his free time?",
      "opciones": [
+      "he draws his team",
       "he plays chess",
-      "he sings",
-      "he draws his team"
+      "he sings"
      ],
      "respuesta": "he draws his team"
     }
@@ -172,9 +172,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What does Lee do?",
      "opciones": [
-      "he plays the guitar",
       "he watches a film",
-      "he sings and dances"
+      "he sings and dances",
+      "he plays the guitar"
      ],
      "respuesta": "he plays the guitar"
     },
@@ -201,8 +201,8 @@
      "enunciado": "What does Ana prefer?",
      "opciones": [
       "sport",
-      "music",
-      "chess"
+      "chess",
+      "music"
      ],
      "respuesta": "sport"
     }
@@ -225,9 +225,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What does Ana play in the gym?",
      "opciones": [
+      "basketball",
       "tennis",
-      "football",
-      "basketball"
+      "football"
      ],
      "respuesta": "tennis"
     },
@@ -285,9 +285,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What music does Marie listen to?",
      "opciones": [
+      "songs of a team",
       "songs in English",
-      "songs in French",
-      "songs of a team"
+      "songs in French"
      ],
      "respuesta": "songs in English"
     },
@@ -309,9 +309,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What sport does Marie like?",
      "opciones": [
+      "football",
       "basketball",
-      "tennis",
-      "football"
+      "tennis"
      ],
      "respuesta": "tennis"
     },
@@ -339,8 +339,8 @@
      "enunciado": "Why does Marie want to travel to France?",
      "opciones": [
       "for the music and the parties",
-      "for the films and the games",
-      "for the sport and the gym"
+      "for the sport and the gym",
+      "for the films and the games"
      ],
      "respuesta": "for the music and the parties"
     }

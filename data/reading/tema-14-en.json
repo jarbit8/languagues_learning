@@ -9,9 +9,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What does Ana order to drink?",
      "opciones": [
+      "a beer",
       "a hot coffee",
-      "a juice",
-      "a beer"
+      "a juice"
      ],
      "respuesta": "a juice"
     },
@@ -32,9 +32,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What is on the table?",
      "opciones": [
-      "only two glasses",
       "plates, forks, knives, a spoon and napkins",
-      "the menu card and the bill"
+      "the menu card and the bill",
+      "only two glasses"
      ],
      "respuesta": "plates, forks, knives, a spoon and napkins"
     },
@@ -52,9 +52,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "Why does Ana order the fish?",
      "opciones": [
-      "because she is not hungry",
+      "because it is cheap",
       "because it is delicious here",
-      "because it is cheap"
+      "because she is not hungry"
      ],
      "respuesta": "because it is delicious here"
     },
@@ -73,9 +73,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What does Paul drink before breakfast?",
      "opciones": [
-      "a big glass of water",
+      "a coffee with milk",
       "an orange juice",
-      "a coffee with milk"
+      "a big glass of water"
      ],
      "respuesta": "a big glass of water"
     },
@@ -97,9 +97,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What does Paul want in winter?",
      "opciones": [
-      "a soft drink",
+      "hot tea",
       "cold drinks",
-      "hot tea"
+      "a soft drink"
      ],
      "respuesta": "hot tea"
     },
@@ -125,9 +125,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "Who wants the bill?",
      "opciones": [
-      "the waiter",
+      "Paul",
       "Lee",
-      "Paul"
+      "the waiter"
      ],
      "respuesta": "Lee"
     }
@@ -141,9 +141,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "Why do the friends go to the restaurant?",
      "opciones": [
+      "the food is cheap",
       "they are very hungry",
-      "it is the birthday of Laura",
-      "the food is cheap"
+      "it is the birthday of Laura"
      ],
      "respuesta": "it is the birthday of Laura"
     },
@@ -164,8 +164,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "What does Maria drink?",
      "opciones": [
-      "a beer",
       "a glass of wine",
+      "a beer",
       "a coffee"
      ],
      "respuesta": "a glass of wine"
@@ -214,9 +214,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What does Lee order to drink first?",
      "opciones": [
-      "a cold soft drink",
+      "a beer",
       "a hot coffee",
-      "a beer"
+      "a cold soft drink"
      ],
      "respuesta": "a cold soft drink"
     },
@@ -229,9 +229,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "Why does Lee not have an ice cream?",
      "opciones": [
-      "he is not hungry",
+      "there is not any ice cream today",
       "it is very sweet",
-      "there is not any ice cream today"
+      "he is not hungry"
      ],
      "respuesta": "there is not any ice cream today"
     },
@@ -259,8 +259,8 @@
      "enunciado": "Where does Ana put the money and the tip?",
      "opciones": [
       "in her bag",
-      "on the napkin",
-      "on the plate"
+      "on the plate",
+      "on the napkin"
      ],
      "respuesta": "on the plate"
     }
@@ -274,8 +274,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "What does Marie order to drink?",
      "opciones": [
-      "a hot tea",
       "a glass of wine",
+      "a hot tea",
       "an orange juice"
      ],
      "respuesta": "an orange juice"
@@ -299,8 +299,8 @@
      "enunciado": "What does the sister of Marie order to eat?",
      "opciones": [
       "pasta with tomato",
-      "chicken with rice",
-      "fish with vegetables"
+      "fish with vegetables",
+      "chicken with rice"
      ],
      "respuesta": "pasta with tomato"
     },
@@ -326,9 +326,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What does Marie put on the table?",
      "opciones": [
+      "the napkins",
       "the money and a tip",
-      "the menu card",
-      "the napkins"
+      "the menu card"
      ],
      "respuesta": "the money and a tip"
     }

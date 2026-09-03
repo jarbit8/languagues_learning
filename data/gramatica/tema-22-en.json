@@ -61,9 +61,9 @@
    "tipo": "opcion_multiple",
    "enunciado": "Pasado de 'work':",
    "opciones": [
-    "worken",
     "worked",
-    "workd"
+    "workd",
+    "worken"
    ],
    "respuesta": "worked"
   },
@@ -72,8 +72,8 @@
    "enunciado": "We ___ at school. (was/were)",
    "opciones": [
     "where",
-    "was",
-    "were"
+    "were",
+    "was"
    ],
    "respuesta": "were"
   },
@@ -81,9 +81,9 @@
    "tipo": "opcion_multiple",
    "enunciado": "He ___ tired. (was/were)",
    "opciones": [
+    "is",
     "were",
-    "was",
-    "is"
+    "was"
    ],
    "respuesta": "was"
   },
@@ -159,9 +159,9 @@
    "tipo": "opcion_multiple",
    "enunciado": "___ you study yesterday?",
    "opciones": [
-    "Do",
     "Did",
-    "Was"
+    "Was",
+    "Do"
    ],
    "respuesta": "Did"
   },

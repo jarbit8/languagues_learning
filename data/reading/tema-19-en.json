@@ -20,8 +20,8 @@
      "enunciado": "What hurts on Monday?",
      "opciones": [
       "her head",
-      "her arm",
-      "her knee"
+      "her knee",
+      "her arm"
      ],
      "respuesta": "her head"
     },
@@ -34,9 +34,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "Why does her stomach hurt in the afternoon?",
      "opciones": [
-      "she has a cough and a fever",
       "she takes medicine for the headache",
-      "she does not eat anything in the morning"
+      "she does not eat anything in the morning",
+      "she has a cough and a fever"
      ],
      "respuesta": "she does not eat anything in the morning"
     },
@@ -63,9 +63,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What must Ana do every day?",
      "opciones": [
-      "sleep eight hours and eat vegetables",
       "take medicine for the fever",
-      "rest in bed"
+      "rest in bed",
+      "sleep eight hours and eat vegetables"
      ],
      "respuesta": "sleep eight hours and eat vegetables"
     }
@@ -79,9 +79,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "Why does Paul go to the hospital?",
      "opciones": [
-      "his head hurts every morning",
       "his stomach hurts after lunch",
-      "he has a fever and a cough"
+      "he has a fever and a cough",
+      "his head hurts every morning"
      ],
      "respuesta": "his stomach hurts after lunch"
     },
@@ -104,8 +104,8 @@
      "enunciado": "What must Paul eat?",
      "opciones": [
       "hot soup",
-      "a lot of meat",
-      "fruit and vegetables"
+      "fruit and vegetables",
+      "a lot of meat"
      ],
      "respuesta": "fruit and vegetables"
     },
@@ -128,9 +128,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "How is Paul after two weeks?",
      "opciones": [
+      "with a cough",
       "sick, with a fever",
-      "healthy and well",
-      "with a cough"
+      "healthy and well"
      ],
      "respuesta": "healthy and well"
     }
@@ -144,9 +144,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What does Ana do every morning?",
      "opciones": [
+      "she brushes her teeth and cleans her hands",
       "she goes to the hospital",
-      "she takes medicine",
-      "she brushes her teeth and cleans her hands"
+      "she takes medicine"
      ],
      "respuesta": "she brushes her teeth and cleans her hands"
     },
@@ -168,9 +168,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What does Ana do when her head hurts?",
      "opciones": [
-      "she takes medicine",
+      "she walks",
       "she rests one hour",
-      "she walks"
+      "she takes medicine"
      ],
      "respuesta": "she rests one hour"
     },
@@ -213,9 +213,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "Where is Paul on Saturday?",
      "opciones": [
-      "in his house",
       "in the park, on his bike",
-      "in the hospital"
+      "in the hospital",
+      "in his house"
      ],
      "respuesta": "in the park, on his bike"
     },
@@ -237,9 +237,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What must Paul not do?",
      "opciones": [
-      "take the medicine",
+      "eat vegetables",
       "take his bike and run",
-      "eat vegetables"
+      "take the medicine"
      ],
      "respuesta": "take his bike and run"
     },
@@ -266,9 +266,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "Who comes at six with a hot soup?",
      "opciones": [
+      "a friend",
       "the nurse",
-      "his mother",
-      "a friend"
+      "his mother"
      ],
      "respuesta": "his mother"
     }
@@ -292,9 +292,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What hurts on Thursday?",
      "opciones": [
-      "her knee",
+      "her head and her neck",
       "her legs and her back",
-      "her head and her neck"
+      "her knee"
      ],
      "respuesta": "her head and her neck"
     },
@@ -307,9 +307,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "Who buys the medicine?",
      "opciones": [
+      "a nurse",
       "her sister",
-      "the doctor",
-      "a nurse"
+      "the doctor"
      ],
      "respuesta": "her sister"
     },
@@ -336,9 +336,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "How is Marie on Saturday?",
      "opciones": [
+      "sick, with a cough",
       "with a headache",
-      "healthy and well",
-      "sick, with a cough"
+      "healthy and well"
      ],
      "respuesta": "healthy and well"
     }

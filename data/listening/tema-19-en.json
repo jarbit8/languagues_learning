@@ -42,9 +42,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué le duele a B además de la cabeza?",
      "opciones": [
-      "stomach",
       "neck",
-      "leg"
+      "leg",
+      "stomach"
      ],
      "respuesta": "neck"
     },
@@ -66,8 +66,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué le recomienda A a B?",
      "opciones": [
-      "rest and drink water",
       "go to the hospital",
+      "rest and drink water",
       "take a walk"
      ],
      "respuesta": "rest and drink water"
@@ -123,9 +123,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué le duele a B?",
      "opciones": [
-      "stomach",
+      "neck",
       "leg",
-      "neck"
+      "stomach"
      ],
      "respuesta": "stomach"
     },
@@ -155,9 +155,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué día debe volver B?",
      "opciones": [
-      "Monday",
+      "Friday",
       "Sunday",
-      "Friday"
+      "Monday"
      ],
      "respuesta": "Friday"
     }
@@ -205,8 +205,8 @@
      "enunciado": "¿Qué le duele a B?",
      "opciones": [
       "his stomach",
-      "his leg",
-      "his head and his neck"
+      "his head and his neck",
+      "his leg"
      ],
      "respuesta": "his head and his neck"
     },
@@ -276,9 +276,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué debe comer B?",
      "opciones": [
-      "fruit and vegetables",
       "hot soup",
-      "a lot of meat"
+      "a lot of meat",
+      "fruit and vegetables"
      ],
      "respuesta": "fruit and vegetables"
     },

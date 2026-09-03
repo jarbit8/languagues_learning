@@ -9,9 +9,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿De qué país viene Ana?",
      "opciones": [
-      "France",
       "Canada",
-      "Peru"
+      "Peru",
+      "France"
      ],
      "respuesta": "Peru"
     },
@@ -29,9 +29,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué idiomas habla Ana?",
      "opciones": [
-      "Spanish, English and French",
       "English and German",
-      "only Spanish"
+      "only Spanish",
+      "Spanish, English and French"
      ],
      "respuesta": "Spanish, English and French"
     },
@@ -60,9 +60,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿De dónde es Marc?",
      "opciones": [
-      "Spain",
       "France",
-      "England"
+      "England",
+      "Spain"
      ],
      "respuesta": "France"
     },
@@ -80,9 +80,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Dónde nació Paul?",
      "opciones": [
-      "the capital of Spain",
       "the city of Toronto",
-      "the United States"
+      "the United States",
+      "the capital of Spain"
      ],
      "respuesta": "the United States"
     },
@@ -111,9 +111,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿De dónde viene Sofia?",
      "opciones": [
+      "France",
       "England",
-      "Spain",
-      "France"
+      "Spain"
      ],
      "respuesta": "Spain"
     },
@@ -131,9 +131,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cuál es la nacionalidad de Marc?",
      "opciones": [
-      "Peruvian",
       "French",
-      "Canadian"
+      "Canadian",
+      "Peruvian"
      ],
      "respuesta": "French"
     },
@@ -216,9 +216,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿De dónde viene Marie?",
      "opciones": [
+      "England",
       "Spain",
-      "France",
-      "England"
+      "France"
      ],
      "respuesta": "England"
     },
@@ -236,8 +236,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué idiomas habla Marie?",
      "opciones": [
-      "English and French",
       "Spanish",
+      "English and French",
       "French only"
      ],
      "respuesta": "English and French"

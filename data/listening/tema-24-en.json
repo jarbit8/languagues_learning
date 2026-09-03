@@ -42,9 +42,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cuál es el plan de B?",
      "opciones": [
-      "move to Canada",
+      "move to the United States",
       "stay in Peru",
-      "move to the United States"
+      "move to Canada"
      ],
      "respuesta": "move to the United States"
     },
@@ -115,9 +115,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cuál es la meta de B?",
      "opciones": [
-      "a new job in a big company",
+      "a trip to Peru with his family",
       "citizenship in the United States",
-      "a trip to Peru with his family"
+      "a new job in a big company"
      ],
      "respuesta": "citizenship in the United States"
     },
@@ -149,8 +149,8 @@
      "enunciado": "¿Qué día van a hablar?",
      "opciones": [
       "Sunday",
-      "Monday",
-      "Friday"
+      "Friday",
+      "Monday"
      ],
      "respuesta": "Monday"
     }
@@ -197,9 +197,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué va a hacer B primero?",
      "opciones": [
+      "finish his degree",
       "move abroad",
-      "get a visa",
-      "finish his degree"
+      "get a visa"
      ],
      "respuesta": "finish his degree"
     },
@@ -269,8 +269,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Con quién va a hablar primero?",
      "opciones": [
-      "with his teacher",
       "with the company",
+      "with his teacher",
       "with his parents"
      ],
      "respuesta": "with his teacher"
@@ -323,9 +323,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué va a hacer Marie primero?",
      "opciones": [
-      "finish her degree",
       "travel to England",
-      "work in a hospital"
+      "work in a hospital",
+      "finish her degree"
      ],
      "respuesta": "finish her degree"
     },

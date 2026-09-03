@@ -61,8 +61,8 @@
    "tipo": "opcion_multiple",
    "enunciado": "I ___ football.",
    "opciones": [
-    "go",
     "do",
+    "go",
     "play"
    ],
    "respuesta": "play"
@@ -71,9 +71,9 @@
    "tipo": "opcion_multiple",
    "enunciado": "I ___ swimming.",
    "opciones": [
+    "go",
     "play",
-    "do",
-    "go"
+    "do"
    ],
    "respuesta": "go"
   },

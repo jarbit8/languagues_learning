@@ -18,8 +18,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "What was the message on the screen?",
      "opciones": [
-      "there is no network",
       "there is no password",
+      "there is no network",
       "the battery is not good"
      ],
      "respuesta": "there is no network"
@@ -33,9 +33,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "Who texted the password to Ana?",
      "opciones": [
-      "a worker of the company",
+      "her teacher of the university",
       "her sister on the phone",
-      "her teacher of the university"
+      "a worker of the company"
      ],
      "respuesta": "a worker of the company"
     },
@@ -62,9 +62,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What did Ana send to her teacher?",
      "opciones": [
+      "an email with the files",
       "a photo and a message",
-      "a video of her class",
-      "an email with the files"
+      "a video of her class"
      ],
      "respuesta": "an email with the files"
     }
@@ -87,9 +87,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "How many songs did Laura download?",
      "opciones": [
-      "six",
       "two",
-      "three"
+      "three",
+      "six"
      ],
      "respuesta": "three"
     },
@@ -156,9 +156,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "How many messages did Paul answer?",
      "opciones": [
+      "forty",
       "ten",
-      "three",
-      "forty"
+      "three"
      ],
      "respuesta": "ten"
     },
@@ -216,8 +216,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "Where were Ana and Laura last Saturday?",
      "opciones": [
-      "in the park",
       "in a café",
+      "in the park",
       "in the university"
      ],
      "respuesta": "in the park"
@@ -240,9 +240,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "Why did Ana charge the camera in a café?",
      "opciones": [
-      "the battery was not good",
       "there was no network",
-      "the camera was very old"
+      "the camera was very old",
+      "the battery was not good"
      ],
      "respuesta": "the battery was not good"
     },
@@ -269,8 +269,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "What time did her mother call?",
      "opciones": [
-      "at three",
       "at nine",
+      "at three",
       "at five"
      ],
      "respuesta": "at nine"
@@ -285,9 +285,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What did Marie have with her last Saturday?",
      "opciones": [
-      "her computer",
+      "a file with photos",
       "her camera and her phone",
-      "a file with photos"
+      "her computer"
      ],
      "respuesta": "her camera and her phone"
     },
@@ -309,9 +309,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "How many photos did Marie send to her sister?",
      "opciones": [
-      "two",
       "three",
-      "five"
+      "five",
+      "two"
      ],
      "respuesta": "two"
     },
@@ -338,9 +338,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What did Marie do at night?",
      "opciones": [
+      "she turned off her phone and charged it",
       "she downloaded three songs",
-      "she called her mother",
-      "she turned off her phone and charged it"
+      "she called her mother"
      ],
      "respuesta": "she turned off her phone and charged it"
     }

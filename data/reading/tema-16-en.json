@@ -9,9 +9,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What is in the big square?",
      "opciones": [
+      "a church and the town hall",
       "the station and the airport",
-      "a school and a zoo",
-      "a church and the town hall"
+      "a school and a zoo"
      ],
      "respuesta": "a church and the town hall"
     },
@@ -34,8 +34,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "What is in the park?",
      "opciones": [
-      "a zoo",
       "a stadium",
+      "a zoo",
       "a museum"
      ],
      "respuesta": "a zoo"
@@ -54,9 +54,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What is near the bridge?",
      "opciones": [
-      "the airport",
+      "the pharmacy",
       "the town hall",
-      "the pharmacy"
+      "the airport"
      ],
      "respuesta": "the airport"
     },
@@ -100,9 +100,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What do they visit at four?",
      "opciones": [
-      "the library",
       "the stadium",
-      "the zoo"
+      "the zoo",
+      "the library"
      ],
      "respuesta": "the zoo"
     },
@@ -120,9 +120,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What is open every day?",
      "opciones": [
-      "the pharmacy",
+      "the library",
       "the bank",
-      "the library"
+      "the pharmacy"
      ],
      "respuesta": "the pharmacy"
     },
@@ -141,9 +141,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What is in the street of Laura?",
      "opciones": [
-      "the museum and the library",
       "a pharmacy, a café and a shop",
-      "the hospital and the park"
+      "the hospital and the park",
+      "the museum and the library"
      ],
      "respuesta": "a pharmacy, a café and a shop"
     },
@@ -165,9 +165,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "Where is the library?",
      "opciones": [
-      "next to the park and the hospital",
       "near the airport, far from the centre",
-      "between the museum and the town hall"
+      "between the museum and the town hall",
+      "next to the park and the hospital"
      ],
      "respuesta": "between the museum and the town hall"
     },
@@ -185,9 +185,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What is near the stadium?",
      "opciones": [
-      "the cinema",
       "the theatre",
-      "the hospital"
+      "the hospital",
+      "the cinema"
      ],
      "respuesta": "the cinema"
     },
@@ -206,9 +206,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "Why does Paul go to the bank?",
      "opciones": [
+      "because he needs money",
       "because it is near the museum",
-      "because it is free",
-      "because he needs money"
+      "because it is free"
      ],
      "respuesta": "because he needs money"
     },
@@ -230,9 +230,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "Why do they not visit the library?",
      "opciones": [
-      "it is expensive",
+      "it is very far",
       "it is closed on Saturday",
-      "it is very far"
+      "it is expensive"
      ],
      "respuesta": "it is closed on Saturday"
     },
@@ -250,9 +250,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "Where does Paul eat at one?",
      "opciones": [
-      "in a café near the park",
       "in the zoo",
-      "in the museum"
+      "in the museum",
+      "in a café near the park"
      ],
      "respuesta": "in a café near the park"
     },
@@ -271,9 +271,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What is in the square?",
      "opciones": [
-      "the museum and the library",
+      "a church, the town hall and the police station",
       "the bank and the post office",
-      "a church, the town hall and the police station"
+      "the museum and the library"
      ],
      "respuesta": "a church, the town hall and the police station"
     },
@@ -295,9 +295,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What is next to the library?",
      "opciones": [
+      "the theatre",
       "the museum",
-      "the stadium",
-      "the theatre"
+      "the stadium"
      ],
      "respuesta": "the museum"
     },
@@ -323,9 +323,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What is near the bridge?",
      "opciones": [
-      "a big stadium",
+      "the airport",
       "the church",
-      "the airport"
+      "a big stadium"
      ],
      "respuesta": "a big stadium"
     }

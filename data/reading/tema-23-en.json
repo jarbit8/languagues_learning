@@ -17,9 +17,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "Why did Ana pack sweaters and a coat?",
      "opciones": [
+      "because her suitcase was big",
       "because in Canada it was very cold",
-      "because she had a visa",
-      "because her suitcase was big"
+      "because she had a visa"
      ],
      "respuesta": "because in Canada it was very cold"
     },
@@ -61,9 +61,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What did Ana buy for her mother?",
      "opciones": [
-      "a boarding pass",
       "a souvenir",
-      "a suitcase"
+      "a suitcase",
+      "a boarding pass"
      ],
      "respuesta": "a souvenir"
     }
@@ -86,9 +86,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "Why did Paul come early?",
      "opciones": [
-      "the flight had a delay",
       "he had no passport",
-      "he had a lot of luggage"
+      "he had a lot of luggage",
+      "the flight had a delay"
      ],
      "respuesta": "he had a lot of luggage"
     },
@@ -101,9 +101,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What was the problem at customs?",
      "opciones": [
-      "a big souvenir in his bag",
       "his visa was not good",
-      "his seat was not free"
+      "his seat was not free",
+      "a big souvenir in his bag"
      ],
      "respuesta": "a big souvenir in his bag"
     },
@@ -130,9 +130,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "How long did Paul stay abroad?",
      "opciones": [
+      "one month",
       "two weeks",
-      "one year",
-      "one month"
+      "one year"
      ],
      "respuesta": "one month"
     }
@@ -155,9 +155,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "Where was the room of Ana?",
      "opciones": [
-      "near the lake",
+      "on the first floor",
       "on the second floor",
-      "on the first floor"
+      "near the lake"
      ],
      "respuesta": "on the second floor"
     },
@@ -179,9 +179,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "Who had a map of the city?",
      "opciones": [
-      "a guide in the hotel",
       "her sister",
-      "a tourist of France"
+      "a tourist of France",
+      "a guide in the hotel"
      ],
      "respuesta": "a guide in the hotel"
     },
@@ -199,9 +199,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What did Ana do one day?",
      "opciones": [
-      "she booked another hotel",
       "she took a train to another city",
-      "she flew to Peru"
+      "she flew to Peru",
+      "she booked another hotel"
      ],
      "respuesta": "she took a train to another city"
     }
@@ -224,9 +224,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What time was the new departure?",
      "opciones": [
-      "at eight",
+      "at six",
       "at two",
-      "at six"
+      "at eight"
      ],
      "respuesta": "at two"
     },
@@ -239,8 +239,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "What did Laura do at the gate?",
      "opciones": [
-      "she packed her suitcase",
       "she called her friend",
+      "she packed her suitcase",
       "she read a book and listened to music"
      ],
      "respuesta": "she read a book and listened to music"
@@ -294,8 +294,8 @@
      "enunciado": "How did Marie go to the airport?",
      "opciones": [
       "by bus",
-      "by taxi",
-      "by metro"
+      "by metro",
+      "by taxi"
      ],
      "respuesta": "by metro"
     },
@@ -317,8 +317,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "How long was Marie in the plane?",
      "opciones": [
-      "two hours",
       "three weeks",
+      "two hours",
       "seven hours"
      ],
      "respuesta": "seven hours"

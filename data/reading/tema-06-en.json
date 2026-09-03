@@ -9,9 +9,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿En qué trabaja el padre de Ana?",
      "opciones": [
-      "cook",
+      "doctor",
       "engineer",
-      "doctor"
+      "cook"
      ],
      "respuesta": "engineer"
     },
@@ -29,8 +29,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué quiere ser el amigo de Ana?",
      "opciones": [
-      "nurse",
       "waiter",
+      "nurse",
       "lawyer"
      ],
      "respuesta": "lawyer"
@@ -64,9 +64,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿En qué trabaja la persona que habla primero?",
      "opciones": [
-      "secretary",
       "driver",
-      "farmer"
+      "farmer",
+      "secretary"
      ],
      "respuesta": "driver"
     },
@@ -84,9 +84,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué es la mujer del perro?",
      "opciones": [
+      "dentist",
       "farmer",
-      "seller",
-      "dentist"
+      "seller"
      ],
      "respuesta": "farmer"
     },
@@ -119,8 +119,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿En qué trabaja el padre?",
      "opciones": [
-      "driver",
       "teacher",
+      "driver",
       "doctor"
      ],
      "respuesta": "doctor"
@@ -140,8 +140,8 @@
      "enunciado": "¿Quién es el jefe?",
      "opciones": [
       "Mr Lee",
-      "Marc",
-      "the father"
+      "the father",
+      "Marc"
      ],
      "respuesta": "Mr Lee"
     },
@@ -190,9 +190,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿En qué trabaja el hermano?",
      "opciones": [
-      "waiter",
       "firefighter",
-      "seller"
+      "seller",
+      "waiter"
      ],
      "respuesta": "waiter"
     },
@@ -221,9 +221,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cuál es la profesión de Marie?",
      "opciones": [
+      "dentist",
       "teacher",
-      "nurse",
-      "dentist"
+      "nurse"
      ],
      "respuesta": "dentist"
     },
@@ -241,9 +241,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Quién es el jefe?",
      "opciones": [
-      "el padre",
+      "Marc",
       "Mr Lee",
-      "Marc"
+      "el padre"
      ],
      "respuesta": "Mr Lee"
     },

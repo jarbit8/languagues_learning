@@ -42,9 +42,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cuánto cuesta la mochila barata?",
      "opciones": [
+      "twenty dollars",
       "ten dollars",
-      "fifteen dollars",
-      "twenty dollars"
+      "fifteen dollars"
      ],
      "respuesta": "ten dollars"
     },
@@ -65,8 +65,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cómo paga A al final?",
      "opciones": [
-      "in cash",
       "with a coin",
+      "in cash",
       "by card"
      ],
      "respuesta": "by card"
@@ -154,9 +154,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cómo puede pagar A?",
      "opciones": [
-      "only in cash",
+      "only by card",
       "by card or in cash",
-      "only by card"
+      "only in cash"
      ],
      "respuesta": "by card or in cash"
     }
@@ -217,9 +217,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cuántas camisas quiere A?",
      "opciones": [
+      "one",
       "three",
-      "two",
-      "one"
+      "two"
      ],
      "respuesta": "two"
     }
@@ -280,9 +280,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué está en oferta?",
      "opciones": [
-      "the bags",
       "the apples",
-      "the bread"
+      "the bread",
+      "the bags"
      ],
      "respuesta": "the apples"
     }
@@ -330,8 +330,8 @@
      "enunciado": "¿Qué está en oferta?",
      "opciones": [
       "the cheese",
-      "the milk",
-      "the tomatoes"
+      "the tomatoes",
+      "the milk"
      ],
      "respuesta": "the tomatoes"
     },

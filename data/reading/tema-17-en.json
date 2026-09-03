@@ -10,8 +10,8 @@
      "enunciado": "How does Ana go to work every morning?",
      "opciones": [
       "by bus",
-      "on foot",
-      "by car"
+      "by car",
+      "on foot"
      ],
      "respuesta": "by bus"
     },
@@ -32,8 +32,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "Who drives a car?",
      "opciones": [
-      "Paul",
       "Ana",
+      "Paul",
       "Laura"
      ],
      "respuesta": "Paul"
@@ -52,9 +52,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "Why does Ana take her bike in summer?",
      "opciones": [
-      "the road near the park is beautiful",
       "the metro is closed",
-      "the bus is expensive"
+      "the bus is expensive",
+      "the road near the park is beautiful"
      ],
      "respuesta": "the road near the park is beautiful"
     },
@@ -82,9 +82,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "Where does Paul turn left?",
      "opciones": [
+      "at the corner of the bank",
       "after the church",
-      "at the traffic light",
-      "at the corner of the bank"
+      "at the traffic light"
      ],
      "respuesta": "at the corner of the bank"
     },
@@ -98,8 +98,8 @@
      "enunciado": "Why is a taxi slow today?",
      "opciones": [
       "the road is closed",
-      "the taxi is far",
-      "there are many cars on the road"
+      "there are many cars on the road",
+      "the taxi is far"
      ],
      "respuesta": "there are many cars on the road"
     },
@@ -125,9 +125,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What does Paul prefer?",
      "opciones": [
+      "the taxi",
       "the bus",
-      "the train",
-      "the taxi"
+      "the train"
      ],
      "respuesta": "the train"
     }
@@ -165,9 +165,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What is at the corner of the pharmacy?",
      "opciones": [
-      "a bus stop",
       "the school",
-      "a traffic light"
+      "a traffic light",
+      "a bus stop"
      ],
      "respuesta": "a traffic light"
     },
@@ -185,9 +185,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What does Laura take in winter?",
      "opciones": [
-      "the metro",
       "a taxi",
-      "the bus"
+      "the bus",
+      "the metro"
      ],
      "respuesta": "the metro"
     },
@@ -206,9 +206,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "How do they go to the station?",
      "opciones": [
-      "by bus",
+      "by metro",
       "on foot",
-      "by metro"
+      "by bus"
      ],
      "respuesta": "by metro"
     },
@@ -231,8 +231,8 @@
      "enunciado": "Where do they turn left?",
      "opciones": [
       "near the church",
-      "at the station",
-      "at the corner of the museum"
+      "at the corner of the museum",
+      "at the station"
      ],
      "respuesta": "at the corner of the museum"
     },
@@ -259,9 +259,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "Why do they not come back by plane?",
      "opciones": [
+      "it is very slow",
       "there is not any plane",
-      "it is very expensive",
-      "it is very slow"
+      "it is very expensive"
      ],
      "respuesta": "it is very expensive"
     }
@@ -275,9 +275,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "How does Marie go to work every morning?",
      "opciones": [
+      "by bus",
       "by car",
-      "by bike",
-      "by bus"
+      "by bike"
      ],
      "respuesta": "by bus"
     },
@@ -327,8 +327,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "Why does Marie not take a taxi?",
      "opciones": [
-      "it is very slow",
       "she prefers the bike",
+      "it is very slow",
       "it is very expensive"
      ],
      "respuesta": "it is very expensive"

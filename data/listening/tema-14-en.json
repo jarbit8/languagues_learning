@@ -42,8 +42,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué pide B de comer?",
      "opciones": [
-      "soup",
       "a sandwich",
+      "soup",
       "a salad"
      ],
      "respuesta": "a salad"
@@ -66,8 +66,8 @@
      "enunciado": "¿Qué le ofrece A a B al principio?",
      "opciones": [
       "the menu",
-      "a coffee",
-      "the bill"
+      "the bill",
+      "a coffee"
      ],
      "respuesta": "the menu"
     },
@@ -155,8 +155,8 @@
      "enunciado": "¿Cómo se despide B al final?",
      "opciones": [
       "Good night!",
-      "See you soon!",
-      "Goodbye!"
+      "Goodbye!",
+      "See you soon!"
      ],
      "respuesta": "See you soon!"
     }
@@ -203,9 +203,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué postre pide B?",
      "opciones": [
-      "a glass of water",
       "an ice cream with fruit",
-      "a coffee with sugar"
+      "a coffee with sugar",
+      "a glass of water"
      ],
      "respuesta": "an ice cream with fruit"
     },
@@ -271,8 +271,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué problema hay?",
      "opciones": [
-      "the coffee is cold",
       "there is not any dessert",
+      "the coffee is cold",
       "the fish is salty"
      ],
      "respuesta": "the coffee is cold"
@@ -329,8 +329,8 @@
      "enunciado": "¿Qué bebe Marie?",
      "opciones": [
       "a beer",
-      "an orange juice",
-      "a hot tea"
+      "a hot tea",
+      "an orange juice"
      ],
      "respuesta": "an orange juice"
     },

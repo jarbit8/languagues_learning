@@ -9,8 +9,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cómo se llama la mujer que se presenta primero?",
      "opciones": [
-      "Laura",
       "Ana",
+      "Laura",
       "Sofia"
      ],
      "respuesta": "Ana"
@@ -29,9 +29,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Quién no está?",
      "opciones": [
+      "Mr Lee",
       "Mrs Lee",
-      "Miss Sofia",
-      "Mr Lee"
+      "Miss Sofia"
      ],
      "respuesta": "Mrs Lee"
     },
@@ -53,9 +53,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cómo se despide Ana de Paul?",
      "opciones": [
-      "See you tomorrow",
+      "See you soon",
       "Good night",
-      "See you soon"
+      "See you tomorrow"
      ],
      "respuesta": "See you tomorrow"
     }
@@ -69,9 +69,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cómo se llama el hombre?",
      "opciones": [
-      "Lee",
       "Marc",
-      "Paul"
+      "Paul",
+      "Lee"
      ],
      "respuesta": "Marc"
     },
@@ -97,8 +97,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Quién más está en la fiesta?",
      "opciones": [
-      "Ana",
       "Mr Lee",
+      "Ana",
       "Sofia"
      ],
      "respuesta": "Ana"
@@ -133,8 +133,8 @@
      "enunciado": "¿A quién busca Sofia?",
      "opciones": [
       "Mr Lee",
-      "Marc",
-      "Paul"
+      "Paul",
+      "Marc"
      ],
      "respuesta": "Mr Lee"
     },
@@ -187,9 +187,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Quién no entiende el nombre?",
      "opciones": [
-      "Marc",
       "Laura",
-      "Ana"
+      "Ana",
+      "Marc"
      ],
      "respuesta": "Marc"
     },
@@ -207,8 +207,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué se desean al final?",
      "opciones": [
-      "good morning",
       "good night",
+      "good morning",
       "good afternoon"
      ],
      "respuesta": "good night"
@@ -265,8 +265,8 @@
      "enunciado": "¿Con quién se dice 'nice to meet you'?",
      "opciones": [
       "Miss Sofia",
-      "Paul",
-      "Mr Lee"
+      "Mr Lee",
+      "Paul"
      ],
      "respuesta": "Paul"
     },

@@ -42,9 +42,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Dónde está el museo?",
      "opciones": [
+      "near the park",
       "near the station",
-      "in the centre",
-      "near the park"
+      "in the centre"
      ],
      "respuesta": "near the park"
     },
@@ -127,8 +127,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿De qué lugar está cerca la biblioteca?",
      "opciones": [
-      "the school",
       "the park",
+      "the school",
       "the hospital"
      ],
      "respuesta": "the school"
@@ -146,9 +146,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Está abierta la biblioteca hoy?",
      "opciones": [
-      "yes",
+      "only Sundays",
       "no",
-      "only Sundays"
+      "yes"
      ],
      "respuesta": "yes"
     }
@@ -258,9 +258,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué van a visitar en el día?",
      "opciones": [
+      "the library",
       "the zoo",
-      "the museum",
-      "the library"
+      "the museum"
      ],
      "respuesta": "the zoo"
     },
@@ -321,9 +321,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Dónde vive Marie?",
      "opciones": [
-      "in a street near the park",
       "near the hospital",
-      "in the city centre"
+      "in the city centre",
+      "in a street near the park"
      ],
      "respuesta": "in a street near the park"
     },

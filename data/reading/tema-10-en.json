@@ -9,9 +9,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "Where is the fridge?",
      "opciones": [
-      "next to the window",
+      "under the bed",
       "near the sofa",
-      "under the bed"
+      "next to the window"
      ],
      "respuesta": "next to the window"
     },
@@ -29,9 +29,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "Where is the wardrobe?",
      "opciones": [
+      "between the bed and the door",
       "in the kitchen",
-      "on the wall",
-      "between the bed and the door"
+      "on the wall"
      ],
      "respuesta": "between the bed and the door"
     },
@@ -52,9 +52,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What is there in the bathroom?",
      "opciones": [
-      "a fridge and a table",
+      "a sofa and a lamp",
       "a toilet and a mirror",
-      "a sofa and a lamp"
+      "a fridge and a table"
      ],
      "respuesta": "a toilet and a mirror"
     },
@@ -73,9 +73,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "How many floors does the house have?",
      "opciones": [
+      "one",
       "three",
-      "two",
-      "one"
+      "two"
      ],
      "respuesta": "two"
     },
@@ -98,8 +98,8 @@
      "enunciado": "How many bedrooms are there?",
      "opciones": [
       "three",
-      "two",
-      "four"
+      "four",
+      "two"
      ],
      "respuesta": "three"
     },
@@ -118,8 +118,8 @@
      "enunciado": "Where is the mirror?",
      "opciones": [
       "in the garden",
-      "under the roof",
-      "on the wall of the bathroom"
+      "on the wall of the bathroom",
+      "under the roof"
      ],
      "respuesta": "on the wall of the bathroom"
     },
@@ -166,9 +166,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "Where is the bathroom?",
      "opciones": [
-      "under the stairs",
       "between the kitchen and the bedroom",
-      "next to the balcony"
+      "next to the balcony",
+      "under the stairs"
      ],
      "respuesta": "between the kitchen and the bedroom"
     },
@@ -195,9 +195,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "Why are there no stairs?",
      "opciones": [
-      "the apartment is very small",
       "there is no balcony",
-      "the apartment has one floor"
+      "the apartment has one floor",
+      "the apartment is very small"
      ],
      "respuesta": "the apartment has one floor"
     }
@@ -212,8 +212,8 @@
      "enunciado": "What is in the living room?",
      "opciones": [
       "a bed, a wardrobe and a lamp",
-      "a sofa, a table and three chairs",
-      "a fridge, a window and two chairs"
+      "a fridge, a window and two chairs",
+      "a sofa, a table and three chairs"
      ],
      "respuesta": "a sofa, a table and three chairs"
     },
@@ -231,9 +231,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "Where is the wardrobe?",
      "opciones": [
+      "between the bed and the door",
       "on the wall",
-      "in the kitchen",
-      "between the bed and the door"
+      "in the kitchen"
      ],
      "respuesta": "between the bed and the door"
     },
@@ -276,8 +276,8 @@
      "enunciado": "What is under the window in her room?",
      "opciones": [
       "a table",
-      "a bed",
-      "a wardrobe"
+      "a wardrobe",
+      "a bed"
      ],
      "respuesta": "a bed"
     },
@@ -299,8 +299,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "Where is the bathroom?",
      "opciones": [
-      "next to the garden",
       "between her room and the kitchen",
+      "next to the garden",
       "on the first floor"
      ],
      "respuesta": "between her room and the kitchen"
@@ -328,8 +328,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "Where is the room of Marie?",
      "opciones": [
-      "on the second floor",
       "next to the kitchen",
+      "on the second floor",
       "on the first floor"
      ],
      "respuesta": "on the second floor"

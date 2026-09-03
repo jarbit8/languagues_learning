@@ -42,8 +42,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cuál es la profesión de Maria?",
      "opciones": [
-      "doctor",
       "programmer",
+      "doctor",
       "teacher"
      ],
      "respuesta": "teacher"
@@ -123,9 +123,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cuál es la profesión del padre?",
      "opciones": [
-      "engineer",
+      "teacher",
       "doctor",
-      "teacher"
+      "engineer"
      ],
      "respuesta": "doctor"
     },
@@ -146,9 +146,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Dónde trabaja la madre?",
      "opciones": [
+      "a big office",
       "an office",
-      "a company",
-      "a big office"
+      "a company"
      ],
      "respuesta": "a company"
     },
@@ -270,8 +270,8 @@
      "enunciado": "¿En qué trabaja Sofia?",
      "opciones": [
       "cook",
-      "nurse",
-      "secretary"
+      "secretary",
+      "nurse"
      ],
      "respuesta": "secretary"
     }

@@ -43,8 +43,8 @@
      "enunciado": "¿De qué color es la mochila?",
      "opciones": [
       "black and red",
-      "blue and green",
-      "white"
+      "white",
+      "blue and green"
      ],
      "respuesta": "black and red"
     },
@@ -74,9 +74,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cuántos objetos había en la mochila?",
      "opciones": [
-      "four",
+      "two",
       "three",
-      "two"
+      "four"
      ],
      "respuesta": "three"
     }
@@ -123,9 +123,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué busca A al principio?",
      "opciones": [
-      "a notebook and a pen",
+      "a bag and keys",
       "glasses and a watch",
-      "a bag and keys"
+      "a notebook and a pen"
      ],
      "respuesta": "a notebook and a pen"
     },
@@ -194,9 +194,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿De qué color es la mochila?",
      "opciones": [
+      "green",
       "red",
-      "grey",
-      "green"
+      "grey"
      ],
      "respuesta": "green"
     },
@@ -254,8 +254,8 @@
      "enunciado": "¿Qué cuaderno elige?",
      "opciones": [
       "the white one",
-      "the brown one",
-      "the pink one"
+      "the pink one",
+      "the brown one"
      ],
      "respuesta": "the pink one"
     },

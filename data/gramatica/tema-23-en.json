@@ -61,8 +61,8 @@
    "tipo": "opcion_multiple",
    "enunciado": "Pasado de 'eat':",
    "opciones": [
-    "eated",
     "ate",
+    "eated",
     "eaten"
    ],
    "respuesta": "ate"
@@ -151,9 +151,9 @@
    "tipo": "opcion_multiple",
    "enunciado": "Did you ___ the ticket?",
    "opciones": [
-    "buy",
     "buyed",
-    "bought"
+    "bought",
+    "buy"
    ],
    "respuesta": "buy"
   },

@@ -42,9 +42,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cómo está el clima hoy?",
      "opciones": [
+      "cloudy",
       "sunny",
-      "rainy",
-      "cloudy"
+      "rainy"
      ],
      "respuesta": "sunny"
     },
@@ -62,9 +62,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué palabra usa B para describir el clima de mañana además de lluvioso?",
      "opciones": [
-      "windy",
+      "sunny",
       "cloudy",
-      "sunny"
+      "windy"
      ],
      "respuesta": "windy"
     },
@@ -120,8 +120,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cómo está el clima en la playa?",
      "opciones": [
-      "rainy and cold",
       "sunny and hot",
+      "rainy and cold",
       "cloudy and windy"
      ],
      "respuesta": "sunny and hot"
@@ -144,8 +144,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿A dónde quieren ir A y B?",
      "opciones": [
-      "to the beach",
       "to the forest",
+      "to the beach",
       "to the mountain"
      ],
      "respuesta": "to the beach"
@@ -275,8 +275,8 @@
      "enunciado": "¿A dónde van?",
      "opciones": [
       "to the lake",
-      "to the mountains",
-      "to the beach"
+      "to the beach",
+      "to the mountains"
      ],
      "respuesta": "to the lake"
     },
@@ -343,9 +343,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué estación prefiere Marie?",
      "opciones": [
+      "summer",
       "spring",
-      "autumn",
-      "summer"
+      "autumn"
      ],
      "respuesta": "spring"
     }

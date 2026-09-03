@@ -63,9 +63,9 @@
    "tipo": "opcion_multiple",
    "enunciado": "He ___ fine.",
    "opciones": [
+    "am",
     "be",
     "are",
-    "am",
     "is"
    ],
    "respuesta": "is"
@@ -74,8 +74,8 @@
    "tipo": "opcion_multiple",
    "enunciado": "They ___ Ana and Paul.",
    "opciones": [
-    "am",
     "is",
+    "am",
     "are"
    ],
    "respuesta": "are"
@@ -84,9 +84,9 @@
    "tipo": "opcion_multiple",
    "enunciado": "¿Cuál es la contracción de 'I am'?",
    "opciones": [
+    "I'm",
     "I's",
-    "I're",
-    "I'm"
+    "I're"
    ],
    "respuesta": "I'm"
   },

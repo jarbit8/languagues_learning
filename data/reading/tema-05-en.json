@@ -9,9 +9,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cómo es el pelo de Ana?",
      "opciones": [
-      "blond",
+      "short",
       "curly",
-      "short"
+      "blond"
      ],
      "respuesta": "curly"
     },
@@ -32,9 +32,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cómo es el abuelo?",
      "opciones": [
-      "bald and serious",
+      "young and strong",
       "tall and funny",
-      "young and strong"
+      "bald and serious"
      ],
      "respuesta": "bald and serious"
     },
@@ -66,9 +66,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cómo es Marc físicamente?",
      "opciones": [
+      "short and fat",
       "bald and old",
-      "tall and thin",
-      "short and fat"
+      "tall and thin"
      ],
      "respuesta": "short and fat"
     },
@@ -90,8 +90,8 @@
      "enunciado": "¿Cómo es el primo?",
      "opciones": [
       "lazy",
-      "shy",
-      "brave"
+      "brave",
+      "shy"
      ],
      "respuesta": "brave"
     },
@@ -120,9 +120,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cómo es Laura físicamente?",
      "opciones": [
+      "old",
       "short and fat",
-      "tall and thin",
-      "old"
+      "tall and thin"
      ],
      "respuesta": "tall and thin"
     },
@@ -143,9 +143,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cómo es el hermano de Marie?",
      "opciones": [
+      "old and bald",
       "young and handsome",
-      "tall and blond",
-      "old and bald"
+      "tall and blond"
      ],
      "respuesta": "old and bald"
     },
@@ -236,9 +236,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cómo es Marie físicamente?",
      "opciones": [
-      "tall and fat",
+      "short and thin",
       "bald",
-      "short and thin"
+      "tall and fat"
      ],
      "respuesta": "short and thin"
     },
@@ -257,8 +257,8 @@
      "enunciado": "¿Cómo es el primo de carácter?",
      "opciones": [
       "brave and calm",
-      "shy",
-      "smart but lazy"
+      "smart but lazy",
+      "shy"
      ],
      "respuesta": "smart but lazy"
     },

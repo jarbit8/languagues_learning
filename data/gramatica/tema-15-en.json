@@ -56,8 +56,8 @@
    "tipo": "opcion_multiple",
    "enunciado": "'¿cuántas manzanas?' =",
    "opciones": [
-    "how many apple",
     "how much apples",
+    "how many apple",
     "how many apples"
    ],
    "respuesta": "how many apples"
@@ -66,8 +66,8 @@
    "tipo": "opcion_multiple",
    "enunciado": "___ I pay by card?",
    "opciones": [
-    "Am",
     "Can",
+    "Am",
     "Do"
    ],
    "respuesta": "Can"
@@ -76,9 +76,9 @@
    "tipo": "opcion_multiple",
    "enunciado": "How much ___ it cost?",
    "opciones": [
+    "is",
     "does",
-    "do",
-    "is"
+    "do"
    ],
    "respuesta": "does"
   },

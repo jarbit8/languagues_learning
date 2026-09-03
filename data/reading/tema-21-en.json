@@ -18,8 +18,8 @@
      "enunciado": "How many subjects does Ana have this semester?",
      "opciones": [
       "four",
-      "three",
-      "five"
+      "five",
+      "three"
      ],
      "respuesta": "five"
     },
@@ -60,9 +60,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What does Ana want after her degree?",
      "opciones": [
-      "to work in the library",
+      "to teach computer science",
       "to study history",
-      "to teach computer science"
+      "to work in the library"
      ],
      "respuesta": "to teach computer science"
     }
@@ -109,9 +109,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "How many questions does Paul understand?",
      "opciones": [
+      "ten",
       "twenty",
-      "sixteen",
-      "ten"
+      "sixteen"
      ],
      "respuesta": "sixteen"
     },
@@ -129,9 +129,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What must Paul learn now?",
      "opciones": [
+      "history and science",
       "maths and English",
-      "computer science",
-      "history and science"
+      "computer science"
      ],
      "respuesta": "history and science"
     }
@@ -169,9 +169,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "How does her teacher of history teach?",
      "opciones": [
-      "with films and old books",
       "with a computer",
-      "with a dictionary"
+      "with a dictionary",
+      "with films and old books"
      ],
      "respuesta": "with films and old books"
     },
@@ -198,9 +198,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What subject does Laura not want to fail?",
      "opciones": [
+      "maths",
       "history",
-      "English",
-      "maths"
+      "English"
      ],
      "respuesta": "maths"
     }
@@ -214,9 +214,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What is the scholarship for?",
      "opciones": [
-      "English and history",
+      "science and maths",
       "computer science",
-      "science and maths"
+      "English and history"
      ],
      "respuesta": "computer science"
     },
@@ -238,8 +238,8 @@
      "enunciado": "How must Lee learn English?",
      "opciones": [
       "with a computer",
-      "with music and films",
-      "in the classroom"
+      "in the classroom",
+      "with music and films"
      ],
      "respuesta": "with music and films"
     },
@@ -290,9 +290,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "How does Marie go to the campus?",
      "opciones": [
+      "by metro",
       "on foot",
-      "by bus",
-      "by metro"
+      "by bus"
      ],
      "respuesta": "on foot"
     },
@@ -305,9 +305,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "Who teaches Marie on Tuesday?",
      "opciones": [
-      "a classmate",
+      "her sister",
       "her teacher",
-      "her sister"
+      "a classmate"
      ],
      "respuesta": "a classmate"
     },
@@ -335,8 +335,8 @@
      "enunciado": "What does Marie want to do after her degree?",
      "opciones": [
       "teach science in a school",
-      "study history",
-      "work in a café"
+      "work in a café",
+      "study history"
      ],
      "respuesta": "teach science in a school"
     }

@@ -72,8 +72,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Dónde puede probarse la chaqueta?",
      "opciones": [
-      "there",
       "here",
+      "there",
       "near the door"
      ],
      "respuesta": "there"
@@ -121,9 +121,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué ropa lleva B hoy?",
      "opciones": [
-      "jeans and a white t-shirt",
+      "a skirt and a sweater",
       "a dress and boots",
-      "a skirt and a sweater"
+      "jeans and a white t-shirt"
      ],
      "respuesta": "jeans and a white t-shirt"
     },
@@ -192,9 +192,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué abrigo se lleva?",
      "opciones": [
+      "the grey one",
       "the black one",
-      "no coat",
-      "the grey one"
+      "no coat"
      ],
      "respuesta": "the grey one"
     },
@@ -254,8 +254,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué se pone B?",
      "opciones": [
-      "a big coat and gloves",
       "shorts and a t-shirt",
+      "a big coat and gloves",
       "a dress and boots"
      ],
      "respuesta": "a big coat and gloves"
@@ -317,9 +317,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué lleva en invierno?",
      "opciones": [
-      "a coat, boots and gloves",
+      "shorts, a t-shirt and a hat",
       "a dress, a skirt and shoes",
-      "shorts, a t-shirt and a hat"
+      "a coat, boots and gloves"
      ],
      "respuesta": "a coat, boots and gloves"
     },

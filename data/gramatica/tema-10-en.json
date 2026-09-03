@@ -56,8 +56,8 @@
    "tipo": "opcion_multiple",
    "enunciado": "There ___ two beds.",
    "opciones": [
-    "are",
     "is",
+    "are",
     "have"
    ],
    "respuesta": "are"
@@ -66,9 +66,9 @@
    "tipo": "opcion_multiple",
    "enunciado": "The lamp is ___ to the bed. (al lado)",
    "opciones": [
+    "near",
     "under",
-    "next",
-    "near"
+    "next"
    ],
    "respuesta": "next"
   },

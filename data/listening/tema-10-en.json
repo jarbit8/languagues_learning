@@ -65,9 +65,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cómo es el apartamento de B?",
      "opciones": [
-      "big",
       "small",
-      "old"
+      "old",
+      "big"
      ],
      "respuesta": "small"
     },
@@ -122,8 +122,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué hay en la casa de los abuelos, según B?",
      "opciones": [
-      "a garden and a garage",
       "stairs and a mirror",
+      "a garden and a garage",
       "a balcony and stairs"
      ],
      "respuesta": "a garden and a garage"
@@ -145,9 +145,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Dónde están las escaleras?",
      "opciones": [
-      "between the living room and the bedrooms",
+      "next to the garage and the garden",
       "under the window of the living room",
-      "next to the garage and the garden"
+      "between the living room and the bedrooms"
      ],
      "respuesta": "between the living room and the bedrooms"
     },
@@ -262,8 +262,8 @@
      "enunciado": "¿Cuántas habitaciones hay?",
      "opciones": [
       "two",
-      "three",
-      "five"
+      "five",
+      "three"
      ],
      "respuesta": "five"
     },
@@ -323,9 +323,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cuántas habitaciones tiene?",
      "opciones": [
-      "two",
       "five",
-      "three"
+      "three",
+      "two"
      ],
      "respuesta": "two"
     },

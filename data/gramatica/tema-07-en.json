@@ -46,9 +46,9 @@
    "tipo": "opcion_multiple",
    "enunciado": "See you ___ Friday.",
    "opciones": [
+    "at",
     "on",
-    "in",
-    "at"
+    "in"
    ],
    "respuesta": "on"
   },
@@ -57,8 +57,8 @@
    "enunciado": "El ordinal de 3 es:",
    "opciones": [
     "threeth",
-    "third",
-    "three"
+    "three",
+    "third"
    ],
    "respuesta": "third"
   },
@@ -66,9 +66,9 @@
    "tipo": "opcion_multiple",
    "enunciado": "I come to Canada ___ 2026.",
    "opciones": [
-    "at",
+    "in",
     "on",
-    "in"
+    "at"
    ],
    "respuesta": "in"
   },

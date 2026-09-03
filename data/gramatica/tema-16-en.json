@@ -49,9 +49,9 @@
    "tipo": "opcion_multiple",
    "enunciado": "he/she + can:",
    "opciones": [
+    "she can",
     "she can to",
-    "she cans",
-    "she can"
+    "she cans"
    ],
    "respuesta": "she can"
   },
@@ -60,8 +60,8 @@
    "enunciado": "I can ___ Spanish.",
    "opciones": [
     "to speak",
-    "speaks",
-    "speak"
+    "speak",
+    "speaks"
    ],
    "respuesta": "speak"
   },
@@ -69,9 +69,9 @@
    "tipo": "opcion_multiple",
    "enunciado": "Negativo de 'can':",
    "opciones": [
-    "can't",
+    "cann't",
     "don't can",
-    "cann't"
+    "can't"
    ],
    "respuesta": "can't"
   },

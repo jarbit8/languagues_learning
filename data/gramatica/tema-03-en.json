@@ -46,9 +46,9 @@
    "tipo": "opcion_multiple",
    "enunciado": "London is ___ English city.",
    "opciones": [
-    "a",
     "an",
-    "the"
+    "the",
+    "a"
    ],
    "respuesta": "an"
   },
@@ -57,8 +57,8 @@
    "enunciado": "Where ___ you from?",
    "opciones": [
     "is",
-    "am",
-    "are"
+    "are",
+    "am"
    ],
    "respuesta": "are"
   },

@@ -43,8 +43,8 @@
      "enunciado": "¿Qué día trabaja B?",
      "opciones": [
       "Monday",
-      "Saturday",
-      "Tuesday"
+      "Tuesday",
+      "Saturday"
      ],
      "respuesta": "Tuesday"
     },
@@ -114,9 +114,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿En qué estación está muy feliz A?",
      "opciones": [
-      "summer",
+      "spring",
       "winter",
-      "spring"
+      "summer"
      ],
      "respuesta": "summer"
     },
@@ -124,9 +124,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿En qué mes es el cumpleaños de B?",
      "opciones": [
-      "October",
+      "December",
       "April",
-      "December"
+      "October"
      ],
      "respuesta": "December"
     },
@@ -190,9 +190,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué día es hoy?",
      "opciones": [
-      "Friday",
+      "Thursday",
       "Wednesday",
-      "Thursday"
+      "Friday"
      ],
      "respuesta": "Wednesday"
     },
@@ -316,8 +316,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué día es hoy?",
      "opciones": [
-      "Monday",
       "Friday",
+      "Monday",
       "Saturday"
      ],
      "respuesta": "Friday"

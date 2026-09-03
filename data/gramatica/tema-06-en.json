@@ -46,8 +46,8 @@
    "tipo": "opcion_multiple",
    "enunciado": "___ do you do? — I'm a doctor.",
    "opciones": [
-    "Where",
     "What",
+    "Where",
     "Who"
    ],
    "respuesta": "What"
@@ -56,9 +56,9 @@
    "tipo": "opcion_multiple",
    "enunciado": "I am ___ programmer.",
    "opciones": [
-    "an",
     "the",
-    "a"
+    "a",
+    "an"
    ],
    "respuesta": "a"
   },
