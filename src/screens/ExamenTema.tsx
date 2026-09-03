@@ -92,8 +92,10 @@ export default function ExamenTema({ tema, onSalir }: { tema: number; onSalir: (
         <h1 className="text-2xl font-bold">Tema {tema} · Listening</h1>
         <div className="tarjeta flex flex-col gap-3">
           <p className="text-sm text-slate-500 dark:text-slate-400">
-            {listening.cuantosDialogos} diálogos seguidos, como un audio largo. En el examen no hay transcripción:
-            escucha las veces que necesites y luego responde.
+            {/* Antes encadenaba los diálogos del tema y aquí se leía "1 diálogos seguidos"; desde que el
+                examen usa su propia pieza siempre es uno solo, y el que no se practicó. */}
+            Un diálogo que no has practicado. En el examen no hay transcripción: escucha las veces que
+            necesites y luego responde.
           </p>
           <button onClick={() => reproducirDialogo(listening.lineas, tema, {})} className="btn-primary self-start">
             🔊 Escuchar el audio
