@@ -90,7 +90,7 @@
    "consigna": "Escribe tu semana: qué haces cada día, en qué mes es tu cumpleaños y cuál es tu estación favorita.",
    "minPalabras": 40,
    "maxPalabras": 55,
-   "respuestaModelo": "On Monday and on Tuesday I work in the office. On Wednesday I study. On Thursday and on Friday I am with my friends. On the weekend I am with my family. My birthday is in June, in winter. My favourite season is summer, in December and January.",
+   "respuestaModelo": "On Monday and on Tuesday I work in the office. On Wednesday I study. On Thursday and on Friday I am with my friends. On the weekend I am with my family. My birthday is in June, in winter. Summer is very good for me: December and January.",
    "checklist": [
     "Hablé de al menos cuatro días",
     "Dije el mes de mi cumpleaños",
@@ -244,7 +244,7 @@
    "consigna": "Examen: escribe qué ropa te pones en cada estación, qué es caro y qué es barato, y qué talla usas.",
    "minPalabras": 45,
    "maxPalabras": 60,
-   "respuestaModelo": "In winter I put on a big coat, boots and gloves, and I wear a sweater. My coat is grey and it is cheap. In summer I wear a t-shirt, shorts and sneakers. In spring I wear jeans and a jacket. I am a medium. Elegant clothes are expensive. In bed I wear my pyjamas.",
+   "respuestaModelo": "In winter I put on a big coat, boots and gloves, and I wear a sweater. My coat is grey and it is cheap. In summer I wear a t-shirt, shorts and sneakers. In spring I wear jeans and a jacket. I am a forty. Elegant clothes are expensive. In bed I wear my pyjamas.",
    "checklist": [
     "Hablé de al menos tres estaciones",
     "Nombré al menos ocho prendas",

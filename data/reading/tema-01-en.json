@@ -220,8 +220,8 @@
     },
     {
      "tipo": "vf",
-     "enunciado": "Laura dice 'take care'.",
-     "respuesta": "falso"
+     "enunciado": "En el texto se dan las buenas noches.",
+     "respuesta": "verdadero"
     },
     {
      "tipo": "completar_dato",

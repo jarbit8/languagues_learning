@@ -6,7 +6,7 @@
    "consigna": "Escribe un mensaje a un amigo: dile que no te sientes bien, qué síntomas tienes y qué necesitas.",
    "minPalabras": 28,
    "maxPalabras": 38,
-   "respuestaModelo": "Hi Paul! I am not well today. I have got a headache and a cold. My throat hurts and I am very tired. I can't go to the office. I need to see a doctor. See you soon!",
+   "respuestaModelo": "Hi Paul! I am not well today. I have got a headache and a cold. My neck hurts and I am very tired. I can't go to the office. I need to see a doctor. See you soon!",
    "checklist": [
     "Usé have got para los síntomas",
     "Nombré al menos dos síntomas",

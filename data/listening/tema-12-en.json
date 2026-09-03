@@ -10,7 +10,7 @@
     },
     {
      "hablante": "B",
-     "texto": "Yes, I'm looking for a jacket."
+     "texto": "Yes, a jacket, please."
     },
     {
      "hablante": "A",
@@ -18,7 +18,7 @@
     },
     {
      "hablante": "B",
-     "texto": "I'm a medium."
+     "texto": "I am a forty."
     },
     {
      "hablante": "A",
@@ -30,7 +30,7 @@
     },
     {
      "hablante": "A",
-     "texto": "Of course. The fitting room is there."
+     "texto": "Of course. You can try it on there."
     },
     {
      "hablante": "B",
@@ -56,7 +56,11 @@
     {
      "tipo": "completar_dato",
      "enunciado": "¿Qué talla usa B?",
-     "respuesta": "medium"
+     "respuesta": "forty",
+     "aceptadas": [
+      "a forty",
+      "40"
+     ]
     },
     {
      "tipo": "completar_dato",
@@ -66,7 +70,7 @@
     },
     {
      "tipo": "opcion_multiple",
-     "enunciado": "¿Dónde está el probador?",
+     "enunciado": "¿Dónde puede probarse la chaqueta?",
      "opciones": [
       "there",
       "here",
@@ -218,7 +222,7 @@
     },
     {
      "hablante": "B",
-     "texto": "Yes. I put on my big coat and my gloves."
+     "texto": "I put on my big coat and my gloves."
     },
     {
      "hablante": "A",

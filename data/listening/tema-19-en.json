@@ -18,7 +18,7 @@
     },
     {
      "hablante": "B",
-     "texto": "Yes, a little. And my throat hurts too."
+     "texto": "Yes, a little. And my neck hurts too."
     },
     {
      "hablante": "A",
@@ -30,7 +30,7 @@
     },
     {
      "hablante": "A",
-     "texto": "Take this medicine twice a day."
+     "texto": "Take this medicine two times a day."
     },
     {
      "hablante": "B",
@@ -43,10 +43,10 @@
      "enunciado": "¿Qué le duele a B además de la cabeza?",
      "opciones": [
       "stomach",
-      "throat",
+      "neck",
       "leg"
      ],
-     "respuesta": "throat"
+     "respuesta": "neck"
     },
     {
      "tipo": "vf",
@@ -56,9 +56,10 @@
     {
      "tipo": "completar_dato",
      "enunciado": "¿Cuántas veces al día debe tomar la medicina?",
-     "respuesta": "twice a day",
+     "respuesta": "two times a day",
      "aceptadas": [
-      "twice"
+      "two times",
+      "two"
      ]
     },
     {
@@ -102,11 +103,11 @@
     },
     {
      "hablante": "A",
-     "texto": "Does your throat hurt too?"
+     "texto": "Does your neck hurt too?"
     },
     {
      "hablante": "B",
-     "texto": "No, my throat is fine."
+     "texto": "No, my neck is fine."
     },
     {
      "hablante": "A",
@@ -124,7 +125,7 @@
      "opciones": [
       "stomach",
       "leg",
-      "throat"
+      "neck"
      ],
      "respuesta": "stomach"
     },

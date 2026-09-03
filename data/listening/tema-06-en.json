@@ -131,7 +131,7 @@
     },
     {
      "tipo": "vf",
-     "enunciado": "El padre dice que su trabajo es bueno.",
+     "enunciado": "El trabajo del padre es bueno.",
      "respuesta": "verdadero"
     },
     {
@@ -227,7 +227,7 @@
     },
     {
      "hablante": "B",
-     "texto": "Yes, and I work at a company."
+     "texto": "Yes, and I study every day."
     },
     {
      "hablante": "A",

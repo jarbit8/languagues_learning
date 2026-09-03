@@ -54,7 +54,7 @@
   },
   {
    "titulo": "Un mundo en una mesa",
-   "texto": "Good evening! Where are you from, Marc? I come from France. France is a country in Europe and my language is French. And you, Sofia? I am from Spain. My nationality is Spanish and I speak Spanish. Marie is from England. She speaks English, and she also speaks German. Is German a language in England? No! But she is a foreigner in Germany. Ana is Peruvian. Her country is in America and she lives in Canada. The world is in this city, says Marc. And the United States? Paul was born in the United States, but he is Canadian. He lives in a Canadian city.",
+   "texto": "Good evening! Where are you from, Marc? I come from France. France is a country in Europe and my language is French. And you, Sofia? I am from Spain. My nationality is Spanish and I speak Spanish. Marie is from England. She speaks English, and she also speaks German. Is German a language in England? No! But Marie speaks it too. Ana is Peruvian. Her country is in America and she lives in Canada. The world is in this city, says Marc. And the United States? Paul was born in the United States, but he is Canadian. He lives in a Canadian city.",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
@@ -139,7 +139,7 @@
     },
     {
      "tipo": "vfnd",
-     "enunciado": "Sofia habla alemán.",
+     "enunciado": "Sofia es profesora.",
      "respuesta": "no dice"
     },
     {

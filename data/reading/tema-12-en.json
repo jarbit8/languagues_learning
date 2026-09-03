@@ -132,7 +132,7 @@
   },
   {
    "titulo": "Ropa para cada estacion",
-   "texto": "In winter Ana puts on a big coat, boots and gloves, and she wears a scarf and a sweater. Her coat is grey and it is cheap. In summer she wears a t-shirt, shorts and sneakers, and sometimes a hat. In spring she wears jeans, a shirt and a jacket. She never wears a dress or a skirt to work: she wears trousers with a belt. Laura wears a blue blouse and a black skirt. Her shoes are new and expensive. In bed Ana wears her pyjamas. What size are you? asks Laura. I am a medium, says Ana. When she comes back, she takes off her coat and she wears her old sweater. Elegant clothes are expensive, but her clothes are cheap.",
+   "texto": "In winter Ana puts on a big coat, boots and gloves, and she wears a scarf and a sweater. Her coat is grey and it is cheap. In summer she wears a t-shirt, shorts and sneakers, and sometimes a hat. In spring she wears jeans, a shirt and a jacket. She never wears a dress or a skirt to work: she wears trousers with a belt. Laura wears a blue blouse and a black skirt. Her shoes are new and expensive. In bed Ana wears her pyjamas. What size are you? asks Laura. I am a forty, says Ana. When she comes back, she takes off her coat and she wears her old sweater. Elegant clothes are expensive, but her clothes are cheap.",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
@@ -175,9 +175,10 @@
     {
      "tipo": "completar_dato",
      "enunciado": "What size is Ana?",
-     "respuesta": "medium",
+     "respuesta": "forty",
      "aceptadas": [
-      "a medium"
+      "a forty",
+      "40"
      ]
     },
     {

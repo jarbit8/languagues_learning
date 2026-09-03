@@ -14,7 +14,7 @@
     },
     {
      "hablante": "A",
-     "texto": "Do you play an instrument?"
+     "texto": "Do you play music?"
     },
     {
      "hablante": "B",
@@ -40,13 +40,13 @@
    "preguntas": [
     {
      "tipo": "opcion_multiple",
-     "enunciado": "¿Qué instrumento toca B?",
+     "enunciado": "¿Qué toca B?",
      "opciones": [
-      "drums",
-      "piano",
-      "guitar"
+      "the guitar",
+      "the ball",
+      "a game"
      ],
-     "respuesta": "guitar"
+     "respuesta": "the guitar"
     },
     {
      "tipo": "anota_la_hora",
@@ -67,7 +67,7 @@
      "enunciado": "¿Qué le gusta hacer a B en su tiempo libre además de fútbol?",
      "opciones": [
       "reading",
-      "watching movies",
+      "watching films",
       "listening to music"
      ],
      "respuesta": "listening to music"

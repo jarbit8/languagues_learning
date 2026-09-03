@@ -44,7 +44,7 @@
      "opciones": [
       "sunny",
       "rainy",
-      "snowy"
+      "cloudy"
      ],
      "respuesta": "sunny"
     },
@@ -201,7 +201,7 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué tiempo hace hoy?",
      "opciones": [
-      "cold and foggy",
+      "cold and with fog",
       "rainy and windy",
       "sunny and warm"
      ],

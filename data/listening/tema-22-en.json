@@ -10,7 +10,7 @@
     },
     {
      "hablante": "B",
-     "texto": "What happened yesterday?"
+     "texto": "What did you do yesterday?"
     },
     {
      "hablante": "A",
@@ -44,7 +44,7 @@
      "opciones": [
       "A bought a phone",
       "A downloaded an app",
-      "A lost the phone"
+      "A charged the battery"
      ],
      "respuesta": "A downloaded an app"
     },

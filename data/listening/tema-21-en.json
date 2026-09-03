@@ -18,7 +18,7 @@
     },
     {
      "hablante": "B",
-     "texto": "Yes, but I like it because it's interesting."
+     "texto": "Yes, but I like it because the classes are good."
     },
     {
      "hablante": "A",
@@ -30,7 +30,7 @@
     },
     {
      "hablante": "A",
-     "texto": "Good luck! Do you understand the lesson?"
+     "texto": "Do you understand the class?"
     },
     {
      "hablante": "B",
@@ -56,9 +56,9 @@
     {
      "tipo": "completar_dato",
      "enunciado": "¿Por qué le gusta la carrera a B?",
-     "respuesta": "because it's interesting",
+     "respuesta": "because the classes are good",
      "aceptadas": [
-      "interesting"
+      "the classes are good"
      ]
     },
     {
@@ -69,9 +69,10 @@
     {
      "tipo": "completar_dato",
      "enunciado": "¿Qué entiende bien B ahora?",
-     "respuesta": "the lesson",
+     "respuesta": "the class",
      "aceptadas": [
-      "lesson"
+      "the class",
+      "class"
      ]
     }
    ]

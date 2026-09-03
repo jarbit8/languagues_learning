@@ -207,9 +207,9 @@
      "opciones": [
       "sunny and warm",
       "hot and windy",
-      "foggy, with a grey sky"
+      "with fog and a grey sky"
      ],
-     "respuesta": "foggy, with a grey sky"
+     "respuesta": "with fog and a grey sky"
     },
     {
      "tipo": "completar_dato",
@@ -275,7 +275,7 @@
      "enunciado": "What is the weather like in summer?",
      "opciones": [
       "warm, with a blue sky",
-      "windy and foggy",
+      "windy, with fog",
       "cold and rainy"
      ],
      "respuesta": "warm, with a blue sky"

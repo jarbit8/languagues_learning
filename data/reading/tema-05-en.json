@@ -40,7 +40,7 @@
     },
     {
      "tipo": "vfnd",
-     "enunciado": "Laura es más alta que Ana.",
+     "enunciado": "Laura vive con Ana.",
      "respuesta": "no dice"
     },
     {
@@ -151,7 +151,7 @@
     },
     {
      "tipo": "vfnd",
-     "enunciado": "Laura y Marie son hermanas.",
+     "enunciado": "Marie y Laura trabajan juntas.",
      "respuesta": "no dice"
     },
     {
