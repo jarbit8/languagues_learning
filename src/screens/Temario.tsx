@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { useLiveQuery } from 'dexie-react-hooks'
+import { inicioDeHoy } from '../lib/fechas'
 import { mapaTemas } from '../lib/progreso'
 import { temasDeBloque, bloqueDeTema } from '../lib/curriculum'
 import { getVocabPack, getGramatica, getListening, getReading, getWriting, vocabPacks } from '../data/packs'
@@ -14,6 +15,7 @@ import {
   quitarPausa,
   enPausa,
   getPlan,
+  fijarInicio,
   SEMANA_FINAL,
   fechaDeDia,
   DIAS_FINAL,
@@ -43,8 +45,15 @@ export default function Temario() {
   const plan = useLiveQuery(() => getPlan(), [], PLAN_POR_DEFECTO)
   const temaActual = mapa?.find((t) => t.estado === 'en_curso')?.tema ?? 1
   const estado = estadoDelPlan(plan, temaActual)
+  const empezado = inicioDeHoy() >= plan.fechaInicio
   const [desde, setDesde] = useState('')
   const [hasta, setHasta] = useState('')
+  // Al revés que aFecha: input type=date quiere 'YYYY-MM-DD' en hora local.
+  const deFecha = (t: number) => {
+    const d = new Date(t)
+    const dos = (n: number) => String(n).padStart(2, '0')
+    return `${d.getFullYear()}-${dos(d.getMonth() + 1)}-${dos(d.getDate())}`
+  }
   // input type=date da 'YYYY-MM-DD'; se interpreta en hora local, no UTC.
   const aFecha = (v: string) => {
     const [a, m, d] = v.split('-').map(Number)
@@ -82,17 +91,34 @@ export default function Temario() {
         <div className="tarjeta flex flex-col gap-2">
           <div className="flex items-baseline justify-between">
             <span className="text-sm font-semibold">
-              {estado.terminado ? 'Cronograma terminado' : `Día ${estado.dia} de ${estado.totalDias}`}
+              {estado.terminado
+                ? 'Cronograma terminado'
+                : empezado
+                  ? `Día ${estado.dia} de ${estado.totalDias}`
+                  : `Empiezas el ${fechaCorta(plan.fechaInicio)}`}
             </span>
             <span className="text-xs text-slate-500 dark:text-slate-400">
               acabas el {fechaCorta(estado.fechaFin)}
             </span>
           </div>
-          {enPausa(plan, Date.now()) && (
+          {empezado && enPausa(plan, Date.now()) && (
             <p className="text-xs font-semibold text-amber-600 dark:text-amber-400">
               ⏸ Hoy estás en pausa: repasa lo visto, no avances tema.
             </p>
           )}
+
+          {/* El día de arranque manda sobre todo lo demás: al cambiarlo se recolocan las
+              pausas automáticas y se recalculan las fechas de los 24 temas. */}
+          <div className="flex flex-wrap items-center gap-2 text-xs">
+            <span className="text-slate-500 dark:text-slate-400">Empiezo el</span>
+            <input
+              type="date"
+              value={deFecha(plan.fechaInicio)}
+              onChange={(e) => { if (e.target.value) void fijarInicio(aFecha(e.target.value)) }}
+              className="rounded-lg border border-slate-300 bg-white px-2 py-1 dark:border-slate-600 dark:bg-slate-900"
+            />
+            <span className="text-slate-400 dark:text-slate-500">y las pausas se recolocan solas</span>
+          </div>
 
           {/* Pausas: semanas de exámenes, viajes… Los días de pausa no cuentan y todo lo
               que viene después se corre solo, sin cambiar el orden de los temas. */}
@@ -102,6 +128,7 @@ export default function Temario() {
                 ⏸ {fechaCorta(p.desde)}
                 {fechaCorta(p.hasta) !== fechaCorta(p.desde) && ` – ${fechaCorta(p.hasta)}`}
               </span>
+              {p.auto && <span className="text-slate-400 dark:text-slate-500">{p.motivo}</span>}
               <button onClick={() => void quitarPausa(p.desde)} className="text-slate-400 underline">
                 quitar
               </button>

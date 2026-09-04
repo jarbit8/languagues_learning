@@ -121,6 +121,8 @@ export interface PausaPlan {
   desde: number
   hasta: number
   motivo?: string
+  /** La puso el cronograma, no el usuario: se recalcula sola al cambiar la fecha de inicio. */
+  auto?: boolean
 }
 
 export interface PlanEstudio {

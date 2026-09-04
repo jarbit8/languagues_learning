@@ -1,6 +1,6 @@
 import { initializeApp, type FirebaseApp } from 'firebase/app'
 import { getAuth, type Auth } from 'firebase/auth'
-import { getFirestore, type Firestore } from 'firebase/firestore/lite'
+import { initializeFirestore, type Firestore } from 'firebase/firestore/lite'
 
 // Sincronización del progreso entre dispositivos (2026-09-03, pedido del usuario: "un día
 // usaré celular, otro día el pc"). Firebase es SOLO una capa de sincronización: la fuente de
@@ -45,6 +45,11 @@ export function getAuthRemoto(): Auth | undefined {
 export function getDbRemota(): Firestore | undefined {
   const a = getApp()
   if (!a) return undefined
-  if (!dbRemota) dbRemota = getFirestore(a)
+  // `ignoreUndefinedProperties` no es un capricho: Firestore revienta con "Unsupported field
+  // value: undefined" en cuanto un objeto lleva una clave puesta a undefined, y aquí pasa
+  // constantemente —una pausa sin motivo, un tema sin nota, una palabra sin ultimoExamen—
+  // porque en Dexie y en TypeScript un opcional ausente y uno en undefined son lo mismo.
+  // Con esto se manda como si la clave no estuviera, que es justo lo que significa.
+  if (!dbRemota) dbRemota = initializeFirestore(a, { ignoreUndefinedProperties: true })
   return dbRemota
 }
