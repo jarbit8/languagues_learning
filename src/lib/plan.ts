@@ -127,12 +127,16 @@ export async function anadirPausa(desde: number, hasta: number, motivo?: string)
   const plan = await getPlan()
   const pausa: PausaPlan = { desde: inicioDeHoy(desde), hasta: inicioDeHoy(hasta), motivo }
   const pausas = [...(plan.pausas ?? []), pausa].sort((a, b) => a.desde - b.desde)
-  await db.plan.put({ ...plan, pausas })
+  await db.plan.put({ ...plan, pausas, actualizado: Date.now() })
 }
 
 export async function quitarPausa(desde: number) {
   const plan = await getPlan()
-  await db.plan.put({ ...plan, pausas: (plan.pausas ?? []).filter((p) => p.desde !== desde) })
+  await db.plan.put({
+    ...plan,
+    pausas: (plan.pausas ?? []).filter((p) => p.desde !== desde),
+    actualizado: Date.now()
+  })
 }
 
 // Fecha real del día N del plan: se avanza por el calendario saltándose las pausas.

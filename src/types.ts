@@ -128,6 +128,9 @@ export interface PlanEstudio {
   fechaInicio: number
   diasPorTema: number
   pausas?: PausaPlan[]
+  /** Cuándo se guardó por última vez. Lo usa la sincronización para decidir qué copia gana:
+   *  el cronograma es una sola fila que se edita a mano, así que aquí sí manda la más reciente. */
+  actualizado?: number
 }
 
 export interface NotasBloque {

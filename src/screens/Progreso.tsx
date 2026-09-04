@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Temario from './Temario'
+import Cuenta from '../components/Cuenta'
 import { reiniciarCurso } from '../lib/reinicio'
 
 // Volver a cero. En dos pasos a propósito: borra todo y no hay respaldo en ninguna parte,
@@ -36,7 +37,7 @@ function ReiniciarCurso() {
       <p className="font-semibold text-rose-600 dark:text-rose-400">¿Borrar todo y empezar de cero?</p>
       <p className="text-sm text-slate-500 dark:text-slate-400">
         Se borran las palabras aprendidas y sus repasos, los temas y bloques aprobados, el historial de exámenes, la
-        pronunciación practicada y el cronograma. No se puede deshacer y no hay copia en ninguna parte.
+        pronunciación practicada y el cronograma. No se puede deshacer. Si tienes la cuenta conectada, al sincronizar después también se borra allí.
       </p>
       <div className="flex gap-2">
         <button onClick={() => void reiniciar()} className="btn-primary flex-1 !bg-rose-600">
@@ -60,6 +61,7 @@ export default function Progreso() {
   return (
     <div className="flex flex-col gap-4">
       <h1 className="text-2xl font-bold">Progreso</h1>
+      <Cuenta />
       <Temario />
       <ReiniciarCurso />
     </div>

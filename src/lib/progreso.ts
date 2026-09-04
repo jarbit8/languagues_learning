@@ -1,4 +1,5 @@
 import { db } from '../db'
+import { sincronizarPronto } from './sync'
 import { vocabPacks, getVocabPack } from '../data/packs'
 import { esHoy, inicioDeHoy, UN_DIA } from './fechas'
 import { temasDeBloque } from './curriculum'
@@ -214,6 +215,9 @@ export async function registrarExamenFinal(
 
 export async function registrarHistorial(tipo: TipoExamenHistorial, ref: number | string, nota: number, aprobado: boolean) {
   await db.historialExamenes.add({ tipo, ref, fecha: Date.now(), nota, aprobado })
+  // Todo examen pasa por aquí, así que es el sitio natural para subir el progreso a la
+  // cuenta. Si no hay sesión iniciada no hace nada.
+  sincronizarPronto()
 }
 
 export async function obtenerHistorial(): Promise<HistorialExamen[]> {

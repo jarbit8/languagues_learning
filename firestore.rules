@@ -1,0 +1,24 @@
+rules_version = '2';
+
+// Reglas de Firestore para languagues_learning.
+//
+// Todo el progreso vive bajo usuarios/{uid}/estado/{rama} y SOLO su dueño puede leerlo o
+// escribirlo. Esto es lo único que protege los datos: la configuración de Firebase viaja
+// dentro del bundle de la app y cualquiera puede leerla, así que la seguridad no puede
+// depender de ocultarla.
+//
+// Se pegan en la consola: Firestore Database → Reglas → pegar → Publicar.
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    match /usuarios/{uid}/{documento=**} {
+      allow read, write: if request.auth != null && request.auth.uid == uid;
+    }
+
+    // Cualquier otra ruta queda cerrada.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

@@ -18,6 +18,10 @@ export default defineConfig({
             if (/[\\/]node_modules[\\/](react|react-dom|react-router|react-router-dom|scheduler)[\\/]/.test(id))
               return 'vendor'
             if (/[\\/]node_modules[\\/]dexie/.test(id)) return 'dexie'
+            // Firebase solo entra en juego si el usuario conecta la cuenta, y se actualiza a
+            // un ritmo distinto del resto: en su propio trozo para no invalidar el bundle
+            // principal cada vez que cambia el SDK.
+            if (/[\\/]node_modules[\\/](@firebase|firebase)[\\/]/.test(id)) return 'firebase'
             return
           }
           // Los data packs de /data. src/data queda fuera solo, porque ahí todo es .ts.
@@ -54,12 +58,14 @@ export default defineConfig({
       workbox: {
         globPatterns: ['**/*.{js,css,html,png,svg,json,woff2}'],
         navigateFallback: base + 'index.html',
-        // La IA (speaking / corrección de writing) siempre va por red, nunca cacheada.
+        // Sincronizar la cuenta siempre va por red y nunca se cachea: una respuesta guardada
+        // de Firestore serviría progreso caducado. Sin internet la petición falla y la app
+        // sigue funcionando con lo que tiene en Dexie, que es justo lo que se busca.
+        // (Aquí había una regla para api.anthropic.com; se quedó huérfana al borrar la IA.)
         runtimeCaching: [
           {
-            urlPattern: /^https:\/\/api\.anthropic\.com\/.*/i,
-            handler: 'NetworkOnly',
-            method: 'POST'
+            urlPattern: /^https:\/\/(firestore|identitytoolkit|securetoken)\.googleapis\.com\/.*/i,
+            handler: 'NetworkOnly'
           }
         ]
       }
