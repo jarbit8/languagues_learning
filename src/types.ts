@@ -121,7 +121,8 @@ export interface PausaPlan {
   desde: number
   hasta: number
   motivo?: string
-  /** La puso el cronograma, no el usuario: se recalcula sola al cambiar la fecha de inicio. */
+  /** La puso el cronograma cuando aún colocaba pausas solo. Ya no se genera ninguna; queda
+   *  para reconocer y borrar las que dejó ese sistema al fijar la fecha de inicio. */
   auto?: boolean
 }
 

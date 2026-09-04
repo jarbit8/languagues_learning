@@ -90,40 +90,35 @@ export function fechaFinPrevista(): number {
 // existe si el usuario TOCA algo (añadir o quitar una pausa), y mientras tanto se usa este
 // plan por defecto. Se fueron con el botón `empezarPlan` y `borrarPlan`: si el plan se crea
 // solo, "quitar el cronograma" lo haría reaparecer en la siguiente recarga.
-// LAS PAUSAS ESTRUCTURALES SE CALCULAN, NO SE ESCRIBEN (2026-09-04). Antes eran dos fechas
-// clavadas al arranque del 1 de septiembre (10-18 oct y 1 nov); al mover el día de inicio
-// dejaban de caer donde tenían que caer y el cronograma quedaba descuadrado. Las dos existen
-// por la misma razón —que el bloque 4 y la semana final empiecen en LUNES— así que se
-// derivan de eso: se pausa desde el día siguiente al examen de bloque hasta el domingo.
+// LAS PAUSAS LAS PONE EL USUARIO, NO EL CRONOGRAMA (2026-09-04: "no pongan pausas
+// automáticas, yo haré todo eso manual"). Hubo dos intentos antes: primero dos fechas fijas
+// escritas a mano y luego un cálculo que las colocaba solas para que el bloque 4 y la semana
+// final empezaran en lunes. Los dos se han quitado. Consecuencia asumida: los días caen
+// donde caigan y ningún bloque tiene por qué arrancar en lunes; si eso importa, se arregla
+// con una pausa a mano.
 //
-// Las pausas del usuario (un viaje, una semana de exámenes) se respetan y entran en el
-// cálculo, porque mueven el calendario y por tanto mueven el lunes al que hay que llegar.
-export function conPausasAutomaticas(fechaInicio: number, manuales: PausaPlan[] = []): PausaPlan[] {
-  const pausas = manuales.filter((p) => !p.auto).sort((a, b) => a.desde - b.desde)
-  const hastaElLunes = (diaExamen: number, motivo: string) => {
-    // El día siguiente en días de PLAN, no de calendario: fechaDeDia ya se salta las pausas.
-    const arranque = fechaDeDia({ fechaInicio, pausas }, diaExamen + 1)
-    const faltan = (1 - new Date(arranque).getDay() + 7) % 7
-    if (faltan === 0) return
-    pausas.push({ desde: arranque, hasta: arranque + (faltan - 1) * UN_DIA, motivo, auto: true })
-    pausas.sort((a, b) => a.desde - b.desde)
-  }
-  hastaElLunes(diaDeExamenDeBloque(totalBloques() - 1), 'Para empezar el último bloque en lunes')
-  hastaElLunes(diaDeExamenDeBloque(totalBloques()), 'Para empezar la semana final en lunes')
-  return pausas
-}
+// Se siguen reconociendo por el motivo las que dejaron los dos sistemas viejos, para poder
+// borrarlas al fijar la fecha de inicio en vez de dejarlas ahí descuadrando el calendario.
+const MOTIVOS_AUTOMATICOS = new Set([
+  'Pausa antes del bloque 4',
+  'Descanso antes de la semana final',
+  'Para empezar el último bloque en lunes',
+  'Para empezar la semana final en lunes'
+])
 
-// Cambiar el día de arranque. Recoloca las pausas automáticas y tira las manuales que se
-// quedaron antes del nuevo inicio: una pausa anterior al día 1 no pausa nada y encima hace
-// que la app diga "hoy estás en pausa" cuando el curso ni siquiera ha empezado.
+const laPusoElUsuario = (p: PausaPlan) => !p.auto && !(p.motivo && MOTIVOS_AUTOMATICOS.has(p.motivo))
+
+// Cambiar el día de arranque. Deja solo las pausas propias que siguen teniendo sentido: se
+// van las que puso el cronograma viejo y las que quedaron antes del nuevo inicio (una pausa
+// anterior al día 1 no pausa nada y encima hace que la app diga "hoy estás en pausa" cuando
+// el curso ni siquiera ha empezado).
 export async function fijarInicio(fecha: number) {
   const plan = await getPlan()
   const fechaInicio = inicioDeHoy(fecha)
-  const mias = (plan.pausas ?? []).filter((p) => !p.auto && inicioDeHoy(p.hasta) >= fechaInicio)
   await db.plan.put({
     ...plan,
     fechaInicio,
-    pausas: conPausasAutomaticas(fechaInicio, mias),
+    pausas: (plan.pausas ?? []).filter((p) => laPusoElUsuario(p) && inicioDeHoy(p.hasta) >= fechaInicio),
     actualizado: Date.now()
   })
 }
@@ -132,23 +127,11 @@ export const PLAN_POR_DEFECTO: PlanEstudio = {
   id: ID_PLAN,
   fechaInicio: INICIO_A1,
   diasPorTema: DIAS_POR_TEMA,
-  pausas: conPausasAutomaticas(INICIO_A1)
+  pausas: []
 }
 
-// Las dos pausas de fábrica se guardaron en Dexie SIN la marca `auto`, porque cuando se
-// creó el plan eran fechas fijas escritas a mano y no había nada que recalcular. Se
-// reconocen por el motivo, que solo ponía el código: sin esto, al cambiar la fecha de
-// inicio se quedarían como pausas del usuario y saldrían duplicadas con las nuevas.
-const MOTIVOS_DE_FABRICA = new Set(['Pausa antes del bloque 4', 'Descanso antes de la semana final'])
-
 export async function getPlan(): Promise<PlanEstudio> {
-  const guardado = await db.plan.get(ID_PLAN)
-  if (!guardado) return PLAN_POR_DEFECTO
-  return {
-    ...guardado,
-    pausas: (guardado.pausas ?? []).map((p) =>
-      !p.auto && p.motivo && MOTIVOS_DE_FABRICA.has(p.motivo) ? { ...p, auto: true } : p)
-  }
+  return (await db.plan.get(ID_PLAN)) ?? PLAN_POR_DEFECTO
 }
 
 // --- Pausas -------------------------------------------------------------------------
@@ -168,22 +151,15 @@ export async function anadirPausa(desde: number, hasta: number, motivo?: string)
   // undefined, y una pausa escrita a mano casi nunca lleva motivo.
   const pausa: PausaPlan = { desde: inicioDeHoy(desde), hasta: inicioDeHoy(hasta) }
   if (motivo) pausa.motivo = motivo
-  // Las automáticas se recalculan: una pausa nueva corre el calendario, así que el lunes al
-  // que tienen que llegar el bloque 4 y la semana final ya no es el mismo.
-  const pausas = conPausasAutomaticas(plan.fechaInicio, [...(plan.pausas ?? []), pausa])
+  const pausas = [...(plan.pausas ?? []), pausa].sort((a, b) => a.desde - b.desde)
   await db.plan.put({ ...plan, pausas, actualizado: Date.now() })
 }
 
 export async function quitarPausa(desde: number) {
   const plan = await getPlan()
-  const fuera = (plan.pausas ?? []).find((p) => p.desde === desde)
-  const quedan = (plan.pausas ?? []).filter((p) => p.desde !== desde)
-  // Quitar una pausa propia recoloca las automáticas, por lo mismo que al añadirla. Quitar
-  // una automática la quita y punto: si se recalculara, volvería a aparecer sola y no habría
-  // forma de deshacerse de ella. Vuelve al cambiar la fecha de inicio o al poner otra pausa.
   await db.plan.put({
     ...plan,
-    pausas: fuera?.auto ? quedan : conPausasAutomaticas(plan.fechaInicio, quedan),
+    pausas: (plan.pausas ?? []).filter((p) => p.desde !== desde),
     actualizado: Date.now()
   })
 }

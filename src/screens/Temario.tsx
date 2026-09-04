@@ -107,8 +107,8 @@ export default function Temario() {
             </p>
           )}
 
-          {/* El día de arranque manda sobre todo lo demás: al cambiarlo se recolocan las
-              pausas automáticas y se recalculan las fechas de los 24 temas. */}
+          {/* El día de arranque manda sobre todo lo demás: al cambiarlo se recalculan las
+              fechas de los 24 temas. Las pausas las pone el usuario, ninguna sale sola. */}
           <div className="flex flex-wrap items-center gap-2 text-xs">
             <span className="text-slate-500 dark:text-slate-400">Empiezo el</span>
             <input
@@ -117,7 +117,6 @@ export default function Temario() {
               onChange={(e) => { if (e.target.value) void fijarInicio(aFecha(e.target.value)) }}
               className="rounded-lg border border-slate-300 bg-white px-2 py-1 dark:border-slate-600 dark:bg-slate-900"
             />
-            <span className="text-slate-400 dark:text-slate-500">y las pausas se recolocan solas</span>
           </div>
 
           {/* Pausas: semanas de exámenes, viajes… Los días de pausa no cuentan y todo lo
@@ -128,7 +127,6 @@ export default function Temario() {
                 ⏸ {fechaCorta(p.desde)}
                 {fechaCorta(p.hasta) !== fechaCorta(p.desde) && ` – ${fechaCorta(p.hasta)}`}
               </span>
-              {p.auto && <span className="text-slate-400 dark:text-slate-500">{p.motivo}</span>}
               <button onClick={() => void quitarPausa(p.desde)} className="text-slate-400 underline">
                 quitar
               </button>
