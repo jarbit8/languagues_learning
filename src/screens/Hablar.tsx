@@ -11,17 +11,22 @@ type Sub = 'hablar' | 'escuchar' | 'leer' | 'escribir'
 // 2026-08-30: es material de estudio transversal, no una destreza que se practique por tema.
 // Icono arriba y texto abajo: con 5 pestañas en una fila, "🔊 Pronunciar" en línea no cabe en
 // pantalla de celular (375px) y desbordaba horizontalmente.
+//
+// EL ORDEN ES EL DE LA SESIÓN, no uno cualquiera: escuchar → hablar → escribir → leer, que es
+// como él hace los 45 minutos. Empieza por el oído, que es lo que peor entra en frío, y acaba
+// leyendo, que es lo más tranquilo antes de dormir. Estaba con Hablar delante y no cuadraba
+// ni con la hoja para imprimir ni con la tarjeta de "Tu día".
 const TABS: { id: Sub; icono: string; label: string }[] = [
-  { id: 'hablar', icono: '🗣️', label: 'Hablar' },
   { id: 'escuchar', icono: '🎧', label: 'Escuchar' },
-  { id: 'leer', icono: '📖', label: 'Leer' },
-  { id: 'escribir', icono: '✍️', label: 'Escribir' }
+  { id: 'hablar', icono: '🗣️', label: 'Hablar' },
+  { id: 'escribir', icono: '✍️', label: 'Escribir' },
+  { id: 'leer', icono: '📖', label: 'Leer' }
 ]
 
 export default function Hablar() {
-  // Un enlace "¿cómo se hace este sonido?" desde una tarjeta de vocabulario entra con
-  // ?pron=<id>: hay que caer directamente en Pronunciar, no en Hablar.
-  const [sub, setSub] = useState<Sub>('hablar')
+  // Se abre en Escuchar, que es por donde empieza la sesión. (El comentario que había aquí
+  // hablaba de caer en Pronunciar con ?pron=, pero eso vive en Aprender desde que se movió.)
+  const [sub, setSub] = useState<Sub>('escuchar')
 
   return (
     <div className="flex flex-col gap-4">
