@@ -216,25 +216,3 @@ export function ultimaSync(): number | null {
   const v = localStorage.getItem(CLAVE_ULTIMO)
   return v ? Number(v) : null
 }
-
-// --- empuje automático ---
-//
-// El componente de Cuenta apunta aquí quién ha iniciado sesión, y cada examen terminado
-// dispara una sincronización unos segundos después. Es el momento en el que el progreso
-// cambia de verdad; entre examen y examen no hay nada que mandar.
-
-let uidActual: string | null = null
-
-export function fijarUid(uid: string | null): void {
-  uidActual = uid
-}
-
-let temporizador: ReturnType<typeof setTimeout> | undefined
-
-export function sincronizarPronto(): void {
-  if (!uidActual) return
-  clearTimeout(temporizador)
-  const uid = uidActual
-  // Se espera un poco para no mandar tres veces seguidas si se encadenan escrituras.
-  temporizador = setTimeout(() => { void sincronizar(uid) }, 4000)
-}

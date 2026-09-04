@@ -1,5 +1,5 @@
 import { db } from '../db'
-import { sincronizarPronto } from './sync'
+import { sincronizarPronto } from './autosync'
 import { vocabPacks, getVocabPack } from '../data/packs'
 import { esHoy, inicioDeHoy, UN_DIA } from './fechas'
 import { temasDeBloque } from './curriculum'

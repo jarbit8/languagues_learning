@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { HashRouter, Routes, Route, Navigate } from 'react-router-dom'
 import TabBar from './components/TabBar'
 import Inicio from './screens/Inicio'
@@ -6,8 +7,13 @@ import Examen from './screens/Examen'
 import Hablar from './screens/Hablar'
 import Progreso from './screens/Progreso'
 import HojaDePractica from './screens/HojaDePractica'
+import { arrancarSincronizacion } from './lib/autosync'
 
 export default function App() {
+  // Una sola vez y para toda la app: si esto viviera en una pantalla, solo sincronizaría
+  // mientras se estuviera en ella. Sin cuenta conectada no hace absolutamente nada.
+  useEffect(() => { arrancarSincronizacion() }, [])
+
   return (
     <HashRouter>
       <div className="mx-auto flex min-h-full max-w-md flex-col bg-slate-50 text-slate-900 dark:bg-slate-900 dark:text-slate-100">

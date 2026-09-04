@@ -1,10 +1,14 @@
-import { useEffect, useState } from 'react'
-import { entrar, hayFirebase, observarCuenta, salir, type Cuenta as DatosCuenta } from '../lib/cuenta'
-import { fijarUid, sincronizar, ultimaSync } from '../lib/sync'
+import { useSyncExternalStore } from 'react'
+import { entrar, hayFirebase, salir } from '../lib/cuenta'
+import { leerEstado, sincronizarAhora, suscribir } from '../lib/autosync'
 
 // Conectar la cuenta para que el progreso viaje entre el móvil y el PC. Es OPCIONAL: sin
 // conectar, la app funciona exactamente igual que antes, con todo guardado solo en este
 // aparato. Por eso no hay pantalla de login al abrir ni nada que empuje a registrarse.
+//
+// Esta tarjeta solo PINTA lo que hace el sincronizador, que vive en la app entera
+// (lib/autosync.ts) para que siga funcionando estando en cualquier pantalla. El botón es
+// para forzarlo, no para que la sincronización dependa de pulsarlo.
 
 function cuando(ms: number | null): string {
   if (!ms) return 'nunca'
@@ -16,55 +20,13 @@ function cuando(ms: number | null): string {
 }
 
 export default function Cuenta() {
-  const [cuenta, setCuenta] = useState<DatosCuenta | null>(null)
-  const [cargando, setCargando] = useState(true)
-  const [sincronizando, setSincronizando] = useState(false)
-  const [ultima, setUltima] = useState<number | null>(ultimaSync())
-  const [error, setError] = useState<string | null>(null)
+  const { cuenta, cargando, sincronizando, ultima, error } =
+    useSyncExternalStore(suscribir, leerEstado)
 
-  useEffect(() => observarCuenta((c) => {
-    setCuenta(c)
-    setCargando(false)
-    // para que el empuje automático de después de cada examen sepa a quién subirlo
-    fijarUid(c?.uid ?? null)
-  }), [])
-
-  // Al entrar y cada vez que la app vuelve a primer plano. Lo segundo es lo que hace que
-  // pasar del móvil al PC funcione sin tocar nada: al abrirla en el otro aparato, se trae
-  // lo que se hizo en el primero.
-  useEffect(() => {
-    if (!cuenta) return
-    let vivo = true
-    const correr = async () => {
-      if (document.hidden) return
-      setSincronizando(true)
-      const r = await sincronizar(cuenta.uid)
-      if (!vivo) return
-      setSincronizando(false)
-      setError(r.ok ? null : (r.error ?? 'No se pudo sincronizar'))
-      if (r.ok) setUltima(r.cuando)
-    }
-    void correr()
-    document.addEventListener('visibilitychange', correr)
-    return () => { vivo = false; document.removeEventListener('visibilitychange', correr) }
-  }, [cuenta])
-
-  async function sincronizarAhora() {
-    if (!cuenta) return
-    setSincronizando(true)
-    const r = await sincronizar(cuenta.uid)
-    setSincronizando(false)
-    setError(r.ok ? null : (r.error ?? 'No se pudo sincronizar'))
-    if (r.ok) { setUltima(r.cuando); location.reload() }
-  }
-
-  async function conectar() {
-    setError(null)
-    try {
-      await entrar()
-    } catch (e) {
-      setError(e instanceof Error ? e.message : 'No se pudo entrar')
-    }
+  async function forzar() {
+    // Al forzarlo a mano sí se recarga: es el gesto de "tráete lo del otro aparato ahora", y
+    // así se repintan de golpe las pantallas que ya estuvieran montadas.
+    if (await sincronizarAhora()) location.reload()
   }
 
   if (!hayFirebase || cargando) return null
@@ -77,7 +39,7 @@ export default function Cuenta() {
           Ahora mismo lo aprendido vive solo en este dispositivo. Si conectas tu cuenta de Google, el móvil y el PC
           comparten el mismo avance. Sin conectar, la app funciona igual que siempre.
         </p>
-        <button onClick={() => void conectar()} className="btn-primary self-start">
+        <button onClick={() => void entrar()} className="btn-primary self-start">
           Conectar con Google
         </button>
         {error && <p className="text-sm text-rose-600 dark:text-rose-400">{error}</p>}
@@ -95,11 +57,11 @@ export default function Cuenta() {
         </div>
       </div>
       <p className="text-sm text-slate-500 dark:text-slate-400">
-        {sincronizando ? 'Sincronizando…' : `Última sincronización: ${cuando(ultima)}`}
+        {sincronizando ? 'Sincronizando…' : `Se guarda solo · última vez ${cuando(ultima)}`}
       </p>
       {error && <p className="text-sm text-rose-600 dark:text-rose-400">{error}</p>}
       <div className="flex gap-2">
-        <button onClick={() => void sincronizarAhora()} disabled={sincronizando} className="btn-primary flex-1">
+        <button onClick={() => void forzar()} disabled={sincronizando} className="btn-primary flex-1">
           Sincronizar ahora
         </button>
         <button onClick={() => void salir()} className="flex-1 text-sm underline">
@@ -107,7 +69,8 @@ export default function Cuenta() {
         </button>
       </div>
       <p className="text-xs text-slate-400 dark:text-slate-500">
-        Desconectar no borra nada: el progreso se queda en este aparato y en tu cuenta.
+        Se sincroniza sola al abrir la app y al terminar cada examen. Desconectar no borra nada: el progreso se queda
+        en este aparato y en tu cuenta.
       </p>
     </div>
   )
