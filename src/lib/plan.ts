@@ -118,7 +118,7 @@ export async function fijarInicio(fecha: number) {
   await db.plan.put({
     ...plan,
     fechaInicio,
-    pausas: (plan.pausas ?? []).filter((p) => laPusoElUsuario(p) && inicioDeHoy(p.hasta) >= fechaInicio),
+    pausas: (plan.pausas ?? []).filter((p) => inicioDeHoy(p.hasta) >= fechaInicio),
     actualizado: Date.now()
   })
 }
@@ -131,7 +131,12 @@ export const PLAN_POR_DEFECTO: PlanEstudio = {
 }
 
 export async function getPlan(): Promise<PlanEstudio> {
-  return (await db.plan.get(ID_PLAN)) ?? PLAN_POR_DEFECTO
+  const guardado = await db.plan.get(ID_PLAN)
+  if (!guardado) return PLAN_POR_DEFECTO
+  // Las que dejaron los sistemas automáticos viejos se filtran al leer, no al fijar la
+  // fecha: si no, quien ya las tiene guardadas se quedaría con ellas para siempre salvo que
+  // eligiera una fecha de inicio DISTINTA, y volver a elegir la misma no dispara nada.
+  return { ...guardado, pausas: (guardado.pausas ?? []).filter(laPusoElUsuario) }
 }
 
 // --- Pausas -------------------------------------------------------------------------
