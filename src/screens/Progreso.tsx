@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Temario from './Temario'
 import Cuenta from '../components/Cuenta'
+import Rutina from '../components/Rutina'
 import { reiniciarCurso } from '../lib/reinicio'
 
 // Volver a cero. En dos pasos a propósito: borra todo y no hay respaldo en ninguna parte,
@@ -62,6 +63,7 @@ export default function Progreso() {
     <div className="flex flex-col gap-4">
       <h1 className="text-2xl font-bold">Progreso</h1>
       <Cuenta />
+      <Rutina />
       <Temario />
       <ReiniciarCurso />
     </div>
