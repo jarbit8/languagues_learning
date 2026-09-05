@@ -1,87 +1,13 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { useLiveQuery } from 'dexie-react-hooks'
 import { getGramatica } from '../data/packs'
 import { getProgresoTema, marcarGramaticaCompletada } from '../lib/progreso'
 import { preguntaDeEjercicio } from '../lib/preguntas'
 import { hablar } from '../lib/audio'
 import ExamRunner from '../components/ExamRunner'
+import { Resaltado, bloquesDeRegla } from '../components/ReglaGramatica'
 
-
-// Los textos de gramática citan los términos en inglés entre comillas simples ('to be', 'an').
-// Ojo: las contracciones inglesas usan el mismo carácter (I'm, isn't), así que solo se toma
-// como término la comilla que abre tras espacio/paréntesis y cierra antes de espacio o puntuación
-// — la de una contracción va pegada a una letra. Sin lookbehind, por Safari antiguo.
-const TERMINO = /(^|[\s(:—–-])'([^']+)'(?=[\s,.;:!?)]|$)/g
-
-function Resaltado({ texto }: { texto: string }) {
-  const chip = 'bg-en-soft text-en-dark dark:bg-en-dark/40 dark:text-en-soft'
-  const nodos: React.ReactNode[] = []
-  const re = new RegExp(TERMINO)
-  let ultimo = 0
-  let m: RegExpExecArray | null
-  while ((m = re.exec(texto)) !== null) {
-    nodos.push(texto.slice(ultimo, m.index) + m[1])
-    nodos.push(
-      <span key={m.index} className={`whitespace-nowrap rounded-md px-1.5 py-0.5 font-bold ${chip}`}>
-        {m[2]}
-      </span>
-    )
-    ultimo = m.index + m[0].length
-  }
-  nodos.push(texto.slice(ultimo))
-  return <>{nodos}</>
-}
-
-// La regla venía como un párrafo denso donde la conjugación quedaba enterrada. Se parte en
-// bloques por fin de frase (nunca dentro de paréntesis, para no romper "(literalmente: ...)")
-// y los pares "encabezado: patrón corto" se muestran como fórmula destacada.
-type BloqueRegla = { texto: string } | { label: string; patron: string }
-
-function trocea(texto: string): string[] {
-  const partes: string[] = []
-  let actual = ''
-  let prof = 0
-  for (let i = 0; i < texto.length; i++) {
-    const c = texto[i]
-    actual += c
-    if (c === '(') prof++
-    else if (c === ')') prof = Math.max(0, prof - 1)
-    if (prof === 0 && (c === '.' || c === ':') && /\s/.test(texto[i + 1] ?? '')) {
-      const resto = texto.slice(i + 1).trimStart()
-      // Tras "." se exige mayúscula para no cortar abreviaturas; tras ":" siempre corta.
-      if (c === ':' || /^[A-ZÁÉÍÓÚÑ¡¿]/.test(resto)) {
-        partes.push(actual.trim())
-        actual = ''
-      }
-    }
-  }
-  if (actual.trim()) partes.push(actual.trim())
-  return partes
-}
-
-const esPatron = (s: string) => s.length <= 70 && !s.endsWith(':')
-
-function bloquesDeRegla(regla: string): BloqueRegla[] {
-  const b = trocea(regla)
-  const out: BloqueRegla[] = []
-  let i = 0
-  while (i < b.length) {
-    let t = b[i]
-    i++
-    // Un encabezado suelto se pega a lo que sigue hasta encontrar un patrón que destacar.
-    while (t.endsWith(':') && i < b.length && !esPatron(b[i])) {
-      t += ' ' + b[i]
-      i++
-    }
-    if (t.endsWith(':') && i < b.length && esPatron(b[i])) {
-      out.push({ label: t, patron: b[i] })
-      i++
-    } else {
-      out.push({ texto: t })
-    }
-  }
-  return out
-}
 
 function Regla({ regla }: { regla: string }) {
   const caja = 'border-en bg-en-soft/60 text-en-dark dark:border-en dark:bg-en-dark/25 dark:text-en-soft'
@@ -264,6 +190,15 @@ function LeccionCard({
       >
         {completada ? '↻ Repetir ejercicios' : `Practicar · ${pack.ejercicios.length} ejercicios →`}
       </button>
+
+      {/* La lección entera en papel, ejercicios incluidos: parte de los 45 min los hace fuera
+          de pantallas y hasta ahora la gramática era lo único que no se podía imprimir. */}
+      <Link
+        to="/hoja-gramatica"
+        className="self-center text-sm text-slate-500 underline dark:text-slate-400"
+      >
+        🖨️ Imprimir esta lección
+      </Link>
     </div>
   )
 }
