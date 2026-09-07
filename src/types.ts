@@ -69,6 +69,8 @@ export type TipoPregunta =
   | 'completar_dato'
   | 'anota_la_hora'
   | 'formulario'
+  // Dictado de deletreo: el enunciado no dice nada, el material es el audio.
+  | 'deletreo'
 
 export interface Pregunta {
   tipo: TipoPregunta
@@ -79,6 +81,8 @@ export interface Pregunta {
   aceptadas?: string[]
   palabraId?: string
   pista?: string
+  /** Solo en 'deletreo': la frase que envuelve al deletreo, con {} en su sitio. */
+  frase?: string
 }
 
 // --- Listening (packs en /data/listening) ---
@@ -314,6 +318,30 @@ export interface ExpresionesPack {
   titulo: string
   nota: string
   grupos: GrupoExpresiones[]
+}
+
+// --- Deletreo (pack en /data/deletreo) ---
+// El abecedario no puede ser un tema: un tema son tarjetas que entran al SRS y a un examen
+// que pregunta "¿qué significa X?", y "¿qué significa B?" no tiene respuesta. Pero saber
+// las letras sueltas no es saber deletrear, así que la habilidad se entrena aquí: oyes las
+// letras y escribes la palabra. Transversal como pronunciación; el `tema` de cada ítem dice
+// desde cuándo se tiene su vocabulario.
+
+export interface ItemDeletreo {
+  /** Lo que hay que escribir. En el escalón 1 es una sola letra. */
+  texto: string
+  es: string
+  /** 1 letra suelta · 2 palabra deletreada · 3 deletreada dentro de una frase. */
+  escalon: 1 | 2 | 3
+  /** Solo en el escalón 3: la frase que se lee, con {} donde va `texto` deletreado. */
+  frase?: string
+  tema: number
+}
+
+export interface DeletreoPack {
+  titulo: string
+  nota: string
+  items: ItemDeletreo[]
 }
 
 // --- Writing (packs en /data/writing) ---

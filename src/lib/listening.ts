@@ -83,3 +83,37 @@ export function reproducirLinea(
 export function detener() {
   if (typeof window !== 'undefined' && 'speechSynthesis' in window) window.speechSynthesis.cancel()
 }
+
+// DELETREO. Pasarle "ANA" al TTS no sirve: lee la palabra, no las letras. Hay que mandar cada
+// letra como una utterance suelta — encoladas salen con la pausa natural entre ellas, que
+// además es como se deletrea de verdad. `frase` envuelve al deletreo ("My name is {}."): sus
+// trozos van a velocidad de diálogo y solo las letras van despacio.
+export function reproducirDeletreo(
+  texto: string,
+  opts: { lento?: boolean; frase?: string; onFin?: () => void } = {}
+) {
+  if (typeof window === 'undefined' || !('speechSynthesis' in window)) return
+  window.speechSynthesis.cancel()
+  const voz = vocesDialogo()[0]
+  const rLetra = opts.lento ? 0.5 : 0.7
+  const rFrase = opts.lento ? 0.6 : 0.85
+  const [antes, despues = ''] = (opts.frase ?? '{}').split('{}')
+  const conLetras = (s: string) => /[a-z]/i.test(s)
+  // El punto que cierra el hueco ("... is {}. Nice to meet you.") se queda pegado al principio
+  // del trozo de detrás y sale como una utterance de un punto suelto.
+  const cola = despues.replace(/^[\s.,;:!?]+/, '')
+  const partes = [
+    ...(conLetras(antes) ? [{ t: antes.trim(), r: rFrase }] : []),
+    ...[...texto].filter(conLetras).map((c) => ({ t: c.toUpperCase() + '.', r: rLetra })),
+    ...(conLetras(cola) ? [{ t: cola.trim(), r: rFrase }] : [])
+  ]
+
+  partes.forEach((parte, i) => {
+    const u = new SpeechSynthesisUtterance(parte.t)
+    u.lang = 'en-US'
+    u.rate = parte.r
+    if (voz) u.voice = voz
+    if (i === partes.length - 1) u.onend = () => opts.onFin?.()
+    window.speechSynthesis.speak(u)
+  })
+}

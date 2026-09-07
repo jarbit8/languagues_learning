@@ -243,6 +243,16 @@ for (const { archivo, pack } of packs('reading', (f) => f.endsWith('-en.json')))
     })
   })
 }
+// Deletreo: cada ítem declara desde qué tema puede salir, así que se comprueba contra ese
+// tema y no contra uno global. Las letras sueltas del escalón 1 caen en "desconocidas" y no
+// molestan; lo que importa es que la frase del escalón 3 no adelante vocabulario.
+for (const { archivo, pack } of packs('deletreo')) {
+  pack.items.forEach((it, i) => {
+    push(archivo, it.tema, `ítem ${i + 1} (${it.texto})`, it.texto)
+    push(archivo, it.tema, `ítem ${i + 1} frase`, (it.frase ?? '').replace('{}', it.texto))
+  })
+}
+
 // El writing es por bloque: su tope de vocabulario es el último tema del bloque.
 for (const { archivo, pack } of packs('writing', (f) => f.endsWith('-en.json'))) {
   pack.consignas.forEach((c, i) =>

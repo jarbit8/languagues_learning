@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import type { Pregunta } from '../types'
 import { coincide } from '../lib/normaliza'
 import { hablar } from '../lib/audio'
+import { reproducirDeletreo } from '../lib/listening'
 import { conceptoPorId } from '../data/packs'
 
 type Resultado = null | 'bien' | 'mal'
@@ -18,7 +19,8 @@ const TEXTO_LIBRE: Pregunta['tipo'][] = [
   'corregir_error',
   'traducir',
   'completar_dato',
-  'anota_la_hora'
+  'anota_la_hora',
+  'deletreo'
 ]
 
 export default function ExamRunner({
@@ -68,6 +70,15 @@ export default function ExamRunner({
 // componente entre secciones de distinto tamaño), antes se leía preguntas[idx].tipo de undefined
   // y la app quedaba en PANTALLA EN BLANCO. Mejor cerrar la sección que romperse.
   const p = preguntas[idx]
+
+  // Dictado de deletreo: el material ES el audio y el enunciado calla a propósito, así que
+  // suena solo al entrar en la pregunta. El hook va ANTES del early return de abajo: detrás
+  // cambiaría el número de hooks entre renders.
+  useEffect(() => {
+    if (p?.tipo === 'deletreo' && p.audioTexto) reproducirDeletreo(p.audioTexto, { frase: p.frase })
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [idx])
+
   if (!p) {
     return (
       <div className="tarjeta flex flex-col gap-3">
@@ -96,6 +107,14 @@ export default function ExamRunner({
       aciertosRef.current += 1
     }
     onAnswer?.(p, bien)
+    // En el dictado el premio es oír por fin la palabra dicha de corrido, no deletreada.
+    // Salvo cuando la respuesta ES una letra: ahí hay que volver a deletrearla, porque
+    // hablar("A") suelta la vocal, no el nombre de la letra.
+    if (p.tipo === 'deletreo') {
+      if (p.respuesta.length === 1) reproducirDeletreo(p.respuesta)
+      else hablar(p.respuesta)
+      return
+    }
     // Cuando la respuesta se escribe en español, el refuerzo de audio es la palabra
     // en inglés (audioTexto), no lo que tecleó el usuario.
     const aLeer = p.tipo === 'significado_escrito' ? p.audioTexto : p.respuesta
@@ -142,6 +161,23 @@ export default function ExamRunner({
       <div className="tarjeta flex flex-col gap-4">
         <p className="text-lg font-semibold">{p.enunciado}</p>
         {p.pista && <p className="text-sm text-slate-500 dark:text-slate-400">Pista: {p.pista}</p>}
+
+        {p.tipo === 'deletreo' && p.audioTexto && (
+          <div className="flex gap-2">
+            <button
+              onClick={() => reproducirDeletreo(p.audioTexto!, { frase: p.frase })}
+              className="btn-primary flex-1"
+            >
+              🔊 Repetir
+            </button>
+            <button
+              onClick={() => reproducirDeletreo(p.audioTexto!, { frase: p.frase, lento: true })}
+              className="btn bg-slate-200 text-slate-700 dark:bg-slate-700 dark:text-slate-200"
+            >
+              🐢 Lento
+            </button>
+          </div>
+        )}
 
         {p.tipo === 'opcion_multiple' ? (
           <div className="flex flex-col gap-2">

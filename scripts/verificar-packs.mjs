@@ -220,6 +220,36 @@ for (const { archivo, pack } of packs('expresiones')) {
   })
 }
 
+// --- Deletreo ---
+// El audio se arma letra a letra desde `texto`, asi que un espacio o un guion dentro se
+// convierte en una letra que nadie puede escribir. En el escalon 3 la frase TIENE que llevar
+// el hueco {}: sin el, la palabra no se deletrea por ningun lado y la pregunta no tiene
+// respuesta posible.
+for (const { archivo, pack } of packs('deletreo')) {
+  const vistos = new Set()
+  for (const it of pack.items ?? []) {
+    const donde = it.texto ?? '(sin texto)'
+    for (const campo of ['texto', 'es']) if (!String(it[campo] ?? '').trim()) mal(archivo, donde, `sin ${campo}`)
+    if (!/^[A-Za-z]+$/.test(it.texto ?? '')) mal(archivo, donde, 'el texto debe ser una sola palabra de letras')
+    if (![1, 2, 3].includes(it.escalon)) mal(archivo, donde, `escalón inválido: ${it.escalon}`)
+    if (it.escalon === 1 && (it.texto ?? '').length !== 1)
+      mal(archivo, donde, 'el escalón 1 es de letras sueltas')
+    if (it.escalon === 3 && !String(it.frase ?? '').includes('{}'))
+      mal(archivo, donde, 'el escalón 3 necesita una frase con {}')
+    if (it.escalon !== 3 && it.frase) mal(archivo, donde, 'solo el escalón 3 lleva frase')
+    if (!(it.tema >= 1 && it.tema <= totalTemas)) mal(archivo, donde, `tema fuera de rango: ${it.tema}`)
+    const clave = `${it.escalon}:${norm(it.texto ?? '')}`
+    if (vistos.has(clave)) mal(archivo, donde, 'repetido en el mismo escalón')
+    else vistos.add(clave)
+  }
+  // Una sesion pide 3 letras + 4 palabras + 2 frases: con menos, se repite dentro de la
+  // misma tanda y se nota.
+  for (const [escalon, minimo] of [[1, 3], [2, 4], [3, 2]]) {
+    const n = (pack.items ?? []).filter((i) => i.escalon === escalon && i.tema === 1).length
+    if (n < minimo) mal(archivo, `escalón ${escalon}`, `solo ${n} ítems desde el tema 1, hacen falta ${minimo}`)
+  }
+}
+
 // SESGO DE POSICION: si la opcion correcta cae casi siempre la primera, el examen se
 // aprueba sin leer el texto. Paso el 2026-09-03: 94% de 557 preguntas la tenian en la
 // primera posicion. La app solo baraja los ejercicios de 'ordenar', asi que el orden del

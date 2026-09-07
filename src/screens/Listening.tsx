@@ -1,10 +1,11 @@
 import { useState } from 'react'
 import { useLiveQuery } from 'dexie-react-hooks'
-import type { DialogoListening } from '../types'
+import type { DialogoListening, Pregunta } from '../types'
 import { temaEnCurso } from '../lib/progreso'
 import { getVocabPack, getListening } from '../data/packs'
 import { reproducirDialogo, reproducirLinea, detener, rateListening } from '../lib/listening'
 import { preguntaDeListening } from '../lib/preguntas'
+import { sesionDeletreo, itemsDisponibles } from '../lib/deletreo'
 import ExamRunner from '../components/ExamRunner'
 import SelectorDia from '../components/SelectorDia'
 import AvisoVoz from '../components/AvisoVoz'
@@ -120,6 +121,7 @@ export default function Listening() {
   // Un diálogo por día: enseñar los dos juntos destripa el material del día siguiente.
   const [dia, setDia] = useState<1 | 2>(1)
   const [examenDialogo, setExamenDialogo] = useState<number | null>(null)
+  const [deletreo, setDeletreo] = useState<Pregunta[] | null>(null)
   const [resultado, setResultado] = useState<{ aciertos: number; total: number } | null>(null)
 
   const temaSel = tema ?? temaActual
@@ -129,6 +131,7 @@ export default function Listening() {
   function reset() {
     detener()
     setExamenDialogo(null)
+    setDeletreo(null)
     setResultado(null)
   }
 
@@ -137,27 +140,45 @@ export default function Listening() {
     setTema(t)
   }
 
+  // --- Resultado: lo comparten los dos ejercicios de la pantalla (diálogo y deletreo) ---
+  if (resultado) {
+    const pct = Math.round((resultado.aciertos / resultado.total) * 100)
+    const emoji = pct >= 80 ? '🎉' : pct >= 60 ? '👍' : '💪'
+    return (
+      <div className="flex flex-col gap-4">
+        <div className="tarjeta flex flex-col items-center gap-2 py-8">
+          <span className="text-5xl">{emoji}</span>
+          <span className="text-5xl font-black">{pct}%</span>
+          <span className="text-slate-500 dark:text-slate-400">
+            {resultado.aciertos} de {resultado.total} correctas
+          </span>
+        </div>
+        <button onClick={reset} className="btn-primary">
+          Volver al listening
+        </button>
+      </div>
+    )
+  }
+
+  // --- Modo dictado de deletreo ---
+  if (deletreo) {
+    return (
+      <div className="flex flex-col gap-4">
+        <button onClick={reset} className="self-start text-sm text-slate-500 underline dark:text-slate-400">
+          ← Salir del dictado
+        </button>
+        <ExamRunner
+          preguntas={deletreo}
+          etiqueta="Deletreo"
+          onFinish={(aciertos, total) => setResultado({ aciertos, total })}
+        />
+      </div>
+    )
+  }
+
   // --- Modo examen de un diálogo ---
   if (pack && examenDialogo !== null) {
     const dialogo = pack.dialogos[examenDialogo]
-    if (resultado) {
-      const pct = Math.round((resultado.aciertos / resultado.total) * 100)
-      const emoji = pct >= 80 ? '🎉' : pct >= 60 ? '👍' : '💪'
-      return (
-        <div className="flex flex-col gap-4">
-          <div className="tarjeta flex flex-col items-center gap-2 py-8">
-            <span className="text-5xl">{emoji}</span>
-            <span className="text-5xl font-black">{pct}%</span>
-            <span className="text-slate-500 dark:text-slate-400">
-              {resultado.aciertos} de {resultado.total} correctas
-            </span>
-          </div>
-          <button onClick={reset} className="btn-primary">
-            Volver al listening
-          </button>
-        </div>
-      )
-    }
     const preguntas = dialogo.preguntas.map(preguntaDeListening)
     return (
       <div className="flex flex-col gap-4">
@@ -200,6 +221,25 @@ export default function Listening() {
           const i = pack.dialogos.indexOf(d)
           return <DialogoCard key={i} dialogo={d} indice={i} tema={temaSel} onExamen={setExamenDialogo} />
         })
+      )}
+
+      {/* DELETREO (2026-09-07). El abecedario vivía solo en Pronunciar: 26 letras con audio y
+          un entrenador de pares. Eso entrena reconocer UNA letra, que no es la habilidad —
+          la habilidad es oírlas seguidas y armar la palabra. No cabía como tema (el examen de
+          vocabulario pregunta "¿qué significa X?" y con una letra eso no existe), así que va
+          aquí, que es donde el material es audio. */}
+      {itemsDisponibles(temaSel).length > 0 && (
+        <div className="tarjeta flex flex-col gap-3">
+          <h2 className="font-bold">🔤 Dictado: deletreo</h2>
+          <p className="text-sm text-slate-500 dark:text-slate-400">
+            Oyes las letras sueltas y escribes la palabra — la palabra no se dice, la armas tú.
+            Es la primera parte del listening de IELTS y lo que te tocará al dar tu apellido por
+            teléfono. Salen solo palabras cuyo vocabulario ya viste.
+          </p>
+          <button onClick={() => setDeletreo(sesionDeletreo(temaSel))} className="btn-primary">
+            Empezar dictado
+          </button>
+        </div>
       )}
     </div>
   )
