@@ -1,9 +1,19 @@
 // Web Speech API. Las voces cargan de forma asíncrona (evento voiceschanged).
 let voces: SpeechSynthesisVoice[] = []
 
+// Las voces llegan tarde, así que quien las necesite para PINTAR algo (el aviso de "no hay
+// voz en inglés") tiene que enterarse cuando aparezcan, no solo al montar.
+const oyentesVoces = new Set<() => void>()
+
+export function suscribirVoces(avisar: () => void): () => void {
+  oyentesVoces.add(avisar)
+  return () => { oyentesVoces.delete(avisar) }
+}
+
 function cargarVoces() {
   if (typeof window === 'undefined' || !('speechSynthesis' in window)) return
   voces = window.speechSynthesis.getVoices()
+  for (const avisar of oyentesVoces) avisar()
 }
 
 if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
@@ -38,11 +48,14 @@ export function generoVoz(v: SpeechSynthesisVoice): 'f' | 'm' | '?' {
   return '?'
 }
 
+// El tercer escalón —'en' a secas— no es adorno: un aparato puede traer en-AU, en-IN o en-CA
+// y ninguna de las dos primeras. Sin él la utterance se quedaba sin voz asignada y la leía la
+// del sistema, en español, sin que nada lo indicara.
 function elegirVoz(lang: string, fallback: string): SpeechSynthesisVoice | undefined {
   const norm = (s: string) => s.toLowerCase().replace('_', '-')
   const candidatas = (idiomaBuscado: string) =>
     voces.filter((v) => norm(v.lang).startsWith(norm(idiomaBuscado))).sort((a, b) => puntuarVoz(b) - puntuarVoz(a))
-  return candidatas(lang)[0] ?? candidatas(fallback)[0]
+  return candidatas(lang)[0] ?? candidatas(fallback)[0] ?? candidatas('en')[0]
 }
 
 let velocidadGuardada = Number(localStorage.getItem('audio.rate') ?? '0.9') || 0.9

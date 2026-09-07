@@ -7,6 +7,7 @@ import { reproducirDialogo, reproducirLinea, detener, rateListening } from '../l
 import { preguntaDeListening } from '../lib/preguntas'
 import ExamRunner from '../components/ExamRunner'
 import SelectorDia from '../components/SelectorDia'
+import AvisoVoz from '../components/AvisoVoz'
 import { porDia } from '../lib/porDia'
 
 // Estima la duración del audio TTS (aprox — la velocidad real depende de la voz del dispositivo).
@@ -178,6 +179,8 @@ export default function Listening() {
           dejaba elegir temas pasados y era ruido: al aprobar el examen aparece el siguiente y
           ya está. Para repasar lo anterior están Aprender → Aprendido y Exámenes → POR TEMA. */}
       <p className="text-sm font-semibold">{`Tema ${temaSel} — ${getVocabPack(temaSel)?.titulo ?? ''}`}</p>
+
+      <AvisoVoz />
 
       <SelectorDia dia={dia} onCambio={setDia} />
 

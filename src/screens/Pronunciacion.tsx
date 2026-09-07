@@ -7,6 +7,7 @@ import { hablar } from '../lib/audio'
 import { baraja } from '../lib/preguntas'
 import { db } from '../db'
 import { guardarResultado, marcarClaro } from '../lib/pronunciacion'
+import AvisoVoz from '../components/AvisoVoz'
 
 
 // --- Entrenador de oído: suena UNA de las dos palabras del par y hay que acertar cuál fue.
@@ -236,6 +237,7 @@ export default function Pronunciacion() {
         Los {pack.grupos.length} puntos donde a un hispanohablante se le nota el acento — y dónde se pierde
         entendiendo. {conPares} traen entrenamiento de oído con pares mínimos.
       </p>
+      <AvisoVoz />
       {pack.grupos.map((g) => (
         <GrupoCard
           key={g.id}
