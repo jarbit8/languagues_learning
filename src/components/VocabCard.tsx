@@ -42,6 +42,16 @@ export default function VocabCard({
                 / {concepto.pron} /
               </span>
             )}
+            {/* Buena parte de estas tarjetas son frases hechas y traducirlas palabra por
+                palabra da otra cosa (you're welcome = "eres bienvenido"). Se enseña el
+                significado y AL LADO lo que la frase no quiere decir: si no se dice, el
+                estudiante lo deduce solo y mal. */}
+            {concepto.literal && (
+              <p className="mt-1 text-xs leading-relaxed text-rose-600 dark:text-rose-300">
+                <span className="font-semibold">Palabra por palabra:</span>{' '}
+                <span className="line-through decoration-rose-300">{concepto.literal}</span>
+              </p>
+            )}
             {/* Si la palabra lleva un sonido que al hispanohablante se le atraganta, el
                 consejo del módulo de pronunciación se enseña AQUÍ, junto a la palabra:
                 antes solo existía en una pantalla aparte y había que ir a buscarlo. */}

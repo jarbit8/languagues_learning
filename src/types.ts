@@ -7,6 +7,8 @@ export interface Concepto {
   ejemplo: string
   pron?: string
   nota?: string
+  /** Qué diría la tarjeta traducida palabra por palabra, cuando eso no es lo que significa. */
+  literal?: string
 }
 
 export interface VocabPack {
@@ -280,6 +282,34 @@ export interface RubricaPack {
   titulo: string
   nota: string
   grupos: GrupoRubrica[]
+}
+
+// --- Expresiones (pack en /data/expresiones) ---
+//
+// Frases que no se pueden traducir palabra por palabra. Transversales al nivel, como la
+// rúbrica y la pronunciación: `tema` dice desde cuándo se tiene el vocabulario para usarlas,
+// no en qué tema se enseñan.
+
+export interface Expresion {
+  texto: string
+  es: string
+  /** La traducción palabra por palabra, la que NO significa. Es el contenido de la ficha. */
+  literal: string
+  pron: string
+  ejemplo: string
+  tema: number
+}
+
+export interface GrupoExpresiones {
+  titulo: string
+  nota: string
+  expresiones: Expresion[]
+}
+
+export interface ExpresionesPack {
+  titulo: string
+  nota: string
+  grupos: GrupoExpresiones[]
 }
 
 // --- Writing (packs en /data/writing) ---

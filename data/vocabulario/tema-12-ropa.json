@@ -104,6 +104,7 @@
    "id": "a1-t12-015",
    "es": "ponerse",
    "texto": "to put on",
+   "literal": "poner sobre",
    "ejemplo": "Put on your jacket.",
    "pron": "tu put ON"
   },
@@ -188,6 +189,7 @@
    "id": "a1-t12-028",
    "es": "probarse",
    "texto": "to try on",
+   "literal": "intentar sobre",
    "ejemplo": "Can I try on this dress?",
    "pron": "tu trai ON"
   },
@@ -195,6 +197,7 @@
    "id": "a1-t12-029",
    "es": "quitarse",
    "texto": "to take off",
+   "literal": "tomar fuera",
    "ejemplo": "Take off your hat.",
    "pron": "tu teik OF"
   },

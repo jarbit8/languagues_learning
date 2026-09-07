@@ -6,6 +6,7 @@
    "id": "a1-t09-001",
    "es": "levantarse",
    "texto": "to get up",
+   "literal": "conseguir arriba",
    "ejemplo": "I get up at seven.",
    "pron": "tu guet AP"
   },
@@ -13,6 +14,7 @@
    "id": "a1-t09-002",
    "es": "despertarse",
    "texto": "to wake up",
+   "literal": "despertar arriba",
    "ejemplo": "I wake up early.",
    "pron": "tu ueik AP"
   },
@@ -20,6 +22,7 @@
    "id": "a1-t09-003",
    "es": "desayunar",
    "texto": "to have breakfast",
+   "literal": "tener desayuno",
    "ejemplo": "I have breakfast at eight.",
    "pron": "tu jav BREK-fast"
   },
@@ -27,6 +30,7 @@
    "id": "a1-t09-004",
    "es": "almorzar",
    "texto": "to have lunch",
+   "literal": "tener almuerzo",
    "ejemplo": "I have lunch at noon.",
    "pron": "tu jav LANCH"
   },
@@ -34,6 +38,7 @@
    "id": "a1-t09-005",
    "es": "cenar",
    "texto": "to have dinner",
+   "literal": "tener cena",
    "ejemplo": "We have dinner at night.",
    "pron": "tu jav DI-ner"
   },
@@ -48,6 +53,7 @@
    "id": "a1-t09-007",
    "es": "volver",
    "texto": "to come back",
+   "literal": "venir atrás",
    "ejemplo": "I come back at six.",
    "pron": "tu kam BAK"
   },
@@ -69,6 +75,7 @@
    "id": "a1-t09-010",
    "es": "lavarse los dientes",
    "texto": "to brush your teeth",
+   "literal": "cepillar TUS dientes",
    "ejemplo": "I brush my teeth.",
    "pron": "tu brash yor TIZ"
   },
@@ -125,6 +132,7 @@
    "id": "a1-t09-018",
    "es": "vestirse",
    "texto": "to get dressed",
+   "literal": "conseguir vestido",
    "ejemplo": "I get dressed quickly.",
    "pron": "tu guet DREST"
   },
@@ -139,6 +147,7 @@
    "id": "a1-t09-020",
    "es": "salir",
    "texto": "to go out",
+   "literal": "ir fuera",
    "ejemplo": "I go out at eight.",
    "pron": "tu gou AUT"
   },
@@ -188,6 +197,7 @@
    "id": "a1-t09-027",
    "es": "escuchar música",
    "texto": "to listen to music",
+   "literal": "escuchar A música",
    "ejemplo": "I listen to music.",
    "pron": "tu LI-sen tu MIU-sik"
   },
@@ -195,6 +205,7 @@
    "id": "a1-t09-028",
    "es": "acostarse",
    "texto": "to go to bed",
+   "literal": "ir a cama",
    "ejemplo": "I go to bed at eleven.",
    "pron": "tu gou tu BED"
   },
@@ -209,6 +220,7 @@
    "id": "a1-t09-031",
    "es": "hacer la cama",
    "texto": "to make the bed",
+   "literal": "fabricar la cama",
    "ejemplo": "I make the bed every morning.",
    "pron": "tu MEIK de BED"
   },

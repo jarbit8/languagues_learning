@@ -62,6 +62,7 @@
    "id": "a1-t15-009",
    "es": "¿cuánto cuesta?",
    "texto": "how much is it?",
+   "literal": "¿cuánto es ello?",
    "ejemplo": "How much is it?",
    "pron": "jau MACH is it"
   },
@@ -76,6 +77,7 @@
    "id": "a1-t15-011",
    "es": "mucho",
    "texto": "a lot of",
+   "literal": "un lote de",
    "ejemplo": "There is a lot of fruit.",
    "pron": "a LOT ov"
   },
@@ -195,6 +197,7 @@
    "id": "a1-t15-031",
    "es": "en oferta",
    "texto": "on sale",
+   "literal": "sobre venta",
    "ejemplo": "This jacket is on sale.",
    "pron": "on SEIL"
   },

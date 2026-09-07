@@ -83,6 +83,7 @@
    "id": "a1-t23-020",
    "es": "hacer las maletas",
    "texto": "to pack",
+   "literal": "empacar",
    "ejemplo": "I pack tonight.",
    "pron": "tu PAK"
   },
@@ -97,6 +98,7 @@
    "id": "a1-t23-022",
    "es": "tomar el avión",
    "texto": "to fly",
+   "literal": "volar",
    "ejemplo": "I fly to Canada.",
    "pron": "tu FLAI"
   },

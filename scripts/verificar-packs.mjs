@@ -184,6 +184,39 @@ for (const { archivo, pack } of packs('pronunciacion')) {
   })
 }
 
+// --- Expresiones ---
+// Como pronunciación y rúbrica, NO pasa por el verificador de vocabulario: usa a propósito
+// palabras de fuera del temario (sleepy, hurry, cake) porque enseña frases hechas, no léxico.
+// Lo que sí se vigila es que cada ficha esté completa, que el `literal` diga algo DISTINTO
+// del significado —si coinciden, la frase no era de las que engañan y la ficha sobra— y que
+// el tema al que se ancla exista.
+const totalTemas = packs('vocabulario').length
+for (const { archivo, pack } of packs('expresiones')) {
+  const textos = new Set()
+  pack.grupos?.forEach((g, i) => {
+    const grupo = g.titulo ?? `grupo ${i + 1}`
+    if (!String(g.nota ?? '').trim()) mal(archivo, grupo, 'sin nota que explique el patrón')
+    if (!g.expresiones?.length) mal(archivo, grupo, 'sin expresiones')
+    for (const e of g.expresiones ?? []) {
+      const donde = `${grupo} · ${e.texto ?? '(sin texto)'}`
+      for (const campo of ['texto', 'es', 'literal', 'pron', 'ejemplo'])
+        if (!String(e[campo] ?? '').trim()) mal(archivo, donde, `sin ${campo}`)
+      if (textos.has(e.texto)) mal(archivo, donde, 'expresión repetida')
+      else textos.add(e.texto)
+      if (e.literal && norm(e.literal) === norm(e.es))
+        mal(archivo, donde, 'el literal y el significado son el mismo: no engaña a nadie')
+      if (!(e.tema >= 1 && e.tema <= totalTemas)) mal(archivo, donde, `tema fuera de rango: ${e.tema}`)
+      // El ejemplo lleva la expresión CONJUGADA y con complementos por medio ("she looks
+      // after her brother", "that phone costs an arm and a leg"), así que buscar la frase
+      // entera marcaría media lista. Con la última palabra basta para cazar lo que importa:
+      // un ejemplo pegado de otra ficha.
+      const cierre = norm(e.texto ?? '').split(' ').pop()
+      if (e.ejemplo && cierre && !norm(e.ejemplo).split(' ').includes(cierre))
+        mal(archivo, donde, `el ejemplo no menciona "${cierre}"`)
+    }
+  })
+}
+
 // SESGO DE POSICION: si la opcion correcta cae casi siempre la primera, el examen se
 // aprueba sin leer el texto. Paso el 2026-09-03: 94% de 557 preguntas la tenian en la
 // primera posicion. La app solo baraja los ejercicios de 'ordenar', asi que el orden del

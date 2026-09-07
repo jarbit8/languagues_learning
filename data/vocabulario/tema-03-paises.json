@@ -146,6 +146,7 @@
    "id": "a1-t03-023",
    "es": "¿de dónde eres?",
    "texto": "where are you from?",
+   "literal": "¿dónde eres tú de?",
    "ejemplo": "Where are you from?",
    "pron": "UER ar yu FROM"
   },
@@ -195,6 +196,7 @@
    "id": "a1-t03-030",
    "es": "nacer en",
    "texto": "to be born in",
+   "literal": "ser nacido en",
    "ejemplo": "I was born in Peru.",
    "pron": "tu bi BORN in"
   },

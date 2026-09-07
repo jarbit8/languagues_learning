@@ -97,6 +97,7 @@
    "id": "a1-t20-015",
    "es": "gustar",
    "texto": "to like",
+   "nota": "«Me gusta» se dice al revés: I like it, literalmente «yo gusto ello». El que gusta eres tú, no la cosa.",
    "ejemplo": "I like sport.",
    "pron": "tu LAIK"
   },
@@ -104,6 +105,7 @@
    "id": "a1-t20-016",
    "es": "encantar",
    "texto": "to love",
+   "nota": "«Me encanta» se dice al revés: I love it, literalmente «yo amo ello».",
    "ejemplo": "I love music.",
    "pron": "tu LAV"
   },
@@ -118,6 +120,7 @@
    "id": "a1-t20-018",
    "es": "tiempo libre",
    "texto": "free time",
+   "literal": "tiempo gratis",
    "ejemplo": "In my free time I read.",
    "pron": "FRI TAIM"
   },

@@ -76,6 +76,7 @@
    "id": "a1-t14-011",
    "es": "tener sed",
    "texto": "to be thirsty",
+   "literal": "ser sediento",
    "ejemplo": "I am thirsty.",
    "pron": "tu bi ZERS-ti"
   },
@@ -104,6 +105,7 @@
    "id": "a1-t14-015",
    "es": "quisiera",
    "texto": "I would like",
+   "literal": "yo gustaría",
    "ejemplo": "I would like a coffee.",
    "pron": "ai uud LAIK",
    "nota": "Forma cortés para pedir."
@@ -203,6 +205,7 @@
    "id": "a1-t14-031",
    "es": "gaseosa",
    "texto": "soft drink",
+   "literal": "bebida suave",
    "ejemplo": "I would like a soft drink.",
    "pron": "soft DRINK"
   },
@@ -210,6 +213,7 @@
    "id": "a1-t14-032",
    "es": "helado",
    "texto": "ice cream",
+   "literal": "crema de hielo",
    "ejemplo": "For dessert, ice cream please.",
    "pron": "AIS krim"
   }

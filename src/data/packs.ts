@@ -1,4 +1,4 @@
-import type { VocabPack, GramaticaPack, ListeningPack, ReadingPack, WritingPack, PronPack, RubricaPack, DialogoConTema } from '../types'
+import type { VocabPack, GramaticaPack, ListeningPack, ReadingPack, WritingPack, PronPack, RubricaPack, ExpresionesPack, DialogoConTema } from '../types'
 
 // Los data packs viven en /data (raíz). Se importan en build → quedan en el bundle
 // y por tanto en el precache del service worker (offline total).
@@ -40,6 +40,11 @@ const rubricaModules = import.meta.glob('/data/rubrica/en.json', { eager: true }
   { default: RubricaPack }
 >
 
+const expresionesModules = import.meta.glob('/data/expresiones/en.json', { eager: true }) as Record<
+  string,
+  { default: ExpresionesPack }
+>
+
 const listar = <T>(modulos: Record<string, { default: T }>): T[] =>
   Object.values(modulos).map((m) => m.default)
 
@@ -74,6 +79,10 @@ export const rubricaPack: RubricaPack | undefined = listar(rubricaModules)[0]
 
 // Pronunciación: transversal al nivel, no por tema.
 export const pronPack: PronPack | undefined = listar(pronModules)[0]
+
+// Expresiones que no se traducen literal: también transversal. El `tema` de cada una dice
+// desde cuándo se tiene el vocabulario para usarla, no en qué tema se enseña.
+export const expresionesPack: ExpresionesPack | undefined = listar(expresionesModules)[0]
 
 // Lectura POR TEMA (2026-07-25): antes era por bloque. Una lectura por tema para que el estudio
 // diario cubra las 5 habilidades del mismo tema.
