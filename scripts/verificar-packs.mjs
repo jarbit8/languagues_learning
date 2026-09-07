@@ -201,6 +201,9 @@ for (const { archivo, pack } of packs('expresiones')) {
       const donde = `${grupo} · ${e.texto ?? '(sin texto)'}`
       for (const campo of ['texto', 'es', 'literal', 'pron', 'ejemplo'])
         if (!String(e[campo] ?? '').trim()) mal(archivo, donde, `sin ${campo}`)
+      // Sin nivel la pantalla aparenta que todo lo que hay dentro es del nivel en curso, que
+      // es justo al revés: solo 14 de las 68 son A1.
+      if (!['A1', 'A2', 'B1', 'B2'].includes(e.nivel)) mal(archivo, donde, `nivel inválido: ${e.nivel}`)
       if (textos.has(e.texto)) mal(archivo, donde, 'expresión repetida')
       else textos.add(e.texto)
       if (e.literal && norm(e.literal) === norm(e.es))

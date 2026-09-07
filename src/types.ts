@@ -290,8 +290,12 @@ export interface RubricaPack {
 // rúbrica y la pronunciación: `tema` dice desde cuándo se tiene el vocabulario para usarlas,
 // no en qué tema se enseñan.
 
+export type NivelExpresion = 'A1' | 'A2' | 'B1' | 'B2'
+
 export interface Expresion {
   texto: string
+  /** Nivel CEFR real de la frase. Casi ninguna es A1: se etiqueta para no aparentar que sí. */
+  nivel: NivelExpresion
   es: string
   /** La traducción palabra por palabra, la que NO significa. Es el contenido de la ficha. */
   literal: string
