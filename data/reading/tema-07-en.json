@@ -3,7 +3,7 @@
  "textos": [
   {
    "titulo": "Los días de Ana",
-   "texto": "Ana works on Monday and on Wednesday. On Tuesday and on Thursday she studies. On Friday she is with her friends, and on the weekend she is with Laura. Her birthday is in May, in spring. Her brother's birthday is in December, in winter. In Canada, summer is short and autumn is beautiful. In Peru, summer is in December and in January. Today is Thursday. Tomorrow is Friday and Ana is happy! The day after tomorrow is Saturday. The day before yesterday: Tuesday, a day of work. In June her family comes to Canada. Every Sunday Ana speaks with her mother and with her grandmother, and every month she speaks with her cousins too. And your birthday, Laura? In August, she says. In one week!",
+   "texto": "Ana works on Monday and on Wednesday. On Tuesday and on Thursday she studies. On Friday she is with her friends, and on the weekend she is with Laura. Her birthday is in May, in spring. Her brother's birthday is in December, in winter. In Canada, summer is short and fall is beautiful. In Peru, summer is in December and in January. Today is Thursday. Tomorrow is Friday and Ana is happy! The day after tomorrow is Saturday. The day before yesterday: Tuesday, a day of work. In June her family comes to Canada. Every Sunday Ana speaks with her mother and with her grandmother, and every month she speaks with her cousins too. And your birthday, Laura? In August, she says. In one week!",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
@@ -64,7 +64,7 @@
   },
   {
    "titulo": "El calendario de Laura",
-   "texto": "When is your birthday, Laura? It is in February, in winter. And your brother? His birthday is in August, in summer. What day is today? Today is Monday. Tomorrow is Tuesday and the day after tomorrow is Wednesday. On Thursday and on Friday Laura works in the office. On Saturday and on Sunday she is with her family: that is the weekend. Every month has four weeks and every week has seven days. January, February, March, April, May, June, July, August, September, October, November and December: twelve months in one year. Spring is in March and April. Summer is in June and July. Autumn is in September and October. Winter is in December and January. And the date of the weekend? Saturday and Sunday, of course! Very well, Laura.",
+   "texto": "When is your birthday, Laura? It is in February, in winter. And your brother? His birthday is in August, in summer. What day is today? Today is Monday. Tomorrow is Tuesday and the day after tomorrow is Wednesday. On Thursday and on Friday Laura works in the office. On Saturday and on Sunday she is with her family: that is the weekend. Every month has four weeks and every week has seven days. January, February, March, April, May, June, July, August, September, October, November and December: twelve months in one year. Spring is in March and April. Summer is in June and July. Fall is in September and October. Winter is in December and January. And the date of the weekend? Saturday and Sunday, of course! Very well, Laura.",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
@@ -128,7 +128,7 @@
   },
   {
    "titulo": "El año de Ana",
-   "texto": "The year has twelve months and four seasons. In Canada, winter is in December, January and February. Spring is in March, April and May. Summer is in June, July and August, and autumn is in September, October and November. Ana works from Monday to Friday. On Saturday and on Sunday she is with Laura: that is the weekend. Today is Tuesday and tomorrow is Wednesday. The day after tomorrow is Thursday. Her birthday is in May and her brother's birthday is in December. Every month Ana speaks with her family, and every week she is with her friends. In one year she is here!",
+   "texto": "The year has twelve months and four seasons. In Canada, winter is in December, January and February. Spring is in March, April and May. Summer is in June, July and August, and fall is in September, October and November. Ana works from Monday to Friday. On Saturday and on Sunday she is with Laura: that is the weekend. Today is Tuesday and tomorrow is Wednesday. The day after tomorrow is Thursday. Her birthday is in May and her brother's birthday is in December. Every month Ana speaks with her family, and every week she is with her friends. In one year she is here!",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
@@ -230,7 +230,7 @@
   },
   {
    "titulo": "Examen · El calendario de Marie",
-   "texto": "Marie works from Monday to Thursday. On Friday she is with her family and on Saturday and Sunday she is with her friends: that is her weekend. Her birthday is in November, in autumn. Her brother's birthday is in July, in summer. The year has twelve months and four seasons: spring in March, April and May; summer in June, July and August; autumn in September, October and November; winter in December, January and February. Today is Friday, tomorrow is Saturday and the day after tomorrow is Sunday. The day before yesterday was Wednesday, a day of work. Every week has seven days and every month has four weeks. In one month it is December!",
+   "texto": "Marie works from Monday to Thursday. On Friday she is with her family and on Saturday and Sunday she is with her friends: that is her weekend. Her birthday is in November, in the fall. Her brother's birthday is in July, in summer. The year has twelve months and four seasons: spring in March, April and May; summer in June, July and August; fall in September, October and November; winter in December, January and February. Today is Friday, tomorrow is Saturday and the day after tomorrow is Sunday. The day before yesterday was Wednesday, a day of work. Every week has seven days and every month has four weeks. In one month it is December!",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
@@ -270,7 +270,7 @@
     {
      "tipo": "completar_dato",
      "enunciado": "¿En qué estación está noviembre?",
-     "respuesta": "autumn"
+     "respuesta": "fall"
     },
     {
      "tipo": "vf",

@@ -44,7 +44,7 @@
      "opciones": [
       "near the park",
       "near the station",
-      "in the centre"
+      "in the center"
      ],
      "respuesta": "near the park"
     },
@@ -242,15 +242,15 @@
     },
     {
      "hablante": "B",
-     "texto": "We can go to the cinema or to the theatre."
+     "texto": "We can go to the movie theater or to the theater."
     },
     {
      "hablante": "A",
-     "texto": "I prefer the cinema. Where is it?"
+     "texto": "I prefer the movie theater. Where is it?"
     },
     {
      "hablante": "B",
-     "texto": "In the city centre, near the stadium."
+     "texto": "In the city center, near the stadium."
     }
    ],
    "preguntas": [
@@ -272,9 +272,9 @@
     {
      "tipo": "completar_dato",
      "enunciado": "¿Dónde está el cine?",
-     "respuesta": "in the city centre",
+     "respuesta": "in the city center",
      "aceptadas": [
-      "city centre",
+      "city center",
       "near the stadium"
      ]
     }
@@ -293,7 +293,7 @@
     },
     {
      "hablante": "A",
-     "texto": "Is your house far from the city centre?"
+     "texto": "Is your house far from the city center?"
     },
     {
      "hablante": "B",
@@ -322,7 +322,7 @@
      "enunciado": "¿Dónde vive Marie?",
      "opciones": [
       "near the hospital",
-      "in the city centre",
+      "in the city center",
       "in a street near the park"
      ],
      "respuesta": "in a street near the park"

@@ -3,17 +3,17 @@
  "textos": [
   {
    "titulo": "La ciudad de Ana",
-   "texto": "Ana lives in a small city. Her house is in a street near the city centre. In the centre there is a big square with a church and the town hall. Next to the square there is a bank and a post office. The bank is open from nine to four, but on Sunday it is closed. There is a pharmacy in the same street: it is open every day. Ana works in a school near the park. The park is very big and there is a zoo in it. On Saturday she visits the museum or she goes to the cinema with Laura. The cinema is in a street near the theatre. The library is far from her house, but the school is very near. There is a station, a hotel and a hospital in this city, and the airport is far, near the bridge. One can visit all the places in one day.",
+   "texto": "Ana lives in a small city. Her house is in a street near the city center. In the center there is a big square with a church and the city hall. Next to the square there is a bank and a post office. The bank is open from nine to four, but on Sunday it is closed. There is a pharmacy in the same street: it is open every day. Ana works in a school near the park. The park is very big and there is a zoo in it. On Saturday she visits the museum or she goes to the movie theater with Laura. The movie theater is in a street near the theater. The library is far from her house, but the school is very near. There is a station, a hotel and a hospital in this city, and the airport is far, near the bridge. One can visit all the places in one day.",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
      "enunciado": "What is in the big square?",
      "opciones": [
-      "a church and the town hall",
+      "a church and the city hall",
       "the station and the airport",
       "a school and a zoo"
      ],
-     "respuesta": "a church and the town hall"
+     "respuesta": "a church and the city hall"
     },
     {
      "tipo": "vf",
@@ -42,7 +42,7 @@
     },
     {
      "tipo": "vfnd",
-     "enunciado": "Laura lives near the cinema.",
+     "enunciado": "Laura lives near the movie theater.",
      "respuesta": "no dice"
     },
     {
@@ -55,7 +55,7 @@
      "enunciado": "What is near the bridge?",
      "opciones": [
       "the pharmacy",
-      "the town hall",
+      "the city hall",
       "the airport"
      ],
      "respuesta": "the airport"
@@ -69,7 +69,7 @@
   },
   {
    "titulo": "Un domingo en el centro",
-   "texto": "On Sunday Ana and Paul visit the city centre. First they go to the big square, because on Sunday there is a market there. Then they visit the museum next to the church. The museum is open from ten to six and it is not expensive: the students do not pay. After the museum they are hungry, so they eat in a café near the theatre. The café is small, but the food is delicious. At four they walk to the park and they visit the zoo. Paul prefers the stadium, because it is very big, but today the stadium is closed. The library and the bank are closed too: it is Sunday. The pharmacy near the station is open every day. At seven they come back: the park is not far from the house of Ana, and Paul walks to his house.",
+   "texto": "On Sunday Ana and Paul visit the city center. First they go to the big square, because on Sunday there is a market there. Then they visit the museum next to the church. The museum is open from ten to six and it is not expensive: the students do not pay. After the museum they are hungry, so they eat in a café near the theater. The café is small, but the food is delicious. At four they walk to the park and they visit the zoo. Paul prefers the stadium, because it is very big, but today the stadium is closed. The library and the bank are closed too: it is Sunday. The pharmacy near the station is open every day. At seven they come back: the park is not far from the house of Ana, and Paul walks to his house.",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
@@ -92,7 +92,7 @@
      "respuesta": "in a café",
      "aceptadas": [
       "a café",
-      "in a café near the theatre",
+      "in a café near the theater",
       "café"
      ]
     },
@@ -135,7 +135,7 @@
   },
   {
    "titulo": "Lugares cerca de casa",
-   "texto": "Laura lives in a street near the station. In her street there is a pharmacy, a café and a small shop. The pharmacy is open every day, but the shop is closed on Sunday. The hospital is not far: it is next to the park. Her school is in the city centre, near the square and the church. Laura can walk to the school in twenty minutes. The library is between the museum and the town hall. She visits the library every Tuesday, because there one can read and study. The post office and the bank are in the same street, next to the police station. On Saturday Laura goes to the cinema or to the theatre with Ana. The cinema is near the stadium, but the theatre is far. The airport is very far from the city centre. Laura prefers her street: all the places are near.",
+   "texto": "Laura lives in a street near the station. In her street there is a pharmacy, a café and a small shop. The pharmacy is open every day, but the shop is closed on Sunday. The hospital is not far: it is next to the park. Her school is in the city center, near the square and the church. Laura can walk to the school in twenty minutes. The library is between the museum and the city hall. She visits the library every Tuesday, because there one can read and study. The post office and the bank are in the same street, next to the police station. On Saturday Laura goes to the movie theater or to the theater with Ana. The movie theater is near the stadium, but the theater is far. The airport is very far from the city center. Laura prefers her street: all the places are near.",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
@@ -165,11 +165,11 @@
      "tipo": "opcion_multiple",
      "enunciado": "Where is the library?",
      "opciones": [
-      "near the airport, far from the centre",
-      "between the museum and the town hall",
+      "near the airport, far from the center",
+      "between the museum and the city hall",
       "next to the park and the hospital"
      ],
-     "respuesta": "between the museum and the town hall"
+     "respuesta": "between the museum and the city hall"
     },
     {
      "tipo": "vf",
@@ -185,22 +185,22 @@
      "tipo": "opcion_multiple",
      "enunciado": "What is near the stadium?",
      "opciones": [
-      "the theatre",
+      "the theater",
       "the hospital",
-      "the cinema"
+      "the movie theater"
      ],
-     "respuesta": "the cinema"
+     "respuesta": "the movie theater"
     },
     {
      "tipo": "vf",
-     "enunciado": "The airport is near the city centre.",
+     "enunciado": "The airport is near the city center.",
      "respuesta": "falso"
     }
    ]
   },
   {
    "titulo": "Un día de visitas",
-   "texto": "Paul has a free day, so he visits many places in the city. In the morning he goes to the bank, because he needs money. The bank is open at nine. Then he goes to the post office in the same square. At eleven he is in the museum near the church: today it is free for the students. The museum is very big and one can see a lot of things there. At one Paul eats in a café near the park. After lunch he visits the zoo with his friend Lee. The zoo is open from ten to five and it is not expensive. Then they walk to the library, but the library is closed on Saturday. So they go to the cinema in the city centre. The cinema is near the stadium and the theatre. At night Paul is very tired: this city is not small!",
+   "texto": "Paul has a free day, so he visits many places in the city. In the morning he goes to the bank, because he needs money. The bank is open at nine. Then he goes to the post office in the same square. At eleven he is in the museum near the church: today it is free for the students. The museum is very big and one can see a lot of things there. At one Paul eats in a café near the park. After lunch he visits the zoo with his friend Lee. The zoo is open from ten to five and it is not expensive. Then they walk to the library, but the library is closed on Saturday. So they go to the movie theater in the city center. The movie theater is near the stadium and the theater. At night Paul is very tired: this city is not small!",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
@@ -243,7 +243,7 @@
     },
     {
      "tipo": "vfnd",
-     "enunciado": "Lee works in the city centre.",
+     "enunciado": "Lee works in the city center.",
      "respuesta": "no dice"
     },
     {
@@ -265,17 +265,17 @@
   },
   {
    "titulo": "Examen · La ciudad de Marie",
-   "texto": "Marie lives in a big city, in a street near the park. In the city centre there is a square with a church, the town hall and the police station. The bank and the post office are in the same street, but the bank is closed on Saturday. There is a pharmacy near her house and it is open every day. Marie works in a hospital far from the city centre. On Saturday she visits the museum or she goes to the cinema with her sister. The museum is next to the library and it is not expensive. The theatre is near the station, and there is a big stadium near the bridge. Marie prefers the park: one can walk there and it is very beautiful. The airport is very far from her house. In this city one can visit many places in one day.",
+   "texto": "Marie lives in a big city, in a street near the park. In the city center there is a square with a church, the city hall and the police station. The bank and the post office are in the same street, but the bank is closed on Saturday. There is a pharmacy near her house and it is open every day. Marie works in a hospital far from the city center. On Saturday she visits the museum or she goes to the movie theater with her sister. The museum is next to the library and it is not expensive. The theater is near the station, and there is a big stadium near the bridge. Marie prefers the park: one can walk there and it is very beautiful. The airport is very far from her house. In this city one can visit many places in one day.",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
      "enunciado": "What is in the square?",
      "opciones": [
-      "a church, the town hall and the police station",
+      "a church, the city hall and the police station",
       "the bank and the post office",
       "the museum and the library"
      ],
-     "respuesta": "a church, the town hall and the police station"
+     "respuesta": "a church, the city hall and the police station"
     },
     {
      "tipo": "vf",
@@ -295,7 +295,7 @@
      "tipo": "opcion_multiple",
      "enunciado": "What is next to the library?",
      "opciones": [
-      "the theatre",
+      "the theater",
       "the museum",
       "the stadium"
      ],

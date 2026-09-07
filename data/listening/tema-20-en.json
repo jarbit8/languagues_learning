@@ -10,7 +10,7 @@
     },
     {
      "hablante": "B",
-     "texto": "I like playing football and listening to music."
+     "texto": "I like playing soccer and listening to music."
     },
     {
      "hablante": "A",
@@ -22,11 +22,11 @@
     },
     {
      "hablante": "A",
-     "texto": "Cool! Do you want to play football on Saturday?"
+     "texto": "Cool! Do you want to play soccer on Saturday?"
     },
     {
      "hablante": "B",
-     "texto": "Yes, I love playing football!"
+     "texto": "Yes, I love playing soccer!"
     },
     {
      "hablante": "A",
@@ -67,7 +67,7 @@
      "enunciado": "¿Qué le gusta hacer a B en su tiempo libre además de fútbol?",
      "opciones": [
       "reading",
-      "watching films",
+      "watching movies",
       "listening to music"
      ],
      "respuesta": "listening to music"
@@ -125,7 +125,7 @@
      "opciones": [
       "tennis and swimming",
       "music and dance",
-      "football and basketball"
+      "soccer and basketball"
      ],
      "respuesta": "tennis and swimming"
     },
@@ -181,7 +181,7 @@
     },
     {
      "hablante": "B",
-     "texto": "I play tennis on Saturday. I hate football."
+     "texto": "I play tennis on Saturday. I hate soccer."
     },
     {
      "hablante": "A",
@@ -303,11 +303,11 @@
     },
     {
      "hablante": "A",
-     "texto": "Do you like football?"
+     "texto": "Do you like soccer?"
     },
     {
      "hablante": "B",
-     "texto": "No, I hate football. I play tennis."
+     "texto": "No, I hate soccer. I play tennis."
     },
     {
      "hablante": "A",

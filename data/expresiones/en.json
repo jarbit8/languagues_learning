@@ -116,7 +116,7 @@
     { "texto":"to feel blue", "nivel":"B2", "es":"estar triste, estar de bajón", "literal":"sentirse azul", "pron":"tu fil BLU", "ejemplo":"I feel blue on Sunday nights.", "tema":19},
     { "texto":"under the weather", "nivel":"B2", "es":"sentirse mal, estar pachucho", "literal":"debajo del clima", "pron":"AN-der de UE-der", "ejemplo":"I'm under the weather today.", "tema":18},
     { "texto":"to have a sweet tooth", "nivel":"B2", "es":"ser goloso", "literal":"tener un diente dulce", "pron":"tu jav a SUIT TUZ", "ejemplo":"My sister has a sweet tooth.", "tema":19},
-    { "texto":"once in a blue moon", "nivel":"B2", "es":"muy de vez en cuando", "literal":"una vez en una luna azul", "pron":"uans in a blu MUN", "ejemplo":"I go to the cinema once in a blue moon.", "tema":18},
+    { "texto":"once in a blue moon", "nivel":"B2", "es":"muy de vez en cuando", "literal":"una vez en una luna azul", "pron":"uans in a blu MUN", "ejemplo":"I go to the movie theater once in a blue moon.", "tema":18},
     { "texto":"to be over the moon", "nivel":"B2", "es":"estar feliz de la vida", "literal":"estar sobre la luna", "pron":"tu bi OU-ver de MUN", "ejemplo":"She is over the moon with her grade.", "tema":21},
     { "texto":"to have a green thumb", "nivel":"B2", "es":"tener buena mano con las plantas", "literal":"tener un pulgar verde", "pron":"tu jav a grin ZAM", "ejemplo":"My mother has a green thumb: her garden is beautiful.", "tema":18},
     { "texto":"to see red", "nivel":"B2", "es":"ponerse furioso", "literal":"ver rojo", "pron":"tu si RED", "ejemplo":"My boss sees red when we arrive late.", "tema":11},

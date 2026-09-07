@@ -1,7 +1,7 @@
 {
  "tema": 21,
  "titulo": "Pronombres de objeto y conectores",
- "regla": "Los pronombres de objeto (me, you, him, her, it, us, them) van después del verbo: 'I like it', 'She helps me'. Conectores: 'because' (porque) da la razón, 'so' (así que) da la consecuencia: 'I study because I like it, so I practise.' Conectores básicos: 'and' suma, 'but' contrasta y 'or' da alternativa — I study and I work; it is difficult but I like it; maths or history?",
+ "regla": "Los pronombres de objeto (me, you, him, her, it, us, them) van después del verbo: 'I like it', 'She helps me'. Conectores: 'because' (porque) da la razón, 'so' (así que) da la consecuencia: 'I study because I like it, so I practice.' Conectores básicos: 'and' suma, 'but' contrasta y 'or' da alternativa — I study and I work; it is difficult but I like it; math or history?",
  "pronunciacion": "Them y they se confunden fácil — 'them' es más corto y débil al hablar.",
  "trampa": "El pronombre objeto va después del verbo: 'I know him', no 'I him know'.",
  "ejemplos": [
@@ -26,7 +26,7 @@
    "comoSeLee": "it is dífikelt bat ai laik it"
   },
   {
-   "frase": "Maths or history?",
+   "frase": "Math or history?",
    "traduccion": "¿Matemáticas o historia?",
    "comoSeLee": "mazs or jístori"
   }
@@ -162,7 +162,7 @@
   },
   {
    "tipo": "hueco",
-   "enunciado": "¿Matemáticas o historia? = Maths ___ history?",
+   "enunciado": "¿Matemáticas o historia? = Math ___ history?",
    "respuesta": "or"
   },
   {

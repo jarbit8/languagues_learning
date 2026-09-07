@@ -3,7 +3,7 @@
  "textos": [
   {
    "titulo": "El restaurante de Ana",
-   "texto": "On Friday Ana and Laura go to a restaurant near their house. The waiter comes with the menu card and two glasses of water. Ana is very thirsty, so she wants a juice; Laura orders a hot coffee. On the menu there is chicken with rice, fish with vegetables and a big salad. Ana orders the fish, because it is delicious in this restaurant. Laura wants the chicken with rice. On the table there are two plates, two forks, two knives, a spoon and two napkins. The food is not salty and it is not cold: it is very tasty. For dessert Laura wants an ice cream and Ana orders a tea with sugar. The ice cream is very sweet. After dinner the waiter comes with the bill. It is not expensive. Ana and Laura put the money and a tip on the table. Then they go out and they walk back. Laura wants to come back on Sunday.",
+   "texto": "On Friday Ana and Laura go to a restaurant near their house. The waiter comes with the menu card and two glasses of water. Ana is very thirsty, so she wants a juice; Laura orders a hot coffee. On the menu there is chicken with rice, fish with vegetables and a big salad. Ana orders the fish, because it is delicious in this restaurant. Laura wants the chicken with rice. On the table there are two plates, two forks, two knives, a spoon and two napkins. The food is not salty and it is not cold: it is very tasty. For dessert Laura wants an ice cream and Ana orders a tea with sugar. The ice cream is very sweet. After dinner the waiter comes with the check. It is not expensive. Ana and Laura put the money and a tip on the table. Then they go out and they walk back. Laura wants to come back on Sunday.",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
@@ -33,7 +33,7 @@
      "enunciado": "What is on the table?",
      "opciones": [
       "plates, forks, knives, a spoon and napkins",
-      "the menu card and the bill",
+      "the menu card and the check",
       "only two glasses"
      ],
      "respuesta": "plates, forks, knives, a spoon and napkins"
@@ -45,7 +45,7 @@
     },
     {
      "tipo": "vf",
-     "enunciado": "The bill is expensive.",
+     "enunciado": "The check is expensive.",
      "respuesta": "falso"
     },
     {
@@ -67,7 +67,7 @@
   },
   {
    "titulo": "Lo que bebe Paul",
-   "texto": "Paul drinks much water every day. In the morning he is always thirsty, so he has a big glass of water before breakfast. Then he drinks a hot coffee with milk and sugar; his coffee is very sweet. At lunch he never drinks beer or wine, because he works in the afternoon. He drinks a soft drink or an orange juice. In the evening he sometimes has a cup of tea with his mother. Paul does not want cold drinks in winter: he wants hot tea. On Saturday he goes to a restaurant with Lee. They order two beers and a big plate of pasta. The pasta is delicious, but it is very salty. For dessert Paul wants an ice cream and Lee orders a coffee. Then Lee wants the bill. On the table there are two napkins, two forks and a knife. They put the money and a tip for the waiter.",
+   "texto": "Paul drinks much water every day. In the morning he is always thirsty, so he has a big glass of water before breakfast. Then he drinks a hot coffee with milk and sugar; his coffee is very sweet. At lunch he never drinks beer or wine, because he works in the afternoon. He drinks a soft drink or an orange juice. In the evening he sometimes has a cup of tea with his mother. Paul does not want cold drinks in winter: he wants hot tea. On Saturday he goes to a restaurant with Lee. They order two beers and a big plate of pasta. The pasta is delicious, but it is very salty. For dessert Paul wants an ice cream and Lee orders a coffee. Then Lee wants the check. On the table there are two napkins, two forks and a knife. They put the money and a tip for the waiter.",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
@@ -123,7 +123,7 @@
     },
     {
      "tipo": "opcion_multiple",
-     "enunciado": "Who wants the bill?",
+     "enunciado": "Who wants the check?",
      "opciones": [
       "Paul",
       "Lee",
@@ -135,7 +135,7 @@
   },
   {
    "titulo": "El cumpleaños de Laura",
-   "texto": "It is the birthday of Laura, so her friends go to a restaurant near her house. There are five friends at the table: Laura, Ana, Paul, Lee and Maria. The waiter comes with the menu card and a glass of water for every friend. Laura is not hungry, but she is very thirsty: she orders a big juice. Ana wants soup and a salad. Paul does not eat meat, so he orders fish with potatoes. Lee wants chicken with rice and a beer. Maria orders pasta with tomato and a glass of wine. On the table there are plates, forks, knives, spoons and napkins. The food is delicious and nothing is salty. For dessert there is an ice cream for all the friends. It is very sweet! Then the waiter comes with the bill and a hot coffee for Laura. The friends put the money and a big tip on the table.",
+   "texto": "It is the birthday of Laura, so her friends go to a restaurant near her house. There are five friends at the table: Laura, Ana, Paul, Lee and Maria. The waiter comes with the menu card and a glass of water for every friend. Laura is not hungry, but she is very thirsty: she orders a big juice. Ana wants soup and a salad. Paul does not eat meat, so he orders fish with potatoes. Lee wants chicken with rice and a beer. Maria orders pasta with tomato and a glass of wine. On the table there are plates, forks, knives, spoons and napkins. The food is delicious and nothing is salty. For dessert there is an ice cream for all the friends. It is very sweet! Then the waiter comes with the check and a hot coffee for Laura. The friends put the money and a big tip on the table.",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
@@ -199,7 +199,7 @@
   },
   {
    "titulo": "Un café con Lee",
-   "texto": "Every Tuesday Ana has a coffee with Lee. They go to a small restaurant next to her house. Ana always orders a hot coffee with milk; Lee wants a cold soft drink, because he is thirsty. On the table there is a napkin, a spoon and a cup for every friend. Ana does not want anything to eat, but Lee is hungry: he orders a sandwich with cheese and a salad. He wants a glass of water too: 'I would like some water, please.' The sandwich is very salty, but the salad is delicious. For dessert Lee wants an ice cream, but today there is not any ice cream, so he orders a tea with sugar. The tea is very sweet and very hot. Then Ana wants the bill. It is not expensive: two coffees, a sandwich, a salad and a tea. She puts the money and a tip on the plate.",
+   "texto": "Every Tuesday Ana has a coffee with Lee. They go to a small restaurant next to her house. Ana always orders a hot coffee with milk; Lee wants a cold soft drink, because he is thirsty. On the table there is a napkin, a spoon and a cup for every friend. Ana does not want anything to eat, but Lee is hungry: he orders a sandwich with cheese and a salad. He wants a glass of water too: 'I would like some water, please.' The sandwich is very salty, but the salad is delicious. For dessert Lee wants an ice cream, but today there is not any ice cream, so he orders a tea with sugar. The tea is very sweet and very hot. Then Ana wants the check. It is not expensive: two coffees, a sandwich, a salad and a tea. She puts the money and a tip on the plate.",
    "preguntas": [
     {
      "tipo": "completar_dato",
@@ -268,7 +268,7 @@
   },
   {
    "titulo": "Examen · Marie en el restaurante",
-   "texto": "On Saturday Marie goes to a restaurant with her sister. The waiter comes with the menu card and two glasses of cold water. Marie is very thirsty and she orders an orange juice; her sister wants a hot tea with sugar. On the menu there is fish, chicken and pasta. Marie does not eat meat, so she orders fish with vegetables. Her sister wants pasta with tomato. On the table there are two plates, two forks, two knives and two napkins, but there is not any spoon. The food is delicious and it is not salty. For dessert Marie wants an ice cream: it is very sweet. Her sister orders a coffee in a small cup. Then the waiter comes with the bill. It is not expensive. Marie puts the money and a tip on the table, and the two sisters go out.",
+   "texto": "On Saturday Marie goes to a restaurant with her sister. The waiter comes with the menu card and two glasses of cold water. Marie is very thirsty and she orders an orange juice; her sister wants a hot tea with sugar. On the menu there is fish, chicken and pasta. Marie does not eat meat, so she orders fish with vegetables. Her sister wants pasta with tomato. On the table there are two plates, two forks, two knives and two napkins, but there is not any spoon. The food is delicious and it is not salty. For dessert Marie wants an ice cream: it is very sweet. Her sister orders a coffee in a small cup. Then the waiter comes with the check. It is not expensive. Marie puts the money and a tip on the table, and the two sisters go out.",
    "preguntas": [
     {
      "tipo": "opcion_multiple",

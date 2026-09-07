@@ -55,10 +55,10 @@
   {
    "id": "a1-t14-008",
    "es": "cuenta",
-   "texto": "bill",
-   "ejemplo": "The bill, please.",
-   "pron": "BIL",
-   "tambien": "the check — es lo que se pide en un restaurante de EE.UU."
+   "texto": "check",
+   "ejemplo": "The check, please.",
+   "pron": "CHEK",
+   "tambien": "the bill es la británica — y ojo, en EE.UU. a bill es un billete de dinero"
   },
   {
    "id": "a1-t14-009",

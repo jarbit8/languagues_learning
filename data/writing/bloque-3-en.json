@@ -76,7 +76,7 @@
    "consigna": "Examen: describe una cena en un restaurante: qué pides de comer y de beber, qué hay en la mesa y cómo está la comida.",
    "minPalabras": 45,
    "maxPalabras": 60,
-   "respuestaModelo": "On Saturday I go to a restaurant. The waiter comes with the menu card. I am thirsty, so I order a juice. I would like fish with vegetables. On the table there are plates, forks, knives and napkins. The food is delicious and it is not salty. For dessert I want an ice cream. Then I want the bill.",
+   "respuestaModelo": "On Saturday I go to a restaurant. The waiter comes with the menu card. I am thirsty, so I order a juice. I would like fish with vegetables. On the table there are plates, forks, knives and napkins. The food is delicious and it is not salty. For dessert I want an ice cream. Then I want the check.",
    "checklist": [
     "Dije qué pedí de comer y de beber",
     "Usé 'I would like' o 'to order'",
@@ -160,7 +160,7 @@
    "consigna": "Examen: escribe una guía de tu ciudad para un amigo: qué lugares se pueden visitar, dónde están y cuándo están abiertos.",
    "minPalabras": 45,
    "maxPalabras": 60,
-   "respuestaModelo": "In my city one can visit the museum and the zoo. The museum is in the city centre, next to the church, and it is open from ten to six. The zoo is in the park and it is not expensive. The library is near the square, but it is closed on Sunday. The airport is very far.",
+   "respuestaModelo": "In my city one can visit the museum and the zoo. The museum is in the city center, next to the church, and it is open from ten to six. The zoo is in the park and it is not expensive. The library is near the square, but it is closed on Sunday. The airport is very far.",
    "checklist": [
     "Nombré al menos cinco lugares de la ciudad",
     "Usé 'one can' o 'can'",
@@ -187,7 +187,7 @@
    "consigna": "Escribe cómo vas al trabajo o a la universidad cada día: qué transporte tomas, cuánto demora y qué haces cuando vas tarde.",
    "minPalabras": 40,
    "maxPalabras": 55,
-   "respuestaModelo": "Every morning I take the bus at the stop near my house. The bus is slow, but the ticket is cheap. It is thirty minutes. When I am late I take the metro, because it is very fast. On Saturday I go on foot: it is not far and I can cross the park.",
+   "respuestaModelo": "Every morning I take the bus at the stop near my house. The bus is slow, but the ticket is cheap. It is thirty minutes. When I am late I take the subway, because it is very fast. On Saturday I go on foot: it is not far and I can cross the park.",
    "checklist": [
     "Dije qué transporte tomo",
     "Dije cuánto demora",
@@ -242,7 +242,7 @@
    "consigna": "Examen: describe el clima de tu ciudad en las cuatro estaciones y di cuál prefieres y por qué.",
    "minPalabras": 45,
    "maxPalabras": 60,
-   "respuestaModelo": "In summer it is hot: thirty degrees and a lot of sun. In autumn it is cool and windy, with fog in the morning. In winter it is cold and rainy, but there is not any snow. In spring there are flowers and the trees are green. I prefer spring: the weather is warm and it is not rainy.",
+   "respuestaModelo": "In summer it is hot: thirty degrees and a lot of sun. In the fall it is cool and windy, with fog in the morning. In winter it is cold and rainy, but there is not any snow. In spring there are flowers and the trees are green. I prefer spring: the weather is warm and it is not rainy.",
    "checklist": [
     "Hablé de las cuatro estaciones",
     "Usé grados en alguna",

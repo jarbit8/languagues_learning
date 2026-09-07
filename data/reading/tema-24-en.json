@@ -3,7 +3,7 @@
  "textos": [
   {
    "titulo": "Los planes de Ana",
-   "texto": "Ana has many plans for the future. First she is going to finish her degree in computer science: she has two semesters and then she is going to graduate. Her goal is a good job in a company, but her dream is another one: she is going to emigrate and move abroad. Her sister is a permanent resident in Canada and she is going to apply for the citizenship next year. Ana hopes for the same opportunity. She is going to plan all: first the English, then the money for the flight, and finally the visa. She practises English every day, because it is very important for her project. Maybe in two years she is going to leave Peru. It is not sure: she does not have all the money and the visa is difficult. But Ana is not going to change her plan: she is going to get a better job abroad. Her family and her friends are going to visit her, and together they are going to be well.",
+   "texto": "Ana has many plans for the future. First she is going to finish her degree in computer science: she has two semesters and then she is going to graduate. Her goal is a good job in a company, but her dream is another one: she is going to emigrate and move abroad. Her sister is a permanent resident in Canada and she is going to apply for the citizenship next year. Ana hopes for the same opportunity. She is going to plan all: first the English, then the money for the flight, and finally the visa. She practices English every day, because it is very important for her project. Maybe in two years she is going to leave Peru. It is not sure: she does not have all the money and the visa is difficult. But Ana is not going to change her plan: she is going to get a better job abroad. Her family and her friends are going to visit her, and together they are going to be well.",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
@@ -41,7 +41,7 @@
     },
     {
      "tipo": "vf",
-     "enunciado": "Ana practises English every day.",
+     "enunciado": "Ana practices English every day.",
      "respuesta": "verdadero"
     },
     {
@@ -63,7 +63,7 @@
      "enunciado": "What is Ana not going to do?",
      "opciones": [
       "graduate",
-      "practise English",
+      "practice English",
       "change her plan"
      ],
      "respuesta": "change her plan"

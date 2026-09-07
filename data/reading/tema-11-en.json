@@ -3,11 +3,11 @@
  "textos": [
   {
    "titulo": "Lo que hay en la mochila",
-   "texto": "Ana has a green bag and she takes it every day. In the bag there is a black computer, a red notebook and two pens. There is a blue pencil too, and some paper. Her phone is white and it is always in the bag. She also has her keys, her wallet with her money, and her glasses. Sometimes there is an umbrella in the bag, because in autumn she takes it. Her watch is not in the bag: it is on the table, near the lamp. This is my bag, says Ana, and these are my books. And what is that? asks Laura. That is my brown notebook. It is old, but it is very good. And the scissors? The scissors are here, in the yellow thing. Ana has many things: a purple pen, an orange pencil, a pink book and a grey bag for her computer.",
+   "texto": "Ana has a green bag and she takes it every day. In the bag there is a black computer, a red notebook and two pens. There is a blue pencil too, and some paper. Her phone is white and it is always in the bag. She also has her keys, her wallet with her money, and her glasses. Sometimes there is an umbrella in the bag, because in the fall she takes it. Her watch is not in the bag: it is on the table, near the lamp. This is my bag, says Ana, and these are my books. And what is that? asks Laura. That is my brown notebook. It is old, but it is very good. And the scissors? The scissors are here, in the yellow thing. Ana has many things: a purple pen, an orange pencil, a pink book and a grey bag for her computer.",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
-     "enunciado": "What colour is Ana's bag?",
+     "enunciado": "What color is Ana's bag?",
      "opciones": [
       "green",
       "black",
@@ -37,7 +37,7 @@
     },
     {
      "tipo": "completar_dato",
-     "enunciado": "What colour is the old notebook?",
+     "enunciado": "What color is the old notebook?",
      "respuesta": "brown"
     },
     {
@@ -47,7 +47,7 @@
     },
     {
      "tipo": "opcion_multiple",
-     "enunciado": "What colour is the pen she has?",
+     "enunciado": "What color is the pen she has?",
      "opciones": [
       "green",
       "white",
@@ -64,11 +64,11 @@
   },
   {
    "titulo": "El objeto perdido",
-   "texto": "Excuse me, I do not have my bag. What colour is it? It is blue and grey. And what is in the bag? My computer, my glasses and a red book. Is there money? Yes, in my wallet. And my phone, a black phone. Is this your bag? No, that is a pink bag and it is not here. This one? Yes! This is my bag. Thank you! Here are your things: the computer, the book, two pens, a pencil, some paper and a yellow notebook. And the umbrella? The umbrella is here too. And the scissors are in the bag, with the white paper. My watch! My watch is not here. Sorry. Is it a green watch? Yes! Here it is, on the table, near the door. Thank you very much!",
+   "texto": "Excuse me, I do not have my bag. What color is it? It is blue and grey. And what is in the bag? My computer, my glasses and a red book. Is there money? Yes, in my wallet. And my phone, a black phone. Is this your bag? No, that is a pink bag and it is not here. This one? Yes! This is my bag. Thank you! Here are your things: the computer, the book, two pens, a pencil, some paper and a yellow notebook. And the umbrella? The umbrella is here too. And the scissors are in the bag, with the white paper. My watch! My watch is not here. Sorry. Is it a green watch? Yes! Here it is, on the table, near the door. Thank you very much!",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
-     "enunciado": "What colour is the bag?",
+     "enunciado": "What color is the bag?",
      "opciones": [
       "blue and grey",
       "pink and white",
@@ -83,7 +83,7 @@
     },
     {
      "tipo": "completar_dato",
-     "enunciado": "What colour is the book?",
+     "enunciado": "What color is the book?",
      "respuesta": "red"
     },
     {
@@ -108,12 +108,12 @@
     },
     {
      "tipo": "completar_dato",
-     "enunciado": "What colour is the notebook in the bag?",
+     "enunciado": "What color is the notebook in the bag?",
      "respuesta": "yellow"
     },
     {
      "tipo": "opcion_multiple",
-     "enunciado": "What colour is the watch?",
+     "enunciado": "What color is the watch?",
      "opciones": [
       "grey",
       "black",
@@ -129,7 +129,7 @@
    "preguntas": [
     {
      "tipo": "opcion_multiple",
-     "enunciado": "What colour notebook does the person take?",
+     "enunciado": "What color notebook does the person take?",
      "opciones": [
       "the pink one",
       "the white one",
@@ -144,7 +144,7 @@
     },
     {
      "tipo": "completar_dato",
-     "enunciado": "What colour is the umbrella he takes?",
+     "enunciado": "What color is the umbrella he takes?",
      "respuesta": "green"
     },
     {
@@ -178,7 +178,7 @@
     },
     {
      "tipo": "opcion_multiple",
-     "enunciado": "What colours of paper are there?",
+     "enunciado": "What colors of paper are there?",
      "opciones": [
       "black and red",
       "green and blue",
@@ -190,11 +190,11 @@
   },
   {
    "titulo": "El escritorio de Laura",
-   "texto": "On the table of Laura there is a computer, a book and two notebooks. The computer is black and the book is red. One notebook is blue and one notebook is orange. There is a pen, a pencil and some paper. The pencil is yellow and the pen is purple. Her glasses are here, near the lamp. Her watch is not on the table: it is in her bag, with her wallet and her money. Her phone is white and it is here, with her keys. There is an umbrella near the door, because in autumn she takes it every day. And the scissors? The scissors are in the bag too. This is my table, says Laura, and these are my things.",
+   "texto": "On the table of Laura there is a computer, a book and two notebooks. The computer is black and the book is red. One notebook is blue and one notebook is orange. There is a pen, a pencil and some paper. The pencil is yellow and the pen is purple. Her glasses are here, near the lamp. Her watch is not on the table: it is in her bag, with her wallet and her money. Her phone is white and it is here, with her keys. There is an umbrella near the door, because in the fall she takes it every day. And the scissors? The scissors are in the bag too. This is my table, says Laura, and these are my things.",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
-     "enunciado": "What colour is the computer?",
+     "enunciado": "What color is the computer?",
      "opciones": [
       "black",
       "red",
@@ -204,7 +204,7 @@
     },
     {
      "tipo": "completar_dato",
-     "enunciado": "What colour is the pencil?",
+     "enunciado": "What color is the pencil?",
      "respuesta": "yellow"
     },
     {
@@ -229,7 +229,7 @@
     },
     {
      "tipo": "completar_dato",
-     "enunciado": "What colour is her phone?",
+     "enunciado": "What color is her phone?",
      "respuesta": "white"
     },
     {
@@ -251,11 +251,11 @@
   },
   {
    "titulo": "Examen · Las cosas de Marie",
-   "texto": "On the table of Marie there are many things. There is a white computer and a black phone next to it. Her glasses are on a book, near a green lamp. There are three pens: a red pen, a blue pen and a purple pen. There is a yellow pencil too, and some paper. Her brown notebook is old, but it is very good. Her watch is not on the table: it is in her bedroom. The keys of Marie and her wallet with her money are in a small pink bag. The scissors are under the notebook. This is my table, says Marie, and these are my things. And what is that? That is an orange umbrella: in autumn she takes it every day.",
+   "texto": "On the table of Marie there are many things. There is a white computer and a black phone next to it. Her glasses are on a book, near a green lamp. There are three pens: a red pen, a blue pen and a purple pen. There is a yellow pencil too, and some paper. Her brown notebook is old, but it is very good. Her watch is not on the table: it is in her bedroom. The keys of Marie and her wallet with her money are in a small pink bag. The scissors are under the notebook. This is my table, says Marie, and these are my things. And what is that? That is an orange umbrella: in the fall she takes it every day.",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
-     "enunciado": "What colour is the computer?",
+     "enunciado": "What color is the computer?",
      "opciones": [
       "white",
       "green",
@@ -308,7 +308,7 @@
     },
     {
      "tipo": "opcion_multiple",
-     "enunciado": "What colour is the umbrella?",
+     "enunciado": "What color is the umbrella?",
      "opciones": [
       "purple",
       "yellow",

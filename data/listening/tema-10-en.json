@@ -253,7 +253,7 @@
     },
     {
      "hablante": "B",
-     "texto": "My bed is next to the window and my wardrobe is near the door."
+     "texto": "My bed is next to the window and my closet is near the door."
     }
    ],
    "preguntas": [
@@ -307,7 +307,7 @@
     },
     {
      "hablante": "B",
-     "texto": "My bed is under the window and the wardrobe is next to the door."
+     "texto": "My bed is under the window and the closet is next to the door."
     },
     {
      "hablante": "A",

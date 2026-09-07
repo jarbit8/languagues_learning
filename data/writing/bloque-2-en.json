@@ -132,7 +132,7 @@
    "consigna": "Describe una habitación de tu casa: qué hay y dónde está cada cosa (usa near, next to, under, between, on).",
    "minPalabras": 40,
    "maxPalabras": 55,
-   "respuestaModelo": "This is my bedroom. There is a bed under the window and there is a wardrobe next to the door. There is a lamp near the bed and a mirror on the wall. Between the bed and the wardrobe there is a chair. There is no sofa, but the room is very nice.",
+   "respuestaModelo": "This is my bedroom. There is a bed under the window and there is a closet next to the door. There is a lamp near the bed and a mirror on the wall. Between the bed and the closet there is a chair. There is no sofa, but the room is very nice.",
    "checklist": [
     "Usé 'there is' y 'there are' bien",
     "Usé al menos cuatro preposiciones de lugar",
@@ -160,7 +160,7 @@
    "consigna": "Escribe qué ropa te pones en invierno y qué ropa en verano, y di qué es caro y qué es barato.",
    "minPalabras": 40,
    "maxPalabras": 55,
-   "respuestaModelo": "In winter I put on a big coat, boots and gloves. I wear a sweater and trousers. The coat is very expensive, but the sweater is cheap. In summer I wear a t-shirt, shorts and sneakers. I never wear a jacket in summer. In bed I wear my pyjamas.",
+   "respuestaModelo": "In winter I put on a big coat, boots and gloves. I wear a sweater and pants. The coat is very expensive, but the sweater is cheap. In summer I wear a t-shirt, shorts and sneakers. I never wear a jacket in summer. In bed I wear my pajamas.",
    "checklist": [
     "Hablé del invierno y del verano",
     "Nombré al menos seis prendas",
@@ -174,7 +174,7 @@
    "consigna": "Examen: escribe el calendario de tu semana y de tu año: qué haces cada día, en qué mes es tu cumpleaños y qué pasa en cada estación.",
    "minPalabras": 45,
    "maxPalabras": 60,
-   "respuestaModelo": "I work from Monday to Thursday. On Friday I am with my family and on the weekend I am with my friends. My birthday is in November, in autumn. In summer, in June and July, I am in Peru. In winter it is December and January here. Today is Friday and tomorrow is Saturday.",
+   "respuestaModelo": "I work from Monday to Thursday. On Friday I am with my family and on the weekend I am with my friends. My birthday is in November, in the fall. In summer, in June and July, I am in Peru. In winter it is December and January here. Today is Friday and tomorrow is Saturday.",
    "checklist": [
     "Hablé de los días de la semana",
     "Dije el mes de mi cumpleaños",
@@ -216,7 +216,7 @@
    "consigna": "Examen: describe tu casa entera, habitación por habitación, diciendo qué hay y dónde está cada cosa.",
    "minPalabras": 45,
    "maxPalabras": 60,
-   "respuestaModelo": "In my apartment there are three rooms. In the living room there is a sofa, a table and two chairs, and a lamp near the sofa. In the kitchen there is a fridge next to the window. In my bedroom my bed is under the window and the wardrobe is between the bed and the door. There is no garden.",
+   "respuestaModelo": "In my apartment there are three rooms. In the living room there is a sofa, a table and two chairs, and a lamp near the sofa. In the kitchen there is a fridge next to the window. In my bedroom my bed is under the window and the closet is between the bed and the door. There is no garden.",
    "checklist": [
     "Describí al menos tres habitaciones",
     "Usé 'there is' y 'there are' bien",
@@ -244,7 +244,7 @@
    "consigna": "Examen: escribe qué ropa te pones en cada estación, qué es caro y qué es barato, y qué talla usas.",
    "minPalabras": 45,
    "maxPalabras": 60,
-   "respuestaModelo": "In winter I put on a big coat, boots and gloves, and I wear a sweater. My coat is grey and it is cheap. In summer I wear a t-shirt, shorts and sneakers. In spring I wear jeans and a jacket. I am a forty. Elegant clothes are expensive. In bed I wear my pyjamas.",
+   "respuestaModelo": "In winter I put on a big coat, boots and gloves, and I wear a sweater. My coat is grey and it is cheap. In summer I wear a t-shirt, shorts and sneakers. In spring I wear jeans and a jacket. I am a forty. Elegant clothes are expensive. In bed I wear my pajamas.",
    "checklist": [
     "Hablé de al menos tres estaciones",
     "Nombré al menos ocho prendas",

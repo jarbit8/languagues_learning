@@ -55,10 +55,10 @@
   {
    "id": "a1-t21-009",
    "es": "matemáticas",
-   "texto": "maths",
-   "ejemplo": "Maths is difficult.",
-   "pron": "MAZS",
-   "tambien": "math, sin la s, en EE.UU. y en Canada"
+   "texto": "math",
+   "ejemplo": "Math is difficult.",
+   "pron": "MAZ",
+   "tambien": "maths, con s, es la británica"
   },
   {
    "id": "a1-t21-010",
@@ -71,7 +71,7 @@
    "id": "a1-t21-011",
    "es": "enseñar",
    "texto": "to teach",
-   "ejemplo": "She teaches maths.",
+   "ejemplo": "She teaches math.",
    "pron": "tu TICH"
   },
   {
@@ -192,10 +192,10 @@
   {
    "id": "a1-t21-030",
    "es": "practicar",
-   "texto": "to practise",
-   "ejemplo": "I practise every day.",
+   "texto": "to practice",
+   "ejemplo": "I practice every day.",
    "pron": "tu PRAK-tis",
-   "tambien": "to practice en EE.UU.; Canada escribe practise el verbo"
+   "tambien": "practise, con s, es como escriben el verbo en Canadá y Reino Unido"
   },
   {
    "id": "a1-t21-031",

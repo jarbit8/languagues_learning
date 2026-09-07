@@ -195,7 +195,7 @@
     },
     {
      "hablante": "B",
-     "texto": "No, it is slow. The metro is faster."
+     "texto": "No, it is slow. The subway is faster."
     }
    ],
    "preguntas": [
@@ -234,7 +234,7 @@
     },
     {
      "hablante": "B",
-     "texto": "For the city centre or for the airport?"
+     "texto": "For the city center or for the airport?"
     },
     {
      "hablante": "A",
@@ -275,7 +275,7 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿A dónde va A?",
      "opciones": [
-      "to the city centre",
+      "to the city center",
       "to the station",
       "to the airport"
      ],
@@ -313,7 +313,7 @@
     },
     {
      "hablante": "B",
-     "texto": "I take the metro. It is very fast."
+     "texto": "I take the subway. It is very fast."
     },
     {
      "hablante": "A",
@@ -343,9 +343,9 @@
     {
      "tipo": "completar_dato",
      "enunciado": "¿Qué toma cuando va tarde?",
-     "respuesta": "the metro",
+     "respuesta": "the subway",
      "aceptadas": [
-      "metro"
+      "subway"
      ]
     }
    ]

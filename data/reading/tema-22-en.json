@@ -279,7 +279,7 @@
   },
   {
    "titulo": "Examen · La computadora de Marie",
-   "texto": "Last Saturday Marie was in the city centre with her camera and her phone. In the morning she turned on the camera and she watched the photos on the small screen: there were photos of the park, of the museum and of her sister. At twelve the battery was not good, so she charged the camera in a café with wifi. Marie opened her app of social media and she downloaded all the photos on her phone. Then she saved them in a file and she sent two to her sister. Her sister was not online, so she answered at four. In the afternoon Marie searched a website of music and she clicked on three songs. The internet was very fast in the café. At six she texted her mother and she called her at eight. Yesterday Marie was online for five hours, so at night she turned off her phone and she charged it.",
+   "texto": "Last Saturday Marie was in the city center with her camera and her phone. In the morning she turned on the camera and she watched the photos on the small screen: there were photos of the park, of the museum and of her sister. At twelve the battery was not good, so she charged the camera in a café with wifi. Marie opened her app of social media and she downloaded all the photos on her phone. Then she saved them in a file and she sent two to her sister. Her sister was not online, so she answered at four. In the afternoon Marie searched a website of music and she clicked on three songs. The internet was very fast in the café. At six she texted her mother and she called her at eight. Yesterday Marie was online for five hours, so at night she turned off her phone and she charged it.",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
@@ -322,7 +322,7 @@
     },
     {
      "tipo": "vfnd",
-     "enunciado": "The sister of Marie was in the city centre too.",
+     "enunciado": "The sister of Marie was in the city center too.",
      "respuesta": "no dice"
     },
     {

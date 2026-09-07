@@ -97,10 +97,10 @@
   {
    "id": "a1-t17-014",
    "es": "metro",
-   "texto": "metro",
-   "ejemplo": "I take the metro.",
-   "pron": "ME-trou",
-   "tambien": "subway"
+   "texto": "subway",
+   "ejemplo": "I take the subway.",
+   "pron": "SAB-uei",
+   "tambien": "metro es la británica; en Londres es the tube"
   },
   {
    "id": "a1-t17-015",

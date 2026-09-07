@@ -27,7 +27,7 @@
 {"id":"a1-t10-026","es":"escalera","texto":"stairs","ejemplo":"The stairs are here.","pron":"STERS"},
 {"id":"a1-t10-027","es":"lámpara","texto":"lamp","ejemplo":"The lamp is on the table.","pron":"LAMP"},
 {"id":"a1-t10-028","es":"refrigerador","texto":"fridge","ejemplo":"The fridge is in the kitchen.","pron":"FRICH"},
-{"id":"a1-t10-029","es":"armario","texto":"wardrobe","ejemplo":"The wardrobe is in the bedroom.","pron":"UOR-droub","tambien":"closet"},
+{"id":"a1-t10-029","es":"armario","texto":"closet","ejemplo":"The closet is in the bedroom.","pron":"CLA-set","tambien":"wardrobe es la británica"},
 {"id":"a1-t10-030","es":"llave (de casa)","texto":"key","ejemplo":"The key is on the door.","pron":"KI"},
 {"id":"a1-t10-031","es":"balcón","texto":"balcony","ejemplo":"There is a table on the balcony.","pron":"BAL-ko-ni"},
 {"id":"a1-t10-032","es":"espejo","texto":"mirror","ejemplo":"The mirror is in the bathroom.","pron":"MI-ror"},

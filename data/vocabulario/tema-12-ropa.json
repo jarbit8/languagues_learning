@@ -26,10 +26,10 @@
   {
    "id": "a1-t12-004",
    "es": "pantalón",
-   "texto": "trousers",
-   "ejemplo": "The trousers are black.",
-   "pron": "TRAU-sers",
-   "tambien": "pants — ojo: pants en britanico es calzoncillos"
+   "texto": "pants",
+   "ejemplo": "The pants are black.",
+   "pron": "PANTS",
+   "tambien": "trousers es la británica; ojo, en británico pants son los calzoncillos"
   },
   {
    "id": "a1-t12-005",
@@ -214,10 +214,10 @@
   {
    "id": "a1-t12-031",
    "es": "pijama",
-   "texto": "pyjamas",
-   "ejemplo": "I wear pyjamas at night.",
-   "pron": "pi-YA-mas",
-   "tambien": "pajamas en EE.UU.; en Canada valen las dos"
+   "texto": "pajamas",
+   "ejemplo": "I wear pajamas at night.",
+   "pron": "pa-YA-mes",
+   "tambien": "pyjamas es la grafía británica y canadiense"
   },
   {
    "id": "a1-t12-032",

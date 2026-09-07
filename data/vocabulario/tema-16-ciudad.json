@@ -61,10 +61,10 @@
   {
    "id": "a1-t16-010",
    "es": "cine",
-   "texto": "cinema",
-   "ejemplo": "There is a good cinema.",
-   "pron": "SI-ne-ma",
-   "tambien": "movie theater · the movies"
+   "texto": "movie theater",
+   "ejemplo": "There is a good movie theater.",
+   "pron": "MU-vi ZI-a-ter",
+   "tambien": "cinema es la británica · y para ir: let's go to the movies"
   },
   {
    "id": "a1-t16-011",
@@ -120,10 +120,10 @@
   {
    "id": "a1-t16-018",
    "es": "centro",
-   "texto": "city centre",
-   "ejemplo": "I live in the city centre.",
+   "texto": "city center",
+   "ejemplo": "I live in the city center.",
    "pron": "SI-ti SEN-ter",
-   "tambien": "downtown en los dos paises — es la palabra del dia a dia"
+   "tambien": "downtown es lo que se dice de verdad, y sin artículo: I go downtown · centre se escribe así en Canadá"
   },
   {
    "id": "a1-t16-019",
@@ -149,10 +149,10 @@
   {
    "id": "a1-t16-022",
    "es": "teatro",
-   "texto": "theatre",
-   "ejemplo": "The theatre is in the city centre.",
+   "texto": "theater",
+   "ejemplo": "The theater is in the city center.",
    "pron": "ZI-a-ter",
-   "tambien": "theater en EE.UU. (Canada mantiene theatre); si es de cine, movie theater"
+   "tambien": "theatre es la grafía británica y canadiense"
   },
   {
    "id": "a1-t16-023",
@@ -214,16 +214,16 @@
   {
    "id": "a1-t16-031",
    "es": "municipalidad",
-   "texto": "town hall",
-   "ejemplo": "The town hall is near the park.",
-   "pron": "TAUN jol",
-   "tambien": "city hall"
+   "texto": "city hall",
+   "ejemplo": "The city hall is near the park.",
+   "pron": "SI-ti JOL",
+   "tambien": "town hall es la británica"
   },
   {
    "id": "a1-t16-032",
    "es": "comisaría",
    "texto": "police station",
-   "ejemplo": "The police station is in the city centre.",
+   "ejemplo": "The police station is in the city center.",
    "pron": "po-LIS STEI-shon"
   }
  ]

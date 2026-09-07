@@ -67,7 +67,7 @@
   },
   {
    "titulo": "Las estaciones en Canadá",
-   "texto": "In Canada the weather is not the same all the year. In winter it is very cold: there is a lot of snow and ice on the road, and sometimes it is ten degrees under zero. The days are short and there is not much sun. In spring the snow goes and there are flowers in the parks. The weather is cool and it is often rainy and windy. In summer it is hot: twenty-five or thirty degrees. The sky is blue, there are not many clouds and the sun is very strong. Ana goes to the lake with Laura: near the lake there is a forest with big trees. In autumn it is cool again and there is a lot of wind. In the morning there is fog near the river. Laura prefers autumn, but Ana prefers summer: she is from Peru and she does not want the cold.",
+   "texto": "In Canada the weather is not the same all the year. In winter it is very cold: there is a lot of snow and ice on the road, and sometimes it is ten degrees under zero. The days are short and there is not much sun. In spring the snow goes and there are flowers in the parks. The weather is cool and it is often rainy and windy. In summer it is hot: twenty-five or thirty degrees. The sky is blue, there are not many clouds and the sun is very strong. Ana goes to the lake with Laura: near the lake there is a forest with big trees. In the fall it is cool again and there is a lot of wind. In the morning there is fog near the river. Laura prefers fall, but Ana prefers summer: she is from Peru and she does not want the cold.",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
@@ -106,7 +106,7 @@
     },
     {
      "tipo": "vf",
-     "enunciado": "In autumn there is fog near the river in the morning.",
+     "enunciado": "In the fall there is fog near the river in the morning.",
      "respuesta": "verdadero"
     },
     {
@@ -126,7 +126,7 @@
     },
     {
      "tipo": "vf",
-     "enunciado": "Laura prefers autumn.",
+     "enunciado": "Laura prefers fall.",
      "respuesta": "verdadero"
     }
    ]
@@ -199,7 +199,7 @@
   },
   {
    "titulo": "Una tormenta",
-   "texto": "On Tuesday morning the weather is not good. There is a lot of fog and the sky is grey. At nine there is a big storm: much rain and a lot of wind. The trees in the park go from left to right with the wind. Ana does not take her bike: she takes the metro, because on the road there is water and ice. It is very cold, two degrees. Paul is in his house all the day: he reads a book and he drinks a hot tea. In the evening the rain stops and there are not many clouds. One can see the moon and one star. On Wednesday the weather is very good: it is sunny and warm, fifteen degrees. Ana goes to the park with Laura and they walk near the river. There are flowers under the trees and the sky is blue again.",
+   "texto": "On Tuesday morning the weather is not good. There is a lot of fog and the sky is grey. At nine there is a big storm: much rain and a lot of wind. The trees in the park go from left to right with the wind. Ana does not take her bike: she takes the subway, because on the road there is water and ice. It is very cold, two degrees. Paul is in his house all the day: he reads a book and he drinks a hot tea. In the evening the rain stops and there are not many clouds. One can see the moon and one star. On Wednesday the weather is very good: it is sunny and warm, fifteen degrees. Ana goes to the park with Laura and they walk near the river. There are flowers under the trees and the sky is blue again.",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
@@ -227,9 +227,9 @@
     },
     {
      "tipo": "opcion_multiple",
-     "enunciado": "Why does Ana take the metro?",
+     "enunciado": "Why does Ana take the subway?",
      "opciones": [
-      "the metro is cheap",
+      "the subway is cheap",
       "the bike is far",
       "there is water and ice on the road"
      ],
@@ -268,7 +268,7 @@
   },
   {
    "titulo": "Examen · El clima de Marie",
-   "texto": "Marie lives near the sea, so the weather in her city is not very cold and not very hot. In summer it is a warm day: twenty-two or twenty-five degrees, the sky is blue and there are not many clouds. Marie goes to the beach with her sister and they walk near the water. In autumn it is cool and often windy. There is fog in the morning and the mountains are in the fog. In winter it is cold: five degrees, with a lot of rain and sometimes a storm. There is not any snow in her city, but there is snow and ice on the mountains. In spring there are flowers in the park and the trees are green. Marie prefers spring: the weather is warm and it is not rainy. At night she can see the moon and the stars from her window.",
+   "texto": "Marie lives near the sea, so the weather in her city is not very cold and not very hot. In summer it is a warm day: twenty-two or twenty-five degrees, the sky is blue and there are not many clouds. Marie goes to the beach with her sister and they walk near the water. In the fall it is cool and often windy. There is fog in the morning and the mountains are in the fog. In winter it is cold: five degrees, with a lot of rain and sometimes a storm. There is not any snow in her city, but there is snow and ice on the mountains. In spring there are flowers in the park and the trees are green. Marie prefers spring: the weather is warm and it is not rainy. At night she can see the moon and the stars from her window.",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
@@ -306,7 +306,7 @@
     },
     {
      "tipo": "vf",
-     "enunciado": "In autumn there is fog in the morning.",
+     "enunciado": "In the fall there is fog in the morning.",
      "respuesta": "verdadero"
     },
     {

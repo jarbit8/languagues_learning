@@ -3,7 +3,7 @@
  "textos": [
   {
    "titulo": "Cómo llega Ana al trabajo",
-   "texto": "Ana works in a school far from her house, so she never goes on foot. Every morning she takes the bus at the stop near the park. The bus is slow, but the ticket is cheap. She reads a book on the bus. When there is a lot of traffic she prefers the metro: it is very fast. The metro station is near the square, next to the traffic light. Paul has a car and he drives very well, but the road is very slow in the morning. Laura has a bike and she goes to the library on it. In summer Ana takes her bike too, because the road near the park is beautiful. She always has a map of the city in her bag: when she needs a street, she reads the map. On Saturday she takes a taxi with Laura, and on Sunday they walk: the shops are near and one can cross the square on foot.",
+   "texto": "Ana works in a school far from her house, so she never goes on foot. Every morning she takes the bus at the stop near the park. The bus is slow, but the ticket is cheap. She reads a book on the bus. When there is a lot of traffic she prefers the subway: it is very fast. The subway station is near the square, next to the traffic light. Paul has a car and he drives very well, but the road is very slow in the morning. Laura has a bike and she goes to the library on it. In summer Ana takes her bike too, because the road near the park is beautiful. She always has a map of the city in her bag: when she needs a street, she reads the map. On Saturday she takes a taxi with Laura, and on Sunday they walk: the shops are near and one can cross the square on foot.",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
@@ -23,9 +23,9 @@
     {
      "tipo": "completar_dato",
      "enunciado": "What does Ana take when there is a lot of traffic?",
-     "respuesta": "the metro",
+     "respuesta": "the subway",
      "aceptadas": [
-      "metro"
+      "subway"
      ]
     },
     {
@@ -52,7 +52,7 @@
      "tipo": "opcion_multiple",
      "enunciado": "Why does Ana take her bike in summer?",
      "opciones": [
-      "the metro is closed",
+      "the subway is closed",
       "the bus is expensive",
       "the road near the park is beautiful"
      ],
@@ -67,7 +67,7 @@
   },
   {
    "titulo": "Del centro a la estación",
-   "texto": "Paul is in the city centre and he wants to go to the station. Where is the station? It is not far: one can go on foot in fifteen minutes. From the square Paul goes straight and he crosses the street at the traffic light. Then he turns left at the corner of the bank. He continues straight on the sidewalk for five minutes, and after the church he turns right. The station is next to the park. There Paul buys a ticket for the train. The train is fast: it goes to the airport in twenty minutes. On the road there are many cars, a bus and two motorbikes, so a taxi is very slow today. Paul prefers the train. His friend Lee takes the metro, because the metro stop is near his house. In this city one can go from one place to another place by bus, by train, by metro, by taxi or on foot.",
+   "texto": "Paul is in the city center and he wants to go to the station. Where is the station? It is not far: one can go on foot in fifteen minutes. From the square Paul goes straight and he crosses the street at the traffic light. Then he turns left at the corner of the bank. He continues straight on the sidewalk for five minutes, and after the church he turns right. The station is next to the park. There Paul buys a ticket for the train. The train is fast: it goes to the airport in twenty minutes. On the road there are many cars, a bus and two motorbikes, so a taxi is very slow today. Paul prefers the train. His friend Lee takes the subway, because the subway stop is near his house. In this city one can go from one place to another place by bus, by train, by subway, by taxi or on foot.",
    "preguntas": [
     {
      "tipo": "completar_dato",
@@ -116,9 +116,9 @@
     {
      "tipo": "completar_dato",
      "enunciado": "What does Lee take?",
-     "respuesta": "the metro",
+     "respuesta": "the subway",
      "aceptadas": [
-      "metro"
+      "subway"
      ]
     },
     {
@@ -135,7 +135,7 @@
   },
   {
    "titulo": "En bicicleta por la ciudad",
-   "texto": "Laura has a red bike and she goes to all the places on it. She never takes the bus, because the ticket is expensive and the bus is very slow. Every morning she goes out at seven. From her house she turns right and she continues straight for ten minutes. At the corner of the pharmacy there is a traffic light: she stops there and she crosses the street. Then she turns left and she goes to the school on the road near the park. It is not good to go by bike on the sidewalk, so Laura is always on the road. She goes fast, but the cars go faster. On Sunday she takes her bike to the zoo with Ana. Ana does not have a bike: she takes a taxi or she goes on foot. In winter Laura takes the metro, because the road is not good for a bike.",
+   "texto": "Laura has a red bike and she goes to all the places on it. She never takes the bus, because the ticket is expensive and the bus is very slow. Every morning she goes out at seven. From her house she turns right and she continues straight for ten minutes. At the corner of the pharmacy there is a traffic light: she stops there and she crosses the street. Then she turns left and she goes to the school on the road near the park. It is not good to go by bike on the sidewalk, so Laura is always on the road. She goes fast, but the cars go faster. On Sunday she takes her bike to the zoo with Ana. Ana does not have a bike: she takes a taxi or she goes on foot. In winter Laura takes the subway, because the road is not good for a bike.",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
@@ -187,9 +187,9 @@
      "opciones": [
       "a taxi",
       "the bus",
-      "the metro"
+      "the subway"
      ],
-     "respuesta": "the metro"
+     "respuesta": "the subway"
     },
     {
      "tipo": "vf",
@@ -200,17 +200,17 @@
   },
   {
    "titulo": "Un viaje corto",
-   "texto": "On Saturday Ana and Paul go to another city, two hours from here. First they take the metro to the station: the metro is fast and the ticket is not expensive. At the station they buy two tickets for the train at nine. The train is slow, but one can read and eat on it. In the other city they do not take a bus: they have a map and they go on foot. From the station they turn right, they cross a big square and they continue straight. At the corner of the museum they turn left. There is a hotel near the church and a café next to it. After lunch they take a boat for one hour. The boat is very slow, but the city is beautiful from it. At six they take the train again. Paul wants to come back by plane, but the plane is very expensive.",
+   "texto": "On Saturday Ana and Paul go to another city, two hours from here. First they take the subway to the station: the subway is fast and the ticket is not expensive. At the station they buy two tickets for the train at nine. The train is slow, but one can read and eat on it. In the other city they do not take a bus: they have a map and they go on foot. From the station they turn right, they cross a big square and they continue straight. At the corner of the museum they turn left. There is a hotel near the church and a café next to it. After lunch they take a boat for one hour. The boat is very slow, but the city is beautiful from it. At six they take the train again. Paul wants to come back by plane, but the plane is very expensive.",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
      "enunciado": "How do they go to the station?",
      "opciones": [
-      "by metro",
+      "by subway",
       "on foot",
       "by bus"
      ],
-     "respuesta": "by metro"
+     "respuesta": "by subway"
     },
     {
      "tipo": "completar_dato",
@@ -269,7 +269,7 @@
   },
   {
    "titulo": "Examen · Cómo se mueve Marie",
-   "texto": "Marie works in a hospital far from her house. She does not have a car and she does not drive, so every morning she takes the bus at the stop near her street. The bus is slow, but the ticket is cheap. When she is late she prefers the metro: it is very fast. From the metro stop she goes straight for five minutes, she crosses the street at the traffic light and she turns right at the corner of the pharmacy. The hospital is next to the park. On Saturday Marie takes her bike: on the road near the park there are not many cars. She never goes on the sidewalk with the bike. On Sunday she goes to another city by train, and she always has a map in her bag. Marie does not take a taxi: it is very expensive.",
+   "texto": "Marie works in a hospital far from her house. She does not have a car and she does not drive, so every morning she takes the bus at the stop near her street. The bus is slow, but the ticket is cheap. When she is late she prefers the subway: it is very fast. From the subway stop she goes straight for five minutes, she crosses the street at the traffic light and she turns right at the corner of the pharmacy. The hospital is next to the park. On Saturday Marie takes her bike: on the road near the park there are not many cars. She never goes on the sidewalk with the bike. On Sunday she goes to another city by train, and she always has a map in her bag. Marie does not take a taxi: it is very expensive.",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
@@ -289,9 +289,9 @@
     {
      "tipo": "completar_dato",
      "enunciado": "What does Marie take when she is late?",
-     "respuesta": "the metro",
+     "respuesta": "the subway",
      "aceptadas": [
-      "metro"
+      "subway"
      ]
     },
     {

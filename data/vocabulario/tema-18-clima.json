@@ -8,7 +8,7 @@
 {"id":"a1-t18-007","es":"calor (hace calor)","texto":"hot","ejemplo":"It is hot today.","pron":"JOT"},
 {"id":"a1-t18-008","es":"frío (hace frío)","texto":"cold","ejemplo":"It is cold in winter.","pron":"KOULD"},
 {"id":"a1-t18-009","es":"templado","texto":"warm","ejemplo":"It is warm in spring.","pron":"UORM"},
-{"id":"a1-t18-010","es":"fresco","texto":"cool","ejemplo":"It is cool in autumn.","pron":"KUL"},
+{"id":"a1-t18-010","es":"fresco","texto":"cool","ejemplo":"It is cool in the fall.","pron":"KUL"},
 {"id":"a1-t18-011","es":"soleado","texto":"sunny","ejemplo":"It's sunny today.","pron":"SA-ni"},
 {"id":"a1-t18-012","es":"lluvioso","texto":"rainy","ejemplo":"It's a rainy day.","pron":"REI-ni"},
 {"id":"a1-t18-013","es":"ventoso","texto":"windy","ejemplo":"It's windy today.","pron":"UIN-di"},

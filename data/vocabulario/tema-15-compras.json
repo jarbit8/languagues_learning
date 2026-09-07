@@ -42,7 +42,7 @@
    "id": "a1-t15-006",
    "es": "pagar",
    "texto": "to pay",
-   "ejemplo": "I pay the bill.",
+   "ejemplo": "I pay the check.",
    "pron": "tu PEI"
   },
   {
@@ -182,10 +182,10 @@
   {
    "id": "a1-t15-025",
    "es": "billete",
-   "texto": "banknote",
-   "ejemplo": "A ten-dollar banknote.",
-   "pron": "BANK-nout",
-   "tambien": "a bill — un billete de cinco es a five-dollar bill"
+   "texto": "bill",
+   "ejemplo": "A ten-dollar bill.",
+   "pron": "BIL",
+   "tambien": "banknote es la británica; un billete de cinco es a five-dollar bill"
   },
   {
    "id": "a1-t15-028",

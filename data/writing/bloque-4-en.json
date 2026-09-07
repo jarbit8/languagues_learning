@@ -47,7 +47,7 @@
    "consigna": "Escribe sobre tu tiempo libre: qué te gusta hacer, qué deportes practicas y con qué frecuencia.",
    "minPalabras": 30,
    "maxPalabras": 40,
-   "respuestaModelo": "I like reading and I love music. On Saturday I play football with my friends. I go swimming in summer. I don't like dancing. I read a book every night. How often do you play football?",
+   "respuestaModelo": "I like reading and I love music. On Saturday I play soccer with my friends. I go swimming in summer. I don't like dancing. I read a book every night. How often do you play soccer?",
    "checklist": [
     "Usé like / love + verbo en -ing",
     "Usé play / go / do con deportes",
@@ -60,7 +60,7 @@
    "consigna": "Escribe qué haces en tu tiempo libre: qué te encanta, qué odias y con quién lo haces.",
    "minPalabras": 40,
    "maxPalabras": 55,
-   "respuestaModelo": "In my free time I love music: I listen to songs in English and I play the guitar. I do not sing well, but I like to dance. On Saturday I play tennis with a friend. I hate football, because it is very slow for me. Sometimes I paint in my room.",
+   "respuestaModelo": "In my free time I love music: I listen to songs in English and I play the guitar. I do not sing well, but I like to dance. On Saturday I play tennis with a friend. I hate soccer, because it is very slow for me. Sometimes I paint in my room.",
    "checklist": [
     "Usé 'to love' y 'to hate'",
     "Nombré al menos cuatro pasatiempos",
@@ -74,7 +74,7 @@
    "consigna": "Examen: escribe sobre tus pasatiempos y tus deportes: qué haces cada día de la semana, qué te gusta y qué no, y por qué.",
    "minPalabras": 45,
    "maxPalabras": 60,
-   "respuestaModelo": "I love music and I play the guitar every day. On Monday and Wednesday I go to the gym: there I do running for thirty minutes. On Saturday I play tennis with my sister. I hate basketball, because I am not tall. In summer swimming is my sport. On Sunday I watch a film and I draw.",
+   "respuestaModelo": "I love music and I play the guitar every day. On Monday and Wednesday I go to the gym: there I do running for thirty minutes. On Saturday I play tennis with my sister. I hate basketball, because I am not tall. In summer swimming is my sport. On Sunday I watch a movie and I draw.",
    "checklist": [
     "Hablé de al menos tres días de la semana",
     "Nombré dos deportes y dos pasatiempos",
@@ -88,7 +88,7 @@
    "consigna": "Escribe sobre tus estudios: qué estudias, qué materias tienes, qué es difícil y por qué.",
    "minPalabras": 30,
    "maxPalabras": 40,
-   "respuestaModelo": "I study computer science at the university. My subjects are maths and science. Maths is difficult but I like it, so I practise every day. I have an exam on Monday. I want to graduate because it is important.",
+   "respuestaModelo": "I study computer science at the university. My subjects are math and science. Math is difficult but I like it, so I practice every day. I have an exam on Monday. I want to graduate because it is important.",
    "checklist": [
     "Dije qué estudio",
     "Usé because y so",
@@ -101,7 +101,7 @@
    "consigna": "Escribe sobre tu semestre: qué materias tienes, cuál es difícil y por qué, y cómo estudias para los exámenes.",
    "minPalabras": 40,
    "maxPalabras": 55,
-   "respuestaModelo": "This semester I have five subjects: maths, science, computer science, English and history. Maths is very difficult, because I do not understand the questions. So I practise every day with a classmate in the library. Before an exam I read all my notes.",
+   "respuestaModelo": "This semester I have five subjects: math, science, computer science, English and history. Math is very difficult, because I do not understand the questions. So I practice every day with a classmate in the library. Before an exam I read all my notes.",
    "checklist": [
     "Nombré al menos cuatro materias",
     "Dije cuál es difícil y por qué",
@@ -115,7 +115,7 @@
    "consigna": "Examen: escribe sobre tu carrera: qué estudias, cómo es tu campus, qué materias tienes, qué nota necesitas y qué quieres hacer al graduarte.",
    "minPalabras": 45,
    "maxPalabras": 60,
-   "respuestaModelo": "I study computer science at the university. The campus is far from my house, so I take the metro. This semester I have five subjects. Maths is difficult, but I practise every day with my classmates. I must pass all my exams with good grades. I want to graduate in four years and teach computer science.",
+   "respuestaModelo": "I study computer science at the university. The campus is far from my house, so I take the subway. This semester I have five subjects. Math is difficult, but I practice every day with my classmates. I must pass all my exams with good grades. I want to graduate in four years and teach computer science.",
    "checklist": [
     "Dije qué carrera estudio",
     "Describí el campus o cómo llego",
@@ -170,7 +170,7 @@
    "consigna": "Escribe un email a un amigo contándole un viaje que hiciste y tus planes para el futuro.",
    "minPalabras": 30,
    "maxPalabras": 40,
-   "respuestaModelo": "Hi! Last year I went to Canada. I visited museums and I ate good food. I'm going to study English next year because I want to work there. I'm going to practise every day. What are your plans?",
+   "respuestaModelo": "Hi! Last year I went to Canada. I visited museums and I ate good food. I'm going to study English next year because I want to work there. I'm going to practice every day. What are your plans?",
    "checklist": [
     "Usé un saludo y una despedida",
     "Usé un verbo en pasado (regular o irregular)",
@@ -213,7 +213,7 @@
    "consigna": "Escribe sobre tu tiempo libre y tus metas: qué te gusta hacer, qué estudias y qué planes tienes para el futuro.",
    "minPalabras": 30,
    "maxPalabras": 40,
-   "respuestaModelo": "In my free time I like sports. I play football and I play the guitar. I am a student and I study computer science. Next year I am going to travel to Canada. I am going to study English there.",
+   "respuestaModelo": "In my free time I like sports. I play soccer and I play the guitar. I am a student and I study computer science. Next year I am going to travel to Canada. I am going to study English there.",
    "checklist": [
     "Hablé de mi tiempo libre y hobbies",
     "Usé like + actividad",
@@ -242,7 +242,7 @@
    "consigna": "Examen: escribe sobre tu futuro: tu meta, tu sueño, qué vas a hacer para conseguirlo y qué es lo difícil. Usa conectores.",
    "minPalabras": 45,
    "maxPalabras": 60,
-   "respuestaModelo": "My goal is a good job in computer science, but my dream is another one: I am going to move abroad. First I am going to finish my degree, then I am going to practise English, and finally I am going to apply for the visa. It is not sure, because the visa is difficult and also expensive.",
+   "respuestaModelo": "My goal is a good job in computer science, but my dream is another one: I am going to move abroad. First I am going to finish my degree, then I am going to practice English, and finally I am going to apply for the visa. It is not sure, because the visa is difficult and also expensive.",
    "checklist": [
     "Dije mi meta y mi sueño",
     "Usé 'going to' al menos tres veces",

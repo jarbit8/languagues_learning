@@ -3,7 +3,7 @@
  "textos": [
   {
    "titulo": "El apartamento nuevo",
-   "texto": "Ana lives in a small apartment with Laura. There are three rooms: a kitchen, a bathroom and a bedroom. There is also a living room. In the living room there is a sofa, a table and two chairs. There is a lamp near the sofa and a mirror on the wall. In the kitchen there is a fridge next to the window. Ana's bed is under the window and her wardrobe is between the bed and the door. The apartment has a small balcony, but there is no garden and there is no garage. There are no stairs in the apartment. In the bathroom there is a toilet and a mirror too. Ana always has her key with her. The apartment is not big, but it is very nice.",
+   "texto": "Ana lives in a small apartment with Laura. There are three rooms: a kitchen, a bathroom and a bedroom. There is also a living room. In the living room there is a sofa, a table and two chairs. There is a lamp near the sofa and a mirror on the wall. In the kitchen there is a fridge next to the window. Ana's bed is under the window and her closet is between the bed and the door. The apartment has a small balcony, but there is no garden and there is no garage. There are no stairs in the apartment. In the bathroom there is a toilet and a mirror too. Ana always has her key with her. The apartment is not big, but it is very nice.",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
@@ -27,7 +27,7 @@
     },
     {
      "tipo": "opcion_multiple",
-     "enunciado": "Where is the wardrobe?",
+     "enunciado": "Where is the closet?",
      "opciones": [
       "between the bed and the door",
       "in the kitchen",
@@ -67,7 +67,7 @@
   },
   {
    "titulo": "La casa de los abuelos",
-   "texto": "The house of Laura's grandparents is very big. There is a garden and there is a garage too. In the garden there is a table and four chairs, near the door of the kitchen. The house has two floors and there are stairs between them. On the first floor there is a living room with a big sofa, and there is a bathroom near the door. On the second floor there are three bedrooms. In every bedroom there is a bed, a wardrobe and a lamp. There is a mirror on the wall of the bathroom. The window of the living room is under the roof of the balcony. In the kitchen there is a fridge next to the window. The key of the house is on the table, near the door. This is not an apartment: it is a house!",
+   "texto": "The house of Laura's grandparents is very big. There is a garden and there is a garage too. In the garden there is a table and four chairs, near the door of the kitchen. The house has two floors and there are stairs between them. On the first floor there is a living room with a big sofa, and there is a bathroom near the door. On the second floor there are three bedrooms. In every bedroom there is a bed, a closet and a lamp. There is a mirror on the wall of the bathroom. The window of the living room is under the roof of the balcony. In the kitchen there is a fridge next to the window. The key of the house is on the table, near the door. This is not an apartment: it is a house!",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
@@ -136,7 +136,7 @@
   },
   {
    "titulo": "El apartamento de Paul",
-   "texto": "Paul lives in a small apartment on the second floor. There is no garden and there is no garage, but there is a balcony with two chairs. From the balcony he can see the houses of the city. In the living room there is a sofa, a small table and a lamp near the window. The kitchen is next to the living room: there is a fridge under the window. The bathroom is between the kitchen and the bedroom, and in it there is a mirror on the wall and a toilet. In his bedroom there is a bed and a wardrobe next to the door. There is no table in the bedroom, so the lamp is on the floor near the bed. There are no stairs: the apartment has one floor. The key of the door is always with him. On Saturday his sister comes and she sleeps on the sofa.",
+   "texto": "Paul lives in a small apartment on the second floor. There is no garden and there is no garage, but there is a balcony with two chairs. From the balcony he can see the houses of the city. In the living room there is a sofa, a small table and a lamp near the window. The kitchen is next to the living room: there is a fridge under the window. The bathroom is between the kitchen and the bedroom, and in it there is a mirror on the wall and a toilet. In his bedroom there is a bed and a closet next to the door. There is no table in the bedroom, so the lamp is on the floor near the bed. There are no stairs: the apartment has one floor. The key of the door is always with him. On Saturday his sister comes and she sleeps on the sofa.",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
@@ -205,13 +205,13 @@
   },
   {
    "titulo": "Buscando apartamento",
-   "texto": "Is there a living room in this apartment? Yes, and there is a sofa, a table and three chairs. Where is the kitchen? The kitchen is next to the living room. There is a fridge under the window. And the bedroom? There is a bed and a wardrobe between the bed and the door. There is a lamp near the bed and a mirror on the wall. Is there a bathroom? Yes, with a toilet. And a balcony? Yes, a small balcony, but there is no garden and there is no garage. Are there stairs? No, there are no stairs: the apartment has one floor. Here is the key. The apartment is not big, but there is a room for you.",
+   "texto": "Is there a living room in this apartment? Yes, and there is a sofa, a table and three chairs. Where is the kitchen? The kitchen is next to the living room. There is a fridge under the window. And the bedroom? There is a bed and a closet between the bed and the door. There is a lamp near the bed and a mirror on the wall. Is there a bathroom? Yes, with a toilet. And a balcony? Yes, a small balcony, but there is no garden and there is no garage. Are there stairs? No, there are no stairs: the apartment has one floor. Here is the key. The apartment is not big, but there is a room for you.",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
      "enunciado": "What is in the living room?",
      "opciones": [
-      "a bed, a wardrobe and a lamp",
+      "a bed, a closet and a lamp",
       "a fridge, a window and two chairs",
       "a sofa, a table and three chairs"
      ],
@@ -229,7 +229,7 @@
     },
     {
      "tipo": "opcion_multiple",
-     "enunciado": "Where is the wardrobe?",
+     "enunciado": "Where is the closet?",
      "opciones": [
       "between the bed and the door",
       "on the wall",
@@ -269,14 +269,14 @@
   },
   {
    "titulo": "Examen · La casa de Marie",
-   "texto": "Marie has a room in a big house with three friends. In her room there is a bed under the window, a wardrobe next to the door and a small table with a lamp. There is a mirror on the wall, over the table. The bathroom is between her room and the kitchen. In the kitchen there is a fridge, a table and four chairs, and there is a big window. There is no living room in this house: the big table in the kitchen is for all the friends. There is a garden, but there is no garage and there is no balcony. The house has two floors and there are stairs near the door. The room of Marie is on the second floor. The key of her room is always with her. On Saturday she cleans the floor of her room.",
+   "texto": "Marie has a room in a big house with three friends. In her room there is a bed under the window, a closet next to the door and a small table with a lamp. There is a mirror on the wall, over the table. The bathroom is between her room and the kitchen. In the kitchen there is a fridge, a table and four chairs, and there is a big window. There is no living room in this house: the big table in the kitchen is for all the friends. There is a garden, but there is no garage and there is no balcony. The house has two floors and there are stairs near the door. The room of Marie is on the second floor. The key of her room is always with her. On Saturday she cleans the floor of her room.",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
      "enunciado": "What is under the window in her room?",
      "opciones": [
       "a table",
-      "a wardrobe",
+      "a closet",
       "a bed"
      ],
      "respuesta": "a bed"

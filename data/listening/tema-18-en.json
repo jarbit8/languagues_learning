@@ -308,7 +308,7 @@
     },
     {
      "hablante": "A",
-     "texto": "And in autumn?"
+     "texto": "And in the fall?"
     },
     {
      "hablante": "B",
@@ -345,7 +345,7 @@
      "opciones": [
       "summer",
       "spring",
-      "autumn"
+      "fall"
      ],
      "respuesta": "spring"
     }

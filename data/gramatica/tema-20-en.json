@@ -1,7 +1,7 @@
 {
  "tema": 20,
  "titulo": "Like + -ing y play / go / do con deportes",
- "regla": "Tras 'like, love, hate' se usa el verbo con -ing: 'I like reading', 'I love swimming'. Con deportes: 'play' + deportes de pelota (play football), 'go' + actividades en -ing (go swimming), 'do' + otras (do yoga). Para PROPONER un plan se usa \"Let's\" + verbo base: 'Let's play football', 'Let's go to the cinema'. Es la forma natural de decir 'vamos a...' cuando invitas a alguien.",
+ "regla": "Tras 'like, love, hate' se usa el verbo con -ing: 'I like reading', 'I love swimming'. Con deportes: 'play' + deportes de pelota (play soccer), 'go' + actividades en -ing (go swimming), 'do' + otras (do yoga). Para PROPONER un plan se usa \"Let's\" + verbo base: 'Let's play soccer', 'Let's go to the movie theater'. Es la forma natural de decir 'vamos a...' cuando invitas a alguien.",
  "pronunciacion": "La terminación -ing de los gerundios siempre se pronuncia completa: reading, swimming.",
  "trampa": "Tras like/love/hate el verbo lleva -ing: 'I like reading', no 'I like read'.",
  "ejemplos": [
@@ -11,7 +11,7 @@
    "comoSeLee": "ai laik ríding"
   },
   {
-   "frase": "I play football.",
+   "frase": "I play soccer.",
    "traduccion": "Juego fútbol.",
    "comoSeLee": "ai pléi fútbol"
   },
@@ -21,7 +21,7 @@
    "comoSeLee": "ai gó suíming"
   },
   {
-   "frase": "Let's play football on Saturday.",
+   "frase": "Let's play soccer on Saturday.",
    "traduccion": "Juguemos fútbol el sábado.",
    "comoSeLee": "lets plei fútbol..."
   }
@@ -39,7 +39,7 @@
   },
   {
    "tipo": "hueco",
-   "enunciado": "I ___ football. (play)",
+   "enunciado": "I ___ soccer. (play)",
    "respuesta": "play"
   },
   {
@@ -59,7 +59,7 @@
   },
   {
    "tipo": "opcion_multiple",
-   "enunciado": "I ___ football.",
+   "enunciado": "I ___ soccer.",
    "opciones": [
     "do",
     "go",
@@ -93,11 +93,11 @@
    "opciones": [
     "I",
     "play",
-    "football",
+    "soccer",
     "on",
     "Sunday"
    ],
-   "respuesta": "I play football on Sunday"
+   "respuesta": "I play soccer on Sunday"
   },
   {
    "tipo": "ordenar",
@@ -137,14 +137,14 @@
   {
    "tipo": "traducir",
    "enunciado": "Juego fútbol.",
-   "respuesta": "I play football.",
+   "respuesta": "I play soccer.",
    "aceptadas": [
-    "i play football"
+    "i play soccer"
    ]
   },
   {
    "tipo": "hueco",
-   "enunciado": "___ go to the cinema tonight!",
+   "enunciado": "___ go to the movie theater tonight!",
    "respuesta": "Let's",
    "aceptadas": [
     "lets"

@@ -26,7 +26,7 @@
     },
     {
      "hablante": "B",
-     "texto": "Yes, I have a maths exam on Thursday."
+     "texto": "Yes, I have a math exam on Thursday."
     },
     {
      "hablante": "A",
@@ -44,7 +44,7 @@
      "opciones": [
       "history and English",
       "computer science",
-      "maths and science"
+      "math and science"
      ],
      "respuesta": "computer science"
     },
@@ -166,7 +166,7 @@
     },
     {
      "hablante": "B",
-     "texto": "Yes, maths. It is very difficult."
+     "texto": "Yes, math. It is very difficult."
     },
     {
      "hablante": "A",
@@ -198,11 +198,11 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿De qué es el examen?",
      "opciones": [
-      "maths",
+      "math",
       "science",
       "history"
      ],
-     "respuesta": "maths"
+     "respuesta": "math"
     },
     {
      "tipo": "completar_dato",
@@ -241,7 +241,7 @@
     },
     {
      "hablante": "A",
-     "texto": "You must practise with films and music."
+     "texto": "You must practice with movies and music."
     },
     {
      "hablante": "B",
@@ -271,10 +271,10 @@
      "enunciado": "¿Con qué debe practicar?",
      "opciones": [
       "the dictionary",
-      "films and music",
+      "movies and music",
       "a computer"
      ],
-     "respuesta": "films and music"
+     "respuesta": "movies and music"
     },
     {
      "tipo": "vf",
@@ -300,7 +300,7 @@
     },
     {
      "hablante": "B",
-     "texto": "Four. Maths is very difficult."
+     "texto": "Four. Math is very difficult."
     },
     {
      "hablante": "A",
@@ -325,7 +325,7 @@
      "enunciado": "¿Qué estudia Marie?",
      "opciones": [
       "history",
-      "maths",
+      "math",
       "science"
      ],
      "respuesta": "science"

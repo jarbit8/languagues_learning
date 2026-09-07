@@ -19,10 +19,10 @@
   {
    "id": "a1-t20-003",
    "es": "fútbol",
-   "texto": "football",
-   "ejemplo": "I play football.",
-   "pron": "FUT-bol",
-   "tambien": "soccer — OJO: en EE.UU. y Canada football es otro deporte"
+   "texto": "soccer",
+   "ejemplo": "I play soccer.",
+   "pron": "SO-ker",
+   "tambien": "football es la británica — y allá football es otro deporte, el del casco"
   },
   {
    "id": "a1-t20-004",
@@ -63,7 +63,7 @@
    "id": "a1-t20-009",
    "es": "jugar",
    "texto": "to play",
-   "ejemplo": "I play football on Sunday.",
+   "ejemplo": "I play soccer on Sunday.",
    "pron": "tu PLEI"
   },
   {
@@ -84,7 +84,7 @@
    "id": "a1-t20-013",
    "es": "ver (mirar)",
    "texto": "to watch",
-   "ejemplo": "I watch films.",
+   "ejemplo": "I watch movies.",
    "pron": "tu UACH"
   },
   {
@@ -135,10 +135,10 @@
   {
    "id": "a1-t20-020",
    "es": "película",
-   "texto": "film",
-   "ejemplo": "This film is good.",
-   "pron": "FILM",
-   "tambien": "movie"
+   "texto": "movie",
+   "ejemplo": "This movie is good.",
+   "pron": "MU-vi",
+   "tambien": "film es la británica"
   },
   {
    "id": "a1-t20-021",
@@ -208,7 +208,7 @@
    "id": "a1-t20-030",
    "es": "divertido",
    "texto": "fun",
-   "ejemplo": "Football is fun.",
+   "ejemplo": "Soccer is fun.",
    "pron": "FAN"
   },
   {
