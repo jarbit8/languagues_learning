@@ -1,5 +1,5 @@
 { "tema": 22, "titulo": "Tecnología y comunicación", "conceptos": [
-{"id":"a1-t22-001","es":"internet","texto":"internet","ejemplo":"I need internet.","pron":"IN-ter-net"},
+{"id":"a1-t22-001","es":"internet","texto":"internet","ejemplo":"I need internet.","pron":"IN-ter-net","rapido":"IN-er-net — se comen la t"},
 {"id":"a1-t22-002","es":"correo electrónico","texto":"email","ejemplo":"I sent an email.","pron":"I-meil"},
 {"id":"a1-t22-003","es":"mensaje","texto":"message","ejemplo":"I got your message.","pron":"ME-sich"},
 {"id":"a1-t22-004","es":"aplicación","texto":"app","ejemplo":"This app is useful.","pron":"AP"},
@@ -27,7 +27,7 @@
 {"id":"a1-t22-026","es":"cámara","texto":"camera","ejemplo":"The camera is good.","pron":"KA-me-ra"},
 {"id":"a1-t22-027","es":"batería","texto":"battery","ejemplo":"The battery is low.","pron":"BA-te-ri"},
 {"id":"a1-t22-028","es":"cargar","texto":"to charge","ejemplo":"I charge my phone.","pron":"tu CHARCH"},
-{"id":"a1-t22-029","es":"apagar","texto":"to turn off","literal":"girar fuera","ejemplo":"Turn off the computer.","pron":"tu tern OF"},
-{"id":"a1-t22-030","es":"encender","texto":"to turn on","literal":"girar sobre","ejemplo":"Turn on the light.","pron":"tu tern ON"},
+{"id":"a1-t22-029","es":"apagar","texto":"to turn off","literal":"girar fuera","ejemplo":"Turn off the computer.","pron":"tu tern OF","rapido":"ter-NOF"},
+{"id":"a1-t22-030","es":"encender","texto":"to turn on","literal":"girar sobre","ejemplo":"Turn on the light.","pron":"tu tern ON","rapido":"ter-NON"},
 {"id":"a1-t22-031","es":"redes sociales","texto":"social media","ejemplo":"I use social media every day.","pron":"SOU-shal MI-dia"}
 ] }

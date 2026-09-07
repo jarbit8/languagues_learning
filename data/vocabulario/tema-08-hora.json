@@ -13,7 +13,7 @@
 {"id":"a1-t08-012","es":"tarde-noche","texto":"evening","ejemplo":"Good evening!","pron":"IV-ning"},
 {"id":"a1-t08-013","es":"noche","texto":"night","ejemplo":"Good night!","pron":"NAIT"},
 {"id":"a1-t08-014","es":"siempre","texto":"always","ejemplo":"I always study.","pron":"OL-ueis"},
-{"id":"a1-t08-015","es":"normalmente","texto":"usually","ejemplo":"I am usually on time.","pron":"YU-shua-li"},
+{"id":"a1-t08-015","es":"normalmente","texto":"usually","ejemplo":"I am usually on time.","pron":"YU-shua-li","rapido":"YU-zhu-li y de ahi YU-zhli"},
 {"id":"a1-t08-016","es":"a menudo","texto":"often","ejemplo":"I am often late.","pron":"O-fen"},
 {"id":"a1-t08-017","es":"a veces","texto":"sometimes","ejemplo":"Sometimes I cook.","pron":"SAM-taims"},
 {"id":"a1-t08-018","es":"nunca","texto":"never","ejemplo":"I never work at night.","pron":"NE-ver"},

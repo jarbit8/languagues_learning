@@ -7,7 +7,8 @@
    "es": "tienda",
    "texto": "shop",
    "ejemplo": "The shop is near my house.",
-   "pron": "SHOP"
+   "pron": "SHOP",
+   "tambien": "store"
   },
   {
    "id": "a1-t15-002",
@@ -90,7 +91,8 @@
    "es": "poco",
    "texto": "a little",
    "ejemplo": "A little sugar, please.",
-   "pron": "a LI-tel"
+   "pron": "a LI-tel",
+   "rapido": "a LI-dl"
   },
   {
    "id": "a1-t15-013",
@@ -139,7 +141,8 @@
    "es": "caja (pagar)",
    "texto": "checkout",
    "ejemplo": "Pay at the checkout.",
-   "pron": "CHEK-aut"
+   "pron": "CHEK-aut",
+   "tambien": "the register — la caja"
   },
   {
    "id": "a1-t15-020",
@@ -181,7 +184,8 @@
    "es": "billete",
    "texto": "banknote",
    "ejemplo": "A ten-dollar banknote.",
-   "pron": "BANK-nout"
+   "pron": "BANK-nout",
+   "tambien": "a bill — un billete de cinco es a five-dollar bill"
   },
   {
    "id": "a1-t15-028",

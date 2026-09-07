@@ -21,7 +21,8 @@
    "es": "fútbol",
    "texto": "football",
    "ejemplo": "I play football.",
-   "pron": "FUT-bol"
+   "pron": "FUT-bol",
+   "tambien": "soccer — OJO: en EE.UU. y Canada football es otro deporte"
   },
   {
    "id": "a1-t20-004",
@@ -136,7 +137,8 @@
    "es": "película",
    "texto": "film",
    "ejemplo": "This film is good.",
-   "pron": "FILM"
+   "pron": "FILM",
+   "tambien": "movie"
   },
   {
    "id": "a1-t20-021",
@@ -157,7 +159,8 @@
    "es": "fiesta",
    "texto": "party",
    "ejemplo": "There is a party today.",
-   "pron": "PAR-ti"
+   "pron": "PAR-ti",
+   "rapido": "PAR-di"
   },
   {
    "id": "a1-t20-024",

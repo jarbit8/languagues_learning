@@ -70,7 +70,8 @@
    "es": "y",
    "texto": "and",
    "ejemplo": "English and Spanish.",
-   "pron": "AND"
+   "pron": "AND",
+   "rapido": "n a secas: rock 'n' roll es rock and roll"
   },
   {
    "id": "a1-t24-012",
@@ -154,14 +155,16 @@
    "es": "mejor",
    "texto": "better",
    "ejemplo": "A better future.",
-   "pron": "BE-ter"
+   "pron": "BE-ter",
+   "rapido": "BE-der"
   },
   {
    "id": "a1-t24-026",
    "es": "importante",
    "texto": "important",
    "ejemplo": "English is important.",
-   "pron": "im-POR-tant"
+   "pron": "im-POR-tant",
+   "rapido": "im-POR-nt — se comen la t"
   },
   {
    "id": "a1-t24-027",

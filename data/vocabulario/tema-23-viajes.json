@@ -28,7 +28,8 @@
    "es": "equipaje",
    "texto": "luggage",
    "ejemplo": "My luggage is heavy.",
-   "pron": "LA-guich"
+   "pron": "LA-guich",
+   "tambien": "bags — en el aeropuerto se oye mas"
   },
   {
    "id": "a1-t23-008",
@@ -42,7 +43,8 @@
    "es": "reserva",
    "texto": "booking",
    "ejemplo": "I have a booking.",
-   "pron": "BU-king"
+   "pron": "BU-king",
+   "tambien": "reservation"
   },
   {
    "id": "a1-t23-014",
@@ -70,7 +72,8 @@
    "es": "vacaciones",
    "texto": "holiday",
    "ejemplo": "I am on holiday.",
-   "pron": "JO-li-dei"
+   "pron": "JO-li-dei",
+   "tambien": "vacation en los dos; alli holiday es un feriado, no tus vacaciones"
   },
   {
    "id": "a1-t23-019",

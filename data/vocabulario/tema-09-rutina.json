@@ -8,7 +8,8 @@
    "texto": "to get up",
    "literal": "conseguir arriba",
    "ejemplo": "I get up at seven.",
-   "pron": "tu guet AP"
+   "pron": "tu guet AP",
+   "rapido": "ge-DAP — se pegan y la t suena d"
   },
   {
    "id": "a1-t09-002",
@@ -16,7 +17,8 @@
    "texto": "to wake up",
    "literal": "despertar arriba",
    "ejemplo": "I wake up early.",
-   "pron": "tu ueik AP"
+   "pron": "tu ueik AP",
+   "rapido": "wei-KAP"
   },
   {
    "id": "a1-t09-003",
@@ -150,7 +152,8 @@
    "texto": "to go out",
    "literal": "ir fuera",
    "ejemplo": "I go out at eight.",
-   "pron": "tu gou AUT"
+   "pron": "tu gou AUT",
+   "rapido": "gou-AUT"
   },
   {
    "id": "a1-t09-021",
@@ -171,7 +174,8 @@
    "es": "todos los días",
    "texto": "every day",
    "ejemplo": "I study every day.",
-   "pron": "EV-ri DEI"
+   "pron": "EV-ri DEI",
+   "rapido": "EV-ri-dei — every son dos silabas, no tres"
   },
   {
    "id": "a1-t09-024",

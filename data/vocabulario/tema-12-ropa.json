@@ -28,7 +28,8 @@
    "es": "pantalón",
    "texto": "trousers",
    "ejemplo": "The trousers are black.",
-   "pron": "TRAU-sers"
+   "pron": "TRAU-sers",
+   "tambien": "pants — ojo: pants en britanico es calzoncillos"
   },
   {
    "id": "a1-t12-005",
@@ -106,7 +107,8 @@
    "texto": "to put on",
    "literal": "poner sobre",
    "ejemplo": "Put on your jacket.",
-   "pron": "tu put ON"
+   "pron": "tu put ON",
+   "rapido": "pu-DON"
   },
   {
    "id": "a1-t12-016",
@@ -199,7 +201,8 @@
    "texto": "to take off",
    "literal": "tomar fuera",
    "ejemplo": "Take off your hat.",
-   "pron": "tu teik OF"
+   "pron": "tu teik OF",
+   "rapido": "tei-KOF"
   },
   {
    "id": "a1-t12-030",
@@ -213,7 +216,8 @@
    "es": "pijama",
    "texto": "pyjamas",
    "ejemplo": "I wear pyjamas at night.",
-   "pron": "pi-YA-mas"
+   "pron": "pi-YA-mas",
+   "tambien": "pajamas en EE.UU.; en Canada valen las dos"
   },
   {
    "id": "a1-t12-032",

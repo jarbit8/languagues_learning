@@ -63,14 +63,16 @@
    "es": "cine",
    "texto": "cinema",
    "ejemplo": "There is a good cinema.",
-   "pron": "SI-ne-ma"
+   "pron": "SI-ne-ma",
+   "tambien": "movie theater · the movies"
   },
   {
    "id": "a1-t16-011",
    "es": "farmacia",
    "texto": "pharmacy",
    "ejemplo": "The pharmacy is open.",
-   "pron": "FAR-ma-si"
+   "pron": "FAR-ma-si",
+   "tambien": "drugstore en EE.UU.; en Canada, drug store o pharmacy"
   },
   {
    "id": "a1-t16-012",
@@ -105,7 +107,8 @@
    "es": "café (lugar)",
    "texto": "café",
    "ejemplo": "Let's go to the café.",
-   "pron": "ka-FEI"
+   "pron": "ka-FEI",
+   "tambien": "coffee shop"
   },
   {
    "id": "a1-t16-017",
@@ -119,7 +122,8 @@
    "es": "centro",
    "texto": "city centre",
    "ejemplo": "I live in the city centre.",
-   "pron": "SI-ti SEN-ter"
+   "pron": "SI-ti SEN-ter",
+   "tambien": "downtown en los dos paises — es la palabra del dia a dia"
   },
   {
    "id": "a1-t16-019",
@@ -147,7 +151,8 @@
    "es": "teatro",
    "texto": "theatre",
    "ejemplo": "The theatre is in the city centre.",
-   "pron": "ZI-a-ter"
+   "pron": "ZI-a-ter",
+   "tambien": "theater en EE.UU. (Canada mantiene theatre); si es de cine, movie theater"
   },
   {
    "id": "a1-t16-023",
@@ -211,7 +216,8 @@
    "es": "municipalidad",
    "texto": "town hall",
    "ejemplo": "The town hall is near the park.",
-   "pron": "TAUN jol"
+   "pron": "TAUN jol",
+   "tambien": "city hall"
   },
   {
    "id": "a1-t16-032",

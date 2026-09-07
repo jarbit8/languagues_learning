@@ -20,7 +20,7 @@
 {"id":"a1-t07-019","es":"diciembre","texto":"December","ejemplo":"In December it is winter in Canada.","pron":"di-SEM-ber"},
 {"id":"a1-t07-020","es":"primavera","texto":"spring","ejemplo":"In spring my sister comes to Canada.","pron":"SPRING"},
 {"id":"a1-t07-021","es":"verano","texto":"summer","ejemplo":"The summer has three months.","pron":"SA-mer"},
-{"id":"a1-t07-022","es":"otoño","texto":"autumn","ejemplo":"Autumn is beautiful.","pron":"O-tom"},
+{"id":"a1-t07-022","es":"otoño","texto":"autumn","ejemplo":"Autumn is beautiful.","pron":"O-tom","tambien":"fall en EE.UU. y en Canada"},
 {"id":"a1-t07-023","es":"invierno","texto":"winter","ejemplo":"In winter the days are short.","pron":"UIN-ter"},
 {"id":"a1-t07-024","es":"día","texto":"day","ejemplo":"Have a nice day!","pron":"DEI"},
 {"id":"a1-t07-025","es":"semana","texto":"week","ejemplo":"A week has seven days.","pron":"UIK"},

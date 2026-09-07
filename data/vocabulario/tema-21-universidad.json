@@ -57,7 +57,8 @@
    "es": "matemáticas",
    "texto": "maths",
    "ejemplo": "Maths is difficult.",
-   "pron": "MAZS"
+   "pron": "MAZS",
+   "tambien": "math, sin la s, en EE.UU. y en Canada"
   },
   {
    "id": "a1-t21-010",
@@ -193,7 +194,8 @@
    "es": "practicar",
    "texto": "to practise",
    "ejemplo": "I practise every day.",
-   "pron": "tu PRAK-tis"
+   "pron": "tu PRAK-tis",
+   "tambien": "to practice en EE.UU.; Canada escribe practise el verbo"
   },
   {
    "id": "a1-t21-031",
