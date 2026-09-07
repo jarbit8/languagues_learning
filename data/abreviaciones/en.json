@@ -4,7 +4,7 @@
  "grupos": [
   {
    "titulo": "Contracciones",
-   "nota": "Estas SÍ se escriben, con apóstrofo, y son correctas en cualquier sitio menos en un texto muy formal. En el habla son obligatorias: decir «I am» entero suena a robot o a énfasis.",
+   "nota": "Estas SÍ se escriben, con apóstrofo, y son correctas en cualquier sitio menos en un texto muy formal. En el habla son obligatorias: decir «I am» entero suena a robot o a énfasis. Son casi todas las que existen: el patrón es siempre el mismo —sujeto + verbo, o verbo + not— así que aprendido uno, los tienes todos.",
    "escritura": "se escriben",
    "items": [
     { "id":"abr-001", "texto":"I'm", "de":"I am", "es":"yo soy / estoy", "pron":"AIM", "ejemplo":"I'm Joel." },
@@ -28,7 +28,27 @@
     { "id":"abr-019", "texto":"that's", "de":"that is", "es":"eso es", "pron":"DATS", "ejemplo":"That's my bag." },
     { "id":"abr-020", "texto":"I'll", "de":"I will", "es":"yo voy a", "pron":"AIL", "ejemplo":"I'll call you." },
     { "id":"abr-021", "texto":"I've", "de":"I have", "es":"yo he / tengo", "pron":"AIV", "ejemplo":"I've got it." },
-    { "id":"abr-022", "texto":"I'd", "de":"I would", "es":"yo querría", "pron":"AID", "ejemplo":"I'd like a coffee." }
+    { "id":"abr-022", "texto":"I'd", "de":"I would", "es":"yo querría", "pron":"AID", "ejemplo":"I'd like a coffee." },
+    { "id":"abr-023", "texto":"he'll", "de":"he will", "es":"él va a", "pron":"JIL", "ejemplo":"He'll call you later." },
+    { "id":"abr-024", "texto":"she'll", "de":"she will", "es":"ella va a", "pron":"SHIL", "ejemplo":"She'll be here at six." },
+    { "id":"abr-025", "texto":"we'll", "de":"we will", "es":"nosotros vamos a", "pron":"UIL", "ejemplo":"We'll see." },
+    { "id":"abr-026", "texto":"they'll", "de":"they will", "es":"ellos van a", "pron":"DEL", "ejemplo":"They'll come tomorrow." },
+    { "id":"abr-027", "texto":"you'll", "de":"you will", "es":"tú vas a", "pron":"YUL", "ejemplo":"You'll like it." },
+    { "id":"abr-028", "texto":"it'll", "de":"it will", "es":"va a (una cosa)", "pron":"I-tel", "ejemplo":"It'll be fine." },
+    { "id":"abr-029", "texto":"that'll", "de":"that will", "es":"eso va a", "pron":"DA-tel", "ejemplo":"That'll work." },
+    { "id":"abr-045", "texto":"we've", "de":"we have", "es":"nosotros hemos / tenemos", "pron":"UIV", "ejemplo":"We've got time." },
+    { "id":"abr-046", "texto":"you've", "de":"you have", "es":"tú has / tienes", "pron":"YUV", "ejemplo":"You've got a message." },
+    { "id":"abr-047", "texto":"they've", "de":"they have", "es":"ellos han / tienen", "pron":"DEIV", "ejemplo":"They've got two cats." },
+    { "id":"abr-048", "texto":"hasn't", "de":"has not", "es":"no ha / no tiene", "pron":"JA-sent", "ejemplo":"She hasn't arrived." },
+    { "id":"abr-049", "texto":"haven't", "de":"have not", "es":"no he / no tengo", "pron":"JA-vent", "ejemplo":"I haven't seen it." },
+    { "id":"abr-061", "texto":"wasn't", "de":"was not", "es":"no era / no estaba", "pron":"UA-sent", "ejemplo":"It wasn't easy." },
+    { "id":"abr-062", "texto":"weren't", "de":"were not", "es":"no eran / no estaban", "pron":"UERNT", "ejemplo":"They weren't at home." },
+    { "id":"abr-063", "texto":"wouldn't", "de":"would not", "es":"no querría / no lo haría", "pron":"UU-dent", "ejemplo":"I wouldn't do that." },
+    { "id":"abr-064", "texto":"couldn't", "de":"could not", "es":"no pude / no podía", "pron":"KU-dent", "ejemplo":"I couldn't come." },
+    { "id":"abr-065", "texto":"shouldn't", "de":"should not", "es":"no debería", "pron":"SHU-dent", "ejemplo":"You shouldn't wait." },
+    { "id":"abr-066", "texto":"who's", "de":"who is", "es":"quién es", "pron":"JUS", "ejemplo":"Who's there?" },
+    { "id":"abr-067", "texto":"how's", "de":"how is", "es":"cómo está", "pron":"JAUS", "ejemplo":"How's your family?" },
+    { "id":"abr-068", "texto":"here's", "de":"here is", "es":"aquí está", "pron":"JIRS", "ejemplo":"Here's your coffee." }
    ]
   },
   {
