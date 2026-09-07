@@ -27,7 +27,7 @@
 {"id":"a1-t18-026","es":"tormenta","texto":"storm","ejemplo":"There is a storm.","pron":"STORM"},
 {"id":"a1-t18-027","es":"hielo","texto":"ice","ejemplo":"There is ice on the road.","pron":"AIS"},
 {"id":"a1-t18-028","es":"grados","texto":"degrees","ejemplo":"It's twenty degrees.","pron":"di-GRIS"},
-{"id":"a1-t18-029","es":"¿qué tiempo hace?","texto":"what's the weather like?","literal":"¿qué es el clima como?","ejemplo":"What's the weather like?","pron":"uats de UE-der laik"},
+{"id":"a1-t18-029","es":"¿qué tiempo hace?","texto":"what's the weather like?","literal":"¿qué es el clima como?","ejemplo":"What's the weather like?","pron":"uats de UE-der laik","rapido":"uats-de-UE-der-laik","tambien":"how's the weather?"},
 {"id":"a1-t18-030","es":"caluroso","texto":"warm/hot day","ejemplo":"It's a hot day.","pron":"UORM JOT DEI"},
 {"id":"a1-t18-031","es":"neblina","texto":"fog","ejemplo":"There is fog this morning.","pron":"FOG"}
 ] }

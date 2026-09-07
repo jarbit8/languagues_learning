@@ -21,7 +21,7 @@
 {"id":"a1-t08-020","es":"tarde (adverbio)","texto":"late","ejemplo":"You are late.","pron":"LEIT"},
 {"id":"a1-t08-021","es":"ahora","texto":"now","ejemplo":"I study now.","pron":"NAU"},
 {"id":"a1-t08-022","es":"segundo","texto":"second","ejemplo":"Wait a second.","pron":"SE-kond"},
-{"id":"a1-t08-023","es":"¿qué hora es?","texto":"what time is it?","literal":"¿qué hora es ello?","ejemplo":"Excuse me, what time is it?","pron":"uat TAIM is it"},
+{"id":"a1-t08-023","es":"¿qué hora es?","texto":"what time is it?","literal":"¿qué hora es ello?","ejemplo":"Excuse me, what time is it?","pron":"uat TAIM is it","rapido":"ua-TAI-miz-it","tambien":"got the time?"},
 {"id":"a1-t08-024","es":"media hora","texto":"half an hour","ejemplo":"In half an hour.","pron":"jaf an AUR"},
 {"id":"a1-t08-025","es":"antes","texto":"before","ejemplo":"Before noon.","pron":"bi-FOR"},
 {"id":"a1-t08-026","es":"después","texto":"after","ejemplo":"After midnight.","pron":"AF-ter"},
@@ -30,5 +30,5 @@
 {"id":"a1-t08-029","es":"puntual","texto":"on time","literal":"sobre tiempo","ejemplo":"I am always on time.","pron":"on TAIM"},
 {"id":"a1-t08-030","es":"cuarto de hora","texto":"quarter of an hour","ejemplo":"A quarter of an hour.","pron":"KUOR-ter ov an AUR"},
 {"id":"a1-t08-031","es":"rara vez","texto":"rarely","ejemplo":"I rarely work at night.","pron":"RER-li"},
-{"id":"a1-t08-032","es":"enseguida","texto":"right away","literal":"derecha lejos","ejemplo":"I'm coming right away.","pron":"rait a-UEI"}
+{"id":"a1-t08-032","es":"enseguida","texto":"right away","literal":"derecha lejos","ejemplo":"I'm coming right away.","pron":"rait a-UEI","tambien":"right now · ASAP (ei-es-ei-PI)"}
 ] }

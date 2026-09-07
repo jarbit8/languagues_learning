@@ -9,6 +9,10 @@ export interface Concepto {
   nota?: string
   /** Qué diría la tarjeta traducida palabra por palabra, cuando eso no es lo que significa. */
   literal?: string
+  /** Cómo sale al hablar rápido: el nativo se come sonidos y no suena como el `pron` de libro. */
+  rapido?: string
+  /** Lo que dice un nativo en su lugar, normalmente más corto. Es para RECONOCER, no para usar. */
+  tambien?: string
 }
 
 export interface VocabPack {

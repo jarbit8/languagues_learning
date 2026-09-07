@@ -99,7 +99,8 @@
    "es": "querer",
    "texto": "to want",
    "ejemplo": "I want a salad.",
-   "pron": "tu UANT"
+   "pron": "tu UANT",
+   "rapido": "want to suena UO-na (wanna)"
   },
   {
    "id": "a1-t14-015",
@@ -108,6 +109,8 @@
    "literal": "yo gustaría",
    "ejemplo": "I would like a coffee.",
    "pron": "ai uud LAIK",
+   "rapido": "aid-LAIK",
+   "tambien": "I'll have… · can I get…",
    "nota": "Forma cortés para pedir."
   },
   {
@@ -199,7 +202,8 @@
    "es": "la carta",
    "texto": "the menu card",
    "ejemplo": "Here is the menu card.",
-   "pron": "de ME-niu KARD"
+   "pron": "de ME-niu KARD",
+   "tambien": "the menu, a secas"
   },
   {
    "id": "a1-t14-031",
@@ -207,7 +211,8 @@
    "texto": "soft drink",
    "literal": "bebida suave",
    "ejemplo": "I would like a soft drink.",
-   "pron": "soft DRINK"
+   "pron": "soft DRINK",
+   "tambien": "soda en EE.UU. · pop en Canada"
   },
   {
    "id": "a1-t14-032",

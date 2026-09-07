@@ -52,6 +52,26 @@ export default function VocabCard({
                 <span className="line-through decoration-rose-300">{concepto.literal}</span>
               </p>
             )}
+            {/* CÓMO SUENA DE VERDAD (2026-09-07, pedido suyo: "de nada es you're welcome,
+                pero escuché que decían otra cosa"). El `pron` es la versión de libro y nadie
+                habla así: el nativo se come sonidos y encima suele usar una fórmula más corta.
+                Sin esto la tarjeta enseña algo que luego NO se reconoce en una conversación.
+                `tambien` es para RECONOCER, no para producir — por eso no entra en ningún
+                examen ni cuenta como vocabulario del temario. */}
+            {(concepto.rapido || concepto.tambien) && (
+              <div className="mt-1 rounded-lg bg-sky-50 px-2.5 py-1.5 dark:bg-sky-950/40">
+                {concepto.rapido && (
+                  <p className="text-xs leading-relaxed text-sky-900 dark:text-sky-100">
+                    <span className="font-semibold">Rápido suena:</span> {concepto.rapido}
+                  </p>
+                )}
+                {concepto.tambien && (
+                  <p className="text-xs leading-relaxed text-sky-900 dark:text-sky-100">
+                    <span className="font-semibold">También dicen:</span> {concepto.tambien}
+                  </p>
+                )}
+              </div>
+            )}
             {/* Si la palabra lleva un sonido que al hispanohablante se le atraganta, el
                 consejo del módulo de pronunciación se enseña AQUÍ, junto a la palabra:
                 antes solo existía en una pantalla aparte y había que ir a buscarlo. */}

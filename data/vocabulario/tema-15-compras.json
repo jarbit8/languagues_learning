@@ -64,7 +64,9 @@
    "texto": "how much is it?",
    "literal": "¿cuánto es ello?",
    "ejemplo": "How much is it?",
-   "pron": "jau MACH is it"
+   "pron": "jau MACH is it",
+   "rapido": "jau-MACH-iz-it",
+   "tambien": "how much?"
   },
   {
    "id": "a1-t15-010",
@@ -79,7 +81,9 @@
    "texto": "a lot of",
    "literal": "un lote de",
    "ejemplo": "There is a lot of fruit.",
-   "pron": "a LOT ov"
+   "pron": "a LOT ov",
+   "rapido": "a LO-dof",
+   "tambien": "lots of"
   },
   {
    "id": "a1-t15-012",

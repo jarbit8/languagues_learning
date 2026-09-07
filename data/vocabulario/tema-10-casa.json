@@ -4,7 +4,7 @@
 {"id":"a1-t10-003","es":"habitación","texto":"room","ejemplo":"The room is big.","pron":"RUM"},
 {"id":"a1-t10-004","es":"cocina","texto":"kitchen","ejemplo":"The kitchen is clean.","pron":"KI-chen"},
 {"id":"a1-t10-005","es":"dormitorio","texto":"bedroom","ejemplo":"My bedroom is small.","pron":"BED-rum"},
-{"id":"a1-t10-006","es":"baño","texto":"bathroom","ejemplo":"The bathroom is here.","pron":"BAZ-rum"},
+{"id":"a1-t10-006","es":"baño","texto":"bathroom","ejemplo":"The bathroom is here.","pron":"BAZ-rum","tambien":"restroom — en un sitio publico"},
 {"id":"a1-t10-007","es":"sala","texto":"living room","ejemplo":"There is a sofa in the living room.","pron":"LI-ving rum"},
 {"id":"a1-t10-008","es":"puerta","texto":"door","ejemplo":"Close the door, please.","pron":"DOR"},
 {"id":"a1-t10-009","es":"ventana","texto":"window","ejemplo":"The window is near the door.","pron":"UIN-dou"},
