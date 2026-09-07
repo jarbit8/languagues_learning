@@ -12,7 +12,7 @@
 {"id":"a1-t01-011","es":"hasta mañana","texto":"see you tomorrow","ejemplo":"See you tomorrow!","pron":"si yu tu-MO-rou","rapido":"si-ya tu-MO-rou"},
 {"id":"a1-t01-012","es":"por favor","texto":"please","ejemplo":"Your name, please.","pron":"PLIS"},
 {"id":"a1-t01-013","es":"gracias","texto":"thank you","ejemplo":"Thank you, Maria!","pron":"ZANK-yu","rapido":"ZENK-yu, casi ZENKS","tambien":"thanks · thanks a lot"},
-{"id":"a1-t01-014","es":"de nada","texto":"you're welcome","literal":"eres bienvenido","ejemplo":"You're welcome!","pron":"yor UEL-kem","rapido":"yer-UEL-kem — el you're se reduce a 'yer'","tambien":"no problem · sure · you bet"},
+{"id":"a1-t01-014","es":"de nada","texto":"you're welcome","literal":"eres bienvenido","ejemplo":"You're welcome!","pron":"yor UEL-kem","rapido":"yer-UEL-kem, y al hablar muy rápido casi y'UEL-kem","tambien":"no problem · sure · you bet · uh-huh (a-JÁ, un gruñido, solo entre amigos)"},
 {"id":"a1-t01-015","es":"perdón","texto":"sorry","ejemplo":"Sorry!","pron":"SO-ri","tambien":"my bad — muy informal, entre amigos","nota":"Para disculparte por algo."},
 {"id":"a1-t01-016","es":"disculpe","texto":"excuse me","literal":"excúsame","ejemplo":"Excuse me, sir.","pron":"eks-KIUS mi","rapido":"s-KIUS-mi — se comen la e del principio","nota":"Para llamar la atención o pasar."},
 {"id":"a1-t01-017","es":"no hay problema","texto":"no problem","ejemplo":"No problem!","pron":"nou PRO-blem"},
