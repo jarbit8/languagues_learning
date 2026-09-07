@@ -2,6 +2,7 @@ import { doc, getDoc, setDoc } from 'firebase/firestore/lite'
 import { db } from '../db'
 import { getDbRemota } from './firebase'
 import type {
+  AbreviacionSabida,
   HistorialExamen,
   NotasBloque,
   PalabraEstado,
@@ -24,7 +25,7 @@ import type {
 // El orden es siempre: traer lo remoto → fusionar con lo local → guardar en las dos partes.
 // Así da igual por dónde se empiece.
 
-const RAMAS = ['palabras', 'progresoTema', 'progresoBloque', 'progresoNivel', 'historialExamenes', 'practicaPron', 'plan'] as const
+const RAMAS = ['palabras', 'progresoTema', 'progresoBloque', 'progresoNivel', 'historialExamenes', 'practicaPron', 'plan', 'abreviaciones'] as const
 type Rama = (typeof RAMAS)[number]
 
 interface Paquete {
@@ -34,12 +35,13 @@ interface Paquete {
   progresoNivel: ProgresoNivel[]
   historialExamenes: HistorialExamen[]
   practicaPron: PracticaPron[]
+  abreviaciones: AbreviacionSabida[]
   plan: PlanEstudio[]
 }
 
 const vacio = (): Paquete => ({
   palabras: [], progresoTema: [], progresoBloque: [], progresoNivel: [],
-  historialExamenes: [], practicaPron: [], plan: []
+  historialExamenes: [], practicaPron: [], plan: [], abreviaciones: []
 })
 
 // --- reglas de fusión, una por tabla ---
@@ -133,6 +135,10 @@ function mezclaPaquetes(local: Paquete, remoto: Paquete): Paquete {
     progresoBloque: une(local.progresoBloque, remoto.progresoBloque, (x) => x.bloqueId, mezclaBloque),
     progresoNivel: une(local.progresoNivel, remoto.progresoNivel, (x) => x.id, mezclaNivel),
     practicaPron: une(local.practicaPron, remoto.practicaPron, (x) => x.id, mezclaPron),
+    // Marcarla es avanzar y desmarcarla es retroceder, así que gana la marcada, igual que
+    // con el resto: sincronizar no puede hacer perder trabajo.
+    abreviaciones: une(local.abreviaciones, remoto.abreviaciones, (x) => x.id, (a, b) =>
+      a.sabida ? a : b),
     historialExamenes: une(local.historialExamenes, remoto.historialExamenes, claveExamen, (a) => a)
       .map(({ id: _id, ...resto }) => resto as HistorialExamen),
     // El cronograma es una sola fila y se edita a mano: gana el que se guardó más tarde.
@@ -144,24 +150,27 @@ function mezclaPaquetes(local: Paquete, remoto: Paquete): Paquete {
 // --- lectura y escritura ---
 
 async function leerLocal(): Promise<Paquete> {
-  const [palabras, progresoTema, progresoBloque, progresoNivel, historialExamenes, practicaPron, plan] =
+  const [palabras, progresoTema, progresoBloque, progresoNivel, historialExamenes, practicaPron, plan,
+    abreviaciones] =
     await Promise.all([
       db.palabras.toArray(), db.progresoTema.toArray(), db.progresoBloque.toArray(),
       db.progresoNivel.toArray(), db.historialExamenes.toArray(), db.practicaPron.toArray(),
-      db.plan.toArray()
+      db.plan.toArray(), db.abreviaciones.toArray()
     ])
-  return { palabras, progresoTema, progresoBloque, progresoNivel, historialExamenes, practicaPron, plan }
+  return { palabras, progresoTema, progresoBloque, progresoNivel, historialExamenes, practicaPron, plan,
+    abreviaciones }
 }
 
 async function escribirLocal(p: Paquete): Promise<void> {
   await db.transaction('rw', [db.palabras, db.progresoTema, db.progresoBloque, db.progresoNivel,
-    db.historialExamenes, db.practicaPron, db.plan], async () => {
+    db.historialExamenes, db.practicaPron, db.plan, db.abreviaciones], async () => {
     await db.palabras.bulkPut(p.palabras)
     await db.progresoTema.bulkPut(p.progresoTema)
     await db.progresoBloque.bulkPut(p.progresoBloque)
     await db.progresoNivel.bulkPut(p.progresoNivel)
     await db.practicaPron.bulkPut(p.practicaPron)
     await db.plan.bulkPut(p.plan)
+    await db.abreviaciones.bulkPut(p.abreviaciones)
     // el historial se reescribe entero porque las claves se renumeran al unir
     await db.historialExamenes.clear()
     await db.historialExamenes.bulkAdd(p.historialExamenes)

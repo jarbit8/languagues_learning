@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { useLiveQuery } from 'dexie-react-hooks'
 import { db } from '../db'
-import { vocabPacks, getVocabPack } from '../data/packs'
+import { vocabPacks, getVocabPack, abreviacionesPack } from '../data/packs'
 import { hablar } from '../lib/audio'
 import type { EstadoPalabra } from '../types'
 
@@ -19,7 +19,14 @@ const ETIQUETA: Record<EstadoPalabra, { texto: string; clase: string }> = {
 
 export default function Aprendidas() {
   const palabras = useLiveQuery(() => db.palabras.toArray(), [], [])
+  const marcadas = useLiveQuery(() => db.abreviaciones.toArray(), [], [])
   const [abierto, setAbierto] = useState<number | null>(null)
+
+  // Las abreviaciones se marcan en su propio módulo y con su propia tabla, pero él las quiere
+  // ver aquí también: "aprendido" es un solo sitio, aunque por dentro sean dos listas.
+  const sabidas = new Set(marcadas.filter((m) => m.sabida).map((m) => m.id))
+  const abreviadas = (abreviacionesPack?.grupos ?? []).flatMap((g) =>
+    g.items.filter((it) => sabidas.has(it.id)).map((it) => ({ ...it, grupo: g.titulo })))
 
   const porId = new Map(palabras.map((p) => [p.id, p]))
   // Solo los temas donde ya marcó algo; el resto no pinta nada y sería ruido.
@@ -34,7 +41,7 @@ export default function Aprendidas() {
   const total = temas.reduce((n, t) => n + t.conceptos.length, 0)
   const dominadas = palabras.filter((p) => p.estado === 'dominada').length
 
-  if (total === 0) {
+  if (total === 0 && abreviadas.length === 0) {
     return (
       <div className="flex flex-col gap-3">
         <h2 className="text-lg font-bold">Vocabulario aprendido</h2>
@@ -116,6 +123,29 @@ export default function Aprendidas() {
           )}
         </div>
       ))}
+
+      {abreviadas.length > 0 && (
+        <div className="tarjeta">
+          <p className="flex items-center gap-2 font-bold">
+            ✂️ Abreviaciones <span className="ml-auto text-xs font-normal text-slate-400">{abreviadas.length}</span>
+          </p>
+          <p className="mt-1 text-xs text-slate-500 dark:text-slate-400">
+            Las que marcaste en su módulo. No entran en ningún examen: son de reconocer, no de producir.
+          </p>
+          <div className="mt-3 flex flex-wrap gap-1.5 border-t border-slate-100 pt-3 dark:border-slate-700">
+            {abreviadas.map((a) => (
+              <button
+                key={a.id}
+                onClick={() => hablar(a.texto)}
+                title={`${a.es}${a.de ? ` · de ${a.de}` : ''}`}
+                className="rounded-lg bg-slate-100 px-2 py-1 text-xs font-semibold dark:bg-slate-800"
+              >
+                {a.texto} <span className="font-normal text-slate-400">{a.es}</span>
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
     </div>
   )
 }

@@ -1,0 +1,111 @@
+{
+ "titulo": "Abreviaciones y formas cortas",
+ "nota": "Lo que el inglés recorta. Va aparte del vocabulario porque no son palabras nuevas: son las de siempre, encogidas. Se marcan aquí con «La sé ✓» y no entran en ningún examen — la mayoría ni siquiera se escriben, solo se oyen.",
+ "grupos": [
+  {
+   "titulo": "Contracciones",
+   "nota": "Estas SÍ se escriben, con apóstrofo, y son correctas en cualquier sitio menos en un texto muy formal. En el habla son obligatorias: decir «I am» entero suena a robot o a énfasis.",
+   "escritura": "se escriben",
+   "items": [
+    { "id":"abr-001", "texto":"I'm", "de":"I am", "es":"yo soy / estoy", "pron":"AIM", "ejemplo":"I'm Joel." },
+    { "id":"abr-002", "texto":"you're", "de":"you are", "es":"tú eres / estás", "pron":"YOR", "ejemplo":"You're welcome." },
+    { "id":"abr-003", "texto":"he's", "de":"he is", "es":"él es / está", "pron":"JIS", "ejemplo":"He's my brother." },
+    { "id":"abr-004", "texto":"she's", "de":"she is", "es":"ella es / está", "pron":"SHIS", "ejemplo":"She's a doctor." },
+    { "id":"abr-005", "texto":"it's", "de":"it is", "es":"es / está", "pron":"ITS", "ejemplo":"It's cold today." },
+    { "id":"abr-006", "texto":"we're", "de":"we are", "es":"nosotros somos / estamos", "pron":"UIR", "ejemplo":"We're students." },
+    { "id":"abr-007", "texto":"they're", "de":"they are", "es":"ellos son / están", "pron":"DER", "ejemplo":"They're my parents." },
+    { "id":"abr-008", "texto":"isn't", "de":"is not", "es":"no es / no está", "pron":"I-sent", "ejemplo":"She isn't here." },
+    { "id":"abr-009", "texto":"aren't", "de":"are not", "es":"no son / no están", "pron":"ARNT", "ejemplo":"They aren't at home." },
+    { "id":"abr-010", "texto":"don't", "de":"do not", "es":"no (con verbo)", "pron":"DOUNT", "ejemplo":"I don't like coffee." },
+    { "id":"abr-011", "texto":"doesn't", "de":"does not", "es":"no (él/ella)", "pron":"DA-sent", "ejemplo":"He doesn't work here." },
+    { "id":"abr-012", "texto":"didn't", "de":"did not", "es":"no (pasado)", "pron":"DI-dent", "ejemplo":"I didn't see it." },
+    { "id":"abr-013", "texto":"can't", "de":"cannot", "es":"no puedo", "pron":"KANT", "ejemplo":"I can't come today." },
+    { "id":"abr-014", "texto":"won't", "de":"will not", "es":"no voy a", "pron":"UOUNT", "ejemplo":"I won't be late." },
+    { "id":"abr-015", "texto":"let's", "de":"let us", "es":"vamos a", "pron":"LETS", "ejemplo":"Let's go!" },
+    { "id":"abr-016", "texto":"what's", "de":"what is", "es":"qué es", "pron":"UATS", "ejemplo":"What's your name?" },
+    { "id":"abr-017", "texto":"where's", "de":"where is", "es":"dónde está", "pron":"UERZ", "ejemplo":"Where's the bathroom?" },
+    { "id":"abr-018", "texto":"there's", "de":"there is", "es":"hay", "pron":"DERZ", "ejemplo":"There's a problem." },
+    { "id":"abr-019", "texto":"that's", "de":"that is", "es":"eso es", "pron":"DATS", "ejemplo":"That's my bag." },
+    { "id":"abr-020", "texto":"I'll", "de":"I will", "es":"yo voy a", "pron":"AIL", "ejemplo":"I'll call you." },
+    { "id":"abr-021", "texto":"I've", "de":"I have", "es":"yo he / tengo", "pron":"AIV", "ejemplo":"I've got it." },
+    { "id":"abr-022", "texto":"I'd", "de":"I would", "es":"yo querría", "pron":"AID", "ejemplo":"I'd like a coffee." }
+   ]
+  },
+  {
+   "titulo": "Fórmulas cortas del día a día",
+   "nota": "Frases enteras recortadas. Se dicen y se escriben en mensajes, pero no en un correo de trabajo. Son las que más vas a oír y las que hacen que suenes natural en vez de a libro de texto.",
+   "escritura": "solo hablando",
+   "items": [
+    { "id":"abr-030", "texto":"see ya", "de":"see you", "es":"nos vemos", "pron":"si-YA", "ejemplo":"See ya tomorrow!" },
+    { "id":"abr-031", "texto":"later", "de":"see you later", "es":"hasta luego", "pron":"LEI-der", "ejemplo":"Later!" },
+    { "id":"abr-032", "texto":"morning", "de":"good morning", "es":"buenos días", "pron":"MOR-ning", "ejemplo":"Morning, Ana!" },
+    { "id":"abr-033", "texto":"night", "de":"good night", "es":"buenas noches", "pron":"NAIT", "ejemplo":"Night!" },
+    { "id":"abr-034", "texto":"thanks", "de":"thank you", "es":"gracias", "pron":"ZENKS", "ejemplo":"Thanks a lot!" },
+    { "id":"abr-035", "texto":"no problem", "de":"", "es":"de nada", "pron":"nou PRO-blem", "ejemplo":"No problem!" },
+    { "id":"abr-036", "texto":"no worries", "de":"", "es":"de nada / tranquilo", "pron":"nou UO-ris", "ejemplo":"No worries." },
+    { "id":"abr-037", "texto":"sure", "de":"", "es":"de nada / claro", "pron":"SHUR", "ejemplo":"Sure!" },
+    { "id":"abr-038", "texto":"you bet", "de":"", "es":"de nada", "pron":"yu BET", "ejemplo":"You bet!" },
+    { "id":"abr-039", "texto":"uh-huh", "de":"", "es":"ajá / de nada", "pron":"a-JÁ", "ejemplo":"Uh-huh." },
+    { "id":"abr-040", "texto":"yep", "de":"yes", "es":"sí", "pron":"YEP", "ejemplo":"Yep, that's right." },
+    { "id":"abr-041", "texto":"nope", "de":"no", "es":"no", "pron":"NOUP", "ejemplo":"Nope." },
+    { "id":"abr-042", "texto":"my bad", "de":"", "es":"culpa mía", "pron":"mai BAD", "ejemplo":"My bad, sorry!" },
+    { "id":"abr-043", "texto":"got it", "de":"I have got it", "es":"entendido", "pron":"GA-dit", "ejemplo":"Got it, thanks." },
+    { "id":"abr-044", "texto":"have a good one", "de":"have a nice day", "es":"que te vaya bien", "pron":"jav-a-GUD-uan", "ejemplo":"Have a good one!" }
+   ]
+  },
+  {
+   "titulo": "Como suena al hablar rápido",
+   "nota": "ESTAS NO SE ESCRIBEN NUNCA. Ni en un examen, ni en un correo, ni en un mensaje formal. Están aquí para que las RECONOZCAS de oído: son la razón número uno por la que no entiendes una conversación real aunque conozcas todas las palabras.",
+   "escritura": "nunca se escriben",
+   "items": [
+    { "id":"abr-050", "texto":"gonna", "de":"going to", "es":"voy a", "pron":"GO-na", "ejemplo":"I'm gonna call you." },
+    { "id":"abr-051", "texto":"wanna", "de":"want to", "es":"quiero", "pron":"UO-na", "ejemplo":"I wanna go home." },
+    { "id":"abr-052", "texto":"gotta", "de":"got to / have to", "es":"tengo que", "pron":"GA-da", "ejemplo":"I gotta go." },
+    { "id":"abr-053", "texto":"kinda", "de":"kind of", "es":"más o menos", "pron":"KAIN-da", "ejemplo":"It's kinda cold." },
+    { "id":"abr-054", "texto":"'cause", "de":"because", "es":"porque", "pron":"KOZ", "ejemplo":"'Cause I'm tired." },
+    { "id":"abr-055", "texto":"lemme", "de":"let me", "es":"déjame", "pron":"LE-mi", "ejemplo":"Lemme see." },
+    { "id":"abr-056", "texto":"gimme", "de":"give me", "es":"dame", "pron":"GUI-mi", "ejemplo":"Gimme a minute." },
+    { "id":"abr-057", "texto":"dunno", "de":"do not know", "es":"no sé", "pron":"da-NOU", "ejemplo":"I dunno." },
+    { "id":"abr-058", "texto":"ya", "de":"you", "es":"tú / te", "pron":"YA", "ejemplo":"How are ya?" },
+    { "id":"abr-059", "texto":"'em", "de":"them", "es":"los / las", "pron":"em", "ejemplo":"I saw 'em." },
+    { "id":"abr-060", "texto":"y'all", "de":"you all", "es":"ustedes", "pron":"YOL", "ejemplo":"How are y'all?" }
+   ]
+  },
+  {
+   "titulo": "Siglas que verás por todas partes",
+   "nota": "Se escriben en mayúsculas y se leen letra por letra, salvo donde se diga. Aquí el abecedario que practicas en el dictado te sirve directo.",
+   "escritura": "se escriben",
+   "items": [
+    { "id":"abr-070", "texto":"OK", "de":"", "es":"vale, de acuerdo", "pron":"ou-KEI", "ejemplo":"OK, see you there." },
+    { "id":"abr-071", "texto":"TV", "de":"television", "es":"televisión", "pron":"ti-VI", "ejemplo":"I watch TV at night." },
+    { "id":"abr-072", "texto":"ID", "de":"identification", "es":"documento de identidad", "pron":"ai-DI", "ejemplo":"Can I see your ID?" },
+    { "id":"abr-073", "texto":"a.m.", "de":"", "es":"de la mañana", "pron":"ei-EM", "ejemplo":"The class is at 8 a.m." },
+    { "id":"abr-074", "texto":"p.m.", "de":"", "es":"de la tarde o noche", "pron":"pi-EM", "ejemplo":"I finish at 6 p.m." },
+    { "id":"abr-075", "texto":"ASAP", "de":"as soon as possible", "es":"lo antes posible", "pron":"ei-es-ei-PI", "ejemplo":"Send it ASAP." },
+    { "id":"abr-076", "texto":"ATM", "de":"automated teller machine", "es":"cajero automático", "pron":"ei-ti-EM", "ejemplo":"Where is the ATM?" },
+    { "id":"abr-077", "texto":"FYI", "de":"for your information", "es":"para que lo sepas", "pron":"ef-uai-AI", "ejemplo":"FYI, the office is closed." },
+    { "id":"abr-078", "texto":"PS", "de":"postscript", "es":"posdata", "pron":"pi-ES", "ejemplo":"PS: call me tomorrow." },
+    { "id":"abr-079", "texto":"USA", "de":"United States of America", "es":"Estados Unidos", "pron":"iu-es-EI", "ejemplo":"She lives in the USA." }
+   ]
+  },
+  {
+   "titulo": "Solo en mensajes y chats",
+   "nota": "Esto es escritura de celular entre amigos. En un correo de trabajo o en un examen queda fatal — pero lo vas a recibir todos los días, así que hay que entenderlo.",
+   "escritura": "solo en chats",
+   "items": [
+    { "id":"abr-090", "texto":"u", "de":"you", "es":"tú", "pron":"iu", "ejemplo":"Where r u?" },
+    { "id":"abr-091", "texto":"r", "de":"are", "es":"eres, estás", "pron":"ar", "ejemplo":"How r u?" },
+    { "id":"abr-092", "texto":"2", "de":"to / too", "es":"a / también", "pron":"tu", "ejemplo":"See u 2morrow." },
+    { "id":"abr-093", "texto":"4", "de":"for", "es":"para", "pron":"for", "ejemplo":"This is 4 you." },
+    { "id":"abr-094", "texto":"thx", "de":"thanks", "es":"gracias", "pron":"zenks", "ejemplo":"Thx!" },
+    { "id":"abr-095", "texto":"pls", "de":"please", "es":"por favor", "pron":"plis", "ejemplo":"Call me pls." },
+    { "id":"abr-096", "texto":"np", "de":"no problem", "es":"de nada", "pron":"en-PI", "ejemplo":"np!" },
+    { "id":"abr-097", "texto":"idk", "de":"I do not know", "es":"no sé", "pron":"ai-di-KEI", "ejemplo":"idk, sorry." },
+    { "id":"abr-098", "texto":"brb", "de":"be right back", "es":"ahora vuelvo", "pron":"bi-ar-BI", "ejemplo":"brb, 5 min." },
+    { "id":"abr-099", "texto":"btw", "de":"by the way", "es":"por cierto", "pron":"bi-ti-DA-bel-iu", "ejemplo":"btw, I can't come." },
+    { "id":"abr-100", "texto":"lol", "de":"laughing out loud", "es":"jaja", "pron":"lol", "ejemplo":"lol, that's funny." },
+    { "id":"abr-101", "texto":"omg", "de":"oh my God", "es":"dios mío", "pron":"ou-em-YI", "ejemplo":"omg, really?" }
+   ]
+  }
+ ]
+}

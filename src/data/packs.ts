@@ -1,4 +1,4 @@
-import type { VocabPack, GramaticaPack, ListeningPack, ReadingPack, WritingPack, PronPack, RubricaPack, ExpresionesPack, DeletreoPack, DialogoConTema } from '../types'
+import type { VocabPack, GramaticaPack, ListeningPack, ReadingPack, WritingPack, PronPack, RubricaPack, ExpresionesPack, DeletreoPack, AbreviacionesPack, DialogoConTema } from '../types'
 
 // Los data packs viven en /data (raíz). Se importan en build → quedan en el bundle
 // y por tanto en el precache del service worker (offline total).
@@ -50,6 +50,11 @@ const deletreoModules = import.meta.glob('/data/deletreo/en.json', { eager: true
   { default: DeletreoPack }
 >
 
+const abreviacionesModules = import.meta.glob('/data/abreviaciones/en.json', { eager: true }) as Record<
+  string,
+  { default: AbreviacionesPack }
+>
+
 const listar = <T>(modulos: Record<string, { default: T }>): T[] =>
   Object.values(modulos).map((m) => m.default)
 
@@ -91,6 +96,9 @@ export const expresionesPack: ExpresionesPack | undefined = listar(expresionesMo
 
 // Deletreo: transversal igual. El `tema` filtra qué palabras pueden salir todavía.
 export const deletreoPack: DeletreoPack | undefined = listar(deletreoModules)[0]
+
+// Abreviaciones: transversal y sin tema. Lo que el inglés recorta no pertenece a una lección.
+export const abreviacionesPack: AbreviacionesPack | undefined = listar(abreviacionesModules)[0]
 
 // Lectura POR TEMA (2026-07-25): antes era por bloque. Una lectura por tema para que el estudio
 // diario cubra las 5 habilidades del mismo tema.

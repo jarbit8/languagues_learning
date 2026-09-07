@@ -324,6 +324,43 @@ export interface ExpresionesPack {
   grupos: GrupoExpresiones[]
 }
 
+// --- Abreviaciones (pack en /data/abreviaciones) ---
+// No son palabras nuevas: son las de siempre encogidas. Van aparte del vocabulario porque
+// preguntarlas en el examen no tiene sentido —la mitad ni se escriben— pero él sí quería
+// poder marcarlas, así que llevan su propia marca de "la sé", como los grupos de pronunciación.
+
+export interface Abreviacion {
+  id: string
+  texto: string
+  /** De qué es corte. Vacío cuando la forma corta no viene de una larga (yep, sure). */
+  de: string
+  es: string
+  pron: string
+  ejemplo: string
+}
+
+export interface GrupoAbreviaciones {
+  titulo: string
+  nota: string
+  /** Aviso corto de si esa familia se puede escribir o solo se oye. */
+  escritura: string
+  items: Abreviacion[]
+}
+
+export interface AbreviacionesPack {
+  titulo: string
+  nota: string
+  grupos: GrupoAbreviaciones[]
+}
+
+// La marca la pone el USUARIO, igual que "Aprendida ✓" en vocabulario. No puntúa, no
+// desbloquea y no entra en ningún examen: es una lista de control suya.
+export interface AbreviacionSabida {
+  id: string
+  fecha: string
+  sabida?: boolean
+}
+
 // --- Deletreo (pack en /data/deletreo) ---
 // El abecedario no puede ser un tema: un tema son tarjetas que entran al SRS y a un examen
 // que pregunta "¿qué significa X?", y "¿qué significa B?" no tiene respuesta. Pero saber

@@ -8,6 +8,7 @@ import Gramatica from './Gramatica'
 import Aprendidas from './Aprendidas'
 import Pronunciacion from './Pronunciacion'
 import Expresiones from './Expresiones'
+import Abreviaciones from './Abreviaciones'
 
 // APRENDER = lo que se estudia. Vocabulario y gramática son del tema en curso; Aprendido y
 // Pronunciar son transversales (todo lo que ya marcó, y los sonidos del nivel entero).
@@ -15,12 +16,13 @@ import Expresiones from './Expresiones'
 // Practicar queda como las cuatro DESTREZAS y Aprender como el material de estudio.
 // Mismas pestañas con icono arriba y texto abajo que Practicar, para que las dos pantallas
 // se manejen igual.
-type Sub = 'vocab' | 'gram' | 'expresiones' | 'sabidas' | 'pronunciar'
+type Sub = 'vocab' | 'gram' | 'expresiones' | 'abreviaciones' | 'sabidas' | 'pronunciar'
 
 const TABS: { id: Sub; icono: string; label: string }[] = [
   { id: 'vocab', icono: '📇', label: 'Vocabulario' },
   { id: 'gram', icono: '📘', label: 'Gramática' },
   { id: 'expresiones', icono: '💬', label: 'Expresiones' },
+  { id: 'abreviaciones', icono: '✂️', label: 'Abreviaciones' },
   { id: 'sabidas', icono: '✅', label: 'Aprendido' },
   { id: 'pronunciar', icono: '🔊', label: 'Pronunciar' }
 ]
@@ -39,7 +41,7 @@ export default function Aprender() {
         <h1 className="text-2xl font-bold">{pack?.titulo ?? 'Aprender'}</h1>
       </header>
 
-      <div className="grid grid-cols-5 gap-1 rounded-xl bg-slate-200 p-1 dark:bg-slate-800">
+      <div className="grid grid-cols-3 gap-1 rounded-xl bg-slate-200 p-1 dark:bg-slate-800">
         {TABS.map((t) => (
           <button
             key={t.id}
@@ -54,12 +56,15 @@ export default function Aprender() {
         ))}
       </div>
 
-      {/* Aprendido y Pronunciar no dependen del tema en curso. Expresiones tampoco: es una
-          lista transversal, y el tema solo le sirve para marcar cuáles ya puede usar. */}
+      {/* Aprendido, Pronunciar y Abreviaciones no dependen del tema en curso. Expresiones
+          tampoco: es una lista transversal, y el tema solo le sirve para marcar cuáles ya
+          puede usar. */}
       {sub === 'sabidas' ? (
         <Aprendidas />
       ) : sub === 'pronunciar' ? (
         <Pronunciacion />
+      ) : sub === 'abreviaciones' ? (
+        <Abreviaciones />
       ) : tema ? (
         sub === 'vocab' ? (
           <Vocabulario tema={tema} />

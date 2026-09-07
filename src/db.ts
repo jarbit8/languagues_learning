@@ -6,7 +6,8 @@ import type {
   ProgresoNivel,
   HistorialExamen,
   PracticaPron,
-  PlanEstudio
+  PlanEstudio,
+  AbreviacionSabida
 } from './types'
 
 // Base local del progreso. Sin backend ni auth: todo vive en el dispositivo.
@@ -18,6 +19,7 @@ export class IdiomasDB extends Dexie {
   historialExamenes!: Table<HistorialExamen, number>
   practicaPron!: Table<PracticaPron, string>
   plan!: Table<PlanEstudio, string>
+  abreviaciones!: Table<AbreviacionSabida, string>
 
   constructor() {
     super('idiomas')
@@ -51,6 +53,18 @@ export class IdiomasDB extends Dexie {
       historialExamenes: '++id, tipo, fecha',
       practicaPron: 'id',
       plan: 'id'
+    })
+    // v5: qué abreviaciones marcó como sabidas. Otra tabla suelta, como practicaPron: Dexie
+    // conserva lo anterior al añadirla, así que no hay migración que escribir.
+    this.version(5).stores({
+      palabras: 'id, estado, proximoRepaso, fechaAprendida',
+      progresoTema: 'temaId, estado',
+      progresoBloque: 'bloqueId, estado',
+      progresoNivel: 'id, estado',
+      historialExamenes: '++id, tipo, fecha',
+      practicaPron: 'id',
+      plan: 'id',
+      abreviaciones: 'id'
     })
   }
 }

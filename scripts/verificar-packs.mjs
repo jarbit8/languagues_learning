@@ -250,6 +250,31 @@ for (const { archivo, pack } of packs('deletreo')) {
   }
 }
 
+// --- Abreviaciones ---
+// Fuera del verificador de vocabulario a proposito, como las expresiones: enseña 'gonna',
+// 'y'all' y 'brb', que no son ni pretenden ser lexico del temario. Lo que si se vigila es que
+// cada ficha este entera, que los ids no choquen —son la clave de la tabla de Dexie donde se
+// guarda "la se", asi que un id repetido marcaria dos fichas a la vez— y que el aviso de
+// escritura sea uno de los cuatro que la pantalla sabe pintar.
+const AVISOS = ['se escriben', 'solo hablando', 'nunca se escriben', 'solo en chats']
+for (const { archivo, pack } of packs('abreviaciones')) {
+  const ids = new Set()
+  for (const g of pack.grupos ?? []) {
+    const grupo = g.titulo ?? '(sin titulo)'
+    if (!String(g.nota ?? '').trim()) mal(archivo, grupo, 'sin nota')
+    if (!AVISOS.includes(g.escritura)) mal(archivo, grupo, `aviso de escritura invalido: ${g.escritura}`)
+    if (!g.items?.length) mal(archivo, grupo, 'sin items')
+    for (const it of g.items ?? []) {
+      const donde = `${grupo} · ${it.texto ?? '(sin texto)'}`
+      for (const campo of ['id', 'texto', 'es', 'pron', 'ejemplo'])
+        if (!String(it[campo] ?? '').trim()) mal(archivo, donde, `sin ${campo}`)
+      if (ids.has(it.id)) mal(archivo, donde, `id repetido: ${it.id}`)
+      else ids.add(it.id)
+      if (it.de && norm(it.de) === norm(it.texto ?? '')) mal(archivo, donde, 'la forma larga es igual que la corta')
+    }
+  }
+}
+
 // SESGO DE POSICION: si la opcion correcta cae casi siempre la primera, el examen se
 // aprueba sin leer el texto. Paso el 2026-09-03: 94% de 557 preguntas la tenian en la
 // primera posicion. La app solo baraja los ejercicios de 'ordenar', asi que el orden del
