@@ -1,6 +1,6 @@
 {
  "titulo": "Expresiones",
- "nota": "Aquí van las frases que NO se pueden traducir palabra por palabra. Se consultan, no se examinan: no entran en el examen diario ni se marcan como aprendidas, igual que las palabras de examen y la pronunciación. Cada una lleva su NIVEL real: solo 14 de las 68 son A1, y hay un botón para quedarte con esas. Las demás no te tocan todavía; están para que las entiendas cuando las oigas. La etiqueta «tema N» dice desde cuándo tienes el vocabulario para armarla.",
+ "nota": "Aquí van las frases que NO se pueden traducir palabra por palabra. Se consultan, no se examinan: no entran en el examen diario ni se marcan como aprendidas, igual que las palabras de examen y la pronunciación. Solo salen las de TU nivel; las de A2 en adelante ya están escritas y aparecerán cuando llegues. La etiqueta «tema N» dice desde cuándo tienes el vocabulario para armarla.",
  "grupos": [
   {
    "titulo": "En español TIENES, en inglés ERES",
@@ -35,6 +35,32 @@
    ]
   },
   {
+   "titulo": "Las preposiciones no se traducen",
+   "nota": "En inglés la preposición va pegada a la palabra, no a la lógica del español: se dice ON Monday, AT night y AT home. Y casa, escuela y trabajo pierden el artículo: at school, no «at the school». Es de lo que más delata a un hispanohablante y es A1 puro — se aprende de memoria, frase por frase, no razonando.",
+   "expresiones": [
+    { "texto":"on Monday", "nivel":"A1", "es":"el lunes", "literal":"sobre lunes", "pron":"on MAN-dei", "ejemplo":"I work on Monday.", "tema":7},
+    { "texto":"at seven o'clock", "nivel":"A1", "es":"a las siete", "literal":"en siete en punto", "pron":"at SE-ven o-KLOK", "ejemplo":"The class starts at seven o'clock.", "tema":8},
+    { "texto":"at night", "nivel":"A1", "es":"por la noche", "literal":"en noche", "pron":"at NAIT", "ejemplo":"I read at night.", "tema":8},
+    { "texto":"at home", "nivel":"A1", "es":"en casa", "literal":"en hogar, y sin «la»", "pron":"at JOUM", "ejemplo":"My mother is at home.", "tema":10},
+    { "texto":"at school", "nivel":"A1", "es":"en la escuela", "literal":"en escuela, sin «la»", "pron":"at SKUL", "ejemplo":"The children are at school.", "tema":16},
+    { "texto":"at work", "nivel":"A1", "es":"en el trabajo", "literal":"en trabajo, sin «el»", "pron":"at UERK", "ejemplo":"My father is at work.", "tema":6},
+    { "texto":"to go home", "nivel":"A1", "es":"ir a casa", "literal":"ir hogar, sin «a»", "pron":"tu gou JOUM", "ejemplo":"I go home at six.", "tema":17},
+    { "texto":"by bus", "nivel":"A1", "es":"en autobús", "literal":"por autobús", "pron":"bai BAS", "ejemplo":"I go to school by bus.", "tema":17},
+    { "texto":"by car", "nivel":"A1", "es":"en carro", "literal":"por carro", "pron":"bai KAR", "ejemplo":"We travel by car.", "tema":17}
+   ]
+  },
+  {
+   "titulo": "Un verbo en español, varios en inglés",
+   "nota": "«Hacer» no tiene una sola traducción: unas veces es do, otras make y otras take, y no hay regla — van por parejas fijas que se memorizan. Aquí lo tachado es el inglés MAL dicho, el que sale de traducir «hacer» a lo bruto. Del mismo grupo son dos que ya tienes de tarjeta: make the bed y have breakfast.",
+   "expresiones": [
+    { "texto":"to do homework", "nivel":"A1", "es":"hacer la tarea", "literal":"make homework", "pron":"tu du JOUM-uerk", "ejemplo":"I do my homework after dinner.", "tema":9},
+    { "texto":"to do sport", "nivel":"A1", "es":"hacer deporte", "literal":"make sport", "pron":"tu du SPORT", "ejemplo":"I do sport on Saturday.", "tema":20},
+    { "texto":"to do the shopping", "nivel":"A1", "es":"hacer las compras", "literal":"make the shopping", "pron":"tu du de SHO-ping", "ejemplo":"My mother does the shopping on Friday.", "tema":15},
+    { "texto":"to take a photo", "nivel":"A1", "es":"sacar una foto", "literal":"make a photo", "pron":"tu teik a FOU-tou", "ejemplo":"I take a photo of the mountain.", "tema":22},
+    { "texto":"to have a party", "nivel":"A1", "es":"hacer una fiesta", "literal":"make a party", "pron":"tu jav a PAR-ti", "ejemplo":"We have a party on my birthday.", "tema":20}
+   ]
+  },
+  {
    "titulo": "Verbos que cambian con la preposición",
    "nota": "Un verbo corto más una preposición da un significado nuevo que no sale de sumar las dos palabras. Ninguno de este grupo es A1 —los phrasal verbs empiezan en A2— pero los que ya tienes de tarjeta (get up, wake up, put on, take off, turn on, go out...) sí, y llevan su traducción literal en su propio tema. Aquí van los que faltan, para cuando llegues.",
    "expresiones": [
@@ -54,10 +80,15 @@
   },
   {
    "titulo": "Fórmulas de todos los días",
-   "nota": "Frases hechas que se dicen enteras. Traducirlas palabra por palabra no da nada: se aprenden como si fueran una sola palabra larga. De este grupo solo of course y here you are son A1; las demás las vas a oír mucho antes de que te toque usarlas.",
+   "nota": "Frases hechas que se dicen enteras. Traducirlas palabra por palabra no da nada: se aprenden como si fueran una sola palabra larga.",
    "expresiones": [
     { "texto":"of course", "nivel":"A1", "es":"por supuesto", "literal":"de curso", "pron":"ov KORS", "ejemplo":"Of course I can help you.", "tema":1},
     { "texto":"here you are", "nivel":"A1", "es":"aquí tienes", "literal":"aquí tú eres", "pron":"jir yu AR", "ejemplo":"Here you are, that's ten soles.", "tema":15},
+    { "texto":"me too", "nivel":"A1", "es":"yo también", "literal":"mí también", "pron":"mi TU", "ejemplo":"I like music. — Me too!", "tema":24},
+    { "texto":"let's go", "nivel":"A1", "es":"vamos", "literal":"dejemos ir", "pron":"lets GOU", "ejemplo":"It is late. Let's go!", "tema":17},
+    { "texto":"how do you say ... in English?", "nivel":"A1", "es":"¿cómo se dice ... en inglés?", "literal":"¿cómo dices tú ... en inglés?", "pron":"jau du yu SEI in IN-glish", "ejemplo":"How do you say \"mesa\" in English?", "tema":9},
+    { "texto":"what does it mean?", "nivel":"A1", "es":"¿qué significa?", "literal":"¿qué hace ello significar?", "pron":"uat das it MIN", "ejemplo":"I do not understand. What does it mean?", "tema":21},
+    { "texto":"how do you spell it?", "nivel":"A1", "es":"¿cómo se escribe?", "literal":"¿cómo lo deletreas tú?", "pron":"jau du yu SPEL it", "ejemplo":"Your name, please. How do you spell it?", "tema":9},
     { "texto":"what's up?", "nivel":"A2", "es":"¿qué tal?, ¿qué hay?", "literal":"¿qué está arriba?", "pron":"uats AP", "ejemplo":"Hey Ana, what's up?", "tema":1},
     { "texto":"my pleasure", "nivel":"A2", "es":"un placer, con gusto", "literal":"mi placer", "pron":"mai PLE-shur", "ejemplo":"Thank you! — My pleasure.", "tema":1},
     { "texto":"see you around", "nivel":"A2", "es":"nos vemos", "literal":"te veo alrededor", "pron":"si yu a-RAUND", "ejemplo":"Bye, see you around!", "tema":1},

@@ -208,7 +208,7 @@ export default function HojaGramatica() {
         </section>
 
         <p className="mt-6 text-center text-[10px] text-slate-400">
-          Idiomas · Inglés A1 · Tema {tema} · Gramática
+          English · Inglés A1 · Tema {tema} · Gramática
         </p>
       </div>
     </div>

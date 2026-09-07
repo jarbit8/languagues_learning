@@ -39,8 +39,8 @@ export default defineConfig({
       injectRegister: 'auto',
       includeAssets: ['icon-192.png', 'icon-512.png', 'apple-touch-icon.png'],
       manifest: {
-        name: 'Idiomas',
-        short_name: 'Idiomas',
+        name: 'English',
+        short_name: 'English',
         description: 'Aprende inglés, nivel A1, a tu ritmo',
         lang: 'es',
         theme_color: '#0f172a',

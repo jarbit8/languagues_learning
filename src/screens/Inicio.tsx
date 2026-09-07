@@ -20,7 +20,7 @@ export default function Inicio() {
   return (
     <div className="flex flex-col gap-4">
       <header>
-        <h1 className="text-2xl font-bold">Idiomas</h1>
+        <h1 className="text-2xl font-bold">English</h1>
         <p className="text-sm text-slate-500 dark:text-slate-400">Inglés, a tu ritmo · A1</p>
       </header>
 
