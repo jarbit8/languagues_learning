@@ -84,8 +84,18 @@ function mezclaTema(a: ProgresoTema, b: ProgresoTema): ProgresoTema {
     notaExamenTema: Math.max(a.notaExamenTema ?? 0, b.notaExamenTema ?? 0) || undefined,
     intentos: Math.max(a.intentos ?? 0, b.intentos ?? 0),
     gramaticaCompletada: a.gramaticaCompletada || b.gramaticaCompletada || undefined,
-    notas: mezclaNotas(a.notas, b.notas)
+    notas: mezclaNotas(a.notas, b.notas),
+    // Las actividades hechas se UNEN: el listening puede haberlo hecho en el celular y la
+    // lectura en el PC, y quedarse con una de las dos listas borraría media jornada. Ojo:
+    // este objeto se construye campo a campo, así que todo lo que se añada a ProgresoTema
+    // hay que fusionarlo aquí o la sincronización lo pierde en silencio.
+    hechos: mezclaHechos(a.hechos, b.hechos)
   }
+}
+
+function mezclaHechos(a?: string[], b?: string[]): string[] | undefined {
+  const unidos = [...new Set([...(a ?? []), ...(b ?? [])])]
+  return unidos.length ? unidos : undefined
 }
 
 const mezclaBloque = (a: ProgresoBloque, b: ProgresoBloque): ProgresoBloque => ({

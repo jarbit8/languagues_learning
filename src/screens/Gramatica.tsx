@@ -1,8 +1,8 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
 import { useLiveQuery } from 'dexie-react-hooks'
 import { getGramatica } from '../data/packs'
 import { getProgresoTema, marcarGramaticaCompletada } from '../lib/progreso'
+import { marcarHecho, claveGramatica } from '../lib/avance'
 import { preguntaDeEjercicio } from '../lib/preguntas'
 import { hablar } from '../lib/audio'
 import type { GramaticaPack } from '../types'
@@ -215,15 +215,6 @@ function LeccionCard({
       >
         {completada ? '↻ Repetir ejercicios' : `Practicar · ${pack.ejercicios.length} ejercicios →`}
       </button>
-
-      {/* La lección entera en papel, ejercicios incluidos: parte de los 45 min los hace fuera
-          de pantallas y hasta ahora la gramática era lo único que no se podía imprimir. */}
-      <Link
-        to="/hoja-gramatica"
-        className="self-center text-sm text-slate-500 underline dark:text-slate-400"
-      >
-        🖨️ Imprimir esta lección
-      </Link>
     </div>
   )
 }
@@ -274,6 +265,7 @@ export default function Gramatica({ tema }: { tema: number }) {
           // La lección abre la puerta del examen de tema, así que solo cuenta cuando se
           // termina el ÚLTIMO día: con el primero se habría visto media regla.
           if (pack.ultimo) await marcarGramaticaCompletada(tema)
+          await marcarHecho(tema, claveGramatica(dia))
           setFin({ aciertos, total })
         }}
       />

@@ -7,7 +7,6 @@ import Examen from './screens/Examen'
 import Hablar from './screens/Hablar'
 import Progreso from './screens/Progreso'
 import HojaDePractica from './screens/HojaDePractica'
-import HojaGramatica from './screens/HojaGramatica'
 import { arrancarSincronizacion } from './lib/autosync'
 
 export default function App() {
@@ -26,7 +25,6 @@ export default function App() {
             <Route path="/hablar" element={<Hablar />} />
             <Route path="/progreso" element={<Progreso />} />
             <Route path="/hoja" element={<HojaDePractica />} />
-            <Route path="/hoja-gramatica" element={<HojaGramatica />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </main>

@@ -111,6 +111,27 @@ for (const { archivo, pack } of packs('listening')) {
 for (const { archivo, pack } of packs('reading')) {
   pack.textos?.forEach((t, i) => {
     if (!t.texto) mal(archivo, `texto ${i + 1}`, 'vacío')
+    // Los textos que son conversación traen además `lineas`, el mismo texto partido por
+    // turnos. Los dos campos tienen que decir EXACTAMENTE lo mismo: `texto` es de donde leen
+    // los verificadores de vocabulario, y si se separan, uno de los dos se quedaría sin
+    // revisar. Por eso se comprueba que unir los turnos devuelva el párrafo carácter a carácter.
+    if (t.lineas) {
+      if (!Array.isArray(t.lineas) || t.lineas.length < 2)
+        mal(archivo, `texto ${i + 1}`, 'lineas debe tener al menos dos turnos')
+      else {
+        t.lineas.forEach((l, j) => {
+          if (!l.hablante || !l.texto) mal(archivo, `texto ${i + 1} turno ${j + 1}`, 'turno sin hablante o sin texto')
+        })
+        const unido = t.lineas.map((l) => l.texto).join(' ')
+        if (unido !== t.texto) mal(archivo, `texto ${i + 1}`, 'unir las lineas no devuelve el texto')
+        if (new Set(t.lineas.map((l) => l.hablante)).size < 2)
+          mal(archivo, `texto ${i + 1}`, 'un diálogo necesita al menos dos hablantes')
+        t.lineas.forEach((l, j) => {
+          if (j > 0 && t.lineas[j - 1].hablante === l.hablante)
+            mal(archivo, `texto ${i + 1} turno ${j + 1}`, `dos turnos seguidos de ${l.hablante}`)
+        })
+      }
+    }
     t.preguntas?.forEach((q, j) => {
       const donde = `texto ${i + 1} pregunta ${j + 1}`
       if (q.tipo === 'opcion_multiple') revisarOpcionMultiple(archivo, donde, q)

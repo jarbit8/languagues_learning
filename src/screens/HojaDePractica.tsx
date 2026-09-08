@@ -2,23 +2,19 @@ import { useState } from 'react'
 import { useLiveQuery } from 'dexie-react-hooks'
 import { Link } from 'react-router-dom'
 import { temaEnCurso } from '../lib/progreso'
-import { getListening, getReading, getWriting, getVocabPack, temasDisponibles } from '../data/packs'
-import { bloqueDeTema } from '../lib/curriculum'
+import { getReading, getVocabPack } from '../data/packs'
 import { porDia } from '../lib/porDia'
+import TextoLeible from '../components/TextoLeible'
 
-// HOJA PARA IMPRIMIR (2026-08-30, pedido del usuario): quiere hacer los 45 min de Practicar
-// EN PAPEL, antes de dormir, fuera de pantallas. Van las tres destrezas que se pueden pasar a
-// papel —escuchar (solo las preguntas: el audio sigue en el móvil), escribir y leer— en el
-// orden que él estudia. HABLAR NO ESTÁ: es conversación con una IA, 100% en el dispositivo.
+// HOJA PARA IMPRIMIR — SOLO LEER (2026-09-08, él: "la impresión será solo para leer nada más,
+// lo demás lo haré en la app").
+//
+// Nació con escuchar, escribir y leer, pero las tres en papel no se sostenían: el audio de los
+// diálogos sigue estando en el móvil, así que "escuchar en papel" era responder preguntas con
+// el teléfono en la mano, y escribir ya se autocalifica en la app contra la respuesta modelo.
+// Leer es lo único que gana algo al salir de la pantalla, que es justo lo que él quiere hacer
+// antes de dormir. La otra hoja, la de gramática, se fue por lo mismo.
 // Las soluciones van en la última página, con salto de página, para poder no imprimirla.
-
-const Lineas = ({ n }: { n: number }) => (
-  <>
-    {Array.from({ length: n }, (_, i) => (
-      <div key={i} className="mt-4 border-b border-slate-300" />
-    ))}
-  </>
-)
 
 function Pregunta({ n, enunciado, opciones }: { n: number; enunciado: string; opciones?: string[] }) {
   return (
@@ -43,18 +39,12 @@ function Pregunta({ n, enunciado, opciones }: { n: number; enunciado: string; op
 
 export default function HojaDePractica() {
   const temaActual = useLiveQuery(() => temaEnCurso(), [], 1) ?? 1
-  const [tema, setTema] = useState<number | null>(null)
-  // Un tema son dos días y cada uno lleva su propio material: el diálogo, el texto y la
-  // consigna que le tocan. Si un tema todavía no tiene el segundo, cae en el primero.
+  // Un tema son dos días y cada uno lleva sus dos lecturas.
   const [dia, setDia] = useState<1 | 2>(1)
-  const t = tema ?? temaActual
+  const t = temaActual
 
   const pack = getVocabPack(t)
-  const listening = getListening(t)
   const reading = getReading(t)
-  const consignasDelTema = getWriting(bloqueDeTema(t))?.consignas.filter((c) => c.tema === t) ?? []
-  // Escribir va a UNA por día: 30-40 palabras a mano ya son los 10 minutos del módulo.
-  const consigna = consignasDelTema[dia - 1] ?? consignasDelTema[0]
 
   // Numeración corrida por toda la hoja, como en un examen de verdad. Se calcula ANTES de
   // pintar: mutar contadores dentro del JSX depende del número de renders y se desordena.
@@ -64,17 +54,17 @@ export default function HojaDePractica() {
   const capitaliza = (r: string) => r.charAt(0).toUpperCase() + r.slice(1)
 
   let cont = 0
-  const numeradas = <T extends { tipo: string; enunciado: string; opciones?: string[]; respuesta: string }>(ps: T[]) =>
-    ps.map((p) => ({ n: ++cont, enunciado: p.enunciado, opciones: etiquetas(p.tipo, p.opciones), respuesta: p.respuesta }))
-
-  // Dos diálogos y dos lecturas por día, que es lo que llena los 5 y los 15 minutos.
-  const dialogosDelDia = porDia(listening?.dialogos ?? [], dia)
   const textosDelDia = porDia(reading?.textos ?? [], dia)
-  const bloquesEscuchar = dialogosDelDia.map((d) => ({ titulo: d.titulo, preguntas: numeradas(d.preguntas) }))
-  const bloquesLeer = textosDelDia.map((tx) => ({ ...tx, preguntas: numeradas(tx.preguntas) }))
-  const soluciones = [...bloquesEscuchar.flatMap((b) => b.preguntas), ...bloquesLeer.flatMap((b) => b.preguntas)].map(
-    (p) => `${p.n}. ${capitaliza(p.respuesta)}`
-  )
+  const bloques = textosDelDia.map((tx) => ({
+    texto: tx,
+    preguntas: tx.preguntas.map((p) => ({
+      n: ++cont,
+      enunciado: p.enunciado,
+      opciones: etiquetas(p.tipo, p.opciones),
+      respuesta: p.respuesta
+    }))
+  }))
+  const soluciones = bloques.flatMap((b) => b.preguntas).map((p) => `${p.n}. ${capitaliza(p.respuesta)}`)
 
   return (
     <div className="flex flex-col gap-4">
@@ -85,11 +75,11 @@ export default function HojaDePractica() {
         </Link>
         <h1 className="text-2xl font-bold">Hoja para imprimir</h1>
         <p className="text-sm text-slate-500 dark:text-slate-400">
-          Escuchar, escribir y leer en papel. Hablar no está: esa es la conversación con la IA y va en el móvil. El
-          audio de los diálogos también, solo las preguntas se responden aquí.
+          Solo lectura: los textos del día y sus preguntas. Escuchar, hablar y escribir se hacen en la app.
         </p>
-        {/* Sin selector de tema, como el resto de la app: la hoja es la del tema en curso. */}
-        <p className="text-sm font-semibold">Tema {t} — {pack?.titulo}</p>
+        <p className="text-sm font-semibold">
+          Tema {t} — {pack?.titulo}
+        </p>
         <div className="grid grid-cols-2 gap-1 rounded-xl bg-slate-200 p-1 dark:bg-slate-800">
           {([1, 2] as const).map((d) => (
             <button
@@ -112,66 +102,35 @@ export default function HojaDePractica() {
       <div className="hoja bg-white p-6 text-slate-900 print:p-0">
         <div className="border-b-2 border-slate-900 pb-2">
           <h2 className="text-lg font-black">
-            Tema {t} — {pack?.titulo} · Día {dia}
+            Leer · Tema {t} — {pack?.titulo} · Día {dia}
           </h2>
           <p className="text-xs text-slate-500">Nombre: ________________________ Fecha: ____ / ____ / ______</p>
         </div>
 
-        {/* --- 1. ESCUCHAR --- */}
-        <section className="mt-5 break-inside-avoid">
-          <h3 className="text-sm font-black uppercase tracking-wide">1 · Escuchar 🎧</h3>
-          <p className="text-xs italic text-slate-500">
-            Pon los diálogos en la app (Practicar → Escuchar → Tema {t}) y responde aquí sin mirar la transcripción.
-          </p>
-          {bloquesEscuchar.map((d, i) => (
-            <div key={i} className="mt-3">
-              <p className="text-sm font-semibold">
-                Diálogo {i + 1}: {d.titulo}
-              </p>
-              {d.preguntas.map((p) => (
+        {bloques.length === 0 ? (
+          <p className="mt-4 text-sm text-slate-500">Aún no hay lectura para el tema {t}.</p>
+        ) : (
+          bloques.map((b, i) => (
+            <section key={i} className="mt-5">
+              <h3 className="text-sm font-black uppercase tracking-wide">
+                {i + 1} · {b.texto.titulo}
+              </h3>
+              <div className="mt-2">
+                <TextoLeible texto={b.texto} />
+              </div>
+              {b.preguntas.map((p) => (
                 <Pregunta key={p.n} n={p.n} enunciado={p.enunciado} opciones={p.opciones} />
               ))}
-            </div>
-          ))}
-        </section>
+            </section>
+          ))
+        )}
 
-        {/* --- 2. ESCRIBIR --- */}
-        <section className="mt-6 break-inside-avoid">
-          <h3 className="text-sm font-black uppercase tracking-wide">2 · Escribir ✍️</h3>
-          {consigna ? (
-            <>
-              <p className="mt-1 text-sm font-semibold">{consigna.consigna}</p>
-              <p className="text-xs text-slate-500">
-                Entre {consigna.minPalabras} y {consigna.maxPalabras} palabras.
-              </p>
-              <Lineas n={10} />
-            </>
-          ) : (
-            <p className="text-sm text-slate-500">No hay consigna para este tema.</p>
-          )}
-        </section>
-
-        {/* --- 3. LEER --- */}
-        <section className="mt-6">
-          <h3 className="text-sm font-black uppercase tracking-wide">3 · Leer 📖</h3>
-          {bloquesLeer.map((tx, i) => (
-            <div key={i} className="mt-2">
-              <p className="text-sm font-semibold">{tx.titulo}</p>
-              <p className="mt-1 text-sm leading-relaxed">{tx.texto}</p>
-              {tx.preguntas.map((p) => (
-                <Pregunta key={p.n} n={p.n} enunciado={p.enunciado} opciones={p.opciones} />
-              ))}
-            </div>
-          ))}
-        </section>
-
-        {/* --- SOLUCIONES, en su propia página para poder no imprimirla --- */}
+        {/* SOLUCIONES, en su propia página para poder no imprimirla */}
         <section className="mt-8 break-before-page">
-          <h3 className="text-sm font-black uppercase tracking-wide">Soluciones · Tema {t} · Día {dia}</h3>
-          <p className="text-xs italic text-slate-500">
-            Corrige solo cuando hayas terminado. Escribir no tiene solución: compárala con la respuesta modelo en la
-            app.
-          </p>
+          <h3 className="text-sm font-black uppercase tracking-wide">
+            Soluciones · Tema {t} · Día {dia}
+          </h3>
+          <p className="text-xs italic text-slate-500">Corrige solo cuando hayas terminado.</p>
           <div className="mt-2 grid grid-cols-2 gap-x-6 gap-y-1 text-sm">
             {soluciones.map((s) => (
               <p key={s}>{s}</p>

@@ -179,6 +179,10 @@ export interface ProgresoTema {
   gramaticaCompletada?: boolean
   // Desde 2026-08-29 el examen de tema mide las 6 secciones, no solo vocab y gramática.
   notas?: NotasBloque
+  // Actividades del tema ya hechas, como claves 'modulo:n' (ver lib/avance.ts). Es una lista
+  // y no un puñado de booleanos porque cada módulo tiene un número distinto de piezas y ese
+  // número cambia con el contenido: así el avance se calcula contra lo que hay hoy en /data.
+  hechos?: string[]
 }
 
 // --- Bloques y nivel ---
@@ -225,9 +229,15 @@ export interface PreguntaReading {
   aceptadas?: string[]
 }
 
+// `lineas` solo lo llevan los textos que SON una conversacion (2026-09-08, el: "si es una
+// conversacion que sea en parrafos, no seguido, que confunde y no sabes quien esta hablando").
+// El parrafo corrido se mantiene en `texto` porque de el viven los verificadores y la hoja
+// impresa; `lineas` es el mismo texto partido por turnos y verificar-packs comprueba que
+// unirlas devuelve `texto` exacto, para que no puedan separarse.
 export interface TextoReading {
   titulo: string
   texto: string
+  lineas?: LineaDialogo[]
   preguntas: PreguntaReading[]
 }
 

@@ -2,7 +2,7 @@ import { getListening, getReading, getWriting, dialogosDe } from '../data/packs'
 import { bloqueDeTema } from './curriculum'
 import { preguntaDeListening } from './preguntas'
 import { escenarioDe } from '../data/escenarios'
-import { construirPromptHablarExamen, vocabularioDesbloqueado } from './speaking'
+import { construirPromptHablarExamen, vocabularioDesbloqueado, repasoDelTema } from './speaking'
 import type { ConsignaWriting, LineaDialogo, Pregunta, TextoReading } from '../types'
 
 // Examen POR TEMA de las cuatro habilidades.
@@ -66,8 +66,16 @@ export function consignaDeTema(tema: number): ConsignaWriting | undefined {
 }
 
 // --- Hablar: el mismo roleplay del tema que en Practicar, pero pidiéndole a la IA que
-// decida si aprueba. Reutiliza el bloque de veredicto que ya usan bloque y final.
+// decida si aprueba. Reutiliza el bloque de veredicto que ya usan bloque y final, y desde
+// 2026-09-08 también el de repaso: es el examen del tema, así que tiene que preguntar por
+// todo el tema y no solo por el escenario. Día 2 porque a estas alturas ya vio la lección
+// entera.
 export function promptHablarExamen(tema: number): string {
   const meta = `si ya domina hablando el tema ${tema}, o si necesita practicarlo más antes de darlo por visto`
-  return construirPromptHablarExamen(escenarioDe(tema, 3), vocabularioDesbloqueado(tema), meta)
+  return construirPromptHablarExamen(
+    escenarioDe(tema, 3),
+    vocabularioDesbloqueado(tema),
+    meta,
+    repasoDelTema(tema, 2)
+  )
 }

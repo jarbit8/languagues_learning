@@ -51,13 +51,91 @@
     },
     {
      "tipo": "opcion_multiple",
-     "enunciado": "¿Cómo se despide Ana de Paul?",
+     "enunciado": "¿Cómo se despide Paul de Ana al final?",
      "opciones": [
       "See you soon",
       "Good night",
       "See you tomorrow"
      ],
      "respuesta": "See you tomorrow"
+    }
+   ],
+   "lineas": [
+    {
+     "hablante": "Ana",
+     "texto": "Good morning! My name is Ana. Nice to meet you."
+    },
+    {
+     "hablante": "Paul",
+     "texto": "Hi, Ana! My name is Paul. Nice to meet you too."
+    },
+    {
+     "hablante": "Ana",
+     "texto": "How are you, Paul?"
+    },
+    {
+     "hablante": "Paul",
+     "texto": "I am fine, thank you. And you?"
+    },
+    {
+     "hablante": "Ana",
+     "texto": "Very well, thanks! Excuse me, is Mr Lee here?"
+    },
+    {
+     "hablante": "Paul",
+     "texto": "Yes, Mr Lee is here."
+    },
+    {
+     "hablante": "Ana",
+     "texto": "Good afternoon, Mr Lee!"
+    },
+    {
+     "hablante": "Mr Lee",
+     "texto": "Good afternoon, Ana. Welcome!"
+    },
+    {
+     "hablante": "Ana",
+     "texto": "Thank you very much."
+    },
+    {
+     "hablante": "Mr Lee",
+     "texto": "You're welcome."
+    },
+    {
+     "hablante": "Ana",
+     "texto": "And Mrs Lee?"
+    },
+    {
+     "hablante": "Mr Lee",
+     "texto": "Sorry, no. Mrs Lee is not here."
+    },
+    {
+     "hablante": "Ana",
+     "texto": "No problem!"
+    },
+    {
+     "hablante": "Mr Lee",
+     "texto": "Miss Sofia is here."
+    },
+    {
+     "hablante": "Ana",
+     "texto": "Good afternoon, Miss Sofia."
+    },
+    {
+     "hablante": "Paul",
+     "texto": "See you later, Ana."
+    },
+    {
+     "hablante": "Ana",
+     "texto": "Bye, Paul!"
+    },
+    {
+     "hablante": "Paul",
+     "texto": "Have a nice day! See you tomorrow, Ana."
+    },
+    {
+     "hablante": "Ana",
+     "texto": "Take care!"
     }
    ]
   },
@@ -122,6 +200,72 @@
       "nice evening"
      ]
     }
+   ],
+   "lineas": [
+    {
+     "hablante": "Laura",
+     "texto": "Good evening! Hello, my name is Laura."
+    },
+    {
+     "hablante": "Marc",
+     "texto": "Hey, Laura! I am Marc. Nice to meet you."
+    },
+    {
+     "hablante": "Laura",
+     "texto": "Sorry, what is your name, please?"
+    },
+    {
+     "hablante": "Marc",
+     "texto": "My name is Marc."
+    },
+    {
+     "hablante": "Laura",
+     "texto": "No problem! How are you, Marc?"
+    },
+    {
+     "hablante": "Marc",
+     "texto": "Fine, thanks. And you?"
+    },
+    {
+     "hablante": "Laura",
+     "texto": "Very well! Welcome, Marc."
+    },
+    {
+     "hablante": "Marc",
+     "texto": "Thank you very much."
+    },
+    {
+     "hablante": "Laura",
+     "texto": "You're welcome."
+    },
+    {
+     "hablante": "Marc",
+     "texto": "Excuse me, is Miss Ana here?"
+    },
+    {
+     "hablante": "Laura",
+     "texto": "Yes! Hello, Ana!"
+    },
+    {
+     "hablante": "Ana",
+     "texto": "Hello, Laura! Good evening, Marc. Nice to meet you."
+    },
+    {
+     "hablante": "Marc",
+     "texto": "Nice to meet you too."
+    },
+    {
+     "hablante": "Ana",
+     "texto": "Have a nice evening!"
+    },
+    {
+     "hablante": "Marc",
+     "texto": "Thank you, Ana. See you soon! Goodbye, Laura. Good night!"
+    },
+    {
+     "hablante": "Laura",
+     "texto": "Good night, Marc. Take care! Bye!"
+    }
    ]
   },
   {
@@ -150,7 +294,7 @@
     },
     {
      "tipo": "opcion_multiple",
-     "enunciado": "¿Qué dice Sofia cuando le dan las gracias?",
+     "enunciado": "¿Qué le contestan a Sofia cuando ella da las gracias?",
      "opciones": [
       "No problem",
       "You're welcome",
@@ -176,6 +320,64 @@
       "a nice day",
       "nice day"
      ]
+    }
+   ],
+   "lineas": [
+    {
+     "hablante": "Sofia",
+     "texto": "Good morning! Excuse me, is Mr Lee here?"
+    },
+    {
+     "hablante": "A",
+     "texto": "Yes!"
+    },
+    {
+     "hablante": "Sofia",
+     "texto": "My name is Sofia. Nice to meet you."
+    },
+    {
+     "hablante": "A",
+     "texto": "Nice to meet you too, Sofia. How are you?"
+    },
+    {
+     "hablante": "Sofia",
+     "texto": "I am very well, thank you. And you?"
+    },
+    {
+     "hablante": "A",
+     "texto": "Fine, thanks. Please, welcome."
+    },
+    {
+     "hablante": "Sofia",
+     "texto": "Thank you very much!"
+    },
+    {
+     "hablante": "A",
+     "texto": "You're welcome."
+    },
+    {
+     "hablante": "Sofia",
+     "texto": "Excuse me, and Mrs Lee?"
+    },
+    {
+     "hablante": "A",
+     "texto": "Sorry, no."
+    },
+    {
+     "hablante": "Sofia",
+     "texto": "No problem."
+    },
+    {
+     "hablante": "A",
+     "texto": "Have a nice day!"
+    },
+    {
+     "hablante": "Sofia",
+     "texto": "Thank you, and you. See you later!"
+    },
+    {
+     "hablante": "A",
+     "texto": "Goodbye!"
     }
    ]
   },
@@ -230,6 +432,76 @@
      "aceptadas": [
       "see you soon"
      ]
+    }
+   ],
+   "lineas": [
+    {
+     "hablante": "Marc",
+     "texto": "Hey!"
+    },
+    {
+     "hablante": "Laura",
+     "texto": "Hello, Marc! How are you?"
+    },
+    {
+     "hablante": "Marc",
+     "texto": "I am fine, thanks. And you?"
+    },
+    {
+     "hablante": "Laura",
+     "texto": "Very well!"
+    },
+    {
+     "hablante": "Marc",
+     "texto": "Nice to meet you, Laura."
+    },
+    {
+     "hablante": "Laura",
+     "texto": "Nice to meet you too."
+    },
+    {
+     "hablante": "Marc",
+     "texto": "Excuse me, what is your name again?"
+    },
+    {
+     "hablante": "Laura",
+     "texto": "Sorry! My name is Laura."
+    },
+    {
+     "hablante": "Marc",
+     "texto": "No problem, Laura! Welcome."
+    },
+    {
+     "hablante": "Laura",
+     "texto": "Thank you."
+    },
+    {
+     "hablante": "Marc",
+     "texto": "Please, my name is Marc."
+    },
+    {
+     "hablante": "Laura",
+     "texto": "Yes, Marc! Good."
+    },
+    {
+     "hablante": "Marc",
+     "texto": "Good evening!"
+    },
+    {
+     "hablante": "Laura",
+     "texto": "Good evening! Have a nice evening, Marc."
+    },
+    {
+     "hablante": "Marc",
+     "texto": "Thank you!"
+    },
+    {
+     "hablante": "Laura",
+     "texto": "Good night."
+    },
+    {
+     "hablante": "Marc",
+     "texto": "Good night, Laura! Take care. Bye! See you soon!"
     }
    ]
   },
@@ -287,6 +559,96 @@
      "aceptadas": [
       "a nice evening"
      ]
+    }
+   ],
+   "lineas": [
+    {
+     "hablante": "Marie",
+     "texto": "Good morning, Mr Lee!"
+    },
+    {
+     "hablante": "Mr Lee",
+     "texto": "Good morning, Marie. How are you?"
+    },
+    {
+     "hablante": "Marie",
+     "texto": "I am very well, thank you. And you?"
+    },
+    {
+     "hablante": "Mr Lee",
+     "texto": "Fine, thanks."
+    },
+    {
+     "hablante": "Marie",
+     "texto": "Welcome!"
+    },
+    {
+     "hablante": "Mr Lee",
+     "texto": "Thank you very much."
+    },
+    {
+     "hablante": "Marie",
+     "texto": "You're welcome."
+    },
+    {
+     "hablante": "Mr Lee",
+     "texto": "Excuse me, is Miss Sofia here?"
+    },
+    {
+     "hablante": "Marie",
+     "texto": "Sorry, no."
+    },
+    {
+     "hablante": "Mr Lee",
+     "texto": "No problem!"
+    },
+    {
+     "hablante": "Marie",
+     "texto": "Good afternoon, Paul."
+    },
+    {
+     "hablante": "Paul",
+     "texto": "Hi! Nice to meet you."
+    },
+    {
+     "hablante": "Marie",
+     "texto": "Nice to meet you too."
+    },
+    {
+     "hablante": "Paul",
+     "texto": "Have a nice day!"
+    },
+    {
+     "hablante": "Marie",
+     "texto": "Thank you."
+    },
+    {
+     "hablante": "Paul",
+     "texto": "Good evening, Marie."
+    },
+    {
+     "hablante": "Marie",
+     "texto": "Good evening!"
+    },
+    {
+     "hablante": "Paul",
+     "texto": "Have a nice evening."
+    },
+    {
+     "hablante": "Marie",
+     "texto": "See you tomorrow."
+    },
+    {
+     "hablante": "Paul",
+     "texto": "Good night!"
+    },
+    {
+     "hablante": "Marie",
+     "texto": "Take care."
+    },
+    {
+     "hablante": "Paul",
+     "texto": "Bye!"
     }
    ]
   }

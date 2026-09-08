@@ -3,13 +3,21 @@ import { useLiveQuery } from 'dexie-react-hooks'
 import type { DialogoListening, Pregunta } from '../types'
 import { temaEnCurso } from '../lib/progreso'
 import { getVocabPack, getListening } from '../data/packs'
-import { reproducirDialogo, reproducirLinea, detener, rateListening } from '../lib/listening'
+import {
+  reproducirDialogo,
+  reproducirLinea,
+  detener,
+  rateListening,
+  hablantesDe,
+  hayVocesDistintas
+} from '../lib/listening'
 import { preguntaDeListening } from '../lib/preguntas'
 import { sesionDeletreo, itemsDisponibles } from '../lib/deletreo'
 import ExamRunner from '../components/ExamRunner'
 import SelectorDia from '../components/SelectorDia'
 import AvisoVoz from '../components/AvisoVoz'
 import { porDia } from '../lib/porDia'
+import { marcarHecho, claveEscuchar, claveDeletreo } from '../lib/avance'
 
 // Estima la duración del audio TTS (aprox — la velocidad real depende de la voz del dispositivo).
 function duracionAprox(dialogo: DialogoListening, tema: number): number {
@@ -36,6 +44,11 @@ function DialogoCard({
 }) {
   const [transcripcion, setTranscripcion] = useState(false)
   const [lineaActiva, setLineaActiva] = useState(-1)
+  // Los personajes del diálogo, en el mismo orden que reparte las voces. El chip que se
+  // enciende dice QUIÉN habla sin destapar QUÉ dice: con la transcripción oculta —que es como
+  // hay que escucharlo la primera vez— antes no había forma de saberlo.
+  const hablantes = hablantesDe(dialogo.lineas)
+  const hablando = lineaActiva >= 0 ? dialogo.lineas[lineaActiva]?.hablante : null
 
   return (
     <div className="tarjeta flex flex-col gap-3">
@@ -77,6 +90,21 @@ function DialogoCard({
         >
           🐢 Lento
         </button>
+      </div>
+
+      <div className="flex items-center justify-center gap-2">
+        {hablantes.map((h, i) => (
+          <span
+            key={h}
+            className={`rounded-full px-3 py-1 text-xs font-bold transition ${
+              hablando === h
+                ? 'bg-emerald-500 text-white'
+                : 'bg-slate-100 text-slate-400 dark:bg-slate-700 dark:text-slate-500'
+            }`}
+          >
+            {i === 0 ? '👤' : '🧑'} {h}
+          </span>
+        ))}
       </div>
 
       {!transcripcion ? (
@@ -170,7 +198,10 @@ export default function Listening() {
         <ExamRunner
           preguntas={deletreo}
           etiqueta="Deletreo"
-          onFinish={(aciertos, total) => setResultado({ aciertos, total })}
+          onFinish={async (aciertos, total) => {
+            await marcarHecho(temaSel, claveDeletreo(dia))
+            setResultado({ aciertos, total })
+          }}
         />
       </div>
     )
@@ -188,7 +219,10 @@ export default function Listening() {
         <ExamRunner
           preguntas={preguntas}
           etiqueta={`Listening · ${dialogo.titulo}`}
-          onFinish={(aciertos, total) => setResultado({ aciertos, total })}
+          onFinish={async (aciertos, total) => {
+            await marcarHecho(temaSel, claveEscuchar(examenDialogo))
+            setResultado({ aciertos, total })
+          }}
         />
       </div>
     )
@@ -207,7 +241,10 @@ export default function Listening() {
 
       <p className="text-sm text-slate-500 dark:text-slate-400">
         Escucha el diálogo (sin mirar la transcripción la primera vez), luego responde las preguntas. Solo usa
-        vocabulario de temas que ya viste. La app usa una voz de mujer y una de hombre para los dos personajes.
+        vocabulario de temas que ya viste.{' '}
+        {hayVocesDistintas()
+          ? 'Cada personaje tiene su propia voz, y el chip verde marca quién habla.'
+          : 'Este aparato no tiene dos voces en inglés, así que los personajes se separan por el tono (uno grave y otro agudo). Instalando voces inglesas suenan como dos personas distintas.'}
       </p>
 
       {!pack ? (

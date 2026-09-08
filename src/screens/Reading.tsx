@@ -6,7 +6,9 @@ import { preguntaDeListening } from '../lib/preguntas'
 import ExamRunner from '../components/ExamRunner'
 import PalabrasDeExamen from '../components/PalabrasDeExamen'
 import SelectorDia from '../components/SelectorDia'
+import TextoLeible from '../components/TextoLeible'
 import { porDia } from '../lib/porDia'
+import { marcarHecho, claveLeer } from '../lib/avance'
 
 export default function Reading() {
   const temaActual = useLiveQuery(() => temaEnCurso(), [], 1) ?? 1
@@ -53,12 +55,15 @@ export default function Reading() {
         </button>
         <div className="tarjeta flex flex-col gap-2">
           <h2 className="font-bold">{texto.titulo}</h2>
-          <p className="text-sm leading-relaxed">{texto.texto}</p>
+          <TextoLeible texto={texto} />
         </div>
         <ExamRunner
           preguntas={preguntas}
           etiqueta={`Lectura · ${texto.titulo}`}
-          onFinish={(aciertos, total) => setResultado({ aciertos, total })}
+          onFinish={async (aciertos, total) => {
+            await marcarHecho(temaSel, claveLeer(examen))
+            setResultado({ aciertos, total })
+          }}
         />
       </div>
     )
@@ -103,7 +108,7 @@ export default function Reading() {
               </span>
               <h2 className="flex-1 font-bold">{t.titulo}</h2>
             </div>
-            <p className="text-sm leading-relaxed">{t.texto}</p>
+            <TextoLeible texto={t} />
             <button onClick={() => setExamen(i)} className="btn-primary">
               Responder preguntas ({t.preguntas.length})
             </button>

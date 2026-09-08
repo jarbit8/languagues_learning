@@ -56,6 +56,64 @@
      "enunciado": "Mr Lee y Mrs Lee tienen la misma edad.",
      "respuesta": "falso"
     }
+   ],
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "Good morning! Excuse me, what is your name?"
+    },
+    {
+     "hablante": "Ana",
+     "texto": "My name is Ana."
+    },
+    {
+     "hablante": "A",
+     "texto": "How old are you?"
+    },
+    {
+     "hablante": "Ana",
+     "texto": "I am twenty years old."
+    },
+    {
+     "hablante": "A",
+     "texto": "Thank you. And your phone number?"
+    },
+    {
+     "hablante": "Ana",
+     "texto": "It is four, seven, two, nine, one, three, eight."
+    },
+    {
+     "hablante": "A",
+     "texto": "Four, seven, two, nine, one, three, eight."
+    },
+    {
+     "hablante": "Ana",
+     "texto": "Yes!"
+    },
+    {
+     "hablante": "A",
+     "texto": "And your birthday?"
+    },
+    {
+     "hablante": "Ana",
+     "texto": "It is in May."
+    },
+    {
+     "hablante": "A",
+     "texto": "Very well. And Paul, how old is he?"
+    },
+    {
+     "hablante": "Ana",
+     "texto": "Paul is twenty-two. Laura is nineteen years old. Mr Lee is fifty and Mrs Lee is forty."
+    },
+    {
+     "hablante": "A",
+     "texto": "Thank you very much!"
+    },
+    {
+     "hablante": "Ana",
+     "texto": "You're welcome. See you soon!"
+    }
    ]
   },
   {
@@ -114,6 +172,80 @@
       "a hundred"
      ]
     }
+   ],
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "Good afternoon! Your name, please?"
+    },
+    {
+     "hablante": "Laura",
+     "texto": "My name is Laura."
+    },
+    {
+     "hablante": "A",
+     "texto": "How old are you?"
+    },
+    {
+     "hablante": "Laura",
+     "texto": "I am nineteen years old."
+    },
+    {
+     "hablante": "A",
+     "texto": "Thank you. And your birthday?"
+    },
+    {
+     "hablante": "Laura",
+     "texto": "It is in May too."
+    },
+    {
+     "hablante": "A",
+     "texto": "And your phone number?"
+    },
+    {
+     "hablante": "Laura",
+     "texto": "It is zero, five, one, six, eight, ten."
+    },
+    {
+     "hablante": "A",
+     "texto": "Zero, five, one, six, eight, ten."
+    },
+    {
+     "hablante": "Laura",
+     "texto": "Yes!"
+    },
+    {
+     "hablante": "A",
+     "texto": "Excuse me, is Marc thirty?"
+    },
+    {
+     "hablante": "Laura",
+     "texto": "No, Marc is thirty-one."
+    },
+    {
+     "hablante": "A",
+     "texto": "Sorry!"
+    },
+    {
+     "hablante": "Laura",
+     "texto": "No problem. Mr Lee is sixty and Mrs Lee is seventy."
+    },
+    {
+     "hablante": "A",
+     "texto": "And one hundred?"
+    },
+    {
+     "hablante": "Laura",
+     "texto": "One hundred is not an age! Eleven, twelve, thirteen, fourteen, fifteen, sixteen, seventeen, eighteen, eighty, ninety: I have all the numbers here."
+    },
+    {
+     "hablante": "A",
+     "texto": "Very well, Laura. Have a nice day!"
+    },
+    {
+     "hablante": "Laura",
+     "texto": "Thank you, and you!"
+    }
    ]
   },
   {
@@ -167,6 +299,56 @@
      "tipo": "vf",
      "enunciado": "Marc da su número de teléfono.",
      "respuesta": "verdadero"
+    }
+   ],
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "Good morning! What is your name?"
+    },
+    {
+     "hablante": "Marc",
+     "texto": "My name is Marc."
+    },
+    {
+     "hablante": "A",
+     "texto": "How old are you, Marc?"
+    },
+    {
+     "hablante": "Marc",
+     "texto": "I am thirty-one years old."
+    },
+    {
+     "hablante": "A",
+     "texto": "And your birthday?"
+    },
+    {
+     "hablante": "Marc",
+     "texto": "It is in April."
+    },
+    {
+     "hablante": "A",
+     "texto": "Your phone number, please?"
+    },
+    {
+     "hablante": "Marc",
+     "texto": "It is zero, six, one, four, seven, two."
+    },
+    {
+     "hablante": "A",
+     "texto": "Thank you. And you, Miss?"
+    },
+    {
+     "hablante": "Sofia",
+     "texto": "My name is Sofia. I am twenty-eight years old. My birthday is in July. My phone number is five, three, nine, zero, eight, one."
+    },
+    {
+     "hablante": "A",
+     "texto": "Thank you very much! Two numbers and two ages: thirty-one and twenty-eight."
+    },
+    {
+     "hablante": "Sofia",
+     "texto": "You're welcome!"
     }
    ]
   },
@@ -225,6 +407,64 @@
      "enunciado": "Cien es una edad en el texto.",
      "respuesta": "falso"
     }
+   ],
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "How old is Mr Lee?"
+    },
+    {
+     "hablante": "B",
+     "texto": "He is eighty-four years old."
+    },
+    {
+     "hablante": "A",
+     "texto": "And Mrs Lee?"
+    },
+    {
+     "hablante": "B",
+     "texto": "She is seventy-nine. Miss Sofia is fifty-two and Marc is fifty. Laura is sixteen and Ana is thirteen."
+    },
+    {
+     "hablante": "A",
+     "texto": "And you?"
+    },
+    {
+     "hablante": "B",
+     "texto": "I am twenty-two years old."
+    },
+    {
+     "hablante": "A",
+     "texto": "And the number of Paul?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Paul is one!"
+    },
+    {
+     "hablante": "A",
+     "texto": "No! Paul is twenty-one."
+    },
+    {
+     "hablante": "B",
+     "texto": "Sorry! One, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve."
+    },
+    {
+     "hablante": "A",
+     "texto": "Numbers, numbers, numbers! And one hundred?"
+    },
+    {
+     "hablante": "B",
+     "texto": "One hundred is a very good number."
+    },
+    {
+     "hablante": "A",
+     "texto": "Yes! But it is not an age here."
+    },
+    {
+     "hablante": "B",
+     "texto": "Thank you very much!"
+    }
    ]
   },
   {
@@ -278,6 +518,40 @@
      "tipo": "vf",
      "enunciado": "Marc tiene treinta años.",
      "respuesta": "falso"
+    }
+   ],
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "Good morning! Your name, please?"
+    },
+    {
+     "hablante": "Marie",
+     "texto": "My name is Marie."
+    },
+    {
+     "hablante": "A",
+     "texto": "How old are you?"
+    },
+    {
+     "hablante": "Marie",
+     "texto": "I am twenty-six years old. My birthday is in August. And my phone number is nine, one, four, zero, seven, five."
+    },
+    {
+     "hablante": "A",
+     "texto": "Thank you. And Paul?"
+    },
+    {
+     "hablante": "Marie",
+     "texto": "Paul is twenty-one and his birthday is in March. Mr Lee is eighty-four and Mrs Lee is seventy-nine. Miss Sofia is fifty and Marc is thirty-one."
+    },
+    {
+     "hablante": "A",
+     "texto": "Thank you very much!"
+    },
+    {
+     "hablante": "Marie",
+     "texto": "You're welcome. See you tomorrow!"
     }
    ]
   }

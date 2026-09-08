@@ -5,6 +5,7 @@ import { getWriting, getVocabPack } from '../data/packs'
 import { bloqueDeTema } from '../lib/curriculum'
 import { EscribirConsigna } from '../components/PasoWriting'
 import SelectorDia from '../components/SelectorDia'
+import { marcarHecho, claveEscribir } from '../lib/avance'
 
 export default function Writing() {
   // Se elige por TEMA, igual que Leer y Escuchar. Los packs siguen agrupados por bloque en
@@ -48,7 +49,14 @@ export default function Writing() {
         <button onClick={reset} className="self-start text-sm text-slate-500 underline dark:text-slate-400">
           ← Volver a las consignas
         </button>
-        <EscribirConsigna key={consignaIdx} pack={consigna} onDone={() => setHecho(true)} />
+        <EscribirConsigna
+          key={consignaIdx}
+          pack={consigna}
+          onDone={async () => {
+            await marcarHecho(temaSel, claveEscribir(consignaIdx))
+            setHecho(true)
+          }}
+        />
       </div>
     )
   }
