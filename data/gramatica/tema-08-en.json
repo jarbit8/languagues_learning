@@ -166,5 +166,47 @@
    "enunciado": "What hour is it?",
    "respuesta": "What time is it?"
   }
+ ],
+ "dias": [
+  {
+   "titulo": "Decir la hora",
+   "regla": "'It's half past seven' (7:30), 'quarter past six' (6:15), 'quarter to nine' (8:45), 'ten o'clock' (10:00). El pasado del reloj va con 'past' y lo que falta con 'to'. Para preguntar: 'What time is it?'.",
+   "trampa": "No existe 'half to': la media siempre es 'half PAST'. Y la hora se pregunta con 'What time is it?', nunca 'What hour is it?'.",
+   "ejemplos": [
+    0,
+    3
+   ],
+   "ejercicios": [
+    0,
+    1,
+    3,
+    5,
+    8,
+    11,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  {
+   "titulo": "Los adverbios de frecuencia",
+   "regla": "always, usually, often, sometimes, never dicen cada cuánto pasa algo. Van ANTES del verbo normal (I always study) pero DESPUÉS de 'to be' (I am never late). Esa es toda la regla, y es la que más se falla.",
+   "trampa": "Con to be el adverbio va detrás: 'She IS never late', no 'She never is late'. Con cualquier otro verbo va delante: 'I ALWAYS study'.",
+   "ejemplos": [
+    1,
+    2
+   ],
+   "ejercicios": [
+    2,
+    4,
+    6,
+    7,
+    9,
+    10,
+    12,
+    13
+   ]
+  }
  ]
 }

@@ -136,5 +136,43 @@
     "I'm from Canada"
    ]
   }
+ ],
+ "dias": [
+  {
+   "titulo": "Los artículos a / an / the",
+   "regla": "'a' antes de sonido de consonante (a country), 'an' antes de sonido de vocal (an English student), 'the' cuando es algo concreto y ya sabido (the city). Con los nombres de países NO se usa artículo: Peru, Canada, England.",
+   "trampa": "Manda el SONIDO, no la letra: 'an English student' lleva 'an' porque English empieza por sonido vocálico. Y nunca 'the Peru'.",
+   "ejemplos": [
+    0
+   ],
+   "ejercicios": [
+    0,
+    1,
+    3,
+    4,
+    9,
+    10,
+    11
+   ]
+  },
+  {
+   "titulo": "Preguntar de dónde eres",
+   "regla": "Para el origen: 'Where are you from?' y se contesta 'I'm from Peru.' Fíjate en que la pregunta también invierte el orden, igual que con to be: are + you.",
+   "trampa": "'Where you are from?' está mal: la pregunta invierte — 'Where ARE YOU from?'.",
+   "ejemplos": [
+    1,
+    2
+   ],
+   "ejercicios": [
+    2,
+    5,
+    6,
+    7,
+    8,
+    12,
+    13,
+    14
+   ]
+  }
  ]
 }

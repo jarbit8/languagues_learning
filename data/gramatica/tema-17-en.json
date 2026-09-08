@@ -168,5 +168,48 @@
    "enunciado": "He drives slow and careful.",
    "respuesta": "He drives slowly."
   }
+ ],
+ "dias": [
+  {
+   "titulo": "El imperativo y el transporte",
+   "regla": "El imperativo da órdenes e instrucciones con el verbo base y SIN sujeto: 'Turn left', 'Go straight', 'Take the bus'. Los medios de transporte llevan 'by': by bus, by car, by train… pero a pie es la excepción: 'on foot'.",
+   "trampa": "El imperativo no lleva 'you' delante: 'Turn left', no 'You turn left'. Y a pie es 'ON foot', que es la única que no va con 'by'.",
+   "ejemplos": [
+    0,
+    1,
+    2
+   ],
+   "ejercicios": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    10,
+    11,
+    12
+   ]
+  },
+  {
+   "titulo": "Los adverbios de modo en -ly",
+   "regla": "Dicen CÓMO se hace algo y se forman añadiendo -ly al adjetivo: slow→slowly, quick→quickly, careful→carefully. Van después del verbo: 'He drives slowly'. El irregular importante es good→well: 'She drives well'.",
+   "trampa": "'He drives good' está mal: el adverbio de good es 'well'. Y no se dice 'He drives slow': con verbo va 'slowly'.",
+   "ejemplos": [
+    3,
+    4
+   ],
+   "ejercicios": [
+    7,
+    8,
+    9,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  }
  ]
 }

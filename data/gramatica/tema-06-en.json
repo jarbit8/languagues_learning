@@ -136,5 +136,43 @@
     "where do you work"
    ]
   }
+ ],
+ "dias": [
+  {
+   "titulo": "La profesión siempre lleva artículo",
+   "regla": "Para decir a qué te dedicas SIEMPRE hace falta el artículo, aunque en español no lo lleve: 'I am a programmer', 'She is an engineer'. Se elige a o an por el sonido, igual que con cualquier otro sustantivo.",
+   "trampa": "'I am programmer' está mal. En español dices 'soy programador' sin artículo, pero en inglés el artículo es obligatorio: 'I am A programmer'.",
+   "ejemplos": [
+    0
+   ],
+   "ejercicios": [
+    0,
+    1,
+    5,
+    8,
+    10,
+    11,
+    13
+   ]
+  },
+  {
+   "titulo": "Las palabras interrogativas",
+   "regla": "what (qué), who (quién), where (dónde), when (cuándo), why (por qué), how (cómo). Van al principio de la pregunta y detrás sigue el orden invertido de siempre: 'Where do you work?', 'Who are you?'.",
+   "trampa": "Después del interrogativo el orden sigue invertido: 'Who ARE YOU?', no 'Who you are?'.",
+   "ejemplos": [
+    1,
+    2
+   ],
+   "ejercicios": [
+    2,
+    3,
+    4,
+    6,
+    7,
+    9,
+    12,
+    14
+   ]
+  }
  ]
 }

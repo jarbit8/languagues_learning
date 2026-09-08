@@ -3,17 +3,17 @@
  "textos": [
   {
    "titulo": "Ropa para el invierno",
-   "texto": "In Peru, Ana never wears a big coat. In Canada, winter is not short and she has a problem. On Saturday she goes with Laura to buy clothes. Ana tries on a black coat. It is elegant, but it is very expensive. Then she tries on a grey coat. This one is cheap and it is her size! She buys it. She also buys boots, gloves and a scarf. Laura buys a blue sweater and new sneakers, and a white blouse. Now, in the morning Ana puts on her coat, her boots and her gloves. When she comes back, she takes off the coat and she wears her old sweater. In summer she wears a t-shirt, shorts and a hat. She never wears a dress or a skirt to work: she wears pants or jeans, a shirt and a belt. In bed she wears her pajamas. Winter is not a problem now!",
+   "texto": "In Peru, Ana never wears a big coat. In Canada, winter is not short and she has a problem. On Saturday she goes with Laura to buy clothes. Ana tries on a black coat. It is elegant, but it is very expensive. Then she tries on a gray coat. This one is cheap and it is her size! She buys it. She also buys boots, gloves and a scarf. Laura buys a blue sweater and new sneakers, and a white blouse. Now, in the morning Ana puts on her coat, her boots and her gloves. When she comes back, she takes off the coat and she wears her old sweater. In summer she wears a t-shirt, shorts and a hat. She never wears a dress or a skirt to work: she wears pants or jeans, a shirt and a belt. In bed she wears her pajamas. Winter is not a problem now!",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
      "enunciado": "Which coat does Ana buy?",
      "opciones": [
-      "the grey one",
+      "the gray one",
       "the black one",
       "the blue one"
      ],
-     "respuesta": "the grey one"
+     "respuesta": "the gray one"
     },
     {
      "tipo": "vf",
@@ -128,11 +128,69 @@
       "sweater"
      ]
     }
+   ],
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "Good afternoon! Can I help you?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes, please. I buy a jacket today."
+    },
+    {
+     "hablante": "A",
+     "texto": "What size are you?"
+    },
+    {
+     "hablante": "B",
+     "texto": "I do not know my size here."
+    },
+    {
+     "hablante": "A",
+     "texto": "This black jacket is very elegant."
+    },
+    {
+     "hablante": "B",
+     "texto": "Can I try it on?"
+    },
+    {
+     "hablante": "A",
+     "texto": "Of course. How is it?"
+    },
+    {
+     "hablante": "B",
+     "texto": "It is not my size and it is expensive."
+    },
+    {
+     "hablante": "A",
+     "texto": "And this one?"
+    },
+    {
+     "hablante": "B",
+     "texto": "This jacket is cheap and it is new. I take it!"
+    },
+    {
+     "hablante": "A",
+     "texto": "And shoes?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes, and socks. These sneakers are very good, but I take boots for the winter."
+    },
+    {
+     "hablante": "A",
+     "texto": "Here are the boots. And a hat?"
+    },
+    {
+     "hablante": "B",
+     "texto": "No, thank you. I have a hat and a scarf. My friend buys a dress and a skirt, and a blouse for work. Her sister buys jeans, pants and a shirt with a belt. She never wears shorts! Now I put on my coat and I take off my old sweater. Thank you very much!"
+    }
    ]
   },
   {
    "titulo": "Ropa para cada estacion",
-   "texto": "In winter Ana puts on a big coat, boots and gloves, and she wears a scarf and a sweater. Her coat is grey and it is cheap. In summer she wears a t-shirt, shorts and sneakers, and sometimes a hat. In spring she wears jeans, a shirt and a jacket. She never wears a dress or a skirt to work: she wears pants with a belt. Laura wears a blue blouse and a black skirt. Her shoes are new and expensive. In bed Ana wears her pajamas. What size are you? asks Laura. I am a forty, says Ana. When she comes back, she takes off her coat and she wears her old sweater. Elegant clothes are expensive, but her clothes are cheap.",
+   "texto": "In winter Ana puts on a big coat, boots and gloves, and she wears a scarf and a sweater. Her coat is gray and it is cheap. In summer she wears a t-shirt, shorts and sneakers, and sometimes a hat. In spring she wears jeans, a shirt and a jacket. She never wears a dress or a skirt to work: she wears pants with a belt. Laura wears a blue blouse and a black skirt. Her shoes are new and expensive. In bed Ana wears her pajamas. What size are you? asks Laura. I am a forty, says Ana. When she comes back, she takes off her coat and she wears her old sweater. Elegant clothes are expensive, but her clothes are cheap.",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
@@ -161,7 +219,7 @@
      "tipo": "opcion_multiple",
      "enunciado": "What does Laura wear?",
      "opciones": [
-      "a black coat and grey boots",
+      "a black coat and gray boots",
       "a blue blouse and a black skirt",
       "blue jeans and a white shirt"
      ],
@@ -200,7 +258,7 @@
   },
   {
    "titulo": "La ropa de la semana",
-   "texto": "Every morning Ana puts on pants, a white shirt and shoes for work. She never wears a dress or a skirt. In her closet there are three jackets: a black one, a grey one and a new blue one. The blue jacket is elegant, but it is very expensive. On Friday she wears jeans and a t-shirt, because on Friday one can wear old clothes at work. On Saturday Ana takes off her work clothes: she puts on shorts, sneakers and a t-shirt. In winter she wears a big coat, boots, gloves and a scarf. Her sweater is old, but it is not cheap. Laura buys a blouse and a skirt for the weekend, and socks for the winter. Her hat is new and it is her size. In bed Ana wears her pajamas. She tries on all her clothes in the morning and then she is late for work!",
+   "texto": "Every morning Ana puts on pants, a white shirt and shoes for work. She never wears a dress or a skirt. In her closet there are three jackets: a black one, a gray one and a new blue one. The blue jacket is elegant, but it is very expensive. On Friday she wears jeans and a t-shirt, because on Friday one can wear old clothes at work. On Saturday Ana takes off her work clothes: she puts on shorts, sneakers and a t-shirt. In winter she wears a big coat, boots, gloves and a scarf. Her sweater is old, but it is not cheap. Laura buys a blouse and a skirt for the weekend, and socks for the winter. Her hat is new and it is her size. In bed Ana wears her pajamas. She tries on all her clothes in the morning and then she is late for work!",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
@@ -268,7 +326,7 @@
   },
   {
    "titulo": "Examen · La ropa de Marie",
-   "texto": "In winter Marie puts on a big coat, boots and gloves. Her coat is new and cheap: it is her size. She wears a sweater and pants with a belt. In summer she wears a t-shirt, shorts and sneakers, and a hat. She never wears a dress or a skirt: she wears jeans and a shirt. In bed she wears her pajamas. On Saturday she goes to buy clothes with Laura. She tries on a black blouse: it is elegant, but it is very expensive. Then she tries on a grey blouse. This one is cheap! She buys it, and socks and a scarf too. When she comes back, she takes off the coat and she wears her old sweater.",
+   "texto": "In winter Marie puts on a big coat, boots and gloves. Her coat is new and cheap: it is her size. She wears a sweater and pants with a belt. In summer she wears a t-shirt, shorts and sneakers, and a hat. She never wears a dress or a skirt: she wears jeans and a shirt. In bed she wears her pajamas. On Saturday she goes to buy clothes with Laura. She tries on a black blouse: it is elegant, but it is very expensive. Then she tries on a gray blouse. This one is cheap! She buys it, and socks and a scarf too. When she comes back, she takes off the coat and she wears her old sweater.",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
@@ -288,9 +346,9 @@
     {
      "tipo": "completar_dato",
      "enunciado": "Which blouse does she buy?",
-     "respuesta": "the grey one",
+     "respuesta": "the gray one",
      "aceptadas": [
-      "grey"
+      "gray"
      ]
     },
     {

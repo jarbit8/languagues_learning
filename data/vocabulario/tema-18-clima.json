@@ -1,33 +1,226 @@
-{ "tema": 18, "titulo": "Clima y naturaleza", "conceptos": [
-{"id":"a1-t18-001","es":"clima","texto":"weather","ejemplo":"The weather is nice.","pron":"UE-der"},
-{"id":"a1-t18-002","es":"sol","texto":"sun","ejemplo":"The sun is hot.","pron":"SAN"},
-{"id":"a1-t18-003","es":"lluvia","texto":"rain","ejemplo":"I don't like the rain.","pron":"REIN"},
-{"id":"a1-t18-004","es":"viento","texto":"wind","ejemplo":"The wind is cold.","pron":"UIND"},
-{"id":"a1-t18-005","es":"nieve","texto":"snow","ejemplo":"There is snow in winter.","pron":"SNOU"},
-{"id":"a1-t18-006","es":"nube","texto":"cloud","ejemplo":"There is a big cloud.","pron":"KLAUD"},
-{"id":"a1-t18-007","es":"calor (hace calor)","texto":"hot","ejemplo":"It is hot today.","pron":"JOT"},
-{"id":"a1-t18-008","es":"frío (hace frío)","texto":"cold","ejemplo":"It is cold in winter.","pron":"KOULD"},
-{"id":"a1-t18-009","es":"templado","texto":"warm","ejemplo":"It is warm in spring.","pron":"UORM"},
-{"id":"a1-t18-010","es":"fresco","texto":"cool","ejemplo":"It is cool in the fall.","pron":"KUL"},
-{"id":"a1-t18-011","es":"soleado","texto":"sunny","ejemplo":"It's sunny today.","pron":"SA-ni"},
-{"id":"a1-t18-012","es":"lluvioso","texto":"rainy","ejemplo":"It's a rainy day.","pron":"REI-ni"},
-{"id":"a1-t18-013","es":"ventoso","texto":"windy","ejemplo":"It's windy today.","pron":"UIN-di"},
-{"id":"a1-t18-014","es":"nublado","texto":"cloudy","ejemplo":"The sky is cloudy.","pron":"KLAU-di"},
-{"id":"a1-t18-015","es":"mar","texto":"sea","ejemplo":"The sea is blue.","pron":"SI"},
-{"id":"a1-t18-016","es":"montaña","texto":"mountain","ejemplo":"The mountain is high.","pron":"MAUN-ten"},
-{"id":"a1-t18-017","es":"río","texto":"river","ejemplo":"The river is long.","pron":"RI-ver"},
-{"id":"a1-t18-018","es":"árbol","texto":"tree","ejemplo":"The tree is green.","pron":"TRI"},
-{"id":"a1-t18-019","es":"cielo","texto":"sky","ejemplo":"The sky is grey.","pron":"SKAI"},
-{"id":"a1-t18-020","es":"playa","texto":"beach","ejemplo":"The beach is beautiful.","pron":"BICH"},
-{"id":"a1-t18-021","es":"luna","texto":"moon","ejemplo":"The moon is white.","pron":"MUN"},
-{"id":"a1-t18-022","es":"estrella","texto":"star","ejemplo":"I see a star.","pron":"STAR"},
-{"id":"a1-t18-023","es":"flor","texto":"flower","ejemplo":"The flower is red.","pron":"FLAU-er"},
-{"id":"a1-t18-024","es":"bosque","texto":"forest","ejemplo":"The forest is big.","pron":"FO-rest"},
-{"id":"a1-t18-025","es":"lago","texto":"lake","ejemplo":"The lake is cold.","pron":"LEIK"},
-{"id":"a1-t18-026","es":"tormenta","texto":"storm","ejemplo":"There is a storm.","pron":"STORM"},
-{"id":"a1-t18-027","es":"hielo","texto":"ice","ejemplo":"There is ice on the road.","pron":"AIS"},
-{"id":"a1-t18-028","es":"grados","texto":"degrees","ejemplo":"It's twenty degrees.","pron":"di-GRIS"},
-{"id":"a1-t18-029","es":"¿qué tiempo hace?","texto":"what's the weather like?","literal":"¿qué es el clima como?","ejemplo":"What's the weather like?","pron":"uats de UE-der laik","rapido":"uats-de-UE-der-laik","tambien":"how's the weather?"},
-{"id":"a1-t18-030","es":"caluroso","texto":"warm/hot day","ejemplo":"It's a hot day.","pron":"UORM JOT DEI"},
-{"id":"a1-t18-031","es":"neblina","texto":"fog","ejemplo":"There is fog this morning.","pron":"FOG"}
-] }
+{
+ "tema": 18,
+ "titulo": "Clima y naturaleza",
+ "conceptos": [
+  {
+   "id": "a1-t18-001",
+   "es": "clima",
+   "texto": "weather",
+   "ejemplo": "The weather is nice.",
+   "pron": "UE-der"
+  },
+  {
+   "id": "a1-t18-002",
+   "es": "sol",
+   "texto": "sun",
+   "ejemplo": "The sun is hot.",
+   "pron": "SAN"
+  },
+  {
+   "id": "a1-t18-003",
+   "es": "lluvia",
+   "texto": "rain",
+   "ejemplo": "I don't like the rain.",
+   "pron": "REIN"
+  },
+  {
+   "id": "a1-t18-004",
+   "es": "viento",
+   "texto": "wind",
+   "ejemplo": "The wind is cold.",
+   "pron": "UIND"
+  },
+  {
+   "id": "a1-t18-005",
+   "es": "nieve",
+   "texto": "snow",
+   "ejemplo": "There is snow in winter.",
+   "pron": "SNOU"
+  },
+  {
+   "id": "a1-t18-006",
+   "es": "nube",
+   "texto": "cloud",
+   "ejemplo": "There is a big cloud.",
+   "pron": "KLAUD"
+  },
+  {
+   "id": "a1-t18-007",
+   "es": "calor (hace calor)",
+   "texto": "hot",
+   "ejemplo": "It is hot today.",
+   "pron": "JOT"
+  },
+  {
+   "id": "a1-t18-008",
+   "es": "frío (hace frío)",
+   "texto": "cold",
+   "ejemplo": "It is cold in winter.",
+   "pron": "KOULD"
+  },
+  {
+   "id": "a1-t18-009",
+   "es": "templado",
+   "texto": "warm",
+   "ejemplo": "It is warm in spring.",
+   "pron": "UORM"
+  },
+  {
+   "id": "a1-t18-010",
+   "es": "fresco",
+   "texto": "cool",
+   "ejemplo": "It is cool in the fall.",
+   "pron": "KUL"
+  },
+  {
+   "id": "a1-t18-011",
+   "es": "soleado",
+   "texto": "sunny",
+   "ejemplo": "It's sunny today.",
+   "pron": "SA-ni"
+  },
+  {
+   "id": "a1-t18-012",
+   "es": "lluvioso",
+   "texto": "rainy",
+   "ejemplo": "It's a rainy day.",
+   "pron": "REI-ni"
+  },
+  {
+   "id": "a1-t18-013",
+   "es": "ventoso",
+   "texto": "windy",
+   "ejemplo": "It's windy today.",
+   "pron": "UIN-di"
+  },
+  {
+   "id": "a1-t18-014",
+   "es": "nublado",
+   "texto": "cloudy",
+   "ejemplo": "The sky is cloudy.",
+   "pron": "KLAU-di"
+  },
+  {
+   "id": "a1-t18-015",
+   "es": "mar",
+   "texto": "sea",
+   "ejemplo": "The sea is blue.",
+   "pron": "SI"
+  },
+  {
+   "id": "a1-t18-016",
+   "es": "montaña",
+   "texto": "mountain",
+   "ejemplo": "The mountain is high.",
+   "pron": "MAUN-ten"
+  },
+  {
+   "id": "a1-t18-017",
+   "es": "río",
+   "texto": "river",
+   "ejemplo": "The river is long.",
+   "pron": "RI-ver"
+  },
+  {
+   "id": "a1-t18-018",
+   "es": "árbol",
+   "texto": "tree",
+   "ejemplo": "The tree is green.",
+   "pron": "TRI"
+  },
+  {
+   "id": "a1-t18-019",
+   "es": "cielo",
+   "texto": "sky",
+   "ejemplo": "The sky is gray.",
+   "pron": "SKAI"
+  },
+  {
+   "id": "a1-t18-020",
+   "es": "playa",
+   "texto": "beach",
+   "ejemplo": "The beach is beautiful.",
+   "pron": "BICH"
+  },
+  {
+   "id": "a1-t18-021",
+   "es": "luna",
+   "texto": "moon",
+   "ejemplo": "The moon is white.",
+   "pron": "MUN"
+  },
+  {
+   "id": "a1-t18-022",
+   "es": "estrella",
+   "texto": "star",
+   "ejemplo": "I see a star.",
+   "pron": "STAR"
+  },
+  {
+   "id": "a1-t18-023",
+   "es": "flor",
+   "texto": "flower",
+   "ejemplo": "The flower is red.",
+   "pron": "FLAU-er"
+  },
+  {
+   "id": "a1-t18-024",
+   "es": "bosque",
+   "texto": "forest",
+   "ejemplo": "The forest is big.",
+   "pron": "FO-rest"
+  },
+  {
+   "id": "a1-t18-025",
+   "es": "lago",
+   "texto": "lake",
+   "ejemplo": "The lake is cold.",
+   "pron": "LEIK"
+  },
+  {
+   "id": "a1-t18-026",
+   "es": "tormenta",
+   "texto": "storm",
+   "ejemplo": "There is a storm.",
+   "pron": "STORM"
+  },
+  {
+   "id": "a1-t18-027",
+   "es": "hielo",
+   "texto": "ice",
+   "ejemplo": "There is ice on the road.",
+   "pron": "AIS"
+  },
+  {
+   "id": "a1-t18-028",
+   "es": "grados",
+   "texto": "degrees",
+   "ejemplo": "It's twenty degrees.",
+   "pron": "di-GRIS"
+  },
+  {
+   "id": "a1-t18-029",
+   "es": "¿qué tiempo hace?",
+   "texto": "what's the weather like?",
+   "literal": "¿qué es el clima como?",
+   "ejemplo": "What's the weather like?",
+   "pron": "uats de UE-der laik",
+   "rapido": "uats-de-UE-der-laik",
+   "tambien": "how's the weather?"
+  },
+  {
+   "id": "a1-t18-030",
+   "es": "caluroso",
+   "texto": "warm/hot day",
+   "ejemplo": "It's a hot day.",
+   "pron": "UORM JOT DEI"
+  },
+  {
+   "id": "a1-t18-031",
+   "es": "neblina",
+   "texto": "fog",
+   "ejemplo": "There is fog this morning.",
+   "pron": "FOG"
+  }
+ ]
+}

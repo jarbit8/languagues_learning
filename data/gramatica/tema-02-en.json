@@ -171,5 +171,47 @@
    "enunciado": "Are you ten? Yes, I are.",
    "respuesta": "Are you ten? Yes, I am."
   }
+ ],
+ "dias": [
+  {
+   "titulo": "El negativo de to be y la edad",
+   "regla": "Para negar 'to be' se le añade 'not': I am not (I'm not), he is not (isn't), they are not (aren't). La edad se dice con 'to be', no con 'tener': How old are you? I'm 20 (years old).",
+   "trampa": "Nunca 'I have 20 years': en inglés la edad se TIENE con to be — I am 20. Y no se te olvide el 'not' completo: 'She is not here', 'She isn't here'.",
+   "ejemplos": [
+    0,
+    2
+   ],
+   "ejercicios": [
+    0,
+    2,
+    3,
+    5,
+    6,
+    7,
+    9,
+    10,
+    11,
+    13,
+    14
+   ]
+  },
+  {
+   "titulo": "Preguntas con to be y respuestas cortas",
+   "regla": "Para preguntar se invierte el orden: Are you...? Is he...? How old are you? Y no se contesta 'yes' o 'no' a secas: se repite el verbo — Are you twenty? Yes, I am. / No, I'm not. Is she thirteen? Yes, she is. / No, she isn't.",
+   "trampa": "El interrogativo invierte: 'How old ARE YOU?', no 'How old you are?'. Y en la respuesta corta el verbo tiene que concordar: 'Yes, I am', no 'Yes, I are'.",
+   "ejemplos": [
+    1,
+    3
+   ],
+   "ejercicios": [
+    1,
+    4,
+    8,
+    12,
+    15,
+    16,
+    17
+   ]
+  }
  ]
 }

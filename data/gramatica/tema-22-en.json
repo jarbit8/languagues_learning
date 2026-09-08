@@ -195,5 +195,52 @@
     "she was not at home"
    ]
   }
+ ],
+ "dias": [
+  {
+   "titulo": "was / were y el pasado con -ed",
+   "regla": "El pasado de 'to be': I/he/she/it WAS, you/we/they WERE. El de los verbos regulares se forma con -ed y es IGUAL para todas las personas, sin -s de tercera: work→worked, watch→watched, download→downloaded.",
+   "trampa": "'They was' está mal: con they va 'were'. Y el pasado no se forma con 'was' + verbo: es 'I downloaded', no 'I was download'.",
+   "ejemplos": [
+    0,
+    1,
+    2
+   ],
+   "ejercicios": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    10,
+    11,
+    12
+   ]
+  },
+  {
+   "titulo": "Negativo e interrogativo: didn't y Did…?",
+   "regla": "Con 'to be' basta con wasn't / weren't y con invertir: 'Was he late?', 'Were you here?'. Con cualquier otro verbo entra 'did' y el verbo VUELVE A SU FORMA BASE: 'I didn't work', 'Did you work?'. Respuestas cortas: Yes, I did / No, I didn't.",
+   "trampa": "El pasado ya lo lleva 'did', así que el verbo se queda en base: 'I didn't WORK', no 'I didn't worked'.",
+   "ejemplos": [
+    3,
+    4,
+    5
+   ],
+   "ejercicios": [
+    7,
+    8,
+    9,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+   ]
+  }
  ]
 }

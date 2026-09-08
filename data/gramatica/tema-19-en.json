@@ -1,14 +1,19 @@
 {
  "tema": 19,
- "titulo": "Have got para hablar de síntomas",
- "regla": "Para los síntomas se usa 'have got' o 'have': 'I've got a headache' (tengo dolor de cabeza), 'She's got a cold' (tiene un resfriado). También 'My head hurts' (me duele la cabeza).",
+ "titulo": "Los síntomas con have (y have got)",
+ "regla": "Para los síntomas se usa 'have': 'I have a headache' (tengo dolor de cabeza), 'She has a cold' (tiene un resfriado). Hablando también se oye 'have got': I've got a headache, she's got a cold — significa lo mismo y es igual de correcto. También existe 'My head hurts' (me duele la cabeza). OJO CON LA PREGUNTA Y LA NEGACIÓN: en inglés americano van SIEMPRE con do/does — 'Do you have a fever?', 'I don't have a cold'. 'Have you got a fever?' es británico.",
  "pronunciacion": "Los plurales irregulares cambian la vocal: tooth/teeth, foot/feet — vocal larga en el plural.",
- "trampa": "Se dice 'I've got a headache', no 'I have headache' (falta el artículo 'a').",
+ "trampa": "El síntoma lleva artículo: 'I have A headache', nunca 'I have headache'. Y la pregunta no es 'Have you got...?' sino 'Do you have...?'.",
  "ejemplos": [
   {
    "frase": "I've got a headache.",
    "traduccion": "Tengo dolor de cabeza.",
    "comoSeLee": "aiv gat e jédeik"
+  },
+  {
+   "frase": "Do you have a fever?",
+   "traduccion": "¿Tienes fiebre?",
+   "comoSeLee": "du yu jav e fíver"
   },
   {
    "frase": "She's got a cold.",
@@ -19,6 +24,11 @@
    "frase": "My tooth hurts.",
    "traduccion": "Me duele el diente.",
    "comoSeLee": "mai tuz jörts"
+  },
+  {
+   "frase": "I don't have a cold.",
+   "traduccion": "No tengo un resfriado.",
+   "comoSeLee": "ai dont jav e cold"
   }
  ],
  "ejercicios": [
@@ -139,6 +149,78 @@
    "respuesta": "My tooth hurts.",
    "aceptadas": [
     "my tooth hurts"
+   ]
+  },
+  {
+   "tipo": "hueco",
+   "enunciado": "___ you have a fever? (pregunta)",
+   "respuesta": "Do"
+  },
+  {
+   "tipo": "opcion_multiple",
+   "enunciado": "¿Cuál es la pregunta americana?",
+   "opciones": [
+    "Do you have a cold?",
+    "Have you got a cold?",
+    "You have a cold?"
+   ],
+   "respuesta": "Do you have a cold?"
+  },
+  {
+   "tipo": "corregir_error",
+   "enunciado": "I not have a headache.",
+   "respuesta": "I don't have a headache."
+  },
+  {
+   "tipo": "traducir",
+   "enunciado": "No tengo fiebre.",
+   "respuesta": "I don't have a fever.",
+   "aceptadas": [
+    "i do not have a fever"
+   ]
+  }
+ ],
+ "dias": [
+  {
+   "titulo": "Los síntomas: have y have got",
+   "regla": "Para decir qué te duele o qué tienes se usa 'have': 'I have a headache', 'She has a cold'. Hablando también se oye 'have got' (I've got a headache, she's got a cold) y significa exactamente lo mismo. Otra forma muy usada: 'My head hurts' (me duele la cabeza), donde el que duele es la parte del cuerpo.",
+   "trampa": "El síntoma lleva artículo: 'I have A headache', nunca 'I have headache'. Y 'hurts' lleva -s porque el sujeto es 'my head', tercera persona: 'My head hurts'.",
+   "ejemplos": [
+    0,
+    2,
+    3
+   ],
+   "ejercicios": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    10,
+    11,
+    12
+   ]
+  },
+  {
+   "titulo": "Preguntar y negar: Do you have...? / I don't have...",
+   "regla": "Aquí está la diferencia con el inglés británico y te conviene tenerla clara: en EE.UU. y Canadá la pregunta y la negación van SIEMPRE con do/does — 'Do you have a fever?', 'I don't have a cold', 'Does she have a headache?'. 'Have you got a fever?' se entiende, pero es británico.",
+   "trampa": "La negación no es 'I not have' ni 'I haven't got': es 'I DON'T HAVE a headache'.",
+   "ejemplos": [
+    1,
+    4
+   ],
+   "ejercicios": [
+    7,
+    8,
+    9,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18
    ]
   }
  ]

@@ -54,7 +54,7 @@
   },
   {
    "titulo": "Un mundo en una mesa",
-   "texto": "Good evening! Where are you from, Marc? I come from France. France is a country in Europe and my language is French. And you, Sofia? I am from Spain. My nationality is Spanish and I speak Spanish. Marie is from England. She speaks English, and she also speaks German. Is German a language in England? No! But Marie speaks it too. Ana is Peruvian. Her country is in America and she lives in Canada. The world is in this city, says Marc. And the United States? Paul was born in the United States, but he is Canadian. He lives in a Canadian city.",
+   "texto": "Good evening! Where are you from, Marc? I come from France. France is a country in Europe and my language is French. And you, Sofia? I am from Spain. My nationality is Spanish and I speak Spanish. Marie is from England. She speaks English, and she also speaks German. Is German a language in England? No! But Marie speaks it too. Ana is Peruvian. Her country is in America and she lives in Canada. The world is in this city! And the United States? Paul was born in the United States, but he is Canadian. He lives in a Canadian city.",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
@@ -100,6 +100,44 @@
      "tipo": "completar_dato",
      "enunciado": "¿Qué idioma habla la amiga además de inglés?",
      "respuesta": "German"
+    }
+   ],
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "Good evening! Where are you from, Marc?"
+    },
+    {
+     "hablante": "Marc",
+     "texto": "I come from France. France is a country in Europe and my language is French."
+    },
+    {
+     "hablante": "A",
+     "texto": "And you, Sofia?"
+    },
+    {
+     "hablante": "Sofia",
+     "texto": "I am from Spain. My nationality is Spanish and I speak Spanish. Marie is from England. She speaks English, and she also speaks German."
+    },
+    {
+     "hablante": "A",
+     "texto": "Is German a language in England?"
+    },
+    {
+     "hablante": "Sofia",
+     "texto": "No! But Marie speaks it too. Ana is Peruvian. Her country is in America and she lives in Canada."
+    },
+    {
+     "hablante": "Marc",
+     "texto": "The world is in this city!"
+    },
+    {
+     "hablante": "A",
+     "texto": "And the United States?"
+    },
+    {
+     "hablante": "Marc",
+     "texto": "Paul was born in the United States, but he is Canadian. He lives in a Canadian city."
     }
    ]
   },
@@ -151,6 +189,48 @@
      "tipo": "completar_dato",
      "enunciado": "¿En qué país vive Sofia ahora?",
      "respuesta": "England"
+    }
+   ],
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "Where are you from, Sofia?"
+    },
+    {
+     "hablante": "Sofia",
+     "texto": "I come from Spain, from the capital."
+    },
+    {
+     "hablante": "A",
+     "texto": "And you, Marc?"
+    },
+    {
+     "hablante": "Marc",
+     "texto": "I am from France, but I live in Canada. My city is in Quebec and Quebec is French-speaking."
+    },
+    {
+     "hablante": "A",
+     "texto": "Is your nationality Canadian?"
+    },
+    {
+     "hablante": "Marc",
+     "texto": "No, my nationality is French. I am a foreigner here. Ana is Peruvian. She was born in a city in Peru and she comes from America. Her country is not in Europe."
+    },
+    {
+     "hablante": "A",
+     "texto": "And you speak three languages?"
+    },
+    {
+     "hablante": "Marc",
+     "texto": "Yes: Spanish, English and French."
+    },
+    {
+     "hablante": "A",
+     "texto": "The world has many countries! Where do you live, Sofia?"
+    },
+    {
+     "hablante": "Sofia",
+     "texto": "I live in a city in England."
     }
    ]
   },

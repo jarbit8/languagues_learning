@@ -137,5 +137,43 @@
     "i have a black bag"
    ]
   }
+ ],
+ "dias": [
+  {
+   "titulo": "this, that, these y those",
+   "regla": "'this' (esto, cerca, uno), 'that' (eso, lejos, uno), 'these' (estos, cerca, varios), 'those' (esos, lejos, varios). Se eligen por dos cosas a la vez: la distancia y el número.",
+   "trampa": "El verbo tiene que concordar: 'This IS my book' (uno) y 'These ARE my pens' (varios).",
+   "ejemplos": [
+    0,
+    1
+   ],
+   "ejercicios": [
+    0,
+    1,
+    3,
+    4,
+    5,
+    7,
+    8,
+    10,
+    12,
+    13
+   ]
+  },
+  {
+   "titulo": "Los colores van delante del sustantivo",
+   "regla": "Como cualquier adjetivo en inglés, el color va ANTES del sustantivo y no cambia en plural: 'a red bag', 'red bags'. Nunca lleva -s.",
+   "trampa": "'a bag red' es orden de español. En inglés siempre 'a RED bag'.",
+   "ejemplos": [
+    2
+   ],
+   "ejercicios": [
+    2,
+    6,
+    9,
+    11,
+    14
+   ]
+  }
  ]
 }

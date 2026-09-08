@@ -3,7 +3,7 @@
  "textos": [
   {
    "titulo": "Lo que hay en la mochila",
-   "texto": "Ana has a green bag and she takes it every day. In the bag there is a black computer, a red notebook and two pens. There is a blue pencil too, and some paper. Her phone is white and it is always in the bag. She also has her keys, her wallet with her money, and her glasses. Sometimes there is an umbrella in the bag, because in the fall she takes it. Her watch is not in the bag: it is on the table, near the lamp. This is my bag, says Ana, and these are my books. And what is that? asks Laura. That is my brown notebook. It is old, but it is very good. And the scissors? The scissors are here, in the yellow thing. Ana has many things: a purple pen, an orange pencil, a pink book and a grey bag for her computer.",
+   "texto": "Ana has a green bag and she takes it every day. In the bag there is a black computer, a red notebook and two pens. There is a blue pencil too, and some paper. Her phone is white and it is always in the bag. She also has her keys, her wallet with her money, and her glasses. Sometimes there is an umbrella in the bag, because in the fall she takes it. Her watch is not in the bag: it is on the table, near the lamp. This is my bag, says Ana, and these are my books. And what is that? asks Laura. That is my brown notebook. It is old, but it is very good. And the scissors? The scissors are here, in the yellow thing. Ana has many things: a purple pen, an orange pencil, a pink book and a gray bag for her computer.",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
@@ -64,17 +64,17 @@
   },
   {
    "titulo": "El objeto perdido",
-   "texto": "Excuse me, I do not have my bag. What color is it? It is blue and grey. And what is in the bag? My computer, my glasses and a red book. Is there money? Yes, in my wallet. And my phone, a black phone. Is this your bag? No, that is a pink bag and it is not here. This one? Yes! This is my bag. Thank you! Here are your things: the computer, the book, two pens, a pencil, some paper and a yellow notebook. And the umbrella? The umbrella is here too. And the scissors are in the bag, with the white paper. My watch! My watch is not here. Sorry. Is it a green watch? Yes! Here it is, on the table, near the door. Thank you very much!",
+   "texto": "Excuse me, I do not have my bag. What color is it? It is blue and gray. And what is in the bag? My computer, my glasses and a red book. Is there money? Yes, in my wallet. And my phone, a black phone. Is this your bag? No, that is a pink bag and it is not here. This one? Yes! This is my bag. Thank you! Here are your things: the computer, the book, two pens, a pencil, some paper and a yellow notebook. And the umbrella? The umbrella is here too. And the scissors are in the bag, with the white paper. My watch! My watch is not here. Sorry. Is it a green watch? Yes! Here it is, on the table, near the door. Thank you very much!",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
      "enunciado": "What color is the bag?",
      "opciones": [
-      "blue and grey",
+      "blue and gray",
       "pink and white",
       "green and yellow"
      ],
-     "respuesta": "blue and grey"
+     "respuesta": "blue and gray"
     },
     {
      "tipo": "vf",
@@ -98,7 +98,7 @@
     },
     {
      "tipo": "vfnd",
-     "enunciado": "The computer is grey.",
+     "enunciado": "The computer is gray.",
      "respuesta": "no dice"
     },
     {
@@ -115,17 +115,95 @@
      "tipo": "opcion_multiple",
      "enunciado": "What color is the watch?",
      "opciones": [
-      "grey",
+      "gray",
       "black",
       "green"
      ],
      "respuesta": "green"
     }
+   ],
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "Excuse me, I do not have my bag."
+    },
+    {
+     "hablante": "B",
+     "texto": "What color is it?"
+    },
+    {
+     "hablante": "A",
+     "texto": "It is blue and gray."
+    },
+    {
+     "hablante": "B",
+     "texto": "And what is in the bag?"
+    },
+    {
+     "hablante": "A",
+     "texto": "My computer, my glasses and a red book."
+    },
+    {
+     "hablante": "B",
+     "texto": "Is there money?"
+    },
+    {
+     "hablante": "A",
+     "texto": "Yes, in my wallet. And my phone, a black phone."
+    },
+    {
+     "hablante": "B",
+     "texto": "Is this your bag?"
+    },
+    {
+     "hablante": "A",
+     "texto": "No, that is a pink bag and it is not here."
+    },
+    {
+     "hablante": "B",
+     "texto": "This one?"
+    },
+    {
+     "hablante": "A",
+     "texto": "Yes! This is my bag. Thank you!"
+    },
+    {
+     "hablante": "B",
+     "texto": "Here are your things: the computer, the book, two pens, a pencil, some paper and a yellow notebook."
+    },
+    {
+     "hablante": "A",
+     "texto": "And the umbrella?"
+    },
+    {
+     "hablante": "B",
+     "texto": "The umbrella is here too. And the scissors are in the bag, with the white paper."
+    },
+    {
+     "hablante": "A",
+     "texto": "My watch! My watch is not here."
+    },
+    {
+     "hablante": "B",
+     "texto": "Sorry. Is it a green watch?"
+    },
+    {
+     "hablante": "A",
+     "texto": "Yes!"
+    },
+    {
+     "hablante": "B",
+     "texto": "Here it is, on the table, near the door."
+    },
+    {
+     "hablante": "A",
+     "texto": "Thank you very much!"
+    }
    ]
   },
   {
    "titulo": "La tienda de la esquina",
-   "texto": "Good morning! Do you have paper? Yes, white paper and yellow paper. And a notebook? This notebook is brown and this one is pink. The pink one, please. And a pen? Here is a blue pen and a black pen. The black one. Do you have scissors? The scissors are here, next to the books. And an umbrella? Yes, this umbrella is grey and this one is green. The green one, please. How much money? Here is my wallet. Thank you! And your glasses? My glasses are in my bag, with my phone and my keys. My watch is here, on the table. Thank you very much!",
+   "texto": "Good morning! Do you have paper? Yes, white paper and yellow paper. And a notebook? This notebook is brown and this one is pink. The pink one, please. And a pen? Here is a blue pen and a black pen. The black one. Do you have scissors? The scissors are here, next to the books. And an umbrella? Yes, this umbrella is gray and this one is green. The green one, please. How much money? Here is my wallet. Thank you! And your glasses? My glasses are in my bag, with my phone and my keys. My watch is here, on the table. Thank you very much!",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
@@ -185,6 +263,64 @@
       "white and yellow"
      ],
      "respuesta": "white and yellow"
+    }
+   ],
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "Good morning! Do you have paper?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes, white paper and yellow paper."
+    },
+    {
+     "hablante": "A",
+     "texto": "And a notebook?"
+    },
+    {
+     "hablante": "B",
+     "texto": "This notebook is brown and this one is pink."
+    },
+    {
+     "hablante": "A",
+     "texto": "The pink one, please. And a pen?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Here is a blue pen and a black pen."
+    },
+    {
+     "hablante": "A",
+     "texto": "The black one. Do you have scissors?"
+    },
+    {
+     "hablante": "B",
+     "texto": "The scissors are here, next to the books."
+    },
+    {
+     "hablante": "A",
+     "texto": "And an umbrella?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes, this umbrella is gray and this one is green."
+    },
+    {
+     "hablante": "A",
+     "texto": "The green one, please. How much money? Here is my wallet."
+    },
+    {
+     "hablante": "B",
+     "texto": "Thank you! And your glasses?"
+    },
+    {
+     "hablante": "A",
+     "texto": "My glasses are in my bag, with my phone and my keys. My watch is here, on the table."
+    },
+    {
+     "hablante": "B",
+     "texto": "Thank you very much!"
     }
    ]
   },

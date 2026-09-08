@@ -166,5 +166,48 @@
    "enunciado": "I have many money.",
    "respuesta": "I have a lot of money."
   }
+ ],
+ "dias": [
+  {
+   "titulo": "How much y how many",
+   "regla": "'How much' con incontables y con el precio: How much bread? How much is it? 'How many' con contables: How many apples? Es la misma división de contable/incontable del tema anterior, aplicada a preguntar cantidad.",
+   "trampa": "'How much apples?' está mal: las manzanas se cuentan, así que 'How MANY apples?'. Y el dinero no se cuenta: 'How MUCH money?'.",
+   "ejemplos": [
+    0,
+    1
+   ],
+   "ejercicios": [
+    0,
+    1,
+    3,
+    4,
+    6,
+    7,
+    8,
+    10,
+    11,
+    13
+   ]
+  },
+  {
+   "titulo": "Can para pedir, a lot of y need to",
+   "regla": "'Can' sirve para pedir con educación: 'Can I have…?', 'Can I pay by card?' — y detrás va el verbo base, sin 'to'. Para la cantidad: 'much' con incontables, 'many' con contables y 'a lot of' con los dos, que es lo que se usa en afirmativas. Y 'need' + to + verbo: I need to pay.",
+   "trampa": "Después de 'can' no va 'to': 'Can I pay by card?', no 'Can I to pay?'. Y en afirmativa se dice 'a lot of money', no 'many money'.",
+   "ejemplos": [
+    2,
+    3,
+    4
+   ],
+   "ejercicios": [
+    2,
+    5,
+    9,
+    12,
+    14,
+    15,
+    16,
+    17
+   ]
+  }
  ]
 }

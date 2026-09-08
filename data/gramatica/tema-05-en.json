@@ -172,5 +172,48 @@
     "he's very funny"
    ]
   }
+ ],
+ "dias": [
+  {
+   "titulo": "El adjetivo va delante y no tiene plural",
+   "regla": "En inglés el adjetivo va SIEMPRE antes del sustantivo y nunca cambia: a tall man, tall women. Y algunos plurales son irregulares: man→men, woman→women, child→children, person→people.",
+   "trampa": "Ni 'a woman tall' (el adjetivo va delante) ni 'talls men' (el adjetivo no lleva -s). Y 'childs' no existe: es 'children'.",
+   "ejemplos": [
+    0,
+    1,
+    2
+   ],
+   "ejercicios": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    10,
+    11,
+    12
+   ]
+  },
+  {
+   "titulo": "very, really y too",
+   "regla": "'very' y 'really' refuerzan y son neutros: she is very tall, he is really kind. 'too' NO significa 'muy': significa DEMASIADO y siempre es algo malo — 'he is too tired' es que está tan cansado que ya es un problema.",
+   "trampa": "'He is too old' no es 'es muy viejo', es 'es demasiado viejo'. Si quieres decir 'muy', usa 'very'.",
+   "ejemplos": [
+    3,
+    4
+   ],
+   "ejercicios": [
+    8,
+    9,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  }
  ]
 }

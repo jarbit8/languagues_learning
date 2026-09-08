@@ -131,6 +131,56 @@
      "enunciado": "Marc está en la cama antes de medianoche.",
      "respuesta": "verdadero"
     }
+   ],
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "What time is it now?"
+    },
+    {
+     "hablante": "Marc",
+     "texto": "It is a quarter to nine."
+    },
+    {
+     "hablante": "A",
+     "texto": "Are you always on time, Marc?"
+    },
+    {
+     "hablante": "Marc",
+     "texto": "Yes, I am usually on time and I am never late. Sometimes I am early."
+    },
+    {
+     "hablante": "A",
+     "texto": "Good! The time with Laura is at ten o'clock."
+    },
+    {
+     "hablante": "Marc",
+     "texto": "Ten? That is late for me. I am in bed before midnight and I am early in the morning."
+    },
+    {
+     "hablante": "A",
+     "texto": "No problem, and at half past nine?"
+    },
+    {
+     "hablante": "Marc",
+     "texto": "Very good. One hour before. What time is it in Peru now?"
+    },
+    {
+     "hablante": "A",
+     "texto": "It is two hours before: a quarter to seven in the evening."
+    },
+    {
+     "hablante": "Marc",
+     "texto": "In the afternoon I am often in the office and I am rarely with friends. At noon I have half an hour, and after, one hour of work."
+    },
+    {
+     "hablante": "A",
+     "texto": "Now it is nine o'clock! Right away, Marc, right away!"
+    },
+    {
+     "hablante": "Marc",
+     "texto": "A minute is a minute and a second is a second."
+    }
    ]
   },
   {

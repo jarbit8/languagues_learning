@@ -126,7 +126,12 @@ export default function ExamenBloque({ bloque, onSalir }: { bloque: number; onSa
     return (
       <div className="flex flex-col gap-4">
         <h1 className="text-2xl font-bold">Examen de bloque {bloque} · Writing</h1>
-        <PasoWriting bloque={bloque} onDone={(promedio) => guardarNota('writing', promedio)} />
+        <PasoWriting
+          bloque={bloque}
+          tema={temasDeBloque(bloque).at(-1) ?? bloque * 6}
+          meta={`si aprueba el examen del bloque ${bloque}`}
+          onDone={(promedio) => guardarNota('writing', promedio)}
+        />
       </div>
     )
   }

@@ -6,6 +6,7 @@ import { registrarExamenFinal } from '../lib/progreso'
 import { reproducirDialogo } from '../lib/listening'
 import ExamRunner from '../components/ExamRunner'
 import PasoWriting from '../components/PasoWriting'
+import { temasDeBloque } from '../lib/curriculum'
 import PasoSpeakingExamen from '../components/PasoSpeakingExamen'
 import { tareaFinal } from '../data/tareasSpeaking'
 
@@ -159,6 +160,8 @@ export default function ExamenFinal({ onSalir }: { onSalir: () => void }) {
         <h1 className="text-2xl font-bold">Writing final</h1>
         <PasoWriting
           bloque={4}
+          tema={temasDeBloque(4).at(-1) ?? 24}
+          meta="si aprueba el examen final del nivel A1"
           onDone={(promedio) => {
             setNotasHab((n) => ({ ...n, writing: promedio }))
             setPaso('speaking')

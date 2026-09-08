@@ -199,17 +199,17 @@
   },
   {
    "titulo": "Una tormenta",
-   "texto": "On Tuesday morning the weather is not good. There is a lot of fog and the sky is grey. At nine there is a big storm: much rain and a lot of wind. The trees in the park go from left to right with the wind. Ana does not take her bike: she takes the subway, because on the road there is water and ice. It is very cold, two degrees. Paul is in his house all the day: he reads a book and he drinks a hot tea. In the evening the rain stops and there are not many clouds. One can see the moon and one star. On Wednesday the weather is very good: it is sunny and warm, fifteen degrees. Ana goes to the park with Laura and they walk near the river. There are flowers under the trees and the sky is blue again.",
+   "texto": "On Tuesday morning the weather is not good. There is a lot of fog and the sky is gray. At nine there is a big storm: much rain and a lot of wind. The trees in the park go from left to right with the wind. Ana does not take her bike: she takes the subway, because on the road there is water and ice. It is very cold, two degrees. Paul is in his house all the day: he reads a book and he drinks a hot tea. In the evening the rain stops and there are not many clouds. One can see the moon and one star. On Wednesday the weather is very good: it is sunny and warm, fifteen degrees. Ana goes to the park with Laura and they walk near the river. There are flowers under the trees and the sky is blue again.",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
      "enunciado": "What is the weather like on Tuesday morning?",
      "opciones": [
       "sunny and warm",
-      "with fog and a grey sky",
+      "with fog and a gray sky",
       "hot and windy"
      ],
-     "respuesta": "with fog and a grey sky"
+     "respuesta": "with fog and a gray sky"
     },
     {
      "tipo": "completar_dato",

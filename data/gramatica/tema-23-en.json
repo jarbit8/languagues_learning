@@ -162,5 +162,47 @@
    "enunciado": "No compré el boleto: I didn't ___ the ticket.",
    "respuesta": "buy"
   }
+ ],
+ "dias": [
+  {
+   "titulo": "Los pasados irregulares más comunes",
+   "regla": "Muchos verbos del día a día no hacen el pasado con -ed, hay que sabérselos: go→went, have→had, do→did, see→saw, come→came, get→got, take→took, make→made, say→said, eat→ate, buy→bought, find→found, give→gave, know→knew.",
+   "trampa": "No les pongas -ed: 'I went', no 'I goed'; 'I bought', no 'I buyed'; 'she had', no 'she haved'.",
+   "ejemplos": [
+    0,
+    1,
+    2
+   ],
+   "ejercicios": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    10,
+    11,
+    12
+   ]
+  },
+  {
+   "titulo": "En negativo e interrogativo vuelve la forma base",
+   "regla": "Aquí los irregulares dejan de dar guerra: en cuanto entra 'did', el verbo vuelve a su forma BASE, la de siempre. 'I went' → 'I didn't go', 'Did you go?'. El pasado ya lo lleva 'did', así que el verbo no lo repite.",
+   "trampa": "'I didn't went' es el error clásico: es 'I didn't GO'. Igual con la pregunta: 'Did you BUY the ticket?', no 'Did you bought'.",
+   "ejemplos": [
+    3
+   ],
+   "ejercicios": [
+    7,
+    8,
+    9,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  }
  ]
 }

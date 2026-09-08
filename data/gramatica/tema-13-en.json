@@ -167,5 +167,48 @@
    "enunciado": "I don't have nothing.",
    "respuesta": "I don't have anything."
   }
+ ],
+ "dias": [
+  {
+   "titulo": "Contables, incontables y some / any",
+   "regla": "Contables: se pueden contar y llevan plural y 'a' (a book, two books). Incontables: no llevan plural ni 'a' (water, bread, rice, money). 'some' va en afirmativas (some bread, some apples) y 'any' en negativas y preguntas (I don't have any milk; is there any bread?).",
+   "trampa": "Un incontable nunca lleva 'a': 'I eat some bread', no 'I eat a bread'. Y en negativa va 'any': 'There isn't ANY milk'.",
+   "ejemplos": [
+    0,
+    1,
+    2
+   ],
+   "ejercicios": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    10,
+    11,
+    12
+   ]
+  },
+  {
+   "titulo": "something, anything y nothing",
+   "regla": "Con some/any se forman las palabras de 'algo': 'something' en afirmativas (there is something in the fridge), 'anything' en preguntas y negativas (I don't have anything), y 'nothing', que YA es negativo de por sí y por eso no lleva otro negativo delante.",
+   "trampa": "En inglés no hay doble negación: 'I don't have ANYTHING' o 'I have NOTHING', pero nunca 'I don't have nothing'.",
+   "ejemplos": [
+    3,
+    4
+   ],
+   "ejercicios": [
+    7,
+    8,
+    9,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  }
  ]
 }

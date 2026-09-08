@@ -197,5 +197,51 @@
    "enunciado": "This family is my.",
    "respuesta": "This family is mine."
   }
+ ],
+ "dias": [
+  {
+   "titulo": "Los posesivos y el genitivo 's",
+   "regla": "Los adjetivos posesivos van ANTES del sustantivo y no cambian nunca: my, your, his, her, its, our, their (my brother, her sister). Para decir de quién es algo con un nombre se usa 's: 'my brother's name' es el nombre de mi hermano.",
+   "trampa": "El posesivo concuerda con el DUEÑO, no con lo poseído: si el dueño es él, es 'his mother' aunque mother sea femenino. Y el genitivo lleva apóstrofo: 'my sister's name', no 'my sister name'.",
+   "ejemplos": [
+    0,
+    1,
+    2
+   ],
+   "ejercicios": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ]
+  },
+  {
+   "titulo": "Whose y los pronombres mine, yours, hers",
+   "regla": "'Whose' pregunta de QUIÉN es algo: 'Whose bag is this?'. Ojo: 'who' pregunta por la persona y 'whose' por el dueño. Los pronombres posesivos van SOLOS, sin sustantivo detrás: mine, yours, his, hers, ours, theirs — my name → the name is mine.",
+   "trampa": "Los pronombres posesivos no llevan sustantivo detrás ni apóstrofo: 'This family is mine', nunca 'This family is my' ni 'is mine family'.",
+   "ejemplos": [
+    3,
+    4
+   ],
+   "ejercicios": [
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+   ]
+  }
  ]
 }

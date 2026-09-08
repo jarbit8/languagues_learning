@@ -265,6 +265,56 @@
      ],
      "respuesta": "no"
     }
+   ],
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "Is there a living room in this apartment?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes, and there is a sofa, a table and three chairs."
+    },
+    {
+     "hablante": "A",
+     "texto": "Where is the kitchen?"
+    },
+    {
+     "hablante": "B",
+     "texto": "The kitchen is next to the living room. There is a fridge under the window."
+    },
+    {
+     "hablante": "A",
+     "texto": "And the bedroom?"
+    },
+    {
+     "hablante": "B",
+     "texto": "There is a bed and a closet between the bed and the door. There is a lamp near the bed and a mirror on the wall."
+    },
+    {
+     "hablante": "A",
+     "texto": "Is there a bathroom?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes, with a toilet."
+    },
+    {
+     "hablante": "A",
+     "texto": "And a balcony?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Yes, a small balcony, but there is no garden and there is no garage."
+    },
+    {
+     "hablante": "A",
+     "texto": "Are there stairs?"
+    },
+    {
+     "hablante": "B",
+     "texto": "No, there are no stairs: the apartment has one floor. Here is the key. The apartment is not big, but there is a room for you."
+    }
    ]
   },
   {

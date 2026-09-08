@@ -109,6 +109,56 @@
       "office"
      ]
     }
+   ],
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "Good morning!"
+    },
+    {
+     "hablante": "B",
+     "texto": "What do you do?"
+    },
+    {
+     "hablante": "A",
+     "texto": "I am a driver. And you?"
+    },
+    {
+     "hablante": "B",
+     "texto": "I work at an office: I am a secretary. My husband is a police officer and my sister is a firefighter."
+    },
+    {
+     "hablante": "A",
+     "texto": "Who is the woman with the dog?"
+    },
+    {
+     "hablante": "B",
+     "texto": "She is a farmer. Her son is a dentist and her daughter is a seller. My cousin is an architect and my friend is an accountant."
+    },
+    {
+     "hablante": "A",
+     "texto": "How is your job?"
+    },
+    {
+     "hablante": "B",
+     "texto": "It is very good, but my salary is not good."
+    },
+    {
+     "hablante": "A",
+     "texto": "Is Marc a teacher?"
+    },
+    {
+     "hablante": "B",
+     "texto": "No, Marc is unemployed, but he studies and he has a career. He is not a seller."
+    },
+    {
+     "hablante": "A",
+     "texto": "What is your job, Ana?"
+    },
+    {
+     "hablante": "Ana",
+     "texto": "I am a student and I work at an office."
+    }
    ]
   },
   {
@@ -210,6 +260,48 @@
      "tipo": "completar_dato",
      "enunciado": "¿Cuál es la profesión del padre?",
      "respuesta": "programmer"
+    }
+   ],
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "Good morning! What do you do?"
+    },
+    {
+     "hablante": "B",
+     "texto": "I am an architect, but I am unemployed."
+    },
+    {
+     "hablante": "A",
+     "texto": "And what is your career?"
+    },
+    {
+     "hablante": "B",
+     "texto": "I study and I work."
+    },
+    {
+     "hablante": "A",
+     "texto": "Which job is good for you here?"
+    },
+    {
+     "hablante": "B",
+     "texto": "A job in an office."
+    },
+    {
+     "hablante": "A",
+     "texto": "How is your English?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Very good. My friend is an accountant and she works at a big company. Her boss is a lawyer. My sister is a firefighter and my brother is a waiter. My mother is a seller and my father is a programmer. Is the salary good?"
+    },
+    {
+     "hablante": "A",
+     "texto": "The salary is very good. Welcome to the company!"
+    },
+    {
+     "hablante": "B",
+     "texto": "Thank you very much!"
     }
    ]
   },

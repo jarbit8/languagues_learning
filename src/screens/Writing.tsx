@@ -15,7 +15,7 @@ export default function Writing() {
   // Una consigna por día, como en el resto de Practicar.
   const [dia, setDia] = useState<1 | 2>(1)
   const [consignaIdx, setConsignaIdx] = useState<number | null>(null)
-  const [hecho, setHecho] = useState(false)
+  const [veredicto, setVeredicto] = useState<'listo' | 'aun_no' | null>(null)
 
   const temaSel = tema ?? temaActual
   const pack = getWriting(bloqueDeTema(temaSel))
@@ -23,23 +23,31 @@ export default function Writing() {
 
   function reset() {
     setConsignaIdx(null)
-    setHecho(false)
+    setVeredicto(null)
   }
 
   if (pack && consignaIdx !== null) {
     const consigna = pack.consignas[consignaIdx]
-    if (hecho) {
+    // Solo el LISTO de la IA marca el módulo. Un AÚN NO no es un fracaso ni resta nada: es
+    // volver a escribirlo, que es exactamente lo que pidió al cambiar el checklist por la IA.
+    if (veredicto) {
+      const aprobado = veredicto === 'listo'
       return (
         <div className="flex flex-col gap-4">
           <div className="tarjeta flex flex-col items-center gap-2 py-8">
-            <span className="text-5xl">✍️</span>
-            <span className="font-semibold">¡Ejercicio terminado!</span>
+            <span className="text-5xl">{aprobado ? '🎉' : '💪'}</span>
+            <span className="font-semibold">{aprobado ? '¡Aprobado por la IA!' : 'Todavía no'}</span>
             <span className="text-center text-sm text-slate-500 dark:text-slate-400">
-              Sigue practicando: escribir a mano y comparar con el modelo es de lo que más ayuda para el examen.
+              {aprobado
+                ? 'Este texto ya cuenta en el avance del tema.'
+                : 'Arregla lo que te marcó y vuelve a escribirlo: no cuenta hasta que te dé LISTO.'}
             </span>
           </div>
-          <button onClick={reset} className="btn-primary">
-            Volver a escritura
+          <button onClick={() => setVeredicto(null)} className="btn-primary">
+            {aprobado ? 'Escribirlo otra vez' : 'Volver a escribirlo'}
+          </button>
+          <button onClick={reset} className="btn bg-slate-200 text-slate-700 dark:bg-slate-700 dark:text-slate-200">
+            Volver a las consignas
           </button>
         </div>
       )
@@ -52,9 +60,12 @@ export default function Writing() {
         <EscribirConsigna
           key={consignaIdx}
           pack={consigna}
-          onDone={async () => {
-            await marcarHecho(temaSel, claveEscribir(consignaIdx))
-            setHecho(true)
+          tema={temaSel}
+          dia={dia}
+          meta={`si su texto del tema ${temaSel} ya está bien o si tiene que volver a escribirlo`}
+          onDone={async (_nota, aprobado) => {
+            if (aprobado) await marcarHecho(temaSel, claveEscribir(consignaIdx))
+            setVeredicto(aprobado ? 'listo' : 'aun_no')
           }}
         />
       </div>
@@ -71,8 +82,8 @@ export default function Writing() {
       <SelectorDia dia={dia} onCambio={setDia} />
 
       <p className="text-sm text-slate-500 dark:text-slate-400">
-        Una consigna por tema, en formato IELTS/TOEFL: cada una dice cuántas palabras pide. Al enviar comparas tu texto
-        con una respuesta modelo y te autocalificas con el checklist.
+        Una consigna por tema, en formato IELTS/TOEFL: cada una dice cuántas palabras pide. Al enviar, la app arma un
+        prompt con tu texto dentro para que una IA te lo corrija y te diga si estás LISTO o AÚN NO.
       </p>
 
       {!pack ? (

@@ -1,7 +1,7 @@
 {
  "tema": 7,
  "titulo": "Preposiciones de tiempo in/on/at y ordinales",
- "regla": "Preposiciones de tiempo: 'in' con meses y estaciones (in July, in summer), 'on' con días y fechas (on Monday, on May 3rd), 'at' con horas y con 'at the weekend'. Para las fechas se usan ordinales: first, second, third… (May 3rd = the third of May).",
+ "regla": "Preposiciones de tiempo: 'in' con meses y estaciones (in July, in summer), 'on' con días y fechas (on Monday, on May 3rd), 'at' con horas (at seven, at noon). El fin de semana va con 'on' en inglés americano (on the weekend); 'at the weekend' es británico. Para las fechas se usan ordinales: first, second, third… (May 3rd = the third of May).",
  "pronunciacion": "Wednesday se pronuncia 'WENZ-day' — la primera 'd' es muda.",
  "trampa": "No uses 'in' con los días: es 'on Monday', nunca 'in Monday'.",
  "ejemplos": [
@@ -16,7 +16,7 @@
    "comoSeLee": "mai bérzdei is in yulái"
   },
   {
-   "frase": "See you at the weekend.",
+   "frase": "See you on the weekend.",
    "traduccion": "Nos vemos el fin de semana.",
    "comoSeLee": "sí iu at de uíkend"
   }
@@ -35,7 +35,7 @@
   {
    "tipo": "hueco",
    "enunciado": "I am with my family ___ the weekend.",
-   "respuesta": "at"
+   "respuesta": "on"
   },
   {
    "tipo": "hueco",
@@ -101,11 +101,11 @@
    "opciones": [
     "I",
     "work",
-    "at",
+    "on",
     "the",
     "weekend"
    ],
-   "respuesta": "I work at the weekend"
+   "respuesta": "I work on the weekend"
   },
   {
    "tipo": "corregir_error",
@@ -136,6 +136,44 @@
    "respuesta": "My birthday is in May.",
    "aceptadas": [
     "my birthday is in may"
+   ]
+  }
+ ],
+ "dias": [
+  {
+   "titulo": "in, on y at con el tiempo",
+   "regla": "'in' con meses, estaciones y años (in July, in summer, in 2026); 'on' con días y fechas (on Monday, on May 3rd); 'at' con horas (at seven, at noon). Es una de las cosas que más se equivoca al principio, así que va de memoria.",
+   "trampa": "'in Monday' y 'on July' están al revés: el día lleva ON y el mes lleva IN.",
+   "ejemplos": [
+    0,
+    1
+   ],
+   "ejercicios": [
+    0,
+    1,
+    3,
+    4,
+    7,
+    8,
+    10,
+    11
+   ]
+  },
+  {
+   "titulo": "El fin de semana y los ordinales de las fechas",
+   "regla": "El fin de semana va con 'on' en inglés americano: 'on the weekend' ('at the weekend' es británico). Y las fechas se dicen con ORDINALES, no con números normales: first, second, third, fourth… — May 3rd se lee 'the third of May'.",
+   "trampa": "Tú vas a EE.UU. y Canadá: di 'on the weekend'. Y el día del mes es ordinal: 'May third', no 'May three'.",
+   "ejemplos": [
+    2
+   ],
+   "ejercicios": [
+    2,
+    5,
+    6,
+    9,
+    12,
+    13,
+    14
    ]
   }
  ]

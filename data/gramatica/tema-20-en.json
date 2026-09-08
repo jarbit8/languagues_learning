@@ -165,5 +165,47 @@
     "Lets listen to music."
    ]
   }
+ ],
+ "dias": [
+  {
+   "titulo": "like, love y hate + verbo en -ing",
+   "regla": "Detrás de 'like', 'love' y 'hate' el segundo verbo va en -ing: 'I like reading', 'I love swimming', 'I hate waiting'. En español dirías el infinitivo (me gusta leer), pero en inglés es -ing.",
+   "trampa": "Ni 'I like read' ni 'I love to dancing': la fórmula es like/love/hate + verbo-ING.",
+   "ejemplos": [
+    0
+   ],
+   "ejercicios": [
+    0,
+    1,
+    4,
+    7,
+    9,
+    10,
+    12,
+    13
+   ]
+  },
+  {
+   "titulo": "Los deportes con play, go y do, y Let's",
+   "regla": "Cada deporte lleva su verbo: 'play' con los de pelota y equipo (play soccer, play tennis), 'go' con las actividades acabadas en -ing (go swimming, go running) y 'do' con el resto (do yoga). Y para PROPONER un plan se usa \"Let's\" + verbo base: 'Let's play soccer', 'Let's go to the movie theater'.",
+   "trampa": "'I play swimming' no existe: con -ing va 'go'. Y detrás de \"Let's\" el verbo va en base: 'Let's play', no 'Let's playing'.",
+   "ejemplos": [
+    1,
+    2,
+    3
+   ],
+   "ejercicios": [
+    2,
+    3,
+    5,
+    6,
+    8,
+    11,
+    14,
+    15,
+    16,
+    17
+   ]
+  }
  ]
 }

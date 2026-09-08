@@ -110,6 +110,48 @@
      "enunciado": "¿Cómo es la tía de carácter?",
      "respuesta": "calm"
     }
+   ],
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "Excuse me, who is Marc?"
+    },
+    {
+     "hablante": "B",
+     "texto": "He is the young man with dark hair."
+    },
+    {
+     "hablante": "A",
+     "texto": "Is he tall?"
+    },
+    {
+     "hablante": "B",
+     "texto": "No, he is short and fat. He is handsome and he is very friendly."
+    },
+    {
+     "hablante": "A",
+     "texto": "And Sofia?"
+    },
+    {
+     "hablante": "B",
+     "texto": "Sofia is the beautiful woman with red hair. She is red-haired and she has small eyes."
+    },
+    {
+     "hablante": "A",
+     "texto": "Is she serious?"
+    },
+    {
+     "hablante": "B",
+     "texto": "No! She is funny and happy. My cousin is brown-haired and he is really brave. He is not shy with people. My aunt is thin and she is always calm. My uncle is bald. He is a big man and he is very strong."
+    },
+    {
+     "hablante": "A",
+     "texto": "Is he angry?"
+    },
+    {
+     "hablante": "B",
+     "texto": "No, he is tired, but he is kind. My family is not young, but they are nice."
+    }
    ]
   },
   {
@@ -225,6 +267,56 @@
       "hardworking",
       "brave"
      ]
+    }
+   ],
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "Who is the tall man?"
+    },
+    {
+     "hablante": "B",
+     "texto": "He is my uncle. He is handsome and very serious."
+    },
+    {
+     "hablante": "A",
+     "texto": "Is he old?"
+    },
+    {
+     "hablante": "B",
+     "texto": "No, he is young."
+    },
+    {
+     "hablante": "A",
+     "texto": "And the woman with red hair?"
+    },
+    {
+     "hablante": "B",
+     "texto": "She is red-haired, yes. She is my aunt. She is short and a bit fat, but she is beautiful."
+    },
+    {
+     "hablante": "A",
+     "texto": "Is she shy?"
+    },
+    {
+     "hablante": "B",
+     "texto": "No, she is friendly and funny."
+    },
+    {
+     "hablante": "A",
+     "texto": "And the dark-haired boy?"
+    },
+    {
+     "hablante": "B",
+     "texto": "That is my cousin. He is smart but he is lazy. He is always tired!"
+    },
+    {
+     "hablante": "A",
+     "texto": "And the girl with curly hair?"
+    },
+    {
+     "hablante": "B",
+     "texto": "She is my sister. She is thin, calm and hardworking. She is never sad and she is very brave."
     }
    ]
   },

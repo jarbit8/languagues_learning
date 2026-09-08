@@ -174,5 +174,48 @@
     "i study and work"
    ]
   }
+ ],
+ "dias": [
+  {
+   "titulo": "Los pronombres de objeto",
+   "regla": "me, you, him, her, it, us, them sustituyen a la persona o cosa que RECIBE la acción, y van DESPUÉS del verbo: 'I like it', 'She helps me', 'I know him'. No confundas con los de sujeto (I, he, she…), que van delante.",
+   "trampa": "El objeto va detrás del verbo y con su forma propia: 'She helps ME', no 'She helps I' ni 'I him know'.",
+   "ejemplos": [
+    0,
+    1
+   ],
+   "ejercicios": [
+    0,
+    1,
+    4,
+    5,
+    8,
+    10,
+    11,
+    13
+   ]
+  },
+  {
+   "titulo": "because, so, and, but y or",
+   "regla": "'because' da la RAZÓN (I study because I like it) y 'so' la CONSECUENCIA (it is easy, so I like it): no son intercambiables. Los otros tres: 'and' suma, 'but' contrasta y 'or' da alternativa — I study and I work; it is difficult but I like it; math or history?",
+   "trampa": "'because' contesta al por qué y 'so' dice lo que pasa por eso. Cambiarlos da la vuelta a la frase: 'I study because I like it' no es lo mismo que 'I study so I like it'.",
+   "ejemplos": [
+    2,
+    3,
+    4
+   ],
+   "ejercicios": [
+    2,
+    3,
+    6,
+    7,
+    9,
+    12,
+    14,
+    15,
+    16,
+    17
+   ]
+  }
  ]
 }

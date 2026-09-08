@@ -178,7 +178,7 @@
     },
     {
      "hablante": "B",
-     "texto": "No, my phone is grey."
+     "texto": "No, my phone is gray."
     },
     {
      "hablante": "A",
@@ -196,7 +196,7 @@
      "opciones": [
       "green",
       "red",
-      "grey"
+      "gray"
      ],
      "respuesta": "green"
     },

@@ -124,6 +124,52 @@
      ],
      "respuesta": "Saturday and Sunday"
     }
+   ],
+   "lineas": [
+    {
+     "hablante": "A",
+     "texto": "When is your birthday, Laura?"
+    },
+    {
+     "hablante": "Laura",
+     "texto": "It is in February, in winter."
+    },
+    {
+     "hablante": "A",
+     "texto": "And your brother?"
+    },
+    {
+     "hablante": "Laura",
+     "texto": "His birthday is in August, in summer."
+    },
+    {
+     "hablante": "A",
+     "texto": "What day is today?"
+    },
+    {
+     "hablante": "Laura",
+     "texto": "Today is Monday. Tomorrow is Tuesday and the day after tomorrow is Wednesday."
+    },
+    {
+     "hablante": "A",
+     "texto": "On Thursday and on Friday Laura works in the office. On Saturday and on Sunday she is with her family: that is the weekend."
+    },
+    {
+     "hablante": "Laura",
+     "texto": "Every month has four weeks and every week has seven days. January, February, March, April, May, June, July, August, September, October, November and December: twelve months in one year. Spring is in March and April. Summer is in June and July. Fall is in September and October. Winter is in December and January."
+    },
+    {
+     "hablante": "A",
+     "texto": "And the date of the weekend?"
+    },
+    {
+     "hablante": "Laura",
+     "texto": "Saturday and Sunday, of course!"
+    },
+    {
+     "hablante": "A",
+     "texto": "Very well, Laura."
+    }
    ]
   },
   {

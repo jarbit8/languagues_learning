@@ -140,7 +140,13 @@ export default function ExamenTema({ tema, onSalir }: { tema: number; onSalir: (
     return (
       <div className="flex flex-col gap-4">
         <h1 className="text-2xl font-bold">Tema {tema} · Writing</h1>
-        <EscribirConsigna pack={consigna} onDone={(nota) => guardarNota('writing', nota)} />
+        <EscribirConsigna
+          pack={consigna}
+          tema={tema}
+          dia={2}
+          meta={`si ya domina escribiendo el tema ${tema}, o si necesita practicarlo más antes de darlo por visto`}
+          onDone={(nota) => guardarNota('writing', nota)}
+        />
       </div>
     )
   }

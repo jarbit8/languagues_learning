@@ -167,5 +167,47 @@
    "enunciado": "I want eat a dessert.",
    "respuesta": "I want to eat a dessert."
   }
+ ],
+ "dias": [
+  {
+   "titulo": "Would like: la forma cortés de pedir",
+   "regla": "'Would like' es 'querría / me gustaría' y es lo que se usa para pedir en un sitio: es más cortés que 'want'. Se contrae en I'd like, you'd like, we'd like. Seguido de un sustantivo: 'I'd like a coffee'. En preguntas: 'Would you like…?'.",
+   "trampa": "'would like' no lleva -ing ni cambia: 'I would LIKE a tea', nunca 'I would liking'.",
+   "ejemplos": [
+    0,
+    1
+   ],
+   "ejercicios": [
+    0,
+    1,
+    3,
+    4,
+    5,
+    7,
+    8,
+    10,
+    11,
+    12,
+    16
+   ]
+  },
+  {
+   "titulo": "would like to + verbo, y want to",
+   "regla": "Cuando lo que quieres es hacer algo, va 'to + verbo': 'I'd like to order'. 'want' funciona igual pero es directo, no cortés: 'I want to eat'. Los dos necesitan el 'to' delante del verbo.",
+   "trampa": "El 'to' es obligatorio: 'I want TO eat', no 'I want eat'. Y en la pregunta el 'to' no se cuela antes: 'Would you like tea?', no 'Would you to like tea?'.",
+   "ejemplos": [
+    2,
+    3
+   ],
+   "ejercicios": [
+    2,
+    6,
+    9,
+    13,
+    14,
+    15,
+    17
+   ]
+  }
  ]
 }

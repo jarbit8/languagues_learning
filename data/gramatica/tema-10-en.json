@@ -138,5 +138,43 @@
     "the cat is under the table"
    ]
   }
+ ],
+ "dias": [
+  {
+   "titulo": "There is / there are",
+   "regla": "'There is' + singular (there is a table) y 'There are' + plural (there are two chairs); es el 'hay' del español. Negativo: there isn't / there aren't. Preguntas: Is there…? Are there…?",
+   "trampa": "Lo que manda es lo que viene DETRÁS: 'There are two chairs' (plural), 'There is a table' (singular).",
+   "ejemplos": [
+    0,
+    1
+   ],
+   "ejercicios": [
+    0,
+    1,
+    4,
+    5,
+    7,
+    8,
+    10,
+    11,
+    13
+   ]
+  },
+  {
+   "titulo": "Las preposiciones de lugar",
+   "regla": "in (dentro de), on (encima de, tocando), under (debajo de), next to (al lado de), between (entre dos). Van delante del sitio: 'the lamp is on the table', 'the cat is under the table'.",
+   "trampa": "'in the table' es DENTRO de la mesa; encima es 'ON the table'. En español los dos son 'en', en inglés no.",
+   "ejemplos": [
+    2
+   ],
+   "ejercicios": [
+    2,
+    3,
+    6,
+    9,
+    12,
+    14
+   ]
+  }
  ]
 }

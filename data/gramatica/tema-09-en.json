@@ -175,5 +175,49 @@
    "enunciado": "Do you study? Yes, I study do.",
    "respuesta": "Do you study? Yes, I do."
   }
+ ],
+ "dias": [
+  {
+   "titulo": "El presente simple y la -s de he/she/it",
+   "regla": "I/you/we/they + verbo tal cual (I work), pero he/she/it AÑADE -s: he works, she studies, it costs. Los acabados en consonante + y cambian a -ies (study→studies) y algunos añaden -es (go→goes, watch→watches).",
+   "trampa": "La -s de la tercera persona no es opcional: 'She studies', no 'She study'. Es el error más repetido de todo el A1.",
+   "ejemplos": [
+    0
+   ],
+   "ejercicios": [
+    0,
+    1,
+    4,
+    7,
+    10,
+    12,
+    13
+   ]
+  },
+  {
+   "titulo": "Negativo, preguntas con do/does y How often",
+   "regla": "En negativo e interrogativo entra 'do/does' y el verbo VUELVE A SU FORMA BASE, sin -s: 'I don't work', 'Does she study?' (no 'Does she studies'). Respuestas cortas: Do you work? Yes, I do. / Does she study? No, she doesn't. Para la frecuencia se pregunta con 'How often…?'.",
+   "trampa": "La -s se la queda 'does', no el verbo: 'Does she WORK?'. Y la respuesta corta es 'Yes, I do', no 'Yes, I study do'.",
+   "ejemplos": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "ejercicios": [
+    2,
+    3,
+    5,
+    6,
+    8,
+    9,
+    11,
+    14,
+    15,
+    16,
+    17,
+    18
+   ]
+  }
  ]
 }

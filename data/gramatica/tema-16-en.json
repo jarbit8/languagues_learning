@@ -139,5 +139,43 @@
     "can we visit the museum"
    ]
   }
+ ],
+ "dias": [
+  {
+   "titulo": "Can: poder, saber y permiso",
+   "regla": "'Can' vale para tres cosas: habilidad (I can swim = sé nadar), posibilidad y permiso (You can park here). Detrás va el verbo BASE, sin 'to', y no cambia nunca con he/she/it: 'she can', jamás 'she cans'.",
+   "trampa": "Ni -s ni 'to': 'She can cook', no 'She cans cook' ni 'She can to cook'.",
+   "ejemplos": [
+    0,
+    2
+   ],
+   "ejercicios": [
+    0,
+    2,
+    3,
+    4,
+    5,
+    7,
+    9,
+    10,
+    11,
+    14
+   ]
+  },
+  {
+   "titulo": "El negativo can't",
+   "regla": "El negativo es 'can't' (de 'cannot'), igual para todas las personas: I can't cook, she can't come. Y en las preguntas el verbo también se queda en base: 'Can you cook?', no 'Can you cooks?'.",
+   "trampa": "En americano 'can't' suena /kænt/, con la misma vocal que 'can'. Lo que los distingue al oído es que 'can' en una frase suena flojito y 'can't' se marca.",
+   "ejemplos": [
+    1
+   ],
+   "ejercicios": [
+    1,
+    6,
+    8,
+    12,
+    13
+   ]
+  }
  ]
 }

@@ -160,9 +160,10 @@
   {
    "id": "a1-t11-024",
    "es": "gris",
-   "texto": "grey",
-   "ejemplo": "My computer is grey.",
-   "pron": "GREI"
+   "texto": "gray",
+   "ejemplo": "My computer is gray.",
+   "pron": "GREI",
+   "tambien": "En Reino Unido y Canadá se escribe \"grey\"; en EE.UU., \"gray\". Se pronuncian igual."
   },
   {
    "id": "a1-t11-025",

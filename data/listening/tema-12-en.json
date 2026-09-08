@@ -176,11 +176,11 @@
     },
     {
      "hablante": "B",
-     "texto": "Yes, but this grey one is cheap."
+     "texto": "Yes, but this gray one is cheap."
     },
     {
      "hablante": "A",
-     "texto": "I take the grey one. And boots?"
+     "texto": "I take the gray one. And boots?"
     },
     {
      "hablante": "B",
@@ -192,11 +192,11 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué abrigo se lleva?",
      "opciones": [
-      "the grey one",
+      "the gray one",
       "the black one",
       "no coat"
      ],
-     "respuesta": "the grey one"
+     "respuesta": "the gray one"
     },
     {
      "tipo": "vf",

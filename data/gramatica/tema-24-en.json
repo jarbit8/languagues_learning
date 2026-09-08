@@ -243,5 +243,57 @@
     "i am not going to travel"
    ]
   }
+ ],
+ "dias": [
+  {
+   "titulo": "Going to: los planes ya decididos",
+   "regla": "'Going to' es para lo que ya está decidido o se ve venir: 'I'm going to move to Canada', 'She is going to study'. Se arma con am/is/are + going to + verbo base, así que el que cambia es 'to be', no 'going'.",
+   "trampa": "No se puede quitar el verbo 'to be': 'I AM going to study', no 'I going to study'. Y en la pregunta se invierte: 'What ARE YOU going to do?'.",
+   "ejemplos": [
+    0,
+    1,
+    2
+   ],
+   "ejercicios": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    10,
+    11,
+    12,
+    16
+   ]
+  },
+  {
+   "titulo": "Will, y el negativo e interrogativo del futuro",
+   "regla": "'Will' es para decisiones del momento, promesas y predicciones: 'I think it will rain', 'I'll help you'. Va con el verbo base y es igual para todos los sujetos, sin -s. Corto: I'll, you'll, he'll… y negativo 'won't'. Negativo de going to: am/is/are + not (I'm not going to work). Interrogativo de will: se invierte — Will you help me? Yes, I will / No, I won't.",
+   "trampa": "Detrás de 'will' va el verbo pelado: 'She will study', no 'She will to study'. Ya decidido = going to; decidido ahora mismo = will.",
+   "ejemplos": [
+    3,
+    4,
+    5,
+    6
+   ],
+   "ejercicios": [
+    7,
+    8,
+    9,
+    13,
+    14,
+    15,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24
+   ]
+  }
  ]
 }

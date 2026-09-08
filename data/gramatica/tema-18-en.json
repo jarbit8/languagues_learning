@@ -191,5 +191,50 @@
     "it's the coldest day"
    ]
   }
+ ],
+ "dias": [
+  {
+   "titulo": "Hablar del clima",
+   "regla": "Se pregunta 'What's the weather like?' y se responde con 'It's' + adjetivo (It's sunny, It's cold) o con el continuo si es una acción en curso (It's raining, It's snowing). El sujeto 'it' es obligatorio aunque en español no haya ninguno.",
+   "trampa": "La pregunta es 'WHAT'S the weather like?', no 'How is the weather like?'. Y 'It's rain' no existe: o 'It's raining' o 'It's rainy'.",
+   "ejemplos": [
+    0,
+    1,
+    2
+   ],
+   "ejercicios": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    10,
+    11,
+    12
+   ]
+  },
+  {
+   "titulo": "Comparativos y superlativos",
+   "regla": "Comparar: adjetivo corto + -er + than (colder than, hotter than) y los largos con 'more … than' (more beautiful than). El máximo: the + adjetivo + -est (the coldest) o 'the most …' (the most beautiful). Irregulares: good→better→the best, bad→worse→the worst.",
+   "trampa": "No se mezclan las dos formas: o 'colder than' o 'more beautiful than', pero nunca 'more cold than'. Los cortos van con -er.",
+   "ejemplos": [
+    3,
+    4
+   ],
+   "ejercicios": [
+    7,
+    8,
+    9,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+   ]
+  }
  ]
 }
