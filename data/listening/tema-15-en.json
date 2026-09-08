@@ -43,8 +43,8 @@
      "enunciado": "¿Cuánto cuesta la mochila barata?",
      "opciones": [
       "twenty dollars",
-      "ten dollars",
-      "fifteen dollars"
+      "fifteen dollars",
+      "ten dollars"
      ],
      "respuesta": "ten dollars"
     },
@@ -65,9 +65,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cómo paga A al final?",
      "opciones": [
+      "by card",
       "with a coin",
-      "in cash",
-      "by card"
+      "in cash"
      ],
      "respuesta": "by card"
     },
@@ -131,8 +131,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué necesita comprar B?",
      "opciones": [
-      "bread, milk, and cheese",
       "rice and chicken",
+      "bread, milk, and cheese",
       "fruit and vegetables"
      ],
      "respuesta": "bread, milk, and cheese"
@@ -154,9 +154,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cómo puede pagar A?",
      "opciones": [
-      "only by card",
-      "by card or in cash",
-      "only in cash"
+      "only by card today",
+      "only in cash here",
+      "by card or in cash"
      ],
      "respuesta": "by card or in cash"
     }
@@ -217,9 +217,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cuántas camisas quiere A?",
      "opciones": [
+      "two",
       "one",
-      "three",
-      "two"
+      "three"
      ],
      "respuesta": "two"
     }
@@ -280,8 +280,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué está en oferta?",
      "opciones": [
-      "the apples",
       "the bread",
+      "the apples",
       "the bags"
      ],
      "respuesta": "the apples"
@@ -330,8 +330,8 @@
      "enunciado": "¿Qué está en oferta?",
      "opciones": [
       "the cheese",
-      "the tomatoes",
-      "the milk"
+      "the milk",
+      "the tomatoes"
      ],
      "respuesta": "the tomatoes"
     },

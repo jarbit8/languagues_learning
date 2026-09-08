@@ -256,7 +256,7 @@
      "enunciado": "¿Qué mascotas tiene?",
      "opciones": [
       "a dog and a cat",
-      "a cat",
+      "only one cat",
       "two dogs"
      ],
      "respuesta": "a dog and a cat"

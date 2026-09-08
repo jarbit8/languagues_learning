@@ -42,8 +42,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué toca B?",
      "opciones": [
-      "the ball",
       "the guitar",
+      "the ball",
       "a game"
      ],
      "respuesta": "the guitar"
@@ -67,8 +67,8 @@
      "enunciado": "¿Qué le gusta hacer a B en su tiempo libre además de fútbol?",
      "opciones": [
       "reading",
-      "watching movies",
-      "listening to music"
+      "listening to music",
+      "watching movies"
      ],
      "respuesta": "listening to music"
     },
@@ -123,9 +123,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué deportes le gustan a B?",
      "opciones": [
-      "tennis and swimming",
       "music and dance",
-      "soccer and basketball"
+      "soccer and basketball",
+      "tennis and swimming"
      ],
      "respuesta": "tennis and swimming"
     },
@@ -197,8 +197,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué instrumento toca B?",
      "opciones": [
-      "the ball",
       "the guitar",
+      "the ball",
       "chess"
      ],
      "respuesta": "the guitar"
@@ -270,8 +270,8 @@
      "enunciado": "¿Qué hace en el gimnasio?",
      "opciones": [
       "basketball",
-      "swimming",
-      "running"
+      "running",
+      "swimming"
      ],
      "respuesta": "running"
     },
@@ -323,9 +323,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué toca Marie todos los días?",
      "opciones": [
-      "the guitar",
-      "tennis",
-      "chess"
+      "basketball",
+      "the gym",
+      "the guitar"
      ],
      "respuesta": "the guitar"
     },

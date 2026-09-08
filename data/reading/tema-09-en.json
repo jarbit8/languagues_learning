@@ -30,8 +30,8 @@
      "enunciado": "What does she do on Saturday?",
      "opciones": [
       "goes out with friends",
-      "works",
-      "takes a nap"
+      "works and studies",
+      "takes a nap at noon"
      ],
      "respuesta": "goes out with friends"
     },
@@ -326,9 +326,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What does she do in the evening?",
      "opciones": [
-      "runs",
+      "runs and studies",
       "cooks and cleans",
-      "goes out"
+      "goes out with friends"
      ],
      "respuesta": "cooks and cleans"
     }

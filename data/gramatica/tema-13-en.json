@@ -57,8 +57,8 @@
    "enunciado": "'rice' (arroz) es:",
    "opciones": [
     "always plural",
-    "uncountable",
-    "countable"
+    "countable",
+    "uncountable"
    ],
    "respuesta": "uncountable"
   },
@@ -66,9 +66,9 @@
    "tipo": "opcion_multiple",
    "enunciado": "Do you have ___ money?",
    "opciones": [
+    "any",
     "a",
-    "some",
-    "any"
+    "some"
    ],
    "respuesta": "any"
   },
@@ -76,8 +76,8 @@
    "tipo": "opcion_multiple",
    "enunciado": "I eat ___ fruit.",
    "opciones": [
-    "some",
     "a",
+    "some",
     "an"
    ],
    "respuesta": "some"
@@ -157,8 +157,8 @@
    "enunciado": "Is there ___ in the fridge?",
    "opciones": [
     "something",
-    "anything",
-    "nothing"
+    "nothing",
+    "anything"
    ],
    "respuesta": "anything"
   },

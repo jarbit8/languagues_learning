@@ -42,8 +42,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cómo se llama la mujer?",
      "opciones": [
-      "Ana",
       "Paul",
+      "Ana",
       "Maria"
      ],
      "respuesta": "Ana"
@@ -75,8 +75,8 @@
      "enunciado": "¿Qué le dice Paul a Ana antes de despedirse?",
      "opciones": [
       "Welcome, Ana!",
-      "Take care, Ana!",
-      "Good night, Ana!"
+      "Good night, Ana!",
+      "Take care, Ana!"
      ],
      "respuesta": "Take care, Ana!"
     }
@@ -123,9 +123,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cómo se llama la mujer?",
      "opciones": [
+      "Laura",
       "Ana",
-      "Marc",
-      "Laura"
+      "Marc"
      ],
      "respuesta": "Laura"
     },
@@ -138,8 +138,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué le dice Laura a Marc cuando llega?",
      "opciones": [
-      "Welcome, Marc.",
       "Good night, Marc.",
+      "Welcome, Marc.",
       "Goodbye, Marc."
      ],
      "respuesta": "Welcome, Marc."
@@ -205,8 +205,8 @@
      "enunciado": "¿A quién saluda la persona A?",
      "opciones": [
       "Mrs Lee",
-      "Miss Sofia",
-      "Paul"
+      "Paul",
+      "Miss Sofia"
      ],
      "respuesta": "Miss Sofia"
     },
@@ -266,9 +266,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cómo saluda Ana a Marc?",
      "opciones": [
+      "hey",
       "hello",
-      "good morning",
-      "hey"
+      "good morning"
      ],
      "respuesta": "hey"
     },
@@ -329,8 +329,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cómo se llama la mujer?",
      "opciones": [
-      "Marie",
       "Laura",
+      "Marie",
       "Sofia"
      ],
      "respuesta": "Marie"

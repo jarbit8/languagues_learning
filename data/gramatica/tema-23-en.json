@@ -52,8 +52,8 @@
    "enunciado": "Pasado de 'take':",
    "opciones": [
     "taked",
-    "taken",
-    "took"
+    "took",
+    "taken"
    ],
    "respuesta": "took"
   },
@@ -61,9 +61,9 @@
    "tipo": "opcion_multiple",
    "enunciado": "Pasado de 'eat':",
    "opciones": [
-    "ate",
     "eated",
-    "eaten"
+    "eaten",
+    "ate"
    ],
    "respuesta": "ate"
   },
@@ -71,8 +71,8 @@
    "tipo": "opcion_multiple",
    "enunciado": "I ___ to the airport. (go)",
    "opciones": [
-    "goed",
     "went",
+    "goed",
     "gone"
    ],
    "respuesta": "went"
@@ -152,8 +152,8 @@
    "enunciado": "Did you ___ the ticket?",
    "opciones": [
     "buyed",
-    "bought",
-    "buy"
+    "buy",
+    "bought"
    ],
    "respuesta": "buy"
   },

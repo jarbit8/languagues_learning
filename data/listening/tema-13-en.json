@@ -196,9 +196,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué hay en la nevera?",
      "opciones": [
-      "chicken and rice",
+      "chicken, rice and butter",
       "eggs, cheese and vegetables",
-      "fruit and yogurt"
+      "fruit, yogurt and milk"
      ],
      "respuesta": "eggs, cheese and vegetables"
     },
@@ -321,8 +321,8 @@
      "enunciado": "¿Qué come Marie en el desayuno?",
      "opciones": [
       "bread with butter, a yogurt and an orange",
-      "soup, a sandwich and an apple",
-      "chicken with rice and some vegetables"
+      "chicken with rice and some green vegetables",
+      "soup, a sandwich and an apple"
      ],
      "respuesta": "bread with butter, a yogurt and an orange"
     },

@@ -64,9 +64,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿A qué hora va B al trabajo?",
      "opciones": [
+      "seven",
       "eight",
-      "six",
-      "seven"
+      "six"
      ],
      "respuesta": "seven"
     },
@@ -122,8 +122,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cuándo estudia B?",
      "opciones": [
-      "in the afternoon",
       "in the morning",
+      "in the afternoon",
       "at night"
      ],
      "respuesta": "in the afternoon"
@@ -213,8 +213,8 @@
      "enunciado": "¿Qué hace después de la ducha?",
      "opciones": [
       "have breakfast",
-      "brush his teeth",
-      "make the bed"
+      "make the bed",
+      "brush his teeth"
      ],
      "respuesta": "brush his teeth"
     },
@@ -270,9 +270,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué hace por la tarde después de comer?",
      "opciones": [
+      "rests",
       "cooks",
-      "runs",
-      "rests"
+      "runs"
      ],
      "respuesta": "rests"
     },
@@ -338,8 +338,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué hace por la noche?",
      "opciones": [
-      "cooks, cleans and reads",
       "runs, walks and rests",
+      "cooks, cleans and reads",
       "studies, sleeps and goes out"
      ],
      "respuesta": "cooks, cleans and reads"

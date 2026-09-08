@@ -9,9 +9,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cuántos hermanos y hermanas tiene Ana?",
      "opciones": [
-      "un hermano y dos hermanas",
       "dos hermanos y una hermana",
-      "una hermana y dos primos"
+      "una hermana y dos primos",
+      "un hermano y dos hermanas"
      ],
      "respuesta": "un hermano y dos hermanas"
     },
@@ -29,8 +29,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cuántos años tiene la abuela?",
      "opciones": [
-      "seventeen",
       "eighty",
+      "seventeen",
       "nine"
      ],
      "respuesta": "eighty"
@@ -63,9 +63,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Quiénes son los abuelos en la foto?",
      "opciones": [
-      "uncle and aunt",
-      "dad and mom",
-      "grandfather and grandmother"
+      "the uncle and the cousins",
+      "grandfather and grandmother",
+      "the mom and the dad"
      ],
      "respuesta": "grandfather and grandmother"
     },
@@ -86,9 +86,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿De dónde es la esposa del hermano?",
      "opciones": [
-      "Canada",
       "Peru",
-      "France"
+      "France",
+      "Canada"
      ],
      "respuesta": "Canada"
     },
@@ -117,8 +117,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cuántos primos tiene Ana?",
      "opciones": [
-      "three",
       "four",
+      "three",
       "two"
      ],
      "respuesta": "four"
@@ -137,9 +137,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué mascotas tiene en Canadá?",
      "opciones": [
-      "a cat",
-      "two dogs",
-      "a dog and a cat"
+      "only one dog",
+      "a dog and a cat",
+      "two dogs and a cat"
      ],
      "respuesta": "a dog and a cat"
     },
@@ -171,9 +171,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cuántos años tiene el padre?",
      "opciones": [
-      "fifty-two",
       "seventy",
-      "fifty"
+      "fifty",
+      "fifty-two"
      ],
      "respuesta": "fifty-two"
     },
@@ -194,8 +194,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cuántos primos tiene?",
      "opciones": [
-      "four",
       "two",
+      "four",
       "one"
      ],
      "respuesta": "two"
@@ -228,9 +228,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cuántos hermanos tiene Marie?",
      "opciones": [
-      "dos hermanos",
-      "ninguno",
-      "uno y una hermana"
+      "dos hermanos varones",
+      "uno y una hermana",
+      "ninguno, es hija única"
      ],
      "respuesta": "uno y una hermana"
     },
@@ -251,9 +251,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué mascota tiene Marie?",
      "opciones": [
-      "a dog",
       "a cat",
-      "no pet"
+      "no pet",
+      "a dog"
      ],
      "respuesta": "a dog"
     },

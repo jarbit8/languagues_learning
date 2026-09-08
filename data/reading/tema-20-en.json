@@ -9,7 +9,7 @@
      "tipo": "opcion_multiple",
      "enunciado": "What does Ana play in her bedroom?",
      "opciones": [
-      "chess",
+      "basketball",
       "the guitar",
       "tennis"
      ],
@@ -33,8 +33,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "What sport does Laura play every Friday?",
      "opciones": [
-      "soccer",
-      "tennis",
+      "swimming",
+      "running",
       "basketball"
      ],
      "respuesta": "basketball"
@@ -64,8 +64,8 @@
      "enunciado": "What do Ana and Paul hate?",
      "opciones": [
       "long movies",
-      "chess",
-      "music"
+      "chess games",
+      "the gym"
      ],
      "respuesta": "long movies"
     }
@@ -148,9 +148,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What does Laura do in the party?",
      "opciones": [
-      "she dances all the day",
+      "she dances all the day with Ana",
       "she plays the guitar and sings",
-      "she watches a movie"
+      "she watches a movie with Paul"
      ],
      "respuesta": "she plays the guitar and sings"
     },
@@ -240,8 +240,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "Why is swimming a good sport?",
      "opciones": [
-      "it is fast",
-      "the water is cold",
+      "it is fast and it is not slow",
+      "the water is cold in the gym",
       "it is very good for the back"
      ],
      "respuesta": "it is very good for the back"
@@ -270,8 +270,8 @@
      "enunciado": "What does Ana do with Laura?",
      "opciones": [
       "she plays the guitar and sings",
-      "she draws",
-      "she does swimming"
+      "she draws her friends in the gym",
+      "she does swimming at twelve"
      ],
      "respuesta": "she plays the guitar and sings"
     }

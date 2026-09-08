@@ -42,8 +42,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cuántos años tiene Joel?",
      "opciones": [
+      "twenty-one",
       "twelve",
-      "twenty",
       "twenty-two"
      ],
      "respuesta": "twenty-two"
@@ -142,8 +142,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué le dice A a Laura al pedir el número?",
      "opciones": [
-      "How old are you, please?",
-      "What is your name, please?",
+      "How old are you and your name?",
+      "What is your name and your age, please?",
       "What is your phone number, please?"
      ],
      "respuesta": "What is your phone number, please?"

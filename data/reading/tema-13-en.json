@@ -9,9 +9,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What does Ana have for breakfast?",
      "opciones": [
-      "bread with butter and an apple",
-      "rice with chicken",
-      "soup or a sandwich"
+      "rice with chicken and a salad",
+      "some soup or a big sandwich",
+      "bread with butter and an apple"
      ],
      "respuesta": "bread with butter and an apple"
     },
@@ -29,8 +29,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "What does Laura eat?",
      "opciones": [
-      "fish and salad",
       "pasta and yogurt",
+      "fish and salad",
       "soup and bread"
      ],
      "respuesta": "pasta and yogurt"
@@ -55,8 +55,8 @@
      "enunciado": "Why does Ana not eat meat every day?",
      "opciones": [
       "because it is not tasty",
-      "because she is not hungry",
-      "because it is expensive"
+      "because it is expensive",
+      "because she is not hungry"
      ],
      "respuesta": "because it is expensive"
     },
@@ -75,9 +75,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What does Paul eat for breakfast?",
      "opciones": [
-      "two eggs, bread with cheese and a banana",
       "soup, a sandwich and an orange",
-      "rice with chicken and a salad with tomatoes"
+      "rice with chicken and a salad with tomatoes",
+      "two eggs, bread with cheese and a banana"
      ],
      "respuesta": "two eggs, bread with cheese and a banana"
     },
@@ -98,8 +98,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "What do Paul and Lee eat on Friday?",
      "opciones": [
-      "chicken with rice",
       "fish with potatoes",
+      "chicken with rice",
       "soup"
      ],
      "respuesta": "fish with potatoes"
@@ -119,8 +119,8 @@
      "enunciado": "What does Paul do in the evening?",
      "opciones": [
       "he cooks chicken",
-      "he goes out",
-      "he makes a sandwich"
+      "he makes a sandwich",
+      "he goes out"
      ],
      "respuesta": "he makes a sandwich"
     },
@@ -149,9 +149,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What does Ana cook on Wednesday?",
      "opciones": [
-      "fish with potatoes and carrots",
-      "pasta with butter",
-      "rice with chicken"
+      "pasta with butter and pepper",
+      "rice with chicken and onions",
+      "fish with potatoes and carrots"
      ],
      "respuesta": "fish with potatoes and carrots"
     },
@@ -173,8 +173,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "Who cooks on Saturday?",
      "opciones": [
-      "Ana",
       "Laura",
+      "Ana",
       "Paul"
      ],
      "respuesta": "Laura"
@@ -189,8 +189,8 @@
      "enunciado": "What is in the dessert on Saturday?",
      "opciones": [
       "onions and salt",
-      "bananas and milk",
-      "apples and sugar"
+      "apples and sugar",
+      "bananas and milk"
      ],
      "respuesta": "apples and sugar"
     },
@@ -209,9 +209,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "How many friends are in the kitchen?",
      "opciones": [
-      "five",
       "four",
-      "three"
+      "three",
+      "five"
      ],
      "respuesta": "five"
     },
@@ -233,9 +233,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What is in the dessert?",
      "opciones": [
-      "apples and butter",
       "bananas, milk and sugar",
-      "oranges and yogurt"
+      "apples, butter and salt",
+      "oranges, yogurt and bread"
      ],
      "respuesta": "bananas, milk and sugar"
     },
@@ -254,8 +254,8 @@
      "enunciado": "What time do the friends go out?",
      "opciones": [
       "at twelve",
-      "at ten",
-      "at eleven"
+      "at eleven",
+      "at ten"
      ],
      "respuesta": "at eleven"
     },
@@ -274,9 +274,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What does Marie have for breakfast?",
      "opciones": [
-      "bread with butter, a yogurt and an orange",
-      "soup, a sandwich and some fruit",
-      "rice with chicken and a green salad"
+      "rice with chicken and a big green salad",
+      "some soup, a sandwich and some fruit",
+      "bread with butter, a yogurt and an orange"
      ],
      "respuesta": "bread with butter, a yogurt and an orange"
     },
@@ -299,8 +299,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "What is in the salad of Marie?",
      "opciones": [
-      "potatoes and carrots",
       "tomatoes and onions",
+      "potatoes and carrots",
       "apples and bananas"
      ],
      "respuesta": "tomatoes and onions"
@@ -327,9 +327,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What is in the Saturday dessert?",
      "opciones": [
-      "oranges and butter",
-      "bananas and cheese",
-      "apples, milk and sugar"
+      "oranges, butter and salt",
+      "apples, milk and sugar",
+      "bananas, cheese and bread"
      ],
      "respuesta": "apples, milk and sugar"
     }

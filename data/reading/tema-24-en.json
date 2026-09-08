@@ -9,8 +9,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "What is Ana going to do first?",
      "opciones": [
-      "finish her degree",
       "move abroad",
+      "finish her degree",
       "apply for the citizenship"
      ],
      "respuesta": "finish her degree"
@@ -34,8 +34,8 @@
      "enunciado": "What is the sister of Ana going to apply for?",
      "opciones": [
       "a visa",
-      "the citizenship",
-      "a scholarship"
+      "a scholarship",
+      "the citizenship"
      ],
      "respuesta": "the citizenship"
     },
@@ -62,9 +62,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What is Ana not going to do?",
      "opciones": [
+      "change her plan",
       "graduate",
-      "practice English",
-      "change her plan"
+      "practice English"
      ],
      "respuesta": "change her plan"
     }
@@ -87,9 +87,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What is the project?",
      "opciones": [
+      "a new subject of the campus",
       "a website for the students",
-      "a new subject",
-      "a company abroad"
+      "a company abroad with Lee"
      ],
      "respuesta": "a website for the students"
     },
@@ -103,8 +103,8 @@
      "enunciado": "When is Paul going to apply for the scholarship?",
      "opciones": [
       "next month",
-      "in December",
-      "in one year"
+      "in one year",
+      "in December"
      ],
      "respuesta": "in December"
     },
@@ -131,9 +131,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What are they going to learn?",
      "opciones": [
-      "the history of the university",
-      "a new language for the exams",
-      "a new language of computer science"
+      "a new language of computer science",
+      "a new language for the exams of December",
+      "the history of the university"
      ],
      "respuesta": "a new language of computer science"
     }
@@ -147,8 +147,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "What is the dream of Laura?",
      "opciones": [
-      "music",
       "a good job",
+      "music",
       "a scholarship"
      ],
      "respuesta": "music"
@@ -171,9 +171,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "Why is it not sure?",
      "opciones": [
-      "her friend is not going",
-      "the visa is difficult and expensive",
-      "she does not have a passport"
+      "her friend is not going to travel",
+      "she does not have a passport",
+      "the visa is difficult and expensive"
      ],
      "respuesta": "the visa is difficult and expensive"
     },
@@ -200,9 +200,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "When is Laura going to decide?",
      "opciones": [
+      "in March",
       "next year",
-      "in the summer",
-      "in March"
+      "in the summer"
      ],
      "respuesta": "in March"
     }
@@ -216,8 +216,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "What must Lee decide?",
      "opciones": [
-      "two subjects or a job",
       "a company or a project",
+      "two subjects or a job",
       "a scholarship or a visa"
      ],
      "respuesta": "two subjects or a job"
@@ -241,8 +241,8 @@
      "enunciado": "When is Lee going to decide?",
      "opciones": [
       "in August",
-      "in July",
-      "in two years"
+      "in two years",
+      "in July"
      ],
      "respuesta": "in July"
     },
@@ -269,9 +269,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What is Lee maybe going to do?",
      "opciones": [
-      "leave the university",
-      "change his plan",
-      "study at night and work in the morning"
+      "study at night and work in the morning",
+      "leave the university for the company",
+      "change his plan and fail one exam"
      ],
      "respuesta": "study at night and work in the morning"
     }
@@ -285,8 +285,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "What is Marie going to do first?",
      "opciones": [
-      "finish her degree",
       "apply for a scholarship",
+      "finish her degree",
       "work in a hospital"
      ],
      "respuesta": "finish her degree"
@@ -309,9 +309,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What is her dream?",
      "opciones": [
-      "a scholarship abroad",
-      "to travel to England and sing",
-      "a job in a hospital"
+      "a scholarship abroad for science",
+      "a job in a hospital in her city",
+      "to travel to England and sing"
      ],
      "respuesta": "to travel to England and sing"
     },
@@ -338,9 +338,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "When is Marie going to decide?",
      "opciones": [
+      "in March",
       "in June",
-      "next year",
-      "in March"
+      "next year"
      ],
      "respuesta": "in March"
     }

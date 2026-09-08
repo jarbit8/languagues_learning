@@ -59,8 +59,8 @@
    "tipo": "opcion_multiple",
    "enunciado": "He ___ every day.",
    "opciones": [
-    "cookes",
     "cooks",
+    "cookes",
     "cook"
    ],
    "respuesta": "cooks"
@@ -70,8 +70,8 @@
    "enunciado": "___ you listen to music?",
    "opciones": [
     "Are",
-    "Does",
-    "Do"
+    "Do",
+    "Does"
    ],
    "respuesta": "Do"
   },
@@ -79,9 +79,9 @@
    "tipo": "opcion_multiple",
    "enunciado": "She doesn't ___ dinner.",
    "opciones": [
-    "cook",
     "cooks",
-    "to cook"
+    "to cook",
+    "cook"
    ],
    "respuesta": "cook"
   },
@@ -159,8 +159,8 @@
    "tipo": "opcion_multiple",
    "enunciado": "Does she study? No, she ___.",
    "opciones": [
-    "not does",
     "doesn't",
+    "not does",
     "don't"
    ],
    "respuesta": "doesn't"

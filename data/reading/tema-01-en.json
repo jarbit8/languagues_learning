@@ -53,8 +53,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cómo se despide Paul de Ana al final?",
      "opciones": [
-      "See you soon",
-      "Good night",
+      "See you soon, Ana",
+      "Good night, Ana",
       "See you tomorrow"
      ],
      "respuesta": "See you tomorrow"
@@ -296,9 +296,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué le contestan a Sofia cuando ella da las gracias?",
      "opciones": [
-      "No problem",
+      "No problem, Sofia",
       "You're welcome",
-      "Take care"
+      "Take care, Sofia"
      ],
      "respuesta": "You're welcome"
     },

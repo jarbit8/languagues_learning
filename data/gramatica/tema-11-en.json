@@ -46,8 +46,8 @@
    "tipo": "opcion_multiple",
    "enunciado": "Plural de 'this':",
    "opciones": [
-    "these",
     "thises",
+    "these",
     "theses"
    ],
    "respuesta": "these"
@@ -57,8 +57,8 @@
    "enunciado": "I have ___ books. (esos, plural lejos)",
    "opciones": [
     "this",
-    "those",
-    "that"
+    "that",
+    "those"
    ],
    "respuesta": "those"
   },
@@ -66,9 +66,9 @@
    "tipo": "opcion_multiple",
    "enunciado": "'mochilas rojas' =",
    "opciones": [
+    "red bags",
     "bags red",
-    "reds bags",
-    "red bags"
+    "reds bags"
    ],
    "respuesta": "red bags"
   },

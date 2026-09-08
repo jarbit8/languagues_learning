@@ -9,9 +9,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué días trabaja Ana?",
      "opciones": [
-      "Monday and Wednesday",
       "Friday and Saturday",
-      "Tuesday and Thursday"
+      "Tuesday and Thursday",
+      "Monday and Wednesday"
      ],
      "respuesta": "Monday and Wednesday"
     },
@@ -29,8 +29,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué día es hoy?",
      "opciones": [
-      "Sunday",
       "Thursday",
+      "Sunday",
       "Friday"
      ],
      "respuesta": "Thursday"
@@ -50,8 +50,8 @@
      "enunciado": "¿En qué mes es el cumpleaños de Laura?",
      "opciones": [
       "May",
-      "December",
-      "August"
+      "August",
+      "December"
      ],
      "respuesta": "August"
     },
@@ -70,9 +70,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿En qué mes es el cumpleaños de Laura?",
      "opciones": [
-      "February",
       "August",
-      "March"
+      "March",
+      "February"
      ],
      "respuesta": "February"
     },
@@ -90,8 +90,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué días trabaja Laura?",
      "opciones": [
-      "Monday and Tuesday",
       "Thursday and Friday",
+      "Monday and Tuesday",
       "Saturday and Sunday"
      ],
      "respuesta": "Thursday and Friday"
@@ -119,8 +119,8 @@
      "enunciado": "¿Qué días son el fin de semana?",
      "opciones": [
       "Monday and Tuesday",
-      "Friday and Saturday",
-      "Saturday and Sunday"
+      "Saturday and Sunday",
+      "Friday and Saturday"
      ],
      "respuesta": "Saturday and Sunday"
     }
@@ -180,9 +180,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cuántos meses tiene el año?",
      "opciones": [
-      "twelve",
       "seven",
-      "four"
+      "four",
+      "twelve"
      ],
      "respuesta": "twelve"
     },
@@ -200,8 +200,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué día es hoy?",
      "opciones": [
-      "Thursday",
       "Tuesday",
+      "Thursday",
       "Wednesday"
      ],
      "respuesta": "Tuesday"
@@ -237,8 +237,8 @@
      "enunciado": "¿En qué mes viene la familia?",
      "opciones": [
       "July",
-      "December",
-      "June"
+      "June",
+      "December"
      ],
      "respuesta": "June"
     },
@@ -251,9 +251,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cuántos días tiene una semana?",
      "opciones": [
-      "seven",
       "twelve",
-      "four"
+      "four",
+      "seven"
      ],
      "respuesta": "seven"
     },
@@ -282,8 +282,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué días trabaja Marie?",
      "opciones": [
-      "every day",
       "Monday to Thursday",
+      "every day",
       "Friday to Sunday"
      ],
      "respuesta": "Monday to Thursday"
@@ -303,8 +303,8 @@
      "enunciado": "¿Qué día es hoy?",
      "opciones": [
       "Saturday",
-      "Wednesday",
-      "Friday"
+      "Friday",
+      "Wednesday"
      ],
      "respuesta": "Friday"
     },
@@ -327,9 +327,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué día fue anteayer?",
      "opciones": [
-      "Wednesday",
       "Thursday",
-      "Sunday"
+      "Sunday",
+      "Wednesday"
      ],
      "respuesta": "Wednesday"
     }

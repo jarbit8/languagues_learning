@@ -9,8 +9,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "Where is the fridge?",
      "opciones": [
-      "under the bed",
-      "near the sofa",
+      "under the bed of Ana",
+      "near the sofa and the lamp",
       "next to the window"
      ],
      "respuesta": "next to the window"
@@ -30,8 +30,8 @@
      "enunciado": "Where is the closet?",
      "opciones": [
       "between the bed and the door",
-      "in the kitchen",
-      "on the wall"
+      "in the kitchen, near the fridge",
+      "on the wall of the living room"
      ],
      "respuesta": "between the bed and the door"
     },
@@ -117,9 +117,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "Where is the mirror?",
      "opciones": [
-      "in the garden",
+      "in the garden, near the door",
       "on the wall of the bathroom",
-      "under the roof"
+      "under the roof of the balcony"
      ],
      "respuesta": "on the wall of the bathroom"
     },
@@ -167,8 +167,8 @@
      "enunciado": "Where is the bathroom?",
      "opciones": [
       "between the kitchen and the bedroom",
-      "next to the balcony",
-      "under the stairs"
+      "next to the balcony and the sofa",
+      "under the stairs of the apartment"
      ],
      "respuesta": "between the kitchen and the bedroom"
     },
@@ -232,8 +232,8 @@
      "enunciado": "Where is the closet?",
      "opciones": [
       "between the bed and the door",
-      "on the wall",
-      "in the kitchen"
+      "on the wall, near the lamp",
+      "in the kitchen, with the fridge"
      ],
      "respuesta": "between the bed and the door"
     },
@@ -350,8 +350,8 @@
      "enunciado": "Where is the bathroom?",
      "opciones": [
       "between her room and the kitchen",
-      "next to the garden",
-      "on the first floor"
+      "next to the garden and the stairs",
+      "on the first floor, near the door"
      ],
      "respuesta": "between her room and the kitchen"
     },

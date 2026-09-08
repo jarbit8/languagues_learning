@@ -19,8 +19,8 @@
      "enunciado": "What is on sale today?",
      "opciones": [
       "the bread",
-      "the tomatoes",
-      "the eggs"
+      "the eggs",
+      "the tomatoes"
      ],
      "respuesta": "the tomatoes"
     },
@@ -33,9 +33,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "Why does Ana prefer the market for the fruit?",
      "opciones": [
-      "the market is near her house",
-      "there is a discount on the chicken",
-      "the fruit is very good and the price is small"
+      "the fruit is very good and the price is small",
+      "the market is near her house and it is big",
+      "there is a discount on the chicken"
      ],
      "respuesta": "the fruit is very good and the price is small"
     },
@@ -62,8 +62,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "What does Ana have in her wallet?",
      "opciones": [
-      "two bills and some coins",
       "only a card and a receipt",
+      "two bills and some coins",
       "three coins and a shopping list"
      ],
      "respuesta": "two bills and some coins"
@@ -79,8 +79,8 @@
      "enunciado": "When does Laura make her shopping list?",
      "opciones": [
       "every Sunday",
-      "every Monday",
-      "every Saturday"
+      "every Saturday",
+      "every Monday"
      ],
      "respuesta": "every Monday"
     },
@@ -102,9 +102,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "How does Laura pay?",
      "opciones": [
+      "with her card",
       "with coins",
-      "with cash",
-      "with her card"
+      "with cash"
      ],
      "respuesta": "with her card"
     },
@@ -131,9 +131,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "Why does Laura want a receipt?",
      "opciones": [
+      "to pay with cash and coins",
       "to see what she spends",
-      "to pay with cash",
-      "to have a discount"
+      "to have a discount on the rice"
      ],
      "respuesta": "to see what she spends"
     }
@@ -148,8 +148,8 @@
      "enunciado": "What does the first seller sell?",
      "opciones": [
       "fish and chicken",
-      "fruit and vegetables",
-      "clothes"
+      "clothes and shoes",
+      "fruit and vegetables"
      ],
      "respuesta": "fruit and vegetables"
     },
@@ -171,9 +171,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "Why does Paul prefer the bananas?",
      "opciones": [
+      "because they are cheap today",
       "because the quality is good",
-      "because they are on sale",
-      "because they are cheap today"
+      "because they are on sale"
      ],
      "respuesta": "because they are cheap today"
     },
@@ -191,8 +191,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "Who pays with coins?",
      "opciones": [
-      "Paul",
       "Ana",
+      "Paul",
       "the seller"
      ],
      "respuesta": "Paul"
@@ -212,9 +212,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What does Laura need?",
      "opciones": [
-      "a scarf",
-      "a new jacket",
-      "boots"
+      "a new scarf",
+      "brown boots",
+      "a new jacket"
      ],
      "respuesta": "a new jacket"
     },
@@ -236,9 +236,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "Why does Laura pay with cash?",
      "opciones": [
-      "the card is not free",
-      "she does not have a card",
-      "there is a problem with the card"
+      "there is a problem with the card",
+      "she does not have a card today",
+      "the card is not free in the shop"
      ],
      "respuesta": "there is a problem with the card"
     },
@@ -264,9 +264,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "How much do the boots cost?",
      "opciones": [
+      "fifty-eight soles",
       "one hundred soles",
-      "fifty soles",
-      "eighty soles"
+      "eighty-five soles"
      ],
      "respuesta": "one hundred soles"
     }
@@ -290,8 +290,8 @@
      "enunciado": "What has a discount today?",
      "opciones": [
       "the cheese",
-      "the tomatoes",
-      "the bread"
+      "the bread",
+      "the tomatoes"
      ],
      "respuesta": "the tomatoes"
     },
@@ -304,9 +304,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "Why does Marie prefer her card?",
      "opciones": [
+      "she never has coins",
       "the card is free",
-      "she needs a receipt",
-      "she never has coins"
+      "she needs a receipt"
      ],
      "respuesta": "she never has coins"
     },
@@ -333,8 +333,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "What does Marie buy in the market?",
      "opciones": [
-      "fish",
       "cheese",
+      "fish",
       "vegetables"
      ],
      "respuesta": "fish"

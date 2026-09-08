@@ -56,9 +56,9 @@
    "tipo": "opcion_multiple",
    "enunciado": "Orden correcto:",
    "opciones": [
-    "a tall man",
     "tall a man",
-    "a man tall"
+    "a man tall",
+    "a tall man"
    ],
    "respuesta": "a tall man"
   },
@@ -66,8 +66,8 @@
    "tipo": "opcion_multiple",
    "enunciado": "They are ___ children.",
    "opciones": [
-    "happies",
     "happy",
+    "happies",
     "happys"
    ],
    "respuesta": "happy"
@@ -77,8 +77,8 @@
    "enunciado": "Plural de 'child':",
    "opciones": [
     "childrens",
-    "childs",
-    "children"
+    "children",
+    "childs"
    ],
    "respuesta": "children"
   },
@@ -157,9 +157,9 @@
    "tipo": "opcion_multiple",
    "enunciado": "'He is too old' significa:",
    "opciones": [
-    "Es demasiado viejo",
     "Es muy viejo",
-    "También es viejo"
+    "También es viejo",
+    "Es demasiado viejo"
    ],
    "respuesta": "Es demasiado viejo"
   },

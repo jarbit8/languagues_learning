@@ -169,8 +169,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "How does her teacher of history teach?",
      "opciones": [
-      "with a computer",
-      "with a dictionary",
+      "with a computer and a book",
+      "with a dictionary in English",
       "with movies and old books"
      ],
      "respuesta": "with movies and old books"
@@ -237,8 +237,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "How must Lee learn English?",
      "opciones": [
-      "with a computer",
-      "in the classroom",
+      "with a computer in class",
+      "in the classroom with Ana",
       "with music and movies"
      ],
      "respuesta": "with music and movies"
@@ -267,8 +267,8 @@
      "enunciado": "What does Lee want after his degree?",
      "opciones": [
       "to teach computer science",
-      "to work in a café",
-      "to study English"
+      "to work in a café at night",
+      "to study English one year"
      ],
      "respuesta": "to teach computer science"
     }
@@ -335,8 +335,8 @@
      "enunciado": "What does Marie want to do after her degree?",
      "opciones": [
       "teach science in a school",
-      "work in a café",
-      "study history"
+      "work in a café at night",
+      "study history one year"
      ],
      "respuesta": "teach science in a school"
     }

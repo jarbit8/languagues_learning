@@ -29,8 +29,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué idiomas habla Ana?",
      "opciones": [
-      "English and German",
-      "only Spanish",
+      "English, German and French",
+      "only Spanish and English",
       "Spanish, English and French"
      ],
      "respuesta": "Spanish, English and French"
@@ -316,9 +316,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué idiomas habla Marie?",
      "opciones": [
-      "Spanish",
+      "Spanish and French",
       "English and French",
-      "French only"
+      "only French and German"
      ],
      "respuesta": "English and French"
     },

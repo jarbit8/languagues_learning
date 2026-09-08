@@ -121,8 +121,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué ropa lleva B hoy?",
      "opciones": [
-      "a skirt and a sweater",
-      "a dress and boots",
+      "a skirt and a blue sweater",
+      "a dress and new boots",
       "jeans and a white t-shirt"
      ],
      "respuesta": "jeans and a white t-shirt"

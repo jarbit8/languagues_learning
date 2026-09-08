@@ -132,8 +132,8 @@
      "enunciado": "What did Laura send to Ana?",
      "opciones": [
       "a message with a photo",
-      "three songs",
-      "a video of tennis"
+      "three songs of the website",
+      "a video of a tennis game"
      ],
      "respuesta": "a message with a photo"
     }
@@ -201,8 +201,8 @@
      "enunciado": "What did Paul do at night?",
      "opciones": [
       "he turned off the computer and charged his phone",
-      "he opened his email again",
-      "he downloaded a video"
+      "he opened his email and answered ten messages",
+      "he downloaded a video of his teacher"
      ],
      "respuesta": "he turned off the computer and charged his phone"
     }
@@ -285,9 +285,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What did Marie have with her last Saturday?",
      "opciones": [
-      "a file with photos",
+      "her computer and a file",
       "her camera and her phone",
-      "her computer"
+      "a file with all her photos"
      ],
      "respuesta": "her camera and her phone"
     },
@@ -339,8 +339,8 @@
      "enunciado": "What did Marie do at night?",
      "opciones": [
       "she turned off her phone and charged it",
-      "she downloaded three songs",
-      "she called her mother"
+      "she downloaded three songs and a video",
+      "she called her mother from the café"
      ],
      "respuesta": "she turned off her phone and charged it"
     }

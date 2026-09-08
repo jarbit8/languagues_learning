@@ -54,9 +54,9 @@
    "tipo": "opcion_multiple",
    "enunciado": "Posición correcta:",
    "opciones": [
+    "I always study",
     "Always I study",
-    "I study always",
-    "I always study"
+    "I study always"
    ],
    "respuesta": "I always study"
   },
@@ -64,8 +64,8 @@
    "tipo": "opcion_multiple",
    "enunciado": "6:15 =",
    "opciones": [
-    "quarter past six",
     "six and quarter",
+    "quarter past six",
     "quarter to six"
    ],
    "respuesta": "quarter past six"
@@ -75,8 +75,8 @@
    "enunciado": "She ___ late. (nunca)",
    "opciones": [
     "is not never",
-    "is never",
-    "never is"
+    "never is",
+    "is never"
    ],
    "respuesta": "is never"
   },

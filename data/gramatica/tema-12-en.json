@@ -67,8 +67,8 @@
    "tipo": "opcion_multiple",
    "enunciado": "Gerundio de 'wear':",
    "opciones": [
-    "wearing",
     "weared",
+    "wearing",
     "wears"
    ],
    "respuesta": "wearing"
@@ -78,8 +78,8 @@
    "enunciado": "She ___ a dress.",
    "opciones": [
     "wearing",
-    "is wearing",
-    "wears wearing"
+    "wears wearing",
+    "is wearing"
    ],
    "respuesta": "is wearing"
   },
@@ -87,9 +87,9 @@
    "tipo": "opcion_multiple",
    "enunciado": "'Tengo una mochila' =",
    "opciones": [
+    "I've got a bag",
     "I got a bag",
-    "I has got a bag",
-    "I've got a bag"
+    "I has got a bag"
    ],
    "respuesta": "I've got a bag"
   },
@@ -171,8 +171,8 @@
    "tipo": "opcion_multiple",
    "enunciado": "___ you wearing a jacket?",
    "opciones": [
-    "Are",
     "Do",
+    "Are",
     "Is"
    ],
    "respuesta": "Are"
@@ -187,8 +187,8 @@
    "enunciado": "Gerundio de 'live':",
    "opciones": [
     "livving",
-    "living",
-    "liveing"
+    "liveing",
+    "living"
    ],
    "respuesta": "living"
   },
@@ -196,9 +196,9 @@
    "tipo": "opcion_multiple",
    "enunciado": "Gerundio de 'run':",
    "opciones": [
+    "running",
     "runing",
-    "runming",
-    "running"
+    "runming"
    ],
    "respuesta": "running"
   },
@@ -231,8 +231,8 @@
    "tipo": "opcion_multiple",
    "enunciado": "¿Cómo se pregunta en americano si tienes una chaqueta?",
    "opciones": [
-    "Do you have a jacket?",
     "Have you got a jacket?",
+    "Do you have a jacket?",
     "Got you a jacket?"
    ],
    "respuesta": "Do you have a jacket?"

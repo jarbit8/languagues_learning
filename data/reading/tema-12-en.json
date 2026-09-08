@@ -9,9 +9,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "Which coat does Ana buy?",
      "opciones": [
-      "the gray one",
       "the black one",
-      "the blue one"
+      "the blue one",
+      "the gray one"
      ],
      "respuesta": "the gray one"
     },
@@ -29,9 +29,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What does Laura buy?",
      "opciones": [
-      "a coat and boots",
       "a sweater and sneakers",
-      "gloves and a scarf"
+      "a gray coat and boots",
+      "gloves, boots and a scarf"
      ],
      "respuesta": "a sweater and sneakers"
     },
@@ -53,8 +53,8 @@
      "enunciado": "What does Ana wear to work?",
      "opciones": [
       "a skirt or a dress",
-      "shorts or pajamas",
-      "pants or jeans"
+      "pants or jeans",
+      "shorts or pajamas"
      ],
      "respuesta": "pants or jeans"
     },
@@ -73,9 +73,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What does the person buy first?",
      "opciones": [
-      "a jacket",
       "a hat",
-      "shoes"
+      "shoes",
+      "a jacket"
      ],
      "respuesta": "a jacket"
     },
@@ -93,8 +93,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "What does the friend buy?",
      "opciones": [
-      "shorts",
       "a dress and a skirt",
+      "shorts",
       "jeans and a shirt"
      ],
      "respuesta": "a dress and a skirt"
@@ -114,8 +114,8 @@
      "enunciado": "What does the sister never wear?",
      "opciones": [
       "a shirt",
-      "jeans",
-      "shorts"
+      "shorts",
+      "jeans"
      ],
      "respuesta": "shorts"
     },
@@ -196,9 +196,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What does Ana wear in winter?",
      "opciones": [
-      "a coat, boots and gloves",
       "a dress, a skirt and a hat",
-      "shorts, a t-shirt and sneakers"
+      "shorts, a t-shirt and sneakers",
+      "a coat, boots and gloves"
      ],
      "respuesta": "a coat, boots and gloves"
     },
@@ -219,8 +219,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "What does Laura wear?",
      "opciones": [
-      "a black coat and gray boots",
       "a blue blouse and a black skirt",
+      "a black coat and gray boots",
       "blue jeans and a white shirt"
      ],
      "respuesta": "a blue blouse and a black skirt"
@@ -249,8 +249,8 @@
      "enunciado": "What does she wear in spring?",
      "opciones": [
       "boots, gloves and a scarf",
-      "shorts, a hat and sneakers",
-      "jeans, a shirt and a jacket"
+      "jeans, a shirt and a jacket",
+      "shorts, a hat and sneakers"
      ],
      "respuesta": "jeans, a shirt and a jacket"
     }
@@ -264,9 +264,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What does Ana wear to work?",
      "opciones": [
-      "pants, a shirt and shoes",
-      "shorts and sneakers",
-      "a dress and a skirt"
+      "shorts, sneakers and a hat",
+      "a dress, a skirt and boots",
+      "pants, a shirt and shoes"
      ],
      "respuesta": "pants, a shirt and shoes"
     },
@@ -288,8 +288,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "What does Ana wear on Friday?",
      "opciones": [
-      "a coat and boots",
       "jeans and a t-shirt",
+      "a coat and boots",
       "her pajamas"
      ],
      "respuesta": "jeans and a t-shirt"
@@ -316,9 +316,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "Why is Ana late for work?",
      "opciones": [
-      "she buys a hat",
-      "she wears her pajamas",
-      "she tries on all her clothes"
+      "she wears her pajamas in bed",
+      "she tries on all her clothes",
+      "she buys a hat in the morning"
      ],
      "respuesta": "she tries on all her clothes"
     }
@@ -332,9 +332,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What does Marie wear in winter?",
      "opciones": [
-      "a coat, boots and gloves",
       "a dress, a skirt and a belt",
-      "shorts, sneakers and a hat"
+      "shorts, sneakers and a hat",
+      "a coat, boots and gloves"
      ],
      "respuesta": "a coat, boots and gloves"
     },
@@ -355,8 +355,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "What does she wear in summer?",
      "opciones": [
-      "a coat, gloves and a scarf",
       "a t-shirt, shorts and sneakers",
+      "a coat, gloves and a scarf",
       "a skirt, a blouse and boots"
      ],
      "respuesta": "a t-shirt, shorts and sneakers"
@@ -384,8 +384,8 @@
      "enunciado": "What does she take off when she comes back?",
      "opciones": [
       "the boots",
-      "the hat",
-      "the coat"
+      "the coat",
+      "the hat"
      ],
      "respuesta": "the coat"
     }

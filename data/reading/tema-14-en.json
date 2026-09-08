@@ -33,8 +33,8 @@
      "enunciado": "What is on the table?",
      "opciones": [
       "plates, forks, knives, a spoon and napkins",
-      "the menu card and the check",
-      "only two glasses"
+      "the menu card, the check and all the money",
+      "only two glasses and the menu card"
      ],
      "respuesta": "plates, forks, knives, a spoon and napkins"
     },
@@ -141,8 +141,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "Why do the friends go to the restaurant?",
      "opciones": [
-      "the food is cheap",
-      "they are very hungry",
+      "the food is cheap and tasty",
+      "they are very hungry today",
       "it is the birthday of Laura"
      ],
      "respuesta": "it is the birthday of Laura"
@@ -165,8 +165,8 @@
      "enunciado": "What does Maria drink?",
      "opciones": [
       "a glass of wine",
-      "a beer",
-      "a coffee"
+      "a big juice",
+      "a hot coffee"
      ],
      "respuesta": "a glass of wine"
     },
@@ -214,8 +214,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "What does Lee order to drink first?",
      "opciones": [
-      "a beer",
-      "a hot coffee",
+      "a hot coffee with milk",
+      "a tea with sugar",
       "a cold soft drink"
      ],
      "respuesta": "a cold soft drink"
@@ -230,8 +230,8 @@
      "enunciado": "Why does Lee not have an ice cream?",
      "opciones": [
       "there is not any ice cream today",
-      "it is very sweet",
-      "he is not hungry"
+      "it is very sweet for him today",
+      "he is not hungry after the salad"
      ],
      "respuesta": "there is not any ice cream today"
     },
@@ -326,9 +326,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What does Marie put on the table?",
      "opciones": [
-      "the napkins",
+      "the napkins and the cup",
       "the money and a tip",
-      "the menu card"
+      "the menu card and the check"
      ],
      "respuesta": "the money and a tip"
     }

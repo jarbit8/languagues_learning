@@ -34,8 +34,8 @@
      "enunciado": "When is there a storm?",
      "opciones": [
       "in the summer months",
-      "in winter",
-      "every morning"
+      "in the winter months",
+      "on the cold mornings"
      ],
      "respuesta": "in the summer months"
     },
@@ -73,9 +73,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What is the weather like in winter in Canada?",
      "opciones": [
-      "hot and sunny",
+      "very hot, with sun and wind",
       "very cold, with snow and ice",
-      "cool and rainy"
+      "cool and rainy, with flowers"
      ],
      "respuesta": "very cold, with snow and ice"
     },
@@ -119,8 +119,8 @@
      "enunciado": "Why does Ana prefer summer?",
      "opciones": [
       "she is from Peru and does not want the cold",
-      "the days are short",
-      "she goes to the forest"
+      "the days are short and she likes the snow",
+      "she goes to the forest with her sister"
      ],
      "respuesta": "she is from Peru and does not want the cold"
     },
@@ -149,9 +149,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What is the sea like?",
      "opciones": [
-      "very hot",
+      "cold, but not warm",
       "cool, but not cold",
-      "very cold"
+      "warm, but not hot"
      ],
      "respuesta": "cool, but not cold"
     },
@@ -164,8 +164,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "Why does Laura walk in the forest?",
      "opciones": [
-      "there is a storm",
-      "she is hungry",
+      "the sea is very cold for her",
+      "she is hungry and wants a café",
       "the beach is very hot for her"
      ],
      "respuesta": "the beach is very hot for her"
@@ -205,9 +205,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What is the weather like on Tuesday morning?",
      "opciones": [
-      "sunny and warm",
+      "with sun and a blue sky",
       "with fog and a gray sky",
-      "hot and windy"
+      "with snow and a lot of ice"
      ],
      "respuesta": "with fog and a gray sky"
     },
@@ -229,8 +229,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "Why does Ana take the subway?",
      "opciones": [
-      "the subway is cheap",
-      "the bike is far",
+      "the subway is cheap in the morning",
+      "her bike is in the park with Laura",
       "there is water and ice on the road"
      ],
      "respuesta": "there is water and ice on the road"
@@ -274,9 +274,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "What is the weather like in summer?",
      "opciones": [
-      "cold and rainy",
+      "cold, with a lot of rain",
       "warm, with a blue sky",
-      "windy, with fog"
+      "windy, with fog and snow"
      ],
      "respuesta": "warm, with a blue sky"
     },
@@ -328,8 +328,8 @@
      "enunciado": "Where is there snow and ice?",
      "opciones": [
       "on the mountains",
-      "on the beach",
-      "in the park"
+      "on the beach in fall",
+      "in the park in winter"
      ],
      "respuesta": "on the mountains"
     }

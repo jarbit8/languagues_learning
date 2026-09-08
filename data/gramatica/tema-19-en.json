@@ -59,11 +59,15 @@
    "tipo": "opcion_multiple",
    "enunciado": "'tengo fiebre' =",
    "opciones": [
-    "I got fever",
-    "I've got a fever",
-    "I have fever"
+    "I have fever",
+    "I have a fever",
+    "I got a fever"
    ],
-   "respuesta": "I've got a fever"
+   "respuesta": "I have a fever",
+   "aceptadas": [
+    "i've got a fever",
+    "i have got a fever"
+   ]
   },
   {
    "tipo": "opcion_multiple",
@@ -160,8 +164,8 @@
    "tipo": "opcion_multiple",
    "enunciado": "¿Cuál es la pregunta americana?",
    "opciones": [
-    "Do you have a cold?",
     "Have you got a cold?",
+    "Do you have a cold?",
     "You have a cold?"
    ],
    "respuesta": "Do you have a cold?"

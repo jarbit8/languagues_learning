@@ -72,9 +72,9 @@
    "tipo": "opcion_multiple",
    "enunciado": "'voy a estudiar' =",
    "opciones": [
-    "I'm going to study",
     "I'm go to study",
-    "I going to study"
+    "I going to study",
+    "I'm going to study"
    ],
    "respuesta": "I'm going to study"
   },
@@ -82,8 +82,8 @@
    "tipo": "opcion_multiple",
    "enunciado": "___ are you going to move? (cuándo)",
    "opciones": [
-    "Which",
     "When",
+    "Which",
     "Who"
    ],
    "respuesta": "When"
@@ -93,8 +93,8 @@
    "enunciado": "They ___ going to come.",
    "opciones": [
     "am",
-    "is",
-    "are"
+    "are",
+    "is"
    ],
    "respuesta": "are"
   },
@@ -179,9 +179,9 @@
    "tipo": "opcion_multiple",
    "enunciado": "Ya compré los boletos. ¿Cuál es correcta?",
    "opciones": [
-    "I'm going to travel to Canada.",
-    "I travel to Canada.",
-    "I will travel to Canada."
+    "I will travel to Canada tomorrow.",
+    "I travel to Canada next year.",
+    "I'm going to travel to Canada."
    ],
    "respuesta": "I'm going to travel to Canada.",
    "pista": "plan ya decidido → going to"
@@ -218,8 +218,8 @@
    "tipo": "opcion_multiple",
    "enunciado": "___ you help me?",
    "opciones": [
-    "Do",
     "Will",
+    "Do",
     "Are"
    ],
    "respuesta": "Will"

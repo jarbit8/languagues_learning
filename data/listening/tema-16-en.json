@@ -321,8 +321,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Dónde vive Marie?",
      "opciones": [
-      "near the hospital",
-      "in the city center",
+      "in a street near the hospital",
+      "in the city center, near the museum",
       "in a street near the park"
      ],
      "respuesta": "in a street near the park"

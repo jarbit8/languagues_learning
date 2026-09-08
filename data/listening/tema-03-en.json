@@ -42,9 +42,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿De dónde es la persona B?",
      "opciones": [
+      "Peru",
       "France",
-      "Canada",
-      "Peru"
+      "Canada"
      ],
      "respuesta": "Peru"
     },
@@ -62,8 +62,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿De dónde es la persona A?",
      "opciones": [
-      "Canada",
       "France",
+      "Canada",
       "Peru"
      ],
      "respuesta": "Canada"
@@ -117,8 +117,8 @@
      "enunciado": "¿De dónde es B?",
      "opciones": [
       "Canada",
-      "Spain",
-      "England"
+      "England",
+      "Spain"
      ],
      "respuesta": "Spain"
     },
@@ -136,9 +136,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué idiomas habla A?",
      "opciones": [
+      "English and French",
       "Spanish and English",
-      "Spanish and French",
-      "English and French"
+      "Spanish and French"
      ],
      "respuesta": "English and French"
     },
@@ -190,8 +190,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿De dónde viene Marc?",
      "opciones": [
-      "France",
       "Spain",
+      "France",
       "Canada"
      ],
      "respuesta": "France"
@@ -255,8 +255,8 @@
      "enunciado": "¿En qué continente está Perú?",
      "opciones": [
       "Europe",
-      "America",
-      "Canada"
+      "Canada",
+      "America"
      ],
      "respuesta": "America"
     },
@@ -308,9 +308,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿De dónde viene la persona A?",
      "opciones": [
+      "England",
       "Spain",
-      "Canada",
-      "England"
+      "Canada"
      ],
      "respuesta": "England"
     },

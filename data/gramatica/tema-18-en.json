@@ -59,9 +59,9 @@
    "tipo": "opcion_multiple",
    "enunciado": "'¿qué tiempo hace?' =",
    "opciones": [
+    "what's the weather like",
     "how is the time",
-    "how is the weather like it",
-    "what's the weather like"
+    "how is the weather like it"
    ],
    "respuesta": "what's the weather like"
   },
@@ -69,8 +69,8 @@
    "tipo": "opcion_multiple",
    "enunciado": "'está ventoso' =",
    "opciones": [
-    "it's windy",
     "it's wind",
+    "it's windy",
     "there is windy"
    ],
    "respuesta": "it's windy"
@@ -80,8 +80,8 @@
    "enunciado": "'está lloviendo' =",
    "opciones": [
     "it's rain",
-    "it's raining",
-    "it rain"
+    "it rain",
+    "it's raining"
    ],
    "respuesta": "it's raining"
   },
@@ -159,9 +159,9 @@
    "tipo": "opcion_multiple",
    "enunciado": "This city is ___ beautiful than my city.",
    "opciones": [
+    "more",
     "most",
-    "mor",
-    "more"
+    "mor"
    ],
    "respuesta": "more"
   },

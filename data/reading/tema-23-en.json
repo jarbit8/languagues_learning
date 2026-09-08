@@ -17,9 +17,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "Why did Ana pack sweaters and a coat?",
      "opciones": [
-      "because her suitcase was big",
+      "because her suitcase was very big",
       "because in Canada it was very cold",
-      "because she had a visa"
+      "because she had a visa and a passport"
      ],
      "respuesta": "because in Canada it was very cold"
     },
@@ -101,8 +101,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "What was the problem at customs?",
      "opciones": [
-      "his visa was not good",
-      "his seat was not free",
+      "his visa was not good today",
+      "his seat was not free at nine",
       "a big souvenir in his bag"
      ],
      "respuesta": "a big souvenir in his bag"
@@ -200,8 +200,8 @@
      "enunciado": "What did Ana do one day?",
      "opciones": [
       "she took a train to another city",
-      "she flew to Peru",
-      "she booked another hotel"
+      "she booked another hotel in Toronto",
+      "she flew to Peru with her sister"
      ],
      "respuesta": "she took a train to another city"
     }
@@ -239,8 +239,8 @@
      "tipo": "opcion_multiple",
      "enunciado": "What did Laura do at the gate?",
      "opciones": [
-      "she called her friend",
-      "she packed her suitcase",
+      "she called her friend from the café",
+      "she packed her suitcase at the gate",
       "she read a book and listened to music"
      ],
      "respuesta": "she read a book and listened to music"
