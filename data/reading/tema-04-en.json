@@ -9,11 +9,11 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cuántos hermanos y hermanas tiene Ana?",
      "opciones": [
-      "dos hermanos y una hermana",
-      "una hermana y dos primos",
-      "un hermano y dos hermanas"
+      "two brothers and one sister",
+      "one sister and two cousins",
+      "one brother and two sisters"
      ],
-     "respuesta": "un hermano y dos hermanas"
+     "respuesta": "one brother and two sisters"
     },
     {
      "tipo": "vf",
@@ -228,11 +228,11 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cuántos hermanos tiene Marie?",
      "opciones": [
-      "dos hermanos varones",
-      "uno y una hermana",
-      "ninguno, es hija única"
+      "two brothers and a cousin",
+      "one brother and one sister",
+      "one sister and no brother"
      ],
-     "respuesta": "uno y una hermana"
+     "respuesta": "one brother and one sister"
     },
     {
      "tipo": "vf",

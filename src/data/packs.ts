@@ -76,6 +76,19 @@ export function getListening(tema: number): ListeningPack | undefined {
   return listeningPacks.find((p) => p.tema === tema)
 }
 
+// LA PIEZA RESERVADA AL EXAMEN es la última de la lista. Cada tema trae una de más —5
+// diálogos y 5 lecturas para 4 de práctica, 3 consignas para 2— justamente para que ningún
+// examen pregunte por el material que se acaba de practicar. Si un tema todavía no la tiene,
+// se cae en la primera y no se rompe nada.
+//
+// Vive aquí y no dentro de un examen porque la usan los TRES: el de tema, el de bloque y el
+// final. Los dos últimos no la usaban y se llevaban el pack entero: cuando las lecturas eran
+// una por tema eso daba un texto, pero al pasar a cinco el examen de bloque se fue a 15
+// textos y 120 preguntas sin que nadie tocara una línea de estos archivos.
+export function piezaDeExamen<T>(items: T[], conPractica: number): T {
+  return items.length > conPractica ? items[items.length - 1] : items[0]
+}
+
 // Aplana los diálogos de un pack añadiéndoles su tema, para pantallas que listan varios juntos.
 export function dialogosDe(pack: ListeningPack): DialogoConTema[] {
   return pack.dialogos.map((d) => ({ ...d, tema: pack.tema }))

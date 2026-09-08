@@ -1,5 +1,5 @@
 import type { Pregunta, ListeningPack, ReadingPack, DialogoConTema, TextoReading } from '../types'
-import { vocabPacks, getListening, getReading, getGramatica, dialogosDe } from '../data/packs'
+import { vocabPacks, getListening, getReading, getGramatica, dialogosDe, piezaDeExamen } from '../data/packs'
 import { baraja, preguntaSignificadoEscrito, preguntaDeListening, preguntaDeEjercicio } from './preguntas'
 
 // 100 palabras aleatorias de todo el nivel A1 (skill exam-engine: examen final).
@@ -25,14 +25,17 @@ export interface SeccionListening {
   preguntas: Pregunta[]
 }
 
-// Versión extendida: 6 temas repartidos por el nivel entero (2026-08-29, "el final que sea
-// un súper examen que componga todo"). Se quedó en 6 y no en los 8 que caben porque cada
-// tema son 2 diálogos: con 8 el examen pedía escuchar 16 seguidos y no lo termina nadie.
+// 6 temas repartidos por el nivel entero (2026-08-29, "el final que sea un súper examen que
+// componga todo"), UN diálogo de cada uno: el reservado al examen.
+//
+// El comentario viejo decía "cada tema son 2 diálogos" y ya no era verdad: son 5, así que
+// llevarse los packs enteros pedía escuchar 30 diálogos seguidos y responder 150 preguntas.
+// Seis diálogos de seis temas distintos es lo que siempre quiso decir "seis temas".
 export function construirListeningFinal(): SeccionListening {
   const packs = [2, 6, 10, 14, 18, 22]
     .map((tema) => getListening(tema))
     .filter((d): d is ListeningPack => !!d)
-  const dialogos = packs.flatMap(dialogosDe)
+  const dialogos = packs.map((p) => piezaDeExamen(dialogosDe(p), 4))
   const preguntas = baraja(dialogos.flatMap((d) => d.preguntas.map(preguntaDeListening)))
   return { dialogos, preguntas }
 }
@@ -42,12 +45,13 @@ export interface SeccionReading {
   preguntas: Pregunta[]
 }
 
-// Versión extendida: 6 lecturas repartidas por todo el nivel.
+// 6 lecturas repartidas por todo el nivel: la de examen de cada uno de esos 6 temas. Con el
+// pack entero eran 30 textos y 235 preguntas, dos horas y media solo de leer.
 export function construirReadingFinal(): SeccionReading {
   const packs = [3, 7, 11, 15, 19, 24]
     .map((tema) => getReading(tema))
     .filter((p): p is ReadingPack => !!p)
-  const textos: TextoReading[] = packs.flatMap((p) => p.textos)
+  const textos: TextoReading[] = packs.map((p) => piezaDeExamen(p.textos, 4))
   const preguntas = baraja(
     textos.flatMap((t) =>
       t.preguntas.map((p) =>

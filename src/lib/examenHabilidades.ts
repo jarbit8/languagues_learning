@@ -1,4 +1,4 @@
-import { getListening, getReading, getWriting, dialogosDe } from '../data/packs'
+import { getListening, getReading, getWriting, dialogosDe, piezaDeExamen } from '../data/packs'
 import { bloqueDeTema } from './curriculum'
 import { preguntaDeListening } from './preguntas'
 import { escenarioDe } from '../data/escenarios'
@@ -17,10 +17,6 @@ import type { ConsignaWriting, LineaDialogo, Pregunta, TextoReading } from '../t
 // Y además cambian las condiciones: escuchar va sin transcripción, leer va cronometrado y
 // hablar cierra con un veredicto de la IA en vez de una charla libre.
 
-// La pieza de examen es la última de la lista; si el tema aún no la tiene, la primera.
-const deExamen = <T>(items: T[], conPractica: number): T =>
-  items.length > conPractica ? items[items.length - 1] : items[0]
-
 // --- Escuchar: los diálogos del tema seguidos, como un audio largo, y luego TODAS sus
 // preguntas. En Practicar se oyen de uno en uno, con transcripción y repeticiones.
 export interface ExamenListeningTema {
@@ -34,7 +30,7 @@ export function listeningDeTema(tema: number): ExamenListeningTema | undefined {
   if (!pack) return undefined
   const dialogos = dialogosDe(pack)
   // Uno solo: el del examen. Antes encadenaba los del tema, que son los que ya practicó.
-  const d = deExamen(dialogos, 4)
+  const d = piezaDeExamen(dialogos, 4)
   return {
     lineas: d.lineas,
     preguntas: d.preguntas.map(preguntaDeListening),
@@ -50,7 +46,7 @@ export interface ExamenReadingTema {
 
 export function readingDeTema(tema: number): ExamenReadingTema | undefined {
   const textos = getReading(tema)?.textos ?? []
-  const texto = textos.length ? deExamen(textos, 4) : undefined
+  const texto = textos.length ? piezaDeExamen(textos, 4) : undefined
   if (!texto) return undefined
   return {
     texto,
@@ -62,7 +58,7 @@ export function readingDeTema(tema: number): ExamenReadingTema | undefined {
 export function consignaDeTema(tema: number): ConsignaWriting | undefined {
   const pack = getWriting(bloqueDeTema(tema))
   const delTema = pack?.consignas.filter((c) => c.tema === tema) ?? []
-  return delTema.length ? deExamen(delTema, 2) : pack?.consignas[0]
+  return delTema.length ? piezaDeExamen(delTema, 2) : pack?.consignas[0]
 }
 
 // --- Hablar: el mismo roleplay del tema que en Practicar, pero pidiéndole a la IA que
