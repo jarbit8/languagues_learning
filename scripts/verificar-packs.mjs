@@ -250,6 +250,30 @@ for (const { archivo, pack } of packs('deletreo')) {
   }
 }
 
+// --- Gramatica repartida en dos dias ---
+// Los dias apuntan a los ejemplos y ejercicios POR INDICE, para no duplicarlos: los examenes
+// de tema, bloque y final cuentan `pack.ejercicios`. Eso los hace fragiles, asi que aqui se
+// comprueba que entre los dos dias cubran todo exactamente una vez: si alguien reordena o
+// añade un ejercicio y no toca el reparto, se queda fuera de la leccion sin que nadie lo vea.
+for (const { archivo, pack } of packs('gramatica', (f) => f.endsWith('-en.json'))) {
+  if (!pack.dias) continue
+  if (pack.dias.length !== 2) mal(archivo, 'dias', `son ${pack.dias.length} dias y un tema son 2`)
+  for (const [campo, total] of [['ejemplos', pack.ejemplos.length], ['ejercicios', pack.ejercicios.length]]) {
+    const usados = pack.dias.flatMap((d) => d[campo] ?? [])
+    const fuera = usados.filter((i) => !Number.isInteger(i) || i < 0 || i >= total)
+    const repes = usados.filter((i, n) => usados.indexOf(i) !== n)
+    const faltan = [...Array(total).keys()].filter((i) => !usados.includes(i))
+    if (fuera.length) mal(archivo, `dias · ${campo}`, `índices fuera de rango: ${fuera.join(', ')}`)
+    if (repes.length) mal(archivo, `dias · ${campo}`, `índices repetidos: ${[...new Set(repes)].join(', ')}`)
+    if (faltan.length) mal(archivo, `dias · ${campo}`, `sin repartir: ${faltan.join(', ')}`)
+  }
+  pack.dias.forEach((d, i) => {
+    if (!String(d.titulo ?? '').trim()) mal(archivo, `día ${i + 1}`, 'sin título')
+    if (!String(d.regla ?? '').trim()) mal(archivo, `día ${i + 1}`, 'sin regla')
+    if (!d.ejercicios?.length) mal(archivo, `día ${i + 1}`, 'sin ejercicios')
+  })
+}
+
 // --- Abreviaciones ---
 // Fuera del verificador de vocabulario a proposito, como las expresiones: enseña 'gonna',
 // 'y'all' y 'brb', que no son ni pretenden ser lexico del temario. Lo que si se vigila es que

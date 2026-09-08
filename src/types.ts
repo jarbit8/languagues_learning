@@ -49,6 +49,20 @@ export interface Ejercicio {
   pista?: string
 }
 
+// Un tema son DOS días de estudio y la gramática se veía entera el primero (2026-09-07, él:
+// "la gramática voy a verla en 2 días también"). Cada día se queda con una mitad de la regla
+// y con parte de los ejemplos y ejercicios, que se señalan por ÍNDICE en los arreglos del
+// pack: duplicarlos descuadraría el examen de tema, el de bloque y el final, que cuentan
+// `pack.ejercicios`. `pronunciacion` y `trampa` son opcionales: sin ellas se hereda la del pack.
+export interface DiaGramatica {
+  titulo: string
+  regla: string
+  pronunciacion?: string
+  trampa?: string
+  ejemplos: number[]
+  ejercicios: number[]
+}
+
 export interface GramaticaPack {
   tema: number
   titulo: string
@@ -57,6 +71,8 @@ export interface GramaticaPack {
   trampa: string
   ejemplos: { frase: string; traduccion: string; comoSeLee?: string }[]
   ejercicios: Ejercicio[]
+  /** Sin esto la lección se enseña entera de una vez, como hasta ahora. */
+  dias?: DiaGramatica[]
 }
 
 // --- Pregunta unificada (examen diario, de tema, ejercicios de gramática) ---

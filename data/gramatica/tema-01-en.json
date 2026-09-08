@@ -173,5 +173,46 @@
    ],
    "respuesta": "She is Mrs Lee"
   }
+ ],
+ "dias": [
+  {
+   "titulo": "El verbo to be y sus contracciones",
+   "regla": "El verbo 'to be' (ser/estar) cambia según el sujeto: I am, you are, he/she/it is, we are, you are, they are. Al hablar se usan contracciones: I'm, you're, he's, she's, it's, we're, they're.",
+   "trampa": "Nunca digas 'I are' ni 'She am': la forma cambia con el sujeto y no hay ni una excepción.",
+   "ejemplos": [
+    0,
+    2
+   ],
+   "ejercicios": [
+    0,
+    1,
+    2,
+    3,
+    6,
+    10,
+    11,
+    12,
+    13
+   ]
+  },
+  {
+   "titulo": "El sujeto no se omite y el orden de la oración",
+   "regla": "En inglés SIEMPRE se pone el pronombre sujeto (I, you, he...); no se omite como en español. Orden de la oración: sujeto + verbo + resto, siempre en ese orden (I am fine).",
+   "pronunciacion": "En 'How are you?' las tres palabras se pegan y sale JAU-a-ya. Dichas sueltas suenas a libro de texto.",
+   "ejemplos": [
+    1,
+    3
+   ],
+   "ejercicios": [
+    4,
+    5,
+    7,
+    8,
+    9,
+    14,
+    15,
+    16
+   ]
+  }
  ]
 }

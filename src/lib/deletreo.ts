@@ -10,9 +10,14 @@ import { baraja } from './preguntas'
 // No es un tema y no puede serlo: un tema son tarjetas que entran al SRS y a un examen que
 // pregunta "¿qué significa X?", y eso con una letra no existe. Va como bloque de Escuchar.
 
-// Una sesión sube por escalones: unas letras sueltas para calentar el oído, el grueso en
-// palabras y un par dentro de una frase, que es como llega de verdad.
-const REPARTO: Record<1 | 2 | 3, number> = { 1: 3, 2: 4, 3: 2 }
+// Un tema son DOS días y el dictado salía igual los dos (2026-09-07, él: "que sean por días
+// también"). Ahora la jornada marca la dificultad, como en el resto del curso: el día 1 calienta
+// el oído con letras sueltas y palabras, y el día 2 casi no gasta letras y mete las frases, que
+// es donde de verdad hay que cazar el deletreo dentro del habla.
+const REPARTO: Record<1 | 2, Record<1 | 2 | 3, number>> = {
+  1: { 1: 4, 2: 5, 3: 0 },
+  2: { 1: 2, 2: 4, 3: 3 }
+}
 const POR_SESION = 9
 
 export function itemsDisponibles(tema: number): ItemDeletreo[] {
@@ -37,11 +42,12 @@ export function preguntaDeletreo(item: ItemDeletreo): Pregunta {
   }
 }
 
-export function sesionDeletreo(tema: number): Pregunta[] {
+export function sesionDeletreo(tema: number, dia: 1 | 2 = 1): Pregunta[] {
   const pool = itemsDisponibles(tema)
+  const reparto = REPARTO[dia]
   const elegidos: ItemDeletreo[] = []
   for (const escalon of [1, 2, 3] as const) {
-    elegidos.push(...baraja(pool.filter((i) => i.escalon === escalon)).slice(0, REPARTO[escalon]))
+    elegidos.push(...baraja(pool.filter((i) => i.escalon === escalon)).slice(0, reparto[escalon]))
   }
   // Si un escalón se queda corto (los de frase llegan más tarde), se rellena con lo que haya
   // en vez de servir una sesión de cuatro preguntas.

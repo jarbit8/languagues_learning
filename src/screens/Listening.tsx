@@ -236,8 +236,13 @@ export default function Listening() {
             Es la primera parte del listening de IELTS y lo que te tocará al dar tu apellido por
             teléfono. Salen solo palabras cuyo vocabulario ya viste.
           </p>
-          <button onClick={() => setDeletreo(sesionDeletreo(temaSel))} className="btn-primary">
-            Empezar dictado
+          <p className="text-xs font-semibold text-slate-500 dark:text-slate-400">
+            {dia === 1
+              ? 'Día 1: letras sueltas y palabras.'
+              : 'Día 2: casi sin letras sueltas y con las frases, que es lo difícil.'}
+          </p>
+          <button onClick={() => setDeletreo(sesionDeletreo(temaSel, dia))} className="btn-primary">
+            Empezar dictado · día {dia}
           </button>
         </div>
       )}
