@@ -212,6 +212,21 @@
      "tipo": "vf",
      "enunciado": "A necesita descargar un archivo.",
      "respuesta": "verdadero"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué hay en la pantalla?",
+     "opciones": [
+      "a password",
+      "a message",
+      "a big file"
+     ],
+     "respuesta": "a message"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "A apagó la computadora dos veces.",
+     "respuesta": "verdadero"
     }
    ]
   },
@@ -275,6 +290,21 @@
      "tipo": "vf",
      "enunciado": "El teléfono de A estaba encendido.",
      "respuesta": "falso"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué envió B además del correo?",
+     "opciones": [
+      "a big file",
+      "a message",
+      "two photos"
+     ],
+     "respuesta": "two photos"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "A cargó el teléfono toda la noche.",
+     "respuesta": "verdadero"
     }
    ]
   },
@@ -338,6 +368,21 @@
      "tipo": "vf",
      "enunciado": "A estaba en línea.",
      "respuesta": "falso"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿De qué tomó fotos Marie?",
+     "opciones": [
+      "of the park and the museum",
+      "of the café and the street",
+      "of the city and the river"
+     ],
+     "respuesta": "of the park and the museum"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Marie guardó todo en un archivo.",
+     "respuesta": "verdadero"
     }
    ]
   }

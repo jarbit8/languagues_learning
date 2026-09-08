@@ -99,11 +99,12 @@ for (const { archivo, pack } of packs('listening')) {
       if (q.tipo === 'anota_la_hora' && !/^\d{1,2}:\d{2}$/.test(q.respuesta))
         mal(archivo, donde, `hora mal formada: "${q.respuesta}"`)
     })
-    // 3 a 5 preguntas. Desde el 2026-08-30 el usuario hace DOS diálogos por día y el módulo
-    // de escuchar tiene un presupuesto de 5 minutos: con 5 preguntas cada uno no cabe, así que
-    // los diálogos nuevos llevan 3. Los viejos siguen con 5 y también valen.
+    // CINCO preguntas, todos. Antes se permitían de 3 a 5 y el resultado fue que los dos
+    // diálogos del día 1 llevaban 5 y los del día 2, escritos después, llevaban 3: la misma
+    // sesión valía 10 preguntas un día y 6 el otro. Un rango, aunque sea razonable, deja que
+    // la asimetría entre en el contenido sin que nadie la vea, así que aquí va un número fijo.
     const nq = d.preguntas?.length ?? 0
-    if (nq < 3 || nq > 5) mal(archivo, `diálogo ${i + 1}`, `${nq} preguntas (se esperan entre 3 y 5)`)
+    if (nq !== 5) mal(archivo, `diálogo ${i + 1}`, `${nq} preguntas (todos los diálogos llevan 5)`)
   })
 }
 
@@ -144,6 +145,12 @@ for (const { archivo, pack } of packs('reading')) {
     if (i === 0 && (t.preguntas?.length ?? 0) < 5)
       mal(archivo, 'texto 1', `${t.preguntas?.length ?? 0} preguntas (los exámenes usan este texto)`)
   })
+  // Los cinco textos de un tema van con las mismas preguntas. El número puede subir de un
+  // tema a otro (los primeros llevan 7 y desde el 7 llevan 8), pero dentro del tema no: si
+  // no, el día 1 y el día 2 no cuestan lo mismo. Es el mismo agujero que tenía escuchar.
+  const cuentas = new Set((pack.textos ?? []).map((t) => t.preguntas?.length ?? 0))
+  if (cuentas.size > 1)
+    mal(archivo, 'pack', `los textos no llevan las mismas preguntas: ${[...cuentas].join(', ')}`)
 }
 
 // --- Writing ---

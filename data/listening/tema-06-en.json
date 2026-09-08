@@ -215,6 +215,21 @@
      "tipo": "completar_dato",
      "enunciado": "¿Cuál es la profesión de la hermana?",
      "respuesta": "lawyer"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿En qué trabaja el marido?",
+     "opciones": [
+      "a company boss",
+      "an engineer",
+      "a police officer"
+     ],
+     "respuesta": "a police officer"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "La hermana es abogada.",
+     "respuesta": "verdadero"
     }
    ]
   },
@@ -274,6 +289,21 @@
       "secretary"
      ],
      "respuesta": "secretary"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿En qué trabaja Marc?",
+     "opciones": [
+      "cook",
+      "boss",
+      "nurse"
+     ],
+     "respuesta": "cook"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Mr Lee es el jefe de B.",
+     "respuesta": "verdadero"
     }
    ]
   },
@@ -333,6 +363,21 @@
      "tipo": "vf",
      "enunciado": "La hermana tiene trabajo.",
      "respuesta": "falso"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Dónde trabaja Marie?",
+     "opciones": [
+      "in a company",
+      "in an office",
+      "with her sister"
+     ],
+     "respuesta": "in an office"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "El salario de Marie es muy bueno.",
+     "respuesta": "verdadero"
     }
    ]
   }

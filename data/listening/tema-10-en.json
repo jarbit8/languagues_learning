@@ -217,6 +217,24 @@
      "aceptadas": [
       "under the window in the kitchen"
      ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Dónde está la mesa?",
+     "opciones": [
+      "next to the window and the wall",
+      "between the sofa and the door",
+      "under the lamp near the fridge"
+     ],
+     "respuesta": "between the sofa and the door"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Qué hay en la pared?",
+     "respuesta": "a mirror",
+     "aceptadas": [
+      "mirror"
+     ]
     }
    ]
   },
@@ -279,6 +297,24 @@
      "aceptadas": [
       "next to the window"
      ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cuántos baños hay?",
+     "opciones": [
+      "five",
+      "three",
+      "two"
+     ],
+     "respuesta": "two"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Dónde está el armario?",
+     "respuesta": "near the door",
+     "aceptadas": [
+      "the door"
+     ]
     }
    ]
   },
@@ -338,6 +374,21 @@
      "tipo": "vf",
      "enunciado": "El apartamento tiene jardín.",
      "respuesta": "falso"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué hay en la sala?",
+     "opciones": [
+      "a sofa and a table",
+      "a bed and a closet",
+      "a lamp and a mirror"
+     ],
+     "respuesta": "a sofa and a table"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Hay un balcón pequeño.",
+     "respuesta": "verdadero"
     }
    ]
   }

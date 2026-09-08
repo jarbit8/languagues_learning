@@ -226,6 +226,21 @@
       "eight",
       "at eight"
      ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué hace antes de ir a trabajar?",
+     "opciones": [
+      "does homework",
+      "makes the bed",
+      "takes a nap"
+     ],
+     "respuesta": "makes the bed"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Desayuna en casa.",
+     "respuesta": "verdadero"
     }
    ]
   },
@@ -285,6 +300,25 @@
      "tipo": "completar_dato",
      "enunciado": "¿Qué día sale?",
      "respuesta": "Saturday"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué hace por la noche?",
+     "opciones": [
+      "walks and rests",
+      "rests and sleeps",
+      "cooks and cleans"
+     ],
+     "respuesta": "cooks and cleans"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Qué hace después de descansar?",
+     "respuesta": "homework",
+     "aceptadas": [
+      "his homework",
+      "he does his homework"
+     ]
     }
    ]
   },
@@ -348,6 +382,21 @@
      "tipo": "vf",
      "enunciado": "Marie hace la cama todos los días.",
      "respuesta": "verdadero"
+    },
+    {
+     "tipo": "anota_la_hora",
+     "enunciado": "¿A qué hora se acuesta Marie?",
+     "respuesta": "11:00"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué hace justo después de la ducha?",
+     "opciones": [
+      "she gets dressed",
+      "she has breakfast",
+      "she makes the bed"
+     ],
+     "respuesta": "she gets dressed"
     }
    ]
   }

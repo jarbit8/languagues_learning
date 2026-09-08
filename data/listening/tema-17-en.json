@@ -222,6 +222,21 @@
       "traffic light",
       "at the corner"
      ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cuánto se tarda a pie?",
+     "opciones": [
+      "twenty minutes",
+      "five minutes",
+      "two minutes"
+     ],
+     "respuesta": "five minutes"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "El metro es más rápido que el bus.",
+     "respuesta": "verdadero"
     }
    ]
   },
@@ -285,6 +300,25 @@
      "tipo": "vf",
      "enunciado": "El taxi es más rápido que el tren.",
      "respuesta": "falso"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿A qué hora sale el tren?",
+     "opciones": [
+      "at twelve",
+      "at two",
+      "at ten"
+     ],
+     "respuesta": "at ten"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Cuánto dura el viaje en tren?",
+     "respuesta": "twenty minutes",
+     "aceptadas": [
+      "twenty",
+      "20 minutes"
+     ]
     }
    ]
   },
@@ -347,6 +381,21 @@
      "aceptadas": [
       "subway"
      ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Por qué no toma taxi Marie?",
+     "opciones": [
+      "it is expensive",
+      "it is very slow",
+      "it is very far"
+     ],
+     "respuesta": "it is expensive"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "La parada está cerca de su calle.",
+     "respuesta": "verdadero"
     }
    ]
   }

@@ -205,6 +205,24 @@
      "tipo": "completar_dato",
      "enunciado": "¿En qué país vive Marc ahora?",
      "respuesta": "Canada"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿De dónde es la persona A?",
+     "opciones": [
+      "France",
+      "Canada",
+      "Spain"
+     ],
+     "respuesta": "Spain"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Qué idiomas habla Marc?",
+     "respuesta": "French and English",
+     "aceptadas": [
+      "English and French"
+     ]
     }
    ]
   },
@@ -263,6 +281,21 @@
     {
      "tipo": "vf",
      "enunciado": "La persona B es extranjera.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿De qué ciudad viene B?",
+     "opciones": [
+      "Arequipa",
+      "England",
+      "Lima"
+     ],
+     "respuesta": "Arequipa"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Inglaterra está en Europa.",
      "respuesta": "verdadero"
     }
    ]
@@ -323,6 +356,21 @@
      "tipo": "completar_dato",
      "enunciado": "¿Cuál es la nacionalidad de B?",
      "respuesta": "Spanish"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿En qué país vive B?",
+     "opciones": [
+      "England",
+      "Canada",
+      "Spain"
+     ],
+     "respuesta": "Canada"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "A viene de la capital de España.",
+     "respuesta": "verdadero"
     }
    ]
   }

@@ -217,6 +217,25 @@
      "tipo": "vf",
      "enunciado": "B necesita una buena nota para su beca.",
      "respuesta": "verdadero"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Dónde le enseña el compañero?",
+     "opciones": [
+      "in the classroom",
+      "in the library",
+      "in the university"
+     ],
+     "respuesta": "in the library"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Cuánto dura el examen?",
+     "respuesta": "one hour",
+     "aceptadas": [
+      "an hour",
+      "in one hour"
+     ]
     }
    ]
   },
@@ -280,6 +299,21 @@
      "tipo": "vf",
      "enunciado": "A le enseña el miércoles.",
      "respuesta": "verdadero"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Por qué es difícil el inglés para B?",
+     "opciones": [
+      "he does not have a dictionary",
+      "he does not go to the classroom",
+      "he does not understand the classes"
+     ],
+     "respuesta": "he does not understand the classes"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Qué día le enseña A?",
+     "respuesta": "Wednesday"
     }
    ]
   },
@@ -343,6 +377,24 @@
      "tipo": "vf",
      "enunciado": "Marie tiene una beca.",
      "respuesta": "falso"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Dónde trabaja Marie el sábado?",
+     "opciones": [
+      "in a café",
+      "in a school",
+      "at home"
+     ],
+     "respuesta": "in a café"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Cuándo se gradúa?",
+     "respuesta": "in three years",
+     "aceptadas": [
+      "three years"
+     ]
     }
    ]
   }

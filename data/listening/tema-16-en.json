@@ -214,6 +214,21 @@
       "in the park"
      ],
      "respuesta": "next to the church"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Dónde se puede comer cerca del museo?",
+     "opciones": [
+      "in the library near it",
+      "in a café in the square",
+      "in the church on Sunday"
+     ],
+     "respuesta": "in a café in the square"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "El museo cierra a las seis.",
+     "respuesta": "verdadero"
     }
    ]
   },
@@ -276,6 +291,24 @@
      "aceptadas": [
       "city center",
       "near the stadium"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué prefiere A para la noche?",
+     "opciones": [
+      "the theater in the park",
+      "the zoo",
+      "the movie theater"
+     ],
+     "respuesta": "the movie theater"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Dónde está el zoológico?",
+     "respuesta": "in the park",
+     "aceptadas": [
+      "the park"
      ]
     }
    ]
@@ -340,6 +373,21 @@
      "tipo": "vf",
      "enunciado": "El banco está abierto el sábado.",
      "respuesta": "falso"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué está al lado de la biblioteca?",
+     "opciones": [
+      "the museum",
+      "the bank",
+      "the park"
+     ],
+     "respuesta": "the museum"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "La farmacia está abierta.",
+     "respuesta": "verdadero"
     }
    ]
   }

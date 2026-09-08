@@ -220,6 +220,11 @@
      "tipo": "vf",
      "enunciado": "El otoño es en septiembre, octubre y noviembre.",
      "respuesta": "verdadero"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿En qué mes es el cumpleaños de su hermano?",
+     "respuesta": "December"
     }
    ]
   },
@@ -271,6 +276,16 @@
      "tipo": "vf",
      "enunciado": "Las estaciones son iguales en Perú y en Canadá.",
      "respuesta": "falso"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cuántas semanas tiene un mes?",
+     "opciones": [
+      "seven",
+      "four",
+      "twelve"
+     ],
+     "respuesta": "four"
     }
    ]
   },

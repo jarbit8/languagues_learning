@@ -209,6 +209,21 @@
      "tipo": "completar_dato",
      "enunciado": "¿De qué color es el paraguas?",
      "respuesta": "yellow"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿De qué color es el cuaderno?",
+     "opciones": [
+      "blue",
+      "red",
+      "green"
+     ],
+     "respuesta": "red"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿De qué color es el lápiz?",
+     "respuesta": "black"
     }
    ]
   },
@@ -271,6 +286,21 @@
      "aceptadas": [
       "white, yellow"
      ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué más pide A además del cuaderno?",
+     "opciones": [
+      "a pencil",
+      "a wallet",
+      "scissors"
+     ],
+     "respuesta": "scissors"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "A elige el cuaderno marrón.",
+     "respuesta": "falso"
     }
    ]
   },
@@ -330,6 +360,21 @@
      "tipo": "vf",
      "enunciado": "Lleva un paraguas.",
      "respuesta": "verdadero"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué hay en la mochila de Marie?",
+     "opciones": [
+      "a computer and glasses",
+      "a phone and an umbrella",
+      "a wallet and some keys"
+     ],
+     "respuesta": "a computer and glasses"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿De qué color es el bolígrafo?",
+     "respuesta": "red"
     }
    ]
   }

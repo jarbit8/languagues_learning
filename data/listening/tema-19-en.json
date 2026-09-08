@@ -223,6 +223,25 @@
      "tipo": "vf",
      "enunciado": "A va a la farmacia.",
      "respuesta": "verdadero"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué tiene B?",
+     "opciones": [
+      "an allergy",
+      "a cold",
+      "a pain in the leg"
+     ],
+     "respuesta": "a cold"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Dónde compra A la medicina?",
+     "respuesta": "in the pharmacy",
+     "aceptadas": [
+      "the pharmacy",
+      "pharmacy"
+     ]
     }
    ]
   },
@@ -286,6 +305,25 @@
      "tipo": "vf",
      "enunciado": "B tiene una alergia.",
      "respuesta": "falso"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cuándo le duele el estómago?",
+     "opciones": [
+      "in the morning",
+      "after dinner",
+      "after lunch"
+     ],
+     "respuesta": "after lunch"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Cuándo debe tomar la medicina?",
+     "respuesta": "in the morning",
+     "aceptadas": [
+      "one in the morning",
+      "morning"
+     ]
     }
    ]
   },
@@ -349,6 +387,21 @@
      "tipo": "vf",
      "enunciado": "Marie debe ir a trabajar.",
      "respuesta": "falso"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué debe hacer Marie?",
+     "opciones": [
+      "drink much water",
+      "buy the medicine",
+      "eat more fruit"
+     ],
+     "respuesta": "drink much water"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "A Marie le duele el cuello.",
+     "respuesta": "verdadero"
     }
    ]
   }

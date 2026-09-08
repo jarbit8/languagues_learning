@@ -216,6 +216,21 @@
       "better job",
       "a job"
      ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué es difícil?",
+     "opciones": [
+      "the degree",
+      "the visa",
+      "the job"
+     ],
+     "respuesta": "the visa"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "B va a mudarse al extranjero después de terminar la carrera.",
+     "respuesta": "verdadero"
     }
    ]
   },
@@ -279,6 +294,21 @@
      "tipo": "vf",
      "enunciado": "Va a decidir en julio.",
      "respuesta": "verdadero"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué puede hacer según B?",
+     "opciones": [
+      "study in July",
+      "work at night",
+      "study at night"
+     ],
+     "respuesta": "study at night"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "A tiene miedo de reprobar un examen.",
+     "respuesta": "verdadero"
     }
    ]
   },
@@ -341,6 +371,21 @@
     {
      "tipo": "vf",
      "enunciado": "Sus padres están contentos con el plan.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cuándo termina la carrera Marie?",
+     "opciones": [
+      "in June",
+      "in six months",
+      "in July"
+     ],
+     "respuesta": "in June"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Marie va a cambiar su plan.",
      "respuesta": "falso"
     }
    ]

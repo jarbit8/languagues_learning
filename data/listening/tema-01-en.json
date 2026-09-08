@@ -222,6 +222,21 @@
      "aceptadas": [
       "later"
      ]
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "El diálogo pasa por la mañana.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué responde A cuando B da las gracias?",
+     "opciones": [
+      "You're welcome.",
+      "Good morning.",
+      "See you later."
+     ],
+     "respuesta": "You're welcome."
     }
    ]
   },
@@ -285,6 +300,21 @@
      "tipo": "vf",
      "enunciado": "Se despiden diciendo 'good night'.",
      "respuesta": "verdadero"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cómo se llama el hombre?",
+     "opciones": [
+      "Paul",
+      "Marc",
+      "Lee"
+     ],
+     "respuesta": "Marc"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Marc y Ana se despiden por la mañana.",
+     "respuesta": "falso"
     }
    ]
   },
@@ -344,6 +374,25 @@
      "tipo": "completar_dato",
      "enunciado": "¿Quién sí está?",
      "respuesta": "Mrs Lee"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cómo saluda A al principio?",
+     "opciones": [
+      "Good evening!",
+      "Good morning!",
+      "Good afternoon!"
+     ],
+     "respuesta": "Good afternoon!"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Qué le desea B a A al final?",
+     "respuesta": "have a nice day",
+     "aceptadas": [
+      "a nice day",
+      "nice day"
+     ]
     }
    ]
   }

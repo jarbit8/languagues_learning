@@ -222,6 +222,21 @@
       "water",
       "glass of water"
      ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cómo quiere el café?",
+     "opciones": [
+      "cold, with milk",
+      "hot, with sugar",
+      "hot, with fruit"
+     ],
+     "respuesta": "hot, with sugar"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Hace calor hoy.",
+     "respuesta": "falso"
     }
    ]
   },
@@ -284,6 +299,21 @@
      "aceptadas": [
       "tip"
      ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué está muy dulce?",
+     "opciones": [
+      "the hot coffee",
+      "the fish",
+      "the ice cream"
+     ],
+     "respuesta": "the ice cream"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "B trae otro café caliente.",
+     "respuesta": "verdadero"
     }
    ]
   },
@@ -346,6 +376,21 @@
     {
      "tipo": "vf",
      "enunciado": "Marie pide la cuenta.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué pide Marie de postre?",
+     "opciones": [
+      "an ice cream",
+      "an orange juice",
+      "some fruit"
+     ],
+     "respuesta": "an ice cream"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Marie tiene mucha sed.",
      "respuesta": "verdadero"
     }
    ]

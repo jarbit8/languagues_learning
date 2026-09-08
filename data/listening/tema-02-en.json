@@ -217,6 +217,21 @@
      "tipo": "completar_dato",
      "enunciado": "¿En qué mes es su cumpleaños?",
      "respuesta": "April"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cuál es el último número del teléfono?",
+     "opciones": [
+      "two",
+      "four",
+      "seven"
+     ],
+     "respuesta": "two"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "El cumpleaños de A es en abril.",
+     "respuesta": "verdadero"
     }
    ]
   },
@@ -279,6 +294,25 @@
      "tipo": "vf",
      "enunciado": "Marc tiene treinta años.",
      "respuesta": "falso"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cuántos años tiene Mrs Lee?",
+     "opciones": [
+      "sixty",
+      "fifty",
+      "thirty"
+     ],
+     "respuesta": "fifty"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Cuántos años tiene Marc?",
+     "respuesta": "thirty-one",
+     "aceptadas": [
+      "thirty one",
+      "31"
+     ]
     }
    ]
   },
@@ -341,6 +375,16 @@
      "tipo": "completar_dato",
      "enunciado": "¿En qué mes es su cumpleaños?",
      "respuesta": "August"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Cómo se llama la mujer?",
+     "respuesta": "Marie"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "El teléfono de Marie termina en cinco.",
+     "respuesta": "verdadero"
     }
    ]
   }

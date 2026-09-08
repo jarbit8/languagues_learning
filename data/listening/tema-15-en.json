@@ -222,6 +222,24 @@
       "three"
      ],
      "respuesta": "two"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cuánto costaba la camisa antes de la oferta?",
+     "opciones": [
+      "thirty soles",
+      "forty soles",
+      "fifty soles"
+     ],
+     "respuesta": "forty soles"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Qué le da B al final además del cambio?",
+     "respuesta": "the receipt",
+     "aceptadas": [
+      "receipt"
+     ]
     }
    ]
   },
@@ -285,6 +303,21 @@
       "the bags"
      ],
      "respuesta": "the apples"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cómo paga B?",
+     "opciones": [
+      "with a bill",
+      "with cash",
+      "with a card"
+     ],
+     "respuesta": "with a card"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "B quiere una bolsa.",
+     "respuesta": "verdadero"
     }
    ]
   },
@@ -347,6 +380,24 @@
      "aceptadas": [
       "card",
       "with a card"
+     ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cuánto cuesta el queso?",
+     "opciones": [
+      "ten soles",
+      "two soles",
+      "five soles"
+     ],
+     "respuesta": "ten soles"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Qué necesita comprar Marie?",
+     "respuesta": "bread, milk and vegetables",
+     "aceptadas": [
+      "bread milk and vegetables"
      ]
     }
    ]

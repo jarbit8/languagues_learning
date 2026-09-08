@@ -205,6 +205,24 @@
      "tipo": "vf",
      "enunciado": "El cumpleaños de A es en primavera.",
      "respuesta": "verdadero"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué día es pasado mañana?",
+     "opciones": [
+      "Thursday",
+      "Monday",
+      "Friday"
+     ],
+     "respuesta": "Friday"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿En qué estación es el cumpleaños de B?",
+     "respuesta": "fall",
+     "aceptadas": [
+      "in the fall"
+     ]
     }
    ]
   },
@@ -267,6 +285,21 @@
      "aceptadas": [
       "in Peru"
      ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Dónde está en invierno?",
+     "opciones": [
+      "here",
+      "in Peru",
+      "at home"
+     ],
+     "respuesta": "here"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Está con Laura todos los sábados.",
+     "respuesta": "falso"
     }
    ]
   },
@@ -326,6 +359,24 @@
      "tipo": "vf",
      "enunciado": "Marie trabaja los viernes.",
      "respuesta": "falso"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué día es pasado mañana?",
+     "opciones": [
+      "Saturday",
+      "Sunday",
+      "Monday"
+     ],
+     "respuesta": "Sunday"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿En qué estación es el cumpleaños de Marie?",
+     "respuesta": "fall",
+     "aceptadas": [
+      "in the fall"
+     ]
     }
    ]
   }

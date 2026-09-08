@@ -210,6 +210,16 @@
       "eight o'clock",
       "eight"
      ]
+    },
+    {
+     "tipo": "anota_la_hora",
+     "enunciado": "¿A qué hora termina el trabajo?",
+     "respuesta": "2:00"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Al mediodía tiene media hora.",
+     "respuesta": "verdadero"
     }
    ]
   },
@@ -272,6 +282,21 @@
      "tipo": "vf",
      "enunciado": "Es medianoche cuando hablan.",
      "respuesta": "verdadero"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué hora es cuando hablan?",
+     "opciones": [
+      "eleven",
+      "half past six",
+      "midnight"
+     ],
+     "respuesta": "midnight"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Nunca llega tarde.",
+     "respuesta": "falso"
     }
    ]
   },
@@ -332,6 +357,21 @@
     {
      "tipo": "vf",
      "enunciado": "Marie llega tarde a menudo.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué hora propone A primero?",
+     "opciones": [
+      "half past eight",
+      "twenty past three",
+      "eight o'clock"
+     ],
+     "respuesta": "half past eight"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Marie acepta las ocho y media.",
      "respuesta": "falso"
     }
    ]

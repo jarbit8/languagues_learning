@@ -221,6 +221,25 @@
      "tipo": "vf",
      "enunciado": "B tiene dos maletas.",
      "respuesta": "falso"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Dónde se queda B?",
+     "opciones": [
+      "in a house",
+      "in a hotel",
+      "with family"
+     ],
+     "respuesta": "in a hotel"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Qué documentos enseña B?",
+     "respuesta": "his passport and his visa",
+     "aceptadas": [
+      "passport and visa",
+      "a passport and a visa"
+     ]
     }
    ]
   },
@@ -284,6 +303,21 @@
      "tipo": "vf",
      "enunciado": "Su maleta está en el avión.",
      "respuesta": "verdadero"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cuál es su puerta?",
+     "opciones": [
+      "gate eleven",
+      "gate two",
+      "gate eight"
+     ],
+     "respuesta": "gate eight"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "El vuelo sale a las once.",
+     "respuesta": "falso"
     }
    ]
   },
@@ -346,6 +380,21 @@
     {
      "tipo": "vf",
      "enunciado": "Hubo un problema en la aduana.",
+     "respuesta": "falso"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cuánto tiempo se quedó Marie?",
+     "opciones": [
+      "three weeks",
+      "seven hours",
+      "two weeks"
+     ],
+     "respuesta": "three weeks"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Marie ya voló antes.",
      "respuesta": "falso"
     }
    ]

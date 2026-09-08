@@ -211,6 +211,24 @@
      "tipo": "completar_dato",
      "enunciado": "¿De qué nacionalidad es la esposa del hermano?",
      "respuesta": "Canadian"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cuántas hermanas tiene?",
+     "opciones": [
+      "three",
+      "two",
+      "one"
+     ],
+     "respuesta": "one"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Dónde viven sus padres?",
+     "respuesta": "in Peru",
+     "aceptadas": [
+      "Peru"
+     ]
     }
    ]
   },
@@ -273,6 +291,25 @@
      "tipo": "vf",
      "enunciado": "Los abuelos viven en Perú.",
      "respuesta": "verdadero"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cuántos primos tiene?",
+     "opciones": [
+      "four",
+      "five",
+      "two"
+     ],
+     "respuesta": "four"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Cuántos años tiene la abuela?",
+     "respuesta": "seventy-nine",
+     "aceptadas": [
+      "seventy nine",
+      "79"
+     ]
     }
    ]
   },
@@ -334,6 +371,21 @@
     {
      "tipo": "vf",
      "enunciado": "El abuelo tiene ochenta años.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cuántos hijos tiene el hermano?",
+     "opciones": [
+      "two sons",
+      "one son",
+      "no children"
+     ],
+     "respuesta": "one son"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "La abuela tiene setenta y cinco años.",
      "respuesta": "verdadero"
     }
    ]

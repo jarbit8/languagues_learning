@@ -221,6 +221,24 @@
      "tipo": "vf",
      "enunciado": "Mañana va a la playa.",
      "respuesta": "falso"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué tiempo hace mañana?",
+     "opciones": [
+      "sunny and warm",
+      "rainy and windy",
+      "cold with fog"
+     ],
+     "respuesta": "rainy and windy"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Dónde hay niebla?",
+     "respuesta": "near the river",
+     "aceptadas": [
+      "the river"
+     ]
     }
    ]
   },
@@ -284,6 +302,24 @@
      "tipo": "vf",
      "enunciado": "En la tarde hay tormenta.",
      "respuesta": "verdadero"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué hay cerca del lago?",
+     "opciones": [
+      "a river with flowers",
+      "a park with a lake",
+      "a forest with trees"
+     ],
+     "respuesta": "a forest with trees"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿A qué hora vuelven?",
+     "respuesta": "at four",
+     "aceptadas": [
+      "four"
+     ]
     }
    ]
   },
@@ -348,6 +384,21 @@
       "fall"
      ],
      "respuesta": "spring"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué tiempo hace en otoño?",
+     "opciones": [
+      "cool and windy",
+      "warm and sunny",
+      "cold with snow"
+     ],
+     "respuesta": "cool and windy"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "En invierno llueve mucho.",
+     "respuesta": "verdadero"
     }
    ]
   }

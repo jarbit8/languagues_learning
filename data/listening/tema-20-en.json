@@ -216,6 +216,21 @@
       "to swim",
       "swim"
      ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué deporte hace el sábado?",
+     "opciones": [
+      "soccer",
+      "tennis",
+      "swimming"
+     ],
+     "respuesta": "tennis"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "B canta bien.",
+     "respuesta": "falso"
     }
    ]
   },
@@ -279,6 +294,21 @@
      "tipo": "vf",
      "enunciado": "B juega básquet.",
      "respuesta": "falso"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cuánto tiempo corre?",
+     "opciones": [
+      "twenty minutes",
+      "forty minutes",
+      "thirty minutes"
+     ],
+     "respuesta": "thirty minutes"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "En el gimnasio hay música todo el día.",
+     "respuesta": "verdadero"
     }
    ]
   },
@@ -344,6 +374,21 @@
       "i paint and i draw",
       "paint and draw"
      ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué días va al gimnasio?",
+     "opciones": [
+      "Tuesday and Thursday",
+      "Monday and Wednesday",
+      "Saturday and Sunday"
+     ],
+     "respuesta": "Tuesday and Thursday"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Qué deporte juega Marie?",
+     "respuesta": "tennis"
     }
    ]
   }

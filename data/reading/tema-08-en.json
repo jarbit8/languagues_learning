@@ -240,6 +240,11 @@
      "aceptadas": [
       "half past four"
      ]
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Cuántos segundos tiene un minuto?",
+     "respuesta": "sixty"
     }
    ]
   },
@@ -298,6 +303,16 @@
      "tipo": "vf",
      "enunciado": "A medianoche siempre está en la cama.",
      "respuesta": "verdadero"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Dónde está por la tarde?",
+     "opciones": [
+      "in bed",
+      "in the office",
+      "with friends"
+     ],
+     "respuesta": "in the office"
     }
    ]
   },

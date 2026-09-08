@@ -211,6 +211,21 @@
      "tipo": "completar_dato",
      "enunciado": "¿De qué color es su pelo?",
      "respuesta": "blond"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cómo es la amiga de carácter?",
+     "opciones": [
+      "serious and shy",
+      "calm and kind",
+      "funny and friendly"
+     ],
+     "respuesta": "funny and friendly"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "La amiga es trabajadora.",
+     "respuesta": "verdadero"
     }
    ]
   },
@@ -274,6 +289,24 @@
       "his uncle"
      ],
      "respuesta": "his father"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cómo es el tío de carácter?",
+     "opciones": [
+      "calm and kind",
+      "shy and serious",
+      "funny and brave"
+     ],
+     "respuesta": "calm and kind"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Cómo es el padre?",
+     "respuesta": "brave",
+     "aceptadas": [
+      "very brave"
+     ]
     }
    ]
   },
@@ -336,6 +369,24 @@
      "tipo": "vf",
      "enunciado": "El hermano es calvo.",
      "respuesta": "verdadero"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cómo es el hermano de Marie?",
+     "opciones": [
+      "short, thin and shy",
+      "tall, bald and calm",
+      "old, fat and serious"
+     ],
+     "respuesta": "tall, bald and calm"
+    },
+    {
+     "tipo": "completar_dato",
+     "enunciado": "¿Cómo tiene los ojos Marie?",
+     "respuesta": "big",
+     "aceptadas": [
+      "big eyes"
+     ]
     }
    ]
   }

@@ -214,6 +214,21 @@
      "aceptadas": [
       "with rice"
      ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué lleva la ensalada?",
+     "opciones": [
+      "potatoes and carrots",
+      "tomatoes and onions",
+      "cheese and vegetables"
+     ],
+     "respuesta": "tomatoes and onions"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Hay postre.",
+     "respuesta": "verdadero"
     }
    ]
   },
@@ -275,6 +290,21 @@
     {
      "tipo": "vf",
      "enunciado": "B pide una manzana.",
+     "respuesta": "verdadero"
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué fruta pide B?",
+     "opciones": [
+      "an orange",
+      "a banana",
+      "an apple"
+     ],
+     "respuesta": "an apple"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Hay mantequilla.",
      "respuesta": "verdadero"
     }
    ]
@@ -339,6 +369,21 @@
       "sandwich",
       "she makes a sandwich"
      ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué come Marie en el almuerzo?",
+     "opciones": [
+      "chicken with rice",
+      "bread with butter",
+      "fish with tomatoes"
+     ],
+     "respuesta": "chicken with rice"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "Marie cocina en la noche.",
+     "respuesta": "falso"
     }
    ]
   }

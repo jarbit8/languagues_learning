@@ -210,6 +210,21 @@
      "aceptadas": [
       "boots gloves and a scarf"
      ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Por qué no se lleva el abrigo negro?",
+     "opciones": [
+      "it is not his size",
+      "it is expensive",
+      "it is not elegant"
+     ],
+     "respuesta": "it is expensive"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "A conoce su talla aquí.",
+     "respuesta": "falso"
     }
    ]
   },
@@ -273,6 +288,21 @@
       "negro",
       "black scarf"
      ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Cuándo compra las botas nuevas?",
+     "opciones": [
+      "on Sunday",
+      "in winter",
+      "on Saturday"
+     ],
+     "respuesta": "on Saturday"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "B se pone el abrigo al final.",
+     "respuesta": "falso"
     }
    ]
   },
@@ -335,6 +365,21 @@
      "aceptadas": [
       "t-shirt shorts and sneakers"
      ]
+    },
+    {
+     "tipo": "opcion_multiple",
+     "enunciado": "¿Qué no lleva nunca Marie?",
+     "opciones": [
+      "a skirt",
+      "a shirt",
+      "jeans"
+     ],
+     "respuesta": "a skirt"
+    },
+    {
+     "tipo": "vf",
+     "enunciado": "El abrigo de Marie es nuevo.",
+     "respuesta": "verdadero"
     }
    ]
   }
