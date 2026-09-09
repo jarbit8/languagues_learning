@@ -19,7 +19,7 @@
 {"id":"a1-t02-018","es":"veinte","texto":"twenty","ejemplo":"I am twenty years old.","pron":"TUEN-ti","rapido":"TUEN-i — se comen la t"},
 {"id":"a1-t02-019","es":"treinta","texto":"thirty","ejemplo":"She is thirty years old.","pron":"ZER-ti","rapido":"ZER-di"},
 {"id":"a1-t02-020","es":"cuarenta","texto":"forty","ejemplo":"She is forty years old.","pron":"FOR-ti","rapido":"FOR-di"},
-{"id":"a1-t02-021","es":"cincuenta","texto":"fifty","ejemplo":"Mr Lee is fifty years old.","pron":"FIF-ti"},
+{"id":"a1-t02-021","es":"cincuenta","texto":"fifty","ejemplo":"Mr. Lee is fifty years old.","pron":"FIF-ti"},
 {"id":"a1-t02-022","es":"cien","texto":"one hundred","ejemplo":"He is one hundred years old!","pron":"uan JAN-dred"},
 {"id":"a1-t02-023","es":"edad","texto":"age","ejemplo":"What is your age?","pron":"EICH"},
 {"id":"a1-t02-024","es":"¿cuántos años tienes?","texto":"how old are you?","literal":"¿qué tan viejo eres?","ejemplo":"How old are you?","pron":"jau OULD ar yu","rapido":"jau-OULD-ar-ya"},

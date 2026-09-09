@@ -190,7 +190,7 @@
    "consigna": "Examen: escribe la ficha de tres personas distintas con su nombre, edad, cumpleaños y teléfono.",
    "minPalabras": 25,
    "maxPalabras": 35,
-   "respuestaModelo": "Her name is Marie. She is twenty-six years old and her birthday is in August. Paul is twenty-one. Mr Lee is eighty-four and his phone number is nine, one, four, zero, seven, five.",
+   "respuestaModelo": "Her name is Marie. She is twenty-six years old and her birthday is in August. Paul is twenty-one. Mr. Lee is eighty-four and his phone number is nine, one, four, zero, seven, five.",
    "checklist": [
     "Escribí tres personas",
     "Dije las edades con 'years old'",

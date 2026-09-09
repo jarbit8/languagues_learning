@@ -240,7 +240,7 @@
    "lineas": [
     {
      "hablante": "A",
-     "texto": "How old is Mr Lee?"
+     "texto": "How old is Mr. Lee?"
     },
     {
      "hablante": "B",
@@ -248,7 +248,7 @@
     },
     {
      "hablante": "A",
-     "texto": "And Mrs Lee?"
+     "texto": "And Mrs. Lee?"
     },
     {
      "hablante": "B",
@@ -274,7 +274,7 @@
    "preguntas": [
     {
      "tipo": "opcion_multiple",
-     "enunciado": "¿Cuántos años tiene Mr Lee?",
+     "enunciado": "¿Cuántos años tiene Mr. Lee?",
      "opciones": [
       "fifty",
       "sixty",
@@ -297,7 +297,7 @@
     },
     {
      "tipo": "opcion_multiple",
-     "enunciado": "¿Cuántos años tiene Mrs Lee?",
+     "enunciado": "¿Cuántos años tiene Mrs. Lee?",
      "opciones": [
       "sixty",
       "fifty",

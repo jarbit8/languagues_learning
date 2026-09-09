@@ -123,6 +123,21 @@ export function detener() {
 // letra como una utterance suelta — encoladas salen con la pausa natural entre ellas, que
 // además es como se deletrea de verdad. `frase` envuelve al deletreo ("My name is {}."): sus
 // trozos van a velocidad de diálogo y solo las letras van despacio.
+// CÓMO SE LLAMA CADA LETRA EN INGLÉS, escrito como una palabra que el sintetizador sí sabe
+// decir (2026-09-09, él: "decía la z bien raro y ni se decía así"). Antes se le pasaba el
+// carácter suelto —«Z.»— y ahí cada motor hace lo que quiere: unos nombran la letra, otros
+// sueltan su SONIDO, y una voz española lee «zeta». Dándole la palabra («zee», «aitch»,
+// «double you») el resultado es el mismo en cualquier aparato.
+//
+// Ojo: esto es lo que se MANDA A LA VOZ, no lo que se le enseña al estudiante. La guía de
+// pronunciación del curso usa «z» para el sonido TH, así que ahí la Z se escribe «si
+// (zumbando)» y no «zi»; son dos alfabetos distintos y no hay que mezclarlos.
+const NOMBRE_LETRA: Record<string, string> = {
+  A: 'ay', B: 'bee', C: 'see', D: 'dee', E: 'ee', F: 'eff', G: 'gee', H: 'aitch', I: 'eye',
+  J: 'jay', K: 'kay', L: 'el', M: 'em', N: 'en', O: 'oh', P: 'pee', Q: 'cue', R: 'are',
+  S: 'ess', T: 'tee', U: 'you', V: 'vee', W: 'double you', X: 'ex', Y: 'why', Z: 'zee'
+}
+
 export function reproducirDeletreo(
   texto: string,
   opts: { lento?: boolean; frase?: string; onFin?: () => void } = {}
@@ -139,7 +154,10 @@ export function reproducirDeletreo(
   const cola = despues.replace(/^[\s.,;:!?]+/, '')
   const partes = [
     ...(conLetras(antes) ? [{ t: antes.trim(), r: rFrase }] : []),
-    ...[...texto].filter(conLetras).map((c) => ({ t: c.toUpperCase() + '.', r: rLetra })),
+    ...[...texto].filter(conLetras).map((c) => {
+      const L = c.toUpperCase()
+      return { t: (NOMBRE_LETRA[L] ?? L) + '.', r: rLetra }
+    }),
     ...(conLetras(cola) ? [{ t: cola.trim(), r: rFrase }] : [])
   ]
 

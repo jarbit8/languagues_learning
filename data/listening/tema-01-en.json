@@ -180,11 +180,11 @@
     },
     {
      "hablante": "B",
-     "texto": "I am fine, thanks. Excuse me, is Mr Lee here?"
+     "texto": "I am fine, thanks. Excuse me, is Mr. Lee here?"
     },
     {
      "hablante": "A",
-     "texto": "Sorry, no. Mr Lee is not here."
+     "texto": "Sorry, no. Mr. Lee is not here."
     },
     {
      "hablante": "B",
@@ -204,7 +204,7 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿A quién saluda la persona A?",
      "opciones": [
-      "Mrs Lee",
+      "Mrs. Lee",
       "Paul",
       "Miss Sofia"
      ],
@@ -212,7 +212,7 @@
     },
     {
      "tipo": "vf",
-     "enunciado": "Mr Lee está en la oficina.",
+     "enunciado": "Mr. Lee está en la oficina.",
      "respuesta": "falso"
     },
     {
@@ -339,11 +339,11 @@
     },
     {
      "hablante": "A",
-     "texto": "Fine, thanks. Is Mr Lee here?"
+     "texto": "Fine, thanks. Is Mr. Lee here?"
     },
     {
      "hablante": "B",
-     "texto": "Sorry, no. Mrs Lee is here."
+     "texto": "Sorry, no. Mrs. Lee is here."
     },
     {
      "hablante": "A",
@@ -367,13 +367,13 @@
     },
     {
      "tipo": "vf",
-     "enunciado": "Mr Lee está.",
+     "enunciado": "Mr. Lee está.",
      "respuesta": "falso"
     },
     {
      "tipo": "completar_dato",
      "enunciado": "¿Quién sí está?",
-     "respuesta": "Mrs Lee"
+     "respuesta": "Mrs. Lee"
     },
     {
      "tipo": "opcion_multiple",

@@ -3,7 +3,7 @@
  "textos": [
   {
    "titulo": "La ficha de Ana",
-   "texto": "Good morning! Excuse me, what is your name? My name is Ana. How old are you? I am twenty years old. Thank you. And your phone number? It is four, seven, two, nine, one, three, eight. Four, seven, two, nine, one, three, eight. Yes! And your birthday? It is in May. Very well. And Paul, how old is he? Paul is twenty-two. Laura is nineteen years old. Mr Lee is fifty and Mrs Lee is forty. Thank you very much! You're welcome. See you soon!",
+   "texto": "Good morning! Excuse me, what is your name? My name is Ana. How old are you? I am twenty years old. Thank you. And your phone number? It is four, seven, two, nine, one, three, eight. Four, seven, two, nine, one, three, eight. Yes! And your birthday? It is in May. Very well. And Paul, how old is he? Paul is twenty-two. Laura is nineteen years old. Mr. Lee is fifty and Mrs. Lee is forty. Thank you very much! You're welcome. See you soon!",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
@@ -53,7 +53,7 @@
     },
     {
      "tipo": "vf",
-     "enunciado": "Mr Lee y Mrs Lee tienen la misma edad.",
+     "enunciado": "Mr. Lee y Mrs. Lee tienen la misma edad.",
      "respuesta": "falso"
     }
    ],
@@ -104,7 +104,7 @@
     },
     {
      "hablante": "Ana",
-     "texto": "Paul is twenty-two. Laura is nineteen years old. Mr Lee is fifty and Mrs Lee is forty."
+     "texto": "Paul is twenty-two. Laura is nineteen years old. Mr. Lee is fifty and Mrs. Lee is forty."
     },
     {
      "hablante": "A",
@@ -118,7 +118,7 @@
   },
   {
    "titulo": "En la recepción",
-   "texto": "Good afternoon! Your name, please? My name is Laura. How old are you? I am nineteen years old. Thank you. And your birthday? It is in May too. And your phone number? It is zero, five, one, six, eight, ten. Zero, five, one, six, eight, ten. Yes! Excuse me, is Marc thirty? No, Marc is thirty-one. Sorry! No problem. Mr Lee is sixty and Mrs Lee is seventy. And one hundred? One hundred is not an age! Eleven, twelve, thirteen, fourteen, fifteen, sixteen, seventeen, eighteen, eighty, ninety: I have all the numbers here. Very well, Laura. Have a nice day! Thank you, and you!",
+   "texto": "Good afternoon! Your name, please? My name is Laura. How old are you? I am nineteen years old. Thank you. And your birthday? It is in May too. And your phone number? It is zero, five, one, six, eight, ten. Zero, five, one, six, eight, ten. Yes! Excuse me, is Marc thirty? No, Marc is thirty-one. Sorry! No problem. Mr. Lee is sixty and Mrs. Lee is seventy. And one hundred? One hundred is not an age! Eleven, twelve, thirteen, fourteen, fifteen, sixteen, seventeen, eighteen, eighty, ninety: I have all the numbers here. Very well, Laura. Have a nice day! Thank you, and you!",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
@@ -145,7 +145,7 @@
     },
     {
      "tipo": "opcion_multiple",
-     "enunciado": "¿Cuántos años tiene Mrs Lee?",
+     "enunciado": "¿Cuántos años tiene Mrs. Lee?",
      "opciones": [
       "seventy",
       "sixty",
@@ -228,7 +228,7 @@
     },
     {
      "hablante": "Laura",
-     "texto": "No problem. Mr Lee is sixty and Mrs Lee is seventy."
+     "texto": "No problem. Mr. Lee is sixty and Mrs. Lee is seventy."
     },
     {
      "hablante": "A",
@@ -354,11 +354,11 @@
   },
   {
    "titulo": "Los números del año",
-   "texto": "How old is Mr Lee? He is eighty-four years old. And Mrs Lee? She is seventy-nine. Miss Sofia is fifty-two and Marc is fifty. Laura is sixteen and Ana is thirteen. And you? I am twenty-two years old. And the number of Paul? Paul is one! No! Paul is twenty-one. Sorry! One, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve. Numbers, numbers, numbers! And one hundred? One hundred is a very good number. Yes! But it is not an age here. Thank you very much!",
+   "texto": "How old is Mr. Lee? He is eighty-four years old. And Mrs. Lee? She is seventy-nine. Miss Sofia is fifty-two and Marc is fifty. Laura is sixteen and Ana is thirteen. And you? I am twenty-two years old. And the number of Paul? Paul is one! No! Paul is twenty-one. Sorry! One, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve. Numbers, numbers, numbers! And one hundred? One hundred is a very good number. Yes! But it is not an age here. Thank you very much!",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
-     "enunciado": "¿Cuántos años tiene Mr Lee?",
+     "enunciado": "¿Cuántos años tiene Mr. Lee?",
      "opciones": [
       "eighty-four",
       "seventy-nine",
@@ -368,7 +368,7 @@
     },
     {
      "tipo": "completar_dato",
-     "enunciado": "¿Cuántos años tiene Mrs Lee?",
+     "enunciado": "¿Cuántos años tiene Mrs. Lee?",
      "respuesta": "seventy-nine",
      "aceptadas": [
       "79"
@@ -411,7 +411,7 @@
    "lineas": [
     {
      "hablante": "A",
-     "texto": "How old is Mr Lee?"
+     "texto": "How old is Mr. Lee?"
     },
     {
      "hablante": "B",
@@ -419,7 +419,7 @@
     },
     {
      "hablante": "A",
-     "texto": "And Mrs Lee?"
+     "texto": "And Mrs. Lee?"
     },
     {
      "hablante": "B",
@@ -469,7 +469,7 @@
   },
   {
    "titulo": "Examen · Tres fichas",
-   "texto": "Good morning! Your name, please? My name is Marie. How old are you? I am twenty-six years old. My birthday is in August. And my phone number is nine, one, four, zero, seven, five. Thank you. And Paul? Paul is twenty-one and his birthday is in March. Mr Lee is eighty-four and Mrs Lee is seventy-nine. Miss Sofia is fifty and Marc is thirty-one. Thank you very much! You're welcome. See you tomorrow!",
+   "texto": "Good morning! Your name, please? My name is Marie. How old are you? I am twenty-six years old. My birthday is in August. And my phone number is nine, one, four, zero, seven, five. Thank you. And Paul? Paul is twenty-one and his birthday is in March. Mr. Lee is eighty-four and Mrs. Lee is seventy-nine. Miss Sofia is fifty and Marc is thirty-one. Thank you very much! You're welcome. See you tomorrow!",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
@@ -493,7 +493,7 @@
     },
     {
      "tipo": "opcion_multiple",
-     "enunciado": "¿Cuántos años tiene Mrs Lee?",
+     "enunciado": "¿Cuántos años tiene Mrs. Lee?",
      "opciones": [
       "seventy-nine",
       "eighty-four",
@@ -543,7 +543,7 @@
     },
     {
      "hablante": "Marie",
-     "texto": "Paul is twenty-one and his birthday is in March. Mr Lee is eighty-four and Mrs Lee is seventy-nine. Miss Sofia is fifty and Marc is thirty-one."
+     "texto": "Paul is twenty-one and his birthday is in March. Mr. Lee is eighty-four and Mrs. Lee is seventy-nine. Miss Sofia is fifty and Marc is thirty-one."
     },
     {
      "hablante": "A",

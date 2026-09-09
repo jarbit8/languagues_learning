@@ -3,7 +3,7 @@
  "textos": [
   {
    "titulo": "El primer día",
-   "texto": "Good morning! My name is Ana. Nice to meet you. Hi, Ana! My name is Paul. Nice to meet you too. How are you, Paul? I am fine, thank you. And you? Very well, thanks! Excuse me, is Mr Lee here? Yes, Mr Lee is here. Good afternoon, Mr Lee! Good afternoon, Ana. Welcome! Thank you very much. You're welcome. And Mrs Lee? Sorry, no. Mrs Lee is not here. No problem! Miss Sofia is here. Good afternoon, Miss Sofia. See you later, Ana. Bye, Paul! Have a nice day! See you tomorrow, Ana. Take care!",
+   "texto": "Good morning! My name is Ana. Nice to meet you. Hi, Ana! My name is Paul. Nice to meet you too. How are you, Paul? I am fine, thank you. And you? Very well, thanks! Excuse me, is Mr. Lee here? Yes, Mr. Lee is here. Good afternoon, Mr. Lee! Good afternoon, Ana. Welcome! Thank you very much. You're welcome. And Mrs. Lee? Sorry, no. Mrs. Lee is not here. No problem! Miss Sofia is here. Good afternoon, Miss Sofia. See you later, Ana. Bye, Paul! Have a nice day! See you tomorrow, Ana. Take care!",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
@@ -22,18 +22,18 @@
     },
     {
      "tipo": "vfnd",
-     "enunciado": "Mr Lee es el profesor de Ana.",
+     "enunciado": "Mr. Lee es el profesor de Ana.",
      "respuesta": "no dice"
     },
     {
      "tipo": "opcion_multiple",
      "enunciado": "¿Quién no está?",
      "opciones": [
-      "Mr Lee",
-      "Mrs Lee",
+      "Mr. Lee",
+      "Mrs. Lee",
       "Miss Sofia"
      ],
-     "respuesta": "Mrs Lee"
+     "respuesta": "Mrs. Lee"
     },
     {
      "tipo": "completar_dato",
@@ -79,18 +79,18 @@
     },
     {
      "hablante": "Ana",
-     "texto": "Very well, thanks! Excuse me, is Mr Lee here?"
+     "texto": "Very well, thanks! Excuse me, is Mr. Lee here?"
     },
     {
      "hablante": "Paul",
-     "texto": "Yes, Mr Lee is here."
+     "texto": "Yes, Mr. Lee is here."
     },
     {
      "hablante": "Ana",
-     "texto": "Good afternoon, Mr Lee!"
+     "texto": "Good afternoon, Mr. Lee!"
     },
     {
-     "hablante": "Mr Lee",
+     "hablante": "Mr. Lee",
      "texto": "Good afternoon, Ana. Welcome!"
     },
     {
@@ -98,23 +98,23 @@
      "texto": "Thank you very much."
     },
     {
-     "hablante": "Mr Lee",
+     "hablante": "Mr. Lee",
      "texto": "You're welcome."
     },
     {
      "hablante": "Ana",
-     "texto": "And Mrs Lee?"
+     "texto": "And Mrs. Lee?"
     },
     {
-     "hablante": "Mr Lee",
-     "texto": "Sorry, no. Mrs Lee is not here."
+     "hablante": "Mr. Lee",
+     "texto": "Sorry, no. Mrs. Lee is not here."
     },
     {
      "hablante": "Ana",
      "texto": "No problem!"
     },
     {
-     "hablante": "Mr Lee",
+     "hablante": "Mr. Lee",
      "texto": "Miss Sofia is here."
     },
     {
@@ -175,7 +175,7 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Quién más está en la fiesta?",
      "opciones": [
-      "Mr Lee",
+      "Mr. Lee",
       "Ana",
       "Sofia"
      ],
@@ -270,21 +270,21 @@
   },
   {
    "titulo": "En la puerta de la oficina",
-   "texto": "Good morning! Excuse me, is Mr Lee here? Yes! My name is Sofia. Nice to meet you. Nice to meet you too, Sofia. How are you? I am very well, thank you. And you? Fine, thanks. Please, welcome. Thank you very much! You're welcome. Excuse me, and Mrs Lee? Sorry, no. No problem. Have a nice day! Thank you, and you. See you later! Goodbye!",
+   "texto": "Good morning! Excuse me, is Mr. Lee here? Yes! My name is Sofia. Nice to meet you. Nice to meet you too, Sofia. How are you? I am very well, thank you. And you? Fine, thanks. Please, welcome. Thank you very much! You're welcome. Excuse me, and Mrs. Lee? Sorry, no. No problem. Have a nice day! Thank you, and you. See you later! Goodbye!",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
      "enunciado": "¿A quién busca Sofia?",
      "opciones": [
-      "Mr Lee",
+      "Mr. Lee",
       "Paul",
       "Marc"
      ],
-     "respuesta": "Mr Lee"
+     "respuesta": "Mr. Lee"
     },
     {
      "tipo": "vf",
-     "enunciado": "Mrs Lee está en la oficina.",
+     "enunciado": "Mrs. Lee está en la oficina.",
      "respuesta": "falso"
     },
     {
@@ -304,7 +304,7 @@
     },
     {
      "tipo": "vfnd",
-     "enunciado": "Sofia conoce a Mrs Lee.",
+     "enunciado": "Sofia conoce a Mrs. Lee.",
      "respuesta": "no dice"
     },
     {
@@ -325,7 +325,7 @@
    "lineas": [
     {
      "hablante": "Sofia",
-     "texto": "Good morning! Excuse me, is Mr Lee here?"
+     "texto": "Good morning! Excuse me, is Mr. Lee here?"
     },
     {
      "hablante": "A",
@@ -357,7 +357,7 @@
     },
     {
      "hablante": "Sofia",
-     "texto": "Excuse me, and Mrs Lee?"
+     "texto": "Excuse me, and Mrs. Lee?"
     },
     {
      "hablante": "A",
@@ -507,17 +507,17 @@
   },
   {
    "titulo": "Examen · Un día de saludos",
-   "texto": "Good morning, Mr Lee! Good morning, Marie. How are you? I am very well, thank you. And you? Fine, thanks. Welcome! Thank you very much. You're welcome. Excuse me, is Miss Sofia here? Sorry, no. No problem! Good afternoon, Paul. Hi! Nice to meet you. Nice to meet you too. Have a nice day! Thank you. Good evening, Marie. Good evening! Have a nice evening. See you tomorrow. Good night! Take care. Bye!",
+   "texto": "Good morning, Mr. Lee! Good morning, Marie. How are you? I am very well, thank you. And you? Fine, thanks. Welcome! Thank you very much. You're welcome. Excuse me, is Miss Sofia here? Sorry, no. No problem! Good afternoon, Paul. Hi! Nice to meet you. Nice to meet you too. Have a nice day! Thank you. Good evening, Marie. Good evening! Have a nice evening. See you tomorrow. Good night! Take care. Bye!",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
      "enunciado": "¿A quién saluda Marie primero?",
      "opciones": [
       "Miss Sofia",
-      "Mr Lee",
+      "Mr. Lee",
       "Paul"
      ],
-     "respuesta": "Mr Lee"
+     "respuesta": "Mr. Lee"
     },
     {
      "tipo": "vf",
@@ -537,7 +537,7 @@
      "enunciado": "¿Con quién se dice 'nice to meet you'?",
      "opciones": [
       "Miss Sofia",
-      "Mr Lee",
+      "Mr. Lee",
       "Paul"
      ],
      "respuesta": "Paul"
@@ -564,10 +564,10 @@
    "lineas": [
     {
      "hablante": "Marie",
-     "texto": "Good morning, Mr Lee!"
+     "texto": "Good morning, Mr. Lee!"
     },
     {
-     "hablante": "Mr Lee",
+     "hablante": "Mr. Lee",
      "texto": "Good morning, Marie. How are you?"
     },
     {
@@ -575,7 +575,7 @@
      "texto": "I am very well, thank you. And you?"
     },
     {
-     "hablante": "Mr Lee",
+     "hablante": "Mr. Lee",
      "texto": "Fine, thanks."
     },
     {
@@ -583,7 +583,7 @@
      "texto": "Welcome!"
     },
     {
-     "hablante": "Mr Lee",
+     "hablante": "Mr. Lee",
      "texto": "Thank you very much."
     },
     {
@@ -591,7 +591,7 @@
      "texto": "You're welcome."
     },
     {
-     "hablante": "Mr Lee",
+     "hablante": "Mr. Lee",
      "texto": "Excuse me, is Miss Sofia here?"
     },
     {
@@ -599,7 +599,7 @@
      "texto": "Sorry, no."
     },
     {
-     "hablante": "Mr Lee",
+     "hablante": "Mr. Lee",
      "texto": "No problem!"
     },
     {

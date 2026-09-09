@@ -258,7 +258,7 @@
     },
     {
      "hablante": "B",
-     "texto": "Mr Lee. He is an engineer."
+     "texto": "Mr. Lee. He is an engineer."
     },
     {
      "hablante": "A",
@@ -277,7 +277,7 @@
     },
     {
      "tipo": "completar_dato",
-     "enunciado": "¿Cuál es la profesión de Mr Lee?",
+     "enunciado": "¿Cuál es la profesión de Mr. Lee?",
      "respuesta": "engineer"
     },
     {
@@ -302,7 +302,7 @@
     },
     {
      "tipo": "vf",
-     "enunciado": "Mr Lee es el jefe de B.",
+     "enunciado": "Mr. Lee es el jefe de B.",
      "respuesta": "verdadero"
     }
    ]

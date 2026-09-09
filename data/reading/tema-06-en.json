@@ -163,7 +163,7 @@
   },
   {
    "titulo": "Las profesiones de la familia",
-   "texto": "My father is a doctor and he works in a big company. My mother is a teacher and her office is in the city. My uncle is a driver and my aunt is a secretary. My cousin is a police officer and his wife is a nurse. My grandfather is a farmer. My brother is a cook and my sister is a dentist. And you? I am a student, but I work at a company. Is your job good? Yes, but my salary is not good. Who is the boss? Mr Lee. He is an engineer. And Marc? Marc is unemployed, but he has a career.",
+   "texto": "My father is a doctor and he works in a big company. My mother is a teacher and her office is in the city. My uncle is a driver and my aunt is a secretary. My cousin is a police officer and his wife is a nurse. My grandfather is a farmer. My brother is a cook and my sister is a dentist. And you? I am a student, but I work at a company. Is your job good? Yes, but my salary is not good. Who is the boss? Mr. Lee. He is an engineer. And Marc? Marc is unemployed, but he has a career.",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
@@ -189,11 +189,11 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Quién es el jefe?",
      "opciones": [
-      "Mr Lee",
+      "Mr. Lee",
       "the father",
       "Marc"
      ],
-     "respuesta": "Mr Lee"
+     "respuesta": "Mr. Lee"
     },
     {
      "tipo": "vfnd",
@@ -307,7 +307,7 @@
   },
   {
    "titulo": "Examen · Quién trabaja en qué",
-   "texto": "Marie is a dentist and she works in an office. Her husband is a farmer. Her father is a doctor and her mother is a teacher. Her brother is a police officer and his wife is a nurse. Her sister is unemployed, but she studies and she has a career. Her uncle is a driver and her aunt is a secretary. Her cousin is an architect and her friend is an accountant. Who is the boss? Mr Lee. He is an engineer in a big company. Is the salary good? Yes, the salary is very good. And Marc? Marc is a cook and Sofia is a seller. What do you do?",
+   "texto": "Marie is a dentist and she works in an office. Her husband is a farmer. Her father is a doctor and her mother is a teacher. Her brother is a police officer and his wife is a nurse. Her sister is unemployed, but she studies and she has a career. Her uncle is a driver and her aunt is a secretary. Her cousin is an architect and her friend is an accountant. Who is the boss? Mr. Lee. He is an engineer in a big company. Is the salary good? Yes, the salary is very good. And Marc? Marc is a cook and Sofia is a seller. What do you do?",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
@@ -334,10 +334,10 @@
      "enunciado": "¿Quién es el jefe?",
      "opciones": [
       "Marc",
-      "Mr Lee",
+      "Mr. Lee",
       "el padre"
      ],
-     "respuesta": "Mr Lee"
+     "respuesta": "Mr. Lee"
     },
     {
      "tipo": "vfnd",
