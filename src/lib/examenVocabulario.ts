@@ -33,14 +33,21 @@ export async function idsDeHoy(): Promise<string[]> {
     .map((p) => p.id)
 }
 
-// Todas las palabras del tema que ya estén marcadas como aprendidas. Se mira el TEMA y no
-// una ventana de días: si un día se te tuerce y el tema te lleva tres, sigue funcionando.
+// Todas las palabras del tema que haya marcado, ESTÉN EN EL ESTADO QUE ESTÉN. Se mira el
+// TEMA y no una ventana de días: si un día se te tuerce y el tema te lleva tres, sigue
+// funcionando.
+//
+// Antes filtraba `estado === 'aprendida'` y eso dejaba fuera todo lo que ya hubiera salido
+// en un examen, porque responder una palabra la pasa a 'en_repaso' —acierto o fallo, los
+// dos—. O sea: el examen del tema encogía cuanto más estudiabas, y la palabra que MÁS
+// necesitas repasar, la que fallaste ayer, era justo la que desaparecía. El mismo criterio
+// que usa VocabCard para pintar el ✓: marcada es todo lo que no sea 'nueva'.
 export async function idsDelTema(tema: number): Promise<string[]> {
   const pack = getVocabPack(tema)
   if (!pack) return []
   const delTema = new Set(pack.conceptos.map((c) => c.id))
   const palabras = await db.palabras.toArray()
-  return palabras.filter((p) => delTema.has(p.id) && p.estado === 'aprendida').map((p) => p.id)
+  return palabras.filter((p) => delTema.has(p.id) && p.estado !== 'nueva').map((p) => p.id)
 }
 
 export async function construirExamenDelTema(tema: number): Promise<Pregunta[]> {
