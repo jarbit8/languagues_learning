@@ -2,12 +2,12 @@ import type { Pregunta, ListeningPack, ReadingPack, DialogoConTema, TextoReading
 import { vocabPacks, getListening, getReading, getGramatica, dialogosDe, piezaDeExamen } from '../data/packs'
 import { baraja, preguntaSignificadoEscrito, preguntaDeListening, preguntaDeEjercicio } from './preguntas'
 
-// 100 palabras aleatorias de todo el nivel A1 (skill exam-engine: examen final).
+// TODO el vocabulario del nivel, las 773 (2026-09-09, él: "el examen final son como 2 días,
+// así que está bien todas"). Antes sorteaba 100, y como el sorteo cambia en cada intento no
+// había forma de prepararlo: lo que entra era distinto cada vez. Ahora entra el temario.
 export function construirVocabFinal(): Pregunta[] {
   const todos = vocabPacks.flatMap((p) => p.conceptos)
-  return baraja(todos)
-    .slice(0, 100)
-    .map(preguntaSignificadoEscrito)
+  return baraja(todos).map(preguntaSignificadoEscrito)
 }
 
 // Gramática de TODO el nivel: mezcla los ejercicios de los 24 temas. El examen de bloque ya

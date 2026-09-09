@@ -13,7 +13,6 @@ import {
 } from '../lib/progreso'
 import { getVocabPack } from '../data/packs'
 import { construirExamenDiario, idsExamenDiario, marcarExaminadasHoy } from '../lib/examenDiario'
-import { CICLOS, construirExamenDelTema, idsDelTema, type CicloVocab } from '../lib/examenVocabulario'
 import { getPlan, estadoDelPlan } from '../lib/plan'
 import { registrarResultado } from '../lib/srs'
 import ExamRunner from '../components/ExamRunner'
@@ -24,7 +23,6 @@ import ExamenFinal from './ExamenFinal'
 type Vista =
   | { modo: 'hub' }
   | { modo: 'diario'; preguntas: Pregunta[] }
-  | { modo: 'ciclo'; ciclo: CicloVocab; titulo: string; preguntas: Pregunta[] }
   // El examen de tema son dos secciones seguidas, con nota propia cada una.
   | { modo: 'tema'; tema: number }
   | { modo: 'bloque'; bloque: number }
@@ -52,29 +50,16 @@ export default function Examen() {
     // El plan dice si HOY toca el examen del tema (día 2). Sin plan, siempre disponible.
     const plan = await getPlan()
     const jornada = plan ? estadoDelPlan(plan, tema).jornada : undefined
-    // El examen de vocabulario del tema YA NO SE BLOQUEA (2026-08-30). Estaba atado al 2º día
-    // del cronograma, y el cronograma es una guía que por regla no bloquea ni desbloquea nada
-    // (regla 1 de CLAUDE.md: ritmo libre). Ahora está siempre disponible, como el diario:
-    // si aún no has marcado palabras del tema, simplemente no hay nada que preguntar.
-    const delTema = (await idsDelTema(tema)).length
-    const ciclos = CICLOS.map((c) => ({
-      ...c,
-      cuantas: c.id === 'diario' ? pendientes : delTema,
-      toca: true
-    }))
-    return { tema, titulo: pack?.titulo ?? '', pendientes, gateTema, bloque, gateBloque, gateFinal, nivel, ciclos }
+    return { tema, titulo: pack?.titulo ?? '', pendientes, gateTema, bloque, gateBloque, gateFinal, nivel }
   }, [])
 
-  async function iniciarCiclo(ciclo: CicloVocab, titulo: string) {
-    // El diario tiene su propio constructor: además de lo de hoy arrastra los repasos SRS
-    // vencidos, que es su razón de ser. Los ciclos largos miran solo su ventana de días.
-    const preguntas = ciclo === 'diario' ? await construirExamenDiario() : await construirExamenDelTema(info!.tema)
+  async function iniciarDiario() {
+    const preguntas = await construirExamenDiario()
     if (!preguntas.length) {
-      setVista({ modo: 'fin', titulo, aciertos: 0, total: 0, nota: 'vacio' })
+      setVista({ modo: 'fin', titulo: 'Examen diario', aciertos: 0, total: 0, nota: 'vacio' })
       return
     }
-    if (ciclo === 'diario') setVista({ modo: 'diario', preguntas })
-    else setVista({ modo: 'ciclo', ciclo, titulo, preguntas })
+    setVista({ modo: 'diario', preguntas })
   }
 
 
@@ -107,23 +92,6 @@ export default function Examen() {
       />
     )
   }
-
-  if (vista.modo === 'ciclo') {
-    return (
-      <ExamRunner
-        key={vista.ciclo}
-        preguntas={vista.preguntas}
-        etiqueta={vista.titulo}
-        onAnswer={actualizarSrs}
-        onFinish={(aciertos, total) =>
-          setVista({ modo: 'fin', titulo: vista.titulo, aciertos, total, nota: 'entrenamiento' })
-        }
-      />
-    )
-  }
-
-
-
 
 
 
@@ -180,34 +148,30 @@ export default function Examen() {
     <div className="flex flex-col gap-4">
       <h1 className="text-2xl font-bold">Exámenes</h1>
 
-      {/* --- Módulo de vocabulario: los tres ciclos de repaso --- */}
+      {/* --- Vocabulario: SOLO el examen diario ---
+          «Vocabulario del tema N» se quitó el 2026-09-09 (él: "estaría repitiendo pues con
+          vocabulario del tema 1, anula eso"). Preguntaba las palabras marcadas de ese tema y
+          el examen de tema ya pregunta las del pack ENTERAS: dos entradas para el mismo
+          repaso, una que cuenta y otra que no. Es exactamente el motivo por el que ya se había
+          borrado la sección "Por tema" de destrezas en agosto. El repaso espaciado lo lleva
+          el diario, que es el único que sabe qué toca hoy. */}
       <h2 className="text-sm font-bold uppercase tracking-wide text-slate-400">Vocabulario</h2>
-      {info.ciclos.map((c) => {
-        const cuantas = c.cuantas
-        return (
-          <button
-            key={c.id}
-            onClick={() =>
-              c.toca && cuantas > 0 && iniciarCiclo(c.id, c.id === 'diario' ? 'Examen diario' : `Vocabulario del tema ${info.tema}`)
-            }
-            disabled={!c.toca || cuantas === 0}
-            className={`tarjeta flex items-center gap-3 text-left ${c.toca && cuantas > 0 ? '' : 'opacity-70'}`}
-          >
-            <span className="text-2xl">{c.toca ? c.icono : '🔒'}</span>
-            <div className="flex-1">
-              <p className="font-semibold">
-                {c.id === 'diario' ? 'Examen diario' : `Vocabulario del tema ${info.tema}`}
-              </p>
-              <p className="text-sm text-slate-500 dark:text-slate-400">
-                {cuantas > 0
-                  ? `${cuantas} ${cuantas === 1 ? 'palabra' : 'palabras'} · entrenamiento`
-                  : 'Marca palabras del tema y aparecerán aquí'}
-              </p>
-            </div>
-            <span className="text-slate-400">›</span>
-          </button>
-        )
-      })}
+      <button
+        onClick={() => info.pendientes > 0 && iniciarDiario()}
+        disabled={info.pendientes === 0}
+        className={`tarjeta flex items-center gap-3 text-left ${info.pendientes > 0 ? '' : 'opacity-70'}`}
+      >
+        <span className="text-2xl">📅</span>
+        <div className="flex-1">
+          <p className="font-semibold">Examen diario</p>
+          <p className="text-sm text-slate-500 dark:text-slate-400">
+            {info.pendientes > 0
+              ? `${info.pendientes} ${info.pendientes === 1 ? 'palabra' : 'palabras'} · entrenamiento`
+              : 'Nada por hoy. Marca palabras nuevas o espera a que venzan tus repasos.'}
+          </p>
+        </div>
+        <span className="text-slate-400">›</span>
+      </button>
 
       {/* La sección "Por tema" se eliminó (2026-08-30). Tenía una versión de entrenamiento de
           las cinco destrezas, primero como cinco botones y luego encadenada, y acabó siendo un

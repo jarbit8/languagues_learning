@@ -7,9 +7,14 @@ import { baraja } from './preguntas'
 // El examen de bloque cierra 6 temas, pero solo medía las 4 destrezas: no repasaba ni el
 // vocabulario ni la gramática acumulados, que es justo lo que se olvida entre bloques.
 // Estas dos secciones mezclan los 6 temas para forzar el repaso a largo plazo.
-export function construirVocabBloque(bloque: number, cuantas = 40): Pregunta[] {
+// TODAS las palabras del bloque, no una muestra (2026-09-09, él: "estaría genial el examen del
+// bloque 1 todas, ya que el examen es un día completo"). Antes sorteaba 40 de las ~200, y el
+// sorteo se rehacía en cada intento: no se podía estudiar para él, porque no había un "esto
+// entra". Con el bloque entero sí lo hay, y el cronograma le da un día suelto para eso.
+// Son 184-207 preguntas según el bloque.
+export function construirVocabBloque(bloque: number): Pregunta[] {
   const conceptos = temasDeBloque(bloque).flatMap((t) => getVocabPack(t)?.conceptos ?? [])
-  return baraja(conceptos).slice(0, cuantas).map(preguntaSignificadoEscrito)
+  return baraja(conceptos).map(preguntaSignificadoEscrito)
 }
 
 export function construirGramaticaBloque(bloque: number, cuantas = 30): Pregunta[] {
