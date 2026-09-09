@@ -145,6 +145,56 @@ export class IdiomasDB extends Dexie {
             p.cajaSRS = p.estado === 'dominada' ? 3 : p.estado === 'aprendida' ? 1 : 0
           })
       )
+    // v8: RECONSTRUYE el escalón desde `aciertosSeguidos`, que es el único campo que ninguna
+    // migración ha tocado nunca — lo escribe solo el SRS (0 al marcar, +1 al acertar, 0 al
+    // fallar), así que dice exactamente cuántos aciertos seguidos lleva la palabra, que es
+    // justo lo que define la caja.
+    //
+    // Hace falta porque la v7 reparaba a ojo: a toda fila con la caja rota le ponía ⭐, y si
+    // eran muchas dejaba el vocabulario entero con una estrella, aplastando el progreso real
+    // en vez de arreglarlo. Aquí no se adivina nada: se recalcula.
+    //
+    //   0 aciertos y algún fallo → ❌ fallada      0 aciertos y ninguno → 📌 marcada
+    //   1 / 2 / 3 aciertos       → ⭐ / ⭐⭐ / ⭐⭐⭐    4 o más              → 🏆 dominada
+    //
+    // Las `dominada` de antes se respetan aunque lleven 3: se ganaron con las reglas viejas y
+    // bajarlas a ⭐⭐⭐ sería cobrarles un repaso que ya habían pagado.
+    this.version(8)
+      .stores({
+        palabras: 'id, estado, proximoRepaso, fechaAprendida',
+        progresoTema: 'temaId, estado',
+        progresoBloque: 'bloqueId, estado',
+        progresoNivel: 'id, estado',
+        historialExamenes: '++id, tipo, fecha',
+        practicaPron: 'id',
+        plan: 'id',
+        abreviaciones: 'id'
+      })
+      .upgrade((tx) =>
+        tx
+          .table('palabras')
+          .toCollection()
+          .modify((p: { estado: string; cajaSRS?: number; aciertosSeguidos?: number; fallosTotales?: number }) => {
+            if (p.estado === 'dominada') {
+              p.cajaSRS = 3
+              return
+            }
+            const aciertos = Number.isFinite(p.aciertosSeguidos) ? (p.aciertosSeguidos as number) : 0
+            const fallos = Number.isFinite(p.fallosTotales) ? (p.fallosTotales as number) : 0
+            if (aciertos >= 4) {
+              p.estado = 'dominada'
+              p.cajaSRS = 3
+            } else if (aciertos >= 1) {
+              p.estado = 'aprendida'
+              p.cajaSRS = aciertos
+            } else {
+              // Sin ningún acierto encadenado: si alguna vez falló, lo último que pasó fue un
+              // fallo (cualquier acierto habría dejado el contador en 1 o más).
+              p.estado = fallos > 0 ? 'fallada' : 'marcada'
+              p.cajaSRS = 0
+            }
+          })
+      )
   }
 }
 
