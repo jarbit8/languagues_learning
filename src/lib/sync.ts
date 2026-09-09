@@ -209,6 +209,17 @@ async function escribirRemoto(uid: string, p: Paquete): Promise<void> {
   )
 }
 
+// Vacía la copia de la nube. La fusión de arriba es una UNIÓN que nunca borra —«sincronizar
+// no puede hacer perder trabajo»—, y eso, que es lo correcto entre dos aparatos, hacía
+// imposible reiniciar el curso con la cuenta conectada: al borrar en local, la siguiente
+// sincronización (que arranca sola al abrir la app) volvía a bajarlo todo de la nube. El
+// reinicio tiene que borrar en los dos lados, y este es el lado de allá.
+export async function borrarRemoto(uid: string): Promise<void> {
+  if (!getDbRemota()) return
+  const ahora = Date.now()
+  await Promise.all(RAMAS.map((rama) => setDoc(ref(uid, rama), { items: [], actualizado: ahora })))
+}
+
 export interface ResultadoSync {
   ok: boolean
   cuando: number

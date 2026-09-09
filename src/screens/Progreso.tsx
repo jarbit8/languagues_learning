@@ -8,9 +8,17 @@ import { reiniciarCurso } from '../lib/reinicio'
 function ReiniciarCurso() {
   const [confirmando, setConfirmando] = useState(false)
   const [hecho, setHecho] = useState(false)
+  const [error, setError] = useState(false)
 
   async function reiniciar() {
-    await reiniciarCurso()
+    try {
+      await reiniciarCurso()
+    } catch {
+      // Casi siempre es la nube: sin red no se puede vaciar allá, y borrar solo aquí no
+      // reiniciaría nada — la siguiente sincronización lo bajaría todo de vuelta.
+      setError(true)
+      return
+    }
     setHecho(true)
     // Dexie no se entera de un clear() hecho fuera de sus hooks en todas las pantallas,
     // y aquí interesa además que el usuario vea la app entera como recién instalada.
@@ -37,8 +45,14 @@ function ReiniciarCurso() {
       <p className="font-semibold text-rose-600 dark:text-rose-400">¿Borrar todo y empezar de cero?</p>
       <p className="text-sm text-slate-500 dark:text-slate-400">
         Se borran las palabras aprendidas y sus repasos, los temas y bloques aprobados, el historial de exámenes, la
-        pronunciación practicada y el cronograma. No se puede deshacer. Si tienes la cuenta conectada, al sincronizar después también se borra allí.
+        pronunciación practicada, las abreviaciones marcadas y el cronograma. No se puede deshacer. Si tienes la cuenta
+        conectada se borra también en la nube, en el mismo momento y antes que aquí: si no, al recargar volvería a bajarse.
       </p>
+      {error && (
+        <p className="text-sm font-semibold text-rose-600 dark:text-rose-400">
+          No se pudo borrar la copia de la nube, así que no se ha borrado nada. Conéctate a internet y vuelve a intentarlo.
+        </p>
+      )}
       <div className="flex gap-2">
         <button onClick={() => void reiniciar()} className="btn-primary flex-1 !bg-rose-600">
           Sí, borrar todo
