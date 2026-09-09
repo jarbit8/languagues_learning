@@ -42,8 +42,11 @@ export async function toggleAprendida(id: string): Promise<boolean> {
 export async function registrarResultado(id: string, acierto: boolean) {
   const p = await db.palabras.get(id)
   if (!p) return
+  // Una fila con la caja rota (sin valor, o NaN de una migración vieja) haría NaN + 1 = NaN y
+  // la palabra se quedaría atascada sin escalón. Se trata como caja 0: sube desde abajo.
+  const actual = Number.isFinite(p.cajaSRS) ? p.cajaSRS : 0
   if (acierto) {
-    const caja = p.cajaSRS + 1
+    const caja = actual + 1
     if (caja > ULTIMA_CAJA) {
       await db.palabras.update(id, {
         estado: 'dominada',

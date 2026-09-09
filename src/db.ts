@@ -96,21 +96,53 @@ export class IdiomasDB extends Dexie {
           .toCollection()
           // Tipado suelto a propósito: aquí `estado` todavía trae los nombres VIEJOS, que ya
           // no están en `EstadoPalabra`, y con el tipo bueno TypeScript tumba las comparaciones.
-          .modify((p: { estado: string; cajaSRS: number }) => {
+          .modify((p: { estado: string; cajaSRS?: number }) => {
+            // Una fila sin `cajaSRS` (sincronizada desde otro aparato, o de una versión vieja
+            // del esquema) hacía `undefined - 1` = NaN y la palabra acababa en «aprendida» sin
+            // ninguna estrella. Se toma la caja 1, que es la más conservadora: si de verdad
+            // iba más adelante, el siguiente acierto la vuelve a subir.
+            const caja = Number.isFinite(p.cajaSRS) ? (p.cajaSRS as number) : 1
             if (p.estado === 'aprendida') {
               p.estado = 'marcada'
               p.cajaSRS = 0
             } else if (p.estado === 'en_repaso') {
-              if (p.cajaSRS <= 1) {
+              if (caja <= 1) {
                 p.estado = 'fallada'
                 p.cajaSRS = 0
               } else {
                 p.estado = 'aprendida'
-                p.cajaSRS = p.cajaSRS - 1
+                p.cajaSRS = caja - 1
               }
             } else if (p.estado === 'dominada') {
               p.cajaSRS = 3
+            } else {
+              p.cajaSRS = caja
             }
+          })
+      )
+    // v7: repara lo que dejó rota la v6 antes de arreglarla. Una fila sin `cajaSRS` salía de
+    // la migración como «aprendida» con la caja en NaN, y como `'⭐'.repeat(NaN)` es la cadena
+    // vacía, la insignia se quedaba en «aprendida» pelada: todas las palabras se veían iguales.
+    // La v6 ya no lo produce, pero a quien la haya corrido no le vuelve a pasar por encima —
+    // Dexie ejecuta cada upgrade una sola vez—, así que la reparación va en su propia versión.
+    this.version(7)
+      .stores({
+        palabras: 'id, estado, proximoRepaso, fechaAprendida',
+        progresoTema: 'temaId, estado',
+        progresoBloque: 'bloqueId, estado',
+        progresoNivel: 'id, estado',
+        historialExamenes: '++id, tipo, fecha',
+        practicaPron: 'id',
+        plan: 'id',
+        abreviaciones: 'id'
+      })
+      .upgrade((tx) =>
+        tx
+          .table('palabras')
+          .toCollection()
+          .modify((p: { estado: string; cajaSRS?: number }) => {
+            if (Number.isFinite(p.cajaSRS)) return
+            p.cajaSRS = p.estado === 'dominada' ? 3 : p.estado === 'aprendida' ? 1 : 0
           })
       )
   }

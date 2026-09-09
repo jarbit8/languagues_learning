@@ -30,8 +30,10 @@ const TEXTO: Record<EstadoPalabra, string> = {
 }
 
 function insignia(p: PalabraEstado) {
-  const texto =
-    p.estado === 'aprendida' ? `${'⭐'.repeat(Math.min(3, Math.max(1, p.cajaSRS)))} aprendida` : TEXTO[p.estado]
+  // `Math.max(1, NaN)` es NaN y `'⭐'.repeat(NaN)` es la cadena vacía, así que una caja rota
+  // pintaba «aprendida» a secas, sin ninguna estrella, y todas parecían iguales.
+  const caja = Number.isFinite(p.cajaSRS) ? Math.min(3, Math.max(1, p.cajaSRS)) : 1
+  const texto = p.estado === 'aprendida' ? `${'⭐'.repeat(caja)} aprendida` : TEXTO[p.estado]
   return { texto, clase: CLASE[p.estado] }
 }
 
