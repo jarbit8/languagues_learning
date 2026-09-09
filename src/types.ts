@@ -23,7 +23,19 @@ export interface VocabPack {
 
 // --- Estado persistido (Dexie) ---
 
-export type EstadoPalabra = 'nueva' | 'aprendida' | 'en_repaso' | 'dominada'
+// Los escalones que ve el usuario (2026-09-09, él: "marco la palabra... las que acierte pasan
+// a aprendida 1... las que falle aparecerá como fallada"). Antes eran nueva/aprendida/en_repaso/
+// dominada y tenía dos problemas: «aprendida» se llamaba así una palabra que nadie te había
+// preguntado todavía, y «en repaso» tapaba con la misma etiqueta la que llevas bien y la que
+// fallaste ayer. El número del escalón vive en `cajaSRS` y se pinta con estrellas.
+//
+//   📌 marcada   caja 0 · la marcaste, aún sin examinar     → vuelve mañana
+//   ❌ fallada   caja 0 · la fallaste en el último examen   → vuelve mañana
+//   ⭐ aprendida  caja 1 · un acierto                        → +2 días
+//   ⭐⭐ aprendida caja 2 · dos aciertos                       → +5 días
+//   ⭐⭐⭐ aprendida caja 3 · tres aciertos                      → +7 días
+//   🏆 dominada  cuatro aciertos · sale del examen diario
+export type EstadoPalabra = 'nueva' | 'marcada' | 'fallada' | 'aprendida' | 'dominada'
 
 export interface PalabraEstado {
   id: string

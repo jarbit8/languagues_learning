@@ -46,7 +46,10 @@ const vacio = (): Paquete => ({
 
 // --- reglas de fusión, una por tabla ---
 
-const ORDEN_PALABRA = { nueva: 0, aprendida: 1, en_repaso: 2, dominada: 3 } as const
+// `marcada` y `fallada` empatan a propósito: las dos son la caja 0 y lo que las separa es
+// cuál se tocó más tarde, que es justo el desempate de abajo. Así un fallo en el móvil sigue
+// ganándole a una marca vieja del PC, como pasaba con el `en_repaso` de antes.
+const ORDEN_PALABRA = { nueva: 0, marcada: 1, fallada: 1, aprendida: 2, dominada: 3 } as const
 const cuandoPalabra = (p: PalabraEstado) => Math.max(p.ultimoExamen ?? 0, p.fechaAprendida ?? 0)
 
 function mezclaPalabra(a: PalabraEstado, b: PalabraEstado): PalabraEstado {

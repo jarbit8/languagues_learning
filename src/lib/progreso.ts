@@ -228,7 +228,7 @@ export async function resumenPalabrasGlobal() {
   const todas = await db.palabras.toArray()
   return {
     dominadas: todas.filter((p) => p.estado === 'dominada').length,
-    enRepaso: todas.filter((p) => p.estado === 'en_repaso').length,
+    enRepaso: todas.filter((p) => p.estado === 'aprendida' || p.estado === 'fallada').length,
     debiles: todas.filter((p) => p.fallosTotales >= 2).length,
     totalMarcadas: todas.length
   }
