@@ -87,7 +87,11 @@ export async function registrarExamenTema(tema: number, notas: NotasBloque): Pro
     : 0
   const notaVocab = notas.vocab ?? 0
   const notaGramatica = notas.gramatica ?? 0
-  const aprobado = notaVocab >= 80 && notaGramatica >= 80 && promedioHabilidades >= 75
+  // VOCABULARIO AL 100 % (2026-09-09, él: "ese examen del tema debo responder todas correctas
+  // también, para aprobar el vocabulario"). Estaba en 80, que con 34 palabras perdonaba 6
+  // fallos: se podía desbloquear el tema siguiente sin saberse una de cada seis. La gramática
+  // y las destrezas se quedan como estaban — ahí un fallo no es lo mismo que no saber la palabra.
+  const aprobado = notaVocab >= 100 && notaGramatica >= 80 && promedioHabilidades >= 75
   const todas = [notaVocab, notaGramatica, ...habilidades]
   const nota = Math.round(todas.reduce((a, b) => a + b, 0) / todas.length)
   const pr = (await db.progresoTema.get(tema)) ?? baseProgreso(tema)

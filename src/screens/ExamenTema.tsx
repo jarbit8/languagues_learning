@@ -172,7 +172,7 @@ export default function ExamenTema({ tema, onSalir }: { tema: number; onSalir: (
     ? Math.round(habilidades.reduce((a, b) => a + b, 0) / habilidades.length)
     : 0
   const FILAS: [string, number | undefined, number][] = [
-    ['Vocabulario', notas.vocab, 80],
+    ['Vocabulario', notas.vocab, 100],
     ['Gramática', notas.gramatica, 80],
     ['Listening', notas.listening, 75],
     ['Reading', notas.reading, 75],
@@ -189,7 +189,7 @@ export default function ExamenTema({ tema, onSalir }: { tema: number; onSalir: (
         <span className="text-center text-sm text-slate-500 dark:text-slate-400">
           {aprobado
             ? 'Tema siguiente desbloqueado'
-            : 'Necesitas 80% en vocabulario y gramática, y 75% de promedio en las destrezas'}
+            : 'Necesitas el 100% en vocabulario, 80% en gramática y 75% de promedio en las destrezas'}
         </span>
       </div>
       <div className="tarjeta grid grid-cols-2 gap-3 text-center text-sm">

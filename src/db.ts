@@ -195,6 +195,46 @@ export class IdiomasDB extends Dexie {
             }
           })
       )
+    // v9: pone las FECHAS de repaso en la escalera nueva. Las migraciones anteriores dejaron
+    // `proximoRepaso` intacto a propósito —para no mover repasos ya puestos— y el resultado
+    // era una fila que se contradecía a sí misma: «⭐ aprendida · vuelve mañana», cuando ⭐
+    // son 2 días. La etiqueta era de la escalera nueva y la fecha de la vieja.
+    //
+    // La fecha guardada la puso el sistema viejo como `día en que la respondiste + su espera`,
+    // así que la espera vieja se resta y se suma la nueva. La caja vieja era la nueva + 1
+    // (la v6 mapeó 2→1 y 3→2), y las esperas viejas eran 1 / 3 / 7:
+    //
+    //   caja 0 (📌 ❌)  vieja 1, esperaba 1 → sigue 1   sin cambio
+    //   caja 1 (⭐)      vieja 2, esperaba 3 → ahora 2   un día antes
+    //   caja 2 (⭐⭐)     vieja 3, esperaba 7 → ahora 5   dos días antes
+    //
+    // Solo ADELANTA, nunca retrasa: en el peor caso una palabra ya puesta al día por el código
+    // nuevo vuelve un día antes de la cuenta, una sola vez. Nada se manda al pasado.
+    this.version(9)
+      .stores({
+        palabras: 'id, estado, proximoRepaso, fechaAprendida',
+        progresoTema: 'temaId, estado',
+        progresoBloque: 'bloqueId, estado',
+        progresoNivel: 'id, estado',
+        historialExamenes: '++id, tipo, fecha',
+        practicaPron: 'id',
+        plan: 'id',
+        abreviaciones: 'id'
+      })
+      .upgrade((tx) => {
+        const UN_DIA = 24 * 60 * 60 * 1000
+        const hoy = new Date().setHours(0, 0, 0, 0)
+        const ADELANTO: Record<number, number> = { 0: 0, 1: 1, 2: 2, 3: 0 }
+        return tx
+          .table('palabras')
+          .toCollection()
+          .modify((p: { cajaSRS?: number; proximoRepaso?: number }) => {
+            if (!Number.isFinite(p.proximoRepaso)) return
+            const dias = ADELANTO[Number(p.cajaSRS)] ?? 0
+            if (!dias) return
+            p.proximoRepaso = Math.max(hoy, (p.proximoRepaso as number) - dias * UN_DIA)
+          })
+      })
   }
 }
 
