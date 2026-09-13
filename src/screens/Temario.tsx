@@ -277,8 +277,7 @@ export default function Temario() {
       ))}
 
       {/* EL FINAL, SOLO CON SU FECHA (2026-09-13, él: "solo quiero que pongas el día que será
-          el examen, nada más, no cuánto durará"). El cronograma no cambia: la semana final
-          sigue contando en `plan.ts` y esta es la fecha de su primer día de examen. */}
+          el examen, nada más, no cuánto durará"). Es el día siguiente al examen del bloque 4. */}
       <div className="flex flex-col gap-2">
         <h2 className="text-sm font-bold uppercase tracking-wide text-slate-400">Examen final</h2>
         <div className="tarjeta flex items-center gap-3 ring-1 ring-amber-300/70 dark:ring-amber-400/30">

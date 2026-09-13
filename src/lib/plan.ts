@@ -34,18 +34,16 @@ export const totalBloques = () => Math.ceil(totalTemas() / TEMAS_POR_BLOQUE)
 // semana repasa el nivel bloque a bloque y remata con el examen partido en dos días.
 // El contenido del nivel cierra el sábado 31 de octubre con el examen del bloque 4; el
 // domingo 1 queda libre (pausa) para que la semana caiga limpia de lunes a domingo.
-export const DIAS_FINAL = 7
-// 4 bloques x 13 días + la semana final.
+// SIN DÍAS DE REPASO, POR AHORA (2026-09-13, él: "sin los repasos ni nada, debería ser al día
+// siguiente"): el final empieza el día después del examen del bloque 4. Se quitaron los cinco
+// días de repaso de la semana y quedan los dos del examen. Si vuelven, eran: un día por bloque
+// y uno de escuchar, leer y pronunciación (en git hasta b00d9ea).
+export const DIAS_FINAL = 2
+// 4 bloques x 13 días + los días del final.
 export const diasDelPlan = () => totalBloques() * DIAS_POR_BLOQUE + DIAS_FINAL
 
-// Qué toca cada día de la semana final. Sin esto la semana serían siete casillas vacías y
-// el usuario tendría que inventarse el repaso; el examen en sí son los dos últimos días.
+// Qué toca cada día del final.
 export const SEMANA_FINAL: string[] = [
-  'Repaso del bloque 1 — temas 1 a 6',
-  'Repaso del bloque 2 — temas 7 a 12',
-  'Repaso del bloque 3 — temas 13 a 18',
-  'Repaso del bloque 4 — temas 19 a 24',
-  'Escuchar, leer y pronunciación de todo el nivel',
   'Examen final · vocabulario, gramática, listening y reading',
   'Examen final · writing y speaking, y resultado del nivel'
 ]
