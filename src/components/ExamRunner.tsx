@@ -40,6 +40,10 @@ export default function ExamRunner({
   const [texto, setTexto] = useState('')
   const [tokens, setTokens] = useState<string[]>([])
   const [resultado, setResultado] = useState<Resultado>(null)
+  // Un significado puede estar bien dicho con otras palabras ("que tengas un buen día" contra
+  // "que tengas buen día") y la comparación de texto no lo ve. Si no coincide, la respuesta
+  // queda sin registrar hasta que el usuario diga si lo suyo vale o no.
+  const [pendiente, setPendiente] = useState(false)
   const [aciertos, setAciertos] = useState(0)
   const [restante, setRestante] = useState(tiempoSegundos ?? 0)
   const aciertosRef = useRef(0)
@@ -106,7 +110,8 @@ export default function ExamRunner({
       setAciertos((n) => n + 1)
       aciertosRef.current += 1
     }
-    onAnswer?.(p, bien)
+    if (!bien && p.tipo === 'significado_escrito') setPendiente(true)
+    else onAnswer?.(p, bien)
     // En el dictado el premio es oír por fin la palabra dicha de corrido, no deletreada.
     // Salvo cuando la respuesta ES una letra: ahí hay que volver a deletrearla, porque
     // hablar("A") suelta la vocal, no el nombre de la letra.
@@ -125,13 +130,23 @@ export default function ExamRunner({
     if (idx + 1 >= preguntas.length) {
       if (finRef.current) return
       finRef.current = true
-      onFinish(aciertos, preguntas.length)
+      onFinish(aciertosRef.current, preguntas.length)
       return
     }
     setIdx((i) => i + 1)
     setTexto('')
     setTokens([])
     setResultado(null)
+    setPendiente(false)
+  }
+
+  function decidir(vale: boolean) {
+    if (vale) {
+      setAciertos((n) => n + 1)
+      aciertosRef.current += 1
+    }
+    onAnswer?.(p, vale)
+    siguiente()
   }
 
   const valorActual = p.tipo === 'ordenar' ? tokens.join(' ') : texto
@@ -266,6 +281,11 @@ export default function ExamRunner({
             }`}
           >
             {resultado === 'bien' ? '¡Correcto!' : 'La respuesta es:'} <b>{p.respuesta}</b>
+            {pendiente && (
+              <p className="mt-1 text-sm">
+                Tú pusiste: <b>{texto.trim()}</b>
+              </p>
+            )}
             {/* La corrección sonaba la palabra pero no la escribía: sin audio (en clase, en
                 el bus) se perdía cómo se lee. Si la pregunta es de vocabulario, se muestra. */}
             {(() => {
@@ -290,10 +310,24 @@ export default function ExamRunner({
           Comprobar
         </button>
       )}
-      {resultado && (
-        <button onClick={siguiente} className="btn-primary">
-          {idx + 1 >= preguntas.length ? 'Ver resultado' : 'Siguiente'}
-        </button>
+      {pendiente ? (
+        <div className="flex flex-col gap-2">
+          <p className="text-center text-sm text-slate-500 dark:text-slate-400">¿Lo tuyo significa lo mismo?</p>
+          <div className="flex gap-2">
+            <button onClick={() => decidir(true)} className="btn flex-1 bg-emerald-500 text-white">
+              ✓ Está bien
+            </button>
+            <button onClick={() => decidir(false)} className="btn flex-1 bg-rose-500 text-white">
+              ✗ Fallé
+            </button>
+          </div>
+        </div>
+      ) : (
+        resultado && (
+          <button onClick={siguiente} className="btn-primary">
+            {idx + 1 >= preguntas.length ? 'Ver resultado' : 'Siguiente'}
+          </button>
+        )
       )}
     </div>
   )
