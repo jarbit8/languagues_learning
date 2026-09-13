@@ -38,8 +38,9 @@ export async function toggleAprendida(id: string): Promise<boolean> {
   return true
 }
 
-// Resultado en cualquier examen: sube un escalón o cae al principio.
-export async function registrarResultado(id: string, acierto: boolean) {
+// Resultado en cualquier examen: sube un escalón o cae al principio. `desde` es el día del
+// examen; solo la hoja en papel lo cambia, porque se califica al día siguiente de hacerla.
+export async function registrarResultado(id: string, acierto: boolean, desde = Date.now()) {
   const p = await db.palabras.get(id)
   if (!p) return
   // Una fila con la caja rota (sin valor, o NaN de una migración vieja) haría NaN + 1 = NaN y
@@ -59,7 +60,7 @@ export async function registrarResultado(id: string, acierto: boolean) {
         estado: 'aprendida',
         cajaSRS: caja,
         aciertosSeguidos: p.aciertosSeguidos + 1,
-        proximoRepaso: enDias(ESPERA[caja])
+        proximoRepaso: enDias(ESPERA[caja], desde)
       })
     }
   } else {
@@ -69,7 +70,7 @@ export async function registrarResultado(id: string, acierto: boolean) {
       cajaSRS: 0,
       aciertosSeguidos: 0,
       fallosTotales: p.fallosTotales + 1,
-      proximoRepaso: enDias(ESPERA[0])
+      proximoRepaso: enDias(ESPERA[0], desde)
     })
   }
 }

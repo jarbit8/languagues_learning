@@ -7,7 +7,8 @@ import type {
   HistorialExamen,
   PracticaPron,
   PlanEstudio,
-  AbreviacionSabida
+  AbreviacionSabida,
+  HojaVocab
 } from './types'
 
 // Base local del progreso. Sin backend ni auth: todo vive en el dispositivo.
@@ -20,6 +21,7 @@ export class IdiomasDB extends Dexie {
   practicaPron!: Table<PracticaPron, string>
   plan!: Table<PlanEstudio, string>
   abreviaciones!: Table<AbreviacionSabida, string>
+  hojasVocab!: Table<HojaVocab, string>
 
   constructor() {
     super('idiomas')
@@ -235,6 +237,18 @@ export class IdiomasDB extends Dexie {
             p.proximoRepaso = Math.max(hoy, (p.proximoRepaso as number) - dias * UN_DIA)
           })
       })
+    // v10: el examen diario en papel. Tabla nueva y suelta: no hay nada que migrar.
+    this.version(10).stores({
+      palabras: 'id, estado, proximoRepaso, fechaAprendida',
+      progresoTema: 'temaId, estado',
+      progresoBloque: 'bloqueId, estado',
+      progresoNivel: 'id, estado',
+      historialExamenes: '++id, tipo, fecha',
+      practicaPron: 'id',
+      plan: 'id',
+      abreviaciones: 'id',
+      hojasVocab: 'id'
+    })
   }
 }
 

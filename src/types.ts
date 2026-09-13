@@ -399,6 +399,19 @@ export interface AbreviacionSabida {
   sabida?: boolean
 }
 
+// EXAMEN DIARIO EN PAPEL. Guarda lo impreso tal cual —qué palabras y en qué orden— porque al
+// día siguiente, cuando se califica, el examen diario ya es otro.
+export interface HojaVocab {
+  id: string
+  /** Medianoche del día de la hoja: los repasos se cuentan desde aquí, no desde el día en que se califica. */
+  fecha: number
+  /** Última vez que se mandó a imprimir. Lo que se examine en la app después ya no se califica en la hoja. */
+  impresa: number
+  ids: string[]
+  calificada?: number
+  descartada?: boolean
+}
+
 // --- Deletreo (pack en /data/deletreo) ---
 // El abecedario no puede ser un tema: un tema son tarjetas que entran al SRS y a un examen
 // que pregunta "¿qué significa X?", y "¿qué significa B?" no tiene respuesta. Pero saber

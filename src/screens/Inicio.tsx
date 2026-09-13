@@ -4,6 +4,7 @@ import { temaEnCurso, resumenVocabTema } from '../lib/progreso'
 import { avanceTema } from '../lib/avance'
 import { getVocabPack } from '../data/packs'
 import { repasosVencidos } from '../lib/srs'
+import { hojaPendiente, nombreDeHoja } from '../lib/hojaVocab'
 
 // El saludo va en inglés a propósito: son frases del tema 1.
 function saludo(): string {
@@ -52,7 +53,8 @@ export default function Inicio() {
     const resumen = await resumenVocabTema(tema)
     const avance = await avanceTema(tema)
     const repasos = (await repasosVencidos()).length
-    return { tema, titulo: pack?.titulo ?? '', ...resumen, avance, repasos }
+    const hoja = await hojaPendiente()
+    return { tema, titulo: pack?.titulo ?? '', ...resumen, avance, repasos, hoja }
   }, [])
 
   if (!data) return <p className="tarjeta">Cargando…</p>
@@ -143,8 +145,11 @@ export default function Inicio() {
         <div className="flex-1">
           <p className="font-bold">Examen diario</p>
           <p className="text-sm text-slate-500 dark:text-slate-400">
-            {data.hoy > 0 ? `${data.hoy} palabras nuevas` : 'Solo repasos'}
-            {data.repasos > 0 ? ` · ${data.repasos} repasos vencidos` : ''}
+            {data.hoja
+              ? `✏️ Califica la hoja del ${nombreDeHoja(data.hoja.fecha)}`
+              : `${data.hoy > 0 ? `${data.hoy} palabras nuevas` : 'Solo repasos'}${
+                  data.repasos > 0 ? ` · ${data.repasos} repasos vencidos` : ''
+                }`}
           </p>
         </div>
         {data.repasos > 0 && (

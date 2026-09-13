@@ -19,6 +19,10 @@ import ExamRunner from '../components/ExamRunner'
 import ExamenBloque from './ExamenBloque'
 import ExamenTema from './ExamenTema'
 import ExamenFinal from './ExamenFinal'
+import HojaVocabulario from './HojaVocabulario'
+import CalificarHoja from './CalificarHoja'
+import { hojaPendiente, nombreDeHoja } from '../lib/hojaVocab'
+import type { HojaVocab } from '../types'
 
 type Vista =
   | { modo: 'hub' }
@@ -27,6 +31,8 @@ type Vista =
   | { modo: 'tema'; tema: number }
   | { modo: 'bloque'; bloque: number }
   | { modo: 'final' }
+  | { modo: 'papel' }
+  | { modo: 'calificar'; hoja: HojaVocab }
   | { modo: 'fin'; titulo: string; aciertos: number; total: number; nota?: string }
   | { modo: 'finTema'; tema: number; notaVocab: number; notaGramatica: number; aprobado: boolean }
 
@@ -50,7 +56,8 @@ export default function Examen() {
     // El plan dice si HOY toca el examen del tema (día 2). Sin plan, siempre disponible.
     const plan = await getPlan()
     const jornada = plan ? estadoDelPlan(plan, tema).jornada : undefined
-    return { tema, titulo: pack?.titulo ?? '', pendientes, gateTema, bloque, gateBloque, gateFinal, nivel }
+    const hoja = await hojaPendiente()
+    return { tema, titulo: pack?.titulo ?? '', pendientes, gateTema, bloque, gateBloque, gateFinal, nivel, hoja }
   }, [])
 
   async function iniciarDiario() {
@@ -77,6 +84,31 @@ export default function Examen() {
 
   if (vista.modo === 'final') {
     return <ExamenFinal onSalir={() => setVista({ modo: 'hub' })} />
+  }
+
+  if (vista.modo === 'papel') {
+    return (
+      <HojaVocabulario
+        onSalir={() => setVista({ modo: 'hub' })}
+        onCalificar={(hoja) => setVista({ modo: 'calificar', hoja })}
+      />
+    )
+  }
+
+  if (vista.modo === 'calificar') {
+    return (
+      <CalificarHoja
+        hoja={vista.hoja}
+        onSalir={() => setVista({ modo: 'hub' })}
+        onFin={(aciertos, total) =>
+          setVista(
+            total
+              ? { modo: 'fin', titulo: `Hoja del ${nombreDeHoja(vista.hoja.fecha)}`, aciertos, total, nota: 'entrenamiento' }
+              : { modo: 'hub' }
+          )
+        }
+      />
+    )
   }
 
   if (vista.modo === 'diario') {
@@ -144,6 +176,7 @@ export default function Examen() {
   const gt = info.gateTema
   const gb = info.gateBloque
   const gf = info.gateFinal
+  const hojaSinCalificar = info.hoja
   return (
     <div className="flex flex-col gap-4">
       <h1 className="text-2xl font-extrabold tracking-tight">Exámenes</h1>
@@ -156,6 +189,21 @@ export default function Examen() {
           borrado la sección "Por tema" de destrezas en agosto. El repaso espaciado lo lleva
           el diario, que es el único que sabe qué toca hoy. */}
       <h2 className="text-sm font-bold uppercase tracking-wide text-slate-400">Vocabulario</h2>
+      {hojaSinCalificar && (
+        <button
+          onClick={() => setVista({ modo: 'calificar', hoja: hojaSinCalificar })}
+          className="tarjeta flex items-center gap-3 text-left ring-2 ring-amber-400/70 dark:ring-amber-400/50"
+        >
+          <span className="icono-tile">✏️</span>
+          <div className="flex-1">
+            <p className="font-semibold">Calificar la hoja del {nombreDeHoja(hojaSinCalificar.fecha)}</p>
+            <p className="text-sm text-slate-500 dark:text-slate-400">
+              {hojaSinCalificar.ids.length} palabras · toca las que fallaste
+            </p>
+          </div>
+          <span className="text-slate-400">›</span>
+        </button>
+      )}
       <button
         onClick={() => info.pendientes > 0 && iniciarDiario()}
         disabled={info.pendientes === 0}
@@ -168,6 +216,21 @@ export default function Examen() {
             {info.pendientes > 0
               ? `${info.pendientes} ${info.pendientes === 1 ? 'palabra' : 'palabras'} · entrenamiento`
               : 'Nada por hoy. Marca palabras nuevas o espera a que venzan tus repasos.'}
+          </p>
+        </div>
+        <span className="text-slate-400">›</span>
+      </button>
+
+      <button
+        onClick={() => info.pendientes > 0 && setVista({ modo: 'papel' })}
+        disabled={info.pendientes === 0}
+        className={`tarjeta flex items-center gap-3 text-left ${info.pendientes > 0 ? '' : 'opacity-70'}`}
+      >
+        <span className="icono-tile">🖨️</span>
+        <div className="flex-1">
+          <p className="font-semibold">Examen diario en papel</p>
+          <p className="text-sm text-slate-500 dark:text-slate-400">
+            Imprímelo, respóndelo a mano y al día siguiente marcas las que fallaste
           </p>
         </div>
         <span className="text-slate-400">›</span>

@@ -52,14 +52,15 @@ const TERMINOS_REPETIDOS: Set<string> = (() => {
   return repes
 })()
 
+export function contextoSiRepetido(concepto: Concepto): string | undefined {
+  return TERMINOS_REPETIDOS.has(concepto.texto.toLowerCase()) && concepto.ejemplo ? concepto.ejemplo : undefined
+}
+
 export function preguntaSignificadoEscrito(concepto: Concepto): Pregunta {
+  const contexto = contextoSiRepetido(concepto)
   return {
     tipo: 'significado_escrito',
-    enunciado: `¿Qué significa "${concepto.texto}" en español?${
-      TERMINOS_REPETIDOS.has(concepto.texto.toLowerCase()) && concepto.ejemplo
-        ? ` (${concepto.ejemplo})`
-        : ''
-    }`,
+    enunciado: `¿Qué significa "${concepto.texto}" en español?${contexto ? ` (${contexto})` : ''}`,
     audioTexto: concepto.texto,
     respuesta: concepto.es,
     aceptadas: variantesEs(concepto.es),
