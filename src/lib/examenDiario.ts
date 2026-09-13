@@ -1,10 +1,9 @@
 import { db } from '../db'
-import { conceptoPorId } from '../data/packs'
 import { esHoy } from './fechas'
-import { baraja, preguntaSignificadoEscrito } from './preguntas'
-import type { Pregunta } from '../types'
 
-// IDs a evaluar: marcadas HOY aún no examinadas hoy + repasos SRS vencidos.
+// IDs a evaluar: marcadas HOY aún no examinadas hoy + repasos SRS vencidos. Desde el
+// 2026-09-13 el examen diario se hace solo en papel (lib/hojaVocab.ts); la versión en la app,
+// con su constructor de preguntas, está en git hasta el commit e315b37.
 export async function idsExamenDiario(): Promise<string[]> {
   const ahora = Date.now()
   const todas = await db.palabras.toArray()
@@ -15,23 +14,4 @@ export async function idsExamenDiario(): Promise<string[]> {
     if (marcadaHoy || repasoVencido) ids.add(p.id)
   }
   return [...ids]
-}
-
-// Un solo tipo de pregunta, aquí y en el resto de exámenes de vocabulario: ve la palabra en
-// inglés y escribe su significado en español. La caja del SRS decide CUÁNDO vuelve a salir
-// una palabra, nunca CÓMO se pregunta.
-export async function construirExamenDiario(): Promise<Pregunta[]> {
-  const ids = await idsExamenDiario()
-  const preguntas: Pregunta[] = []
-  for (const id of baraja(ids)) {
-    const encontrado = conceptoPorId(id)
-    if (encontrado) preguntas.push(preguntaSignificadoEscrito(encontrado.concepto))
-  }
-  return preguntas
-}
-
-// Marca que estas palabras ya se examinaron hoy (para no repetirlas en el mismo día).
-export async function marcarExaminadasHoy(ids: string[]) {
-  const ahora = Date.now()
-  await Promise.all(ids.map((id) => db.palabras.update(id, { ultimoExamen: ahora })))
 }

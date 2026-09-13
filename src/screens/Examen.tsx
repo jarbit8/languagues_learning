@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { useLiveQuery } from 'dexie-react-hooks'
 import { Link } from 'react-router-dom'
-import type { Pregunta } from '../types'
+import type { HojaVocab } from '../types'
 import {
   temaEnCurso,
   estadoExamenTema,
@@ -12,21 +12,17 @@ import {
   getProgresoNivel
 } from '../lib/progreso'
 import { getVocabPack } from '../data/packs'
-import { construirExamenDiario, idsExamenDiario, marcarExaminadasHoy } from '../lib/examenDiario'
+import { idsExamenDiario } from '../lib/examenDiario'
 import { getPlan, estadoDelPlan } from '../lib/plan'
-import { registrarResultado } from '../lib/srs'
-import ExamRunner from '../components/ExamRunner'
 import ExamenBloque from './ExamenBloque'
 import ExamenTema from './ExamenTema'
 import ExamenFinal from './ExamenFinal'
 import HojaVocabulario from './HojaVocabulario'
 import CalificarHoja from './CalificarHoja'
 import { hojaPendiente, nombreDeHoja } from '../lib/hojaVocab'
-import type { HojaVocab } from '../types'
 
 type Vista =
   | { modo: 'hub' }
-  | { modo: 'diario'; preguntas: Pregunta[] }
   // El examen de tema son dos secciones seguidas, con nota propia cada una.
   | { modo: 'tema'; tema: number }
   | { modo: 'bloque'; bloque: number }
@@ -35,10 +31,6 @@ type Vista =
   | { modo: 'calificar'; hoja: HojaVocab }
   | { modo: 'fin'; titulo: string; aciertos: number; total: number; nota?: string }
   | { modo: 'finTema'; tema: number; notaVocab: number; notaGramatica: number; aprobado: boolean }
-
-async function actualizarSrs(p: Pregunta, acierto: boolean) {
-  if (p.palabraId) await registrarResultado(p.palabraId, acierto)
-}
 
 export default function Examen() {
   const [vista, setVista] = useState<Vista>({ modo: 'hub' })
@@ -59,16 +51,6 @@ export default function Examen() {
     const hoja = await hojaPendiente()
     return { tema, titulo: pack?.titulo ?? '', pendientes, gateTema, bloque, gateBloque, gateFinal, nivel, hoja }
   }, [])
-
-  async function iniciarDiario() {
-    const preguntas = await construirExamenDiario()
-    if (!preguntas.length) {
-      setVista({ modo: 'fin', titulo: 'Examen diario', aciertos: 0, total: 0, nota: 'vacio' })
-      return
-    }
-    setVista({ modo: 'diario', preguntas })
-  }
-
 
   function iniciarTema(tema: number) {
     setVista({ modo: 'tema', tema })
@@ -111,36 +93,7 @@ export default function Examen() {
     )
   }
 
-  if (vista.modo === 'diario') {
-    return (
-      <ExamRunner
-        preguntas={vista.preguntas}
-        etiqueta="Diario"
-        onAnswer={actualizarSrs}
-        onFinish={async (aciertos, total) => {
-          await marcarExaminadasHoy(vista.preguntas.map((p) => p.palabraId!).filter(Boolean))
-          setVista({ modo: 'fin', titulo: 'Examen diario', aciertos, total, nota: 'entrenamiento' })
-        }}
-      />
-    )
-  }
-
-
-
   if (vista.modo === 'fin') {
-    if (vista.nota === 'vacio') {
-      return (
-        <div className="flex flex-col gap-4">
-          <h1 className="text-2xl font-extrabold tracking-tight">Examen diario</h1>
-          <div className="tarjeta text-slate-500 dark:text-slate-400">
-            No hay nada que evaluar por ahora. Marca palabras nuevas o vuelve cuando tengas repasos vencidos.
-          </div>
-          <button onClick={() => setVista({ modo: 'hub' })} className="btn-primary">
-            Volver
-          </button>
-        </div>
-      )
-    }
     const pct = Math.round((vista.aciertos / vista.total) * 100)
     const aprobado = vista.nota === 'aprobado'
     return (
@@ -187,7 +140,9 @@ export default function Examen() {
           el examen de tema ya pregunta las del pack ENTERAS: dos entradas para el mismo
           repaso, una que cuenta y otra que no. Es exactamente el motivo por el que ya se había
           borrado la sección "Por tema" de destrezas en agosto. El repaso espaciado lo lleva
-          el diario, que es el único que sabe qué toca hoy. */}
+          el diario, que es el único que sabe qué toca hoy.
+          Y el diario va SOLO EN PAPEL desde el 2026-09-13: la versión en la app se quitó (él:
+          "debes quitar el de arriba"), porque quiere pasar la última hora del día sin pantallas. */}
       <h2 className="text-sm font-bold uppercase tracking-wide text-slate-400">Vocabulario</h2>
       {hojaSinCalificar && (
         <button
@@ -205,32 +160,17 @@ export default function Examen() {
         </button>
       )}
       <button
-        onClick={() => info.pendientes > 0 && iniciarDiario()}
-        disabled={info.pendientes === 0}
-        className={`tarjeta flex items-center gap-3 text-left ${info.pendientes > 0 ? '' : 'opacity-70'}`}
-      >
-        <span className="icono-tile">📅</span>
-        <div className="flex-1">
-          <p className="font-semibold">Examen diario</p>
-          <p className="text-sm text-slate-500 dark:text-slate-400">
-            {info.pendientes > 0
-              ? `${info.pendientes} ${info.pendientes === 1 ? 'palabra' : 'palabras'} · entrenamiento`
-              : 'Nada por hoy. Marca palabras nuevas o espera a que venzan tus repasos.'}
-          </p>
-        </div>
-        <span className="text-slate-400">›</span>
-      </button>
-
-      <button
         onClick={() => info.pendientes > 0 && setVista({ modo: 'papel' })}
         disabled={info.pendientes === 0}
         className={`tarjeta flex items-center gap-3 text-left ${info.pendientes > 0 ? '' : 'opacity-70'}`}
       >
         <span className="icono-tile">🖨️</span>
         <div className="flex-1">
-          <p className="font-semibold">Examen diario en papel</p>
+          <p className="font-semibold">Examen diario</p>
           <p className="text-sm text-slate-500 dark:text-slate-400">
-            Imprímelo, respóndelo a mano y al día siguiente marcas las que fallaste
+            {info.pendientes > 0
+              ? `${info.pendientes} ${info.pendientes === 1 ? 'palabra' : 'palabras'} · en papel, y al día siguiente marcas las que fallaste`
+              : 'Nada por hoy. Marca palabras nuevas o espera a que venzan tus repasos.'}
           </p>
         </div>
         <span className="text-slate-400">›</span>
