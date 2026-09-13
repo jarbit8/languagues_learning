@@ -1,14 +1,14 @@
 import { useState } from 'react'
 import { useLiveQuery } from 'dexie-react-hooks'
 import { inicioDeHoy } from '../lib/fechas'
-import { mapaTemas } from '../lib/progreso'
+import { mapaTemas, estadoExamenBloque, getProgresoBloque } from '../lib/progreso'
 import { temasDeBloque, bloqueDeTema } from '../lib/curriculum'
 import { getVocabPack, getGramatica, getListening, getReading, getWriting, vocabPacks } from '../data/packs'
 import { funcionDe, nombresBloque, gramaticaBloque } from '../data/funciones'
 import {
   diasDeTema,
   fechaCorta,
-  cierraBloque,
+  fechaExamenDeBloque,
   diasDelPlan,
   estadoDelPlan,
   anadirPausa,
@@ -41,6 +41,16 @@ const ESTADO_TEXTO: Record<string, string> = {
 
 export default function Temario() {
   const mapa = useLiveQuery(() => mapaTemas(), [])
+  const estadosBloque = useLiveQuery(
+    () =>
+      Promise.all(
+        [1, 2, 3, 4].map(async (b) => {
+          if ((await getProgresoBloque(b))?.estado === 'aprobado') return 'aprobado'
+          return (await estadoExamenBloque(b)).disponible ? 'disponible' : 'bloqueado'
+        })
+      ),
+    []
+  )
   // Si hay cronograma activo, cada tema muestra los días que le tocan.
   const plan = useLiveQuery(() => getPlan(), [], PLAN_POR_DEFECTO)
   const temaActual = mapa?.find((t) => t.estado === 'en_curso')?.tema ?? 1
@@ -194,7 +204,6 @@ export default function Temario() {
                     {plan && (
                       <span className="text-[10px] text-sky-600 dark:text-sky-400">
                         {fechaCorta(diasDeTema(plan, tema).desde)}–{fechaCorta(diasDeTema(plan, tema).hasta)}
-                        {cierraBloque(tema) && ' 🧩'}
                       </span>
                     )}
                   </div>
@@ -233,33 +242,56 @@ export default function Temario() {
               </div>
             )
           })}
+
+          {/* EL EXAMEN DEL BLOQUE COMO UNA FILA MÁS (2026-09-13, él: "pon un apartado que diga
+              examen del bloque 1, que demora 1 día"). Antes solo lo anunciaba un 🧩 junto a las
+              fechas del sexto tema. */}
+          {(() => {
+            const est = estadosBloque?.[bloque - 1] ?? 'bloqueado'
+            const temas = temasDeBloque(bloque)
+            return (
+              <div className="tarjeta flex items-center gap-3 ring-1 ring-amber-300/70 dark:ring-amber-400/30">
+                <span className="icono-tile">🧩</span>
+                <div className="flex-1">
+                  <p className="font-semibold leading-snug">Examen del bloque {bloque}</p>
+                  <p className="text-xs text-slate-500 dark:text-slate-400">
+                    1 día · temas {temas[0]} a {temas.at(-1)}
+                  </p>
+                </div>
+                <div className="flex shrink-0 flex-col items-end gap-0.5">
+                  <span
+                    className={`rounded-full px-2 py-0.5 text-xs font-semibold ${
+                      ESTADO_BADGE[est === 'disponible' ? 'en_curso' : est]
+                    }`}
+                  >
+                    {est === 'aprobado' ? 'Aprobado ✓' : est === 'disponible' ? 'Disponible' : 'Bloqueado 🔒'}
+                  </span>
+                  <span className="text-[10px] text-sky-600 dark:text-sky-400">
+                    {fechaCorta(fechaExamenDeBloque(plan, bloque))}
+                  </span>
+                </div>
+              </div>
+            )
+          })()}
         </div>
       ))}
 
-      {/* La semana final: el nivel ya no cierra con un examen de dos días sino con siete de
-          repaso y examen. Se pinta aquí, después de los bloques, porque es lo que viene luego. */}
+      {/* EL FINAL, SOLO CON SU FECHA (2026-09-13, él: "solo quiero que pongas el día que será
+          el examen, nada más, no cuánto durará"). El cronograma no cambia: la semana final
+          sigue contando en `plan.ts` y esta es la fecha de su primer día de examen. */}
       <div className="flex flex-col gap-2">
-        <h2 className="text-sm font-bold uppercase tracking-wide text-slate-400">Semana final</h2>
-        <div className="tarjeta flex flex-col gap-2">
-          <p className="text-xs text-slate-500 dark:text-slate-400">
-            Repasas el nivel entero bloque a bloque y lo cierras con el examen final partido en dos días.
-          </p>
-          {SEMANA_FINAL.map((que, i) => {
-            const dia = diasDelPlan() - DIAS_FINAL + 1 + i
-            const esExamen = i >= SEMANA_FINAL.length - 2
-            return (
-              <div key={que} className="flex items-baseline gap-2 text-sm">
-                <span
-                  className={`w-16 shrink-0 text-xs font-semibold ${
-                    esExamen ? 'text-amber-600 dark:text-amber-400' : 'text-slate-400'
-                  }`}
-                >
-                  {fechaCorta(fechaDeDia(plan, dia))}
-                </span>
-                <span className={esExamen ? 'font-semibold' : ''}>{que}</span>
-              </div>
-            )
-          })}
+        <h2 className="text-sm font-bold uppercase tracking-wide text-slate-400">Examen final</h2>
+        <div className="tarjeta flex items-center gap-3 ring-1 ring-amber-300/70 dark:ring-amber-400/30">
+          <span className="icono-tile">🏆</span>
+          <p className="flex-1 font-semibold">Examen final A1</p>
+          <span className="text-sm font-semibold text-sky-600 dark:text-sky-400">
+            {fechaCorta(
+              fechaDeDia(
+                plan,
+                diasDelPlan() - DIAS_FINAL + 1 + SEMANA_FINAL.findIndex((s) => s.startsWith('Examen final'))
+              )
+            )}
+          </span>
         </div>
       </div>
     </div>

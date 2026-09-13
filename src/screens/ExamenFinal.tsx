@@ -9,6 +9,7 @@ import PasoWriting from '../components/PasoWriting'
 import { temasDeBloque } from '../lib/curriculum'
 import PasoSpeakingExamen from '../components/PasoSpeakingExamen'
 import { tareaFinal } from '../data/tareasSpeaking'
+import TextoLeible from '../components/TextoLeible'
 
 type Paso = 'intro' | 'vocab' | 'gramatica' | 'listening' | 'reading' | 'writing' | 'speaking' | 'resultado'
 
@@ -42,8 +43,8 @@ export default function ExamenFinal({ onSalir }: { onSalir: () => void }) {
         <h1 className="text-2xl font-extrabold tracking-tight">Examen final A1</h1>
         <div className="tarjeta flex flex-col gap-2 text-sm">
           <p>
-            100 palabras aleatorias de todo el nivel + {gramaticaPreguntas.length} ejercicios de gramática de los 24
-            temas + las 4 habilidades en versión extendida.
+            Las {vocabPreguntas.length} palabras del nivel + {gramaticaPreguntas.length} ejercicios de gramática de los
+            24 temas + las 4 habilidades en versión extendida.
           </p>
           <p>Corte: 85% en vocabulario, 80% en gramática y 80% en habilidades para certificar el nivel.</p>
         </div>
@@ -123,30 +124,36 @@ export default function ExamenFinal({ onSalir }: { onSalir: () => void }) {
   }
 
   if (paso === 'reading') {
+    // Los textos siguen a la vista mientras responde, como en el examen de bloque.
+    const textos = reading.textos.map((t, i) => (
+      <div key={i} className="tarjeta flex flex-col gap-2">
+        <h3 className="font-bold">{t.titulo}</h3>
+        <TextoLeible texto={t} />
+      </div>
+    ))
     if (enPreguntas) {
       return (
-        <ExamRunner
-          key={paso}
-          preguntas={reading.preguntas}
-          etiqueta="Reading final"
-          tiempoSegundos={reading.preguntas.length * 40}
-          onFinish={(aciertos, total) => {
-            setNotasHab((n) => ({ ...n, reading: Math.round((aciertos / total) * 100) }))
-            setEnPreguntas(false)
-            setPaso('writing')
-          }}
-        />
+        <div className="flex flex-col gap-4">
+          <ExamRunner
+            key={paso}
+            preguntas={reading.preguntas}
+            etiqueta="Reading final"
+            tiempoSegundos={reading.preguntas.length * 40}
+            onFinish={(aciertos, total) => {
+              setNotasHab((n) => ({ ...n, reading: Math.round((aciertos / total) * 100) }))
+              setEnPreguntas(false)
+              setPaso('writing')
+            }}
+          />
+          <h2 className="text-sm font-bold uppercase tracking-wide text-slate-400">Los textos</h2>
+          {textos}
+        </div>
       )
     }
     return (
       <div className="flex flex-col gap-4">
         <h1 className="text-2xl font-extrabold tracking-tight">Reading final</h1>
-        {reading.textos.map((t, i) => (
-          <div key={i} className="tarjeta flex flex-col gap-2">
-            <h3 className="font-bold">{t.titulo}</h3>
-            <p className="text-sm leading-relaxed">{t.texto}</p>
-          </div>
-        ))}
+        {textos}
         <button onClick={() => setEnPreguntas(true)} className="btn-primary">
           Responder preguntas ({reading.preguntas.length})
         </button>
@@ -213,7 +220,7 @@ export default function ExamenFinal({ onSalir }: { onSalir: () => void }) {
         </p>
       ) : (
         <p className="tarjeta text-center text-sm text-slate-500 dark:text-slate-400">
-          Necesitas 85% en vocabulario y 80% en habilidades. Puedes repetirlo cuando quieras.
+          Necesitas 85% en vocabulario, 80% en gramática y 80% en habilidades. Puedes repetirlo cuando quieras.
         </p>
       )}
       <button onClick={onSalir} className="btn-primary">

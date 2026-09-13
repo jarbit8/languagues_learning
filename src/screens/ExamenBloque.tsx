@@ -1,6 +1,7 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import type { NotasBloque, Pregunta } from '../types'
 import { temasDeBloque } from '../lib/curriculum'
+import TextoLeible from '../components/TextoLeible'
 import {
   construirListeningBloque,
   construirReadingBloque,
@@ -8,8 +9,8 @@ import {
   construirGramaticaBloque
 } from '../lib/examenBloque'
 import { registrarResultado } from '../lib/srs'
-import { registrarNotaBloque } from '../lib/progreso'
-import { reproducirDialogo, reproducirLinea } from '../lib/listening'
+import { registrarNotaBloque, reiniciarNotasBloque } from '../lib/progreso'
+import { reproducirDialogo } from '../lib/listening'
 import ExamRunner from '../components/ExamRunner'
 import PasoWriting from '../components/PasoWriting'
 import PasoSpeakingExamen from '../components/PasoSpeakingExamen'
@@ -39,9 +40,14 @@ const CHECKLIST_SPEAKING = [
 export default function ExamenBloque({ bloque, onSalir }: { bloque: number; onSalir: () => void }) {
   const [paso, setPaso] = useState<Paso>('vocab')
   const [notas, setNotas] = useState<NotasBloque>({})
-  const [transcripcionListening, setTranscripcionListening] = useState(false)
-  const [transcripcionReading, setTranscripcionReading] = useState(false)
   const [enPreguntas, setEnPreguntas] = useState(false)
+
+  // Cada intento empieza de cero. `registrarNotaBloque` da el examen por terminado cuando hay
+  // nota en las 6 secciones, y las del intento anterior seguían guardadas: al repetirlo, la
+  // primera sección ya lo cerraba mezclando la nota nueva con cinco viejas.
+  useEffect(() => {
+    void reiniciarNotasBloque(bloque)
+  }, [bloque])
 
   const vocab = useMemo(() => construirVocabBloque(bloque), [bloque])
   const gramatica = useMemo(() => construirGramaticaBloque(bloque), [bloque])
@@ -155,26 +161,33 @@ export default function ExamenBloque({ bloque, onSalir }: { bloque: number; onSa
   }
 
   if (paso === 'reading') {
+    // Los textos siguen a la vista mientras responde, como en IELTS y como en Practicar: antes
+    // desaparecían al pasar a las preguntas y había que contestarlas de memoria.
+    const textos = reading.textos.map((t, i) => (
+      <div key={i} className="tarjeta flex flex-col gap-2">
+        <h3 className="font-bold">{t.titulo}</h3>
+        <TextoLeible texto={t} />
+      </div>
+    ))
     if (enPreguntas) {
       return (
-        <ExamRunner
-          key="reading"
-          preguntas={reading.preguntas}
-          etiqueta="Reading"
-          tiempoSegundos={reading.preguntas.length * 40}
-          onFinish={(aciertos, total) => guardarNota('reading', Math.round((aciertos / total) * 100))}
-        />
+        <div className="flex flex-col gap-4">
+          <ExamRunner
+            key="reading"
+            preguntas={reading.preguntas}
+            etiqueta="Reading"
+            tiempoSegundos={reading.preguntas.length * 40}
+            onFinish={(aciertos, total) => guardarNota('reading', Math.round((aciertos / total) * 100))}
+          />
+          <h2 className="text-sm font-bold uppercase tracking-wide text-slate-400">Los textos</h2>
+          {textos}
+        </div>
       )
     }
     return (
       <div className="flex flex-col gap-4">
         <h1 className="text-2xl font-extrabold tracking-tight">Examen de bloque {bloque} · Reading</h1>
-        {reading.textos.map((t, i) => (
-          <div key={i} className="tarjeta flex flex-col gap-2">
-            <h3 className="font-bold">{t.titulo}</h3>
-            <p className="text-sm leading-relaxed">{t.texto}</p>
-          </div>
-        ))}
+        {textos}
         <button onClick={() => setEnPreguntas(true)} className="btn-primary">
           Responder preguntas ({reading.preguntas.length})
         </button>
@@ -206,32 +219,13 @@ export default function ExamenBloque({ bloque, onSalir }: { bloque: number; onSa
           >
             🔊 Escuchar
           </button>
-          {!transcripcionListening ? null : (
-            <div className="flex flex-col gap-1">
-              {d.lineas.map((l, i) => (
-                <button
-                  key={i}
-                  onClick={() =>
-                    reproducirLinea(l.texto, bloque * 6, {
-                      idxHablante: [...new Set(d.lineas.map((x) => x.hablante))].indexOf(l.hablante)
-                    })
-                  }
-                  className="flex gap-2 text-left text-sm"
-                >
-                  <span className="font-bold text-slate-400">{l.hablante}:</span>
-                  <span>{l.texto}</span>
-                </button>
-              ))}
-            </div>
-          )}
         </div>
       ))}
-      <button
-        onClick={() => setTranscripcionListening(true)}
-        className="text-center text-sm text-slate-500 underline dark:text-slate-400"
-      >
-        Mostrar transcripción
-      </button>
+      {/* Sin transcripción, igual que en el examen de tema: con ella a un toque, el listening
+          se podía responder leyendo. */}
+      <p className="text-center text-sm text-slate-500 dark:text-slate-400">
+        Escucha las veces que necesites y luego responde.
+      </p>
       <button onClick={() => setEnPreguntas(true)} className="btn-primary">
         Responder preguntas ({listening.preguntas.length})
       </button>

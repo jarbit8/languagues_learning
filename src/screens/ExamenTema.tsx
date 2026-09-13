@@ -9,6 +9,7 @@ import ExamRunner from '../components/ExamRunner'
 import CopiarPrompt from '../components/CopiarPrompt'
 import Autoevaluacion from '../components/Autoevaluacion'
 import { EscribirConsigna } from '../components/PasoWriting'
+import TextoLeible from '../components/TextoLeible'
 
 // Examen de tema COMPLETO: las 6 secciones (2026-08-29, "un examen general que involucre
 // todo todo"). Antes solo medía vocabulario y gramática, así que se podía desbloquear el
@@ -110,24 +111,32 @@ export default function ExamenTema({ tema, onSalir }: { tema: number; onSalir: (
 
   if (paso === 'reading') {
     if (!reading) return <Saltar seccion="reading" onSaltar={() => guardarNota('reading', 0)} />
+    // El texto sigue a la vista mientras responde, como en Practicar: antes desaparecía al pasar
+    // a las preguntas. Y por turnos si es una conversación.
+    const texto = (
+      <div className="tarjeta flex flex-col gap-2">
+        <h3 className="font-bold">{reading.texto.titulo}</h3>
+        <TextoLeible texto={reading.texto} />
+      </div>
+    )
     if (enPreguntas) {
       return (
-        <ExamRunner
-          key="reading"
-          preguntas={reading.preguntas}
-          etiqueta={`Tema ${tema} · Reading`}
-          tiempoSegundos={reading.preguntas.length * 40}
-          onFinish={(aciertos, total) => guardarNota('reading', Math.round((aciertos / total) * 100))}
-        />
+        <div className="flex flex-col gap-4">
+          {texto}
+          <ExamRunner
+            key="reading"
+            preguntas={reading.preguntas}
+            etiqueta={`Tema ${tema} · Reading`}
+            tiempoSegundos={reading.preguntas.length * 40}
+            onFinish={(aciertos, total) => guardarNota('reading', Math.round((aciertos / total) * 100))}
+          />
+        </div>
       )
     }
     return (
       <div className="flex flex-col gap-4">
         <h1 className="text-2xl font-extrabold tracking-tight">Tema {tema} · Reading</h1>
-        <div className="tarjeta flex flex-col gap-2">
-          <h3 className="font-bold">{reading.texto.titulo}</h3>
-          <p className="text-sm leading-relaxed">{reading.texto.texto}</p>
-        </div>
+        {texto}
         <button onClick={() => setEnPreguntas(true)} className="btn-primary">
           Responder preguntas ({reading.preguntas.length})
         </button>

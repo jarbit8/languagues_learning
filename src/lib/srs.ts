@@ -40,6 +40,9 @@ export async function toggleAprendida(id: string): Promise<boolean> {
 
 // Resultado en cualquier examen: sube un escalón o cae al principio. `desde` es el día del
 // examen; solo la hoja en papel lo cambia, porque se califica al día siguiente de hacerla.
+// Deja `ultimoExamen` puesto SIEMPRE, venga del examen que venga: sin eso, una palabra
+// respondida en el examen de tema salía otra vez esa noche en la hoja, y al calificar una hoja
+// impresa antes del examen se contaba dos veces el mismo repaso.
 export async function registrarResultado(id: string, acierto: boolean, desde = Date.now()) {
   const p = await db.palabras.get(id)
   if (!p) return
@@ -53,14 +56,16 @@ export async function registrarResultado(id: string, acierto: boolean, desde = D
         estado: 'dominada',
         cajaSRS: ULTIMA_CAJA,
         aciertosSeguidos: p.aciertosSeguidos + 1,
-        proximoRepaso: undefined
+        proximoRepaso: undefined,
+        ultimoExamen: Date.now()
       })
     } else {
       await db.palabras.update(id, {
         estado: 'aprendida',
         cajaSRS: caja,
         aciertosSeguidos: p.aciertosSeguidos + 1,
-        proximoRepaso: enDias(ESPERA[caja], desde)
+        proximoRepaso: enDias(ESPERA[caja], desde),
+        ultimoExamen: Date.now()
       })
     }
   } else {
@@ -70,7 +75,8 @@ export async function registrarResultado(id: string, acierto: boolean, desde = D
       cajaSRS: 0,
       aciertosSeguidos: 0,
       fallosTotales: p.fallosTotales + 1,
-      proximoRepaso: enDias(ESPERA[0], desde)
+      proximoRepaso: enDias(ESPERA[0], desde),
+      ultimoExamen: Date.now()
     })
   }
 }
