@@ -12,21 +12,19 @@ type Sub = 'hablar' | 'escuchar' | 'leer' | 'escribir'
 // Icono arriba y texto abajo: con 5 pestañas en una fila, "🔊 Pronunciar" en línea no cabe en
 // pantalla de celular (375px) y desbordaba horizontalmente.
 //
-// EL ORDEN ES EL DE LA SESIÓN, no uno cualquiera: escuchar → hablar → escribir → leer, que es
-// como él hace los 45 minutos. Empieza por el oído, que es lo que peor entra en frío, y acaba
-// leyendo, que es lo más tranquilo antes de dormir. Estaba con Hablar delante y no cuadraba
-// ni con la hoja para imprimir ni con la tarjeta de "Tu día".
+// EL ORDEN ES EL DE SU SESIÓN (2026-09-13): escribir → escuchar → hablar → leer. Escribir va
+// primero porque se hace sí o sí en la PC (lo corrige la IA); lo demás lo sigue en papel con el
+// audio en el celular, y leer cierra antes de dormir.
 const TABS: { id: Sub; icono: string; label: string }[] = [
+  { id: 'escribir', icono: '✍️', label: 'Escribir' },
   { id: 'escuchar', icono: '🎧', label: 'Escuchar' },
   { id: 'hablar', icono: '🗣️', label: 'Hablar' },
-  { id: 'escribir', icono: '✍️', label: 'Escribir' },
   { id: 'leer', icono: '📖', label: 'Leer' }
 ]
 
 export default function Hablar() {
-  // Se abre en Escuchar, que es por donde empieza la sesión. (El comentario que había aquí
-  // hablaba de caer en Pronunciar con ?pron=, pero eso vive en Aprender desde que se movió.)
-  const [sub, setSub] = useState<Sub>('escuchar')
+  // Se abre en la primera pestaña, que es por donde empieza la sesión.
+  const [sub, setSub] = useState<Sub>('escribir')
 
   return (
     <div className="flex flex-col gap-4">
