@@ -84,7 +84,7 @@ export default function ExamenBloque({ bloque, onSalir }: { bloque: number; onSa
     const aprobado = promedio >= 75
     return (
       <div className="flex flex-col gap-4">
-        <h1 className="text-2xl font-bold">Examen de bloque {bloque}</h1>
+        <h1 className="text-2xl font-extrabold tracking-tight">Examen de bloque {bloque}</h1>
         <div className="tarjeta flex flex-col items-center gap-2 py-8">
           <span className={`text-5xl font-black ${aprobado ? 'text-emerald-500' : 'text-rose-500'}`}>{promedio}%</span>
           <span className="text-slate-500 dark:text-slate-400">
@@ -125,7 +125,7 @@ export default function ExamenBloque({ bloque, onSalir }: { bloque: number; onSa
   if (paso === 'writing') {
     return (
       <div className="flex flex-col gap-4">
-        <h1 className="text-2xl font-bold">Examen de bloque {bloque} · Writing</h1>
+        <h1 className="text-2xl font-extrabold tracking-tight">Examen de bloque {bloque} · Writing</h1>
         <PasoWriting
           bloque={bloque}
           tema={temasDeBloque(bloque).at(-1) ?? bloque * 6}
@@ -139,7 +139,7 @@ export default function ExamenBloque({ bloque, onSalir }: { bloque: number; onSa
   if (paso === 'speaking') {
     return (
       <div className="flex flex-col gap-4">
-        <h1 className="text-2xl font-bold">Examen de bloque {bloque} · Speaking</h1>
+        <h1 className="text-2xl font-extrabold tracking-tight">Examen de bloque {bloque} · Speaking</h1>
         <PasoSpeakingExamen
           tarea={tareaDeBloque(bloque)}
           tema={temaEscenario}
@@ -168,7 +168,7 @@ export default function ExamenBloque({ bloque, onSalir }: { bloque: number; onSa
     }
     return (
       <div className="flex flex-col gap-4">
-        <h1 className="text-2xl font-bold">Examen de bloque {bloque} · Reading</h1>
+        <h1 className="text-2xl font-extrabold tracking-tight">Examen de bloque {bloque} · Reading</h1>
         {reading.textos.map((t, i) => (
           <div key={i} className="tarjeta flex flex-col gap-2">
             <h3 className="font-bold">{t.titulo}</h3>
@@ -196,7 +196,7 @@ export default function ExamenBloque({ bloque, onSalir }: { bloque: number; onSa
   }
   return (
     <div className="flex flex-col gap-4">
-      <h1 className="text-2xl font-bold">Examen de bloque {bloque} · Listening</h1>
+      <h1 className="text-2xl font-extrabold tracking-tight">Examen de bloque {bloque} · Listening</h1>
       {listening.dialogos.map((d, i) => (
         <div key={`${d.tema}-${i}`} className="tarjeta flex flex-col gap-3">
           <h3 className="font-bold">{d.titulo}</h3>

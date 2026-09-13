@@ -17,11 +17,15 @@ export default function VocabCard({
   const aprendida = !!estado && estado.estado !== 'nueva'
 
   return (
-    <div className={`tarjeta ${aprendida ? 'ring-2 ring-emerald-400' : ''}`}>
+    <div className={`tarjeta ${aprendida ? 'ring-2 ring-emerald-400/70 dark:ring-emerald-400/50' : ''}`}>
       <button onClick={() => setAbierta((v) => !v)} className="flex w-full items-center gap-2 text-left">
         <span className="text-lg font-bold">{concepto.es}</span>
-        {aprendida && <span className="text-emerald-500">✓</span>}
-        <span className="ml-auto text-slate-400">{abierta ? '▲' : '▼'}</span>
+        {aprendida && (
+          <span className="rounded-full bg-emerald-100 px-1.5 text-xs font-bold text-emerald-600 dark:bg-emerald-500/15 dark:text-emerald-300">
+            ✓
+          </span>
+        )}
+        <span className={`ml-auto text-xs text-slate-400 transition-transform ${abierta ? 'rotate-180' : ''}`}>▼</span>
       </button>
 
       {abierta && (

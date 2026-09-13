@@ -69,7 +69,7 @@ export default function HojaDePractica() {
         <Link to="/hablar" className="text-sm text-slate-500 underline dark:text-slate-400">
           ← Volver a Practicar
         </Link>
-        <h1 className="text-2xl font-bold">Hoja para imprimir</h1>
+        <h1 className="text-2xl font-extrabold tracking-tight">Hoja para imprimir</h1>
         <p className="text-sm text-slate-500 dark:text-slate-400">
           Escuchar y leer del día. Los diálogos suenan en el celular y respondes en la hoja. Escribir se hace en la app,
           porque lo corrige la IA.
@@ -77,14 +77,12 @@ export default function HojaDePractica() {
         <p className="text-sm font-semibold">
           Tema {t} — {pack?.titulo}
         </p>
-        <div className="grid grid-cols-2 gap-1 rounded-xl bg-slate-200 p-1 dark:bg-slate-800">
+        <div className="segmentado grid-cols-2">
           {([1, 2] as const).map((d) => (
             <button
               key={d}
               onClick={() => setDia(d)}
-              className={`rounded-lg py-1.5 text-sm font-semibold ${
-                dia === d ? 'bg-white shadow dark:bg-slate-700' : 'text-slate-500'
-              }`}
+              className={`segmento py-2 text-sm ${dia === d ? 'segmento-activo' : ''}`}
             >
               Día {d}
             </button>

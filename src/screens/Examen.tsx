@@ -99,7 +99,7 @@ export default function Examen() {
     if (vista.nota === 'vacio') {
       return (
         <div className="flex flex-col gap-4">
-          <h1 className="text-2xl font-bold">Examen diario</h1>
+          <h1 className="text-2xl font-extrabold tracking-tight">Examen diario</h1>
           <div className="tarjeta text-slate-500 dark:text-slate-400">
             No hay nada que evaluar por ahora. Marca palabras nuevas o vuelve cuando tengas repasos vencidos.
           </div>
@@ -113,7 +113,7 @@ export default function Examen() {
     const aprobado = vista.nota === 'aprobado'
     return (
       <div className="flex flex-col gap-4">
-        <h1 className="text-2xl font-bold">{vista.titulo}</h1>
+        <h1 className="text-2xl font-extrabold tracking-tight">{vista.titulo}</h1>
         <div className="tarjeta flex flex-col items-center gap-2 py-8">
           <span className={`text-5xl font-black ${vista.nota === 'reprobado' ? 'text-rose-500' : aprobado ? 'text-emerald-500' : ''}`}>
             {pct}%
@@ -146,7 +146,7 @@ export default function Examen() {
   const gf = info.gateFinal
   return (
     <div className="flex flex-col gap-4">
-      <h1 className="text-2xl font-bold">Exámenes</h1>
+      <h1 className="text-2xl font-extrabold tracking-tight">Exámenes</h1>
 
       {/* --- Vocabulario: SOLO el examen diario ---
           «Vocabulario del tema N» se quitó el 2026-09-09 (él: "estaría repitiendo pues con
@@ -161,7 +161,7 @@ export default function Examen() {
         disabled={info.pendientes === 0}
         className={`tarjeta flex items-center gap-3 text-left ${info.pendientes > 0 ? '' : 'opacity-70'}`}
       >
-        <span className="text-2xl">📅</span>
+        <span className="icono-tile">📅</span>
         <div className="flex-1">
           <p className="font-semibold">Examen diario</p>
           <p className="text-sm text-slate-500 dark:text-slate-400">
@@ -189,7 +189,7 @@ export default function Examen() {
         disabled={!gt.disponible}
         className={`tarjeta flex items-center gap-3 text-left ${gt.disponible ? '' : 'opacity-70'}`}
       >
-        <span className="text-2xl">{gt.disponible ? '🎯' : '🔒'}</span>
+        <span className="icono-tile">{gt.disponible ? '🎯' : '🔒'}</span>
         <div className="flex-1">
           <p className="font-semibold">Examen de tema {info.tema}</p>
           {gt.disponible ? (
@@ -212,7 +212,7 @@ export default function Examen() {
         disabled={!gb.disponible}
         className={`tarjeta flex items-center gap-3 text-left ${gb.disponible ? '' : 'opacity-70'}`}
       >
-        <span className="text-2xl">{gb.disponible ? '🧩' : '🔒'}</span>
+        <span className="icono-tile">{gb.disponible ? '🧩' : '🔒'}</span>
         <div className="flex-1">
           <p className="font-semibold">Examen de bloque {info.bloque}</p>
           {gb.disponible ? (
@@ -233,7 +233,7 @@ export default function Examen() {
         disabled={!gf.disponible}
         className={`tarjeta flex items-center gap-3 text-left ${gf.disponible ? '' : 'opacity-70'}`}
       >
-        <span className="text-2xl">{gf.disponible ? '🏆' : '🔒'}</span>
+        <span className="icono-tile">{gf.disponible ? '🏆' : '🔒'}</span>
         <div className="flex-1">
           <p className="font-semibold">Examen final A1</p>
           {info.nivel?.estado === 'aprobado' ? (

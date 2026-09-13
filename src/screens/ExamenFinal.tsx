@@ -39,7 +39,7 @@ export default function ExamenFinal({ onSalir }: { onSalir: () => void }) {
   if (paso === 'intro') {
     return (
       <div className="flex flex-col gap-4">
-        <h1 className="text-2xl font-bold">Examen final A1</h1>
+        <h1 className="text-2xl font-extrabold tracking-tight">Examen final A1</h1>
         <div className="tarjeta flex flex-col gap-2 text-sm">
           <p>
             100 palabras aleatorias de todo el nivel + {gramaticaPreguntas.length} ejercicios de gramática de los 24
@@ -106,7 +106,7 @@ export default function ExamenFinal({ onSalir }: { onSalir: () => void }) {
     }
     return (
       <div className="flex flex-col gap-4">
-        <h1 className="text-2xl font-bold">Listening final</h1>
+        <h1 className="text-2xl font-extrabold tracking-tight">Listening final</h1>
         {listening.dialogos.map((d, i) => (
           <div key={`${d.tema}-${i}`} className="tarjeta flex flex-col gap-3">
             <h3 className="font-bold">{d.titulo}</h3>
@@ -140,7 +140,7 @@ export default function ExamenFinal({ onSalir }: { onSalir: () => void }) {
     }
     return (
       <div className="flex flex-col gap-4">
-        <h1 className="text-2xl font-bold">Reading final</h1>
+        <h1 className="text-2xl font-extrabold tracking-tight">Reading final</h1>
         {reading.textos.map((t, i) => (
           <div key={i} className="tarjeta flex flex-col gap-2">
             <h3 className="font-bold">{t.titulo}</h3>
@@ -157,7 +157,7 @@ export default function ExamenFinal({ onSalir }: { onSalir: () => void }) {
   if (paso === 'writing') {
     return (
       <div className="flex flex-col gap-4">
-        <h1 className="text-2xl font-bold">Writing final</h1>
+        <h1 className="text-2xl font-extrabold tracking-tight">Writing final</h1>
         <PasoWriting
           bloque={4}
           tema={temasDeBloque(4).at(-1) ?? 24}
@@ -174,7 +174,7 @@ export default function ExamenFinal({ onSalir }: { onSalir: () => void }) {
   if (paso === 'speaking') {
     return (
       <div className="flex flex-col gap-4">
-        <h1 className="text-2xl font-bold">Speaking final</h1>
+        <h1 className="text-2xl font-extrabold tracking-tight">Speaking final</h1>
         <PasoSpeakingExamen
           tarea={tareaFinal()}
           tema={24}
@@ -198,7 +198,7 @@ export default function ExamenFinal({ onSalir }: { onSalir: () => void }) {
   const aprobado = (notaVocab ?? 0) >= 85 && (notaGramatica ?? 0) >= 80 && notaHabilidadesFinal >= 80
   return (
     <div className="flex flex-col gap-4">
-      <h1 className="text-2xl font-bold">Resultado — Examen final A1</h1>
+      <h1 className="text-2xl font-extrabold tracking-tight">Resultado — Examen final A1</h1>
       <div className="tarjeta flex flex-col items-center gap-2 py-8">
         <span className={`text-5xl font-black ${aprobado ? 'text-emerald-500' : 'text-rose-500'}`}>
           {aprobado ? '¡Certificado! 🎓' : 'Aún no'}

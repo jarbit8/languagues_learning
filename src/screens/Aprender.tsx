@@ -38,16 +38,16 @@ export default function Aprender() {
     <div className="flex flex-col gap-4">
       <header>
         <p className="text-sm text-slate-500 dark:text-slate-400">Tema {tema} en curso</p>
-        <h1 className="text-2xl font-bold">{pack?.titulo ?? 'Aprender'}</h1>
+        <h1 className="text-2xl font-extrabold tracking-tight">{pack?.titulo ?? 'Aprender'}</h1>
       </header>
 
-      <div className="grid grid-cols-3 gap-1 rounded-xl bg-slate-200 p-1 dark:bg-slate-800">
+      <div className="segmentado grid-cols-3">
         {TABS.map((t) => (
           <button
             key={t.id}
             onClick={() => setSub(t.id)}
-            className={`flex min-h-[52px] flex-col items-center justify-center gap-0.5 rounded-lg px-0.5 py-1.5 text-[10px] font-semibold leading-tight ${
-              sub === t.id ? 'bg-white shadow dark:bg-slate-700' : 'text-slate-500'
+            className={`segmento flex min-h-[52px] flex-col items-center justify-center gap-0.5 px-0.5 py-1.5 text-[10px] leading-tight ${
+              sub === t.id ? 'segmento-activo' : ''
             }`}
           >
             <span className="text-base leading-none">{t.icono}</span>

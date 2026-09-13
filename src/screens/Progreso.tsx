@@ -54,7 +54,7 @@ function ReiniciarCurso() {
         </p>
       )}
       <div className="flex gap-2">
-        <button onClick={() => void reiniciar()} className="btn-primary flex-1 !bg-rose-600">
+        <button onClick={() => void reiniciar()} className="btn-primary flex-1 !bg-rose-600 !bg-none !shadow-rose-500/25">
           Sí, borrar todo
         </button>
         <button onClick={() => setConfirmando(false)} className="flex-1 text-sm underline">
@@ -74,7 +74,7 @@ export default function Progreso() {
   // repetidas —las palabras están en Aprender → Aprendido y las notas en el propio examen—.
   return (
     <div className="flex flex-col gap-4">
-      <h1 className="text-2xl font-bold">Progreso</h1>
+      <h1 className="text-2xl font-extrabold tracking-tight">Progreso</h1>
       <Cuenta />
       <Temario />
       <ReiniciarCurso />

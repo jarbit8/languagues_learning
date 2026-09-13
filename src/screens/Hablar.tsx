@@ -31,23 +31,23 @@ export default function Hablar() {
   return (
     <div className="flex flex-col gap-4">
       <div className="flex items-center gap-2">
-        <h1 className="flex-1 text-2xl font-bold">Practicar</h1>
+        <h1 className="flex-1 text-2xl font-extrabold tracking-tight">Practicar</h1>
         {/* Se imprimen escuchar y leer; escribir lo corrige la IA en la app. */}
         <Link
           to="/hoja"
-          className="rounded-lg border border-slate-300 px-2.5 py-1.5 text-xs font-semibold dark:border-slate-600"
+          className="rounded-xl bg-white px-3 py-2 text-xs font-bold shadow-sm ring-1 ring-slate-200 dark:bg-slate-900 dark:ring-white/10"
         >
           🖨️ Hoja en papel
         </Link>
       </div>
 
-      <div className="grid grid-cols-4 gap-1 rounded-xl bg-slate-200 p-1 dark:bg-slate-800">
+      <div className="segmentado grid-cols-4">
         {TABS.map((t) => (
           <button
             key={t.id}
             onClick={() => setSub(t.id)}
-            className={`flex min-h-[52px] flex-col items-center justify-center gap-0.5 rounded-lg px-0.5 py-1.5 text-[10px] font-semibold leading-tight ${
-              sub === t.id ? 'bg-white shadow dark:bg-slate-700' : 'text-slate-500'
+            className={`segmento flex min-h-[52px] flex-col items-center justify-center gap-0.5 px-0.5 py-1.5 text-[10px] leading-tight ${
+              sub === t.id ? 'segmento-activo' : ''
             }`}
           >
             <span className="text-base leading-none">{t.icono}</span>

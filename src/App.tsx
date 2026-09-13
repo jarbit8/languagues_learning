@@ -16,8 +16,8 @@ export default function App() {
 
   return (
     <HashRouter>
-      <div className="mx-auto flex min-h-full max-w-md flex-col bg-slate-50 text-slate-900 dark:bg-slate-900 dark:text-slate-100">
-        <main className="flex-1 px-4 pb-24 pt-5">
+      <div className="mx-auto flex min-h-full max-w-md flex-col">
+        <main className="flex-1 px-4 pb-32 pt-6">
           <Routes>
             <Route path="/" element={<Inicio />} />
             <Route path="/aprender" element={<Aprender />} />

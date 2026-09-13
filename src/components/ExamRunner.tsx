@@ -173,8 +173,15 @@ export default function ExamRunner({
         </div>
       </div>
 
+      <div className="-mt-2 h-1.5 overflow-hidden rounded-full bg-slate-200 dark:bg-slate-800">
+        <div
+          className="h-full rounded-full bg-gradient-to-r from-indigo-500 to-violet-500 transition-all duration-300"
+          style={{ width: `${((idx + (resultado ? 1 : 0)) / preguntas.length) * 100}%` }}
+        />
+      </div>
+
       <div className="tarjeta flex flex-col gap-4">
-        <p className="text-lg font-semibold">{p.enunciado}</p>
+        <p className="text-xl font-bold leading-snug tracking-tight">{p.enunciado}</p>
         {p.pista && <p className="text-sm text-slate-500 dark:text-slate-400">Pista: {p.pista}</p>}
 
         {p.tipo === 'deletreo' && p.audioTexto && (
@@ -211,7 +218,7 @@ export default function ExamRunner({
                       ? 'bg-emerald-500 text-white'
                       : estado === 'mal'
                         ? 'bg-rose-500 text-white'
-                        : 'bg-slate-100 text-slate-800 dark:bg-slate-700 dark:text-slate-100'
+                        : 'bg-slate-100 text-slate-800 ring-1 ring-slate-200 dark:bg-slate-800 dark:text-slate-100 dark:ring-white/5'
                   }`}
                 >
                   {op}
@@ -268,16 +275,16 @@ export default function ExamRunner({
             autoCorrect="off"
             spellCheck={false}
             placeholder="Tu respuesta…"
-            className="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-lg outline-none focus:border-slate-900 dark:border-slate-600 dark:bg-slate-900"
+            className="w-full rounded-2xl border border-slate-300 bg-slate-50 px-4 py-3.5 text-lg outline-none transition focus:border-indigo-500 focus:ring-4 focus:ring-indigo-500/15 dark:border-slate-700 dark:bg-slate-950 dark:focus:border-indigo-400"
           />
         )}
 
         {resultado && (
           <div
-            className={`rounded-xl px-4 py-3 ${
+            className={`rounded-2xl px-4 py-3 ring-1 ${
               resultado === 'bien'
-                ? 'bg-emerald-50 text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-200'
-                : 'bg-rose-50 text-rose-800 dark:bg-rose-900/30 dark:text-rose-200'
+                ? 'bg-emerald-50 text-emerald-800 ring-emerald-200 dark:bg-emerald-500/10 dark:text-emerald-200 dark:ring-emerald-500/25'
+                : 'bg-rose-50 text-rose-800 ring-rose-200 dark:bg-rose-500/10 dark:text-rose-200 dark:ring-rose-500/25'
             }`}
           >
             {resultado === 'bien' ? '¡Correcto!' : 'La respuesta es:'} <b>{p.respuesta}</b>

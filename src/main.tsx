@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
+import '@fontsource-variable/plus-jakarta-sans/wght.css'
 import './index.css'
 import { inicializarApariencia } from './lib/apariencia'
 import { iniciarAutoActualizacion } from './lib/actualizacion'

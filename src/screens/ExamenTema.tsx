@@ -89,7 +89,7 @@ export default function ExamenTema({ tema, onSalir }: { tema: number; onSalir: (
     }
     return (
       <div className="flex flex-col gap-4">
-        <h1 className="text-2xl font-bold">Tema {tema} · Listening</h1>
+        <h1 className="text-2xl font-extrabold tracking-tight">Tema {tema} · Listening</h1>
         <div className="tarjeta flex flex-col gap-3">
           <p className="text-sm text-slate-500 dark:text-slate-400">
             {/* Antes encadenaba los diálogos del tema y aquí se leía "1 diálogos seguidos"; desde que el
@@ -123,7 +123,7 @@ export default function ExamenTema({ tema, onSalir }: { tema: number; onSalir: (
     }
     return (
       <div className="flex flex-col gap-4">
-        <h1 className="text-2xl font-bold">Tema {tema} · Reading</h1>
+        <h1 className="text-2xl font-extrabold tracking-tight">Tema {tema} · Reading</h1>
         <div className="tarjeta flex flex-col gap-2">
           <h3 className="font-bold">{reading.texto.titulo}</h3>
           <p className="text-sm leading-relaxed">{reading.texto.texto}</p>
@@ -139,7 +139,7 @@ export default function ExamenTema({ tema, onSalir }: { tema: number; onSalir: (
     if (!consigna) return <Saltar seccion="writing" onSaltar={() => guardarNota('writing', 0)} />
     return (
       <div className="flex flex-col gap-4">
-        <h1 className="text-2xl font-bold">Tema {tema} · Writing</h1>
+        <h1 className="text-2xl font-extrabold tracking-tight">Tema {tema} · Writing</h1>
         <EscribirConsigna
           pack={consigna}
           tema={tema}
@@ -154,7 +154,7 @@ export default function ExamenTema({ tema, onSalir }: { tema: number; onSalir: (
   if (paso === 'speaking') {
     return (
       <div className="flex flex-col gap-4">
-        <h1 className="text-2xl font-bold">Tema {tema} · Speaking</h1>
+        <h1 className="text-2xl font-extrabold tracking-tight">Tema {tema} · Speaking</h1>
         <CopiarPrompt
           prompt={promptHablarExamen(tema)}
           descripcion="Pega esto en una IA con voz (ChatGPT, Gemini…) y habla con ella del tema. Al final te dirá VEREDICTO: LISTO ✅ o AÚN NO ⏳."
@@ -181,7 +181,7 @@ export default function ExamenTema({ tema, onSalir }: { tema: number; onSalir: (
   ]
   return (
     <div className="flex flex-col gap-4">
-      <h1 className="text-2xl font-bold">Examen del tema {tema}</h1>
+      <h1 className="text-2xl font-extrabold tracking-tight">Examen del tema {tema}</h1>
       <div className="tarjeta flex flex-col items-center gap-2 py-8">
         <span className={`text-5xl font-black ${aprobado ? 'text-emerald-500' : 'text-rose-500'}`}>
           {aprobado ? '¡Aprobado! 🎉' : 'Aún no'}

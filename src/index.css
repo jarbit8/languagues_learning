@@ -16,17 +16,56 @@ body {
   margin: 0;
   -webkit-tap-highlight-color: transparent;
   overscroll-behavior-y: none;
+  @apply bg-slate-50 text-slate-900 antialiased dark:bg-slate-950 dark:text-slate-100;
+}
+
+/* Luz de fondo fija detrás de toda la app. */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(42rem 26rem at 50% -8rem, rgb(99 102 241 / 0.12), transparent 70%),
+    radial-gradient(30rem 24rem at 110% 105%, rgb(139 92 246 / 0.08), transparent 70%);
+}
+.dark body::before {
+  background:
+    radial-gradient(42rem 26rem at 50% -8rem, rgb(99 102 241 / 0.24), transparent 70%),
+    radial-gradient(30rem 24rem at 110% 105%, rgb(139 92 246 / 0.14), transparent 70%);
 }
 
 @layer components {
   .tarjeta {
-    @apply rounded-2xl bg-white p-4 shadow-sm ring-1 ring-slate-200 dark:bg-slate-800 dark:ring-slate-700;
+    @apply rounded-3xl bg-white p-4 ring-1 ring-slate-200/80 dark:bg-slate-900 dark:ring-white/[0.07];
+    box-shadow: 0 1px 2px rgb(22 26 46 / 0.04), 0 10px 30px -14px rgb(22 26 46 / 0.14);
+  }
+  .dark .tarjeta {
+    box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.05), 0 12px 32px -16px rgb(0 0 0 / 0.6);
   }
   .btn {
-    @apply inline-flex min-h-[44px] items-center justify-center gap-2 rounded-xl px-4 py-2 font-semibold transition active:scale-[0.98];
+    @apply inline-flex min-h-[48px] select-none items-center justify-center gap-2 rounded-2xl px-5 py-2.5 font-bold transition duration-150 active:scale-[0.97];
+  }
+  .btn:focus-visible {
+    outline: 2px solid #818cf8;
+    outline-offset: 2px;
   }
   .btn-primary {
-    @apply btn bg-slate-900 text-white dark:bg-white dark:text-slate-900;
+    @apply btn bg-gradient-to-br from-indigo-500 to-violet-600 text-white shadow-lg shadow-indigo-500/25 hover:brightness-110 dark:shadow-indigo-950/60;
+  }
+  /* Pestañas y selector de día: el mismo control en todas las pantallas. */
+  .segmentado {
+    @apply grid gap-1 rounded-2xl bg-slate-200/60 p-1 ring-1 ring-slate-200 dark:bg-slate-900 dark:ring-white/[0.06];
+  }
+  .segmento {
+    @apply rounded-xl font-semibold text-slate-500 transition dark:text-slate-400;
+  }
+  .segmento-activo {
+    @apply bg-white text-indigo-600 shadow-sm dark:bg-indigo-500/20 dark:text-white dark:shadow-none dark:ring-1 dark:ring-indigo-400/40;
+  }
+  .icono-tile {
+    @apply grid h-11 w-11 shrink-0 place-items-center rounded-2xl bg-slate-100 text-xl dark:bg-slate-800;
   }
 }
 
@@ -43,6 +82,9 @@ body {
   body {
     background: #fff !important;
     color: #000 !important;
+  }
+  body::before {
+    display: none;
   }
   nav,
   .print\:hidden {
