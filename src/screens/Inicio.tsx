@@ -99,8 +99,8 @@ export default function Inicio() {
           </div>
         </div>
 
-        {/* Los seis módulos del tema, los mismos que las seis secciones de su examen. Se ve de
-            un vistazo qué falta, que es lo que el porcentaje solo no dice. */}
+        {/* Los módulos del tema, los mismos que las secciones de su examen. Se ve de un vistazo
+            qué falta, que es lo que el porcentaje solo no dice. */}
         <div className="relative grid grid-cols-2 gap-2">
           {modulos.map((m) => {
             const listo = m.hechas >= m.total

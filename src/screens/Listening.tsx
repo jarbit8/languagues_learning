@@ -249,7 +249,7 @@ export default function Listening() {
           Aún no hay listening para el tema {temaSel}.
         </p>
       ) : (
-        // DOS diálogos por día: uno solo deja el módulo en 3 min y el objetivo son 5.
+        // DOS diálogos, los del día 1: uno solo deja el módulo en 3 min y el objetivo son 5.
         // Si el tema aún no tiene los cuatro, se reparte lo que haya sin dejar el día vacío.
         porDia(pack.dialogos, dia).map((d) => {
           const i = pack.dialogos.indexOf(d)

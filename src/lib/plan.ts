@@ -28,12 +28,8 @@ export const DIAS_POR_BLOQUE = TEMAS_POR_BLOQUE * DIAS_POR_TEMA + 1 // 13
 
 export const totalTemas = () => vocabPacks.length
 export const totalBloques = () => Math.ceil(totalTemas() / TEMAS_POR_BLOQUE)
-// EL FINAL ES UNA SEMANA ENTERA (2026-08-30, decisión del usuario: "un examen muy completo
-// practicando todo lo aprendido, que demorará una semana, hasta el domingo"). Antes eran 2
-// días y ya se quedaba corto: son 230 preguntas objetivas más writing y speaking. Ahora la
-// semana repasa el nivel bloque a bloque y remata con el examen partido en dos días.
-// El contenido del nivel cierra el sábado 31 de octubre con el examen del bloque 4; el
-// domingo 1 queda libre (pausa) para que la semana caiga limpia de lunes a domingo.
+// El final fue una semana entera desde el 2026-08-30 (cinco días de repaso y el examen partido
+// en dos); ver abajo por qué ya no.
 // SIN DÍAS DE REPASO, POR AHORA (2026-09-13, él: "sin los repasos ni nada, debería ser al día
 // siguiente"): el final empieza el día después del examen del bloque 4. Se quitaron los cinco
 // días de repaso de la semana y quedan los dos del examen. Si vuelven, eran: un día por bloque

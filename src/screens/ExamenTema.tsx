@@ -10,9 +10,9 @@ import Autoevaluacion from '../components/Autoevaluacion'
 import { EscribirConsigna } from '../components/PasoWriting'
 import TextoLeible from '../components/TextoLeible'
 
-// Examen de tema COMPLETO: las 6 secciones (2026-08-29, "un examen general que involucre
-// todo todo"). Antes solo medía vocabulario y gramática, así que se podía desbloquear el
-// tema siguiente sin haber escuchado, leído, escrito ni hablado nada de ese tema.
+// Examen de tema COMPLETO (2026-08-29, "un examen general que involucre todo todo"). Antes
+// solo medía vocabulario y gramática, así que se podía desbloquear el tema siguiente sin haber
+// escuchado, leído, escrito ni hablado nada de ese tema.
 // Es la puerta de progresión; las mismas destrezas sueltas están en Practicar sin nota.
 // Desde el 2026-09-13 son CINCO: el vocabulario salió (va por el examen diario y el de bloque).
 type Paso = 'gramatica' | 'listening' | 'reading' | 'writing' | 'speaking' | 'resultado'

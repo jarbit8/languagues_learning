@@ -89,7 +89,7 @@ export default function Reading() {
           Aún no hay lectura para el tema {temaSel}.
         </p>
       ) : (
-        // DOS lecturas por día: una sola deja el módulo en 7 min y el objetivo son 15.
+        // DOS lecturas, las del día 1: una sola deja el módulo en 7 min y el objetivo son 15.
         porDia(pack.textos, dia)
           .map((t) => {
             const i = pack.textos.indexOf(t)
