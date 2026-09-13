@@ -14,7 +14,6 @@ import {
 import { preguntaDeListening } from '../lib/preguntas'
 import { sesionDeletreo, itemsDisponibles } from '../lib/deletreo'
 import ExamRunner from '../components/ExamRunner'
-import SelectorDia from '../components/SelectorDia'
 import AvisoVoz from '../components/AvisoVoz'
 import { porDia } from '../lib/porDia'
 import { marcarHecho, claveEscuchar, claveDeletreo } from '../lib/avance'
@@ -146,8 +145,8 @@ function DialogoCard({
 export default function Listening() {
   const temaActual = useLiveQuery(() => temaEnCurso(), [], 1) ?? 1
   const [tema, setTema] = useState<number | null>(null)
-  // Un diálogo por día: enseñar los dos juntos destripa el material del día siguiente.
-  const [dia, setDia] = useState<1 | 2>(1)
+  // UN DÍA DE ESTUDIO Y OTRO DE EXAMEN (2026-09-13): se practica solo lo que traía el día 1.
+  const dia = 1
   const [examenDialogo, setExamenDialogo] = useState<number | null>(null)
   const [deletreo, setDeletreo] = useState<Pregunta[] | null>(null)
   const [resultado, setResultado] = useState<{ aciertos: number; total: number } | null>(null)
@@ -237,8 +236,6 @@ export default function Listening() {
 
       <AvisoVoz />
 
-      <SelectorDia dia={dia} onCambio={setDia} />
-
       <p className="text-sm text-slate-500 dark:text-slate-400">
         Escucha el diálogo (sin mirar la transcripción la primera vez), luego responde las preguntas. Solo usa
         vocabulario de temas que ya viste.{' '}
@@ -273,13 +270,8 @@ export default function Listening() {
             Es la primera parte del listening de IELTS y lo que te tocará al dar tu apellido por
             teléfono. Salen solo palabras cuyo vocabulario ya viste.
           </p>
-          <p className="text-xs font-semibold text-slate-500 dark:text-slate-400">
-            {dia === 1
-              ? 'Día 1: letras sueltas y palabras.'
-              : 'Día 2: casi sin letras sueltas y con las frases, que es lo difícil.'}
-          </p>
           <button onClick={() => setDeletreo(sesionDeletreo(temaSel, dia))} className="btn-primary">
-            Empezar dictado · día {dia}
+            Empezar dictado
           </button>
         </div>
       )}

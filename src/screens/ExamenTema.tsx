@@ -1,9 +1,8 @@
 import { useMemo, useState } from 'react'
-import type { NotasBloque, Pregunta } from '../types'
+import type { NotasBloque } from '../types'
 import { construirExamenTema } from '../lib/examenTema'
 import { listeningDeTema, readingDeTema, consignaDeTema, promptHablarExamen } from '../lib/examenHabilidades'
 import { registrarExamenTema } from '../lib/progreso'
-import { registrarResultado } from '../lib/srs'
 import { reproducirDialogo, detener } from '../lib/listening'
 import ExamRunner from '../components/ExamRunner'
 import CopiarPrompt from '../components/CopiarPrompt'
@@ -15,10 +14,10 @@ import TextoLeible from '../components/TextoLeible'
 // todo todo"). Antes solo medía vocabulario y gramática, así que se podía desbloquear el
 // tema siguiente sin haber escuchado, leído, escrito ni hablado nada de ese tema.
 // Es la puerta de progresión; las mismas destrezas sueltas están en Practicar sin nota.
-type Paso = 'vocab' | 'gramatica' | 'listening' | 'reading' | 'writing' | 'speaking' | 'resultado'
+// Desde el 2026-09-13 son CINCO: el vocabulario salió (va por el examen diario y el de bloque).
+type Paso = 'gramatica' | 'listening' | 'reading' | 'writing' | 'speaking' | 'resultado'
 
 const SIGUIENTE: Record<Exclude<Paso, 'resultado'>, Paso> = {
-  vocab: 'gramatica',
   gramatica: 'listening',
   listening: 'reading',
   reading: 'writing',
@@ -35,7 +34,7 @@ const CHECKLIST_HABLAR = [
 ]
 
 export default function ExamenTema({ tema, onSalir }: { tema: number; onSalir: () => void }) {
-  const [paso, setPaso] = useState<Paso>('vocab')
+  const [paso, setPaso] = useState<Paso>('gramatica')
   const [notas, setNotas] = useState<NotasBloque>({})
   const [enPreguntas, setEnPreguntas] = useState(false)
   const [aprobado, setAprobado] = useState(false)
@@ -45,7 +44,7 @@ export default function ExamenTema({ tema, onSalir }: { tema: number; onSalir: (
   const reading = useMemo(() => readingDeTema(tema), [tema])
   const consigna = useMemo(() => consignaDeTema(tema), [tema])
 
-  async function guardarNota(seccion: keyof NotasBloque, nota: number) {
+  async function guardarNota(seccion: Exclude<Paso, 'resultado'>, nota: number) {
     const nuevas = { ...notas, [seccion]: nota }
     setNotas(nuevas)
     setEnPreguntas(false)
@@ -58,19 +57,14 @@ export default function ExamenTema({ tema, onSalir }: { tema: number; onSalir: (
     setPaso(SIGUIENTE[seccion])
   }
 
-  if (paso === 'vocab' || paso === 'gramatica') {
-    const esVocab = paso === 'vocab'
-    const preguntas = esVocab ? examen.vocab : examen.gramatica
+  if (paso === 'gramatica') {
     return (
       <ExamRunner
         key={paso}
-        preguntas={preguntas}
-        etiqueta={`Tema ${tema} · ${esVocab ? 'Vocabulario' : 'Gramática'}`}
-        tiempoSegundos={preguntas.length * 30}
-        onAnswer={async (p: Pregunta, acierto: boolean) => {
-          if (p.palabraId) await registrarResultado(p.palabraId, acierto)
-        }}
-        onFinish={(aciertos, total) => guardarNota(paso, Math.round((aciertos / total) * 100))}
+        preguntas={examen.gramatica}
+        etiqueta={`Tema ${tema} · Gramática`}
+        tiempoSegundos={examen.gramatica.length * 30}
+        onFinish={(aciertos, total) => guardarNota('gramatica', Math.round((aciertos / total) * 100))}
       />
     )
   }
@@ -181,7 +175,6 @@ export default function ExamenTema({ tema, onSalir }: { tema: number; onSalir: (
     ? Math.round(habilidades.reduce((a, b) => a + b, 0) / habilidades.length)
     : 0
   const FILAS: [string, number | undefined, number][] = [
-    ['Vocabulario', notas.vocab, 100],
     ['Gramática', notas.gramatica, 80],
     ['Listening', notas.listening, 75],
     ['Reading', notas.reading, 75],
@@ -198,7 +191,7 @@ export default function ExamenTema({ tema, onSalir }: { tema: number; onSalir: (
         <span className="text-center text-sm text-slate-500 dark:text-slate-400">
           {aprobado
             ? 'Tema siguiente desbloqueado'
-            : 'Necesitas el 100% en vocabulario, 80% en gramática y 75% de promedio en las destrezas'}
+            : 'Necesitas 80% en gramática y 75% de promedio en las destrezas'}
         </span>
       </div>
       <div className="tarjeta grid grid-cols-2 gap-3 text-center text-sm">
@@ -213,9 +206,7 @@ export default function ExamenTema({ tema, onSalir }: { tema: number; onSalir: (
       </div>
       <p className="text-center text-xs text-slate-400">Promedio de destrezas: {promedioHab}%</p>
       {!aprobado && (
-        <p className="text-center text-sm text-slate-500 dark:text-slate-400">
-          Las palabras falladas volvieron al repaso. Puedes repetirlo cuando quieras.
-        </p>
+        <p className="text-center text-sm text-slate-500 dark:text-slate-400">Puedes repetirlo cuando quieras.</p>
       )}
       <button onClick={onSalir} className="btn-primary">
         Volver a exámenes

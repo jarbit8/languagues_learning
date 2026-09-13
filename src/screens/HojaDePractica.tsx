@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { useLiveQuery } from 'dexie-react-hooks'
 import { Link } from 'react-router-dom'
 import { temaEnCurso } from '../lib/progreso'
@@ -38,8 +37,8 @@ function Pregunta({ n, enunciado, opciones }: { n: number; enunciado: string; op
 
 export default function HojaDePractica() {
   const temaActual = useLiveQuery(() => temaEnCurso(), [], 1) ?? 1
-  // Un tema son dos días y cada uno lleva sus dos diálogos y sus dos lecturas.
-  const [dia, setDia] = useState<1 | 2>(1)
+  // Solo lo del día 1: el día 2 del tema es el examen (2026-09-13).
+  const dia = 1
   const t = temaActual
 
   const pack = getVocabPack(t)
@@ -77,17 +76,6 @@ export default function HojaDePractica() {
         <p className="text-sm font-semibold">
           Tema {t} — {pack?.titulo}
         </p>
-        <div className="segmentado grid-cols-2">
-          {([1, 2] as const).map((d) => (
-            <button
-              key={d}
-              onClick={() => setDia(d)}
-              className={`segmento py-2 text-sm ${dia === d ? 'segmento-activo' : ''}`}
-            >
-              Día {d}
-            </button>
-          ))}
-        </div>
         <button onClick={() => window.print()} className="btn-primary">
           🖨️ Imprimir
         </button>
@@ -97,7 +85,7 @@ export default function HojaDePractica() {
       <div className="hoja bg-white p-6 text-slate-900 print:p-0">
         <div className="border-b-2 border-slate-900 pb-2">
           <h2 className="text-lg font-black">
-            Tema {t} — {pack?.titulo} · Día {dia}
+            Tema {t} — {pack?.titulo}
           </h2>
           <p className="text-xs text-slate-500">Name: ________________________ Date: ____ / ____ / ______</p>
         </div>
@@ -105,7 +93,7 @@ export default function HojaDePractica() {
         <section className="mt-5">
           <h3 className="text-sm font-black uppercase tracking-wide">1 · Escuchar 🎧</h3>
           <p className="text-xs italic text-slate-500">
-            Pon los diálogos en el celular (Practicar → Escuchar → Día {dia}) y responde aquí sin mirar la transcripción.
+            Pon los diálogos en el celular (Practicar → Escuchar) y responde aquí sin mirar la transcripción.
           </p>
           {dialogos.length === 0 ? (
             <p className="mt-2 text-sm text-slate-500">Aún no hay listening para el tema {t}.</p>
@@ -147,7 +135,7 @@ export default function HojaDePractica() {
         {/* SOLUCIONES, en su propia página para poder no imprimirla */}
         <section className="mt-8 break-before-page">
           <h3 className="text-sm font-black uppercase tracking-wide">
-            Soluciones · Tema {t} · Día {dia}
+            Soluciones · Tema {t}
           </h3>
           <p className="text-xs italic text-slate-500">Corrige solo cuando hayas terminado.</p>
           {[

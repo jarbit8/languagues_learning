@@ -4,7 +4,6 @@ import { temaEnCurso } from '../lib/progreso'
 import { getWriting, getVocabPack } from '../data/packs'
 import { bloqueDeTema } from '../lib/curriculum'
 import { EscribirConsigna } from '../components/PasoWriting'
-import SelectorDia from '../components/SelectorDia'
 import { marcarHecho, claveEscribir } from '../lib/avance'
 
 export default function Writing() {
@@ -12,8 +11,8 @@ export default function Writing() {
   // disco, pero cada consigna sabe de qué tema es: eso es cosa del archivo, no del usuario.
   const temaActual = useLiveQuery(() => temaEnCurso(), [], 1) ?? 1
   const [tema, setTema] = useState<number | null>(null)
-  // Una consigna por día, como en el resto de Practicar.
-  const [dia, setDia] = useState<1 | 2>(1)
+  // UN DÍA DE ESTUDIO Y OTRO DE EXAMEN (2026-09-13): se escribe solo la consigna del día 1.
+  const dia = 1
   const [consignaIdx, setConsignaIdx] = useState<number | null>(null)
   const [veredicto, setVeredicto] = useState<'listo' | 'aun_no' | null>(null)
 
@@ -57,11 +56,12 @@ export default function Writing() {
         <button onClick={reset} className="self-start text-sm text-slate-500 underline dark:text-slate-400">
           ← Volver a las consignas
         </button>
+        {/* La gramática ya se ve entera el día 1, así que el corrector recibe las dos mitades. */}
         <EscribirConsigna
           key={consignaIdx}
           pack={consigna}
           tema={temaSel}
-          dia={dia}
+          dia={2}
           meta={`si su texto del tema ${temaSel} ya está bien o si tiene que volver a escribirlo`}
           onDone={async (_nota, aprobado) => {
             if (aprobado) await marcarHecho(temaSel, claveEscribir(consignaIdx))
@@ -78,8 +78,6 @@ export default function Writing() {
           dejaba elegir temas pasados y era ruido: al aprobar el examen aparece el siguiente y
           ya está. Para repasar lo anterior están Aprender → Aprendido y Exámenes → POR TEMA. */}
       <p className="text-sm font-semibold">{`Tema ${temaSel} — ${getVocabPack(temaSel)?.titulo ?? ''}`}</p>
-
-      <SelectorDia dia={dia} onCambio={setDia} />
 
       <p className="text-sm text-slate-500 dark:text-slate-400">
         Una consigna por tema, en formato IELTS/TOEFL: cada una dice cuántas palabras pide. Al enviar, la app arma un

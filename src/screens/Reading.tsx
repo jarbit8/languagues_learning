@@ -5,7 +5,6 @@ import { getReading, getVocabPack } from '../data/packs'
 import { preguntaDeListening } from '../lib/preguntas'
 import ExamRunner from '../components/ExamRunner'
 import PalabrasDeExamen from '../components/PalabrasDeExamen'
-import SelectorDia from '../components/SelectorDia'
 import TextoLeible from '../components/TextoLeible'
 import { porDia } from '../lib/porDia'
 import { marcarHecho, claveLeer } from '../lib/avance'
@@ -13,8 +12,8 @@ import { marcarHecho, claveLeer } from '../lib/avance'
 export default function Reading() {
   const temaActual = useLiveQuery(() => temaEnCurso(), [], 1) ?? 1
   const [tema, setTema] = useState<number | null>(null)
-  // Una lectura por día: enseñar las dos juntas destripa la del día siguiente.
-  const [dia, setDia] = useState<1 | 2>(1)
+  // UN DÍA DE ESTUDIO Y OTRO DE EXAMEN (2026-09-13): se practica solo lo que traía el día 1.
+  const dia = 1
   const [examen, setExamen] = useState<number | null>(null)
   const [resultado, setResultado] = useState<{ aciertos: number; total: number } | null>(null)
 
@@ -83,8 +82,6 @@ export default function Reading() {
 
       {/* La chuleta se ofrece desde el tema 9, que es donde los enunciados dejan de estar en
           español; antes solo sería ruido. */}
-      <SelectorDia dia={dia} onCambio={setDia} />
-
       {temaSel >= 9 && <PalabrasDeExamen temaActual={temaActual} />}
 
       {!pack ? (

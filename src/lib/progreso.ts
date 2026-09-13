@@ -55,15 +55,16 @@ export interface EstadoExamenTema {
   total: number
 }
 
-// Puerta de tema: 100% del vocabulario aprendido + la lección de gramática completada una vez.
+// Puerta de tema: la lección de gramática completada una vez. El vocabulario dejó de ser
+// requisito el 2026-09-13 (él: "el vocabulario es aparte... ya no entra al examen de temas,
+// entra nomás al examen del bloque"); `faltaVocab` queda siempre en false.
 export async function estadoExamenTema(tema: number): Promise<EstadoExamenTema> {
   const resumen = await resumenVocabTema(tema)
   const pr = await db.progresoTema.get(tema)
-  const faltaVocab = resumen.total === 0 || resumen.aprendidas < resumen.total
   const faltaGramatica = !pr?.gramaticaCompletada
   return {
-    disponible: !faltaVocab && !faltaGramatica,
-    faltaVocab,
+    disponible: !faltaGramatica,
+    faltaVocab: false,
     faltaGramatica,
     aprendidas: resumen.aprendidas,
     total: resumen.total
@@ -85,14 +86,12 @@ export async function registrarExamenTema(tema: number, notas: NotasBloque): Pro
   const promedioHabilidades = habilidades.length
     ? Math.round(habilidades.reduce((a, b) => a + b, 0) / habilidades.length)
     : 0
-  const notaVocab = notas.vocab ?? 0
   const notaGramatica = notas.gramatica ?? 0
-  // VOCABULARIO AL 100 % (2026-09-09, él: "ese examen del tema debo responder todas correctas
-  // también, para aprobar el vocabulario"). Estaba en 80, que con 34 palabras perdonaba 6
-  // fallos: se podía desbloquear el tema siguiente sin saberse una de cada seis. La gramática
-  // y las destrezas se quedan como estaban — ahí un fallo no es lo mismo que no saber la palabra.
-  const aprobado = notaVocab >= 100 && notaGramatica >= 80 && promedioHabilidades >= 75
-  const todas = [notaVocab, notaGramatica, ...habilidades]
+  // SIN VOCABULARIO (2026-09-13). Hasta ese día la sección de vocabulario pedía el 100 %; ahora
+  // las palabras van por el examen diario en papel y el examen de bloque, y el de tema mide
+  // gramática y las cuatro destrezas.
+  const aprobado = notaGramatica >= 80 && promedioHabilidades >= 75
+  const todas = [notaGramatica, ...habilidades]
   const nota = Math.round(todas.reduce((a, b) => a + b, 0) / todas.length)
   const pr = (await db.progresoTema.get(tema)) ?? baseProgreso(tema)
   pr.intentos = (pr.intentos ?? 0) + 1

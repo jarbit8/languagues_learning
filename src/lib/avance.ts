@@ -1,9 +1,8 @@
 import { db } from '../db'
 import { sincronizarPronto } from './autosync'
-import { getVocabPack, getListening, getReading, getWriting, getGramatica } from '../data/packs'
+import { getListening, getReading, getWriting, getGramatica } from '../data/packs'
 import { bloqueDeTema } from './curriculum'
 import { itemsDisponibles } from './deletreo'
-import { resumenVocabTema } from './progreso'
 import { porDia } from './porDia'
 
 // AVANCE DEL TEMA (2026-09-08, él: "cuando ya haga todo al 100% que se marque ya hecha y eso
@@ -16,9 +15,14 @@ import { porDia } from './porDia'
 //
 // PESO IGUAL POR MÓDULO, no por pieza: con 18 palabras y 2 lecturas, contar piezas sueltas
 // haría que el vocabulario fuera el 60% de la barra y el problema seguiría igual de tapado.
-// Cada módulo vale 1/6 y dentro de él cuentan sus piezas.
+// Cada módulo vale lo mismo y dentro de él cuentan sus piezas.
+//
+// UN DÍA DE ESTUDIO Y OTRO DE EXAMEN (2026-09-13, él: "el día 1 será aprender la gramática y
+// practicar todo, el día 2 es el examen; el vocabulario es aparte"). El avance mide solo el día
+// 1 —la gramática entera y una jornada de práctica— y el vocabulario salió de aquí: va por el
+// examen diario en papel y ya no entra al examen de tema.
 
-export type ModuloTema = 'vocabulario' | 'gramatica' | 'escuchar' | 'leer' | 'escribir' | 'hablar'
+export type ModuloTema = 'gramatica' | 'escuchar' | 'leer' | 'escribir' | 'hablar'
 
 export interface AvanceModulo {
   id: ModuloTema
@@ -73,37 +77,28 @@ export async function estaHecho(tema: number, clave: string): Promise<boolean> {
 // Cuántas piezas tiene cada módulo HOY, según el contenido de /data. Si un tema no tiene
 // material de un módulo, ese módulo no aparece: contarlo como 0/0 dejaría la barra clavada.
 //
-// SOLO CUENTA LO QUE PRACTICAR LLEGA A SERVIR. Cada tema tiene cinco diálogos y cinco
-// lecturas, pero `porDia` reparte dos por jornada, así que la quinta —la que se llama
-// "Examen · ..."— está reservada al examen de tema y no sale nunca en Practicar. Contarla
-// dejaría el módulo atascado en 4/5 para siempre y la barra no llegaría al 100% jamás.
-const servidas = <T,>(items: T[]) => new Set([...porDia(items, 1), ...porDia(items, 2)]).size
-
+// SOLO CUENTA LO QUE PRACTICAR LLEGA A SERVIR, que desde el 2026-09-13 es lo del día 1.
+// Contar piezas que la pantalla no enseña dejaría el módulo atascado y la barra no llegaría
+// al 100% jamás.
 function piezas(tema: number) {
-  const dialogos = servidas(getListening(tema)?.dialogos ?? [])
-  const conDeletreo = itemsDisponibles(tema).length > 0 ? 2 : 0
   const consignas = getWriting(bloqueDeTema(tema))?.consignas.filter((c) => c.tema === tema) ?? []
   return {
-    vocabulario: getVocabPack(tema)?.conceptos.length ?? 0,
-    gramatica: getGramatica(tema) ? (getGramatica(tema)!.dias?.length ?? 1) : 0,
-    escuchar: dialogos + conDeletreo,
-    leer: servidas(getReading(tema)?.textos ?? []),
-    // Escribir va de una en una: el día 1 sirve la primera y el día 2 la segunda, y si el
-    // tema solo tiene una, los dos días sirven la misma.
-    escribir: Math.min(2, consignas.length),
-    // Hablar son las dos jornadas: no hay nada que corregir, se marca a mano al terminar.
-    hablar: 2
+    gramatica: getGramatica(tema) ? 1 : 0,
+    escuchar: porDia(getListening(tema)?.dialogos ?? [], 1).length + (itemsDisponibles(tema).length > 0 ? 1 : 0),
+    leer: porDia(getReading(tema)?.textos ?? [], 1).length,
+    escribir: Math.min(1, consignas.length),
+    // Hablar no tiene nada que corregir: se marca a mano al terminar.
+    hablar: 1
   }
 }
 
 export async function avanceTema(tema: number): Promise<AvanceTema> {
-  const [vocab, pr] = await Promise.all([resumenVocabTema(tema), db.progresoTema.get(tema)])
+  const pr = await db.progresoTema.get(tema)
   const hechos = pr?.hechos ?? []
   const n = piezas(tema)
   const cuenta = (prefijo: string) => hechos.filter((h) => h.startsWith(`${prefijo}:`)).length
 
   const todos: AvanceModulo[] = [
-    { id: 'vocabulario', nombre: 'Vocabulario', icono: '🗂️', hechas: vocab.aprendidas, total: n.vocabulario, ruta: '/aprender' },
     { id: 'gramatica', nombre: 'Gramática', icono: '📐', hechas: cuenta('gramatica'), total: n.gramatica, ruta: '/aprender' },
     { id: 'escuchar', nombre: 'Escuchar', icono: '🎧', hechas: cuenta('escuchar') + cuenta('deletreo'), total: n.escuchar, ruta: '/hablar' },
     { id: 'leer', nombre: 'Leer', icono: '📖', hechas: cuenta('leer'), total: n.leer, ruta: '/hablar' },

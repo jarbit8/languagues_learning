@@ -197,13 +197,11 @@ export default function Examen() {
           <p className="font-semibold">Examen de tema {info.tema}</p>
           {gt.disponible ? (
             <p className="text-sm text-emerald-600 dark:text-emerald-400">
-              Disponible · 6 secciones · 100% en vocabulario, 80% en gramática, 75% en destrezas
+              Disponible · 5 secciones · 80% en gramática, 75% en destrezas
             </p>
           ) : (
             <p className="text-sm text-slate-500 dark:text-slate-400">
-              Falta: {gt.faltaVocab ? `vocabulario (${gt.aprendidas}/${gt.total})` : ''}
-              {gt.faltaVocab && gt.faltaGramatica ? ' · ' : ''}
-              {gt.faltaGramatica ? 'gramática' : ''}
+              Falta: terminar la gramática del tema
             </p>
           )}
         </div>

@@ -7,7 +7,6 @@ import { preguntaDeEjercicio } from '../lib/preguntas'
 import { hablar } from '../lib/audio'
 import type { GramaticaPack } from '../types'
 import ExamRunner from '../components/ExamRunner'
-import SelectorDia from '../components/SelectorDia'
 import { Resaltado, bloquesDeRegla } from '../components/ReglaGramatica'
 
 
@@ -95,39 +94,26 @@ function Paso({
   )
 }
 
-// Un tema son dos días y la gramática se veía entera el primero. Si el pack trae `dias`, cada
-// jornada enseña su mitad de la regla y sus ejercicios; si no, sale la lección completa y todo
-// sigue como estaba. Los índices apuntan a los arreglos del pack: NO se duplica nada, porque
-// los exámenes de tema, bloque y final cuentan `pack.ejercicios`.
-export function vistaDelDia(pack: GramaticaPack, dia: 1 | 2) {
-  const d = pack.dias?.[dia - 1]
-  if (!d) return { ...pack, subtitulo: null as string | null, ultimo: true }
-  return {
-    ...pack,
-    subtitulo: d.titulo,
-    regla: d.regla,
-    pronunciacion: d.pronunciacion ?? pack.pronunciacion,
-    trampa: d.trampa ?? pack.trampa,
-    ejemplos: d.ejemplos.map((i) => pack.ejemplos[i]).filter(Boolean),
-    ejercicios: d.ejercicios.map((i) => pack.ejercicios[i]).filter(Boolean),
-    ultimo: dia === pack.dias!.length
-  }
+// LA LECCIÓN SALE ENTERA EL DÍA 1 (2026-09-13, él: "el día 1 será aprender la gramática y
+// practicar todo, el día 2 es el examen"). Antes cada jornada enseñaba su mitad a partir de
+// `pack.dias`; ahora se usa la regla completa de arriba del pack y todos sus ejemplos y
+// ejercicios. `dias` sigue en los datos (y en verificar-packs) por si vuelve el reparto.
+export function leccionEntera(pack: GramaticaPack) {
+  return { ...pack, subtitulo: null as string | null }
 }
 
 function LeccionCard({
   tema,
-  dia,
   completada,
   onPracticar
 }: {
   tema: number
-  dia: 1 | 2
   completada: boolean
   onPracticar: () => void
 }) {
   const base = getGramatica(tema)
   if (!base) return null
-  const pack = vistaDelDia(base, dia)
+  const pack = leccionEntera(base)
   const degradado = 'bg-gradient-to-br from-en via-en to-indigo-700'
   const acento = 'bg-en'
 
@@ -221,14 +207,13 @@ function LeccionCard({
 
 export default function Gramatica({ tema }: { tema: number }) {
   const [practicando, setPracticando] = useState(false)
-  const [dia, setDia] = useState<1 | 2>(1)
   const [fin, setFin] = useState<{ aciertos: number; total: number } | null>(null)
   const progreso = useLiveQuery(() => getProgresoTema(tema), [tema])
 
   if (practicando) {
     const base = getGramatica(tema)
     if (!base) return null
-    const pack = vistaDelDia(base, dia)
+    const pack = leccionEntera(base)
     if (fin) {
       const pct = Math.round((fin.aciertos / fin.total) * 100)
       const emoji = pct >= 90 ? '🎉' : pct >= 70 ? '👍' : '💪'
@@ -240,8 +225,7 @@ export default function Gramatica({ tema }: { tema: number }) {
             <span className="text-5xl font-black">{pct}%</span>
             <span className="font-semibold text-slate-600 dark:text-slate-300">{mensaje}</span>
             <span className="text-slate-500 dark:text-slate-400">
-              {fin.aciertos} de {fin.total}
-              {vistaDelDia(getGramatica(tema)!, dia).ultimo ? ' · lección completada ✓' : ' · te falta el día 2'}
+              {fin.aciertos} de {fin.total} · lección completada ✓
             </span>
           </div>
           <button
@@ -262,10 +246,9 @@ export default function Gramatica({ tema }: { tema: number }) {
         preguntas={preguntas}
         etiqueta="Gramática"
         onFinish={async (aciertos, total) => {
-          // La lección abre la puerta del examen de tema, así que solo cuenta cuando se
-          // termina el ÚLTIMO día: con el primero se habría visto media regla.
-          if (pack.ultimo) await marcarGramaticaCompletada(tema)
-          await marcarHecho(tema, claveGramatica(dia))
+          // Terminar la lección abre la puerta del examen de tema.
+          await marcarGramaticaCompletada(tema)
+          await marcarHecho(tema, claveGramatica(1))
           setFin({ aciertos, total })
         }}
       />
@@ -274,10 +257,8 @@ export default function Gramatica({ tema }: { tema: number }) {
 
   return (
     <div className="flex flex-col gap-4">
-      {!!getGramatica(tema)?.dias && <SelectorDia dia={dia} onCambio={setDia} />}
       <LeccionCard
         tema={tema}
-        dia={dia}
         completada={!!progreso?.gramaticaCompletada}
         onPracticar={() => setPracticando(true)}
       />
