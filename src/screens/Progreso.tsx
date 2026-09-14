@@ -9,14 +9,18 @@ function ReiniciarCurso() {
   const [confirmando, setConfirmando] = useState(false)
   const [hecho, setHecho] = useState(false)
   const [error, setError] = useState(false)
+  const [borrando, setBorrando] = useState(false)
 
   async function reiniciar() {
+    setBorrando(true)
+    setError(false)
     try {
       await reiniciarCurso()
     } catch {
       // Casi siempre es la nube: sin red no se puede vaciar allá, y borrar solo aquí no
       // reiniciaría nada — la siguiente sincronización lo bajaría todo de vuelta.
       setError(true)
+      setBorrando(false)
       return
     }
     setHecho(true)
@@ -46,7 +50,7 @@ function ReiniciarCurso() {
       <p className="text-sm text-slate-500 dark:text-slate-400">
         Se borran las palabras aprendidas y sus repasos, los temas y bloques aprobados, el historial de exámenes, la
         pronunciación practicada, las abreviaciones marcadas y el cronograma. No se puede deshacer. Si tienes la cuenta
-        conectada se borra también en la nube, en el mismo momento y antes que aquí: si no, al recargar volvería a bajarse.
+        conectada se borra también en la nube y en tu otro aparato, que se vacía solo la próxima vez que abra la app.
       </p>
       {error && (
         <p className="text-sm font-semibold text-rose-600 dark:text-rose-400">
@@ -54,8 +58,12 @@ function ReiniciarCurso() {
         </p>
       )}
       <div className="flex gap-2">
-        <button onClick={() => void reiniciar()} className="btn-primary flex-1 !bg-rose-600 !bg-none !shadow-rose-500/25">
-          Sí, borrar todo
+        <button
+          onClick={() => void reiniciar()}
+          disabled={borrando}
+          className="btn-primary flex-1 !bg-rose-600 !bg-none !shadow-rose-500/25"
+        >
+          {borrando ? 'Borrando…' : 'Sí, borrar todo'}
         </button>
         <button onClick={() => setConfirmando(false)} className="flex-1 text-sm underline">
           Cancelar

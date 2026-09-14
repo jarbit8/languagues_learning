@@ -1,4 +1,4 @@
-import { doc, getDoc, setDoc } from 'firebase/firestore/lite'
+import { doc, getDoc, setDoc, writeBatch } from 'firebase/firestore/lite'
 import { db } from '../db'
 import { getDbRemota } from './firebase'
 import type {
@@ -197,56 +197,101 @@ async function escribirLocal(p: Paquete): Promise<void> {
   })
 }
 
-const ref = (uid: string, rama: Rama) => doc(getDbRemota()!, 'usuarios', uid, 'estado', rama)
+const ref = (uid: string, rama: Rama | 'reinicio') => doc(getDbRemota()!, 'usuarios', uid, 'estado', rama)
 
-async function leerRemoto(uid: string): Promise<Paquete> {
+// --- reinicio ---
+//
+// La fusión es una UNIÓN que nunca borra, así que un reinicio no se puede propagar vaciando
+// cosas: vaciar la nube no basta (2026-09-14, él: "no me reinició el curso"), porque el OTRO
+// aparato sigue lleno y en su siguiente sincronización lo vuelve a subir todo. Por eso el
+// reinicio deja una MARCA en la nube (`estado/reinicio`, con su fecha) y cada rama se escribe
+// con la marca que conocía quien la escribió. Un aparato que encuentra una marca distinta a la
+// suya se vacía antes de fusionar, y una rama escrita con una marca vieja —la sincronización
+// que el otro aparato tenía a medias cuando se reinició— se ignora al leer.
+
+const claveReinicio = (uid: string) => `idiomas:reinicio:${uid}`
+const reinicioConocido = (uid: string) => Number(localStorage.getItem(claveReinicio(uid)) ?? 0)
+const apuntarReinicio = (uid: string, fecha: number) => localStorage.setItem(claveReinicio(uid), String(fecha))
+
+// Recorre `db.tables` en vez de nombrarlas: al añadir `abreviaciones` (v5) la lista escrita a
+// mano se quedó atrás y el reinicio dejaba vivas las marcadas.
+async function vaciarLocal(): Promise<void> {
+  await db.transaction('rw', db.tables, async () => {
+    await Promise.all(db.tables.map((t) => t.clear()))
+  })
+}
+
+// Marca y ramas vacías en un solo lote: o se escribe todo o nada, y sin red no se toca nada.
+export async function reiniciarRemoto(uid: string): Promise<number> {
+  const fecha = Date.now()
+  const lote = writeBatch(getDbRemota()!)
+  lote.set(ref(uid, 'reinicio'), { fecha })
+  for (const rama of RAMAS) lote.set(ref(uid, rama), { items: [], actualizado: fecha, reinicio: fecha })
+  await lote.commit()
+  return fecha
+}
+
+// La marca local se apunta DESPUÉS de vaciar: si el vaciado fallara, la siguiente
+// sincronización vería una marca distinta y terminaría el trabajo.
+export async function reiniciarLocal(uid?: string, fecha?: number): Promise<void> {
+  await vaciarLocal()
+  if (uid && fecha) apuntarReinicio(uid, fecha)
+}
+
+interface Remoto {
+  paquete: Paquete
+  reinicio: number
+}
+
+async function leerRemoto(uid: string): Promise<Remoto> {
   const out = vacio()
-  const docs = await Promise.all(RAMAS.map((r) => getDoc(ref(uid, r))))
+  const [marca, ...docs] = await Promise.all([getDoc(ref(uid, 'reinicio')), ...RAMAS.map((r) => getDoc(ref(uid, r)))])
+  const reinicio = marca.exists() ? Number(marca.data().fecha ?? 0) : 0
   RAMAS.forEach((rama, i) => {
     const d = docs[i]
-    if (d.exists()) out[rama] = (d.data().items ?? []) as never[]
+    if (d.exists() && Number(d.data().reinicio ?? 0) === reinicio) out[rama] = (d.data().items ?? []) as never[]
   })
-  return out
+  return { paquete: out, reinicio }
 }
 
-async function escribirRemoto(uid: string, p: Paquete): Promise<void> {
+async function escribirRemoto(uid: string, p: Paquete, reinicio: number): Promise<void> {
   const ahora = Date.now()
   await Promise.all(
-    RAMAS.map((rama) => setDoc(ref(uid, rama), { items: p[rama], actualizado: ahora }))
+    RAMAS.map((rama) => setDoc(ref(uid, rama), { items: p[rama], actualizado: ahora, reinicio }))
   )
-}
-
-// Vacía la copia de la nube. La fusión de arriba es una UNIÓN que nunca borra —«sincronizar
-// no puede hacer perder trabajo»—, y eso, que es lo correcto entre dos aparatos, hacía
-// imposible reiniciar el curso con la cuenta conectada: al borrar en local, la siguiente
-// sincronización (que arranca sola al abrir la app) volvía a bajarlo todo de la nube. El
-// reinicio tiene que borrar en los dos lados, y este es el lado de allá.
-export async function borrarRemoto(uid: string): Promise<void> {
-  if (!getDbRemota()) return
-  const ahora = Date.now()
-  await Promise.all(RAMAS.map((rama) => setDoc(ref(uid, rama), { items: [], actualizado: ahora })))
 }
 
 export interface ResultadoSync {
   ok: boolean
   cuando: number
   error?: string
+  /** Se reinició el curso en otro aparato y aquí se acaba de vaciar la base. */
+  vaciado?: boolean
 }
 
 // Sincroniza en los dos sentidos. Es segura de llamar varias veces: la fusión es
 // idempotente, así que sincronizar dos veces seguidas da el mismo resultado.
 export async function sincronizar(uid: string): Promise<ResultadoSync> {
   if (!getDbRemota()) return { ok: false, cuando: Date.now(), error: 'Firebase no está configurado' }
+  let vaciado = false
   try {
-    const [local, remoto] = await Promise.all([leerLocal(), leerRemoto(uid)])
-    const unido = mezclaPaquetes(local, remoto)
+    const remoto = await leerRemoto(uid)
+    if (remoto.reinicio !== reinicioConocido(uid)) {
+      // Sin marca en la nube no hay reinicio que aplicar (alguien la borró a mano): solo se adopta.
+      if (remoto.reinicio) {
+        await vaciarLocal()
+        vaciado = true
+      }
+      apuntarReinicio(uid, remoto.reinicio)
+    }
+    const unido = mezclaPaquetes(await leerLocal(), remoto.paquete)
     await escribirLocal(unido)
-    await escribirRemoto(uid, unido)
+    await escribirRemoto(uid, unido, remoto.reinicio)
     const cuando = Date.now()
     localStorage.setItem(CLAVE_ULTIMO, String(cuando))
-    return { ok: true, cuando }
+    return { ok: true, cuando, vaciado }
   } catch (e) {
-    return { ok: false, cuando: Date.now(), error: e instanceof Error ? e.message : String(e) }
+    return { ok: false, cuando: Date.now(), error: e instanceof Error ? e.message : String(e), vaciado }
   }
 }
 
