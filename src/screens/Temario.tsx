@@ -9,17 +9,15 @@ import {
   diasDeTema,
   fechaCorta,
   fechaExamenDeBloque,
-  diasDelPlan,
   estadoDelPlan,
   anadirPausa,
   quitarPausa,
   enPausa,
   getPlan,
   fijarInicio,
-  SEMANA_FINAL,
   fechaDeDia,
-  DIAS_FINAL,
-  PLAN_POR_DEFECTO
+  PLAN_POR_DEFECTO,
+  diaDeExamenFinal
 } from '../lib/plan'
 
 // Cuántas consignas de escritura le tocan a un tema: los packs de writing son por bloque,
@@ -108,7 +106,7 @@ export default function Temario() {
                   : `Empiezas el ${fechaCorta(plan.fechaInicio)}`}
             </span>
             <span className="text-xs text-slate-500 dark:text-slate-400">
-              acabas el {fechaCorta(estado.fechaFin)}
+              examen final el {fechaCorta(fechaDeDia(plan, diaDeExamenFinal()))}
             </span>
           </div>
           {empezado && enPausa(plan, Date.now()) && (
@@ -284,12 +282,7 @@ export default function Temario() {
           <span className="icono-tile">🏆</span>
           <p className="flex-1 font-semibold">Examen final A1</p>
           <span className="text-sm font-semibold text-sky-600 dark:text-sky-400">
-            {fechaCorta(
-              fechaDeDia(
-                plan,
-                diasDelPlan() - DIAS_FINAL + 1 + SEMANA_FINAL.findIndex((s) => s.startsWith('Examen final'))
-              )
-            )}
+            {fechaCorta(fechaDeDia(plan, diaDeExamenFinal()))}
           </span>
         </div>
       </div>

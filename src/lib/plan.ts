@@ -73,6 +73,12 @@ export function diaDeExamenDeBloque(bloque: number): number {
   return bloque * DIAS_POR_BLOQUE
 }
 
+// El día del plan en el que cae el examen final propiamente dicho (no el resultado del nivel,
+// que es el día siguiente dentro de SEMANA_FINAL).
+export function diaDeExamenFinal(): number {
+  return diasDelPlan() - DIAS_FINAL + 1 + SEMANA_FINAL.findIndex((s) => s.startsWith('Examen final'))
+}
+
 // Fecha en la que terminaría el nivel con el arranque por defecto y sin pausas propias.
 // Sirve para enseñar el rango ANTES de activar el cronograma, cuando aún no hay plan guardado.
 export function fechaFinPrevista(): number {
