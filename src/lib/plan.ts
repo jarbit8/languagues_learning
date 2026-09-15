@@ -28,6 +28,11 @@ export const DIAS_POR_BLOQUE = TEMAS_POR_BLOQUE * DIAS_POR_TEMA + 1 // 13
 
 export const totalTemas = () => vocabPacks.length
 export const totalBloques = () => Math.ceil(totalTemas() / TEMAS_POR_BLOQUE)
+// Días de temas y bloques nada más, sin el final: es lo que se le muestra como "Día X de Y"
+// (2026-09-15, él: "no incluyas el examen final"), porque ese Y ya no cuenta como cuándo
+// "acaba" el nivel —el resumen dice cuándo es el examen final, no una fecha de fin— y el final
+// no tiene días de estudio que contar día a día.
+export const diasDeTemasYBloques = () => totalBloques() * DIAS_POR_BLOQUE
 // El final fue una semana entera desde el 2026-08-30 (cinco días de repaso y el examen partido
 // en dos); ver abajo por qué ya no.
 // SIN DÍAS DE REPASO, POR AHORA (2026-09-13, él: "sin los repasos ni nada, debería ser al día
@@ -36,7 +41,7 @@ export const totalBloques = () => Math.ceil(totalTemas() / TEMAS_POR_BLOQUE)
 // y uno de escuchar, leer y pronunciación (en git hasta b00d9ea).
 export const DIAS_FINAL = 2
 // 4 bloques x 13 días + los días del final.
-export const diasDelPlan = () => totalBloques() * DIAS_POR_BLOQUE + DIAS_FINAL
+export const diasDelPlan = () => diasDeTemasYBloques() + DIAS_FINAL
 
 // Qué toca cada día del final.
 export const SEMANA_FINAL: string[] = [

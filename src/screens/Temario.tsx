@@ -17,7 +17,8 @@ import {
   fijarInicio,
   fechaDeDia,
   PLAN_POR_DEFECTO,
-  diaDeExamenFinal
+  diaDeExamenFinal,
+  diasDeTemasYBloques
 } from '../lib/plan'
 
 // Cuántas consignas de escritura le tocan a un tema: los packs de writing son por bloque,
@@ -102,7 +103,7 @@ export default function Temario() {
               {estado.terminado
                 ? 'Cronograma terminado'
                 : empezado
-                  ? `Día ${estado.dia} de ${estado.totalDias}`
+                  ? `Día ${Math.min(estado.dia, diasDeTemasYBloques())} de ${diasDeTemasYBloques()}`
                   : `Empiezas el ${fechaCorta(plan.fechaInicio)}`}
             </span>
             <span className="text-xs text-slate-500 dark:text-slate-400">
