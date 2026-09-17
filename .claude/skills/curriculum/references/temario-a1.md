@@ -1,6 +1,6 @@
 # Temario A1 — Inglés
 
-24 temas · 4 bloques de 6 · 30-38 conceptos de vocabulario por tema (770 tarjetas / 763 palabras distintas — ampliado el 2026-07-18 contra listas de frecuencia reales y deduplicado el 2026-08-29, cada tema lleva las palabras de alta frecuencia que le correspondan, no un tope fijo de 30). Cada tema: función comunicativa, vocabulario (español + inglés), gramática, pronunciación, escenario de speaking. El orden codifica dependencias: ejercicios y diálogos solo usan vocabulario de este tema y anteriores. Las listas de "Vocabulario" abajo muestran el set original de 30; el JSON real (`data/vocabulario/tema-NN-*.json`) es la fuente autoritativa y puede tener más — ver el bloque "AMPLIACIÓN 2026-07-18" al final de cada bloque para las palabras agregadas.
+24 temas · 4 bloques de 6 · 28-41 conceptos de vocabulario por tema (**797 tarjetas** tras la auditoría pedagógica del 2026-09-17; las listas de vocabulario de cada tema de aquí abajo son del set original y NO se han reescrito una por una — **la fuente de verdad es `data/vocabulario/`**, esto es el mapa del curso — ampliado el 2026-07-18 contra listas de frecuencia reales y deduplicado el 2026-08-29, cada tema lleva las palabras de alta frecuencia que le correspondan, no un tope fijo de 30). Cada tema: función comunicativa, vocabulario (español + inglés), gramática, pronunciación, escenario de speaking. El orden codifica dependencias: ejercicios y diálogos solo usan vocabulario de este tema y anteriores. Las listas de "Vocabulario" abajo muestran el set original de 30; el JSON real (`data/vocabulario/tema-NN-*.json`) es la fuente autoritativa y puede tener más — ver el bloque "AMPLIACIÓN 2026-07-18" al final de cada bloque para las palabras agregadas.
 
 ---
 
@@ -259,3 +259,22 @@ actualizaron para reflejarlo (el Temario de la app muestra ese título).
 Total: 371 → **431 ejercicios**. Se revisó también que ningún punto añadido fuera de nivel A2:
 se descartaron a propósito *present perfect*, *question tags*, *could* y *must/should*, que las
 fuentes sitúan por encima del A1.
+
+---
+
+## AUDITORÍA PEDAGÓGICA 2026-09-17 — lo que cambió del temario
+
+Auditoría del curso entero (vocabulario contra listas A1 de Cambridge/Oxford, gramática contra el sílabo A1 estándar, y las cinco prácticas). Informe completo, con cada hallazgo por tema e id, fuera del repo: `D:\Documentos\UNIVERSIDAD\INGLES\analisis-A1.html` (nota 7/10). Resumen en CLAUDE.md.
+
+**Vocabulario: 773 → 797.** Lo que cambió del mapa de temas:
+- **T3** — fuera Quebec, French-speaking y «Peruvian (f)»; dentro **American** y los conectores **and / but / or** (el contenido los usa desde el T1, y sus tarjetas estaban en el T24) y **to say** (los textos narran con «says Ana» desde aquí).
+- **T4** — fuera «cousin (f)», «friend (f)» y «my brother's name» (eso es gramática del tema, no vocabulario); dentro **boy** y **girl**.
+- **T5** — fuera brown/dark/red-haired (nadie dice «she is brown-haired»); dentro **man, woman, person, people** (¡su propia lección enseña los plurales irregulares y ninguna tenía tarjeta!), **good, bad, long** y las formas que sí se dicen: **brown hair, dark hair, red hair**.
+- **T6** — fuera «teacher (f)» y «seller (f)»; **seller → salesperson**; dentro **why** (bajó del T21: las preguntas de lectura lo usan desde el T10) y **great**, más **to ask**.
+- **T7** — dentro los ordinales **first / second / third**, que la lección de fechas ya usaba.
+- **T8** — dentro **how often** y **to wait**; la lección suma la **hora digital** (seven thirty, three twenty), que es como se dice en EE.UU.
+- **T9** — dentro **to do** y **home**. **T10** — dentro **TV, behind, in front of**. **T11** — dentro **that, those, interesting, to write**. **T12** — dentro **to help** y **to know**. **T14** — fuera «the menu card»; dentro **to give**. **T15** — **shop → store**. **T16** — fuera «one can». **T17** — **motorbike → motorcycle**. **T18** — fuera «warm/hot day»; dentro **bad**. **T19** — dentro **to think**. **T21** — dentro **to use, to forget**. **T22** — dentro **to find**. **T23** — **booking → reservation**. **T24** — fuera and/but/or y first (subieron a T3/T7); dentro **hard** y **to remember**.
+
+**Gramática: 437 → 449 ejercicios.** Cuatro puntos del sílabo A1 que faltaban, cada uno con su regla y 3 ejercicios: **plural regular -s/-es/-ies (T5)**, **la hora digital (T8)**, **imperativo negativo Don't… (T17)** y **preguntas wh- en pasado, Where did you go? (T23)**. Además `have got` dejó de ser la respuesta obligatoria en T12 y T19 (el americano dice `have`), se quitó `Shall we` del T24 (británico) y los do/does que aparecen antes del T9 llevan nota de fórmula fija.
+
+⚠️ **Lo que NO se movió y por qué:** los pronombres de objeto y los conectores siguen siendo la lección del T21, y los adverbios de frecuencia siguen en el T8 (antes del presente simple del T9), aunque el informe proponía adelantarlos. Mover una LECCIÓN cambia los exámenes de tema y de bloque de un curso que el estudiante ya está haciendo; mover una TARJETA no. Por eso las tarjetas se adelantaron y las lecciones se quedaron.
