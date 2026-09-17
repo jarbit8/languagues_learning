@@ -49,7 +49,7 @@
    "es": "calor (hace calor)",
    "texto": "hot",
    "ejemplo": "It is hot today.",
-   "pron": "JOT"
+   "pron": "JAT"
   },
   {
    "id": "a1-t18-008",
@@ -196,7 +196,8 @@
    "es": "grados",
    "texto": "degrees",
    "ejemplo": "It's twenty degrees.",
-   "pron": "di-GRIS"
+   "pron": "di-GRIS",
+   "nota": "En EE.UU. se mide en grados Fahrenheit: allí «twenty degrees» es bajo cero. Arequipa a 20 °C serían unos 68 °F."
   },
   {
    "id": "a1-t18-029",
@@ -209,18 +210,18 @@
    "tambien": "how's the weather?"
   },
   {
-   "id": "a1-t18-030",
-   "es": "caluroso",
-   "texto": "warm/hot day",
-   "ejemplo": "It's a hot day.",
-   "pron": "UORM JOT DEI"
-  },
-  {
    "id": "a1-t18-031",
    "es": "neblina",
    "texto": "fog",
    "ejemplo": "There is fog this morning.",
    "pron": "FOG"
+  },
+  {
+   "id": "a1-t18-032",
+   "es": "malo",
+   "texto": "bad",
+   "ejemplo": "The weather is bad today.",
+   "pron": "BAD"
   }
  ]
 }

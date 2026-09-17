@@ -2,7 +2,7 @@
  "tema": 11,
  "textos": [
   {
-   "titulo": "Lo que hay en la mochila",
+   "titulo": "Lo que hay en la bolsa",
    "texto": "Ana has a green bag and she takes it every day. In the bag there is a black computer, a red notebook and two pens. There is a blue pencil too, and some paper. Her phone is white and it is always in the bag. She also has her keys, her wallet with her money, and her glasses. Sometimes there is an umbrella in the bag, because in the fall she takes it. Her watch is not in the bag: it is on the table, near the lamp. This is my bag, says Ana, and these are my books. And what is that? asks Laura. That is my brown notebook. It is old, but it is very good. And the scissors? The scissors are here, in the yellow thing. Ana has many things: a purple pen, an orange pencil, a pink book and a gray bag for her computer.",
    "preguntas": [
     {
@@ -326,7 +326,7 @@
   },
   {
    "titulo": "El escritorio de Laura",
-   "texto": "On the table of Laura there is a computer, a book and two notebooks. The computer is black and the book is red. One notebook is blue and one notebook is orange. There is a pen, a pencil and some paper. The pencil is yellow and the pen is purple. Her glasses are here, near the lamp. Her watch is not on the table: it is in her bag, with her wallet and her money. Her phone is white and it is here, with her keys. There is an umbrella near the door, because in the fall she takes it every day. And the scissors? The scissors are in the bag too. This is my table, says Laura, and these are my things.",
+   "texto": "On Laura's table there is a computer, a book and two notebooks. The computer is black and the book is red. One notebook is blue and one notebook is orange. There is a pen, a pencil and some paper. The pencil is yellow and the pen is purple. Her glasses are here, near the lamp. Her watch is not on the table: it is in her bag, with her wallet and her money. Her phone is white and it is here, with her keys. There is an umbrella near the door, because in the fall she takes it every day. And the scissors? The scissors are in the bag too. This is my table, says Laura, and these are my things.",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
@@ -360,7 +360,7 @@
     },
     {
      "tipo": "vfnd",
-     "enunciado": "The bag of Laura is green.",
+     "enunciado": "Laura's bag is green.",
      "respuesta": "no dice"
     },
     {
@@ -387,7 +387,7 @@
   },
   {
    "titulo": "Examen · Las cosas de Marie",
-   "texto": "On the table of Marie there are many things. There is a white computer and a black phone next to it. Her glasses are on a book, near a green lamp. There are three pens: a red pen, a blue pen and a purple pen. There is a yellow pencil too, and some paper. Her brown notebook is old, but it is very good. Her watch is not on the table: it is in her bedroom. The keys of Marie and her wallet with her money are in a small pink bag. The scissors are under the notebook. This is my table, says Marie, and these are my things. And what is that? That is an orange umbrella: in the fall she takes it every day.",
+   "texto": "On Marie's table there are many things. There is a white computer and a black phone next to it. Her glasses are on a book, near a green lamp. There are three pens: a red pen, a blue pen and a purple pen. There is a yellow pencil too, and some paper. Her brown notebook is old, but it is very good. Her watch is not on the table: it is in her bedroom. Marie's keys and her wallet with her money are in a small pink bag. The scissors are under the notebook. This is my table, says Marie, and these are my things. And what is that? That is an orange umbrella: in the fall she takes it every day.",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
@@ -425,7 +425,7 @@
     },
     {
      "tipo": "vf",
-     "enunciado": "The notebook of Marie is old.",
+     "enunciado": "Marie's notebook is old.",
      "respuesta": "verdadero"
     },
     {

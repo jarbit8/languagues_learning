@@ -4,7 +4,7 @@
  "grupos": [
   {
    "titulo": "Contracciones",
-   "nota": "Estas SÍ se escriben, con apóstrofo, y son correctas en cualquier sitio menos en un texto muy formal. En el habla son obligatorias: decir «I am» entero suena a robot o a énfasis. Son casi todas las que existen: el patrón es siempre el mismo —sujeto + verbo, o verbo + not— así que aprendido uno, los tienes todos.",
+   "nota": "Estas SÍ se escriben, con apóstrofo, y son correctas en cualquier sitio menos en un texto muy formal. En el habla son obligatorias: decir «I am» entero suena a robot o a énfasis. Son las que vas a ver a diario: el patrón es siempre el mismo —sujeto + verbo, o verbo + not— así que aprendido uno, los tienes todos.",
    "escritura": "se escriben",
    "items": [
     { "id":"abr-001", "texto":"I'm", "de":"I am", "es":"yo soy / estoy", "pron":"AIM", "ejemplo":"I'm Joel." },
@@ -61,7 +61,7 @@
     { "id":"abr-032", "texto":"morning", "de":"good morning", "es":"buenos días", "pron":"MOR-ning", "ejemplo":"Morning, Ana!" },
     { "id":"abr-033", "texto":"night", "de":"good night", "es":"buenas noches", "pron":"NAIT", "ejemplo":"Night!" },
     { "id":"abr-034", "texto":"thanks", "de":"thank you", "es":"gracias", "pron":"ZENKS", "ejemplo":"Thanks a lot!" },
-    { "id":"abr-035", "texto":"no problem", "de":"", "es":"de nada", "pron":"nou PRO-blem", "ejemplo":"No problem!" },
+    { "id":"abr-035", "texto":"no problem", "de":"", "es":"de nada", "pron":"nou PRA-blem", "ejemplo":"No problem!" },
     { "id":"abr-036", "texto":"no worries", "de":"", "es":"de nada / tranquilo", "pron":"nou UO-ris", "ejemplo":"No worries." },
     { "id":"abr-037", "texto":"sure", "de":"", "es":"de nada / claro", "pron":"SHUR", "ejemplo":"Sure!" },
     { "id":"abr-038", "texto":"you bet", "de":"", "es":"de nada", "pron":"yu BET", "ejemplo":"You bet!" },
@@ -69,7 +69,7 @@
     { "id":"abr-040", "texto":"yep", "de":"yes", "es":"sí", "pron":"YEP", "ejemplo":"Yep, that's right." },
     { "id":"abr-041", "texto":"nope", "de":"no", "es":"no", "pron":"NOUP", "ejemplo":"Nope." },
     { "id":"abr-042", "texto":"my bad", "de":"", "es":"culpa mía", "pron":"mai BAD", "ejemplo":"My bad, sorry!" },
-    { "id":"abr-043", "texto":"got it", "de":"I have got it", "es":"entendido", "pron":"GA-dit", "ejemplo":"Got it, thanks." },
+    { "id":"abr-043", "texto":"got it", "de":"I got it", "es":"entendido", "pron":"GA-dit", "ejemplo":"Got it, thanks." },
     { "id":"abr-044", "texto":"have a good one", "de":"have a nice day", "es":"que te vaya bien", "pron":"jav-a-GUD-uan", "ejemplo":"Have a good one!" }
    ]
   },
@@ -78,8 +78,8 @@
    "nota": "ESTAS NO SE ESCRIBEN NUNCA. Ni en un examen, ni en un correo, ni en un mensaje formal. Están aquí para que las RECONOZCAS de oído: son la razón número uno por la que no entiendes una conversación real aunque conozcas todas las palabras.",
    "escritura": "nunca se escriben",
    "items": [
-    { "id":"abr-050", "texto":"gonna", "de":"going to", "es":"voy a", "pron":"GO-na", "ejemplo":"I'm gonna call you." },
-    { "id":"abr-051", "texto":"wanna", "de":"want to", "es":"quiero", "pron":"UO-na", "ejemplo":"I wanna go home." },
+    { "id":"abr-050", "texto":"gonna", "de":"going to", "es":"voy a", "pron":"GA-na", "ejemplo":"I'm gonna call you." },
+    { "id":"abr-051", "texto":"wanna", "de":"want to", "es":"quiero", "pron":"UA-na", "ejemplo":"I wanna go home." },
     { "id":"abr-052", "texto":"gotta", "de":"got to / have to", "es":"tengo que", "pron":"GA-da", "ejemplo":"I gotta go." },
     { "id":"abr-053", "texto":"kinda", "de":"kind of", "es":"más o menos", "pron":"KAIN-da", "ejemplo":"It's kinda cold." },
     { "id":"abr-054", "texto":"'cause", "de":"because", "es":"porque", "pron":"KOZ", "ejemplo":"'Cause I'm tired." },

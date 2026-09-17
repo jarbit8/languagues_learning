@@ -109,7 +109,7 @@
    "es": "porque",
    "texto": "because",
    "ejemplo": "I study because I like it.",
-   "pron": "bi-KOS",
+   "pron": "bi-KAS",
    "rapido": "bi-KOZ y de ahi a KOZ ('cause)"
   },
   {
@@ -179,7 +179,7 @@
    "id": "a1-t21-028",
    "es": "diccionario",
    "texto": "dictionary",
-   "ejemplo": "I use a dictionary.",
+   "ejemplo": "The dictionary is on the table.",
    "pron": "DIK-sho-ne-ri"
   },
   {
@@ -187,7 +187,7 @@
    "es": "beca",
    "texto": "scholarship",
    "ejemplo": "I have a scholarship.",
-   "pron": "SKO-lar-ship"
+   "pron": "SKA-ler-ship"
   },
   {
    "id": "a1-t21-030",
@@ -219,11 +219,18 @@
    "pron": "CÁM-pas"
   },
   {
-   "id": "a1-t21-034",
-   "es": "por qué",
-   "texto": "why",
-   "ejemplo": "Why is this exam difficult?",
-   "pron": "UAI"
+   "id": "a1-t21-037",
+   "es": "usar",
+   "texto": "to use",
+   "ejemplo": "I use a dictionary in class.",
+   "pron": "tu YUS"
+  },
+  {
+   "id": "a1-t21-038",
+   "es": "olvidar",
+   "texto": "to forget",
+   "ejemplo": "I never forget my notes.",
+   "pron": "tu for-GUET"
   }
  ]
 }

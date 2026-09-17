@@ -1,7 +1,7 @@
 {
  "tema": 6,
  "titulo": "Palabras interrogativas y la profesión con artículo",
- "regla": "Las palabras interrogativas: what (qué), who (quién), where (dónde), when (cuándo), why (por qué), how (cómo). Para decir la profesión SIEMPRE se usa artículo: 'I am a programmer', 'She is an engineer'.",
+ "regla": "Las palabras interrogativas: what (qué), who (quién), where (dónde), when (cuándo), why (por qué), how (cómo). Para decir la profesión SIEMPRE se usa artículo: 'I am a programmer', 'She is an engineer'. 'Where do you work?' y 'What do you do?' llevan do: de momento tómalas como fórmulas fijas; el do de las preguntas se explica en el tema 9.",
  "pronunciacion": "La terminación -er es átona y suena como 'schwa' (teach-er, driv-er), no se acentúa.",
  "trampa": "La profesión lleva 'a/an': se dice 'I'm a teacher', nunca 'I'm teacher'.",
  "ejemplos": [
@@ -34,12 +34,12 @@
   },
   {
    "tipo": "hueco",
-   "enunciado": "___ do you work?",
+   "enunciado": "___ do you work? (dónde)",
    "respuesta": "where"
   },
   {
    "tipo": "hueco",
-   "enunciado": "___ is your teacher?",
+   "enunciado": "___ is your teacher? (quién)",
    "respuesta": "who"
   },
   {
@@ -157,7 +157,7 @@
   },
   {
    "titulo": "Las palabras interrogativas",
-   "regla": "what (qué), who (quién), where (dónde), when (cuándo), why (por qué), how (cómo). Van al principio de la pregunta y detrás sigue el orden invertido de siempre: 'Where do you work?', 'Who are you?'.",
+   "regla": "what (qué), who (quién), where (dónde), when (cuándo), why (por qué), how (cómo). Van al principio de la pregunta y detrás sigue el orden invertido de siempre: 'Where do you work?', 'Who are you?'. 'Where do you work?' y 'What do you do?' llevan do: de momento tómalas como fórmulas fijas; el do de las preguntas se explica en el tema 9.",
    "trampa": "Después del interrogativo el orden sigue invertido: 'Who ARE YOU?', no 'Who you are?'.",
    "ejemplos": [
     1,

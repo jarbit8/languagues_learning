@@ -36,7 +36,7 @@ export const tareasSpeaking: TareaSpeaking[] = [
     nombre: 'Hablar de planes',
     tipoCELPIP: 'CELPIP Tarea 4 · Making Predictions',
     instruccion:
-      'pídele que hable de sus planes para el futuro (qué va a hacer mañana, el próximo fin de semana, el próximo año), usando going to / futur proche.'
+      'pídele que hable de sus planes para el futuro (qué va a hacer mañana, el próximo fin de semana, el próximo año), usando going to (I am going to…).'
   },
   {
     id: 'comparar',
@@ -73,13 +73,15 @@ export function tareaPorId(id: string): TareaSpeaking | undefined {
 }
 
 // Qué tarea toca en el examen de cada bloque: la que encaja con el contenido de ese bloque
-// (1 yo y mi gente → describir; 2 día a día → contar rutina; 3 comida y ciudad → resolver una
-// situación; 4 pasado y planes → hablar de planes). El examen final usa una más exigente.
+// (1 yo y mi gente → describir; 2 día a día → describir algo en detalle; 3 comida y ciudad →
+// resolver una situación; 4 pasado y planes → contar una experiencia). El bloque 2 pedía
+// contar una experiencia, que necesita el pasado, y el pasado se enseña en los temas 22-23.
+// El examen final usa una más exigente.
 const TAREA_POR_BLOQUE: Record<number, string> = {
   1: 'describir',
-  2: 'experiencia',
+  2: 'detalle',
   3: 'problema',
-  4: 'planes'
+  4: 'experiencia'
 }
 
 export function tareaDeBloque(bloque: number): TareaSpeaking {

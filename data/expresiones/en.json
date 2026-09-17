@@ -9,12 +9,12 @@
     { "texto":"I'm hungry", "nivel":"A1", "es":"tengo hambre", "literal":"soy hambriento", "pron":"aim JAN-gri", "ejemplo":"I'm hungry. Let's eat.", "tema":13},
     { "texto":"I'm thirsty", "nivel":"A1", "es":"tengo sed", "literal":"soy sediento", "pron":"aim ZERS-ti", "ejemplo":"I'm thirsty. I want water.", "tema":14},
     { "texto":"I'm cold", "nivel":"A1", "es":"tengo frío", "literal":"soy frío", "pron":"aim KOULD", "ejemplo":"I'm cold. Where is my coat?", "tema":14},
-    { "texto":"I'm hot", "nivel":"A1", "es":"tengo calor", "literal":"soy caliente", "pron":"aim JOT", "ejemplo":"I'm hot. Open the window, please.", "tema":14},
+    { "texto":"I'm hot", "nivel":"A1", "es":"tengo calor", "literal":"soy caliente", "pron":"aim JAT", "ejemplo":"I'm hot. Open the window, please.", "tema":14},
     { "texto":"I'm twenty years old", "nivel":"A1", "es":"tengo veinte años", "literal":"soy veinte años viejo", "pron":"aim TUEN-ti YIRS OULD", "ejemplo":"I'm twenty years old.", "tema":2},
     { "texto":"I'm sleepy", "nivel":"A2", "es":"tengo sueño", "literal":"soy soñoliento", "pron":"aim SLI-pi", "ejemplo":"I'm sleepy. I go to bed now.", "tema":9},
     { "texto":"I'm afraid", "nivel":"A2", "es":"tengo miedo", "literal":"soy asustado", "pron":"aim a-FREID", "ejemplo":"I'm afraid of dogs.", "tema":5},
     { "texto":"I'm right", "nivel":"A2", "es":"tengo razón", "literal":"soy derecha", "pron":"aim RAIT", "ejemplo":"I'm right: the bank is closed.", "tema":17},
-    { "texto":"I'm wrong", "nivel":"A2", "es":"me equivoco", "literal":"soy equivocado", "pron":"aim RONG", "ejemplo":"Sorry, I'm wrong.", "tema":17},
+    { "texto":"I'm wrong", "nivel":"A2", "es":"me equivoco", "literal":"soy equivocado", "pron":"aim RANG", "ejemplo":"Sorry, I'm wrong.", "tema":17},
     { "texto":"I'm in a hurry", "nivel":"A2", "es":"tengo prisa", "literal":"estoy en una prisa", "pron":"aim in a JA-ri", "ejemplo":"I'm in a hurry. My class starts at nine.", "tema":8},
     { "texto":"I'm lucky", "nivel":"A2", "es":"tengo suerte", "literal":"soy afortunado", "pron":"aim LA-ki", "ejemplo":"I'm lucky: I have a scholarship.", "tema":21},
     { "texto":"be careful", "nivel":"A2", "es":"ten cuidado", "literal":"sé cuidadoso", "pron":"bi KER-ful", "ejemplo":"Be careful, the plate is hot.", "tema":19}
@@ -25,7 +25,7 @@
    "nota": "En español HACE frío y HACE sol. En inglés el clima siempre empieza por it's, nunca por «it makes». Y ojo a la pareja: it's cold es «hace frío» (el clima), pero I'm cold es «tengo frío» (tú).",
    "expresiones": [
     { "texto":"it's cold", "nivel":"A1", "es":"hace frío", "literal":"ello es frío", "pron":"its KOULD", "ejemplo":"It's cold in winter.", "tema":18},
-    { "texto":"it's hot", "nivel":"A1", "es":"hace calor", "literal":"ello es caliente", "pron":"its JOT", "ejemplo":"It's hot in January in Lima.", "tema":18},
+    { "texto":"it's hot", "nivel":"A1", "es":"hace calor", "literal":"ello es caliente", "pron":"its JAT", "ejemplo":"It's hot in January in Lima.", "tema":18},
     { "texto":"it's sunny", "nivel":"A1", "es":"hace sol", "literal":"ello es soleado", "pron":"its SA-ni", "ejemplo":"It's sunny today. Let's go to the beach.", "tema":18},
     { "texto":"it's windy", "nivel":"A1", "es":"hace viento", "literal":"ello es ventoso", "pron":"its UIN-di", "ejemplo":"It's windy near the sea.", "tema":18},
     { "texto":"it's cloudy", "nivel":"A1", "es":"está nublado", "literal":"ello es nublado", "pron":"its KLAU-di", "ejemplo":"It's cloudy, but it isn't cold.", "tema":18},
@@ -38,8 +38,8 @@
    "titulo": "Las preposiciones no se traducen",
    "nota": "En inglés la preposición va pegada a la palabra, no a la lógica del español: se dice ON Monday, AT night y AT home. Y casa, escuela y trabajo pierden el artículo: at school, no «at the school». Es de lo que más delata a un hispanohablante y es A1 puro — se aprende de memoria, frase por frase, no razonando.",
    "expresiones": [
-    { "texto":"on Monday", "nivel":"A1", "es":"el lunes", "literal":"sobre lunes", "pron":"on MAN-dei", "ejemplo":"I work on Monday.", "tema":7},
-    { "texto":"at seven o'clock", "nivel":"A1", "es":"a las siete", "literal":"en siete en punto", "pron":"at SE-ven o-KLOK", "ejemplo":"The class starts at seven o'clock.", "tema":8},
+    { "texto":"on Monday", "nivel":"A1", "es":"el lunes", "literal":"sobre lunes", "pron":"an MAN-dei", "ejemplo":"I work on Monday.", "tema":7},
+    { "texto":"at seven o'clock", "nivel":"A1", "es":"a las siete", "literal":"en siete en punto", "pron":"at SE-ven a-KLAK", "ejemplo":"The class starts at seven o'clock.", "tema":8},
     { "texto":"at night", "nivel":"A1", "es":"por la noche", "literal":"en noche", "pron":"at NAIT", "ejemplo":"I read at night.", "tema":8},
     { "texto":"at home", "nivel":"A1", "es":"en casa", "literal":"en hogar, y sin «la»", "pron":"at JOUM", "ejemplo":"My mother is at home.", "tema":10},
     { "texto":"at school", "nivel":"A1", "es":"en la escuela", "literal":"en escuela, sin «la»", "pron":"at SKUL", "ejemplo":"The children are at school.", "tema":16},
@@ -68,14 +68,14 @@
     { "texto":"to look after", "nivel":"A2", "es":"cuidar de", "literal":"mirar después", "pron":"tu luk AF-ter", "ejemplo":"She looks after her baby brother.", "tema":19},
     { "texto":"to find out", "nivel":"A2", "es":"enterarse, averiguar", "literal":"encontrar fuera", "pron":"tu faind AUT", "ejemplo":"I want to find out the price.", "tema":15},
     { "texto":"to pick up", "nivel":"A2", "es":"recoger", "literal":"picar arriba", "pron":"tu pik AP", "ejemplo":"My father picks me up at the station.", "tema":17},
-    { "texto":"to get on", "nivel":"A2", "es":"subir (al bus, al avión)", "literal":"conseguir sobre", "pron":"tu guet ON", "ejemplo":"We get on the bus at the corner.", "tema":17},
-    { "texto":"to get off", "nivel":"A2", "es":"bajar (del bus, del avión)", "literal":"conseguir fuera", "pron":"tu guet OF", "ejemplo":"I get off at the next stop.", "tema":17},
+    { "texto":"to get on", "nivel":"A2", "es":"subir (al bus, al avión)", "literal":"conseguir sobre", "pron":"tu guet AN", "ejemplo":"We get on the bus at the corner.", "tema":17},
+    { "texto":"to get off", "nivel":"A2", "es":"bajar (del bus, del avión)", "literal":"conseguir fuera", "pron":"tu guet AF", "ejemplo":"I get off at the next stop.", "tema":17},
     { "texto":"to hang up", "nivel":"A2", "es":"colgar (el teléfono)", "literal":"colgar arriba", "pron":"tu jang AP", "ejemplo":"Don't hang up, please.", "tema":22},
     { "texto":"to log in", "nivel":"A2", "es":"iniciar sesión", "literal":"registrar dentro", "pron":"tu log IN", "ejemplo":"I log in with my password.", "tema":22},
     { "texto":"to give up", "nivel":"B1", "es":"rendirse", "literal":"dar arriba", "pron":"tu guiv AP", "ejemplo":"The exam is difficult, but I don't give up.", "tema":21},
     { "texto":"to run out of", "nivel":"B1", "es":"quedarse sin", "literal":"correr fuera de", "pron":"tu ran AUT ov", "ejemplo":"We run out of money at the end of the month.", "tema":15},
     { "texto":"to get along", "nivel":"B1", "es":"llevarse bien", "literal":"conseguir a lo largo", "pron":"tu guet a-LONG", "ejemplo":"I get along with my classmates.", "tema":21},
-    { "texto":"to put off", "nivel":"B1", "es":"posponer, dejar para después", "literal":"poner fuera", "pron":"tu put OF", "ejemplo":"Don't put off your homework.", "tema":24}
+    { "texto":"to put off", "nivel":"B1", "es":"posponer, dejar para después", "literal":"poner fuera", "pron":"tu put AF", "ejemplo":"Don't put off your homework.", "tema":24}
    ]
   },
   {
@@ -86,9 +86,9 @@
     { "texto":"here you are", "nivel":"A1", "es":"aquí tienes", "literal":"aquí tú eres", "pron":"jir yu AR", "ejemplo":"Here you are, that's ten soles.", "tema":15},
     { "texto":"me too", "nivel":"A1", "es":"yo también", "literal":"mí también", "pron":"mi TU", "ejemplo":"I like music. — Me too!", "tema":24},
     { "texto":"let's go", "nivel":"A1", "es":"vamos", "literal":"dejemos ir", "pron":"lets GOU", "ejemplo":"It is late. Let's go!", "tema":17},
-    { "texto":"how do you say ... in English?", "nivel":"A1", "es":"¿cómo se dice ... en inglés?", "literal":"¿cómo dices tú ... en inglés?", "pron":"jau du yu SEI in IN-glish", "ejemplo":"How do you say \"mesa\" in English?", "tema":9},
+    { "texto":"how do you say ... in English?", "nivel":"A1", "es":"¿cómo se dice ... en inglés?", "literal":"¿cómo dices tú ... en inglés?", "pron":"jau du yu SEI in IN-glish", "ejemplo":"How do you say \"mesa\" in English?", "tema":1},
     { "texto":"what does it mean?", "nivel":"A1", "es":"¿qué significa?", "literal":"¿qué hace ello significar?", "pron":"uat das it MIN", "ejemplo":"I do not understand. What does it mean?", "tema":21},
-    { "texto":"how do you spell it?", "nivel":"A1", "es":"¿cómo se escribe?", "literal":"¿cómo lo deletreas tú?", "pron":"jau du yu SPEL it", "ejemplo":"Your name, please. How do you spell it?", "tema":9},
+    { "texto":"how do you spell it?", "nivel":"A1", "es":"¿cómo se escribe?", "literal":"¿cómo lo deletreas tú?", "pron":"jau du yu SPEL it", "ejemplo":"Your name, please. How do you spell it?", "tema":1},
     { "texto":"what's up?", "nivel":"A2", "es":"¿qué tal?, ¿qué hay?", "literal":"¿qué está arriba?", "pron":"uats AP", "ejemplo":"Hey Ana, what's up?", "tema":1},
     { "texto":"my pleasure", "nivel":"A2", "es":"un placer, con gusto", "literal":"mi placer", "pron":"mai PLE-shur", "ejemplo":"Thank you! — My pleasure.", "tema":1},
     { "texto":"see you around", "nivel":"A2", "es":"nos vemos", "literal":"te veo alrededor", "pron":"si yu a-RAUND", "ejemplo":"Bye, see you around!", "tema":1},
@@ -96,7 +96,7 @@
     { "texto":"never mind", "nivel":"A2", "es":"no importa, olvídalo", "literal":"nunca mente", "pron":"NE-ver MAIND", "ejemplo":"Never mind, I can do it tomorrow.", "tema":21},
     { "texto":"it doesn't matter", "nivel":"A2", "es":"da igual", "literal":"ello no importa", "pron":"it DA-sent MA-ter", "ejemplo":"Monday or Tuesday? It doesn't matter.", "tema":21},
     { "texto":"take it easy", "nivel":"A2", "es":"tranquilo, con calma", "literal":"tómalo fácil", "pron":"teik it I-si", "ejemplo":"Take it easy, we have time.", "tema":21},
-    { "texto":"long time no see", "nivel":"B1", "es":"cuánto tiempo (sin verte)", "literal":"largo tiempo no ver", "pron":"long taim nou SI", "ejemplo":"Hi Paul! Long time no see.", "tema":8},
+    { "texto":"long time no see", "nivel":"B1", "es":"cuánto tiempo (sin verte)", "literal":"largo tiempo no ver", "pron":"lang taim nou SI", "ejemplo":"Hi Paul! Long time no see.", "tema":8},
     { "texto":"how come?", "nivel":"B1", "es":"¿cómo así?, ¿y eso?", "literal":"¿cómo viene?", "pron":"jau KAM", "ejemplo":"You aren't at work? How come?", "tema":21},
     { "texto":"I don't mind", "nivel":"B1", "es":"no me molesta, me da lo mismo", "literal":"yo no mente", "pron":"ai dount MAIND", "ejemplo":"Tea or coffee? I don't mind.", "tema":21}
    ]
@@ -105,11 +105,11 @@
    "titulo": "Modismos: no significan lo que dicen",
    "nota": "Estos son B1 y B2, o sea tres o cuatro niveles por delante de donde estás, y no hace falta que los uses todavía. Están aquí para que los RECONOZCAS cuando salgan en una serie o en una canción, que es donde los vas a oír. Fíjate en el patrón: el inglés y el español dicen lo mismo con imágenes distintas — a él le cuesta un brazo y una pierna, a ti un ojo de la cara.",
    "expresiones": [
-    { "texto":"to cost an arm and a leg", "nivel":"B1", "es":"costar un ojo de la cara", "literal":"costar un brazo y una pierna", "pron":"tu kost an ARM and a LEG", "ejemplo":"That phone costs an arm and a leg.", "tema":19},
-    { "texto":"it's raining cats and dogs", "nivel":"B1", "es":"llueve a cántaros", "literal":"están lloviendo gatos y perros", "pron":"its REI-ning KATS and DOGS", "ejemplo":"Take the car: it's raining cats and dogs.", "tema":18},
+    { "texto":"to cost an arm and a leg", "nivel":"B1", "es":"costar un ojo de la cara", "literal":"costar un brazo y una pierna", "pron":"tu kast an ARM and a LEG", "ejemplo":"That phone costs an arm and a leg.", "tema":19},
+    { "texto":"it's raining cats and dogs", "nivel":"B1", "es":"llueve a cántaros", "literal":"están lloviendo gatos y perros", "pron":"its REI-ning KATS and DAGS", "ejemplo":"Take the car: it's raining cats and dogs.", "tema":18},
     { "texto":"a piece of cake", "nivel":"B1", "es":"pan comido", "literal":"un pedazo de pastel", "pron":"a PIS ov KEIK", "ejemplo":"The exam is a piece of cake.", "tema":21},
     { "texto":"to give someone a hand", "nivel":"B1", "es":"echar una mano", "literal":"dar a alguien una mano", "pron":"tu guiv SAM-uan a JAND", "ejemplo":"Can you give me a hand with the table?", "tema":19},
-    { "texto":"to keep an eye on", "nivel":"B1", "es":"no perder de vista, vigilar", "literal":"mantener un ojo sobre", "pron":"tu kip an AI on", "ejemplo":"Keep an eye on my bag, please.", "tema":19},
+    { "texto":"to keep an eye on", "nivel":"B1", "es":"no perder de vista, vigilar", "literal":"mantener un ojo sobre", "pron":"tu kip an AI an", "ejemplo":"Keep an eye on my bag, please.", "tema":19},
     { "texto":"to be a couch potato", "nivel":"B1", "es":"ser un teleadicto", "literal":"ser una papa de sofá", "pron":"tu bi a KAUCH po-TEI-tou", "ejemplo":"On Sundays I'm a couch potato.", "tema":20},
     { "texto":"to call it a day", "nivel":"B1", "es":"dejarlo por hoy", "literal":"llamarlo un día", "pron":"tu kol it a DEI", "ejemplo":"I'm tired. Let's call it a day.", "tema":22},
     { "texto":"it's a small world", "nivel":"B1", "es":"el mundo es un pañuelo", "literal":"es un mundo pequeño", "pron":"its a smol UERLD", "ejemplo":"You know my cousin? It's a small world!", "tema":5},
@@ -126,7 +126,7 @@
     { "texto":"to be all ears", "nivel":"B2", "es":"ser todo oídos", "literal":"ser todo orejas", "pron":"tu bi ol IRS", "ejemplo":"Tell me about your trip, I'm all ears.", "tema":19},
     { "texto":"to lose your head", "nivel":"B2", "es":"perder la cabeza", "literal":"perder tu cabeza", "pron":"tu lus yor JED", "ejemplo":"Don't lose your head before the exam.", "tema":19},
     { "texto":"break a leg!", "nivel":"B2", "es":"¡mucha suerte!", "literal":"¡rómpete una pierna!", "pron":"breik a LEG", "ejemplo":"Your exam is tomorrow? Break a leg!", "tema":19},
-    { "texto":"to be in hot water", "nivel":"B2", "es":"estar en problemas", "literal":"estar en agua caliente", "pron":"tu bi in jot UO-ter", "ejemplo":"He is in hot water with his parents.", "tema":14},
+    { "texto":"to be in hot water", "nivel":"B2", "es":"estar en problemas", "literal":"estar en agua caliente", "pron":"tu bi in jat UA-ter", "ejemplo":"He is in hot water with his parents.", "tema":14},
     { "texto":"to hit the books", "nivel":"B2", "es":"ponerse a estudiar en serio", "literal":"golpear los libros", "pron":"tu jit de BUKS", "ejemplo":"The exam is on Friday: time to hit the books.", "tema":21},
     { "texto":"to hit the road", "nivel":"B2", "es":"ponerse en marcha, irse ya", "literal":"golpear el camino", "pron":"tu jit de ROUD", "ejemplo":"It's late, let's hit the road.", "tema":17}
    ]

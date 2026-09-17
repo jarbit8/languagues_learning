@@ -3,7 +3,7 @@
  "textos": [
   {
    "titulo": "El viaje de Ana a Canadá",
-   "texto": "Last year Ana had her first trip abroad. She booked the flight in June and she bought a suitcase for the vacation. Two days before the departure she packed all her clothes: two sweaters, a coat, gloves and her boots, because in Canada it was very cold. In her bag she had her passport, her visa and the booking of the hotel. On Monday she took a taxi to the airport at five in the morning. There she saw many passengers with a lot of luggage. She went to the gate at seven with her boarding pass and she took seat fourteen. The flight was eight hours. Ana never flew before this trip. The plane landed in Toronto in the afternoon. At immigration a worker read her passport and her visa. Then she went to customs with her suitcase: there was no problem. Her sister was in the arrival and she is a permanent resident there. Ana stayed two weeks and she bought a souvenir for her mother.",
+   "texto": "Last year Ana had her first trip abroad. She booked the flight in June and she bought a suitcase for the vacation. Two days before the departure she packed all her clothes: two sweaters, a coat, gloves and her boots, because in Canada it was very cold. In her bag she had her passport, her visa and the hotel reservation. On Monday she took a taxi to the airport at five in the morning. There she saw many passengers with a lot of luggage. She went to the gate at seven with her boarding pass and she took seat fourteen. The flight was eight hours. Ana never flew before this trip. The plane landed in Toronto in the afternoon. At immigration a worker read her passport and her visa. Then she went to customs with her suitcase: there was no problem. Her sister was in the arrival and she is a permanent resident there. Ana stayed two weeks and she bought a souvenir for her mother.",
    "preguntas": [
     {
      "tipo": "completar_dato",
@@ -54,7 +54,7 @@
     },
     {
      "tipo": "vfnd",
-     "enunciado": "The sister of Ana works in Toronto.",
+     "enunciado": "Ana's sister works in Toronto.",
      "respuesta": "no dice"
     },
     {
@@ -71,7 +71,7 @@
   },
   {
    "titulo": "En el aeropuerto",
-   "texto": "Paul went to the airport with his father at six in the morning. The departure of his flight was at nine, but he came early, because he had a lot of luggage: two suitcases and a bag. First he went with his booking and his passport, and there he took his boarding pass with the seat and the gate. Then his suitcases went with the luggage of the other passengers. Paul had a coffee with his father and at seven he went to immigration. There a worker read his passport and his visa for the United States. At customs there was a problem: in his bag there was a big souvenir of Peru and it was not for a plane. Paul left the souvenir with his father. At the gate there were many tourists and a guide with fifteen passengers. The plane landed in the United States at four and Paul stayed one month abroad with his family.",
+   "texto": "Paul went to the airport with his father at six in the morning. The departure of his flight was at nine, but he came early, because he had a lot of luggage: two suitcases and a bag. First he went with his reservation and his passport, and there he took his boarding pass with the seat and the gate. Then his suitcases went with the luggage of the other passengers. Paul had a coffee with his father and at seven he went to immigration. There a worker read his passport and his visa for the United States. At customs there was a problem: in his bag there was a big souvenir of Peru and it was not for a plane. Paul left the souvenir with his father. At the gate there were many tourists and a guide with fifteen passengers. The plane landed in the United States at four and Paul stayed one month abroad with his family.",
    "preguntas": [
     {
      "tipo": "completar_dato",
@@ -123,7 +123,7 @@
     },
     {
      "tipo": "vfnd",
-     "enunciado": "The father of Paul went abroad too.",
+     "enunciado": "Paul's father went abroad too.",
      "respuesta": "no dice"
     },
     {
@@ -140,7 +140,7 @@
   },
   {
    "titulo": "El hotel en Toronto",
-   "texto": "In Toronto Ana stayed in a small hotel near the city center. She booked it in June and the booking was for two weeks. The hotel was not expensive: forty dollars every night. Her room was on the second floor, with a big window and a small bathroom. In the morning there was breakfast: bread, butter, eggs, fruit and coffee. Ana left her suitcase in the room and she went out with her camera every day. She was a tourist in the museums, in the park and near the lake. A guide in the hotel had a map of the city for the tourists. She bought a souvenir for her mother and two for her friends in Peru. One day she took a train to another city, near the border with the United States. In the hotel there were tourists of many countries: France, Spain, England and Peru. After two weeks Ana packed her suitcase and she left the hotel at five in the morning for her flight. It was a very good stay.",
+   "texto": "In Toronto Ana stayed in a small hotel near the city center. She booked it in June and the reservation was for two weeks. The hotel was not expensive: forty dollars every night. Her room was on the second floor, with a big window and a small bathroom. In the morning there was breakfast: bread, butter, eggs, fruit and coffee. Ana left her suitcase in the room and she went out with her camera every day. She was a tourist in the museums, in the park and near the lake. A guide in the hotel had a map of the city for the tourists. She bought a souvenir for her mother and two for her friends in Peru. One day she took a train to another city, near the border with the United States. In the hotel there were tourists of many countries: France, Spain, England and Peru. After two weeks Ana packed her suitcase and she left the hotel at five in the morning for her flight. It was a very good stay.",
    "preguntas": [
     {
      "tipo": "completar_dato",
@@ -153,7 +153,7 @@
     },
     {
      "tipo": "opcion_multiple",
-     "enunciado": "Where was the room of Ana?",
+     "enunciado": "Where was Ana's room?",
      "opciones": [
       "on the first floor",
       "on the second floor",
@@ -180,7 +180,7 @@
      "enunciado": "Who had a map of the city?",
      "opciones": [
       "her sister",
-      "a tourist of France",
+      "a tourist from France",
       "a guide in the hotel"
      ],
      "respuesta": "a guide in the hotel"
@@ -209,11 +209,11 @@
   },
   {
    "titulo": "Un vuelo con retraso",
-   "texto": "Last Saturday Laura had a flight at eleven, but there was a big delay. At the airport the screen was the same all the morning: departure at two. Laura had her boarding pass, her passport and a small suitcase, and she was at the gate for three hours. Many passengers were tired and one tourist was very angry. Laura read a book and she listened to music. At one she had a sandwich and a cold soft drink in a café of the airport. Then the plane came and all the passengers went to their seats. Laura had seat twenty-two, near a window. The flight was four hours and the plane landed at six. At immigration there were many passengers, so Laura was there for one hour. At customs a worker opened her suitcase, but there was no problem: in it there were only clothes and a souvenir. Her friend was in the arrival at eight.",
+   "texto": "Last Saturday Laura had a flight at eleven, but there was a big delay. At the airport the screen was the same all morning: departure at two. Laura had her boarding pass, her passport and a small suitcase, and she was at the gate for three hours. Many passengers were tired and one tourist was very angry. Laura read a book and she listened to music. At one she had a sandwich and a cold soft drink in a café of the airport. Then the plane came and all the passengers went to their seats. Laura had seat twenty-two, near a window. The flight was four hours and the plane landed at six. At immigration there were many passengers, so Laura was there for one hour. At customs a worker opened her suitcase, but there was no problem: in it there were only clothes and a souvenir. Her friend was in the arrival at eight.",
    "preguntas": [
     {
      "tipo": "completar_dato",
-     "enunciado": "What time was the flight of Laura?",
+     "enunciado": "What time was Laura's flight?",
      "respuesta": "at eleven",
      "aceptadas": [
       "eleven",
@@ -262,7 +262,7 @@
     },
     {
      "tipo": "vfnd",
-     "enunciado": "The friend of Laura lives near the airport.",
+     "enunciado": "Laura's friend lives near the airport.",
      "respuesta": "no dice"
     },
     {
@@ -279,7 +279,7 @@
   },
   {
    "titulo": "Examen · El viaje de Marie",
-   "texto": "Last year Marie had a trip abroad with her sister. She booked the flight in March and she packed her suitcase two days before the departure: clothes, a coat and her boots. In her bag she had her passport, her visa and the booking of the hotel. On Friday she took the subway to the airport at six in the morning. There she took her boarding pass with the seat and the gate, and her suitcase went with the luggage of the other passengers. The flight was at nine, but there was a delay of two hours. It was seven hours in the plane and Marie never flew before. The plane landed in the afternoon. At immigration a worker read her passport, and at customs there was no problem. A guide was in the arrival with the tourists. Marie stayed three weeks in a small hotel near the city center: forty dollars every night. She bought a souvenir for her mother.",
+   "texto": "Last year Marie had a trip abroad with her sister. She booked the flight in March and she packed her suitcase two days before the departure: clothes, a coat and her boots. In her bag she had her passport, her visa and the hotel reservation. On Friday she took the subway to the airport at six in the morning. There she took her boarding pass with the seat and the gate, and her suitcase went with the luggage of the other passengers. The flight was at nine, but there was a delay of two hours. It was seven hours in the plane and Marie never flew before. The plane landed in the afternoon. At immigration a worker read her passport, and at customs there was no problem. A guide was in the arrival with the tourists. Marie stayed three weeks in a small hotel near the city center: forty dollars every night. She bought a souvenir for her mother.",
    "preguntas": [
     {
      "tipo": "completar_dato",
@@ -330,7 +330,7 @@
     },
     {
      "tipo": "vfnd",
-     "enunciado": "The sister of Marie flew before.",
+     "enunciado": "Marie's sister flew before.",
      "respuesta": "no dice"
     },
     {

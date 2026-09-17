@@ -249,6 +249,22 @@
    "texto": "to run",
    "ejemplo": "I run in the morning.",
    "pron": "tu RAN"
+  },
+  {
+   "id": "a1-t09-035",
+   "es": "hacer",
+   "texto": "to do",
+   "ejemplo": "I do my homework every day.",
+   "pron": "tu DU",
+   "nota": "do es también el auxiliar de las preguntas: Do you work? What do you do?"
+  },
+  {
+   "id": "a1-t09-036",
+   "es": "casa, hogar",
+   "texto": "home",
+   "ejemplo": "I go home at six.",
+   "pron": "JOUM",
+   "nota": "at home = en casa. go home = ir a casa, sin to."
   }
  ]
 }

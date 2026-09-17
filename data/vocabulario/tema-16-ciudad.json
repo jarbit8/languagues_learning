@@ -35,7 +35,7 @@
    "es": "hospital",
    "texto": "hospital",
    "ejemplo": "The hospital is far.",
-   "pron": "JOS-pi-tal"
+   "pron": "JAS-pi-tal"
   },
   {
    "id": "a1-t16-007",
@@ -100,7 +100,7 @@
    "es": "correo",
    "texto": "post office",
    "ejemplo": "Where is the post office?",
-   "pron": "POUST O-fis"
+   "pron": "POUST A-fis"
   },
   {
    "id": "a1-t16-016",
@@ -169,18 +169,10 @@
    "pron": "tu VI-sit"
   },
   {
-   "id": "a1-t16-025",
-   "es": "se puede",
-   "texto": "one can",
-   "literal": "uno puede",
-   "ejemplo": "One can eat well here.",
-   "pron": "uan KAN"
-  },
-  {
    "id": "a1-t16-026",
    "es": "abierto",
    "texto": "open",
-   "ejemplo": "The shop is open.",
+   "ejemplo": "The store is open.",
    "pron": "OU-pen"
   },
   {

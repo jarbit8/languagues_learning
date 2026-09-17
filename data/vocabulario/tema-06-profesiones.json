@@ -7,14 +7,15 @@
    "es": "trabajo",
    "texto": "job",
    "ejemplo": "I have a good job.",
-   "pron": "YOB"
+   "pron": "YAB"
   },
   {
    "id": "a1-t06-002",
    "es": "trabajar",
    "texto": "to work",
    "ejemplo": "Where do you work?",
-   "pron": "tu UERK"
+   "pron": "tu UERK",
+   "nota": "Where do you work? es una fórmula fija: el do de las preguntas se explica en el tema 9."
   },
   {
    "id": "a1-t06-003",
@@ -35,7 +36,7 @@
    "es": "médico",
    "texto": "doctor",
    "ejemplo": "My father is a doctor.",
-   "pron": "DOK-tor"
+   "pron": "DAK-ter"
   },
   {
    "id": "a1-t06-006",
@@ -78,7 +79,7 @@
    "es": "policía",
    "texto": "police officer",
    "ejemplo": "She is a police officer.",
-   "pron": "po-LIS O-fi-ser"
+   "pron": "po-LIS A-fi-ser"
   },
   {
    "id": "a1-t06-012",
@@ -89,17 +90,18 @@
   },
   {
    "id": "a1-t06-013",
-   "es": "vendedor",
-   "texto": "seller",
-   "ejemplo": "The seller is friendly.",
-   "pron": "SE-ler"
+   "es": "vendedor, vendedora",
+   "texto": "salesperson",
+   "ejemplo": "The salesperson is friendly.",
+   "pron": "SEILS-per-son",
+   "tambien": "salesman · saleswoman · en una tienda también sales clerk"
   },
   {
    "id": "a1-t06-014",
    "es": "oficina",
    "texto": "office",
    "ejemplo": "I work in an office.",
-   "pron": "O-fis"
+   "pron": "A-fis"
   },
   {
    "id": "a1-t06-015",
@@ -155,7 +157,7 @@
    "es": "jefe",
    "texto": "boss",
    "ejemplo": "My boss is serious.",
-   "pron": "BOS"
+   "pron": "BAS"
   },
   {
    "id": "a1-t06-024",
@@ -170,20 +172,6 @@
    "texto": "lawyer",
    "ejemplo": "Her mother is a lawyer.",
    "pron": "LO-yer"
-  },
-  {
-   "id": "a1-t06-026",
-   "es": "profesora",
-   "texto": "teacher (f)",
-   "ejemplo": "My teacher is French.",
-   "pron": "TI-cher"
-  },
-  {
-   "id": "a1-t06-027",
-   "es": "vendedora",
-   "texto": "seller (f)",
-   "ejemplo": "The seller is young.",
-   "pron": "SE-ler"
   },
   {
    "id": "a1-t06-028",
@@ -205,7 +193,7 @@
    "id": "a1-t06-030",
    "es": "carrera",
    "texto": "career",
-   "ejemplo": "Engineer is a good career.",
+   "ejemplo": "It is a good career.",
    "pron": "ka-RIR"
   },
   {
@@ -249,6 +237,28 @@
    "texto": "which",
    "ejemplo": "Which is your office?",
    "pron": "UICH"
+  },
+  {
+   "id": "a1-t06-037",
+   "es": "por qué",
+   "texto": "why",
+   "ejemplo": "Why is he tired?",
+   "pron": "UAI",
+   "nota": "La respuesta suele empezar con because (porque), que se ve en el tema 21."
+  },
+  {
+   "id": "a1-t06-038",
+   "es": "genial, muy bueno",
+   "texto": "great",
+   "ejemplo": "Your job is great!",
+   "pron": "GREIT"
+  },
+  {
+   "id": "a1-t06-039",
+   "es": "preguntar",
+   "texto": "to ask",
+   "ejemplo": "She asks: What do you do?",
+   "pron": "tu ASK"
   }
  ]
 }

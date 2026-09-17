@@ -41,10 +41,10 @@
   {
    "id": "a1-t23-011",
    "es": "reserva",
-   "texto": "booking",
-   "ejemplo": "I have a booking.",
-   "pron": "BU-king",
-   "tambien": "reservation"
+   "texto": "reservation",
+   "ejemplo": "I have a reservation.",
+   "pron": "re-ser-VEI-shon",
+   "tambien": "booking — más británico, aunque sale en las webs de viajes"
   },
   {
    "id": "a1-t23-014",
@@ -65,7 +65,7 @@
    "es": "al extranjero",
    "texto": "abroad",
    "ejemplo": "I want to go abroad.",
-   "pron": "a-BROD"
+   "pron": "a-BRAD"
   },
   {
    "id": "a1-t23-018",
@@ -102,7 +102,7 @@
    "es": "tomar el avión",
    "texto": "to fly",
    "literal": "volar",
-   "ejemplo": "I fly to Canada.",
+   "ejemplo": "I fly to New York.",
    "pron": "tu FLAI"
   },
   {

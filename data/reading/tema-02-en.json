@@ -9,11 +9,14 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cuántos años tiene Ana?",
      "opciones": [
-      "veinte",
-      "veintidós",
-      "diecinueve"
+      "twenty",
+      "twenty-two",
+      "nineteen"
      ],
-     "respuesta": "veinte"
+     "respuesta": "twenty",
+     "aceptadas": [
+      "20"
+     ]
     },
     {
      "tipo": "vf",
@@ -354,7 +357,7 @@
   },
   {
    "titulo": "Los números del año",
-   "texto": "How old is Mr. Lee? He is eighty-four years old. And Mrs. Lee? She is seventy-nine. Miss Sofia is fifty-two and Marc is fifty. Laura is sixteen and Ana is thirteen. And you? I am twenty-two years old. And the number of Paul? Paul is one! No! Paul is twenty-one. Sorry! One, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve. Numbers, numbers, numbers! And one hundred? One hundred is a very good number. Yes! But it is not an age here. Thank you very much!",
+   "texto": "How old is Mr. Lee? He is eighty-four years old. And Mrs. Lee? She is seventy-nine. Miss Sofia is fifty-two and Marc is fifty. Laura is sixteen and Ana is thirteen. And you? I am twenty-two years old. And Paul? Paul is one! No! Paul is twenty-one. Sorry! One, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve. Numbers, numbers, numbers! And one hundred? One hundred is a very good number. Yes! But it is not an age here. Thank you very much!",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
@@ -435,7 +438,7 @@
     },
     {
      "hablante": "A",
-     "texto": "And the number of Paul?"
+     "texto": "And Paul?"
     },
     {
      "hablante": "B",

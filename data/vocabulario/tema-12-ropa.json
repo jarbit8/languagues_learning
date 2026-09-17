@@ -78,11 +78,11 @@
    "es": "medias",
    "texto": "socks",
    "ejemplo": "My socks are white.",
-   "pron": "SOKS"
+   "pron": "SAKS"
   },
   {
    "id": "a1-t12-012",
-   "es": "gorro",
+   "es": "sombrero, gorra",
    "texto": "hat",
    "ejemplo": "He is wearing a hat.",
    "pron": "JAT"
@@ -107,7 +107,7 @@
    "texto": "to put on",
    "literal": "poner sobre",
    "ejemplo": "Put on your jacket.",
-   "pron": "tu put ON",
+   "pron": "tu put AN",
    "rapido": "pu-DON"
   },
   {
@@ -201,7 +201,7 @@
    "texto": "to take off",
    "literal": "tomar fuera",
    "ejemplo": "Take off your hat.",
-   "pron": "tu teik OF",
+   "pron": "tu teik AF",
    "rapido": "tei-KOF"
   },
   {
@@ -225,6 +225,22 @@
    "texto": "boots",
    "ejemplo": "I wear boots in winter.",
    "pron": "BUTS"
+  },
+  {
+   "id": "a1-t12-033",
+   "es": "ayudar",
+   "texto": "to help",
+   "ejemplo": "Can I help you?",
+   "pron": "tu JELP",
+   "nota": "Can I help you? es lo primero que te dicen al entrar a una tienda."
+  },
+  {
+   "id": "a1-t12-034",
+   "es": "saber, conocer",
+   "texto": "to know",
+   "ejemplo": "I don't know my size.",
+   "pron": "tu NOU",
+   "nota": "La k no suena."
   }
  ]
 }

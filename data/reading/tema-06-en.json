@@ -58,7 +58,7 @@
   },
   {
    "titulo": "¿En qué trabajas?",
-   "texto": "Good morning! What do you do? I am a driver. And you? I work at an office: I am a secretary. My husband is a police officer and my sister is a firefighter. Who is the woman with the dog? She is a farmer. Her son is a dentist and her daughter is a seller. My cousin is an architect and my friend is an accountant. How is your job? It is very good, but my salary is not good. Is Marc a teacher? No, Marc is unemployed, but he studies and he has a career. He is not a seller. What is your job, Ana? I am a student and I work at an office.",
+   "texto": "Good morning! What do you do? I am a driver. And you? I work at an office: I am a secretary. My husband is a police officer and my sister is a firefighter. Who is the woman with the dog? She is a farmer. Her son is a dentist and her daughter is a salesperson. My cousin is an architect and my friend is an accountant. How is your job? It is very good, but my salary is not good. Is Marc a teacher? No, Marc is unemployed, but he studies and he has a career. He is not a salesperson. What is your job, Ana? I am a student and I work at an office.",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
@@ -86,7 +86,7 @@
      "opciones": [
       "dentist",
       "farmer",
-      "seller"
+      "salesperson"
      ],
      "respuesta": "farmer"
     },
@@ -133,7 +133,7 @@
     },
     {
      "hablante": "B",
-     "texto": "She is a farmer. Her son is a dentist and her daughter is a seller. My cousin is an architect and my friend is an accountant."
+     "texto": "She is a farmer. Her son is a dentist and her daughter is a salesperson. My cousin is an architect and my friend is an accountant."
     },
     {
      "hablante": "A",
@@ -149,7 +149,7 @@
     },
     {
      "hablante": "B",
-     "texto": "No, Marc is unemployed, but he studies and he has a career. He is not a seller."
+     "texto": "No, Marc is unemployed, but he studies and he has a career. He is not a salesperson."
     },
     {
      "hablante": "A",
@@ -214,7 +214,7 @@
   },
   {
    "titulo": "Una entrevista de trabajo",
-   "texto": "Good morning! What do you do? I am an architect, but I am unemployed. And what is your career? I study and I work. Which job is good for you here? A job in an office. How is your English? Very good. My friend is an accountant and she works at a big company. Her boss is a lawyer. My sister is a firefighter and my brother is a waiter. My mother is a seller and my father is a programmer. Is the salary good? The salary is very good. Welcome to the company! Thank you very much!",
+   "texto": "Good morning! What do you do? I am an architect, but I am unemployed. And what is your career? I study and I work. Which job is good for you here? A job in an office. How is your English? Very good. My friend is an accountant and she works at a big company. Her boss is a lawyer. My sister is a firefighter and my brother is a waiter. My mother is a salesperson and my father is a programmer. Is the salary good? The salary is very good. Welcome to the company! Thank you very much!",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
@@ -241,7 +241,7 @@
      "enunciado": "¿En qué trabaja el hermano?",
      "opciones": [
       "firefighter",
-      "seller",
+      "salesperson",
       "waiter"
      ],
      "respuesta": "waiter"
@@ -293,7 +293,7 @@
     },
     {
      "hablante": "B",
-     "texto": "Very good. My friend is an accountant and she works at a big company. Her boss is a lawyer. My sister is a firefighter and my brother is a waiter. My mother is a seller and my father is a programmer. Is the salary good?"
+     "texto": "Very good. My friend is an accountant and she works at a big company. Her boss is a lawyer. My sister is a firefighter and my brother is a waiter. My mother is a salesperson and my father is a programmer. Is the salary good?"
     },
     {
      "hablante": "A",
@@ -307,7 +307,7 @@
   },
   {
    "titulo": "Examen · Quién trabaja en qué",
-   "texto": "Marie is a dentist and she works in an office. Her husband is a farmer. Her father is a doctor and her mother is a teacher. Her brother is a police officer and his wife is a nurse. Her sister is unemployed, but she studies and she has a career. Her uncle is a driver and her aunt is a secretary. Her cousin is an architect and her friend is an accountant. Who is the boss? Mr. Lee. He is an engineer in a big company. Is the salary good? Yes, the salary is very good. And Marc? Marc is a cook and Sofia is a seller. What do you do?",
+   "texto": "Marie is a dentist and she works in an office. Her husband is a farmer. Her father is a doctor and her mother is a teacher. Her brother is a police officer and his wife is a nurse. Her sister is unemployed, but she studies and she has a career. Her uncle is a driver and her aunt is a secretary. Her cousin is an architect and her friend is an accountant. Who is the boss? Mr. Lee. He is an engineer in a big company. Is the salary good? Yes, the salary is very good. And Marc? Marc is a cook and Sofia is a salesperson. What do you do?",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
@@ -335,7 +335,7 @@
      "opciones": [
       "Marc",
       "Mr. Lee",
-      "el padre"
+      "her father"
      ],
      "respuesta": "Mr. Lee"
     },

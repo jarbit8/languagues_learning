@@ -6,8 +6,8 @@
    "id": "a1-t19-001",
    "es": "cuerpo",
    "texto": "body",
-   "ejemplo": "The human body.",
-   "pron": "BO-di"
+   "ejemplo": "My body is tired.",
+   "pron": "BA-di"
   },
   {
    "id": "a1-t19-002",
@@ -91,7 +91,7 @@
    "es": "estómago",
    "texto": "stomach",
    "ejemplo": "My stomach hurts.",
-   "pron": "STO-mak"
+   "pron": "STA-mek"
   },
   {
    "id": "a1-t19-014",
@@ -148,7 +148,7 @@
    "id": "a1-t19-022",
    "es": "rodilla",
    "texto": "knee",
-   "ejemplo": "My knee is hurt.",
+   "ejemplo": "My knee hurts.",
    "pron": "NI"
   },
   {
@@ -184,7 +184,7 @@
    "es": "tos",
    "texto": "cough",
    "ejemplo": "I have a cough.",
-   "pron": "KOF"
+   "pron": "KAF"
   },
   {
    "id": "a1-t19-028",
@@ -220,6 +220,14 @@
    "texto": "ambulance",
    "ejemplo": "The ambulance is at the hospital.",
    "pron": "AM-biu-lans"
+  },
+  {
+   "id": "a1-t19-033",
+   "es": "pensar, creer",
+   "texto": "to think",
+   "ejemplo": "I think I have a cold.",
+   "pron": "tu ZINK",
+   "nota": "I think… = creo que…"
   }
  ]
 }

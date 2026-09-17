@@ -22,7 +22,7 @@
     },
     {
      "hablante": "A",
-     "texto": "Great, I'll take it. Can I pay by card?"
+     "texto": "Great, I want it. Can I pay by card?"
     },
     {
      "hablante": "B",
@@ -40,7 +40,7 @@
    "preguntas": [
     {
      "tipo": "opcion_multiple",
-     "enunciado": "¿Cuánto cuesta la mochila barata?",
+     "enunciado": "¿Cuánto cuesta la bolsa barata?",
      "opciones": [
       "twenty dollars",
       "fifteen dollars",
@@ -346,7 +346,7 @@
     },
     {
      "hablante": "B",
-     "texto": "Then I prefer nothing. Here is my card."
+     "texto": "Then no cheese, thank you. Here is my card."
     },
     {
      "hablante": "A",

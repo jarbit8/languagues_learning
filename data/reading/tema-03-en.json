@@ -3,7 +3,7 @@
  "textos": [
   {
    "titulo": "¿De dónde eres?",
-   "texto": "Ana is Peruvian. She comes from Peru, a country in America. Lima is the capital of Peru, but Ana comes from a city with the name Arequipa. She lives in Canada. Canada is a country in America too, not in Europe. Ana speaks Spanish and English. She speaks French too, because in Canada French is a language too, and Quebec is French-speaking. Paul is Canadian. He was born in a city in Canada. Ana is a foreigner in Canada, but she speaks the language. Where are you from? I am from Peru, she says. And you? I am from here!",
+   "texto": "Ana is Peruvian. She comes from Peru, a country in America. Lima is the capital of Peru, but Ana comes from a city with the name Arequipa. She lives in Canada. Canada is a country in America too, not in Europe. Ana speaks Spanish and English. She speaks French too, because in Canada French is a language too. Paul is Canadian. He was born in a city in Canada. Ana is a foreigner in Canada, but she speaks the language. Where are you from? I am from Peru, she says. And you? I am from here!",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
@@ -47,7 +47,7 @@
     },
     {
      "tipo": "vf",
-     "enunciado": "Quebec es francófono.",
+     "enunciado": "Paul es canadiense.",
      "respuesta": "verdadero"
     }
    ]
@@ -143,7 +143,7 @@
   },
   {
    "titulo": "La ciudad de cada uno",
-   "texto": "Where are you from, Sofia? I come from Spain, from the capital. And you, Marc? I am from France, but I live in Canada. My city is in Quebec and Quebec is French-speaking. Is your nationality Canadian? No, my nationality is French. I am a foreigner here. Ana is Peruvian. She was born in a city in Peru and she comes from America. Her country is not in Europe. And you speak three languages? Yes: Spanish, English and French. The world has many countries! Where do you live, Sofia? I live in a city in England.",
+   "texto": "Where are you from, Sofia? I come from Spain, from the capital. And you, Marc? I am from France, but I live in Canada. My city is Montreal, and in Montreal French is the language. Is your nationality Canadian? No, my nationality is French. I am a foreigner here. Ana is Peruvian. She was born in a city in Peru and she comes from America. Her country is not in Europe. And you speak three languages? Yes: Spanish, English and French. The world has many countries! Where do you live, Sofia? I live in a city in England.",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
@@ -162,8 +162,8 @@
     },
     {
      "tipo": "completar_dato",
-     "enunciado": "¿En qué región de Canadá vive Marc?",
-     "respuesta": "Quebec"
+     "enunciado": "¿En qué ciudad de Canadá vive Marc?",
+     "respuesta": "Montreal"
     },
     {
      "tipo": "opcion_multiple",
@@ -206,7 +206,7 @@
     },
     {
      "hablante": "Marc",
-     "texto": "I am from France, but I live in Canada. My city is in Quebec and Quebec is French-speaking."
+     "texto": "I am from France, but I live in Canada. My city is Montreal, and in Montreal French is the language."
     },
     {
      "hablante": "A",
@@ -290,7 +290,7 @@
   },
   {
    "titulo": "Examen · De qué país eres",
-   "texto": "Marie comes from England. Her country is in Europe and her nationality is English. She speaks English and French. Marc is from France, but he lives in Canada, in Quebec. Quebec is French-speaking. Sofia comes from Spain and she speaks Spanish. Ana is Peruvian: she was born in Peru, a country in America. She lives in Canada and she is a foreigner there, but she speaks the language. The capital of Peru is Lima, and Ana comes from a city with the name Arequipa. The United States is in America too. The world has many countries and many languages.",
+   "texto": "Marie comes from England. Her country is in Europe and her nationality is English. She speaks English and French. Marc is from France, but he lives in Canada, in Montreal. Sofia comes from Spain and she speaks Spanish. Ana is Peruvian: she was born in Peru, a country in America. She lives in Canada and she is a foreigner there, but she speaks the language. The capital of Peru is Lima, and Ana comes from a city with the name Arequipa. The United States is in America too. The world has many countries and many languages.",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
@@ -304,7 +304,7 @@
     },
     {
      "tipo": "vf",
-     "enunciado": "Marc vive en Quebec.",
+     "enunciado": "Marc vive en Montreal.",
      "respuesta": "verdadero"
     },
     {

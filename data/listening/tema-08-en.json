@@ -252,11 +252,11 @@
     },
     {
      "hablante": "A",
-     "texto": "Half past six! That is soon."
+     "texto": "Half past six! That is early."
     },
     {
      "hablante": "B",
-     "texto": "Right away I am in bed. Good night!"
+     "texto": "Now I am in bed. Good night!"
     }
    ],
    "preguntas": [
@@ -309,7 +309,7 @@
     },
     {
      "hablante": "B",
-     "texto": "It is twenty past three in the afternoon."
+     "texto": "It is three twenty in the afternoon."
     },
     {
      "hablante": "A",
@@ -321,7 +321,7 @@
     },
     {
      "hablante": "A",
-     "texto": "The time with Laura is at half past eight."
+     "texto": "And Laura? At half past eight?"
     },
     {
      "hablante": "B",
@@ -333,7 +333,7 @@
     },
     {
      "hablante": "B",
-     "texto": "Very well. One hour and a quarter of an hour!"
+     "texto": "Very well. See you at eight o'clock!"
     }
    ],
    "preguntas": [
@@ -342,7 +342,7 @@
      "enunciado": "¿Qué hora es al empezar?",
      "respuesta": "3:20",
      "aceptadas": [
-      "twenty past three"
+      "three twenty"
      ]
     },
     {
@@ -364,7 +364,7 @@
      "enunciado": "¿Qué hora propone A primero?",
      "opciones": [
       "half past eight",
-      "twenty past three",
+      "three twenty",
       "eight o'clock"
      ],
      "respuesta": "half past eight"

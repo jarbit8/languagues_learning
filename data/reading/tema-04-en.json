@@ -111,7 +111,7 @@
   },
   {
    "titulo": "Los primos de Ana",
-   "texto": "Ana has four cousins in Peru. Two are twins and they are sixteen years old. Her cousin is a girl: her name is Marie. Marie is single. Her brother is married and his wife is Peruvian. They have a baby, so Ana has a nephew. Her aunt and her uncle live with the grandparents. Her grandfather is eighty-four and her grandmother is seventy-nine. Ana has a niece too: she is three. Her family has many people! In Canada Ana lives with a friend and they have a dog and a cat. My family is in Peru, says Ana, but my pets are here.",
+   "texto": "Ana has four cousins in Peru. Two are twins and they are sixteen years old. Her cousin is a girl: her name is Marie. Marie is single. Her brother is married and his wife is Peruvian. They have a baby, so Ana has a nephew. Her aunt and her uncle live with the grandparents. Her grandfather is eighty-four and her grandmother is seventy-nine. Ana has a niece too: she is three. What a family! In Canada Ana lives with a friend and they have a dog and a cat. My family is in Peru, says Ana, but my pets are here.",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
@@ -222,7 +222,7 @@
   },
   {
    "titulo": "Examen · La familia de Marie",
-   "texto": "This is the family of Marie. Her father and her mother are her parents. Marie has one brother and one sister. Her brother is married and his wife is Canadian. They have a son, so Marie has a nephew. Her sister is divorced and she has a daughter: Marie's niece. Her grandparents live in England. Her grandfather is eighty and her grandmother is seventy-five. Marie has two cousins: one is a baby. Her uncle and her aunt live with the grandparents. Marie is single. She has a pet: a dog. Her friend has a cat.",
+   "texto": "This is Marie's family. Her father and her mother are her parents. Marie has one brother and one sister. Her brother is married and his wife is Canadian. They have a son, so Marie has a nephew. Her sister is divorced and she has a daughter: Marie's niece. Her grandparents live in England. Her grandfather is eighty and her grandmother is seventy-five. Marie has two cousins: one is a baby. Her uncle and her aunt live with the grandparents. Marie is single. She has a pet: a dog. Her friend has a cat.",
    "preguntas": [
     {
      "tipo": "opcion_multiple",

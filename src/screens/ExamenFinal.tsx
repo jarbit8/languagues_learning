@@ -166,7 +166,7 @@ export default function ExamenFinal({ onSalir }: { onSalir: () => void }) {
       <div className="flex flex-col gap-4">
         <h1 className="text-2xl font-extrabold tracking-tight">Writing final</h1>
         <PasoWriting
-          bloque={4}
+          temaConsigna={20}
           tema={temasDeBloque(4).at(-1) ?? 24}
           meta="si aprueba el examen final del nivel A1"
           onDone={(promedio) => {

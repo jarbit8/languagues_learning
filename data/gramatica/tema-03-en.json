@@ -1,7 +1,7 @@
 {
  "tema": 3,
  "titulo": "Artículos a / an / the y el origen",
- "regla": "Los artículos: 'a' antes de consonante (a country), 'an' antes de sonido vocálico (an English student), 'the' cuando es algo específico (the city). Para preguntar el origen: 'Where are you from?' y se responde 'I'm from Peru.' Con nombres de países no se usa artículo.",
+ "regla": "Los artículos: 'a' antes de consonante (a country), 'an' antes de sonido vocálico (an English student), 'the' cuando es algo específico (the city). Para preguntar el origen: 'Where are you from?' y se responde 'I'm from Peru.' Con nombres de países no se usa artículo, salvo los que llevan una palabra como States: the United States. 'Do you speak English?' lleva do: por ahora apréndela como fórmula, el do de las preguntas se explica en el tema 9.",
  "pronunciacion": "Los gentilicios en -ian se acentúan en esa sílaba: Peru-VIAN, Canad-IAN.",
  "trampa": "Se usa 'an' por el SONIDO, no la letra: 'an English book' pero 'a university' (suena 'yu').",
  "ejemplos": [
@@ -29,7 +29,7 @@
   },
   {
    "tipo": "hueco",
-   "enunciado": "English is ___ language.",
+   "enunciado": "English is ___ language. (un)",
    "respuesta": "a"
   },
   {
@@ -39,7 +39,7 @@
   },
   {
    "tipo": "hueco",
-   "enunciado": "I live in ___ city.",
+   "enunciado": "I live in ___ city. (una)",
    "respuesta": "a"
   },
   {
@@ -140,7 +140,7 @@
  "dias": [
   {
    "titulo": "Los artículos a / an / the",
-   "regla": "'a' antes de sonido de consonante (a country), 'an' antes de sonido de vocal (an English student), 'the' cuando es algo concreto y ya sabido (the city). Con los nombres de países NO se usa artículo: Peru, Canada, England.",
+   "regla": "'a' antes de sonido de consonante (a country), 'an' antes de sonido de vocal (an English student), 'the' cuando es algo concreto y ya sabido (the city). Con los nombres de países NO se usa artículo: Peru, Canada, England. La excepción es cuando el nombre lleva una palabra como States: the United States.",
    "trampa": "Manda el SONIDO, no la letra: 'an English student' lleva 'an' porque English empieza por sonido vocálico. Y nunca 'the Peru'.",
    "ejemplos": [
     0
@@ -157,7 +157,7 @@
   },
   {
    "titulo": "Preguntar de dónde eres",
-   "regla": "Para el origen: 'Where are you from?' y se contesta 'I'm from Peru.' Fíjate en que la pregunta también invierte el orden, igual que con to be: are + you.",
+   "regla": "Para el origen: 'Where are you from?' y se contesta 'I'm from Peru.' Fíjate en que la pregunta también invierte el orden, igual que con to be: are + you. 'Do you speak English?' lleva do: por ahora apréndela como fórmula, el do de las preguntas se explica en el tema 9.",
    "trampa": "'Where you are from?' está mal: la pregunta invierte — 'Where ARE YOU from?'.",
    "ejemplos": [
     1,

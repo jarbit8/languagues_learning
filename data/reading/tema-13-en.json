@@ -3,7 +3,7 @@
  "textos": [
   {
    "titulo": "La cocina de Ana",
-   "texto": "Ana cooks every day. In her fridge there is milk, cheese, eggs and butter. There are also vegetables: tomatoes, potatoes, onions and carrots. She eats fruit every day: apples, bananas and oranges. For breakfast she has bread with butter and an apple. For lunch she often cooks rice with chicken, or fish with salad. She does not eat meat every day, because meat is expensive. In the evening she is not very hungry, so she has some soup or a sandwich. Laura eats pasta and yogurt in her room. Ana never puts salt in her food, but she always puts pepper. Her food is not expensive and it is very tasty. On Sunday she cooks for her friends and they eat a dessert too. On Monday morning there is nothing in the fridge, so Ana buys something for all the week. She buys sugar too, for the Sunday dessert.",
+   "texto": "Ana cooks every day. In her fridge there is milk, cheese, eggs and butter. There are also vegetables: tomatoes, potatoes, onions and carrots. She eats fruit every day: apples, bananas and oranges. For breakfast she has bread with butter and an apple. For lunch she often cooks rice with chicken, or fish with salad. She does not eat meat every day, because meat is expensive. In the evening she is not very hungry, so she has some soup or a sandwich. Laura eats pasta and yogurt in her room. Ana never puts salt in her food, but she always puts pepper. Her food is not expensive and it is very tasty. On Sunday she cooks for her friends and they eat a dessert too. On Monday morning there is nothing in the fridge, so Ana buys something for the week. She buys sugar too, for the Sunday dessert.",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
@@ -138,7 +138,7 @@
   },
   {
    "titulo": "La comida de la semana",
-   "texto": "On Monday there is nothing in the fridge: no milk, no eggs, no cheese. Ana has some bread and some rice, but she does not have any vegetables. She is hungry and there is nothing for lunch. So she goes out with her bag and she comes back with food for all the week: milk, butter, six eggs, chicken, fish and a big salad. She also has apples, bananas, oranges and a yogurt for Laura. On Tuesday she cooks rice with chicken. On Wednesday she cooks fish with potatoes and carrots. On Thursday she is very tired, so she eats a sandwich with cheese and a tomato. On Friday there is pasta with butter and pepper. On Saturday Laura cooks: soup with onions, and a dessert with apples and sugar. It is very tasty! On Sunday there is nothing in the fridge again, and the week starts.",
+   "texto": "On Monday there is nothing in the fridge: no milk, no eggs, no cheese. Ana has some bread and some rice, but she does not have any vegetables. She is hungry and there is nothing for lunch. So she goes out with her bag and she comes back with food for the week: milk, butter, six eggs, chicken, fish and a big salad. She also has apples, bananas, oranges and a yogurt for Laura. On Tuesday she cooks rice with chicken. On Wednesday she cooks fish with potatoes and carrots. On Thursday she is very tired, so she eats a sandwich with cheese and a tomato. On Friday there is pasta with butter and pepper. On Saturday Laura cooks: soup with onions, and a dessert with apples and sugar. It is very tasty! On Sunday there is nothing in the fridge again, and the week starts.",
    "preguntas": [
     {
      "tipo": "vf",
@@ -203,7 +203,7 @@
   },
   {
    "titulo": "Una cena con amigos",
-   "texto": "Every month Ana cooks for her friends. This Saturday there are five friends in her small kitchen: Ana, Laura, Paul, Lee and Maria. In her fridge there are some eggs, some cheese and some vegetables. First she makes a big salad with tomatoes, onions and carrots. Then she cooks pasta with chicken. Paul does not eat meat, so for him there is fish with rice and potatoes. Laura makes a dessert with bananas, milk and sugar. There is bread with butter on the table too. Lee is not happy with his salad: there is not any salt in it. The salt and the pepper are next to the bread. All the friends are very hungry and the food is tasty. They do not eat anything after the dessert. At eleven the friends go out and Ana cleans the kitchen. There is nothing in the fridge now, but she is happy.",
+   "texto": "Every month Ana cooks for her friends. This Saturday there are five friends in her small kitchen: Ana, Laura, Paul, Lee and Maria. In her fridge there are some eggs, some cheese and some vegetables. First she makes a big salad with tomatoes, onions and carrots. Then she cooks pasta with chicken. Paul does not eat meat, so for him there is fish with rice and potatoes. Laura makes a dessert with bananas, milk and sugar. There is bread with butter on the table too. Lee is not happy with his salad: there isn't any salt in it. The salt and the pepper are next to the bread. All the friends are very hungry and the food is tasty. They do not eat anything after the dessert. At eleven the friends go out and Ana cleans the kitchen. There is nothing in the fridge now, but she is happy.",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
@@ -241,7 +241,7 @@
     },
     {
      "tipo": "vf",
-     "enunciado": "There is not any salt in the salad of Lee.",
+     "enunciado": "There isn't any salt in Lee's salad.",
      "respuesta": "verdadero"
     },
     {
@@ -261,14 +261,14 @@
     },
     {
      "tipo": "vf",
-     "enunciado": "Ana cleans the kitchen after the dinner.",
+     "enunciado": "Ana cleans the kitchen after dinner.",
      "respuesta": "verdadero"
     }
    ]
   },
   {
    "titulo": "Examen · La comida de Marie",
-   "texto": "Marie eats very well. In her fridge there is always milk, butter, cheese and eggs. For breakfast she has bread with butter, a yogurt and an orange. She is never hungry before noon, so she has lunch at one. For lunch she often eats chicken with rice, or fish with potatoes and carrots. She does not eat meat, because it is very expensive. In her salad there are tomatoes and onions, with salt and pepper. In the evening Marie is tired and she does not cook: she makes a sandwich with cheese, or she eats some soup. On Saturday she cooks pasta for her friends and she makes a dessert with apples, milk and sugar. It is very tasty. On Sunday there is nothing in her fridge, so she buys food for all the week: fruit, vegetables, bread and a banana for every morning.",
+   "texto": "Marie eats very well. In her fridge there is always milk, butter, cheese and eggs. For breakfast she has bread with butter, a yogurt and an orange. She is never hungry before noon, so she has lunch at one. For lunch she often eats chicken with rice, or fish with potatoes and carrots. She does not eat meat, because it is very expensive. In her salad there are tomatoes and onions, with salt and pepper. In the evening Marie is tired and she does not cook: she makes a sandwich with cheese, or she eats some soup. On Saturday she cooks pasta for her friends and she makes a dessert with apples, milk and sugar. It is very tasty. On Sunday there is nothing in her fridge, so she buys food for the week: fruit, vegetables, bread and a banana for every morning.",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
@@ -297,7 +297,7 @@
     },
     {
      "tipo": "opcion_multiple",
-     "enunciado": "What is in the salad of Marie?",
+     "enunciado": "What is in Marie's salad?",
      "opciones": [
       "tomatoes and onions",
       "potatoes and carrots",
@@ -307,7 +307,7 @@
     },
     {
      "tipo": "vfnd",
-     "enunciado": "The friends of Marie cook on Sunday.",
+     "enunciado": "Marie's friends cook on Sunday.",
      "respuesta": "no dice"
     },
     {

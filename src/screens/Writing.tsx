@@ -90,7 +90,7 @@ export default function Writing() {
         </p>
       ) : (
         // Se ordena por tema para leerlas en el orden del curso, pero el índice original
-        // se conserva: los exámenes de bloque y final siguen tomando consignas[0].
+        // se conserva: marcarHecho guarda la pieza por ese índice.
         pack.consignas
           .map((c, i) => ({ c, i }))
           .filter(({ c }) => c.tema === temaSel)

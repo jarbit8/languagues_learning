@@ -1,7 +1,7 @@
 {
  "tema": 17,
  "titulo": "Imperativo, transporte y adverbios de modo",
- "regla": "El imperativo da órdenes o instrucciones con el verbo base y sin sujeto: 'Turn left', 'Go straight', 'Take the bus'. Los medios de transporte usan 'by': 'by bus', 'by car', 'by train'; pero se dice 'on foot' (a pie). Adverbios de modo: dicen CÓMO se hace algo y se forman con -ly (slow → slowly, quick → quickly). Van después del verbo. Irregular importante: good → well.",
+ "regla": "El imperativo da órdenes o instrucciones con el verbo base y sin sujeto: 'Turn left', 'Go straight', 'Take the bus'. Los medios de transporte usan 'by': 'by bus', 'by car', 'by train'; pero se dice 'on foot' (a pie). Adverbios de modo: dicen CÓMO se hace algo y se forman con -ly (slow → slowly, quick → quickly). Van después del verbo. Irregular importante: good → well. Para decir que NO se haga algo, delante va don't: 'Don't turn left', 'Don't cross here'. Tampoco lleva sujeto.",
  "pronunciacion": "El grupo 'str' de straight es difícil: no hay vocal entre la s y la t.",
  "trampa": "Se dice 'on foot' (a pie), no 'by foot'.",
  "ejemplos": [
@@ -166,13 +166,45 @@
   {
    "tipo": "corregir_error",
    "enunciado": "He drives slow and careful.",
-   "respuesta": "He drives slowly."
+   "respuesta": "He drives slowly and carefully.",
+   "aceptadas": [
+    "he drives carefully and slowly"
+   ]
+  },
+  {
+   "tipo": "hueco",
+   "enunciado": "___ turn left. (no, imperativo)",
+   "respuesta": "Don't",
+   "aceptadas": [
+    "dont",
+    "do not"
+   ]
+  },
+  {
+   "tipo": "ordenar",
+   "enunciado": "Ordena: no cruces la calle.",
+   "opciones": [
+    "Don't",
+    "cross",
+    "the",
+    "street"
+   ],
+   "respuesta": "Don't cross the street"
+  },
+  {
+   "tipo": "traducir",
+   "enunciado": "No gires a la derecha.",
+   "respuesta": "Don't turn right.",
+   "aceptadas": [
+    "don't turn right",
+    "do not turn right"
+   ]
   }
  ],
  "dias": [
   {
    "titulo": "El imperativo y el transporte",
-   "regla": "El imperativo da órdenes e instrucciones con el verbo base y SIN sujeto: 'Turn left', 'Go straight', 'Take the bus'. Los medios de transporte llevan 'by': by bus, by car, by train… pero a pie es la excepción: 'on foot'.",
+   "regla": "El imperativo da órdenes e instrucciones con el verbo base y SIN sujeto: 'Turn left', 'Go straight', 'Take the bus'. Los medios de transporte llevan 'by': by bus, by car, by train… pero a pie es la excepción: 'on foot'. Para decir que NO se haga algo, delante va don't: 'Don't turn left', 'Don't cross here'. Tampoco lleva sujeto.",
    "trampa": "El imperativo no lleva 'you' delante: 'Turn left', no 'You turn left'. Y a pie es 'ON foot', que es la única que no va con 'by'.",
    "ejemplos": [
     0,
@@ -189,7 +221,10 @@
     6,
     10,
     11,
-    12
+    12,
+    18,
+    19,
+    20
    ]
   },
   {

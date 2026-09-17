@@ -19,7 +19,7 @@
    "consigna": "Escribe qué haces para estar sano: qué comes, cuánto duermes y qué haces cuando te duele algo.",
    "minPalabras": 40,
    "maxPalabras": 55,
-   "respuestaModelo": "I eat fruit and vegetables every day and I drink much water. I sleep eight hours every night, so my body is healthy. I walk thirty minutes in the morning. When my head hurts I do not take medicine: I rest one hour in my bedroom.",
+   "respuestaModelo": "I eat fruit and vegetables every day and I drink a lot of water. I sleep eight hours every night, so my body is healthy. I walk thirty minutes in the morning. When my head hurts I do not take medicine: I rest one hour in my bedroom.",
    "checklist": [
     "Dije qué como para estar sano",
     "Dije cuánto duermo",
@@ -33,7 +33,7 @@
    "consigna": "Examen: escribe a un amigo que estás enfermo: qué te duele, qué síntomas tienes, qué medicina tomas y qué te dijo el doctor.",
    "minPalabras": 45,
    "maxPalabras": 60,
-   "respuestaModelo": "Today I do not feel well. My head hurts and I have a fever: thirty-eight degrees. I have a cough and my neck hurts too. My sister buys medicine in the pharmacy: one for the fever and one in the night. I do not have an allergy. The doctor says I must rest and drink much water.",
+   "respuestaModelo": "Today I do not feel well. My head hurts and I have a fever: thirty-eight degrees. I have a cough and my neck hurts too. My sister buys medicine at the pharmacy: one for the fever and one at night. I do not have an allergy. The doctor says I must rest and drink a lot of water.",
    "checklist": [
     "Dije al menos dos partes del cuerpo que me duelen",
     "Nombré dos síntomas",
@@ -74,7 +74,7 @@
    "consigna": "Examen: escribe sobre tus pasatiempos y tus deportes: qué haces cada día de la semana, qué te gusta y qué no, y por qué.",
    "minPalabras": 45,
    "maxPalabras": 60,
-   "respuestaModelo": "I love music and I play the guitar every day. On Monday and Wednesday I go to the gym: there I do running for thirty minutes. On Saturday I play tennis with my sister. I hate basketball, because I am not tall. In summer swimming is my sport. On Sunday I watch a movie and I draw.",
+   "respuestaModelo": "I love music and I play the guitar every day. On Monday and Wednesday I go to the gym: there I run for thirty minutes. On Saturday I play tennis with my sister. I hate basketball, because I am not tall. In summer swimming is my sport. On Sunday I watch a movie and I draw.",
    "checklist": [
     "Hablé de al menos tres días de la semana",
     "Nombré dos deportes y dos pasatiempos",
@@ -170,7 +170,7 @@
    "consigna": "Escribe un email a un amigo contándole un viaje que hiciste y tus planes para el futuro.",
    "minPalabras": 30,
    "maxPalabras": 40,
-   "respuestaModelo": "Hi! Last year I went to Canada. I visited museums and I ate good food. I'm going to study English next year because I want to work there. I'm going to practice every day. What are your plans?",
+   "respuestaModelo": "Hi! Last year I went to the United States. I visited museums and I ate good food. I'm going to study English next year because I want to work there. I'm going to practice every day. What are your plans?",
    "checklist": [
     "Usé un saludo y una despedida",
     "Usé un verbo en pasado (regular o irregular)",
@@ -213,7 +213,7 @@
    "consigna": "Escribe sobre tu tiempo libre y tus metas: qué te gusta hacer, qué estudias y qué planes tienes para el futuro.",
    "minPalabras": 30,
    "maxPalabras": 40,
-   "respuestaModelo": "In my free time I like sports. I play soccer and I play the guitar. I am a student and I study computer science. Next year I am going to travel to Canada. I am going to study English there.",
+   "respuestaModelo": "In my free time I like sports. I play soccer and the guitar. I study computer science. Next year I am going to travel to the United States. I am going to study English there.",
    "checklist": [
     "Hablé de mi tiempo libre y hobbies",
     "Usé like + actividad",

@@ -61,10 +61,7 @@
     {
      "tipo": "completar_dato",
      "enunciado": "¿Cómo se despide Joel al final?",
-     "respuesta": "take care",
-     "aceptadas": [
-      "happy birthday!"
-     ]
+     "respuesta": "take care"
     },
     {
      "tipo": "opcion_multiple",

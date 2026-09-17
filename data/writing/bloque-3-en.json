@@ -33,7 +33,7 @@
    "consigna": "Examen: escribe qué hay en tu cocina, qué comes durante el día y qué comida es sabrosa para ti. Usa some, any y nothing.",
    "minPalabras": 45,
    "maxPalabras": 60,
-   "respuestaModelo": "In my fridge there is milk, cheese and some vegetables. There are not any eggs. For breakfast I eat bread with butter. For lunch I cook rice with chicken and a salad with tomatoes and onions. I put salt in my salad. In the evening I eat some soup. On Sunday there is nothing in my fridge. Fruit is tasty.",
+   "respuestaModelo": "In my fridge there is milk, cheese and some vegetables. There aren't any eggs. For breakfast I eat bread with butter. For lunch I cook rice with chicken and a salad with tomatoes and onions. I put salt in my salad. In the evening I eat some soup. On Sunday there is nothing in my fridge. Fruit is tasty.",
    "checklist": [
     "Dije qué hay en mi cocina",
     "Usé some, any y nothing",
@@ -76,7 +76,7 @@
    "consigna": "Examen: describe una cena en un restaurante: qué pides de comer y de beber, qué hay en la mesa y cómo está la comida.",
    "minPalabras": 45,
    "maxPalabras": 60,
-   "respuestaModelo": "On Saturday I go to a restaurant. The waiter comes with the menu card. I am thirsty, so I order a juice. I would like fish with vegetables. On the table there are plates, forks, knives and napkins. The food is delicious and it is not salty. For dessert I want an ice cream. Then I want the check.",
+   "respuestaModelo": "On Saturday I go to a restaurant. The waiter comes with the menu. I am thirsty, so I order a juice. I would like fish with vegetables. On the table there are plates, forks, knives and napkins. The food is delicious and it is not salty. For dessert I want an ice cream. Then I want the check.",
    "checklist": [
     "Dije qué pedí de comer y de beber",
     "Usé 'I would like' o 'to order'",
@@ -117,7 +117,7 @@
    "consigna": "Examen: cuenta una compra completa: qué necesitas, cuánto cuesta, si hay descuento, cómo pagas y qué te dan en la caja.",
    "minPalabras": 45,
    "maxPalabras": 60,
-   "respuestaModelo": "On Saturday I go to the supermarket. I need bread, milk and fruit. The apples are on sale: they cost two soles. There is a discount on the chicken too. At the checkout I pay with my card, because I do not have cash. The seller has my receipt and the bag is free. I spend thirty soles today.",
+   "respuestaModelo": "On Saturday I go to the supermarket. I need bread, milk and fruit. The apples are on sale: they cost two soles. There is a discount on the chicken too. At the checkout I pay with my card, because I do not have cash. The salesperson has my receipt and the bag is free. I spend thirty soles today.",
    "checklist": [
     "Dije qué necesito comprar",
     "Di al menos dos precios",
@@ -146,7 +146,7 @@
    "consigna": "Describe tu barrio: qué lugares hay cerca de tu casa, cuáles están lejos y qué horarios tienen.",
    "minPalabras": 40,
    "maxPalabras": 55,
-   "respuestaModelo": "My house is in a street near the park. There is a pharmacy and a small shop near my house. The pharmacy is open every day, but the shop is closed on Sunday. The hospital is far and the airport is very far. I can walk to the school in ten minutes.",
+   "respuestaModelo": "My house is in a street near the park. There is a pharmacy and a small store near my house. The pharmacy is open every day, but the store is closed on Sunday. The hospital is far and the airport is very far. I can walk to the school in ten minutes.",
    "checklist": [
     "Nombré al menos cinco lugares",
     "Usé 'near' y 'far'",
@@ -160,10 +160,10 @@
    "consigna": "Examen: escribe una guía de tu ciudad para un amigo: qué lugares se pueden visitar, dónde están y cuándo están abiertos.",
    "minPalabras": 45,
    "maxPalabras": 60,
-   "respuestaModelo": "In my city one can visit the museum and the zoo. The museum is in the city center, next to the church, and it is open from ten to six. The zoo is in the park and it is not expensive. The library is near the square, but it is closed on Sunday. The airport is very far.",
+   "respuestaModelo": "In my city you can visit the museum and the zoo. The museum is in the city center, next to the church, and it is open from ten to six. The zoo is in the park and it is not expensive. The library is near the square, but it is closed on Sunday. The airport is very far.",
    "checklist": [
     "Nombré al menos cinco lugares de la ciudad",
-    "Usé 'one can' o 'can'",
+    "Usé 'can' o 'can't'",
     "Dije dónde está cada lugar",
     "Dije cuándo abre o cierra alguno",
     "Escribí entre 45 y 60 palabras"
@@ -215,7 +215,7 @@
    "consigna": "Compara el clima de tu ciudad con el de otro lugar: cómo es en cada estación y cuál es más frío o más caluroso.",
    "minPalabras": 30,
    "maxPalabras": 40,
-   "respuestaModelo": "In Arequipa the weather is sunny and warm. It is hotter than Canada. In winter Canada is colder than Peru. It is the coldest month. Today it is raining here. What is the weather like there?",
+   "respuestaModelo": "In Arequipa the weather is sunny and warm. It is hotter than New York. In winter New York is colder than Peru. It is the coldest month. Today it is raining here. What is the weather like there?",
    "checklist": [
     "Usé un comparativo con than",
     "Usé un superlativo",
@@ -242,7 +242,7 @@
    "consigna": "Examen: describe el clima de tu ciudad en las cuatro estaciones y di cuál prefieres y por qué.",
    "minPalabras": 45,
    "maxPalabras": 60,
-   "respuestaModelo": "In summer it is hot: thirty degrees and a lot of sun. In the fall it is cool and windy, with fog in the morning. In winter it is cold and rainy, but there is not any snow. In spring there are flowers and the trees are green. I prefer spring: the weather is warm and it is not rainy.",
+   "respuestaModelo": "In summer it is hot: thirty degrees and a lot of sun. In the fall it is cool and windy, with fog in the morning. In winter it is cold and rainy, but there isn't any snow. In spring there are flowers and the trees are green. I prefer spring: the weather is warm and it is not rainy.",
    "checklist": [
     "Hablé de las cuatro estaciones",
     "Usé grados en alguna",

@@ -156,7 +156,7 @@
   },
   {
    "titulo": "Dos amigas muy distintas",
-   "texto": "Laura is tall and thin. She is blond and she has big eyes. She is very funny and friendly, and she is never shy. Marie is short and she is brown-haired. Her eyes are small. Marie is calm and serious, but she is really kind. Laura is happy and Marie is happy too. Is Marie lazy? No! She is very hardworking and smart. And their brothers? Laura's brother is young and handsome. Marie's brother is old and bald, but he is strong and brave. He is never angry. Two families, and all of them are nice people.",
+   "texto": "Laura is tall and thin. She is blond and she has big eyes. She is very funny and friendly, and she is never shy. Marie is short and she has brown hair. Her eyes are small. Marie is calm and serious, but she is really kind. Laura is happy and Marie is happy too. Is Marie lazy? No! She is very hardworking and smart. And their brothers? Laura's brother is young and handsome. Marie's brother is old and bald, but he is strong and brave. He is never angry. Two families, and all of them are nice people.",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
@@ -214,7 +214,7 @@
   },
   {
    "titulo": "En la foto de la clase",
-   "texto": "Who is the tall man? He is my uncle. He is handsome and very serious. Is he old? No, he is young. And the woman with red hair? She is red-haired, yes. She is my aunt. She is short and a bit fat, but she is beautiful. Is she shy? No, she is friendly and funny. And the dark-haired boy? That is my cousin. He is smart but he is lazy. He is always tired! And the girl with curly hair? She is my sister. She is thin, calm and hardworking. She is never sad and she is very brave.",
+   "texto": "Who is the tall man? He is my uncle. He is handsome and very serious. Is he old? No, he is young. And the woman with red hair? She is my aunt. She is short and a bit fat, but she is beautiful. Is she shy? No, she is friendly and funny. And the boy with dark hair? That is my cousin. He is smart but he is lazy. He is always tired! And the girl with curly hair? She is my sister. She is thin, calm and hardworking. She is never sad and she is very brave.",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
@@ -292,7 +292,7 @@
     },
     {
      "hablante": "B",
-     "texto": "She is red-haired, yes. She is my aunt. She is short and a bit fat, but she is beautiful."
+     "texto": "She is my aunt. She is short and a bit fat, but she is beautiful."
     },
     {
      "hablante": "A",
@@ -304,7 +304,7 @@
     },
     {
      "hablante": "A",
-     "texto": "And the dark-haired boy?"
+     "texto": "And the boy with dark hair?"
     },
     {
      "hablante": "B",
@@ -322,7 +322,7 @@
   },
   {
    "titulo": "Examen · Tres personas",
-   "texto": "Marie is short and thin. She is brown-haired and she has big eyes. She is friendly, funny and never shy. Her brother is tall and bald. He is old, but he is strong and very calm. He is never angry. Their cousin is young and handsome, with blond hair and small eyes. He is smart, but he is really lazy: he is always tired. Their aunt is beautiful and red-haired. She is a bit fat and she is very kind and hardworking. Is she serious? No, she is happy. Marie says: my family is not sad, my family is brave.",
+   "texto": "Marie is short and thin. She has brown hair and big eyes. She is friendly, funny and never shy. Her brother is tall and bald. He is old, but he is strong and very calm. He is never angry. Their cousin is young and handsome, with blond hair and small eyes. He is smart, but he is really lazy: he is always tired. Their aunt is beautiful and red-haired. She is a bit fat and she is very kind and hardworking. Is she serious? No, she is happy. Marie says: my family is not sad, my family is brave.",
    "preguntas": [
     {
      "tipo": "opcion_multiple",

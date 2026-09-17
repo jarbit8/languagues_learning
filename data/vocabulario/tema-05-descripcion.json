@@ -133,21 +133,14 @@
    "es": "rubio",
    "texto": "blond",
    "ejemplo": "Her hair is blond.",
-   "pron": "BLOND"
-  },
-  {
-   "id": "a1-t05-020",
-   "es": "castaño",
-   "texto": "brown-haired",
-   "ejemplo": "He is brown-haired.",
-   "pron": "braun-JERD"
+   "pron": "BLAND"
   },
   {
    "id": "a1-t05-021",
    "es": "fuerte",
    "texto": "strong",
    "ejemplo": "My uncle is strong.",
-   "pron": "STRONG"
+   "pron": "STRANG"
   },
   {
    "id": "a1-t05-022",
@@ -183,20 +176,6 @@
    "texto": "small",
    "ejemplo": "The dog is small.",
    "pron": "SMOL"
-  },
-  {
-   "id": "a1-t05-027",
-   "es": "moreno",
-   "texto": "dark-haired",
-   "ejemplo": "My friend is dark-haired.",
-   "pron": "dark-JERD"
-  },
-  {
-   "id": "a1-t05-028",
-   "es": "pelirrojo",
-   "texto": "red-haired",
-   "ejemplo": "She is red-haired.",
-   "pron": "red-JERD"
   },
   {
    "id": "a1-t05-029",
@@ -247,6 +226,74 @@
    "ejemplo": "She is really kind.",
    "pron": "RÍ-li",
    "rapido": "RI-li"
+  },
+  {
+   "id": "a1-t05-036",
+   "es": "hombre",
+   "texto": "man",
+   "ejemplo": "He is a tall man.",
+   "pron": "MAN",
+   "nota": "Plural irregular: men (MEN)."
+  },
+  {
+   "id": "a1-t05-037",
+   "es": "mujer",
+   "texto": "woman",
+   "ejemplo": "She is a kind woman.",
+   "pron": "UU-man",
+   "nota": "Plural irregular: women, que se lee «UI-min»."
+  },
+  {
+   "id": "a1-t05-038",
+   "es": "persona",
+   "texto": "person",
+   "ejemplo": "He is a nice person.",
+   "pron": "PER-son",
+   "nota": "Plural: people."
+  },
+  {
+   "id": "a1-t05-039",
+   "es": "gente, personas",
+   "texto": "people",
+   "ejemplo": "My friends are nice people.",
+   "pron": "PI-pel",
+   "nota": "Es el plural de person y va con el verbo en plural: people ARE."
+  },
+  {
+   "id": "a1-t05-040",
+   "es": "bueno",
+   "texto": "good",
+   "ejemplo": "My brother is a good person.",
+   "pron": "GUD"
+  },
+  {
+   "id": "a1-t05-042",
+   "es": "largo",
+   "texto": "long",
+   "ejemplo": "She has long hair.",
+   "pron": "LANG"
+  },
+  {
+   "id": "a1-t05-043",
+   "es": "pelo castaño",
+   "texto": "brown hair",
+   "ejemplo": "She has brown hair.",
+   "pron": "braun JER",
+   "nota": "En inglés se TIENE el pelo de un color: she has brown hair, no «she is brown hair»."
+  },
+  {
+   "id": "a1-t05-044",
+   "es": "pelo oscuro",
+   "texto": "dark hair",
+   "ejemplo": "My friend has dark hair.",
+   "pron": "dark JER"
+  },
+  {
+   "id": "a1-t05-045",
+   "es": "pelo rojo, pelirrojo",
+   "texto": "red hair",
+   "ejemplo": "She has red hair.",
+   "pron": "red JER"
   }
  ]
 }

@@ -1,6 +1,7 @@
 import { db } from '../db'
 import type { PalabraEstado } from '../types'
 import { enDias } from './fechas'
+import { existeConcepto } from '../data/packs'
 
 // SRS de cuatro escalones. La caja decide CUÁNDO vuelve a salir una palabra, nunca cómo se
 // pregunta. Los días se cuentan desde la medianoche de hoy, así que "vuelve en 2 días" es un
@@ -86,5 +87,5 @@ export async function registrarResultado(id: string, acierto: boolean, desde = D
 export async function repasosVencidos(): Promise<PalabraEstado[]> {
   const ahora = Date.now()
   const todas = await db.palabras.where('estado').anyOf('marcada', 'fallada', 'aprendida').toArray()
-  return todas.filter((p) => p.proximoRepaso !== undefined && p.proximoRepaso <= ahora)
+  return todas.filter((p) => existeConcepto(p.id) && p.proximoRepaso !== undefined && p.proximoRepaso <= ahora)
 }

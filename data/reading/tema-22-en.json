@@ -3,7 +3,7 @@
  "textos": [
   {
    "titulo": "Un problema con el internet",
-   "texto": "Yesterday the wifi in the house of Ana was not good. She turned on her computer at eight, but the internet was very slow. On the screen there was a message: there is no network. Ana clicked on the app three times and nothing. She turned off the computer and she turned it on again, but the problem was the same. Her phone was online, so she searched a website with the answer. Then she called the company at nine. A worker answered and he texted her the password of the new network. Ana opened the app, she clicked and the wifi worked. After that she downloaded two files and a video for her class, and she saved all her photos. In the evening she sent an email to her teacher with the files. The battery of her phone was not good, so she charged it all the night. Yesterday was a difficult day with the internet, but now all is well.",
+   "texto": "Yesterday the wifi in Ana's house was not good. She turned on her computer at eight, but the internet was very slow. On the screen there was a message: there is no network. Ana clicked on the app three times and nothing. She turned off the computer and she turned it on again, but the problem was the same. Her phone was online, so she searched a website with the answer. Then she called the company at nine. A worker answered and he texted her the password of the new network. Ana opened the app, she clicked and the wifi worked. After that she downloaded two files and a video for her class, and she saved all her photos. In the evening she sent an email to her teacher with the files. Her phone battery was not good, so she charged it all night. Yesterday was a difficult day with the internet, but now all is well.",
    "preguntas": [
     {
      "tipo": "completar_dato",
@@ -46,12 +46,12 @@
     },
     {
      "tipo": "vfnd",
-     "enunciado": "The teacher of Ana answered the email.",
+     "enunciado": "Ana's teacher answered the email.",
      "respuesta": "no dice"
     },
     {
      "tipo": "completar_dato",
-     "enunciado": "Why did Ana charge her phone all the night?",
+     "enunciado": "Why did Ana charge her phone all night?",
      "respuesta": "the battery was not good",
      "aceptadas": [
       "because the battery was not good",
@@ -72,7 +72,7 @@
   },
   {
    "titulo": "Las redes sociales de Laura",
-   "texto": "Laura is on social media every day. Yesterday she opened the app at seven in the morning and she watched many videos on her phone. She clicked on a website of music and she downloaded three songs. Then she sent a message to Ana with a photo of her guitar. Ana was not online, so she answered at ten. In the afternoon Laura searched a video of a tennis game and she saved it in a file. Her computer was very slow, because there were many files on it. She turned it off and she turned it on again, and the screen was well. Laura texted her mother: the wifi in the university is very fast. At night she charged her phone, her computer and her camera. The battery of the camera was not good and she needs a new one. Yesterday Laura was online for six hours. That is a lot.",
+   "texto": "Laura is on social media every day. Yesterday she opened the app at seven in the morning and she watched many videos on her phone. She clicked on a website of music and she downloaded three songs. Then she sent a message to Ana with a photo of her guitar. Ana was not online, so she answered at ten. In the afternoon Laura searched a video of a tennis game and she saved it in a file. Her computer was very slow, because there were many files on it. She turned it off and she turned it on again, and the screen was well. Laura texted her mother: the wifi in the university is very fast. At night she charged her phone, her computer and her camera. The camera battery was not good and she needs a new one. Yesterday Laura was online for six hours. That is a lot.",
    "preguntas": [
     {
      "tipo": "completar_dato",
@@ -100,7 +100,7 @@
     },
     {
      "tipo": "opcion_multiple",
-     "enunciado": "Why was the computer of Laura slow?",
+     "enunciado": "Why was Laura's computer slow?",
      "opciones": [
       "the wifi was not good",
       "the battery was not good",
@@ -115,7 +115,7 @@
     },
     {
      "tipo": "vfnd",
-     "enunciado": "The camera of Laura is expensive.",
+     "enunciado": "Laura's camera is expensive.",
      "respuesta": "no dice"
     },
     {
@@ -141,11 +141,11 @@
   },
   {
    "titulo": "El correo de Paul",
-   "texto": "Yesterday Paul worked all the day with his computer: eight hours with the keyboard. In the morning he turned on the screen, he clicked with the mouse and he opened his email: there were forty messages. He answered ten and he saved the files of three. One email was of his teacher, with a video and a big file for his class. Paul downloaded the file, but the internet was very slow and it was one hour on the screen. Then he searched a website for his homework and he saved the notes in a file. At two the wifi in his house was not good: there was no network. Paul called his sister and she texted him a password for the network of the café near the park. He was online again. In the evening he sent an email to his classmate with his notes and two photos. Then he turned off the computer and he charged the battery of his phone. Yesterday was a long day, but Paul finished all his work.",
+   "texto": "Yesterday Paul worked all day with his computer: eight hours with the keyboard. In the morning he turned on the screen, he clicked with the mouse and he opened his email: there were forty messages. He answered ten and he saved the files of three. One email was from his teacher, with a video and a big file for his class. Paul downloaded the file, but the internet was very slow and it was one hour on the screen. Then he searched a website for his homework and he saved the notes in a file. At two the wifi in his house was not good: there was no network. Paul called his sister and she texted him a password for the network of the café near the park. He was online again. In the evening he sent an email to his classmate with his notes and two photos. Then he turned off the computer and he charged the battery of his phone. Yesterday was a long day, but Paul finished all his work.",
    "preguntas": [
     {
      "tipo": "completar_dato",
-     "enunciado": "How many messages were in the email of Paul?",
+     "enunciado": "How many messages were in Paul's email?",
      "respuesta": "forty",
      "aceptadas": [
       "40",
@@ -164,7 +164,7 @@
     },
     {
      "tipo": "vf",
-     "enunciado": "The email of his teacher had a video.",
+     "enunciado": "His teacher's email had a video.",
      "respuesta": "verdadero"
     },
     {
@@ -202,7 +202,7 @@
      "opciones": [
       "he turned off the computer and charged his phone",
       "he opened his email and answered ten messages",
-      "he downloaded a video of his teacher"
+      "he downloaded a video from his teacher"
      ],
      "respuesta": "he turned off the computer and charged his phone"
     }
@@ -210,7 +210,7 @@
   },
   {
    "titulo": "Fotos y videos",
-   "texto": "Last Saturday Ana and Laura were in the park with a camera. Ana turned on the camera and she was very happy: there were flowers, trees and a blue sky. She was in the park for three hours and she was tired, but the photos were very good. Laura opened an app on her phone and she watched the photos on a small screen. The camera is not the same, Laura texted to Paul, and she sent him two photos. At five the battery of the camera was not good, so Ana charged it in a café with wifi. Then they downloaded all the photos and they saved them in a file on the computer. Laura also searched a website for a new camera: it was very expensive. In the evening Ana sent an email to her mother in Peru with ten photos and a video of the park. Her mother called at nine and she was very happy.",
+   "texto": "Last Saturday Ana and Laura were in the park with a camera. Ana turned on the camera and she was very happy: there were flowers, trees and a blue sky. She was in the park for three hours and she was tired, but the photos were very good. Laura opened an app on her phone and she watched the photos on a small screen. The camera is not the same, Laura texted to Paul, and she sent him two photos. At five the camera battery was not good, so Ana charged it in a café with wifi. Then they downloaded all the photos and they saved them in a file on the computer. Laura also searched a website for a new camera: it was very expensive. In the evening Ana sent an email to her mother in Peru with ten photos and a video of the park. Her mother called at nine and she was very happy.",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
@@ -322,7 +322,7 @@
     },
     {
      "tipo": "vfnd",
-     "enunciado": "The sister of Marie was in the city center too.",
+     "enunciado": "Marie's sister was in the city center too.",
      "respuesta": "no dice"
     },
     {

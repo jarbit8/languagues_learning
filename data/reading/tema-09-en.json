@@ -3,7 +3,7 @@
  "textos": [
   {
    "titulo": "Un día normal",
-   "texto": "Ana wakes up at six and she gets up quickly. First she has a shower and she brushes her teeth. Then she gets dressed and she makes the bed. She has breakfast and she goes to work. She arrives at eight, she starts and she finishes at two. Then she comes back and she has lunch. In the afternoon she does her homework and she studies. Sometimes she takes a nap, but not every day. In the evening she cooks the dinner and she cleans. Then she listens to music or she reads. On Saturday she goes out with her friends and they walk in the city. She never runs in the morning, but she often walks. That day she goes to bed very late and she sleeps eight hours, and on Sunday she rests. This is her routine.",
+   "texto": "Ana wakes up at six and she gets up quickly. First she takes a shower and she brushes her teeth. Then she gets dressed and she makes the bed. She has breakfast and she goes to work. She arrives at eight, she starts and she finishes at two. Then she comes back and she has lunch. In the afternoon she does her homework and she studies. Sometimes she takes a nap, but not every day. In the evening she cooks dinner and she cleans. Then she listens to music or she reads. On Saturday she goes out with her friends and they walk in the city. She never runs in the morning, but she often walks. That day she goes to bed very late and she sleeps eight hours, and on Sunday she rests. This is her routine.",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
@@ -11,9 +11,9 @@
      "opciones": [
       "has breakfast",
       "makes the bed",
-      "has a shower"
+      "takes a shower"
      ],
-     "respuesta": "has a shower"
+     "respuesta": "takes a shower"
     },
     {
      "tipo": "vf",
@@ -137,7 +137,7 @@
   },
   {
    "titulo": "La rutina del fin de semana",
-   "texto": "On Saturday Ana does not go to work. She wakes up late, at nine, and she rests in bed. Then she gets up, she has a shower and she brushes her teeth. She does not make the bed on Saturday! She has breakfast very late and she reads. In the morning she cleans. At noon she has lunch with Laura and after they walk in the city. In the afternoon she takes a nap, and then she does her homework: she studies every day, also on Saturday. In the evening she cooks and she listens to music. She goes out with her friends and she comes back very late. On Sunday she sleeps and she rests. That is her weekend routine.",
+   "texto": "On Saturday Ana does not go to work. She wakes up late, at nine, and she rests in bed. Then she gets up, she takes a shower and she brushes her teeth. She does not make the bed on Saturday! She has breakfast very late and she reads. In the morning she cleans. At noon she has lunch with Laura and after they walk in the city. In the afternoon she takes a nap, and then she does her homework: she studies every day, also on Saturday. In the evening she cooks and she listens to music. She goes out with her friends and she comes back very late. On Sunday she sleeps and she rests. That is her weekend routine.",
    "preguntas": [
     {
      "tipo": "anota_la_hora",
@@ -269,7 +269,7 @@
   },
   {
    "titulo": "Examen · Un día de Marie",
-   "texto": "Marie wakes up at seven and she gets up quickly. First she has a shower and she brushes her teeth. Then she gets dressed and she makes the bed: every day, also on the weekend. She has breakfast at half past seven and she goes to work. She arrives at nine and she finishes at five. At noon she has lunch. In the afternoon she comes back and she rests: sometimes she takes a nap, but not every day. Then she does her homework and she studies. In the evening she cooks the dinner and she cleans. She listens to music or she reads. She never runs, but she walks every day. She goes to bed at eleven and she sleeps eight hours. That is her routine.",
+   "texto": "Marie wakes up at seven and she gets up quickly. First she takes a shower and she brushes her teeth. Then she gets dressed and she makes the bed: every day, also on the weekend. She has breakfast at half past seven and she goes to work. She arrives at nine and she finishes at five. At noon she has lunch. In the afternoon she comes back and she rests: sometimes she takes a nap, but not every day. Then she does her homework and she studies. In the evening she cooks dinner and she cleans. She listens to music or she reads. She never runs, but she walks every day. She goes to bed at eleven and she sleeps eight hours. That is her routine.",
    "preguntas": [
     {
      "tipo": "anota_la_hora",
@@ -289,11 +289,11 @@
      "tipo": "opcion_multiple",
      "enunciado": "What does she do first?",
      "opciones": [
-      "has a shower",
+      "takes a shower",
       "has breakfast",
       "makes the bed"
      ],
-     "respuesta": "has a shower"
+     "respuesta": "takes a shower"
     },
     {
      "tipo": "anota_la_hora",

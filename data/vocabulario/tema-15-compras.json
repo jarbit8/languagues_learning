@@ -5,10 +5,10 @@
   {
    "id": "a1-t15-001",
    "es": "tienda",
-   "texto": "shop",
-   "ejemplo": "The shop is near my house.",
-   "pron": "SHOP",
-   "tambien": "store"
+   "texto": "store",
+   "ejemplo": "The store is near my house.",
+   "pron": "STOR",
+   "tambien": "shop — una tienda pequeña o especializada (a coffee shop); en Reino Unido, cualquier tienda"
   },
   {
    "id": "a1-t15-002",
@@ -50,7 +50,7 @@
    "es": "costar",
    "texto": "to cost",
    "ejemplo": "How much does it cost?",
-   "pron": "tu KOST"
+   "pron": "tu KAST"
   },
   {
    "id": "a1-t15-008",
@@ -82,7 +82,7 @@
    "texto": "a lot of",
    "literal": "un lote de",
    "ejemplo": "There is a lot of fruit.",
-   "pron": "a LOT ov",
+   "pron": "a LAT ov",
    "rapido": "a LO-dof",
    "tambien": "lots of"
   },
@@ -163,7 +163,7 @@
    "es": "dólar",
    "texto": "dollar",
    "ejemplo": "Twenty dollars, please.",
-   "pron": "DO-lar"
+   "pron": "DA-ler"
   },
   {
    "id": "a1-t15-023",
@@ -199,7 +199,7 @@
    "es": "lista de compras",
    "texto": "shopping list",
    "ejemplo": "I have a shopping list.",
-   "pron": "SHO-ping LIST"
+   "pron": "SHA-ping LIST"
   },
   {
    "id": "a1-t15-031",
@@ -207,13 +207,13 @@
    "texto": "on sale",
    "literal": "sobre venta",
    "ejemplo": "This jacket is on sale.",
-   "pron": "on SEIL"
+   "pron": "an SEIL"
   },
   {
    "id": "a1-t15-032",
    "es": "preferir",
    "texto": "to prefer",
-   "ejemplo": "I prefer the cheap shop.",
+   "ejemplo": "I prefer the cheap store.",
    "pron": "tu pri-FÉR"
   },
   {

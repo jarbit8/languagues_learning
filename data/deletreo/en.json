@@ -63,6 +63,12 @@
   { "texto":"Laura", "es":"Laura, nombre de mujer", "escalon":3, "frase":"Excuse me, my name is {}.", "tema":1},
   { "texto":"Lima", "es":"Lima", "escalon":3, "frase":"I'm from {}.", "tema":3},
   { "texto":"Spain", "es":"España", "escalon":3, "frase":"She is from {}.", "tema":3},
-  { "texto":"office", "es":"oficina", "escalon":3, "frase":"I work in an {}.", "tema":6}
+  { "texto":"office", "es":"oficina", "escalon":3, "frase":"I work in an {}.", "tema":6},
+  { "texto":"Reinoso", "es":"Reinoso, tu apellido", "escalon":3, "frase":"My name is Joel {}.", "tema":1},
+  { "texto":"kitchen", "es":"cocina", "escalon":3, "frase":"The table is in the {}.", "tema":10},
+  { "texto":"store", "es":"tienda", "escalon":3, "frase":"The {} is near my house.", "tema":15},
+  { "texto":"park", "es":"parque", "escalon":3, "frase":"There is a {} near my street.", "tema":16},
+  { "texto":"bus", "es":"autobús", "escalon":3, "frase":"I go to work by {}.", "tema":17},
+  { "texto":"hotel", "es":"hotel", "escalon":3, "frase":"I have a reservation at the {}.", "tema":23}
  ]
 }

@@ -3,7 +3,7 @@
  "textos": [
   {
    "titulo": "Cómo llega Ana al trabajo",
-   "texto": "Ana works in a school far from her house, so she never goes on foot. Every morning she takes the bus at the stop near the park. The bus is slow, but the ticket is cheap. She reads a book on the bus. When there is a lot of traffic she prefers the subway: it is very fast. The subway station is near the square, next to the traffic light. Paul has a car and he drives very well, but the road is very slow in the morning. Laura has a bike and she goes to the library on it. In summer Ana takes her bike too, because the road near the park is beautiful. She always has a map of the city in her bag: when she needs a street, she reads the map. On Saturday she takes a taxi with Laura, and on Sunday they walk: the shops are near and one can cross the square on foot.",
+   "texto": "Ana works in a school far from her house, so she never goes on foot. Every morning she takes the bus at the stop near the park. The bus is slow, but the ticket is cheap. She reads a book on the bus. When there is a lot of traffic she prefers the subway: it is very fast. The subway station is near the square, next to the traffic light. Paul has a car and he drives very well, but the road is very slow in the morning. Laura has a bike and she goes to the library on it. In summer Ana takes her bike too, because the road near the park is beautiful. She always has a map of the city in her bag: when she needs a street, she reads the map. On Saturday she takes a taxi with Laura, and on Sunday they walk: the stores are near and you can cross the square on foot.",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
@@ -40,7 +40,7 @@
     },
     {
      "tipo": "vfnd",
-     "enunciado": "The bike of Laura is new.",
+     "enunciado": "Laura's bike is new.",
      "respuesta": "no dice"
     },
     {
@@ -67,7 +67,7 @@
   },
   {
    "titulo": "Del centro a la estación",
-   "texto": "Paul is in the city center and he wants to go to the station. Where is the station? It is not far: one can go on foot in fifteen minutes. From the square Paul goes straight and he crosses the street at the traffic light. Then he turns left at the corner of the bank. He continues straight on the sidewalk for five minutes, and after the church he turns right. The station is next to the park. There Paul buys a ticket for the train. The train is fast: it goes to the airport in twenty minutes. On the road there are many cars, a bus and two motorbikes, so a taxi is very slow today. Paul prefers the train. His friend Lee takes the subway, because the subway stop is near his house. In this city one can go from one place to another place by bus, by train, by subway, by taxi or on foot.",
+   "texto": "Paul is in the city center and he wants to go to the station. Where is the station? It is not far: you can go on foot in fifteen minutes. From the square Paul goes straight and he crosses the street at the traffic light. Then he turns left at the corner of the bank. He continues straight on the sidewalk for five minutes, and after the church he turns right. The station is next to the park. There Paul buys a ticket for the train. The train is fast: it goes to the airport in twenty minutes. On the road there are many cars, a bus and two motorcycles, so a taxi is very slow today. Paul prefers the train. His friend Lee takes the subway, because the subway stop is near his house. In this city you can go from one place to another place by bus, by train, by subway, by taxi or on foot.",
    "preguntas": [
     {
      "tipo": "completar_dato",
@@ -167,7 +167,7 @@
      "opciones": [
       "a traffic light",
       "a bus stop and a bank",
-      "the school of Laura"
+      "Laura's school"
      ],
      "respuesta": "a traffic light"
     },
@@ -178,7 +178,7 @@
     },
     {
      "tipo": "vfnd",
-     "enunciado": "The bike of Laura is expensive.",
+     "enunciado": "Laura's bike is expensive.",
      "respuesta": "no dice"
     },
     {
@@ -193,14 +193,14 @@
     },
     {
      "tipo": "vf",
-     "enunciado": "The cars go faster than the bike of Laura.",
+     "enunciado": "The cars go faster than Laura's bike.",
      "respuesta": "verdadero"
     }
    ]
   },
   {
    "titulo": "Un viaje corto",
-   "texto": "On Saturday Ana and Paul go to another city, two hours from here. First they take the subway to the station: the subway is fast and the ticket is not expensive. At the station they buy two tickets for the train at nine. The train is slow, but one can read and eat on it. In the other city they do not take a bus: they have a map and they go on foot. From the station they turn right, they cross a big square and they continue straight. At the corner of the museum they turn left. There is a hotel near the church and a café next to it. After lunch they take a boat for one hour. The boat is very slow, but the city is beautiful from it. At six they take the train again. Paul wants to come back by plane, but the plane is very expensive.",
+   "texto": "On Saturday Ana and Paul go to another city, two hours from here. First they take the subway to the station: the subway is fast and the ticket is not expensive. At the station they buy two tickets for the train at nine. The train is slow, but you can read and eat on it. In the other city they do not take a bus: they have a map and they go on foot. From the station they turn right, they cross a big square and they continue straight. At the corner of the museum they turn left. There is a hotel near the church and a café next to it. After lunch they take a boat for one hour. The boat is very slow, but the city is beautiful from it. At six they take the train again. Paul wants to come back by plane, but the plane is very expensive.",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
@@ -261,7 +261,7 @@
      "opciones": [
       "it is very slow",
       "it is very expensive",
-      "there is not any plane"
+      "there is no plane"
      ],
      "respuesta": "it is very expensive"
     }
@@ -311,7 +311,7 @@
     },
     {
      "tipo": "vfnd",
-     "enunciado": "The bike of Marie is red.",
+     "enunciado": "Marie's bike is red.",
      "respuesta": "no dice"
     },
     {

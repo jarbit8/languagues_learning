@@ -3,11 +3,11 @@
  "textos": [
   {
    "titulo": "Ana está enferma",
-   "texto": "On Monday morning Ana does not feel well. Her head hurts and she has a fever: thirty-nine degrees. She has a cough too, and her body is very tired. She must not go to work today, so she does not go out. Laura makes a hot soup for her and she buys medicine in the pharmacy near the house. The medicine is for the fever and for the headache. Ana has a cold: her nose and her mouth are not well, and her neck hurts. In the afternoon her stomach hurts too, because she does not eat anything in the morning. She must eat and she must drink much water. On Tuesday she is not sick: her head does not hurt and there is no fever. But her back hurts, because she is in bed all the day. On Wednesday Ana is healthy again and she goes to work. Her doctor is happy: Ana must sleep eight hours and eat vegetables every day.",
+   "texto": "On Monday morning Ana does not feel well. Her head hurts and she has a fever: thirty-nine degrees. She has a cough too, and her body is very tired. She must not go to work today, so she does not go out. Laura makes a hot soup for her and she buys medicine at the pharmacy near the house. The medicine is for the fever and for the headache. Ana has a cold: her nose and her mouth are not well, and her neck hurts. In the afternoon her stomach hurts too, because she does not eat anything in the morning. She must eat and she must drink a lot of water. On Tuesday she is not sick: her head does not hurt and there is no fever. But her back hurts, because she is in bed all day. On Wednesday Ana is healthy again and she goes to work. Her doctor is happy: Ana must sleep eight hours and eat vegetables every day.",
    "preguntas": [
     {
      "tipo": "completar_dato",
-     "enunciado": "How many degrees is the fever of Ana?",
+     "enunciado": "How many degrees is Ana's fever?",
      "respuesta": "thirty-nine",
      "aceptadas": [
       "thirty nine",
@@ -53,9 +53,9 @@
     {
      "tipo": "completar_dato",
      "enunciado": "Why does her back hurt on Tuesday?",
-     "respuesta": "because she is in bed all the day",
+     "respuesta": "because she is in bed all day",
      "aceptadas": [
-      "she is in bed all the day",
+      "she is in bed all day",
       "she is in bed"
      ]
     },
@@ -73,7 +73,7 @@
   },
   {
    "titulo": "En el consultorio",
-   "texto": "Paul goes to the hospital, because his stomach hurts every day after lunch. A nurse is with him first: he does not have a fever and he is not sick. Then the doctor visits him. Where is the pain? The pain is in the stomach, under the heart, and sometimes in the back. Paul does not have a cough and his head does not hurt. Does he eat vegetables? Does he sleep well? Paul eats a lot of meat and he sleeps five hours. That is the problem. He must eat fruit and vegetables, he must drink much water and he must sleep eight hours. The doctor also has medicine for the pain: one in the morning and one at night. Paul does not have an allergy, so the medicine is good for him. After two weeks Paul feels well and he is healthy again. Now he goes to the hospital only one time in the year.",
+   "texto": "Paul goes to the hospital, because his stomach hurts every day after lunch. A nurse is with him first: he does not have a fever and he is not sick. Then the doctor visits him. Where is the pain? The pain is in the stomach, under the heart, and sometimes in the back. Paul does not have a cough and his head does not hurt. Does he eat vegetables? Does he sleep well? Paul eats a lot of meat and he sleeps five hours. That is the problem. He must eat fruit and vegetables, he must drink a lot of water and he must sleep eight hours. The doctor also has medicine for the pain: one in the morning and one at night. Paul does not have an allergy, so the medicine is good for him. After two weeks Paul feels well and he is healthy again. Now he goes to the hospital only one time in the year.",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
@@ -111,7 +111,7 @@
     },
     {
      "tipo": "vf",
-     "enunciado": "Paul takes the medicine two times in the day.",
+     "enunciado": "Paul takes the medicine two times a day.",
      "respuesta": "verdadero"
     },
     {
@@ -138,7 +138,7 @@
   },
   {
    "titulo": "Un cuerpo sano",
-   "texto": "Ana is a healthy student. Every morning she brushes her teeth and she cleans her hands. She has breakfast and then she walks for thirty minutes: her legs and her feet are strong. She never has a pain in her knees. Her eyes are not tired, because she does not read in the night, and her ears are well: she listens to music for one hour, not more. Ana eats fruit and vegetables every day, and she drinks much water, so her stomach is well. She does not have an allergy. In winter many friends have a cold, with a cough and a fever, but Ana is not sick: she sleeps eight hours every night and her body is healthy. When her head hurts she does not take medicine: she rests one hour in her bedroom. Sometimes her back and her shoulders hurt, because she reads with the computer on her legs. So she must read with the computer on a table. Now her back is well and her arms do not hurt. One finger hurts sometimes, but it is not a big pain.",
+   "texto": "Ana is a healthy student. Every morning she brushes her teeth and she cleans her hands. She has breakfast and then she walks for thirty minutes: her legs and her feet are strong. She never has a pain in her knees. Her eyes are not tired, because she does not read at night, and her ears are well: she listens to music for one hour, not more. Ana eats fruit and vegetables every day, and she drinks a lot of water, so her stomach is well. She does not have an allergy. In winter many friends have a cold, with a cough and a fever, but Ana is not sick: she sleeps eight hours every night and her body is healthy. When her head hurts she does not take medicine: she rests one hour in her bedroom. Sometimes her back and her shoulders hurt, because she reads with the computer on her legs. So she must read with the computer on a table. Now her back is well and her arms do not hurt. One finger hurts sometimes, but it is not a big pain.",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
@@ -181,7 +181,7 @@
     },
     {
      "tipo": "vfnd",
-     "enunciado": "The computer of Ana is new.",
+     "enunciado": "Ana's computer is new.",
      "respuesta": "no dice"
     },
     {
@@ -250,7 +250,7 @@
     },
     {
      "tipo": "vfnd",
-     "enunciado": "The bike of Paul is not well.",
+     "enunciado": "Paul's bike is not well.",
      "respuesta": "no dice"
     },
     {
@@ -276,11 +276,11 @@
   },
   {
    "titulo": "Examen · Marie no se siente bien",
-   "texto": "On Thursday Marie does not feel well. Her head hurts and she has a fever: thirty-eight degrees. She has a cough and her neck hurts too. She must not go to work, so she is in bed all the morning. Her sister buys medicine in the pharmacy near the house: one for the fever and one for the headache. Marie does not have an allergy, so the medicine is good for her. In the afternoon her stomach hurts, because she does not eat anything. Her sister makes a hot soup and Marie must drink much water. On Friday there is no fever, but her back and her legs hurt, because she is in bed all the day. She does not need an ambulance and she does not go to the hospital. On Saturday Marie feels well: her body is healthy again and she goes out with her sister.",
+   "texto": "On Thursday Marie does not feel well. Her head hurts and she has a fever: thirty-eight degrees. She has a cough and her neck hurts too. She must not go to work, so she is in bed all morning. Her sister buys medicine at the pharmacy near the house: one for the fever and one for the headache. Marie does not have an allergy, so the medicine is good for her. In the afternoon her stomach hurts, because she does not eat anything. Her sister makes a hot soup and Marie must drink a lot of water. On Friday there is no fever, but her back and her legs hurt, because she is in bed all day. She does not need an ambulance and she does not go to the hospital. On Saturday Marie feels well: her body is healthy again and she goes out with her sister.",
    "preguntas": [
     {
      "tipo": "completar_dato",
-     "enunciado": "How many degrees is the fever of Marie?",
+     "enunciado": "How many degrees is Marie's fever?",
      "respuesta": "thirty-eight",
      "aceptadas": [
       "thirty eight",
@@ -326,9 +326,9 @@
     {
      "tipo": "completar_dato",
      "enunciado": "Why do her back and her legs hurt on Friday?",
-     "respuesta": "because she is in bed all the day",
+     "respuesta": "because she is in bed all day",
      "aceptadas": [
-      "she is in bed all the day",
+      "she is in bed all day",
       "she is in bed"
      ]
     },

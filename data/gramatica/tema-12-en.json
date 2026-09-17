@@ -52,8 +52,8 @@
   },
   {
    "tipo": "hueco",
-   "enunciado": "I've ___ a jacket. (posesión)",
-   "respuesta": "got"
+   "enunciado": "I ___ a jacket. (posesión)",
+   "respuesta": "have"
   },
   {
    "tipo": "hueco",
@@ -85,13 +85,13 @@
   },
   {
    "tipo": "opcion_multiple",
-   "enunciado": "'Tengo una mochila' =",
+   "enunciado": "'Tengo una bolsa' =",
    "opciones": [
-    "I've got a bag",
-    "I got a bag",
-    "I has got a bag"
+    "I has a bag",
+    "I have a bag",
+    "I am a bag"
    ],
-   "respuesta": "I've got a bag"
+   "respuesta": "I have a bag"
   },
   {
    "tipo": "ordenar",
@@ -123,12 +123,11 @@
    "opciones": [
     "I",
     "have",
-    "got",
     "a",
     "new",
     "phone"
    ],
-   "respuesta": "I have got a new phone"
+   "respuesta": "I have a new phone"
   },
   {
    "tipo": "corregir_error",
@@ -156,10 +155,10 @@
   {
    "tipo": "traducir",
    "enunciado": "Tengo un teléfono nuevo.",
-   "respuesta": "I've got a new phone.",
+   "respuesta": "I have a new phone.",
    "aceptadas": [
-    "i have got a new phone",
-    "i have a new phone"
+    "i've got a new phone",
+    "i have got a new phone"
    ]
   },
   {

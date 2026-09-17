@@ -6,7 +6,7 @@
    "lineas": [
     {
      "hablante": "A",
-     "texto": "Good afternoon, I have a booking."
+     "texto": "Good afternoon, I have a reservation."
     },
     {
      "hablante": "B",
@@ -71,11 +71,11 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué tiene A al llegar?",
      "opciones": [
-      "a map",
-      "a ticket",
-      "a booking"
+      "a big suitcase",
+      "a plane ticket",
+      "a reservation"
      ],
-     "respuesta": "a booking"
+     "respuesta": "a reservation"
     }
    ]
   },
@@ -186,7 +186,7 @@
     },
     {
      "hablante": "B",
-     "texto": "In a hotel near the city center. Here is the booking."
+     "texto": "In a hotel near the city center. Here is the reservation."
     },
     {
      "hablante": "A",

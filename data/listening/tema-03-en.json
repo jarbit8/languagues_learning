@@ -108,7 +108,7 @@
     },
     {
      "hablante": "B",
-     "texto": "Yes, I live in Quebec."
+     "texto": "Yes, I live in Toronto."
     }
    ],
    "preguntas": [
@@ -130,7 +130,7 @@
     {
      "tipo": "completar_dato",
      "enunciado": "¿En qué lugar vive B?",
-     "respuesta": "Quebec"
+     "respuesta": "Toronto"
     },
     {
      "tipo": "opcion_multiple",

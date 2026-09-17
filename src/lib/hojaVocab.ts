@@ -6,6 +6,7 @@ import { inicioDeHoy } from './fechas'
 import { baraja } from './preguntas'
 import { fechaCorta } from './plan'
 import { sincronizarPronto } from './autosync'
+import { existeConcepto } from '../data/packs'
 
 // EXAMEN DIARIO EN PAPEL (2026-09-13, él: "que se imprima una hoja del vocabulario... al día
 // siguiente diré cuáles fallé"). Salen las mismas palabras que el examen diario de la app; se
@@ -48,8 +49,9 @@ export async function guardarHoja(ids: string[]): Promise<void> {
 // Una palabra que ya se respondió en la app después de imprimir no se vuelve a calificar:
 // contaría dos veces el mismo repaso.
 export async function filasParaCalificar(hoja: HojaVocab): Promise<{ id: string; yaRespondida: boolean }[]> {
-  const filas = await db.palabras.bulkGet(hoja.ids)
-  return hoja.ids.map((id, i) => ({ id, yaRespondida: !filas[i] || (filas[i]!.ultimoExamen ?? 0) > hoja.impresa }))
+  const ids = hoja.ids.filter(existeConcepto)
+  const filas = await db.palabras.bulkGet(ids)
+  return ids.map((id, i) => ({ id, yaRespondida: !filas[i] || (filas[i]!.ultimoExamen ?? 0) > hoja.impresa }))
 }
 
 export async function calificarHoja(hoja: HojaVocab, falladas: Set<string>): Promise<{ aciertos: number; total: number }> {

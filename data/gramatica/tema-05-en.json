@@ -1,7 +1,7 @@
 {
  "tema": 5,
  "titulo": "Adjetivos, plurales irregulares y very/too",
- "regla": "En inglés el adjetivo va ANTES del sustantivo y no cambia (a tall man, tall women). Algunos plurales son irregulares: man→men, woman→women, child→children, person→people. Grado del adjetivo: 'very' y 'really' refuerzan (she is very tall), pero 'too' significa DEMASIADO y siempre es negativo (he is too tired).",
+ "regla": "En inglés el adjetivo va ANTES del sustantivo y no cambia (a tall man, tall women). Algunos plurales son irregulares: man→men, woman→women, child→children, person→people. Grado del adjetivo: 'very' y 'really' refuerzan (she is very tall), pero 'too' significa DEMASIADO y siempre es negativo (he is too tired). El plural regular añade -s (friend → friends), -es detrás de s, sh, ch o x (class → classes, watch → watches) y cambia la -y por -ies cuando antes va consonante (city → cities, baby → babies).",
  "pronunciacion": "Vocales largas y cortas cambian la palabra: short (corto) vs shirt (camisa) — cuidado al pronunciar.",
  "trampa": "El adjetivo nunca lleva plural ni va después: se dice 'tall students', no 'talls students' ni 'students tall'.",
  "ejemplos": [
@@ -171,12 +171,32 @@
     "he is very funny",
     "he's very funny"
    ]
+  },
+  {
+   "tipo": "hueco",
+   "enunciado": "One country, two ___.",
+   "respuesta": "countries"
+  },
+  {
+   "tipo": "hueco",
+   "enunciado": "One family, two ___.",
+   "respuesta": "families"
+  },
+  {
+   "tipo": "opcion_multiple",
+   "enunciado": "Plural de 'baby':",
+   "opciones": [
+    "babys",
+    "babyes",
+    "babies"
+   ],
+   "respuesta": "babies"
   }
  ],
  "dias": [
   {
    "titulo": "El adjetivo va delante y no tiene plural",
-   "regla": "En inglés el adjetivo va SIEMPRE antes del sustantivo y nunca cambia: a tall man, tall women. Y algunos plurales son irregulares: man→men, woman→women, child→children, person→people.",
+   "regla": "En inglés el adjetivo va SIEMPRE antes del sustantivo y nunca cambia: a tall man, tall women. Y algunos plurales son irregulares: man→men, woman→women, child→children, person→people. El plural regular añade -s (friend → friends), -es detrás de s, sh, ch o x (class → classes, watch → watches) y cambia la -y por -ies cuando antes va consonante (city → cities, baby → babies).",
    "trampa": "Ni 'a woman tall' (el adjetivo va delante) ni 'talls men' (el adjetivo no lleva -s). Y 'childs' no existe: es 'children'.",
    "ejemplos": [
     0,
@@ -194,7 +214,10 @@
     7,
     10,
     11,
-    12
+    12,
+    18,
+    19,
+    20
    ]
   },
   {

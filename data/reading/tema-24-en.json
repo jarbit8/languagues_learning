@@ -26,12 +26,12 @@
     },
     {
      "tipo": "vf",
-     "enunciado": "The dream of Ana is a job in a company.",
+     "enunciado": "Ana's dream is a job in a company.",
      "respuesta": "falso"
     },
     {
      "tipo": "opcion_multiple",
-     "enunciado": "What is the sister of Ana going to apply for?",
+     "enunciado": "What is Ana's sister going to apply for?",
      "opciones": [
       "a visa",
       "a scholarship",
@@ -110,7 +110,7 @@
     },
     {
      "tipo": "vf",
-     "enunciado": "The goal of Paul is the money.",
+     "enunciado": "Paul's goal is the money.",
      "respuesta": "falso"
     },
     {
@@ -120,7 +120,7 @@
     },
     {
      "tipo": "completar_dato",
-     "enunciado": "What is the dream of Paul?",
+     "enunciado": "What is Paul's dream?",
      "respuesta": "a company with his friends",
      "aceptadas": [
       "a company",
@@ -141,11 +141,11 @@
   },
   {
    "titulo": "El sueño de Laura",
-   "texto": "The dream of Laura is not a job: it is music. Next year she is going to travel to England for six months. First she is going to work in a café to get the money, then she is going to book the flight, and finally she is going to apply for the visa. It is not sure, because the visa is very difficult and it is also expensive. Her parents are not happy with this plan: they hope for a good job for her, in a school of the city. But Laura is not going to change her goal. In England she is going to play the guitar and she is going to sing in small parties. Maybe she is going to stay there one year. Her friend Ana is going to travel with her for two weeks in the summer, and together they are going to visit London. It is a big project for a student, but Laura is sure: her future is the music. She is going to decide in March.",
+   "texto": "Laura's dream is not a job: it is music. Next year she is going to travel to England for six months. First she is going to work in a café to get the money, then she is going to book the flight, and finally she is going to apply for the visa. It is not sure, because the visa is very difficult and it is also expensive. Her parents are not happy with this plan: they hope for a good job for her, in a school of the city. But Laura is not going to change her goal. In England she is going to play the guitar and she is going to sing in small parties. Maybe she is going to stay there one year. Her friend Ana is going to travel with her for two weeks in the summer, and together they are going to visit London. It is a big project for a student, but Laura is sure: her future is music. She is going to decide in March.",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
-     "enunciado": "What is the dream of Laura?",
+     "enunciado": "What is Laura's dream?",
      "opciones": [
       "a good job",
       "music",
@@ -179,7 +179,7 @@
     },
     {
      "tipo": "vf",
-     "enunciado": "The parents of Laura are happy with this plan.",
+     "enunciado": "Laura's parents are happy with this plan.",
      "respuesta": "falso"
     },
     {
@@ -248,7 +248,7 @@
     },
     {
      "tipo": "vf",
-     "enunciado": "The goal of Lee is to graduate in two years.",
+     "enunciado": "Lee's goal is to graduate in two years.",
      "respuesta": "verdadero"
     },
     {
@@ -258,7 +258,7 @@
     },
     {
      "tipo": "completar_dato",
-     "enunciado": "What is the dream of Lee?",
+     "enunciado": "What is Lee's dream?",
      "respuesta": "a big company in the United States",
      "aceptadas": [
       "a big company",
@@ -302,7 +302,7 @@
     },
     {
      "tipo": "vf",
-     "enunciado": "The goal of Marie is a project with her classmates.",
+     "enunciado": "Marie's goal is a project with her classmates.",
      "respuesta": "verdadero"
     },
     {
@@ -322,7 +322,7 @@
     },
     {
      "tipo": "vfnd",
-     "enunciado": "The sister of Marie studies science too.",
+     "enunciado": "Marie's sister studies science too.",
      "respuesta": "no dice"
     },
     {

@@ -50,9 +50,8 @@ english spanish peruvian canadian german
 //     no evaluación (comfortable en "The sofa is comfortable.").
 // Si aquí entra una palabra que sale en un texto de examen, mejor darle tarjeta o cambiarla.
 const ANDAMIAJE = new Set(`
-long man men woman women boy girl people person great course help helps know think bit
-ask asks until else wait waiting ready give high low use useful helpful simple close
-comfortable famous quiet interesting heavy hard life human through tonight forgot perfect
+course bit until else ready high low useful helpful simple close
+comfortable famous quiet heavy life human through tonight perfect
 lesson season seasons hotter hottest stiff madam sir taken eaten gone
 `.trim().split(/\s+/))
 
@@ -64,7 +63,8 @@ const IRREGULARES = {
   swam: 'swim', flew: 'fly', sent: 'send', spent: 'spend', wore: 'wear', lost: 'lose', won: 'win',
   wrote: 'write', gave: 'give', found: 'find', told: 'tell', knew: 'know', thought: 'think',
   drove: 'drive', slept: 'sleep', spoke: 'speak', taught: 'teach', understood: 'understand',
-  got: 'get', saw: 'see', said: 'say', stopped: 'stop'
+  got: 'get', saw: 'see', said: 'say', stopped: 'stop',
+  men: 'man', women: 'woman', people: 'person', forgot: 'forget'
 }
 const CONTRACCIONES = {
   "i'm": 'i', "you're": 'you', "he's": 'he', "she's": 'she', "it's": 'it', "we're": 'we',

@@ -46,10 +46,11 @@
   },
   {
    "id": "a1-t11-007",
-   "es": "mochila",
+   "es": "bolsa, bolso",
    "texto": "bag",
    "ejemplo": "My bag is black.",
-   "pron": "BAG"
+   "pron": "BAG",
+   "nota": "La mochila del colegio es backpack, pero hablando muchos le dicen bag."
   },
   {
    "id": "a1-t11-009",
@@ -220,6 +221,35 @@
    "texto": "scissors",
    "ejemplo": "The scissors are in the bag.",
    "pron": "SI-sors"
+  },
+  {
+   "id": "a1-t11-033",
+   "es": "ese, eso, aquel",
+   "texto": "that",
+   "ejemplo": "That is my phone.",
+   "pron": "DAT"
+  },
+  {
+   "id": "a1-t11-034",
+   "es": "esos, aquellos",
+   "texto": "those",
+   "ejemplo": "Those pens are black.",
+   "pron": "DOUS"
+  },
+  {
+   "id": "a1-t11-035",
+   "es": "interesante",
+   "texto": "interesting",
+   "ejemplo": "This notebook is interesting.",
+   "pron": "IN-tres-ting"
+  },
+  {
+   "id": "a1-t11-036",
+   "es": "escribir",
+   "texto": "to write",
+   "ejemplo": "I write with a pen.",
+   "pron": "tu RAIT",
+   "nota": "La w no suena."
   }
  ]
 }

@@ -61,6 +61,14 @@ export function consignaDeTema(tema: number): ConsignaWriting | undefined {
   return delTema.length ? piezaDeExamen(delTema, 2) : pack?.consignas[0]
 }
 
+// Bloque y final tomaban `consignas[0]`, que es la de práctica del día 1 de un tema: la que
+// ya escribió y corrigió. La del día 2 no la sirve nadie desde que el tema es un día de
+// estudio y otro de examen, así que es la única que llega sin haberse visto.
+export function consignaSinUsar(tema: number): ConsignaWriting | undefined {
+  const delTema = getWriting(bloqueDeTema(tema))?.consignas.filter((c) => c.tema === tema) ?? []
+  return delTema.length >= 3 ? delTema[1] : consignaDeTema(tema)
+}
+
 // --- Hablar: el mismo roleplay del tema que en Practicar, pero pidiéndole a la IA que
 // decida si aprueba. Reutiliza el bloque de veredicto que ya usan bloque y final, y desde
 // 2026-09-08 también el de repaso: es el examen del tema, así que tiene que preguntar por

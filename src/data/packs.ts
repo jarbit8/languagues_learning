@@ -129,6 +129,12 @@ export function getVocabPack(tema: number): VocabPack | undefined {
   return vocabPacks.find((p) => p.tema === tema)
 }
 
+// Una tarjeta que se borra del pack deja su fila en la tabla `palabras` de quien ya la había
+// marcado. Sin este filtro seguiría saliendo en la hoja diaria como repaso vencido para siempre,
+// porque nadie puede responderla.
+const idsVigentes = new Set(vocabPacks.flatMap((p) => p.conceptos.map((c) => c.id)))
+export const existeConcepto = (id: string) => idsVigentes.has(id)
+
 export function conceptoPorId(id: string) {
   for (const p of vocabPacks) {
     const c = p.conceptos.find((x) => x.id === id)

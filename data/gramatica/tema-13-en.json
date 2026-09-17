@@ -56,11 +56,11 @@
    "tipo": "opcion_multiple",
    "enunciado": "'rice' (arroz) es:",
    "opciones": [
-    "always plural",
-    "countable",
-    "uncountable"
+    "siempre plural",
+    "contable",
+    "incontable"
    ],
-   "respuesta": "uncountable"
+   "respuesta": "incontable"
   },
   {
    "tipo": "opcion_multiple",

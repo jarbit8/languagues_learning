@@ -27,7 +27,6 @@
     "Describí el físico (alto, pelo...)",
     "Describí la personalidad",
     "Dije su profesión",
-    "Hablé de su familia",
     "Escribí entre 30 y 40 palabras"
    ]
   },
@@ -36,7 +35,7 @@
    "consigna": "Escribe un saludo de presentación para un compañero nuevo: salúdalo, di tu nombre, pregúntale cómo está y despídete.",
    "minPalabras": 18,
    "maxPalabras": 28,
-   "respuestaModelo": "Hello! Good morning. My name is Joel. Nice to meet you. How are you? I am fine, thank you. You are welcome. See you tomorrow. Goodbye!",
+   "respuestaModelo": "Hello! Good morning. My name is Joel. Nice to meet you. How are you? I am fine, thank you. See you tomorrow. Goodbye!",
    "checklist": [
     "Saludé al empezar",
     "Dije mi nombre",
@@ -50,7 +49,7 @@
    "consigna": "Escribe tu ficha de inscripción en frases completas: tu nombre, tu edad y tu número de teléfono.",
    "minPalabras": 20,
    "maxPalabras": 30,
-   "respuestaModelo": "Hello! My name is Joel. I am twenty two years old. My phone number is nine five one, four two three, seven six eight. Thank you!",
+   "respuestaModelo": "Hello! My name is Joel. I am twenty-two years old. My phone number is nine five one, four two three, seven six eight. Thank you!",
    "checklist": [
     "Dije mi nombre",
     "Dije mi edad con \"years old\"",
@@ -64,7 +63,7 @@
    "consigna": "Escribe a un amigo de otro país: di de dónde eres, tu nacionalidad y qué idiomas hablas.",
    "minPalabras": 25,
    "maxPalabras": 35,
-   "respuestaModelo": "Hi! I am from Peru. I am Peruvian and I live in Arequipa. It is a nice city. I speak Spanish and I speak English. Are you Canadian? See you soon!",
+   "respuestaModelo": "Hi! I am from Peru. I am Peruvian and I live in Arequipa. It is a nice city. I speak Spanish and I speak English. Are you American? See you soon!",
    "checklist": [
     "Dije de dónde soy",
     "Dije mi nacionalidad",
@@ -148,7 +147,7 @@
    "consigna": "Describe a dos personas distintas para que alguien las reconozca: físico primero y personalidad después.",
    "minPalabras": 30,
    "maxPalabras": 40,
-   "respuestaModelo": "Marc is short and he has dark hair. He is handsome and very friendly, but he is shy. Sofia is tall and thin. She is red-haired and she has big eyes. She is funny and she is always happy.",
+   "respuestaModelo": "Marc is short and he has dark hair. He is handsome and very friendly, but he is shy. Sofia is tall and thin. She has red hair and big eyes. She is funny and she is always happy.",
    "checklist": [
     "Describí el físico de las dos",
     "Describí la personalidad de las dos",

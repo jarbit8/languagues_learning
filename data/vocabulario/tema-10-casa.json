@@ -19,7 +19,7 @@
 {"id":"a1-t10-018","es":"cerca de","texto":"near","ejemplo":"The chair is near the table.","pron":"NIR"},
 {"id":"a1-t10-019","es":"al lado de","texto":"next to","literal":"próximo a","ejemplo":"The bed is next to the window.","pron":"NEKST tu"},
 {"id":"a1-t10-020","es":"debajo de","texto":"under","ejemplo":"The cat is under the table.","pron":"AN-der"},
-{"id":"a1-t10-021","es":"sobre","texto":"on","ejemplo":"The key is on the table.","pron":"ON"},
+{"id":"a1-t10-021","es":"sobre","texto":"on","ejemplo":"The key is on the table.","pron":"AN"},
 {"id":"a1-t10-022","es":"en (dentro)","texto":"in","ejemplo":"The key is in the kitchen.","pron":"IN"},
 {"id":"a1-t10-023","es":"entre","texto":"between","ejemplo":"The table is between two chairs.","pron":"bi-TUIN"},
 {"id":"a1-t10-024","es":"garaje","texto":"garage","ejemplo":"There is a garage near the house.","pron":"ga-RASH"},
@@ -31,6 +31,9 @@
 {"id":"a1-t10-030","es":"llave (de casa)","texto":"key","ejemplo":"The key is on the door.","pron":"KI"},
 {"id":"a1-t10-031","es":"balcón","texto":"balcony","ejemplo":"There is a table on the balcony.","pron":"BAL-ko-ni"},
 {"id":"a1-t10-032","es":"espejo","texto":"mirror","ejemplo":"The mirror is in the bathroom.","pron":"MI-ror"},
-{"id":"a1-t10-033","es":"baño (inodoro)","texto":"toilet","ejemplo":"The toilet is next to the bathroom.","pron":"TOI-let"},
-{"id":"a1-t10-034","es":"techo (exterior)","texto":"roof","ejemplo":"The house has a red roof.","pron":"RUF"}
+{"id":"a1-t10-033","es":"baño (inodoro)","texto":"toilet","ejemplo":"The toilet is in the bathroom.","pron":"TOI-let"},
+{"id":"a1-t10-034","es":"techo (exterior)","texto":"roof","ejemplo":"The house has a red roof.","pron":"RUF"},
+{"id":"a1-t10-035","es":"televisión, tele","texto":"TV","ejemplo":"The TV is in the living room.","pron":"ti-VI","nota":"watch TV = ver televisión."},
+{"id":"a1-t10-036","es":"detrás de","texto":"behind","ejemplo":"The garden is behind the house.","pron":"bi-JAIND"},
+{"id":"a1-t10-037","es":"delante de, frente a","texto":"in front of","ejemplo":"The table is in front of the sofa.","pron":"in FRANT ov","rapido":"in-FRAN-ta"}
 ] }

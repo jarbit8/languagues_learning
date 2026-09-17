@@ -42,13 +42,13 @@
    "es": "proyecto",
    "texto": "project",
    "ejemplo": "I have a big project.",
-   "pron": "PRO-yekt"
+   "pron": "PRA-yekt"
   },
   {
    "id": "a1-t24-008",
    "es": "sueño",
    "texto": "dream",
-   "ejemplo": "My dream is Canada.",
+   "ejemplo": "My dream is a job in the United States.",
    "pron": "DRIM"
   },
   {
@@ -62,30 +62,8 @@
    "id": "a1-t24-010",
    "es": "mudarse",
    "texto": "to move",
-   "ejemplo": "I am going to move to Canada.",
+   "ejemplo": "I am going to move to the United States.",
    "pron": "tu MUV"
-  },
-  {
-   "id": "a1-t24-011",
-   "es": "y",
-   "texto": "and",
-   "ejemplo": "English and Spanish.",
-   "pron": "AND",
-   "rapido": "n a secas: rock 'n' roll es rock and roll"
-  },
-  {
-   "id": "a1-t24-012",
-   "es": "pero",
-   "texto": "but",
-   "ejemplo": "It's hard but fun.",
-   "pron": "BAT"
-  },
-  {
-   "id": "a1-t24-013",
-   "es": "o",
-   "texto": "or",
-   "ejemplo": "Tea or coffee?",
-   "pron": "OR"
   },
   {
    "id": "a1-t24-015",
@@ -109,17 +87,10 @@
    "pron": "tu CHEINCH"
   },
   {
-   "id": "a1-t24-018",
-   "es": "primero",
-   "texto": "first",
-   "ejemplo": "First, I learn English.",
-   "pron": "FERST"
-  },
-  {
    "id": "a1-t24-019",
    "es": "finalmente",
    "texto": "finally",
-   "ejemplo": "Finally, I move to Canada.",
+   "ejemplo": "Finally, I move to the United States.",
    "pron": "FAI-na-li"
   },
   {
@@ -140,7 +111,7 @@
    "id": "a1-t24-022",
    "es": "emigrar",
    "texto": "to emigrate",
-   "ejemplo": "I want to emigrate to Canada.",
+   "ejemplo": "I want to emigrate to the United States.",
    "pron": "tu E-mi-greit"
   },
   {
@@ -190,7 +161,7 @@
    "ejemplo": "I am going to move.",
    "pron": "ai am GOU-ing tu",
    "rapido": "aim-GO-na (gonna)",
-   "nota": "Futuro próximo: going to / aller + infinitivo."
+   "nota": "Para un plan ya decidido: going to + verbo base."
   },
   {
    "id": "a1-t24-031",
@@ -203,8 +174,8 @@
    "id": "a1-t24-032",
    "es": "oportunidad",
    "texto": "opportunity",
-   "ejemplo": "Canada is a great opportunity.",
-   "pron": "o-por-TIU-ni-ti"
+   "ejemplo": "This job is a great opportunity.",
+   "pron": "a-per-TU-ni-ti"
   },
   {
    "id": "a1-t24-033",
@@ -219,6 +190,20 @@
    "texto": "to apply",
    "ejemplo": "I apply for a visa.",
    "pron": "tu a-PLÁI"
+  },
+  {
+   "id": "a1-t24-035",
+   "es": "difícil, duro",
+   "texto": "hard",
+   "ejemplo": "It's hard but fun.",
+   "pron": "JARD"
+  },
+  {
+   "id": "a1-t24-036",
+   "es": "recordar, acordarse",
+   "texto": "to remember",
+   "ejemplo": "I remember my first day at the university.",
+   "pron": "tu ri-MEM-ber"
   }
  ]
 }

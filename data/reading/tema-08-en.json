@@ -69,7 +69,7 @@
   },
   {
    "titulo": "¿A qué hora quedamos?",
-   "texto": "What time is it now? It is a quarter to nine. Are you always on time, Marc? Yes, I am usually on time and I am never late. Sometimes I am early. Good! The time with Laura is at ten o'clock. Ten? That is late for me. I am in bed before midnight and I am early in the morning. No problem, and at half past nine? Very good. One hour before. What time is it in Peru now? It is two hours before: a quarter to seven in the evening. In the afternoon I am often in the office and I am rarely with friends. At noon I have half an hour, and after, one hour of work. Now it is nine o'clock! Right away, Marc, right away! A minute is a minute and a second is a second.",
+   "texto": "What time is it now? It is a quarter to nine. Are you always on time, Marc? Yes, I am usually on time and I am never late. Sometimes I am early. Good! And Laura? At ten o'clock? Ten? That is late for me. I am in bed before midnight and I am early in the morning. No problem, and at half past nine? Very good. One hour before. What time is it in Peru now? It is two hours before: a quarter to seven in the evening. In the afternoon I am often in the office and I am rarely with friends. At noon I have half an hour, and after, one hour of work. Now it is nine o'clock! Right away, Marc, right away! A minute is a minute and a second is a second.",
    "preguntas": [
     {
      "tipo": "anota_la_hora",
@@ -151,7 +151,7 @@
     },
     {
      "hablante": "A",
-     "texto": "Good! The time with Laura is at ten o'clock."
+     "texto": "Good! And Laura? At ten o'clock?"
     },
     {
      "hablante": "Marc",
@@ -185,7 +185,7 @@
   },
   {
    "titulo": "El reloj de Ana",
-   "texto": "It is a quarter past six in the morning. Ana is always early and she is never late. Her work is from eight o'clock to two o'clock, and at noon she has half an hour. In the afternoon she usually studies at half past four. She rarely studies before four. In the evening she is often with Laura. At ten o'clock it is night and at midnight it is very late. Her clock has hours, minutes and seconds. One hour has sixty minutes and one minute has sixty seconds. Sometimes Ana is soon in bed, and sometimes she is late. Right away! she says. A quarter of an hour and I am here.",
+   "texto": "It is a quarter past six in the morning. Ana is always early and she is never late. Her work is from eight o'clock to two o'clock, and at noon she has half an hour. In the afternoon she usually studies at half past four. She rarely studies before four. In the evening she is often with Laura. At ten o'clock it is night and at midnight it is very late. Her clock has hours, minutes and seconds. One hour has sixty minutes and one minute has sixty seconds. Sometimes Ana is in bed early, and sometimes she is late. I am here in a quarter of an hour! she says.",
    "preguntas": [
     {
      "tipo": "anota_la_hora",
@@ -318,14 +318,14 @@
   },
   {
    "titulo": "Examen · El horario de Marie",
-   "texto": "It is twenty past three in the afternoon. Marie is never late: she is usually early and always on time. Her work is from nine o'clock to five o'clock, and at noon she has half an hour. In the morning she is here at a quarter to nine. She rarely works after five. In the evening, at half past eight, she is with Laura. At eleven o'clock she is in bed and at midnight she is always in bed. The night is short! One hour has sixty minutes and one minute has sixty seconds. Her clock is here. Sometimes she is soon in bed, but she is never late in the morning. A quarter of an hour, and right away she is here.",
+   "texto": "It is three twenty in the afternoon. Marie is never late: she is usually early and always on time. Her work is from nine o'clock to five o'clock, and at noon she has half an hour. In the morning she is here at a quarter to nine. She rarely works after five. In the evening, at half past eight, she is with Laura. At eleven o'clock she is in bed and at midnight she is always in bed. The night is short! Her clock is very old, but it is always on time: one hour has sixty minutes and one minute has sixty seconds. Sometimes she is in bed early, and she is never late in the morning.",
    "preguntas": [
     {
      "tipo": "anota_la_hora",
      "enunciado": "¿Qué hora es al principio?",
      "respuesta": "3:20",
      "aceptadas": [
-      "twenty past three"
+      "three twenty"
      ]
     },
     {

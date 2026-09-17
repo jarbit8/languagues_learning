@@ -7,21 +7,22 @@
    "es": "pasatiempo",
    "texto": "hobby",
    "ejemplo": "My hobby is music.",
-   "pron": "JO-bi"
+   "pron": "JA-bi"
   },
   {
    "id": "a1-t20-002",
    "es": "deporte",
    "texto": "sport",
-   "ejemplo": "I like sport.",
-   "pron": "SPORT"
+   "ejemplo": "I like sports.",
+   "pron": "SPORT",
+   "nota": "Para hablar de los deportes en general se usa el plural: I like sports."
   },
   {
    "id": "a1-t20-003",
    "es": "fútbol",
    "texto": "soccer",
    "ejemplo": "I play soccer.",
-   "pron": "SO-ker",
+   "pron": "SA-ker",
    "tambien": "football es la británica — y allá football es otro deporte, el del casco"
   },
   {
@@ -99,7 +100,7 @@
    "es": "gustar",
    "texto": "to like",
    "nota": "«Me gusta» se dice al revés: I like it, literalmente «yo gusto ello». El que gusta eres tú, no la cosa.",
-   "ejemplo": "I like sport.",
+   "ejemplo": "I like music.",
    "pron": "tu LAIK"
   },
   {
@@ -152,7 +153,7 @@
    "es": "canción",
    "texto": "song",
    "ejemplo": "I like this song.",
-   "pron": "SONG"
+   "pron": "SANG"
   },
   {
    "id": "a1-t20-023",

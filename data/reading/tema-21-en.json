@@ -45,7 +45,7 @@
     },
     {
      "tipo": "vfnd",
-     "enunciado": "The classmates of Ana have a scholarship too.",
+     "enunciado": "Ana's classmates have a scholarship too.",
      "respuesta": "no dice"
     },
     {
@@ -182,7 +182,7 @@
     },
     {
      "tipo": "vfnd",
-     "enunciado": "The parents of Laura are teachers.",
+     "enunciado": "Laura's parents are teachers.",
      "respuesta": "no dice"
     },
     {
@@ -208,7 +208,7 @@
   },
   {
    "titulo": "Una beca",
-   "texto": "Lee wants a scholarship for computer science. It is for the students with good grades in all the subjects. Lee is in his second semester and he has five subjects: math, science, computer science, English and history. Math and computer science are easy for him, because he practices every day with his computer. English is very difficult: he does not understand the classes and he has a dictionary in his bag all the day. Ana teaches him English in the library on Wednesday: she has the questions and Lee must have the answers. Why is this difficult for him? Lee does not learn the language in the classroom: he must listen to music and watch movies in English. In December he has six exams. He must not fail one: with a small grade there is no scholarship. Lee passes all the exams and he has the scholarship for all his degree. Now he wants to graduate and teach computer science in his university.",
+   "texto": "Lee wants a scholarship for computer science. It is for the students with good grades in all the subjects. Lee is in his second semester and he has five subjects: math, science, computer science, English and history. Math and computer science are easy for him, because he practices every day with his computer. English is very difficult: he does not understand the classes and he has a dictionary in his bag all day. Ana teaches him English in the library on Wednesday: she has the questions and Lee must have the answers. Why is this difficult for him? Lee does not learn the language in the classroom: he must listen to music and watch movies in English. In December he has six exams. He must not fail one: with a small grade there is no scholarship. Lee passes all the exams and he has the scholarship for all his degree. Now he wants to graduate and teach computer science in his university.",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
@@ -250,7 +250,7 @@
     },
     {
      "tipo": "vfnd",
-     "enunciado": "Lee is the classmate of Ana.",
+     "enunciado": "Lee is Ana's classmate.",
      "respuesta": "no dice"
     },
     {

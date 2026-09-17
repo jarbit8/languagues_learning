@@ -9,7 +9,7 @@
      "tipo": "opcion_multiple",
      "enunciado": "Where is the fridge?",
      "opciones": [
-      "under the bed of Ana",
+      "under Ana's bed",
       "near the sofa and the lamp",
       "next to the window"
      ],
@@ -67,7 +67,7 @@
   },
   {
    "titulo": "La casa de los abuelos",
-   "texto": "The house of Laura's grandparents is very big. There is a garden and there is a garage too. In the garden there is a table and four chairs, near the door of the kitchen. The house has two floors and there are stairs between them. On the first floor there is a living room with a big sofa, and there is a bathroom near the door. On the second floor there are three bedrooms. In every bedroom there is a bed, a closet and a lamp. There is a mirror on the wall of the bathroom. The window of the living room is under the roof of the balcony. In the kitchen there is a fridge next to the window. The key of the house is on the table, near the door. This is not an apartment: it is a house!",
+   "texto": "Laura's house's grandparents is very big. There is a garden and there is a garage too. In the garden there is a table and four chairs, near the door of the kitchen. The house has two floors and there are stairs between them. On the first floor there is a living room with a big sofa, and there is a bathroom near the door. On the second floor there are three bedrooms. In every bedroom there is a bed, a closet and a lamp. There is a mirror on the wall of the bathroom. The window of the living room is under the roof of the balcony. In the kitchen there is a fridge next to the window. The key of the house is on the table, near the door. This is not an apartment: it is a house!",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
@@ -140,7 +140,7 @@
    "preguntas": [
     {
      "tipo": "opcion_multiple",
-     "enunciado": "Where is the apartment of Paul?",
+     "enunciado": "Where is Paul's apartment?",
      "opciones": [
       "on the first floor",
       "near the garage",
@@ -179,7 +179,7 @@
     },
     {
      "tipo": "vfnd",
-     "enunciado": "The sister of Paul lives in this city.",
+     "enunciado": "Paul's sister lives in this city.",
      "respuesta": "no dice"
     },
     {
@@ -319,7 +319,7 @@
   },
   {
    "titulo": "Examen · La casa de Marie",
-   "texto": "Marie has a room in a big house with three friends. In her room there is a bed under the window, a closet next to the door and a small table with a lamp. There is a mirror on the wall, over the table. The bathroom is between her room and the kitchen. In the kitchen there is a fridge, a table and four chairs, and there is a big window. There is no living room in this house: the big table in the kitchen is for all the friends. There is a garden, but there is no garage and there is no balcony. The house has two floors and there are stairs near the door. The room of Marie is on the second floor. The key of her room is always with her. On Saturday she cleans the floor of her room.",
+   "texto": "Marie has a room in a big house with three friends. In her room there is a bed under the window, a closet next to the door and a small table with a lamp. There is a mirror on the wall, over the table. The bathroom is between her room and the kitchen. In the kitchen there is a fridge, a table and four chairs, and there is a big window. There is no living room in this house: the big table in the kitchen is for all the friends. There is a garden, but there is no garage and there is no balcony. The house has two floors and there are stairs near the door. Marie's room is on the second floor. The key of her room is always with her. On Saturday she cleans the floor of her room.",
    "preguntas": [
     {
      "tipo": "opcion_multiple",
@@ -362,7 +362,7 @@
     },
     {
      "tipo": "vfnd",
-     "enunciado": "The friends of Marie are students.",
+     "enunciado": "Marie's friends are students.",
      "respuesta": "no dice"
     },
     {
@@ -376,7 +376,7 @@
     },
     {
      "tipo": "opcion_multiple",
-     "enunciado": "Where is the room of Marie?",
+     "enunciado": "Where is Marie's room?",
      "opciones": [
       "next to the kitchen",
       "on the second floor",

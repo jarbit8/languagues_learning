@@ -1,7 +1,7 @@
 {
  "tema": 8,
  "titulo": "La hora y los adverbios de frecuencia",
- "regla": "La hora: 'It's half past seven' (7:30), 'quarter past six' (6:15), 'quarter to nine' (8:45), 'ten o'clock' (10:00). Los adverbios de frecuencia (always, usually, often, sometimes, never) van ANTES del verbo principal, pero DESPUÉS de 'to be': 'I always study', 'I am never late'. Para preguntar la hora: 'What time is it?' (¿qué hora es?) y 'What time…?' para un horario concreto.",
+ "regla": "La hora: 'It's half past seven' (7:30), 'quarter past six' (6:15), 'quarter to nine' (8:45), 'ten o'clock' (10:00). Los adverbios de frecuencia (always, usually, often, sometimes, never) van ANTES del verbo principal, pero DESPUÉS de 'to be': 'I always study', 'I am never late'. Para preguntar la hora: 'What time is it?' (¿qué hora es?) y 'What time…?' para un horario concreto. En EE.UU. lo más común es decirla como en el reloj digital: 7:30 = seven thirty, 6:15 = six fifteen, 3:20 = three twenty. Half past y quarter to también se oyen.",
  "pronunciacion": "'Quarter' se reduce al hablar rápido: suena 'KWOR-ter', casi sin la 't' final.",
  "trampa": "El adverbio va antes del verbo normal: 'I always study', no 'I study always'.",
  "ejemplos": [
@@ -121,7 +121,7 @@
   },
   {
    "tipo": "corregir_error",
-   "enunciado": "It's half to seven.",
+   "enunciado": "It's half to seven. (son las siete y media)",
    "respuesta": "It's half past seven."
   },
   {
@@ -165,12 +165,37 @@
    "tipo": "corregir_error",
    "enunciado": "What hour is it?",
    "respuesta": "What time is it?"
+  },
+  {
+   "tipo": "hueco",
+   "enunciado": "8:15 = eight ___. (como en el reloj digital)",
+   "respuesta": "fifteen"
+  },
+  {
+   "tipo": "opcion_multiple",
+   "enunciado": "3:20 =",
+   "opciones": [
+    "three twenty",
+    "twenty three",
+    "three and twenty"
+   ],
+   "respuesta": "three twenty"
+  },
+  {
+   "tipo": "traducir",
+   "enunciado": "Son las siete y treinta.",
+   "respuesta": "It's seven thirty.",
+   "aceptadas": [
+    "it is seven thirty",
+    "it's half past seven",
+    "it is half past seven"
+   ]
   }
  ],
  "dias": [
   {
    "titulo": "Decir la hora",
-   "regla": "'It's half past seven' (7:30), 'quarter past six' (6:15), 'quarter to nine' (8:45), 'ten o'clock' (10:00). El pasado del reloj va con 'past' y lo que falta con 'to'. Para preguntar: 'What time is it?'.",
+   "regla": "'It's half past seven' (7:30), 'quarter past six' (6:15), 'quarter to nine' (8:45), 'ten o'clock' (10:00). El pasado del reloj va con 'past' y lo que falta con 'to'. Para preguntar: 'What time is it?'. En EE.UU. lo más común es decirla como en el reloj digital: 7:30 = seven thirty, 6:15 = six fifteen, 3:20 = three twenty. Half past y quarter to también se oyen.",
    "trampa": "No existe 'half to': la media siempre es 'half PAST'. Y la hora se pregunta con 'What time is it?', nunca 'What hour is it?'.",
    "ejemplos": [
     0,
@@ -186,7 +211,10 @@
     14,
     15,
     16,
-    17
+    17,
+    18,
+    19,
+    20
    ]
   },
   {

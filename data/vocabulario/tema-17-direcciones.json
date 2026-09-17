@@ -27,7 +27,7 @@
    "id": "a1-t17-004",
    "es": "esquina",
    "texto": "corner",
-   "ejemplo": "The shop is on the corner.",
+   "ejemplo": "The store is on the corner.",
    "pron": "KOR-ner"
   },
   {
@@ -108,14 +108,14 @@
    "texto": "on foot",
    "literal": "sobre pie",
    "ejemplo": "I go on foot.",
-   "pron": "on FUT"
+   "pron": "an FUT"
   },
   {
    "id": "a1-t17-016",
    "es": "parada",
    "texto": "stop",
    "ejemplo": "The bus stop is here.",
-   "pron": "STOP"
+   "pron": "STAP"
   },
   {
    "id": "a1-t17-017",
@@ -143,7 +143,7 @@
    "es": "cruzar",
    "texto": "to cross",
    "ejemplo": "Cross the street.",
-   "pron": "tu KROS"
+   "pron": "tu KRAS"
   },
   {
    "id": "a1-t17-021",
@@ -154,7 +154,7 @@
   },
   {
    "id": "a1-t17-022",
-   "es": "camino",
+   "es": "carretera, calle",
    "texto": "road",
    "ejemplo": "This road is long.",
    "pron": "ROUD"
@@ -190,9 +190,10 @@
   {
    "id": "a1-t17-029",
    "es": "moto",
-   "texto": "motorbike",
-   "ejemplo": "He has a motorbike.",
-   "pron": "MOU-tor-baik"
+   "texto": "motorcycle",
+   "ejemplo": "He has a motorcycle.",
+   "pron": "MOU-ter-sai-kel",
+   "tambien": "motorbike es más británico"
   },
   {
    "id": "a1-t17-030",

@@ -40,7 +40,7 @@
    "preguntas": [
     {
      "tipo": "opcion_multiple",
-     "enunciado": "¿De qué color es la mochila?",
+     "enunciado": "¿De qué color es la bolsa?",
      "opciones": [
       "black and red",
       "white",
@@ -50,12 +50,12 @@
     },
     {
      "tipo": "vf",
-     "enunciado": "En la mochila hay un libro de gramática.",
+     "enunciado": "En la bolsa hay un libro de gramática.",
      "respuesta": "falso"
     },
     {
      "tipo": "completar_dato",
-     "enunciado": "Nombra un objeto que había en la mochila.",
+     "enunciado": "Nombra un objeto que había en la bolsa.",
      "respuesta": "keys",
      "aceptadas": [
       "phone",
@@ -72,7 +72,7 @@
     },
     {
      "tipo": "opcion_multiple",
-     "enunciado": "¿Cuántos objetos había en la mochila?",
+     "enunciado": "¿Cuántos objetos había en la bolsa?",
      "opciones": [
       "two",
       "three",
@@ -192,7 +192,7 @@
    "preguntas": [
     {
      "tipo": "opcion_multiple",
-     "enunciado": "¿De qué color es la mochila?",
+     "enunciado": "¿De qué color es la bolsa?",
      "opciones": [
       "green",
       "red",
@@ -305,7 +305,7 @@
    ]
   },
   {
-   "titulo": "Examen · La mochila de Marie",
+   "titulo": "Examen · La bolsa de Marie",
    "lineas": [
     {
      "hablante": "A",
@@ -363,7 +363,7 @@
     },
     {
      "tipo": "opcion_multiple",
-     "enunciado": "¿Qué hay en la mochila de Marie?",
+     "enunciado": "¿Qué hay en la bolsa de Marie?",
      "opciones": [
       "a computer and glasses",
       "a phone and an umbrella",

@@ -34,12 +34,12 @@
  "ejercicios": [
   {
    "tipo": "hueco",
-   "enunciado": "I've got ___ headache. (artículo)",
+   "enunciado": "I have ___ headache. (artículo)",
    "respuesta": "a"
   },
   {
    "tipo": "hueco",
-   "enunciado": "She ___ got a cold. (has)",
+   "enunciado": "She ___ a cold. (have en tercera persona)",
    "respuesta": "has"
   },
   {
@@ -49,11 +49,8 @@
   },
   {
    "tipo": "hueco",
-   "enunciado": "I ___ got a fever. (have)",
-   "respuesta": "have",
-   "aceptadas": [
-    "'ve"
-   ]
+   "enunciado": "___ you have a fever? (pregunta, inglés americano)",
+   "respuesta": "Do"
   },
   {
    "tipo": "opcion_multiple",
@@ -95,11 +92,10 @@
    "opciones": [
     "I",
     "have",
-    "got",
     "a",
     "headache"
    ],
-   "respuesta": "I have got a headache"
+   "respuesta": "I have a headache"
   },
   {
    "tipo": "ordenar",
@@ -107,11 +103,10 @@
    "opciones": [
     "she",
     "has",
-    "got",
     "a",
     "cold"
    ],
-   "respuesta": "she has got a cold"
+   "respuesta": "she has a cold"
   },
   {
    "tipo": "ordenar",
@@ -130,8 +125,8 @@
   },
   {
    "tipo": "corregir_error",
-   "enunciado": "She have got a cold.",
-   "respuesta": "She has got a cold."
+   "enunciado": "She have a cold.",
+   "respuesta": "She has a cold."
   },
   {
    "tipo": "corregir_error",
@@ -141,9 +136,9 @@
   {
    "tipo": "traducir",
    "enunciado": "Tengo dolor de cabeza.",
-   "respuesta": "I've got a headache.",
+   "respuesta": "I have a headache.",
    "aceptadas": [
-    "i have a headache",
+    "i've got a headache",
     "i have got a headache"
    ]
   },

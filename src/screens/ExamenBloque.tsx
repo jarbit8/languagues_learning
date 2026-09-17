@@ -133,7 +133,7 @@ export default function ExamenBloque({ bloque, onSalir }: { bloque: number; onSa
       <div className="flex flex-col gap-4">
         <h1 className="text-2xl font-extrabold tracking-tight">Examen de bloque {bloque} · Writing</h1>
         <PasoWriting
-          bloque={bloque}
+          temaConsigna={temasDeBloque(bloque).at(-1) ?? bloque * 6}
           tema={temasDeBloque(bloque).at(-1) ?? bloque * 6}
           meta={`si aprueba el examen del bloque ${bloque}`}
           onDone={(promedio) => guardarNota('writing', promedio)}

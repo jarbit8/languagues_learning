@@ -22,7 +22,7 @@
     },
     {
      "hablante": "A",
-     "texto": "You should rest and drink water."
+     "texto": "You must rest and drink water."
     },
     {
      "hablante": "B",
@@ -192,7 +192,7 @@
     },
     {
      "hablante": "A",
-     "texto": "I buy medicine in the pharmacy."
+     "texto": "I buy medicine at the pharmacy."
     },
     {
      "hablante": "B",
@@ -237,7 +237,7 @@
     {
      "tipo": "completar_dato",
      "enunciado": "¿Dónde compra A la medicina?",
-     "respuesta": "in the pharmacy",
+     "respuesta": "at the pharmacy",
      "aceptadas": [
       "the pharmacy",
       "pharmacy"
@@ -360,7 +360,7 @@
     },
     {
      "hablante": "B",
-     "texto": "No. And I must drink much water."
+     "texto": "No. And I must drink a lot of water."
     }
    ],
    "preguntas": [
@@ -392,11 +392,11 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Qué debe hacer Marie?",
      "opciones": [
-      "drink much water",
-      "buy the medicine",
-      "eat more fruit"
+      "drink a lot of water",
+      "buy the medicine today",
+      "eat a lot of fruit"
      ],
-     "respuesta": "drink much water"
+     "respuesta": "drink a lot of water"
     },
     {
      "tipo": "vf",

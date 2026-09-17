@@ -73,7 +73,7 @@
   },
   {
    "tema": 11,
-   "consigna": "Describe lo que hay en tu mochila: qué objetos son, de qué color y de quién son.",
+   "consigna": "Describe lo que hay en tu bolsa o mochila: qué objetos son, de qué color y de quién son.",
    "minPalabras": 28,
    "maxPalabras": 38,
    "respuestaModelo": "This is my bag. In my bag there is a book and a computer. The book is red and it is mine. There is a phone. That phone is my sister's. These keys are mine too.",
@@ -118,7 +118,7 @@
    "consigna": "Escribe la rutina de otra persona (un amigo o alguien de tu familia), de la mañana a la noche.",
    "minPalabras": 40,
    "maxPalabras": 55,
-   "respuestaModelo": "My brother wakes up at seven and he gets up quickly. He has a shower and he gets dressed. He has breakfast and he goes to work at eight. He comes back at three and he has lunch. In the evening he cooks and he listens to music. He goes to bed at eleven.",
+   "respuestaModelo": "My brother wakes up at seven and he gets up quickly. He takes a shower and he gets dressed. He has breakfast and he goes to work at eight. He comes back at three and he has lunch. In the evening he cooks and he listens to music. He goes to bed at eleven.",
    "checklist": [
     "Usé la tercera persona con -s",
     "Conté la mañana, la tarde y la noche",
@@ -143,7 +143,7 @@
   },
   {
    "tema": 11,
-   "consigna": "Escribe qué llevas en tu mochila y de qué color es cada cosa, y di dónde está algo que NO llevas.",
+   "consigna": "Escribe qué llevas en tu bolsa o mochila y de qué color es cada cosa, y di dónde está algo que NO llevas.",
    "minPalabras": 40,
    "maxPalabras": 55,
    "respuestaModelo": "In my bag there is a black computer and a blue notebook. There are two pens: a red pen and a green pen. My phone is white and it is always here. I have my keys, my wallet and my money. My watch is not in the bag: it is on the table.",
@@ -202,7 +202,7 @@
    "consigna": "Examen: escribe tu rutina entera de un día, de que te levantas a que te acuestas, en orden.",
    "minPalabras": 45,
    "maxPalabras": 60,
-   "respuestaModelo": "I wake up at seven and I get up quickly. I have a shower, I brush my teeth and I get dressed. I make the bed and I have breakfast. I go to work at eight and I finish at two. I have lunch and I rest. In the evening I cook. I go to bed at eleven.",
+   "respuestaModelo": "I wake up at seven and I get up quickly. I take a shower, I brush my teeth and I get dressed. I make the bed and I have breakfast. I go to work at eight and I finish at two. I have lunch and I rest. In the evening I cook. I go to bed at eleven.",
    "checklist": [
     "Conté la mañana, la tarde y la noche",
     "Usé al menos ocho verbos de rutina",
@@ -227,7 +227,7 @@
   },
   {
    "tema": 11,
-   "consigna": "Examen: escribe todo lo que llevas en tu mochila con su color, y di dónde está algo que no llevas.",
+   "consigna": "Examen: escribe todo lo que llevas en tu bolsa o mochila con su color, y di dónde está algo que no llevas.",
    "minPalabras": 45,
    "maxPalabras": 60,
    "respuestaModelo": "In my bag there is a black computer and a green notebook. There are two pens: a red pen and a purple pen. There is a yellow pencil and some paper. My phone is white and my keys are here, with my wallet and my money. My watch is not in the bag: it is on the table.",
@@ -244,7 +244,7 @@
    "consigna": "Examen: escribe qué ropa te pones en cada estación, qué es caro y qué es barato, y qué talla usas.",
    "minPalabras": 45,
    "maxPalabras": 60,
-   "respuestaModelo": "In winter I put on a big coat, boots and gloves, and I wear a sweater. My coat is gray and it is cheap. In summer I wear a t-shirt, shorts and sneakers. In spring I wear jeans and a jacket. I am a forty. Elegant clothes are expensive. In bed I wear my pajamas.",
+   "respuestaModelo": "In winter I put on a big coat, boots and gloves, and I wear a sweater. My coat is gray and it is cheap. In summer I wear a t-shirt, shorts and sneakers. In spring I wear jeans and a jacket. My size is small. Elegant clothes are expensive. In bed I wear my pajamas.",
    "checklist": [
     "Hablé de al menos tres estaciones",
     "Nombré al menos ocho prendas",

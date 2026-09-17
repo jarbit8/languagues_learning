@@ -346,6 +346,79 @@
    ]
   },
   {
+   "id": "o-americana",
+   "titulo": "La o que suena a",
+   "dificultad": "Se escribe o y en EE.UU. suena a",
+   "explicacion": "En inglés americano la o corta de hot, job, dog o doctor no suena como nuestra o: se abre hasta sonar casi como una a. Por eso las tarjetas escriben JAT, YAB, DAG y DAK-ter. Decir «jot» o «yob» es como suena en Inglaterra, no en Estados Unidos.",
+   "truco": "Abre la boca como para una a larga y relajada, sin redondear los labios. Si los labios se te ponen en forma de o, ya te pasaste.",
+   "ejemplos": [
+    {
+     "palabra": "hot",
+     "pron": "JAT (boca abierta)",
+     "es": "caliente"
+    },
+    {
+     "palabra": "job",
+     "pron": "YAB",
+     "es": "trabajo"
+    },
+    {
+     "palabra": "doctor",
+     "pron": "DAK-ter",
+     "es": "médico"
+    },
+    {
+     "palabra": "coffee",
+     "pron": "KA-fi",
+     "es": "café"
+    }
+   ],
+   "pares": [
+    {
+     "a": {
+      "palabra": "cop",
+      "es": "policía"
+     },
+     "b": {
+      "palabra": "cup",
+      "es": "taza"
+     }
+    },
+    {
+     "a": {
+      "palabra": "not",
+      "es": "no"
+     },
+     "b": {
+      "palabra": "nut",
+      "es": "nuez"
+     }
+    },
+    {
+     "a": {
+      "palabra": "lock",
+      "es": "cerradura"
+     },
+     "b": {
+      "palabra": "luck",
+      "es": "suerte"
+     }
+    },
+    {
+     "a": {
+      "palabra": "boss",
+      "es": "jefe"
+     },
+     "b": {
+      "palabra": "bus",
+      "es": "autobús"
+     }
+    }
+   ],
+   "patron": "^(hot|job|dog|shop|stop|socks|coffee|body|clock|o'clock|dollar|cost|soccer|hobby|song|strong|long|mom|boss|sorry|often|blond|stomach|cough|abroad|project|online|on|on time|on foot|on sale|a lot of)s?$",
+   "prioridad": 12
+  },
+  {
    "id": "vocal-larga",
    "titulo": "Vocales largas y cortas",
    "dificultad": "El español tiene 5 vocales, el inglés 12",
@@ -483,7 +556,7 @@
    "ejemplos": [
     {
      "palabra": "water",
-     "pron": "UO-ter (boca de beso)",
+     "pron": "UA-ter (boca de beso)",
      "es": "agua"
     },
     {
@@ -536,7 +609,7 @@
     },
     {
      "palabra": "shop",
-     "pron": "SHOP (soplido)",
+     "pron": "SHAP (soplido)",
      "es": "tienda"
     },
     {
@@ -682,7 +755,7 @@
     },
     {
      "palabra": "job",
-     "pron": "YOB (y fuerte, casi ch)",
+     "pron": "YAB (y fuerte, casi ch)",
      "es": "trabajo"
     },
     {
@@ -815,7 +888,7 @@
     {
      "a": {
       "palabra": "hat",
-      "es": "gorro"
+      "es": "sombrero"
      },
      "b": {
       "palabra": "at",
@@ -850,7 +923,7 @@
     },
     {
      "palabra": "stop",
-     "pron": "STOP (no 'estop')",
+     "pron": "STAP (no 'estap')",
      "es": "parar"
     }
    ],
@@ -1004,7 +1077,7 @@
     },
     {
      "palabra": "dogs",
-     "pron": "DOGZ (suena 'z')",
+     "pron": "DAGZ (suena 'z')",
      "es": "perros"
     },
     {
@@ -1034,7 +1107,7 @@
     },
     {
      "palabra": "doctor",
-     "pron": "DOK-ter",
+     "pron": "DAK-ter",
      "es": "doctor"
     },
     {
@@ -1197,7 +1270,7 @@
     },
     {
      "palabra": "Do you like coffee?",
-     "pron": "du yu laik KO-fi ↗",
+     "pron": "du yu laik KA-fi ↗",
      "es": "¿Te gusta el café?"
     },
     {
@@ -1222,7 +1295,7 @@
     },
     {
      "palabra": "want to",
-     "pron": "suena UO-na (wanna)",
+     "pron": "suena UA-na (wanna)",
      "es": "quiero"
     },
     {

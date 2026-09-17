@@ -15,7 +15,7 @@
 {"id":"a1-t07-014","es":"julio","texto":"July","ejemplo":"July is a summer month.","pron":"yu-LAI"},
 {"id":"a1-t07-015","es":"agosto","texto":"August","ejemplo":"In August I am in Peru.","pron":"O-gost"},
 {"id":"a1-t07-016","es":"septiembre","texto":"September","ejemplo":"September is a fall month.","pron":"sep-TEM-ber"},
-{"id":"a1-t07-017","es":"octubre","texto":"October","ejemplo":"My mother's birthday is in October.","pron":"ok-TOU-ber"},
+{"id":"a1-t07-017","es":"octubre","texto":"October","ejemplo":"My mother's birthday is in October.","pron":"ak-TOU-ber"},
 {"id":"a1-t07-018","es":"noviembre","texto":"November","ejemplo":"In November I work every day.","pron":"nou-VEM-ber"},
 {"id":"a1-t07-019","es":"diciembre","texto":"December","ejemplo":"In December it is winter in Canada.","pron":"di-SEM-ber"},
 {"id":"a1-t07-020","es":"primavera","texto":"spring","ejemplo":"In spring my sister comes to Canada.","pron":"SPRING"},
@@ -27,9 +27,12 @@
 {"id":"a1-t07-026","es":"mes","texto":"month","ejemplo":"A month has four weeks.","pron":"MANZ"},
 {"id":"a1-t07-027","es":"fin de semana","texto":"weekend","ejemplo":"Have a good weekend!","pron":"uik-END"},
 {"id":"a1-t07-028","es":"hoy","texto":"today","ejemplo":"Today is Monday.","pron":"tu-DEI"},
-{"id":"a1-t07-029","es":"mañana (día)","texto":"tomorrow","ejemplo":"Tomorrow is Tuesday.","pron":"tu-MO-rou"},
+{"id":"a1-t07-029","es":"mañana (día)","texto":"tomorrow","ejemplo":"Tomorrow is Tuesday.","pron":"tu-MA-rou"},
 {"id":"a1-t07-030","es":"fecha","texto":"date","ejemplo":"What is the date today?","pron":"DEIT"},
 {"id":"a1-t07-031","es":"anteayer","texto":"the day before yesterday","ejemplo":"I was at work the day before yesterday.","pron":"de DEI bi-FOR YES-ter-dei"},
-{"id":"a1-t07-032","es":"pasado mañana","texto":"the day after tomorrow","ejemplo":"My birthday is the day after tomorrow.","pron":"de DEI AF-ter tu-MO-rou"},
-{"id":"a1-t07-033","es":"cuándo","texto":"when","ejemplo":"When is your birthday?","pron":"UEN"}
+{"id":"a1-t07-032","es":"pasado mañana","texto":"the day after tomorrow","ejemplo":"My birthday is the day after tomorrow.","pron":"de DEI AF-ter tu-MA-rou"},
+{"id":"a1-t07-033","es":"cuándo","texto":"when","ejemplo":"When is your birthday?","pron":"UEN"},
+{"id":"a1-t07-034","es":"primero (1.º)","texto":"first","ejemplo":"My birthday is on May first.","pron":"FERST","nota":"En las fechas: May 1st se lee «May first». También sirve para ordenar: First, …"},
+{"id":"a1-t07-035","es":"segundo (2.º)","texto":"second","ejemplo":"Today is March second.","pron":"SE-kond","nota":"Ojo: second también es el segundo del reloj (tema 8)."},
+{"id":"a1-t07-036","es":"tercero (3.º)","texto":"third","ejemplo":"My birthday is on June third.","pron":"ZERD"}
 ] }

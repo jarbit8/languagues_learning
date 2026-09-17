@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { useLiveQuery } from 'dexie-react-hooks'
 import { db } from '../db'
-import { vocabPacks, getVocabPack, abreviacionesPack } from '../data/packs'
+import { vocabPacks, getVocabPack, abreviacionesPack, existeConcepto } from '../data/packs'
 import { hablar } from '../lib/audio'
 import type { EstadoPalabra, PalabraEstado } from '../types'
 
@@ -70,7 +70,7 @@ export default function Aprendidas() {
     .filter((t) => t.conceptos.length > 0)
 
   const total = temas.reduce((n, t) => n + t.conceptos.length, 0)
-  const dominadas = palabras.filter((p) => p.estado === 'dominada').length
+  const dominadas = palabras.filter((p) => p.estado === 'dominada' && existeConcepto(p.id)).length
 
   if (total === 0 && abreviadas.length === 0) {
     return (

@@ -17,7 +17,7 @@
   },
   {
    "frase": "I have a red bag.",
-   "traduccion": "Tengo una mochila roja.",
+   "traduccion": "Tengo una bolsa roja.",
    "comoSeLee": "ai jav e red bag"
   }
  ],
@@ -64,7 +64,7 @@
   },
   {
    "tipo": "opcion_multiple",
-   "enunciado": "'mochilas rojas' =",
+   "enunciado": "'bolsas rojas' =",
    "opciones": [
     "red bags",
     "bags red",
@@ -96,7 +96,7 @@
   },
   {
    "tipo": "ordenar",
-   "enunciado": "Ordena: tengo una mochila roja.",
+   "enunciado": "Ordena: tengo una bolsa roja.",
    "opciones": [
     "I",
     "have",
@@ -131,7 +131,7 @@
   },
   {
    "tipo": "traducir",
-   "enunciado": "Tengo una mochila negra.",
+   "enunciado": "Tengo una bolsa negra.",
    "respuesta": "I have a black bag.",
    "aceptadas": [
     "i have a black bag"

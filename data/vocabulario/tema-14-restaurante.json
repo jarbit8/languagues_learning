@@ -7,7 +7,7 @@
    "es": "agua",
    "texto": "water",
    "ejemplo": "A glass of water, please.",
-   "pron": "UO-ter",
+   "pron": "UA-ter",
    "rapido": "UA-der — la t entre vocales suena d"
   },
   {
@@ -15,7 +15,7 @@
    "es": "café",
    "texto": "coffee",
    "ejemplo": "I drink coffee in the morning.",
-   "pron": "KO-fi"
+   "pron": "KA-fi"
   },
   {
    "id": "a1-t14-003",
@@ -176,7 +176,7 @@
    "es": "caliente",
    "texto": "hot",
    "ejemplo": "The coffee is hot.",
-   "pron": "JOT"
+   "pron": "JAT"
   },
   {
    "id": "a1-t14-027",
@@ -200,20 +200,12 @@
    "pron": "SOL-ti"
   },
   {
-   "id": "a1-t14-030",
-   "es": "la carta",
-   "texto": "the menu card",
-   "ejemplo": "Here is the menu card.",
-   "pron": "de ME-niu KARD",
-   "tambien": "the menu, a secas"
-  },
-  {
    "id": "a1-t14-031",
    "es": "gaseosa",
    "texto": "soft drink",
    "literal": "bebida suave",
    "ejemplo": "I would like a soft drink.",
-   "pron": "soft DRINK",
+   "pron": "saft DRINK",
    "tambien": "soda en EE.UU. · pop en Canada"
   },
   {
@@ -223,6 +215,13 @@
    "literal": "crema de hielo",
    "ejemplo": "For dessert, ice cream please.",
    "pron": "AIS krim"
+  },
+  {
+   "id": "a1-t14-033",
+   "es": "dar",
+   "texto": "to give",
+   "ejemplo": "I give the tip to the waiter.",
+   "pron": "tu GUIV"
   }
  ]
 }

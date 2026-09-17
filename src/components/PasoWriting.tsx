@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import type { ConsignaWriting } from '../types'
-import { getWriting } from '../data/packs'
+import { consignaSinUsar } from '../lib/examenHabilidades'
 import { construirPromptCorreccion } from '../lib/escritura'
 import CopiarPrompt from './CopiarPrompt'
 
@@ -104,18 +104,18 @@ export function EscribirConsigna({
 }
 
 export default function PasoWriting({
-  bloque,
+  temaConsigna,
   tema,
   meta,
   onDone
 }: {
-  bloque: number
+  /** De qué tema sale la consigna; puede no ser el tope de vocabulario (`tema`). */
+  temaConsigna: number
   tema: number
   meta: string
   onDone: (nota: number, aprobado: boolean) => void
 }) {
-  // El examen siempre usa la primera consigna del bloque; las demás son para práctica libre.
-  const consigna = getWriting(bloque)?.consignas[0]
+  const consigna = consignaSinUsar(temaConsigna)
   if (!consigna) return null
 
   return <EscribirConsigna pack={consigna} tema={tema} dia={2} meta={meta} onDone={onDone} />

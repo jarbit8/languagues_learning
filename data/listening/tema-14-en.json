@@ -34,7 +34,7 @@
     },
     {
      "hablante": "B",
-     "texto": "Thank you, this was delicious."
+     "texto": "Thank you, the food is delicious."
     }
    ],
    "preguntas": [
@@ -76,7 +76,7 @@
      "enunciado": "¿Cómo describe B la comida al final?",
      "respuesta": "delicious",
      "aceptadas": [
-      "this was delicious"
+      "the food is delicious"
      ]
     }
    ]
@@ -287,7 +287,7 @@
      "enunciado": "¿Qué problema hay?",
      "opciones": [
       "the coffee is cold",
-      "there is not any dessert",
+      "there isn't any dessert",
       "the fish is salty"
      ],
      "respuesta": "the coffee is cold"

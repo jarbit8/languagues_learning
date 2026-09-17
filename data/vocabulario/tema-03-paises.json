@@ -49,7 +49,8 @@
    "es": "Estados Unidos",
    "texto": "the United States",
    "ejemplo": "I come from the United States.",
-   "pron": "de yu-NAI-ted STEITS"
+   "pron": "de yu-NAI-ted STEITS",
+   "tambien": "the US · the USA"
   },
   {
    "id": "a1-t03-008",
@@ -63,13 +64,6 @@
    "es": "peruano",
    "texto": "Peruvian",
    "ejemplo": "I am Peruvian.",
-   "pron": "pe-RU-vian"
-  },
-  {
-   "id": "a1-t03-010",
-   "es": "peruana",
-   "texto": "Peruvian (f)",
-   "ejemplo": "She is Peruvian.",
    "pron": "pe-RU-vian"
   },
   {
@@ -104,7 +98,7 @@
    "id": "a1-t03-017",
    "es": "español (idioma)",
    "texto": "Spanish",
-   "ejemplo": "I speak Spanish at home.",
+   "ejemplo": "Spanish is the language of Peru.",
    "pron": "SPA-nish"
   },
   {
@@ -118,7 +112,7 @@
    "id": "a1-t03-019",
    "es": "hablar",
    "texto": "to speak",
-   "ejemplo": "Do you speak French?",
+   "ejemplo": "I speak Spanish and English.",
    "pron": "tu SPIK"
   },
   {
@@ -140,7 +134,7 @@
    "id": "a1-t03-022",
    "es": "dónde",
    "texto": "where",
-   "ejemplo": "Where do you live?",
+   "ejemplo": "Where is Arequipa?",
    "pron": "UER"
   },
   {
@@ -201,21 +195,8 @@
    "texto": "to be born in",
    "literal": "ser nacido en",
    "ejemplo": "I was born in Peru.",
-   "pron": "tu bi BORN in"
-  },
-  {
-   "id": "a1-t03-031",
-   "es": "Quebec",
-   "texto": "Quebec",
-   "ejemplo": "Quebec is in Canada.",
-   "pron": "kui-BEK"
-  },
-  {
-   "id": "a1-t03-032",
-   "es": "francófono",
-   "texto": "French-speaking",
-   "ejemplo": "Quebec is French-speaking.",
-   "pron": "french SPI-king"
+   "pron": "tu bi BORN in",
+   "nota": "I was born = nací. Es una fórmula fija: el pasado (was) se explica en el tema 22."
   },
   {
    "id": "a1-t03-033",
@@ -223,6 +204,44 @@
    "texto": "German",
    "ejemplo": "He speaks German.",
    "pron": "YER-man"
+  },
+  {
+   "id": "a1-t03-034",
+   "es": "estadounidense, americano",
+   "texto": "American",
+   "ejemplo": "Paul is American.",
+   "pron": "a-ME-ri-kan",
+   "nota": "En inglés American es la nacionalidad de Estados Unidos, no de todo el continente."
+  },
+  {
+   "id": "a1-t03-035",
+   "es": "y",
+   "texto": "and",
+   "ejemplo": "I speak Spanish and English.",
+   "pron": "AND",
+   "rapido": "n — en la frase casi solo suena la n: Spanish 'n' English"
+  },
+  {
+   "id": "a1-t03-036",
+   "es": "pero",
+   "texto": "but",
+   "ejemplo": "I speak English, but not French.",
+   "pron": "BAT"
+  },
+  {
+   "id": "a1-t03-037",
+   "es": "o",
+   "texto": "or",
+   "ejemplo": "Is she from Spain or from France?",
+   "pron": "OR"
+  },
+  {
+   "id": "a1-t03-038",
+   "es": "decir",
+   "texto": "to say",
+   "ejemplo": "Ana says: I am from Peru.",
+   "pron": "tu SEI",
+   "nota": "says se lee «SES»."
   }
  ]
 }

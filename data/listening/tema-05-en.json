@@ -119,9 +119,9 @@
      "tipo": "opcion_multiple",
      "enunciado": "¿Cómo es el cabello de la hermana?",
      "opciones": [
-      "red-haired",
+      "red",
       "blond",
-      "brown-haired"
+      "brown"
      ],
      "respuesta": "blond"
     },
@@ -271,8 +271,7 @@
      "enunciado": "¿Cómo tiene el pelo el tío?",
      "respuesta": "dark",
      "aceptadas": [
-      "dark hair",
-      "dark-haired"
+      "dark hair"
      ]
     },
     {
@@ -327,7 +326,7 @@
     },
     {
      "hablante": "B",
-     "texto": "She is brown-haired and she has big eyes."
+     "texto": "She has brown hair and big eyes."
     },
     {
      "hablante": "A",
@@ -362,7 +361,7 @@
      "enunciado": "¿De qué color tiene el pelo?",
      "respuesta": "brown",
      "aceptadas": [
-      "brown-haired"
+      "brown hair"
      ]
     },
     {

@@ -9,12 +9,12 @@
     { "texto": "who", "es": "quién", "pron": "JU", "ejemplo": "Who is at home?", "tema": 6 },
     { "texto": "where", "es": "dónde", "pron": "UER", "ejemplo": "Where does Ana work?", "tema": 3 },
     { "texto": "when", "es": "cuándo", "pron": "UEN", "ejemplo": "When is the class?", "tema": 7 },
-    { "texto": "why", "es": "por qué", "pron": "UAI", "ejemplo": "Why is she happy?", "tema": 21 },
+    { "texto": "why", "es": "por qué", "pron": "UAI", "ejemplo": "Why is she happy?", "tema": 6 },
     { "texto": "which", "es": "cuál", "pron": "UICH", "ejemplo": "Which answer is correct?", "tema": 6 },
     { "texto": "how", "es": "cómo", "pron": "JAU", "ejemplo": "How does she go to work?", "tema": 6 },
     { "texto": "how many", "es": "cuántos", "pron": "jau ME-ni", "ejemplo": "How many brothers does she have?", "tema": 15 },
-    { "texto": "how much", "es": "cuánto", "pron": "jau MACH", "ejemplo": "How much is the ticket?" },
-    { "texto": "how often", "es": "con qué frecuencia", "pron": "jau O-fen", "ejemplo": "How often does she study?" }
+    { "texto": "how much", "es": "cuánto", "pron": "jau MACH", "ejemplo": "How much is the ticket?", "tema": 15 },
+    { "texto": "how often", "es": "con qué frecuencia", "pron": "jau A-fen", "ejemplo": "How often does she study?", "tema": 8 }
    ]
   },
   {
@@ -22,7 +22,7 @@
    "palabras": [
     { "texto": "true", "es": "verdadero", "pron": "TRU", "ejemplo": "True or false?" },
     { "texto": "false", "es": "falso", "pron": "FOLS", "ejemplo": "True or false?" },
-    { "texto": "not given", "es": "no dice", "pron": "not GI-ven", "ejemplo": "True, false or not given?" }
+    { "texto": "not given", "es": "no dice", "pron": "nat GI-ven", "ejemplo": "True, false or not given?" }
    ]
   },
   {
@@ -30,12 +30,12 @@
    "palabras": [
     { "texto": "choose", "es": "elige", "pron": "CHUS", "ejemplo": "Choose the correct answer." },
     { "texto": "complete", "es": "completa", "pron": "kom-PLIT", "ejemplo": "Complete the sentence." },
-    { "texto": "write", "es": "escribe", "pron": "RAIT", "ejemplo": "Write one word." },
+    { "texto": "write", "es": "escribe", "pron": "RAIT", "ejemplo": "Write one word.", "tema": 11 },
     { "texto": "answer", "es": "respuesta", "pron": "AN-ser", "ejemplo": "Write the correct answer.", "tema": 21 },
     { "texto": "correct", "es": "correcto", "pron": "ko-REKT", "ejemplo": "Choose the correct word." },
     { "texto": "word", "es": "palabra", "pron": "UERD", "ejemplo": "Write one word." },
     { "texto": "text", "es": "texto", "pron": "TEKST", "ejemplo": "Read the text." },
-    { "texto": "says", "es": "dice", "pron": "SES", "ejemplo": "The text says she is happy." },
+    { "texto": "says", "es": "dice", "pron": "SES", "ejemplo": "The text says she is happy.", "tema": 3 },
     { "texto": "according to the text", "es": "según el texto", "pron": "a-KOR-ding tu de TEKST", "ejemplo": "According to the text, Ana is a student." }
    ]
   }

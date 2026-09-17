@@ -1,13 +1,13 @@
 {
  "tema": 23,
  "titulo": "Pasados irregulares más comunes",
- "regla": "Muchos verbos comunes tienen pasado irregular (no -ed): go→went, have→had, do→did, see→saw, come→came, get→got, take→took, make→made, say→said, eat→ate, buy→bought, find→found, give→gave, know→knew, is/are→was/were. En negativo e interrogativo el verbo irregular vuelve a su forma base: I went → I didn't go, Did you go? Nunca se dice 'I didn't went'.",
+ "regla": "Muchos verbos comunes tienen pasado irregular (no -ed): go→went, have→had, do→did, see→saw, come→came, get→got, take→took, make→made, say→said, eat→ate, buy→bought, find→found, give→gave, know→knew, is/are→was/were. En negativo e interrogativo el verbo irregular vuelve a su forma base: I went → I didn't go, Did you go? Nunca se dice 'I didn't went'. Con las palabras interrogativas pasa lo mismo: 'Where did you go?', 'What did you do yesterday?'. Nunca 'Where you went?'.",
  "pronunciacion": "Los pasados irregulares no siguen regla: went, bought (suena 'bawt') hay que memorizarlos de oído.",
  "trampa": "Estos verbos no usan -ed: 'I went', no 'I goed'; 'I bought', no 'I buyed'.",
  "ejemplos": [
   {
-   "frase": "I went to Canada.",
-   "traduccion": "Fui a Canadá.",
+   "frase": "I went to New York.",
+   "traduccion": "Fui a Nueva York.",
    "comoSeLee": "ai uént tu cánada"
   },
   {
@@ -21,8 +21,8 @@
    "comoSeLee": "ai bot e tíket"
   },
   {
-   "frase": "I didn't go to Canada.",
-   "traduccion": "No fui a Canadá.",
+   "frase": "I didn't go to New York.",
+   "traduccion": "No fui a Nueva York.",
    "comoSeLee": "ai dídent gou tu cánada"
   }
  ],
@@ -79,14 +79,14 @@
   },
   {
    "tipo": "ordenar",
-   "enunciado": "Ordena: fui a Canadá.",
+   "enunciado": "Ordena: fui a Nueva York.",
    "opciones": [
     "I",
     "went",
     "to",
-    "Canada"
+    "New York"
    ],
-   "respuesta": "I went to Canada"
+   "respuesta": "I went to New York"
   },
   {
    "tipo": "ordenar",
@@ -113,8 +113,8 @@
   },
   {
    "tipo": "corregir_error",
-   "enunciado": "I goed to Canada.",
-   "respuesta": "I went to Canada."
+   "enunciado": "I goed to New York.",
+   "respuesta": "I went to New York."
   },
   {
    "tipo": "corregir_error",
@@ -128,10 +128,10 @@
   },
   {
    "tipo": "traducir",
-   "enunciado": "Fui a Canadá.",
-   "respuesta": "I went to Canada.",
+   "enunciado": "Fui a Nueva York.",
+   "respuesta": "I went to New York.",
    "aceptadas": [
-    "i went to canada"
+    "i went to new york"
    ]
   },
   {
@@ -144,8 +144,8 @@
   },
   {
    "tipo": "corregir_error",
-   "enunciado": "I didn't went to Canada.",
-   "respuesta": "I didn't go to Canada."
+   "enunciado": "I didn't went to New York.",
+   "respuesta": "I didn't go to New York."
   },
   {
    "tipo": "opcion_multiple",
@@ -161,6 +161,28 @@
    "tipo": "hueco",
    "enunciado": "No compré el boleto: I didn't ___ the ticket.",
    "respuesta": "buy"
+  },
+  {
+   "tipo": "hueco",
+   "enunciado": "Where ___ you go? (pasado)",
+   "respuesta": "did"
+  },
+  {
+   "tipo": "ordenar",
+   "enunciado": "Ordena: ¿qué hiciste ayer?",
+   "opciones": [
+    "What",
+    "did",
+    "you",
+    "do",
+    "yesterday"
+   ],
+   "respuesta": "What did you do yesterday"
+  },
+  {
+   "tipo": "corregir_error",
+   "enunciado": "Where you went?",
+   "respuesta": "Where did you go?"
   }
  ],
  "dias": [
@@ -188,7 +210,7 @@
   },
   {
    "titulo": "En negativo e interrogativo vuelve la forma base",
-   "regla": "Aquí los irregulares dejan de dar guerra: en cuanto entra 'did', el verbo vuelve a su forma BASE, la de siempre. 'I went' → 'I didn't go', 'Did you go?'. El pasado ya lo lleva 'did', así que el verbo no lo repite.",
+   "regla": "Aquí los irregulares dejan de dar guerra: en cuanto entra 'did', el verbo vuelve a su forma BASE, la de siempre. 'I went' → 'I didn't go', 'Did you go?'. El pasado ya lo lleva 'did', así que el verbo no lo repite. Con las palabras interrogativas pasa lo mismo: 'Where did you go?', 'What did you do yesterday?'. Nunca 'Where you went?'.",
    "trampa": "'I didn't went' es el error clásico: es 'I didn't GO'. Igual con la pregunta: 'Did you BUY the ticket?', no 'Did you bought'.",
    "ejemplos": [
     3
@@ -201,7 +223,10 @@
     14,
     15,
     16,
-    17
+    17,
+    18,
+    19,
+    20
    ]
   }
  ]
